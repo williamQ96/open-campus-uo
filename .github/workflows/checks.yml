@@ -4,7 +4,8 @@ permissions:
   contents: read
 jobs:
   browser-preview:
-    runs-on: ubuntu-latest
+    # Playwright 1.60 is verified on 24.04; avoid ubuntu-latest's 26.04 migration.
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: apps/web-preview
