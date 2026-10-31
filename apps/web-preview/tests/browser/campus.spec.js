@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { capturePreview } from "./screenshots.js";
 test.beforeEach(async ({ page }) => {
   await page.route(
     (url) => !["127.0.0.1", "localhost"].includes(url.hostname),
@@ -56,7 +57,7 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
     expect(heights.mesh).toBeDefined();
     expect(Math.abs(heights.mesh - heights.sampled)).toBeLessThan(0.001);
   }
-  await page.screenshot({ path: "../../artifacts/eugene-campus-overview.png" });
+  await capturePreview(page, "../../artifacts/eugene-campus-overview.png");
   await page.getByRole("button", { name: /Follow/ }).click();
   expect((await state()).view).toBe("third");
   expect(
@@ -75,7 +76,7 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
   expect(
     Math.abs((await state()).player[1] - (await state()).ground),
   ).toBeLessThan(0.01);
-  await page.screenshot({ path: "../../artifacts/eugene-follow.png" });
+  await capturePreview(page, "../../artifacts/eugene-follow.png");
   await page.keyboard.press("Digit2");
   expect((await state()).view).toBe("first");
   await page.mouse.move(720, 650);
@@ -105,7 +106,7 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
   expect(await page.locator("#about-panel").innerText()).not.toMatch(
     /[\u3400-\u9fff]/,
   );
-  await page.screenshot({ path: "../../artifacts/eugene-about.png" });
+  await capturePreview(page, "../../artifacts/eugene-about.png");
   await page.getByRole("button", { name: "Settings", exact: true }).click();
   await page.getByLabel("Wireframe", { exact: false }).check();
   await page.getByLabel("Wireframe", { exact: false }).uncheck();
@@ -139,7 +140,7 @@ test("jump rises, lands, and works in first-person mode", async ({ page }) => {
       }),
     )
     .toBeGreaterThan(0.05);
-  await page.screenshot({ path: "../../artifacts/eugene-jump.png" });
+  await capturePreview(page, "../../artifacts/eugene-jump.png");
   await expect
     .poll(() => page.evaluate(() => window.__campus.getState().grounded), {
       timeout: 20000,
@@ -249,7 +250,7 @@ test("small viewport controls are reachable and movement stops on blur", async (
   await expect(
     page.getByRole("button", { name: /First person/ }),
   ).toBeInViewport();
-  await page.screenshot({ path: "../../artifacts/eugene-mobile.png" });
+  await capturePreview(page, "../../artifacts/eugene-mobile.png");
   await page.getByRole("button", { name: /First person/ }).click();
   await page.keyboard.down("KeyW");
   await page.evaluate(() => window.dispatchEvent(new Event("blur")));

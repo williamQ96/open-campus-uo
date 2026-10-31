@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { capturePreview } from "./screenshots.js";
 
 test.beforeEach(async ({ page }) => {
   await page.route(
@@ -46,7 +47,7 @@ test("search frames an overview at 45 degrees, turns walking views and prioritiz
   const label = page.locator(`.building-label[data-building-id="${emuId}"]`);
   await expect(label).toHaveClass(/is-selected/);
   await expect(label).toBeVisible();
-  await page.screenshot({ path: "../../artifacts/search-overview.png" });
+  await capturePreview(page, "../../artifacts/search-overview.png");
   for (const mode of ["Digit2", "Digit1"]) {
     await page.keyboard.press(mode);
     await expect
@@ -72,10 +73,7 @@ test("search frames an overview at 45 degrees, turns walking views and prioritiz
     expect((await state()).player).toEqual(before);
     await expect(label).toBeVisible();
   }
-  await page.screenshot({
-    path: "../../artifacts/search-follow.png",
-    animations: "disabled",
-  });
+  await capturePreview(page, "../../artifacts/search-follow.png");
   await page.getByRole("button", { name: "Settings / About" }).click();
   await page.getByLabel("Building names", { exact: false }).uncheck();
   await page.getByRole("button", { name: "Close settings" }).click();
@@ -120,7 +118,7 @@ test("search works on a narrow screen, supports no matches, and typing does not 
     "Knight Library",
   );
   await expect(page.locator(".building-label.is-selected")).toBeVisible();
-  await page.screenshot({ path: "../../artifacts/search-mobile.png" });
+  await capturePreview(page, "../../artifacts/search-mobile.png");
   await search.focus();
   await search.press("Escape");
   await expect(search).toHaveAttribute("aria-expanded", "false");
