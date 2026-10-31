@@ -67,6 +67,7 @@
     "meshes": 537,
     "nodes": 537
   },
-  "reconstruction_sha256": "f754f05ebacb0f306c8217f6250cfcfc7fde49c53c3a8ad24f536da88af6af09",
-  "limitations": "Census 2025 centerlines plus estimated display widths on a 2008 ground surface. No bridge decks, curbs, measured widths or routing/access claims. Incomplete internal campus pedestrian coverage."
+  "reconstruction_sha256": "2dd0e4fadead8574c4081743786b0b97d32ebc6b40fe78b0e79dc3345fa0415a",
+  "limitations": "Census 2025 centerlines plus estimated display widths on a 2008 ground surface. No bridge decks, curbs, measured widths or routing/access claims. Incomplete internal campus pedestrian coverage.",
+  "configuration_sha256": "a1dda4ddfd70bf000d029254d9194a071053405cdaee47d3630d83c32f8054c9"
 }

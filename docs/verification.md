@@ -1,6 +1,6 @@
 # v0.1 闭环验证
 
-后续记录：[v0.2 主校区扩展](v0.2-main-campus.md)、[v0.3 路网与镜头验证](v0.3-roads-controls.md)。以下保留首个闭环的历史证据。
+后续记录：[v0.2 主校区扩展](v0.2-main-campus.md)、[v0.3 路网与镜头验证](v0.3-roads-controls.md)、[v0.4 出生点与搜索](v0.4-building-search.md)。以下保留首个闭环的历史证据。
 
 日期：2026-10-30（America/Los_Angeles）。当前检查针对 Memorial Quad 首个历史白模，不代表完整校园或独立测量精度。
 

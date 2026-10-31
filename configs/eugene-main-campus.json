@@ -148,9 +148,13 @@
     "max_roof_roughness_m": 0.85
   },
   "spawn_enu_m": [
-    -552.894,
-    -121.678
+    -305.469651,
+    0.824825
   ],
+  "viewer": {
+    "spawn_look_at_enu_m": [-215.002909, -53.891474],
+    "spawn_description": "University Street / East 13th Avenue T-junction, facing Erb Memorial Union"
+  },
   "annotations_file": "../data/metadata/campus-buildings.json",
   "corridors_file": "../data/metadata/campus-roads.geojson",
   "appearance": {

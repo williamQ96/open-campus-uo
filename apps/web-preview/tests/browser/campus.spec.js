@@ -22,6 +22,20 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
   expect((await state()).roadSegments).toBeGreaterThan(100);
   expect((await state()).roadSurfaces).toBe(2);
   expect((await state()).blocked).toBe(false);
+  const spawn = (await state()).player;
+  expect(spawn[0]).toBeCloseTo(-305.469651, 4);
+  expect(spawn[2]).toBeCloseTo(-0.824825, 4);
+  const facesEmu = (direction, position) => {
+    const dx = -215.002909 - position[0];
+    const dz = 53.891474 - position[2];
+    return (
+      (direction[0] * dx + direction[2] * dz) /
+      (Math.hypot(direction[0], direction[2]) * Math.hypot(dx, dz))
+    );
+  };
+  expect(facesEmu((await state()).characterDirection, spawn)).toBeGreaterThan(
+    0.999,
+  );
   await expect(page.locator(".location-panel")).toHaveCount(0);
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
   expect(await page.locator("body").innerText()).not.toMatch(/[\u3400-\u9fff]/);
@@ -45,6 +59,9 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
   await page.screenshot({ path: "../../artifacts/eugene-campus-overview.png" });
   await page.getByRole("button", { name: /Follow/ }).click();
   expect((await state()).view).toBe("third");
+  expect(
+    facesEmu((await state()).cameraDirection, (await state()).player),
+  ).toBeGreaterThan(0.999);
   const before = (await state()).player;
   await page.keyboard.down("KeyW");
   await expect
@@ -99,6 +116,15 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
   await page.getByRole("button", { name: /Return to start/ }).click();
   expect((await state()).player[0]).toBeCloseTo(before[0], 2);
   expect((await state()).player[2]).toBeCloseTo(before[2], 2);
+  expect(
+    facesEmu((await state()).characterDirection, (await state()).player),
+  ).toBeGreaterThan(0.999);
+  await page.keyboard.press("Digit2");
+  await expect
+    .poll(async () =>
+      facesEmu((await state()).cameraDirection, (await state()).player),
+    )
+    .toBeGreaterThan(0.999);
   expect(errors).toEqual([]);
 });
 test("jump rises, lands, and works in first-person mode", async ({ page }) => {

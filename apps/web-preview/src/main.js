@@ -12,6 +12,7 @@ import {
 } from "./world.js";
 import { createBuildingLabels } from "./labels.js";
 import { createMinimap } from "./minimap.js";
+import { createBuildingSearch } from "./search.js";
 import "@fontsource-variable/dm-sans";
 import "@fontsource/ibm-plex-mono/latin-400.css";
 import "@fontsource/ibm-plex-mono/latin-500.css";
@@ -28,6 +29,7 @@ let view = "aerial",
   followDistance = 7.5,
   drag = null,
   manifest,
+  viewerSettings,
   field,
   half,
   model,
@@ -40,7 +42,12 @@ let buildings = [],
   lastFps = 0,
   fps = 0,
   moving = false,
-  selected = null;
+  selected = null,
+  selectedId = null,
+  searchFocusId = null,
+  focusCameraTarget = null,
+  cameraTransition = null,
+  selectedMapTarget = null;
 const player = new THREE.Vector3(),
   vertical = { velocity: 0, grounded: true };
 const scene = new THREE.Scene();
@@ -101,6 +108,15 @@ const meshesById = new Map(),
 const raycaster = new THREE.Raycaster(),
   cameraRay = new THREE.Raycaster();
 const labels = createBuildingLabels(scene, viewport, camera, selectBuilding);
+const buildingSearch = createBuildingSearch($("#building-search"), {
+  onSelect: focusBuilding,
+  onClear: clearSelection,
+  onFocus: () => {
+    keys.clear();
+    drag = null;
+  },
+});
+orbit.addEventListener("start", cancelCameraTransition);
 function resize() {
   const w = viewport.clientWidth,
     h = viewport.clientHeight;
@@ -114,6 +130,8 @@ resize();
 
 function setView(next) {
   if (!views.includes(next)) return;
+  cancelCameraTransition();
+  focusCameraTarget = null;
   view = next;
   orbit.enabled = view === "aerial";
   character.root.visible = view !== "first";
@@ -146,6 +164,7 @@ function setView(next) {
       );
     camera.lookAt(player.clone().add(new THREE.Vector3(0, 1.58, 0)));
   }
+  if (searchFocusId) focusBuilding(searchFocusId, { animate: false });
 }
 document
   .querySelectorAll("[data-view]")
@@ -154,6 +173,7 @@ document
   );
 function resetPlayer() {
   if (!manifest) return;
+  clearSelection();
   player.set(manifest.spawn_enu_m[0], 0, -manifest.spawn_enu_m[1]);
   if (isBlocked(player.x, player.z, buildings, half)) {
     const origin = player.clone();
@@ -174,7 +194,12 @@ function resetPlayer() {
   vertical.velocity = 0;
   vertical.grounded = true;
   character.root.position.copy(player);
-  yaw = Math.PI * 0.14;
+  const target = viewerSettings?.spawn_look_at_enu_m;
+  yaw = target
+    ? Math.atan2(player.x - target[0], player.z + target[1])
+    : Math.PI * 0.14;
+  // The character's chest faces local +Z; the camera looks along -Z.
+  character.root.rotation.y = yaw + Math.PI;
   followDistance = 7.5;
 }
 $("#reset").addEventListener("click", () => {
@@ -238,6 +263,15 @@ addEventListener("keydown", (event) => {
     event.altKey
   )
     return;
+  if (event.code === "Slash") {
+    event.preventDefault();
+    $("#building-search-input").focus();
+    return;
+  }
+  if (event.code === "Escape" && selectedId) {
+    clearSelection();
+    return;
+  }
   if (
     [
       "KeyW",
@@ -272,6 +306,8 @@ document.addEventListener("visibilitychange", () => {
   }
 });
 renderer.domElement.addEventListener("pointerdown", (event) => {
+  focusCameraTarget = null;
+  cancelCameraTransition();
   viewport.focus({ preventScroll: true });
   drag = {
     x: event.clientX,
@@ -324,12 +360,44 @@ viewport.addEventListener(
   },
   { passive: false },
 );
-function selectBuilding(id) {
+function buildingAnchor(record) {
+  const ring = record.footprint_enu_m;
+  return new THREE.Vector3(
+    ring.reduce((sum, p) => sum + p[0], 0) / ring.length,
+    record.roof_z_m + 3,
+    -ring.reduce((sum, p) => sum + p[1], 0) / ring.length,
+  );
+}
+function cancelCameraTransition() {
+  cameraTransition = null;
+  orbit.enableDamping = true;
+}
+function clearSelection() {
   if (selected) selected.material.emissive.setHex(0);
-  selected = meshesById.get(id) || null;
+  selected = null;
+  selectedId = searchFocusId = null;
+  focusCameraTarget = selectedMapTarget = null;
+  cancelCameraTransition();
+  labels.setSelected(null);
+  buildingSearch.setSelection(null);
+  $("#selection").hidden = true;
+}
+function selectBuilding(id, { fromSearch = false } = {}) {
   const record = buildings.find((building) => building.id === id);
-  $("#selection").hidden = !record;
-  if (!record) return;
+  if (!record) {
+    clearSelection();
+    return;
+  }
+  if (selected) selected.material.emissive.setHex(0);
+  cancelCameraTransition();
+  focusCameraTarget = null;
+  selected = meshesById.get(id) || null;
+  selectedId = id;
+  searchFocusId = fromSearch ? id : null;
+  selectedMapTarget = buildingAnchor(record);
+  labels.setSelected(record.name ? id : null);
+  buildingSearch.setSelection(record);
+  $("#selection").hidden = false;
   if (selected) selected.material.emissive.setHex(0x273d1d);
   const title = document.createElement("strong");
   title.textContent = record.name || "Unidentified structure";
@@ -343,6 +411,71 @@ function selectBuilding(id) {
     " m";
   $("#selection").replaceChildren(title, detail);
 }
+function focusBuilding(id, { animate = true } = {}) {
+  const record = buildings.find((building) => building.id === id);
+  if (!record?.name) return;
+  keys.clear();
+  drag = null;
+  selectBuilding(id, { fromSearch: true });
+  const anchor = buildingAnchor(record);
+  if (view === "aerial") {
+    const target = anchor.clone();
+    target.y = (record.base_z_m + record.roof_z_m) / 2;
+    const ring = record.footprint_enu_m;
+    const width =
+      Math.max(...ring.map((p) => p[0])) - Math.min(...ring.map((p) => p[0]));
+    const depth =
+      Math.max(...ring.map((p) => p[1])) - Math.min(...ring.map((p) => p[1]));
+    const radius = Math.hypot(width, depth, record.height_m) / 2;
+    const halfAngle = Math.min(
+      THREE.MathUtils.degToRad(camera.fov) / 2,
+      Math.atan(
+        Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2) * camera.aspect,
+      ),
+    );
+    let horizontal =
+      Math.max(70, (radius / Math.sin(halfAngle)) * 1.2) / Math.SQRT2;
+    const direction = camera.position.clone().sub(orbit.target).setY(0);
+    if (direction.lengthSq() < 0.001) direction.set(1, 0, 1);
+    direction.normalize();
+    const position = target.clone();
+    for (let i = 0; i < 8; i++) {
+      position.copy(target).addScaledVector(direction, horizontal);
+      position.y += horizontal;
+      if (position.y > sampleGround(field, position.x, position.z) + 5) break;
+      horizontal *= 1.25;
+    }
+    orbit.enableDamping = false;
+    orbit.update();
+    if (animate && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      cameraTransition = {
+        fromPosition: camera.position.clone(),
+        fromTarget: orbit.target.clone(),
+        position,
+        target,
+        start: performance.now(),
+      };
+    } else {
+      camera.position.copy(position);
+      orbit.target.copy(target);
+      orbit.update();
+      orbit.enableDamping = true;
+    }
+  } else {
+    focusCameraTarget = anchor.clone();
+    focusCameraTarget.y = (record.base_z_m + record.roof_z_m) / 2;
+    yaw = Math.atan2(player.x - anchor.x, player.z - anchor.z);
+    const distance = Math.hypot(anchor.x - player.x, anchor.z - player.z);
+    pitch = THREE.MathUtils.clamp(
+      -Math.atan2(focusCameraTarget.y - player.y - 1.58, distance),
+      -0.7,
+      0.9,
+    );
+    character.root.rotation.y = yaw + Math.PI;
+    updateCamera(0, true);
+  }
+  viewport.focus({ preventScroll: true });
+}
 function selectAt(event) {
   const box = renderer.domElement.getBoundingClientRect();
   raycaster.setFromCamera(
@@ -354,7 +487,7 @@ function selectAt(event) {
   );
   const hit = raycaster.intersectObjects(collisionMeshes, false)[0];
   if (hit) selectBuilding(hit.object.userData.asset_id || hit.object.name);
-  else $("#selection").hidden = true;
+  else clearSelection();
 }
 function updatePlayer(dt) {
   const forward =
@@ -365,6 +498,7 @@ function updatePlayer(dt) {
     (keys.has("KeyA") || keys.has("ArrowLeft") ? 1 : 0);
   moving = !!(forward || right);
   if (moving) {
+    focusCameraTarget = null;
     const heading =
       view === "aerial"
         ? Math.atan2(
@@ -395,14 +529,36 @@ function updatePlayer(dt) {
   contactShadow.material.opacity = 0.16 / (1 + altitude);
   contactShadow.scale.setScalar(1 + altitude * 0.2);
 }
-function updateCamera(dt) {
+function updateCamera(dt, snap = false) {
   if (view === "aerial") {
+    if (cameraTransition) {
+      const t = Math.min(1, (performance.now() - cameraTransition.start) / 650);
+      const ease = t * t * (3 - 2 * t);
+      camera.position.lerpVectors(
+        cameraTransition.fromPosition,
+        cameraTransition.position,
+        ease,
+      );
+      orbit.target.lerpVectors(
+        cameraTransition.fromTarget,
+        cameraTransition.target,
+        ease,
+      );
+      if (t === 1) {
+        cameraTransition = null;
+        orbit.enableDamping = true;
+      }
+    }
     orbit.update();
     return;
   }
   const eye = player.clone().add(new THREE.Vector3(0, 1.58, 0));
   if (view === "first") {
     camera.position.copy(eye);
+    if (focusCameraTarget) {
+      camera.lookAt(focusCameraTarget);
+      return;
+    }
     camera.lookAt(
       eye
         .clone()
@@ -438,8 +594,8 @@ function updateCamera(dt) {
     desired.y,
     sampleGround(field, desired.x, desired.z) + 0.4,
   );
-  camera.position.lerp(desired, 1 - Math.exp(-dt * 12));
-  camera.lookAt(eye);
+  camera.position.lerp(desired, snap ? 1 : 1 - Math.exp(-dt * 12));
+  camera.lookAt(focusCameraTarget || eye);
 }
 async function loadJson(url) {
   const response = await fetch(url);
@@ -450,6 +606,7 @@ async function loadJson(url) {
 try {
   const base = import.meta.env.BASE_URL + "scene/";
   manifest = await loadJson(base + "manifest.json");
+  viewerSettings = await loadJson(base + "viewer-settings.json");
   if (manifest.schema_version !== 1)
     throw new Error("Unsupported scene manifest version.");
   field = await loadJson(base + manifest.heightfield_url);
@@ -512,6 +669,7 @@ try {
   if (!terrainMesh) throw new Error("The GLB does not contain terrain.");
   scene.add(model);
   labels.populate(buildings);
+  buildingSearch.populate(buildings);
   resetPlayer();
   setView("aerial");
   drawMap = createMinimap(
@@ -572,7 +730,7 @@ try {
       frames = 0;
       lastFps = now;
     }
-    drawMap(player, yaw);
+    drawMap(player, yaw, selectedMapTarget);
     const heading = new THREE.Vector3();
     camera.getWorldDirection(heading);
     $(".compass i").style.transform =
@@ -593,6 +751,13 @@ try {
       followDistance,
       player: player.toArray(),
       camera: camera.position.toArray(),
+      cameraDirection: camera.getWorldDirection(new THREE.Vector3()).toArray(),
+      characterDirection: character.root
+        .getWorldDirection(new THREE.Vector3())
+        .toArray(),
+      selectedBuilding: selectedId,
+      orbitTarget: orbit.target.toArray(),
+      cameraTransition: !!cameraTransition,
       fps,
       buildings: buildings.length,
       namedBuildings: labels.count,

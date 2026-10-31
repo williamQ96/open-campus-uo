@@ -30,6 +30,8 @@ if ($sceneName -notmatch '^[a-z0-9-]+$') { throw 'Invalid scene identifier.' }
 $output = Join-Path $projectRoot "exports/$sceneName"
 & $python -m geospatial3d build --config $configPath --workspace $projectRoot --output $output --blender $Blender --web-public (Join-Path $projectRoot 'apps/web-preview/public/scene')
 if ($LASTEXITCODE -ne 0) { throw 'Reconstruction failed. Inspect output and blender.log.' }
+$viewerSettings = if ($sceneConfig.viewer) { $sceneConfig.viewer } else { @{} }
+$viewerSettings | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath (Join-Path $projectRoot 'apps/web-preview/public/scene/viewer-settings.json') -Encoding utf8
 $assetDir = Join-Path $projectRoot "assets/$sceneName"
 New-Item -ItemType Directory -Force -Path $assetDir | Out-Null
 Copy-Item -LiteralPath (Join-Path $output 'scene.blend') -Destination (Join-Path $assetDir "$sceneName.blend")
