@@ -4,11 +4,11 @@
 
 本仓库是通用重建流水线的 UO 实例，负责区域、来源台账、校园内容与预览。通用算法及交换约定由 [Pipeline 仓库](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline)维护。
 
-实现时应记录所用 Pipeline 的 release 或 commit、区域配置、源数据标识、处理参数与导出版本。集成机制尚未实现，不预设 Git submodule。
+已通过 `pipeline.lock.json` 固定 upstream commit/version，通过 `scripts/rebuild.ps1` 调用独立 checkout，不使用 Git submodule。产物记录实际 commit、dirty 状态、配置 hash、来源校验和与处理参数。
 
-## 计划目录
+## 当前目录与后续扩展
 
-下列目录是实现规划，不代表已有资产。
+`configs/`、`data/metadata/`、`assets/memorial-quad/`、`exports/` 和 `apps/web-preview/` 已存在。精细化建筑库与校园分区属于后续扩展。
 
 ```text
 configs/                    # AOI、地理坐标原点、Pipeline 版本
@@ -29,13 +29,13 @@ apps/web-preview/           # 计划使用 Three.js + Vite
 - PBR 材质以可交换表示为目标；程序材质按需烘焙。碰撞代理独立于高精度显示 Mesh。
 - GLB 的轴约定与 Blender 局部坐标不同；由导出器明确转换并以非对称控制点验证，避免下游重复转换。
 
-拟采用的跨仓库字段见 [Pipeline 交换约定](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/architecture.md)。正式 schema 尚未实现。
+跨仓库字段见 [Pipeline 交换约定](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/architecture.md)。正式配置与场景 schema v1 已在 upstream 的 `src/geospatial3d/schemas/` 实现。
 
 ## 浏览器预览
 
 Three.js 读取导出场景清单，根据资产 ID、版本、相对位置、瓦片和 LOD 加载 GLB。它不负责从 LiDAR 重建或修改 Blender 源资产。
 
-第一版计划支持鸟瞰、建筑选择、来源展示、线框及白模/完成状态检查；后续增加 WASD 漫游、区域跳转和瓦片按需加载。实际性能预算需在首个真实切片上测量。
+第一版已支持鸟瞰、跟随、第一人称、WASD 漫游、建筑选择、来源展示与线框检查。角色从 upstream 的 ENU heightfield 采样地面，用建筑轮廓进行圆形碰撞与分步移动。区域跳转、瓦片按需加载和独立性能预算留待后续。
 
 GitHub Pages 是原讨论提出的下游目标。目前只创建 private 仓库，未配置部署、公开站点或对象存储。未来发布时单独决定站点可见性与资源托管方式。
 

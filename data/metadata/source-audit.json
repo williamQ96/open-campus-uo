@@ -1,0 +1,44 @@
+{
+  "checked_on": "2026-10-30",
+  "experiment_center_lon_lat": [-123.0777, 44.0444],
+  "aoi_size_m": 360,
+  "selected": {
+    "source_id": "noaa-dogami-willamette-1078-20080831-44123a1309",
+    "filename": "20080831_44123a1309_ld_p23.copc.laz",
+    "download_bytes": 60916258,
+    "sha256": "c7d0b03e139bfede9552ed4ee5d86bd368e23f38b88bdf1c07bf7d5870646635",
+    "tile_points": 11436019,
+    "cropped_points": 1016116,
+    "cropped_ground_points": 216517,
+    "horizontal_epsg": 3740,
+    "vertical_epsg": 5703,
+    "vertical_product": "NAVD88 / GEOID18 metres",
+    "tile_date_from_filename": "2008-08-31",
+    "collection_dates": ["2008-08-31", "2009-07-01"],
+    "decision": "Use class-2 ground and unclassified elevated points from the same tile for the first blockout; no external footprints.",
+    "coverage_check": "Read and spatially clip actual LAS records; actual CRS checked from compound LAS header.",
+    "product_index": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+    "metadata": "https://www.fisheries.noaa.gov/inport/item/49908",
+    "license_evidence": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+    "license_summary": "DOGAMI OLC policy identifies OLC data as public domain without use or redistribution restrictions; retain provider citation and historical-data limitations."
+  },
+  "rejected_or_unused": [
+    {
+      "id": "USGS_1M_10_x49y488_OR_McKenzieRiver_2021_B21",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/OR_McKenzieRiver_2021_B21/TIFF/USGS_1M_10_x49y488_OR_McKenzieRiver_2021_B21.tif",
+      "metadata": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1m/Projects/OR_McKenzieRiver_2021_B21/metadata/USGS_1M_10_x49y488_OR_McKenzieRiver_2021_B21.xml",
+      "raster_horizontal_epsg": 26910,
+      "acquisition_dates": ["2021-07-04", "2021-07-06"],
+      "probe_shape": [360, 360],
+      "probe_valid_pixels": 0,
+      "decision": "Rejected: product bounding box intersects AOI but every sampled AOI pixel is NoData."
+    },
+    {
+      "id": "USGS_LPC_OR_WILLAMETTE_VALLEY_OLC_2008_002093",
+      "catalog": "https://www.sciencebase.gov/catalog/item/64174fd7d34eb496d1d1773d",
+      "decision": "USGS Rockyweb download returned HTTP 429. Used the independently verified NOAA OLC tile instead."
+    }
+  ],
+  "not_used": ["UO internal GIS", "Eugene City GIS", "OSM", "Microsoft Building Footprints", "Google Maps/Earth 3D"],
+  "accuracy_status": "No independent survey control points. Roof masks are heuristic, historical placeholders."
+}

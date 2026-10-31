@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "project_id": "uo-memorial-quad",
+  "title": "Open Campus: UO · Memorial Quad",
+  "aoi": {
+    "center_lon_lat": [-123.0777, 44.0444],
+    "size_m": 360,
+    "horizontal_epsg": 3740,
+    "vertical_epsg": 5703,
+    "vertical_datum": "NAVD88 metres, NOAA GEOID18 product"
+  },
+  "sources": [
+    {
+      "id": "noaa-dogami-willamette-1078-20080831-44123a1309",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1309_ld_p23.copc.laz",
+      "filename": "20080831_44123a1309_ld_p23.copc.laz",
+      "sha256": "c7d0b03e139bfede9552ed4ee5d86bd368e23f38b88bdf1c07bf7d5870646635",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    }
+  ],
+  "reconstruction": {
+    "terrain_spacing_m": 2,
+    "raster_spacing_m": 1,
+    "min_building_area_m2": 160,
+    "min_height_m": 3.5,
+    "max_roof_roughness_m": 0.85
+  },
+  "spawn_enu_m": [0, 0]
+}

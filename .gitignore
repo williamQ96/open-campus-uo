@@ -23,3 +23,5 @@ Thumbs.db
 *.blend1
 *.blend2
 *.log
+/apps/web-preview/test-results/
+/apps/web-preview/playwright-report/

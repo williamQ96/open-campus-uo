@@ -22,6 +22,6 @@
 
 ## 候选入口与证据边界
 
-原讨论提出 [USGS 3DEP](https://www.usgs.gov/3d-elevation-program/about-3dep-products-services)、[DOGAMI LiDAR](https://www.oregon.gov/dogami/lidar/pages/help.aspx)、[USGS 数据下载入口](https://www.usgs.gov/the-national-map-data-delivery/gis-data-download)及 [EarthExplorer](https://earthexplorer.usgs.gov/)。这些是后续调查入口，本次未下载数据或重新核验具体数据集的使用条件。
+原讨论提出 [USGS 3DEP](https://www.usgs.gov/3d-elevation-program/about-3dep-products-services)、[DOGAMI LiDAR](https://www.oregon.gov/dogami/lidar/pages/help.aspx)、[USGS 数据下载入口](https://www.usgs.gov/the-national-map-data-delivery/gis-data-download)及 [EarthExplorer](https://earthexplorer.usgs.gov/)。v0.1 已完成实际数据下载与核验，记录在 [source-audit.json](../data/metadata/source-audit.json)；采用 NOAA 托管的 DOGAMI 点云，排除 AOI 全 NoData 的 DEM。
 
 原讨论中的版本号、价格、性能目标、数据许可和部署额度属于讨论时的建议或外部信息，未作为本项目已验证事实。具体数据、工具和托管方案在实际采用时重新核验；不把早期 Unreal/GIS 方案覆盖后续用户决定。

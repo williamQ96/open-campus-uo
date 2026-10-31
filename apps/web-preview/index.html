@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e9e9e2" />
+    <meta name="description" content="Explore a LiDAR-derived whitebox of the University of Oregon Memorial Quad." />
+    <title>Open Campus: UO · Memorial Quad</title>
+  </head>
+  <body>
+    <main id="app">
+      <div id="viewport" aria-label="Memorial Quad 三维校园" tabindex="0"></div>
+      <header class="masthead">
+        <a class="wordmark" href="./" aria-label="Open Campus 主页"><span class="mark">oc<span>↗</span></span><span>OPEN CAMPUS<span class="submark">UNIVERSITY OF OREGON</span></span></a>
+        <span class="edition"><span class="status-dot"></span> FIELD STUDY 001 <span class="edition-tag">WHITEBOX</span></span>
+      </header>
+
+      <section class="location-panel" aria-label="当前试验区域">
+        <div class="eyebrow"><span>01 / EUGENE, OREGON</span><span>44.0444° N · 123.0777° W</span></div>
+        <h1>Memorial<br /><em>Quad.</em></h1>
+        <p class="intro">从真实地理数据出发，<br />一座逐步成形的开放校园。</p>
+        <div class="study-stats"><div><strong id="building-count">—</strong><span>建筑占位体块</span></div><div><strong>360 <small>m</small></strong><span>试验区边长</span></div></div>
+        <div class="source-note"><span class="tiny-dot"></span><span>历史 LiDAR · <b id="source-year">2008</b><br />白模研究版本 · 非当前精确校园</span></div>
+        <button id="source-toggle" class="text-button" aria-expanded="false" aria-controls="source-details">数据来源与说明 <span>↗</span></button>
+        <div id="source-details" hidden>
+          <p>Oregon DOGAMI / NOAA Digital Coast。以地面回波插值地形，从高处平面回波提取建筑候选。建筑可能缺失、合并或混入树冠。</p>
+          <p id="source-date"></p>
+          <a href="https://www.fisheries.noaa.gov/inport/item/49908" target="_blank" rel="noreferrer">NOAA 来源记录 ↗</a>
+          <p id="terrain-quality"></p>
+        </div>
+      </section>
+
+      <nav class="view-switch" aria-label="切换视角">
+        <button data-view="third" aria-pressed="false"><kbd>1</kbd>跟随<span>THIRD PERSON</span></button>
+        <button data-view="first" aria-pressed="false"><kbd>2</kbd>第一人称<span>FIRST PERSON</span></button>
+        <button data-view="aerial" aria-pressed="true"><kbd>3</kbd>鸟瞰<span>OVERVIEW</span></button>
+      </nav>
+
+      <div class="scene-tools" aria-label="场景操作">
+        <button id="wireframe" aria-pressed="false" title="切换线框">▱ <span>线框</span></button>
+        <button id="reset" title="回到起点">↺ <span>回到起点</span></button>
+      </div>
+
+      <div class="compass" aria-hidden="true"><span>N</span><i>↑</i><span class="compass-foot">TRUE NORTH</span></div>
+      <section class="map-panel" aria-label="试验区俯视小地图"><div><span>MEMORIAL QUAD</span><span>360 × 360 m</span></div><canvas id="minimap" width="216" height="216" aria-label="建筑轮廓与角色位置"></canvas><div class="map-legend"><span><i></i> 你的位置</span><span>N ↑</span></div></section>
+      <div id="selection" class="selection" hidden></div>
+      <div class="position-readout"><span class="status-dot"></span><span id="position">E 0.0 / N 0.0 / H 0.0 m</span></div>
+
+      <footer class="controls-bar">
+        <div class="control-hint"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> 移动</span><span><kbd>SHIFT</kbd> 加速</span><span>拖动鼠标 · 调整视角</span><span><kbd>V</kbd> 切换视角</span></div>
+        <span class="footer-caption">GEOSPATIAL DATA → BLENDER → GLB → BROWSER</span>
+      </footer>
+      <div id="loading" class="loading" role="status"><span class="loading-mark">oc↗</span><p>正在载入真实地形与白模…</p></div>
+      <div id="error" class="error" role="alert" hidden><h2>场景尚未就绪</h2><p></p><button onclick="location.reload()">重新加载</button></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
