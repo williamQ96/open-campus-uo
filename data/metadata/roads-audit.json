@@ -1,0 +1,72 @@
+{
+  "configuration": "configs/eugene-main-campus.json",
+  "pipeline": {
+    "version": "0.3.0",
+    "commit": "393468f384b543db5661213de79a1081af3ef1dc",
+    "dirty": false,
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "laspy": "2.7.0",
+      "pyproj": "3.8.0",
+      "rasterio": "1.5.2",
+      "shapely": "2.2.0"
+    }
+  },
+  "source": [
+    {
+      "id": "us-census-tiger-2025-lane-roads",
+      "provider": "U.S. Census Bureau",
+      "title": "2025 TIGER/Line\u00c2\u00ae Shapefiles, Lane County, Oregon, All Roads",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/ROADS/tl_2025_41039_roads.zip",
+      "filename": "tl_2025_41039_roads.zip",
+      "sha256": "9ff7743ebd87d5fe3bed57f4555784e747aab25c96e72f2aac382da5d11bda2b",
+      "license_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+      "license_note": "U.S. Government work; technical documentation \u00c2\u00a71.2 permits reproduction with Census Bureau attribution. TIGER/Line is a registered trademark.",
+      "source_crs": "EPSG:4269 (NAD83), verified against source .prj",
+      "vintage": "2025",
+      "verified_on": "2026-10-31",
+      "processing": "County centerlines reprojected from NAD83 to WGS84, clipped to campus AOI plus 35 m. Original LINEARID, names and MTFCC retained; widths estimated by class. No bridge decks or lane geometry."
+    }
+  ],
+  "catalog_sha256": "82eeacaa64ed0619f91decdc6a13ce59688fc0f7be5e92d1e3f48eb364019c0d",
+  "segments": 140,
+  "kinds": {
+    "path": 8,
+    "road": 132
+  },
+  "smoke_test": {
+    "aoi_size_m": 360,
+    "segments": 7,
+    "blender_and_glb": "passed"
+  },
+  "surfaces": [
+    {
+      "id": "corridors-road",
+      "kind": "road",
+      "area_m2": 399287.626,
+      "vertical_offset_m": 0.04,
+      "vertices": 56280,
+      "triangles": 72676,
+      "max_vertex_drape_error_m": 6.251943407420413e-15
+    },
+    {
+      "id": "corridors-path",
+      "kind": "path",
+      "area_m2": 8297.176,
+      "vertical_offset_m": 0.04,
+      "vertices": 2805,
+      "triangles": 3121,
+      "max_vertex_drape_error_m": 8.534839501805891e-16
+    }
+  ],
+  "model": {
+    "url": "campus.glb",
+    "sha256": "9284e2643d218fbf47473c41543d96e9863345933460cc5e96db224b604952ab",
+    "glb_bytes": 14917220,
+    "meshes": 537,
+    "nodes": 537
+  },
+  "reconstruction_sha256": "f754f05ebacb0f306c8217f6250cfcfc7fde49c53c3a8ad24f536da88af6af09",
+  "limitations": "Census 2025 centerlines plus estimated display widths on a 2008 ground surface. No bridge decks, curbs, measured widths or routing/access claims. Incomplete internal campus pedestrian coverage."
+}

@@ -1,4 +1,4 @@
-export function createMinimap(canvas, buildings, half) {
+export function createMinimap(canvas, buildings, half, corridors = []) {
   const background = document.createElement("canvas");
   background.width = canvas.width;
   background.height = canvas.height;
@@ -16,6 +16,17 @@ export function createMinimap(canvas, buildings, half) {
     b.lineTo((i * n) / 8, n);
     b.moveTo(0, (i * n) / 8);
     b.lineTo(n, (i * n) / 8);
+    b.stroke();
+  }
+  b.lineCap = "round";
+  b.lineJoin = "round";
+  for (const corridor of corridors) {
+    b.beginPath();
+    corridor.centerline_enu_m.forEach(([x, north], i) =>
+      i ? b.lineTo(...point(x, north)) : b.moveTo(...point(x, north)),
+    );
+    b.lineWidth = Math.max(0.65, corridor.width_m * scale);
+    b.strokeStyle = corridor.kind === "path" ? "#e2e2db" : "#78838b";
     b.stroke();
   }
   for (const building of buildings) {

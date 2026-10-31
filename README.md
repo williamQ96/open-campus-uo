@@ -2,9 +2,11 @@
 
 以 Blender 为核心、可跨引擎复用的 University of Oregon（Eugene）校园三维资产库与浏览器预览项目。
 
-**状态：v0.2 已扩展为 Eugene 主校区及周边 2 × 2 km 场景。全英文 UI、新标志、灰色地面、跳跃与朝向相机的建筑名称标签已接入。仓库为 private。**
+**状态：v0.3 在 Eugene 主校区及周边 2 × 2 km 场景加入基础道路／路径、Follow 滚轮缩放和 About 仓库链接。保留全英文 UI、灰色地面、跳跃与建筑名称标签。仓库为 private。**
 
 当前默认配置为 `configs/eugene-main-campus.json`；旧 Memorial Quad 配置与 Blender 场景作为首个闭环记录保留。当前改动、来源与限制详见 [v0.2 主校区说明](docs/v0.2-main-campus.md)。
+
+新增功能、道路来源与验证见 [v0.3 道路与镜头说明](docs/v0.3-roads-controls.md)。
 
 ## 长期定位
 
@@ -26,6 +28,7 @@ npm run dev
 | --- | --- |
 | 移动 / 加速 | WASD 或方向键 / Shift |
 | 调整视角 | 按住鼠标拖动；鸟瞰可滚轮缩放 |
+| 跟随镜头远近 | Follow 模式滚轮缩放，2.5–30 m；建筑避障优先 |
 | 跟随 / 第一人称 / 鸟瞰 | 1 / 2 / 3，或顶部按钮 |
 | 循环切换视角 | V |
 | 跳跃 | Space；落地后可再次起跳 |

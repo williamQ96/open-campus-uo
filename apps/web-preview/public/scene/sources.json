@@ -163,6 +163,22 @@
       "total_source_points": 13730717
     }
   ],
+  "corridor_sources": [
+    {
+      "id": "us-census-tiger-2025-lane-roads",
+      "provider": "U.S. Census Bureau",
+      "title": "2025 TIGER/Line® Shapefiles, Lane County, Oregon, All Roads",
+      "url": "https://www2.census.gov/geo/tiger/TIGER2025/ROADS/tl_2025_41039_roads.zip",
+      "filename": "tl_2025_41039_roads.zip",
+      "sha256": "9ff7743ebd87d5fe3bed57f4555784e747aab25c96e72f2aac382da5d11bda2b",
+      "license_url": "https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2025/TGRSHP2025_TechDoc.pdf",
+      "license_note": "U.S. Government work; technical documentation §1.2 permits reproduction with Census Bureau attribution. TIGER/Line is a registered trademark.",
+      "source_crs": "EPSG:4269 (NAD83), verified against source .prj",
+      "vintage": "2025",
+      "verified_on": "2026-10-31",
+      "processing": "County centerlines reprojected from NAD83 to WGS84, clipped to campus AOI plus 35 m. Original LINEARID, names and MTFCC retained; widths estimated by class. No bridge decks or lane geometry."
+    }
+  ],
   "coordinate_frame": {
     "horizontal_epsg": 3740,
     "vertical_epsg": 5703,

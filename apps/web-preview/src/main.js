@@ -25,6 +25,7 @@ const views = ["third", "first", "aerial"],
 let view = "aerial",
   yaw = Math.PI * 0.14,
   pitch = 0.08,
+  followDistance = 7.5,
   drag = null,
   manifest,
   field,
@@ -138,9 +139,9 @@ function setView(next) {
       .copy(player)
       .add(
         new THREE.Vector3(
-          Math.sin(yaw) * 7.5,
-          2.58 + pitch * 3,
-          Math.cos(yaw) * 7.5,
+          Math.sin(yaw) * followDistance,
+          1.58 + (1 + pitch * 3) * (followDistance / 7.5),
+          Math.cos(yaw) * followDistance,
         ),
       );
     camera.lookAt(player.clone().add(new THREE.Vector3(0, 1.58, 0)));
@@ -174,6 +175,7 @@ function resetPlayer() {
   vertical.grounded = true;
   character.root.position.copy(player);
   yaw = Math.PI * 0.14;
+  followDistance = 7.5;
 }
 $("#reset").addEventListener("click", () => {
   resetPlayer();
@@ -301,6 +303,27 @@ renderer.domElement.addEventListener("pointerup", (event) => {
 renderer.domElement.addEventListener("pointercancel", () => {
   drag = null;
 });
+viewport.addEventListener(
+  "wheel",
+  (event) => {
+    if (view !== "third" || dialog.open || event.ctrlKey || event.metaKey)
+      return;
+    event.preventDefault();
+    const delta =
+      event.deltaY *
+      (event.deltaMode === 1
+        ? 16
+        : event.deltaMode === 2
+          ? viewport.clientHeight
+          : 1);
+    followDistance = THREE.MathUtils.clamp(
+      followDistance * Math.exp(THREE.MathUtils.clamp(delta * 0.0015, -1, 1)),
+      2.5,
+      30,
+    );
+  },
+  { passive: false },
+);
 function selectBuilding(id) {
   if (selected) selected.material.emissive.setHex(0);
   selected = meshesById.get(id) || null;
@@ -397,9 +420,9 @@ function updateCamera(dt) {
     .clone()
     .add(
       new THREE.Vector3(
-        Math.sin(yaw) * 7.5,
-        1 + pitch * 3,
-        Math.cos(yaw) * 7.5,
+        Math.sin(yaw) * followDistance,
+        (1 + pitch * 3) * (followDistance / 7.5),
+        Math.cos(yaw) * followDistance,
       ),
     );
   const direction = desired.clone().sub(eye),
@@ -463,6 +486,12 @@ try {
         remove.push(object);
       }
     }
+    if (object.userData.asset_kind === "corridor") {
+      object.material.polygonOffset = true;
+      object.material.polygonOffsetFactor = -1;
+      object.material.polygonOffsetUnits = -1;
+      object.receiveShadow = true;
+    }
   });
   // Keep editable assets in Blender; batch unnamed runtime context to reduce draw calls.
   for (const object of remove) object.removeFromParent();
@@ -485,7 +514,12 @@ try {
   labels.populate(buildings);
   resetPlayer();
   setView("aerial");
-  drawMap = createMinimap($("#minimap"), buildings, half);
+  drawMap = createMinimap(
+    $("#minimap"),
+    buildings,
+    half,
+    manifest.corridors?.features || [],
+  );
   const skirt = new THREE.Mesh(
     new THREE.BoxGeometry(half * 2, 6, half * 2),
     new THREE.MeshStandardMaterial({ color: 0x9da3a5, roughness: 1 }),
@@ -518,6 +552,11 @@ try {
     " m ground grid. Internal interpolation holdout RMSE: " +
     manifest.quality.holdout_rmse_m +
     " m. No independent survey-control accuracy validation.";
+  $("#road-source").textContent = manifest.corridors
+    ? "Roads and paths: U.S. Census Bureau, 2025 TIGER/Line® Shapefiles, Lane County, Oregon. " +
+      manifest.corridors.features.length +
+      " clipped centerline segments. Widths are estimated for display; surfaces follow the ground, without bridge decks, surveyed curbs, lane markings or a routing network."
+    : "";
   $("#loading").hidden = true;
   renderer.setAnimationLoop((now) => {
     const dt = Math.min((now - lastTime) / 1000 || 0, 0.08);
@@ -551,11 +590,16 @@ try {
     getState: () => ({
       ready: true,
       view,
+      followDistance,
       player: player.toArray(),
       camera: camera.position.toArray(),
       fps,
       buildings: buildings.length,
       namedBuildings: labels.count,
+      roadSegments: manifest.corridors?.features.length || 0,
+      roadSurfaces: model.children.filter(
+        (object) => object.userData.asset_kind === "corridor",
+      ).length,
       visibleLabels: labels.visibleCount,
       aoiSize: manifest.aoi_size_m,
       grounded: vertical.grounded,

@@ -19,6 +19,8 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
   expect((await state()).aoiSize).toBe(2000);
   expect((await state()).buildings).toBeGreaterThan(100);
   expect((await state()).namedBuildings).toBeGreaterThan(40);
+  expect((await state()).roadSegments).toBeGreaterThan(100);
+  expect((await state()).roadSurfaces).toBe(2);
   expect((await state()).blocked).toBe(false);
   await expect(page.locator(".location-panel")).toHaveCount(0);
   await expect(page.locator("html")).toHaveAttribute("lang", "en");
@@ -68,6 +70,20 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
   await page.getByRole("button", { name: "Settings / About" }).click();
   await page.getByRole("button", { name: "About", exact: true }).click();
   await expect(page.locator("#about-panel")).toContainText("2008");
+  await expect(page.locator("#road-source")).toContainText(
+    "U.S. Census Bureau",
+  );
+  await expect(
+    page.getByRole("link", { name: "Open Campus: UO · Campus application ↗" }),
+  ).toHaveAttribute("href", "https://github.com/williamQ96/open-campus-uo");
+  await expect(
+    page.getByRole("link", {
+      name: "Open Geospatial-to-3D Reconstruction Pipeline · Upstream ↗",
+    }),
+  ).toHaveAttribute(
+    "href",
+    "https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline",
+  );
   await expect(page.locator("#coverage-stat")).toHaveText("2,000 × 2,000 m");
   expect(await page.locator("#about-panel").innerText()).not.toMatch(
     /[\u3400-\u9fff]/,
@@ -115,6 +131,41 @@ test("jump rises, lands, and works in first-person mode", async ({ page }) => {
     .toBe(true);
   const s = await page.evaluate(() => window.__campus.getState());
   expect(s.player[1]).toBeCloseTo(s.ground, 3);
+});
+
+test("Follow mouse-wheel zoom is bounded, keeps view changes, and respects settings", async ({
+  page,
+}) => {
+  await ready(page);
+  await page.keyboard.press("Digit1");
+  await page.mouse.move(720, 700);
+  const state = () => page.evaluate(() => window.__campus.getState());
+  expect((await state()).followDistance).toBe(7.5);
+  const before = (await state()).camera;
+  await page.mouse.wheel(0, -480);
+  await expect
+    .poll(async () => (await state()).followDistance)
+    .toBeLessThan(7.5);
+  await expect
+    .poll(async () => {
+      const after = (await state()).camera;
+      return Math.hypot(...after.map((value, i) => value - before[i]));
+    })
+    .toBeGreaterThan(0.3);
+  for (let i = 0; i < 6; i++) await page.mouse.wheel(0, -1000);
+  await expect.poll(async () => (await state()).followDistance).toBe(2.5);
+  await page.keyboard.press("Digit2");
+  await page.mouse.wheel(0, 500);
+  expect((await state()).followDistance).toBe(2.5);
+  await page.keyboard.press("Digit1");
+  for (let i = 0; i < 6; i++) await page.mouse.wheel(0, 1000);
+  await expect.poll(async () => (await state()).followDistance).toBe(30);
+  await page.getByRole("button", { name: "Settings / About" }).click();
+  await page.mouse.wheel(0, -600);
+  expect((await state()).followDistance).toBe(30);
+  await page.getByRole("button", { name: "Close settings" }).click();
+  await page.getByRole("button", { name: /Return to start/ }).click();
+  expect((await state()).followDistance).toBe(7.5);
 });
 test("building names follow projected roof anchors and remain screen-facing while orbiting", async ({
   page,

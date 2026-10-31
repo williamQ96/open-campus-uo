@@ -55,7 +55,7 @@
           id="minimap"
           width="240"
           height="240"
-          aria-label="Buildings and your location"
+          aria-label="Buildings, roads and your location"
         ></canvas>
         <div class="map-legend">
           <span><i></i> You</span><span>N ↑</span>
@@ -70,7 +70,8 @@
         <div class="control-hint">
           <span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Move</span
           ><span><kbd>SHIFT</kbd> Run</span><span><kbd>SPACE</kbd> Jump</span
-          ><span>Drag to look</span><span><kbd>V</kbd> Change view</span>
+          ><span>Drag to look · Scroll to zoom</span
+          ><span><kbd>V</kbd> Change view</span>
         </div>
         <button
           id="reset"
@@ -116,6 +117,8 @@
             <dd>Jump</dd>
             <dt>Mouse drag</dt>
             <dd>Look around</dd>
+            <dt>Mouse wheel</dt>
+            <dd>Zoom in Follow or Overview</dd>
             <dt>1 / 2 / 3 or V</dt>
             <dd>Change camera</dd>
           </dl>
@@ -135,6 +138,7 @@
           <h2>Data and accuracy</h2>
           <p id="source-date"></p>
           <p id="terrain-quality"></p>
+          <p id="road-source"></p>
           <p>
             Grey ground is interpolated from classified ground returns. Most
             white structures are historical LiDAR-derived candidates and may
@@ -150,6 +154,12 @@
           </p>
           <div class="source-links">
             <a
+              href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+              target="_blank"
+              rel="noreferrer"
+              >U.S. Census Bureau road data ↗</a
+            >
+            <a
               href="https://www.fisheries.noaa.gov/inport/item/49908"
               target="_blank"
               rel="noreferrer"
@@ -164,6 +174,26 @@
               target="_blank"
               rel="noreferrer"
               >OpenCampus logo ↗</a
+            >
+          </div>
+          <h2>Project repositories</h2>
+          <p>
+            Open Campus: UO develops this campus model and viewer. Its upstream
+            pipeline develops reusable reconstruction methods and automation.
+            Both repositories are private and require access.
+          </p>
+          <div class="source-links">
+            <a
+              href="https://github.com/williamQ96/open-campus-uo"
+              target="_blank"
+              rel="noreferrer"
+              >Open Campus: UO · Campus application ↗</a
+            >
+            <a
+              href="https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline"
+              target="_blank"
+              rel="noreferrer"
+              >Open Geospatial-to-3D Reconstruction Pipeline · Upstream ↗</a
             >
           </div>
           <p class="about-footnote">

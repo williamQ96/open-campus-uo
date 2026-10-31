@@ -152,6 +152,7 @@
     -121.678
   ],
   "annotations_file": "../data/metadata/campus-buildings.json",
+  "corridors_file": "../data/metadata/campus-roads.geojson",
   "appearance": {
     "terrain_color_linear": [
       0.3,
