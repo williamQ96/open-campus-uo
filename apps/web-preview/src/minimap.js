@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 export function createMinimap(canvas, buildings, half, corridors = []) {
   const background = document.createElement("canvas");
   background.width = canvas.width;

@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline",
-  "version": "0.3.0",
-  "commit": "393468f384b543db5661213de79a1081af3ef1dc",
+  "version": "0.4.0",
+  "commit": "b1d0cdea9cb37896437bcf531e7ce76947fe6503",
   "scene_schema_version": 1,
   "blender_tested": "4.5.15 LTS",
   "upgrade_policy": "Validate a small-area rebuild before advancing this pin; downstream model refinement is maintained independently."

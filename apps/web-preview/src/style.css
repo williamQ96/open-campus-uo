@@ -713,3 +713,9 @@ dialog::backdrop {
     transition: none !important;
   }
 }
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.04em;
+}

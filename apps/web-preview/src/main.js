@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -13,6 +14,7 @@ import {
 import { createBuildingLabels } from "./labels.js";
 import { createMinimap } from "./minimap.js";
 import { createBuildingSearch } from "./search.js";
+import { applyProfile } from "./profile.js";
 import "@fontsource-variable/dm-sans";
 import "@fontsource/ibm-plex-mono/latin-400.css";
 import "@fontsource/ibm-plex-mono/latin-500.css";
@@ -29,6 +31,7 @@ let view = "aerial",
   followDistance = 7.5,
   drag = null,
   manifest,
+  profile,
   viewerSettings,
   field,
   half,
@@ -60,7 +63,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.type = THREE.PCFShadowMap;
 renderer.shadowMap.autoUpdate = false;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.02;
@@ -605,11 +608,13 @@ async function loadJson(url) {
 
 try {
   const base = import.meta.env.BASE_URL + "scene/";
+  profile = await loadJson(import.meta.env.BASE_URL + "viewer-profile.json");
   manifest = await loadJson(base + "manifest.json");
   viewerSettings = await loadJson(base + "viewer-settings.json");
   if (manifest.schema_version !== 1)
     throw new Error("Unsupported scene manifest version.");
   field = await loadJson(base + manifest.heightfield_url);
+  applyProfile(profile, manifest, field);
   half = manifest.aoi_size_m / 2;
   buildings = manifest.buildings;
   if (field.heights_m.length !== field.nx * field.ny)
@@ -686,35 +691,6 @@ try {
   skirt.receiveShadow = true;
   scene.add(skirt);
   renderer.shadowMap.needsUpdate = true;
-  $("#building-count").textContent = String(buildings.length);
-  $("#named-count").textContent = String(labels.count);
-  $("#coverage-stat").textContent =
-    manifest.aoi_size_m.toLocaleString() +
-    " × " +
-    manifest.aoi_size_m.toLocaleString() +
-    " m";
-  $("#map-size").textContent =
-    manifest.aoi_size_m / 1000 + " × " + manifest.aoi_size_m / 1000 + " km";
-  const dates = [...new Set(manifest.source_dates)];
-  $("#source-year").textContent = dates
-    .map((date) => date.slice(0, 4))
-    .join(" / ");
-  $("#source-date").textContent =
-    "Oregon DOGAMI / NOAA Digital Coast. Survey dates: " +
-    dates.join(", ") +
-    ". " +
-    manifest.source_ids.length +
-    " source tiles cover the main campus and surrounding context.";
-  $("#terrain-quality").textContent =
-    field.spacing_m +
-    " m ground grid. Internal interpolation holdout RMSE: " +
-    manifest.quality.holdout_rmse_m +
-    " m. No independent survey-control accuracy validation.";
-  $("#road-source").textContent = manifest.corridors
-    ? "Roads and paths: U.S. Census Bureau, 2025 TIGER/Line® Shapefiles, Lane County, Oregon. " +
-      manifest.corridors.features.length +
-      " clipped centerline segments. Widths are estimated for display; surfaces follow the ground, without bridge decks, surveyed curbs, lane markings or a routing network."
-    : "";
   $("#loading").hidden = true;
   renderer.setAnimationLoop((now) => {
     const dt = Math.min((now - lastTime) / 1000 || 0, 0.08);

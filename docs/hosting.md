@@ -1,22 +1,17 @@
-# OpenCampus: UO 在线预览
+**English** | [简体中文](zh-CN/hosting.md)
 
-地址：<https://opencampus-uo-williamq96.fluffy-chub-9311.chatgpt.site>
+# Public web explorer
 
-通过 Sites 发布为 owner-private 站点，使用站点所有者的 ChatGPT 账号访问。GitHub 仓库继续保持 private；站点访问授权与 GitHub 仓库授权各自独立。在线应用使用与本地 v0.4 相同的静态产物，包含 GLB、地形高度场、路网／名称清单、标志和字体。
+**[Open OpenCampus: UO](https://opencampus-uo-williamq96.fluffy-chub-9311.chatgpt.site)** — no sign-in required. UO repository visibility and website access are independent settings. The UO repository is public; the upstream repository is also public.
 
-## 发布记录
+The site serves the same Vite output as local development, including GLB, heightfield, road/name metadata, logo and self-hosted fonts. Anonymous requests have been verified for both the homepage and scene manifest.
 
-- GitHub 应用代码：`881c7464e7b9984e79bfb7e8b4a8c3e14f84dac5`，此前 13 项测试及 CI 已通过。
-- Sites project ID：`appgprj_6ae5957c229c8191a784fdc457532774`。
-- Sites source commit：`489b305d46542b10b1c904e4e40a413f143bdea0`。
-- Saved version ID：`appgprj_6ae5957c229c8191a784fdc457532774~appgver_e35094db3fd88191b7b6e15a9cc14373`。
-- Deployment ID：`appgdep_6ae59631577081918806c915134c2129`；原生部署状态已确认 `succeeded`。
-- 构建：对镜像应用执行 `npm ci` 与 `npm run build` 成功，使用受支持的 Sites source helper 推送源码并打包，发布对应的同一份 archive。
+## Identity and publication
 
-## 后续维护
+The existing Sites project is `appgprj_6ae5957c229c8191a784fdc457532774`; reuse it. Its canonical local identity is `apps/web-preview/.openai/hosting.json`, with static directory `dist`.
 
-`apps/web-preview/.openai/hosting.json` 保存已有 Site 身份及静态目录 `dist`。后续更新复用此 project ID 和 private audience，不重新创建站点。
+The first deployment used application commit `881c7464e7b9984e79bfb7e8b4a8c3e14f84dac5`, Sites source commit `489b305d46542b10b1c904e4e40a413f143bdea0`, and deployment `appgdep_6ae59631577081918806c915134c2129`. That initial audience was owner-private. The user subsequently requested public, anonymous access; the access policy is now `public`.
 
-`hosting/open-campus-uo/` 是忽略的独立发布工作区，保留前端源码、依赖锁文件、public 资源与自己的 Sites Git 历史。`.openai/hosting.json` 同步自应用的规范配置，`source-provenance.json` 记录镜像对应的 GitHub commit。原始点云和 Blender 源资产仍由主 GitHub 仓库／本地数据工作区维护。
+`hosting/open-campus-uo/` is an ignored independent publication checkout with its own Sites source history. Mirror the current application source and public assets, preserve its hosting identity, build with `npm ci` and `npm run build`, and use the Sites source helper to push and package the exact source state. Save the matching archive and deploy through the public deployment operation. Confirm a terminal successful deployment and test without cookies or stored login state.
 
-更新时先完成并推送 GitHub 的应用代码，再同步发布工作区；通过 Sites 获取同一 project 的临时 source repository credential，使用 Sites skill 的 `site-workflow.mjs` 推送、构建和打包，然后发布该精确 commit 与 archive，并确认部署终态。临时 credential 只在会话内通过 stdin 传给 helper，不写入仓库或文档。
+Keep source credentials only in session memory and pass them to the helper through stdin. Do not persist credentials in Git, shell arguments or documentation. Source hosting and editable Blender/raw geospatial storage are separate concerns.

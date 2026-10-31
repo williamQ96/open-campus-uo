@@ -1,0 +1,60 @@
+{
+  "title": "OpenCampus · UO Eugene",
+  "description": "Explore a geospatial whitebox of the University of Oregon main Eugene campus.",
+  "brand_name": "OpenCampus",
+  "logo": "brand/opencampus-logo.png",
+  "mark": "brand/opencampus-mark.png",
+  "favicon": "brand/favicon.png",
+  "kicker": "UO / EUGENE",
+  "map_label": "EUGENE MAIN CAMPUS",
+  "about_title": "UO Eugene main campus",
+  "source_description": "Oregon DOGAMI / NOAA Digital Coast. Historical survey: 2008-08-31. Nine source tiles cover the main campus and surrounding context.",
+  "about_summary": "Grey ground is interpolated from classified ground returns. Most white structures are historical LiDAR-derived candidates and may include canopy, split roofs or missed buildings.",
+  "about_limitations": "Names use public building facts and independently curated approximate locators. Name-to-roof matches still need site verification. Post-survey or unextracted buildings use explicitly approximate envelopes, not measured reconstructions. The scene includes surrounding context; its square extent is not an official property boundary.",
+  "source_links": [
+    {
+      "label": "U.S. Census Bureau road data",
+      "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+    },
+    {
+      "label": "NOAA / DOGAMI source",
+      "url": "https://www.fisheries.noaa.gov/inport/item/49908"
+    },
+    {
+      "label": "Public building inventory",
+      "url": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf"
+    },
+    {
+      "label": "OpenCampus logo",
+      "url": "brand/opencampus-logo.png"
+    }
+  ],
+  "project_description": "Open Campus: UO develops this campus model and viewer. Its public upstream pipeline develops reusable reconstruction methods, automation and the browser template. Additional maps can build on the same template.",
+  "repository_links": [
+    {
+      "label": "Open Campus: UO · Campus application",
+      "url": "https://github.com/williamQ96/open-campus-uo"
+    },
+    {
+      "label": "Open Geospatial-to-3D Reconstruction Pipeline · Upstream",
+      "url": "https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline"
+    }
+  ],
+  "footer": "Independent reconstruction project. No University of Oregon endorsement. Public development preview.",
+  "loading_message": "Loading the Eugene campus…",
+  "license_notice": "Code: Apache-2.0. Original documentation and model/design contributions: CC BY 4.0. Copyright 2026 Zhongyi “William” Qiu and contributors. Third-party sources retain their own terms.",
+  "license_links": [
+    {
+      "label": "Apache-2.0",
+      "url": "licenses/Apache-2.0.txt"
+    },
+    {
+      "label": "CC BY 4.0",
+      "url": "licenses/CC-BY-4.0.txt"
+    },
+    {
+      "label": "Attribution / NOTICE",
+      "url": "licenses/NOTICE.txt"
+    }
+  ]
+}

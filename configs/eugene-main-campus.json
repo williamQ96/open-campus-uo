@@ -152,7 +152,10 @@
     0.824825
   ],
   "viewer": {
-    "spawn_look_at_enu_m": [-215.002909, -53.891474],
+    "spawn_look_at_enu_m": [
+      -215.002909,
+      -53.891474
+    ],
     "spawn_description": "University Street / East 13th Avenue T-junction, facing Erb Memorial Union"
   },
   "annotations_file": "../data/metadata/campus-buildings.json",
@@ -163,5 +166,11 @@
       0.32,
       0.34
     ]
+  },
+  "asset_license": {
+    "spdx": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Open Campus: UO — Zhongyi “William” Qiu and contributors — CC BY 4.0 — https://github.com/williamQ96/open-campus-uo — https://creativecommons.org/licenses/by/4.0/",
+    "scope": "Original copyrightable project contributions only. Third-party data retain their source terms; no new restriction is imposed on public-domain information."
   }
 }

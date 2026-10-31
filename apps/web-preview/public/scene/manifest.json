@@ -23,8 +23,8 @@
     "origin_note": "Horizontal center selected for experiment; local Z=0 is interpolated class-2 ground at center."
   },
   "pipeline": {
-    "version": "0.3.0",
-    "commit": "393468f384b543db5661213de79a1081af3ef1dc",
+    "version": "0.4.0",
+    "commit": "b1d0cdea9cb37896437bcf531e7ce76947fe6503",
     "dirty": false,
     "dependencies": {
       "numpy": "2.5.4",
@@ -35,7 +35,7 @@
       "shapely": "2.2.0"
     }
   },
-  "configuration_sha256": "a1dda4ddfd70bf000d029254d9194a071053405cdaee47d3630d83c32f8054c9",
+  "configuration_sha256": "e94c8dbbba9ab63e298d318086a781bcb940d506e335d6e82412c401f704258a",
   "source_dates": [
     "2008-08-31",
     "2008-08-31",
@@ -64,10 +64,11 @@
   ],
   "model": {
     "url": "campus.glb",
-    "sha256": "9284e2643d218fbf47473c41543d96e9863345933460cc5e96db224b604952ab",
-    "glb_bytes": 14917220,
+    "sha256": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "glb_bytes": 14917928,
     "meshes": 537,
-    "nodes": 537
+    "nodes": 537,
+    "asset_copyright": "Open Campus: UO — Zhongyi “William” Qiu and contributors — CC BY 4.0 — https://github.com/williamQ96/open-campus-uo — https://creativecommons.org/licenses/by/4.0/"
   },
   "heightfield_url": "heightfield.json",
   "sources_url": "sources.json",
@@ -56960,5 +56961,11 @@
     "Historical airborne LiDAR, not a current campus survey.",
     "Buildings are heuristic placeholders; no authoritative footprint or facade claims.",
     "No independent control-point accuracy validation yet."
-  ]
+  ],
+  "asset_license": {
+    "spdx": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Open Campus: UO — Zhongyi “William” Qiu and contributors — CC BY 4.0 — https://github.com/williamQ96/open-campus-uo — https://creativecommons.org/licenses/by/4.0/",
+    "scope": "Original copyrightable project contributions only. Third-party data retain their source terms; no new restriction is imposed on public-domain information."
+  }
 }

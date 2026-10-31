@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: Apache-2.0
 // Runtime consumes the upstream ENU contract; glTF is X=east, Y=up, Z=south.
 export function sampleGround(field, x, z) {
   const u = Math.max(

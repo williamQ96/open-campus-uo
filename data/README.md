@@ -1,11 +1,13 @@
-# 数据管理
+**English** | [简体中文](README.zh-CN.md)
 
-已下载并验证 NOAA/DOGAMI OLC 历史点云，实际使用的瓦片与校验和见 `metadata/source-audit.json`。同时核查的 USGS 2021 DEM 在 AOI 全为 NoData，未用于重建。
+# Data management
 
-- `raw/`：大型点云、GeoTIFF、影像与自采照片，默认忽略。
-- `processed/`：本地中间结果，默认忽略。
-- `metadata/`：未来提交具体来源台账、校验和及必要的使用条件依据。
+Verified NOAA/DOGAMI historical LiDAR is recorded in `metadata/source-audit.json` and `metadata/main-campus-audit.json`. Roads and semantic annotations have their own catalogs and audits. The 2021 DEM with no valid AOI samples was excluded.
 
-每份输入需要记录数据提供者、具体产品/瓦片 ID、URL、获取日期、采集日期、覆盖范围、水平与垂直坐标信息、单位、校验和、使用条件及验证状态。未知值必须标为未知。
+- `raw/`: ignored large source point clouds, imagery, rasters and reference downloads.
+- `processed/`: ignored intermediate results.
+- `metadata/`: committed source evidence, dates, CRS/units, checksums, license references and validation status.
 
-不在 Git 提交 61 MB 源 LAZ 或未采用的 DEM。首个约 4 MB 的 Blender 场景与约 1.3 MB 的 GLB 提交到普通 Git，使首次预览无需重建；完整校园后续再按实际大小选择存储方式。目前未启用 LFS、对象存储或公开发布。
+Each adopted input needs provider/product IDs, URL, acquisition/access dates when known, coverage, horizontal/vertical frame, units, hash, use terms and verification status. Unknown facts remain explicitly unknown.
+
+Editable Blender source and browser-ready GLB/heightfields are versioned in their respective asset/application locations. Large raw LAZ files and rejected rasters are not committed. The public website serves application exports; raw-source storage and original-asset attribution are recorded separately.

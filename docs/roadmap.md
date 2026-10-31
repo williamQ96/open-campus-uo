@@ -1,40 +1,29 @@
-# 路线与验收
+**English** | [简体中文](zh-CN/roadmap.md)
 
-v0.1 已完成首个真实数据闭环；之后以具体模型细化为主要升级方向。
+# Roadmap and acceptance
 
-## M0：确定数据与试验区
+## Completed foundations
 
-- [x] 划定 360 × 360 米 AOI，保留试验区边界余量。
-- [x] 读取实际源数据验证覆盖与 CRS；拒绝目录命中但全部 NoData 的 2021 DEM。
-- [x] 建立来源台账：NOAA/DOGAMI OLC 2008 瓦片，EPSG:3740 + EPSG:5703。
-- [x] 固定 Pipeline 版本、配置及输入 SHA-256。
+- Verified public-source coverage, CRS and checksums for the original 360 × 360 m Memorial Quad loop.
+- Rejected a catalog-matched 2021 DEM after all AOI samples proved NoData.
+- Built ground terrain, independent building placeholders, Blender source scenes, GLB, metadata and schema-v1 manifests.
+- Expanded to a 2 × 2 km main-campus context, with named anchors and explicit approximate envelopes.
+- Added basic terrain-draped roads, jumping, three views, wheel zoom, search, billboard labels, minimap and settings.
+- Published a public, no-login browser site and separated reusable viewer behavior into an upstream template.
 
-验收：没有来源或使用条件未确认的数据进入正式资产链；不依赖 UO 内部 GIS。
+## Model refinement
 
-## M1：第一个端到端闭环
+- Verify building identities, footprints and heights; remove canopy false positives.
+- Refine one representative building using appropriate photos or additional measurements.
+- Improve roofs, facades, materials, pedestrian paths, curbs, steps and collision proxies.
+- Validate absolute positioning with independent survey control points.
+- Validate axes, scale, materials and normals in another engine.
 
-- [x] 从同源地面回波生成地形与 27 个建筑白模候选。
-- [x] 在 Blender 场景中保存独立、可替换的建筑对象。
-- [x] 导出 GLB、heightfield、来源、质量报告与版本化场景清单。
-- [x] Three.js + Vite 预览，白模角色、WASD、碰撞、三种视角、线框与来源展示。
-- [x] 合成斜坡和浏览器射线检查坐标轴、米制比例和地形一致性；输出内部插值报告。
-- [ ] 对照独立外部测量控制点验证绝对地理精度。
+## Scaling
 
-验收：同一配置可以重复生成并在浏览器打开；场景中明确区分估算白模和经过验证的重建资产。没有预先承诺尚未测量的精度或 FPS。
+- Add LOD, compression, tiles and on-demand loading when measurements justify them.
+- Evaluate more recent and geographically independent source datasets.
+- Keep Apache-2.0 software, CC BY 4.0 original content and third-party notices clearly separated as the project grows.
+- Maintain deployment and template pins with reproducible upgrade checks.
 
-## M2：资产质量与跨引擎验证
-
-- [ ] 先清理历史候选与树冠误识别，确认真实建筑并建立稳定 ID。
-- [ ] 选择一栋代表性建筑，以自采照片或补充测量提高几何与材质质量。
-- [ ] 修正步道、路缘、台阶及地形连接，制作独立碰撞代理。
-- [ ] 在一个额外引擎中验证位置、比例、材质与法线。
-- [ ] 加入可复现的几何、导出完整性和来源记录检查。
-
-## M3：规模化与发布评估
-
-- [ ] 逐区域扩展，增加瓦片、LOD、纹理压缩和按需加载。
-- [ ] 分别确定代码许可证、原创资产许可证与第三方来源署名要求。
-- [ ] 决定是否及如何发布浏览器预览；发布前确认站点和资源的可见性。
-- [ ] 根据实测资源大小选择 Pages 或其他资源存储方案。
-
-完整校园、室内、复杂游戏交互与 3DGS 属于后续扩展；v0.1 已有白模角色移动和相机切换。
+Acceptance means the same verified configuration can generate usable assets, with provenance and estimation status visible. No unmeasured accuracy or frame-rate guarantees are implied.

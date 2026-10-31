@@ -6,25 +6,21 @@
     <meta name="theme-color" content="#e3e5e4" />
     <meta
       name="description"
-      content="Explore a geospatial whitebox of the University of Oregon main Eugene campus."
+      content="Explore a reusable geospatial 3D scene."
     />
-    <link rel="icon" href="./brand/favicon.png" type="image/png" />
+    <link id="favicon" rel="icon" />
     <title>OpenCampus · UO Eugene</title>
   </head>
   <body>
     <main id="app">
-      <div
-        id="viewport"
-        aria-label="Eugene campus 3D explorer"
-        tabindex="0"
-      ></div>
+      <div id="viewport" aria-label="3D scene explorer" tabindex="0"></div>
       <header class="masthead">
-        <a class="wordmark" href="./" aria-label="OpenCampus home"
-          ><img
-            class="brand-logo"
-            src="./brand/opencampus-logo.png"
-            alt="OpenCampus"
-          /><span class="campus-wordmark">UO / EUGENE</span></a
+        <a class="wordmark" href="./" aria-label="Explorer home"
+          ><img class="brand-logo" hidden alt="" /><span
+            id="brand-name"
+            class="brand-name"
+            >Geospatial Explorer</span
+          ><span id="brand-kicker" class="campus-wordmark">3D EXPLORER</span></a
         >
         <button
           id="settings-open"
@@ -97,9 +93,10 @@
         </button>
       </nav>
       <div class="compass" aria-hidden="true"><span>N</span><i>↑</i></div>
-      <section class="map-panel" aria-label="Campus minimap">
+      <section class="map-panel" aria-label="Scene minimap">
         <div class="map-title">
-          <span>EUGENE MAIN CAMPUS</span><span id="map-size">2 × 2 km</span>
+          <span id="map-label">SCENE MAP</span
+          ><span id="map-size">2 × 2 km</span>
         </div>
         <canvas
           id="minimap"
@@ -184,7 +181,7 @@
           </dl>
         </section>
         <section id="about-panel" class="dialog-panel" hidden>
-          <h2>UO Eugene main campus</h2>
+          <h2 id="about-title">Scene information</h2>
           <dl class="study-stats">
             <dt>Coverage</dt>
             <dd id="coverage-stat">—</dd>
@@ -193,77 +190,26 @@
             <dt>Named buildings</dt>
             <dd id="named-count">—</dd>
             <dt>Survey baseline</dt>
-            <dd id="source-year">2008</dd>
+            <dd id="source-year">�</dd>
           </dl>
           <h2>Data and accuracy</h2>
           <p id="source-date"></p>
           <p id="terrain-quality"></p>
           <p id="road-source"></p>
-          <p>
-            Grey ground is interpolated from classified ground returns. Most
-            white structures are historical LiDAR-derived candidates and may
-            include canopy, split roofs or missed buildings.
-          </p>
-          <p>
-            Names use public building facts and independently curated
-            approximate locators. Name-to-roof matches still need site
-            verification. Post-survey or unextracted buildings use explicitly
-            approximate envelopes, not measured reconstructions. The scene
-            includes surrounding context; its square extent is not an official
-            property boundary.
-          </p>
-          <div class="source-links">
-            <a
-              href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
-              target="_blank"
-              rel="noreferrer"
-              >U.S. Census Bureau road data ↗</a
-            >
-            <a
-              href="https://www.fisheries.noaa.gov/inport/item/49908"
-              target="_blank"
-              rel="noreferrer"
-              >NOAA / DOGAMI source ↗</a
-            ><a
-              href="https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf"
-              target="_blank"
-              rel="noreferrer"
-              >Public building inventory ↗</a
-            ><a
-              href="./brand/opencampus-logo.png"
-              target="_blank"
-              rel="noreferrer"
-              >OpenCampus logo ↗</a
-            >
-          </div>
+          <p id="about-summary"></p>
+          <p id="about-limitations"></p>
+          <div id="source-links" class="source-links"></div>
           <h2>Project repositories</h2>
-          <p>
-            Open Campus: UO develops this campus model and viewer. Its upstream
-            pipeline develops reusable reconstruction methods and automation.
-            Both repositories are private and require access.
-          </p>
-          <div class="source-links">
-            <a
-              href="https://github.com/williamQ96/open-campus-uo"
-              target="_blank"
-              rel="noreferrer"
-              >Open Campus: UO · Campus application ↗</a
-            >
-            <a
-              href="https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline"
-              target="_blank"
-              rel="noreferrer"
-              >Open Geospatial-to-3D Reconstruction Pipeline · Upstream ↗</a
-            >
-          </div>
-          <p class="about-footnote">
-            Independent reconstruction project. No University of Oregon
-            endorsement. Private development preview.
-          </p>
+          <p id="project-description"></p>
+          <div id="repository-links" class="source-links"></div>
+          <h2>Licensing and attribution</h2>
+          <p id="license-notice"></p>
+          <div id="license-links" class="source-links"></div>
+          <p id="about-footer" class="about-footnote"></p>
         </section>
       </dialog>
       <div id="loading" class="loading" role="status">
-        <img src="./brand/opencampus-mark.png" alt="" />
+        <img id="loading-mark" alt="" hidden />
         <p>Loading the Eugene campus…</p>
       </div>
       <div id="error" class="error" role="alert" hidden>
