@@ -2,7 +2,7 @@
 
 # 协议与署名
 
-归档照片按[图片台账](data/reference-images/manifest.json)和[逐图署名](data/reference-images/ATTRIBUTION.md)保留 CC BY 4.0、CC0 或作者 PD-self 声明，不统一重授项目图稿许可。台账区分待细化参考与已用于旧模型的资料，并记录无法确认分发权的历史引用为何不公开原图。
+归档照片按[图片台账](data/reference-images/manifest.json)和[逐图署名](data/reference-images/ATTRIBUTION.md)保留 CC BY 4.0、CC0、作者 PD-self 声明或 USDA 航拍明确的公有领域声明（`LicenseRef-PD-USGov`），不统一重授项目图稿许可。台账区分待细化参考与已用于旧模型的资料，并记录无法确认分发权的历史引用为何不公开原图。
 
 - 原创代码、模板运行时、测试、脚本及软件配置：**Apache-2.0**，见 [LICENSE](LICENSE)。
 - 原创文档、原创模型／设计贡献和合成示例内容：**CC BY 4.0**，见 [完整文本](LICENSES/CC-BY-4.0.txt)。

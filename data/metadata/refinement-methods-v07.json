@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-10-31",
+  "user_supplied_discussion": {
+    "filename": "ChatGPT-UO校园三维建模技术-20261031-0535.md",
+    "sha256": "18302977f5347ac44d21fe57f29bf6985627f3ff7a4145fcee9fadaaab034743",
+    "note": "Method inspiration, not imported imagery or a source of measured geometry. Private chat and embedded third-party image URLs are not redistributed."
+  },
+  "adopted": [
+    "Existing georeferenced LiDAR envelope separates spatial evidence from appearance",
+    "Photo-informed parametric facade bays, column rhythm, cornice/awning/entrance modules",
+    "Portable PBR material families with existing optional toon adapter",
+    "Georeferenced open aerial imagery guides illustrative vegetation, not a measured tree inventory",
+    "Editable Blender source, standard GLB, stable IDs and iterative correction ledger"
+  ],
+  "not_run": [
+    "No new field measurements or phone capture supplied",
+    "No multi-view photogrammetry, video/AR depth solve, Gaussian splats or AI weight inference",
+    "No third-party photo texture extraction or embedded document imagery imported"
+  ],
+  "inference_policy": "Recognizable coherent first pass is sufficient; reasonable guesses are explicit and editable, and accuracy is improved through long-term evidence and correction."
+}

@@ -4,6 +4,8 @@
 
 Both projects are maintained independently over the long term.
 
+First passes prioritize coherent, recognizable models with editable, documented plausible inference. Refine accuracy and realism through long-term correction; do not block a useful first release on complete scans or photorealism. See the [v0.7 correction ledger](docs/visual-refinement-v0.7.md) and [upstream policy/methods](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/progressive-modeling.md).
+
 | Project | Focus |
 | --- | --- |
 | Upstream Pipeline | Reconstruction methods, algorithms, automation, validation, reproducibility, interchange contracts and reusable viewer behavior |

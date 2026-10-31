@@ -2,7 +2,7 @@
 
 [Archive and usage notes](README.md) · [中文说明](README.zh-CN.md) · [Machine-readable register](manifest.json)
 
-Third-party works retain their original terms. All archive copies are unchanged; filenames may differ. The project credit does not replace photograph credits. Public-domain sources are credited for provenance without imposing new attribution restrictions.
+Third-party works retain their original terms. Archive copies retain downloaded bytes; the aerial record describes its service-side crop/reprojection. The project credit does not replace photograph credits. Public-domain sources are credited for provenance without imposing new attribution restrictions.
 
 ## knight-north-a-2018
 
@@ -150,8 +150,20 @@ AI-generated concept; project-held copyrightable rights only. Not geographic evi
 - Changes: None; byte-identical archive copy of apps/web-preview/public/brand/favicon.png
 - Use: Browser icon.
 
+## naip-2024-pilot-rgb
+
+[NAIP 2024 UO landmark pilot — natural-color orthophoto subset](aerial/naip-2024-pilot-rgb.png)
+
+- Author: **USDA FPAC-BC, Geospatial Enterprise Operations (NAIP)**
+- Source: [original record](https://catalog.data.gov/dataset/national-agriculture-imagery-program-naip-imagery)
+- Terms: [LicenseRef-PD-USGov](https://catalog.data.gov/dataset/national-agriculture-imagery-program-naip-imagery)
+- Credit: USDA FPAC-BC/GEO — NAIP 2024, m_4412364_sw_10_060_20240608 — public-domain imagery, via USDA imagery service
+- Date: 2024-06-08. Acquisition date from source raster m_4412364_sw_10_060_20240608; a single date, not a current/live satellite image.
+- Changes: Service-exported 540 x 450 m subset, projected to EPSG:3740, bilinear resampling at 0.6 m/px, RGB bands 0/1/2; downloaded PNG bytes retained unchanged. No map labels, basemap or Google imagery.
+- Use: Canopy/open-lawn distribution cues and broad roof rhythm, with curated setbacks and plausible tree heights/species.
+
 ## Excluded historical sources
 
 The three UO official photos remain cited in [the historical modeling record](../metadata/visual-pilot-references.json), with redistribution unverified. They are not included here and are not covered by these archive licenses. The user-supplied Google Maps screenshot is context only, not an adopted asset or dataset.
 
-Existing review screenshots are indexed separately as outputs in the manifest and remain in `docs/images/`.
+Review screenshots are indexed separately as outputs in the manifest and remain in `docs/images/`.

@@ -13,9 +13,9 @@ test("authored pilot preserves all landmark search modes, geometry provenance an
   await page.waitForFunction(() => window.__campus?.getState().ready);
   const state = () => page.evaluate(() => window.__campus.getState());
   expect((await state()).presentation).toMatchObject({
-    id: "knight-emu-johnson-v1",
+    id: "knight-emu-johnson-v2",
     buildings: 14,
-    trees: 220,
+    trees: 300,
     landmarkBuildings: 3,
     toon: true,
   });

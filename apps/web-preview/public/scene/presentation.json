@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "id": "knight-emu-johnson-v1",
+  "id": "knight-emu-johnson-v2",
   "asset_url": "visual-pilot.glb",
   "replaces_building_ids": [
     "roof-6684e091",
@@ -48,14 +48,41 @@
       140
     ]
   },
-  "status": "Photo-informed architectural art; approximate dimensions and illustrative landscape placement, not a surveyed current campus",
+  "status": "Progressive photo-informed art; 2024 NAIP canopy-guided illustrative landscape. Dimensions, hidden elevations, tree heights/species and some details are plausible inference, maintained for later correction; not a current survey.",
   "stats": {
-    "trees": 220,
+    "trees": 300,
     "landmarkBuildings": 3
   },
+  "reference_image_ids": [
+    "knight-north-a-2018",
+    "knight-north-b-2018",
+    "knight-light-2017",
+    "johnson-front-pd",
+    "johnson-rear-2012",
+    "emu-entry-2013",
+    "emu-exterior-2017",
+    "naip-2024-pilot-rgb"
+  ],
+  "aerial_reference": {
+    "id": "naip-2024-pilot-rgb",
+    "captured_at": "2024-06-08",
+    "sha256": "e52f12b6b119318866d231bf1db3a8619f5c67f59782fd22c21c2c4c37debfa5",
+    "method": "Smoothed dark/textured-green RGB cue plus curated setbacks, open lawns and sightlines; seeded heights/species are inferred, not a tree inventory"
+  },
+  "art_pipeline": {
+    "version": "0.6.0",
+    "commit": "51558d7791941536bae2d04d8d1af74235b83d94",
+    "dirty": false,
+    "module_sha256": {
+      "architectural.py": "d87ac9ffe5015534e6f30168227a1e97e0ab44aa3faf5d74275f4e0423bae450",
+      "canopy_cues.py": "e60402b4a7111873a862fadec3421941cfd165cbb4f420ec1bcaddc559803197"
+    }
+  },
+  "inference_policy": "Recognizable first pass; editable assumptions corrected over long-term maintenance",
+  "reference_manifest_sha256": "6e2ddadb271935b81e9cf5b853a1ce873999953e482824c449ff767dc11147ce",
   "source_manifest_sha256": "c503f1cc2ce190b73bff32bd396cd1bcb4183fcb781b077acd2f125e21445141",
   "heightfield_sha256": "cb52d2e7ba0c7fb471f4c208be24688c82446d0c2656b7fe0bc378031743e65c",
-  "asset_sha256": "d23d8e71f02511674398ece3eb42e969a534b41c421beca20a544276efc0d8a3",
-  "generator_sha256": "49d8c114495ad512bebcecb1b2a23487ecde5154cb14b3eeda4504cd9a3e8a86",
+  "asset_sha256": "4119b8416eee55370aa06858db9079eb457a3309b25923028e6efc6baa76e734",
+  "generator_sha256": "bea37bb1ec1c5c3a020aa26b034956ea7b9caef190b7cd526cc7152fcad1680f",
   "credit": "Open Campus: UO \u2014 Zhongyi \"William\" Qiu and contributors \u2014 CC BY 4.0"
 }

@@ -1,5 +1,5 @@
 {
-  "id": "knight-emu-johnson-v1",
+  "id": "knight-emu-johnson-v2",
   "bounds_enu_m": [
     -655,
     -345,
@@ -7,14 +7,16 @@
     80
   ],
   "seed": 613,
-  "tree_target": 220,
-  "status": "Photo-informed architectural art; approximate dimensions and illustrative landscape placement, not a surveyed current campus",
+  "tree_target": 300,
+  "status": "Progressive photo-informed art; 2024 NAIP canopy-guided illustrative landscape. Dimensions, hidden elevations, tree heights/species and some details are plausible inference, maintained for later correction; not a current survey.",
   "landmarks": [
     "Knight Library",
     "Erb Memorial Union",
     "Johnson Hall"
   ],
-  "context_envelope_ids": ["roof-39f81f68"],
+  "context_envelope_ids": [
+    "roof-39f81f68"
+  ],
   "paths": [
     [
       [
@@ -141,6 +143,42 @@
         -520,
         -177
       ]
+    ],
+    [
+      [
+        -462,
+        -83
+      ],
+      [
+        -420,
+        -115
+      ],
+      [
+        -385,
+        -145
+      ],
+      [
+        -350,
+        -169
+      ]
+    ],
+    [
+      [
+        -455,
+        -176
+      ],
+      [
+        -417,
+        -143
+      ],
+      [
+        -377,
+        -112
+      ],
+      [
+        -337,
+        -83
+      ]
     ]
   ],
   "lawns": [
@@ -205,5 +243,72 @@
       0,
       140
     ]
+  },
+  "reference_image_ids": [
+    "knight-north-a-2018",
+    "knight-north-b-2018",
+    "knight-light-2017",
+    "johnson-front-pd",
+    "johnson-rear-2012",
+    "emu-entry-2013",
+    "emu-exterior-2017",
+    "naip-2024-pilot-rgb"
+  ],
+  "facade_patterns": {
+    "knight-north": {
+      "building": "Knight Library",
+      "start_enu_m": [
+        -528.9,
+        -192.58
+      ],
+      "end_enu_m": [
+        -594.7,
+        -192.58
+      ],
+      "count": 7,
+      "levels_above_base_m": [
+        9.1
+      ],
+      "opening_m": [
+        3.8,
+        7.5
+      ],
+      "pane_columns": 3,
+      "pane_rows": 7,
+      "basis": "North-facade photo rhythm; dimensions and subdivisions approximate"
+    },
+    "johnson-colonnade": {
+      "building": "Johnson Hall",
+      "start_enu_m": [
+        -416.6,
+        -25.7
+      ],
+      "end_enu_m": [
+        -385.4,
+        -25.7
+      ],
+      "count": 6,
+      "levels_above_base_m": [
+        1.3
+      ],
+      "basis": "Six columns observed in archived front photo; profile, spacing and dimensions approximate"
+    },
+    "emu-north": {
+      "building": "Erb Memorial Union",
+      "start_enu_m": [
+        -168,
+        -32.75
+      ],
+      "end_enu_m": [
+        -247,
+        -32.75
+      ],
+      "count": 13,
+      "levels_above_base_m": [
+        7.5,
+        2.6
+      ],
+      "basis": "2017 brick/glass vocabulary; bay count, massing and dimensions inferred"
+    }
   }
 }

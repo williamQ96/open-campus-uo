@@ -100,5 +100,23 @@
       },
       "review_note": "Commons source page declares CC0-1.0 for this photograph; extracted metadata is retained in evidence.json."
     }
-  ]
+  ],
+  "aerial": {
+    "id": "naip-2024-pilot-rgb",
+    "reviewed_on": "2026-10-31",
+    "official_catalog": "https://catalog.data.gov/dataset/national-agriculture-imagery-program-naip-imagery",
+    "catalog_declared_license": "https://www.usa.gov/publicdomain/label/1.0/",
+    "source_service": "https://apps.geo.fpac.usda.gov/geo-imagery/rest/services/naip/conus_naip/ImageServer",
+    "source_raster": {
+      "OBJECTID": 150160,
+      "Name": "m_4412364_sw_10_060_20240608",
+      "year_ts": 2024,
+      "ST": "OR",
+      "QQNAME": "4412364SW060",
+      "QQDATE": 1717804800000,
+      "iDate_ts": 1749742725387
+    },
+    "export_record": "../metadata/naip-2024-reference.json",
+    "review_note": "The source is USDA NAIP aerial orthophotography, with a public-domain statement in its official catalog; no broader commercial basemap has been adopted."
+  }
 }

@@ -4,6 +4,8 @@
 
 Version 0.6 · Architectural Toon Realism · 2026-10-31
 
+Historical first-pass report. The current [v0.7 refinement](visual-refinement-v0.7.md) uses the licensed archive, modular landmark details and aerial-guided landscape; these original screenshots and source records remain preserved.
+
 The first visual loop adds three photo-informed landmarks, ten stylized historical buildings and one unidentified context envelope, 220 clustered deciduous/conifer trees, planting, benches, lamps, lawn and paved connections. Warm daylight, cooler ambient light, three-tone shading, dark window divisions and pale architectural trim provide the first implementation of the recommended style. Decorative full-screen outline/AO passes are deliberately absent from this pilot.
 
 ![Pilot overview](images/visual-pilot-overview.png)

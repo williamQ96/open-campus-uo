@@ -1,0 +1,46 @@
+{
+  "service": "https://apps.geo.fpac.usda.gov/geo-imagery/rest/services/naip/conus_naip/ImageServer",
+  "request_parameters": {
+    "f": "json",
+    "bbox": "493664.14928888186,4876573.282153052,494204.14928888186,4877023.282153052",
+    "bboxSR": 3740,
+    "imageSR": 3740,
+    "size": "900,750",
+    "format": "png",
+    "bandIds": "0,1,2",
+    "interpolation": "RSP_BilinearInterpolation",
+    "mosaicRule": "{\"mosaicMethod\": \"esriMosaicLockRaster\", \"lockRasterIds\": [150160], \"mosaicOperation\": \"MT_FIRST\"}"
+  },
+  "export_response": {
+    "width": 900,
+    "height": 750,
+    "extent": {
+      "xmin": 493664.14928888186,
+      "ymin": 4876573.282153052,
+      "xmax": 494204.14928888186,
+      "ymax": 4877023.282153052,
+      "spatialReference": {
+        "wkid": 3740,
+        "latestWkid": 3740
+      }
+    },
+    "scale": 0
+  },
+  "source_raster": {
+    "OBJECTID": 150160,
+    "Name": "m_4412364_sw_10_060_20240608",
+    "year_ts": 2024,
+    "ST": "OR",
+    "QQNAME": "4412364SW060",
+    "QQDATE": 1717804800000,
+    "iDate_ts": 1749742725387
+  },
+  "archive_file": "aerial/naip-2024-pilot-rgb.png",
+  "sha256": "e52f12b6b119318866d231bf1db3a8619f5c67f59782fd22c21c2c4c37debfa5",
+  "bytes": 1011293,
+  "local_origin_projected_m": [
+    494329.14928888186,
+    4876928.282153052
+  ],
+  "export_request_url": "https://apps.geo.fpac.usda.gov/geo-imagery/rest/services/naip/conus_naip/ImageServer/exportImage?f=json&bbox=493664.14928888186%2C4876573.282153052%2C494204.14928888186%2C4877023.282153052&bboxSR=3740&imageSR=3740&size=900%2C750&format=png&bandIds=0%2C1%2C2&interpolation=RSP_BilinearInterpolation&mosaicRule=%7B%22mosaicMethod%22%3A+%22esriMosaicLockRaster%22%2C+%22lockRasterIds%22%3A+%5B150160%5D%2C+%22mosaicOperation%22%3A+%22MT_FIRST%22%7D"
+}

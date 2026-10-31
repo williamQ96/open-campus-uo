@@ -1,0 +1,176 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "date": "2026-10-31T12:41:09.446Z",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "renderer": "Chrome / ANGLE SwiftShader software rendering",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "readyMs": 475,
+  "measurements": [
+    {
+      "medianMs": 158.39999999999964,
+      "p95Ms": 208.30000000000018,
+      "ready": true,
+      "view": "third",
+      "followDistance": 7.5,
+      "player": [
+        -305.469651,
+        3.740899995,
+        -0.824825
+      ],
+      "camera": [
+        -311.88715466605044,
+        6.560899995,
+        -4.706274045940117
+      ],
+      "cameraDirection": [
+        0.8442067036158978,
+        -0.1631189270715231,
+        0.5105950031101117
+      ],
+      "characterDirection": [
+        0.8556671554733889,
+        0,
+        0.5175265394586824
+      ],
+      "selectedBuilding": null,
+      "orbitTarget": [
+        -415,
+        5,
+        140
+      ],
+      "cameraTransition": false,
+      "fps": 6,
+      "buildings": 534,
+      "namedBuildings": 63,
+      "roadSegments": 140,
+      "roadSurfaces": 2,
+      "visibleLabels": 1,
+      "aoiSize": 2000,
+      "grounded": true,
+      "verticalVelocity": 0,
+      "blocked": false,
+      "ground": 3.740899995,
+      "drawCalls": 57,
+      "triangles": 589584,
+      "presentation": {
+        "id": "knight-emu-johnson-v2",
+        "buildings": 14,
+        "toon": true,
+        "trees": 300,
+        "landmarkBuildings": 3
+      }
+    },
+    {
+      "medianMs": 158.39999999999782,
+      "p95Ms": 166.70000000000073,
+      "ready": true,
+      "view": "first",
+      "followDistance": 7.5,
+      "player": [
+        -305.469651,
+        3.740899995,
+        -0.824825
+      ],
+      "camera": [
+        -305.469651,
+        5.3208999949999995,
+        -0.824825
+      ],
+      "cameraDirection": [
+        0.8556671554733877,
+        0,
+        0.5175265394586848
+      ],
+      "characterDirection": [
+        0.8556671554733889,
+        0,
+        0.5175265394586824
+      ],
+      "selectedBuilding": null,
+      "orbitTarget": [
+        -415,
+        5,
+        140
+      ],
+      "cameraTransition": false,
+      "fps": 6,
+      "buildings": 534,
+      "namedBuildings": 63,
+      "roadSegments": 140,
+      "roadSurfaces": 2,
+      "visibleLabels": 1,
+      "aoiSize": 2000,
+      "grounded": true,
+      "verticalVelocity": 0,
+      "blocked": false,
+      "ground": 3.740899995,
+      "drawCalls": 48,
+      "triangles": 587528,
+      "presentation": {
+        "id": "knight-emu-johnson-v2",
+        "buildings": 14,
+        "toon": true,
+        "trees": 300,
+        "landmarkBuildings": 3
+      }
+    },
+    {
+      "medianMs": 158.40000000000146,
+      "p95Ms": 175.09999999999854,
+      "ready": true,
+      "view": "aerial",
+      "followDistance": 7.5,
+      "player": [
+        -305.469651,
+        3.740899995,
+        -0.824825
+      ],
+      "camera": [
+        -650,
+        455,
+        -310.00000000000006
+      ],
+      "cameraDirection": [
+        0.3464038889786421,
+        -0.6633265959165487,
+        0.6633265959165489
+      ],
+      "characterDirection": [
+        0.8556671554733889,
+        0,
+        0.5175265394586824
+      ],
+      "selectedBuilding": null,
+      "orbitTarget": [
+        -415,
+        5,
+        140
+      ],
+      "cameraTransition": false,
+      "fps": 6,
+      "buildings": 534,
+      "namedBuildings": 63,
+      "roadSegments": 140,
+      "roadSurfaces": 2,
+      "visibleLabels": 38,
+      "aoiSize": 2000,
+      "grounded": true,
+      "verticalVelocity": 0,
+      "blocked": false,
+      "ground": 3.740899995,
+      "drawCalls": 139,
+      "triangles": 640464,
+      "presentation": {
+        "id": "knight-emu-johnson-v2",
+        "buildings": 14,
+        "toon": true,
+        "trees": 300,
+        "landmarkBuildings": 3
+      }
+    }
+  ],
+  "errors": []
+}

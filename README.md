@@ -16,11 +16,13 @@ The character starts at the University Street / East 13th Avenue T-junction faci
 
 ## Design direction
 
-[Architectural Toon Realism](design/architectural-toon-realism/README.md) is the recommended visual style: original concept mockup, exact palette, source guide and a staged UO refinement plan. The [design archive](design/README.md) also preserves the existing Open Courtyard identity. The [first visual pilot](docs/visual-pilot.md) is now live: three photo-informed landmarks, ten stylized buildings, one context envelope, 220 trees, lawns, paths and furnishings. The surrounding campus remains a whitebox.
+[Architectural Toon Realism](design/architectural-toon-realism/README.md) is the recommended visual style: original concept mockup, exact palette, source guide and a staged UO refinement plan. The [design archive](design/README.md) also preserves the existing Open Courtyard identity. The [first v0.6 visual pilot](docs/visual-pilot.md) established: three photo-informed landmarks, ten stylized buildings, one context envelope, 220 trees, lawns, paths and furnishings. The surrounding campus remains a whitebox.
 
 The reusable specification is the [upstream style library's default recommendation](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style), with other styles encouraged.
 
-The [image and photo archive](data/reference-images/README.md) preserves adopted source images, mockups and branding with per-file authors, licenses, dates, use and checksums. Seven openly reusable photographs are now available for further landmark refinement; legacy reference exclusions remain documented. The archive is outside runtime downloads.
+**v0.7** refines the three landmarks with modular windows, columns, cornices, entrances and terraces, plus **300 aerial-guided illustrative trees** and understory. See the [refinement report and correction ledger](docs/visual-refinement-v0.7.md). First passes favor coherent, recognizable models with explicit plausible inference; long-term maintenance improves precision and realism.
+
+The [image and photo archive](data/reference-images/README.md) preserves adopted source images, mockups and branding with per-file authors, licenses, dates, use and checksums. Seven openly reusable photographs now support the refinement, with a dated USDA NAIP aerial subset; legacy reference exclusions remain documented. The archive is outside runtime downloads.
 
 ## Run locally
 
@@ -83,6 +85,6 @@ In `apps/web-preview`, run `npm test`, `npm run build`, and `npm run test:browse
 
 ## Data and licensing
 
-UO internal GIS is excluded. OSM, Microsoft/Oregon building-footprint compilations, Eugene GIS and Google Maps/Earth 3D are not core geometry inputs for this version. The rejected USGS 2021 DEM had only NoData in the trial area. NAIP and self-captured photos have not been integrated.
+UO internal GIS is excluded. OSM, Microsoft/Oregon building-footprint compilations, Eugene GIS and Google Maps/Earth 3D are not core geometry inputs for this version. The rejected USGS 2021 DEM had only NoData in the trial area. NAIP 2024 now guides illustrative landscaping; self-captured photos have not been integrated.
 
 Raw large datasets are ignored locally; source records and hashes are committed. Code uses **Apache-2.0**; original documentation and model/design contributions use **CC BY 4.0**. See [licensing and attribution](LICENSING.md) and [NOTICE](NOTICE). Third-party source data and fonts retain their own terms.

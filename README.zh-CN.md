@@ -8,7 +8,7 @@
 
 ## 当前版本
 
-2 × 2 km 校园及周边，534 个占位体块、63 个命名建筑、140 段基础道路／路径。主要依据 2008 年 NOAA/DOGAMI 点云，辅以 17 个明确标记的近似体块；道路使用 Census 2025 TIGER/Line® 中心线、估算路宽。当前已加入 [Knight Library—EMU—Johnson Hall 视觉闭环](docs/zh-CN/visual-pilot.md)：3 个照片参考地标、10 栋风格化建筑、1 个背景包络与 220 棵树，周边仍为白模。它不等于当前精确校园测绘或产权边界。
+2 × 2 km 校园及周边，534 个占位体块、63 个命名建筑、140 段基础道路／路径。主要依据 2008 年 NOAA/DOGAMI 点云，辅以 17 个明确标记的近似体块；道路使用 Census 2025 TIGER/Line® 中心线、估算路宽。当前 [v0.7 地标细化](docs/zh-CN/visual-refinement-v0.7.md)包含 3 个照片参考地标、10 栋风格化建筑、1 个背景包络与 300 棵航拍引导示意树，周边仍为白模。它不等于当前精确校园测绘或产权边界。
 
 出生点在 University Street / East 13th Avenue T 字路口，面向 EMU。Settings / About 集中说明来源、质量、项目链接和署名。
 
@@ -18,7 +18,9 @@
 
 通用规范作为[上游 style 库的默认推荐](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style)，同时鼓励探索其他画风。
 
-[图片／照片素材目录](data/reference-images/README.zh-CN.md)保存采用的图片、mockup 与品牌原件，逐图记录作者、许可、日期、用途与 hash。现有 7 张开放许可照片供下一步细化，保留旧引用的排除记录；素材库不增加网页运行下载量。
+**v0.7** 使用模块化窗格、柱廊、檐口、入口与露台进一步细化三个地标，增加航拍引导的 **300 棵示意树**与林下植被。见[细化报告与纠正记录](docs/zh-CN/visual-refinement-v0.7.md)。首轮优先完整和可辨识，允许明确记录的合理推测，长期提高精细和写实程度。
+
+[图片／照片素材目录](data/reference-images/README.zh-CN.md)保存采用的图片、mockup 与品牌原件，逐图记录作者、许可、日期、用途与 hash。7 张开放许可照片已用于本轮细化，并归档有日期的 USDA NAIP 航拍裁剪。保留旧引用排除记录；素材库不增加网页运行下载量。
 
 ## 本地运行
 
