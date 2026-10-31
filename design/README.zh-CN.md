@@ -4,7 +4,7 @@
 
 | 档案 | 范围与状态 |
 | --- | --- |
-| [Architectural Toon Realism](architectural-toon-realism/README.zh-CN.md) | 推荐的后续美术方向：原始 mockup、调色板、规范、来源和 UO 应用计划。本次仅归档，在线场景仍是白模。 |
+| [Architectural Toon Realism](architectural-toon-realism/README.zh-CN.md) | 推荐的后续美术方向：原始 mockup、调色板、规范、来源和 UO 应用计划。首个有限范围视觉闭环已上线，详见[实现报告](../docs/zh-CN/visual-pilot.md)。 |
 | [Open Courtyard 标识理念](open-campus-philosophy.md) | 现有 logo 理念，独立于场景美术保留 |
 | [标识 PNG](opencampus-identity.png)／[PDF](opencampus-identity.pdf) | 现有 logo／视觉识别展示 |
 

@@ -8,15 +8,15 @@ A Blender-first, georeferenced University of Oregon campus asset project with an
 
 ## Current scene
 
-The 2 × 2 km scene covers the main Eugene campus and surrounding context, with **534 structural placeholders, 63 named buildings and 140 road/path segments**. It is a square study extent, not an official campus property boundary, and excludes the Autzen complex north of the river.
+The 2 × 2 km scene covers the main Eugene campus and surrounding context, with **534 structure records, 63 named buildings and 140 road/path segments**. It is a square study extent, not an official campus property boundary, and excludes the Autzen complex north of the river.
 
-Terrain and most geometry come from nine NOAA-hosted DOGAMI LiDAR tiles acquired in 2008. Seventeen explicit approximate envelopes supplement later or unextracted buildings. Roads use Census Bureau 2025 TIGER/Line® centerlines with estimated widths. This is a historical whitebox with approximate content, not a precise current campus survey.
+Terrain and most geometry come from nine NOAA-hosted DOGAMI LiDAR tiles acquired in 2008. Seventeen explicit approximate envelopes supplement later or unextracted buildings. Roads use Census Bureau 2025 TIGER/Line® centerlines with estimated widths. The historical base remains approximate. A photo-informed Architectural Toon Realism pilot now refines the Knight Library–EMU–Johnson Hall area; it is not a precise current campus survey.
 
 The character starts at the University Street / East 13th Avenue T-junction facing Erb Memorial Union. Settings / About contains source acknowledgements, quality notes and project links.
 
 ## Design direction
 
-[Architectural Toon Realism](design/architectural-toon-realism/README.md) is the recommended future visual style: original concept mockup, exact palette, source guide and a staged UO refinement plan. The [design archive](design/README.md) also preserves the existing Open Courtyard identity. This is a design archive; the current explorer remains a whitebox.
+[Architectural Toon Realism](design/architectural-toon-realism/README.md) is the recommended visual style: original concept mockup, exact palette, source guide and a staged UO refinement plan. The [design archive](design/README.md) also preserves the existing Open Courtyard identity. The [first visual pilot](docs/visual-pilot.md) is now live: three photo-informed landmarks, ten stylized buildings, one context envelope, 220 trees, lawns, paths and furnishings. The surrounding campus remains a whitebox.
 
 The reusable specification is the [upstream style library's default recommendation](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style), with other styles encouraged.
 

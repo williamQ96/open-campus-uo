@@ -8,13 +8,13 @@
 
 ## 当前版本
 
-2 × 2 km 校园及周边，534 个占位体块、63 个命名建筑、140 段基础道路／路径。主要依据 2008 年 NOAA/DOGAMI 点云，辅以 17 个明确标记的近似体块；道路使用 Census 2025 TIGER/Line® 中心线、估算路宽。该白模不等于当前精确校园测绘或产权边界。
+2 × 2 km 校园及周边，534 个占位体块、63 个命名建筑、140 段基础道路／路径。主要依据 2008 年 NOAA/DOGAMI 点云，辅以 17 个明确标记的近似体块；道路使用 Census 2025 TIGER/Line® 中心线、估算路宽。当前已加入 [Knight Library—EMU—Johnson Hall 视觉闭环](docs/zh-CN/visual-pilot.md)：3 个照片参考地标、10 栋风格化建筑、1 个背景包络与 220 棵树，周边仍为白模。它不等于当前精确校园测绘或产权边界。
 
 出生点在 University Street / East 13th Avenue T 字路口，面向 EMU。Settings / About 集中说明来源、质量、项目链接和署名。
 
 ## 设计方向
 
-[Architectural Toon Realism](design/architectural-toon-realism/README.zh-CN.md) 是后续推荐画风，包含原始 mockup、准确调色板、来源规范与 UO 细化计划。[设计档案](design/README.zh-CN.md)同时保留 Open Courtyard 标识。本次归档不改变当前白模。
+[Architectural Toon Realism](design/architectural-toon-realism/README.zh-CN.md) 是后续推荐画风，包含原始 mockup、准确调色板、来源规范与 UO 细化计划。[设计档案](design/README.zh-CN.md)同时保留 Open Courtyard 标识。首个视觉闭环已上线，保留三视角和原交互；Settings 可切换 Toon／标准材质。
 
 通用规范作为[上游 style 库的默认推荐](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style)，同时鼓励探索其他画风。
 

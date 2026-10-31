@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-10-31",
+  "purpose": "Visual references for original approximate art models, not photogrammetry or surveyed geometry",
+  "photos": [
+    {
+      "id": "knight-north-facade",
+      "building": "Knight Library",
+      "page": "https://cas.uoregon.edu/about/cas-awards/recent-cas-awardees",
+      "image_url": "https://cas.uoregon.edu/sites/default/files/styles/landscape_xl/public/2022-03/knight_library_exterior.jpg?itok=jEhF5QSO",
+      "observed_features": [
+        "red brick",
+        "tall rectangular windows",
+        "pale stone window surrounds and cornice",
+        "three small balconies"
+      ],
+      "influenced": "Historic north facade; layout and dimensions remain artistic approximations"
+    },
+    {
+      "id": "johnson-north-portico",
+      "building": "Johnson Hall",
+      "page": "https://news.uoregon.edu/content/uo-sets-record-academic-giving-first-public-year-campaign",
+      "image_url": "https://news.uoregon.edu/sites/default/files/field/image/johnson_hall_reduced_0.jpg",
+      "observed_features": [
+        "six pale columns",
+        "brick facade",
+        "broad front stair",
+        "stone entablature",
+        "trimmed circular planting"
+      ],
+      "influenced": "Six-column portico and north approach; column dimensions and step counts are approximate"
+    },
+    {
+      "id": "emu-terrace",
+      "building": "Erb Memorial Union",
+      "page": "https://news.uoregon.edu/content/events-emus-75th-birthday-bring-uo-groups-together",
+      "image_url": "https://news.uoregon.edu/sites/default/files/2025-10/210429_spring-exteriors_a73_ch_165.marinstuart.jpg",
+      "observed_features": [
+        "stepped brick masses",
+        "narrow high windows",
+        "glazed ground floor",
+        "terraced paved forecourt",
+        "shallow canopy"
+      ],
+      "influenced": "Brick/glass/terrace vocabulary; detailed massing is approximate"
+    }
+  ],
+  "additional_sources": [
+    {
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/knight-library",
+      "purpose": "Historic architectural context"
+    },
+    {
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/johnson-hall",
+      "purpose": "Historic architectural context"
+    },
+    {
+      "url": "https://emu.uoregon.edu/index.php/about/history",
+      "purpose": "Fishbowl curved-glass architectural feature"
+    },
+    {
+      "url": "https://cpfm.uoregon.edu/northeast-central-campus",
+      "purpose": "Campus landscape and pedestrian-space context"
+    }
+  ],
+  "rights": "Reference photographs remain with their original rights holders and are not bundled, used as textures, or relicensed. Original generated models and screenshots follow project CC BY 4.0 scope; generation software Apache-2.0.",
+  "geographic_basis": "Existing terrain, footprints, stable IDs and Census road centerlines remain unchanged. Added paths, trees, planting and furniture are curated illustrative placements, not inventory records or navigation/access guarantees."
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "id": "knight-emu-johnson-v1",
+  "asset_url": "visual-pilot.glb",
+  "replaces_building_ids": [
+    "roof-6684e091",
+    "roof-906c030e",
+    "roof-266f13fd",
+    "roof-16751515",
+    "roof-7ffcf31b",
+    "roof-f5cea51d",
+    "roof-9ac93ab7",
+    "roof-e145c222",
+    "roof-fd061857",
+    "roof-e5accf83",
+    "roof-556799cc",
+    "roof-f0b575d6",
+    "roof-8f611273",
+    "roof-39f81f68"
+  ],
+  "landmark_building_ids": [
+    "roof-6684e091",
+    "roof-266f13fd",
+    "roof-906c030e"
+  ],
+  "overview": {
+    "target": [
+      -415,
+      5,
+      140
+    ],
+    "offset": [
+      -235,
+      450,
+      -450
+    ]
+  },
+  "lighting": {
+    "background": "#dde5df",
+    "sky": "#e2edf1",
+    "ground": "#7b8667",
+    "ambient_intensity": 1.7,
+    "sun": "#fff1d5",
+    "sun_intensity": 2.3,
+    "target": [
+      -415,
+      0,
+      140
+    ]
+  },
+  "status": "Photo-informed architectural art; approximate dimensions and illustrative landscape placement, not a surveyed current campus",
+  "stats": {
+    "trees": 220,
+    "landmarkBuildings": 3
+  },
+  "source_manifest_sha256": "c503f1cc2ce190b73bff32bd396cd1bcb4183fcb781b077acd2f125e21445141",
+  "heightfield_sha256": "cb52d2e7ba0c7fb471f4c208be24688c82446d0c2656b7fe0bc378031743e65c",
+  "asset_sha256": "d23d8e71f02511674398ece3eb42e969a534b41c421beca20a544276efc0d8a3",
+  "generator_sha256": "49d8c114495ad512bebcecb1b2a23487ecde5154cb14b3eeda4504cd9a3e8a86",
+  "credit": "Open Campus: UO \u2014 Zhongyi \"William\" Qiu and contributors \u2014 CC BY 4.0"
+}

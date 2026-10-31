@@ -53,7 +53,7 @@ The landmark pilot, three-view application and measurable release gates are edit
 
 UO owns local references, building identity, model refinements, region-specific palette/vegetation decisions and branding. Upstream owns reusable style methodology and future data-neutral rendering adapters. Keep geography → editable Blender assets → standard GLB/materials → renderer styling as separate layers; future style changes should not require rebuilding geographic evidence or duplicating the world for each camera mode.
 
-**Current status:** docs and original mockup archived; the live explorer still uses grey terrain and white placeholder buildings. Foliage, detailed facades, toon shading, LOD and theme switching are not implemented by this change. These design assets are outside `apps/web-preview/public/`, so they do not add runtime downloads or change viewer/template pins.
+**Current status:** the [first visual pilot](../../docs/visual-pilot.md) implements photo-informed landmarks, procedural context, illustrative landscaping and a Toon/PBR material toggle. The original archived concept stays outside runtime downloads. The surrounding campus remains a whitebox; interiors, full facade accuracy, LOD and broader themes remain future work.
 
 ## Credit and source scope
 

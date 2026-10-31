@@ -4,7 +4,7 @@
 
 | Record | Scope and status |
 | --- | --- |
-| [Architectural Toon Realism](architectural-toon-realism/README.md) | Recommended future art direction: original concept mockup, source palette, design rules, source record and staged UO application plan. Documentation only; the live scene remains a whitebox. |
+| [Architectural Toon Realism](architectural-toon-realism/README.md) | Recommended future art direction: original concept mockup, source palette, design rules, source record and staged UO application plan. The first limited visual pilot is now live; see [implementation report](../docs/visual-pilot.md). |
 | [Open Courtyard identity philosophy](open-campus-philosophy.md) | Existing OpenCampus logo direction; retained independently of the scene art style. |
 | [Identity PNG](opencampus-identity.png) / [PDF](opencampus-identity.pdf) | Existing logo/identity presentation. |
 
