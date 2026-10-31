@@ -1,19 +1,20 @@
 {
   "repository": "https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline",
   "template": "src/geospatial3d/templates/browser-explorer",
-  "pipeline_version": "0.5.0",
-  "commit": "c87fa0c6cf17d326da0c6be107705120f3885299",
+  "pipeline_version": "0.7.0",
+  "commit": "2fe5a853da8760d05227ac260a8dd719d5c2ac9d",
   "dirty": false,
   "files": {
-    "index.html": "771f789ef21267f8ee71977ceaeeceb1e8d470bc9ff1f602e57c6765c4d9c2ff",
+    "index.html": "d08f2ee1010a7cd0c8d018d239648d6c275821ebdefc6bfefb69585cf9db3ae4",
     "src/character.js": "761f2ba170917c8d2bb05fd2714bdb253f9d78590dd0ea36dcf9e22e487fca53",
     "src/labels.js": "68caf7a35b75a5171704a5be41c7c2692b4423e868c7eca930e2249813dc29ae",
-    "src/main.js": "5ebf2716731d51b209bb73d285ce4a9d7a49d792736c8dc419844fcdb6e927c3",
+    "src/main.js": "068e48bbf4cbaa61da610110ee2d84ece2d1e8ae68f097d4e621dd9c1ee34d94",
     "src/minimap.js": "58b42b1d9415dc0eb87f0325f8bb65dfa6e5c55f8f752b4563d8078ac6a3d1bd",
     "src/presentation.js": "c5e8ee391f0430a0931c2cc80b5638d808882a74de96c820ee163c6aa042036a",
     "src/profile.js": "61cb05167b32f2fbeeddebaf86b61c1149dabc68016d1cfe30b2d66c353234a8",
     "src/search.js": "adc553fd48252055efa75e1553ee39b8f8ced27a5981426ac02477bd9fb65ae2",
-    "src/style.css": "b5e9c0f30f9863452e853582495221bef9250f83bcd1f84f2cf17026ba22bd30",
+    "src/style.css": "74744a62ecc2c75cf03e4e31b63847d8a6caa509dfc4354d2f945ed9e10acd91",
+    "src/touch.js": "1cef3b4700b03c31296dcaabfa5e3c9004e3f96296bf9a2f7637264a93376cae",
     "src/world.js": "ad505cba6a4ddbb2d19027ae3dffb43cfa298cb0909724c7cdccf33b19dd7d18",
     "vite.config.js": "22d257df5a675b66b7ea883d469a526f33a0f8af3309b089ac1ed6149d2beae0"
   }
