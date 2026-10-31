@@ -19,6 +19,7 @@ Thumbs.db
 /data/processed/
 /exports/
 /artifacts/
+/hosting/
 /apps/web-preview/public/assets/
 *.blend1
 *.blend2

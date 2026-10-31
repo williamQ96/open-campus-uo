@@ -16,6 +16,8 @@
 
 ## 立即预览
 
+在线操作：[OpenCampus: UO](https://opencampus-uo-williamq96.fluffy-chub-9311.chatgpt.site)。站点为 owner-private，使用发布者的 ChatGPT 账号登录；GitHub 两个仓库保持 private。支持完整搜索、角色移动、跳跃与三种视角，无需启动本地服务器。发布记录与维护方式见 [在线发布](docs/hosting.md)。
+
 仓库包含浏览器所需 GLB、地形高度场及清单，无需先安装 Blender 或下载源点云。字体随应用打包，运行预览不依赖外部字体服务。
 
 ```powershell
