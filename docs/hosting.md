@@ -1,17 +1,21 @@
 **English** | [简体中文](zh-CN/hosting.md)
 
-# Public web explorer
+# GitHub Pages explorer
 
-**[Open OpenCampus: UO](https://opencampus-uo-williamq96.fluffy-chub-9311.chatgpt.site)** — no sign-in required. UO repository visibility and website access are independent settings. The UO repository is public; the upstream repository is also public.
+**[Open OpenCampus: UO](https://williamq96.github.io/open-campus-uo/)** — public and no sign-in required. GitHub stores the source repository and hosts the static explorer through GitHub Pages.
 
-The site serves the same Vite output as local development, including GLB, heightfield, road/name metadata, logo and self-hosted fonts. Anonymous requests have been verified for both the homepage and scene manifest.
+## Automatic deployment
 
-## Identity and publication
+`.github/workflows/pages.yml` runs on main-branch changes to the application or Pages workflow, and can also be started manually with **Deploy GitHub Pages**. The build installs locked Node dependencies, checks formatting, runs movement/jump tests and builds Vite. Separate build/deploy jobs upload and publish `apps/web-preview/dist` to the `github-pages` environment using GitHub's Pages/OIDC permissions.
 
-The existing Sites project is `appgprj_6ae5957c229c8191a784fdc457532774`; reuse it. Its canonical local identity is `apps/web-preview/.openai/hosting.json`, with static directory `dist`.
+The same output contains GLB, heightfield, source/name/road metadata, branding, self-hosted fonts and license/attribution files. Vite's existing relative `base: "./"` supports the `/open-campus-uo/` project path without changing the shared runtime. Pages is configured with `build_type: workflow`.
 
-The first deployment used application commit `881c7464e7b9984e79bfb7e8b4a8c3e14f84dac5`, Sites source commit `489b305d46542b10b1c904e4e40a413f143bdea0`, and deployment `appgdep_6ae59631577081918806c915134c2129`. That initial audience was owner-private. The user subsequently requested public, anonymous access; the access policy is now `public`.
+Verify the deployment result and test in an anonymous browser context, including asset loading, search, walking, jumping, camera views and About attribution. The normal browser regression workflow remains independent of the hosting workflow.
 
-`hosting/open-campus-uo/` is an ignored independent publication checkout with its own Sites source history. Mirror the current application source and public assets, preserve its hosting identity, build with `npm ci` and `npm run build`, and use the Sites source helper to push and package the exact source state. Save the matching archive and deploy through the public deployment operation. Confirm a terminal successful deployment and test without cookies or stored login state.
+## Previous Sites deployment
 
-Keep source credentials only in session memory and pass them to the helper through stdin. Do not persist credentials in Git, shell arguments or documentation. Source hosting and editable Blender/raw geospatial storage are separate concerns.
+The earlier `https://opencampus-uo-williamq96.fluffy-chub-9311.chatgpt.site` was hosted by ChatGPT Sites, not GitHub Pages. Its initial audience was private and was subsequently changed to public. It is retained as a separate earlier deployment; the GitHub Pages URL above is the primary entry point.
+
+The historical Sites project is `appgprj_6ae5957c229c8191a784fdc457532774`, with identity in `apps/web-preview/.openai/hosting.json`. Its first source commit was `489b305d46542b10b1c904e4e40a413f143bdea0` and initial deployment was `appgdep_6ae59631577081918806c915134c2129`. The public v0.5 release used Sites source commit `e3d4fb654eb991870f7a344a404501ac0ddaca15` and deployment `appgdep_6ae5a0e4eb608191898ebd529303b61e`. These records do not configure the current Pages publication.
+
+The ignored `hosting/open-campus-uo/` checkout preserves that separate history. Current main-branch publication uses GitHub Actions directly and needs no Sites credentials or source mirroring. Raw geographic data and editable Blender asset storage remain separate from website hosting.

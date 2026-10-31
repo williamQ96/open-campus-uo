@@ -4,7 +4,7 @@
 
 以 Blender 为核心、可跨引擎复用的 UO 主 Eugene 校园三维资产与 Three.js 交互预览项目。
 
-**[在线运行](https://opencampus-uo-williamq96.fluffy-chub-9311.chatgpt.site)**：免登录。上下游仓库现均为 public。
+**[在线运行](https://williamq96.github.io/open-campus-uo/)**：免登录。上下游仓库现均为 public。
 
 ## 当前版本
 

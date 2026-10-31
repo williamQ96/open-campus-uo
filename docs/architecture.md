@@ -29,6 +29,6 @@ Keep raw, blockout, detailed and optimized assets related by stable identity. Ma
 
 The browser consumes `manifest.json`, GLB and heightfield; it does not reconstruct LiDAR or edit Blender source. Shared modules implement three views, walking/jump/collision, building search, camera framing, billboard labels, selection, minimap and settings. A profile supplies local branding and source text. Runtime preferences supply spawn heading.
 
-The live site is publicly accessible through Sites. The hosting identity is in `apps/web-preview/.openai/hosting.json`; credentials are never committed. See [hosting](hosting.md) and [template adoption](viewer-template.md).
+The primary live site is publicly accessible through GitHub Pages. `.github/workflows/pages.yml` builds the application from the main branch and publishes its static output. The older Sites identity in `apps/web-preview/.openai/hosting.json` is retained as a historical deployment record. See [hosting](hosting.md) and [template adoption](viewer-template.md).
 
 Godot, Unity and Unreal remain optional asset consumers. Cross-engine validation, streamed tiles, LOD and 3D Gaussian Splatting are future work. 3DGS would complement editable meshes, not replace their core geometry or collisions.

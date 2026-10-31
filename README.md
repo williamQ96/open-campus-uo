@@ -4,7 +4,7 @@
 
 A Blender-first, georeferenced University of Oregon campus asset project with an interactive Three.js explorer.
 
-**[Open the live explorer](https://opencampus-uo-williamq96.fluffy-chub-9311.chatgpt.site)** — public, no sign-in required. Both the UO and upstream repositories are public.
+**[Open the live explorer](https://williamq96.github.io/open-campus-uo/)** — public, no sign-in required. Both the UO and upstream repositories are public.
 
 ## Current scene
 
