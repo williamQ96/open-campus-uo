@@ -78,6 +78,8 @@ The script verifies the upstream pin and source checksums, generates Blender/GLB
 
 ## Verification and records
 
+[Access statistics](docs/analytics.md): repository traffic is archived privately each day. Web analytics awaits the registered GoatCounter site code before activation.
+
 In `apps/web-preview`, run `npm test`, `npm run build`, and `npm run test:browser`. Local browser tests use Chrome; CI uses Playwright Chromium. Fonts and scene assets are self-hosted; integration tests block external requests. Routine preview screenshots are generated locally, with failure traces retained in CI.
 
 - [First closed-loop verification](docs/verification.md)

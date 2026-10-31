@@ -1,4 +1,10 @@
 {
+  "analytics": {
+    "enabled": false,
+    "provider": "goatcounter",
+    "site_code": "",
+    "allowed_hosts": ["williamq96.github.io"]
+  },
   "title": "OpenCampus · UO Eugene",
   "description": "Explore UO with modular photo-informed architecture and aerial-guided landscaping.",
   "brand_name": "OpenCampus",
