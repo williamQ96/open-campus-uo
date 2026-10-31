@@ -23,7 +23,9 @@
 | Playwright browser | 2 项集成测试：真实 GLB 加载、GLB 射线与 heightfield 高度一致、角色移动、三种视角、鼠标转向、复位/线框/来源、窄屏控制和失焦停止移动 |
 | Vite production build | 通过；引擎 JavaScript 主包约 650 kB 未 gzip，后续按需要拆分 |
 
-浏览器集成检查使用 Chrome headless + SwiftShader 软件 WebGL，验证功能，不用它报告目标设备的 FPS。桌面预览默认使用浏览器可用 GPU。
+浏览器集成检查使用 Chrome headless + SwiftShader 软件 WebGL，验证功能，不用它报告目标设备的 FPS。桌面预览默认使用浏览器可用 GPU。测试阻止所有外部 HTTP 请求，场景和字体均由本地应用提供。字体依赖通过 Fontsource 固定，OFL 许可副本保留在 `apps/web-preview/public/licenses/`。
+
+CI 固定 Ubuntu 24.04，避免 `ubuntu-latest` 升至 Playwright 1.60 不支持的 Ubuntu 26；失败时保存浏览器 trace。CPU 较弱的 CI 允许较长的浏览器用例超时，不跳过功能断言。
 
 截图保存在本地 `artifacts/overview.png`、`third-person.png`、`first-person.png` 与 `mobile.png`。源代码中保留可复跑的测试；CI 只验证，不部署站点。
 

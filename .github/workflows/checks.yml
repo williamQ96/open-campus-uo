@@ -17,7 +17,14 @@ jobs:
           cache: npm
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
+      - run: npm run format:check
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-failure-traces
+          path: apps/web-preview/test-results/
+          retention-days: 7
