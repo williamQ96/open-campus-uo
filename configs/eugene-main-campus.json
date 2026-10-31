@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "project_id": "uo-eugene-main-campus",
+  "title": "OpenCampus: UO Eugene Main Campus",
+  "aoi": {
+    "center_lon_lat": [
+      -123.0708,
+      44.0455
+    ],
+    "size_m": 2000,
+    "horizontal_epsg": 3740,
+    "vertical_epsg": 5703,
+    "vertical_datum": "NAVD88 metres, NOAA GEOID18 product"
+  },
+  "sources": [
+    {
+      "id": "noaa-dogami-1078-44123a1304",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1304_ld_p23.copc.laz",
+      "filename": "20080831_44123a1304_ld_p23.copc.laz",
+      "sha256": "0140580638c5de1665d723a625c383b0062156d1d6f8ad255e75bacea1b01ad9",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1305",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1305_ld_p23.copc.laz",
+      "filename": "20080831_44123a1305_ld_p23.copc.laz",
+      "sha256": "22124d5835fe4d785b7388526535df13d9bea64db9a8953d7f9b9a78d67fa43a",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1309",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1309_ld_p23.copc.laz",
+      "filename": "20080831_44123a1309_ld_p23.copc.laz",
+      "sha256": "c7d0b03e139bfede9552ed4ee5d86bd368e23f38b88bdf1c07bf7d5870646635",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1310",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1310_ld_p23.copc.laz",
+      "filename": "20080831_44123a1310_ld_p23.copc.laz",
+      "sha256": "351fd04684b0b816d13cb84c582ee11ef68d02cd9e60dbc6db1d65eddcbd863b",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1314",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1314_ld_p23.copc.laz",
+      "filename": "20080831_44123a1314_ld_p23.copc.laz",
+      "sha256": "425edfbd48f634673ac64fe5c0c08c42a3ba67fd24ca31442079966e0d4ce717",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1315",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1315_ld_p23.copc.laz",
+      "filename": "20080831_44123a1315_ld_p23.copc.laz",
+      "sha256": "fb04a8cdeba7518a2ed9250eff49f10c36ff5c14964eb9c1b8fa2e8845c3c93f",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1401",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1401_ld_p23.copc.laz",
+      "filename": "20080831_44123a1401_ld_p23.copc.laz",
+      "sha256": "31cc4baa23a4f21e08cac18f92bbc078467dce339fbdbcc5e9798773b3b235a0",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1406",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1406_ld_p23.copc.laz",
+      "filename": "20080831_44123a1406_ld_p23.copc.laz",
+      "sha256": "2c056bf0d303aba20c78a2421b754378a8b33febb0ae242c734bef1846d0b038",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1411",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1411_ld_p23.copc.laz",
+      "filename": "20080831_44123a1411_ld_p23.copc.laz",
+      "sha256": "1a657093866869bdea73abb7f4c86ecc60bf12e0332155ceff68e9362bdc0c79",
+      "acquisition_date": "2008-08-31",
+      "provider": "Oregon DOGAMI / NOAA Digital Coast",
+      "metadata_url": "https://www.fisheries.noaa.gov/inport/item/49908",
+      "product_index_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/index.html",
+      "license_url": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+      "license_status": "OLC public-domain policy; NOAA metadata lists no access constraints and temporal limitations",
+      "verified_on": "2026-10-30",
+      "date_evidence": "Tile filename; collection-level metadata spans 2008-08-31 through 2009-07-01"
+    }
+  ],
+  "reconstruction": {
+    "terrain_spacing_m": 5,
+    "raster_spacing_m": 1,
+    "min_building_area_m2": 160,
+    "min_height_m": 3.5,
+    "max_roof_roughness_m": 0.85
+  },
+  "spawn_enu_m": [
+    -552.894,
+    -121.678
+  ],
+  "annotations_file": "../data/metadata/campus-buildings.json",
+  "appearance": {
+    "terrain_color_linear": [
+      0.3,
+      0.32,
+      0.34
+    ]
+  }
+}

@@ -38,10 +38,28 @@ export function insidePolygon(x, north, ring) {
   return inside;
 }
 
+const boundsCache = new WeakMap();
 export function isBlocked(x, z, buildings, half, radius = 0.42) {
   if (Math.abs(x) > half - radius || Math.abs(z) > half - radius) return true;
   for (const b of buildings) {
     const ring = b.footprint_enu_m;
+    let bounds = boundsCache.get(b);
+    if (!bounds) {
+      bounds = [
+        Math.min(...ring.map((p) => p[0])),
+        Math.min(...ring.map((p) => p[1])),
+        Math.max(...ring.map((p) => p[0])),
+        Math.max(...ring.map((p) => p[1])),
+      ];
+      boundsCache.set(b, bounds);
+    }
+    if (
+      x < bounds[0] - radius ||
+      x > bounds[2] + radius ||
+      -z < bounds[1] - radius ||
+      -z > bounds[3] + radius
+    )
+      continue;
     if (insidePolygon(x, -z, ring)) return true;
     for (let i = 0; i < ring.length; i++) {
       const [ax, ay] = ring[i],
@@ -58,7 +76,14 @@ export function isBlocked(x, z, buildings, half, radius = 0.42) {
   return false;
 }
 
-export function movePlayer(position, delta, buildings, half, field) {
+export function movePlayer(
+  position,
+  delta,
+  buildings,
+  half,
+  field,
+  snapToGround = true,
+) {
   // Substeps prevent tunnelling at high frame times; axis separation slides along walls.
   const steps = Math.max(1, Math.ceil(Math.hypot(delta.x, delta.z) / 0.2));
   for (let i = 0; i < steps; i++) {
@@ -67,6 +92,29 @@ export function movePlayer(position, delta, buildings, half, field) {
     const z = position.z + delta.z / steps;
     if (!isBlocked(position.x, z, buildings, half)) position.z = z;
   }
-  position.y = sampleGround(field, position.x, position.z);
+  if (snapToGround) position.y = sampleGround(field, position.x, position.z);
   return position;
+}
+
+export function startJump(state) {
+  if (!state.grounded) return false;
+  state.velocity = 6.8;
+  state.grounded = false;
+  return true;
+}
+
+export function stepVertical(position, state, dt, ground) {
+  if (state.grounded) {
+    position.y = ground;
+    state.velocity = 0;
+    return;
+  }
+  const gravity = 18;
+  position.y += state.velocity * dt - 0.5 * gravity * dt * dt;
+  state.velocity -= gravity * dt;
+  if (position.y <= ground && state.velocity <= 0) {
+    position.y = ground;
+    state.velocity = 0;
+    state.grounded = true;
+  }
 }

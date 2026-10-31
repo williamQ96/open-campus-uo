@@ -1,0 +1,148 @@
+{
+  "configuration": "configs/eugene-main-campus.json",
+  "scope": "2 km square covering the main Eugene campus and surrounding context, not an official parcel boundary",
+  "source_tiles": [
+    {
+      "id": "noaa-dogami-1078-44123a1304",
+      "filename": "20080831_44123a1304_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1304_ld_p23.copc.laz",
+      "actual_sha256": "0140580638c5de1665d723a625c383b0062156d1d6f8ad255e75bacea1b01ad9",
+      "bytes": 53335508,
+      "acquisition_date": "2008-08-31"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1305",
+      "filename": "20080831_44123a1305_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1305_ld_p23.copc.laz",
+      "actual_sha256": "22124d5835fe4d785b7388526535df13d9bea64db9a8953d7f9b9a78d67fa43a",
+      "bytes": 55496015,
+      "acquisition_date": "2008-08-31"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1309",
+      "filename": "20080831_44123a1309_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1309_ld_p23.copc.laz",
+      "actual_sha256": "c7d0b03e139bfede9552ed4ee5d86bd368e23f38b88bdf1c07bf7d5870646635",
+      "bytes": 60916258,
+      "acquisition_date": "2008-08-31"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1310",
+      "filename": "20080831_44123a1310_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1310_ld_p23.copc.laz",
+      "actual_sha256": "351fd04684b0b816d13cb84c582ee11ef68d02cd9e60dbc6db1d65eddcbd863b",
+      "bytes": 59940595,
+      "acquisition_date": "2008-08-31"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1314",
+      "filename": "20080831_44123a1314_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1314_ld_p23.copc.laz",
+      "actual_sha256": "425edfbd48f634673ac64fe5c0c08c42a3ba67fd24ca31442079966e0d4ce717",
+      "bytes": 56695771,
+      "acquisition_date": "2008-08-31"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1315",
+      "filename": "20080831_44123a1315_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1315_ld_p23.copc.laz",
+      "actual_sha256": "fb04a8cdeba7518a2ed9250eff49f10c36ff5c14964eb9c1b8fa2e8845c3c93f",
+      "bytes": 70873180,
+      "acquisition_date": "2008-08-31"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1401",
+      "filename": "20080831_44123a1401_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1401_ld_p23.copc.laz",
+      "actual_sha256": "31cc4baa23a4f21e08cac18f92bbc078467dce339fbdbcc5e9798773b3b235a0",
+      "bytes": 56064625,
+      "acquisition_date": "2008-08-31"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1406",
+      "filename": "20080831_44123a1406_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1406_ld_p23.copc.laz",
+      "actual_sha256": "2c056bf0d303aba20c78a2421b754378a8b33febb0ae242c734bef1846d0b038",
+      "bytes": 65528027,
+      "acquisition_date": "2008-08-31"
+    },
+    {
+      "id": "noaa-dogami-1078-44123a1411",
+      "filename": "20080831_44123a1411_ld_p23.copc.laz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/1078/20080831_44123a1411_ld_p23.copc.laz",
+      "actual_sha256": "1a657093866869bdea73abb7f4c86ecc60bf12e0332155ceff68e9362bdc0c79",
+      "bytes": 82454401,
+      "acquisition_date": "2008-08-31"
+    }
+  ],
+  "coordinate_frame": {
+    "horizontal_epsg": 3740,
+    "vertical_epsg": 5703,
+    "vertical_datum": "NAVD88 metres, NOAA GEOID18 product",
+    "origin_projected_m": [
+      494329.14928888186,
+      4876928.282153052,
+      132.36205291748047
+    ],
+    "origin_lon_lat": [
+      -123.0708,
+      44.0455
+    ],
+    "unit": "metre",
+    "blender_axes": "X east, Y north, Z up",
+    "gltf_axes": "X east, Y up, Z south",
+    "origin_note": "Horizontal center selected for experiment; local Z=0 is interpolated class-2 ground at center."
+  },
+  "quality": {
+    "ground_cells": 147961,
+    "ground_cell_coverage_fraction": 0.92476,
+    "edge_nearest_fill_vertices": 1600,
+    "holdout_cells": 13450,
+    "holdout_rmse_m": 0.2412,
+    "holdout_p95_absolute_m": 0.475,
+    "accuracy_note": "Internal ground-cell holdout consistency; not independently surveyed absolute accuracy.",
+    "cropped_points": 32105518,
+    "class_counts": {
+      "1": 24540329,
+      "2": 7565189
+    },
+    "building_candidates": 534,
+    "terrain_range_local_m": [
+      -10.112,
+      81.2971
+    ],
+    "building_height_range_m": [
+      4.11,
+      34.53
+    ],
+    "building_accuracy": "Unvalidated heuristic placeholders, not authoritative footprints or current conditions.",
+    "external_control_points": 0,
+    "named_buildings": 63,
+    "context_placeholders": 17
+  },
+  "annotations": {
+    "source": [
+      "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "https://mapapps.uoregon.edu/campusMaps/ColorBasemap.pdf",
+      "https://geocoding.geo.census.gov/geocoder/"
+    ],
+    "matched": 63,
+    "unmatched": [],
+    "note": "Semantic matching is approximate and independent of LiDAR geometry. Unmatched structures retain unverified IDs.",
+    "catalog_sha256": "57cc102c34bbe0564603019d355eb8c89f8c0ffe84512b95e95eebbe19a04d9e"
+  },
+  "pipeline": {
+    "version": "0.2.0",
+    "commit": "314306e72e969d59f1c1f8fe6c0319317e2a1618",
+    "dirty": false,
+    "dependencies": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "laspy": "2.7.0",
+      "pyproj": "3.8.0",
+      "rasterio": "1.5.2",
+      "shapely": "2.2.0"
+    }
+  },
+  "reconstruction_sha256": "24e8877020d80be1953054cc8df0a4598c9d8d6b3e9006f9773e8f73488e7d74"
+}

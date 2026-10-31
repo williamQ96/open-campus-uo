@@ -1,6 +1,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { sampleGround, isBlocked, movePlayer } from "../src/world.js";
+import {
+  sampleGround,
+  isBlocked,
+  movePlayer,
+  startJump,
+  stepVertical,
+} from "../src/world.js";
 
 // Non-symmetric elevations expose north/south flips and unit errors.
 const field = {
@@ -53,4 +59,28 @@ test("diagonal movement slides along wall and follows terrain", () => {
   assert.ok(p.x < 1.6);
   assert.equal(p.z, 1);
   assert.equal(p.y, sampleGround(field, p.x, p.z));
+});
+
+test("jump rises to a finite apex, rejects air jumps, and lands on terrain", () => {
+  const position = { x: 0, y: 3, z: 0 },
+    state = { velocity: 0, grounded: true };
+  assert.equal(startJump(state), true);
+  assert.equal(startJump(state), false);
+  let apex = 3;
+  for (let i = 0; i < 120; i++) {
+    stepVertical(position, state, 1 / 120, 3);
+    apex = Math.max(apex, position.y);
+  }
+  assert.ok(apex > 4.2 && apex < 4.35);
+  assert.equal(position.y, 3);
+  assert.equal(state.grounded, true);
+  assert.equal(state.velocity, 0);
+  assert.equal(startJump(state), true);
+});
+
+test("horizontal movement preserves airborne height when requested", () => {
+  const position = { x: 0, y: 50, z: 0 };
+  movePlayer(position, { x: 0.3, z: 0 }, [], 10, field, false);
+  assert.equal(position.y, 50);
+  assert.equal(position.x, 0.3);
 });

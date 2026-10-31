@@ -1,6 +1,7 @@
 param(
     [string]$PipelineRoot = '',
     [string]$Blender = '',
+    [string]$Config = 'configs/eugene-main-campus.json',
     [switch]$AllowUnpinned
 )
 $ErrorActionPreference = 'Stop'
@@ -22,10 +23,14 @@ if (-not $Blender) {
 $python = Join-Path $PipelineRoot '.venv/Scripts/python.exe'
 if (-not (Test-Path -LiteralPath $python)) { throw 'Create the upstream Python environment as described in its README.' }
 if (-not (Test-Path -LiteralPath $Blender)) { throw 'Pass -Blender with a Blender executable, or prepare the documented portable build.' }
-$output = Join-Path $projectRoot 'exports/memorial-quad'
-& $python -m geospatial3d build --config (Join-Path $projectRoot 'configs/memorial-quad.json') --workspace $projectRoot --output $output --blender $Blender --web-public (Join-Path $projectRoot 'apps/web-preview/public/scene')
+$configPath = Join-Path $projectRoot $Config
+$sceneConfig = Get-Content -LiteralPath $configPath -Raw | ConvertFrom-Json
+$sceneName = $sceneConfig.project_id -replace '^uo-', ''
+if ($sceneName -notmatch '^[a-z0-9-]+$') { throw 'Invalid scene identifier.' }
+$output = Join-Path $projectRoot "exports/$sceneName"
+& $python -m geospatial3d build --config $configPath --workspace $projectRoot --output $output --blender $Blender --web-public (Join-Path $projectRoot 'apps/web-preview/public/scene')
 if ($LASTEXITCODE -ne 0) { throw 'Reconstruction failed. Inspect output and blender.log.' }
-$assetDir = Join-Path $projectRoot 'assets/memorial-quad'
+$assetDir = Join-Path $projectRoot "assets/$sceneName"
 New-Item -ItemType Directory -Force -Path $assetDir | Out-Null
-Copy-Item -LiteralPath (Join-Path $output 'scene.blend') -Destination (Join-Path $assetDir 'memorial-quad.blend')
+Copy-Item -LiteralPath (Join-Path $output 'scene.blend') -Destination (Join-Path $assetDir "$sceneName.blend")
 Write-Output "Updated Blender asset and browser scene in $projectRoot"

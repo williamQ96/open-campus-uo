@@ -1,38 +1,51 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { createCharacter } from "./character.js";
-import { sampleGround, isBlocked, movePlayer } from "./world.js";
+import {
+  sampleGround,
+  isBlocked,
+  movePlayer,
+  startJump,
+  stepVertical,
+} from "./world.js";
+import { createBuildingLabels } from "./labels.js";
+import { createMinimap } from "./minimap.js";
 import "@fontsource-variable/dm-sans";
 import "@fontsource/ibm-plex-mono/latin-400.css";
 import "@fontsource/ibm-plex-mono/latin-500.css";
 import "./style.css";
 
-const $ = (s) => document.querySelector(s);
-const viewport = $("#viewport");
-const viewNames = ["third", "first", "aerial"];
-const keys = new Set();
+const $ = (selector) => document.querySelector(selector);
+const viewport = $("#viewport"),
+  dialog = $("#settings-dialog");
+const views = ["third", "first", "aerial"],
+  keys = new Set();
 let view = "aerial",
   yaw = Math.PI * 0.14,
-  pitch = 0.17,
+  pitch = 0.08,
   drag = null,
   manifest,
   field,
   half,
   model,
-  buildings = [],
-  terrainMesh;
-let elapsed = 0,
-  moving = false,
+  terrainMesh,
+  drawMap;
+let buildings = [],
+  elapsed = 0,
   lastTime = 0,
   frames = 0,
+  lastFps = 0,
   fps = 0,
-  lastFps = 0;
-const player = new THREE.Vector3();
+  moving = false,
+  selected = null;
+const player = new THREE.Vector3(),
+  vertical = { velocity: 0, grounded: true };
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xe8e9e3);
-scene.fog = new THREE.Fog(0xe8e9e3, 420, 1100);
-const camera = new THREE.PerspectiveCamera(45, 1, 0.08, 1600);
+scene.background = new THREE.Color(0xe3e5e4);
+scene.fog = new THREE.Fog(0xe3e5e4, 3500, 7500);
+const camera = new THREE.PerspectiveCamera(45, 1, 0.08, 9000);
 const renderer = new THREE.WebGLRenderer({
   antialias: true,
   powerPreference: "high-performance",
@@ -40,63 +53,81 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.autoUpdate = false;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.17;
+renderer.toneMappingExposure = 1.02;
 viewport.append(renderer.domElement);
-scene.add(new THREE.HemisphereLight(0xffffff, 0x8e9986, 2.4));
-const sun = new THREE.DirectionalLight(0xfffaf0, 3.1);
-sun.position.set(-120, 220, 90);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x929b94, 1.9));
+const sun = new THREE.DirectionalLight(0xfff9ef, 2.4);
+sun.position.set(-1400, 2400, 1300);
 sun.castShadow = true;
 sun.shadow.mapSize.set(2048, 2048);
 Object.assign(sun.shadow.camera, {
-  left: -235,
-  right: 235,
-  top: 235,
-  bottom: -235,
+  left: -1450,
+  right: 1450,
+  top: 1450,
+  bottom: -1450,
   near: 1,
-  far: 600,
+  far: 6500,
 });
-sun.shadow.bias = -0.0003;
-sun.shadow.normalBias = 0.15;
+sun.shadow.bias = -0.0002;
+sun.shadow.normalBias = 0.3;
 scene.add(sun);
 const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.enableDamping = true;
 orbit.dampingFactor = 0.07;
-orbit.minDistance = 15;
-orbit.maxDistance = 650;
+orbit.minDistance = 12;
+orbit.maxDistance = 6000;
 orbit.maxPolarAngle = Math.PI * 0.48;
-orbit.target.set(0, 0, 0);
 const character = createCharacter();
+character.root.traverse((object) => {
+  if (object.isMesh) object.castShadow = false;
+});
 scene.add(character.root);
-const raycaster = new THREE.Raycaster();
-const cameraRay = new THREE.Raycaster();
-let selected;
-const collisionMeshes = [];
-
+const contactShadow = new THREE.Mesh(
+  new THREE.CircleGeometry(0.4, 24),
+  new THREE.MeshBasicMaterial({
+    color: 0x344039,
+    transparent: true,
+    opacity: 0.16,
+    depthWrite: false,
+  }),
+);
+contactShadow.rotation.x = -Math.PI / 2;
+scene.add(contactShadow);
+const meshesById = new Map(),
+  collisionMeshes = [];
+const raycaster = new THREE.Raycaster(),
+  cameraRay = new THREE.Raycaster();
+const labels = createBuildingLabels(scene, viewport, camera, selectBuilding);
 function resize() {
   const w = viewport.clientWidth,
     h = viewport.clientHeight;
   renderer.setSize(w, h);
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
+  labels.resize(w, h);
 }
 addEventListener("resize", resize);
 resize();
 
 function setView(next) {
-  if (!viewNames.includes(next)) return;
+  if (!views.includes(next)) return;
   view = next;
   orbit.enabled = view === "aerial";
   character.root.visible = view !== "first";
   keys.clear();
   document
     .querySelectorAll("[data-view]")
-    .forEach((b) =>
-      b.setAttribute("aria-pressed", String(b.dataset.view === view)),
+    .forEach((button) =>
+      button.setAttribute("aria-pressed", String(button.dataset.view === view)),
     );
   if (view === "aerial") {
-    orbit.target.copy(player).add(new THREE.Vector3(0, 2, 0));
-    camera.position.copy(player).add(new THREE.Vector3(250, 270, 285));
+    orbit.target.set(0, field ? sampleGround(field, 0, 0) + 5 : 0, 0);
+    const scale = half || 1000;
+    camera.position
+      .copy(orbit.target)
+      .add(new THREE.Vector3(scale * 1.5, scale * 2, scale * 1.65));
     orbit.update();
   } else if (view === "first") {
     pitch = 0;
@@ -120,50 +151,85 @@ document
   .forEach((button) =>
     button.addEventListener("click", () => setView(button.dataset.view)),
   );
-$("#reset").addEventListener("click", () => {
-  resetPlayer();
-  setView(view);
-});
-$("#source-toggle").addEventListener("click", () => {
-  const open = $("#source-details").hidden;
-  $("#source-details").hidden = !open;
-  $("#source-toggle").setAttribute("aria-expanded", String(open));
-});
-$("#wireframe").addEventListener("click", () => {
-  const enabled = $("#wireframe").getAttribute("aria-pressed") !== "true";
-  $("#wireframe").setAttribute("aria-pressed", String(enabled));
-  model?.traverse((o) => {
-    if (o.isMesh) {
-      for (const m of Array.isArray(o.material) ? o.material : [o.material])
-        m.wireframe = enabled;
-    }
-  });
-});
 function resetPlayer() {
   if (!manifest) return;
   player.set(manifest.spawn_enu_m[0], 0, -manifest.spawn_enu_m[1]);
   if (isBlocked(player.x, player.z, buildings, half)) {
-    // Deterministically find walkable ground if a later model covers the previous spawn.
+    const origin = player.clone();
     let found = false;
-    for (let r = 2; r < half && !found; r += 2)
+    for (let r = 2; r < 100 && !found; r += 2)
       for (let a = 0; a < Math.PI * 2; a += Math.PI / 12) {
-        const x = Math.cos(a) * r,
-          z = Math.sin(a) * r;
+        const x = origin.x + Math.cos(a) * r,
+          z = origin.z + Math.sin(a) * r;
         if (!isBlocked(x, z, buildings, half)) {
           player.set(x, 0, z);
           found = true;
           break;
         }
       }
-    if (!found) throw new Error("试验区没有可用的角色出生点");
+    if (!found) throw new Error("No walkable starting point was found.");
   }
   player.y = sampleGround(field, player.x, player.z);
+  vertical.velocity = 0;
+  vertical.grounded = true;
   character.root.position.copy(player);
   yaw = Math.PI * 0.14;
 }
+$("#reset").addEventListener("click", () => {
+  resetPlayer();
+  setView(view);
+});
+function setSettingsTab(tab) {
+  const about = tab === "about";
+  $("#settings-panel").hidden = about;
+  $("#about-panel").hidden = !about;
+  $("#settings-tab").setAttribute("aria-selected", String(!about));
+  $("#about-tab").setAttribute("aria-selected", String(about));
+}
+$("#settings-open").addEventListener("click", () => {
+  keys.clear();
+  drag = null;
+  dialog.showModal();
+});
+$("#settings-close").addEventListener("click", () => dialog.close());
+dialog.addEventListener("close", () => viewport.focus({ preventScroll: true }));
+dialog.addEventListener("click", (event) => {
+  if (event.target === dialog) {
+    const box = dialog.getBoundingClientRect();
+    if (
+      event.clientX < box.left ||
+      event.clientX > box.right ||
+      event.clientY < box.top ||
+      event.clientY > box.bottom
+    )
+      dialog.close();
+  }
+});
+$("#settings-tab").addEventListener("click", () => setSettingsTab("settings"));
+$("#about-tab").addEventListener("click", () => setSettingsTab("about"));
+$("#show-labels").addEventListener("change", (event) =>
+  labels.setEnabled(event.target.checked),
+);
+$("#wireframe-setting").addEventListener("change", (event) =>
+  model?.traverse((object) => {
+    if (object.isMesh)
+      for (const material of Array.isArray(object.material)
+        ? object.material
+        : [object.material])
+        material.wireframe = event.target.checked;
+  }),
+);
+$("#shadows-setting").addEventListener("change", (event) => {
+  renderer.shadowMap.enabled = event.target.checked;
+  renderer.shadowMap.needsUpdate = true;
+  model?.traverse((object) => {
+    if (object.isMesh) object.material.needsUpdate = true;
+  });
+});
 
 addEventListener("keydown", (event) => {
   if (
+    dialog.open ||
     ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName) ||
     event.ctrlKey ||
     event.metaKey ||
@@ -186,10 +252,10 @@ addEventListener("keydown", (event) => {
     event.preventDefault();
   keys.add(event.code);
   if (!event.repeat) {
-    if (event.code === "KeyV")
-      setView(viewNames[(viewNames.indexOf(view) + 1) % 3]);
+    if (event.code === "Space") startJump(vertical);
+    if (event.code === "KeyV") setView(views[(views.indexOf(view) + 1) % 3]);
     if (["Digit1", "Digit2", "Digit3"].includes(event.code))
-      setView(viewNames[Number(event.code.slice(-1)) - 1]);
+      setView(views[Number(event.code.slice(-1)) - 1]);
   }
 });
 addEventListener("keyup", (event) => keys.delete(event.code));
@@ -235,6 +301,25 @@ renderer.domElement.addEventListener("pointerup", (event) => {
 renderer.domElement.addEventListener("pointercancel", () => {
   drag = null;
 });
+function selectBuilding(id) {
+  if (selected) selected.material.emissive.setHex(0);
+  selected = meshesById.get(id) || null;
+  const record = buildings.find((building) => building.id === id);
+  $("#selection").hidden = !record;
+  if (!record) return;
+  if (selected) selected.material.emissive.setHex(0x273d1d);
+  const title = document.createElement("strong");
+  title.textContent = record.name || "Unidentified structure";
+  const detail = document.createElement("span");
+  detail.textContent =
+    (record.status === "approximate-context-placeholder"
+      ? "Approximate building envelope"
+      : "Historical roof estimate") +
+    " · " +
+    record.height_m.toFixed(1) +
+    " m";
+  $("#selection").replaceChildren(title, detail);
+}
 function selectAt(event) {
   const box = renderer.domElement.getBoundingClientRect();
   raycaster.setFromCamera(
@@ -244,26 +329,10 @@ function selectAt(event) {
     ),
     camera,
   );
-  const hit = raycaster
-    .intersectObjects(model?.children || [], true)
-    .find((h) => h.object.userData.asset_kind === "building");
-  if (selected) {
-    selected.material.emissive.setHex(0);
-    selected = null;
-  }
-  $("#selection").hidden = !hit;
-  if (!hit) return;
-  selected = hit.object;
-  selected.material.emissive.setHex(0x304b24);
-  const record = buildings.find((b) => b.id === selected.name);
-  $("#selection").replaceChildren();
-  const title = document.createElement("strong");
-  title.textContent = record?.id || selected.name;
-  const detail = document.createElement("span");
-  detail.textContent = `建筑候选 · 估算高度 ${record?.height_m ?? "—"} m · 尚未细化`;
-  $("#selection").append(title, detail);
+  const hit = raycaster.intersectObjects(collisionMeshes, false)[0];
+  if (hit) selectBuilding(hit.object.userData.asset_id || hit.object.name);
+  else $("#selection").hidden = true;
 }
-
 function updatePlayer(dt) {
   const forward =
     (keys.has("KeyW") || keys.has("ArrowUp") ? 1 : 0) -
@@ -288,30 +357,40 @@ function updatePlayer(dt) {
       z: (-Math.cos(heading) * forward - Math.sin(heading) * right) * speed,
     };
     const before = player.clone();
-    movePlayer(player, delta, buildings, half, field);
+    movePlayer(player, delta, buildings, half, field, false);
     character.root.rotation.y = Math.atan2(
       player.x - before.x,
       player.z - before.z,
     );
   }
+  const ground = sampleGround(field, player.x, player.z);
+  stepVertical(player, vertical, dt, ground);
   character.root.position.copy(player);
-  character.animate(elapsed, moving);
+  character.animate(elapsed, moving && vertical.grounded);
+  contactShadow.position.set(player.x, ground + 0.035, player.z);
+  const altitude = player.y - ground;
+  contactShadow.material.opacity = 0.16 / (1 + altitude);
+  contactShadow.scale.setScalar(1 + altitude * 0.2);
 }
-
 function updateCamera(dt) {
   if (view === "aerial") {
     orbit.update();
     return;
   }
   const eye = player.clone().add(new THREE.Vector3(0, 1.58, 0));
-  const facing = new THREE.Vector3(
-    -Math.sin(yaw) * Math.cos(pitch),
-    -Math.sin(pitch),
-    -Math.cos(yaw) * Math.cos(pitch),
-  );
   if (view === "first") {
     camera.position.copy(eye);
-    camera.lookAt(eye.clone().add(facing));
+    camera.lookAt(
+      eye
+        .clone()
+        .add(
+          new THREE.Vector3(
+            -Math.sin(yaw) * Math.cos(pitch),
+            -Math.sin(pitch),
+            -Math.cos(yaw) * Math.cos(pitch),
+          ),
+        ),
+    );
     return;
   }
   const desired = eye
@@ -323,9 +402,8 @@ function updateCamera(dt) {
         Math.cos(yaw) * 7.5,
       ),
     );
-  // Keep the follow camera out of walls and above the sampled terrain.
-  const direction = desired.clone().sub(eye);
-  const distance = direction.length();
+  const direction = desired.clone().sub(eye),
+    distance = direction.length();
   cameraRay.set(eye, direction.normalize());
   cameraRay.far = distance;
   const obstacle = cameraRay.intersectObjects(collisionMeshes, false)[0];
@@ -340,122 +418,135 @@ function updateCamera(dt) {
   camera.position.lerp(desired, 1 - Math.exp(-dt * 12));
   camera.lookAt(eye);
 }
-
-const map = $("#minimap"),
-  ctx = map.getContext("2d");
-function drawMap() {
-  const n = map.width,
-    scale = n / (half * 2),
-    point = (x, north) => [(x + half) * scale, (half - north) * scale];
-  ctx.clearRect(0, 0, n, n);
-  ctx.fillStyle = "#e7e9df";
-  ctx.fillRect(0, 0, n, n);
-  ctx.strokeStyle = "#cbd2c5";
-  ctx.lineWidth = 0.5;
-  for (let i = 0; i <= 6; i++) {
-    ctx.beginPath();
-    ctx.moveTo((i * n) / 6, 0);
-    ctx.lineTo((i * n) / 6, n);
-    ctx.moveTo(0, (i * n) / 6);
-    ctx.lineTo(n, (i * n) / 6);
-    ctx.stroke();
-  }
-  for (const b of buildings) {
-    ctx.beginPath();
-    b.footprint_enu_m.forEach(([x, y], i) => {
-      const p = point(x, y);
-      i ? ctx.lineTo(...p) : ctx.moveTo(...p);
-    });
-    ctx.closePath();
-    ctx.fillStyle = "#bcc4b5";
-    ctx.fill();
-    ctx.strokeStyle = "#aab5a5";
-    ctx.stroke();
-  }
-  const [px, py] = point(player.x, -player.z);
-  ctx.beginPath();
-  ctx.arc(px, py, 4, 0, Math.PI * 2);
-  ctx.fillStyle = "#24573e";
-  ctx.fill();
-  ctx.strokeStyle = "#fff";
-  ctx.lineWidth = 2;
-  ctx.stroke();
-  ctx.beginPath();
-  ctx.moveTo(px, py);
-  ctx.lineTo(px - Math.sin(yaw) * 12, py - Math.cos(yaw) * 12);
-  ctx.strokeStyle = "#24573e";
-  ctx.lineWidth = 1.5;
-  ctx.stroke();
-}
-
 async function loadJson(url) {
   const response = await fetch(url);
-  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
+  if (!response.ok) throw new Error(url + ": HTTP " + response.status);
   return response.json();
 }
+
 try {
-  const base = `${import.meta.env.BASE_URL}scene/`;
-  manifest = await loadJson(`${base}manifest.json`);
-  if (manifest.schema_version !== 1) throw new Error("不支持的场景清单版本");
-  field = await loadJson(`${base}${manifest.heightfield_url}`);
+  const base = import.meta.env.BASE_URL + "scene/";
+  manifest = await loadJson(base + "manifest.json");
+  if (manifest.schema_version !== 1)
+    throw new Error("Unsupported scene manifest version.");
+  field = await loadJson(base + manifest.heightfield_url);
   half = manifest.aoi_size_m / 2;
   buildings = manifest.buildings;
   if (field.heights_m.length !== field.nx * field.ny)
-    throw new Error("地形高度数据不完整");
-  const gltf = await new GLTFLoader().loadAsync(`${base}${manifest.model.url}`);
+    throw new Error("The terrain heightfield is incomplete.");
+  const gltf = await new GLTFLoader().loadAsync(base + manifest.model.url);
   model = gltf.scene;
-  model.traverse((o) => {
-    if (!o.isMesh) return;
-    o.castShadow = o.userData.asset_kind === "building";
-    o.receiveShadow = true;
-    if (o.userData.asset_kind === "building") collisionMeshes.push(o);
-    o.material = o.material.clone();
-    if (o.userData.asset_kind === "terrain") terrainMesh = o;
+  model.updateMatrixWorld(true);
+  const contextGeometries = [],
+    remove = [];
+  model.traverse((object) => {
+    if (!object.isMesh) return;
+    object.material = object.material.clone();
+    object.receiveShadow = true;
+    if (object.userData.asset_kind === "terrain") {
+      terrainMesh = object;
+      object.material.color.setHex(0x92989c);
+    }
+    if (object.userData.asset_kind === "building") {
+      const id = object.userData.asset_id || object.name;
+      meshesById.set(id, object);
+      collisionMeshes.push(object);
+      object.castShadow = true;
+      const record = buildings.find((building) => building.id === id);
+      if (!record?.name) {
+        let geometry = object.geometry.clone().applyMatrix4(object.matrixWorld);
+        if (geometry.index) geometry = geometry.toNonIndexed();
+        for (const attribute of Object.keys(geometry.attributes))
+          if (!["position", "normal"].includes(attribute))
+            geometry.deleteAttribute(attribute);
+        contextGeometries.push(geometry);
+        remove.push(object);
+      }
+    }
   });
-  if (!terrainMesh) throw new Error("GLB 缺少地形");
+  // Keep editable assets in Blender; batch unnamed runtime context to reduce draw calls.
+  for (const object of remove) object.removeFromParent();
+  if (contextGeometries.length) {
+    const geometry = mergeGeometries(contextGeometries, false);
+    if (!geometry) throw new Error("Context geometry could not be batched.");
+    const material = new THREE.MeshStandardMaterial({
+      color: 0xe9e8e0,
+      roughness: 0.94,
+    });
+    const batch = new THREE.Mesh(geometry, material);
+    batch.name = "Batched unnamed context";
+    batch.castShadow = true;
+    batch.receiveShadow = true;
+    model.add(batch);
+    for (const part of contextGeometries) part.dispose();
+  }
+  if (!terrainMesh) throw new Error("The GLB does not contain terrain.");
   scene.add(model);
-  // A skirt grounds the cutout without changing the real topographic mesh.
-  const skirt = new THREE.Mesh(
-    new THREE.BoxGeometry(half * 2, 4, half * 2),
-    new THREE.MeshStandardMaterial({ color: 0xbcc3b3, roughness: 1 }),
-  );
-  skirt.position.y = manifest.quality.terrain_range_local_m[0] - 2.2;
-  skirt.receiveShadow = true;
-  scene.add(skirt);
-  const grid = new THREE.GridHelper(1200, 60, 0xc5cec0, 0xd7ddd2);
-  grid.position.y = skirt.position.y - 2.05;
-  scene.add(grid);
+  labels.populate(buildings);
   resetPlayer();
   setView("aerial");
+  drawMap = createMinimap($("#minimap"), buildings, half);
+  const skirt = new THREE.Mesh(
+    new THREE.BoxGeometry(half * 2, 6, half * 2),
+    new THREE.MeshStandardMaterial({ color: 0x9da3a5, roughness: 1 }),
+  );
+  skirt.position.y = manifest.quality.terrain_range_local_m[0] - 3.2;
+  skirt.receiveShadow = true;
+  scene.add(skirt);
+  renderer.shadowMap.needsUpdate = true;
   $("#building-count").textContent = String(buildings.length);
-  $("#source-year").textContent = manifest.source_dates[0].slice(0, 4);
+  $("#named-count").textContent = String(labels.count);
+  $("#coverage-stat").textContent =
+    manifest.aoi_size_m.toLocaleString() +
+    " × " +
+    manifest.aoi_size_m.toLocaleString() +
+    " m";
+  $("#map-size").textContent =
+    manifest.aoi_size_m / 1000 + " × " + manifest.aoi_size_m / 1000 + " km";
+  const dates = [...new Set(manifest.source_dates)];
+  $("#source-year").textContent = dates
+    .map((date) => date.slice(0, 4))
+    .join(" / ");
   $("#source-date").textContent =
-    `使用瓦片：${manifest.source_dates.join(" / ")}。地形与占位建筑来自同一份历史点云。`;
+    "Oregon DOGAMI / NOAA Digital Coast. Survey dates: " +
+    dates.join(", ") +
+    ". " +
+    manifest.source_ids.length +
+    " source tiles cover the main campus and surrounding context.";
   $("#terrain-quality").textContent =
-    `地形：${field.spacing_m} m 网格。内部留出插值 RMSE ${manifest.quality.holdout_rmse_m} m；尚无独立测量精度验证。`;
+    field.spacing_m +
+    " m ground grid. Internal interpolation holdout RMSE: " +
+    manifest.quality.holdout_rmse_m +
+    " m. No independent survey-control accuracy validation.";
   $("#loading").hidden = true;
   renderer.setAnimationLoop((now) => {
-    const dt = Math.min((now - lastTime) / 1000 || 0, 0.05);
+    const dt = Math.min((now - lastTime) / 1000 || 0, 0.08);
     lastTime = now;
     elapsed += dt;
-    updatePlayer(dt);
+    if (!dialog.open) updatePlayer(dt);
     updateCamera(dt);
     renderer.render(scene, camera);
+    labels.update(now);
     frames++;
     if (now - lastFps > 1000) {
       fps = Math.round((frames * 1000) / (now - lastFps));
       frames = 0;
       lastFps = now;
     }
-    drawMap();
+    drawMap(player, yaw);
     const heading = new THREE.Vector3();
     camera.getWorldDirection(heading);
     $(".compass i").style.transform =
-      `rotate(${Math.atan2(heading.x, -heading.z)}rad)`;
+      "rotate(" + Math.atan2(heading.x, -heading.z) + "rad)";
     $("#position").textContent =
-      `E ${player.x.toFixed(1)} / N ${(-player.z).toFixed(1)} / H ${player.y.toFixed(1)} m`;
+      "E " +
+      player.x.toFixed(1) +
+      " / N " +
+      (-player.z).toFixed(1) +
+      " / H " +
+      player.y.toFixed(1) +
+      " m";
   });
-  // Read-only snapshots plus explicit view/reset hooks for integration checks.
   window.__campus = {
     getState: () => ({
       ready: true,
@@ -464,15 +555,25 @@ try {
       camera: camera.position.toArray(),
       fps,
       buildings: buildings.length,
+      namedBuildings: labels.count,
+      visibleLabels: labels.visibleCount,
+      aoiSize: manifest.aoi_size_m,
+      grounded: vertical.grounded,
+      verticalVelocity: vertical.velocity,
       blocked: isBlocked(player.x, player.z, buildings, half),
       ground: sampleGround(field, player.x, player.z),
       drawCalls: renderer.info.render.calls,
     }),
     setView,
     reset: resetPlayer,
+    labelInfo: (id) => labels.projectedLabel(id),
+    namedBuildings: () =>
+      buildings
+        .filter((building) => building.name)
+        .map(({ id, name, name_match }) => ({ id, name, name_match })),
     terrainCheck: (x, z) => {
       const ray = new THREE.Raycaster(
-        new THREE.Vector3(x, 200, z),
+        new THREE.Vector3(x, 300, z),
         new THREE.Vector3(0, -1, 0),
       );
       const hit = ray.intersectObject(terrainMesh, true)[0];
@@ -484,5 +585,5 @@ try {
   $("#loading").hidden = true;
   $("#error").hidden = false;
   $("#error p").textContent =
-    `${error.message}。请先运行重建流水线生成 public/scene 中的资产。`;
+    error.message + " Rebuild the scene assets before trying again.";
 }

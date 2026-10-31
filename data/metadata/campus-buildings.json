@@ -1,0 +1,842 @@
+{
+  "schema_version": 1,
+  "sources": [
+    "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+    "https://mapapps.uoregon.edu/campusMaps/ColorBasemap.pdf",
+    "https://geocoding.geo.census.gov/geocoder/"
+  ],
+  "reference_pdf_sha256": "e6c195c714114a7aaf42064dd4324cd9d1a6d588e167ce624cfe6ebc795ed091",
+  "metadata_scope": "Factual names and approximate independently curated locators only. Campus GIS polygons were not imported.",
+  "verified_on": "2026-10-30",
+  "buildings": [
+    {
+      "id": "B0018",
+      "name": "Knight Library",
+      "lon_lat": [
+        -123.0776709,
+        44.0432525
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0008",
+      "name": "Prince Lucien Campbell Hall",
+      "lon_lat": [
+        -123.078361111,
+        44.044333333
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Precise Wikidata Q105686211 locator overrides the offset cartographic text position; still needs independent site verification.",
+      "coordinate_source": "https://www.wikidata.org/wiki/Q105686211"
+    },
+    {
+      "id": "B0024",
+      "name": "Jordan Schnitzer Museum of Art",
+      "lon_lat": [
+        -123.0769424,
+        44.0443376
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0034",
+      "name": "Lillis Hall",
+      "lon_lat": [
+        -123.0775625,
+        44.0462473
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0004",
+      "name": "Condon Hall",
+      "lon_lat": [
+        -123.0781946,
+        44.045338
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0006",
+      "name": "Chapman Hall",
+      "lon_lat": [
+        -123.0769672,
+        44.0453264
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0016",
+      "name": "Johnson Hall",
+      "lon_lat": [
+        -123.075674,
+        44.0450142
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0009",
+      "name": "Friendly Hall",
+      "lon_lat": [
+        -123.0750089,
+        44.0458172
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0005",
+      "name": "University Hall",
+      "lon_lat": [
+        -123.0764211,
+        44.0466636
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        42,
+        22,
+        20
+      ]
+    },
+    {
+      "id": "B0031",
+      "name": "Villard Hall",
+      "lon_lat": [
+        -123.0763453,
+        44.0473191
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0031A",
+      "name": "Miller Theatre Complex",
+      "lon_lat": [
+        -123.0769184,
+        44.0471332
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0001",
+      "name": "Lawrence Hall",
+      "lon_lat": [
+        -123.0747307,
+        44.047236
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0017",
+      "name": "Allen Hall",
+      "lon_lat": [
+        -123.0750031,
+        44.0463894
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0019",
+      "name": "Fenton Hall",
+      "lon_lat": [
+        -123.076407,
+        44.0458407
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0022",
+      "name": "Peterson Hall",
+      "lon_lat": [
+        -123.0779577,
+        44.045767
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0003",
+      "name": "Anstett Hall",
+      "lon_lat": [
+        -123.0771907,
+        44.0457738
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0002",
+      "name": "Chiles Business Center",
+      "lon_lat": [
+        -123.0783205,
+        44.0459288
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0030",
+      "name": "McKenzie Hall",
+      "lon_lat": [
+        -123.0781047,
+        44.0472816
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0039",
+      "name": "Computing Center",
+      "lon_lat": [
+        -123.0781888,
+        44.0464234
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        28,
+        20,
+        10
+      ]
+    },
+    {
+      "id": "B0035",
+      "name": "Pacific Hall",
+      "lon_lat": [
+        -123.0742262,
+        44.046593
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0036",
+      "name": "Columbia Hall",
+      "lon_lat": [
+        -123.0712338,
+        44.0429654
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0047",
+      "name": "Cascade Hall",
+      "lon_lat": [
+        -123.0735716,
+        44.0464714
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0046",
+      "name": "Willamette Hall",
+      "lon_lat": [
+        -123.0726725,
+        44.0459149
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0038",
+      "name": "Klamath Hall",
+      "lon_lat": [
+        -123.0724721,
+        44.0465859
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        55,
+        45,
+        20
+      ]
+    },
+    {
+      "id": "B0037",
+      "name": "Onyx Bridge",
+      "lon_lat": [
+        -123.0734036,
+        44.0466717
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0045",
+      "name": "Streisinger Hall",
+      "lon_lat": [
+        -123.0719305,
+        44.0464022
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        35,
+        25,
+        18
+      ]
+    },
+    {
+      "id": "B0040",
+      "name": "Huestis Hall",
+      "lon_lat": [
+        -123.0719032,
+        44.0460534
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        42,
+        32,
+        18
+      ]
+    },
+    {
+      "id": "B0044",
+      "name": "Deschutes Hall",
+      "lon_lat": [
+        -123.071,
+        44.0459006
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0042",
+      "name": "Oregon Hall",
+      "lon_lat": [
+        -123.0702691,
+        44.0459758
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0033",
+      "name": "Erb Memorial Union",
+      "lon_lat": [
+        -123.0736694,
+        44.0448641
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0076",
+      "name": "Carson Hall",
+      "lon_lat": [
+        -123.0715666,
+        44.0451984
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0072",
+      "name": "Straub Hall",
+      "lon_lat": [
+        -123.072896,
+        44.0438722
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0073",
+      "name": "Earl Hall",
+      "lon_lat": [
+        -123.072602,
+        44.044021
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        48,
+        38,
+        12
+      ]
+    },
+    {
+      "id": "B0071",
+      "name": "Hendricks Hall",
+      "lon_lat": [
+        -123.0751015,
+        44.0442036
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0075",
+      "name": "Susan Campbell Hall",
+      "lon_lat": [
+        -123.0762226,
+        44.04416
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0011",
+      "name": "Gerlinger Hall",
+      "lon_lat": [
+        -123.0757316,
+        44.0436451
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0062",
+      "name": "Gerlinger Annex",
+      "lon_lat": [
+        -123.0765252,
+        44.0432758
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        45,
+        42,
+        11
+      ]
+    },
+    {
+      "id": "B0023",
+      "name": "Esslinger Hall",
+      "lon_lat": [
+        -123.0738496,
+        44.042435
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0051",
+      "name": "Student Recreation Center",
+      "lon_lat": [
+        -123.073195,
+        44.0428743
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0020",
+      "name": "McArthur Court",
+      "lon_lat": [
+        -123.0740621,
+        44.0417282
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        62,
+        65,
+        24
+      ]
+    },
+    {
+      "id": "B0025",
+      "name": "Frohnmayer Music Building",
+      "lon_lat": [
+        -123.0780144,
+        44.0407742
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0029",
+      "name": "Clinical Services Building",
+      "lon_lat": [
+        -123.0791437,
+        44.0405646
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0007",
+      "name": "Lokey Education Building",
+      "lon_lat": [
+        -123.0789556,
+        44.0425601
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0050",
+      "name": "Knight Law Center",
+      "lon_lat": [
+        -123.0689972,
+        44.0426504
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0049",
+      "name": "Museum of Natural and Cultural History",
+      "lon_lat": [
+        -123.0679578,
+        44.0429618
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0064",
+      "name": "Living-Learning Center South",
+      "lon_lat": [
+        -123.0715829,
+        44.0436628
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0065",
+      "name": "Living-Learning Center North",
+      "lon_lat": [
+        -123.0715829,
+        44.0441428
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0068",
+      "name": "Bean Hall",
+      "lon_lat": [
+        -123.0673279,
+        44.0439069
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0032",
+      "name": "Central Power Station",
+      "lon_lat": [
+        -123.0741243,
+        44.0484998
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0081",
+      "name": "Collier House",
+      "lon_lat": [
+        -123.0750197,
+        44.044992
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry."
+    },
+    {
+      "id": "B0052",
+      "name": "Outdoor Program Barn",
+      "lon_lat": [
+        -123.0740949,
+        44.0403931
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "fallback_envelope_m": [
+        18,
+        16,
+        6
+      ]
+    },
+    {
+      "id": "B0158",
+      "name": "Global Scholars Hall",
+      "lon_lat": [
+        -123.0669201,
+        44.0428176
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "placeholder": {
+        "size_m": [
+          85,
+          60,
+          19
+        ],
+        "note": "Approximate envelope of a post-2008 building. No surveyed geometry claim."
+      }
+    },
+    {
+      "id": "B0010",
+      "name": "HEDCO Education",
+      "lon_lat": [
+        -123.0790947,
+        44.0417456
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "placeholder": {
+        "size_m": [
+          60,
+          52,
+          16
+        ],
+        "note": "Approximate envelope of a post-2008 building. No surveyed geometry claim."
+      }
+    },
+    {
+      "id": "B0074",
+      "name": "Matthew Knight Arena",
+      "lon_lat": [
+        -123.0660676,
+        44.0448874
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "placeholder": {
+        "size_m": [
+          125,
+          110,
+          30
+        ],
+        "note": "Approximate envelope of a post-2008 building. No surveyed geometry claim."
+      }
+    },
+    {
+      "id": "B0066",
+      "name": "Ford Alumni Center",
+      "lon_lat": [
+        -123.0673851,
+        44.0451346
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "placeholder": {
+        "size_m": [
+          40,
+          45,
+          16
+        ],
+        "note": "Approximate envelope of a post-2008 building. No surveyed geometry claim."
+      }
+    },
+    {
+      "id": "B0067",
+      "name": "Jaqua Academic Center",
+      "lon_lat": [
+        -123.0689807,
+        44.0458792
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "placeholder": {
+        "size_m": [
+          38,
+          40,
+          15
+        ],
+        "note": "Approximate envelope of a post-2008 building. No surveyed geometry claim."
+      }
+    },
+    {
+      "id": "B0103",
+      "name": "Tykeson Hall",
+      "lon_lat": [
+        -123.0763862,
+        44.0450413
+      ],
+      "max_match_distance_m": 35,
+      "source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_202102.pdf",
+      "coordinate_note": "Project-curated approximate locator, checked against public campus maps and Wikidata where available; not an official UO GIS geometry.",
+      "placeholder": {
+        "size_m": [
+          38,
+          40,
+          20
+        ],
+        "note": "Approximate envelope of a post-2008 building. No surveyed geometry claim."
+      }
+    },
+    {
+      "id": "OC-UNTHANK",
+      "name": "Unthank Hall",
+      "lon_lat": [
+        -123.0687926,
+        44.0439127
+      ],
+      "source": "https://mapapps.uoregon.edu/campusMaps/ColorBasemap.pdf",
+      "coordinate_note": "Approximate public-map label locator. Hayward envelope represents the west stand only.",
+      "placeholder": {
+        "size_m": [
+          90,
+          50,
+          22
+        ],
+        "note": "Explicit approximate contextual envelope, not measured or copied GIS geometry."
+      }
+    },
+    {
+      "id": "OC-YASUI",
+      "name": "Yasui Hall",
+      "lon_lat": [
+        -123.070681,
+        44.0444617
+      ],
+      "source": "https://mapapps.uoregon.edu/campusMaps/ColorBasemap.pdf",
+      "coordinate_note": "Approximate public-map label locator. Hayward envelope represents the west stand only.",
+      "placeholder": {
+        "size_m": [
+          45,
+          65,
+          22
+        ],
+        "note": "Explicit approximate contextual envelope, not measured or copied GIS geometry."
+      }
+    },
+    {
+      "id": "OC-CEDAR",
+      "name": "Cedar Hall",
+      "lon_lat": [
+        -123.070222,
+        44.0440304
+      ],
+      "source": "https://mapapps.uoregon.edu/campusMaps/ColorBasemap.pdf",
+      "coordinate_note": "Approximate public-map label locator. Hayward envelope represents the west stand only.",
+      "placeholder": {
+        "size_m": [
+          45,
+          70,
+          22
+        ],
+        "note": "Explicit approximate contextual envelope, not measured or copied GIS geometry."
+      }
+    },
+    {
+      "id": "OC-KNIGHT-1",
+      "name": "Knight Campus 1",
+      "lon_lat": [
+        -123.0706747,
+        44.0472594
+      ],
+      "source": "https://mapapps.uoregon.edu/campusMaps/ColorBasemap.pdf",
+      "coordinate_note": "Approximate public-map label locator. Hayward envelope represents the west stand only.",
+      "placeholder": {
+        "size_m": [
+          95,
+          50,
+          25
+        ],
+        "note": "Explicit approximate contextual envelope, not measured or copied GIS geometry."
+      }
+    },
+    {
+      "id": "OC-KNIGHT-2",
+      "name": "Knight Campus 2",
+      "lon_lat": [
+        -123.0700773,
+        44.0483459
+      ],
+      "source": "https://mapapps.uoregon.edu/campusMaps/ColorBasemap.pdf",
+      "coordinate_note": "Approximate public-map label locator. Hayward envelope represents the west stand only.",
+      "placeholder": {
+        "size_m": [
+          75,
+          85,
+          25
+        ],
+        "note": "Explicit approximate contextual envelope, not measured or copied GIS geometry."
+      }
+    },
+    {
+      "id": "OC-HAYWARD",
+      "name": "Hayward Field",
+      "lon_lat": [
+        -123.071402,
+        44.0420102
+      ],
+      "source": "https://mapapps.uoregon.edu/campusMaps/ColorBasemap.pdf",
+      "coordinate_note": "Approximate public-map label locator. Hayward envelope represents the west stand only.",
+      "placeholder": {
+        "size_m": [
+          28,
+          150,
+          20
+        ],
+        "note": "Explicit approximate contextual envelope, not measured or copied GIS geometry."
+      }
+    }
+  ]
+}
