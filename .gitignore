@@ -1,0 +1,25 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large local source datasets and generated artifacts
+/data/raw/
+/data/processed/
+/exports/
+/artifacts/
+/apps/web-preview/public/assets/
+*.blend1
+*.blend2
+*.log
