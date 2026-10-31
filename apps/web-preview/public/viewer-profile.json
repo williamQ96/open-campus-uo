@@ -1,8 +1,8 @@
 {
   "analytics": {
-    "enabled": false,
+    "enabled": true,
     "provider": "goatcounter",
-    "site_code": "",
+    "site_code": "opencampus-uo-williamq96",
     "allowed_hosts": ["williamq96.github.io"]
   },
   "title": "OpenCampus · UO Eugene",

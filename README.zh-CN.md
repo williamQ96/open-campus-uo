@@ -51,7 +51,7 @@ Overview 搜索以约 45° 拉近展示；步行视角原地转向并高亮，�
 
 ## 重建和验证
 
-[访问统计](docs/analytics.md)：上下游仓库流量每日私有归档；网页统计等待已注册的 GoatCounter site code 后启用。
+[访问统计](docs/analytics.md)：上下游仓库流量每日私有归档；网页访问和基础交互接入 [GoatCounter](https://opencampus-uo-williamq96.goatcounter.com/)。
 
 在与 `pipeline.lock.json` 一致且干净的 upstream checkout 中准备 Python 和 Blender，然后运行 `./scripts/rebuild.ps1 -PipelineRoot <路径> -Blender <blender.exe>`。默认主校园配置，旧 Memorial Quad 场景作为首个闭环证据保留。
 
