@@ -14,6 +14,12 @@ Terrain and most geometry come from nine NOAA-hosted DOGAMI LiDAR tiles acquired
 
 The character starts at the University Street / East 13th Avenue T-junction facing Erb Memorial Union. Settings / About contains source acknowledgements, quality notes and project links.
 
+## Design direction
+
+[Architectural Toon Realism](design/architectural-toon-realism/README.md) is the recommended future visual style: original concept mockup, exact palette, source guide and a staged UO refinement plan. The [design archive](design/README.md) also preserves the existing Open Courtyard identity. This is a design archive; the current explorer remains a whitebox.
+
+The reusable specification is the [upstream style library's default recommendation](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style), with other styles encouraged.
+
 ## Run locally
 
 ```powershell

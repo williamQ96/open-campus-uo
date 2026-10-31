@@ -12,6 +12,12 @@
 
 出生点在 University Street / East 13th Avenue T 字路口，面向 EMU。Settings / About 集中说明来源、质量、项目链接和署名。
 
+## 设计方向
+
+[Architectural Toon Realism](design/architectural-toon-realism/README.zh-CN.md) 是后续推荐画风，包含原始 mockup、准确调色板、来源规范与 UO 细化计划。[设计档案](design/README.zh-CN.md)同时保留 Open Courtyard 标识。本次归档不改变当前白模。
+
+通用规范作为[上游 style 库的默认推荐](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style)，同时鼓励探索其他画风。
+
 ## 本地运行
 
 ```powershell
