@@ -8,7 +8,7 @@ A Blender-first, georeferenced University of Oregon campus asset project with an
 
 ## Phone layout and controls
 
-The phone layout uses a compact header/search, a smaller top-right minimap and bottom view buttons. First-person lower-half touches create a floating analog joystick; upper-half touches look around. Roles stay fixed when crossing the screen midpoint. Cancel, blur, opening Settings/search and changing views stop movement. See [mobile verification](docs/mobile-controls.md).
+The phone layout uses a compact header/search, a smaller top-right minimap and bottom view buttons. Follow and First-person lower-half touches create a floating analog joystick; upper-half touches look around. Roles stay fixed when crossing the screen midpoint. Cancel, blur, opening Settings/search and changing views stop movement. See [mobile verification](docs/mobile-controls.md).
 
 ## Current scene
 
@@ -36,7 +36,7 @@ npm ci
 npm run dev
 ```
 
-Open `http://127.0.0.1:5173/`. The repository includes the GLB, heightfield, metadata, branding and fonts; a first preview needs neither Blender nor raw LiDAR downloads. Desktop keyboard/mouse and phone touch are supported. In First person, drag in the lower half to walk and release to stop; drag in the upper half to look. Two fingers work independently. Follow retains drag-to-look; Overview supports orbit/pinch.
+Open `http://127.0.0.1:5173/`. The repository includes the GLB, heightfield, metadata, branding and fonts; a first preview needs neither Blender nor raw LiDAR downloads. Desktop keyboard/mouse and phone touch are supported. In Follow and First person, drag in the lower half to walk and release to stop; drag in the upper half to look. Two fingers work independently. Overview supports orbit/pinch.
 
 | Action | Control |
 | --- | --- |
