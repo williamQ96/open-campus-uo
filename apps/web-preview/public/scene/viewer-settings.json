@@ -4,5 +4,7 @@
     -53.891474
   ],
   "spawn_description": "University Street / East 13th Avenue T-junction, facing Erb Memorial Union",
-  "presentation_url": "presentation.json"
+  "presentation_url": "presentation.json",
+  "navigation_url": "navigation.json",
+  "activity_url": "activity.json"
 }

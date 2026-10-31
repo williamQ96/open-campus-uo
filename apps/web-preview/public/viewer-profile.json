@@ -3,7 +3,9 @@
     "enabled": true,
     "provider": "goatcounter",
     "site_code": "opencampus-uo-williamq96",
-    "allowed_hosts": ["williamq96.github.io"]
+    "allowed_hosts": [
+      "williamq96.github.io"
+    ]
   },
   "title": "OpenCampus · UO Eugene",
   "description": "Explore UO with modular photo-informed architecture and aerial-guided landscaping.",
@@ -18,6 +20,10 @@
   "about_summary": "The Knight Library-EMU-Johnson Hall area combines modular photo-informed facades, roofs, entrances and terraces with 300 stylized trees guided by USDA NAIP imagery captured on June 8, 2024. The surrounding campus remains a historical whitebox.",
   "about_limitations": "This is a recognizable first-pass art model, refined through long-term correction. Facade dimensions, hidden sides, roof details and tree heights/species include plausible inference. The aerial image guides illustrative canopy distribution, not surveyed individual trees. Photos span different years; EMU combines historical and later design motifs. No new field measurements or photogrammetric solve were performed. Base terrain/roof candidates retain 2008 provenance; Census roads have estimated widths. Stairs, terraces and planting are decorative, not a surveyed navigation mesh. The square extent is not a property boundary.",
   "source_links": [
+    {
+      "label": "Campus life and approximate outdoor navigation",
+      "url": "https://github.com/williamQ96/open-campus-uo/blob/main/docs/campus-life-navigation.md"
+    },
     {
       "label": "v0.7 refinement - sources, methods and assumptions",
       "url": "https://github.com/williamQ96/open-campus-uo/blob/main/docs/visual-refinement-v0.7.md"
@@ -60,7 +66,7 @@
   ],
   "footer": "Independent reconstruction project. No University of Oregon endorsement. Public development preview.",
   "loading_message": "Loading the Eugene campus…",
-  "license_notice": "Code: Apache-2.0. Original documentation and model/design contributions: CC BY 4.0. Copyright 2026 Zhongyi “William” Qiu and contributors. Third-party sources retain their own terms.",
+  "license_notice": "Code: Apache-2.0. Original documentation and model/design contributions: CC BY 4.0. Copyright 2026 Zhongyi “William” Qiu and contributors. Third-party sources retain their own terms. Hero/walker base mesh, animations and skin: Kenney Animated Characters 3, CC0-1.0. Original clothing materials, backpack and procedural vehicles: CC BY 4.0. No university logos or mascot are used.",
   "license_links": [
     {
       "label": "Apache-2.0",
@@ -73,6 +79,16 @@
     {
       "label": "Attribution / NOTICE",
       "url": "licenses/NOTICE.txt"
+    },
+    {
+      "label": "Kenney character source / CC0",
+      "url": "https://kenney-assets.itch.io/animated-characters-3"
     }
-  ]
+  ],
+  "character": {
+    "asset_url": "characters/campus-student.glb",
+    "author": "Kenney / Open Campus contributors",
+    "source_license": "CC0-1.0",
+    "adaptation_license": "CC-BY-4.0"
+  }
 }

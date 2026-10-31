@@ -62,3 +62,7 @@ Overview 搜索以约 45° 拉近展示；步行视角原地转向并高亮，�
 代码／模板代码 **Apache-2.0**，原创文档和原创模型／设计贡献 **CC BY 4.0**；保留署名、NOTICE 与适用第三方条款，见[协议说明](LICENSING.zh-CN.md)。不纳入 UO 内部 GIS、OSM／Microsoft 等汇编轮廓或 Google 3D 作为本版核心资产来源。
 
 [历史 README](docs/zh-CN/README-pre-template.md)保留此前版本的完整背景。
+
+## 校园活动与导航
+
+新增绿黄服装的骨骼角色、步行／自行车／滑板车 NPC、道路汽车及停放车辆，两项开关默认开启。Overview 支持 A／B 搜索或地图选点，第一／第三人称以角色实时位置为起点；蓝色路线带流动白色箭头。[操作与开放资产说明](docs/zh-CN/campus-life-navigation.md)。

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "source": "https://kenney-assets.itch.io/animated-characters-3",
+  "author": "Kenney",
+  "source_license": "CC0-1.0",
+  "acquired_on": "2026-10-31",
+  "source_notes": "Free anonymous itch.io creator download. Original ZIP and license retained. FBX animation rest poses differ from the skinned model; target-local poses are baked from source world matrices.",
+  "original_contributions": "Green/gold clothing materials, backpack, vehicle and rider geometry: CC BY 4.0, Zhongyi William Qiu and Open Campus contributors. No university marks or implied endorsement.",
+  "files": {
+    "data/asset-sources/kenney/animated-characters-3.zip": {
+      "bytes": 706470,
+      "sha256": "6c197462dc9976b522a07d11e0fb42b9caa7cf71d39abbc3ca708b69f13a40dd"
+    },
+    "assets/characters/campus-student.blend": {
+      "bytes": 5514506,
+      "sha256": "7a88c05ed990559eccb75119a6c20254ab300c760a07b0ddd6fe07ed30737be5"
+    },
+    "apps/web-preview/public/characters/campus-student.glb": {
+      "bytes": 246716,
+      "sha256": "d8433e61bcbb722516da0b3878978280352a4c5ec70a2c4da1191dbd9910bcbe"
+    },
+    "apps/web-preview/public/props/campus-props.glb": {
+      "bytes": 208444,
+      "sha256": "92d414d8cf9d5e8840c5780576ea7c691b08697079303c829ca894701b2c7672"
+    },
+    "assets/props/campus-props.blend": {
+      "bytes": 809921,
+      "sha256": "2a52cd41e9ee3bf07a8072970cfad6c24a81a2f7a8e504dd81423494d1bbb221"
+    },
+    "data/asset-sources/kenney/animated-characters-3/License.txt": {
+      "bytes": 688,
+      "sha256": "b9390bddfb9740d5fe219c06090f8f2430c6684074ca854d54d7b417853a7617"
+    },
+    "data/asset-sources/kenney/animated-characters-3/Animations/idle.fbx": {
+      "bytes": 608188,
+      "sha256": "c8a24e0294376ee5a195c56752a13310e1c0b5f8588a4db50e094120e3e4cc74"
+    },
+    "data/asset-sources/kenney/animated-characters-3/Animations/run.fbx": {
+      "bytes": 572732,
+      "sha256": "e635461fc8dace85ec67a7f7941e949a7c3f108b51ae4d2da1557e6e01749df8"
+    },
+    "data/asset-sources/kenney/animated-characters-3/Model/characterMedium.fbx": {
+      "bytes": 167212,
+      "sha256": "18835fef534eede635b081ee7fe647d01a885550a591d2e6bf071010906167d8"
+    },
+    "data/asset-sources/kenney/animated-characters-3/Skins/humanMaleA.png": {
+      "bytes": 35497,
+      "sha256": "1590e08cea37f5aecbacabb40a57c176e389e9a95d5b2a4de00086604ef23e1c"
+    }
+  }
+}

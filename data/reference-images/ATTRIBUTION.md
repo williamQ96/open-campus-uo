@@ -167,3 +167,7 @@ AI-generated concept; project-held copyrightable rights only. Not geographic evi
 The three UO official photos remain cited in [the historical modeling record](../metadata/visual-pilot-references.json), with redistribution unverified. They are not included here and are not covered by these archive licenses. The user-supplied Google Maps screenshot is context only, not an adopted asset or dataset.
 
 Review screenshots are indexed separately as outputs in the manifest and remain in `docs/images/`.
+
+## kenney-student-skin
+
+[Original humanMaleA texture](textures/kenney/humanMaleA.png) — **Kenney**, [Animated Characters 3](https://kenney-assets.itch.io/animated-characters-3), [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). Original image bytes retained; the face/hands texture is embedded in the hero and walker GLB. Clothing materials and backpack are separate original contributions. The source ZIP, FBX files and license are archived under `data/asset-sources/kenney/`.

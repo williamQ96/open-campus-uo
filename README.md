@@ -10,6 +10,10 @@ A Blender-first, georeferenced University of Oregon campus asset project with an
 
 The phone layout uses a compact header/search, a smaller top-right minimap and bottom view buttons. Follow and First-person lower-half touches create a floating analog joystick; upper-half touches look around. Roles stay fixed when crossing the screen midpoint. Cancel, blur, opening Settings/search and changing views stop movement. See [mobile verification](docs/mobile-controls.md).
 
+## Campus life and directions
+
+The green/gold rigged hero, walking/bicycle/scooter NPCs, road traffic and parked vehicles are available with two default-on Settings switches. Directions supports A/B building searches or map pins in Overview, and your live position → destination in Follow/First person, with a blue route and animated white chevrons. [Controls, open asset credits and limitations](docs/campus-life-navigation.md).
+
 ## Current scene
 
 The 2 × 2 km scene covers the main Eugene campus and surrounding context, with **534 structure records, 63 named buildings and 140 road/path segments**. It is a square study extent, not an official campus property boundary, and excludes the Autzen complex north of the river.

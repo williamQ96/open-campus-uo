@@ -403,6 +403,37 @@
       "bytes": 1011293,
       "sha256": "e52f12b6b119318866d231bf1db3a8619f5c67f59782fd22c21c2c4c37debfa5",
       "geographic_evidence": "Georeferenced aerial reference; individual generated trees are illustrative, not surveyed stem records."
+    },
+    {
+      "id": "kenney-student-skin",
+      "file": "textures/kenney/humanMaleA.png",
+      "existing_copy": "data/asset-sources/kenney/animated-characters-3/Skins/humanMaleA.png",
+      "kind": "texture",
+      "title": "Animated Characters 3 - humanMaleA skin",
+      "author": "Kenney",
+      "source_page": "https://kenney-assets.itch.io/animated-characters-3",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence": "Official creator itch.io listing states Creative Commons CC0; original ZIP License.txt archived in data/asset-sources/kenney.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": null,
+      "date_note": "Authored game texture; publication date not asserted.",
+      "attribution": "Kenney - Animated Characters 3 - CC0-1.0 - https://kenney-assets.itch.io/animated-characters-3",
+      "modifications": "None to PNG bytes; runtime uses face/hands regions alongside separately authored clothing materials.",
+      "used_by": [
+        "scripts/build-campus-character.py",
+        "assets/characters/campus-student.blend",
+        "apps/web-preview/public/characters/campus-student.glb"
+      ],
+      "purpose": [
+        "Openly reusable hero and walking NPC face/hands texture, embedded in GLB."
+      ],
+      "width": 256,
+      "height": 256,
+      "bytes": 35497,
+      "sha256": "1590e08cea37f5aecbacabb40a57c176e389e9a95d5b2a4de00086604ef23e1c"
     }
   ],
   "related_outputs": [

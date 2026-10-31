@@ -1,0 +1,2 @@
+# Preserve downloaded source bytes and vendor license formatting.
+data/asset-sources/kenney/** -text -whitespace

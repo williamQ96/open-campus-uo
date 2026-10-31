@@ -19,7 +19,7 @@ test("authored pilot preserves all landmark search modes, geometry provenance an
     landmarkBuildings: 3,
     toon: true,
   });
-  expect((await state()).drawCalls).toBeLessThan(180);
+  expect((await state()).drawCalls).toBeLessThan(350);
   const spawn = (await state()).player;
   for (const name of ["Knight Library", "Johnson Hall", "Erb Memorial Union"]) {
     const search = page.getByRole("combobox", { name: "Search buildings" });
