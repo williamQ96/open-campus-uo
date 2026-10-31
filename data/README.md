@@ -7,6 +7,7 @@ Verified NOAA/DOGAMI historical LiDAR is recorded in `metadata/source-audit.json
 - `raw/`: ignored large source point clouds, imagery, rasters and reference downloads.
 - `processed/`: ignored intermediate results.
 - `metadata/`: committed source evidence, dates, CRS/units, checksums, license references and validation status.
+- [`reference-images/`](reference-images/README.md): committed, rights-reviewed image/photo inputs and project artwork, with a per-file manifest, attribution and source evidence. This is separate from ignored research downloads; unverified historical photos remain excluded and cited.
 
 Each adopted input needs provider/product IDs, URL, acquisition/access dates when known, coverage, horizontal/vertical frame, units, hash, use terms and verification status. Unknown facts remain explicitly unknown.
 

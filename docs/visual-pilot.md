@@ -12,6 +12,8 @@ The first visual loop adds three photo-informed landmarks, ten stylized historic
 
 The [reference register](../data/metadata/visual-pilot-references.json) records the original pages, image URLs, observed features and limitations. UO photographs were searched and visually inspected for this work. They remain with their original rights holders, are not redistributed and are not used as textures.
 
+**Reference-archive update:** the [central image directory](../data/reference-images/README.md) now preserves seven separately licensed photographs for future refinement, plus existing project artwork. The UO photos above remain historical link-only records with unverified redistribution rights and explicit replacement IDs. The new archive did not regenerate this pilot's geometry. Capture dates, pre/post-renovation views and facade orientations are recorded so subsequent work can use the approved originals accurately.
+
 | Landmark | Photo-informed features | Reference |
 | --- | --- | --- |
 | Knight Library | Tall north windows, brick, pale stone cornice/surrounds, three small balconies | [UO exterior photograph](https://cas.uoregon.edu/about/cas-awards/recent-cas-awardees), [architecture archive](https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/knight-library) |

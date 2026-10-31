@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "note": "Selected source declarations retrieved from Commons imageinfo extmetadata on 2026-10-31, plus manual review. Metadata records claims, not a legal warranty; follow linked source pages and preserve original terms.",
+  "photos": [
+    {
+      "id": "knight-north-a-2018",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon,_Eugene_-_DPLA_-_0ec44303b6047e9a5be5330ecc2d1456.jpg",
+      "reviewed_on": "2026-10-31",
+      "source_metadata": {
+        "artist": "Gary Halvorson, Oregon State Archives",
+        "declared_license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "date_original": "11 July 2018",
+        "upload_datetime": "2023-08-16 02:00:32",
+        "attribution_required": "true"
+      },
+      "review_note": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json."
+    },
+    {
+      "id": "knight-north-b-2018",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon,_Eugene_-_DPLA_-_70b98a665250c2f5ae9d2c47882031c1.jpg",
+      "reviewed_on": "2026-10-31",
+      "source_metadata": {
+        "artist": "Gary Halvorson, Oregon State Archives",
+        "declared_license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "date_original": "11 July 2018",
+        "upload_datetime": "2023-08-15 17:57:13",
+        "attribution_required": "true"
+      },
+      "review_note": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json."
+    },
+    {
+      "id": "knight-light-2017",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon_Campus,_Eugene_-_DPLA_-_36cf25badecdf92bed447c14fae62e56.jpg",
+      "reviewed_on": "2026-10-31",
+      "source_metadata": {
+        "artist": "Gary Halvorson, Oregon State Archives",
+        "declared_license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "date_original": "26 June 2017",
+        "upload_datetime": "2023-08-15 19:05:35",
+        "attribution_required": "true"
+      },
+      "review_note": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json."
+    },
+    {
+      "id": "johnson-rear-2012",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eugene,_University_of_Oregon,_Johnson_Hall_-_DPLA_-_f8c08bc882721bdb6ab612cc9ecaf597.jpg",
+      "reviewed_on": "2026-10-31",
+      "source_metadata": {
+        "artist": "Gary Halvorson, Oregon State Archives",
+        "declared_license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "date_original": "25 July 2012",
+        "upload_datetime": "2023-08-15 21:08:30",
+        "attribution_required": "true"
+      },
+      "review_note": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json."
+    },
+    {
+      "id": "johnson-front-pd",
+      "source_page": "https://commons.wikimedia.org/wiki/File:JohnsonHallUO.JPG",
+      "reviewed_on": "2026-10-31",
+      "source_metadata": {
+        "artist": "",
+        "declared_license": "Public domain",
+        "license_url": "",
+        "date_original": "",
+        "upload_datetime": "2006-06-06 01:51:51",
+        "attribution_required": "false"
+      },
+      "review_note": "Commons source page identifies Adam850 as the photographer and carries the author PD-self dedication, including its worldwide fallback permission. This is not a CC0 claim."
+    },
+    {
+      "id": "emu-entry-2013",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Erb_Memorial_Union_(EMU)_from_University_Street_on_the_University_of_Oregon_Campus.jpg",
+      "reviewed_on": "2026-10-31",
+      "source_metadata": {
+        "artist": "Rick Obst",
+        "declared_license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "date_original": "2013-10-19 10:31:44",
+        "upload_datetime": "2026-10-06 16:00:20",
+        "attribution_required": "true"
+      },
+      "review_note": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json."
+    },
+    {
+      "id": "emu-exterior-2017",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Erb_Memorial_Union_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09645.jpg",
+      "reviewed_on": "2026-10-31",
+      "source_metadata": {
+        "artist": "Daderot",
+        "declared_license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "date_original": "2017-11-03 19:48:27",
+        "upload_datetime": "2018-08-31 22:56:13",
+        "attribution_required": "false"
+      },
+      "review_note": "Commons source page declares CC0-1.0 for this photograph; extracted metadata is retained in evidence.json."
+    }
+  ]
+}

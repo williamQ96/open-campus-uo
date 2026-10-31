@@ -20,6 +20,8 @@ The character starts at the University Street / East 13th Avenue T-junction faci
 
 The reusable specification is the [upstream style library's default recommendation](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style), with other styles encouraged.
 
+The [image and photo archive](data/reference-images/README.md) preserves adopted source images, mockups and branding with per-file authors, licenses, dates, use and checksums. Seven openly reusable photographs are now available for further landmark refinement; legacy reference exclusions remain documented. The archive is outside runtime downloads.
+
 ## Run locally
 
 ```powershell

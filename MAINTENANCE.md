@@ -15,6 +15,8 @@ Before advancing the reconstruction pin, rebuild a small area and compare proven
 
 Reusable fixes belong upstream. UO-specific geometry, identities and content stay downstream. Shared viewer upgrades check file hashes before replacing managed code and preserve the scene, project profile, branding and hosting identity. Resolve local code changes explicitly rather than overwriting them.
 
+Maintain adopted image/photo originals in [`data/reference-images/`](data/reference-images/README.md), updating their manifest, attribution, dates, use and hashes with asset changes. Use sources that permit open redistribution, modification and export; preserve historical exclusions and seek approved replacements. The reusable policy/checker lives upstream; CI pins it independently from the reconstruction and viewer runtime.
+
 Automatically generated blockouts must not replace manually refined authoritative assets. Current priorities are candidate cleanup, verified identities and heights, roof/facade refinement, paths and collision, followed by LOD and tiling as needed.
 
 Both repositories and the UO live site are public. Code is Apache-2.0 and original content is CC BY 4.0; third-party terms remain separate.

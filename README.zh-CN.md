@@ -18,6 +18,8 @@
 
 通用规范作为[上游 style 库的默认推荐](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style)，同时鼓励探索其他画风。
 
+[图片／照片素材目录](data/reference-images/README.zh-CN.md)保存采用的图片、mockup 与品牌原件，逐图记录作者、许可、日期、用途与 hash。现有 7 张开放许可照片供下一步细化，保留旧引用的排除记录；素材库不增加网页运行下载量。
+
 ## 本地运行
 
 ```powershell

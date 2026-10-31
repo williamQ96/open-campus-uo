@@ -1,0 +1,45 @@
+[English](README.md) | **简体中文**
+
+# 图片与照片素材目录
+
+本目录是 Open Campus: UO 持续维护的素材原件库，当前包含 **7 张获得开放许可的参考照片和 5 张已有项目设计图**（概念 mockup、品牌展示、Logo、图标和 favicon），未修改图片字节。保留原设计档案和网页所需品牌路径，台账记录相同字节副本的关系。
+
+- [manifest.json](manifest.json)：逐图文件、作者、来源／下载链接、拍摄／访问／核验日期、许可依据、用途／建筑 ID、修改、SHA-256 与字节数。
+- [ATTRIBUTION.md](ATTRIBUTION.md)：每张图的署名和许可链接。
+- [evidence.json](evidence.json)：来源声明摘录和人工核验记录。
+- [原 v0.6 建模参考记录](../metadata/visual-pilot-references.json)：保留历史引用及不分发的原因。
+- [上游通用规范和校验工具](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/reference-media.md)。
+
+## 照片与用途
+
+| 建筑 | 归档内容 | 时间与限制 |
+| --- | --- | --- |
+| [Knight Library](photos/knight-library/) · `roof-6684e091` | 历史北立面两个斜视角、外墙灯具细节 | 立面 2018-07-11；灯具 2017-06-26。第二张并非独立侧立面测绘。 |
+| [Johnson Hall](photos/johnson-hall/) · `roof-906c030e` | 正面柱廊、背面入口 | 背面 2012-07-25；正面拍摄日期未知，2006-06-06 是上传日期，不能当作拍摄日期。 |
+| [Erb Memorial Union](photos/erb-memorial-union/) · `roof-266f13fd` | 历史 University Street／Fishbowl 入口、修缮后外观 | 2013-10-19 入口属于 2016 修缮前；2017-11-03 外观不代表 2026 现状。 |
+
+这些照片已实际查看并归档，**用于接下来的细化**。此次建图库没有重新生成 v0.6 Blender／GLB、修改地形或测量立面尺寸；[原视觉闭环报告](../../docs/zh-CN/visual-pilot.md)保留真实建模历史。当前模型仍是原创近似美术几何，没有照片贴图。
+
+## 设计图片与输出
+
+[project](project/) 保留未经修改的 AI 概念图和 Open Courtyard 品牌图。概念图只说明画风，不是校园照片、实际模型截图或地理数据；AI 来源与权利范围见台账和[原始设计来源](../../design/architectural-toon-realism/provenance.json)。标识生成源码在 [design-logo.py](../../scripts/design-logo.py)。
+
+4 张已有运行截图留在 [docs/images](../../docs/images/)，以 `related_outputs` 单独登记，不混作照片输入。设计档案、原品牌 PDF、调色板保留原位置。本素材库位于网页 `public/` 之外，不增加网页运行下载量。
+
+## 许可与后续接收
+
+第三方照片按各自 **CC BY 4.0、CC0 或 PD-self** 保持原状，不统一重授项目许可。按要求署名 Gary Halvorson／Oregon State Archives、Rick Obst；公有领域照片也记录 Daderot、Adam850 便于追溯。原创设计按[项目协议](../../LICENSING.zh-CN.md)中拥有权利的范围提供，不授予商标权或机构背书。
+
+此前参考过的 3 张 UO 官方照片尚未确认公开分发许可，**只保留历史来源链接**、排除状态和替代素材 ID，不把照片字节或贴图放进公开包。用户提供的 Google Maps 卫星截图仅说明关注区域，没有导入、描摹或作为模型／贴图来源，也没有导入 Google 瓦片或三维资产。
+
+以后采用图片前，先确认允许开放分发、修改和资产导出，再保存原件、逐图登记。避免授权不明、NC、ND 和平台受限素材，使用许可明确的替代来源。记录原图／修改版本关系；新增图片或用途时同时更新台账和署名，并检查衍生资产的适用条件。日期、朝向、修缮前后与近似限制也是参考依据的一部分。
+
+## 核查
+
+在本仓库根目录、准备好上游 checkout 后：
+
+```powershell
+python ../open-geospatial-to-3d-reconstruction-pipeline/scripts/check-reference-media.py --root .
+```
+
+CI 的 `reference-media` job 固定上游校验工具 commit，检查图片登记、字段与 hash 一致性；不能替代人工授权判断或建筑精度核验。本次不更改独立的重建锁与 viewer 运行时锁。

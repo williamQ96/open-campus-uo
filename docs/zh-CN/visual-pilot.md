@@ -12,6 +12,8 @@ v0.6 · Architectural Toon Realism · 2026-10-31
 
 已上网搜索并查看 UO 官方照片。[参考登记表](../../data/metadata/visual-pilot-references.json)记录页面、图片 URL、采用的特征与限制。参考照片不随仓库分发，也没有用于贴图。
 
+**素材归档更新：**[统一图片目录](../../data/reference-images/README.zh-CN.md)现保存 7 张另行取得开放许可的照片及已有项目图稿，供接下来细化。上述 UO 官方照片仍为未确认分发权的历史链接引用，明确排除并记录替代素材 ID。建图库没有重新生成本版几何；拍摄日期、修缮前后和立面朝向均登记供后续准确使用。
+
 - Knight Library：高窗、红砖、浅色石饰／檐口、三个小阳台。[UO 图片页面](https://cas.uoregon.edu/about/cas-awards/recent-cas-awardees)
 - Johnson Hall：六柱门廊、砖石对比、宽台阶与圆形种植意象。[UO 图片页面](https://news.uoregon.edu/content/uo-sets-record-academic-giving-first-public-year-campaign)
 - EMU：高低砖体块、高窗、底层玻璃、雨棚、露台和 Fishbowl 弧形玻璃意象。[UO 图片页面](https://news.uoregon.edu/content/events-emus-75th-birthday-bring-uo-groups-together)、[历史资料](https://emu.uoregon.edu/index.php/about/history)

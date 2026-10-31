@@ -3,6 +3,24 @@ on: [push, pull_request]
 permissions:
   contents: read
 jobs:
+  reference-media:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch reviewed upstream media-audit tool
+        uses: actions/checkout@v4
+        with:
+          repository: williamQ96/open-geospatial-to-3d-reconstruction-pipeline
+          ref: b14a4df725f9e3bcbd789b97bb65ae1c98ac33a0
+          path: .reference-tools
+          sparse-checkout: scripts/check-reference-media.py
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - name: Verify image provenance records, credits and checksums
+        run: python .reference-tools/scripts/check-reference-media.py --root .
   browser-preview:
     # Playwright 1.60 is verified on 24.04; avoid ubuntu-latest's 26.04 migration.
     runs-on: ubuntu-24.04

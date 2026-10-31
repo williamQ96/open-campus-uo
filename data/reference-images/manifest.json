@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "archived_on": "2026-10-31",
+  "policy": "Archive every adopted image input with its original terms; approved project defaults: CC BY 4.0, CC0 or verified PD-self. Third-party photos are not relicensed. Reference-only images are not bundled in runtime exports.",
+  "images": [
+    {
+      "id": "knight-north-a-2018",
+      "file": "photos/knight-library/north-oblique-a-2018.jpg",
+      "kind": "photograph",
+      "title": "Knight Library, University of Oregon, Eugene - DPLA - 0ec44303b6047e9a5be5330ecc2d1456.jpg",
+      "author": "Gary Halvorson, Oregon State Archives",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon,_Eugene_-_DPLA_-_0ec44303b6047e9a5be5330ecc2d1456.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Knight_Library%2C_University_of_Oregon%2C_Eugene_-_DPLA_-_0ec44303b6047e9a5be5330ecc2d1456.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": "2018-07-11",
+      "date_note": "Date as supplied by the source; timezone and present-day conditions are not inferred.",
+      "attribution": "Knight Library, University of Oregon, Eugene - DPLA - 0ec44303b6047e9a5be5330ecc2d1456.jpg — Gary Halvorson, Oregon State Archives — CC-BY-4.0 — https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon,_Eugene_-_DPLA_-_0ec44303b6047e9a5be5330ecc2d1456.jpg",
+      "modifications": "None; original downloaded image bytes, renamed locally.",
+      "used_by": [
+        "roof-6684e091"
+      ],
+      "purpose": [
+        "Historic north facade, oblique view A; brick, stone trim, windows and balconies."
+      ],
+      "usage_status": "Archived and visually reviewed for future refinement; not used to regenerate the existing v0.6 geometry or as a runtime texture.",
+      "width": 2000,
+      "height": 1335,
+      "bytes": 1203323,
+      "sha256": "7a0f1fba3ce46c40a25e1737d706047c7f85171ef1b265fddb8a3763d577b87e"
+    },
+    {
+      "id": "knight-north-b-2018",
+      "file": "photos/knight-library/north-oblique-b-2018.jpg",
+      "kind": "photograph",
+      "title": "Knight Library, University of Oregon, Eugene - DPLA - 70b98a665250c2f5ae9d2c47882031c1.jpg",
+      "author": "Gary Halvorson, Oregon State Archives",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon,_Eugene_-_DPLA_-_70b98a665250c2f5ae9d2c47882031c1.jpg",
+      "download_url": "https://nwdh-omeka.s3.us-west-2.amazonaws.com/original/e42ce1edea30ddd71c64de835127938e71ec3b0b.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": "2018-07-11",
+      "date_note": "Date as supplied by the source; timezone and present-day conditions are not inferred.",
+      "attribution": "Knight Library, University of Oregon, Eugene - DPLA - 70b98a665250c2f5ae9d2c47882031c1.jpg — Gary Halvorson, Oregon State Archives — CC-BY-4.0 — https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon,_Eugene_-_DPLA_-_70b98a665250c2f5ae9d2c47882031c1.jpg",
+      "modifications": "None; original downloaded image bytes, renamed locally.",
+      "used_by": [
+        "roof-6684e091"
+      ],
+      "purpose": [
+        "Historic north facade, oblique view B; not a separately verified side elevation."
+      ],
+      "usage_status": "Archived and visually reviewed for future refinement; not used to regenerate the existing v0.6 geometry or as a runtime texture.",
+      "width": 2000,
+      "height": 1335,
+      "bytes": 1392781,
+      "sha256": "41a6f842830110acb0838f0555455e26d952f6ba1cf6e8d1af03ee2026697201"
+    },
+    {
+      "id": "knight-light-2017",
+      "file": "photos/knight-library/exterior-light-2017.jpg",
+      "kind": "photograph",
+      "title": "Knight Library, University of Oregon Campus, Eugene - DPLA - 36cf25badecdf92bed447c14fae62e56.jpg",
+      "author": "Gary Halvorson, Oregon State Archives",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon_Campus,_Eugene_-_DPLA_-_36cf25badecdf92bed447c14fae62e56.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Knight_Library%2C_University_of_Oregon_Campus%2C_Eugene_-_DPLA_-_36cf25badecdf92bed447c14fae62e56.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": "2017-06-26",
+      "date_note": "Date as supplied by the source; timezone and present-day conditions are not inferred.",
+      "attribution": "Knight Library, University of Oregon Campus, Eugene - DPLA - 36cf25badecdf92bed447c14fae62e56.jpg — Gary Halvorson, Oregon State Archives — CC-BY-4.0 — https://commons.wikimedia.org/wiki/File:Knight_Library,_University_of_Oregon_Campus,_Eugene_-_DPLA_-_36cf25badecdf92bed447c14fae62e56.jpg",
+      "modifications": "None; original downloaded image bytes, renamed locally.",
+      "used_by": [
+        "roof-6684e091"
+      ],
+      "purpose": [
+        "Historic exterior light fixture and facade material detail."
+      ],
+      "usage_status": "Archived and visually reviewed for future refinement; not used to regenerate the existing v0.6 geometry or as a runtime texture.",
+      "width": 1335,
+      "height": 2000,
+      "bytes": 857296,
+      "sha256": "cade700a912bb675fcb441ab3d2a5d2b87e66089548a4a7b862d095ae9073bda"
+    },
+    {
+      "id": "johnson-rear-2012",
+      "file": "photos/johnson-hall/rear-2012.jpg",
+      "kind": "photograph",
+      "title": "Eugene, University of Oregon, Johnson Hall - DPLA - f8c08bc882721bdb6ab612cc9ecaf597.jpg",
+      "author": "Gary Halvorson, Oregon State Archives",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eugene,_University_of_Oregon,_Johnson_Hall_-_DPLA_-_f8c08bc882721bdb6ab612cc9ecaf597.jpg",
+      "download_url": "https://nwdh-omeka.s3.us-west-2.amazonaws.com/original/077c4f443e90a5e40dc881124922b2becf6a6c22.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": "2012-07-25",
+      "date_note": "Date as supplied by the source; timezone and present-day conditions are not inferred.",
+      "attribution": "Eugene, University of Oregon, Johnson Hall - DPLA - f8c08bc882721bdb6ab612cc9ecaf597.jpg — Gary Halvorson, Oregon State Archives — CC-BY-4.0 — https://commons.wikimedia.org/wiki/File:Eugene,_University_of_Oregon,_Johnson_Hall_-_DPLA_-_f8c08bc882721bdb6ab612cc9ecaf597.jpg",
+      "modifications": "None; original downloaded image bytes, renamed locally.",
+      "used_by": [
+        "roof-906c030e"
+      ],
+      "purpose": [
+        "Rear entrance, brick, stone and landscape context; not the six-column north portico."
+      ],
+      "usage_status": "Archived and visually reviewed for future refinement; not used to regenerate the existing v0.6 geometry or as a runtime texture.",
+      "width": 2000,
+      "height": 1325,
+      "bytes": 1465486,
+      "sha256": "6271197472a8a7aa77cd98671dec90dc3d471dd667467723d8cf522b7e02b403"
+    },
+    {
+      "id": "johnson-front-pd",
+      "file": "photos/johnson-hall/front-pd.jpg",
+      "kind": "photograph",
+      "title": "JohnsonHallUO.JPG",
+      "author": "Adam850 (Adam850~commonswiki)",
+      "source_page": "https://commons.wikimedia.org/wiki/File:JohnsonHallUO.JPG",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/JohnsonHallUO.JPG",
+      "license": "LicenseRef-PD-self",
+      "license_url": "https://commons.wikimedia.org/wiki/File:JohnsonHallUO.JPG#Licensing",
+      "license_evidence": "Commons source page identifies Adam850 as the photographer and carries the author PD-self dedication, including its worldwide fallback permission. This is not a CC0 claim.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": null,
+      "date_note": "Capture date not supplied; uploaded 2006-06-06. Upload date is not capture date.",
+      "attribution": "JohnsonHallUO.JPG — Adam850 (Adam850~commonswiki) — LicenseRef-PD-self — https://commons.wikimedia.org/wiki/File:JohnsonHallUO.JPG",
+      "modifications": "None; original downloaded image bytes, renamed locally.",
+      "used_by": [
+        "roof-906c030e"
+      ],
+      "purpose": [
+        "Historic front portico, columns and approach; capture date unknown."
+      ],
+      "usage_status": "Archived and visually reviewed for future refinement; not used to regenerate the existing v0.6 geometry or as a runtime texture.",
+      "width": 2580,
+      "height": 1932,
+      "bytes": 1855093,
+      "sha256": "95875322256b8be73c6a1d30a13a7ad1b1d44bcd23ad541ff1cfcac2a0ea9696"
+    },
+    {
+      "id": "emu-entry-2013",
+      "file": "photos/erb-memorial-union/university-street-entry-2013.jpg",
+      "kind": "photograph",
+      "title": "Entrance to the Erb Memorial Union (EMU) from University Street on the University of Oregon Campus.jpg",
+      "author": "Rick Obst",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Erb_Memorial_Union_(EMU)_from_University_Street_on_the_University_of_Oregon_Campus.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Entrance_to_the_Erb_Memorial_Union_%28EMU%29_from_University_Street_on_the_University_of_Oregon_Campus.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons source page declares CC-BY-4.0 for this photograph; extracted metadata is retained in evidence.json.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": "2013-10-19",
+      "date_note": "Date as supplied by the source; timezone and present-day conditions are not inferred.",
+      "attribution": "Entrance to the Erb Memorial Union (EMU) from University Street on the University of Oregon Campus.jpg — Rick Obst — CC-BY-4.0 — https://commons.wikimedia.org/wiki/File:Entrance_to_the_Erb_Memorial_Union_(EMU)_from_University_Street_on_the_University_of_Oregon_Campus.jpg",
+      "modifications": "None; original downloaded image bytes, renamed locally.",
+      "used_by": [
+        "roof-266f13fd"
+      ],
+      "purpose": [
+        "Historical curved Fishbowl entrance and canopy from University Street, before the 2016 renovation; not a current entrance survey."
+      ],
+      "usage_status": "Archived and visually reviewed for future refinement; not used to regenerate the existing v0.6 geometry or as a runtime texture.",
+      "width": 3520,
+      "height": 1984,
+      "bytes": 3559707,
+      "sha256": "a03601ec91310790afbc449241c0b479c4b5b642a4645937bebb9fddb30d87c5"
+    },
+    {
+      "id": "emu-exterior-2017",
+      "file": "photos/erb-memorial-union/exterior-2017.jpg",
+      "kind": "photograph",
+      "title": "Erb Memorial Union - University of Oregon - Eugene, Oregon - DSC09645.jpg",
+      "author": "Daderot",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Erb_Memorial_Union_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09645.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Erb_Memorial_Union_-_University_of_Oregon_-_Eugene%2C_Oregon_-_DSC09645.jpg",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence": "Commons source page declares CC0-1.0 for this photograph; extracted metadata is retained in evidence.json.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": "2017-11-03",
+      "date_note": "Date as supplied by the source; timezone and present-day conditions are not inferred.",
+      "attribution": "Erb Memorial Union - University of Oregon - Eugene, Oregon - DSC09645.jpg — Daderot — CC0-1.0 — https://commons.wikimedia.org/wiki/File:Erb_Memorial_Union_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09645.jpg",
+      "modifications": "None; original downloaded image bytes, renamed locally.",
+      "used_by": [
+        "roof-266f13fd"
+      ],
+      "purpose": [
+        "Post-renovation brick masses, glazed ground floor and terrace; a 2017 view, not evidence of 2026 conditions."
+      ],
+      "usage_status": "Archived and visually reviewed for future refinement; not used to regenerate the existing v0.6 geometry or as a runtime texture.",
+      "width": 5472,
+      "height": 3648,
+      "bytes": 9674254,
+      "sha256": "ead742f2ba2503f691f3a6daf6014086372ebd7157560c4244511eb8ac6bb5cc"
+    },
+    {
+      "id": "toon-concept",
+      "file": "project/mockups/uo-campus-concept.png",
+      "kind": "project-design",
+      "title": "AI-generated Architectural Toon Realism concept",
+      "author": "Zhongyi “William” Qiu and contributors / AI-generated concept",
+      "source_page": "https://chatgpt.com/share/6ae5adf2-4a74-83e8-b001-f9de17509c56",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Original project artwork, covered by LICENSING.md; AI concept offered only to the extent of copyrightable rights held by the project. No trademark license or exclusive right in a style.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": null,
+      "date_note": "Project design, not a camera capture; existing artwork archived unchanged on 2026-10-31.",
+      "attribution": "AI-generated Architectural Toon Realism concept — Open Campus: UO — Zhongyi “William” Qiu and contributors — CC BY 4.0 — https://github.com/williamQ96/open-campus-uo",
+      "modifications": "None; byte-identical archive copy of design/architectural-toon-realism/mockups/uo-campus-concept.png",
+      "used_by": [
+        "design/architectural-toon-realism/README.md"
+      ],
+      "purpose": [
+        "Art direction only; not photographic or geographic evidence."
+      ],
+      "ai_generated": true,
+      "geographic_evidence": false,
+      "existing_copy": "design/architectural-toon-realism/mockups/uo-campus-concept.png",
+      "bytes": 3513328,
+      "sha256": "5a709b45b91296dfa80c031e4ab289a854d7e20f30fc14aa3e4f497c203767bb"
+    },
+    {
+      "id": "identity-board",
+      "file": "project/brand/opencampus-identity.png",
+      "kind": "project-design",
+      "title": "Open Courtyard identity board",
+      "author": "Zhongyi “William” Qiu and contributors",
+      "source_page": "https://github.com/williamQ96/open-campus-uo/blob/7744eca00cf2da7605c4f6a6d12c3f60498542cd/design/opencampus-identity.png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Original project artwork, covered by LICENSING.md; AI concept offered only to the extent of copyrightable rights held by the project. No trademark license or exclusive right in a style.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": null,
+      "date_note": "Project design, not a camera capture; existing artwork archived unchanged on 2026-10-31.",
+      "attribution": "Open Courtyard identity board — Open Campus: UO — Zhongyi “William” Qiu and contributors — CC BY 4.0 — https://github.com/williamQ96/open-campus-uo",
+      "modifications": "None; byte-identical archive copy of design/opencampus-identity.png",
+      "used_by": [
+        "design/README.md"
+      ],
+      "purpose": [
+        "Existing identity presentation."
+      ],
+      "ai_generated": false,
+      "geographic_evidence": false,
+      "existing_copy": "design/opencampus-identity.png",
+      "bytes": 77410,
+      "sha256": "8beefd015b8a3fc94b71b175f3dbe4b8dbdb0718e5174f7b499e202077549039"
+    },
+    {
+      "id": "logo-lockup",
+      "file": "project/brand/opencampus-logo.png",
+      "kind": "project-design",
+      "title": "OpenCampus logo lockup",
+      "author": "Zhongyi “William” Qiu and contributors",
+      "source_page": "https://github.com/williamQ96/open-campus-uo/blob/7744eca00cf2da7605c4f6a6d12c3f60498542cd/apps/web-preview/public/brand/opencampus-logo.png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Original project artwork, covered by LICENSING.md; AI concept offered only to the extent of copyrightable rights held by the project. No trademark license or exclusive right in a style.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": null,
+      "date_note": "Project design, not a camera capture; existing artwork archived unchanged on 2026-10-31.",
+      "attribution": "OpenCampus logo lockup — Open Campus: UO — Zhongyi “William” Qiu and contributors — CC BY 4.0 — https://github.com/williamQ96/open-campus-uo",
+      "modifications": "None; byte-identical archive copy of apps/web-preview/public/brand/opencampus-logo.png",
+      "used_by": [
+        "apps/web-preview/public/viewer-profile.json"
+      ],
+      "purpose": [
+        "Runtime project branding."
+      ],
+      "ai_generated": false,
+      "geographic_evidence": false,
+      "existing_copy": "apps/web-preview/public/brand/opencampus-logo.png",
+      "bytes": 29656,
+      "sha256": "d066d27561f4db27a200c024a122b633a013db39163ae30ce5276ea2ecc33b41"
+    },
+    {
+      "id": "logo-mark",
+      "file": "project/brand/opencampus-mark.png",
+      "kind": "project-design",
+      "title": "OpenCampus courtyard mark",
+      "author": "Zhongyi “William” Qiu and contributors",
+      "source_page": "https://github.com/williamQ96/open-campus-uo/blob/7744eca00cf2da7605c4f6a6d12c3f60498542cd/apps/web-preview/public/brand/opencampus-mark.png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Original project artwork, covered by LICENSING.md; AI concept offered only to the extent of copyrightable rights held by the project. No trademark license or exclusive right in a style.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": null,
+      "date_note": "Project design, not a camera capture; existing artwork archived unchanged on 2026-10-31.",
+      "attribution": "OpenCampus courtyard mark — Open Campus: UO — Zhongyi “William” Qiu and contributors — CC BY 4.0 — https://github.com/williamQ96/open-campus-uo",
+      "modifications": "None; byte-identical archive copy of apps/web-preview/public/brand/opencampus-mark.png",
+      "used_by": [
+        "apps/web-preview/public/viewer-profile.json"
+      ],
+      "purpose": [
+        "Runtime project branding."
+      ],
+      "ai_generated": false,
+      "geographic_evidence": false,
+      "existing_copy": "apps/web-preview/public/brand/opencampus-mark.png",
+      "bytes": 11913,
+      "sha256": "6f06aefeefaf6ce3b99c1769e1124b4ec8fb6ddc23de4ea27a4563124bfcf548"
+    },
+    {
+      "id": "favicon",
+      "file": "project/brand/favicon.png",
+      "kind": "project-design",
+      "title": "OpenCampus favicon",
+      "author": "Zhongyi “William” Qiu and contributors",
+      "source_page": "https://github.com/williamQ96/open-campus-uo/blob/7744eca00cf2da7605c4f6a6d12c3f60498542cd/apps/web-preview/public/brand/favicon.png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Original project artwork, covered by LICENSING.md; AI concept offered only to the extent of copyrightable rights held by the project. No trademark license or exclusive right in a style.",
+      "review_status": "approved",
+      "reviewed_on": "2026-10-31",
+      "accessed_on": "2026-10-31",
+      "captured_at": null,
+      "date_note": "Project design, not a camera capture; existing artwork archived unchanged on 2026-10-31.",
+      "attribution": "OpenCampus favicon — Open Campus: UO — Zhongyi “William” Qiu and contributors — CC BY 4.0 — https://github.com/williamQ96/open-campus-uo",
+      "modifications": "None; byte-identical archive copy of apps/web-preview/public/brand/favicon.png",
+      "used_by": [
+        "apps/web-preview/index.html"
+      ],
+      "purpose": [
+        "Browser icon."
+      ],
+      "ai_generated": false,
+      "geographic_evidence": false,
+      "existing_copy": "apps/web-preview/public/brand/favicon.png",
+      "bytes": 1773,
+      "sha256": "5c487612c915339faad83b3d730f18243c8fec1599a327acf0ce04d5ca10d652"
+    }
+  ],
+  "related_outputs": [
+    {
+      "file": "docs/images/visual-pilot-overview.png",
+      "kind": "rendered-output",
+      "purpose": "Existing v0.6 review screenshot; not a photo input."
+    },
+    {
+      "file": "docs/images/visual-pilot-knight.png",
+      "kind": "rendered-output",
+      "purpose": "Existing v0.6 review screenshot; not a photo input."
+    },
+    {
+      "file": "docs/images/visual-pilot-johnson.png",
+      "kind": "rendered-output",
+      "purpose": "Existing v0.6 review screenshot; not a photo input."
+    },
+    {
+      "file": "docs/images/visual-pilot-emu.png",
+      "kind": "rendered-output",
+      "purpose": "Existing v0.6 review screenshot; not a photo input."
+    }
+  ],
+  "excluded_sources": [
+    {
+      "kind": "legacy UO official reference photos",
+      "record": "data/metadata/visual-pilot-references.json",
+      "reason": "Redistribution rights not verified. Historical citations retained; photo bytes excluded; not runtime textures."
+    },
+    {
+      "kind": "user-supplied Google Maps satellite screenshot",
+      "reason": "Context for area of interest only; not imported, traced, used as a texture or redistributed as an open asset."
+    }
+  ]
+}
