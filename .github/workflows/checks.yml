@@ -23,6 +23,8 @@ jobs:
         run: python .reference-tools/scripts/check-reference-media.py --root .
       - name: Verify archived character and model checksums
         run: python scripts/check-open-assets.py
+      - name: Verify tiered scene identity and retained geographic sources
+        run: python scripts/check-campus-expansion.py
   browser-preview:
     # Playwright 1.60 is verified on 24.04; avoid ubuntu-latest's 26.04 migration.
     runs-on: ubuntu-24.04

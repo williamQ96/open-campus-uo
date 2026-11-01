@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-31",
+  "status": "local-uncommitted-not-pushed-not-deployed",
+  "downstream_base": "7c6558d9272b315afad94d234db4778bc0f55d95",
+  "upstream_base": "0361592966089072333ce3bf6eea22772c5d3079",
+  "iteration": 11,
+  "downstream": {
+    "js_tests": 16,
+    "browser_tests": 16,
+    "format": "pass",
+    "build": "pass",
+    "asset_files": 19,
+    "reference_images": 16,
+    "campus_invariants": "pass"
+  },
+  "upstream": {
+    "python_unittest": 32,
+    "js_tests": 19,
+    "browser_tests": 4,
+    "format": "pass",
+    "build": "pass"
+  },
+  "squirrel": {
+    "triangles": 900,
+    "runtime_bytes": 93480,
+    "meshes": 1,
+    "materials": 1,
+    "images": 0,
+    "editable_source_reopened": true
+  },
+  "feedback_test_issues_created": 0,
+  "browser_renderer": "Chrome / SwiftShader",
+  "snapshot_note": "Historical pre-publication verification snapshot; current publication status is in DEVELOPMENT_LOG.md."
+}

@@ -22,3 +22,7 @@ Maintain adopted image/photo originals in [`data/reference-images/`](data/refere
 Automatically generated blockouts must not replace manually refined authoritative assets. Current priorities are candidate cleanup, verified identities and heights, roof/facade refinement, paths and collision, followed by LOD and tiling as needed.
 
 Both repositories and the UO live site are public. Code is Apache-2.0 and original content is CC BY 4.0; third-party terms remain separate.
+
+## Development records
+
+Maintain the project-only [development log](DEVELOPMENT_LOG.md) with each change, including intent, behavior, verification and local/committed/published status. Keep the Chinese companion consistent. Do not copy this log upstream; reusable methods are recorded separately in the upstream methodology log. Preserve historical evidence and version provenance. See `AGENTS.md` for the ongoing recording rule.

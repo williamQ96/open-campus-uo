@@ -1,0 +1,102 @@
+{
+  "id": "eugene-layered-context-v1",
+  "seed": 613,
+  "priority_polygon_enu_m": [
+    [
+      -705,
+      -610
+    ],
+    [
+      440,
+      -610
+    ],
+    [
+      475,
+      -170
+    ],
+    [
+      450,
+      35
+    ],
+    [
+      105,
+      365
+    ],
+    [
+      -330,
+      365
+    ],
+    [
+      -705,
+      230
+    ]
+  ],
+  "priority_note": "Editable art priority only, not an official campus/property boundary.",
+  "source_blend": "assets/visual-pilot/knight-emu-johnson.blend",
+  "source_blend_sha256": "ae87554c191380eaebbfd47962b0c90a664be1e2bde1c2cb013302def4af8307",
+  "source_presentation": "data/metadata/presentation-v07-baseline.json",
+  "photo_refinements": {
+    "Gerlinger Hall": {
+      "reference": "gerlinger-hall-2013",
+      "front": "north",
+      "bays": 5,
+      "grammar": [
+        "hip roof",
+        "central triangular pediment",
+        "five sash bays",
+        "burgundy awnings",
+        "pale entrance frame"
+      ]
+    },
+    "Gerlinger Annex": {
+      "reference": "gerlinger-annex-2013",
+      "front": "north",
+      "bays": 11,
+      "grammar": [
+        "tall arched openings",
+        "pale upper band",
+        "circular accents",
+        "repeated dormers",
+        "brick piers"
+      ]
+    }
+  },
+  "extra_tree_target": 300,
+  "context_fog": {
+    "polygon_enu_m": [
+      [
+        -705,
+        -610
+      ],
+      [
+        440,
+        -610
+      ],
+      [
+        475,
+        -170
+      ],
+      [
+        450,
+        35
+      ],
+      [
+        105,
+        365
+      ],
+      [
+        -330,
+        365
+      ],
+      [
+        -705,
+        230
+      ]
+    ],
+    "transition_m": 210,
+    "strength": 0.78,
+    "desaturation": 0.6,
+    "color": "#d6e0da"
+  },
+  "status": "Photo-informed landmark grammar; inferred campus appearance; seeded low-poly background at unchanged historical coordinates. Priority polygon is not a surveyed campus boundary."
+}

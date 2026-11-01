@@ -1,0 +1,36 @@
+[
+  {
+    "id": "gerlinger-hall-2013",
+    "file": "photos/gerlinger-hall/exterior-2013.jpg",
+    "title": "Gerlinger Hall building on the University of Oregon Campus.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Gerlinger_Hall_building_on_the_University_of_Oregon_Campus.jpg",
+    "download_url": "https://live.staticflickr.com/3774/10499635955_9ecbdf6055_o.jpg",
+    "original_source": "https://www.flickr.com/photos/discoveroregon/10499635955/",
+    "author": "Rick Obst",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "capture_date": "2013-10-19",
+    "reviewed_on": "2026-10-31",
+    "license_evidence": "Commons file description states CC BY 4.0 and records a Flickr license review in October 2026. Downloaded original from author Flickr CDN; SHA-1 matches Commons original byte record.",
+    "bytes": 2994730,
+    "sha256": "7448851e8b6d7e0b61e89c6a6ef9f95c388136054995f2654ca63f14a365f5d5",
+    "sha1": "5a95a33c586500efdf79655b8d292a70c284b548"
+  },
+  {
+    "id": "gerlinger-annex-2013",
+    "file": "photos/gerlinger-annex/exterior-2013.jpg",
+    "title": "Gerlinger Annex on the University of Oregon Campus.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Gerlinger_Annex_on_the_University_of_Oregon_Campus.jpg",
+    "download_url": "https://live.staticflickr.com/7403/10499399164_cb156b4c0e_o.jpg",
+    "original_source": "https://www.flickr.com/photos/discoveroregon/10499399164/",
+    "author": "Rick Obst",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "capture_date": "2013-10-19",
+    "reviewed_on": "2026-10-31",
+    "license_evidence": "Commons file description states CC BY 4.0 and records a Flickr license review in October 2026. Downloaded original from author Flickr CDN; SHA-1 matches Commons original byte record.",
+    "bytes": 4848272,
+    "sha256": "7de4232db490623bfd0841f8c16cd4a8d1326895ccc4973dde3c5cf4719ef002",
+    "sha1": "00a232183842f8ebd959a2dda7e4bab489b98355"
+  }
+]

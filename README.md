@@ -6,13 +6,19 @@ A Blender-first, georeferenced University of Oregon campus asset project with an
 
 **[Open the live explorer](https://williamq96.github.io/open-campus-uo/)** — public, no sign-in required. Both the UO and upstream repositories are public.
 
+[Development log](DEVELOPMENT_LOG.md) records project-specific changes and verification. Reusable methodology is recorded separately upstream.
+
 ## Phone layout and controls
 
 The phone layout uses a compact header/search, a smaller top-right minimap and bottom view buttons. Follow and First-person lower-half touches create a floating analog joystick; upper-half touches look around. Roles stay fixed when crossing the screen midpoint. Cancel, blur, opening Settings/search and changing views stop movement. See [mobile verification](docs/mobile-controls.md).
 
 ## Campus life and directions
 
-The green/gold rigged hero, walking/bicycle/scooter NPCs, road traffic and parked vehicles are available with two default-on Settings switches. Directions supports A/B building searches or map pins in Overview, and your live position → destination in Follow/First person, with a blue route and animated white chevrons. [Controls, open asset credits and limitations](docs/campus-life-navigation.md).
+The green/gold rigged hero, walking/bicycle/scooter NPCs, road traffic and parked vehicles are available with one No / Low / Mid / High density slider (default Mid). Directions supports A/B building searches or map pins in Overview, and your position when starting the route → destination in Follow/First person, with a blue route and animated white chevrons. [Controls, open asset credits and limitations](docs/campus-life-navigation.md). Iteration 11 adds open squirrels, collision, music/footsteps, gentle first-person motion and GitHub feedback; see [ambience and feedback](docs/ambience-feedback.md).
+
+## Pending local scene expansion
+
+The [layered campus refinement](docs/campus-expansion.md) gives all 534 records a stylized appearance, with 135 in the campus priority area and 399 as low-poly background. Gerlinger Hall/Annex join the photo-informed landmarks, and fixed-world haze softens the outer blocks. Geography and roads remain unchanged; Blender retains all building objects independently, with runtime-only batching. This batch is local and has not been published.
 
 ## Current scene
 
@@ -24,7 +30,7 @@ The character starts at the University Street / East 13th Avenue T-junction faci
 
 ## Design direction
 
-[Architectural Toon Realism](design/architectural-toon-realism/README.md) is the recommended visual style: original concept mockup, exact palette, source guide and a staged UO refinement plan. The [design archive](design/README.md) also preserves the existing Open Courtyard identity. The [first v0.6 visual pilot](docs/visual-pilot.md) established: three photo-informed landmarks, ten stylized buildings, one context envelope, 220 trees, lawns, paths and furnishings. The surrounding campus remains a whitebox.
+[Architectural Toon Realism](design/architectural-toon-realism/README.md) is the recommended visual style: original concept mockup, exact palette, source guide and a staged UO refinement plan. The [design archive](design/README.md) also preserves the existing Open Courtyard identity. The [first v0.6 visual pilot](docs/visual-pilot.md) established: three photo-informed landmarks, ten stylized buildings, one context envelope, 220 trees, lawns, paths and furnishings. That release left the surrounding campus as a whitebox; the campus expansion now provides its stylized context.
 
 The reusable specification is the [upstream style library's default recommendation](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/tree/main/style), with other styles encouraged.
 

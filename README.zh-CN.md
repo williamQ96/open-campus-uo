@@ -65,4 +65,12 @@ Overview 搜索以约 45° 拉近展示；步行视角原地转向并高亮，�
 
 ## 校园活动与导航
 
-新增绿黄服装的骨骼角色、步行／自行车／滑板车 NPC、道路汽车及停放车辆，两项开关默认开启。Overview 支持 A／B 搜索或地图选点，第一／第三人称以角色实时位置为起点；蓝色路线带流动白色箭头。[操作与开放资产说明](docs/zh-CN/campus-life-navigation.md)。
+新增绿黄服装的骨骼角色、步行／自行车／滑板车 NPC、道路汽车及停放车辆，统一 No / Low / Mid / High 密度，默认 Mid。Overview 支持 A／B 搜索或地图选点，第一／第三人称以开始导航时的角色位置为固定起点；蓝色路线带流动白色箭头。[操作与开放资产说明](docs/zh-CN/campus-life-navigation.md)。
+
+项目改动与验证同步记录在[开发日志](DEVELOPMENT_LOG.zh-CN.md)；上游单独记录可复用的方法论更新。
+
+## 本地待发布的场景扩展
+
+[分层细化](docs/zh-CN/campus-expansion.md)已为 534 个记录加入风格化外观，其中校园重点区 135 个，外围背景 399 个；新增 Gerlinger Hall／Annex 照片语法、外围雾化及示意植被。保留建筑坐标、轮廓和道路。Blender 按建筑编辑，运行时合批；发布状态见开发日志。
+
+第 11 次迭代：统一 No / Low / Mid / High 密度滑块（默认 Mid）、松鼠与碰撞、音乐和脚步、轻微第一视角晃动、GitHub 反馈。见[氛围与反馈](docs/zh-CN/ambience-feedback.md)。发布状态见开发日志。

@@ -8,7 +8,7 @@
     ]
   },
   "title": "OpenCampus · UO Eugene",
-  "description": "Explore UO with modular photo-informed architecture and aerial-guided landscaping.",
+  "description": "Explore a stylized UO campus with photo-informed landmarks and softly veiled low-poly surroundings.",
   "brand_name": "OpenCampus",
   "logo": "brand/opencampus-logo.png",
   "mark": "brand/opencampus-mark.png",
@@ -17,9 +17,13 @@
   "map_label": "EUGENE MAIN CAMPUS",
   "about_title": "UO Eugene main campus",
   "source_description": "Oregon DOGAMI / NOAA Digital Coast. Historical survey: 2008-08-31. Nine source tiles cover the main campus and surrounding context.",
-  "about_summary": "The Knight Library-EMU-Johnson Hall area combines modular photo-informed facades, roofs, entrances and terraces with 300 stylized trees guided by USDA NAIP imagery captured on June 8, 2024. The surrounding campus remains a historical whitebox.",
-  "about_limitations": "This is a recognizable first-pass art model, refined through long-term correction. Facade dimensions, hidden sides, roof details and tree heights/species include plausible inference. The aerial image guides illustrative canopy distribution, not surveyed individual trees. Photos span different years; EMU combines historical and later design motifs. No new field measurements or photogrammetric solve were performed. Base terrain/roof candidates retain 2008 provenance; Census roads have estimated widths. Stairs, terraces and planting are decorative, not a surveyed navigation mesh. The square extent is not a property boundary.",
+  "about_summary": "Five photo-informed landmarks include Knight Library, EMU, Johnson Hall, Gerlinger Hall and Gerlinger Annex. All 534 historical building records have stylized appearance: 135 in the campus art-priority region and 399 in the background. Seeded low-poly archetypes retain source positions and footprints. There are 600 illustrative trees; 300 pilot trees use archived 2024 NAIP cues and 300 additional trees are procedurally inferred.",
+  "about_limitations": "This is a recognizable first-pass art model, refined through long-term correction. Facade dimensions, hidden sides, roof details and tree heights/species include plausible inference. The aerial image guides illustrative canopy distribution, not surveyed individual trees. Photos span different years; EMU combines historical and later design motifs. No new field measurements or photogrammetric solve were performed. Base terrain/roof candidates retain 2008 provenance; Census roads have estimated widths. Stairs, terraces and planting are decorative, not a surveyed navigation mesh. The square extent is not a property boundary. The art-priority polygon is not an official campus boundary. Background archetypes, roof forms and palettes are illustrative, not identified real building types. Extra campus trees/lawns are inferred, not extracted from new aerial imagery. Background haze is a visual effect and does not change the exported geographic geometry.",
   "source_links": [
+    {
+      "label": "Layered campus and background refinement - sources and assumptions",
+      "url": "https://github.com/williamQ96/open-campus-uo/blob/main/docs/campus-expansion.md"
+    },
     {
       "label": "Campus life and approximate outdoor navigation",
       "url": "https://github.com/williamQ96/open-campus-uo/blob/main/docs/campus-life-navigation.md"
@@ -66,7 +70,7 @@
   ],
   "footer": "Independent reconstruction project. No University of Oregon endorsement. Public development preview.",
   "loading_message": "Loading the Eugene campus…",
-  "license_notice": "Code: Apache-2.0. Original documentation and model/design contributions: CC BY 4.0. Copyright 2026 Zhongyi “William” Qiu and contributors. Third-party sources retain their own terms. Hero/walker base mesh, animations and skin: Kenney Animated Characters 3, CC0-1.0. Original clothing materials, backpack and procedural vehicles: CC BY 4.0. No university logos or mascot are used.",
+  "license_notice": "Code: Apache-2.0. Original documentation and model/design contributions: CC BY 4.0. Copyright 2026 Zhongyi “William” Qiu and contributors. Third-party sources retain their own terms. Hero/walker base mesh, animations and skin: Kenney Animated Characters 3, CC0-1.0. Original clothing materials, backpack and procedural vehicles: CC BY 4.0. No university logos or mascot are used. Squirrel base: Innerscene, CC0; low-poly adaptation: Open Campus contributors, CC BY 4.0. Music: Overworld (BGM), IntelligentGene / Another Page Studio, CC0. Footstep sample: original Open Campus synthesis, CC0.",
   "license_links": [
     {
       "label": "Apache-2.0",
@@ -83,6 +87,18 @@
     {
       "label": "Kenney character source / CC0",
       "url": "https://kenney-assets.itch.io/animated-characters-3"
+    },
+    {
+      "label": "Squirrel source · Innerscene · CC0",
+      "url": "https://www.innerscene.com/tools/library/3d-parts/tree-squirrel-6499352e"
+    },
+    {
+      "label": "Music · Overworld (BGM) · Another Page Studio · CC0",
+      "url": "https://opengameart.org/content/overworld-bgm"
+    },
+    {
+      "label": "Campus ambience source archive and credits",
+      "url": "https://github.com/williamQ96/open-campus-uo/blob/main/data/asset-sources/campus-life/README.md"
     }
   ],
   "character": {
@@ -90,5 +106,19 @@
     "author": "Kenney / Open Campus contributors",
     "source_license": "CC0-1.0",
     "adaptation_license": "CC-BY-4.0"
+  },
+  "iteration": 11,
+  "wildlife": {
+    "asset_url": "animals/campus-squirrel.glb",
+    "yaw_correction": -1.5707963267948966,
+    "source_license": "CC0-1.0",
+    "source": "https://www.innerscene.com/tools/library/3d-parts/tree-squirrel-6499352e"
+  },
+  "audio": {
+    "music_url": "audio/overworld.mp3",
+    "footstep_url": "audio/footstep.wav"
+  },
+  "feedback": {
+    "repository": "williamQ96/open-campus-uo"
   }
 }

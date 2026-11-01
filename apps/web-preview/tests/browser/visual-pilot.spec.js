@@ -13,15 +13,25 @@ test("authored pilot preserves all landmark search modes, geometry provenance an
   await page.waitForFunction(() => window.__campus?.getState().ready);
   const state = () => page.evaluate(() => window.__campus.getState());
   expect((await state()).presentation).toMatchObject({
-    id: "knight-emu-johnson-v2",
-    buildings: 14,
-    trees: 300,
-    landmarkBuildings: 3,
+    id: "eugene-layered-context-v1",
+    buildings: 64,
+    trees: 600,
+    landmarkBuildings: 5,
+    contextBuildings: 399,
+    campusBuildings: 135,
+    backgroundHaze: true,
+    batchedBuildings: 470,
     toon: true,
   });
-  expect((await state()).drawCalls).toBeLessThan(350);
+  await expect.poll(async () => (await state()).drawCalls).toBeLessThan(250);
   const spawn = (await state()).player;
-  for (const name of ["Knight Library", "Johnson Hall", "Erb Memorial Union"]) {
+  for (const name of [
+    "Knight Library",
+    "Johnson Hall",
+    "Erb Memorial Union",
+    "Gerlinger Hall",
+    "Gerlinger Annex",
+  ]) {
     const search = page.getByRole("combobox", { name: "Search buildings" });
     await search.fill(name);
     await search.press("ArrowDown");
@@ -43,8 +53,12 @@ test("authored pilot preserves all landmark search modes, geometry provenance an
     }
   }
   await page.getByRole("button", { name: "Settings / About" }).click();
+  await page.getByLabel("Background haze", { exact: false }).uncheck();
+  expect((await state()).presentation.backgroundHaze).toBe(false);
+  await page.getByLabel("Background haze", { exact: false }).check();
   await page.getByLabel("Architectural toon", { exact: false }).uncheck();
   expect((await state()).presentation.toon).toBe(false);
+  expect((await state()).presentation.backgroundHaze).toBe(true);
   await page.getByLabel("Wireframe", { exact: false }).check();
   await page.getByLabel("Wireframe", { exact: false }).uncheck();
   await page.getByLabel("Architectural toon", { exact: false }).check();

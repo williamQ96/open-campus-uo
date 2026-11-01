@@ -5,7 +5,7 @@
   "source_license": "CC0-1.0",
   "acquired_on": "2026-10-31",
   "source_notes": "Free anonymous itch.io creator download. Original ZIP and license retained. FBX animation rest poses differ from the skinned model; target-local poses are baked from source world matrices.",
-  "original_contributions": "Green/gold clothing materials, backpack, vehicle and rider geometry: CC BY 4.0, Zhongyi William Qiu and Open Campus contributors. No university marks or implied endorsement.",
+  "original_contributions": "Green/gold clothing materials, backpack, vehicle and rider geometry: CC BY 4.0, Zhongyi William Qiu and Open Campus contributors. No university marks or implied endorsement. Campus expansion geometry and background component vocabulary: original CC BY 4.0 contributions. Photo sources remain separately archived under their own licenses.",
   "files": {
     "data/asset-sources/kenney/animated-characters-3.zip": {
       "bytes": 706470,
@@ -46,6 +46,92 @@
     "data/asset-sources/kenney/animated-characters-3/Skins/humanMaleA.png": {
       "bytes": 35497,
       "sha256": "1590e08cea37f5aecbacabb40a57c176e389e9a95d5b2a4de00086604ef23e1c"
+    },
+    "assets/campus-expansion/eugene-campus.blend": {
+      "bytes": 33317045,
+      "sha256": "d061b7c6d55b58a45e03fd524503d6541311071c5ecd571203c455aeac70c603",
+      "license": "CC-BY-4.0",
+      "origin": "Original Open Campus procedural geometry and separately archived photo-informed patterns; not derived from the Kenney character pack."
+    },
+    "apps/web-preview/public/scene/campus-expanded.glb": {
+      "bytes": 25382236,
+      "sha256": "d42efa032b485b9aade2065db3e771c5cacf35ca76b1d1969942fd4ce4486518",
+      "license": "CC-BY-4.0",
+      "origin": "Original Open Campus procedural geometry and separately archived photo-informed patterns; not derived from the Kenney character pack."
+    },
+    "data/asset-sources/campus-life/tree-squirrel.glb": {
+      "bytes": 876688,
+      "sha256": "acd11ef2fa8993af63923df2a2d92e9b28f267fa8cb95f968b960d90d8c200dc",
+      "license": "CC0-1.0",
+      "origin": "See data/asset-sources/campus-life/sources.json; separate from the Kenney character pack."
+    },
+    "data/asset-sources/campus-life/overworld.mp3": {
+      "bytes": 275424,
+      "sha256": "d32949f8467ac463a52ca88ed250e505545bc98a46e4e472c1f994bf447a1beb",
+      "license": "CC0-1.0",
+      "origin": "See data/asset-sources/campus-life/sources.json; separate from the Kenney character pack."
+    },
+    "data/asset-sources/campus-life/CC0-1.0.txt": {
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "license": "CC0-1.0",
+      "origin": "See data/asset-sources/campus-life/sources.json; separate from the Kenney character pack."
+    },
+    "assets/animals/campus-squirrel.blend": {
+      "bytes": 520257,
+      "sha256": "385b7420c82990930d94f334b76235e6768cc0c4c0ae96174cecff7bb1165cdb",
+      "license": "CC-BY-4.0",
+      "origin": "See data/asset-sources/campus-life/sources.json; separate from the Kenney character pack."
+    },
+    "apps/web-preview/public/animals/campus-squirrel.glb": {
+      "bytes": 93480,
+      "sha256": "30d716fa7a576d68ebbe445d1bdfdb0f9282c9c3eced17d39505210c044b4e68",
+      "license": "CC-BY-4.0",
+      "origin": "See data/asset-sources/campus-life/sources.json; separate from the Kenney character pack."
+    },
+    "apps/web-preview/public/audio/overworld.mp3": {
+      "bytes": 275424,
+      "sha256": "d32949f8467ac463a52ca88ed250e505545bc98a46e4e472c1f994bf447a1beb",
+      "license": "CC0-1.0",
+      "origin": "See data/asset-sources/campus-life/sources.json; separate from the Kenney character pack."
+    },
+    "apps/web-preview/public/audio/footstep.wav": {
+      "bytes": 6218,
+      "sha256": "5ee3ba264927caa452fc00965f53b2a4ce111c2bfe65c610c5cbe8c82123399b",
+      "license": "CC0-1.0",
+      "origin": "See data/asset-sources/campus-life/sources.json; separate from the Kenney character pack."
     }
-  }
+  },
+  "additional_sources": [
+    {
+      "id": "innerscene-tree-squirrel",
+      "author": "Innerscene",
+      "title": "Tree squirrel",
+      "license": "CC0-1.0",
+      "page": "https://www.innerscene.com/tools/library/3d-parts/tree-squirrel-6499352e",
+      "terms": "https://www.innerscene.com/tools/library/terms",
+      "download": "https://www.innerscene.com/api/library/tree-squirrel-6499352e/download",
+      "local_original": "data/asset-sources/campus-life/tree-squirrel.glb",
+      "license_review": "Primary asset page identifies an original Innerscene model released under CC0, permitting modification and redistribution. No Google-derived content. Actual delivered bytes are hashed in manifest.json."
+    },
+    {
+      "id": "overworld-bgm",
+      "author": "IntelligentGene",
+      "optional_credit": "Another Page Studio",
+      "title": "Overworld (BGM)",
+      "license": "CC0-1.0",
+      "page": "https://opengameart.org/content/overworld-bgm",
+      "download": "https://opengameart.org/sites/default/files/overworld.mp3",
+      "local_original": "data/asset-sources/campus-life/overworld.mp3",
+      "license_review": "Primary creator listing marks CC0 and describes calm minimal looping BGM; optional credit is Another Page Studio."
+    },
+    {
+      "id": "soft-footstep",
+      "author": "Open Campus contributors",
+      "license": "CC0-1.0",
+      "source_code": "scripts/generate-footstep.py",
+      "local_original": "apps/web-preview/public/audio/footstep.wav",
+      "license_review": "Original seeded noise/tone synthesis, no third-party recording. Contributors dedicate this generated WAV to CC0."
+    }
+  ]
 }

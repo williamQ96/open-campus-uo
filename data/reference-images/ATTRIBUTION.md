@@ -171,3 +171,11 @@ Review screenshots are indexed separately as outputs in the manifest and remain 
 ## kenney-student-skin
 
 [Original humanMaleA texture](textures/kenney/humanMaleA.png) — **Kenney**, [Animated Characters 3](https://kenney-assets.itch.io/animated-characters-3), [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). Original image bytes retained; the face/hands texture is embedded in the hero and walker GLB. Clothing materials and backpack are separate original contributions. The source ZIP, FBX files and license are archived under `data/asset-sources/kenney/`.
+
+## gerlinger-hall-2013
+
+[Gerlinger Hall building on the University of Oregon Campus.jpg](photos/gerlinger-hall/exterior-2013.jpg) — **Rick Obst**, [source](https://commons.wikimedia.org/wiki/File:Gerlinger_Hall_building_on_the_University_of_Oregon_Campus.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Captured 2013-10-19. Original bytes retained, checked against the Commons SHA-1. Used for stylized architectural patterns; no photograph embedded in runtime meshes.
+
+## gerlinger-annex-2013
+
+[Gerlinger Annex on the University of Oregon Campus.jpg](photos/gerlinger-annex/exterior-2013.jpg) — **Rick Obst**, [source](https://commons.wikimedia.org/wiki/File:Gerlinger_Annex_on_the_University_of_Oregon_Campus.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Captured 2013-10-19. Original bytes retained, checked against the Commons SHA-1. Used for stylized architectural patterns; no photograph embedded in runtime meshes.

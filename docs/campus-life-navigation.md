@@ -7,9 +7,9 @@ Version 0.10 adds an openly reusable rigged hero, scripted campus activity, park
 ## Use
 
 - **Directions** is beside Settings. In **Overview**, choose **A** and **B** with **Search A/B** (the existing building search) or **Pin A/B on map**. A pin must be on clear ground outside building envelopes. While pinning, the panel collapses to leave the map accessible. Start route frames the route; Fit route frames it again.
-- In **First person** and **Follow**, **A is your live position**. Choose B with Search B. Walking more than 3 m refreshes the route at most once per second. Switching modes preserves B; returning to Overview restores the manually chosen A or requests one. No teleportation occurs.
+- In **First person** and **Follow**, **A is captured from your position when you press Start route**. Choose B with Search B. The blue start circle and complete route stay fixed as you walk; your location marker and white chevrons keep moving. Follow/First person switches retain that starting point. Press Start route again to capture a new origin at your current position. Overview keeps its independent manual A; returning to a walking view restores its saved origin. Clear or choosing a new endpoint resets it. No teleportation occurs.
 - Blue ground ribbons and animated **white chevrons run A → B**; the minimap also shows the route. A destination message appears near the final approach. Clear removes the route and endpoints; closing the panel keeps navigation running.
-- **Settings → Campus life** has two independent, default-on switches: **People and traffic**, and **Parked vehicles and props**. Disable both for the clean map. This does not hide the playable hero.
+- **Settings → Campus life** now uses one **No / Low / Mid / High** density slider, default **Mid**. No removes moving actors, parked props and their collision bodies. See [iteration 11: ambience, sound and feedback](ambience-feedback.md).
 
 ## Hero and assets
 
@@ -35,7 +35,7 @@ To export the procedural props, keep the Vite development server on port 5173, t
 
 ## Scripted activity
 
-The initial scene has **8 walkers, 2 bicycle riders, 2 scooter riders, 4 road cars and 5 parked vehicles**. Walkers/riders follow selected routes from the outdoor graph and reverse at route ends. Cars follow clear contiguous sections of supplied road centerlines. They are illustrative animations, not live traffic, surveyed parking or a behavioral simulation. Riders are simple original posed models; wheels/pedals are not physically simulated. Actors are visual only, do not collide with the player or each other, and may overlap at crossings. Their animation pauses when disabled or Settings is open. Moving objects do not cast baked static shadows.
+The default Mid scene has **8 walkers, 2 bicycle riders, 2 scooter riders, 4 road cars, 8 squirrels and 5 parked props**. Actors follow fixed authored routes and reverse at ends; squirrels pause periodically. Upright collision capsules let actors yield to each other, the player and parked props. The player checks these volumes with substeps. Congestion may pause an actor; this is not full traffic AI or rigid-body physics. Activity pauses during dialogs. Moving objects do not cast baked static shadows. Density, sound, motion, feedback, counts and limitations are documented in the [current interaction guide](ambience-feedback.md).
 
 The pilot's historical footprint/terrain mismatch and decorative terraces remain approximate. Neither navigation nor NPC movement solves stairs, accessibility, indoor paths, fences, access hours, or current construction. Building searches end at a nearby graph approach, **not a verified entrance**. A failed route reports no connection instead of drawing through buildings.
 
@@ -47,7 +47,7 @@ The upstream builder nodes intersections, samples centerlines every ~7 m, exclud
 
 ## Verification
 
-New tests cover blocked/disconnected graph paths, graph obstacles/intersections, animated chevron direction, the hero/default counts, activity motion, independent switches and clean-mode rendering, Overview A/B, live walking origins, route updates and a real phone-sized canvas pin. Existing search, jump, terrain, camera and mobile controls are retained. See the repository CI for current results. The preview remains an approximate art/navigation prototype, not a dependable campus wayfinding service.
+New tests cover blocked/disconnected graph paths, graph obstacles/intersections, animated chevron direction, the hero/default counts, activity motion, density levels, collision volumes and clean-mode rendering, Overview A/B, fixed walking origins after movement, view switches, explicit restarts and a real phone-sized canvas pin. Existing search, jump, terrain, camera and mobile controls are retained. See the repository CI for current results. The preview remains an approximate art/navigation prototype, not a dependable campus wayfinding service.
 ## Visual checks
 
 ![Rigged hero in Follow, facing EMU](images/campus-hero-v0.10.png)

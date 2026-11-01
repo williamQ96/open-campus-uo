@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-10-31",
+  "sources": [
+    {
+      "id": "innerscene-tree-squirrel",
+      "author": "Innerscene",
+      "title": "Tree squirrel",
+      "license": "CC0-1.0",
+      "page": "https://www.innerscene.com/tools/library/3d-parts/tree-squirrel-6499352e",
+      "terms": "https://www.innerscene.com/tools/library/terms",
+      "download": "https://www.innerscene.com/api/library/tree-squirrel-6499352e/download",
+      "local_original": "data/asset-sources/campus-life/tree-squirrel.glb",
+      "license_review": "Primary asset page identifies an original Innerscene model released under CC0, permitting modification and redistribution. No Google-derived content. Actual delivered bytes are hashed in manifest.json."
+    },
+    {
+      "id": "overworld-bgm",
+      "author": "IntelligentGene",
+      "optional_credit": "Another Page Studio",
+      "title": "Overworld (BGM)",
+      "license": "CC0-1.0",
+      "page": "https://opengameart.org/content/overworld-bgm",
+      "download": "https://opengameart.org/sites/default/files/overworld.mp3",
+      "local_original": "data/asset-sources/campus-life/overworld.mp3",
+      "license_review": "Primary creator listing marks CC0 and describes calm minimal looping BGM; optional credit is Another Page Studio."
+    },
+    {
+      "id": "soft-footstep",
+      "author": "Open Campus contributors",
+      "license": "CC0-1.0",
+      "source_code": "scripts/generate-footstep.py",
+      "local_original": "apps/web-preview/public/audio/footstep.wav",
+      "license_review": "Original seeded noise/tone synthesis, no third-party recording. Contributors dedicate this generated WAV to CC0."
+    }
+  ],
+  "adaptation": {
+    "source": "innerscene-tree-squirrel",
+    "script": "scripts/build-campus-squirrel.py",
+    "changes": "Joined static parts, decimated to about 900 faces, normalized to 0.55 m, replaced all materials with one flat brown, removed source texture dependencies. Runtime pose bobs on authored paths; not a skeletal animation.",
+    "editable": "assets/animals/campus-squirrel.blend",
+    "export": "apps/web-preview/public/animals/campus-squirrel.glb",
+    "adaptation_license": "CC-BY-4.0",
+    "original_source_license": "CC0-1.0"
+  }
+}

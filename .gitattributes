@@ -1,2 +1,4 @@
 # Preserve downloaded source bytes and vendor license formatting.
 data/asset-sources/kenney/** -text -whitespace
+
+data/asset-sources/campus-life/CC0-1.0.txt -text -whitespace
