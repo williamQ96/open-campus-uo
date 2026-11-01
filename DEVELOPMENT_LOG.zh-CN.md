@@ -6,6 +6,13 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-10-31 — 发布确认：0.12.0 已部署并匿名核验
+
+- 实现 [f26e5a5](https://github.com/williamQ96/open-campus-uo/commit/f26e5a511b471ad9095baeebb62be863a1011ca3) 已推送，[Pages](https://github.com/williamQ96/open-campus-uo/actions/runs/41277741074) 成功。[线上](https://williamq96.github.io/open-campus-uo/) 匿名 HTTP200，iteration14、Overview near32米、有骨骼角色、18组云、Mid29实例、雾缓存关闭。
+- 搜索、三视角、No密度、Beta启退、390px无溢出通过，JavaScript零错误。34,638,580字节校园模型和9,630,380字节地面均与本地SHA一致。[线上证据](data/metadata/release-v012-verification.json)。
+- 固定干净上游64ed0a2，[上游检查](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/actions/runs/41277680207)通过，下游素材／地理／地面核验通过。本记录时[完整下游浏览器工作流](https://github.com/williamQ96/open-campus-uo/actions/runs/41277741143)为 in_progress／等待最终结果；本地完整24项已通过，不把未完成的远程检查称作成功。
+- 本证据跟进仅文档，使用[skip ci]，不改运行代码／资产／部署。旧本地条目保留原状态，发布状态以本确认更新。开发日志只下游，方法上游；附件和trace不上传。
+
 ## 2026-10-31 — 发布批次：Open Campus: UO 0.12.0
 
 用户授权累计改动一起 push 并更新 Pages。本版合并 12–14 批：屋顶、seed 语义活动、开发工具、Zombie School／重启、天空／云／地面、晃动滑块、行人绕行与深度／不降质 CPU 修复；静态雾缓存关闭。运行代码同步到干净上游 `64ed0a21898d8f156bc8657595a5407629491bb1`（pipeline0.11.0／模板0.3.0），dirty=false；历史几何与本地测量保留原真实来源。上游34 Python、两边各35 JS、上游9／下游24完整浏览器、格式／构建及素材／地理核验已通过。本提交准备发布，部署成功和匿名访问结果完成后另记。开发日志／资产只在下游，方法在上游；排除用户附件、trace、原始大数据与 Blender 备份。

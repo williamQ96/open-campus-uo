@@ -1,0 +1,57 @@
+{
+  "url": "https://williamq96.github.io/open-campus-uo/",
+  "httpStatus": 200,
+  "version": "0.12.0",
+  "iteration": 14,
+  "implementationCommit": "f26e5a511b471ad9095baeebb62be863a1011ca3",
+  "upstreamImplementation": "64ed0a21898d8f156bc8657595a5407629491bb1",
+  "verifiedAt": "2026-11-01T05:40:52.881Z",
+  "anonymous": true,
+  "initial": {
+    "view": "aerial",
+    "cameraNear": 32,
+    "riggedHero": true,
+    "clouds": 18,
+    "activity": 29,
+    "hazeCache": {
+      "cachedMeshes": 0,
+      "cachedVertices": 0,
+      "additionalBytes": 0
+    }
+  },
+  "interactions": {
+    "search": true,
+    "threeViews": true,
+    "noDensity": true,
+    "betaStartExit": true,
+    "mobileNoOverflow": true
+  },
+  "assets": [
+    {
+      "name": "campus-expanded.glb",
+      "bytes": 34638580,
+      "sha256": "a64bc831729deb0591d7a02e98d7ca4324dd1188636c03ce8ad77852432cfc12"
+    },
+    {
+      "name": "landcover.glb",
+      "bytes": 9630380,
+      "sha256": "0e93a8f129ba9368cfa90b09da610169054f5288dd434e290a5c390010d8a0cd"
+    }
+  ],
+  "pageErrors": [],
+  "workflows": {
+    "upstream": {
+      "url": "https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/actions/runs/41277680207",
+      "conclusion": "success"
+    },
+    "pages": {
+      "url": "https://github.com/williamQ96/open-campus-uo/actions/runs/41277741074",
+      "conclusion": "success"
+    },
+    "downstream": {
+      "url": "https://github.com/williamQ96/open-campus-uo/actions/runs/41277741143",
+      "conclusion": "",
+      "status": "in_progress"
+    }
+  }
+}

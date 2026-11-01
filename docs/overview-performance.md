@@ -1,8 +1,11 @@
 # Overview depth stability and rendering assessment
 
+> Published in Open Campus: UO 0.12.0. Local preparation/measurement notes below retain their original context; see the development log for deployment confirmation.
+
+
 **English** | [简体中文](zh-CN/overview-performance.md)
 
-Local iteration 14 fixes a reproducible depth problem and removes repeated CPU work. It preserves the existing assets, perspective, pixel ratio, antialiasing, lighting, NPC density and all three camera modes. This batch is not pushed or deployed.
+Local iteration 14 fixes a reproducible depth problem and removes repeated CPU work. It preserves the existing assets, perspective, pixel ratio, antialiasing, lighting, NPC density and all three camera modes. This batch is included in 0.12.0; measurements below retain their pre-publication context.
 
 ## Roof and paving flicker
 

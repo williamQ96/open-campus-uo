@@ -1,5 +1,8 @@
 # Phase 12: gait fixes, inferred roofs, semantic activity and beta experiments
 
+> Published in Open Campus: UO 0.12.0. Local preparation/measurement notes below retain their original context; see the development log for deployment confirmation.
+
+
 [Later local iteration 13 adds adjustable motion, bounded pedestrian detours, environment coverage and death/restart; this page preserves the phase 12 scope.](phase13-environment-comfort.md)
 
 **English** | [简体中文](zh-CN/phase12-npc-beta.md)

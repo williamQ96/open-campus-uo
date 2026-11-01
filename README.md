@@ -10,7 +10,7 @@ A Blender-first, georeferenced University of Oregon campus asset project with an
 
 **Iteration 14 — included in 0.12.0:** adaptive Overview depth removes distant roof/paving flicker; isolated label updates and static/minimap/HUD caching reduce repeated CPU work while preserving scene quality. [Measurements, limits and the off-by-default haze experiment](docs/overview-performance.md).
 
-**Iteration 13 — included in 0.12.0:** blue sky/soft block clouds, four-level first-person motion, pedestrian collision detours, Zombie School death/restart, and full-extent inferred grass/matte concrete/asphalt ground cover. [Behavior, archived aerial evidence and costs](docs/phase13-environment-comfort.md). This extends the pending [iteration 12](docs/phase12-npc-beta.md); See the development log for deployment verification.
+**Iteration 13 — included in 0.12.0:** blue sky/soft block clouds, four-level first-person motion, pedestrian collision detours, Zombie School death/restart, and full-extent inferred grass/matte concrete/asphalt ground cover. [Behavior, archived aerial evidence and costs](docs/phase13-environment-comfort.md). This extends the [iteration 12](docs/phase12-npc-beta.md); See the development log for deployment verification.
 
 ## Phone layout and controls
 

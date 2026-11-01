@@ -1,8 +1,11 @@
 # Local iteration 13: environment, motion and recovery
 
+> Published in Open Campus: UO 0.12.0. Local preparation/measurement notes below retain their original context; see the development log for deployment confirmation.
+
+
 **English** | [简体中文](zh-CN/phase13-environment-comfort.md)
 
-This local batch extends [iteration 12](phase12-npc-beta.md). It is not a new published release. The live GitHub Pages version remains unchanged until a later authorized publication.
+This local batch extends [iteration 12](phase12-npc-beta.md). It was first published with 0.12.0; the local verification records retain their original pre-publication state.
 
 ## Explorer behavior
 

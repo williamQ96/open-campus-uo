@@ -1,8 +1,11 @@
 # 本地迭代 13：环境、晃动与重启
 
+> 已随 Open Campus: UO 0.12.0 发布。下文保留原本地准备／测量语境，部署确认见开发日志。
+
+
 [English](../phase13-environment-comfort.md) | **简体中文**
 
-本批接续[迭代 12](phase12-npc-beta.md)，只在本地，尚未发布；GitHub Pages 保持上一发布版本。
+本批接续[迭代 12](phase12-npc-beta.md)，最初在本地验证，现随 0.12.0 发布；旧验证记录保留原状态。
 
 ## 交互
 
