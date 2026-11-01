@@ -2,6 +2,9 @@
 
 # Open Campus: UO
 
+**0.13.0 — iterations 15–16:** analog phone walk/run, 534 building entrances and an exportable shared classroom, isolated indoor loading, Overview building cards/hero-free room inspection, and subtle building hover. [Controls, limitations and resource boundaries](docs/interiors-mobile.md).
+
+
 A Blender-first, georeferenced University of Oregon campus asset project with an interactive Three.js explorer.
 
 **[Open the live explorer](https://williamq96.github.io/open-campus-uo/)** — public, no sign-in required. Both the UO and upstream repositories are public.

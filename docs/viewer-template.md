@@ -15,3 +15,6 @@ With upstream Python installed, run `python -m geospatial3d sync-viewer --output
 Run movement and real-campus browser tests, compare UI/source acknowledgements, and rebuild the static site before publication. The canonical template has its own synthetic browser regression, without copying UO buildings or coordinates upstream.
 
 Code/template software is Apache-2.0. Original documentation and model/design contributions are CC BY 4.0; see [licensing](../LICENSING.md). Third-party source terms and notices remain independent.
+
+
+[Iteration 15: analog movement and shared classroom](interiors-mobile.md) documents the local runtime upgrade and its upstream method.

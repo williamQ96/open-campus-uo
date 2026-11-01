@@ -97,8 +97,12 @@ test("feedback retains drafts, requires content, leaves coordinates optional, an
   const url = new URL(await page.evaluate(() => window.lastIssueDraft));
   expect(url.pathname).toBe("/williamQ96/open-campus-uo/issues/new");
   expect(url.searchParams.get("title")).toMatch(
-    /^Feedback #\d+ · iteration 14$/,
+    /^Feedback #\d+ · iteration \d+$/,
   );
+  const { iteration } = await (
+    await page.request.get("/viewer-profile.json")
+  ).json();
+  expect(url.searchParams.get("title")).toContain(`· iteration ${iteration}`);
   expect(url.searchParams.get("body")).toContain("entrance could use a ramp");
   expect(url.searchParams.get("body")).not.toContain("Coordinates");
   await expect(page.locator("#feedback-status")).toContainText(

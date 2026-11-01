@@ -46,7 +46,8 @@ test("search frames an overview at 45 degrees, turns walking views and prioritiz
   await expect(search).toHaveAttribute("aria-expanded", "false");
   const label = page.locator(`.building-label[data-building-id="${emuId}"]`);
   await expect(label).toHaveClass(/is-selected/);
-  await expect(label).toBeVisible();
+  await expect(label).toBeHidden();
+  await expect(page.locator(".building-card")).toBeVisible();
   await capturePreview(page, "../../artifacts/search-overview.png");
   for (const mode of ["Digit2", "Digit1"]) {
     await page.keyboard.press(mode);
@@ -117,7 +118,8 @@ test("search works on a narrow screen, supports no matches, and typing does not 
   await expect(page.locator(".building-label.is-selected")).toContainText(
     "Knight Library",
   );
-  await expect(page.locator(".building-label.is-selected")).toBeVisible();
+  await expect(page.locator(".building-label.is-selected")).toBeHidden();
+  await expect(page.locator(".building-card")).toBeVisible();
   await capturePreview(page, "../../artifacts/search-mobile.png");
   await search.focus();
   await search.press("Escape");

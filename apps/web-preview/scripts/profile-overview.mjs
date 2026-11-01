@@ -11,7 +11,7 @@ const page = await browser.newPage({
   viewport: { width: 1440, height: 1000 },
   deviceScaleFactor: Number(process.env.PROBE_DPR || 1),
 });
-await page.route("**/src/main.js*", async (route) => {
+await page.route("**/src/campus.js*", async (route) => {
   const response = await route.fetch();
   const body = (await response.text()).replace(
     "window.__campus = {",
@@ -159,7 +159,7 @@ const topCpu = profile.nodes
   }))
   .sort((a, b) => b.selfSamples - a.selfSamples)
   .slice(0, 18);
-const source = await readFile("src/main.js");
+const source = await readFile("src/campus.js");
 const result = {
   capturedAt: new Date().toISOString(),
   sourceSha256: createHash("sha256").update(source).digest("hex"),

@@ -5,7 +5,7 @@
   "source_license": "CC0-1.0",
   "acquired_on": "2026-10-31",
   "source_notes": "Free anonymous itch.io creator download. Original ZIP and license retained. FBX animation rest poses differ from the skinned model; target-local poses are baked from source world matrices.",
-  "original_contributions": "Green/gold clothing materials, backpack, vehicle and rider geometry: CC BY 4.0, Zhongyi William Qiu and Open Campus contributors. No university marks or implied endorsement. Campus expansion geometry and background component vocabulary: original CC BY 4.0 contributions. Photo sources remain separately archived under their own licenses.",
+  "original_contributions": "Green/gold clothing materials, backpack, vehicle and rider geometry: CC BY 4.0, Zhongyi William Qiu and Open Campus contributors. No university marks or implied endorsement. Campus expansion geometry and background component vocabulary: original CC BY 4.0 contributions. Photo sources remain separately archived under their own licenses. Shared inferred classroom kit: original CC BY 4.0 model output; Apache-2.0 procedural generator, no reference textures.",
   "files": {
     "data/asset-sources/kenney/animated-characters-3.zip": {
       "bytes": 706470,
@@ -118,6 +118,10 @@
       "sha256": "0e93a8f129ba9368cfa90b09da610169054f5288dd434e290a5c390010d8a0cd",
       "license": "CC-BY-4.0",
       "origin": "Original inferred palette/vertex-color ground cover; archived USDA NAIP imagery is a separate public-domain reference, not an embedded texture. Historical terrain coordinates retained."
+    },
+    "apps/web-preview/public/interiors/classroom-v1.glb": {
+      "bytes": 162700,
+      "sha256": "397a9825a4efe1c2d9136f80c2b9ef056254148b9c023ccbcbb4485ed450489e"
     }
   },
   "additional_sources": [

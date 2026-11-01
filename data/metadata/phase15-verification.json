@@ -1,0 +1,166 @@
+{
+  "phase": 15,
+  "status": "local-uncommitted-not-pushed-or-deployed",
+  "verifiedAt": "2026-11-01T20:25:28.616Z",
+  "runtimeLock": {
+    "commit": "6d9a01b89a5505297057acace5a981719afeae45",
+    "dirty": true,
+    "managedFiles": 41
+  },
+  "entrances": {
+    "total": 534,
+    "clearFootprintApproaches": 534,
+    "inferred": true,
+    "landmarks": [
+      {
+        "id": "roof-266f13fd",
+        "name": "Erb Memorial Union",
+        "position": [
+          -216,
+          32.86
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "approach": [
+          -216,
+          29.5
+        ],
+        "estimated": true,
+        "walkable": true,
+        "ground": 5.652340000000002
+      },
+      {
+        "id": "roof-6684e091",
+        "name": "Knight Library",
+        "position": [
+          -549,
+          201.86
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "approach": [
+          -549,
+          199.5
+        ],
+        "estimated": true,
+        "walkable": true,
+        "ground": 6.050860000000001
+      },
+      {
+        "id": "roof-906c030e",
+        "name": "Johnson Hall",
+        "position": [
+          -418.14,
+          42.5
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "approach": [
+          -420.5,
+          42.5
+        ],
+        "estimated": true,
+        "walkable": true,
+        "ground": 3.7940900000000024
+      }
+    ]
+  },
+  "productionPreview": {
+    "url": "http://127.0.0.1:4173/",
+    "iteration": 15,
+    "indoor": {
+      "ready": true,
+      "buildingId": "roof-6684e091",
+      "template": "classroom-v1",
+      "view": "first",
+      "player": [
+        0,
+        0,
+        7
+      ],
+      "nearExit": true,
+      "campusLoaded": false,
+      "roomMeshes": 10,
+      "drawCalls": 9,
+      "triangles": 2160
+    },
+    "indoorRequests": [
+      "/",
+      "/assets/index-c6t0Npx3.js",
+      "/assets/style-Cfh_jBlC.css",
+      "/assets/interior-app-Dse5xEr8.js",
+      "/assets/sound-BcuFyi5u.js",
+      "/assets/dm-sans-latin-wght-normal-Xz1IZZA0.woff2",
+      "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+      "/viewer-profile.json",
+      "/characters/campus-student.glb",
+      "http://127.0.0.1:4173/e6cd3f52-555e-4a5f-8267-5059e26b3b1e",
+      "/audio/footstep.wav"
+    ],
+    "outdoorGlbRequests": [],
+    "outdoorModuleRequests": [],
+    "returnPositionMatches": true,
+    "returnViewMatches": true,
+    "returnDensity": 1,
+    "returnMotion": 0,
+    "returnSound": false,
+    "pageErrors": []
+  },
+  "classroomExport": {
+    "file": "apps/web-preview/public/interiors/classroom-v1.glb",
+    "bytes": 162700,
+    "sha256": "397a9825a4efe1c2d9136f80c2b9ef056254148b9c023ccbcbb4485ed450489e",
+    "license": "CC-BY-4.0",
+    "noEmbeddedImages": true
+  },
+  "verification": {
+    "python": 34,
+    "upstreamJs": 40,
+    "downstreamJs": 40,
+    "upstreamBrowser": {
+      "fullBeforeFinalStorageCase": 13,
+      "finalInteriorFocused": 4
+    },
+    "downstreamBrowser": {
+      "initialFullRun": {
+        "passed": 27,
+        "failed": 1,
+        "reason": "Stale test assertion expected iteration14; actual15. Replaced with profile-derived expectation."
+      },
+      "fixedFocused": {
+        "passed": 10
+      },
+      "finalInteriorIncludingDeniedStorage": {
+        "passed": 4
+      },
+      "coveredCasesAcrossRuns": 29
+    },
+    "format": "both pass",
+    "build": "both pass",
+    "assets": 23,
+    "geographicBuildingIds": 534,
+    "semanticPaths": 70,
+    "parkingSlots": 20,
+    "groundAudit": "pass; existing coordinates and heightfield unchanged"
+  },
+  "screenshots": [
+    "artifacts/phase15-library-entrance.png",
+    "artifacts/phase15-room-desktop.png",
+    "artifacts/phase15-room-mobile.png"
+  ],
+  "finalPolish": {
+    "changes": [
+      "Hero faces teaching board on entry",
+      "Follow camera stays below the classroom ceiling"
+    ],
+    "consumerERoundTripBrowserPassed": 1,
+    "formatting": "upstream and consumer pass after final formatting",
+    "source": "managed runtime synced with dirty=true; no publication"
+  }
+}

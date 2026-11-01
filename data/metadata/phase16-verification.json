@@ -1,0 +1,98 @@
+{
+  "iteration": 16,
+  "verifiedAt": "2026-11-01T20:47:37.274Z",
+  "publication": "local-uncommitted-not-pushed-or-deployed",
+  "card": {
+    "name": "Chapman Hall",
+    "info": "to be fill",
+    "labelHidden": true
+  },
+  "inspection": {
+    "ready": true,
+    "buildingId": "roof-f5cea51d",
+    "template": "classroom-v1",
+    "view": "aerial",
+    "player": null,
+    "inspectionMode": true,
+    "heroPresent": false,
+    "outsidePlayer": [
+      -305.469651,
+      3.740899995,
+      -0.824825
+    ],
+    "nearExit": false,
+    "campusLoaded": false,
+    "roomMeshes": 10,
+    "drawCalls": 9,
+    "triangles": 2160
+  },
+  "indoorRequests": [
+    "/",
+    "/@vite/client",
+    "/src/main.js",
+    "/node_modules/@fontsource-variable/dm-sans/index.css",
+    "/node_modules/@fontsource/ibm-plex-mono/latin-400.css",
+    "/node_modules/@fontsource/ibm-plex-mono/latin-500.css",
+    "/src/style.css",
+    "/node_modules/vite/dist/client/env.mjs",
+    "/src/interior-app.js",
+    "/node_modules/@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2",
+    "/node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2",
+    "/node_modules/.vite/deps/three.js",
+    "/src/world-lifecycle.js",
+    "/node_modules/.vite/deps/three_addons_controls_OrbitControls__js.js",
+    "/src/classroom.js",
+    "/src/character.js",
+    "/src/student.js",
+    "/src/presentation.js",
+    "/src/touch.js",
+    "/src/scene-transition.js",
+    "/src/ambience.js",
+    "/src/sound.js",
+    "/src/world.js",
+    "/node_modules/.vite/deps/three.module-Dl--ppud.js",
+    "/node_modules/.vite/deps/three_addons_utils_BufferGeometryUtils__js.js",
+    "/node_modules/.vite/deps/three_addons_loaders_GLTFLoader__js.js",
+    "/src/surface-grain.js",
+    "/src/context-fog.js",
+    "/node_modules/.vite/deps/three_addons_utils_SkeletonUtils__js.js",
+    "/viewer-profile.json",
+    "/audio/footstep.wav"
+  ],
+  "heroModelRequests": [],
+  "return": {
+    "playerUnchanged": true,
+    "aerial": true,
+    "cameraUnchanged": true
+  },
+  "pageErrors": [],
+  "tests": {
+    "python": 34,
+    "upstreamJs": 42,
+    "downstreamJs": 42,
+    "upstreamBrowserFull": 17,
+    "downstream": {
+      "firstFocused": {
+        "passed": 7,
+        "failed": 2,
+        "reason": "Tests used a dynamic :visible label locator and assumed an off-camera label was visible. Stable-ID locator and explicit facing via search corrected the tests."
+      },
+      "cardRerunPassed": 3,
+      "searchAndVisitCasesPassed": 6,
+      "navigationAndLandmarksPassed": 4
+    },
+    "build": "both pass",
+    "format": "both pass"
+  },
+  "screenshots": [
+    "artifacts/phase16-building-card-desktop.png",
+    "artifacts/phase16-building-card-mobile.png",
+    "artifacts/phase16-overview-interior.png"
+  ],
+  "runtimeLock": {
+    "managedFiles": 43,
+    "dirty": true,
+    "baseCommit": "6d9a01b89a5505297057acace5a981719afeae45",
+    "allHashesMatch": true
+  }
+}

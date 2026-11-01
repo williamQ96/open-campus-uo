@@ -2,6 +2,9 @@
 
 # Open Campus: UO
 
+**0.13.0 — 迭代 15–16：**手机拖拽走跑、534 栋入口及可导出通用教室、独立室内加载、Overview 建筑卡片／无 hero 观察进入与轻微悬停。[操作、限制和资源边界](docs/zh-CN/interiors-mobile.md)。
+
+
 **迭代 14（收录于 0.12.0）：**自适应 Overview 深度修复远处屋顶／铺装闪烁；独立标签场景及静态矩阵／小地图／文字缓存减少 CPU 重复工作，保留原画质。[测量、范围与默认关闭的雾效实验](docs/zh-CN/overview-performance.md)。
 
 **迭代 13（收录于 0.12.0）：** 蓝天／柔边方块云、四档第一视角晃动、步行 NPC 碰撞绕行、Zombie School 死亡与重启、完整范围推断草地和磨砂混凝土／沥青。[行为、航拍资料与成本](docs/zh-CN/phase13-environment-comfort.md)。接续[迭代 12](docs/zh-CN/phase12-npc-beta.md)，发布核验见开发日志。

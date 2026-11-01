@@ -15,7 +15,7 @@ for (const cached of [false, true, true, false]) {
   page.on("console", (m) => {
     if (m.type() === "error") errors.push(m.text());
   });
-  await page.route("**/src/main.js*", async (route) => {
+  await page.route("**/src/campus.js*", async (route) => {
     const response = await route.fetch();
     let s = (await response.text()).replace(
       "window.__campus = {",

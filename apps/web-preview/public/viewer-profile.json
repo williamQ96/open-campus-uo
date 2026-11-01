@@ -116,7 +116,7 @@
     "adaptation_license": "CC-BY-4.0",
     "footfall_phase_offset": 0.15625
   },
-  "iteration": 14,
+  "iteration": 16,
   "wildlife": {
     "asset_url": "animals/campus-squirrel.glb",
     "yaw_correction": -1.5707963267948966,
