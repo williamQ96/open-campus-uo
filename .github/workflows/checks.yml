@@ -23,8 +23,14 @@ jobs:
         run: python .reference-tools/scripts/check-reference-media.py --root .
       - name: Verify archived character and model checksums
         run: python scripts/check-open-assets.py
+      - name: Verify fixed NPC habitats and parking slots
+        run: python scripts/check-semantic-activity.py
       - name: Verify tiered scene identity and retained geographic sources
         run: python scripts/check-campus-expansion.py
+      - name: Install ground-layer audit dependency (matches upstream lock)
+        run: python -m pip install numpy==2.5.4
+      - name: Verify inferred ground coverage, heights and texture-free export
+        run: python scripts/check-landcover.py
   browser-preview:
     # Playwright 1.60 is verified on 24.04; avoid ubuntu-latest's 26.04 migration.
     runs-on: ubuntu-24.04

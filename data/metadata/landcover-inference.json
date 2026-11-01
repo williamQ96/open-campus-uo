@@ -1,0 +1,49 @@
+{
+  "source_id": "naip-2024-main-campus-rgb",
+  "source_sha256": "fa943c0635118d4eae28fbc8979edf8c0df0e0e8c0b43f7f572de5cdd534908c",
+  "method": "Smoothed open aerial color cues plus inferred aprons, lawns and urban hardscape; not a measured land-use or access survey. No photographic texture is embedded.",
+  "coverage_m": 2000,
+  "vertices": 160801,
+  "triangles": 320000,
+  "palette_srgb": [
+    [
+      0.63,
+      0.72,
+      0.46
+    ],
+    [
+      0.57,
+      0.63,
+      0.47
+    ],
+    [
+      0.7,
+      0.68,
+      0.6
+    ],
+    [
+      0.35,
+      0.39,
+      0.38
+    ],
+    [
+      0.42,
+      0.6,
+      0.58
+    ],
+    [
+      0.6,
+      0.63,
+      0.63
+    ]
+  ],
+  "class_vertices": {
+    "campus-grass": 28948,
+    "context-planting": 35535,
+    "concrete": 12615,
+    "asphalt": 14083,
+    "water-cue": 12453,
+    "context-concrete": 57167
+  },
+  "height_offset_m": 0.018
+}

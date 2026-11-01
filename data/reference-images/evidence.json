@@ -118,5 +118,27 @@
     },
     "export_record": "../metadata/naip-2024-reference.json",
     "review_note": "The source is USDA NAIP aerial orthophotography, with a public-domain statement in its official catalog; no broader commercial basemap has been adopted."
+  },
+  "main_campus_aerial": {
+    "id": "naip-2024-main-campus-rgb",
+    "reviewed_on": "2026-10-31",
+    "source_page": "https://catalog.data.gov/dataset/national-agriculture-imagery-program-naip-imagery",
+    "declared_license": "Public-domain distribution",
+    "source_tiles": [
+      {
+        "OBJECTID": 150159,
+        "Name": "m_4412364_se_10_060_20240608",
+        "QQDATE": 1717804800000,
+        "year_ts": 2024
+      },
+      {
+        "OBJECTID": 150160,
+        "Name": "m_4412364_sw_10_060_20240608",
+        "QQDATE": 1717804800000,
+        "year_ts": 2024
+      }
+    ],
+    "request_and_georeference": "data/metadata/naip-2024-main-campus-reference.json",
+    "use": "Only an open, dated reference; generated materials are palette colors and original grain, not photographic textures."
   }
 }

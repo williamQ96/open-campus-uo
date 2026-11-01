@@ -17,9 +17,17 @@
   "map_label": "EUGENE MAIN CAMPUS",
   "about_title": "UO Eugene main campus",
   "source_description": "Oregon DOGAMI / NOAA Digital Coast. Historical survey: 2008-08-31. Nine source tiles cover the main campus and surrounding context.",
-  "about_summary": "Five photo-informed landmarks include Knight Library, EMU, Johnson Hall, Gerlinger Hall and Gerlinger Annex. All 534 historical building records have stylized appearance: 135 in the campus art-priority region and 399 in the background. Seeded low-poly archetypes retain source positions and footprints. There are 600 illustrative trees; 300 pilot trees use archived 2024 NAIP cues and 300 additional trees are procedurally inferred.",
-  "about_limitations": "This is a recognizable first-pass art model, refined through long-term correction. Facade dimensions, hidden sides, roof details and tree heights/species include plausible inference. The aerial image guides illustrative canopy distribution, not surveyed individual trees. Photos span different years; EMU combines historical and later design motifs. No new field measurements or photogrammetric solve were performed. Base terrain/roof candidates retain 2008 provenance; Census roads have estimated widths. Stairs, terraces and planting are decorative, not a surveyed navigation mesh. The square extent is not a property boundary. The art-priority polygon is not an official campus boundary. Background archetypes, roof forms and palettes are illustrative, not identified real building types. Extra campus trees/lawns are inferred, not extracted from new aerial imagery. Background haze is a visual effect and does not change the exported geographic geometry.",
+  "about_summary": "Five photo-informed landmarks include Knight Library, EMU, Johnson Hall, Gerlinger Hall and Gerlinger Annex. All 534 historical building records have stylized appearance: 135 in the campus art-priority region and 399 in the background. Seeded low-poly archetypes retain source positions and footprints. There are 600 illustrative trees; 300 pilot trees use archived 2024 NAIP cues and 300 additional trees are procedurally inferred. Local iteration 12 added style-inferred roofs across all source identities; semantic activity paths, seeded NPC traits, developer inspection and optional Zombie School beta. Local iteration 13 adds blue sky with soft block clouds, adjustable first-person motion, pedestrian detours, Zombie School restart, and a full-extent inferred ground-cover layer using an additional archived 2024 NAIP aerial reference. Local iteration 14 fixes distant depth flicker and reduces repeated label, static-transform, minimap and coordinate-display work without simplifying the scene.",
+  "about_limitations": "This is a recognizable first-pass art model, refined through long-term correction. Facade dimensions, hidden sides, roof details and tree heights/species include plausible inference. The aerial image guides illustrative canopy distribution, not surveyed individual trees. Photos span different years; EMU combines historical and later design motifs. No new field measurements or photogrammetric solve were performed. Base terrain/roof candidates retain 2008 provenance; Census roads have estimated widths. Stairs, terraces and planting are decorative, not a surveyed navigation mesh. The square extent is not a property boundary. The art-priority polygon is not an official campus boundary. Background archetypes, roof forms and palettes are illustrative, not identified real building types. Trees retain their previous illustrative placements. The additional full-extent 2024 NAIP image supplies broad ground-color cues; pavement, lawns and urban parcels are plausible stylized inference, not measured land use or present access. Background haze is a visual effect and does not change the exported geographic geometry. New roof form/material/seam/equipment details are plausible style inference without new photographic evidence. Activity surfaces/parking and tree climbing are authored illustrations, not access or wildlife surveys.",
   "source_links": [
+    {
+      "label": "Local iteration 13 - environment, comfort and restart",
+      "url": "https://github.com/williamQ96/open-campus-uo/blob/main/docs/phase13-environment-comfort.md"
+    },
+    {
+      "label": "Full-scene USDA NAIP 2024 - exact source tiles and georeference",
+      "url": "https://github.com/williamQ96/open-campus-uo/blob/main/data/metadata/naip-2024-main-campus-reference.json"
+    },
     {
       "label": "Layered campus and background refinement - sources and assumptions",
       "url": "https://github.com/williamQ96/open-campus-uo/blob/main/docs/campus-expansion.md"
@@ -70,7 +78,7 @@
   ],
   "footer": "Independent reconstruction project. No University of Oregon endorsement. Public development preview.",
   "loading_message": "Loading the Eugene campus…",
-  "license_notice": "Code: Apache-2.0. Original documentation and model/design contributions: CC BY 4.0. Copyright 2026 Zhongyi “William” Qiu and contributors. Third-party sources retain their own terms. Hero/walker base mesh, animations and skin: Kenney Animated Characters 3, CC0-1.0. Original clothing materials, backpack and procedural vehicles: CC BY 4.0. No university logos or mascot are used. Squirrel base: Innerscene, CC0; low-poly adaptation: Open Campus contributors, CC BY 4.0. Music: Overworld (BGM), IntelligentGene / Another Page Studio, CC0. Footstep sample: original Open Campus synthesis, CC0.",
+  "license_notice": "Code: Apache-2.0. Original documentation and model/design contributions: CC BY 4.0. Copyright 2026 Zhongyi “William” Qiu and contributors. Third-party sources retain their own terms. Hero/walker base mesh, animations and skin: Kenney Animated Characters 3, CC0-1.0. Original clothing materials, backpack and procedural vehicles: CC BY 4.0. No university logos or mascot are used. Squirrel base: Innerscene, CC0; low-poly adaptation: Open Campus contributors, CC BY 4.0. Music: Overworld (BGM), IntelligentGene / Another Page Studio, CC0. Footstep sample: original Open Campus synthesis, CC0. Procedural NPC hairstyles, bags, SUV variants and the beta cartoon monster are original exportable model contributions, CC BY 4.0; their generators are Apache-2.0.",
   "license_links": [
     {
       "label": "Apache-2.0",
@@ -105,9 +113,10 @@
     "asset_url": "characters/campus-student.glb",
     "author": "Kenney / Open Campus contributors",
     "source_license": "CC0-1.0",
-    "adaptation_license": "CC-BY-4.0"
+    "adaptation_license": "CC-BY-4.0",
+    "footfall_phase_offset": 0.15625
   },
-  "iteration": 11,
+  "iteration": 14,
   "wildlife": {
     "asset_url": "animals/campus-squirrel.glb",
     "yaw_correction": -1.5707963267948966,

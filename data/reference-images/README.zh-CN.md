@@ -2,7 +2,7 @@
 
 # 图片与照片素材目录
 
-本目录是 Open Campus: UO 持续维护的素材原件库，当前包含 **7 张获得开放许可的地面参考照片、1 张有日期的 USDA NAIP 航拍裁剪和 5 张已有项目设计图**（概念 mockup、品牌展示、Logo、图标和 favicon），保存下载字节，航拍记录明确说明服务端裁剪与重投影。保留原设计档案和网页所需品牌路径，台账记录相同字节副本的关系。
+本目录是 Open Campus: UO 持续维护的素材原件库，当前包含 **9 张开放许可的地面照片、2 张有日期的 USDA NAIP 航拍图、5 张项目设计图和 1 张 CC0 角色皮肤纹理**。保存下载字节；航拍记录明确服务端拼接／裁剪、重采样与重投影。原设计／运行文件保持原位，台账链接相同字节副本。Gerlinger Hall／Annex 扩充建筑照片；第二张航拍覆盖完整 2 × 2 公里，用于推断地面材质。
 
 - [manifest.json](manifest.json)：逐图文件、作者、来源／下载链接、拍摄／访问／核验日期、许可依据、用途／建筑 ID、修改、SHA-256 与字节数。
 - [ATTRIBUTION.md](ATTRIBUTION.md)：每张图的署名和许可链接。
@@ -43,3 +43,7 @@ python ../open-geospatial-to-3d-reconstruction-pipeline/scripts/check-reference-
 ```
 
 CI 的 `reference-media` job 固定上游校验工具 commit，检查图片登记、字段与 hash 一致性；不能替代人工授权判断或建筑精度核验。本次不更改独立的重建锁与 viewer 运行时锁。
+
+## 完整场景地面参考
+
+[2024-06-08 全场景 NAIP 拼接图](aerial/naip-2024-main-campus-rgb.png)用于[本地迭代 13](../../docs/zh-CN/phase13-environment-comfort.md)，[两幅源图、导出请求和地理参考](../metadata/naip-2024-main-campus-reference.json)另存。运行时仅使用原创调色／顶点色材质，不把照片当纹理。这是有日期的航拍，不是实时卫星地图。

@@ -25,5 +25,7 @@ for node in gltf['nodes']:
 assert len(identities)==len(set(identities))==len(source) and set(identities)==set(source)
 register=read(root/'data/reference-images/manifest.json');images={i['id']:i for i in register['images']}
 for id in presentation['reference_image_ids']:assert id in images and images[id]['review_status']=='approved'
-assert (root/'assets/campus-expansion/eugene-campus.blend').is_file()
+assert (root/presentation.get('editable_source','assets/campus-expansion/eugene-campus.blend')).is_file()
+assert set(presentation['roof_treatments'])==set(source)
+assert all(p.get('roof_style') for p in audit['appearance_plan'])
 print(json.dumps({'building_ids':len(identities),'individually_selectable':len(identities)-sum(map(len,audit['context_batches'].values())),'batched_buildings':sum(map(len,audit['context_batches'].values())),'context_batches':len(audit['context_batches']),'runtime_bytes':len(raw),'new_photo_references':2,'embedded_images':0,'source_geography':'unchanged','original_pilot_blend':'unchanged'}))

@@ -1,0 +1,78 @@
+[
+  {
+    "cached": false,
+    "info": {
+      "cache": {
+        "cachedMeshes": 0,
+        "cachedVertices": 0,
+        "additionalBytes": 0
+      },
+      "triangles": 1349252,
+      "drawCalls": 308
+    },
+    "timing": {
+      "samples": 139,
+      "meanMs": 0.1637019472422063,
+      "p50Ms": 0.11336533333333333,
+      "p95Ms": 0.3902293333333333
+    },
+    "errors": []
+  },
+  {
+    "cached": true,
+    "info": {
+      "cache": {
+        "cachedMeshes": 165,
+        "cachedVertices": 1291682,
+        "additionalBytes": 5166728
+      },
+      "triangles": 1349252,
+      "drawCalls": 308
+    },
+    "timing": {
+      "samples": 139,
+      "meanMs": 0.17845571223021586,
+      "p50Ms": 0.11368533333333335,
+      "p95Ms": 0.410592
+    },
+    "errors": []
+  },
+  {
+    "cached": true,
+    "info": {
+      "cache": {
+        "cachedMeshes": 165,
+        "cachedVertices": 1291682,
+        "additionalBytes": 5166728
+      },
+      "triangles": 1349252,
+      "drawCalls": 308
+    },
+    "timing": {
+      "samples": 139,
+      "meanMs": 0.18988423980815344,
+      "p50Ms": 0.11492266666666667,
+      "p95Ms": 0.440032
+    },
+    "errors": []
+  },
+  {
+    "cached": false,
+    "info": {
+      "cache": {
+        "cachedMeshes": 0,
+        "cachedVertices": 0,
+        "additionalBytes": 0
+      },
+      "triangles": 1349252,
+      "drawCalls": 308
+    },
+    "timing": {
+      "samples": 139,
+      "meanMs": 0.30803637410071955,
+      "p50Ms": 0.13616,
+      "p95Ms": 1.057664
+    },
+    "errors": []
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "service": "https://apps.geo.fpac.usda.gov/geo-imagery/rest/services/naip/conus_naip/ImageServer",
+  "request_parameters": {
+    "f": "json",
+    "bbox": "493329.14928888186,4875928.282153052,495329.14928888186,4877928.282153052",
+    "bboxSR": 3740,
+    "imageSR": 3740,
+    "size": "1600,1600",
+    "format": "png",
+    "bandIds": "0,1,2",
+    "interpolation": "RSP_BilinearInterpolation",
+    "mosaicRule": "{\"mosaicMethod\": \"esriMosaicLockRaster\", \"lockRasterIds\": [150159, 150160], \"mosaicOperation\": \"MT_FIRST\"}"
+  },
+  "export_request_url": "https://apps.geo.fpac.usda.gov/geo-imagery/rest/services/naip/conus_naip/ImageServer/exportImage?f=json&bbox=493329.14928888186%2C4875928.282153052%2C495329.14928888186%2C4877928.282153052&bboxSR=3740&imageSR=3740&size=1600%2C1600&format=png&bandIds=0%2C1%2C2&interpolation=RSP_BilinearInterpolation&mosaicRule=%7B%22mosaicMethod%22%3A+%22esriMosaicLockRaster%22%2C+%22lockRasterIds%22%3A+%5B150159%2C+150160%5D%2C+%22mosaicOperation%22%3A+%22MT_FIRST%22%7D",
+  "export_response": {
+    "href": "https://apps.geo.fpac.usda.gov/geo-imagery/rest/directories/arcgisoutput/naip/conus_naip_ImageServer/_ags_e612d0c1_a161_4afe_9845_a68f878af799.png",
+    "width": 1600,
+    "height": 1600,
+    "extent": {
+      "xmin": 493329.14928888186,
+      "ymin": 4875928.282153052,
+      "xmax": 495329.14928888186,
+      "ymax": 4877928.282153052,
+      "spatialReference": {
+        "wkid": 3740,
+        "latestWkid": 3740
+      }
+    },
+    "scale": 0
+  },
+  "source_rasters": [
+    {
+      "attributes": {
+        "OBJECTID": 150159,
+        "Name": "m_4412364_se_10_060_20240608",
+        "QQDATE": 1717804800000,
+        "year_ts": 2024
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 150160,
+        "Name": "m_4412364_sw_10_060_20240608",
+        "QQDATE": 1717804800000,
+        "year_ts": 2024
+      }
+    }
+  ],
+  "archive_file": "aerial/naip-2024-main-campus-rgb.png",
+  "sha256": "fa943c0635118d4eae28fbc8979edf8c0df0e0e8c0b43f7f572de5cdd534908c",
+  "bytes": 4538778,
+  "local_origin_projected_m": [
+    494329.14928888186,
+    4876928.282153052
+  ],
+  "license": "LicenseRef-PD-USGov",
+  "license_evidence": "Official USDA catalog https://catalog.data.gov/dataset/national-agriculture-imagery-program-naip-imagery declares public-domain distribution. Reviewed 2026-10-31.",
+  "use": "Reference for inferred stylized land cover only; never a runtime texture."
+}

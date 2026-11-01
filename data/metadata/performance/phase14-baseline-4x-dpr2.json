@@ -1,0 +1,204 @@
+{
+  "capturedAt": "2026-11-01T04:59:41.384Z",
+  "sourceSha256": "c7e73269b8f138adfbc6df64ecf8d960dc058f8b7f011dd2b3cdbf2ac861c3e3",
+  "environment": "Headless Chrome, native ANGLE GPU, 1440x1000 CSS px. Local comparison only; not an in-app-browser or mobile FPS guarantee.",
+  "cpuThrottleRate": 4,
+  "metadata": {
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5090 (0x00002B85) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "depthBits": 24,
+    "near": 0.08,
+    "pixelRatio": 2,
+    "nodes": 942,
+    "vertices": 1585723,
+    "triangles": 947049,
+    "drawCalls": 229
+  },
+  "idle": {
+    "render": {
+      "samples": 29,
+      "meanMs": 11.793103440054532,
+      "p50Ms": 11.200000047683716,
+      "p95Ms": 18.5
+    },
+    "labels": {
+      "samples": 29,
+      "meanMs": 2.2103448119656792,
+      "p50Ms": 2,
+      "p95Ms": 4.899999976158142
+    },
+    "life": {
+      "samples": 29,
+      "meanMs": 2.965517261932636,
+      "p50Ms": 3,
+      "p95Ms": 4.100000023841858
+    },
+    "intervals": {
+      "samples": 29,
+      "meanMs": 92.82068965517242,
+      "p50Ms": 91.69999999999982,
+      "p95Ms": 99.80000000000018
+    }
+  },
+  "orbit": {
+    "render": {
+      "samples": 120,
+      "meanMs": 13.020833337306977,
+      "p50Ms": 12.5,
+      "p95Ms": 16.700000047683716
+    },
+    "labels": {
+      "samples": 120,
+      "meanMs": 2.534166665871938,
+      "p50Ms": 2.399999976158142,
+      "p95Ms": 3.799999952316284
+    },
+    "life": {
+      "samples": 120,
+      "meanMs": 2.840833329161008,
+      "p50Ms": 2.799999952316284,
+      "p95Ms": 3.8000000715255737
+    },
+    "intervals": {
+      "samples": 120,
+      "meanMs": 99.02416666666664,
+      "p50Ms": 99.90000000000146,
+      "p95Ms": 108.5
+    }
+  },
+  "pan": {
+    "render": {
+      "samples": 120,
+      "meanMs": 11.67333333392938,
+      "p50Ms": 11.599999904632568,
+      "p95Ms": 14.600000023841858
+    },
+    "labels": {
+      "samples": 120,
+      "meanMs": 2.361666668454806,
+      "p50Ms": 2.3000000715255737,
+      "p95Ms": 3.600000023841858
+    },
+    "life": {
+      "samples": 120,
+      "meanMs": 2.525000004967054,
+      "p50Ms": 2.5,
+      "p95Ms": 3.200000047683716
+    },
+    "intervals": {
+      "samples": 120,
+      "meanMs": 84.79666666666668,
+      "p50Ms": 83.40000000000146,
+      "p95Ms": 91.70000000000073
+    }
+  },
+  "topCpu": [
+    {
+      "function": "(idle)",
+      "url": "",
+      "line": 0,
+      "selfSamples": 10274
+    },
+    {
+      "function": "(program)",
+      "url": "",
+      "line": 0,
+      "selfSamples": 1491
+    },
+    {
+      "function": "needsUpdate",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 43339,
+      "selfSamples": 181
+    },
+    {
+      "function": "renderObject",
+      "url": "three_addons_renderers_CSS2DRenderer__js.js?v=e55f4477",
+      "line": 154,
+      "selfSamples": 143
+    },
+    {
+      "function": "setProgram",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 52553,
+      "selfSamples": 122
+    },
+    {
+      "function": "apply",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 37252,
+      "selfSamples": 113
+    },
+    {
+      "function": "setup",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 43268,
+      "selfSamples": 105
+    },
+    {
+      "function": "markUniformsLightsNeedsUpdate",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 52719,
+      "selfSamples": 96
+    },
+    {
+      "function": "upload",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 45650,
+      "selfSamples": 86
+    },
+    {
+      "function": "multiplyMatrices",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 8272,
+      "selfSamples": 84
+    },
+    {
+      "function": "WebGLRenderer.renderBufferDirect",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 51998,
+      "selfSamples": 80
+    },
+    {
+      "function": "texSubImage2D",
+      "url": "",
+      "line": 0,
+      "selfSamples": 61
+    },
+    {
+      "function": "refreshUniformsCommon",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 50279,
+      "selfSamples": 53
+    },
+    {
+      "function": "getBindingState",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 43293,
+      "selfSamples": 52
+    },
+    {
+      "function": "",
+      "url": "main.js",
+      "line": 1117,
+      "selfSamples": 44
+    },
+    {
+      "function": "bindVertexArray",
+      "url": "",
+      "line": 0,
+      "selfSamples": 44
+    },
+    {
+      "function": "update",
+      "url": "life.js",
+      "line": 193,
+      "selfSamples": 37
+    },
+    {
+      "function": "flatten",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 45107,
+      "selfSamples": 36
+    }
+  ]
+}

@@ -179,3 +179,7 @@ Review screenshots are indexed separately as outputs in the manifest and remain 
 ## gerlinger-annex-2013
 
 [Gerlinger Annex on the University of Oregon Campus.jpg](photos/gerlinger-annex/exterior-2013.jpg) — **Rick Obst**, [source](https://commons.wikimedia.org/wiki/File:Gerlinger_Annex_on_the_University_of_Oregon_Campus.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Captured 2013-10-19. Original bytes retained, checked against the Commons SHA-1. Used for stylized architectural patterns; no photograph embedded in runtime meshes.
+
+## naip-2024-main-campus-rgb
+
+[Full-scene aerial reference](aerial/naip-2024-main-campus-rgb.png) — **USDA FPAC-BC / Geospatial Enterprise Operations, NAIP**, [official dataset and public-domain declaration](https://catalog.data.gov/dataset/national-agriculture-imagery-program-naip-imagery). Both source tiles were acquired on **2024-06-08**: `m_4412364_se_10_060_20240608` and `m_4412364_sw_10_060_20240608`. The 2 × 2 km EPSG:3740 RGB mosaic was exported at 1600 × 1600 pixels with bilinear resampling; downloaded PNG bytes are unchanged. [Exact request, source tiles and georeference](../metadata/naip-2024-main-campus-reference.json). This dated public-domain reference guides inferred stylized ground colors only; it is not a live satellite map, and no photo texture is embedded in runtime assets. Its original status remains `LicenseRef-PD-USGov`, separate from project CC BY content.

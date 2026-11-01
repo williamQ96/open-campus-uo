@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-31",
+  "stage": 13,
+  "publication_status": "local-uncommitted-not-pushed-not-deployed",
+  "downstream_base": "30b20091909811ffd003960bb5ddf4260b0b3c42",
+  "upstream_base": "c02f6cd3098dcff2635f4d9a347f9308639bc1f3",
+  "upstream": {
+    "python": 34,
+    "js": 31,
+    "browser_full": 8,
+    "build": "pass",
+    "format": "pass",
+    "post_layering_browser": 2
+  },
+  "downstream": {
+    "js": 31,
+    "browser_full": 21,
+    "additional_ground_mobile_browser": 2,
+    "build": "pass",
+    "format": "pass",
+    "asset_files": 22,
+    "reference_images": 17,
+    "post_layering_browser": 4
+  },
+  "motion": {
+    "default": "Low",
+    "levels": [
+      "No",
+      "Low",
+      "Mid",
+      "High"
+    ],
+    "vertical_max_m": [
+      0,
+      0.003,
+      0.006,
+      0.0105
+    ],
+    "lateral_max_m": [
+      0,
+      0.001,
+      0.002,
+      0.0035
+    ],
+    "roll": 0,
+    "reduced_motion_overrides_sway": true,
+    "gait_contacts_unchanged_by_slider": true
+  },
+  "detour": {
+    "applies_to": "walking student NPCs",
+    "wait_seconds": [
+      0.5,
+      0.74
+    ],
+    "retry_seconds": 1.1,
+    "max_plan_requests_per_frame": 1,
+    "waypoints": "lateral, parallel, original fixed-path rejoin",
+    "confinement": "inset authored pedestrian_regions; no road/planting fallback",
+    "tests": [
+      "stationary hero bypass and rejoin",
+      "no overlap or teleport",
+      "narrow path yields",
+      "polygon holes excluded",
+      "static blockers reject bypass"
+    ]
+  },
+  "death": {
+    "height_aware_contact_callback": "one-shot, tested",
+    "shade_rgba": [
+      0,
+      0,
+      0,
+      0.3
+    ],
+    "shade_z": 4,
+    "label_z": 5,
+    "main_ui_z": 6,
+    "centered_modal": "You are dead / Restart",
+    "escape_dismisses": false,
+    "restart": "location.reload; same T-junction spawn/facing, Overview, Mid density, Low motion, beta/developer off, default sound",
+    "tests": [
+      "callback once and actor freeze",
+      "vertical non-contact",
+      "desktop pause and reset",
+      "390px modal layout"
+    ],
+    "shade_container": "viewport; same stacking context as labels, below label z=5 and outside-scene UI"
+  },
+  "landcover": {
+    "source": "data/metadata/naip-2024-main-campus-reference.json",
+    "reference_capture_date": "2024-06-08",
+    "source_tiles": 2,
+    "source_rights": "LicenseRef-PD-USGov",
+    "reference_is_runtime_texture": false,
+    "editable_source": "assets/landcover/eugene-ground.blend",
+    "runtime_asset": "apps/web-preview/public/scene/landcover.glb",
+    "bytes": 9630380,
+    "sha256": "0e93a8f129ba9368cfa90b09da610169054f5288dd434e290a5c390010d8a0cd",
+    "vertices": 160801,
+    "triangles": 320000,
+    "heightfield_offset_m": 0.018,
+    "max_export_coordinate_error_m": 3.7597656188381734e-06,
+    "embedded_images": 0,
+    "surface_classes": {
+      "campus-grass": 28948,
+      "context-planting": 35535,
+      "concrete": 12615,
+      "asphalt": 14083,
+      "water-cue": 12453,
+      "context-concrete": 57167
+    },
+    "inference": "Smoothed aerial cues plus plausible lawns, aprons, hardscape and background parcels; not measured land use/access",
+    "old_terrain": "Retained for physics/checks; duplicate rendering hidden only for complete foundation",
+    "original_roads_and_534_building_records": "unchanged in this phase"
+  },
+  "sky": {
+    "cloud_clusters": 18,
+    "shared_merged_cloud_mesh": true,
+    "rounded_edges": true,
+    "external_images": 0
+  },
+  "visual_review": [
+    "docs/images/phase13-ground.png",
+    "docs/images/phase13-sky.png",
+    "docs/images/phase13-death.png"
+  ],
+  "runtime_lock": {
+    "dirty": true,
+    "file_hashes": "verified against upstream managed runtime"
+  },
+  "notes": [
+    "A Windows mapped-file lock interrupted one runtime copy. Every managed file was then verified equal to upstream before recovering the dirty lock; a later full sync completed with Vite stopped.",
+    "Initial terrain layering review revealed duplicate-base depth flicker; current viewer draws one foundation and retains source terrain for checks.",
+    "Vite large-chunk advisory remains. No physical-device FPS measurement.",
+    "Old roof, source terrain, source image and historical verification records are preserved.",
+    "Final overlay stacking correction places shade alongside world labels inside viewport; desktop/default-reset, mobile layout and PBR/toon cases passed again. Both production builds regenerated afterward."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-31",
+  "stage": 12,
+  "publication_status": "local-uncommitted-not-pushed-not-deployed",
+  "downstream_base": "30b20091909811ffd003960bb5ddf4260b0b3c42",
+  "upstream_base": "c02f6cd3098dcff2635f4d9a347f9308639bc1f3",
+  "upstream": {
+    "python": 34,
+    "js": 26,
+    "browser": 6,
+    "build": "pass",
+    "format": "pass"
+  },
+  "downstream": {
+    "js": 23,
+    "browser_full": 19,
+    "post_calibration_gait_browser": 1,
+    "build": "pass",
+    "format": "pass",
+    "asset_files": 20,
+    "reference_images": 16
+  },
+  "activity": {
+    "schema_version": 2,
+    "paths": 70,
+    "pedestrian": 14,
+    "driving": 8,
+    "vegetation": 40,
+    "tree": 8,
+    "parking_slots": 20,
+    "mid_instances": 29,
+    "high_target_instances": 74,
+    "no_instances": 0,
+    "hidden_high_pool": 0,
+    "per_frame_ordinary_world_classification": 0
+  },
+  "roofs": {
+    "building_ids": 534,
+    "semantic_meshes": 93,
+    "runtime_bytes": 34638580,
+    "editable_source": "assets/roof-refinement/eugene-campus.blend",
+    "previous_source_preserved": true
+  },
+  "beta": {
+    "name": "ZOMBIE SCHOOL!!!",
+    "default_enabled": false,
+    "target_population": 28,
+    "wander_radius_m": 12,
+    "wander_speed_mps": 0.45,
+    "attract_radius_m": 30,
+    "release_radius_m": 60,
+    "active_speed_mps": 2.2,
+    "hero_walk_mps": 1.7,
+    "hero_run_mps": 4.6,
+    "shared_model": true
+  },
+  "measurement_limits": "Chrome/SwiftShader automated and visual checks; no physical-device FPS guarantee."
+}

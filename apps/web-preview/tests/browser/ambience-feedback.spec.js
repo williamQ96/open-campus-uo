@@ -31,6 +31,11 @@ test("sound defaults on, master mute works, and real walking drives footsteps an
   await expect
     .poll(async () => (await state(page)).audio.stepsPlayed)
     .toBeGreaterThan(0);
+  const synchronized = await state(page);
+  expect(synchronized.heroGait.phase).toBe(synchronized.walkMotion.phase);
+  expect(synchronized.heroGait.phaseOffset).toBe(0.15625);
+  expect(Math.abs(synchronized.walkMotion.bobY)).toBeLessThanOrEqual(0.003);
+  expect(synchronized.walkMotion.roll).toBe(0);
   await page.keyboard.up("KeyW");
   await expect
     .poll(async () => Math.abs((await state(page)).walkMotion.bobY))
@@ -92,7 +97,7 @@ test("feedback retains drafts, requires content, leaves coordinates optional, an
   const url = new URL(await page.evaluate(() => window.lastIssueDraft));
   expect(url.pathname).toBe("/williamQ96/open-campus-uo/issues/new");
   expect(url.searchParams.get("title")).toMatch(
-    /^Feedback #\d+ · iteration 11$/,
+    /^Feedback #\d+ · iteration 14$/,
   );
   expect(url.searchParams.get("body")).toContain("entrance could use a ramp");
   expect(url.searchParams.get("body")).not.toContain("Coordinates");

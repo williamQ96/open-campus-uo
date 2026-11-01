@@ -1,0 +1,28 @@
+{
+  "provenance_note": "First cache trial preserved from tool output before the working artifact was replaced by the repeat. No exact timestamp was recorded in that output. Each arm had 139 retained GPU query samples; original image comparison and geometry counts are recorded separately.",
+  "sequence": [
+    "dynamic",
+    "cached",
+    "cached",
+    "dynamic"
+  ],
+  "mean_ms": [
+    0.35070964028776974,
+    0.3544732086330934,
+    0.3090609880095924,
+    0.43197705515587526
+  ],
+  "median_ms": [
+    0.285184,
+    0.2715626666666667,
+    0.27453866666666665,
+    0.2919253333333333
+  ],
+  "p95_ms": [
+    1.1256533333333334,
+    1.1325973333333332,
+    0.6568106666666667,
+    1.2747093333333332
+  ],
+  "cache_additional_attribute_bytes": 5166728
+}

@@ -1,0 +1,229 @@
+{
+  "capturedAt": "2026-11-01T05:11:49.337Z",
+  "sourceSha256": "6e0df122fa52aa0ed05300b335c0785aa63f49ac5ee1baa38c77af55e97abd72",
+  "environment": "Headless Chrome, native ANGLE GPU, 1440x1000 CSS px. Local comparison only; not an in-app-browser or mobile FPS guarantee.",
+  "cpuThrottleRate": 1,
+  "metadata": {
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5090 (0x00002B85) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "gpuTimer": true,
+    "depthBits": 24,
+    "near": 32,
+    "pixelRatio": 1,
+    "nodes": 879,
+    "vertices": 1585723,
+    "triangles": 947049,
+    "drawCalls": 229,
+    "hazeCache": {
+      "cachedMeshes": 0,
+      "cachedVertices": 0,
+      "additionalBytes": 0
+    },
+    "frozenStaticNodes": 184
+  },
+  "idle": {
+    "render": {
+      "samples": 303,
+      "meanMs": 1.1904290418813723,
+      "p50Ms": 1.1999999284744263,
+      "p95Ms": 1.600000023841858
+    },
+    "labels": {
+      "samples": 303,
+      "meanMs": 0.16138614010889538,
+      "p50Ms": 0.19999992847442627,
+      "p95Ms": 0.2999999523162842
+    },
+    "life": {
+      "samples": 303,
+      "meanMs": 0.3069306981838969,
+      "p50Ms": 0.2999999523162842,
+      "p95Ms": 0.5
+    },
+    "intervals": {
+      "samples": 303,
+      "meanMs": 8.58118811881188,
+      "p50Ms": 8.300000000000182,
+      "p95Ms": 8.400000000000546
+    },
+    "gpu": {
+      "samples": 76,
+      "meanMs": 2.924729684210526,
+      "p50Ms": 2.91552,
+      "p95Ms": 4.438272
+    }
+  },
+  "orbit": {
+    "render": {
+      "samples": 438,
+      "meanMs": 1.249315071323691,
+      "p50Ms": 1.2000000476837158,
+      "p95Ms": 1.8000000715255737
+    },
+    "labels": {
+      "samples": 438,
+      "meanMs": 0.19132419862703645,
+      "p50Ms": 0.19999992847442627,
+      "p95Ms": 0.30000007152557373
+    },
+    "life": {
+      "samples": 438,
+      "meanMs": 0.30022830886927915,
+      "p50Ms": 0.2999999523162842,
+      "p95Ms": 0.5
+    },
+    "intervals": {
+      "samples": 438,
+      "meanMs": 8.619406392694064,
+      "p50Ms": 8.300000000000182,
+      "p95Ms": 8.5
+    },
+    "gpu": {
+      "samples": 110,
+      "meanMs": 2.309720436363636,
+      "p50Ms": 2.458912,
+      "p95Ms": 4.142464
+    }
+  },
+  "pan": {
+    "render": {
+      "samples": 446,
+      "meanMs": 1.2567264571318177,
+      "p50Ms": 1.1999999284744263,
+      "p95Ms": 1.899999976158142
+    },
+    "labels": {
+      "samples": 446,
+      "meanMs": 0.18923767024626112,
+      "p50Ms": 0.19999992847442627,
+      "p95Ms": 0.30000007152557373
+    },
+    "life": {
+      "samples": 446,
+      "meanMs": 0.3056053805244343,
+      "p50Ms": 0.2999999523162842,
+      "p95Ms": 0.5
+    },
+    "intervals": {
+      "samples": 446,
+      "meanMs": 8.352242152466369,
+      "p50Ms": 8.300000000001091,
+      "p95Ms": 8.400000000001455
+    },
+    "gpu": {
+      "samples": 112,
+      "meanMs": 2.4348057142857136,
+      "p50Ms": 2.960896,
+      "p95Ms": 4.726432
+    }
+  },
+  "topCpu": [
+    {
+      "function": "(idle)",
+      "url": "",
+      "line": 0,
+      "selfSamples": 4543
+    },
+    {
+      "function": "needsUpdate",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 43339,
+      "selfSamples": 620
+    },
+    {
+      "function": "(program)",
+      "url": "",
+      "line": 0,
+      "selfSamples": 574
+    },
+    {
+      "function": "renderObject",
+      "url": "three_addons_renderers_CSS2DRenderer__js.js?v=e55f4477",
+      "line": 154,
+      "selfSamples": 113
+    },
+    {
+      "function": "setup",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 43268,
+      "selfSamples": 78
+    },
+    {
+      "function": "upload",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 45650,
+      "selfSamples": 46
+    },
+    {
+      "function": "setProgram",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 52553,
+      "selfSamples": 45
+    },
+    {
+      "function": "multiplyMatrices",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 8272,
+      "selfSamples": 42
+    },
+    {
+      "function": "WebGLRenderer.renderBufferDirect",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 51998,
+      "selfSamples": 40
+    },
+    {
+      "function": "update",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 38812,
+      "selfSamples": 38
+    },
+    {
+      "function": "refreshUniformsCommon",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 50279,
+      "selfSamples": 36
+    },
+    {
+      "function": "evaluate",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 30361,
+      "selfSamples": 35
+    },
+    {
+      "function": "flatten",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 45107,
+      "selfSamples": 31
+    },
+    {
+      "function": "apply",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 37252,
+      "selfSamples": 30
+    },
+    {
+      "function": "markUniformsLightsNeedsUpdate",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 52719,
+      "selfSamples": 29
+    },
+    {
+      "function": "bindVertexArray",
+      "url": "",
+      "line": 0,
+      "selfSamples": 26
+    },
+    {
+      "function": "slerpFlat",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 3423,
+      "selfSamples": 21
+    },
+    {
+      "function": "setValueV3f",
+      "url": "three.module-Dl--ppud.js?v=e55f4477",
+      "line": 45162,
+      "selfSamples": 20
+    }
+  ]
+}

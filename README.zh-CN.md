@@ -2,6 +2,10 @@
 
 # Open Campus: UO
 
+**迭代 14（收录于 0.12.0）：**自适应 Overview 深度修复远处屋顶／铺装闪烁；独立标签场景及静态矩阵／小地图／文字缓存减少 CPU 重复工作，保留原画质。[测量、范围与默认关闭的雾效实验](docs/zh-CN/overview-performance.md)。
+
+**迭代 13（收录于 0.12.0）：** 蓝天／柔边方块云、四档第一视角晃动、步行 NPC 碰撞绕行、Zombie School 死亡与重启、完整范围推断草地和磨砂混凝土／沥青。[行为、航拍资料与成本](docs/zh-CN/phase13-environment-comfort.md)。接续待发布的[迭代 12](docs/zh-CN/phase12-npc-beta.md)，发布核验见开发日志。
+
 以 Blender 为核心、可跨引擎复用的 UO 主 Eugene 校园三维资产与 Three.js 交互预览项目。
 
 **[在线运行](https://williamq96.github.io/open-campus-uo/)**：免登录。上下游仓库现均为 public。
@@ -20,7 +24,7 @@
 
 **v0.7** 使用模块化窗格、柱廊、檐口、入口与露台进一步细化三个地标，增加航拍引导的 **300 棵示意树**与林下植被。见[细化报告与纠正记录](docs/zh-CN/visual-refinement-v0.7.md)。首轮优先完整和可辨识，允许明确记录的合理推测，长期提高精细和写实程度。
 
-[图片／照片素材目录](data/reference-images/README.zh-CN.md)保存采用的图片、mockup 与品牌原件，逐图记录作者、许可、日期、用途与 hash。7 张开放许可照片已用于本轮细化，并归档有日期的 USDA NAIP 航拍裁剪。保留旧引用排除记录；素材库不增加网页运行下载量。
+[图片／照片素材目录](data/reference-images/README.zh-CN.md)保存采用的图片、mockup 与品牌原件，逐图记录作者、许可、日期、用途与 hash。9 张开放许可照片支持建筑细化，另有 2 张有日期的 USDA NAIP 航拍参考。保留旧引用排除记录；素材库不增加网页运行下载量。
 
 ## 本地运行
 
@@ -74,3 +78,7 @@ Overview 搜索以约 45° 拉近展示；步行视角原地转向并高亮，�
 [分层细化](docs/zh-CN/campus-expansion.md)已为 534 个记录加入风格化外观，其中校园重点区 135 个，外围背景 399 个；新增 Gerlinger Hall／Annex 照片语法、外围雾化及示意植被。保留建筑坐标、轮廓和道路。Blender 按建筑编辑，运行时合批；发布状态见开发日志。
 
 第 11 次迭代：统一 No / Low / Mid / High 密度滑块（默认 Mid）、松鼠与碰撞、音乐和脚步、轻微第一视角晃动、GitHub 反馈。见[氛围与反馈](docs/zh-CN/ambience-feedback.md)。发布状态见开发日志。
+
+## 本地第 12 阶段
+
+[本阶段](docs/zh-CN/phase12-npc-beta.md)修正步态声音／晃动，加入推测屋顶、严格活动范围、按需 seed 模板、开发者检查及一级 Zombie School Beta。仅本地，网站仍为上一版已验证发布。

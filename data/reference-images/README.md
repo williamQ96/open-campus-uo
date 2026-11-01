@@ -2,7 +2,7 @@
 
 # Image and photo archive
 
-This is the versioned source-material directory for Open Campus: UO. It contains **7 licensed ground photographs, one dated USDA NAIP aerial subset and 5 project-design images** (the concept mockup, identity board, logo, mark and favicon), with downloaded bytes retained; the aerial record describes its service-side crop/reprojection. Original design locations and runtime brand files are preserved; their byte-identical archive copies are linked in the manifest.
+This is the versioned source-material directory for Open Campus: UO. It contains **9 licensed ground photographs, 2 dated USDA NAIP aerial subsets, 5 project-design images and one CC0 character-skin texture**. Downloaded bytes are retained; aerial records describe service-side mosaicking/cropping and reprojection. Original design/runtime locations are preserved and linked to byte-identical archive copies. Gerlinger Hall and Annex extend the landmark photo archive; the second aerial covers the full 2 × 2 km scene for inferred ground materials.
 
 - [Manifest](manifest.json): local files, authors, source/download links, capture/access dates, license evidence, building/use links, modifications and SHA-256/byte size.
 - [Attribution](ATTRIBUTION.md): credits and license links for each image.
@@ -43,3 +43,7 @@ python ../open-geospatial-to-3d-reconstruction-pipeline/scripts/check-reference-
 ```
 
 Run from this project root. The `reference-media` CI job uses an explicitly pinned upstream checker revision. It verifies image registration, recorded metadata and hashes, not the underlying legal claims or architectural accuracy. The archive/checker update leaves the independent reconstruction and viewer-runtime locks unchanged.
+
+## Full-scene ground reference
+
+The [2024-06-08 full-scene NAIP mosaic](aerial/naip-2024-main-campus-rgb.png) guides [local iteration 13](../../docs/phase13-environment-comfort.md). Its [two source tiles, export request and georeference](../metadata/naip-2024-main-campus-reference.json) are archived. The runtime uses original palette/vertex-color materials, not the image as a texture. This is dated aerial imagery, not a live satellite map.

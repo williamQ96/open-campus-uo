@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-31",
+  "stage": 14,
+  "publication_status": "local-uncommitted-not-pushed-not-deployed",
+  "downstream_base": "30b20091909811ffd003960bb5ddf4260b0b3c42",
+  "upstream_base": "c02f6cd3098dcff2635f4d9a347f9308639bc1f3",
+  "verification": {
+    "upstream_python": 34,
+    "upstream_js": 35,
+    "downstream_js": 35,
+    "upstream_browser_full": 9,
+    "downstream_browser_full": 24,
+    "format_both": "pass",
+    "production_build_both": "pass",
+    "asset_files_verified": 22,
+    "reference_images_verified": 17,
+    "building_identities": 534,
+    "source_assets_unchanged_in_this_stage": true
+  },
+  "depth": {
+    "before_near_m": 0.08,
+    "far_m": 9000,
+    "depth_bits": 24,
+    "controlled_diagnostic_near_m": 16,
+    "default_overview_near_m": 32,
+    "walk_near_m": 0.08,
+    "bounds_padding_m": 8,
+    "clearance_fraction": 0.1,
+    "maximum_overview_near_m": 64,
+    "quantization": "power of two, rounded down",
+    "source_geometry_changed": false
+  },
+  "delivered_defaults": [
+    "Conservative empty-space adaptive Overview near; close exploration unchanged",
+    "Separate world-anchor CSS label graph with same projection and frequency",
+    "Freeze 184 static map transforms; dynamic actors stay outside",
+    "Exact-input minimap cache with route replacement/clearing invalidation",
+    "Unchanged HUD text is not replaced"
+  ],
+  "quality_invariants": {
+    "vertices": 1585723,
+    "triangles": 947049,
+    "drawCalls": 229,
+    "pixelRatio": 1
+  },
+  "measured_native_orbit_cpu_ms": {
+    "labels_before": 0.3343891358483431,
+    "labels_after": 0.19132419862703645,
+    "label_reduction_percent": 42.783966906805105,
+    "render_submission_before": 1.404977379611175,
+    "render_submission_after": 1.249315071323691
+  },
+  "measurement_limits": [
+    "Headless native Chrome/RTX5090 is not the embedded browser or a physical-phone measurement",
+    "Native frame intervals were already near the 120Hz cap; no proportional overall FPS claim",
+    "CPU-throttled frame and GPU queue timings are not used as a device benchmark",
+    "Initial shader/upload/shadow frames excluded; source hashes and raw summaries retained"
+  ],
+  "haze_experiment": {
+    "default_enabled": false,
+    "default_cached_vertices": 0,
+    "candidate_attribute_bytes_per_copy": 5166728,
+    "candidate_cached_vertices": 1291682,
+    "cpu_and_gpu_copies": true,
+    "pixel_comparison": {
+      "toon": {
+        "max_channel_difference_8bit": 1,
+        "changed_pixels": 1,
+        "pixels_over_1_channel_unit": 0
+      },
+      "pbr": {
+        "max_channel_difference_8bit": 1,
+        "changed_pixels": 1,
+        "pixels_over_1_channel_unit": 0
+      }
+    },
+    "decision": "Default off: GPU improvements small and inconsistent across repeated A/B trials; account for memory and load work",
+    "repeat_results": "data/metadata/performance/phase14-haze-ab.json",
+    "first_trial_preservation": "data/metadata/performance/phase14-haze-ab-initial.json"
+  },
+  "evidence": [
+    "data/metadata/performance/phase14-baseline-gpu.json",
+    "data/metadata/performance/phase14-final-gpu.json",
+    "data/metadata/performance/phase14-baseline-4x-dpr2.json",
+    "data/metadata/performance/phase14-final-4x-dpr2.json",
+    "docs/images/phase14-depth-before.png",
+    "docs/images/phase14-depth-after.png"
+  ],
+  "runtime_lock": {
+    "managed_files": 35,
+    "dirty": true,
+    "hashes_and_upstream_equality": "pass"
+  },
+  "budgets": {
+    "asset_download_change_bytes": 0,
+    "bundle_minified_bytes_approx": 754030,
+    "bundle_gzip_bytes_approx": 199220,
+    "existing_vite_chunk_advisory": true
+  }
+}

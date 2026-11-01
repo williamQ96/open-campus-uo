@@ -70,8 +70,8 @@ for item in source['plan']:
   batch=f"context-{item['tier']}-{math.floor((x+1000)/500)}-{math.floor((n+1000)/500)}";members[batch].append(item['id'])
  base=item['base_z_m'];h=item['wall_height_m'];variant=item['variant'];campus=item['tier']!='background'
  walls=(['B96F55','AD7861','C1A37F','D4CCB9'] if campus else ['B9B8A8','B9BEB0','BFAE9B','AF9E8F'])[variant]
- roofs=['7C898A','A08B78','879082','7B8284'][variant]
- if item['tier']=='photo-grammar':walls='B96F55';roofs='7B8284'
+ roofs={'weathered-metal':'847854','muted-tile':'AA7055','dark-slate':'586A63','flat-parapet':'B3A282','flat-services':'98977B','flat-skylights':'A7967D'}[item['roof_style']]
+ if item['tier']=='photo-grammar':walls='B96F55';roofs='586A63'
  prism(key,ring,base,h,walls)
  if item['roof_faces']:
   for roof in item['roof_faces']:
@@ -94,6 +94,15 @@ for item in source['plan']:
      if math.hypot(mid[0]-a[0]-t*dx,mid[1]-a[1]-t*dn)<.01:on_edge=True;break
     if on_edge:add(key,[(p[0],p[1],base+h),(q[0],q[1],base+h),q,p],[(0,1,2,3)],walls)
  else:prism(key,ring,base+h-.12,.12,roofs)
+ # Deliberately inferred roof grammar: no photographic textures or claim of exact equipment.
+ for a,b in item['roof_seams']:
+  cube(key,(a[0]+b[0])/2,(a[1]+b[1])/2,a[2],math.dist(a[:2],b[:2]),.055,.035,'8F896D' if item['roof']=='flat' else '615B48',math.atan2(b[1]-a[1],b[0]-a[0]))
+ if item['roof']=='flat':
+  for a,b in zip(ring,ring[1:]+ring[:1]):
+   cube(key,(a[0]+b[0])/2,(a[1]+b[1])/2,item['roof_z_m']-.20,math.dist(a,b),.14,.40,'stone',math.atan2(b[1]-a[1],b[0]-a[0]))
+  for rx,rn,rz,kind in item['roof_details']:
+   cube(key,rx,rn,rz+.11,1.7,1.3,.22,'glass' if kind=='flat-skylights' else 'metal')
+   cube(key,rx,rn,rz+.23,1.9,1.5,.04,'stone')
  signed=sum(a[0]*b[1]-b[0]*a[1] for a,b in zip(ring,ring[1:]+ring[:1]));edges=[]
  for p,q in zip(ring,ring[1:]+ring[:1]):
   if signed<0:p,q=q,p
@@ -152,6 +161,28 @@ for x in [-241,-220,-199,-178]:cube(key,x,-32.0,base+5.25,13,2.2,.18,'stone')
 b=records['Johnson Hall'];key=b['id'];base=b['base_z_m']
 for x in [-414,-407.5,-394.5,-388]:cube(key,x,-28.32,base+1.4,3.8,.34,.25,'stone')
 
+# Treat preserved landmark roof materials too; keep their authored silhouette intact.
+for id,obj in original_by_id.items():
+ roof_slots=[]
+ for index,material in enumerate(obj.data.materials):
+  if material and material.name.split('.')[0]=='roof':
+   material=material.copy();material.name='Inferred weathered landmark roof';rgba=color('766C50');material.diffuse_color=rgba
+   if material.use_nodes:material.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value=rgba
+   obj.data.materials[index]=material;roof_slots.append(index)
+ for polygon in list(obj.data.polygons):
+  if polygon.material_index not in roof_slots or polygon.normal.z<.9 or polygon.area<20:continue
+  vertices=[obj.matrix_world@obj.data.vertices[i].co for i in polygon.vertices]
+  xmin,xmax=min(p.x for p in vertices),max(p.x for p in vertices);nmin,nmax=min(p.y for p in vertices),max(p.y for p in vertices);z=sum(p.z for p in vertices)/len(vertices)
+  def inside(x,n):
+   hit=False
+   for a,b in zip(vertices,vertices[1:]+vertices[:1]):
+    if (a.y>n)!=(b.y>n) and x<(b.x-a.x)*(n-a.y)/(b.y-a.y)+a.x:hit=not hit
+   return hit
+  for f in [.25,.5,.75]:
+   rx=xmin+(xmax-xmin)*f;rn=(nmin+nmax)/2
+   if all(inside(rx+dx,rn+dn) for dx,dn in [(-1,-.7),(1,-.7),(1,.7),(-1,.7)]):
+    cube(id,rx,rn,z+.08,1.8,1.2,.12,'glass');cube(id,rx,rn,z+.16,2,1.4,.04,'stone')
+
 # Extra landscape is explicitly inferred beyond the limited archived aerial crop.
 lawn=source['lawn'];add('campus-lawn-extension',lawn['vertices'],lawn['faces'],'grass')
 for i,(x,n,h,tone) in enumerate(source['trees']):
@@ -182,12 +213,12 @@ for key,(vertices,faces,colors) in parts.items():
  obj['rights']='Original geometry: CC BY 4.0; source photo terms remain separate; no photographic textures';objects.append(obj)
 scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene['art_status']=config['status'];scene['source_manifest_sha256']=source['source_manifest_sha256']
 scene['method']='Photo grammar in focus; inexpensive geography-preserving context; spatial haze is a viewer effect'
-asset=ROOT/'assets/campus-expansion';asset.mkdir(parents=True,exist_ok=True)
+source_blend=ROOT/config.get('output_source_blend','assets/campus-expansion/eugene-campus.blend');source_blend.parent.mkdir(parents=True,exist_ok=True)
 # Keep every geographic identity editable in the Blender source. Merge copies
 # only after saving, so delivery cost does not dictate authoring granularity.
 by_id={o.get('asset_id'):o for o in objects if o.get('asset_id')}
 assert len(by_id)==len(manifest['buildings'])
-bpy.ops.wm.save_as_mainfile(filepath=str(asset/'eugene-campus.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(source_blend))
 anonymous={id for ids in members.values() for id in ids}
 export_objects=[o for o in objects if o.get('asset_id') not in anonymous]
 for batch,ids in members.items():
@@ -204,10 +235,11 @@ for batch,ids in members.items():
  export_objects.append(combined)
 bpy.ops.object.select_all(action='DESELECT')
 for obj in export_objects:obj.select_set(True)
-bpy.ops.export_scene.gltf(filepath=str(PUBLIC/'campus-expanded.glb'),export_format='GLB',use_selection=True,export_extras=True,export_yup=True,export_animations=False,export_cameras=False,export_lights=False,export_copyright='Open Campus contributors — Original model geometry CC BY 4.0; photographs remain separate')
+bpy.ops.export_scene.gltf(filepath=str(PUBLIC/'campus-expanded.next.glb'),export_format='GLB',use_selection=True,export_extras=True,export_yup=True,export_animations=False,export_cameras=False,export_lights=False,export_copyright='Open Campus contributors — Original model geometry CC BY 4.0; photographs remain separate')
+(PUBLIC/'campus-expanded.next.glb').replace(PUBLIC/'campus-expanded.glb')
 ids=[b['id'] for b in manifest['buildings']]
-output={**baseline,'id':config['id'],'asset_url':'campus-expanded.glb','replaces_building_ids':ids,'landmark_building_ids':baseline['landmark_building_ids']+[records[name]['id'] for name in config['photo_refinements']],'context_fog':config['context_fog'],'status':config['status'],'stats':{'trees':300+len(source['trees']),'landmarkBuildings':5,'contextBuildings':source['counts']['background'],'campusBuildings':len(ids)-source['counts']['background']},'inferred_landscape':{'extra_trees':len(source['trees']),'status':'Procedural campus planting and lawns beyond the limited archived aerial crop; not measured or image-extracted'},'reference_image_ids':baseline['reference_image_ids']+[p['reference'] for p in config['photo_refinements'].values()],'source_manifest_text_sha256':source['source_manifest_text_sha256'],'heightfield_text_sha256':source['source_heightfield_text_sha256'],'source_manifest_sha256':source['source_manifest_sha256'],'heightfield_sha256':source['source_heightfield_sha256'],'art_pipeline':source['art_pipeline'],'preserved_source_blend_sha256':config['source_blend_sha256'],'reference_manifest_sha256':hashlib.sha256((ROOT/'data/reference-images/manifest.json').read_bytes()).hexdigest(),'generator_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'asset_sha256':hashlib.sha256((PUBLIC/'campus-expanded.glb').read_bytes()).hexdigest()}
+output={**baseline,'editable_source':str(source_blend.relative_to(ROOT)).replace('\\','/'),'roof_status':config['roof_status'],'roof_treatments':{**{p['id']:p['roof_style'] for p in source['plan']},**{id:'retained-landmark-weathered-roof' for id in original_by_id}},'id':config['id'],'asset_url':'campus-expanded.glb','replaces_building_ids':ids,'landmark_building_ids':baseline['landmark_building_ids']+[records[name]['id'] for name in config['photo_refinements']],'context_fog':config['context_fog'],'status':config['status'],'stats':{'trees':300+len(source['trees']),'landmarkBuildings':5,'contextBuildings':source['counts']['background'],'campusBuildings':len(ids)-source['counts']['background']},'inferred_landscape':{'extra_trees':len(source['trees']),'status':'Procedural campus planting and lawns beyond the limited archived aerial crop; not measured or image-extracted'},'reference_image_ids':baseline['reference_image_ids']+[p['reference'] for p in config['photo_refinements'].values()],'source_manifest_text_sha256':source['source_manifest_text_sha256'],'heightfield_text_sha256':source['source_heightfield_text_sha256'],'source_manifest_sha256':source['source_manifest_sha256'],'heightfield_sha256':source['source_heightfield_sha256'],'art_pipeline':source['art_pipeline'],'preserved_source_blend_sha256':config['source_blend_sha256'],'reference_manifest_sha256':hashlib.sha256((ROOT/'data/reference-images/manifest.json').read_bytes()).hexdigest(),'generator_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'asset_sha256':hashlib.sha256((PUBLIC/'campus-expanded.glb').read_bytes()).hexdigest()}
 (PUBLIC/'presentation.json').write_text(json.dumps(output,indent=2)+'\n',encoding='utf-8')
-audit={'source_manifest_sha256':source['source_manifest_sha256'],'preserved_source_blend_sha256':config['source_blend_sha256'],'replaced_ids':ids,'protected_ids':source['protected_ids'],'appearance_plan':source['plan'],'window_counts':window_counts,'context_batches':dict(members),'extra_trees':len(source['trees']),'mesh_count':len(export_objects),'source_mesh_count':len(objects),'source_building_objects':len(by_id),'runtime_bytes':(PUBLIC/'campus-expanded.glb').stat().st_size,'method':'Randomize archetypes/palette only; original coordinates, footprints, heights and roads are fixed. Background geometry is an illustrative original open component library, not a surveyed building inventory.'}
+audit={'source_manifest_sha256':source['source_manifest_sha256'],'preserved_source_blend_sha256':config['source_blend_sha256'],'replaced_ids':ids,'protected_ids':source['protected_ids'],'appearance_plan':source['plan'],'window_counts':window_counts,'context_batches':dict(members),'extra_trees':len(source['trees']),'mesh_count':len(export_objects),'editable_source':str(source_blend.relative_to(ROOT)).replace('\\','/'),'roof_style_counts':dict(__import__('collections').Counter([p['roof_style'] for p in source['plan']])),'source_mesh_count':len(objects),'source_building_objects':len(by_id),'runtime_bytes':(PUBLIC/'campus-expanded.glb').stat().st_size,'method':'Randomize archetypes/palette only; original coordinates, footprints, heights and roads are fixed. Background geometry is an illustrative original open component library, not a surveyed building inventory.'}
 (ROOT/'data/metadata/campus-expansion-audit.json').write_text(json.dumps(audit,indent=2)+'\n',encoding='utf-8')
 print('EXPORTED',len(export_objects),'runtime meshes /',len(objects),'editable source meshes',len(ids),'building identities',len(members),'context batches',output['stats'])

@@ -8,6 +8,10 @@ A Blender-first, georeferenced University of Oregon campus asset project with an
 
 [Development log](DEVELOPMENT_LOG.md) records project-specific changes and verification. Reusable methodology is recorded separately upstream.
 
+**Iteration 14 — included in 0.12.0:** adaptive Overview depth removes distant roof/paving flicker; isolated label updates and static/minimap/HUD caching reduce repeated CPU work while preserving scene quality. [Measurements, limits and the off-by-default haze experiment](docs/overview-performance.md).
+
+**Iteration 13 — included in 0.12.0:** blue sky/soft block clouds, four-level first-person motion, pedestrian collision detours, Zombie School death/restart, and full-extent inferred grass/matte concrete/asphalt ground cover. [Behavior, archived aerial evidence and costs](docs/phase13-environment-comfort.md). This extends the pending [iteration 12](docs/phase12-npc-beta.md); See the development log for deployment verification.
+
 ## Phone layout and controls
 
 The phone layout uses a compact header/search, a smaller top-right minimap and bottom view buttons. Follow and First-person lower-half touches create a floating analog joystick; upper-half touches look around. Roles stay fixed when crossing the screen midpoint. Cancel, blur, opening Settings/search and changing views stop movement. See [mobile verification](docs/mobile-controls.md).
@@ -36,7 +40,7 @@ The reusable specification is the [upstream style library's default recommendati
 
 **v0.7** refines the three landmarks with modular windows, columns, cornices, entrances and terraces, plus **300 aerial-guided illustrative trees** and understory. See the [refinement report and correction ledger](docs/visual-refinement-v0.7.md). First passes favor coherent, recognizable models with explicit plausible inference; long-term maintenance improves precision and realism.
 
-The [image and photo archive](data/reference-images/README.md) preserves adopted source images, mockups and branding with per-file authors, licenses, dates, use and checksums. Seven openly reusable photographs now support the refinement, with a dated USDA NAIP aerial subset; legacy reference exclusions remain documented. The archive is outside runtime downloads.
+The [image and photo archive](data/reference-images/README.md) preserves adopted source images, mockups and branding with per-file authors, licenses, dates, use and checksums. Nine openly reusable photographs now support the refinement, with two dated USDA NAIP aerial references; legacy reference exclusions remain documented. The archive is outside runtime downloads.
 
 ## Run locally
 
@@ -104,3 +108,7 @@ In `apps/web-preview`, run `npm test`, `npm run build`, and `npm run test:browse
 UO internal GIS is excluded. OSM, Microsoft/Oregon building-footprint compilations, Eugene GIS and Google Maps/Earth 3D are not core geometry inputs for this version. The rejected USGS 2021 DEM had only NoData in the trial area. NAIP 2024 now guides illustrative landscaping; self-captured photos have not been integrated.
 
 Raw large datasets are ignored locally; source records and hashes are committed. Code uses **Apache-2.0**; original documentation and model/design contributions use **CC BY 4.0**. See [licensing and attribution](LICENSING.md) and [NOTICE](NOTICE). Third-party source data and fonts retain their own terms.
+
+## Pending local phase 12
+
+[Phase 12](docs/phase12-npc-beta.md) fixes gait audio/sway, adds style-inferred roofs, strict activity habitats, demand-generated seeded NPCs, developer inspection and the first-level Zombie School beta. Local only; the public site remains the last verified release until publication.

@@ -98,5 +98,7 @@
     "desaturation": 0.6,
     "color": "#d6e0da"
   },
-  "status": "Photo-informed landmark grammar; inferred campus appearance; seeded low-poly background at unchanged historical coordinates. Priority polygon is not a surveyed campus boundary."
+  "status": "Photo-informed landmark grammar; inferred campus appearance; seeded low-poly background at unchanged historical coordinates. Priority polygon is not a surveyed campus boundary.",
+  "output_source_blend": "assets/roof-refinement/eugene-campus.blend",
+  "roof_status": "Style-inferred roof forms, parapets, seams and rooftop elements; no new photographic evidence or verified roof survey."
 }

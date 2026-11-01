@@ -1,0 +1,10 @@
+{
+  "clip": "Walk",
+  "source_glb_sha256": "d8433e61bcbb722516da0b3878978280352a4c5ec70a2c4da1191dbd9910bcbe",
+  "method": "Sample 65 poses of the delivered GLB in the actual Three.js animation controller at full locomotion blend; use minimum LeftFoot/RightFoot world height as first-pass contact markers.",
+  "left_minimum_cycle": 0.640625,
+  "right_minimum_cycle": 0.171875,
+  "selected_phase_offset_cycles": 0.15625,
+  "maximum_marker_error_cycles": 0.015625,
+  "note": "Foot-height minima are a practical pose cue, not a biomechanical solve. Both locomotion blend/cadence and footsteps now share the same displacement phase; other assets must be calibrated separately."
+}

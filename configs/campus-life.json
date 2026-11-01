@@ -1,167 +1,61 @@
 {
-  "squirrels": {
-    "routes_enu_m": [
-      [
-        [
-          -330,
-          -8
-        ],
-        [
-          -360,
-          -8
-        ],
-        [
-          -372,
-          -12
-        ]
-      ],
-      [
-        [
-          -430,
-          -75
-        ],
-        [
-          -470,
-          -65
-        ],
-        [
-          -500,
-          -75
-        ]
-      ],
-      [
-        [
-          -565,
-          -40
-        ],
-        [
-          -580,
-          -85
-        ],
-        [
-          -565,
-          -130
-        ]
-      ],
-      [
-        [
-          -535,
-          -180
-        ],
-        [
-          -520,
-          -168
-        ],
-        [
-          -490,
-          -175
-        ]
-      ]
-    ]
-  },
-  "props": [
+  "version": 2,
+  "seed": 61312,
+  "driving_road_names": [
+    "Kincaid St",
+    "Agate St",
+    "E 18th Ave"
+  ],
+  "note": "Fixed activity surfaces and paths are generated from authored paving, lawns, tree source and estimated driving/curb classifications; no cross-habitat graph fallback.",
+  "tree_anchors": [
     {
-      "kind": "car",
-      "east": -618,
-      "north": -264,
-      "yaw": 0
+      "id": "tree-0",
+      "east": -389.828,
+      "north": -61.528,
+      "height": 10.04
     },
     {
-      "kind": "van",
-      "east": -617,
-      "north": -281,
-      "yaw": 0
+      "id": "tree-1",
+      "east": -343.686,
+      "north": -98.019,
+      "height": 19.36
     },
     {
-      "kind": "car",
-      "east": -320,
-      "north": -273,
-      "yaw": 1.57
+      "id": "tree-2",
+      "east": -346.811,
+      "north": -108.287,
+      "height": 17.93
     },
     {
-      "kind": "pickup",
-      "east": -320,
-      "north": -285,
-      "yaw": 1.57
+      "id": "tree-3",
+      "east": -188.892,
+      "north": -86.738,
+      "height": 14.93
     },
     {
-      "kind": "van",
-      "east": -165,
-      "north": -113,
-      "yaw": 0
+      "id": "tree-4",
+      "east": -503.846,
+      "north": -209.762,
+      "height": 11.32
     },
     {
-      "kind": "car",
-      "east": -618,
-      "north": -240,
-      "yaw": 0
+      "id": "tree-6",
+      "east": -406.37,
+      "north": -260.965,
+      "height": 19.86
     },
     {
-      "kind": "van",
-      "east": -618,
-      "north": -300,
-      "yaw": 0
+      "id": "tree-7",
+      "east": -326.829,
+      "north": -189.392,
+      "height": 19.63
     },
     {
-      "kind": "pickup",
-      "east": -618,
-      "north": -320,
-      "yaw": 0
-    },
-    {
-      "kind": "car",
-      "east": -320,
-      "north": -340,
-      "yaw": 0
-    },
-    {
-      "kind": "van",
-      "east": -320,
-      "north": -360,
-      "yaw": 0
-    },
-    {
-      "kind": "pickup",
-      "east": -320,
-      "north": -380,
-      "yaw": 0
-    },
-    {
-      "kind": "car",
-      "east": -320,
-      "north": -400,
-      "yaw": 0
-    },
-    {
-      "kind": "van",
-      "east": -320,
-      "north": -420,
-      "yaw": 0
-    },
-    {
-      "kind": "pickup",
-      "east": -320,
-      "north": -440,
-      "yaw": 0
-    },
-    {
-      "kind": "car",
-      "east": -320,
-      "north": -460,
-      "yaw": 0
-    },
-    {
-      "kind": "car",
-      "east": -320,
-      "north": -480,
-      "yaw": 0
-    },
-    {
-      "kind": "car",
-      "east": -320,
-      "north": -500,
-      "yaw": 0
+      "id": "tree-8",
+      "east": -415.672,
+      "north": -240.664,
+      "height": 12.55
     }
   ],
-  "status": "Illustrative activity, wildlife and parking. Authored route/placement estimates, not current animal observations or traffic/access data."
+  "tree_anchor_provenance": "Selected from retained seed-613 authored pilot vegetation; preserved Blender source assets/visual-pilot/knight-emu-johnson.blend. These are illustrative tree placements, not surveyed trees."
 }
