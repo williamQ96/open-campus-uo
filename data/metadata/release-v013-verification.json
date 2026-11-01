@@ -1,0 +1,142 @@
+{
+  "release": "0.13.0",
+  "implementationCommit": "ba2aeb8a8649023973990274e3e5b51f835ba4a5",
+  "upstreamImplementation": "16e754a918e87d77cebc8e511e5932191f8d4924",
+  "verifiedAt": "2026-11-01T20:54:15.540Z",
+  "site": "https://williamq96.github.io/open-campus-uo/",
+  "anonymousHttpStatus": 200,
+  "iteration": 16,
+  "entrances": 534,
+  "card": {
+    "building": "Chapman Hall",
+    "info": "to be fill",
+    "labelHidden": true,
+    "hoverAndModelClick": true
+  },
+  "inspection": {
+    "ready": true,
+    "buildingId": "roof-f5cea51d",
+    "template": "classroom-v1",
+    "view": "aerial",
+    "player": null,
+    "inspectionMode": true,
+    "heroPresent": false,
+    "outsidePlayer": [
+      -305.469651,
+      3.740899995,
+      -0.824825
+    ],
+    "nearExit": false,
+    "campusLoaded": false,
+    "roomMeshes": 10,
+    "drawCalls": 9,
+    "triangles": 2160
+  },
+  "heroAssetRequested": false,
+  "outdoorGlbRequestedDuringInspection": false,
+  "returnPoseAndFramingPreserved": true,
+  "characterVisit": {
+    "ready": true,
+    "buildingId": "roof-0151b728",
+    "template": "classroom-v1",
+    "view": "first",
+    "player": [
+      0,
+      0,
+      7
+    ],
+    "inspectionMode": false,
+    "heroPresent": true,
+    "outsidePlayer": null,
+    "nearExit": true,
+    "campusLoaded": false,
+    "roomMeshes": 10,
+    "drawCalls": 9,
+    "triangles": 2160
+  },
+  "mobile": {
+    "walkSpeed": 1.4238095238095239,
+    "fullDragSpeed": 4.6,
+    "cancelStops": true,
+    "noRunButton": true,
+    "overflow": false
+  },
+  "assets": [
+    {
+      "file": "scene/campus-expanded.glb",
+      "bytes": 34638580,
+      "sha256": "a64bc831729deb0591d7a02e98d7ca4324dd1188636c03ce8ad77852432cfc12"
+    },
+    {
+      "file": "scene/landcover.glb",
+      "bytes": 9630380,
+      "sha256": "0e93a8f129ba9368cfa90b09da610169054f5288dd434e290a5c390010d8a0cd"
+    },
+    {
+      "file": "interiors/classroom-v1.glb",
+      "bytes": 162700,
+      "sha256": "397a9825a4efe1c2d9136f80c2b9ef056254148b9c023ccbcbb4485ed450489e"
+    }
+  ],
+  "pageErrors": [],
+  "workflowsCheckedAt": "2026-11-01T20:56:38.188092+00:00",
+  "workflows": [
+    {
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "synthetic-geometry",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "browser-template",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "status": "completed",
+      "url": "https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/actions/runs/41348974431",
+      "repo": "williamQ96/open-geospatial-to-3d-reconstruction-pipeline",
+      "runId": 41348974431
+    },
+    {
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "deploy",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "status": "completed",
+      "url": "https://github.com/williamQ96/open-campus-uo/actions/runs/41349051268",
+      "repo": "williamQ96/open-campus-uo",
+      "runId": 41349051268
+    },
+    {
+      "conclusion": "",
+      "jobs": [
+        {
+          "name": "reference-media",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "browser-preview",
+          "status": "in_progress",
+          "conclusion": ""
+        }
+      ],
+      "status": "in_progress",
+      "url": "https://github.com/williamQ96/open-campus-uo/actions/runs/41349051286",
+      "repo": "williamQ96/open-campus-uo",
+      "runId": 41349051286
+    }
+  ]
+}

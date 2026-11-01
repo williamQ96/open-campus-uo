@@ -6,6 +6,13 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-01 — 发布确认：0.13.0 已部署并通过匿名线上核验
+
+- 实现 [ba2aeb8](https://github.com/williamQ96/open-campus-uo/commit/ba2aeb8a8649023973990274e3e5b51f835ba4a5) 已推送，[GitHub Pages 部署](https://github.com/williamQ96/open-campus-uo/actions/runs/41349051268) 成功。[线上地图](https://williamq96.github.io/open-campus-uo/) 匿名 HTTP200，iteration16，534 入口。
+- 线上卡片／精确占位文字／标签隐藏、本体悬停与点击、无 hero 的 Overview 教室且无角色／室外GLB请求、返回位置／构图精确恢复、普通 E 进入有 hero 的第一／第三人称教室、390px 手机拖拽走／满拖跑／取消、无 Run 按钮／页面溢出均通过，零页面异常。校园／地面／教室三个线上 GLB 哈希与本地一致。[生产证据](data/metadata/release-v013-verification.json)，诊断截图仅留本地。
+- 发布锁固定干净上游 16e754a（pipeline0.12.0／模板0.4.0），[上游CI](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/actions/runs/41348974431) 全部通过。下游来源／图片／资产／地理／地面审计成功。本记录时[完整下游浏览器工作流](https://github.com/williamQ96/open-campus-uo/actions/runs/41349051286) 仍在运行，其格式／JS／构建步骤已通过，完整浏览器回归尚未结束，不声称远端完整套件已通过；本地历史专项证据单独保留。
+- 本次仅文档／证据确认，[skip ci] 不改变运行时／资产／部署；旧待发布／本地条目保留原采集上下文。开发日志仅下游，方法日志仅上游，附件与本地诊断排除上传。
+
 ## 2026-11-01 — 发布批次：Open Campus: UO 0.13.0
 
 用户授权上下游累计两批推送并部署 Pages。本版合并 iteration15 手机拖拽走跑、534 推断入口、可导出通用教室与独立世界／GPU 生命周期，以及 iteration16 Overview 卡片、无 hero 观察教室和轻微悬停。共享运行时固定到干净上游 16e754a918e87d77cebc8e511e5932191f8d4924（pipeline0.12.0／模板0.4.0），dirty=false；旧模型生成、phase15/16 本地记录与重建 pin 均保留原溯源。本地 34 上游 Python、双方各42 JS、上游完整17例浏览器及下游搜索／室内／卡片／手机／导航／地标专项通过。源模型／地理几何保留，新原创教室 GLB 已登记。本记录准备发布，部署后补录 Actions 与匿名线上核验。开发日志／美术／证据仅在下游，通用方法在上游，附件与本地截图／trace 不上传。
