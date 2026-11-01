@@ -16,9 +16,9 @@ The phone layout uses a compact header/search, a smaller top-right minimap and b
 
 The green/gold rigged hero, walking/bicycle/scooter NPCs, road traffic and parked vehicles are available with one No / Low / Mid / High density slider (default Mid). Directions supports A/B building searches or map pins in Overview, and your position when starting the route → destination in Follow/First person, with a blue route and animated white chevrons. [Controls, open asset credits and limitations](docs/campus-life-navigation.md). Iteration 11 adds open squirrels, collision, music/footsteps, gentle first-person motion and GitHub feedback; see [ambience and feedback](docs/ambience-feedback.md).
 
-## Pending local scene expansion
+## Layered campus expansion
 
-The [layered campus refinement](docs/campus-expansion.md) gives all 534 records a stylized appearance, with 135 in the campus priority area and 399 as low-poly background. Gerlinger Hall/Annex join the photo-informed landmarks, and fixed-world haze softens the outer blocks. Geography and roads remain unchanged; Blender retains all building objects independently, with runtime-only batching. This batch is local and has not been published.
+The [layered campus refinement](docs/campus-expansion.md) gives all 534 records a stylized appearance, with 135 in the campus priority area and 399 as low-poly background. Gerlinger Hall/Annex join the photo-informed landmarks, and fixed-world haze softens the outer blocks. Geography and roads remain unchanged; Blender retains all building objects independently, with runtime-only batching. See the [development log](DEVELOPMENT_LOG.md) for confirmed publication and deployment status.
 
 ## Current scene
 

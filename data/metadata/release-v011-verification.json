@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-11-01T02:15:22.812Z",
+  "url": "https://williamq96.github.io/open-campus-uo/",
+  "http_status": 200,
+  "authentication_required": false,
+  "model_sha256": "d42efa032b485b9aade2065db3e771c5cacf35ca76b1d1969942fd4ce4486518",
+  "model_bytes": 25382236,
+  "scene": {
+    "id": "eugene-layered-context-v1",
+    "buildings": 64,
+    "toon": true,
+    "backgroundHaze": true,
+    "batchedBuildings": 470,
+    "trees": 600,
+    "landmarkBuildings": 5,
+    "contextBuildings": 399,
+    "campusBuildings": 135
+  },
+  "life": {
+    "density": "Mid",
+    "densityLevel": 2,
+    "npcEnabled": true,
+    "propsEnabled": true,
+    "students": 8,
+    "bikes": 2,
+    "scooters": 2,
+    "cars": 4,
+    "squirrels": 8,
+    "props": 5,
+    "colliders": 29
+  },
+  "three_views": true,
+  "search": true,
+  "clean_density": true,
+  "feedback_dialog": true,
+  "test_issues_created": 0,
+  "mobile_width": 390,
+  "mobile_overflow": false,
+  "assets": {
+    "audio/overworld.mp3": {
+      "bytes": 275424,
+      "status": 200
+    },
+    "audio/footstep.wav": {
+      "bytes": 6218,
+      "status": 200
+    },
+    "animals/campus-squirrel.glb": {
+      "bytes": 93480,
+      "status": 200
+    }
+  },
+  "page_errors": [],
+  "checked_at_local": "2026-10-31T19:15:22.812000-07:00",
+  "local_timezone": "America/Los_Angeles",
+  "deployed_commit": "b6a9cc54d8beac7a19574601faf4f94381d3afcb",
+  "upstream_runtime_commit": "6b15ce8878051dbbd0928d4332f507e6a5df4780",
+  "deployment_workflow": "https://github.com/williamQ96/open-campus-uo/actions/runs/41264257127",
+  "upstream_checks": "https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/actions/runs/41264186786",
+  "downstream_checks": "https://github.com/williamQ96/open-campus-uo/actions/runs/41264257199",
+  "checks": {
+    "upstream_implementation": {
+      "run_id": 41264186786,
+      "conclusion": "success"
+    },
+    "upstream_methodology_record": {
+      "run_id": 41264324084,
+      "conclusion": "success"
+    },
+    "downstream_implementation": {
+      "run_id": 41264257199,
+      "conclusion": "success"
+    },
+    "pages_deployment": {
+      "run_id": 41264257127,
+      "conclusion": "success"
+    }
+  }
+}

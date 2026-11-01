@@ -6,6 +6,15 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-10-31 — 发布确认：上下游已 push，Pages 已更新
+
+- **在线网页：**[Open Campus: UO](https://williamq96.github.io/open-campus-uo/) 已更新，无需登录。已部署实现为 [`b6a9cc54d8beac7a19574601faf4f94381d3afcb`](https://github.com/williamQ96/open-campus-uo/commit/b6a9cc54d8beac7a19574601faf4f94381d3afcb)，应用版本 0.11.0。
+- **上游：**通用实现 [`6b15ce8`](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/commit/6b15ce8878051dbbd0928d4332f507e6a5df4780) 与方法论发布记录 [`c02f6cd`](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/commit/c02f6cd3098dcff2635f4d9a347f9308639bc1f3) 均已 push。干净的运行时锁有意指向实现提交，后续方法记录仅改文档。
+- **GitHub 检查：**[上游实现](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/actions/runs/41264186786)、[上游记录](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/actions/runs/41264324084)、[下游检查](https://github.com/williamQ96/open-campus-uo/actions/runs/41264257199)、[Pages 部署](https://github.com/williamQ96/open-campus-uo/actions/runs/41264257127) 全部成功。已提交实现通过全部 16 个下游浏览器用例，以及资产／媒体／地理不变量审核。
+- **线上实测：**匿名 HTTP 200、3D 场景就绪；25,382,236 字节校园 GLB 的 SHA-256 与本地一致。Mid 有 29 个活动／道具碰撞体，含 8 只松鼠；No 清空。三视角、建筑搜索与反馈窗口可用。音乐、脚步和松鼠文件与本地完全一致。390px 窄屏无横向溢出，无页面 JavaScript 报错。没有创建真实反馈 Issue。见[结构化发布证据](data/metadata/release-v011-verification.json)。
+- **归属与来源：**项目开发及部署记录仅在本下游；上游只存方法论记录。历史重建／艺术来源哈希与真实生成状态保留；聊天附件和 Blender 备份未上传。
+- **补记提交：**本次最后补记与当前状态文案仅改文档，不改变已测试上线代码；提交以 `[skip ci]` 避免对发布证据重复整套测试，上述实现和部署结果均对应明确的已测试提交。
+
 ## 2026-10-31 — 发布批次：Open Campus: UO 0.11.0
 
 - **范围：**合并发布此前本地批次：固定步行导航起点；照片规律驱动的地标／校园细化、534 个风格化建筑及外围雾化；四档密度、开放松鼠与碰撞；音乐、实际地面位移脚步、支持减少动态效果的第一视角轻微晃动；下游 GitHub 反馈草稿。保留三视角、搜索、小地图、导航与手机操作。
