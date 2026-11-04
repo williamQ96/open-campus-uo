@@ -1,39 +1,13 @@
-name: Downstream checks
-on: [push, pull_request]
+name: Isolated browser timing diagnostic
+on:
+  push:
+    branches: [ci/scene-timing-20261104]
 permissions:
   contents: read
 jobs:
-  reference-media:
+  representative-browser-tests:
     runs-on: ubuntu-24.04
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Fetch reviewed upstream media-audit tool
-        uses: actions/checkout@v4
-        with:
-          repository: williamQ96/open-geospatial-to-3d-reconstruction-pipeline
-          ref: 51558d7791941536bae2d04d8d1af74235b83d94
-          path: .reference-tools
-          sparse-checkout: scripts/check-reference-media.py
-          sparse-checkout-cone-mode: false
-          persist-credentials: false
-      - name: Verify image provenance records, credits and checksums
-        run: python .reference-tools/scripts/check-reference-media.py --root .
-      - name: Verify archived character and model checksums
-        run: python scripts/check-open-assets.py
-      - name: Verify fixed NPC habitats and parking slots
-        run: python scripts/check-semantic-activity.py
-      - name: Verify tiered scene identity and retained geographic sources
-        run: python scripts/check-campus-expansion.py
-      - name: Install ground-layer audit dependency (matches upstream lock)
-        run: python -m pip install numpy==2.5.4
-      - name: Verify inferred ground coverage, heights and texture-free export
-        run: python scripts/check-landcover.py
-  browser-preview:
-    # Playwright 1.60 is verified on 24.04; avoid ubuntu-latest's 26.04 migration.
-    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: apps/web-preview
@@ -45,14 +19,29 @@ jobs:
           cache: npm
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
-      - run: npm run format:check
-      - run: npm test
-      - run: npm run build
       - run: npx playwright install --with-deps chromium
-      - run: npm run test:browser
+      - name: Run unchanged representative tests with timing and resource samples
+        shell: bash
+        run: |
+          mkdir -p diagnostic
+          (while true; do
+            date --iso-8601=seconds
+            free -m
+            ps -eo pid,ppid,rss,pcpu,comm --sort=-rss | head -25
+            sleep 5
+          done) > diagnostic/resources.log 2>&1 &
+          monitor=$!
+          trap 'kill "$monitor" 2>/dev/null || true' EXIT
+          set +e
+          CI=1 DEBUG=pw:api npx playwright test tests/browser/gerlinger-portico.spec.js tests/browser/collier-bays.spec.js --reporter=list > diagnostic/playwright.log 2>&1
+          result=$?
+          tail -n 100 diagnostic/playwright.log
+          exit "$result"
       - uses: actions/upload-artifact@v4
-        if: failure()
+        if: always()
         with:
-          name: browser-failure-traces
-          path: apps/web-preview/test-results/
+          name: scene-diagnostic
+          path: |
+            apps/web-preview/diagnostic/
+            apps/web-preview/test-results/
           retention-days: 7
