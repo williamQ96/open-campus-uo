@@ -83,6 +83,13 @@ export function isBlocked(x, z, buildings, half, radius = 0.42) {
   return false;
 }
 
+// Horizontal input may catch up modestly after a slow render, while collision
+// substeps still bound each physical move. Never catch up in a hidden tab.
+export function movementFrameSeconds(elapsedSeconds, visible) {
+  if (!visible || !Number.isFinite(elapsedSeconds)) return 0;
+  return Math.min(0.25, Math.max(0, elapsedSeconds));
+}
+
 export function movePlayer(
   position,
   delta,

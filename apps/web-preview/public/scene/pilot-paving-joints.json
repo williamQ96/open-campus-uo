@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "target_name": "landscape-paving",
+  "expected_vertices": 5088,
+  "expected_color": "cdbb9f",
+  "spacing_m": 2.5,
+  "width_m": 0.025,
+  "strength": 0.12,
+  "note": "Illustrative generic joints for authored pilot paving, not a field measurement.",
+  "radial": {
+    "center_xz": [-277, 31],
+    "radius_m": 9,
+    "ring_spacing_m": 0.45,
+    "joint_width_m": 0.025,
+    "strength": 0.22
+  }
+}

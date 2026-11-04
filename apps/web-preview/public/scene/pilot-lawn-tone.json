@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "target_name": "landscape-lawn",
+  "expected_vertices": 30659,
+  "expected_color": "91b66f",
+  "strength": 0.07,
+  "note": "Illustrative smooth tonal variation; not a vegetation survey or sampled aerial color.",
+  "extension": {
+    "target_name": "campus-lawn-extension",
+    "expected_vertices": 47699,
+    "strength": 0.07
+  }
+}

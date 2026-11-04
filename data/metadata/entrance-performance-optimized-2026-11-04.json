@@ -1,0 +1,88 @@
+{
+  "baseline_sha256": "71bf6fc3bf0d8685d778e571f5aace5d341234f02f02f1d97acedb8769a2b9f5",
+  "current_sha256": "af795d1c9ccfe6afb24db01df2336cdba591d96cceabba4582ebebf88d96a0d8",
+  "renderer": "Chrome headless SwiftShader",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "runs": [
+    {
+      "variant": "baseline",
+      "entry": {
+        "id": "roof-0151b728",
+        "position": [
+          696.14,
+          156
+        ],
+        "outward": [
+          1,
+          0
+        ]
+      },
+      "drawCalls": 190,
+      "triangles": 1045026,
+      "camera": [
+        700.14,
+        8.537640000000003,
+        156
+      ],
+      "cameraDirection": [
+        -1,
+        0,
+        -2.220446049250313e-16
+      ],
+      "player": [
+        700.14,
+        6.957640000000002,
+        156
+      ],
+      "view": "first",
+      "density": "No",
+      "entranceCount": 534,
+      "frames": 24,
+      "elapsedMs": 7925.400000000001
+    },
+    {
+      "variant": "current",
+      "entry": {
+        "id": "roof-0151b728",
+        "position": [
+          696.14,
+          156
+        ],
+        "outward": [
+          1,
+          0
+        ]
+      },
+      "drawCalls": 190,
+      "triangles": 1051434,
+      "camera": [
+        700.14,
+        8.537640000000003,
+        156
+      ],
+      "cameraDirection": [
+        -1,
+        0,
+        -2.220446049250313e-16
+      ],
+      "player": [
+        700.14,
+        6.957640000000002,
+        156
+      ],
+      "view": "first",
+      "density": "No",
+      "entranceCount": 534,
+      "frames": 24,
+      "elapsedMs": 7958.699999999999
+    }
+  ],
+  "delta": {
+    "drawCalls": 0,
+    "triangles": 6408
+  },
+  "notes": "RAF samples are local software-rendered observations, not a device benchmark; placement remains estimated."
+}

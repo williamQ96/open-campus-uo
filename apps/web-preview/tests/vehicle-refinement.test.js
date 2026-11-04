@@ -40,3 +40,37 @@ test("pickup windshield is visible in front of the cab surface", () => {
       count++;
   assert.ok(count >= 6);
 });
+
+test("car, SUV and pickup hood profiles slope down within the original width", () => {
+  for (const kind of ["car", "suv", "pickup"]) {
+    const position = createCampusProp(kind).geometry.attributes.position;
+    const heightAt = (z) => {
+      const ys = [];
+      for (let i = 0; i < position.count; i++)
+        if (
+          Math.abs(Math.abs(position.getX(i)) - 0.9) < 1e-4 &&
+          Math.abs(position.getZ(i) - z) < 1e-4
+        )
+          ys.push(position.getY(i));
+      assert.ok(ys.length > 0);
+      return Math.max(...ys);
+    };
+    assert.ok(heightAt(1.22) - heightAt(2.1) > 0.15);
+  }
+});
+
+test("van hood slopes toward its front within the original envelope", () => {
+  const position = createCampusProp("van").geometry.attributes.position;
+  const heights = (z) => {
+    const ys = [];
+    for (let i = 0; i < position.count; i++)
+      if (
+        Math.abs(Math.abs(position.getX(i)) - 0.9) < 1e-4 &&
+        Math.abs(position.getZ(i) - z) < 1e-4
+      )
+        ys.push(position.getY(i));
+    assert.ok(ys.length > 0);
+    return Math.max(...ys);
+  };
+  assert.ok(heights(1.22) - heights(2.35) > 0.14);
+});

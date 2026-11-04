@@ -14,6 +14,7 @@ import {
   sampleGround,
   isBlocked,
   movePlayer,
+  movementFrameSeconds,
   startJump,
   stepVertical,
 } from "./world.js";
@@ -35,9 +36,11 @@ import { createEntrances } from "./entrances.js";
 import { readReturn, enterInterior, RETURN_KEY } from "./scene-transition.js";
 import { createAnalytics } from "./analytics.js";
 import { loadStudentFactory } from "./student.js";
+import { createFixedNpc } from "./fixed-npc.js";
 import { createRouter, distance } from "./routing.js";
 import { createNavigation } from "./navigation.js";
 import { createSky } from "./sky.js";
+import { shapeCloudVolumes } from "./cloud-volumes.js";
 import {
   createOverviewDepth,
   freezeStaticTransforms,
@@ -61,6 +64,7 @@ import "./style.css";
 let navigation,
   life,
   studentFactory,
+  fixedNpc,
   squirrelFactory,
   zombies,
   outdoorRouter,
@@ -82,7 +86,11 @@ const death = createDeathFlow({
     walkMotion.reset();
   },
 });
-const modalOpen = () => dialog.open || $("#feedback-dialog").open || death.dead;
+const modalOpen = () =>
+  dialog.open ||
+  $("#feedback-dialog").open ||
+  death.dead ||
+  !!fixedNpc?.isOpen();
 const developer = createDeveloperTools({
   getLife: () => ({
     inspect: (id) => life?.inspect(id) || zombies?.inspect(id),
@@ -155,6 +163,7 @@ touchHint.textContent =
   "Lower half: drag to walk / run · Upper half: drag to look";
 $("#app").append(touchHint);
 const sky = createSky(scene);
+shapeCloudVolumes(scene);
 scene.add(new THREE.HemisphereLight(0xffffff, 0x929b94, 1.9));
 const sun = new THREE.DirectionalLight(0xfff9ef, 2.4);
 sun.position.set(-1400, 2400, 1300);
@@ -484,6 +493,14 @@ renderer.domElement.addEventListener("pointerup", (event) => {
   drag = null;
   touchControls.reset();
 });
+renderer.domElement.addEventListener("pointerleave", () => {
+  if (!drag) {
+    fixedNpc?.hover(false);
+    hoverPointer = null;
+    hoverPending = false;
+    buildingHighlight.hover(null);
+  }
+});
 renderer.domElement.addEventListener("pointercancel", () => {
   drag = null;
   touchControls.reset();
@@ -679,6 +696,12 @@ function selectAt(event) {
     camera,
   );
   const hit = raycaster.intersectObjects(collisionMeshes, false)[0];
+  const personHit =
+    fixedNpc && raycaster.intersectObject(fixedNpc.root, true)[0];
+  if (personHit && (!hit || personHit.distance < hit.distance)) {
+    fixedNpc.open();
+    return;
+  }
   if (entrances?.pick(raycaster, hit?.distance)) return;
   if (developer.enabled && (life || zombies)) {
     const npc = raycaster.intersectObjects(
@@ -694,7 +717,7 @@ function selectAt(event) {
   if (hit) selectBuilding(resolveBuildingHit(hit, buildingRecords));
   else clearSelection();
 }
-function updatePlayer(dt) {
+function updatePlayer(dt, movementDt = dt) {
   const previous = player.clone();
   const forward =
     (keys.has("KeyW") || keys.has("ArrowUp") ? 1 : 0) -
@@ -721,10 +744,10 @@ function updatePlayer(dt) {
     const delta = {
       x:
         (-Math.sin(heading) * input.forward + Math.cos(heading) * input.right) *
-        dt,
+        movementDt,
       z:
         (-Math.cos(heading) * input.forward - Math.sin(heading) * input.right) *
-        dt,
+        movementDt,
     };
     const before = player.clone();
     movePlayer(
@@ -753,7 +776,7 @@ function updatePlayer(dt) {
     enabled: view !== "aerial",
     reducedMotion: reducedMotion.matches,
     motionLevel: Number($("#motion-setting").value),
-    running: travelled / Math.max(dt, 0.001) > 2.15,
+    running: travelled / Math.max(movementDt, 0.001) > 2.15,
   });
   if (motion.step) sound.step();
   character.root.position.copy(player);
@@ -1082,6 +1105,46 @@ try {
     scene.remove(character.root);
     character = studentFactory();
     scene.add(character.root);
+    const personPath = [
+      [-42, -46],
+      [-42, -34],
+    ];
+    const pathClear =
+      Array.from({ length: 25 }, (_, i) => personPath[0][1] + i * 0.5).every(
+        (z) => !isBlocked(-42, z, buildings, half),
+      ) && !segmentHitsBoxes([-42, 46], [-42, 34], extraCollisionBoxes, 0.5);
+    if (pathClear)
+      fixedNpc = createFixedNpc({
+        scene,
+        viewport,
+        camera,
+        studentFactory,
+        ground: (x, z) => sampleGround(field, x, z),
+        occluders: collisionMeshes,
+        config: {
+          name: "Dan Carrere",
+          appearance: {
+            heightM: 1.88,
+            bodyWidth: 1.02,
+            skinColor: "#cda98e",
+            hairColor: "#57504b",
+            hair: "short",
+            bag: "none",
+            shirtColor: "#64574e",
+            trouserColor: "#394342",
+          },
+          plaid: true,
+          hatAndBeard: true,
+          linkLabel: "University profile",
+          role: "Associate Teaching Professor · Computer Science",
+          url: "https://cas.uoregon.edu/directory/school-of-computer-and-data-sciences/all/dcarrere",
+          line: "you just graduated",
+          path: personPath,
+          speed: 0.7,
+          pauseSeconds: 2,
+        },
+      });
+    else console.warn("Fixed NPC path unavailable: collision check failed.");
   }
   if (viewerSettings.navigation_url) {
     const graph = await loadJson(
@@ -1326,10 +1389,12 @@ try {
   const frozenStaticNodes = freezeStaticTransforms(model);
   let betaLastUpdate = 0;
   renderer.setAnimationLoop((now) => {
-    const dt = Math.min((now - lastTime) / 1000 || 0, 0.08);
+    const frameSeconds = Math.max(0, (now - lastTime) / 1000 || 0);
+    const dt = Math.min(frameSeconds, 0.08);
+    const movementDt = movementFrameSeconds(frameSeconds, !document.hidden);
     lastTime = now;
     elapsed += dt;
-    if (!modalOpen()) updatePlayer(dt);
+    if (!modalOpen()) updatePlayer(dt, movementDt);
     if (!death.dead) updateCamera(dt);
     entrances.update(player, view, modalOpen());
     depth.update(view);
@@ -1339,6 +1404,7 @@ try {
       reducedMotion.matches || death.dead,
     );
     navigation?.update(elapsed);
+    fixedNpc?.update(modalOpen() ? 0 : dt, player);
     if (!modalOpen()) {
       life?.update(dt);
       zombies?.update(dt);
@@ -1369,9 +1435,16 @@ try {
         camera,
       );
       const hit = raycaster.intersectObjects(collisionMeshes, false)[0];
-      const id = resolveBuildingHit(hit, buildingRecords);
+      const personHit =
+        fixedNpc && raycaster.intersectObject(fixedNpc.root, true)[0];
+      const personHovered =
+        !!personHit && (!hit || personHit.distance < hit.distance);
+      fixedNpc?.hover(personHovered);
+      const id = personHovered
+        ? null
+        : resolveBuildingHit(hit, buildingRecords);
       buildingHighlight.hover(id);
-      renderer.domElement.style.cursor = id ? "pointer" : "";
+      renderer.domElement.style.cursor = id || personHovered ? "pointer" : "";
     }
     developer.update(now);
     frames++;
@@ -1380,7 +1453,13 @@ try {
       frames = 0;
       lastFps = now;
     }
-    drawMap(player, yaw, selectedMapTarget, navigation?.points);
+    drawMap(
+      player,
+      yaw,
+      selectedMapTarget,
+      navigation?.points,
+      fixedNpc?.root.position,
+    );
     const heading = new THREE.Vector3();
     camera.getWorldDirection(heading);
     $(".compass i").style.transform =
@@ -1458,6 +1537,19 @@ try {
           }
         : null,
     }),
+    fixedNpcInfo: () => fixedNpc?.state() || null,
+    fixedNpcScreenPosition: () => {
+      if (!fixedNpc) return null;
+      const p = fixedNpc.root.position
+        .clone()
+        .add(new THREE.Vector3(0, 1.1, 0))
+        .project(camera);
+      return {
+        x: ((p.x + 1) * viewport.clientWidth) / 2,
+        y: ((1 - p.y) * viewport.clientHeight) / 2,
+        visible: p.z > -1 && p.z < 1 && Math.abs(p.x) < 1 && Math.abs(p.y) < 1,
+      };
+    },
     collisionCheck: (x, z) => isBlocked(x, z, buildings, half),
     entranceInfo: () => entrances.entries.map((e) => ({ ...e })),
     lifeColliders: () => life?.colliders() || [],

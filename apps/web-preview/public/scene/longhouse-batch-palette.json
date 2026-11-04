@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-f736712f",
+  "target_name": "context-campus-2-1",
+  "expected_vertices": 20148,
+  "bounds": [
+    188.8,
+    3.5,
+    359.8,
+    204.2,
+    10.8,
+    383.2
+  ],
+  "groups": [
+    {
+      "source_linear_4dp": [
+        0.5333,
+        0.3663,
+        0.2122
+      ],
+      "expected_vertices": 80,
+      "target_srgb": "#654d3b"
+    },
+    {
+      "source_linear_4dp": [
+        0.2462,
+        0.1022,
+        0.0578
+      ],
+      "expected_vertices": 6,
+      "target_srgb": "#526649"
+    },
+    {
+      "source_linear_4dp": [
+        0.402,
+        0.162,
+        0.0908
+      ],
+      "expected_vertices": 6,
+      "target_srgb": "#6a7c5e"
+    }
+  ],
+  "note": "Provisional localized source palette; approximate wood siding and living roof context, no surveyed identity or exact colors."
+}

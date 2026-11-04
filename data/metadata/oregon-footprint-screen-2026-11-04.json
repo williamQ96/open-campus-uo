@@ -1,0 +1,1391 @@
+{
+  "manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "reference_sha256": "3c9f314c57cc4b6a1b77219f2c2240d39c2ffa10a21a3798e06a513242722b9c",
+  "reference_crs": "EPSG:3740",
+  "reference_feature_count": 664,
+  "source": "https://services8.arcgis.com/8PAo5HGmvRMlF2eU/arcgis/rest/services/Building_Footprints/FeatureServer/0",
+  "meaning": "2D intersections only; neither a registered survey nor an identity, mesh, height, current-condition or permission determination.",
+  "named_candidates": [
+    {
+      "id": "roof-0a498bf7",
+      "name": "Anstett Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 567.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841060,
+          "source_building_id": "20-1073117",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 574.94,
+          "overlap_m2": 510.58,
+          "candidate_fraction": 0.8997,
+          "source_fraction": 0.8881
+        },
+        {
+          "source_object_id": 1841040,
+          "source_building_id": "20-1073117",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 3362.13,
+          "overlap_m2": 11.36,
+          "candidate_fraction": 0.02,
+          "source_fraction": 0.0034
+        }
+      ]
+    },
+    {
+      "id": "roof-0ca67b60",
+      "name": "Deschutes Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 365.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841057,
+          "source_building_id": "20-1072907",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1026.54,
+          "overlap_m2": 334.23,
+          "candidate_fraction": 0.9144,
+          "source_fraction": 0.3256
+        }
+      ]
+    },
+    {
+      "id": "roof-0de7fadb",
+      "name": "Bean Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 6497.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840857,
+          "source_building_id": "20-1072914",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 5200.29,
+          "overlap_m2": 4679.99,
+          "candidate_fraction": 0.7203,
+          "source_fraction": 0.8999
+        }
+      ]
+    },
+    {
+      "id": "roof-11d15952",
+      "name": "Oregon Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 2001.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840873,
+          "source_building_id": "20-1072932",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2300.93,
+          "overlap_m2": 1792.82,
+          "candidate_fraction": 0.896,
+          "source_fraction": 0.7792
+        }
+      ]
+    },
+    {
+      "id": "roof-16751515",
+      "name": "Jordan Schnitzer Museum of Art",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 2344.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840871,
+          "source_building_id": "20-1072930",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2400.72,
+          "overlap_m2": 1992.28,
+          "candidate_fraction": 0.8499,
+          "source_fraction": 0.8299
+        }
+      ]
+    },
+    {
+      "id": "roof-1afe792e",
+      "name": "Chiles Business Center",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 1122.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841061,
+          "source_building_id": "20-1073117",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1050.0,
+          "overlap_m2": 1009.45,
+          "candidate_fraction": 0.8997,
+          "source_fraction": 0.9614
+        }
+      ]
+    },
+    {
+      "id": "roof-2518e2a2",
+      "name": "Central Power Station",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1506.5,
+      "overlaps": [
+        {
+          "source_object_id": 1840825,
+          "source_building_id": "20-1072879",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1429.55,
+          "overlap_m2": 1291.74,
+          "candidate_fraction": 0.8574,
+          "source_fraction": 0.9036
+        },
+        {
+          "source_object_id": 1852737,
+          "source_building_id": "20-1086007",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 60.25,
+          "overlap_m2": 56.55,
+          "candidate_fraction": 0.0375,
+          "source_fraction": 0.9385
+        },
+        {
+          "source_object_id": 1852738,
+          "source_building_id": "20-1086008",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 166.59,
+          "overlap_m2": 18.47,
+          "candidate_fraction": 0.0123,
+          "source_fraction": 0.1109
+        }
+      ]
+    },
+    {
+      "id": "roof-266f13fd",
+      "name": "Erb Memorial Union",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 2750.5,
+      "overlaps": [
+        {
+          "source_object_id": 1917711,
+          "source_building_id": "20-1161258",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 7180.37,
+          "overlap_m2": 2310.94,
+          "candidate_fraction": 0.8402,
+          "source_fraction": 0.3218
+        }
+      ]
+    },
+    {
+      "id": "roof-2cd1068b",
+      "name": "Carson Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 2180.5,
+      "overlaps": [
+        {
+          "source_object_id": 1840876,
+          "source_building_id": "20-1072935",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2124.01,
+          "overlap_m2": 1999.09,
+          "candidate_fraction": 0.9168,
+          "source_fraction": 0.9412
+        }
+      ]
+    },
+    {
+      "id": "roof-34f891de",
+      "name": "Willamette Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 6942.5,
+      "overlaps": [
+        {
+          "source_object_id": 1840853,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2608.07,
+          "overlap_m2": 2548.95,
+          "candidate_fraction": 0.3672,
+          "source_fraction": 0.9773
+        },
+        {
+          "source_object_id": 1949390,
+          "source_building_id": "20-1072907",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1640.01,
+          "overlap_m2": 1443.22,
+          "candidate_fraction": 0.2079,
+          "source_fraction": 0.88
+        },
+        {
+          "source_object_id": 1841052,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 3344.67,
+          "overlap_m2": 1438.55,
+          "candidate_fraction": 0.2072,
+          "source_fraction": 0.4301
+        },
+        {
+          "source_object_id": 1949372,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1566.39,
+          "overlap_m2": 1185.96,
+          "candidate_fraction": 0.1708,
+          "source_fraction": 0.7571
+        },
+        {
+          "source_object_id": 1841053,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1438.14,
+          "overlap_m2": 7.53,
+          "candidate_fraction": 0.0011,
+          "source_fraction": 0.0052
+        }
+      ]
+    },
+    {
+      "id": "roof-399c648e",
+      "name": "Villard Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 507.5,
+      "overlaps": [
+        {
+          "source_object_id": 1921814,
+          "source_building_id": "20-1085988",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 703.79,
+          "overlap_m2": 506.61,
+          "candidate_fraction": 0.9983,
+          "source_fraction": 0.7198
+        }
+      ]
+    },
+    {
+      "id": "roof-4041562c",
+      "name": "Pacific Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 1284.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841053,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1438.14,
+          "overlap_m2": 969.84,
+          "candidate_fraction": 0.755,
+          "source_fraction": 0.6744
+        },
+        {
+          "source_object_id": 1840866,
+          "source_building_id": "20-1072924",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 552.79,
+          "overlap_m2": 251.1,
+          "candidate_fraction": 0.1955,
+          "source_fraction": 0.4543
+        }
+      ]
+    },
+    {
+      "id": "roof-453966d5",
+      "name": "Living-Learning Center South",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1159.0,
+      "overlaps": [
+        {
+          "source_object_id": 1842567,
+          "source_building_id": "20-1075021",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1128.26,
+          "overlap_m2": 972.83,
+          "candidate_fraction": 0.8394,
+          "source_fraction": 0.8622
+        }
+      ]
+    },
+    {
+      "id": "roof-4f0c798e",
+      "name": "Fenton Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 813.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841062,
+          "source_building_id": "20-1073140",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 831.49,
+          "overlap_m2": 750.17,
+          "candidate_fraction": 0.9227,
+          "source_fraction": 0.9022
+        }
+      ]
+    },
+    {
+      "id": "roof-556799cc",
+      "name": "Friendly Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 914.5,
+      "overlaps": [
+        {
+          "source_object_id": 1840801,
+          "source_building_id": "20-1072851",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1030.79,
+          "overlap_m2": 845.66,
+          "candidate_fraction": 0.9247,
+          "source_fraction": 0.8204
+        }
+      ]
+    },
+    {
+      "id": "roof-57a37f8e",
+      "name": "Lawrence Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 8134.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840865,
+          "source_building_id": "20-1072923",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 4945.55,
+          "overlap_m2": 3593.82,
+          "candidate_fraction": 0.4418,
+          "source_fraction": 0.7267
+        },
+        {
+          "source_object_id": 1841055,
+          "source_building_id": "20-1072923",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2501.48,
+          "overlap_m2": 2313.54,
+          "candidate_fraction": 0.2844,
+          "source_fraction": 0.9249
+        },
+        {
+          "source_object_id": 1841054,
+          "source_building_id": "20-1073132",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1345.27,
+          "overlap_m2": 1175.94,
+          "candidate_fraction": 0.1446,
+          "source_fraction": 0.8741
+        },
+        {
+          "source_object_id": 1841053,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1438.14,
+          "overlap_m2": 18.74,
+          "candidate_fraction": 0.0023,
+          "source_fraction": 0.013
+        }
+      ]
+    },
+    {
+      "id": "roof-5ded2bf0",
+      "name": "Straub Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 4108.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840864,
+          "source_building_id": "20-1072906",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2557.87,
+          "overlap_m2": 2261.59,
+          "candidate_fraction": 0.5505,
+          "source_fraction": 0.8842
+        },
+        {
+          "source_object_id": 1840852,
+          "source_building_id": "20-1072906",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2330.07,
+          "overlap_m2": 1389.94,
+          "candidate_fraction": 0.3384,
+          "source_fraction": 0.5965
+        }
+      ]
+    },
+    {
+      "id": "roof-64589bec",
+      "name": "Columbia Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 719.5,
+      "overlaps": []
+    },
+    {
+      "id": "roof-6684e091",
+      "name": "Knight Library",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 8532.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840875,
+          "source_building_id": "20-1072934",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 9622.31,
+          "overlap_m2": 8330.19,
+          "candidate_fraction": 0.9763,
+          "source_fraction": 0.8657
+        }
+      ]
+    },
+    {
+      "id": "roof-74ecc113",
+      "name": "Lokey Education Building",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 559.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840816,
+          "source_building_id": "20-1072869",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2447.05,
+          "overlap_m2": 502.99,
+          "candidate_fraction": 0.8998,
+          "source_fraction": 0.2056
+        }
+      ]
+    },
+    {
+      "id": "roof-75e776d0",
+      "name": "Peterson Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1290.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841059,
+          "source_building_id": "20-1073117",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 563.89,
+          "overlap_m2": 457.97,
+          "candidate_fraction": 0.3549,
+          "source_fraction": 0.8122
+        },
+        {
+          "source_object_id": 1841058,
+          "source_building_id": "20-1073117",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 434.49,
+          "overlap_m2": 419.9,
+          "candidate_fraction": 0.3254,
+          "source_fraction": 0.9664
+        },
+        {
+          "source_object_id": 1841040,
+          "source_building_id": "20-1073117",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 3362.13,
+          "overlap_m2": 317.16,
+          "candidate_fraction": 0.2458,
+          "source_fraction": 0.0943
+        },
+        {
+          "source_object_id": 1950236,
+          "source_building_id": "20-1085989",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 56.6,
+          "overlap_m2": 32.73,
+          "candidate_fraction": 0.0254,
+          "source_fraction": 0.5783
+        }
+      ]
+    },
+    {
+      "id": "roof-7b7893d6",
+      "name": "Allen Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1114.0,
+      "overlaps": [
+        {
+          "source_object_id": 1852713,
+          "source_building_id": "20-1085980",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1741.27,
+          "overlap_m2": 988.36,
+          "candidate_fraction": 0.8872,
+          "source_fraction": 0.5676
+        }
+      ]
+    },
+    {
+      "id": "roof-7ffcf31b",
+      "name": "Condon Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1266.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841063,
+          "source_building_id": "20-1073141",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1238.32,
+          "overlap_m2": 1106.94,
+          "candidate_fraction": 0.8744,
+          "source_fraction": 0.8939
+        }
+      ]
+    },
+    {
+      "id": "roof-86754ad7",
+      "name": "Lillis Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 1368.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841040,
+          "source_building_id": "20-1073117",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 3362.13,
+          "overlap_m2": 1340.22,
+          "candidate_fraction": 0.9797,
+          "source_fraction": 0.3986
+        }
+      ]
+    },
+    {
+      "id": "roof-8f611273",
+      "name": "Prince Lucien Campbell Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 435.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840818,
+          "source_building_id": "20-1072871",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2345.47,
+          "overlap_m2": 433.56,
+          "candidate_fraction": 0.9967,
+          "source_fraction": 0.1848
+        }
+      ]
+    },
+    {
+      "id": "roof-9017feee",
+      "name": "University Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 454.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841051,
+          "source_building_id": "20-1073128",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 607.22,
+          "overlap_m2": 450.66,
+          "candidate_fraction": 0.9926,
+          "source_fraction": 0.7422
+        }
+      ]
+    },
+    {
+      "id": "roof-906c030e",
+      "name": "Johnson Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 856.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841065,
+          "source_building_id": "20-1073143",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 844.69,
+          "overlap_m2": 759.05,
+          "candidate_fraction": 0.8862,
+          "source_fraction": 0.8986
+        }
+      ]
+    },
+    {
+      "id": "roof-944fcd46",
+      "name": "Miller Theatre Complex",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1715.5,
+      "overlaps": [
+        {
+          "source_object_id": 1852721,
+          "source_building_id": "20-1085988",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2006.38,
+          "overlap_m2": 1639.75,
+          "candidate_fraction": 0.9558,
+          "source_fraction": 0.8173
+        }
+      ]
+    },
+    {
+      "id": "roof-9ac93ab7",
+      "name": "Gerlinger Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1738.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841068,
+          "source_building_id": "20-1072937",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2197.06,
+          "overlap_m2": 1655.95,
+          "candidate_fraction": 0.9525,
+          "source_fraction": 0.7537
+        }
+      ]
+    },
+    {
+      "id": "roof-a5a51275",
+      "name": "Onyx Bridge",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 166.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841053,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1438.14,
+          "overlap_m2": 127.51,
+          "candidate_fraction": 0.7681,
+          "source_fraction": 0.0887
+        }
+      ]
+    },
+    {
+      "id": "roof-a5ff3d5a",
+      "name": "Esslinger Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 14501.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841048,
+          "source_building_id": "20-1073134",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 6797.27,
+          "overlap_m2": 6188.81,
+          "candidate_fraction": 0.4268,
+          "source_fraction": 0.9105
+        },
+        {
+          "source_object_id": 1840815,
+          "source_building_id": "20-1072868",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 9403.42,
+          "overlap_m2": 4322.03,
+          "candidate_fraction": 0.2981,
+          "source_fraction": 0.4596
+        },
+        {
+          "source_object_id": 1841056,
+          "source_building_id": "20-1073134",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 3701.11,
+          "overlap_m2": 3647.87,
+          "candidate_fraction": 0.2516,
+          "source_fraction": 0.9856
+        },
+        {
+          "source_object_id": 1852777,
+          "source_building_id": "20-1086052",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 26.68,
+          "overlap_m2": 1.51,
+          "candidate_fraction": 0.0001,
+          "source_fraction": 0.0566
+        }
+      ]
+    },
+    {
+      "id": "roof-a997a75f",
+      "name": "Outdoor Program Barn",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 277.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840855,
+          "source_building_id": "20-1072912",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 504.96,
+          "overlap_m2": 274.79,
+          "candidate_fraction": 0.992,
+          "source_fraction": 0.5442
+        }
+      ]
+    },
+    {
+      "id": "roof-af9a4442",
+      "name": "Student Recreation Center",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 3241.5,
+      "overlaps": [
+        {
+          "source_object_id": 1840815,
+          "source_building_id": "20-1072868",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 9403.42,
+          "overlap_m2": 2610.4,
+          "candidate_fraction": 0.8053,
+          "source_fraction": 0.2776
+        }
+      ]
+    },
+    {
+      "id": "roof-c1ff8b83",
+      "name": "Clinical Services Building",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1903.5,
+      "overlaps": [
+        {
+          "source_object_id": 1917347,
+          "source_building_id": "20-1161043",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2365.0,
+          "overlap_m2": 1750.73,
+          "candidate_fraction": 0.9197,
+          "source_fraction": 0.7403
+        }
+      ]
+    },
+    {
+      "id": "roof-d2f88f9e",
+      "name": "Living-Learning Center North",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1731.0,
+      "overlaps": [
+        {
+          "source_object_id": 1842568,
+          "source_building_id": "20-1075022",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1622.95,
+          "overlap_m2": 1465.67,
+          "candidate_fraction": 0.8467,
+          "source_fraction": 0.9031
+        }
+      ]
+    },
+    {
+      "id": "roof-e11ec58d",
+      "name": "Museum of Natural and Cultural History",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1938.5,
+      "overlaps": [
+        {
+          "source_object_id": 1852788,
+          "source_building_id": "20-1086063",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1908.36,
+          "overlap_m2": 1862.34,
+          "candidate_fraction": 0.9607,
+          "source_fraction": 0.9759
+        }
+      ]
+    },
+    {
+      "id": "roof-e145c222",
+      "name": "Hendricks Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 277.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841067,
+          "source_building_id": "20-1073145",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 833.44,
+          "overlap_m2": 247.3,
+          "candidate_fraction": 0.8928,
+          "source_fraction": 0.2967
+        }
+      ]
+    },
+    {
+      "id": "roof-e4a5429f",
+      "name": "Frohnmayer Music Building",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 505.0,
+      "overlaps": [
+        {
+          "source_object_id": 1852729,
+          "source_building_id": "20-1085998",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 5299.59,
+          "overlap_m2": 471.87,
+          "candidate_fraction": 0.9344,
+          "source_fraction": 0.089
+        }
+      ]
+    },
+    {
+      "id": "roof-e5accf83",
+      "name": "Collier House",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 305.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841066,
+          "source_building_id": "20-1073144",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 351.33,
+          "overlap_m2": 259.28,
+          "candidate_fraction": 0.8501,
+          "source_fraction": 0.738
+        }
+      ]
+    },
+    {
+      "id": "roof-f01c8434",
+      "name": "Earl Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 264.5,
+      "overlaps": [
+        {
+          "source_object_id": 1840852,
+          "source_building_id": "20-1072906",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2330.07,
+          "overlap_m2": 214.63,
+          "candidate_fraction": 0.8114,
+          "source_fraction": 0.0921
+        }
+      ]
+    },
+    {
+      "id": "roof-f0b575d6",
+      "name": "Gerlinger Annex",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 1784.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840877,
+          "source_building_id": "20-1072937",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2235.53,
+          "overlap_m2": 1702.04,
+          "candidate_fraction": 0.9541,
+          "source_fraction": 0.7614
+        }
+      ]
+    },
+    {
+      "id": "roof-f42d2ea3",
+      "name": "Cascade Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 857.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841049,
+          "source_building_id": "20-1073126",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1209.56,
+          "overlap_m2": 740.73,
+          "candidate_fraction": 0.8638,
+          "source_fraction": 0.6124
+        }
+      ]
+    },
+    {
+      "id": "roof-f52041e8",
+      "name": "Knight Law Center",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 3172.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841041,
+          "source_building_id": "20-1073118",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 4456.28,
+          "overlap_m2": 3133.57,
+          "candidate_fraction": 0.9879,
+          "source_fraction": 0.7032
+        }
+      ]
+    },
+    {
+      "id": "roof-f5cea51d",
+      "name": "Chapman Hall",
+      "name_match": "anchor-within-footprint",
+      "candidate_area_m2": 671.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841064,
+          "source_building_id": "20-1073142",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 637.99,
+          "overlap_m2": 595.21,
+          "candidate_fraction": 0.8864,
+          "source_fraction": 0.9329
+        }
+      ]
+    },
+    {
+      "id": "roof-f61e9b20",
+      "name": "McKenzie Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 2453.5,
+      "overlaps": [
+        {
+          "source_object_id": 1840851,
+          "source_building_id": "20-1072905",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2574.19,
+          "overlap_m2": 2303.01,
+          "candidate_fraction": 0.9387,
+          "source_fraction": 0.8947
+        }
+      ]
+    },
+    {
+      "id": "roof-fd061857",
+      "name": "Susan Campbell Hall",
+      "name_match": "approximate-nearest-roof",
+      "candidate_area_m2": 477.5,
+      "overlaps": [
+        {
+          "source_object_id": 1841069,
+          "source_building_id": "20-1073147",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 564.87,
+          "overlap_m2": 425.68,
+          "candidate_fraction": 0.8915,
+          "source_fraction": 0.7536
+        }
+      ]
+    },
+    {
+      "id": "context-b0039",
+      "name": "Computing Center",
+      "name_match": "approximate-missing-roof-envelope",
+      "candidate_area_m2": 560.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841061,
+          "source_building_id": "20-1073117",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1050.0,
+          "overlap_m2": 391.74,
+          "candidate_fraction": 0.6995,
+          "source_fraction": 0.3731
+        }
+      ]
+    },
+    {
+      "id": "context-b0038",
+      "name": "Klamath Hall",
+      "name_match": "approximate-missing-roof-envelope",
+      "candidate_area_m2": 2475.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840853,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2608.07,
+          "overlap_m2": 1240.84,
+          "candidate_fraction": 0.5013,
+          "source_fraction": 0.4758
+        },
+        {
+          "source_object_id": 1949372,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1566.39,
+          "overlap_m2": 352.34,
+          "candidate_fraction": 0.1424,
+          "source_fraction": 0.2249
+        }
+      ]
+    },
+    {
+      "id": "context-b0045",
+      "name": "Streisinger Hall",
+      "name_match": "approximate-missing-roof-envelope",
+      "candidate_area_m2": 875.0,
+      "overlaps": [
+        {
+          "source_object_id": 1949372,
+          "source_building_id": "20-1072908",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1566.39,
+          "overlap_m2": 779.66,
+          "candidate_fraction": 0.891,
+          "source_fraction": 0.4977
+        },
+        {
+          "source_object_id": 1852712,
+          "source_building_id": "20-1072907",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2095.07,
+          "overlap_m2": 20.97,
+          "candidate_fraction": 0.024,
+          "source_fraction": 0.01
+        }
+      ]
+    },
+    {
+      "id": "context-b0040",
+      "name": "Huestis Hall",
+      "name_match": "approximate-missing-roof-envelope",
+      "candidate_area_m2": 1344.0,
+      "overlaps": [
+        {
+          "source_object_id": 1949390,
+          "source_building_id": "20-1072907",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1640.01,
+          "overlap_m2": 818.49,
+          "candidate_fraction": 0.609,
+          "source_fraction": 0.4991
+        }
+      ]
+    },
+    {
+      "id": "context-b0020",
+      "name": "McArthur Court",
+      "name_match": "approximate-missing-roof-envelope",
+      "candidate_area_m2": 4030.0,
+      "overlaps": [
+        {
+          "source_object_id": 1841056,
+          "source_building_id": "20-1073134",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 3701.11,
+          "overlap_m2": 3103.12,
+          "candidate_fraction": 0.77,
+          "source_fraction": 0.8384
+        },
+        {
+          "source_object_id": 1841048,
+          "source_building_id": "20-1073134",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 6797.27,
+          "overlap_m2": 210.5,
+          "candidate_fraction": 0.0522,
+          "source_fraction": 0.031
+        }
+      ]
+    },
+    {
+      "id": "context-b0158",
+      "name": "Global Scholars Hall",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 5100.0,
+      "overlaps": [
+        {
+          "source_object_id": 1852789,
+          "source_building_id": "20-1086064",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 4436.9,
+          "overlap_m2": 2385.86,
+          "candidate_fraction": 0.4678,
+          "source_fraction": 0.5377
+        }
+      ]
+    },
+    {
+      "id": "context-b0010",
+      "name": "HEDCO Education",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 3120.0,
+      "overlaps": [
+        {
+          "source_object_id": 1852727,
+          "source_building_id": "20-1085996",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2606.8,
+          "overlap_m2": 1610.6,
+          "candidate_fraction": 0.5162,
+          "source_fraction": 0.6178
+        },
+        {
+          "source_object_id": 1852728,
+          "source_building_id": "20-1085997",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 59.03,
+          "overlap_m2": 52.06,
+          "candidate_fraction": 0.0167,
+          "source_fraction": 0.8818
+        }
+      ]
+    },
+    {
+      "id": "context-b0074",
+      "name": "Matthew Knight Arena",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 13750.0,
+      "overlaps": [
+        {
+          "source_object_id": 1852750,
+          "source_building_id": "20-1086021",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 13711.26,
+          "overlap_m2": 11344.03,
+          "candidate_fraction": 0.825,
+          "source_fraction": 0.8274
+        }
+      ]
+    },
+    {
+      "id": "context-b0066",
+      "name": "Ford Alumni Center",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 1800.0,
+      "overlaps": [
+        {
+          "source_object_id": 1852749,
+          "source_building_id": "20-1086020",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1686.95,
+          "overlap_m2": 823.49,
+          "candidate_fraction": 0.4575,
+          "source_fraction": 0.4882
+        },
+        {
+          "source_object_id": 1852750,
+          "source_building_id": "20-1086021",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 13711.26,
+          "overlap_m2": 109.44,
+          "candidate_fraction": 0.0608,
+          "source_fraction": 0.008
+        }
+      ]
+    },
+    {
+      "id": "context-b0067",
+      "name": "Jaqua Academic Center",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 1520.0,
+      "overlaps": [
+        {
+          "source_object_id": 1852746,
+          "source_building_id": "20-1086017",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1465.46,
+          "overlap_m2": 832.8,
+          "candidate_fraction": 0.5479,
+          "source_fraction": 0.5683
+        }
+      ]
+    },
+    {
+      "id": "context-b0103",
+      "name": "Tykeson Hall",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 1520.0,
+      "overlaps": [
+        {
+          "source_object_id": 1921806,
+          "source_building_id": "20-1166788",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 1070.54,
+          "overlap_m2": 854.83,
+          "candidate_fraction": 0.5624,
+          "source_fraction": 0.7985
+        }
+      ]
+    },
+    {
+      "id": "context-oc-unthank",
+      "name": "Unthank Hall",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 4500.0,
+      "overlaps": [
+        {
+          "source_object_id": 2166427,
+          "source_building_id": "20-681345",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 2476.13,
+          "overlap_m2": 1579.4,
+          "candidate_fraction": 0.351,
+          "source_fraction": 0.6379
+        },
+        {
+          "source_object_id": 1840857,
+          "source_building_id": "20-1072914",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 5200.29,
+          "overlap_m2": 101.71,
+          "candidate_fraction": 0.0226,
+          "source_fraction": 0.0196
+        },
+        {
+          "source_object_id": 1852813,
+          "source_building_id": "20-1086099",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 44.56,
+          "overlap_m2": 44.56,
+          "candidate_fraction": 0.0099,
+          "source_fraction": 1.0
+        },
+        {
+          "source_object_id": 1852814,
+          "source_building_id": "20-1086100",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 37.84,
+          "overlap_m2": 9.83,
+          "candidate_fraction": 0.0022,
+          "source_fraction": 0.2597
+        }
+      ]
+    },
+    {
+      "id": "context-oc-yasui",
+      "name": "Yasui Hall",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 2925.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840874,
+          "source_building_id": "20-1072933",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 5743.91,
+          "overlap_m2": 727.52,
+          "candidate_fraction": 0.2487,
+          "source_fraction": 0.1267
+        },
+        {
+          "source_object_id": 2166351,
+          "source_building_id": "20-681195",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 58.86,
+          "overlap_m2": 48.28,
+          "candidate_fraction": 0.0165,
+          "source_fraction": 0.8202
+        },
+        {
+          "source_object_id": 2166352,
+          "source_building_id": "20-681196",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 32.39,
+          "overlap_m2": 23.5,
+          "candidate_fraction": 0.008,
+          "source_fraction": 0.7256
+        }
+      ]
+    },
+    {
+      "id": "context-oc-cedar",
+      "name": "Cedar Hall",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 3150.0,
+      "overlaps": [
+        {
+          "source_object_id": 1840874,
+          "source_building_id": "20-1072933",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 5743.91,
+          "overlap_m2": 1651.06,
+          "candidate_fraction": 0.5241,
+          "source_fraction": 0.2874
+        }
+      ]
+    },
+    {
+      "id": "context-oc-knight-1",
+      "name": "Knight Campus 1",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 4750.0,
+      "overlaps": [
+        {
+          "source_object_id": 1956611,
+          "source_building_id": "20-1166067",
+          "contributor": "LCOG",
+          "source_date": "Not Available",
+          "source_area_m2": 3370.98,
+          "overlap_m2": 2358.9,
+          "candidate_fraction": 0.4966,
+          "source_fraction": 0.6998
+        }
+      ]
+    },
+    {
+      "id": "context-oc-knight-2",
+      "name": "Knight Campus 2",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 6375.0,
+      "overlaps": []
+    },
+    {
+      "id": "context-oc-hayward",
+      "name": "Hayward Field",
+      "name_match": "approximate-context-envelope",
+      "candidate_area_m2": 4200.0,
+      "overlaps": []
+    }
+  ]
+}

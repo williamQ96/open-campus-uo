@@ -60,10 +60,14 @@ export function createExteriorDetail(spec, assetSha, buildingIds) {
         "disk",
         "ridge",
         "hip",
+        "mansard",
         "arch",
         "arch-x",
         "pointed-arch-x",
         "gambrel",
+        "gable-hip",
+        "bay-prism",
+        "stair-wing",
         "fern",
         "column",
       ].includes(item.shape) ||
@@ -134,6 +138,19 @@ export function createExteriorDetail(spec, assetSha, buildingIds) {
       if (item.shape === "arch-x" || item.shape === "pointed-arch-x")
         geometry.rotateY(Math.PI / 2);
       geometry.scale(...item.size);
+    } else if (item.shape === "stair-wing") {
+      const shape = new THREE.Shape();
+      shape.moveTo(-0.5, -0.5);
+      shape.lineTo(0.5, -0.5);
+      shape.lineTo(0.5, 0.5);
+      shape.lineTo(-0.5, -0.05);
+      shape.closePath();
+      geometry = new THREE.ExtrudeGeometry(shape, {
+        depth: 1,
+        bevelEnabled: false,
+      });
+      geometry.translate(0, 0, -0.5);
+      geometry.scale(...item.size);
     } else if (item.shape === "column") {
       geometry = new THREE.CylinderGeometry(0.5, 0.5, 1, 8);
       geometry.scale(...item.size);
@@ -148,6 +165,89 @@ export function createExteriorDetail(spec, assetSha, buildingIds) {
         item.size[1],
         item.size[2] * Math.SQRT2,
       );
+    } else if (item.shape === "mansard") {
+      // Two roof slopes: a steep lower face and a shallower upper face.
+      const [w, h, d] = item.size;
+      const rings = [
+        [-0.5, 1],
+        [0.25, 0.82],
+        [0.5, 0.54],
+      ];
+      const vertices = rings.flatMap(([y, scale]) => [
+        [(-w * scale) / 2, y * h, (-d * scale) / 2],
+        [(w * scale) / 2, y * h, (-d * scale) / 2],
+        [(w * scale) / 2, y * h, (d * scale) / 2],
+        [(-w * scale) / 2, y * h, (d * scale) / 2],
+      ]);
+      const faces = [
+        [0, 1, 2],
+        [0, 2, 3],
+        [8, 10, 9],
+        [8, 11, 10],
+      ];
+      for (let layer = 0; layer < 2; layer++) {
+        for (let i = 0; i < 4; i++) {
+          const a = layer * 4 + i,
+            b = layer * 4 + ((i + 1) % 4);
+          faces.push([a, a + 4, b + 4], [a, b + 4, b]);
+        }
+      }
+      geometry = new THREE.BufferGeometry();
+      geometry.setAttribute(
+        "position",
+        new THREE.Float32BufferAttribute(
+          faces.flatMap((face) => face.flatMap((i) => vertices[i])),
+          3,
+        ),
+      );
+      geometry.computeVertexNormals();
+    } else if (item.shape === "bay-prism") {
+      // Back is wide; the two angled cheeks meet a narrower front face.
+      const shape = new THREE.Shape();
+      shape.moveTo(-0.5, -0.5);
+      shape.lineTo(0.5, -0.5);
+      shape.lineTo(0.34, 0.5);
+      shape.lineTo(-0.34, 0.5);
+      shape.closePath();
+      geometry = new THREE.ExtrudeGeometry(shape, {
+        depth: 1,
+        bevelEnabled: false,
+      });
+      geometry.rotateX(-Math.PI / 2);
+      geometry.translate(0, -0.5, 0);
+      geometry.scale(...item.size);
+    } else if (item.shape === "gable-hip") {
+      const [w, h, d] = item.size;
+      if (w <= d)
+        throw new Error("Gable-hip roof requires width greater than depth.");
+      const r = (w - d) / 2;
+      const vertices = [
+        [-w / 2, 0, -d / 2],
+        [w / 2, 0, -d / 2],
+        [w / 2, 0, d / 2],
+        [-w / 2, 0, d / 2],
+        [-r, h, 0],
+        [r, h, 0],
+      ];
+      const faces = [
+        [0, 4, 5],
+        [0, 5, 1],
+        [3, 2, 5],
+        [3, 5, 4],
+        [0, 3, 4],
+        [1, 5, 2],
+        [0, 1, 2],
+        [0, 2, 3],
+      ];
+      geometry = new THREE.BufferGeometry();
+      geometry.setAttribute(
+        "position",
+        new THREE.Float32BufferAttribute(
+          faces.flatMap((face) => face.flatMap((i) => vertices[i])),
+          3,
+        ),
+      );
+      geometry.computeVertexNormals();
     } else if (item.shape === "ridge") {
       const [w, h, d] = item.size;
       const v = [

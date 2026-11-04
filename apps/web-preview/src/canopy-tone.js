@@ -56,12 +56,18 @@ export function applyCanopyTone(root, spec, assetSha) {
       const shade = 1 - spec.strength * (0.5 + 0.5 * wave);
       color.set([shade, shade, shade], i * 3);
     }
-    pending.push([mesh, new THREE.BufferAttribute(color, 3)]);
+    // The leaf material is shared with non-canopy planting; clone before enabling vertex colors.
+    pending.push([
+      mesh,
+      new THREE.BufferAttribute(color, 3),
+      mesh.material.clone(),
+    ]);
   }
-  for (const [mesh, color] of pending) {
+  for (const [mesh, color, material] of pending) {
     mesh.geometry.setAttribute("color", color);
-    mesh.material.vertexColors = true;
-    mesh.material.needsUpdate = true;
+    material.vertexColors = true;
+    material.needsUpdate = true;
+    mesh.material = material;
   }
   return pending.reduce(
     (sum, [mesh]) => sum + mesh.geometry.attributes.position.count,

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "operation": "context-trunks-v1",
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "target_name": "campus-trees",
+  "count": 300,
+  "sides": 8,
+  "note": "Illustrative rounder trunks for existing inferred trees; no change to canopy or positions."
+}

@@ -1,0 +1,245 @@
+{
+  "manifest": "apps/web-preview/public/scene/manifest.json",
+  "manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "screen": "2D footprint intersection >= 1 m2; not a building identity, mesh, clearance, height or current-conditions verification",
+  "named_buildings_screened": 63,
+  "findings": [
+    {
+      "id": "context-b0020",
+      "name": "McArthur Court",
+      "name_match": "approximate-missing-roof-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 4030.0,
+      "overlaps": [
+        {
+          "id": "roof-a5ff3d5a",
+          "name": "Esslinger Hall",
+          "area_m2": 3229.85,
+          "fraction_of_subject": 0.8015
+        }
+      ]
+    },
+    {
+      "id": "context-b0038",
+      "name": "Klamath Hall",
+      "name_match": "approximate-missing-roof-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 2475.0,
+      "overlaps": [
+        {
+          "id": "context-b0045",
+          "name": "Streisinger Hall",
+          "area_m2": 23.72,
+          "fraction_of_subject": 0.0096
+        },
+        {
+          "id": "roof-34f891de",
+          "name": "Willamette Hall",
+          "area_m2": 1556.33,
+          "fraction_of_subject": 0.6288
+        }
+      ]
+    },
+    {
+      "id": "context-b0039",
+      "name": "Computing Center",
+      "name_match": "approximate-missing-roof-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 560.0,
+      "overlaps": [
+        {
+          "id": "roof-1afe792e",
+          "name": "Chiles Business Center",
+          "area_m2": 391.36,
+          "fraction_of_subject": 0.6989
+        }
+      ]
+    },
+    {
+      "id": "context-b0040",
+      "name": "Huestis Hall",
+      "name_match": "approximate-missing-roof-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 1344.0,
+      "overlaps": [
+        {
+          "id": "roof-34f891de",
+          "name": "Willamette Hall",
+          "area_m2": 746.09,
+          "fraction_of_subject": 0.5551
+        }
+      ]
+    },
+    {
+      "id": "context-b0045",
+      "name": "Streisinger Hall",
+      "name_match": "approximate-missing-roof-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 875.0,
+      "overlaps": [
+        {
+          "id": "context-b0038",
+          "name": "Klamath Hall",
+          "area_m2": 23.72,
+          "fraction_of_subject": 0.0271
+        },
+        {
+          "id": "roof-34f891de",
+          "name": "Willamette Hall",
+          "area_m2": 599.25,
+          "fraction_of_subject": 0.6849
+        }
+      ]
+    },
+    {
+      "id": "context-oc-cedar",
+      "name": "Cedar Hall",
+      "name_match": "approximate-context-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 3150.0,
+      "overlaps": [
+        {
+          "id": "context-oc-yasui",
+          "name": "Yasui Hall",
+          "area_m2": 161.77,
+          "fraction_of_subject": 0.0514
+        },
+        {
+          "id": "roof-1fde9ce4",
+          "name": null,
+          "area_m2": 1354.38,
+          "fraction_of_subject": 0.43
+        },
+        {
+          "id": "roof-7974be11",
+          "name": null,
+          "area_m2": 21.0,
+          "fraction_of_subject": 0.0067
+        }
+      ]
+    },
+    {
+      "id": "context-oc-knight-1",
+      "name": "Knight Campus 1",
+      "name_match": "approximate-context-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 4750.0,
+      "overlaps": [
+        {
+          "id": "roof-a79ff330",
+          "name": null,
+          "area_m2": 86.47,
+          "fraction_of_subject": 0.0182
+        }
+      ]
+    },
+    {
+      "id": "context-oc-unthank",
+      "name": "Unthank Hall",
+      "name_match": "approximate-context-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 4500.0,
+      "overlaps": [
+        {
+          "id": "roof-0de7fadb",
+          "name": "Bean Hall",
+          "area_m2": 201.22,
+          "fraction_of_subject": 0.0447
+        }
+      ]
+    },
+    {
+      "id": "context-oc-yasui",
+      "name": "Yasui Hall",
+      "name_match": "approximate-context-envelope",
+      "status": "approximate-context-placeholder",
+      "footprint_area_m2": 2925.0,
+      "overlaps": [
+        {
+          "id": "context-oc-cedar",
+          "name": "Cedar Hall",
+          "area_m2": 161.77,
+          "fraction_of_subject": 0.0553
+        },
+        {
+          "id": "roof-1fde9ce4",
+          "name": null,
+          "area_m2": 573.54,
+          "fraction_of_subject": 0.1961
+        }
+      ]
+    },
+    {
+      "id": "roof-0de7fadb",
+      "name": "Bean Hall",
+      "name_match": "anchor-within-footprint",
+      "status": "estimated-blockout",
+      "footprint_area_m2": 6497.0,
+      "overlaps": [
+        {
+          "id": "context-oc-unthank",
+          "name": "Unthank Hall",
+          "area_m2": 201.22,
+          "fraction_of_subject": 0.031
+        }
+      ]
+    },
+    {
+      "id": "roof-1afe792e",
+      "name": "Chiles Business Center",
+      "name_match": "approximate-nearest-roof",
+      "status": "estimated-blockout",
+      "footprint_area_m2": 1122.0,
+      "overlaps": [
+        {
+          "id": "context-b0039",
+          "name": "Computing Center",
+          "area_m2": 391.36,
+          "fraction_of_subject": 0.3488
+        }
+      ]
+    },
+    {
+      "id": "roof-34f891de",
+      "name": "Willamette Hall",
+      "name_match": "anchor-within-footprint",
+      "status": "estimated-blockout",
+      "footprint_area_m2": 6942.5,
+      "overlaps": [
+        {
+          "id": "context-b0038",
+          "name": "Klamath Hall",
+          "area_m2": 1556.33,
+          "fraction_of_subject": 0.2242
+        },
+        {
+          "id": "context-b0040",
+          "name": "Huestis Hall",
+          "area_m2": 746.09,
+          "fraction_of_subject": 0.1075
+        },
+        {
+          "id": "context-b0045",
+          "name": "Streisinger Hall",
+          "area_m2": 599.25,
+          "fraction_of_subject": 0.0863
+        }
+      ]
+    },
+    {
+      "id": "roof-a5ff3d5a",
+      "name": "Esslinger Hall",
+      "name_match": "anchor-within-footprint",
+      "status": "estimated-blockout",
+      "footprint_area_m2": 14501.0,
+      "overlaps": [
+        {
+          "id": "context-b0020",
+          "name": "McArthur Court",
+          "area_m2": 3229.85,
+          "fraction_of_subject": 0.2227
+        }
+      ]
+    }
+  ]
+}

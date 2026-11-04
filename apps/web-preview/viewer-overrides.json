@@ -2,9 +2,14 @@
   "version": 1,
   "meaning": "Downstream overrides; upstream lock remains the template baseline. Verify before upgrades.",
   "overrides": {
+    "src/minimap.js": {
+      "upstream_sha256": "8541e4f7556e1205d93857ef6276b7350073790bc4713e11ac381829738942cc",
+      "local_sha256": "ec5dc7801ca45ce712248320cc5f5eb5e9493332e1003da6dd135803a87cd317",
+      "reason": "Optional fixed-person minimap marker"
+    },
     "src/props.js": {
       "upstream_sha256": "e920a24896edb260b30936d4fa659aee71ceaf44d0f879d4f70f1b517979f4cb",
-      "local_sha256": "8127f4126bfdaf2232cf760cc1cea1519dcdca059d30a27c3b321dc8bfe7959c",
+      "local_sha256": "6171c20c799d44aeae22749fb73bf9cca3dc476ab1df0fc600ea778a15610079",
       "reason": "UO vehicle and cycle prop refinement"
     },
     "src/sky.js": {
@@ -14,13 +19,13 @@
     },
     "src/presentation.js": {
       "upstream_sha256": "d33c5d8f940ae532978e56db6f273154eb51fdd425109fc6bf65849d86eb450f",
-      "local_sha256": "f301ae3c140274d251c40f1b5a494bd9040621edda1324b76d4d3739bc274641",
-      "reason": "Apply source-pinned UO vegetation, furniture, suppression and exterior detail layers"
+      "local_sha256": "b3119c308eea7777ccc39fa8145b667e895e79bb07e738c6195d80e219a4f7a5",
+      "reason": "Apply source-pinned UO vegetation, furniture, ground materials and exterior layers"
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "a8dc3dc9af387fa35c6902038c14f23d8529f488a4c854ad4c04af8b81ca68b3",
-      "reason": "Optional sourced building information and source-pinned provisional identity annotations"
+      "local_sha256": "44cef4105093d64d4591bc9c8e528d9785727363d6b03363116ddc9e623209c1",
+      "reason": "Optional sourced building information and source-pinned provisional identity annotations; install procedural rounded cloud geometry"
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -29,47 +34,55 @@
     },
     "src/style.css": {
       "upstream_sha256": "7ef8336da7df7d502eb32edc85fcb7f82f8ea4044c714f8f1770f2639834c709",
-      "local_sha256": "055c4886e730e8b9cd4379f07894ef1fc62f405367b220922fd495a788ffcb67",
+      "local_sha256": "c350fe473958a8e3b0be2c93c354e3c3bd196d5fd7fdd61b9ab62ecf23a39d9c",
       "reason": "Optional sourced building information cards"
     },
     "src/world.js": {
       "upstream_sha256": "ca35ab32d55da7f5a95b7004db80e743736e2ebeb05be943ed13eb6ee0dddc79",
-      "local_sha256": "22db0044902b7cab3d560f4a7a56760b57daab7cb1f15c98ccfb59917848e401",
+      "local_sha256": "7a23cd7356fa9ae875ad9662f039ad7f678fed9477a1d39542f786be22b54f1b",
       "reason": "Source-pinned exterior collision supplements for UO runtime"
     },
     "src/routing.js": {
       "upstream_sha256": "3ee2a6fd385aeda8e9ade1cd0ee10950d1889c6fc31c626b59636adab9431308",
       "local_sha256": "62a8f5d19b0b4d5376be55fd7a1ffc2ebb3dbb19f8bd011ae85e0cf68ccabe96",
       "reason": "Source-pinned exterior collision supplements for UO runtime"
+    },
+    "src/entrances.js": {
+      "upstream_sha256": "71bf6fc3bf0d8685d778e571f5aace5d341234f02f02f1d97acedb8769a2b9f5",
+      "local_sha256": "af795d1c9ccfe6afb24db01df2336cdba591d96cceabba4582ebebf88d96a0d8",
+      "reason": "Illustrative shared entrance trim; inferred entry placement and interactions unchanged"
     }
   },
   "outputs": {
-    "public/props/campus-props.glb": "20fc756b3b1d65861db0f1c4f0bf7197256d3eccbfe04efaef7c3c5a3df526f7",
+    "public/props/campus-props.glb": "1b0be7e2af6385e2718295e808979b1f831042f37be2e4fd26e913d46bd7c4ee",
     "public/scene/pilot-vegetation-patch.json": "fc0f847645d47efd0902eb0f4ec53aaf135be5cab9b89a714c7f3974374b97ba",
     "src/vegetation-patch.js": "b58281901ea88c02cb57bdfa527239b8e09ca01892d702da17f280fd4a27f038",
     "public/scene/pilot-understory-patch.json": "c45f91ea2a3cc5c6ac0237b4ecf0177a7f7e5f5811cb3dc45d448c40d7d5dd3a",
     "public/scene/pilot-tree-273-suppression.json": "32d617c541948787b999dbc965417c322ed1d704a4c474bd2381f86b5cc08e0b",
-    "src/exterior-detail.js": "4e248cb13261081c9abf917c8e807ec9e06d2c2fd00afc6b808e3bbd38a4861d",
-    "public/scene/johnson-rear-detail.json": "0ff3a99c236d78a409831a31945f0267ee073d85c0c3259e43c3ecf6585fcf61",
+    "src/fixed-npc-occlusion.js": "f523b1fc279c4bdad0a2006cf0d4c104a37a37936e9b1e59b5f510460f5c1d32",
+    "src/fixed-npc.js": "a982536df9d9d72d56203f33fb49ba8129aba6993117f6a0ad704fc008f41d51",
+    "src/fixed-npc-path.js": "4427c560781fe4433f1380940a45635ce239c462c755174388efa05d5f6cb711",
+    "src/exterior-detail.js": "c0181be4a2256830571390bfb8497335d368e9d4e3aed9b9da625b5044fa1e40",
+    "public/scene/johnson-rear-detail.json": "2f8673dd96875d0f680e7a8431922e0989db8816500c63bdc6d4c0ea7249f81b",
     "public/scene/gerlinger-hall-detail.json": "5b7f19502761155f6e3837d588967c40540726ebed1429e9b95200703e45a94d",
     "public/scene/gerlinger-annex-correction.json": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
-    "public/scene/gerlinger-east-detail.json": "86b2ef379efde7ae1d1c0f930a92ce8fc550b8fcdfa2014ff603b59360f78255",
+    "public/scene/gerlinger-east-detail.json": "db6f5c816dcd48ec46cb1f7bac00e6202abe56e9f2465584745ad9bdb87f9e8a",
     "public/scene/pilot-tree-216-suppression.json": "6e4a7c0b21d40673024e15c302b407a6905647fe39f4d07ef22186e1a1f68521",
     "public/scene/johnson-frieze-detail.json": "a8131e6d28594128d80b0dfc72e16821bce4fbf37f6294c374a46055c4e404a0",
     "public/scene/friendly-west-detail.json": "d8b439add6401343e891aa641fd4d12ae4aebe9a53bbc9cc99667f1bdcebdaba",
-    "public/scene/villard-east-detail.json": "2417f082ecb1916e2d90c3d4ac3a5d63487e739102b494cdd21335a53947513a",
-    "public/scene/university-hall-detail.json": "d085e34cb35e55ca0ee78522f0cccd0a91abdcfe0bdff45f124ccd4815df7a31",
+    "public/scene/villard-east-detail.json": "d9d6f9a63819636258a276a865f9a6636e3b6821d81608c31ec907003a12cdfb",
+    "public/scene/university-hall-detail.json": "d4af432a09a58a7a3d06e66d11f5f90c7c22cb87f3ba76b20050cfdf830f1b99",
     "public/scene/anstett-south-detail.json": "f5eac974a53e5df339d337ef8e96f9e6b8e41f41c8dd0ea5692905e02fb1ca5c",
     "public/scene/peterson-south-detail.json": "8ee390592f8136d570938614b2299becda65daeea7c0cb65435633ec5f633193",
-    "public/scene/tykeson-north-detail.json": "01bd8c5c4c57eba839f13f0a060052726bfbed5880095f09e43f0f8fd0bb91e1",
-    "public/scene/susan-roof-detail.json": "18e7fd09df9e10e01bece9b4bc1e32df414a80575de4f4569fb685dc36fd869a",
-    "public/scene/straub-west-detail.json": "ed818c21b223526e6ee86a789018c4e7ca36f9b0c301bd81fdf9189ce7927d30",
+    "public/scene/tykeson-north-detail.json": "83dc8689edf6656926631570d704c75b98612834a6ab4ed81897ebfcf30c395a",
+    "public/scene/susan-roof-detail.json": "0e303860273701f0e7bb2b0c31487116b774d607e5b76b02acb50876f525c14a",
+    "public/scene/straub-west-detail.json": "6ed3323de4f0811004546f4c2268a5038a7c872b3984fe3931626e6329359592",
     "public/scene/condon-east-detail.json": "cc930e202cc55e349858d817edc439a2e8cdf258f7e847429766104512a45ea8",
-    "public/scene/fenton-south-detail.json": "79e9de8bc8a5176d76d65037f476340b8c217bb7ffef5f92eb08e8f2f6b0af25",
+    "public/scene/fenton-south-detail.json": "b8db8f805d0fdb89327d52ebeaaded2dfe3c5316cce3557380884397572b15d4",
     "public/scene/chapman-west-detail.json": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009",
     "public/scene/oregon-south-detail.json": "de430768ce0a530ddc173e1ccda1a53aeca434a29e4e310c44a5123ea9e44cfa",
     "public/scene/oregon-planter-detail.json": "569ddbdf51a70f3ded2e5bbeca249a3f679295a3cb5b01bcb4083384c6605a61",
-    "public/scene/collier-house-detail.json": "5ddf7032c90127d7b14dd58a89f6b622e586da7aa15c0d746941cb0cbfd27820",
+    "public/scene/collier-house-detail.json": "ed690d87a7f1a3e980e7eb41262c52b32f491d106037eee643c11c842b176d77",
     "src/collision-supplement.js": "0835e48c9bb4650b005a1ebd0e326538c6e56008f29249be22a70dced4acd3ab",
     "public/scene/barn-solar-detail.json": "acc557fc53fbfba400f806bfa0268895a7764ab6777c79c9a1484089690ad6d7",
     "src/building-identities.js": "9177986f2bcfd6a0c64b0f22ececaf5eff6c0c577a6980b3b8aeb33fb5c3a7b5",
@@ -80,7 +93,7 @@
     "scripts/export-campus-props.mjs": "d0097f5f43eeae8a11f4701fc0d278061c3cd2dff10b07df2ee157bd0202c460",
     "public/scene/pilot-bench-back-suppression.json": "1792365814eed96132310063c77c86f949b440df0727c68be319ce328dad7c5f",
     "public/scene/pilot-bench-detail.json": "02066062919fefedc83918baef58803f2831949ea7204489e982e901f4eb1590",
-    "src/fern-geometry.js": "40416580b7473db0b09aa702788488a6b68a558e36421020176cf48ab093b403",
+    "src/fern-geometry.js": "b98702f061a8b6a9214a223d6e9f1d0db146135b544336fc89113079219a11b8",
     "public/scene/pilot-fern-suppression.json": "0c656af5beda0ee775f4aaf72dceb912d8267bc3fd7a9a91b35952fa6fed7020",
     "public/scene/pilot-fern-detail.json": "95ef0b4f7a6a78dedfc9fb41f788edafae7099e75295b8be1c7aca9f483cf247",
     "public/scene/pilot-plaza-plant-suppression.json": "141c23b27e9576afb22226cdb4d1e3c0587844e69956f746ab1830871c734f50",
@@ -103,7 +116,7 @@
     "public/scene/power-station-detail.json": "88a462f3370c3987ce7a213a34cd042aec27974178a31f60905ea95d741f5c8a",
     "public/scene/power-station-wall-color.json": "f09ca7e8ef79aaec2c618ef7db14851effee28626c0124f2ad5c6a2099456e61",
     "public/scene/pilot-bench-seat-suppression.json": "f121c5a0aad8f8cfdec09efd8ad6e88ee1662fd81d461fc00965ad01ddde5b74",
-    "src/canopy-tone.js": "6d988ef9197109f9fd4cdbbc14d5147ea4c4700ba2a14aa7c21cae065b06c654",
+    "src/canopy-tone.js": "8c00cb4567d403d4c1d6eb3198797f925677b41c5a85830fc40c5d085f4a1522",
     "public/scene/pilot-canopy-tone.json": "4dc679531a28159d9b50071664c71803c6b2429d8d25d9c5c367579327f49d9c",
     "public/scene/knight-law-west-detail.json": "12697fa75918de792f55296e3d17b58468aca787356baca14e5edf3d425f6d74",
     "public/scene/knight-law-wall-color.json": "02f27cc2e5a1bf05a6180520f34c084127ba4142a39a79da40c7f2d3777428a1",
@@ -111,6 +124,40 @@
     "public/scene/clinical-roof-slope.json": "0452756ad92eea89890fe5c9317d67de8eb9355e6de29dad70e87baef587eadc",
     "public/scene/cascade-wall-color.json": "3fec8e7060362b697000cdb822372979a8a35770b080490039f76779a53bfa6f",
     "public/scene/miller-west-detail.json": "d9f044363c86824a5fa7d81b5f8f5bfb973a9334c8f516a09bac613125c24038",
-    "public/scene/miller-wall-color.json": "6a30a8802936be2457abcfbc080f3b68f056692a46e286be2650abc92f4a4051"
+    "public/scene/miller-wall-color.json": "6a30a8802936be2457abcfbc080f3b68f056692a46e286be2650abc92f4a4051",
+    "public/scene/ford-alumni-detail.json": "bf955f1902674150ab0a56207fb4320cb87fdb5303869bf4c1d961d519210597",
+    "public/scene/jaqua-exterior-detail.json": "9c46a14374aec894538781a6bdf8fcdc2643d2694abda21fa207e79b8029ec7a",
+    "public/scene/knight-campus2-east-detail.json": "152f3951ec2c0202d80e442f7ab12f084cb573021a7b95b078e76020442f3f93",
+    "public/scene/lillis-south-detail.json": "640f6aa53ada651285baa2bc66d4b30e0aee1c3b7b8456a47bf0888cc0e6edef",
+    "public/scene/rec-east-detail.json": "96f3433f0dadd7a6a409ed547924632718512493e56f7e27fc67439fa72bccfa",
+    "public/scene/knight-campus1-south-detail.json": "992191c7eac72d123cb3032b147883f2245a4f87723b73c5e634c27c57974708",
+    "public/scene/hedco-wall-color.json": "a75df7867efdaf14ced06b446c5e18ef8f6179ef8babb78386f139fd8b4624d9",
+    "public/scene/hedco-exterior-detail.json": "f182f7f21b5825e3c7838439fac24e2a58f40123535d3a46249b5a4b5104d4f2",
+    "src/paving-joints.js": "26dc42db8019e842448a510bf3d6f21b2b0bbf8ec10f6bb65d9b9a892d8af706",
+    "public/scene/pilot-paving-joints.json": "db66412cdc7e38c5dd2ba4ed13f9478d3cdc32b73f7d8b8ba223c93bd75ec0da",
+    "src/lawn-tone.js": "4574393989dbfc1611fb57c1f451f60f6ebb0d18cd0eea8d0978a3d7dac45379",
+    "public/scene/pilot-lawn-tone.json": "8f10d4f4d0decc99eeaf9db92bab2229cd18ee361c9d8ceed83235343974d8ce",
+    "src/context-trunks.js": "578b3f887c042ab5f4e0850c6ed0225673c4d6584c2af3e860ff517fa5d949cb",
+    "public/scene/context-trunks.json": "8c8aeeb75893cdc44ed841bc9e7c8a12dde45dea1ee134677a0bca3cd77b9b1b",
+    "public/scene/unthank-west-detail.json": "63e7be27dc187e7ed0369afccf064e0ef44b8f30da9956c20252a2fa53156311",
+    "public/scene/arena-north-detail.json": "edb7292fdffce299ca02cdd1c97fe12b35c417c245dd36955bebfec4a1f82727",
+    "scripts/export-context-trees.mjs": "db0690b16710879d29da7fe43b9724a6d674c1d5c0c26ee2c0af5eca6e5b9f36",
+    "src/planting-variation.js": "6ff3286defc6bb2668029432996061c419733bbc76f39789ded942e16852cc18",
+    "scripts/export-pilot-shrubs.mjs": "f8267b6a08dac25dc5a2cae88521790a5f84f6066e21a051df673e76a28199bd",
+    "public/scene/pilot-shrub-variation.json": "6b9cb4806538988ea7c5aa4aca4689475fd0ce51dfea92c6a7937045d93505f4",
+    "scripts/export-pilot-benches.mjs": "00ad324965f7efaa850a719fccf0f363735b228012856a8d75b5ae948fa941be",
+    "src/batch-building-detail.js": "a876c2c17305a92d548b0185bdd893eef196fcbf2a5657e9089e1e371eba8905",
+    "public/scene/alder-north-provisional-detail.json": "c5ca71cad140c2e231b842572eb1ee6912aedfb48376f703b7e42bfd1ff935d3",
+    "public/scene/agate-west-provisional-detail.json": "2bd259d31ad36dc2fe706edef648d57f0f93d4860891370c1024d8cb0f59bae9",
+    "src/batch-palette.js": "1db84151551a45c4bf4ab5a995f0eb9a4823b6a4af502d0df59175599635e27e",
+    "public/scene/longhouse-batch-palette.json": "6f534d9f152d87aa6c07781aa09d4091ea35aa9ee9cbd86801a0a25348e9e184",
+    "public/scene/longhouse-south-provisional-detail.json": "0c964d54fa4949a2dc2f2deb2fe1f1222689adce2702adab241fe498bed7c421",
+    "public/scene/lokey-wall-color.json": "821f7d45910a78662a44c7dc722171ef5a49906a0ecb6480a7a3c8916c551538",
+    "src/context-trunk-variation.js": "3789c997f6081b0904dae79dfcdc892cc7fac60549b6ec04ffd1718f9567a8eb",
+    "public/scene/context-trunk-variation.json": "f602f06d34a8b67c6d76b69ed05295a2c62532219fb71e0d04fdcb053ed52561",
+    "scripts/export-context-trees-varied.mjs": "1d504e2b8e6e8cbc74d4d35a3524187f13dbb492c230d81caca1ef1927980b9b",
+    "src/cloud-volumes.js": "e95eb52eb99f442b2f43d45f97e4b194f3defdb68bcfb7431048bd46593e4e9a",
+    "scripts/export-rounded-clouds.mjs": "b7cbaffb596990c2bfd453a8b619aedeee4918398012bb4ca79704c4bc963597",
+    "src/source-triangle-patch.js": "a265055dce404316eb9261df5416cb4d0b15c2e180eecc8cf455503974dfef7c"
   }
 }

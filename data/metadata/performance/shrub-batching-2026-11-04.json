@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-04",
+  "scope": "local; headless Chrome, ANGLE SwiftShader, reduced motion and density zero; no hardware timing",
+  "before_presentation_sha256": "62a448554c85f6a517e0e1b6bc41c2f9c7eb166ee5bba00b11544d3830150907",
+  "after_presentation_sha256": "6cd17e235a43add5f3e6840b6c8f56922627bc5d4595352b73e944e1baa4d508",
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "source_details": {
+    "university-hall-detail.json": "d085e34cb35e55ca0ee78522f0cccd0a91abdcfe0bdff45f124ccd4815df7a31",
+    "villard-east-detail.json": "2417f082ecb1916e2d90c3d4ac3a5d63487e739102b494cdd21335a53947513a"
+  },
+  "views": {
+    "university": {
+      "before": {
+        "camera": [
+          -448,
+          6.1582,
+          -135
+        ],
+        "drawCalls": 109,
+        "triangles": 884259,
+        "blocked": false,
+        "mode": "first",
+        "errors": []
+      },
+      "after": {
+        "camera": [
+          -448,
+          6.1582,
+          -135
+        ],
+        "drawCalls": 109,
+        "triangles": 884899,
+        "blocked": false,
+        "mode": "first",
+        "errors": []
+      },
+      "pixels_changed": 0,
+      "max_channel_difference": 0,
+      "image_sha256": {
+        "before": "90678b54343872b98ec1bf7f651525a3448255cb043d92e069743ea621642fd5",
+        "after": "90678b54343872b98ec1bf7f651525a3448255cb043d92e069743ea621642fd5"
+      }
+    },
+    "villard": {
+      "before": {
+        "camera": [
+          -417,
+          6.1992,
+          -184
+        ],
+        "drawCalls": 24,
+        "triangles": 611968,
+        "blocked": false,
+        "mode": "first",
+        "errors": []
+      },
+      "after": {
+        "camera": [
+          -417,
+          6.1992,
+          -184
+        ],
+        "drawCalls": 24,
+        "triangles": 612288,
+        "blocked": false,
+        "mode": "first",
+        "errors": []
+      },
+      "pixels_changed": 0,
+      "max_channel_difference": 0,
+      "image_sha256": {
+        "before": "4a4740369adec48bb0fe9a2e3729e71f4747d658ede85f03eb030bd78db30bf6",
+        "after": "4a4740369adec48bb0fe9a2e3729e71f4747d658ede85f03eb030bd78db30bf6"
+      }
+    },
+    "south-edge": {
+      "before": {
+        "camera": [
+          -459,
+          6.168640000000001,
+          -92
+        ],
+        "drawCalls": 26,
+        "triangles": 736090,
+        "blocked": false,
+        "mode": "first",
+        "errors": []
+      },
+      "after": {
+        "camera": [
+          -459,
+          6.168640000000001,
+          -92
+        ],
+        "drawCalls": 25,
+        "triangles": 736090,
+        "blocked": false,
+        "mode": "first",
+        "errors": []
+      },
+      "pixels_changed": 0,
+      "max_channel_difference": 0,
+      "image_sha256": {
+        "before": "d8cc436b7c80727a3bd0b181678fa04969ff10152df4ad54470b91e26372e978",
+        "after": "d8cc436b7c80727a3bd0b181678fa04969ff10152df4ad54470b91e26372e978"
+      }
+    },
+    "far-alder": {
+      "before": {
+        "camera": [
+          -726,
+          5.72568,
+          225
+        ],
+        "drawCalls": 18,
+        "triangles": 615247,
+        "blocked": false,
+        "mode": "first",
+        "errors": []
+      },
+      "after": {
+        "camera": [
+          -726,
+          5.72568,
+          225
+        ],
+        "drawCalls": 18,
+        "triangles": 615247,
+        "blocked": false,
+        "mode": "first",
+        "errors": []
+      },
+      "pixels_changed": 0,
+      "max_channel_difference": 0,
+      "image_sha256": {
+        "before": "afc38e20e1d63c76764571cf57ea2a72075688243107c65fa9133b64433ec638",
+        "after": "afc38e20e1d63c76764571cf57ea2a72075688243107c65fa9133b64433ec638"
+      }
+    },
+    "pbr-university": {
+      "before": {
+        "drawCalls": 109,
+        "triangles": 884259,
+        "camera": [
+          -448,
+          6.1582,
+          -135
+        ]
+      },
+      "after": {
+        "drawCalls": 109,
+        "triangles": 884899,
+        "camera": [
+          -448,
+          6.1582,
+          -135
+        ]
+      },
+      "pixels_changed": 0,
+      "max_channel_difference": 0,
+      "image_sha256": {
+        "before": "01a8b78c21f45e18046e2a1339ce3c410e00903091b078cbfc2dd1d51a4e5303",
+        "after": "01a8b78c21f45e18046e2a1339ce3c410e00903091b078cbfc2dd1d51a4e5303"
+      }
+    },
+    "pbr-villard": {
+      "before": {
+        "drawCalls": 24,
+        "triangles": 611968,
+        "camera": [
+          -417,
+          6.1992,
+          -184
+        ]
+      },
+      "after": {
+        "drawCalls": 24,
+        "triangles": 612288,
+        "camera": [
+          -417,
+          6.1992,
+          -184
+        ]
+      },
+      "pixels_changed": 0,
+      "max_channel_difference": 0,
+      "image_sha256": {
+        "before": "3b7cff105905f6302a702a272cdc29d2db4ecd36ed59d1f59af85bfc229af18b",
+        "after": "3b7cff105905f6302a702a272cdc29d2db4ecd36ed59d1f59af85bfc229af18b"
+      }
+    },
+    "overview-1440": {
+      "before": {
+        "drawCalls": 179,
+        "triangles": 1038393,
+        "camera": [
+          -650,
+          455,
+          -310.00000000000006
+        ]
+      },
+      "after": {
+        "drawCalls": 178,
+        "triangles": 1038393,
+        "camera": [
+          -650,
+          455,
+          -310.00000000000006
+        ]
+      },
+      "pixels_changed": 0,
+      "max_channel_difference": 0,
+      "image_sha256": {
+        "before": "33eb848510501b432971b3ff80cfdc8fe157f5bba519bade631f5994ddd9c479",
+        "after": "33eb848510501b432971b3ff80cfdc8fe157f5bba519bade631f5994ddd9c479"
+      }
+    },
+    "pbr-south-edge": {
+      "before": {
+        "drawCalls": 26,
+        "triangles": 736090,
+        "camera": [
+          -459,
+          6.168640000000001,
+          -92
+        ]
+      },
+      "after": {
+        "drawCalls": 25,
+        "triangles": 736090,
+        "camera": [
+          -459,
+          6.168640000000001,
+          -92
+        ]
+      },
+      "pixels_changed": 0,
+      "max_channel_difference": 0,
+      "image_sha256": {
+        "before": "4aac52a4eab7d4a84af519e6b8c12cc7b8969125711de3df169b3d36646147aa",
+        "after": "4aac52a4eab7d4a84af519e6b8c12cc7b8969125711de3df169b3d36646147aa"
+      }
+    }
+  }
+}

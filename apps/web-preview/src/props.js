@@ -49,7 +49,45 @@ export function createCampusProp(kind = "car", color = 0x567a72, rider = null) {
     const van = kind === "van",
       suv = kind === "suv",
       pickup = kind === "pickup";
-    box(1.8, 0.65, van ? 4.7 : 4.2, 0, 0.7, 0, color);
+    {
+      // Keep existing outer bounds while giving the van and passenger vehicles
+      // a gently sloped hood. These are generic, unbranded silhouettes.
+      const profile = van
+        ? [
+            [-2.35, 0.375],
+            [2.35, 0.375],
+            [2.35, 0.88],
+            [1.22, 1.025],
+            [-2.35, 1.025],
+          ]
+        : [
+            [-2.1, 0.375],
+            [2.1, 0.375],
+            [2.1, 0.86],
+            [1.22, 1.025],
+            [-1.22, 1.025],
+            [-2.1, 0.86],
+          ];
+      const vertices = [];
+      const triangle = (a, b, c) => vertices.push(...a, ...b, ...c);
+      const vertex = (side, i) => [side * 0.9, profile[i][1], profile[i][0]];
+      for (let i = 1; i < profile.length - 1; i++) {
+        triangle(vertex(-1, 0), vertex(-1, i), vertex(-1, i + 1));
+        triangle(vertex(1, 0), vertex(1, i + 1), vertex(1, i));
+      }
+      for (let i = 0; i < profile.length; i++) {
+        const j = (i + 1) % profile.length;
+        triangle(vertex(-1, i), vertex(1, i), vertex(1, j));
+        triangle(vertex(-1, i), vertex(1, j), vertex(-1, j));
+      }
+      const body = new THREE.BufferGeometry();
+      body.setAttribute(
+        "position",
+        new THREE.Float32BufferAttribute(vertices, 3),
+      );
+      body.computeVertexNormals();
+      add(body, 0, 0, 0, color);
+    }
     box(
       1.6,
       van ? 1.35 : suv ? 1.05 : 0.7,

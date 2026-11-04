@@ -4,6 +4,7 @@ import {
   sampleGround,
   isBlocked,
   movePlayer,
+  movementFrameSeconds,
   startJump,
   stepVertical,
 } from "../src/world.js";
@@ -83,4 +84,35 @@ test("horizontal movement preserves airborne height when requested", () => {
   movePlayer(position, { x: 0.3, z: 0 }, [], 10, field, false);
   assert.equal(position.y, 50);
   assert.equal(position.x, 0.3);
+});
+
+test("slow-frame input is bounded, hidden-safe and retains swept collision", () => {
+  assert.equal(movementFrameSeconds(1 / 60, true), 1 / 60);
+  assert.equal(movementFrameSeconds(1, true), 0.25);
+  assert.equal(movementFrameSeconds(20, true), 0.25);
+  assert.equal(movementFrameSeconds(1, false), 0);
+  assert.equal(movementFrameSeconds(NaN, true), 0);
+  assert.equal(movementFrameSeconds(-1, true), 0);
+  const open = { x: 0, y: 0, z: 0 };
+  for (let i = 0; i < 6; i++)
+    movePlayer(
+      open,
+      { x: 4.6 * movementFrameSeconds(1, true), z: 0 },
+      [],
+      100,
+      field,
+      false,
+    );
+  assert.ok(open.x > 6);
+  const blocked = { x: 0, y: 0, z: 0 };
+  for (let i = 0; i < 6; i++)
+    movePlayer(
+      blocked,
+      { x: 4.6 * movementFrameSeconds(1, true), z: 0 },
+      buildings,
+      100,
+      field,
+      false,
+    );
+  assert.ok(blocked.x < 1.6);
 });

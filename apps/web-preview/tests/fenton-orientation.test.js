@@ -18,7 +18,7 @@ test("Fenton east entrance and west stacks remain pinned and selectable", () => 
   );
   assert.equal(d.building_id, "roof-4f0c798e");
   assert.equal(d.replace_building, false);
-  assert.equal(d.objects.length, 155);
+  assert.equal(d.objects.length, 195);
   assert.ok(
     d.objects.some(
       (x) =>

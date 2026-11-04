@@ -1,0 +1,7372 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-4f0c798e",
+  "replace_building": false,
+  "reference_ids": [],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/fentonhall2025",
+    "https://heritagedata.prd.state.or.us/historic/index.cfm?do=main.loadFile&load=56718.pdf"
+  ],
+  "note": "East entrance position informed by Oregon state archive masonry assessment and UO survey; south and west stacks windows illustrative. Entrances, terrain, current conditions and collision remain unverified. Entrance study uses UO survey: shallow brick arch surround, rectangular door frame and supported balustrade; dimensions and stairs remain unverified.",
+  "objects": [
+    {
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -435.83,
+        10.4,
+        -31.0
+      ],
+      "size": [
+        7.1,
+        14.3,
+        0.45
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.52,
+        10.45,
+        -27.5
+      ],
+      "size": [
+        0.28,
+        14.1,
+        0.22
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.52,
+        10.45,
+        -34.5
+      ],
+      "size": [
+        0.28,
+        14.1,
+        0.22
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.45,
+        17.55,
+        -31.0
+      ],
+      "size": [
+        7.4,
+        0.38,
+        0.25
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.45,
+        15.8,
+        -31.0
+      ],
+      "size": [
+        6.4,
+        0.16,
+        0.2
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "arch",
+      "position": [
+        -435.38,
+        7.3,
+        -31.0
+      ],
+      "size": [
+        4.1,
+        6.5,
+        0.22
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "brick",
+      "shape": "arch",
+      "position": [
+        -435.22,
+        7.18,
+        -31.0
+      ],
+      "size": [
+        3.5,
+        6.1,
+        0.12
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        -435.1,
+        6.55,
+        -31.0
+      ],
+      "size": [
+        2.6,
+        4.5,
+        0.13
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.0,
+        6.55,
+        -31.0
+      ],
+      "size": [
+        0.1,
+        4.5,
+        0.05
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -434.99,
+        7.3,
+        -30.35
+      ],
+      "size": [
+        1.0,
+        1.8,
+        0.05
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -434.99,
+        7.3,
+        -31.65
+      ],
+      "size": [
+        1.0,
+        1.8,
+        0.05
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.43,
+        13.2,
+        -31.0
+      ],
+      "size": [
+        5.2,
+        2.1,
+        0.18
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -435.3,
+        13.2,
+        -31.0
+      ],
+      "size": [
+        4.8,
+        1.8,
+        0.1
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.23,
+        13.2,
+        -29.5
+      ],
+      "size": [
+        0.09,
+        1.8,
+        0.05
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.23,
+        13.2,
+        -30.5
+      ],
+      "size": [
+        0.09,
+        1.8,
+        0.05
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.23,
+        13.2,
+        -31.5
+      ],
+      "size": [
+        0.09,
+        1.8,
+        0.05
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.23,
+        13.2,
+        -32.5
+      ],
+      "size": [
+        0.09,
+        1.8,
+        0.05
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "shrub",
+      "shape": "shrub",
+      "position": [
+        -455,
+        3.68,
+        -14
+      ],
+      "size": [
+        0.8,
+        0.65,
+        0.8
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "shrub",
+      "shape": "shrub",
+      "position": [
+        -454,
+        3.68,
+        -13.7
+      ],
+      "size": [
+        0.8,
+        0.65,
+        0.8
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "shrub",
+      "shape": "shrub",
+      "position": [
+        -444,
+        3.68,
+        -14
+      ],
+      "size": [
+        0.8,
+        0.65,
+        0.8
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -478.43,
+        10.55,
+        -31
+      ],
+      "size": [
+        0.38,
+        15.4,
+        6.6
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -470.5,
+        10.55,
+        -25.85
+      ],
+      "size": [
+        8.8,
+        15.4,
+        0.4
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -470.5,
+        18.15,
+        -25.6
+      ],
+      "size": [
+        9,
+        0.3,
+        0.2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        4.45,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -473.5,
+        4.45,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        4.45,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        4.45,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        7.25,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -473.5,
+        7.25,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        7.25,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        7.25,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        10.05,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -473.5,
+        10.05,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        10.05,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        10.05,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        12.85,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -473.5,
+        12.85,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        12.85,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        12.85,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        15.65,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -473.5,
+        15.65,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        15.65,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -473.5,
+        15.65,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        4.45,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -471.5,
+        4.45,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        4.45,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        4.45,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        7.25,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -471.5,
+        7.25,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        7.25,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        7.25,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        10.05,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -471.5,
+        10.05,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        10.05,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        10.05,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        12.85,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -471.5,
+        12.85,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        12.85,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        12.85,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        15.65,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -471.5,
+        15.65,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        15.65,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -471.5,
+        15.65,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        4.45,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -469.5,
+        4.45,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        4.45,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        4.45,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        7.25,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -469.5,
+        7.25,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        7.25,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        7.25,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        10.05,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -469.5,
+        10.05,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        10.05,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        10.05,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        12.85,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -469.5,
+        12.85,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        12.85,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        12.85,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        15.65,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -469.5,
+        15.65,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        15.65,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -469.5,
+        15.65,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        4.45,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -467.5,
+        4.45,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        4.45,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        4.45,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        7.25,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -467.5,
+        7.25,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        7.25,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        7.25,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        10.05,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -467.5,
+        10.05,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        10.05,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        10.05,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        12.85,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -467.5,
+        12.85,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        12.85,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        12.85,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        15.65,
+        -25.57
+      ],
+      "size": [
+        1.45,
+        1.85,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -467.5,
+        15.65,
+        -25.45
+      ],
+      "size": [
+        1.18,
+        1.58,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        15.65,
+        -25.39
+      ],
+      "size": [
+        0.055,
+        1.58,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -467.5,
+        15.65,
+        -25.38
+      ],
+      "size": [
+        1.18,
+        0.055,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.71,
+        18.15,
+        -31
+      ],
+      "size": [
+        0.25,
+        0.3,
+        7.5
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        4.45,
+        -32.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        4.45,
+        -32.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        4.45,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        4.45,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        7.25,
+        -32.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        7.25,
+        -32.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        7.25,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        7.25,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        10.05,
+        -32.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        10.05,
+        -32.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        10.05,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        10.05,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        12.85,
+        -32.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        12.85,
+        -32.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        12.85,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        12.85,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        15.65,
+        -32.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        15.65,
+        -32.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        15.65,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        15.65,
+        -32.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        4.45,
+        -29.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        4.45,
+        -29.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        4.45,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        4.45,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        7.25,
+        -29.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        7.25,
+        -29.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        7.25,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        7.25,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        10.05,
+        -29.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        10.05,
+        -29.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        10.05,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        10.05,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        12.85,
+        -29.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        12.85,
+        -29.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        12.85,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        12.85,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.69,
+        15.65,
+        -29.5
+      ],
+      "size": [
+        0.18,
+        1.85,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -478.81,
+        15.65,
+        -29.5
+      ],
+      "size": [
+        0.08,
+        1.58,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.87,
+        15.65,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        1.58,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -478.88,
+        15.65,
+        -29.5
+      ],
+      "size": [
+        0.05,
+        0.055,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.93,
+        -31
+      ],
+      "size": [
+        0.18,
+        0.12,
+        6.6
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.3,
+        -31
+      ],
+      "size": [
+        0.18,
+        0.12,
+        6.6
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.61,
+        -34
+      ],
+      "size": [
+        0.12,
+        0.56,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.61,
+        -33
+      ],
+      "size": [
+        0.12,
+        0.56,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.61,
+        -32
+      ],
+      "size": [
+        0.12,
+        0.56,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.61,
+        -31
+      ],
+      "size": [
+        0.12,
+        0.56,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.61,
+        -30
+      ],
+      "size": [
+        0.12,
+        0.56,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.61,
+        -29
+      ],
+      "size": [
+        0.12,
+        0.56,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.61,
+        -28
+      ],
+      "size": [
+        0.12,
+        0.56,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.64,
+        -34.35
+      ],
+      "size": [
+        0.35,
+        0.75,
+        0.35
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.55,
+        18.64,
+        -27.65
+      ],
+      "size": [
+        0.35,
+        0.75,
+        0.35
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.53,
+        17.99,
+        -31
+      ],
+      "size": [
+        0.9,
+        0.5,
+        7.15
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -434.95,
+        8.91,
+        -31
+      ],
+      "size": [
+        0.12,
+        0.19,
+        2.95
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -434.95,
+        6.6,
+        -32.43
+      ],
+      "size": [
+        0.12,
+        4.58,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -434.95,
+        6.6,
+        -29.57
+      ],
+      "size": [
+        0.12,
+        4.58,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "arch-x",
+      "material": "stone",
+      "position": [
+        -437.82,
+        8,
+        -25.6
+      ],
+      "size": [
+        0.15,
+        2.8,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "arch-x",
+      "material": "glass",
+      "position": [
+        -437.71,
+        8,
+        -25.6
+      ],
+      "size": [
+        0.08,
+        2.5,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.65,
+        8,
+        -25.6
+      ],
+      "size": [
+        0.05,
+        2.3,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.64,
+        7.8,
+        -25.6
+      ],
+      "size": [
+        0.05,
+        0.06,
+        1.15
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.82,
+        12.7,
+        -25.6
+      ],
+      "size": [
+        0.15,
+        2.8,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "glass",
+      "position": [
+        -437.71,
+        12.7,
+        -25.6
+      ],
+      "size": [
+        0.08,
+        2.5,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.65,
+        12.7,
+        -25.6
+      ],
+      "size": [
+        0.05,
+        2.3,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.64,
+        12.5,
+        -25.6
+      ],
+      "size": [
+        0.05,
+        0.06,
+        1.15
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "arch-x",
+      "material": "stone",
+      "position": [
+        -437.82,
+        8,
+        -23.4
+      ],
+      "size": [
+        0.15,
+        2.8,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "arch-x",
+      "material": "glass",
+      "position": [
+        -437.71,
+        8,
+        -23.4
+      ],
+      "size": [
+        0.08,
+        2.5,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.65,
+        8,
+        -23.4
+      ],
+      "size": [
+        0.05,
+        2.3,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.64,
+        7.8,
+        -23.4
+      ],
+      "size": [
+        0.05,
+        0.06,
+        1.15
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.82,
+        12.7,
+        -23.4
+      ],
+      "size": [
+        0.15,
+        2.8,
+        1.45
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "glass",
+      "position": [
+        -437.71,
+        12.7,
+        -23.4
+      ],
+      "size": [
+        0.08,
+        2.5,
+        1.18
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.65,
+        12.7,
+        -23.4
+      ],
+      "size": [
+        0.05,
+        2.3,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -437.64,
+        12.5,
+        -23.4
+      ],
+      "size": [
+        0.05,
+        0.06,
+        1.15
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "arch-x",
+      "material": "stone",
+      "position": [
+        -439.23,
+        8,
+        -38
+      ],
+      "size": [
+        0.15,
+        2.8,
+        1.45
+      ],
+      "rotation": [
+        0,
+        0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "arch-x",
+      "material": "glass",
+      "position": [
+        -439.12,
+        8,
+        -38
+      ],
+      "size": [
+        0.08,
+        2.5,
+        1.18
+      ],
+      "rotation": [
+        0,
+        0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.06,
+        8,
+        -38
+      ],
+      "size": [
+        0.05,
+        2.3,
+        0.06
+      ],
+      "rotation": [
+        0,
+        0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.05,
+        7.8,
+        -38
+      ],
+      "size": [
+        0.05,
+        0.06,
+        1.15
+      ],
+      "rotation": [
+        0,
+        0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.23,
+        12.7,
+        -38
+      ],
+      "size": [
+        0.15,
+        2.8,
+        1.45
+      ],
+      "rotation": [
+        0,
+        0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "glass",
+      "position": [
+        -439.12,
+        12.7,
+        -38
+      ],
+      "size": [
+        0.08,
+        2.5,
+        1.18
+      ],
+      "rotation": [
+        0,
+        0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.06,
+        12.7,
+        -38
+      ],
+      "size": [
+        0.05,
+        2.3,
+        0.06
+      ],
+      "rotation": [
+        0,
+        0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.05,
+        12.5,
+        -38
+      ],
+      "size": [
+        0.05,
+        0.06,
+        1.15
+      ],
+      "rotation": [
+        0,
+        0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "arch-x",
+      "material": "stone",
+      "position": [
+        -439.23,
+        8,
+        -42
+      ],
+      "size": [
+        0.15,
+        2.8,
+        1.45
+      ],
+      "rotation": [
+        0,
+        -0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "arch-x",
+      "material": "glass",
+      "position": [
+        -439.12,
+        8,
+        -42
+      ],
+      "size": [
+        0.08,
+        2.5,
+        1.18
+      ],
+      "rotation": [
+        0,
+        -0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.06,
+        8,
+        -42
+      ],
+      "size": [
+        0.05,
+        2.3,
+        0.06
+      ],
+      "rotation": [
+        0,
+        -0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.05,
+        7.8,
+        -42
+      ],
+      "size": [
+        0.05,
+        0.06,
+        1.15
+      ],
+      "rotation": [
+        0,
+        -0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.23,
+        12.7,
+        -42
+      ],
+      "size": [
+        0.15,
+        2.8,
+        1.45
+      ],
+      "rotation": [
+        0,
+        -0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "glass",
+      "position": [
+        -439.12,
+        12.7,
+        -42
+      ],
+      "size": [
+        0.08,
+        2.5,
+        1.18
+      ],
+      "rotation": [
+        0,
+        -0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.06,
+        12.7,
+        -42
+      ],
+      "size": [
+        0.05,
+        2.3,
+        0.06
+      ],
+      "rotation": [
+        0,
+        -0.245,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -439.05,
+        12.5,
+        -42
+      ],
+      "size": [
+        0.05,
+        0.06,
+        1.15
+      ],
+      "rotation": [
+        0,
+        -0.245,
+        0
+      ]
+    }
+  ],
+  "source_triangle_patch": {
+    "vertex_count": 2448,
+    "triangle_count": 1244,
+    "triangles": [
+      [
+        908,
+        1776,
+        1777,
+        1778
+      ],
+      [
+        909,
+        1776,
+        1778,
+        1779
+      ],
+      [
+        910,
+        1780,
+        1781,
+        1782
+      ],
+      [
+        911,
+        1780,
+        1782,
+        1783
+      ],
+      [
+        912,
+        1784,
+        1785,
+        1786
+      ],
+      [
+        913,
+        1784,
+        1786,
+        1787
+      ],
+      [
+        914,
+        1788,
+        1789,
+        1790
+      ],
+      [
+        915,
+        1788,
+        1790,
+        1791
+      ],
+      [
+        916,
+        1792,
+        1793,
+        1794
+      ],
+      [
+        917,
+        1792,
+        1794,
+        1795
+      ],
+      [
+        918,
+        1796,
+        1797,
+        1798
+      ],
+      [
+        919,
+        1796,
+        1798,
+        1799
+      ],
+      [
+        920,
+        1800,
+        1801,
+        1802
+      ],
+      [
+        921,
+        1800,
+        1802,
+        1803
+      ],
+      [
+        922,
+        1804,
+        1805,
+        1806
+      ],
+      [
+        923,
+        1804,
+        1806,
+        1807
+      ],
+      [
+        924,
+        1808,
+        1811,
+        1810
+      ],
+      [
+        925,
+        1808,
+        1810,
+        1809
+      ],
+      [
+        926,
+        1812,
+        1813,
+        1814
+      ],
+      [
+        927,
+        1812,
+        1814,
+        1815
+      ],
+      [
+        928,
+        1816,
+        1817,
+        1818
+      ],
+      [
+        929,
+        1816,
+        1818,
+        1819
+      ],
+      [
+        930,
+        1820,
+        1821,
+        1822
+      ],
+      [
+        931,
+        1820,
+        1822,
+        1823
+      ],
+      [
+        932,
+        1824,
+        1825,
+        1826
+      ],
+      [
+        933,
+        1824,
+        1826,
+        1827
+      ],
+      [
+        934,
+        1828,
+        1829,
+        1830
+      ],
+      [
+        935,
+        1828,
+        1830,
+        1831
+      ],
+      [
+        936,
+        1832,
+        1833,
+        1834
+      ],
+      [
+        937,
+        1832,
+        1834,
+        1835
+      ],
+      [
+        938,
+        1836,
+        1837,
+        1838
+      ],
+      [
+        939,
+        1836,
+        1838,
+        1839
+      ],
+      [
+        940,
+        1840,
+        1841,
+        1842
+      ],
+      [
+        941,
+        1840,
+        1842,
+        1843
+      ],
+      [
+        942,
+        1844,
+        1845,
+        1846
+      ],
+      [
+        943,
+        1844,
+        1846,
+        1847
+      ],
+      [
+        980,
+        1920,
+        1923,
+        1922
+      ],
+      [
+        981,
+        1920,
+        1922,
+        1921
+      ],
+      [
+        982,
+        1924,
+        1927,
+        1926
+      ],
+      [
+        983,
+        1924,
+        1926,
+        1925
+      ],
+      [
+        984,
+        1928,
+        1929,
+        1930
+      ],
+      [
+        985,
+        1928,
+        1930,
+        1931
+      ],
+      [
+        986,
+        1932,
+        1933,
+        1934
+      ],
+      [
+        987,
+        1932,
+        1934,
+        1935
+      ],
+      [
+        988,
+        1936,
+        1939,
+        1938
+      ],
+      [
+        989,
+        1936,
+        1938,
+        1937
+      ],
+      [
+        990,
+        1940,
+        1941,
+        1942
+      ],
+      [
+        991,
+        1940,
+        1942,
+        1943
+      ],
+      [
+        992,
+        1944,
+        1947,
+        1946
+      ],
+      [
+        993,
+        1944,
+        1946,
+        1945
+      ],
+      [
+        994,
+        1948,
+        1949,
+        1950
+      ],
+      [
+        995,
+        1948,
+        1950,
+        1951
+      ],
+      [
+        996,
+        1952,
+        1953,
+        1954
+      ],
+      [
+        997,
+        1952,
+        1954,
+        1955
+      ],
+      [
+        998,
+        1956,
+        1959,
+        1958
+      ],
+      [
+        999,
+        1956,
+        1958,
+        1957
+      ],
+      [
+        1000,
+        1960,
+        1963,
+        1962
+      ],
+      [
+        1001,
+        1960,
+        1962,
+        1961
+      ],
+      [
+        1002,
+        1964,
+        1967,
+        1966
+      ],
+      [
+        1003,
+        1964,
+        1966,
+        1965
+      ],
+      [
+        1004,
+        1968,
+        1969,
+        1970
+      ],
+      [
+        1005,
+        1968,
+        1970,
+        1971
+      ],
+      [
+        1006,
+        1972,
+        1975,
+        1974
+      ],
+      [
+        1007,
+        1972,
+        1974,
+        1973
+      ],
+      [
+        1008,
+        1976,
+        1977,
+        1978
+      ],
+      [
+        1009,
+        1976,
+        1978,
+        1979
+      ],
+      [
+        1010,
+        1980,
+        1983,
+        1982
+      ],
+      [
+        1011,
+        1980,
+        1982,
+        1981
+      ],
+      [
+        1012,
+        1984,
+        1987,
+        1986
+      ],
+      [
+        1013,
+        1984,
+        1986,
+        1985
+      ],
+      [
+        1014,
+        1988,
+        1991,
+        1990
+      ],
+      [
+        1015,
+        1988,
+        1990,
+        1989
+      ],
+      [
+        1016,
+        1992,
+        1995,
+        1994
+      ],
+      [
+        1017,
+        1992,
+        1994,
+        1993
+      ],
+      [
+        1018,
+        1996,
+        1997,
+        1998
+      ],
+      [
+        1019,
+        1996,
+        1998,
+        1999
+      ],
+      [
+        1020,
+        2000,
+        2001,
+        2002
+      ],
+      [
+        1021,
+        2000,
+        2002,
+        2003
+      ],
+      [
+        1022,
+        2004,
+        2007,
+        2006
+      ],
+      [
+        1023,
+        2004,
+        2006,
+        2005
+      ],
+      [
+        1024,
+        2008,
+        2009,
+        2010
+      ],
+      [
+        1025,
+        2008,
+        2010,
+        2011
+      ],
+      [
+        1026,
+        2012,
+        2015,
+        2014
+      ],
+      [
+        1027,
+        2012,
+        2014,
+        2013
+      ],
+      [
+        1028,
+        2016,
+        2019,
+        2018
+      ],
+      [
+        1029,
+        2016,
+        2018,
+        2017
+      ],
+      [
+        1030,
+        2020,
+        2021,
+        2022
+      ],
+      [
+        1031,
+        2020,
+        2022,
+        2023
+      ],
+      [
+        1032,
+        2024,
+        2025,
+        2026
+      ],
+      [
+        1033,
+        2024,
+        2026,
+        2027
+      ],
+      [
+        1034,
+        2028,
+        2029,
+        2030
+      ],
+      [
+        1035,
+        2028,
+        2030,
+        2031
+      ],
+      [
+        1036,
+        2032,
+        2033,
+        2034
+      ],
+      [
+        1037,
+        2032,
+        2034,
+        2035
+      ],
+      [
+        1038,
+        2036,
+        2037,
+        2038
+      ],
+      [
+        1039,
+        2036,
+        2038,
+        2039
+      ],
+      [
+        1040,
+        2040,
+        2043,
+        2042
+      ],
+      [
+        1041,
+        2040,
+        2042,
+        2041
+      ],
+      [
+        1042,
+        2044,
+        2045,
+        2046
+      ],
+      [
+        1043,
+        2044,
+        2046,
+        2047
+      ],
+      [
+        1044,
+        2048,
+        2049,
+        2050
+      ],
+      [
+        1045,
+        2048,
+        2050,
+        2051
+      ],
+      [
+        1046,
+        2052,
+        2053,
+        2054
+      ],
+      [
+        1047,
+        2052,
+        2054,
+        2055
+      ],
+      [
+        1048,
+        2056,
+        2057,
+        2058
+      ],
+      [
+        1049,
+        2056,
+        2058,
+        2059
+      ],
+      [
+        1050,
+        2060,
+        2061,
+        2062
+      ],
+      [
+        1051,
+        2060,
+        2062,
+        2063
+      ],
+      [
+        1052,
+        2064,
+        2065,
+        2066
+      ],
+      [
+        1053,
+        2064,
+        2066,
+        2067
+      ],
+      [
+        1054,
+        2068,
+        2069,
+        2070
+      ],
+      [
+        1055,
+        2068,
+        2070,
+        2071
+      ],
+      [
+        1056,
+        2072,
+        2073,
+        2074
+      ],
+      [
+        1057,
+        2072,
+        2074,
+        2075
+      ],
+      [
+        1058,
+        2076,
+        2079,
+        2078
+      ],
+      [
+        1059,
+        2076,
+        2078,
+        2077
+      ],
+      [
+        1060,
+        2080,
+        2081,
+        2082
+      ],
+      [
+        1061,
+        2080,
+        2082,
+        2083
+      ],
+      [
+        1062,
+        2084,
+        2087,
+        2086
+      ],
+      [
+        1063,
+        2084,
+        2086,
+        2085
+      ],
+      [
+        1064,
+        2088,
+        2091,
+        2090
+      ],
+      [
+        1065,
+        2088,
+        2090,
+        2089
+      ],
+      [
+        1066,
+        2092,
+        2095,
+        2094
+      ],
+      [
+        1067,
+        2092,
+        2094,
+        2093
+      ],
+      [
+        1068,
+        2096,
+        2097,
+        2098
+      ],
+      [
+        1069,
+        2096,
+        2098,
+        2099
+      ],
+      [
+        1070,
+        2100,
+        2101,
+        2102
+      ],
+      [
+        1071,
+        2100,
+        2102,
+        2103
+      ],
+      [
+        1072,
+        2104,
+        2105,
+        2106
+      ],
+      [
+        1073,
+        2104,
+        2106,
+        2107
+      ],
+      [
+        1074,
+        2108,
+        2109,
+        2110
+      ],
+      [
+        1075,
+        2108,
+        2110,
+        2111
+      ],
+      [
+        1076,
+        2112,
+        2115,
+        2114
+      ],
+      [
+        1077,
+        2112,
+        2114,
+        2113
+      ],
+      [
+        1078,
+        2116,
+        2117,
+        2118
+      ],
+      [
+        1079,
+        2116,
+        2118,
+        2119
+      ],
+      [
+        1080,
+        2120,
+        2121,
+        2122
+      ],
+      [
+        1081,
+        2120,
+        2122,
+        2123
+      ],
+      [
+        1082,
+        2124,
+        2125,
+        2126
+      ],
+      [
+        1083,
+        2124,
+        2126,
+        2127
+      ],
+      [
+        1084,
+        2128,
+        2129,
+        2130
+      ],
+      [
+        1085,
+        2128,
+        2130,
+        2131
+      ],
+      [
+        1086,
+        2132,
+        2133,
+        2134
+      ],
+      [
+        1087,
+        2132,
+        2134,
+        2135
+      ]
+    ],
+    "vertices": [
+      [
+        1776,
+        -437.9200134277344,
+        3.7848000526428223,
+        -23.34000015258789,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1777,
+        -437.9200134277344,
+        3.7848000526428223,
+        -25.65999984741211,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1778,
+        -437.9200134277344,
+        6.1631999015808105,
+        -25.65999984741211,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1779,
+        -437.9200134277344,
+        6.1631999015808105,
+        -23.34000015258789,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1780,
+        -437.8999938964844,
+        3.9047999382019043,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1781,
+        -437.8999938964844,
+        3.9047999382019043,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1782,
+        -437.8999938964844,
+        6.0432000160217285,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1783,
+        -437.8999938964844,
+        6.0432000160217285,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1784,
+        -437.8800048828125,
+        3.9047999382019043,
+        -24.469999313354492,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1785,
+        -437.8800048828125,
+        3.9047999382019043,
+        -24.530000686645508,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1786,
+        -437.8800048828125,
+        6.0432000160217285,
+        -24.530000686645508,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1787,
+        -437.8800048828125,
+        6.0432000160217285,
+        -24.469999313354492,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1788,
+        -437.875,
+        4.411900043487549,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1789,
+        -437.875,
+        4.411900043487549,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1790,
+        -437.875,
+        4.466899871826172,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1791,
+        -437.875,
+        4.466899871826172,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1792,
+        -437.875,
+        4.946499824523926,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1793,
+        -437.875,
+        4.946499824523926,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1794,
+        -437.875,
+        5.001500129699707,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1795,
+        -437.875,
+        5.001500129699707,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1796,
+        -437.875,
+        5.481100082397461,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1797,
+        -437.875,
+        5.481100082397461,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1798,
+        -437.875,
+        5.536099910736084,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1799,
+        -437.875,
+        5.536099910736084,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1800,
+        -437.9200134277344,
+        7.744800090789795,
+        -23.34000015258789,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1801,
+        -437.9200134277344,
+        7.744800090789795,
+        -25.65999984741211,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1802,
+        -437.9200134277344,
+        10.123200416564941,
+        -25.65999984741211,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1803,
+        -437.9200134277344,
+        10.123200416564941,
+        -23.34000015258789,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1804,
+        -437.8999938964844,
+        7.864799976348877,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1805,
+        -437.8999938964844,
+        7.864799976348877,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1806,
+        -437.8999938964844,
+        10.003199577331543,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1807,
+        -437.8999938964844,
+        10.003199577331543,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1808,
+        -437.8800048828125,
+        7.864799976348877,
+        -24.469999313354492,
+        -1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1809,
+        -437.8800048828125,
+        7.864799976348877,
+        -24.530000686645508,
+        -1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1810,
+        -437.8800048828125,
+        10.003199577331543,
+        -24.530000686645508,
+        -1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1811,
+        -437.8800048828125,
+        10.003199577331543,
+        -24.469999313354492,
+        -1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1812,
+        -437.875,
+        8.371899604797363,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1813,
+        -437.875,
+        8.371899604797363,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1814,
+        -437.875,
+        8.426899909973145,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1815,
+        -437.875,
+        8.426899909973145,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1816,
+        -437.875,
+        8.906499862670898,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1817,
+        -437.875,
+        8.906499862670898,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1818,
+        -437.875,
+        8.96150016784668,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1819,
+        -437.875,
+        8.96150016784668,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1820,
+        -437.875,
+        9.441100120544434,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1821,
+        -437.875,
+        9.441100120544434,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1822,
+        -437.875,
+        9.496100425720215,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1823,
+        -437.875,
+        9.496100425720215,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1824,
+        -437.9200134277344,
+        11.70479965209961,
+        -23.34000015258789,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1825,
+        -437.9200134277344,
+        11.70479965209961,
+        -25.65999984741211,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1826,
+        -437.9200134277344,
+        14.083200454711914,
+        -25.65999984741211,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1827,
+        -437.9200134277344,
+        14.083200454711914,
+        -23.34000015258789,
+        1.0,
+        0.0,
+        0.0,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1828,
+        -437.8999938964844,
+        11.824799537658691,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1829,
+        -437.8999938964844,
+        11.824799537658691,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1830,
+        -437.8999938964844,
+        13.963199615478516,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1831,
+        -437.8999938964844,
+        13.963199615478516,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1832,
+        -437.8800048828125,
+        11.824799537658691,
+        -24.469999313354492,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1833,
+        -437.8800048828125,
+        11.824799537658691,
+        -24.530000686645508,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1834,
+        -437.8800048828125,
+        13.963199615478516,
+        -24.530000686645508,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1835,
+        -437.8800048828125,
+        13.963199615478516,
+        -24.469999313354492,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1836,
+        -437.875,
+        12.331899642944336,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1837,
+        -437.875,
+        12.331899642944336,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1838,
+        -437.875,
+        12.386899948120117,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1839,
+        -437.875,
+        12.386899948120117,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1840,
+        -437.875,
+        12.866499900817871,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1841,
+        -437.875,
+        12.866499900817871,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1842,
+        -437.875,
+        12.921500205993652,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1843,
+        -437.875,
+        12.921500205993652,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1844,
+        -437.875,
+        13.401100158691406,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1845,
+        -437.875,
+        13.401100158691406,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1846,
+        -437.875,
+        13.456100463867188,
+        -25.549999237060547,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1847,
+        -437.875,
+        13.456100463867188,
+        -23.450000762939453,
+        1.0,
+        0.0,
+        0.0,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1920,
+        -436.7190856933594,
+        3.7848000526428223,
+        -34.57554626464844,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1921,
+        -438.192138671875,
+        3.7848000526428223,
+        -35.55758285522461,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1922,
+        -438.192138671875,
+        6.1631999015808105,
+        -35.55758285522461,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1923,
+        -436.7190856933594,
+        6.1631999015808105,
+        -34.57554626464844,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1924,
+        -436.7995300292969,
+        3.9047999382019043,
+        -34.65320587158203,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1925,
+        -438.08953857421875,
+        3.9047999382019043,
+        -35.513206481933594,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1926,
+        -438.08953857421875,
+        6.0432000160217285,
+        -35.513206481933594,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1927,
+        -436.7995300292969,
+        6.0432000160217285,
+        -34.65320587158203,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1928,
+        -437.4084777832031,
+        3.9047999382019043,
+        -35.08320617675781,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1929,
+        -437.4584045410156,
+        3.9047999382019043,
+        -35.116485595703125,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1930,
+        -437.4584045410156,
+        6.0432000160217285,
+        -35.116485595703125,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1931,
+        -437.4084777832031,
+        6.0432000160217285,
+        -35.08320617675781,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1932,
+        -436.7856750488281,
+        4.411900043487549,
+        -34.674007415771484,
+        0.55472332239151,
+        0.0,
+        -0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1933,
+        -438.0756530761719,
+        4.411900043487549,
+        -35.53400802612305,
+        0.55472332239151,
+        0.0,
+        -0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1934,
+        -438.0756530761719,
+        4.466899871826172,
+        -35.53400802612305,
+        0.55472332239151,
+        0.0,
+        -0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1935,
+        -436.7856750488281,
+        4.466899871826172,
+        -34.674007415771484,
+        0.55472332239151,
+        0.0,
+        -0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1936,
+        -436.7856750488281,
+        4.946499824523926,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1937,
+        -438.0756530761719,
+        4.946499824523926,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1938,
+        -438.0756530761719,
+        5.001500129699707,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1939,
+        -436.7856750488281,
+        5.001500129699707,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1940,
+        -436.7856750488281,
+        5.481100082397461,
+        -34.674007415771484,
+        0.55472332239151,
+        0.0,
+        -0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1941,
+        -438.0756530761719,
+        5.481100082397461,
+        -35.53400802612305,
+        0.55472332239151,
+        0.0,
+        -0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1942,
+        -438.0756530761719,
+        5.536099910736084,
+        -35.53400802612305,
+        0.55472332239151,
+        0.0,
+        -0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1943,
+        -436.7856750488281,
+        5.536099910736084,
+        -34.674007415771484,
+        0.55472332239151,
+        0.0,
+        -0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1944,
+        -436.7190856933594,
+        7.744800090789795,
+        -34.57554626464844,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1945,
+        -438.192138671875,
+        7.744800090789795,
+        -35.55758285522461,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1946,
+        -438.192138671875,
+        10.123200416564941,
+        -35.55758285522461,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1947,
+        -436.7190856933594,
+        10.123200416564941,
+        -34.57554626464844,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1948,
+        -436.7995300292969,
+        7.864799976348877,
+        -34.65320587158203,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1949,
+        -438.08953857421875,
+        7.864799976348877,
+        -35.513206481933594,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1950,
+        -438.08953857421875,
+        10.003199577331543,
+        -35.513206481933594,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1951,
+        -436.7995300292969,
+        10.003199577331543,
+        -34.65320587158203,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1952,
+        -437.4084777832031,
+        7.864799976348877,
+        -35.08320617675781,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1953,
+        -437.4584045410156,
+        7.864799976348877,
+        -35.116485595703125,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1954,
+        -437.4584045410156,
+        10.003199577331543,
+        -35.116485595703125,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1955,
+        -437.4084777832031,
+        10.003199577331543,
+        -35.08320617675781,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1956,
+        -436.7856750488281,
+        8.371899604797363,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1957,
+        -438.0756530761719,
+        8.371899604797363,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1958,
+        -438.0756530761719,
+        8.426899909973145,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1959,
+        -436.7856750488281,
+        8.426899909973145,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1960,
+        -436.7856750488281,
+        8.906499862670898,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1961,
+        -438.0756530761719,
+        8.906499862670898,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1962,
+        -438.0756530761719,
+        8.96150016784668,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1963,
+        -436.7856750488281,
+        8.96150016784668,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1964,
+        -436.7856750488281,
+        9.441100120544434,
+        -34.674007415771484,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1965,
+        -438.0756530761719,
+        9.441100120544434,
+        -35.53400802612305,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1966,
+        -438.0756530761719,
+        9.496100425720215,
+        -35.53400802612305,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1967,
+        -436.7856750488281,
+        9.496100425720215,
+        -34.674007415771484,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1968,
+        -436.7190856933594,
+        11.70479965209961,
+        -34.57554626464844,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1969,
+        -438.192138671875,
+        11.70479965209961,
+        -35.55758285522461,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1970,
+        -438.192138671875,
+        14.083200454711914,
+        -35.55758285522461,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1971,
+        -436.7190856933594,
+        14.083200454711914,
+        -34.57554626464844,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1972,
+        -436.7995300292969,
+        11.824799537658691,
+        -34.65320587158203,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1973,
+        -438.08953857421875,
+        11.824799537658691,
+        -35.513206481933594,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1974,
+        -438.08953857421875,
+        13.963199615478516,
+        -35.513206481933594,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1975,
+        -436.7995300292969,
+        13.963199615478516,
+        -34.65320587158203,
+        -0.5546771287918091,
+        0.0,
+        0.8320656418800354,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1976,
+        -437.4084777832031,
+        11.824799537658691,
+        -35.08320617675781,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1977,
+        -437.4584045410156,
+        11.824799537658691,
+        -35.116485595703125,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1978,
+        -437.4584045410156,
+        13.963199615478516,
+        -35.116485595703125,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1979,
+        -437.4084777832031,
+        13.963199615478516,
+        -35.08320617675781,
+        0.5546771287918091,
+        0.0,
+        -0.8320656418800354,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1980,
+        -436.7856750488281,
+        12.331899642944336,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1981,
+        -438.0756530761719,
+        12.331899642944336,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1982,
+        -438.0756530761719,
+        12.386899948120117,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1983,
+        -436.7856750488281,
+        12.386899948120117,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1984,
+        -436.7856750488281,
+        12.866499900817871,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1985,
+        -438.0756530761719,
+        12.866499900817871,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1986,
+        -438.0756530761719,
+        12.921500205993652,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1987,
+        -436.7856750488281,
+        12.921500205993652,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1988,
+        -436.7856750488281,
+        13.401100158691406,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1989,
+        -438.0756530761719,
+        13.401100158691406,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1990,
+        -438.0756530761719,
+        13.456100463867188,
+        -35.53400802612305,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1991,
+        -436.7856750488281,
+        13.456100463867188,
+        -34.674007415771484,
+        -0.55472332239151,
+        0.0,
+        0.8320349454879761,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        1992,
+        -439.1806945800781,
+        3.7848000526428223,
+        -37.05268859863281,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1993,
+        -439.6640625,
+        3.7848000526428223,
+        -38.98611831665039,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1994,
+        -439.6640625,
+        6.1631999015808105,
+        -38.98611831665039,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1995,
+        -439.1806945800781,
+        6.1631999015808105,
+        -37.05268859863281,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        1996,
+        -439.18798828125,
+        3.9047999382019043,
+        -37.16425323486328,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1997,
+        -439.61798095703125,
+        3.9047999382019043,
+        -38.884254455566406,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1998,
+        -439.61798095703125,
+        6.0432000160217285,
+        -38.884254455566406,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        1999,
+        -439.18798828125,
+        6.0432000160217285,
+        -37.16425323486328,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2000,
+        -439.3763122558594,
+        3.9047999382019043,
+        -38.0,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2001,
+        -439.390869140625,
+        3.9047999382019043,
+        -38.05820846557617,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2002,
+        -439.390869140625,
+        6.0432000160217285,
+        -38.05820846557617,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2003,
+        -439.3763122558594,
+        6.0432000160217285,
+        -38.0,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2004,
+        -439.1637268066406,
+        4.411900043487549,
+        -37.170318603515625,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2005,
+        -439.5937194824219,
+        4.411900043487549,
+        -38.890316009521484,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2006,
+        -439.5937194824219,
+        4.466899871826172,
+        -38.890316009521484,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2007,
+        -439.1637268066406,
+        4.466899871826172,
+        -37.170318603515625,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2008,
+        -439.1637268066406,
+        4.946499824523926,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2009,
+        -439.5937194824219,
+        4.946499824523926,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2010,
+        -439.5937194824219,
+        5.001500129699707,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2011,
+        -439.1637268066406,
+        5.001500129699707,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2012,
+        -439.1637268066406,
+        5.481100082397461,
+        -37.170318603515625,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2013,
+        -439.5937194824219,
+        5.481100082397461,
+        -38.890316009521484,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2014,
+        -439.5937194824219,
+        5.536099910736084,
+        -38.890316009521484,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2015,
+        -439.1637268066406,
+        5.536099910736084,
+        -37.170318603515625,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2016,
+        -439.1806945800781,
+        7.744800090789795,
+        -37.05268859863281,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2017,
+        -439.6640625,
+        7.744800090789795,
+        -38.98611831665039,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2018,
+        -439.6640625,
+        10.123200416564941,
+        -38.98611831665039,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2019,
+        -439.1806945800781,
+        10.123200416564941,
+        -37.05268859863281,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2020,
+        -439.18798828125,
+        7.864799976348877,
+        -37.16425323486328,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2021,
+        -439.61798095703125,
+        7.864799976348877,
+        -38.884254455566406,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2022,
+        -439.61798095703125,
+        10.003199577331543,
+        -38.884254455566406,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2023,
+        -439.18798828125,
+        10.003199577331543,
+        -37.16425323486328,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2024,
+        -439.3763122558594,
+        7.864799976348877,
+        -38.0,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2025,
+        -439.390869140625,
+        7.864799976348877,
+        -38.05820846557617,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2026,
+        -439.390869140625,
+        10.003199577331543,
+        -38.05820846557617,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2027,
+        -439.3763122558594,
+        10.003199577331543,
+        -38.0,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2028,
+        -439.1637268066406,
+        8.371899604797363,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2029,
+        -439.5937194824219,
+        8.371899604797363,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2030,
+        -439.5937194824219,
+        8.426899909973145,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2031,
+        -439.1637268066406,
+        8.426899909973145,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2032,
+        -439.1637268066406,
+        8.906499862670898,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2033,
+        -439.5937194824219,
+        8.906499862670898,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2034,
+        -439.5937194824219,
+        8.96150016784668,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2035,
+        -439.1637268066406,
+        8.96150016784668,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2036,
+        -439.1637268066406,
+        9.441100120544434,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2037,
+        -439.5937194824219,
+        9.441100120544434,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2038,
+        -439.5937194824219,
+        9.496100425720215,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2039,
+        -439.1637268066406,
+        9.496100425720215,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2040,
+        -439.1806945800781,
+        11.70479965209961,
+        -37.05268859863281,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2041,
+        -439.6640625,
+        11.70479965209961,
+        -38.98611831665039,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2042,
+        -439.6640625,
+        14.083200454711914,
+        -38.98611831665039,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2043,
+        -439.1806945800781,
+        14.083200454711914,
+        -37.05268859863281,
+        -0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2044,
+        -439.18798828125,
+        11.824799537658691,
+        -37.16425323486328,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2045,
+        -439.61798095703125,
+        11.824799537658691,
+        -38.884254455566406,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2046,
+        -439.61798095703125,
+        13.963199615478516,
+        -38.884254455566406,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2047,
+        -439.18798828125,
+        13.963199615478516,
+        -37.16425323486328,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2048,
+        -439.3763122558594,
+        11.824799537658691,
+        -38.0,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2049,
+        -439.390869140625,
+        11.824799537658691,
+        -38.05820846557617,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2050,
+        -439.390869140625,
+        13.963199615478516,
+        -38.05820846557617,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2051,
+        -439.3763122558594,
+        13.963199615478516,
+        -38.0,
+        0.9701248407363892,
+        0.0,
+        -0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2052,
+        -439.1637268066406,
+        12.331899642944336,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2053,
+        -439.5937194824219,
+        12.331899642944336,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2054,
+        -439.5937194824219,
+        12.386899948120117,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2055,
+        -439.1637268066406,
+        12.386899948120117,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2056,
+        -439.1637268066406,
+        12.866499900817871,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2057,
+        -439.5937194824219,
+        12.866499900817871,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2058,
+        -439.5937194824219,
+        12.921500205993652,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2059,
+        -439.1637268066406,
+        12.921500205993652,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2060,
+        -439.1637268066406,
+        13.401100158691406,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2061,
+        -439.5937194824219,
+        13.401100158691406,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2062,
+        -439.5937194824219,
+        13.456100463867188,
+        -38.890316009521484,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2063,
+        -439.1637268066406,
+        13.456100463867188,
+        -37.170318603515625,
+        0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2064,
+        -439.6640625,
+        3.7848000526428223,
+        -41.01388168334961,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2065,
+        -439.1806945800781,
+        3.7848000526428223,
+        -42.94731140136719,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2066,
+        -439.1806945800781,
+        6.1631999015808105,
+        -42.94731140136719,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2067,
+        -439.6640625,
+        6.1631999015808105,
+        -41.01388168334961,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2068,
+        -439.61798095703125,
+        3.9047999382019043,
+        -41.115745544433594,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2069,
+        -439.18798828125,
+        3.9047999382019043,
+        -42.83574676513672,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2070,
+        -439.18798828125,
+        6.0432000160217285,
+        -42.83574676513672,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2071,
+        -439.61798095703125,
+        6.0432000160217285,
+        -41.115745544433594,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2072,
+        -439.390869140625,
+        3.9047999382019043,
+        -41.94179153442383,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2073,
+        -439.3763122558594,
+        3.9047999382019043,
+        -42.0,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2074,
+        -439.3763122558594,
+        6.0432000160217285,
+        -42.0,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2075,
+        -439.390869140625,
+        6.0432000160217285,
+        -41.94179153442383,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2076,
+        -439.5937194824219,
+        4.411900043487549,
+        -41.109683990478516,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2077,
+        -439.1637268066406,
+        4.411900043487549,
+        -42.829681396484375,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2078,
+        -439.1637268066406,
+        4.466899871826172,
+        -42.829681396484375,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2079,
+        -439.5937194824219,
+        4.466899871826172,
+        -41.109683990478516,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2080,
+        -439.5937194824219,
+        4.946499824523926,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2081,
+        -439.1637268066406,
+        4.946499824523926,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2082,
+        -439.1637268066406,
+        5.001500129699707,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2083,
+        -439.5937194824219,
+        5.001500129699707,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2084,
+        -439.5937194824219,
+        5.481100082397461,
+        -41.109683990478516,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2085,
+        -439.1637268066406,
+        5.481100082397461,
+        -42.829681396484375,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2086,
+        -439.1637268066406,
+        5.536099910736084,
+        -42.829681396484375,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2087,
+        -439.5937194824219,
+        5.536099910736084,
+        -41.109683990478516,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2088,
+        -439.6640625,
+        7.744800090789795,
+        -41.01388168334961,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2089,
+        -439.1806945800781,
+        7.744800090789795,
+        -42.94731140136719,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2090,
+        -439.1806945800781,
+        10.123200416564941,
+        -42.94731140136719,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2091,
+        -439.6640625,
+        10.123200416564941,
+        -41.01388168334961,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2092,
+        -439.61798095703125,
+        7.864799976348877,
+        -41.115745544433594,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2093,
+        -439.18798828125,
+        7.864799976348877,
+        -42.83574676513672,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2094,
+        -439.18798828125,
+        10.003199577331543,
+        -42.83574676513672,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2095,
+        -439.61798095703125,
+        10.003199577331543,
+        -41.115745544433594,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2096,
+        -439.390869140625,
+        7.864799976348877,
+        -41.94179153442383,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2097,
+        -439.3763122558594,
+        7.864799976348877,
+        -42.0,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2098,
+        -439.3763122558594,
+        10.003199577331543,
+        -42.0,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2099,
+        -439.390869140625,
+        10.003199577331543,
+        -41.94179153442383,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2100,
+        -439.5937194824219,
+        8.371899604797363,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2101,
+        -439.1637268066406,
+        8.371899604797363,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2102,
+        -439.1637268066406,
+        8.426899909973145,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2103,
+        -439.5937194824219,
+        8.426899909973145,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2104,
+        -439.5937194824219,
+        8.906499862670898,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2105,
+        -439.1637268066406,
+        8.906499862670898,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2106,
+        -439.1637268066406,
+        8.96150016784668,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2107,
+        -439.5937194824219,
+        8.96150016784668,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2108,
+        -439.5937194824219,
+        9.441100120544434,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2109,
+        -439.1637268066406,
+        9.441100120544434,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2110,
+        -439.1637268066406,
+        9.496100425720215,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2111,
+        -439.5937194824219,
+        9.496100425720215,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2112,
+        -439.6640625,
+        11.70479965209961,
+        -41.01388168334961,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2113,
+        -439.1806945800781,
+        11.70479965209961,
+        -42.94731140136719,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2114,
+        -439.1806945800781,
+        14.083200454711914,
+        -42.94731140136719,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2115,
+        -439.6640625,
+        14.083200454711914,
+        -41.01388168334961,
+        -0.9701483845710754,
+        0.0,
+        -0.24251210689544678,
+        0.7758222222328186,
+        0.672443151473999,
+        0.4969329833984375
+      ],
+      [
+        2116,
+        -439.61798095703125,
+        11.824799537658691,
+        -41.115745544433594,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2117,
+        -439.18798828125,
+        11.824799537658691,
+        -42.83574676513672,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2118,
+        -439.18798828125,
+        13.963199615478516,
+        -42.83574676513672,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2119,
+        -439.61798095703125,
+        13.963199615478516,
+        -41.115745544433594,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.11697066575288773,
+        0.24228112399578094,
+        0.2462013214826584
+      ],
+      [
+        2120,
+        -439.390869140625,
+        11.824799537658691,
+        -41.94179153442383,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2121,
+        -439.3763122558594,
+        11.824799537658691,
+        -42.0,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2122,
+        -439.3763122558594,
+        13.963199615478516,
+        -42.0,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2123,
+        -439.390869140625,
+        13.963199615478516,
+        -41.94179153442383,
+        0.9701248407363892,
+        0.0,
+        0.24260620772838593,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2124,
+        -439.5937194824219,
+        12.331899642944336,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2125,
+        -439.1637268066406,
+        12.331899642944336,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2126,
+        -439.1637268066406,
+        12.386899948120117,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2127,
+        -439.5937194824219,
+        12.386899948120117,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2128,
+        -439.5937194824219,
+        12.866499900817871,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2129,
+        -439.1637268066406,
+        12.866499900817871,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2130,
+        -439.1637268066406,
+        12.921500205993652,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2131,
+        -439.5937194824219,
+        12.921500205993652,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2132,
+        -439.5937194824219,
+        13.401100158691406,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2133,
+        -439.1637268066406,
+        13.401100158691406,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2134,
+        -439.1637268066406,
+        13.456100463867188,
+        -42.829681396484375,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ],
+      [
+        2135,
+        -439.5937194824219,
+        13.456100463867188,
+        -41.109683990478516,
+        0.9701483845710754,
+        0.0,
+        0.24251210689544678,
+        0.8549926280975342,
+        0.7912979125976562,
+        0.6514056324958801
+      ]
+    ]
+  }
+}

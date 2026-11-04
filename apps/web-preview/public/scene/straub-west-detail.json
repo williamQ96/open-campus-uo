@@ -7,7 +7,7 @@
   "reference_urls": [
     "https://cpfm.uoregon.edu/straubhall2025"
   ],
-  "note": "Simplified Onyx-west brick facade and central triple arch informed by UO survey; elevations, window spacing, exact entrance and dimensions are approximations.",
+  "note": "Simplified Onyx-west brick facade and central triple arch informed by UO survey; elevations, window spacing, exact entrance and dimensions are approximations. West spine roof and upper stucco band are unmeasured approximations, not full roof replacement.",
   "objects": [
     {
       "kind": "building",
@@ -4852,6 +4852,36 @@
         1.1,
         0.25,
         7.7
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -195.22,
+        12.1,
+        181
+      ],
+      "size": [
+        0.2,
+        2.2,
+        86
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "ridge",
+      "material": "roof-slate",
+      "position": [
+        -190,
+        13.67,
+        181
+      ],
+      "size": [
+        10,
+        3.2,
+        86
       ]
     }
   ]

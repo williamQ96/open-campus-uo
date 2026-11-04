@@ -2,6 +2,7 @@
   "version": 1,
   "id": "eugene-layered-context-v1",
   "asset_url": "campus-expanded.glb",
+  "verify_source_sha256": true,
   "replaces_building_ids": [
     "roof-0151b728",
     "roof-01775601",
@@ -610,7 +611,7 @@
   "heightfield_sha256": "cb52d2e7ba0c7fb471f4c208be24688c82446d0c2656b7fe0bc378031743e65c",
   "asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
   "generator_sha256": "c53485bf1998fd7f80f8664f2c3082c14162e425930b74d141726a4a629f6c2d",
-  "credit": "Open Campus: UO \u2014 Zhongyi \"William\" Qiu and contributors \u2014 CC BY 4.0",
+  "credit": "Open Campus: UO â€” Zhongyi \"William\" Qiu and contributors â€” CC BY 4.0",
   "editable_source": "assets/roof-refinement/eugene-campus.blend",
   "roof_status": "Style-inferred roof forms, parapets, seams and rooftop elements; no new photographic evidence or verified roof survey.",
   "roof_treatments": {
@@ -1205,7 +1206,7 @@
   "tree_suppression_sha256": "32d617c541948787b999dbc965417c322ed1d704a4c474bd2381f86b5cc08e0b",
   "tree_suppression_status": "One inferred tree suppressed at dated open lawn; not a surveyed present-day inventory",
   "exterior_detail_url": "johnson-rear-detail.json",
-  "exterior_detail_sha256": "0ff3a99c236d78a409831a31945f0267ee073d85c0c3259e43c3ecf6585fcf61",
+  "exterior_detail_sha256": "2f8673dd96875d0f680e7a8431922e0989db8816500c63bdc6d4c0ea7249f81b",
   "exterior_detail_status": "Photo-informed interpretation; dated 2012 reference, no surveyed dimensions",
   "exterior_details": [
     {
@@ -1215,7 +1216,7 @@
     },
     {
       "url": "gerlinger-east-detail.json",
-      "sha256": "86b2ef379efde7ae1d1c0f930a92ce8fc550b8fcdfa2014ff603b59360f78255",
+      "sha256": "db6f5c816dcd48ec46cb1f7bac00e6202abe56e9f2465584745ad9bdb87f9e8a",
       "status": "East photo and north/south 2013 views interpreted; dimensions and present condition unverified"
     },
     {
@@ -1230,11 +1231,11 @@
     },
     {
       "url": "villard-east-detail.json",
-      "sha256": "2417f082ecb1916e2d90c3d4ac3a5d63487e739102b494cdd21335a53947513a"
+      "sha256": "d9d6f9a63819636258a276a865f9a6636e3b6821d81608c31ec907003a12cdfb"
     },
     {
       "url": "university-hall-detail.json",
-      "sha256": "d085e34cb35e55ca0ee78522f0cccd0a91abdcfe0bdff45f124ccd4815df7a31"
+      "sha256": "d4af432a09a58a7a3d06e66d11f5f90c7c22cb87f3ba76b20050cfdf830f1b99"
     },
     {
       "url": "anstett-south-detail.json",
@@ -1246,15 +1247,15 @@
     },
     {
       "url": "tykeson-north-detail.json",
-      "sha256": "01bd8c5c4c57eba839f13f0a060052726bfbed5880095f09e43f0f8fd0bb91e1"
+      "sha256": "83dc8689edf6656926631570d704c75b98612834a6ab4ed81897ebfcf30c395a"
     },
     {
       "url": "susan-roof-detail.json",
-      "sha256": "18e7fd09df9e10e01bece9b4bc1e32df414a80575de4f4569fb685dc36fd869a"
+      "sha256": "0e303860273701f0e7bb2b0c31487116b774d607e5b76b02acb50876f525c14a"
     },
     {
       "url": "straub-west-detail.json",
-      "sha256": "ed818c21b223526e6ee86a789018c4e7ca36f9b0c301bd81fdf9189ce7927d30"
+      "sha256": "6ed3323de4f0811004546f4c2268a5038a7c872b3984fe3931626e6329359592"
     },
     {
       "url": "condon-east-detail.json",
@@ -1262,7 +1263,7 @@
     },
     {
       "url": "fenton-south-detail.json",
-      "sha256": "79e9de8bc8a5176d76d65037f476340b8c217bb7ffef5f92eb08e8f2f6b0af25"
+      "sha256": "b8db8f805d0fdb89327d52ebeaaded2dfe3c5316cce3557380884397572b15d4"
     },
     {
       "url": "chapman-west-detail.json",
@@ -1278,7 +1279,7 @@
     },
     {
       "url": "collier-house-detail.json",
-      "sha256": "5ddf7032c90127d7b14dd58a89f6b622e586da7aa15c0d746941cb0cbfd27820"
+      "sha256": "ed690d87a7f1a3e980e7eb41262c52b32f491d106037eee643c11c842b176d77"
     },
     {
       "url": "barn-solar-detail.json",
@@ -1361,6 +1362,54 @@
     {
       "url": "miller-west-detail.json",
       "sha256": "d9f044363c86824a5fa7d81b5f8f5bfb973a9334c8f516a09bac613125c24038"
+    },
+    {
+      "url": "ford-alumni-detail.json",
+      "sha256": "bf955f1902674150ab0a56207fb4320cb87fdb5303869bf4c1d961d519210597"
+    },
+    {
+      "url": "jaqua-exterior-detail.json",
+      "sha256": "9c46a14374aec894538781a6bdf8fcdc2643d2694abda21fa207e79b8029ec7a"
+    },
+    {
+      "url": "knight-campus2-east-detail.json",
+      "sha256": "152f3951ec2c0202d80e442f7ab12f084cb573021a7b95b078e76020442f3f93"
+    },
+    {
+      "url": "lillis-south-detail.json",
+      "sha256": "640f6aa53ada651285baa2bc66d4b30e0aee1c3b7b8456a47bf0888cc0e6edef"
+    },
+    {
+      "url": "rec-east-detail.json",
+      "sha256": "96f3433f0dadd7a6a409ed547924632718512493e56f7e27fc67439fa72bccfa"
+    },
+    {
+      "url": "knight-campus1-south-detail.json",
+      "sha256": "992191c7eac72d123cb3032b147883f2245a4f87723b73c5e634c27c57974708"
+    },
+    {
+      "url": "hedco-exterior-detail.json",
+      "sha256": "f182f7f21b5825e3c7838439fac24e2a58f40123535d3a46249b5a4b5104d4f2"
+    },
+    {
+      "url": "unthank-west-detail.json",
+      "sha256": "63e7be27dc187e7ed0369afccf064e0ef44b8f30da9956c20252a2fa53156311"
+    },
+    {
+      "url": "arena-north-detail.json",
+      "sha256": "edb7292fdffce299ca02cdd1c97fe12b35c417c245dd36955bebfec4a1f82727"
+    },
+    {
+      "url": "alder-north-provisional-detail.json",
+      "sha256": "c5ca71cad140c2e231b842572eb1ee6912aedfb48376f703b7e42bfd1ff935d3"
+    },
+    {
+      "url": "agate-west-provisional-detail.json",
+      "sha256": "2bd259d31ad36dc2fe706edef648d57f0f93d4860891370c1024d8cb0f59bae9"
+    },
+    {
+      "url": "longhouse-south-provisional-detail.json",
+      "sha256": "0c964d54fa4949a2dc2f2deb2fe1f1222689adce2702adab241fe498bed7c421"
     }
   ],
   "additional_tree_suppressions": [
@@ -1424,6 +1473,14 @@
     {
       "url": "miller-wall-color.json",
       "sha256": "6a30a8802936be2457abcfbc080f3b68f056692a46e286be2650abc92f4a4051"
+    },
+    {
+      "url": "hedco-wall-color.json",
+      "sha256": "a75df7867efdaf14ced06b446c5e18ef8f6179ef8babb78386f139fd8b4624d9"
+    },
+    {
+      "url": "lokey-wall-color.json",
+      "sha256": "821f7d45910a78662a44c7dc722171ef5a49906a0ecb6480a7a3c8916c551538"
     }
   ],
   "building_roof_patches": [
@@ -1431,5 +1488,21 @@
       "url": "clinical-roof-slope.json",
       "sha256": "0452756ad92eea89890fe5c9317d67de8eb9355e6de29dad70e87baef587eadc"
     }
-  ]
+  ],
+  "paving_joints_url": "pilot-paving-joints.json",
+  "paving_joints_sha256": "db66412cdc7e38c5dd2ba4ed13f9478d3cdc32b73f7d8b8ba223c93bd75ec0da",
+  "lawn_tone_url": "pilot-lawn-tone.json",
+  "lawn_tone_sha256": "8f10d4f4d0decc99eeaf9db92bab2229cd18ee361c9d8ceed83235343974d8ce",
+  "context_trunks_url": "context-trunks.json",
+  "context_trunks_sha256": "8c8aeeb75893cdc44ed841bc9e7c8a12dde45dea1ee134677a0bca3cd77b9b1b",
+  "planting_variation_url": "pilot-shrub-variation.json",
+  "planting_variation_sha256": "6b9cb4806538988ea7c5aa4aca4689475fd0ce51dfea92c6a7937045d93505f4",
+  "batch_palette_patches": [
+    {
+      "url": "longhouse-batch-palette.json",
+      "sha256": "6f534d9f152d87aa6c07781aa09d4091ea35aa9ee9cbd86801a0a25348e9e184"
+    }
+  ],
+  "context_trunk_variation_url": "context-trunk-variation.json",
+  "context_trunk_variation_sha256": "f602f06d34a8b67c6d76b69ed05295a2c62532219fb71e0d04fdcb053ed52561"
 }

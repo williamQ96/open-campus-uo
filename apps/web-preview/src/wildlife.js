@@ -1,8 +1,10 @@
 // SPDX-License-Identifier: Apache-2.0
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { addSquirrelEyes } from "./squirrel-detail.js";
 export async function loadWildlifeFactory(url, yawCorrection = -Math.PI / 2) {
   const asset = await new GLTFLoader().loadAsync(url);
+  addSquirrelEyes(asset.scene);
   return (properties = {}) => {
     const root = new THREE.Group(),
       body = asset.scene.clone(true);

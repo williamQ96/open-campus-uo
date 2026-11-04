@@ -5016,6 +5016,156 @@
         0.06,
         0.05
       ]
+    },
+    {
+      "kind": "building",
+      "shape": "column",
+      "material": "cream",
+      "position": [
+        -357.65,
+        11.16,
+        208.15
+      ],
+      "size": [
+        0.38,
+        4.0,
+        0.38
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -357.65,
+        9.14,
+        208.15
+      ],
+      "size": [
+        0.62,
+        0.2,
+        0.62
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -357.65,
+        13.18,
+        208.15
+      ],
+      "size": [
+        0.6,
+        0.2,
+        0.6
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -358.56,
+        11.16,
+        208.15
+      ],
+      "size": [
+        0.25,
+        4.0,
+        0.4
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "column",
+      "material": "cream",
+      "position": [
+        -357.65,
+        11.16,
+        211.85
+      ],
+      "size": [
+        0.38,
+        4.0,
+        0.38
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -357.65,
+        9.14,
+        211.85
+      ],
+      "size": [
+        0.62,
+        0.2,
+        0.62
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -357.65,
+        13.18,
+        211.85
+      ],
+      "size": [
+        0.6,
+        0.2,
+        0.6
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -358.56,
+        11.16,
+        211.85
+      ],
+      "size": [
+        0.25,
+        4.0,
+        0.4
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "cream",
+      "position": [
+        -358.1,
+        13.35,
+        210
+      ],
+      "size": [
+        1.55,
+        0.3,
+        4.35
+      ]
+    },
+    {
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -358.1,
+        13.56,
+        210
+      ],
+      "size": [
+        1.7,
+        0.12,
+        4.55
+      ]
     }
   ],
   "reference_urls": [

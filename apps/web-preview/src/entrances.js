@@ -68,6 +68,39 @@ export function inferEntrances(buildings, half, overrides = {}) {
     .filter(Boolean);
 }
 
+// Shared, illustrative portal trim. The same geometry is instanced for all
+// entrances; it does not assert that the inferred locations are real doors.
+export function createEntranceFrameGeometry() {
+  const frameParts = [
+    [-0.9, 1.4, 0, 0.15, 2.8, 0.24],
+    [0.9, 1.4, 0, 0.15, 2.8, 0.24],
+    [0, 2.8, 0, 1.95, 0.16, 0.24],
+  ].map(([x, y, z, w, h, d]) =>
+    new THREE.BoxGeometry(w, h, d).translate(x, y, z),
+  );
+  // Thin trim lies just outside each face of the opaque panel. Single-sided
+  // planes replace closed boxes so all instances retain detail at lower cost.
+  for (const side of [-1, 1]) {
+    for (const [x, y, width, height] of [
+      [0, 1.35, 0.035, 2.65],
+      [-0.14, 1.24, 0.045, 0.28],
+      [0.14, 1.24, 0.045, 0.28],
+    ]) {
+      const part = new THREE.PlaneGeometry(width, height);
+      if (side < 0) part.rotateY(Math.PI);
+      part.translate(x, y, side * 0.061);
+      frameParts.push(part);
+    }
+  }
+  const result = mergeGeometries(frameParts);
+  frameParts.forEach((p) => p.dispose());
+  return result;
+}
+
+export function createEntranceDoorGeometry() {
+  return new THREE.BoxGeometry(1.65, 2.65, 0.12).translate(0, 1.35, 0);
+}
+
 export function createEntrances({
   scene,
   buildings,
@@ -78,22 +111,14 @@ export function createEntrances({
   onEnter,
 }) {
   const entries = inferEntrances(buildings, half, overrides);
-  const frameParts = [
-    [-0.9, 1.4, 0, 0.15, 2.8, 0.24],
-    [0.9, 1.4, 0, 0.15, 2.8, 0.24],
-    [0, 2.8, 0, 1.95, 0.16, 0.24],
-  ].map(([x, y, z, w, h, d]) =>
-    new THREE.BoxGeometry(w, h, d).translate(x, y, z),
-  );
-  const frameGeometry = mergeGeometries(frameParts);
-  frameParts.forEach((p) => p.dispose());
+  const frameGeometry = createEntranceFrameGeometry();
   const frame = new THREE.InstancedMesh(
     frameGeometry,
     new THREE.MeshStandardMaterial({ color: 0xead5a0, roughness: 0.85 }),
     entries.length,
   );
   const door = new THREE.InstancedMesh(
-    new THREE.BoxGeometry(1.65, 2.65, 0.12).translate(0, 1.35, 0),
+    createEntranceDoorGeometry(),
     new THREE.MeshStandardMaterial({ color: 0x285d51, roughness: 0.72 }),
     entries.length,
   );

@@ -8,6 +8,24 @@ class Tests(unittest.TestCase):
    b=data if isinstance(data,bytes) else (json.dumps(data)+'\n').encode();(self.scene/name).write_bytes(b);return hashlib.sha256(b).hexdigest()
   self.ground=put('ground.glb',b'ground');self.patch=put('trees.json',{'base_asset_sha256':'old'})
   self.prev={'asset_sha256':'old','landcover_url':'ground.glb','landcover_sha256':self.ground,'landcover_status':'inferred','vegetation_patch_url':'trees.json','vegetation_patch_sha256':self.patch,'reference_image_ids':['naip-2024-main-campus-rgb']}
+ def test_trunk_variation_requires_valid_base_and_source(self):
+  data={'base_asset_sha256':'old','target_name':'campus-trees'};b=(json.dumps(data)+'\n').encode();(self.scene/'context.json').write_bytes(b);(self.scene/'variation.json').write_bytes(b);digest=hashlib.sha256(b).hexdigest()
+  self.prev.update({'context_trunks_url':'context.json','context_trunks_sha256':digest,'context_trunk_variation_url':'variation.json','context_trunk_variation_sha256':digest})
+  self.assertEqual(module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)['context_trunk_variation_sha256'],digest)
+  with self.assertRaisesRegex(ValueError,'rebuilt GLB'):module.carry_layers(self.prev,{'asset_sha256':'new'},self.scene)
+  (self.scene/'variation.json').write_bytes(b'tampered')
+  with self.assertRaisesRegex(ValueError,'missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+  self.prev.pop('context_trunks_url')
+  with self.assertRaisesRegex(ValueError,'requires context trunks'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+ def test_batch_palette_preserves_pins_and_rejects_mismatch(self):
+  data={'base_asset_sha256':'old','building_id':'roof-test','target_name':'batch'};b=(json.dumps(data)+'\n').encode();(self.scene/'palette.json').write_bytes(b)
+  entry={'url':'palette.json','sha256':hashlib.sha256(b).hexdigest()};self.prev['batch_palette_patches']=[entry]
+  self.assertEqual(module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)['batch_palette_patches'],[entry])
+  with self.assertRaisesRegex(ValueError,'does not match rebuilt GLB'):module.carry_layers(self.prev,{'asset_sha256':'new'},self.scene)
+  self.prev['batch_palette_patches']=[entry,entry]
+  with self.assertRaisesRegex(ValueError,'Duplicate'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+  self.prev['batch_palette_patches']=[entry];(self.scene/'palette.json').write_bytes(b'changed')
+  with self.assertRaisesRegex(ValueError,'missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
  def test_building_roof_patch_is_preserved_and_rejects_mismatch(self):
   self.prev.pop('vegetation_patch_url');self.prev.pop('vegetation_patch_sha256')
   data={'base_asset_sha256':'old','building_id':'roof-test'};b=(json.dumps(data)+'\n').encode();(self.scene/'roof.json').write_bytes(b)
@@ -45,6 +63,34 @@ class Tests(unittest.TestCase):
   self.prev['additional_environment_patches']=[entry,entry]
   with self.assertRaisesRegex(ValueError,'Duplicate'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
   self.prev['additional_environment_patches']=[entry];(self.scene/'plaza.json').write_bytes(b'changed')
+  with self.assertRaisesRegex(ValueError,'missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+ def test_planting_variation_preserved_only_for_matching_source(self):
+  b=(json.dumps({'base_asset_sha256':'old','target_name':'planting'})+'\n').encode();(self.scene/'shrubs.json').write_bytes(b)
+  self.prev['planting_variation_url']='shrubs.json';self.prev['planting_variation_sha256']=hashlib.sha256(b).hexdigest()
+  result=module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene);self.assertEqual(result['planting_variation_url'],'shrubs.json')
+  with self.assertRaisesRegex(ValueError,'does not match rebuilt GLB'):module.carry_layers(self.prev,{'asset_sha256':'changed'},self.scene)
+  (self.scene/'shrubs.json').write_bytes(b'tampered')
+  with self.assertRaisesRegex(ValueError,'missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+ def test_context_trunks_preserved_only_for_matching_source(self):
+  b=(json.dumps({'base_asset_sha256':'old','target_name':'campus-trees'})+'\n').encode();(self.scene/'trunks.json').write_bytes(b)
+  self.prev['context_trunks_url']='trunks.json';self.prev['context_trunks_sha256']=hashlib.sha256(b).hexdigest()
+  result=module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene);self.assertEqual(result['context_trunks_url'],'trunks.json')
+  with self.assertRaisesRegex(ValueError,'do not match rebuilt GLB'):module.carry_layers(self.prev,{'asset_sha256':'changed'},self.scene)
+  (self.scene/'trunks.json').write_bytes(b'tampered')
+  with self.assertRaisesRegex(ValueError,'missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+ def test_lawn_tone_preserved_only_for_matching_source(self):
+  b=(json.dumps({'base_asset_sha256':'old','target_name':'landscape-lawn'})+'\n').encode();(self.scene/'lawn.json').write_bytes(b)
+  self.prev['lawn_tone_url']='lawn.json';self.prev['lawn_tone_sha256']=hashlib.sha256(b).hexdigest()
+  result=module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene);self.assertEqual(result['lawn_tone_url'],'lawn.json')
+  with self.assertRaisesRegex(ValueError,'does not match rebuilt GLB'):module.carry_layers(self.prev,{'asset_sha256':'changed'},self.scene)
+  (self.scene/'lawn.json').write_bytes(b'tampered')
+  with self.assertRaisesRegex(ValueError,'missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+ def test_paving_joints_preserved_only_for_matching_source(self):
+  b=(json.dumps({'base_asset_sha256':'old','target_name':'landscape-paving'})+'\n').encode();(self.scene/'paving.json').write_bytes(b)
+  self.prev['paving_joints_url']='paving.json';self.prev['paving_joints_sha256']=hashlib.sha256(b).hexdigest()
+  result=module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene);self.assertEqual(result['paving_joints_url'],'paving.json')
+  with self.assertRaisesRegex(ValueError,'do not match rebuilt GLB'):module.carry_layers(self.prev,{'asset_sha256':'changed'},self.scene)
+  (self.scene/'paving.json').write_bytes(b'tampered')
   with self.assertRaisesRegex(ValueError,'missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
  def test_wall_color_patch_preserved_and_checked(self):
   b=(json.dumps({'base_asset_sha256':'old'})+'\n').encode();(self.scene/'wall.json').write_bytes(b)
@@ -100,6 +146,14 @@ class Tests(unittest.TestCase):
   self.assertEqual(out['stats']['trees'],598);self.assertEqual(len(out['additional_tree_suppressions']),1)
   (self.scene/'hide2.json').write_bytes(b'tampered')
   with self.assertRaisesRegex(ValueError,'Additional tree suppression missing'):module.carry_layers(self.prev,{'asset_sha256':'old','stats':{'trees':600}},self.scene)
+ def test_triangle_patch_requires_verified_source_and_survives_rebuild(self):
+  data={'base_asset_sha256':'old','building_id':'roof-test','source_triangle_patch':{'triangles':[]}}
+  b=(json.dumps(data)+'\n').encode();(self.scene/'detail.json').write_bytes(b)
+  self.prev['exterior_details']=[{'url':'detail.json','sha256':hashlib.sha256(b).hexdigest()}]
+  with self.assertRaisesRegex(ValueError,'requires source hash verification'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+  self.prev['verify_source_sha256']=True
+  self.assertIs(module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)['verify_source_sha256'],True)
+  with self.assertRaisesRegex(ValueError,'rebuilt GLB'):module.carry_layers(self.prev,{'asset_sha256':'new'},self.scene)
  def test_unsafe_layer_paths_rejected(self):
   self.prev['landcover_url']='../ground.glb'
   with self.assertRaisesRegex(ValueError,'Unsafe'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)

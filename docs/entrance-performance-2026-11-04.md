@@ -1,0 +1,13 @@
+# Entrance same-camera performance comparison — 2026-11-04
+
+The first-person screenshot at `roof-0151b728` recorded 190 draw calls. To test causality, `scripts/compare-entrance-performance.mjs` used a browser response override to load the archived original `entrances.js` whose SHA-256 matches the original viewer-template lock, without modifying local source. It compared that baseline with the refined module in independent browser contexts, same 1440×1000 viewport, activity disabled, reduced motion, same entry, player and camera coordinates and direction. Evidence: [initial measurements](../data/metadata/entrance-performance-comparison-2026-11-04.json) [optimized measurements](../data/metadata/entrance-performance-optimized-2026-11-04.json), and [repeat using the archived baseline](../data/metadata/entrance-performance-verification-2026-11-04.json). The existing fixed-camera budget threshold was not changed. Re-run from `apps/web-preview` with local Vite running using `node scripts/compare-entrance-performance.mjs <new-run-tag>`; each tag uses new output paths and existing evidence is not overwritten.
+
+| Version | Draw calls | Scene triangles |
+| --- | ---: | ---: |
+| Original portal | 190 | 1,045,026 |
+| First refined portal | 190 | 1,077,066 |
+| Optimized refined portal | 190 | 1,051,434 |
+
+The 190 calls therefore already existed in this particular view, rather than being introduced by the entrance trim. The initial refinement added 32,040 triangles across 534 instances. Replacing closed detail boxes with front/back planes retains the seam and handles while reducing added triangles to 6,408 (an 80% reduction in incremental triangles). [Original view](images/entrance-performance-optimized-baseline-2026-11-04.png) / [optimized view](images/entrance-performance-optimized-current-2026-11-04.png). This is one view, not a guarantee for every camera or device. Roughly eight seconds of local headless SwiftShader RAF sampling gave 24 frames for each optimized-comparison run; this low and noisy sample is not a reliable device benchmark or proof of equivalent frame time. Actual device performance and the original 190-call scene remain open.
+
+The [optimized standalone portal](../assets/exterior-refinement/entrance-portal-optimized-2026-11-04.glb) was re-exported from current source and independently matched for geometry, colors and transforms. The previous source and [previous GLB](../assets/exterior-refinement/entrance-portal-2026-11-04.glb) remain archived; the latter corresponds to the former 60-extra-triangle version. Both omit placement, buildings and collision and neither is a Blender snapshot. PROP-04 remains level 1; placement, accessibility and current real-world details are not surveyed. No deployment.

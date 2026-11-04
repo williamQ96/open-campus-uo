@@ -26,7 +26,7 @@ test("Susan replacement retains identity and collision footprints", () => {
     ),
     original = structuredClone(b.footprint_enu_m),
     boxes = collisionBoxesForDetail(d);
-  assert.equal(boxes.length, 2);
+  assert.equal(boxes.length, 4);
   attachCollisionBoxes([b], [{ buildingId: b.id, boxes }]);
   assert.equal(isBlocked(-451, 150, [b], 1000), true);
   assert.equal(isBlocked(-437, 163, [b], 1000), true);

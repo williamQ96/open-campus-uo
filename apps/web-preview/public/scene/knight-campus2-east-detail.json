@@ -1,0 +1,775 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "context-oc-knight-2",
+  "replace_building": false,
+  "reference_ids": [],
+  "reference_urls": [
+    "https://www.zgf.com/work/9716-university-of-oregon-phil-and-penny-knight-campus-for-accelerating-scientific-impact-building-2",
+    "https://www.uoregon.edu/press/2026/knight-engineering/"
+  ],
+  "note": "Illustrative east facade with glazing and vertical fins, following an approximate context-envelope; exact dimensions, facade segmentation and surrounding site remain unverified.",
+  "overlay_collision_boxes_enu_m": [
+    [
+      95.6663026988972,
+      273.540955202654,
+      96.1163026988972,
+      294.790955202654
+    ],
+    [
+      95.6663026988972,
+      294.790955202654,
+      96.1163026988972,
+      316.040955202654
+    ],
+    [
+      95.6663026988972,
+      316.040955202654,
+      96.1163026988972,
+      337.290955202654
+    ],
+    [
+      95.6663026988972,
+      337.290955202654,
+      96.1163026988972,
+      358.540955202654
+    ]
+  ],
+  "objects": [
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        95.8263,
+        9.91,
+        -316.041
+      ],
+      "size": [
+        0.2,
+        25.0,
+        85.0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -358.541
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -356.5171
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -354.4933
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -352.4695
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -350.4457
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -348.4219
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -346.3981
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -344.3743
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -342.3505
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -340.3267
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -338.3029
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -336.2791
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -334.2552
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -332.2314
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -330.2076
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -328.1838
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -326.16
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -324.1362
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -322.1124
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -320.0886
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -318.0648
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -316.041
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -314.0171
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -311.9933
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -309.9695
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -307.9457
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -305.9219
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -303.8981
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -301.8743
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -299.8505
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -297.8267
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -295.8029
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -293.7791
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -291.7552
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -289.7314
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -287.7076
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -285.6838
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -283.66
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -281.6362
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -279.6124
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -277.5886
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -275.5648
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        95.9763,
+        9.91,
+        -273.541
+      ],
+      "size": [
+        0.18,
+        25.0,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        95.9863,
+        -2.59,
+        -316.041
+      ],
+      "size": [
+        0.1,
+        0.15,
+        85.0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        95.9863,
+        3.66,
+        -316.041
+      ],
+      "size": [
+        0.1,
+        0.15,
+        85.0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        95.9863,
+        9.91,
+        -316.041
+      ],
+      "size": [
+        0.1,
+        0.15,
+        85.0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        95.9863,
+        16.16,
+        -316.041
+      ],
+      "size": [
+        0.1,
+        0.15,
+        85.0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        95.9863,
+        22.41,
+        -316.041
+      ],
+      "size": [
+        0.1,
+        0.15,
+        85.0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "context-b0066",
+  "replace_building": false,
+  "reference_ids": [],
+  "reference_urls": [
+    "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/ford-alumni-center",
+    "https://www.architectmagazine.com/project-gallery/ford-alumni-center/"
+  ],
+  "note": "Illustrative metal and glass curtain-wall panels on north and east approximate context envelope; exact glazing, dimensions and boundaries unverified.",
+  "overlay_collision_boxes_enu_m": [
+    [
+      253.65,
+      -18.45,
+      273.55,
+      -17.95
+    ],
+    [
+      273.55,
+      -18.45,
+      293.45,
+      -17.95
+    ],
+    [
+      293.4,
+      -63.1,
+      293.92,
+      -40.8
+    ],
+    [
+      293.4,
+      -40.8,
+      293.92,
+      -18.5
+    ]
+  ],
+  "objects": [
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        273.55,
+        3.6,
+        18.22
+      ],
+      "size": [
+        39.7,
+        15,
+        0.16
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        273.55,
+        3.6,
+        18.09
+      ],
+      "size": [
+        36.9,
+        11.8,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        255.1,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        257.15,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        259.2,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        261.25,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        263.3,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        265.35,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        267.4,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        269.45,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        271.5,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        273.55,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        275.6,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        277.65,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        279.7,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        281.75,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        283.8,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        285.84999999999997,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        287.9,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        289.95,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        292.0,
+        3.6,
+        18.02
+      ],
+      "size": [
+        0.12,
+        11.9,
+        0.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        273.55,
+        -2.2,
+        18.0
+      ],
+      "size": [
+        37.2,
+        0.12,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        273.55,
+        1.65,
+        18.0
+      ],
+      "size": [
+        37.2,
+        0.12,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        273.55,
+        5.5,
+        18.0
+      ],
+      "size": [
+        37.2,
+        0.12,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        273.55,
+        9.45,
+        18.0
+      ],
+      "size": [
+        37.2,
+        0.12,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        293.63,
+        3.6,
+        40.81
+      ],
+      "size": [
+        0.16,
+        15,
+        44.5
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        293.76,
+        3.6,
+        40.81
+      ],
+      "size": [
+        0.08,
+        11.8,
+        41.7
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        20.0
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        22.08
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        24.16
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        26.240000000000002
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        28.32
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        30.4
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        32.480000000000004
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        34.56
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        36.64
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        38.72
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        40.8
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        42.88
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        44.96
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        47.04
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        49.120000000000005
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        51.2
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        53.28
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        55.36
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        57.44
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        59.52
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-wall",
+      "shape": "box",
+      "position": [
+        293.83,
+        3.6,
+        61.6
+      ],
+      "size": [
+        0.08,
+        11.9,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        293.85,
+        -2.2,
+        40.81
+      ],
+      "size": [
+        0.1,
+        0.12,
+        42.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        293.85,
+        1.65,
+        40.81
+      ],
+      "size": [
+        0.1,
+        0.12,
+        42.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        293.85,
+        5.5,
+        40.81
+      ],
+      "size": [
+        0.1,
+        0.12,
+        42.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        293.85,
+        9.45,
+        40.81
+      ],
+      "size": [
+        0.1,
+        0.12,
+        42.1
+      ]
+    }
+  ]
+}

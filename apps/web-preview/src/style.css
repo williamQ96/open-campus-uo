@@ -1420,3 +1420,70 @@ dialog::backdrop {
   background: transparent;
   backdrop-filter: none;
 }
+.fixed-person-label {
+  position: absolute;
+  z-index: 6;
+  transform: translate(-50%, -100%);
+  background: none;
+  border: 0;
+  padding: 3px;
+  color: #fff;
+  font: 600 14px/1.2 inherit;
+  text-shadow:
+    0 1px 3px #122b22,
+    0 0 4px #122b22;
+  cursor: pointer;
+}
+.fixed-person-label:hover,
+.fixed-person-label:focus-visible {
+  color: #f3dc8f;
+  text-decoration: underline;
+}
+.fixed-person-bubble {
+  position: absolute;
+  z-index: 6;
+  transform: translate(24px, calc(-100% - 28px));
+  padding: 7px 12px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  color: #193d2f;
+  background: #fff;
+  box-shadow:
+    inset 0 1px 7px #0002,
+    0 3px 9px #0003;
+  pointer-events: none;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.fixed-person-bubble::after {
+  content: "";
+  position: absolute;
+  left: -18px;
+  bottom: -13px;
+  width: 30px;
+  height: 16px;
+  background: #fff;
+  clip-path: polygon(42% 0, 100% 0, 0 100%);
+}
+.fixed-person-card {
+  border: 0;
+  border-radius: 12px;
+  color: #183b2d;
+  background: #fffdf4;
+  padding: 24px;
+  max-width: min(360px, 85vw);
+  box-shadow: 0 8px 35px #0005;
+}
+.fixed-person-card::backdrop {
+  background: #0006;
+}
+.fixed-person-card h2 {
+  margin: 0 0 8px;
+}
+.fixed-person-card a {
+  display: inline-block;
+  margin-right: 24px;
+}
+.fixed-person-card button {
+  cursor: pointer;
+}

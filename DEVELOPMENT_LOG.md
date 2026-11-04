@@ -456,3 +456,343 @@ Added schematic four-level east-wing window bands and roof-edge trim informed by
 - 2026-11-04: Added source-pinned thin overlay collision for the Miller west facade, with footprint-adjacency and route safeguards. See docs/miller-west-study.md.
 
 - 2026-11-04: Added editable Blender snapshot and verified single-mesh GLB for the nine pilot bench detail overlays; see docs/pilot-bench-editable-overlay.md for source and exclusions.
+
+- 2026-11-04: Added an illustrative source-pinned Ford Alumni Center north/east exterior study and route-screened collision; see docs/ford-alumni-study.md. Local only.
+
+### 2026-11-04 — Science complex footprint screen (local only)
+
+Added a reproducible 2D manifest-footprint screen and source-based Huestis and Global Scholars notes. Huestis overlaps the existing Willamette candidate by 746.09 m²; 13 of 63 named candidates have at least one screened overlap. These are candidates, not confirmed mesh collisions. Global Scholars is a rectangular placeholder while UO describes two enclosed courtyards. No building, interior, collision, maturity grade or deployed version changed. Reproduced the screen against the SHA-256-pinned manifest; see `docs/science-and-global-footprint-audit-2026-11-04.md`.
+
+### 2026-11-04 — Bounded low-frame navigation candidate (local only)
+
+The published browser regression trace and local approximately 1 FPS reproduction identified movement time discarded by the per-frame clamp. A local candidate bounds visible horizontal movement time to 0.25 seconds per frame, retains collision substeps, and calculates walking/running state from the movement timestep. The original 6 m / 15 s test is unchanged. The navigation, simulated slow-frame and mobile browser batch passed 8/8 after correcting an initial mobile state regression; 117 unit tests, build, formatting and viewer hashes passed. The underlying low renderer throughput remains unresolved; GitHub has not run the candidate. Details and limitations: `docs/github-browser-regression-2026-11-04.md`. Not pushed or deployed.
+
+### 2026-11-04 — Generic road vehicle profiles (local only)
+
+Refined the shared car, SUV and pickup bodies with sloped hood and rear profiles while retaining their established bounding boxes, placements and collision shapes. Van, bicycle and scooter geometry is unchanged. Regenerated and hash-pinned the standalone GLB; its six position arrays match the procedural source. All 117 pre-existing unit tests and a new focused profile test passed, as did five browser tests including the original draw-call limit, production build, formatting and the 106-record open-asset check. The prior GLB is retained. Blender was unavailable, so the previous editable snapshot predates this change and a new one remains outstanding. See `docs/vehicle-profile-2026-11-04.md`. PROP-02 remains level 1; no deployment.
+
+### 2026-11-04 — Jaqua exterior (local only)
+
+Added a source-pinned, selectable four-face glass-and-metal schematic overlay to the approximate Jaqua envelope, using one merged mesh and eight perimeter collision strips. Existing terrain, building source and interiors are unchanged. Two context views and the architect reference were reviewed; 119 unit tests, 14 preservation tests, build, 107 open-asset records and viewer hashes passed. The browser batch covers selection, render modes, navigation and the existing draw-call budget. Geometry, roof, pool and actual boundary are unverified; level remains 1. Blender was not found, so no new editable Blender snapshot is claimed. See `docs/jaqua-exterior-2026-11-04.md`. Not published.
+
+### 2026-11-04 — Knight Campus 2 east face (local only)
+
+Added a source-pinned east-side glass and fin overlay on the existing approximate Knight Campus 2 envelope, with one merged mesh and four narrow collision strips; selection and terrain remain. The existing 85 m envelope is shorter than the approximately 107.6 m length published by UO, and actual offset mass, other facades, roof, bridge and surroundings remain unresolved. Level stays 1. Source pins, route screening, 120 unit tests, 14 preservation tests, build, 108 open-asset records, browser selection/navigation and existing draw-call budget passed. Editable runtime JSON is preserved; no new Blender snapshot was produced. See `docs/knight-campus2-east-2026-11-04.md`. No deployment.
+
+### 2026-11-04 — Lillis south entrance (local only)
+
+Added a source-pinned, selectable schematic glass and light portal overlay to a sampled south wall of the approximate-nearest-roof Lillis candidate, with illustrative photovoltaic panels and one perimeter collision strip. Source photo is reference-only; no logo or third-party geometry is embedded. The campus source, surroundings and interiors remain unchanged. Seven modeled wall ray samples and matched before/after views were checked; 121 unit tests, 14 preservation tests, build, formatting, 109 open-asset records, source hashes and five browser selection/navigation/budget checks passed. Level remains 1; real boundaries, geometry and other elevations remain unverified. The editable runtime JSON has no new Blender snapshot. See `docs/lillis-south-2026-11-04.md`. Not published.
+
+### 2026-11-04 — Student Recreation Center east face (local only)
+
+Added a source-pinned, selectable schematic east glass facade on a sampled sloped wall of the approximate recreation-center candidate. Original geometry, terrain, plantings and interiors remain. A separate-mesh candidate reached 180 draw calls and failed the unchanged <180 limit; the final layer uses the existing checked source-mesh merge. Six browser tests including original positions/colors/normals, selection, navigation and draw budget, 122 unit tests, 14 preservation tests, build, formatting, 110 open-asset records and viewer hashes passed; the current 40-layer preservation was additionally checked as a metadata simulation. Actual footprint, glazing, entry and other elevations remain unverified; level stays 1. The rotated runtime JSON has no independent Blender/GLB snapshot, and the existing unrotated exporter cannot faithfully generate one. See `docs/rec-east-2026-11-04.md`. No deployment.
+
+### 2026-11-04 — Rotation-aware facade exports (local only)
+
+Added a reusable, source-pinned runtime-box overlay GLB exporter with baked XYZ rotations, input stability checks and exclusive output creation. Exported recreation-center, Jaqua, Knight Campus 2 and Lillis overlays to new standalone GLBs, retaining prior assets. All four on-disk files match runtime positions, normals, colors and identity transforms; a synthetic three-axis rotation and a side-by-side recreation image comparison passed. The originals and collision data are separate, and no per-object Blender snapshot was created. Asset levels and runtime are unchanged. See `docs/rotated-exterior-export-2026-11-04.md`. Not published.
+
+### 2026-11-04 — Knight Campus 1 partial south facade (local only)
+
+Added a source-pinned schematic folded-glass pattern to 61 m of the existing south envelope, stopping at least 4 m in model coordinates from the unresolved unnamed neighbor. The source mesh is preserved through the existing verified merge; no building, terrain, tree or interior moved. A standalone rotated-overlay GLB was independently checked against all 2,808 runtime vertices, normals, colors and transform. Nine browser checks, 123 unit tests, 14 preservation tests, build, formatting, 116 open-asset records and viewer hashes passed; 41 layers passed a metadata-only preservation simulation. Two-volume massing, bridge, actual boundaries and the remaining facade are unresolved, level stays 1, and no per-object Blender snapshot was produced. See `docs/knight-campus1-south-2026-11-04.md`. Not deployed.
+
+### 2026-11-04 - HEDCO exterior (local only)
+
+Added a source-pinned schematic brick and vertical-window treatment to two sides of the approximate HEDCO envelope, with merged detail and six route-screened collision strips. The rectangle, flat roof and window layout are not a faithful reconstruction of the actual courtyard complex; level remains 1. An overlay-only GLB matches all 6,984 runtime vertices, normals and colors; no new Blender snapshot was made. Original building, layout and interiors are preserved. See `docs/hedco-exterior-2026-11-04.md`. No deployment.
+
+### 2026-11-04 - Bounded fern variation (local only)
+
+Introduced deterministic, bounded variations in the existing reusable fern fronds across three existing clusters; placements, topology, source GLB and batch remain. An independent normalized fern GLB matches all 2,040 runtime positions and normals and records the source hash. Level remains 1; actual species and locations are unverified, and no new Blender snapshot was produced. Computing Center was deferred because its approximate footprint overlaps the Chiles candidate. See `docs/fern-variation-2026-11-04.md`. Not deployed.
+
+### 2026-11-04 - Shared estimated entrance portal (local only)
+
+Added a center stile and paired handles to the existing shared two-mesh entrance marker, affecting 534 inferred entries without changing locations, inference, interaction, collision or interiors. The extra 60 triangles per instance preserve the prior bounds; a local first-person view measured 190 draw calls, while the existing defined-camera budget test remains the acceptance check. The new two-mesh standalone GLB is source-pinned and omits placement; no Blender snapshot was created. PROP-04 remains level 1 and entries are not surveyed. Pacific Hall facade work was deferred pending reliable candidate registration. See `docs/shared-entrance-portal-2026-11-04.md`. Not deployed.
+
+### 2026-11-04 - Entrance performance and cloud export (local only)
+
+Same-camera testing found 190 draw calls both before and after portal refinement; the initial added 32,040 triangles were reduced to 6,408 by planar trim while retaining visual detail and two instanced meshes. The fixed-camera budget test remains unchanged. The optimized portal GLB was re-exported and the earlier version retained. A separate reusable cloud-mesh GLB now matches the existing runtime cloud geometry and controlled render; it omits dome, drift and camera following, and its fog/tone mapping defaults require consumer setup. No new Blender snapshots or maturity promotions. See `docs/entrance-performance-2026-11-04.md` and `docs/cloud-standalone-2026-11-04.md`. Not deployed.
+
+### 2026-11-04 - Reference footprint screening and lamp overlay export (local only)
+
+Screened 63 named project candidates against 664 public Oregon reference polygons, retaining only overlap metrics and identifiers. Pacific Hall official plan and state geometry suggest a possible merged or misassigned Lawrence/Pacific mesh; state records have duplicate building IDs and unavailable source dates, and no identity or geometry was changed. Added a bounded reusable box/column environment exporter and an independently checked GLB for 40 existing details on eight inferred lamps; it omits original lamps and does not change scene visuals. No Blender snapshot or maturity promotion. See `docs/oregon-footprint-screen-2026-11-04.md` and `docs/pilot-lamp-overlay-export-2026-11-04.md`. Not deployed.
+
+### 2026-11-04 - Pilot paving treatment (local only)
+
+Added a source-pinned, subtle world-space joint material to the existing authored pilot paving in both toon and PBR, without changing its geometry, paths, terrain, buildings or interiors. NAIP establishes broad dated hardscape context only; the grid is illustrative and ENV-05 remains level 1. The standalone GLB and existing Blender files do not include the runtime shader. Matched toon views showed 71 draw calls before and after; shader fragment cost is not a device benchmark. 127 Node tests, 17 Python tests, five browser checks, build, formatting and hashes passed; a metadata-only simulation preserved 42 detail layers and this patch. See `docs/pilot-paving-joints-2026-11-04.md`. Not deployed.
+
+### 2026-11-04 - Unplaced bike-rack candidate (local only)
+
+Added an original parameterized low-poly hoop rack and source-pinned standalone three-hoop GLB using published UO dimensions as context. UO map A27 indicates a covered facility near the approximate Tykeson envelope, but a nearby trial falls on the modeled lawn with existing shrub and building alignment uncertainties; no site geometry or rack placement was added. Source, scope and coordinate checks are recorded in `docs/bike-rack-candidate-2026-11-04.md`. 128 Node tests, 17 Python tests, four browser checks, build, formatting and asset/viewer hashes passed. PROP-01 remains level 1; no new Blender snapshot or deployment.
+
+
+## 2026-11-04 — pilot lawn and bike rack screening
+
+Local: added source-pinned illustrative pilot lawn tone in toon and PBR, with no geometry or navigation changes; ENV-05 remains level 1. Screened UO F50, F20 and A12 bike-parking points against the scene and left the rack unplaced due to modeled lawn/building conflicts. See docs/pilot-lawn-tone-2026-11-04.md for evidence, limitations and standalone-export gap.
+
+
+## 2026-11-04 — campus lawn extension
+
+Local: extended the source-pinned lawn tone to the existing vertex-colored campus lawn extension, preserving geometry and vertex colors. ENV-04 and ENV-05 remain level 1. Matched screenshots show 39 draw calls before and after; see docs/campus-lawn-extension-2026-11-04.md for source, validation and runtime-only export limitations. Not published.
+
+
+## 2026-11-04 — context tree trunks
+
+Local: source-pinned octagonal trunk geometry replaces the 300 inferred context-tree square trunks, preserving their positions, canopy and navigation. ENV-02 remains level 1. Same-view draw calls remain 39 and triangles rise by 1,200. See docs/context-tree-trunks-2026-11-04.md for checks, sources and runtime-only export limitation. Esslinger and Chiles remain unmodified pending boundary evidence. Not published.
+
+
+## 2026-11-04 — Unthank west facade
+
+Local: added a source-pinned, schematic Unthank west facade and standalone overlay, preserving the existing building envelope and interiors; level remains 1. Three west-wall collision strips were checked against route edges. Approximate footprint, Bean overlap, other faces and export limitations remain unresolved. See docs/unthank-west-2026-11-04.md for sources and validation. Not published.
+
+
+## 2026-11-04 — arena north facade
+
+Local: added an illustrative source-pinned north curtain wall and standalone overlay for the Matthew Knight Arena placeholder. Existing estimated entrance and modeled navigation remain intact; level remains 1. Actual curved form and other elevations remain unverified. Yasui south facade deferred due to overlapping model geometry and collision. See docs/arena-north-2026-11-04.md for sources and export limits. Not published.
+
+Verification: revised entrance comparison passed after correcting the initial 2 cm shift; 132 JavaScript and 19 Python tests, 13 browser tests, build, format and 136 asset hashes passed. Metadata-only preservation carried 44 detail layers; no full Blender rebuild. Local only.
+
+Final v3: separated coincident entrance-facing surfaces after visual review; strict entrance comparison and 13 browser tests passed. Rechecked 132 JavaScript tests, build, formatting, viewer hashes and 137 assets; metadata-only preservation retained 44 layers. Local only.
+
+
+## 2026-11-04 — context tree export and Hayward screening
+
+Local: exported the existing 300 refined context trees to a single source-pinned standalone GLB and verified geometry plus an independent rendered view. ENV-02 remains level 1; per-tree Blender source remains unavailable. A Hayward roof candidate was isolated after the existing solid west-stand placeholder produced a misleading warehouse-like result; no Hayward scene change. See docs/context-trees-standalone-2026-11-04.md and docs/hayward-west-screen-2026-11-04.md. Not published.
+
+Validation: 132 JavaScript tests, 19 Python tests, five browser checks, build, formatting, viewer hashes and 139 asset records passed. A metadata-only preservation simulation retained 44 layers and excluded the isolated Hayward study. No full Blender rebuild; local only.
+
+
+## 2026-11-04 — shared planting material
+
+Local: fixed 40 inferred pilot shrubs rendering black because canopy tone changed a material shared with a mesh lacking vertex colors. Canopy materials are cloned before enabling their vertex colors; shrub geometry and canopy values remain unchanged. ENV-03 remains level 1. See docs/planting-shared-material-fix-2026-11-04.md for evidence and export implications. Not published.
+
+Verification: 133 JavaScript tests including shared-material isolation, 19 Python tests, six browser tests, build, formatting, viewer hashes and 139 archived assets passed. Metadata-only preservation carried 44 layers; no full Blender rebuild. Local only.
+
+
+## 2026-11-04 — bounded pilot shrubs
+
+Local: added source-pinned bounded variation to 40 existing inferred pilot shrubs across two groups, with no expanded bounds, relocated plants or canopy changes. Exported a verified one-mesh standalone PBR GLB; ENV-03 remains level 1. See docs/pilot-shrub-variation-2026-11-04.md for sources, two view comparisons and Blender/export limitations. Not published.
+
+Validation: 133 JavaScript tests, 20 Python tests, seven browser tests, build, formatting, viewer hashes and 141 asset records passed. Metadata-only preservation carried the shrub layer and 44 exterior layers; no full Blender rebuild or hardware benchmark. Local only.
+
+## 2026-11-04 - isolated understory candidate
+
+Investigated 71 existing low shrub groups; an earlier fern-named patch suppresses three additional shrubs. A bounded 64-group variation was prototyped but its foreground silhouette exposed sharp underlying foliage, so it was isolated and not integrated. See local-only research notes and before/after screenshots. Inventory remains level 1; no standalone export. Local only.
+Validation after isolation: build, two existing browser tests, 20 Python tests, viewer override hashes and 141 archived assets passed. The Vite build reports its existing large-chunk warning.
+
+## 2026-11-04 - complete pilot bench export
+
+Local: combined existing original supports and refined wooden details for nine inferred pilot benches in a standalone GLB; runtime and campus positions remain unchanged and PROP-01 stays level 1. The export is a two-mesh campus-coordinate collection, not nine separately editable benches. Cedar/Yasui overlap remains unresolved; no facade change. Sources, comparison, provenance and limitations: docs/pilot-benches-complete-2026-11-04.md. Not published.
+
+Validation: 133 JavaScript and 20 Python tests, five targeted browser checks, build, formatting, viewer hashes, 142 asset records and 1,081-row inventory passed. No full rebuild, Blender snapshot or hardware benchmark; existing build chunk warning remains.
+
+## 2026-11-04 - provisional Alder north facade
+
+Local: added a source-pinned illustrative 42-box north facade and porch to the unnamed roof-ee63827c candidate near Alder Building; its identity remains provisional and level 1. An unmerged version exceeded the existing fixed-view draw budget; a validated static batch merge retains 179 calls and source/selection semantics at the tested points. No interior change or publication. Sources, visual comparisons, collision/entrance tests and standalone overlay limitations: docs/alder-north-provisional-2026-11-04.md.
+
+Validation: 134 JavaScript tests, 20 Python tests, three browser tests, build and metadata-only preservation of 45 layers passed; no full Blender rebuild or hardware benchmark.
+Additional checks: formatting, viewer hashes, 144 archived asset records and the 1,081-row inventory passed.
+
+## 2026-11-04 - University–Villard shrub batching
+
+Local: merged two compatible, source-pinned non-selectable shrub layers without changing building meshes, layout or materials. At 1440 × 1000 the same fixed initial overview fell from 179 to 178 draw calls, with identical triangles; seven comparison images matched pixel-for-pixel. At two closer views coarser culling drew 640/320 extra triangles, with unchanged pixels. All 534 entrance records and both building search selections were retained; levels unchanged. Evidence and limitations: docs/shrub-batching-performance-2026-11-04.md. Not published.
+
+Validation: 135 JavaScript tests, 20 Python tests, three browser checks and build passed; no hardware frame-time test or full rebuild.
+
+## 2026-11-04 - isolated Agate facade study
+
+After shrub batching passed, screened a potential Agate Hall west facade against UO's survey, dated photograph and archived NAIP. The unnamed roof-b068940e identity remains provisional. A candidate retained numerical entrance state but concealed its green entrance marker in the matched campus view, so it remains isolated and is not loaded; no level, collision or campus geometry changed. The first version exceeded the existing batch-bound guard; that guard was not changed. Details and before/after evidence: docs/agate-west-candidate-2026-11-04.md. Local only.
+Additional checks after the isolated Agate screen: format, viewer hashes, 145 archived asset records, 1,081 inventory rows and all seven comparison-image hashes passed.
+Follow-up: a visible University PBR comparison also matched exactly (eight A/B pairs total), and actual pointer clicks selected University and Villard in both batched and unbatched scenes.
+
+## 2026-11-04 - Agate west provisional refinement
+
+Correction: the earlier claim that the Agate v1 candidate hid the entrance marker was a visual-review error; the original entrance crops match and rays found the marker in front. The v1 study remains isolated. Adopted a second source-pinned 77-box west overlay that fills its tan entry seam, preserving the original estimated marker and provisional unnamed identity; level remains 1. Integrated into the existing three-building static batch, with original geometry and export verified. Source, image/ray evidence, navigation and limitations: docs/agate-west-provisional-2026-11-04.md. Local only; no interiors changed or publication.
+
+Validation: 136 JavaScript, 20 Python, four browser tests, build and metadata-only preservation of 46 layers passed; fixed overview remained 178 calls under the unchanged limit. No hardware benchmark or full Blender rebuild.
+Additional verification: formatting, viewer hashes, 147 archived asset records, 1,081 inventory rows, six image hashes and five recorded entrance rays passed.
+
+## 2026-11-04 — provisional Longhouse-area exterior
+
+- Added a source-pinned 23-box south frontage and bounded palette to the unidentified `roof-f736712f` candidate near Many Nations Longhouse. The UO references, approximate location, visual before/after and unresolved identity/roof/entry limitations are documented in `docs/longhouse-south-provisional-2026-11-04.md`. The asset remains unidentified, level 1; interiors and placement are unchanged.
+- Palette checks match 92 of 20,148 source vertices before modifying colors; source GLB remains untouched and 22 batch identities stay intact. The editable JSON and original-source pins are recorded; standalone 828-vertex overlay GLB round-trips positions, normals and colors with zero error and excludes the base and palette. No Blender snapshot was generated.
+- Validated 138 JavaScript and 21 Python tests, production build, formatting, 150 archived asset hashes, viewer override hashes, 1,081 inventory rows, real-GLB geometry/merge check, entry picking/navigation, Agate and vegetation selection regressions. Matched three-view calls were 44/167/17 before and after; original overview budget test passed at 178 (<180). 534 entrance records were unchanged. An earlier temporary test failed to initialize after injecting the already-integrated overlay twice; it was corrected to test the actual scene without changing the limit. No device benchmark or full Blender rebuild was run. Local only; not published.
+
+## 2026-11-04 — Lokey Education candidate wall color
+
+- Applied an illustrative source-pinned brick tone to 120 vertical wall vertices of approximate `roof-74ecc113` only, using the existing wall-patch pipeline. UO education-complex material context, a 2013 reference photograph, matched views, approximate identity and incomplete roof/entrance/source-export limitations are recorded in `docs/lokey-wall-color-2026-11-04.md`. The candidate remains level 1. Original GLB, campus layout and interiors remain unchanged; no Blender snapshot or baked standalone export was created.
+- Real-GLB browser validation confirmed all other positions, normals, indices, material and object identity unchanged; a wrong expected count was rejected. Building selection, estimated entry and all 534 entrance records matched before/after. Four matched views remained 28/89/23/67 draw calls; the existing overview test passed at 178 (<180). 138 JS and 21 Python tests, three browser tests, production build, formatting, viewer hashes and 151 source/model hashes passed. No hardware benchmark or full Blender rebuild. Local only, not published.
+
+## 2026-11-04 — van profile and Onyx Bridge candidate screen
+
+- Added a generic sloped hood to the existing procedural van; placement, collision, routing and visible envelope are unchanged. Regenerated the six-kind prop GLB and retained the preceding version; `docs/van-profile-2026-11-04.md` records the neutral comparison, UO context and the missing current Blender snapshot. PROP-02 remains level 1.
+- The UO historic survey describes Onyx Bridge as four stories with exterior trusses, while its approximate nearest-roof candidate is 166 m² and 4.14 m high. Recorded the identity/scale uncertainty and nearby candidate distances in `docs/onyx-candidate-screen-2026-11-04.md`; no truss, geometry, identity or collision was changed.
+- 139 JS tests, 21 Python tests, seven targeted browser tests, production build, formatting, viewer override hashes and 152 archived asset hashes passed. All six exported prop positions match the procedural generator; five unchanged prop types retain their former positions, normals, colors and transforms. The van has 2,196 vertices versus 2,184 before. The fixed overview stayed 178 draw calls (<180); no hardware frame-time or campus-context van visual assessment was performed. No new Blender snapshot or deployment; all work remains local.
+
+## 2026-11-04 — context tree trunk variation
+
+- Added a source-pinned second pass for 300 existing inferred context-tree trunks: upper radius 78% of the existing base and stable bark-color factors within ±6%. It leaves canopy attributes and indices, tree centers/heights, terrain, layout and interiors unchanged. Reference context, limitations and before/after/PBR views are in `docs/context-trunk-variation-2026-11-04.md`; ENV-02 remains level 1.
+- Added a non-overwriting standalone 300-tree GLB with position/normal/color round-trip error zero and exact indices. The previous standalone GLB remains unchanged and its original browser test still passes. Neither export is a per-tree Blender scene; no new Blender snapshot was created. Metadata-only preservation verifies the new layer and its dependency on the original trunks.
+- 139 JS, 22 Python and six targeted browser tests passed, including unchanged canopy preservation, both old and new exports, selection and the original <180 fixed overview (178). Matched close views stayed 39 draws and 749,989 triangles; PBR was reviewed. Build, formatting, 154 asset hashes, viewer hashes and 1,081 inventory rows passed. No full rebuild or hardware performance/peak-memory benchmark. Changes remain local and unpublished.
+
+## 2026-11-04 — EMU circular paving
+
+- Added an optional, bounded circular staggered-joint treatment to the existing pilot paving shader at the EMU forecourt. The archived 2017 CC0 photo and 2024 public-domain NAIP cue inform its broad character and approximate location; individual stone layout, dimensions, stairs and current conditions remain unverified. `docs/emu-radial-paving-2026-11-04.md` records the evidence and matched toon/PBR views. ENV-05 remains level 1; no geometry, campus layout or interior was changed.
+- 141 JS, 22 Python and six browser tests passed, including all 534 entrance records, modeled collision, unrelated-pixel and navigation checks. The matched close view stayed 71 draws / 819,257 triangles; the fixed overview stayed 178 (<180). Build, formatting, 155 archived asset hashes, viewer hashes, 1,081 inventory rows and metadata-only preservation passed. The runtime shader is absent from standalone GLB and Blender files; no new baked export, Blender snapshot, full rebuild or device benchmark. Local only, not published.
+- Screened a separate far-north landcover correction against the archived aerial; the isolated 792-vertex candidate had minimal in-scene visibility under existing spatial haze, so it was not integrated or exported.
+
+## 2026-11-04 — rounded cloud volumes
+
+- Replaced 90 existing cloud lobes in the runtime with low-poly rounded volumes while preserving each lobe's horizontal center/base and existing 18-cluster motion, palette and material. The NWS context, matched campus and PBR views, limitations and reproducible export are documented in `docs/rounded-cloud-volumes-2026-11-04.md`; ENV-07 remains level 1. The original sky generator and old standalone cloud export remain unchanged.
+- Added a separate 27,000-vertex cloud GLB; reimported positions, normals and colors have zero error. It excludes the sky dome and animation, and no new Blender snapshot was made. Two matched campus views held draws at 71 and 70 and each reduced triangles by 18,000. The fixed overview remained 178 draws (<180); no device frame-time or peak-memory benchmark was run.
+- 143 JS, 22 Python and seven browser tests passed, including old/new export, reduced motion, navigation and existing budget; build, formatting, viewer hashes, 156 archived asset checks and 1,081 inventory rows passed. Existing build chunk warning remains. Local only; not published.
+- Screened Frohnmayer against the UO guide and 2024 aerial: the named 505 m² roof candidate appears to cover only part of a multi-wing complex. `docs/frohnmayer-candidate-screen-2026-11-04.md` records the limitation; no building geometry, identity, collision or interior was changed.
+
+## 2026-11-04 - individual pilot bench export
+
+- Added `assets/exterior-refinement/pilot-benches-individual-2026-11-04.glb`: nine separately pivoted groups with original metal supports and wood. Source-pinned export and 18-mesh world-space roundtrip checks preserve the prior combined export, which remains available. `docs/pilot-benches-individual-2026-11-04.md` records the source, matched comparison, limits and reproduction. PROP-01 stays level 1; no runtime visual or campus layout change. No new Blender snapshot; individual wood components remain merged.
+- Screened UO map bike-parking area A20: 25 sample points on the approximate scene area hit modeled lawn, so the generic rack was not placed; map coordinates, uncertainty and remaining evidence needs are documented. No field inventory claimed.
+- 143 JavaScript tests, production build and two focused browser tests passed; geometry comparison was exact, while the screenshot comparison permits small raster differences (max channel 44). Existing build chunk warning remains. Local only, not published.
+
+## 2026-11-04 - landscape reference screen
+
+- Recorded primary UO references for Gerlinger Field Green and Science Walk in `docs/landscape-reference-screen-2026-11-04.md`. Their broad historic descriptions support future investigation, but do not establish individual modeled tree positions or a registered, licensed artwork layout. Existing science-building overlap issues remain open. No asset, runtime, inventory level or publication changed, and no new runtime test was required for this documentation-only screen.
+
+## 2026-11-04 - grass-detail candidate screen and inventory reconciliation
+
+- Tested a world-space near-camera grass-fleck shader on the two existing lawn meshes. Two targeted browser checks passed, including the unchanged fixed-view draw budget and toon/PBR shader load, but the visual result resembled repetitive ground marks rather than convincing grass. The candidate was rejected, the previous `src/lawn-tone.js` restored, and the temporary candidate code and screenshot retained in the task workspace outside the project. No runtime appearance, geometry or performance threshold was changed by this screen.
+- Reconciled PROP-01 in `docs/asset-refinement-inventory.csv` with the previously completed nine individual bench groups and remaining component/Blender limitations; it remains level 1. CSV parsed as 1,081 rows and 143 JavaScript tests passed after restoring the runtime. Local only, not published.
+
+## 2026-11-04 - squirrel eye details
+
+- Added two small eye accents to the existing generic squirrel, merged into its shared mesh without changing the source body, actor counts, paths, collision, buildings or interiors. No species claim; LIFE-01 remains level 1. OSU regional context, CC0 source and licensing, three-angle views, guarded generator and limitations are in `docs/squirrel-eyes-2026-11-04.md`.
+- Exported a separate source-pinned GLB with exact position/normal/color reimport checks; original source GLB and Blender snapshot are retained, and no new Blender snapshot was made. Adds 160 triangles per visible squirrel; one mesh per actor remains. No hardware frame-time benchmark was run.
+- 143 JS tests, build, formatter and two targeted browser checks passed, including unchanged fixed-view draw budget and eight default squirrels; the squirrel test and build were repeated after the final source guard. Inventory parsed at 1,081 rows. Existing chunk warning remains. Local only, not published.
+
+## 2026-11-04 - University Hall dormers and eaves
+
+- Refined University Hall's existing full exterior with linked-photo-informed dormer pediments and side frames, continuous main and tower eaves and stylized brackets on all four sides. Preserved the prior source specification, layout, original 210 objects, interior and existing vegetation. Source, four campus views, isolated before/after and unverified details are in `docs/university-hall-refinement.md`. University Hall remains level 1 pending stronger whole-building evidence and review against Knight; no invented level standard.
+- Added an independent full replacement GLB with four prior illustrative shrubs; exact exported position/normal/color checks passed. Original campus GLB and Blender snapshots are unchanged; no new Blender snapshot or editable individual component hierarchy. At isolated view two draw calls stayed unchanged and triangles rose 10,004 to 12,420. Two campus before/after draw counts matched; no hardware frame-time measurement.
+- 143 JS, 22 Python and three affected browser tests passed; the campus comparison was repeated after adjusting cameras. Original fixed-view <180 budget, selection, render modes, 534 entrance records and two sampled collision checks passed; production build and formatter passed. Initial test discovery path and initial formatting check failed, then corrected and passed. Existing chunk warning remains. Inventory remains 1,081 rows. Local only, not published.
+
+## 2026-11-04 - Villard exterior eaves and tower crest
+
+- Refined Villard's existing east oculus surrounds, east/north/south cornice brackets, entry balcony side returns and four tower-cap crests, using the archived CC0 photograph and UO survey as references. The original 206 specification objects, campus layout, shrubs, collision and interior are unchanged. The central-roof railing candidate was rejected as visually misaligned; the west/theater junction and other historic details remain uncertain. See `docs/villard-east-refinement.md` for source, matching views and limits. Villard remains level 1.
+- Added a source-pinned standalone full-exterior GLB with the eight prior illustrative shrubs; position, normal and color reimport errors were zero. Original campus GLB and Blender sources are unchanged; no new Blender snapshot, collision or individually editable component hierarchy. Isolated draw calls stayed 2 and triangles rose from 6,948 to 9,780; two campus comparisons held draw counts. No hardware frame-time benchmark.
+- 143 JS, 22 Python and three browser tests passed, including selection, both render modes, existing fixed-view <180 budget, 534 entrance records and two sampled collision checks. Build and formatter passed; existing large-chunk warning remains. Inventory remains 1,081 rows. Local only, unpublished.
+
+## 2026-11-04 - Johnson Hall shallow roof and cornices
+
+- Added a source-informed shallow light hipped roof above Johnson's existing flat roof and continuous rear/side cornice brackets. Three original roof markers are covered and represented by simplified copies at the same horizontal coordinates on the new roof; their identities are unverified. Prior rear layer, front portico/frieze, building ID, vegetation, interior and layout are retained. UO survey, 2024 public-domain aerial, 2012 CC BY 4.0 photograph, matched views and outstanding gable-on-hip accuracy are documented in `docs/johnson-rear-refinement.md`. Johnson remains level 1.
+- Exported a source-pinned roof/rear overlay GLB including prior illustrative shrubs, but not the source building, front lettering, navigation or collision; position/normal/color reimport errors zero. No new Blender snapshot. Isolated combined source and overlay kept 13 draws while triangles rose from 8,480 to 9,660; two campus views had matching before/after draw counts. No hardware benchmark.
+- 143 JS, 22 Python and two browser tests passed; the original fixed-view <180 budget, selection, 534 entrance records and two sampled collision checks passed. Build and format passed; existing chunk warning remains. Inventory remains 1,081 rows. A Friendly gable candidate was retained outside the project because it visibly conflicted with existing dormers; Friendly runtime unchanged. Local only, not published.
+
+## 2026-11-04 - Johnson Hall gable-on-hip correction
+
+- Replaced the prior truncated hipped roof with a shallow central-ridge roof and hipped ends, following the UO historic survey's gable-on-hip description and 2024 aerial context. The outer two illustrative existing roof markers were tilted and lowered to contact the new roof; horizontal centers, the rest of the prior exterior, vegetation, collision and interior remain. `docs/johnson-rear-refinement.md` records reference, matched views and unverified details. Johnson remains level 1.
+- Added reusable `gable-hip` construction with dimensional guard and a surface-ray test of the ridge, slopes and marker contact. The former specification and generator are preserved; a new source-pinned overlay GLB passed exact position/normal/color roundtrip. Original base GLB, prior overlay and Blender snapshots remain; no new Blender snapshot or full building/collision in the overlay. Isolated draws stayed 13, triangles 9,660 to 9,652; two campus views retained draw counts. No hardware frame-time benchmark.
+- 144 JS, 22 Python and two browser tests passed; selection, entrance records, sampled collision and existing <180 fixed-view budget passed, as did build and format. The initial marker test expected a 0.10 m gap instead of the existing 0.12 m support thickness; corrected and passed. Existing chunk warning remains, inventory 1,081 rows. Local only, unpublished.
+
+### 2026-11-04 — Collier north upper bay study (local)
+
+Used a linked UO photograph to add paired tapered upper bays and a schematic balcony railing to Collier House; preserved its anchor, collision specification and interiors. The prior spec and generator are retained, the standalone GLB round-trips positions/normals/colors, and the building remains level 1 because the lower bays, porch roof relationship and current dimensions require verification. Matched campus north/east views retained 60/93 draw calls; selection, entrance, collision probes and existing toon/PBR budget browser tests passed, as did 145 JS tests and the production build. See `docs/collier-house-refinement.md` for sources, images and limitations. Friendly roof/dormer candidate remains isolated after visual review. Local only; not published.
+
+### 2026-11-04 — Collier lower bays and central porch (local)
+
+Added the photographed lower bay forms aligned with the existing upper bays, narrowed the illustrative porch to the central span and removed conflicting outer porch pieces; original anchor, interiors and conservative collision rectangles remain. Level 1 remains because proportions, porch structure and current conditions are unverified. Three matched views retained 60/60/93 draw calls; selection, entrance, collision probes, existing toon/PBR budget, 146 JS tests and production build passed. The standalone GLB round-trip retained positions, normals and colors; no new Blender snapshot. See `docs/collier-house-refinement.md` for references, comparison and limitations. Local only; not published.
+
+### 2026-11-04 — University Hall tower study (local)
+
+Used cited UO records and a licensed historical photo to replace each end tower's single schematic arch with three narrower arches and add simplified roof cresting. Existing building anchor, entrances, surroundings, collision and interiors remain; the prior specification is retained. The building remains level 1: mansard form, chimneys, proportions, access and present condition require further evidence. Three campus views retained 80/36/26 draw calls; selection, entrance records, collision probes, existing toon/PBR budget, 147 JS tests and production build passed. The generated GLB reimport matched positions, normals and colors, but is not an updated Blender snapshot. See `docs/university-hall-refinement.md`. Local only; not published.
+
+### 2026-11-04 — University Hall mansard study (local)
+
+Replaced three constant-slope roof approximations with reusable two-slope mansard forms and adjusted the four tower dormer pairs to remain attached and visible. An early candidate accidentally touched entrance objects; these were restored and a per-object regression verifies the final scope. Building anchor, entry, surrounding scene, interiors and collision are preserved. The unmeasured slopes, dormers, chimneys and current conditions remain uncertain; the building remains level 1. Four matched views retained 80/36/26/121 draws; roof/dormer geometric tests, selection, entrance records, collision probes, existing toon/PBR budget, 149 JS tests and production build passed. GLB positions/normals/colors round-tripped; no updated Blender snapshot. See `docs/university-hall-refinement.md`. Local only, unpublished.
+
+### 2026-11-04 — Friendly flared-roof study deferred (local)
+
+Compared a flared-gable and 17 extended dormer caps with the current Friendly replacement. The UO 2025 survey and preliminary assessment describe the roof using different terminology, and the extended candidate presents chunky far-side silhouettes in elevated views. Preserved the candidate, generator and images for review; restored the original runtime generator and left the pinned Friendly layer and level 1 unchanged. West/south screening views matched 77/34 draws, while the east view was obstructed and the north camera fell back, so those are not a complete campus verification. See `docs/friendly-west-refinement.md` for sources and exact limitations. No export or publication.
+
+### 2026-11-04 — Villard roof profile study (local)
+
+Used the cited UO survey and elevation context to replace five constant-slope roof profiles with the existing reusable two-slope approximation. Their bounds, all other components, collision, entrance, vegetation and interiors remain unchanged; the prior specification is retained. The west/theater junction, roof curvature, exact dimensions and current condition are unverified, so the building remains level 1. Matched east/north/south views retained 27/133/21 draws; the attempted west camera fell back and is not a valid visual check. Five-roof geometry, selection, entrances, collision probes, existing toon/PBR budget, 150 JS tests and production build passed. The generated GLB reimport matched positions/normals/colors, but is not an updated Blender snapshot. See `docs/villard-east-refinement.md`; local only, unpublished.
+
+### 2026-11-04 — Villard west camera and junction screen (local)
+
+Identified the old west camera coordinate as blocked by the theater collision, causing the existing return fallback. Established four reproducible first-person views from collision-free positions and added a browser regression for blocked/valid coordinates. The model shows a gap where UO's 2025 survey identifies an attachment; the 2017 proposed connection is not sufficient as-built evidence after renovation. Preserved geometry, collision and level 1 pending current imagery or measured plans. See `docs/villard-east-refinement.md`; local only, unpublished.
+
+Chapman north entry was also screened using the 2016 assessment and a collision-free local view; foreground geometry obstructs that view and a measured entry-to-model mapping remains unresolved. No Chapman geometry changed. See `docs/chapman-west-refinement.md`.
+
+### 2026-11-04 — Susan Campbell brick parapet study (local)
+
+Used UO's survey and a licensed 2011 photograph to add two illustrative brick parapet volumes to the long roof elevation and reposition the associated existing window frames. Roof intersection and glass visibility are tested; unrelated objects, anchor, collision and interiors remain unchanged. The prior specification is retained. Position, proportions, orientation, courtyard entry and current conditions remain unverified, so level stays 1. Three software-rendered views retained 87/58/45 draws with partial occlusion; selection, entrances, collision probes, existing toon/PBR budget, 151 JS tests and production build passed. The building-only standalone GLB reimport matched positions/normals/colors, not a Blender snapshot. See `docs/susan-campbell-refinement.md`; local only, unpublished.
+
+### 2026-11-04 — Exterior provenance pin reconciliation (local)
+
+Reconciled stale downstream hashes for five locally refined building specifications and the exterior generator after matching each old building hash to its preserved prior snapshot and checking the current presentation/base pins. Retained prior source records and registered the checked snapshots and latest GLBs; no scene geometry changed. All 101 tracked viewer outputs and 169 archived asset files now match their recorded hashes; 22 Python tests passed, and the preservation function validated 47 current exterior layers with source tree count 600. The first direct probe omitted rebuilt statistics and correctly failed input validation; the corrected probe passed. See `docs/exterior-source-pin-reconciliation-2026-11-04.md`. Local only, unpublished.
+
+### 2026-11-04 — Susan courtyard entry study (local)
+
+Using the UO survey's courtyard photograph and an approximate scene mapping, added a stylized door/porch at the inner elevation and two small conservative post collision boxes; removed the conflicting schematic window. The exact position, orientation and accessibility are not verified. The existing separately estimated south-side interaction marker remains unchanged and the new door is not an interactive entrance; level remains 1. No existing navigation edges intersect the two new boxes at 0.5 m margin. Three software-rendered views retained 47/47/88 draws; geometry, post collision, selection, entrance records, existing toon/PBR budget, 152 JS tests and build passed. The building-only GLB reimport matched positions/normals/colors; no new Blender snapshot. See `docs/susan-campbell-refinement.md`. Local only, unpublished.
+
+### 2026-11-04 — Fenton entrance and balustrade connection (local)
+
+Used the UO survey and state masonry assessment to distinguish the decorative arch from Fenton's rectangular east door and connect the previously floating balustrade to the entry cornice. Existing footprint, vegetation, collision and interiors are unchanged. The source's steps were not modeled because the current terrain/threshold relationship requires verification; massing, exact dimensions, access and current condition remain uncertain, so level stays 1. Matched east/oblique/south software-rendered views retained 54/77/36 draws; geometry, selection, entrance records, collision samples, original toon/PBR budget, 153 JS tests and production build passed. The overlay-only GLB reimport matched positions/normals/colors and is not a new Blender snapshot. Source/output pins and prior records were updated; see `docs/fenton-south-refinement.md`. Local only, unpublished.
+
+## 2026-11-04 — Straub west roof and attic study
+
+Added an estimated west-wing gable and light attic band to the existing source-pinned Straub overlay based on the linked UO survey, preserving the original building, existing overlay geometry and collision data. Three ground views and an aerial view were inspected; west/northwest browser comparisons retained selection, entrance data, sampled collision and draw counts. The existing lawn performance-budget test passed. A standalone additive GLB was exported and its position, normal and color attributes matched on reimport. Source and export are registered with hashes and the earlier specification is retained. Exact roof geometry and rear junctions remain unverified; level stays 1. See `docs/straub-west-refinement.md`. No publication.
+
+## 2026-11-04 — Fenton east elevation candidate deferred
+
+Compared the two-storey east elevation described by the linked UO survey with the current three-row estimated massing. A source-isolated two-storey facade candidate leaves original windows and eave discontinuities exposed, so it was not integrated. Two browser views retained 54 and 77 draw calls; this is a visual screen rather than a full navigation or performance validation. See `docs/fenton-south-refinement.md`; runtime assets and level remain unchanged. Local only, unpublished.
+
+## 2026-11-04 — Fenton source filter and Anstett orientation review
+
+Screened an isolated Fenton mesh filter: 144 indexed triangles were removed in memory and two campus views retained 54/77 draws; the candidate still has incomplete end faces and lacks the guards and interaction checks needed for integration, so the runtime is unchanged. Also recorded a discrepancy between the UO survey's west-facing Anstett entry description and the current south-plane overlay; neither placement was changed. See the respective refinement records. No new GLB or Blender snapshot; local only, unpublished.
+
+## 2026-11-04 — Guarded Fenton east-window correction
+
+Integrated the source-pinned Fenton east-window correction after validating all 144 removed window triangles and their 288 source vertex signatures. A cloned runtime mesh preserves all remaining indices, original GLB and identity; mismatched source hash, geometry or target rejects without mutation. The original eave, entrance and collision remain; angled corner windows and actual proportions still need verification, so Fenton remains level 1. Before/after browser checks preserved selection, entrance data, sampled collision and draw counts; the existing draw budget and walking navigation regression passed. Build, 156 JS tests, 23 Python tests and formatting checks passed. The additive overlay export roundtripped attributes but does not include the base mesh or source filter; no new Blender snapshot. See `docs/fenton-south-refinement.md`. Local only, unpublished.
+
+## 2026-11-04 — Fenton corner lower windows and load check
+
+Replaced the oversized lowest generic windows on two existing angled corner faces with smaller, source-informed windows, extending the source-verified filter from 144 to 168 triangles. Prior source specification, upper windows, roof, building identity, original GLB and collision remain. Three camera-verified before/after views, source tamper, draw budget and walking-navigation regressions passed, along with 157 JS tests, 23 Python tests, build and formatting. The current roof boundary remains too uncertain to alter safely. Six in-browser SHA-256 samples for the 34.8 MB GLB were 22.0–23.4 ms; limited scene-ready comparisons do not isolate total load overhead. The roundtripped additive GLB excludes the base and triangle filter, and no Blender snapshot was created. Fenton remains level 1; see `docs/fenton-south-refinement.md`. Local only, unpublished.
+
+## 2026-11-04 — University Hall entry stairs
+
+Using the linked UO historic assessment, connected the existing east and west entry steps to stylized solid concrete wing walls and central handrails. A first floating-wall candidate was corrected after oblique visual review; a reusable wedge primitive produces the adopted walls. Earlier model components, roof, building anchor, collision, navigation and interior remain. Three camera-verified before/after views retained selection, entrances, sampled collision and draw calls; the existing performance budget and walking navigation regression passed. 158 JS tests, 23 Python tests, build and formatter passed. The roundtripped standalone replacement excludes terrain, navigation and collision, and no new Blender snapshot was made. Dimensions and access remain unverified, so level remains 1. See `docs/university-hall-refinement.md`. Local only, unpublished.
+
+## 2026-11-04 — University Hall stair collision
+
+Added six restricted full-height 2D collision boxes for the two modeled stair wings and center rails, with the previous specification retained. Both side lanes remained traversable in 0.42 m-radius simulation; no existing navigation edge intersects the boxes with a 0.5 m margin. Before/after browser checks preserved all entrance records and the 38-point Johnson-to-University route; the existing walking regression passed. Actual stair access, vertical movement and accessibility remain unverified. The standalone GLB does not include collision. Level remains 1. See `docs/university-hall-refinement.md`. Local only, unpublished.
+
+## 2026-11-04 — Tykeson upper frontage
+
+Reworked the existing source-pinned Tykeson front overlay to a two-row upper cladding and adjusted glazing, referencing the attributed historical image and design architect project. The existing entrance canopy, planting, base blockout, roof, collision, campus placement and interior remain. Three camera-verified views retained 68/69/98 draws and an aerial candidate retained 82; selection, entrance, sampled collision, toon/PBR and original performance-budget checks passed. The roundtripped additive overlay excludes base, terrain, navigation and collision; no new Blender snapshot. The three actual building volumes and other elevations are still absent or unverified; level remains 1. 160 JS tests, 23 Python tests and build passed. See `docs/tykeson-north-refinement.md`. Local only, unpublished.
+
+## 2026-11-04 — Gerlinger east portico
+
+Added a stylized columned entry surround to Gerlinger Hall's previously mapped east facade, informed by the linked UO assessment and attributed historical photo. The original layer, door, upper windows, planting, roof, base GLB and interiors remain; the curved entry arch and actual grade require more work. Three verified camera views retained selection, entrance data, sampled collision and 62/43/101 draws; the south view is obstructed. Geometry tests keep the door visible and the lintel below the upper window. The existing toon/PBR draw budget passed. The additive GLB roundtripped attributes but excludes the source building, terrain and collision; no Blender snapshot. Entry columns are visual only, with no access guarantee. Level remains 1; see `docs/gerlinger-east-refinement.md`. Local pending publication review.
+
+## 2026-11-04 - Lamp overlay generator pin refresh
+
+Re-exported the existing additive lamp overlay after the shared generator changed, retained the old file, and verified 3,840 positions, normals and colors plus scene merge and material consistency. No runtime geometry changed; PROP-01 remains level 1. See `docs/pilot-lamp-overlay-export-2026-11-04.md`.
+
+## 2026-11-04 - Johnson rear upper window and band
+
+Added a source-informed approximate upper window, awning and horizontal band to the existing rear layer. Two views retained 56/71 draws, selection, entrances and sampled collision; the new additive GLB roundtripped positions, normals and colors. Prior source is retained; no interior or collision changed. Dimensions and present condition remain unverified, so level remains 1. See `docs/johnson-rear-refinement.md`. Local only; publication paused.
+
+## 2026-11-04 - Fixed person prototype (local)
+
+Added a source-attributed, stylized named-person prototype near Deschutes with a bounded, collision-screened walk, endpoint pauses, minimap marker, lightweight interactive label, proximity text and linked accessible profile card. Reuses the rigged base with procedural plaid and accessories; the user-provided line is fictional game text and appearance dimensions are not verified. See `docs/fixed-person-dan-carrere.md` and review image. Local only; publication paused pending user review.
+
+## 2026-11-04 - Fixed person building occlusion (local)
+
+Added throttled two-point building occlusion for person labels and bubbles without changing the reviewed character. Real-scene desktop/touch blocked and clear views, card interaction, path, 178-draw budget and low-frame-rate regression passed; partial occlusion is approximated and trees are not checked. See `docs/fixed-person-dan-carrere.md`. Local only; bubble reference and publication remain pending.
+
+## 2026-11-04 - Fixed person speech bubble reference
+
+Adjusted the dialogue bubble to the user-provided rounded white reference, with an inset shadow and a lower-left tail pointing toward the character; positioned it above-right without overlapping the name. The reference was visually checked in the parent thread and is not redistributed. The reviewed person appearance is unchanged. See `docs/fixed-person-dan-carrere.md`; publication validation pending.
+
+## 2026-11-04 - Six-view test fixture efficiency
+
+CI-mode full browser regression produced 168 passes and three 90-second timeouts in Gerlinger, Tykeson and University Hall six-view comparisons; the original isolated retest reproduced two timeouts. Reused one browser context per comparison with a new page per version and explicit local storage and cookie cleanup, retaining every original camera, screenshot, assertion and 90-second limit. All three passed in an isolated CI-mode retest. Failure artifacts remain in the local task workspace; full regression is being rerun before publication.

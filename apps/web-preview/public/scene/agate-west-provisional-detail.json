@@ -1,0 +1,1199 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-b068940e",
+  "replace_building": false,
+  "merge_batch_target": "context-campus-2-0",
+  "merge_source_vertex_count": 2774,
+  "merge_batch_bounds": [
+    108.1,
+    4.5,
+    564,
+    109.1,
+    17.2,
+    609
+  ],
+  "reference_ids": [],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/agatehall2025",
+    "https://news.uoregon.edu/content/american-english-institute-makes-move-renovated-agate-hall"
+  ],
+  "note": "Provisional Agate Hall: illustrative west facade, two levels of green awnings, central parapet; precise identity, dimensions, existing entrance, current colors and other elevations remain unverified.",
+  "overlay_collision_boxes_enu_m": [
+    [
+      108.45,
+      -584.7,
+      109.05,
+      -565
+    ],
+    [
+      108.45,
+      -608,
+      109.05,
+      -588.3
+    ],
+    [
+      108.8,
+      -588.2,
+      109.05,
+      -584.8
+    ]
+  ],
+  "objects": [
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.91,
+        10.3,
+        574.9
+      ],
+      "size": [
+        0.16,
+        11.2,
+        19.8
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.91,
+        10.3,
+        598.1
+      ],
+      "size": [
+        0.16,
+        11.2,
+        19.8
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.91,
+        10.3,
+        586.5
+      ],
+      "size": [
+        0.16,
+        11.2,
+        3.4
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.8,
+        16.2,
+        586.5
+      ],
+      "size": [
+        0.3,
+        1.0,
+        9.5
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.8,
+        16.9,
+        586.5
+      ],
+      "size": [
+        0.3,
+        0.4,
+        7.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        7.55,
+        568.1
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        7.55,
+        568.1
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        567.02
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        568.1
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        569.1800000000001
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        8.77,
+        568.1
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        11.5,
+        568.1
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        11.5,
+        568.1
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        567.02
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        568.1
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        569.1800000000001
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        12.72,
+        568.1
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        7.55,
+        574.4
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        7.55,
+        574.4
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        573.3199999999999
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        574.4
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        575.48
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        8.77,
+        574.4
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        11.5,
+        574.4
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        11.5,
+        574.4
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        573.3199999999999
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        574.4
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        575.48
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        12.72,
+        574.4
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        7.55,
+        580.7
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        7.55,
+        580.7
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        579.62
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        580.7
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        581.7800000000001
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        8.77,
+        580.7
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        11.5,
+        580.7
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        11.5,
+        580.7
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        579.62
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        580.7
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        581.7800000000001
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        12.72,
+        580.7
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        7.55,
+        592.5
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        7.55,
+        592.5
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        591.42
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        592.5
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        593.58
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        8.77,
+        592.5
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        11.5,
+        592.5
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        11.5,
+        592.5
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        591.42
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        592.5
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        593.58
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        12.72,
+        592.5
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        7.55,
+        598.8
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        7.55,
+        598.8
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        597.7199999999999
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        598.8
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        599.88
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        8.77,
+        598.8
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        11.5,
+        598.8
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        11.5,
+        598.8
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        597.7199999999999
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        598.8
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        599.88
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        12.72,
+        598.8
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        7.55,
+        605.1
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        7.55,
+        605.1
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        604.02
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        605.1
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        7.55,
+        606.1800000000001
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        8.77,
+        605.1
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        108.78,
+        11.5,
+        605.1
+      ],
+      "size": [
+        0.07,
+        2.2,
+        4.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        108.72,
+        11.5,
+        605.1
+      ],
+      "size": [
+        0.05,
+        1.95,
+        4.3
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        604.02
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        605.1
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        108.68,
+        11.5,
+        606.1800000000001
+      ],
+      "size": [
+        0.04,
+        1.98,
+        0.055
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "shrub-deep",
+      "shape": "box",
+      "position": [
+        108.5,
+        12.72,
+        605.1
+      ],
+      "size": [
+        0.62,
+        0.18,
+        4.85
+      ]
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-af9a4442",
+  "replace_building": false,
+  "reference_ids": [],
+  "reference_urls": [
+    "https://rdgusa.com/work/project/university-of-oregon-student-recreation-center-expansion-and-renovation",
+    "https://news.uoregon.edu/content/new-expanded-student-rec-center-ready-its-closeup"
+  ],
+  "note": "Schematic glass fitness facade on an approximately sampled east wall of the nearest-roof candidate; exact boundary, entrance, glazing and current surroundings remain unverified.",
+  "overlay_collision_boxes_enu_m": [
+    [
+      -160.1,
+      -338.5,
+      -158.87830188679246,
+      -326.0
+    ],
+    [
+      -159.62830188679246,
+      -351.0,
+      -158.4066037735849,
+      -338.5
+    ],
+    [
+      -159.1566037735849,
+      -363.5,
+      -157.93490566037735,
+      -351.0
+    ],
+    [
+      -158.68490566037735,
+      -376.0,
+      -157.46320754716982,
+      -363.5
+    ]
+  ],
+  "objects": [
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -158.7566,
+        13.0205,
+        351.0
+      ],
+      "size": [
+        0.22,
+        14.799,
+        50.03559
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -159.54,
+        13.0205,
+        326.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -159.44566,
+        13.0205,
+        328.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -159.35132,
+        13.0205,
+        331.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -159.25698,
+        13.0205,
+        333.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -159.16264,
+        13.0205,
+        336.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -159.0683,
+        13.0205,
+        338.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.97396,
+        13.0205,
+        341.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.87962,
+        13.0205,
+        343.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.78528,
+        13.0205,
+        346.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.69094,
+        13.0205,
+        348.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.5966,
+        13.0205,
+        351.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.50226,
+        13.0205,
+        353.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.40792,
+        13.0205,
+        356.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.31358,
+        13.0205,
+        358.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.21925,
+        13.0205,
+        361.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.12491,
+        13.0205,
+        363.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.03057,
+        13.0205,
+        366.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -157.93623,
+        13.0205,
+        368.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -157.84189,
+        13.0205,
+        371.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -157.74755,
+        13.0205,
+        373.5
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -157.65321,
+        13.0205,
+        376.0
+      ],
+      "size": [
+        0.15,
+        14.799,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.5866,
+        5.621,
+        351.0
+      ],
+      "size": [
+        0.1,
+        0.14,
+        50.03559
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.5866,
+        10.554,
+        351.0
+      ],
+      "size": [
+        0.1,
+        0.14,
+        50.03559
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.5866,
+        15.487,
+        351.0
+      ],
+      "size": [
+        0.1,
+        0.14,
+        50.03559
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -158.5866,
+        20.42,
+        351.0
+      ],
+      "size": [
+        0.1,
+        0.14,
+        50.03559
+      ],
+      "rotation": [
+        0,
+        0.037718,
+        0
+      ]
+    }
+  ],
+  "merge_source_vertex_count": 2406
+}

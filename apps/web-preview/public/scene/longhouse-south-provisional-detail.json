@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-f736712f",
+  "replace_building": false,
+  "merge_batch_target": "context-campus-2-1",
+  "merge_source_vertex_count": 20148,
+  "merge_batch_bounds": [
+    191.8,
+    3.5,
+    382.9,
+    201.2,
+    9.1,
+    383.6
+  ],
+  "reference_ids": [],
+  "reference_urls": [
+    "https://longhouse.uoregon.edu/history-many-nations-longhouse",
+    "https://news.uoregon.edu/content/geography-conference-set-many-nations-longhouse",
+    "https://cpfm.uoregon.edu/sites/default/files/mnlh_conceptualplanreport02-07-2011_1.pdf"
+  ],
+  "note": "Provisional south facade based on documented existing south glazing and wood siding. Footprint, identity, siding, dimensions, roof, other elevations and current state remain unverified. No cultural symbols are reproduced.",
+  "overlay_collision_boxes_enu_m": [
+    [
+      192.05,
+      -383.48,
+      200.95,
+      -382.94
+    ]
+  ],
+  "objects": [
+    {
+      "kind": "building",
+      "material": "roof-dark",
+      "shape": "box",
+      "position": [
+        196.5,
+        6.35,
+        383.1
+      ],
+      "size": [
+        8.9,
+        5.1,
+        0.18
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        192.45,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        193.35,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        194.25,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        195.15,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        196.05,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        196.95,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        197.85,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        198.75,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        199.65,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        200.55,
+        6.35,
+        383.21
+      ],
+      "size": [
+        0.055,
+        5.1,
+        0.06
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "dark",
+      "shape": "box",
+      "position": [
+        196.5,
+        6.25,
+        383.27
+      ],
+      "size": [
+        6.65,
+        3.55,
+        0.11
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        196.5,
+        6.25,
+        383.34
+      ],
+      "size": [
+        6.36,
+        3.28,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        193.9,
+        6.25,
+        383.4
+      ],
+      "size": [
+        0.07,
+        3.28,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        194.95,
+        6.25,
+        383.4
+      ],
+      "size": [
+        0.07,
+        3.28,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        196.0,
+        6.25,
+        383.4
+      ],
+      "size": [
+        0.07,
+        3.28,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        197.05,
+        6.25,
+        383.4
+      ],
+      "size": [
+        0.07,
+        3.28,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        198.1,
+        6.25,
+        383.4
+      ],
+      "size": [
+        0.07,
+        3.28,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        199.15,
+        6.25,
+        383.4
+      ],
+      "size": [
+        0.07,
+        3.28,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        196.5,
+        5.45,
+        383.41
+      ],
+      "size": [
+        6.36,
+        0.07,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        196.5,
+        6.25,
+        383.41
+      ],
+      "size": [
+        6.36,
+        0.07,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        196.5,
+        7.05,
+        383.41
+      ],
+      "size": [
+        6.36,
+        0.07,
+        0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "wood",
+      "shape": "box",
+      "position": [
+        196.5,
+        8.88,
+        383.1
+      ],
+      "size": [
+        9.0,
+        0.18,
+        0.35
+      ]
+    }
+  ]
+}

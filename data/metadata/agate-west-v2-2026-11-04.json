@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-04",
+  "meaning": "Instrumented local headless Chrome/ANGLE SwiftShader ray checks, not survey or hardware performance",
+  "source_overlay_sha256": "2bd259d31ad36dc2fe706edef648d57f0f93d4860891370c1024d8cb0f59bae9",
+  "images": {
+    "agate-west-v2-before-2026-11-04.png": "4754770e54f2e362fe3f483e99ed107a7d49dc304e5d8ce74f8fc6e0dd629710",
+    "agate-west-v2-after-2026-11-04.png": "8978cfe002120e98ee3988464f36c81da5cf298d473c64cefeec7b5e0dbf82f8",
+    "agate-west-v2-north-2026-11-04.png": "7caba87e7905d372c34b28148d2bcd76d5382ae917d023af67cd39072faeae72",
+    "agate-west-v2-south-2026-11-04.png": "742441a56c22c0088a1a8b6e6fed27879346dd65c298907e2634331dc9a5fdde",
+    "agate-west-v2-pbr-2026-11-04.png": "b2f6d9e230f824defd1e6c33c313209450623edcafb19f46da9dce240866fceb",
+    "agate-west-v2-distant-2026-11-04.png": "6fcc69f94301f4e80b688333c1ab3a69f71edef8ce58d3498fb80936d4f3185b"
+  },
+  "angles": {
+    "front-toon": {
+      "camera": [
+        72,
+        6.461500000000002,
+        586
+      ],
+      "drawCalls": 15,
+      "triangles": 598464,
+      "blocked": false,
+      "entry": {
+        "id": "roof-b068940e",
+        "name": "Campus building",
+        "position": [
+          108.86,
+          586.5
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "approach": [
+          106.5,
+          586.5
+        ],
+        "estimated": true,
+        "walkable": true,
+        "ground": 5.137910000000001
+      },
+      "doorDistance": 36.80339368150357,
+      "wallDistance": 36.833397667067494,
+      "wallName": "context-campus-2-0",
+      "screen": [
+        -3.7642922201725534e-10,
+        -0.0015449355799578301,
+        0.9956773899516499
+      ]
+    },
+    "front-pbr": {
+      "camera": [
+        72,
+        6.461500000000002,
+        586
+      ],
+      "drawCalls": 15,
+      "triangles": 598464,
+      "blocked": false,
+      "entry": {
+        "id": "roof-b068940e",
+        "name": "Campus building",
+        "position": [
+          108.86,
+          586.5
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "approach": [
+          106.5,
+          586.5
+        ],
+        "estimated": true,
+        "walkable": true,
+        "ground": 5.137910000000001
+      },
+      "doorDistance": 36.80339368150357,
+      "wallDistance": 36.833397667067494,
+      "wallName": "context-campus-2-0",
+      "screen": [
+        -3.7642922201725534e-10,
+        -0.0015449355799578301,
+        0.9956773899516499
+      ]
+    },
+    "north-toon": {
+      "camera": [
+        79,
+        6.1945,
+        565
+      ],
+      "drawCalls": 14,
+      "triangles": 584406,
+      "blocked": false,
+      "entry": {
+        "id": "roof-b068940e",
+        "name": "Campus building",
+        "position": [
+          108.86,
+          586.5
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "approach": [
+          106.5,
+          586.5
+        ],
+        "estimated": true,
+        "walkable": true,
+        "ground": 5.137910000000001
+      },
+      "doorDistance": 36.72183606931014,
+      "wallDistance": 36.75880586248725,
+      "wallName": "context-campus-2-0",
+      "screen": [
+        -1.6250128951049332e-08,
+        0.0159707561936431,
+        0.9956693185425389
+      ]
+    },
+    "south-toon": {
+      "camera": [
+        79,
+        6.825,
+        608
+      ],
+      "drawCalls": 25,
+      "triangles": 629123,
+      "blocked": false,
+      "entry": {
+        "id": "roof-b068940e",
+        "name": "Campus building",
+        "position": [
+          108.86,
+          586.5
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "approach": [
+          106.5,
+          586.5
+        ],
+        "estimated": true,
+        "walkable": true,
+        "ground": 5.137910000000001
+      },
+      "doorDistance": 36.72306456419855,
+      "wallDistance": 36.76003559416572,
+      "wallName": "context-campus-2-0",
+      "screen": [
+        1.625013413111128e-08,
+        -0.025397989391469797,
+        0.995669318542539
+      ]
+    },
+    "distant-toon": {
+      "camera": [
+        36,
+        6.24,
+        586
+      ],
+      "drawCalls": 15,
+      "triangles": 598464,
+      "blocked": false,
+      "entry": {
+        "id": "roof-b068940e",
+        "name": "Campus building",
+        "position": [
+          108.86,
+          586.5
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "approach": [
+          106.5,
+          586.5
+        ],
+        "estimated": true,
+        "walkable": true,
+        "ground": 5.137910000000001
+      },
+      "doorDistance": 72.80198336119875,
+      "wallDistance": 72.83198539766103,
+      "wallName": "context-campus-2-0",
+      "screen": [
+        -9.629190985525946e-11,
+        0.006557582823250314,
+        0.997821817827266
+      ]
+    }
+  }
+}

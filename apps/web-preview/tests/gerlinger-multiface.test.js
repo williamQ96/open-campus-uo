@@ -18,7 +18,7 @@ test("Gerlinger east, north and south layer remains pinned and selectable", () =
   );
   assert.equal(d.building_id, "roof-9ac93ab7");
   assert.notEqual(d.replace_building, true);
-  assert.equal(d.objects.length, 334);
+  assert.equal(d.objects.length, 344);
   let g = createExteriorDetail(d, p.asset_sha256, new Set([d.building_id]));
   assert.ok(g.children.some((x) => x.userData.asset_id === d.building_id));
   for (let o of g.children)

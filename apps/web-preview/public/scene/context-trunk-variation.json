@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "target_name": "campus-trees",
+  "count": 300,
+  "top_ratio": 0.78,
+  "color_range": 0.06,
+  "note": "Generic taper and bark color variation only; no canopy or tree placement changes."
+}

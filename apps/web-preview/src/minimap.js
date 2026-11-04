@@ -42,9 +42,18 @@ export function createMinimap(canvas, buildings, half, corridors = []) {
   const context = canvas.getContext("2d");
   let last;
   const empty = [];
-  return (player, yaw, target, route = []) => {
+  return (player, yaw, target, route = [], person = null) => {
     route = route?.length ? route : empty;
-    const next = [player.x, player.z, yaw, target?.x, target?.z, route];
+    const next = [
+      player.x,
+      player.z,
+      yaw,
+      target?.x,
+      target?.z,
+      route,
+      person && Math.round(person.x),
+      person && Math.round(person.z),
+    ];
     if (last && next.every((value, i) => value === last[i])) return;
     last = next;
     context.drawImage(background, 0, 0);
@@ -63,6 +72,16 @@ export function createMinimap(canvas, buildings, half, corridors = []) {
       context.arc(x, y, 5, 0, Math.PI * 2);
       context.strokeStyle = "#9c713b";
       context.lineWidth = 2;
+      context.stroke();
+    }
+    if (person) {
+      const [px, py] = point(person.x, -person.z);
+      context.beginPath();
+      context.arc(px, py, 3, 0, Math.PI * 2);
+      context.fillStyle = "#b67e25";
+      context.fill();
+      context.strokeStyle = "#fff";
+      context.lineWidth = 1;
       context.stroke();
     }
     const [x, y] = point(player.x, -player.z);

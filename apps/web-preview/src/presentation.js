@@ -2,9 +2,15 @@
 // Optional authored art layer. It never rewrites the measured scene manifest.
 import * as THREE from "three";
 import { applyWallColorPatch } from "./wall-color-patch.js";
+import { applySourceTrianglePatch } from "./source-triangle-patch.js";
+import { applyBatchPalette } from "./batch-palette.js";
+import { mergeBatchBuildingDetail } from "./batch-building-detail.js";
 import { applyBuildingRoofSlope } from "./building-roof-slope.js";
 import { applyVegetationPatch } from "./vegetation-patch.js";
 import { applyCanopyTone } from "./canopy-tone.js";
+import { varyPlanting } from "./planting-variation.js";
+import { refineContextTrunks } from "./context-trunks.js";
+import { varyContextTrunks } from "./context-trunk-variation.js";
 import {
   installExteriorDetail,
   mergeEnvironmentDetail,
@@ -18,6 +24,8 @@ import {
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { applySurfaceGrain } from "./surface-grain.js";
 import { createContextFog } from "./context-fog.js";
+import { markPavingJoints, applyPavingJoints } from "./paving-joints.js";
+import { markLawnTone, applyLawnTone } from "./lawn-tone.js";
 
 export function sceneAssetUrl(base, name) {
   if (
@@ -50,9 +58,78 @@ export async function loadPresentation(base, name, buildingIds) {
   for (const id of config.replaces_building_ids)
     if (!buildingIds.has(id))
       throw new Error("Unknown presentation building: " + id);
-  const gltf = await new GLTFLoader().loadAsync(
-    sceneAssetUrl(base, config.asset_url),
-  );
+  const assetUrl = sceneAssetUrl(base, config.asset_url);
+  let gltf;
+  if (config.verify_source_sha256 === true) {
+    if (
+      !/^[0-9a-f]{64}$/.test(config.asset_sha256) ||
+      !globalThis.crypto?.subtle
+    )
+      throw new Error("Source SHA-256 verification unavailable.");
+    const asset = await fetch(assetUrl);
+    if (!asset.ok)
+      throw new Error("Could not load presentation asset: " + asset.status);
+    const bytes = await asset.arrayBuffer();
+    const digest = await crypto.subtle.digest("SHA-256", bytes);
+    const hash = Array.from(new Uint8Array(digest), (v) =>
+      v.toString(16).padStart(2, "0"),
+    ).join("");
+    if (hash !== config.asset_sha256)
+      throw new Error("Presentation asset SHA-256 changed.");
+    gltf = await new GLTFLoader().parseAsync(bytes, base);
+  } else {
+    gltf = await new GLTFLoader().loadAsync(assetUrl);
+  }
+  const batchPalettes = config.batch_palette_patches ?? [];
+  if (
+    !Array.isArray(batchPalettes) ||
+    batchPalettes.some((entry) => !entry || typeof entry.url !== "string") ||
+    new Set(batchPalettes.map((entry) => entry.url)).size !==
+      batchPalettes.length
+  )
+    throw new Error("Invalid batch palette patches.");
+  for (const entry of batchPalettes) {
+    const response = await fetch(sceneAssetUrl(base, entry.url));
+    if (!response.ok)
+      throw new Error("Could not load batch palette patch: " + response.status);
+    applyBatchPalette(gltf.scene, await response.json(), config.asset_sha256);
+  }
+  if (config.paving_joints_url) {
+    const result = await fetch(sceneAssetUrl(base, config.paving_joints_url));
+    if (!result.ok)
+      throw new Error("Could not load paving joints: " + result.status);
+    markPavingJoints(gltf.scene, await result.json(), config.asset_sha256);
+  }
+  if (config.planting_variation_url) {
+    const response = await fetch(
+      sceneAssetUrl(base, config.planting_variation_url),
+    );
+    if (!response.ok)
+      throw new Error("Could not load planting variation: " + response.status);
+    varyPlanting(gltf.scene, await response.json(), config.asset_sha256);
+  }
+  if (config.context_trunks_url) {
+    const result = await fetch(sceneAssetUrl(base, config.context_trunks_url));
+    if (!result.ok)
+      throw new Error("Could not load context trunks: " + result.status);
+    refineContextTrunks(gltf.scene, await result.json(), config.asset_sha256);
+  }
+  if (config.context_trunk_variation_url) {
+    if (!config.context_trunks_url)
+      throw new Error("Trunk variation requires refined trunks.");
+    const result = await fetch(
+      sceneAssetUrl(base, config.context_trunk_variation_url),
+    );
+    if (!result.ok)
+      throw new Error("Could not load trunk variation: " + result.status);
+    varyContextTrunks(gltf.scene, await result.json(), config.asset_sha256);
+  }
+  if (config.lawn_tone_url) {
+    const result = await fetch(sceneAssetUrl(base, config.lawn_tone_url));
+    if (!result.ok)
+      throw new Error("Could not load lawn tone: " + result.status);
+    markLawnTone(gltf.scene, await result.json(), config.asset_sha256);
+  }
   const wallPatches = config.wall_color_patches ?? [];
   if (
     !Array.isArray(wallPatches) ||
@@ -125,6 +202,11 @@ export async function loadPresentation(base, name, buildingIds) {
     const overlayBoxes = overlayCollisionBoxesForDetail(detail);
     if (boxes.length && overlayBoxes.length)
       throw new Error("Mixed collision envelope types.");
+    if (detail.source_triangle_patch) {
+      if (config.verify_source_sha256 !== true)
+        throw new Error("Source triangle patch requires verified asset bytes.");
+      applySourceTrianglePatch(gltf.scene, detail, config.asset_sha256);
+    }
     const installed = installExteriorDetail(
       gltf.scene,
       detail,
@@ -133,7 +215,9 @@ export async function loadPresentation(base, name, buildingIds) {
     );
     if (detail.merge_target)
       mergeEnvironmentDetail(gltf.scene, installed, detail);
-    if (detail.merge_source_vertex_count !== undefined)
+    if (detail.merge_batch_target !== undefined)
+      mergeBatchBuildingDetail(gltf.scene, installed, detail);
+    else if (detail.merge_source_vertex_count !== undefined)
       mergeBuildingDetailIntoSource(gltf.scene, installed, detail);
     if (
       [
@@ -144,6 +228,8 @@ export async function loadPresentation(base, name, buildingIds) {
         "fenton-south-detail.json",
         "condon-east-detail.json",
         "peterson-south-detail.json",
+        "university-hall-detail.json",
+        "villard-east-detail.json",
       ].includes(detailUrl)
     ) {
       const expectedId =
@@ -157,7 +243,11 @@ export async function loadPresentation(base, name, buildingIds) {
                 ? "roof-7ffcf31b"
                 : detailUrl === "peterson-south-detail.json"
                   ? "roof-75e776d0"
-                  : "roof-0a498bf7";
+                  : detailUrl === "university-hall-detail.json"
+                    ? "roof-9017feee"
+                    : detailUrl === "villard-east-detail.json"
+                      ? "roof-399c648e"
+                      : "roof-0a498bf7";
       if (detail.building_id !== expectedId)
         throw new Error("Local detail identity changed.");
       localDetails.set(detailUrl, installed);
@@ -213,6 +303,18 @@ export async function loadPresentation(base, name, buildingIds) {
       "vegetation",
     );
   }
+  // Adjacent original source-pinned shrub layers share a static material;
+  // building meshes and their selection identities remain independent.
+  if (
+    localDetails.has("university-hall-detail.json") &&
+    localDetails.has("villard-east-detail.json")
+  ) {
+    mergeLocalDetailKind(
+      localDetails.get("university-hall-detail.json"),
+      localDetails.get("villard-east-detail.json"),
+      "vegetation",
+    );
+  }
   if (config.landcover_url) {
     const land = await new GLTFLoader().loadAsync(
       sceneAssetUrl(base, config.landcover_url),
@@ -264,6 +366,10 @@ export function createPresentation(root, config, collisionSupplements = []) {
       : toToon(original);
     for (const material of [original, toon].flat()) {
       contextFog?.apply(material);
+      if (object.userData.lawn_tone)
+        applyLawnTone(material, object.userData.lawn_tone);
+      if (object.userData.paving_joints)
+        applyPavingJoints(material, object.userData.paving_joints);
       if (object.userData.surface_grain)
         applySurfaceGrain(material, object.userData.surface_grain);
     }
