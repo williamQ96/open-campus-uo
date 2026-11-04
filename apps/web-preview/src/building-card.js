@@ -13,11 +13,17 @@ export function createBuildingCard(viewport, camera, { onEnter, onClose }) {
   close.textContent = "×";
   close.setAttribute("aria-label", "Close building card");
   const info = document.createElement("p");
-  info.textContent = "to be fill";
+  info.className = "building-card-summary";
+  const occupants = document.createElement("p");
+  occupants.className = "building-card-occupants";
+  const source = document.createElement("a");
+  source.className = "building-card-source";
+  source.target = "_blank";
+  source.rel = "noopener noreferrer";
   const enter = document.createElement("button");
   enter.className = "building-card-enter";
   enter.textContent = "Enter";
-  card.append(heading, close, info, enter);
+  card.append(heading, close, info, occupants, source, enter);
   viewport.append(card);
   for (const type of ["pointerdown", "pointerup", "wheel"])
     card.addEventListener(type, (event) => event.stopPropagation());
@@ -26,11 +32,51 @@ export function createBuildingCard(viewport, camera, { onEnter, onClose }) {
   let record = null,
     anchor = new THREE.Vector3(),
     lastPosition = "";
+  let dataset = null;
+  function renderInfo() {
+    const details =
+      dataset?.version === 1 ? dataset.records?.[record?.id] : null;
+    const url = details?.source?.url;
+    let validUrl = false;
+    try {
+      validUrl = new URL(url).protocol === "https:";
+    } catch {
+      /* Unknown source. */
+    }
+    const verified =
+      typeof details?.purpose === "string" &&
+      validUrl &&
+      typeof details.source.label === "string" &&
+      /^\d{4}-\d{2}-\d{2}$/.test(details.source.checked_on);
+    info.textContent = verified
+      ? details.purpose
+      : "Information not yet verified.";
+    const names =
+      verified && Array.isArray(details.occupants)
+        ? details.occupants.filter(
+            (name) => typeof name === "string" && name.trim(),
+          )
+        : [];
+    occupants.textContent = names.length
+      ? `Known occupants: ${names.join(", ")}`
+      : "";
+    occupants.hidden = !names.length;
+    source.hidden = !verified;
+    if (verified) {
+      source.href = url;
+      source.textContent = `${details.source.label} · checked ${details.source.checked_on}`;
+    } else source.removeAttribute("href");
+  }
   return {
+    setInfo(value) {
+      dataset = value;
+      if (record) renderInfo();
+    },
     show(building, position) {
       record = building;
       card.dataset.buildingId = building.id;
       heading.textContent = building.name || "Unidentified structure";
+      renderInfo();
       anchor.copy(position);
       card.hidden = false;
       lastPosition = "";

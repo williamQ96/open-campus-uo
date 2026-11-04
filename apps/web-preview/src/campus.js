@@ -1,4 +1,9 @@
 // SPDX-License-Identifier: Apache-2.0
+import { applyBuildingIdentities } from "./building-identities.js";
+import {
+  attachCollisionBoxes,
+  segmentHitsBoxes,
+} from "./collision-supplement.js";
 import * as THREE from "three";
 import { installWorldLifecycle } from "./world-lifecycle.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
@@ -872,8 +877,29 @@ try {
   viewerSettings = await loadJson(base + "viewer-settings.json");
   if (manifest.schema_version !== 1)
     throw new Error("Unsupported scene manifest version.");
+  if (profile.building_identity_url) {
+    try {
+      const identityData = await loadJson(
+        sceneAssetUrl(import.meta.env.BASE_URL, profile.building_identity_url),
+      );
+      applyBuildingIdentities(manifest, identityData);
+    } catch (error) {
+      console.warn("Building identity annotations unavailable:", error);
+    }
+  }
   field = await loadJson(base + manifest.heightfield_url);
   applyProfile(profile, manifest, field);
+  if (profile.building_info_url) {
+    try {
+      buildingCard.setInfo(
+        await loadJson(
+          sceneAssetUrl(import.meta.env.BASE_URL, profile.building_info_url),
+        ),
+      );
+    } catch (error) {
+      console.warn("Building information unavailable:", error);
+    }
+  }
   sound = createSound(
     profile.audio,
     import.meta.env.BASE_URL,
@@ -916,6 +942,10 @@ try {
       viewerSettings.presentation_url,
       new Set(buildings.map((b) => b.id)),
     );
+  const extraCollisionBoxes = attachCollisionBoxes(
+    buildings,
+    presentation?.collisionSupplements || [],
+  );
   const gltf = await new GLTFLoader().loadAsync(base + manifest.model.url);
   model = gltf.scene;
   model.updateMatrixWorld(true);
@@ -1058,6 +1088,7 @@ try {
       sceneAssetUrl(base, viewerSettings.navigation_url),
     );
     const clearSegment = (a, b) => {
+      if (segmentHitsBoxes(a, b, extraCollisionBoxes, 0.5)) return false;
       const steps = Math.max(1, Math.ceil(distance(a, b) / 2));
       for (let i = 0; i <= steps; i++) {
         const x = a[0] + ((b[0] - a[0]) * i) / steps,
@@ -1092,7 +1123,11 @@ try {
       heightCache.set(key, height);
       return height;
     };
-    const router = createRouter(graph, clearSegment);
+    const router = createRouter(
+      graph,
+      clearSegment,
+      (a, b) => !segmentHitsBoxes(a, b, extraCollisionBoxes, 0.5),
+    );
     outdoorRouter = router;
     navigation = createNavigation({
       scene,
@@ -1156,6 +1191,7 @@ try {
     getPlayer: () => player,
     router: outdoorRouter,
     clearSegment: (a, b) => {
+      if (segmentHitsBoxes(a, b, extraCollisionBoxes, 0.6)) return false;
       const count = Math.max(
         1,
         Math.ceil(Math.hypot(a[0] - b[0], a[1] - b[1]) / 2),
@@ -1422,6 +1458,7 @@ try {
           }
         : null,
     }),
+    collisionCheck: (x, z) => isBlocked(x, z, buildings, half),
     entranceInfo: () => entrances.entries.map((e) => ({ ...e })),
     lifeColliders: () => life?.colliders() || [],
     npcInfo: (id) => life?.inspect(id) || zombies?.inspect(id),

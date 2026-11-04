@@ -1,0 +1,15 @@
+# Knight Library north facade refinement
+
+2026-11-03. Local project work; not published. Building ID `roof-6684e091`.
+
+Knight Library was chosen because three openly reusable photographs are already documented in the project's reference archive, and UO Libraries supplies a detailed account of its historic exterior. This revision retains the existing geographic placement, massing, palette, seven tall windows, three suggested balconies, and the Architectural Toon presentation. It adds distinct paired entrances and upper windows at the end pavilions, layered stone framing, spandrel and cornice detail, and individual blank discipline plaques. It removes the earlier invented single "KNIGHT LIBRARY" inscription across the window plaques.
+
+Sources: [UO Libraries exterior features](https://researchguides.uoregon.edu/historic-knight/exterior-features) describes the parapet, cornice, frieze and discipline plaques; [building history](https://researchguides.uoregon.edu/historic-knight/building) documents the original 1937 building and subsequent additions. The existing reference archive's `knight-north-a-2018`, `knight-north-b-2018`, and `knight-light-2017` entries contain their image sources, credits, licenses, and hashes. No photographs are embedded in the GLB. No restricted GIS was used.
+
+This remains an interpreted exterior asset, not surveyed geometry. The heights, door sizes, offsets, plaque text and carvings, side/rear elevations, roof, and current post-renovation state are unverified. The plaques are deliberately blank until placement and typography are established from suitable elevation evidence; the small ornaments are simplified original geometry, not literal sculptural reproductions. The source building is grouped into a semantic mesh and can be regenerated from `scripts/build-visual-pilot.py`. The standalone blend and GLB retain campus coordinates and the stable building ID; they have no interior or collision mesh.
+
+Validation: Blender 4.5.15 rebuilt the pilot and campus expansion; `scripts/check-campus-expansion.py` passed with 534 unique building identities, 21 context batches and no embedded images. A standalone Blender render was visually reviewed, and all 42 preview unit tests passed. This does not establish browser performance or measured accuracy. Existing image attribution and source manifest remain in force.
+
+## Browser review (2026-11-03)
+
+The local Vite preview loaded the expanded campus and located Knight Library via search. The north facade faces the memorial quad; its campus position and overall scale are consistent with the retained historic model, and the brick, stone and glazing render in the existing toon palette. Browser console inspection returned no warnings or errors during this session. This visual check does not verify dimensions. Existing illustrative vegetation overlaps parts of the roof and obscures the facade from some views; landscape placement was outside this building-only review. The archived oblique photo shows deeper dark window reveals, more complex masonry and solid carved balconies than the simplified model; these remain fidelity limitations.

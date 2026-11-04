@@ -99,6 +99,80 @@
         "attribution_required": "false"
       },
       "review_note": "Commons source page declares CC0-1.0 for this photograph; extracted metadata is retained in evidence.json."
+    },
+    {
+      "id": "friendly-west-2017",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Friendly_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09627.jpg",
+      "reviewed_on": "2026-11-03",
+      "source_metadata": {
+        "artist": "Daderot",
+        "declared_license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "date_original": "2017-11-03",
+        "original_sha1": "2c041e3e5aef6209a88381de847667b58da81e3d"
+      },
+      "review_note": "Commons original downloaded and hash checked; historic UO west elevation confirms orientation."
+    },
+    {
+      "id": "villard-east-2017",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Villard_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09617.jpg",
+      "reviewed_on": "2026-11-03",
+      "source_metadata": {
+        "artist": "Daderot",
+        "declared_license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "date_original": "2017-11-03",
+        "original_sha1": "12761e4319a08eef00d90049b43789492a5604b9"
+      },
+      "review_note": "Commons source identifies CC0; UO east elevation confirms the photographed facade orientation."
+    },
+    {
+      "id": "university-hall-2005",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Deady_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_1ab3ead15b82b80bb858c0fb7db25bec.jpg",
+      "reviewed_on": "2026-11-03",
+      "source_metadata": {
+        "artist": "Gary Halvorson, Oregon State Archives",
+        "declared_license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "date_original": "2005-08-07"
+      },
+      "review_note": "Commons source confirms attribution and license; UO assessment provides labeled elevations."
+    },
+    {
+      "id": "anstett-south-2019",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anstett_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_7f05aff2c79e236edd0bed0104b6f145.jpg",
+      "reviewed_on": "2026-11-03",
+      "source_metadata": {
+        "artist": "Gary Halvorson, Oregon State Archives",
+        "declared_license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "date_original": "2019-08-17"
+      },
+      "review_note": "Commons photo license and attribution reviewed; UO survey site plan identifies south frontage on 13th Avenue."
+    },
+    {
+      "id": "tykeson-2019",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tykeson_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_8c33a2d22132624e3de1a4eaf5354e02.jpg",
+      "reviewed_on": "2026-11-04",
+      "source_metadata": {
+        "artist": "Gary Halvorson, Oregon State Archives",
+        "declared_license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "date_original": "2019-08-17"
+      },
+      "review_note": "Commons license and attribution reviewed; facade orientation inferred from the photo context and UO north-entry descriptions."
+    },
+    {
+      "id": "susan-campbell-2011",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Susan_Campbell_Hall,_University_Of_Oregon,_Eugene_-_DPLA_-_4e7906177b35545a22a8ec321bd92da7.jpg",
+      "reviewed_on": "2026-11-04",
+      "source_metadata": {
+        "artist": "Gary Halvorson, Oregon State Archives",
+        "declared_license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "date_original": "2011-07-29"
+      },
+      "review_note": "Commons license and attribution reviewed; UO survey describes L-shaped plan, gambrel roof and shed dormers."
     }
   ],
   "aerial": {

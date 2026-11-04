@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-f52041e8",
+  "source_rgb8": [
+    168,
+    154,
+    124
+  ],
+  "target_srgb": "#9c5d4d",
+  "normal_y_abs_max": 0.4,
+  "expected_vertices": 424,
+  "note": "Original matched vertical walls recolored to approximate brick; roof and source GLB remain untouched."
+}

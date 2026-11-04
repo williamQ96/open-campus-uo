@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "operation": "canopy-tone-v1",
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "target_name": "vegetation",
+  "strength": 0.18,
+  "meshes": [
+    {
+      "name": "vegetation_2",
+      "material": "leaf",
+      "color": "658b54",
+      "vertices": 66528
+    },
+    {
+      "name": "vegetation_3",
+      "material": "evergreen",
+      "color": "385a45",
+      "vertices": 84132
+    },
+    {
+      "name": "vegetation_4",
+      "material": "leaf-light",
+      "color": "829e59",
+      "vertices": 62208
+    }
+  ],
+  "note": "Subtle illustrative spatial tonal variation on existing canopy material batches; species, positions and present-day conditions are not surveyed."
+}

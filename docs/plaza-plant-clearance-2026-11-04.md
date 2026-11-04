@@ -1,0 +1,9 @@
+# Plaza planting conflict correction — 2026-11-04
+
+Three procedurally inferred shrub/fern clusters centered at ENU (-275,-64), (-270,-65) and (-263,-65) visibly occupied the existing illustrative plaza paving. The archived [2024-06-08 USDA NAIP pilot orthophoto](../data/reference-images/aerial/naip-2024-pilot-rgb.png) also shows light open hardscape around those modeled centers. Its exact extent, projected origin and original image SHA-256 are in [the source record](../data/metadata/naip-2024-reference.json); the [annotated crop](images/plaza-naip-centers.png) is derived from the public-domain source at 0.6 m/pixel. Imagery is dated and does not establish present-day conditions or plant identities.
+
+A source-pinned patch suppresses exactly the three inferred clusters: 192 unique positions / 720 vertices, split into 648 original shrub vertices and 72 original fan vertices. No replacement locations are invented. The original GLB, other understory clusters, selected ferns, furniture and campus layout remain unchanged; this is a reversible rendering correction. A general `additional_environment_patches` list and rebuild guard carry independently hashed, source-pinned patches without modifying the tree-count suppression rules. [Before](images/plaza-plants-before.png) / [after](images/plaza-plants-after.png).
+
+Five other candidate locations overlap modeled building details or have ambiguous tree-cover context and remain unchanged pending better evidence. The plaza correction does not certify an unobstructed, accessible or current route; paving, plant locations and dimensions remain inferred. ENV-03 and ENV-05 retain level 1.
+
+Verified exact selected counts against the source GLB, visual before/after and reference crop, 72 JavaScript unit tests, 6 targeted browser tests including mobile and draw-call budget, 12 rebuild-preservation tests and production build. No hardware performance benchmark is claimed.

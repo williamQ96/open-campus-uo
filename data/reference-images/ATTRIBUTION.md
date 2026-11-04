@@ -183,3 +183,15 @@ Review screenshots are indexed separately as outputs in the manifest and remain 
 ## naip-2024-main-campus-rgb
 
 [Full-scene aerial reference](aerial/naip-2024-main-campus-rgb.png) — **USDA FPAC-BC / Geospatial Enterprise Operations, NAIP**, [official dataset and public-domain declaration](https://catalog.data.gov/dataset/national-agriculture-imagery-program-naip-imagery). Both source tiles were acquired on **2024-06-08**: `m_4412364_se_10_060_20240608` and `m_4412364_sw_10_060_20240608`. The 2 × 2 km EPSG:3740 RGB mosaic was exported at 1600 × 1600 pixels with bilinear resampling; downloaded PNG bytes are unchanged. [Exact request, source tiles and georeference](../metadata/naip-2024-main-campus-reference.json). This dated public-domain reference guides inferred stylized ground colors only; it is not a live satellite map, and no photo texture is embedded in runtime assets. Its original status remains `LicenseRef-PD-USGov`, separate from project CC BY content.
+
+- Daderot, Friendly Hall west exterior (2017), CC0 1.0: https://commons.wikimedia.org/wiki/File:Friendly_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09627.jpg
+
+- Daderot, Villard Hall east exterior (2017), CC0 1.0: https://commons.wikimedia.org/wiki/File:Villard_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09617.jpg
+
+- Gary Halvorson, Oregon State Archives, Deady Hall (2005), CC BY 4.0: https://commons.wikimedia.org/wiki/File:Deady_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_1ab3ead15b82b80bb858c0fb7db25bec.jpg
+
+- Gary Halvorson, Oregon State Archives, Anstett Hall (2019), CC BY 4.0: https://commons.wikimedia.org/wiki/File:Anstett_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_7f05aff2c79e236edd0bed0104b6f145.jpg
+
+- Gary Halvorson, Oregon State Archives, Tykeson Hall (2019), CC BY 4.0: https://commons.wikimedia.org/wiki/File:Tykeson_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_8c33a2d22132624e3de1a4eaf5354e02.jpg
+
+- Gary Halvorson, Oregon State Archives, Susan Campbell Hall (2011), CC BY 4.0: https://commons.wikimedia.org/wiki/File:Susan_Campbell_Hall,_University_Of_Oregon,_Eugene_-_DPLA_-_4e7906177b35545a22a8ec321bd92da7.jpg

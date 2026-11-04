@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-e11ec58d",
+  "source_rgb8": [
+    136,
+    93,
+    54
+  ],
+  "target_srgb": "#8e7154",
+  "normal_y_abs_max": 0.4,
+  "expected_vertices": 128,
+  "note": "Recolor source-matched vertical walls to schematic timber tone, preserving roof and original asset."
+}

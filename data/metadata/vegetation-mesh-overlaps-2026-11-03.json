@@ -1,0 +1,58 @@
+{
+  "source_sha256": "06b211f88256b028631e568b2b8401e11e0772e8604b9e454b92001e76187b86",
+  "candidate_sha256": "8e2003962f926da209ad22ea2fbdc4378bca4424292e7ee85e64517ce92e2dd7",
+  "tree_input_sha256": "ea262a2dc98b77c22940b5f4928ba1ccf7ff37d5bf7947129684a6b24bd05254",
+  "method": "BVH surface mesh overlap between per-tree vertex slices and corresponding authored building meshes; no containment, runtime patch, or survey proof. Numbers are mesh face pairs, not object counts.",
+  "original_pairs": [
+    {
+      "tree_index": 129,
+      "building_id": "roof-6684e091",
+      "surface_face_pairs": 52,
+      "interpretation": "surface intersections detected"
+    },
+    {
+      "tree_index": 170,
+      "building_id": "roof-7ffcf31b",
+      "surface_face_pairs": 0,
+      "interpretation": "no surface intersections detected; containment not tested"
+    },
+    {
+      "tree_index": 190,
+      "building_id": "roof-6cd16f5c",
+      "surface_face_pairs": 0,
+      "interpretation": "no surface intersections detected; containment not tested"
+    },
+    {
+      "tree_index": 270,
+      "building_id": "roof-74ecc113",
+      "surface_face_pairs": 0,
+      "interpretation": "no surface intersections detected; containment not tested"
+    },
+    {
+      "tree_index": 273,
+      "building_id": "roof-266f13fd",
+      "surface_face_pairs": 114,
+      "interpretation": "surface intersections detected"
+    },
+    {
+      "tree_index": 291,
+      "building_id": "roof-9ac93ab7",
+      "surface_face_pairs": 0,
+      "interpretation": "no surface intersections detected; containment not tested"
+    },
+    {
+      "tree_index": 296,
+      "building_id": "roof-6684e091",
+      "surface_face_pairs": 290,
+      "interpretation": "surface intersections detected"
+    },
+    {
+      "tree_index": 60,
+      "building_id": "roof-6684e091",
+      "surface_face_pairs": 17,
+      "interpretation": "surface intersections detected"
+    }
+  ],
+  "tree_60_candidate_surface_face_pairs": 0,
+  "tree_273_candidate_vertices_collapsed": true
+}

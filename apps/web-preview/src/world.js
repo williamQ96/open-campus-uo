@@ -40,39 +40,45 @@ export function insidePolygon(x, north, ring) {
 }
 
 const boundsCache = new WeakMap();
+function blockedByRing(x, north, ring, radius) {
+  let bounds = boundsCache.get(ring);
+  if (!bounds) {
+    bounds = [
+      Math.min(...ring.map((p) => p[0])),
+      Math.min(...ring.map((p) => p[1])),
+      Math.max(...ring.map((p) => p[0])),
+      Math.max(...ring.map((p) => p[1])),
+    ];
+    boundsCache.set(ring, bounds);
+  }
+  if (
+    x < bounds[0] - radius ||
+    x > bounds[2] + radius ||
+    north < bounds[1] - radius ||
+    north > bounds[3] + radius
+  )
+    return false;
+  if (insidePolygon(x, north, ring)) return true;
+  for (let i = 0; i < ring.length; i++) {
+    const [ax, ay] = ring[i],
+      [bx, by] = ring[(i + 1) % ring.length],
+      dx = bx - ax,
+      dy = by - ay,
+      l = dx * dx + dy * dy;
+    const t = l
+      ? Math.max(0, Math.min(1, ((x - ax) * dx + (north - ay) * dy) / l))
+      : 0;
+    if (Math.hypot(x - ax - t * dx, north - ay - t * dy) < radius) return true;
+  }
+  return false;
+}
 export function isBlocked(x, z, buildings, half, radius = 0.42) {
   if (Math.abs(x) > half - radius || Math.abs(z) > half - radius) return true;
   for (const b of buildings) {
-    const ring = b.footprint_enu_m;
-    let bounds = boundsCache.get(b);
-    if (!bounds) {
-      bounds = [
-        Math.min(...ring.map((p) => p[0])),
-        Math.min(...ring.map((p) => p[1])),
-        Math.max(...ring.map((p) => p[0])),
-        Math.max(...ring.map((p) => p[1])),
-      ];
-      boundsCache.set(b, bounds);
-    }
-    if (
-      x < bounds[0] - radius ||
-      x > bounds[2] + radius ||
-      -z < bounds[1] - radius ||
-      -z > bounds[3] + radius
-    )
-      continue;
-    if (insidePolygon(x, -z, ring)) return true;
-    for (let i = 0; i < ring.length; i++) {
-      const [ax, ay] = ring[i],
-        [bx, by] = ring[(i + 1) % ring.length];
-      const dx = bx - ax,
-        dy = by - ay,
-        l = dx * dx + dy * dy;
-      const t = l
-        ? Math.max(0, Math.min(1, ((x - ax) * dx + (-z - ay) * dy) / l))
-        : 0;
-      if (Math.hypot(x - ax - t * dx, -z - ay - t * dy) < radius) return true;
-    }
+    if (blockedByRing(x, -z, b.footprint_enu_m, radius)) return true;
+    if (b.collision_extra_enu_m)
+      for (const ring of b.collision_extra_enu_m)
+        if (blockedByRing(x, -z, ring, radius)) return true;
   }
   return false;
 }

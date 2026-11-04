@@ -1,0 +1,2716 @@
+{
+  "version": 1,
+  "scope": "environment",
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "replace_building": false,
+  "reference_ids": [
+    "anstett-south-2019"
+  ],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/anstetthall2025"
+  ],
+  "note": "Nine generic wooden slatted-back benches at existing inferred pilot locations; not an inventory or measured current furniture. Nine seat boards are replaced by three generic wooden slats each; location and dimensions remain illustrative.",
+  "objects": [
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -582.3,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -582.04,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.78,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.52,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.26,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.0,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -580.74,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -580.48,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -580.22,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -579.96,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -579.7,
+        3.437659978866577,
+        57.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581,
+        3.1776599788665774,
+        57.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581,
+        3.697659978866577,
+        57.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -582.32,
+        3.357659978866577,
+        57.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -582.32,
+        3.207659978866577,
+        58.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -579.68,
+        3.357659978866577,
+        57.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -579.68,
+        3.207659978866577,
+        58.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -582.3,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -582.04,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.78,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.52,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.26,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.0,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -580.74,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -580.48,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -580.22,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -579.96,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -579.7,
+        5.634619951248169,
+        125.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581,
+        5.374619951248169,
+        125.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581,
+        5.894619951248169,
+        125.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -582.32,
+        5.554619951248169,
+        125.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -582.32,
+        5.4046199512481685,
+        126.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -579.68,
+        5.554619951248169,
+        125.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -579.68,
+        5.4046199512481685,
+        126.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -530.3,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -530.04,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529.78,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529.52,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529.26,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529.0,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -528.74,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -528.48,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -528.22,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -527.96,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -527.7,
+        4.928119897842407,
+        99.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529,
+        4.668119897842407,
+        99.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529,
+        5.188119897842407,
+        99.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -530.32,
+        4.848119897842407,
+        99.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -530.32,
+        4.698119897842407,
+        100.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -527.68,
+        4.848119897842407,
+        99.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -527.68,
+        4.698119897842407,
+        100.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -450.3,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -450.04,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449.78,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449.52,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449.26,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449.0,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -448.74,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -448.48,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -448.22,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -447.96,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -447.7,
+        5.290179967880249,
+        94.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449,
+        5.030179967880249,
+        94.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449,
+        5.550179967880249,
+        94.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -450.32,
+        5.210179967880249,
+        94.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -450.32,
+        5.060179967880249,
+        95.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -447.68,
+        5.210179967880249,
+        94.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -447.68,
+        5.060179967880249,
+        95.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -423.3,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -423.04,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422.78,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422.52,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422.26,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422.0,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -421.74,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -421.48,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -421.22,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -420.96,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -420.7,
+        9.497200012207031,
+        179.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422,
+        9.237200012207031,
+        179.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422,
+        9.757200012207031,
+        179.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -423.32,
+        9.417200012207031,
+        179.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -423.32,
+        9.26720001220703,
+        180.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -420.68,
+        9.417200012207031,
+        179.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -420.68,
+        9.26720001220703,
+        180.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -381.3,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -381.04,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380.78,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380.52,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380.26,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380.0,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -379.74,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -379.48,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -379.22,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -378.96,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -378.7,
+        6.787199974060059,
+        95.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380,
+        6.527199974060059,
+        95.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380,
+        7.047199974060058,
+        95.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -381.32,
+        6.7071999740600585,
+        95.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -381.32,
+        6.557199974060058,
+        96.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -378.68,
+        6.7071999740600585,
+        95.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -378.68,
+        6.557199974060058,
+        96.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -318.3,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -318.04,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317.78,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317.52,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317.26,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317.0,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -316.74,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -316.48,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -316.22,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -315.96,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -315.7,
+        6.246500015258789,
+        119.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317,
+        5.986500015258789,
+        119.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317,
+        6.506500015258789,
+        119.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -318.32,
+        6.166500015258789,
+        119.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -318.32,
+        6.016500015258789,
+        120.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -315.68,
+        6.166500015258789,
+        119.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -315.68,
+        6.016500015258789,
+        120.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -280.3,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -280.04,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.78,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.52,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.26,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.0,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -278.74,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -278.48,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -278.22,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -277.96,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -277.7,
+        4.025999903678894,
+        27.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279,
+        3.7659999036788943,
+        27.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279,
+        4.285999903678894,
+        27.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -280.32,
+        3.945999903678894,
+        27.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -280.32,
+        3.795999903678894,
+        28.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -277.68,
+        3.945999903678894,
+        27.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -277.68,
+        3.795999903678894,
+        28.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -280.3,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -280.04,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.78,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.52,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.26,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.0,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -278.74,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -278.48,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -278.22,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -277.96,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -277.7,
+        7.08299994468689,
+        65.6
+      ],
+      "size": [
+        0.14,
+        0.65,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279,
+        6.82299994468689,
+        65.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279,
+        7.342999944686889,
+        65.6
+      ],
+      "size": [
+        3,
+        0.08,
+        0.14
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -280.32,
+        7.00299994468689,
+        65.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -280.32,
+        6.852999944686889,
+        66.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -277.68,
+        7.00299994468689,
+        65.98
+      ],
+      "size": [
+        0.12,
+        0.1,
+        0.76
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -277.68,
+        6.852999944686889,
+        66.29
+      ],
+      "size": [
+        0.09,
+        0.36,
+        0.09
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.0,
+        3.037659931182861,
+        57.72999999999999
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.0,
+        3.037659931182861,
+        57.99999999999999
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.0,
+        3.037659931182861,
+        58.269999999999996
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.0,
+        5.234619903564453,
+        125.73
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.0,
+        5.234619903564453,
+        126.0
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -581.0,
+        5.234619903564453,
+        126.27
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529.0,
+        4.528119850158691,
+        99.73
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529.0,
+        4.528119850158691,
+        100.0
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -529.0,
+        4.528119850158691,
+        100.27
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449.0,
+        4.890179920196533,
+        94.73
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449.0,
+        4.890179920196533,
+        95.0
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -449.0,
+        4.890179920196533,
+        95.27
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422.0,
+        9.097200202941895,
+        179.73
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422.0,
+        9.097200202941895,
+        180.0
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -422.0,
+        9.097200202941895,
+        180.27
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380.0,
+        6.387200164794922,
+        95.73
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380.0,
+        6.387200164794922,
+        96.0
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -380.0,
+        6.387200164794922,
+        96.27
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317.0,
+        5.846500205993652,
+        119.73
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317.0,
+        5.846500205993652,
+        120.0
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -317.0,
+        5.846500205993652,
+        120.27
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.0,
+        3.6259999752044676,
+        27.73
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.0,
+        3.6259999752044676,
+        28.0
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.0,
+        3.6259999752044676,
+        28.27
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.0,
+        6.682999897003174,
+        65.73
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.0,
+        6.682999897003174,
+        66.0
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "bench-wood",
+      "shape": "box",
+      "position": [
+        -279.0,
+        6.682999897003174,
+        66.27
+      ],
+      "size": [
+        3,
+        0.18,
+        0.24
+      ]
+    }
+  ],
+  "merge_target": "furniture_1"
+}

@@ -1,0 +1,465 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-0a498bf7",
+  "replace_building": false,
+  "reference_ids": [
+    "anstett-south-2019"
+  ],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/anstetthall2025"
+  ],
+  "note": "Two illustrative globe lamps and one seasonal flower basket informed by the archived 2019 photograph; placement, scale, species and present conditions are not surveyed.",
+  "objects": [
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -530,
+        1.8599999999999999,
+        -15
+      ],
+      "size": [
+        0.5,
+        0.24,
+        0.5
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -530,
+        2.12,
+        -15
+      ],
+      "size": [
+        0.3,
+        0.32,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -530,
+        3.54,
+        -15
+      ],
+      "size": [
+        0.13,
+        2.7,
+        0.13
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -530,
+        4.99,
+        -15
+      ],
+      "size": [
+        0.28,
+        0.18,
+        0.28
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "cream",
+      "shape": "shrub",
+      "position": [
+        -530,
+        5.27,
+        -15
+      ],
+      "size": [
+        0.24,
+        0.34,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -530,
+        5.58,
+        -15
+      ],
+      "size": [
+        0.2,
+        0.08,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -505,
+        2.18,
+        -15
+      ],
+      "size": [
+        0.5,
+        0.24,
+        0.5
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -505,
+        2.44,
+        -15
+      ],
+      "size": [
+        0.3,
+        0.32,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -505,
+        3.8600000000000003,
+        -15
+      ],
+      "size": [
+        0.13,
+        2.7,
+        0.13
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -505,
+        5.3100000000000005,
+        -15
+      ],
+      "size": [
+        0.28,
+        0.18,
+        0.28
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "cream",
+      "shape": "shrub",
+      "position": [
+        -505,
+        5.59,
+        -15
+      ],
+      "size": [
+        0.24,
+        0.34,
+        0.24
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -505,
+        5.9,
+        -15
+      ],
+      "size": [
+        0.2,
+        0.08,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -504.73,
+        4.54,
+        -15
+      ],
+      "size": [
+        0.6,
+        0.06,
+        0.06
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -504.46,
+        4.359999999999999,
+        -15
+      ],
+      "size": [
+        0.05,
+        0.35,
+        0.05
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "wood",
+      "shape": "shrub",
+      "position": [
+        -504.46,
+        4.109999999999999,
+        -15
+      ],
+      "size": [
+        0.38,
+        0.2,
+        0.32
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "shrub-deep",
+      "shape": "shrub",
+      "position": [
+        -504.46,
+        4.24,
+        -15
+      ],
+      "size": [
+        0.43,
+        0.22,
+        0.36
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-light",
+      "shape": "shrub",
+      "position": [
+        -504.31,
+        4.24,
+        -15.0
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.622,
+        4.36,
+        -14.851
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.435,
+        4.24,
+        -15.289
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-light",
+      "shape": "shrub",
+      "position": [
+        -504.369,
+        4.36,
+        -14.881
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.677,
+        4.24,
+        -15.038
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.215,
+        4.36,
+        -15.156
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-light",
+      "shape": "shrub",
+      "position": [
+        -504.499,
+        4.24,
+        -14.855
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.561,
+        4.36,
+        -15.195
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.188,
+        4.24,
+        -14.901
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-light",
+      "shape": "shrub",
+      "position": [
+        -504.599,
+        4.36,
+        -14.943
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.367,
+        4.24,
+        -15.199
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.373,
+        4.36,
+        -14.723
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-light",
+      "shape": "shrub",
+      "position": [
+        -504.59,
+        4.24,
+        -15.075
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "flower-magenta",
+      "shape": "shrub",
+      "position": [
+        -504.245,
+        4.36,
+        -15.047
+      ],
+      "size": [
+        0.085,
+        0.09,
+        0.085
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "method": "Conservative 2D crown-radius versus historical candidate footprint screening; 0.36 * pilot height and 0.35 * expansion height; no vertical, leaf, or custom building-geometry intersection test. Input snapshot may not prove current exported mesh correspondence. Inspect each candidate before edits.",
+  "manifest_sha256": "c503f1cc2ce190b73bff32bd396cd1bcb4183fcb781b077acd2f125e21445141",
+  "groups": [
+    {
+      "input": "artifacts/visual-pilot-input.json",
+      "input_sha256": "ea262a2dc98b77c22940b5f4928ba1ccf7ff37d5bf7947129684a6b24bd05254",
+      "tree_count": 300,
+      "trunk_inside_pair_count": 0,
+      "candidate_tree_count": 7,
+      "candidate_pairs": [
+        {
+          "tree_index": 129,
+          "east_m": -594.159,
+          "north_m": -212.005,
+          "height_m": 17.89,
+          "screen_radius_m": 6.44,
+          "building_id": "roof-6684e091",
+          "footprint_distance_m": 6.159
+        },
+        {
+          "tree_index": 170,
+          "east_m": -572.061,
+          "north_m": -13.825,
+          "height_m": 20.99,
+          "screen_radius_m": 7.556,
+          "building_id": "roof-7ffcf31b",
+          "footprint_distance_m": 6.445
+        },
+        {
+          "tree_index": 190,
+          "east_m": -389.263,
+          "north_m": -166.853,
+          "height_m": 18.41,
+          "screen_radius_m": 6.628,
+          "building_id": "roof-6cd16f5c",
+          "footprint_distance_m": 6.321
+        },
+        {
+          "tree_index": 270,
+          "east_m": -637.539,
+          "north_m": -307.23,
+          "height_m": 20.68,
+          "screen_radius_m": 7.445,
+          "building_id": "roof-74ecc113",
+          "footprint_distance_m": 6.769
+        },
+        {
+          "tree_index": 273,
+          "east_m": -181.887,
+          "north_m": -72.478,
+          "height_m": 20.47,
+          "screen_radius_m": 7.369,
+          "building_id": "roof-266f13fd",
+          "footprint_distance_m": 7.159
+        },
+        {
+          "tree_index": 291,
+          "east_m": -389.302,
+          "north_m": -194.124,
+          "height_m": 19.5,
+          "screen_radius_m": 7.02,
+          "building_id": "roof-9ac93ab7",
+          "footprint_distance_m": 6.876
+        },
+        {
+          "tree_index": 296,
+          "east_m": -520.02,
+          "north_m": -299.305,
+          "height_m": 18.05,
+          "screen_radius_m": 6.498,
+          "building_id": "roof-6684e091",
+          "footprint_distance_m": 6.201
+        }
+      ]
+    },
+    {
+      "input": "artifacts/campus-expansion-input.json",
+      "input_sha256": "a491ce80e423d9b9df481b928cf282f0842cb7ae6b1e8a775fcbc9953b29fbdd",
+      "tree_count": 300,
+      "trunk_inside_pair_count": 0,
+      "candidate_tree_count": 0,
+      "candidate_pairs": []
+    }
+  ]
+}

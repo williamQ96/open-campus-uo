@@ -1,0 +1,7 @@
+# Straub Hall west exterior
+
+A source-pinned, reversible west-facing overlay adds a simplified brick facade, repeated framed windows and a three-arch entrance to the existing `roof-5ded2bf0` building. The [UO cultural resource survey](https://cpfm.uoregon.edu/straubhall2025) describes brick, four stories and a triple-arched entrance, and its site plan places the main frontage on the west, Onyx Street side. Its 2006 photo and plan were consulted but are not redistributed or used as textures. The linked survey was accessed 2026-11-04.
+
+The position follows the existing approximate LiDAR footprint; exact dimensions, window count and spacing, entrance location, materials, grade and present conditions are inferred. The existing source model merges roof sections and does not reproduce the survey's gabled roof or full building plan; the other elevations and attached buildings were not reconstructed. Trees obscure portions of the view, and no route, collision or accessibility correctness is claimed. [Before](images/straub-west-before.png) / [after](images/straub-west-after.png). The original GLB, placement and interior are unchanged. This partial improvement remains level 1.
+
+The existing building card identifies the Department of Psychology from a separately linked current UO department contact page; the historic survey was not used to infer additional current occupants. Runtime overlay is original CC BY 4.0 geometry; no third-party model or image is bundled.

@@ -1,0 +1,11 @@
+# Bean Complex exterior study, 2026-11-04
+
+The [UO cultural resource survey](https://cpfm.uoregon.edu/beancomplex2025) describes the three-story brick complex, flat roofs, two courtyard blocks and concrete panels; it records the 2020 additions and painting of the original aggregate panels black. Its photograph and plan were consulted only and are not redistributed or used as textures. Original geometry and color parameters are CC BY 4.0.
+
+A source-pinned patch recolors 164 matching vertical wall vertices to schematic brick, without editing the original GLB or changing its roof and window colors. A reversible overlay adds three-story window and dark panel rhythms and roof edges to selected outer east, north and south spans. [East before](images/bean-east-before.png) / [after](images/bean-east-after.png); [north before](images/bean-north-before.png) / [after](images/bean-north-after.png). The existing flat roof stays in place. `roof-0de7fadb` uses an approximate anchor inside a LiDAR-derived footprint and can merge canopy or omit courtyards.
+
+The black panels and window arrangement are schematic rather than measured. The survey plan and photograph may not document all post-2020 changes; exact material, bay spacing, entry location, courtyard boundaries and current appearance remain unverified. The existing mass does not reconstruct both actual open courtyards and the overlay does not restore them, entrances, landscape or paths. No terrain, vegetation, base GLB, interior or navigation data changed. Overlay faces add no collision. A 0.5 m screening of conservative ENU rectangles around the modeled spans found zero route-graph edge intersections, which is not a pedestrian-clearance or accessibility survey. Keep level 1.
+
+## Nearby planting batching
+
+Condon and Peterson planting detail meshes are consolidated by kind at load time when both independent source-pinned layers are present and their expected building identities and static geometry/material contracts match. Building selection identities and source layers remain separate. Tests compare positions and colors; a fixed local view and the original draw-call budget were checked. Culling granularity is coarser across the nearby planting groups.

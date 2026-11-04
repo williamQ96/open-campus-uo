@@ -6,6 +6,16 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-03 - 资产精细化清单（本地）
+
+- 新增可维护清单：534 条建筑外部、534 条待创建的独立内部，以及 13 条现有环境、道具、共用室内和角色动物条目。按用户基线，Knight 外部为 2 级，其余现有资产为 1 级；未创建的内部不评级。3–5 级等待用户标准。
+- 已核对唯一 ID、内外部建筑 ID 与 manifest 的对应关系、状态等级和证据路径。清单仅在本地，未提交、发布或修改模型。见[清单](docs/asset-refinement-inventory.md)。
+
+## 2026-11-03 - Knight Library 北立面细化（本地）
+
+- 保留建筑 ID、校园位置、主要体量与现有 Architectural Toon 配色，细化双入口、窗上题板、层间装饰和檐口。参考资料与推测尺寸见[细化说明](docs/knight-refinement.md)。
+- 使用 Blender 4.5.15 重建试点及校园扩展层。扩展审计通过：534 个唯一建筑 ID，未嵌入照片。已检查单体渲染，42 项预览单元测试通过；本地浏览器中检查了校园位置、朝北立面和卡通材质，控制台无警告或错误；未测试硬件性能。现有示意树木遮挡了部分建筑。本地更改，未提交或发布。
+
 ## 2026-11-01 — 发布确认：0.13.0 已部署并通过匿名线上核验
 
 - 实现 [ba2aeb8](https://github.com/williamQ96/open-campus-uo/commit/ba2aeb8a8649023973990274e3e5b51f835ba4a5) 已推送，[GitHub Pages 部署](https://github.com/williamQ96/open-campus-uo/actions/runs/41349051268) 成功。[线上地图](https://williamq96.github.io/open-campus-uo/) 匿名 HTTP200，iteration16，534 入口。
@@ -126,3 +136,323 @@
 - **日志：**从本条开始持续记录。先前工作保留在[校园活动／导航说明](docs/campus-life-navigation.md)、[视觉细化记录](docs/visual-refinement-v0.7.md)等现有文档。
 - **状态：**下游基线 `7c6558d9272b315afad94d234db4778bc0f55d95`，上游基线 `0361592966089072333ce3bf6eea22772c5d3079`。本次为本地未提交修改，**没有 push 或部署**，等待与下一批一起发布。
 - **版本锁：**本地 viewer lock 如实标记 `dirty: true`。下次获准发布时，先提交上游，再同步到干净版本并验证；历史地理重建与艺术模型生成的版本锁保持原有来源。
+
+## 2026-11-03 — 自行车道具细化（本地，未发布）
+
+细化通用自行车的镂空轮圈、辐条、座管、曲柄和踏板，保留原有布置与路线；重新导出运行时 GLB 和额外的可编辑 Blender 候选文件，保留原 Blender 文件。PROP-03 仍为 1 级；滑板车、骑姿比例和校园场景内审查仍待完成。生产构建、顶点有限值检查及独立浏览器近景检查通过，见[详情和证据](docs/bicycle-refinement.md)。共享 viewer 锁文件仍记录原 props 源文件，后续升级时需协调。
+
+## 2026-11-03 — 环境资产批次（本地，未发布）
+
+恢复现有推断地表图层的场景引用；为通用车辆增加轮毂、皮卡货斗，并细化滑板车。自行车已在校园场景中检查。保留共享 viewer 上游基线，并单独记录可校验的下游覆盖。生产构建、42 项单元测试、有限顶点检查、本地浏览器检查与覆盖哈希检查通过。重建脚本可能再次覆盖地表元数据；逐项实地核对及其他清单工作仍待完成。[证据](docs/environment-batch-2026-11-03.md)。
+
+## 2026-11-03 — 植被净空筛查（本地，未发布）
+
+新增可复现的保守二维树木与建筑轮廓筛查：树干中心均不在候选轮廓内；试点区域 7 棵树冠需进一步检查，扩展区域无候选。这不是三维相交检查或现状树木调查，没有修改几何或等级。已保存两处探索视角，见[方法和候选记录](docs/vegetation-clearance-audit.md)。恢复后的现有地表也通过完整检查（160801 顶点、320000 三角形，地形坐标保留）。
+
+## 2026-11-03 — 云层形态细化（本地，未发布）
+
+调整现有程序云团的尺度、方向和分块，保留合并网格及减少动态效果设置。ENV-07 仍为 1 级，季节和校园场景视角检查仍待完成。生产构建、42 项单元测试以及云层漂移／减少动态检查通过；见[前后对比](docs/sky-refinement.md)。下游天空文件哈希与上游 viewer 基线分开记录。
+
+## 2026-11-03 — 环境资产排查与来源（本地，未发布）
+
+记录了植物、台阶、铺装、家具和共用教室的场景视角，并检查推断入口与校园活动数量。Knight 示意台阶受到植被遮挡；完整重建试点资产可能覆盖地标细化，因此需隔离网格后修正。仅更新本次道具的来源清单大小、哈希和许可。完整资源检查现停在既有 campus-expanded GLB 与 roof Blender 哈希不一致，属于其他地标工作，未覆盖其记录。见 [13 条排查](docs/environment-triage-2026-11-03.md)。等级未变。
+
+## 2026-11-03 — Knight 树木隔离修正（本地，未发布）
+
+通过固定来源的运行时顶点修正与独立植被 Blender 候选文件，将一棵推断针叶树移出示意台阶。未重写建筑组合 GLB 或屋顶 Blender；修正前原子核对 68 个来源位置及 204 个拆分顶点，对照未发现其他植被顶点位置变化。校园场景检查、生产构建及 43 项单元测试通过。灌木仍有遮挡，入口并非现场测量；见[证据及重建限制](docs/knight-vegetation-correction.md)。
+
+## 2026-11-03 — 配套灌木修正（本地，未发布）
+
+通过第二个固定来源修正，将与先前 Knight 树木配套的推断灌木同步移开。隔离 Blender 对比显示仅 68 个树木顶点和 63 个灌木顶点平移，网格拓扑数量不变。浏览器检查、生产构建及 43 项单元测试通过；其余植物与真实通行仍未核实。[证据](docs/knight-vegetation-correction.md)。
+
+两处 Knight 修正后的最终验证：完整校园加载与移动浏览器回归通过；灌木后续修正前校园／室内 9 项浏览器测试通过。完整 32 项浏览器运行因后续工作中断，未声称通过。覆盖记录与地表检查通过；全局资源检查仍报告先前地标资产哈希不一致。
+
+## 2026-11-03 — 地标来源与环境重建保护（本地，未发布）
+
+依据先前 Knight 构建记录、配置与审计中的哈希和大小、通过的扩展审计以及 Knight Blender/GLB 顶点零距离对比，更新两条过期来源记录并保留旧哈希；27 项开放资源检查通过。校园美术构建器现暂存 Blender 与 GLB 输出、核对现有环境资产，在 GLB 完全一致时保留地表和固定来源的植被补丁引用；补丁不匹配时在替换前停止。5 项保留逻辑测试通过；隔离 Blender 实际重建保留地表和两个补丁，模拟来源不符及现有资产不符时在替换前停止。其他重建路径和多文件事务不在该保护范围。见[来源记录](docs/landmark-provenance-2026-11-03.md)及[重建说明](docs/zh-CN/campus-expansion.md)。
+
+## 2026-11-03 — 清单状态代码对齐（本地，未发布）
+
+将 UO CSV 的状态代码统一为母仓库模板的 `existing`（现有）和 `planned`（待创建），中文说明保留共用教室回退的解释。逐行比较 1081 条记录，ID、等级及其他字段均未变；母仓库结构校验通过。该检查不验证资料真实性或质量等级。
+
+环境修正后的最终回归：工作区副本使用本地 Chrome/SwiftShader 运行的 32 项浏览器测试全部通过，补完此前中断的测试。43 项 JavaScript 单元测试、5 项重建保留测试、27 项开放资源检查、地表与校园扩展审计、覆盖哈希及母仓库清单结构校验也均通过；不代表硬件性能测试。
+
+## 2026-11-03 — 植被三维相交排查（本地，未发布）
+
+新增可复现的只读 Blender BVH 检查，将此前 7 个二维候选逐一与对应手工建筑网格比较：3 棵出现表面相交（Knight 两棵、EMU 一棵），4 棵在此有限测试中未发现相交。原台阶树与 Knight 相交，修正候选未相交。未再移动其余树木：粗略净空候选约在 26–30 米外，需更好的资料和位置复核。[证据及限制](docs/vegetation-clearance-audit.md#read-only-3d-follow-up)。等级不变。
+
+## 2026-11-03 — 航拍复核与骑手连接（本地，未发布）
+
+对照已归档的 2024 年 NAIP 航拍及获许可的 Knight／EMU 照片检查三棵相交程序树；将位于当时开阔草坪／铺装边缘的一棵 EMU 示意树隐藏，未作 26–30 米的臆测迁移。两棵 Knight 树因树冠密集和遮挡仍待核实。原始组合 GLB 仍含 600 棵程序树，运行时显示 599 棵；新增固定来源的可撤销修正、独立可编辑候选及重建保护。调整通用自行车／滑板车骑手，使采样身高下手脚保持接触。集成前生产构建、45 项 JS 单元测试、6 项相关浏览器测试、6 项重建保留测试、隔离 Blender 构建和网格对比通过。证据与局限见[环境细化记录](docs/environment-refinement-2026-11-03.md)。等级未变。
+
+环境恢复连接后的集成验证：先核对全部候选及目标哈希，仅执行一次写入。生产构建、45 项 JS 单元测试、6 项相关浏览器测试、6 项保留测试、28 项开放资产检查、参考媒体审计、扩展／地表审计、覆盖哈希及通用清单检查均通过；项目 Blender 网格复核与既有证据一致。仍仅为本地改动，未发布。
+
+
+## 2026-11-03 — 建筑卡片资料与室外分批计划
+
+为 32 个既有建筑 ID 接入 UO 官方来源的用途或已知使用单位，卡片显示来源和核查日期；未核实或数据不可用时明确显示未知。这是资料覆盖，不代表外观升级。新增室外资产分批计划及尚未获用户确认的对照检查项；Knight 仍为唯一 2 级建筑示例，其余等级不变。未修改各建筑内部或校园几何。隔离副本完成生产构建、45 项单元测试及 5 项浏览器测试（含手机尺寸与数据缺失）；已记录 viewer override 哈希。其余校园仍需按区域核实和逐批优化。
+
+
+## 2026-11-03 — Johnson 后立面和种植细化
+
+新增基于源资产哈希的可复用几何细节层，为 Johnson Hall 增加简化的后入口、石质门框、雨棚与台阶，以及参考照片启发的两侧灌木。2012 年 CC BY 4.0 归档参考、推断范围和前后对比记录于 docs/johnson-rear-refinement.md。未重建基础校园 GLB 或内部；建筑和 ENV-03 保持 1 级。隔离验证包括生产构建、46 项 JS 测试、7 项重建保护测试、6 项地标及卡片浏览器测试，以及固定视角场景检查。已记录细节层与 viewer override 哈希；仅本地，未发布。
+
+
+## 2026-11-03 — Gerlinger Hall 和新增建筑卡片
+
+依据归档照片新增 Gerlinger Hall 入口、栏杆和示意性的两侧灌木，作为第二个独立源哈希细节层；校园 GLB 与建筑内部未改动。来源、限制和对比图见 docs/gerlinger-refinement.md。重建保护已支持逐层验证，包括保留既有 Johnson 细节层。新增 6 条 UO 官方建筑资料，覆盖 38 个建筑。记录 Annex 照片/模型与 UO 2025 建筑调查之间待核实的不一致，未改其几何。未提升等级。隔离验证包括构建、46 项单元测试、8 项重建测试、6 项地标及卡片浏览器测试、视觉对照和哈希检查；仅本地，未发布。
+
+
+## 2026-11-03 — 建筑资料补充
+
+补充 10 条 UO 官方来源的建筑信息（总计 48 条），新增已知 ID、日期和官方 HTTPS 域名自动检查；浏览器核实 Straub 卡片。已知使用单位并非完整名单；未改变资产等级或内部。仅本地，未发布。
+
+
+## 2026-11-03 — Gerlinger 身份与立面修正
+
+对照 UO 调查与近似坐标后，Annex 的位置关系基本吻合，原拱窗老虎窗外观不符。新增可回退、绑定源哈希的现代平顶示意模型和局部花池，原 GLB 未改变。前次 Hall 细节使用东立面照片却放在北侧，现已停用并保留候选，等待准确重建。Annex 卡片补充舞蹈系官方来源。限制与视觉证据见 docs/gerlinger-annex-correction.md。未提升等级；仅本地未发布。隔离验证包括构建、48 项 JS 测试、8 项重建测试、6 项地标及卡片浏览器测试、Annex 选择测试和场景对照。
+
+
+## 2026-11-03 — Gerlinger Hall 东立面
+
+根据 UO 图纸与源网格采样确认东墙，新增绑定源哈希的山墙、窗、檐篷、入口、栏杆和示意灌木；此前错误置于北侧的候选保持停用。卡片补充 UO 人体生理学办公室资料。细节按语义类型与顶点颜色合批，解决浏览器绘制调用数超限并保留材质模式。来源、未知项与对照图见 docs/gerlinger-east-refinement.md。未提升等级，未修改基础 GLB 或内部。隔离构建、49 项 JS 测试、8 项重建测试、地标及 Annex 浏览器检查和视觉复核通过；仅本地，未发布。
+
+
+## 2026-11-03 — EMU 第 216 棵程序树
+
+依据归档 2024 NAIP 图像中该中心未见明确树冠，局部抑制一棵推断树；第 297 棵位于边界、证据不足，保持原样。源哈希补丁验证精确导出顶点并从固定 Blender 源逐字节复现，基础 GLB 未改动。源树 600 棵，可见 598 棵，包含此前第 273 棵的抑制。重建保护新增多补丁哈希和计数检查。未知项及对照见 docs/emu-tree-216.md。未提升等级，未修改建筑或内部。隔离构建、49 项 JS 测试、9 项保护测试、相关地标及 Annex 浏览器检查和视觉复核通过；仅本地，未发布。
+
+
+## 2026-11-03 — 四条建筑卡片资料
+
+新增 Computing Center、Jaqua Academic Center、Matthew Knight Arena 和 McArthur Court 的 UO 官方来源资料；现覆盖 53 个建筑 ID。数据验证及 Jaqua 浏览器检查通过；未修改几何或等级，仅本地未发布。
+
+
+## 2026-11-03 — Johnson 北侧檐部铭文
+
+依据历史调查及归档照片，使用可回退且绑定源哈希的运行时文字层，将北侧檐部修正为历史铭文 Administration Building。浏览器画布生成文字，不含照片像素；字体、比例和现状仍为近似。原 GLB、后立面层和内部未改动。来源及对照见 docs/johnson-frieze-refinement.md，建筑保持 1 级。隔离构建、50 项 JS 测试、9 项重建测试、视觉对照和地标/材质/调用数浏览器检查通过；仅本地，未发布。
+
+
+## 2026-11-03 — 三条建筑资料
+
+新增 Cascade Hall、Ford Alumni Center 及 Outdoor Program Barn 的 UO 官方信息；现覆盖 56 个建筑 ID，已知使用单位并非完整名单。资料验证和 Cascade 浏览器检查通过；未修改几何或等级，仅本地未发布。
+
+### 2026-11-03：Friendly Hall 西立面
+
+新增保留建筑身份的来源锁定外立面模型，归档 CC0 照片并记录学校历史资料；保留原 GLB 和 1 级状态。限制及验证见 docs/friendly-west-refinement.md。
+
+### 2026-11-03：建筑资料卡
+
+为 Bean、中央能源站、Collier House 和 Living Learning Center 南北两项添加五条学校官方来源资料。建筑身份及完整使用单位仍需核实。参见 docs/building-information-east-campus.md。
+
+### 2026-11-03：Friendly 西立面及种植
+
+依据已归档照片增加窗中梃、入口柱、水平饰带和六个示意灌木；场景选择、渲染模式及试点回归通过，等级不变。详见 docs/friendly-west-refinement.md。
+
+### 2026-11-03：Villard Hall 东立面
+
+以 CC0 照片及学校立面图为依据，增加保留建筑身份的简化东立面和示意种植；其他立面及尺寸待核实，维持 1 级。见 docs/villard-east-refinement.md。
+
+### 2026-11-03：University Hall 外立面
+
+新增来源锁定的简化双塔外观、示意种植和可复用收坡屋顶；历史资料和待核实事项见 docs/university-hall-refinement.md，等级维持 1。
+
+### 2026-11-03：University 与 Villard 拱窗
+
+新增可复用双朝向拱形几何，细化 University Hall 窗列和塔楼屋顶窗，以及 Villard 东立面底层窗；沿用已有历史资料与待核实说明，等级维持 1。
+
+### 2026-11-03：University 入口与 Villard 屋顶
+
+补充 University Hall 东西入口的示意拱门和台阶，以及 Villard 简化收坡屋顶；树木净空、通行与尺寸待核实，均维持 1 级。详见各自记录。
+
+### 2026-11-03：Anstett 南立面
+
+增加来源锁定的南立面及示意花坛、灌木、长椅；按学校资料补充资料卡，通用细节层支持道具语义。等级仍为 1，详见 docs/anstett-south-refinement.md。
+
+### 2026-11-03：Peterson 南立面
+
+复用成对建筑的通用立面语言，增加来源锁定的示意南立面及三丛灌木，并依据学校资料补充 Oregon MBA。主体接缝和尺寸尚待核实，维持 1 级。见 docs/peterson-south-refinement.md。
+
+### 2026-11-03：长椅细节及 Knight Campus 资料卡
+
+细化两把 Anstett 示意长椅靠背和扶手，按学校来源添加两张 Knight Campus 资料卡；Peterson 两种接缝候选因几何重叠被拒绝。等级不变，详见各自记录。
+
+### 2026-11-03：Anstett 花坛
+
+为两处示意花坛补充石边、土壤与分层低矮植被，并扩展可复用色板；物种和现状仍待核实，等级不变。见 docs/anstett-south-refinement.md。
+
+### 2026-11-04：Tykeson 北侧外立面
+
+为已有近似体量增加来源锁定的简化玻璃立面、雨棚和示意植物；来源、推断朝向、树冠遮挡及尺寸待核实事项见 docs/tykeson-north-refinement.md，等级维持 1。
+
+### 2026-11-04：Susan Campbell Hall
+
+增加可回退的来源锁定 L 形简化外观和折坡屋顶，以及可复用折坡屋顶组件；来源和待核实事项见 docs/susan-campbell-refinement.md，等级维持 1。
+
+### 2026-11-04：Hendricks 外观资料核查
+
+对照校方调查、航拍背景及候选屋顶；由于建筑边界未核实且候选遮挡现有细节，不合入候选，等级仍为 1。详见 docs/hendricks-exterior-audit.md。
+
+### 2026-11-04：通用交通道具细节
+
+增加车辆保险杠、后视镜、侧窗分隔及滑板车轮毂、握把、尾部反光细节；重新导出 GLB，等级仍为 1。详见 docs/prop-detail-2026-11-04.md。
+
+### 2026-11-04：道具 Blender 版本快照
+
+从当前 GLB 创建不覆盖旧文件的可编辑 Blender 快照，记录来源哈希，并与重新导入的五个网格比较坐标及变换。程序化源码仍是权威来源。
+
+### 2026-11-04：Straub 西侧立面
+
+依据校方调查增加可逆的西侧立面叠加；轮廓、窗列及入口仍为近似，屋顶与其他立面待核实，等级仍为 1。详见 docs/straub-west-refinement.md。
+
+### 2026-11-04：Condon 东侧入口
+
+增加依据校方资料的可逆入口、参考现有地形调整的示意台阶和灌木；建筑及环境条目仍为 1 级。详见 docs/condon-east-refinement.md。
+
+### 2026-11-04：Fenton 南侧入口
+
+增加依据校方资料的可逆入口叠加、示意台阶与灌木；原模型高度与轮廓仍为近似，建筑和环境条目保持 1 级。详见 docs/fenton-south-refinement.md。
+
+### 2026-11-04：Chapman 西侧入口及建筑卡片
+
+增加依据校方资料的可逆西入口和示意种植；建筑与环境条目保持 1 级。依据 UO 信息更新 Villard、Chiles 两张卡片的已知单位。详见 docs/chapman-west-refinement.md 和 docs/building-info-2026-11-04.md。
+
+### 2026-11-04：Oregon Hall 立面与办公室卡片
+
+增加依据校方资料的可逆西翼立面；最近屋顶身份与位置仍为近似，保持 1 级。依据 UO 资料更新 Lillis 和 Columbia 办公室卡片。详见 docs/oregon-south-refinement.md 和 docs/building-info-offices-2026-11-04.md。
+
+### 2026-11-04：Oregon Hall 抬高草坪
+
+增加依据校方调查的可逆示意草坪与边缘，尺寸、现状和通行仍未核实；ENV-05 与 ENV-06 保持 1 级。详见 docs/oregon-south-refinement.md。
+
+### 2026-11-04：Collier House 外观及建筑卡片
+
+增加依据校方调查的可逆外观替换，屋顶、门廊与附翼为近似；原 GLB 和室内保留，等级仍为 1。依据 UO 来源更新 Collier 与 Clinical Services 卡片。详见 docs/collier-house-refinement.md 和 docs/building-info-collier-clinical-2026-11-04.md。
+
+### 2026-11-04：Collier 碰撞对齐
+
+为重建外观增加经过验证的保守碰撞范围及路线检查，保留原有轮廓；示意门廊和台阶暂不可行走。图和浏览器检查通过，详见 docs/collier-house-refinement.md。
+
+### 2026-11-04：场馆卡片及外观边界核查
+
+依据 UO 资料更新 McArthur 与 Hayward 的场馆用途；记录 McArthur 与 Esslinger 的轮廓重叠，并拒绝未能可靠接合的 Clinical Services 屋顶候选。本轮核查未增加几何。
+
+### 2026-11-04：Outdoor Barn 示意太阳能阵列与场馆卡片
+
+增加依据 UO 资料的可逆示意太阳能板和可验证的几何旋转支持；屋顶身份及阵列现状未核实，保持 1 级。为 Matthew Knight Arena 卡片增加有来源的篮球主场信息。详见 docs/outdoor-barn-solar-refinement.md 和 docs/building-info-arena-2026-11-04.md。
+
+## 2026-11-04 — Volcanology 待核身份
+
+为 roof-399a0551 增加带源模型和轮廓校验的可选近似身份及有校方来源的教师办公室卡片；原始清单不变，仍为 1 级。立面候选因地形遮挡和屋顶穿透未合入。详见 docs/volcanology-identity-audit.md。62 项单元测试、6 项浏览器测试和生产构建通过。
+
+## 2026-11-04 — Volcanology 示意南立面
+
+根据校方历史照片，为待核地图匹配增加源模型校验的示意南立面，并采样地表和屋顶高度、检查正面及侧视。身份和尺度仍待核实，保持 1 级，入口与碰撞数据未改变。详见 docs/volcanology-identity-audit.md。
+
+## 2026-11-04 — Anstett 前场景观家具
+
+根据已归档的 2019 年参考照片，新增独立且校验源模型的两盏示意球形灯及季节性花篮。位置、物种和现状未核实，等级保持 1。详见 docs/anstett-south-refinement.md。
+
+## 2026-11-04 — 四种通用道路车辆
+
+统一细化四种程序化车型并修正皮卡挡风玻璃；导出增加 SUV 和对应的六模型 Blender 快照。场景位置和碰撞未改动，PROP-02 保持 1 级。详见 docs/vehicle-family-refinement-2026-11-04.md。
+
+## 2026-11-04 — 试点长椅组
+
+以源模型校验的顶点选择和可复用环境图层细化九张原有长椅靠背与扶手；保留座面、灯具、原位置及 GLB，并合批保持绘制预算。原步道和地面位置仍需核实；PROP-01 保持 1 级。详见 docs/pilot-bench-batch-2026-11-04.md。
+
+## 2026-11-04 — 区域性蕨形植物
+
+用可复用蕨形叶片及源模型校验细化三处原有示意种植，合入原林下植物批次；另八处因铺装或建筑局部冲突维持原状，位置和物种待核实，ENV-03 保持 1 级。详见 docs/pilot-ferns-2026-11-04.md。
+
+## 2026-11-04 — 广场种植冲突
+
+对照既有铺装和 2024 年 USDA NAIP 航拍，抑制三组广场上的推断植物，不另行猜测位置。新增可复用的源模型校验环境补丁列表及重建检查；另五处仍待核实，ENV-03 与 ENV-05 保持 1 级。详见 docs/plaza-plant-clearance-2026-11-04.md。
+
+## 2026-11-04 — 试点球形灯组
+
+以可复用底座和灯罩支座细化八盏原有示意灯，并合入现有金属批次；另三处位置待核，样式和位置未调查，PROP-01 保持 1 级。详见 docs/pilot-lamps-2026-11-04.md。
+
+## 2026-11-04 — Anstett 南立面
+
+依据历史照片连贯调整两侧窗列、砖柱、入口石框、中央竖向构件和双侧台阶侧墙。保留现有景观与原 GLB；比例及其他立面待核实，保持 1 级。详见 docs/anstett-south-refinement.md。
+
+## 2026-11-04 — Collier 多立面外部
+
+参考 UO 2018 年标注历史照片，补充两个示意东门廊、西侧烟囱和屋檐、门廊细节，并为新增可见实体增加保守碰撞范围；保留原足迹、GLB、植被和室内。尺度及现状未核实，保持 1 级。详见 docs/collier-house-refinement.md。
+
+## 2026-11-04 - Villard 多立面外观
+
+参考 UO 2017 年历史评估，补充示意性南北立面、四角屋顶、北侧台阶及保守碰撞范围。保留既有东立面、原建筑范围、GLB 和室内；尺寸及无障碍通行尚未核实，维持 1 级。详见 docs/villard-east-refinement.md。
+
+## 2026-11-04 - Susan Campbell 多立面外观
+
+参考 UO 历史调查，细化多格窗、六处翼楼屋顶窗及保守碰撞，并清理翼楼交界内被遮蔽的窗洞。保留原布局、GLB 和室内；入口、精确细节及无障碍通行尚未核实，维持 1 级。详见 docs/susan-campbell-refinement.md。
+
+## 2026-11-04 - Condon 原入口与扩建立面
+
+参考 UO 历史调查，补充示意性入口檐口、扩建外墙框架和平屋顶边缘。保留原模型、景观、导航和室内；尺寸、未见立面及无障碍通行尚未核实，维持 1 级。详见 docs/condon-east-refinement.md。
+
+## 2026-11-04 - Friendly Hall 多立面外观
+
+参考 UO 历史立面与屋顶图，补充示意性的南北东立面、折坡屋顶和保守碰撞范围。保留既有西立面、植被、源 GLB 与室内；翼楼体量、地形衔接及无障碍通行尚未核实，维持 1 级。详见 docs/friendly-west-refinement.md。
+
+## 2026-11-04 - Chapman 多立面外观
+
+参考 UO 历史评估及现有玻璃网格，细化示意性的南北檐口和多格窗。保留原平屋顶、西入口、GLB、植被、导航及室内；入口、地形和无障碍通行尚未核实，维持 1 级。详见 docs/chapman-west-refinement.md。
+
+## 2026-11-04 - Fenton 入口方向纠正与书库
+
+州历史档案确认此前按南侧处理的主入口照片实际为东立面，现将示意入口移至东侧，因地形待核实而移除台阶，并补充示意性南西书库窗列及屋顶栏杆。保留原 GLB、景观与室内；真实标高、细节和无障碍通行尚未核实，维持 1 级。详见 docs/fenton-south-refinement.md。
+
+## 2026-11-04 - Gerlinger 多立面外观
+
+参考 UO 历史照片补充示意性南侧窗户、百叶和屋顶窗及北侧翼部窗户。保留既有东立面、GLB、植被、导航与室内；原网格北侧山墙来源、标高、通行与现状细节待核实，维持 1 级。详见 docs/gerlinger-east-refinement.md。
+
+## 2026-11-04 - Oregon Hall 东翼外观
+
+参考 UO 调查补充示意性东翼四层横窗及屋顶边缘；未见照片的东立面为推断。保留西立面、花池、GLB、植被、导航和室内；建筑匹配、边界及通行尚未核实，维持 1 级。详见 docs/oregon-south-refinement.md。
+
+- 2026-11-04: Added source-pinned schematic McKenzie Hall west/east exterior overlays; see docs/mckenzie-exterior-refinement.md for sources, visual checks, collision caveats and remaining level-1 gaps.
+
+- 2026-11-04: Added source-pinned schematic Allen Hall west exterior overlay and consolidated adjacent Anstett vegetation and prop draws; see docs/allen-west-exterior-refinement.md for sources, visual checks, collision caveats and remaining level-1 gaps.
+
+- 2026-11-04: Added source-pinned Carson Hall schematic exterior, source-checked wall recolor and rebuild preservation; see docs/carson-exterior-refinement.md for evidence and level-1 limitations.
+
+- 2026-11-04: Added source-pinned PLC tower facade and nearby planting batching; corrected Carson navigation test axes. See docs/plc-tower-refinement.md and docs/carson-exterior-refinement.md.
+
+- 2026-11-04: Added source-pinned schematic museum west exterior and pointed-arch geometry, with nearby planting batching; see docs/museum-west-refinement.md for evidence and level-1 limitations.
+
+- 2026-11-04: Added source-pinned Bean exterior study and wall recolor with nearby planting batching. See docs/bean-exterior-refinement.md for sources and level-1 limitations.
+
+- 2026-11-04: Added source-pinned LLC North exterior study, wall recolor and guarded source-building mesh consolidation. See docs/llc-north-refinement.md for references and level-1 limits.
+
+- 2026-11-04: Added source-pinned LLC South facade, wall color and guarded local roof reconstruction. See docs/llc-south-refinement.md for references and level-1 limits.
+
+- 2026-11-04: Added source-pinned natural and cultural history museum exterior study and wall recolor. See docs/natural-museum-refinement.md for evidence and level-1 limits.
+
+- 2026-11-04: Added source-pinned central power station exterior study and wall recolor. See docs/power-station-refinement.md for evidence and level-1 limits.
+
+- 2026-11-04: Refined the reusable generic scooter and regenerated its prop export; see docs/scooter-detail-2026-11-04.md for evidence and level-1 limitations.
+
+- 2026-11-04: Refined the generic bicycle and saved verified six-prop Blender snapshot; see docs/bicycle-drivetrain-2026-11-04.md.
+
+- 2026-11-04: Refined nine illustrative pilot bench seats with source-pinned slats; see docs/pilot-bench-seats-2026-11-04.md.
+
+- 2026-11-04: Refined reusable fern fronds at three existing sites; see docs/fern-arched-2026-11-04.md for evidence and limitations.
+
+- 2026-11-04: Added reversible source-pinned color variation to the pilot canopy batches; see docs/pilot-canopy-tone-2026-11-04.md for scope and limitations.
+
+- 2026-11-04: Added subtle cloud underside shading without changing cloud geometry; see docs/cloud-shading-2026-11-04.md.
+
+- 2026-11-04: Added source-pinned Knight Law Center western exterior study and wall recolor. See docs/knight-law-refinement.md for evidence and level-1 limits.
+
+- 2026-11-04: Added source-pinned Clinical Services roof slope study with rebuild protection; see docs/clinical-roof-refinement.md.
+
+- 2026-11-04: Added source-pinned Cascade Hall wall color study. See docs/cascade-wall-study.md for evidence and level-1 limits.
+
+- 2026-11-04: Added source-pinned Miller Theatre Complex western study and wall recolor. See docs/miller-west-study.md for evidence and level-1 limits.
+
+- 2026-11-04: Added source-pinned thin overlay collision for the Miller west facade, with footprint-adjacency and route safeguards. See docs/miller-west-study.md.
+
+- 2026-11-04: Added editable Blender snapshot and verified single-mesh GLB for the nine pilot bench detail overlays; see docs/pilot-bench-editable-overlay.md for source and exclusions.

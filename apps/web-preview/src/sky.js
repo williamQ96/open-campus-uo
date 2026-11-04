@@ -29,15 +29,30 @@ export function createSky(scene) {
       x = Math.cos(angle) * distance,
       z = Math.sin(angle) * distance,
       y = 400 + rng() * 600;
+    // Broad, flattened clusters with staggered lobes, never a weather claim.
+    const scale = 0.7 + rng() * 0.65,
+      heading = rng() * Math.PI;
     for (let j = 0; j < 5; j++) {
-      const g = new RoundedBoxGeometry(
-        190 + rng() * 150,
-        42 + rng() * 18,
-        130 + rng() * 110,
-        2,
-        8,
+      const along = (j - 2) * 100 * scale;
+      const across = (rng() - 0.5) * 140 * scale;
+      const width = (190 + rng() * 130) * scale,
+        height = (38 + rng() * 27) * scale,
+        depth = (125 + rng() * 100) * scale;
+      const g = new RoundedBoxGeometry(width, height, depth, 2, 8);
+      // Soft underside shading preserves the original geometry and cloud positions.
+      const position = g.attributes.position,
+        colors = [];
+      for (let k = 0; k < position.count; k++) {
+        const t = THREE.MathUtils.clamp(position.getY(k) / height + 0.5, 0, 1);
+        colors.push(0.72 + 0.28 * t, 0.8 + 0.2 * t, 0.87 + 0.13 * t);
+      }
+      g.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
+      g.rotateY(heading);
+      g.translate(
+        x + along * Math.cos(heading) - across * Math.sin(heading),
+        y + (j === 2 ? 14 : rng() * 9) * scale,
+        z + along * Math.sin(heading) + across * Math.cos(heading),
       );
-      g.translate(x + (j - 2) * 110, y + (j % 2) * 9, z + (rng() - 0.5) * 130);
       parts.push(g);
     }
   }
@@ -47,6 +62,7 @@ export function createSky(scene) {
     cloudGeometry,
     new THREE.MeshBasicMaterial({
       color: 0xf6f8f3,
+      vertexColors: true,
       transparent: true,
       opacity: 0.91,
       depthWrite: false,

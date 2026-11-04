@@ -192,7 +192,11 @@ for i,bay in enumerate(sorted(inp['facade_modules']['knight-north'],key=lambda b
     cube(key,x,-192.84,base+9.1,4.9,.28,8.6,'brick-dark')
     detailed_window(key,x,bay['north_m'],bay['height_m'],*pattern['opening_m'],bay['yaw_rad'],pattern['pane_columns'],pattern['pane_rows'])
     cube(key,x,-192.53,base+14.0,5.8,.40,.72,'stone')
-    cube(key,x,-192.27,base+14.0,5.2,.08,.40,'brick-dark')
+    cube(key,x,-192.27,base+14.0,5.2,.08,.40,'cream')
+    # Recessed, framed discipline plaque; exact inscriptions and their order
+    # are intentionally left for a verified elevation survey.
+    for dx in [-2.45,2.45]:
+        cube(key,x+dx,-192.20,base+14.0,.07,.08,.34,'stone')
     detailed_window(key,x,-192.6,base+2.5,3.5,2.5,columns=3,rows=3)
     if 2<=i<=4:
         cube(key,x,-191.6,base+5.3,5,2.4,.5,'stone')
@@ -201,7 +205,18 @@ for i,bay in enumerate(sorted(inp['facade_modules']['knight-north'],key=lambda b
         for dx in [-1.8,-1.2,-.6,0,.6,1.2,1.8]:
             beam(key,(x+dx,-190.4,base+5.5),(x+dx,-190.4,base+6.3),.035,'bronze')
 for x in [-605,-516]:
-    detailed_window(key,x,-192.5,base+2.7,3.6,4.5,columns=2,rows=3)
+    # Two visually distinct entrance pavilions and paired dark doors. Their
+    # depth and detailed ornament are approximate, not measured elevations.
+    cube(key,x,-192.55,base+8.0,9.3,.80,15.9,'brick')
+    cube(key,x,-192.04,base+2.55,4.5,.35,5.1,'stone')
+    cube(key,x,-191.80,base+2.55,3.8,.15,4.5,'metal')
+    for dx in [-.92,.92]:
+        cube(key,x+dx,-191.70,base+2.8,1.62,.08,3.6,'glass')
+        for z in [1.45,2.55,3.65]:
+            cube(key,x+dx,-191.63,base+z,1.62,.08,.10,'metal')
+    cube(key,x,-191.78,base+5.8,7.2,.28,.75,'stone')
+    cube(key,x,-191.61,base+5.8,6.5,.08,.40,'cream')
+    detailed_window(key,x,-192.02,base+10.1,3.2,3.9,columns=3,rows=4)
     approach_steps(key,x,-186,8,base+.45,6,.65)
     for dx in [-3.4,3.4]:historic_lantern(key,x+dx,-190.3,base+.45)
 cube(key,-560.5,-192.55,base+.52,104,.5,1.04,'stone')
@@ -211,7 +226,16 @@ for x in range(-610,-510,2):
     cube(key,x,-192.15,base+15.62,.52,.60,.42,'stone')
 for x in [-599.5,-590,-580.6,-571.2,-561.8,-552.4,-543,-533.6,-524.2]:
     crown(key,x,-192.5,base+16.4,.45,.18,.42,'stone')
-inscription(key,'KNIGHT LIBRARY',-560.5,-192.15,base+14.08,.63)
+# Layered spandrel between the lower sash and the tall reading-room windows.
+# The ornamental blocks suggest the carved band without copying photo pixels.
+for z in [4.44,5.04]:
+    cube(key,-560.5,-192.28,base+z,83,.35,.13,'stone')
+for x in [ -600 + i*2.0 for i in range(40) ]:
+    cube(key,x,-192.04,base+4.74,.13,.10,.38,'stone')
+    cube(key,x+.8,-192.03,base+4.74,.50,.10,.24,'brick-dark')
+# Small stepped blocks evoke the cornice frieze and cast legible toon shadows.
+for x in [ -608 + i*1.25 for i in range(77) ]:
+    cube(key,x,-192.10,base+15.06,.32,.42,.30,'stone')
 for n in range(-292,-226,6):
     for z in [base+3,base+8]:
         window(key,-612.15,n,z,2.6,2.7,-math.pi/2)

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-2518e2a2",
+  "source_rgb8": [
+    107,
+    48,
+    30
+  ],
+  "target_srgb": "#526f6d",
+  "normal_y_abs_max": 0.4,
+  "expected_vertices": 156,
+  "note": "Recolor source-matched vertical walls to schematic station tone, preserving original GLB and roof."
+}

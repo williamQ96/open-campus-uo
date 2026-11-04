@@ -1,6 +1,20 @@
 // SPDX-License-Identifier: Apache-2.0
 // Optional authored art layer. It never rewrites the measured scene manifest.
 import * as THREE from "three";
+import { applyWallColorPatch } from "./wall-color-patch.js";
+import { applyBuildingRoofSlope } from "./building-roof-slope.js";
+import { applyVegetationPatch } from "./vegetation-patch.js";
+import { applyCanopyTone } from "./canopy-tone.js";
+import {
+  installExteriorDetail,
+  mergeEnvironmentDetail,
+  mergeLocalDetailKind,
+  mergeBuildingDetailIntoSource,
+} from "./exterior-detail.js";
+import {
+  collisionBoxesForDetail,
+  overlayCollisionBoxesForDetail,
+} from "./collision-supplement.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { applySurfaceGrain } from "./surface-grain.js";
 import { createContextFog } from "./context-fog.js";
@@ -39,16 +53,176 @@ export async function loadPresentation(base, name, buildingIds) {
   const gltf = await new GLTFLoader().loadAsync(
     sceneAssetUrl(base, config.asset_url),
   );
+  const wallPatches = config.wall_color_patches ?? [];
+  if (
+    !Array.isArray(wallPatches) ||
+    wallPatches.some((entry) => !entry || typeof entry.url !== "string") ||
+    new Set(wallPatches.map((entry) => entry.url)).size !== wallPatches.length
+  )
+    throw new Error("Invalid wall color patches.");
+  for (const entry of wallPatches) {
+    const result = await fetch(sceneAssetUrl(base, entry.url));
+    if (!result.ok)
+      throw new Error("Could not load wall color patch: " + result.status);
+    applyWallColorPatch(gltf.scene, await result.json(), config.asset_sha256);
+  }
+  const roofPatches = config.building_roof_patches ?? [];
+  if (
+    !Array.isArray(roofPatches) ||
+    roofPatches.some((entry) => !entry || typeof entry.url !== "string") ||
+    new Set(roofPatches.map((entry) => entry.url)).size !== roofPatches.length
+  )
+    throw new Error("Invalid building roof patches.");
+  for (const entry of roofPatches) {
+    const result = await fetch(sceneAssetUrl(base, entry.url));
+    if (!result.ok)
+      throw new Error("Could not load building roof patch: " + result.status);
+    applyBuildingRoofSlope(
+      gltf.scene,
+      await result.json(),
+      config.asset_sha256,
+    );
+  }
+  const extraPatches = config.additional_environment_patches ?? [];
+  if (
+    !Array.isArray(extraPatches) ||
+    extraPatches.some((entry) => !entry || typeof entry.url !== "string") ||
+    new Set(extraPatches.map((entry) => entry.url)).size !== extraPatches.length
+  )
+    throw new Error("Invalid additional environment patches.");
+  for (const patchUrl of [
+    config.vegetation_patch_url,
+    config.understory_patch_url,
+    config.furniture_patch_url,
+    config.fern_patch_url,
+    config.tree_suppression_url,
+    ...(config.additional_tree_suppressions || []).map((entry) => entry.url),
+    ...extraPatches.map((entry) => entry.url),
+  ]) {
+    if (!patchUrl) continue;
+    const result = await fetch(sceneAssetUrl(base, patchUrl));
+    if (!result.ok)
+      throw new Error("Could not load vegetation patch: " + result.status);
+    const patch = await result.json();
+    if (patch.operation === "canopy-tone-v1")
+      applyCanopyTone(gltf.scene, patch, config.asset_sha256);
+    else applyVegetationPatch(gltf.scene, patch, config.asset_sha256);
+  }
+  const detailUrls = [
+    ...(config.exterior_detail_url ? [config.exterior_detail_url] : []),
+    ...(config.exterior_details || []).map((entry) => entry.url),
+  ];
+  if (new Set(detailUrls).size !== detailUrls.length)
+    throw new Error("Duplicate exterior detail layer.");
+  const collisionSupplements = [];
+  const localDetails = new Map();
+  for (const detailUrl of detailUrls) {
+    const result = await fetch(sceneAssetUrl(base, detailUrl));
+    if (!result.ok)
+      throw new Error("Could not load exterior detail: " + result.status);
+    const detail = await result.json();
+    const boxes = collisionBoxesForDetail(detail);
+    const overlayBoxes = overlayCollisionBoxesForDetail(detail);
+    if (boxes.length && overlayBoxes.length)
+      throw new Error("Mixed collision envelope types.");
+    const installed = installExteriorDetail(
+      gltf.scene,
+      detail,
+      config.asset_sha256,
+      buildingIds,
+    );
+    if (detail.merge_target)
+      mergeEnvironmentDetail(gltf.scene, installed, detail);
+    if (detail.merge_source_vertex_count !== undefined)
+      mergeBuildingDetailIntoSource(gltf.scene, installed, detail);
+    if (
+      [
+        "anstett-south-detail.json",
+        "anstett-lamps-detail.json",
+        "chapman-west-detail.json",
+        "tykeson-north-detail.json",
+        "fenton-south-detail.json",
+        "condon-east-detail.json",
+        "peterson-south-detail.json",
+      ].includes(detailUrl)
+    ) {
+      const expectedId =
+        detailUrl === "chapman-west-detail.json"
+          ? "roof-f5cea51d"
+          : detailUrl === "tykeson-north-detail.json"
+            ? "context-b0103"
+            : detailUrl === "fenton-south-detail.json"
+              ? "roof-4f0c798e"
+              : detailUrl === "condon-east-detail.json"
+                ? "roof-7ffcf31b"
+                : detailUrl === "peterson-south-detail.json"
+                  ? "roof-75e776d0"
+                  : "roof-0a498bf7";
+      if (detail.building_id !== expectedId)
+        throw new Error("Local detail identity changed.");
+      localDetails.set(detailUrl, installed);
+    }
+    if (boxes.length)
+      collisionSupplements.push({ buildingId: detail.building_id, boxes });
+    if (overlayBoxes.length)
+      collisionSupplements.push({
+        buildingId: detail.building_id,
+        boxes: overlayBoxes,
+        overlay: true,
+      });
+  }
+  if (
+    localDetails.has("anstett-south-detail.json") &&
+    localDetails.has("anstett-lamps-detail.json")
+  ) {
+    const first = localDetails.get("anstett-south-detail.json");
+    const second = localDetails.get("anstett-lamps-detail.json");
+    mergeLocalDetailKind(first, second, "vegetation");
+    mergeLocalDetailKind(first, second, "prop");
+  }
+  // Two nearby, non-selectable planting layers share the same material contract.
+  if (
+    localDetails.has("anstett-south-detail.json") &&
+    localDetails.has("chapman-west-detail.json")
+  ) {
+    mergeLocalDetailKind(
+      localDetails.get("anstett-south-detail.json"),
+      localDetails.get("chapman-west-detail.json"),
+      "vegetation",
+    );
+  }
+  // Consolidate two nearby non-selectable planting layers without merging buildings.
+  if (
+    localDetails.has("tykeson-north-detail.json") &&
+    localDetails.has("fenton-south-detail.json")
+  ) {
+    mergeLocalDetailKind(
+      localDetails.get("tykeson-north-detail.json"),
+      localDetails.get("fenton-south-detail.json"),
+      "vegetation",
+    );
+  }
+  // Nearby generic planting remains independently source-pinned and non-selectable.
+  if (
+    localDetails.has("condon-east-detail.json") &&
+    localDetails.has("peterson-south-detail.json")
+  ) {
+    mergeLocalDetailKind(
+      localDetails.get("condon-east-detail.json"),
+      localDetails.get("peterson-south-detail.json"),
+      "vegetation",
+    );
+  }
   if (config.landcover_url) {
     const land = await new GLTFLoader().loadAsync(
       sceneAssetUrl(base, config.landcover_url),
     );
     gltf.scene.add(land.scene);
   }
-  return createPresentation(gltf.scene, config);
+  return createPresentation(gltf.scene, config, collisionSupplements);
 }
 
-export function createPresentation(root, config) {
+export function createPresentation(root, config, collisionSupplements = []) {
   const groups = new Map();
   const batchedIds = new Set();
   const contextFog = createContextFog(config.context_fog);
@@ -134,6 +308,7 @@ export function createPresentation(root, config) {
     batchedIds,
     contextFog,
     collisionMeshes,
+    collisionSupplements,
     hasFoundation,
     bakeStaticHaze() {
       for (const entry of materials)

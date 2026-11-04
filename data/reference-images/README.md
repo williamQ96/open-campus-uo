@@ -47,3 +47,15 @@ Run from this project root. The `reference-media` CI job uses an explicitly pinn
 ## Full-scene ground reference
 
 The [2024-06-08 full-scene NAIP mosaic](aerial/naip-2024-main-campus-rgb.png) guides [local iteration 13](../../docs/phase13-environment-comfort.md). Its [two source tiles, export request and georeference](../metadata/naip-2024-main-campus-reference.json) are archived. The runtime uses original palette/vertex-color materials, not the image as a texture. This is dated aerial imagery, not a live satellite map.
+
+2026-11-03: Added the CC0 Friendly Hall west photograph; see the manifest for source and original hash.
+
+2026-11-03: Added CC0 Villard Hall east photograph; source and original hash are in the manifest.
+
+2026-11-03: Added the CC BY 4.0 University Hall historical photograph; see manifest for source and hash.
+
+2026-11-03: Added the CC BY 4.0 Anstett Hall photograph; source and original hash are in the manifest.
+
+2026-11-04: Added the CC BY 4.0 Tykeson Hall photograph; source and original hash are in the manifest.
+
+2026-11-04: Added the CC BY 4.0 Susan Campbell Hall photograph; source and original hash are in the manifest.

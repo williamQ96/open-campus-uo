@@ -14,8 +14,9 @@ test("authored pilot preserves all landmark search modes, geometry provenance an
   const state = () => page.evaluate(() => window.__campus.getState());
   expect((await state()).presentation).toMatchObject({
     id: "eugene-layered-context-v1",
-    buildings: 64,
-    trees: 600,
+    // 64 source groups plus the Volcanology overlay on an existing batched ID.
+    buildings: 65,
+    trees: 598,
     landmarkBuildings: 5,
     contextBuildings: 399,
     campusBuildings: 135,

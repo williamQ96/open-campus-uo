@@ -1,0 +1,712 @@
+{
+  "version": 1,
+  "records": {
+    "roof-6684e091": {
+      "purpose": "A university library with collections and study spaces.",
+      "occupants": [
+        "UO Libraries"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://library.uoregon.edu/knight",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-7b7893d6": {
+      "purpose": "Teaching, studios and collaborative spaces for journalism and communication.",
+      "occupants": [
+        "School of Journalism and Communication"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://journalism.uoregon.edu/about/facilities",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-0ca67b60": {
+      "purpose": "Contains offices for computer science faculty and staff.",
+      "occupants": [
+        "School of Computer and Data Sciences",
+        "Computer Science"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/school-of-computer-and-data-sciences/P",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-266f13fd": {
+      "purpose": "The university student union, with services and campus activities.",
+      "occupants": [
+        "Erb Memorial Union"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://emu.uoregon.edu/",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-906c030e": {
+      "purpose": "Contains the Office of the President.",
+      "occupants": [
+        "Office of the President"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://president.uoregon.edu/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-86754ad7": {
+      "purpose": "Contains the Lundquist College of Business dean's office.",
+      "occupants": [
+        "Lundquist College of Business, Office of the Dean"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://business.uoregon.edu/directory/deans-office",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "roof-75e776d0": {
+      "purpose": "A historic wing of the Lillis Business Complex with classrooms and offices.",
+      "occupants": [
+        "Oregon MBA"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://business.uoregon.edu/about/lillis-complex",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-0a498bf7": {
+      "purpose": "A historic wing of the Lillis Business Complex with classrooms and offices.",
+      "occupants": [
+        "Anstett Family Accounting Suite"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://business.uoregon.edu/about/lillis-complex",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-1afe792e": {
+      "purpose": "Contains a staff office for business information services and instructional technology.",
+      "occupants": [
+        "Information Services and Instructional Technology (staff office)"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://business.uoregon.edu/directory/information-services",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "roof-11d15952": {
+      "purpose": "Contains in-person financial aid advising.",
+      "occupants": [
+        "Office of Student Financial Aid and Scholarships"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://financialaid.uoregon.edu/contact",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0010": {
+      "purpose": "Part of the College of Education campus, with college offices.",
+      "occupants": [
+        "College of Education"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://education.uoregon.edu/admissions/visit",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-74ecc113": {
+      "purpose": "Part of the College of Education campus, with college offices.",
+      "occupants": [
+        "College of Education"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://education.uoregon.edu/admissions/visit",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-f52041e8": {
+      "purpose": "A law school teaching and academic facility.",
+      "occupants": [
+        "School of Law"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://law.uoregon.edu/about/law-center",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-e4a5429f": {
+      "purpose": "Music studios, rehearsal rooms and performance spaces.",
+      "occupants": [
+        "School of Music and Dance"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://musicanddance.uoregon.edu/about/facilities",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-57a37f8e": {
+      "purpose": "Contains design studios, workshops and exhibition spaces.",
+      "occupants": [
+        "College of Design"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://design.uoregon.edu/facilities",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0103": {
+      "purpose": "Contains the University Career Center and its student career services.",
+      "occupants": [
+        "University Career Center"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://career.uoregon.edu/",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-34f891de": {
+      "purpose": "Physics classrooms, offices and laboratories.",
+      "occupants": [
+        "Department of Physics"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://naturalsciences.uoregon.edu/physics/contact-us/facilities",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-4f0c798e": {
+      "purpose": "Contains offices for the Department of Mathematics.",
+      "occupants": [
+        "Department of Mathematics"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://naturalsciences.uoregon.edu/mathematics/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-9017feee": {
+      "purpose": "Contains offices for the Department of Mathematics.",
+      "occupants": [
+        "Department of Mathematics"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://naturalsciences.uoregon.edu/mathematics/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-8f611273": {
+      "purpose": "Contains administrative support for the Department of Mathematics.",
+      "occupants": [
+        "Department of Mathematics"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://naturalsciences.uoregon.edu/mathematics/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-f5cea51d": {
+      "purpose": "Academic home of Clark Honors College.",
+      "occupants": [
+        "Clark Honors College"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/communities/robert-d-clark-honors-college-community",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-944fcd46": {
+      "purpose": "Theatre production complex with the Robinson and Hope theatres.",
+      "occupants": [
+        "University Theatre",
+        "Department of Theatre Arts"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://humanities.uoregon.edu/theatre-arts/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-16751515": {
+      "purpose": "University art museum and exhibition space.",
+      "occupants": [
+        "Jordan Schnitzer Museum of Art"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://jsma.uoregon.edu/",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-e11ec58d": {
+      "purpose": "Museum with natural and cultural history exhibits and programs.",
+      "occupants": [
+        "Museum of Natural and Cultural History"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://natural-history.uoregon.edu/",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-af9a4442": {
+      "purpose": "Recreation and physical education facility.",
+      "occupants": [
+        "Physical Education and Recreation"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://rec.uoregon.edu/",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-oc-hayward": {
+      "purpose": "Track and field stadium and home venue for Oregon track and field.",
+      "occupants": [
+        "UO Track and Field (home venue)"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://hayward.uoregon.edu/tower",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "roof-2cd1068b": {
+      "purpose": "University Housing residence hall.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/halls",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-f01c8434": {
+      "purpose": "University Housing residence hall.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/halls",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0158": {
+      "purpose": "University Housing residence hall.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/halls",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-oc-cedar": {
+      "purpose": "University Housing residence hall.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/halls",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-oc-unthank": {
+      "purpose": "University Housing residence hall.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/halls",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-oc-yasui": {
+      "purpose": "University Housing residence hall.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/halls",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-9ac93ab7": {
+      "purpose": "Contains offices for Human Physiology faculty.",
+      "occupants": [
+        "Human Physiology"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/human-physiology-faculty",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-7ffcf31b": {
+      "purpose": "Contains the main office of the Department of Anthropology.",
+      "occupants": [
+        "Department of Anthropology"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://socialsciences.uoregon.edu/anthropology/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-556799cc": {
+      "purpose": "Contains undergraduate advising offices for the Schnitzer School of Global Studies and Languages.",
+      "occupants": [
+        "Schnitzer School of Global Studies and Languages"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://global.uoregon.edu/undergraduate-programs/dept-advising",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-e145c222": {
+      "purpose": "Contains the office of the School of Planning, Public Policy and Management.",
+      "occupants": [
+        "School of Planning, Public Policy and Management"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://pppm.uoregon.edu/contact",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-f61e9b20": {
+      "purpose": "Contains the Department of History office.",
+      "occupants": [
+        "Department of History"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://socialsciences.uoregon.edu/history/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-fd061857": {
+      "purpose": "Contains the Department of Philosophy office.",
+      "occupants": [
+        "Department of Philosophy"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://humanities.uoregon.edu/philosophy/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-c1ff8b83": {
+      "purpose": "Contains an expanded HEDCO Clinic suite.",
+      "occupants": [
+        "HEDCO Clinic (suite)"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://education.uoregon.edu/college-educations-hedco-clinic-expansion",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "roof-64589bec": {
+      "purpose": "Contains Environmental Studies faculty offices.",
+      "occupants": [
+        "Environmental Studies (faculty offices)"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/environmental-studies-faculty/L",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "context-b0038": {
+      "purpose": "Contains offices for the Department of Chemistry and Biochemistry.",
+      "occupants": [
+        "Department of Chemistry and Biochemistry"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://naturalsciences.uoregon.edu/chemistry-biochemistry/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0040": {
+      "purpose": "Contains offices for biology staff.",
+      "occupants": [
+        "Biology"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/biology-staff",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-a5a51275": {
+      "purpose": "Contains offices for biology faculty.",
+      "occupants": [
+        "Biology"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/cas-natural-sciences-faculty/L",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-4041562c": {
+      "purpose": "Contains offices for human physiology faculty.",
+      "occupants": [
+        "Human Physiology"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/human-physiology-faculty",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-a5ff3d5a": {
+      "purpose": "Contains offices for human physiology faculty.",
+      "occupants": [
+        "Human Physiology"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/human-physiology-faculty",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0045": {
+      "purpose": "Contains offices for biology faculty.",
+      "occupants": [
+        "Biology"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/biology-faculty/S",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-5ded2bf0": {
+      "purpose": "Contains offices and academic support for psychology.",
+      "occupants": [
+        "Department of Psychology"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://naturalsciences.uoregon.edu/psychology/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-399c648e": {
+      "purpose": "Home to the departments of Cinema Studies and Theatre Arts.",
+      "occupants": [
+        "Department of Cinema Studies",
+        "Department of Theatre Arts"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/news/cas-connection/2026/june",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "roof-f0b575d6": {
+      "purpose": "Contains dance rehearsal studios and offices.",
+      "occupants": [
+        "Department of Dance"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://musicanddance.uoregon.edu/about/facilities",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0039": {
+      "purpose": "University Information Services lists the Computing Center as an address.",
+      "occupants": [
+        "Information Services"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://is.uoregon.edu/systems/contact",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0067": {
+      "purpose": "Academic and tutoring center for student-athletes.",
+      "occupants": [
+        "Services for Student-Athletes"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://ssa.uoregon.edu/",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0074": {
+      "purpose": "Multipurpose arena and home venue for Oregon basketball.",
+      "occupants": [
+        "UO basketball teams (home venue)"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/matthew-knight-arena",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "context-b0020": {
+      "purpose": "Gymnasium used mainly for physical education classes and intramural sports.",
+      "occupants": [
+        "Physical Education and Recreation (program use)"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://rec.uoregon.edu/rooms/mcarthur-court",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "roof-f42d2ea3": {
+      "purpose": "Contains the Department of Earth Sciences main office.",
+      "occupants": [
+        "Department of Earth Sciences"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://naturalsciences.uoregon.edu/earth-sciences/contact-us",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-b0066": {
+      "purpose": "Contains an office of the UO Alumni Association.",
+      "occupants": [
+        "UO Alumni Association"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://advancement.uoregon.edu/content/university-oregon-alumni-association",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-a997a75f": {
+      "purpose": "Outdoor Program location for gear rentals.",
+      "occupants": [
+        "Outdoor Program"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://outdoorprogram.uoregon.edu/gear-rentals",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-0de7fadb": {
+      "purpose": "A student residence hall with academic residential communities.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/bean",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-2518e2a2": {
+      "purpose": "The location of UO Utilities and Energy operations.",
+      "occupants": [
+        "Utilities and Energy"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cpfm.uoregon.edu/utilities-energy/directions-parking",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-e5accf83": {
+      "purpose": "Contains an office for musicology faculty.",
+      "occupants": [
+        "School of Music and Dance (faculty office)"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://musicanddance.uoregon.edu/directory/faculty/R",
+        "checked_on": "2026-11-04"
+      }
+    },
+    "roof-d2f88f9e": {
+      "purpose": "The north part of the Living Learning Center, a student residence and learning complex.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/living%20learning",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-453966d5": {
+      "purpose": "The south part of the Living Learning Center, a student residence and learning complex.",
+      "occupants": [
+        "University Housing"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://housing.uoregon.edu/living%20learning",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-oc-knight-1": {
+      "purpose": "Knight Campus Building 1, a research and innovation facility opened in 2020.",
+      "occupants": [
+        "Knight Campus"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://knightcampus.uoregon.edu/about",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "context-oc-knight-2": {
+      "purpose": "Knight Campus Building 2, a research facility opened in 2026 with bioengineering and biomedical data science groups.",
+      "occupants": [
+        "Knight Campus"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://knightcampus.uoregon.edu/about",
+        "checked_on": "2026-11-03"
+      }
+    },
+    "roof-399a0551": {
+      "purpose": "Approximate map match to Volcanology, which contains Earth Sciences faculty offices.",
+      "occupants": [
+        "Department of Earth Sciences (faculty offices)"
+      ],
+      "source": {
+        "label": "University of Oregon",
+        "url": "https://cas.uoregon.edu/directory/natural-sciences/G",
+        "checked_on": "2026-11-04"
+      }
+    }
+  }
+}

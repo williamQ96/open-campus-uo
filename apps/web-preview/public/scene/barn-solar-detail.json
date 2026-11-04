@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-a997a75f",
+  "replace_building": false,
+  "reference_ids": [],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/solar-projects",
+    "https://cpfm.uoregon.edu/sites/default/files/sustainability_tour_august_2020.pdf"
+  ],
+  "note": "Illustrative solar tiles based on a dated UO description of an equipment-barn roof array; nearest-roof identity, count, location, orientation and current configuration unverified.",
+  "objects": [
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -274,
+        15.484070000000001,
+        582.5
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -274,
+        15.55407,
+        582.5
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -274,
+        15.31376,
+        584
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -274,
+        15.383759999999999,
+        584
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -274,
+        15.143450000000001,
+        585.5
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -274,
+        15.21345,
+        585.5
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -272.5,
+        15.654380000000002,
+        582.5
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -272.5,
+        15.72438,
+        582.5
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -272.5,
+        15.484070000000001,
+        584
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -272.5,
+        15.55407,
+        584
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -272.5,
+        15.31376,
+        585.5
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -272.5,
+        15.383759999999999,
+        585.5
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -271,
+        15.82469,
+        582.5
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -271,
+        15.894689999999999,
+        582.5
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -271,
+        15.654380000000002,
+        584
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -271,
+        15.72438,
+        584
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -271,
+        15.484070000000001,
+        585.5
+      ],
+      "size": [
+        1.16,
+        0.1,
+        1.16
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -271,
+        15.55407,
+        585.5
+      ],
+      "size": [
+        1.02,
+        0.05,
+        1.02
+      ],
+      "rotation": [
+        0.11305,
+        0,
+        0.11305
+      ]
+    }
+  ]
+}

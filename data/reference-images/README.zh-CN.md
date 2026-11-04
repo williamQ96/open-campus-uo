@@ -47,3 +47,15 @@ CI 的 `reference-media` job 固定上游校验工具 commit，检查图片登�
 ## 完整场景地面参考
 
 [2024-06-08 全场景 NAIP 拼接图](aerial/naip-2024-main-campus-rgb.png)用于[本地迭代 13](../../docs/zh-CN/phase13-environment-comfort.md)，[两幅源图、导出请求和地理参考](../metadata/naip-2024-main-campus-reference.json)另存。运行时仅使用原创调色／顶点色材质，不把照片当纹理。这是有日期的航拍，不是实时卫星地图。
+
+2026-11-03：新增 Friendly Hall 西立面 CC0 照片；来源和原始文件哈希见清单。
+
+2026-11-03：新增 Villard Hall 东立面 CC0 照片；来源及原始哈希见清单。
+
+2026-11-03：新增 University Hall 历史照片，CC BY 4.0，来源及哈希见清单。
+
+2026-11-03：新增 Anstett Hall CC BY 4.0 照片；来源与哈希见清单。
+
+2026-11-04：新增 Tykeson Hall CC BY 4.0 照片；来源和原始哈希见清单。
+
+2026-11-04：新增 Susan Campbell Hall CC BY 4.0 照片；来源和原始哈希见清单。

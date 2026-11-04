@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-944fcd46",
+  "replace_building": false,
+  "merge_source_vertex_count": 3364,
+  "reference_ids": [],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/robinsontheatre2025",
+    "https://www.hackerarchitects.com/cultural/miller-theatre-complex"
+  ],
+  "note": "Schematic two-storey west glass frontage inspired by 2009 complex and UO site plan; exact dimensions, position and physical transparency unverified.",
+  "objects": [
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -519.1,
+        7.15,
+        -184
+      ],
+      "size": [
+        0.2,
+        9.0,
+        11.0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -519.24,
+        5.75,
+        -184
+      ],
+      "size": [
+        0.08,
+        5.55,
+        10.55
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.31,
+        5.75,
+        -189.25
+      ],
+      "size": [
+        0.07,
+        5.65,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.31,
+        5.75,
+        -187.5
+      ],
+      "size": [
+        0.07,
+        5.65,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.31,
+        5.75,
+        -185.75
+      ],
+      "size": [
+        0.07,
+        5.65,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.31,
+        5.75,
+        -184
+      ],
+      "size": [
+        0.07,
+        5.65,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.31,
+        5.75,
+        -182.25
+      ],
+      "size": [
+        0.07,
+        5.65,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.31,
+        5.75,
+        -180.5
+      ],
+      "size": [
+        0.07,
+        5.65,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.31,
+        5.75,
+        -178.75
+      ],
+      "size": [
+        0.07,
+        5.65,
+        0.1
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.32,
+        3.0,
+        -184
+      ],
+      "size": [
+        0.08,
+        0.12,
+        10.75
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.32,
+        5.05,
+        -184
+      ],
+      "size": [
+        0.08,
+        0.12,
+        10.75
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.32,
+        8.48,
+        -184
+      ],
+      "size": [
+        0.08,
+        0.12,
+        10.75
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "station-cladding",
+      "shape": "box",
+      "position": [
+        -519.55,
+        8.65,
+        -184
+      ],
+      "size": [
+        0.65,
+        0.17,
+        11.2
+      ]
+    }
+  ],
+  "overlay_collision_boxes_enu_m": [
+    [
+      -519.36,
+      178.7,
+      -518.9,
+      189.3
+    ]
+  ]
+}

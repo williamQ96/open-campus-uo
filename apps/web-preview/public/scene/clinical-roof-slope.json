@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-c1ff8b83",
+  "expected_vertex_count": 3968,
+  "expected_selected_vertices": 2218,
+  "minimum_y": 15.4,
+  "origin_x": -671.5,
+  "slope": -0.035,
+  "max_displacement_m": 0.9,
+  "roof_feature_rgb8": [
+    38,
+    43,
+    42
+  ],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/sites/default/files/clinicalservice05_30_07.pdf"
+  ],
+  "note": "Single shallow slope inferred from a 2006 street view and roof description; actual roof has irregular slopes and this is not a surveyed reconstruction."
+}

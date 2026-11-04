@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-906c030e",
+  "reference_ids": [
+    "johnson-front-pd"
+  ],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/sites/default/files/johnson05_30_07.pdf"
+  ],
+  "note": "Historic north frieze label; current condition and letter proportions unverified.",
+  "objects": [
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "label",
+      "text": "ADMINISTRATION BUILDING",
+      "position": [
+        -401,
+        15.687,
+        22.48
+      ],
+      "size": [
+        19,
+        0.95,
+        0.02
+      ]
+    }
+  ]
+}

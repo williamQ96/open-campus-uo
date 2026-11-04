@@ -129,5 +129,7 @@
   },
   "feedback": {
     "repository": "williamQ96/open-campus-uo"
-  }
+  },
+  "building_info_url": "scene/building-info.json",
+  "building_identity_url": "scene/building-identities.json"
 }

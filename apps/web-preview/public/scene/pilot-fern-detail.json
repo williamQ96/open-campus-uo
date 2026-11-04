@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "scope": "environment",
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "replace_building": false,
+  "merge_target": "understory_2",
+  "reference_ids": [],
+  "reference_urls": [
+    "https://extension.oregonstate.edu/catalog/pub/ec-1577-gardening-oregon-native-plants-west-cascades",
+    "https://cpfm.uoregon.edu/wrna-plants-and-animals"
+  ],
+  "note": "Three illustrative existing planting centers interpreted as generic sword-fern-like forms; species and current conditions unverified; eight potentially conflicting centers retained unchanged.",
+  "objects": [
+    {
+      "kind": "vegetation",
+      "material": "fern-green",
+      "shape": "fern",
+      "position": [
+        -598,
+        4.255160140991211,
+        187
+      ],
+      "size": [
+        1.08,
+        1.25,
+        1.08
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "fern-green",
+      "shape": "fern",
+      "position": [
+        -416,
+        4.272199916839599,
+        59
+      ],
+      "size": [
+        1.08,
+        1.25,
+        1.08
+      ]
+    },
+    {
+      "kind": "vegetation",
+      "material": "fern-green",
+      "shape": "fern",
+      "position": [
+        -386,
+        4.4546998023986815,
+        59
+      ],
+      "size": [
+        1.08,
+        1.25,
+        1.08
+      ]
+    }
+  ]
+}

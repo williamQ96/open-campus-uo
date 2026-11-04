@@ -36,7 +36,11 @@ class Heap {
   }
 }
 
-export function createRouter(data, clearSegment = () => true) {
+export function createRouter(
+  data,
+  clearSegment = () => true,
+  edgeAllowed = () => true,
+) {
   if (data.version !== 1 || !Array.isArray(data.nodes_enu_m))
     throw Error("Unsupported route graph");
   const nodes = data.nodes_enu_m,
@@ -44,6 +48,7 @@ export function createRouter(data, clearSegment = () => true) {
   for (const [a, b, length, kind] of data.edges) {
     if (!nodes[a] || !nodes[b] || !Number.isFinite(length) || length <= 0)
       throw Error("Invalid route edge");
+    if (!edgeAllowed(nodes[a], nodes[b])) continue;
     const cost =
       length * (kind === "road" ? 1.12 : kind === "connector" ? 1.3 : 1);
     adj[a].push([b, cost]);

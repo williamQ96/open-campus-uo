@@ -20,8 +20,33 @@
       "sha256": "d8433e61bcbb722516da0b3878978280352a4c5ec70a2c4da1191dbd9910bcbe"
     },
     "apps/web-preview/public/props/campus-props.glb": {
-      "bytes": 208444,
-      "sha256": "92d414d8cf9d5e8840c5780576ea7c691b08697079303c829ca894701b2c7672"
+      "bytes": 622972,
+      "sha256": "20fc756b3b1d65861db0f1c4f0bf7197256d3eccbfe04efaef7c3c5a3df526f7",
+      "license": "CC-BY-4.0",
+      "origin": "Original generic six-kind transport export with bicycle and scooter details; no third-party model or texture.",
+      "previous_record": {
+        "bytes": 581496,
+        "sha256": "bf85abf13ff0efe6b370c73b9ebe9d4b69950b53cebd408b0495131f9b444458",
+        "license": "CC-BY-4.0",
+        "origin": "Original generic six-kind transport export with scooter detailing; no third-party model or texture.",
+        "previous_record": {
+          "bytes": 550392,
+          "sha256": "020150ee1617b450ce8eafe461a3c95b34b0ee045bae7d5f8ad4def12aff6763",
+          "license": "CC-BY-4.0",
+          "origin": "Original generic procedural transport model export, six kinds including SUV; no third-party model or texture.",
+          "previous_record": {
+            "bytes": 411052,
+            "sha256": "749608835fb58a4822f65d2ef9d8ac54795a4b3cccabb9f75a0b6910c089902c",
+            "license": "CC-BY-4.0",
+            "origin": "Original procedural prop export with generic vehicle and scooter details; no third-party model or texture.",
+            "previous_record": {
+              "bytes": 363972,
+              "sha256": "6985f4fa638f3c9086928ce2b049d7db97eb1fbd9581533244ee3ae819da799a",
+              "status": "Prior local rider contact refinement"
+            }
+          }
+        }
+      }
     },
     "assets/props/campus-props.blend": {
       "bytes": 809921,
@@ -54,10 +79,15 @@
       "origin": "Original Open Campus procedural geometry and separately archived photo-informed patterns; not derived from the Kenney character pack."
     },
     "apps/web-preview/public/scene/campus-expanded.glb": {
-      "bytes": 34638580,
-      "sha256": "a64bc831729deb0591d7a02e98d7ca4324dd1188636c03ce8ad77852432cfc12",
+      "bytes": 34766896,
+      "sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
       "license": "CC-BY-4.0",
-      "origin": "Original style-inferred roof refinement; historical footprint/height records retained, no new photo textures."
+      "origin": "Original style-inferred roof refinement; historical footprint/height records retained, no new photo textures. Locally rebuilt for the 2026-11-03 Knight refinement; see docs/knight-refinement.md and docs/landmark-provenance-2026-11-03.md.",
+      "previous_record": {
+        "bytes": 34638580,
+        "sha256": "a64bc831729deb0591d7a02e98d7ca4324dd1188636c03ce8ad77852432cfc12",
+        "status": "Prior roof-refinement record before local Knight rebuild"
+      }
     },
     "data/asset-sources/campus-life/tree-squirrel.glb": {
       "bytes": 876688,
@@ -102,10 +132,15 @@
       "origin": "See data/asset-sources/campus-life/sources.json; separate from the Kenney character pack."
     },
     "assets/roof-refinement/eugene-campus.blend": {
-      "bytes": 42054687,
-      "sha256": "16ccbac5539c51c32b8066c593ddb6dd32cbe36c31a645c389aeb946d80afec4",
+      "bytes": 42152502,
+      "sha256": "06b211f88256b028631e568b2b8401e11e0772e8604b9e454b92001e76187b86",
       "license": "CC-BY-4.0",
-      "origin": "Original style-inferred roof refinement; historical footprint/height records retained, no new photo textures."
+      "origin": "Original style-inferred roof refinement; historical footprint/height records retained, no new photo textures. Locally rebuilt for the 2026-11-03 Knight refinement; see docs/knight-refinement.md and docs/landmark-provenance-2026-11-03.md.",
+      "previous_record": {
+        "bytes": 42054687,
+        "sha256": "16ccbac5539c51c32b8066c593ddb6dd32cbe36c31a645c389aeb946d80afec4",
+        "status": "Prior roof-refinement record before local Knight rebuild"
+      }
     },
     "assets/landcover/eugene-ground.blend": {
       "bytes": 19042644,
@@ -122,6 +157,567 @@
     "apps/web-preview/public/interiors/classroom-v1.glb": {
       "bytes": 162700,
       "sha256": "397a9825a4efe1c2d9136f80c2b9ef056254148b9c023ccbcbb4485ed450489e"
+    },
+    "assets/props/campus-props-bike-refinement.blend": {
+      "bytes": 988481,
+      "sha256": "6065547ec72d5c2b5a71580320b34013d76650552eb45100a3957e84f9f7cdb5",
+      "license": "CC-BY-4.0",
+      "origin": "Editable Blender import of updated procedural prop GLB; original campus-props.blend is retained separately.",
+      "previous_record": {
+        "bytes": 982529,
+        "sha256": "61acf6180d7e20a94e6be4031509b7be8f89cf51e6c406e96d9fd492c535ad70",
+        "status": "Prior local environment refinement"
+      }
+    },
+    "apps/web-preview/public/scene/pilot-vegetation-patch.json": {
+      "bytes": 6576,
+      "sha256": "fc0f847645d47efd0902eb0f4ec53aaf135be5cab9b89a714c7f3974374b97ba",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned translation of one inferred pilot tree; no imagery or building geometry."
+    },
+    "assets/vegetation-refinement/pilot-vegetation.blend": {
+      "bytes": 5392683,
+      "sha256": "8e2003962f926da209ad22ea2fbdc4378bca4424292e7ee85e64517ce92e2dd7",
+      "license": "CC-BY-4.0",
+      "origin": "Editable isolated pilot vegetation and understory candidate: one illustrative tree and paired shrub relocated, tree 273 suppressed; original landmark file preserved.",
+      "previous_record": {
+        "bytes": 5392683,
+        "sha256": "5ada036fec9c0d4a9745e725a86887ace54ad8f3c8e22551406976d1a255e79c",
+        "status": "Prior local environment refinement"
+      }
+    },
+    "apps/web-preview/public/scene/pilot-understory-patch.json": {
+      "bytes": 4759,
+      "sha256": "c45f91ea2a3cc5c6ac0237b4ecf0177a7f7e5f5811cb3dc45d448c40d7d5dd3a",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned translation of one inferred shrub paired with relocated tree; no imagery or building geometry."
+    },
+    "apps/web-preview/public/scene/pilot-tree-273-suppression.json": {
+      "bytes": 20949,
+      "sha256": "32d617c541948787b999dbc965417c322ed1d704a4c474bd2381f86b5cc08e0b",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned suppression of one procedural tree following dated NAIP aerial review; no image bytes or building geometry."
+    },
+    "apps/web-preview/public/scene/johnson-rear-detail.json": {
+      "bytes": 9232,
+      "sha256": "0ff3a99c236d78a409831a31945f0267ee073d85c0c3259e43c3ecf6585fcf61",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Johnson Hall rear entrance and illustrative planting geometry, informed by archived 2012 Gary Halvorson / Oregon State Archives CC BY 4.0 photograph; no image bytes."
+    },
+    "apps/web-preview/public/scene/gerlinger-hall-detail.json": {
+      "bytes": 17132,
+      "sha256": "5b7f19502761155f6e3837d588967c40540726ebed1429e9b95200703e45a94d",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Gerlinger Hall entry, railings and illustrative planting, informed by Rick Obst 2013 CC BY 4.0 photo; no image bytes."
+    },
+    "apps/web-preview/public/scene/gerlinger-annex-correction.json": {
+      "bytes": 21010,
+      "sha256": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Gerlinger Annex approximate replacement and planted frontage; informed by link-only official UO survey, no source image bytes."
+    },
+    "apps/web-preview/public/scene/gerlinger-east-detail.json": {
+      "bytes": 82795,
+      "sha256": "86b2ef379efde7ae1d1c0f930a92ce8fc550b8fcdfa2014ff603b59360f78255",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Gerlinger exterior informed by linked UO historic assessment and earlier CC BY 4.0 reference; no third-party images.",
+      "previous_record": {
+        "bytes": 30105,
+        "sha256": "a8ad074cf916698a840ba9042aa209e4c92e8861d03288703b7ca3bc569bf61c",
+        "license": "CC-BY-4.0",
+        "origin": "Original source-pinned Gerlinger Hall east facade and planting; informed by Rick Obst 2013 CC BY 4.0 photo and link-only UO historic assessment; no image bytes."
+      }
+    },
+    "apps/web-preview/public/scene/pilot-tree-216-suppression.json": {
+      "bytes": 21163,
+      "sha256": "6e4a7c0b21d40673024e15c302b407a6905647fe39f4d07ef22186e1a1f68521",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned suppression of one inferred pilot tree after dated public-domain NAIP aerial review; no image bytes."
+    },
+    "apps/web-preview/public/scene/johnson-frieze-detail.json": {
+      "bytes": 702,
+      "sha256": "a8131e6d28594128d80b0dfc72e16821bce4fbf37f6294c374a46055c4e404a0",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Johnson Hall north frieze wording layer; informed by UO historic survey and PD-self archived photograph, no photograph pixels."
+    },
+    "apps/web-preview/public/scene/friendly-west-detail.json": {
+      "bytes": 120595,
+      "sha256": "d8b439add6401343e891aa641fd4d12ae4aebe9a53bbc9cc99667f1bdcebdaba",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Friendly Hall exterior informed by linked UO historic assessment and prior CC0 photo; no third-party images.",
+      "previous_record": {
+        "bytes": 53726,
+        "sha256": "b9a223af64d6039703e89df8f7852f7c50543b29fa2b1220b3910926704e25de",
+        "license": "CC-BY-4.0",
+        "origin": "Original procedural geometry informed by archived CC0 2017 Friendly Hall west photograph and UO historic assessment; no photo textures."
+      }
+    },
+    "apps/web-preview/public/scene/villard-east-detail.json": {
+      "bytes": 52220,
+      "sha256": "2417f082ecb1916e2d90c3d4ac3a5d63487e739102b494cdd21335a53947513a",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Villard exterior informed by linked UO historical assessment; no third-party images.",
+      "previous_record": {
+        "bytes": 21949,
+        "sha256": "4d63e73aa8ad60265f46b69f676ed1fc215d682c81ddda91eb8cd40a82101a32",
+        "license": "CC-BY-4.0",
+        "origin": "Original simplified procedural geometry informed by archived CC0 2017 east facade photograph and UO historic elevation; no photo textures."
+      }
+    },
+    "apps/web-preview/public/scene/university-hall-detail.json": {
+      "bytes": 51945,
+      "sha256": "d085e34cb35e55ca0ee78522f0cccd0a91abdcfe0bdff45f124ccd4815df7a31",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified geometry informed by a CC-BY-4.0 historical photo and linked UO assessment; no photographic textures."
+    },
+    "apps/web-preview/public/scene/anstett-south-detail.json": {
+      "bytes": 48467,
+      "sha256": "f5eac974a53e5df339d337ef8e96f9e6b8e41f41c8dd0ea5692905e02fb1ca5c",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified south facade, planters, planting and benches informed by attributed 2019 photograph and linked UO historic survey; no photo textures.",
+      "previous_record": {
+        "bytes": 28204,
+        "sha256": "860502633a3badc43c0f06a67cb79540959f291b7bfa15959e403aa359a3ed59",
+        "license": "CC-BY-4.0",
+        "origin": "Original simplified frontage, planters, planting and benches informed by archived CC BY 4.0 2019 photograph and UO site plan; no photo textures."
+      }
+    },
+    "apps/web-preview/public/scene/peterson-south-detail.json": {
+      "bytes": 13817,
+      "sha256": "8ee390592f8136d570938614b2299becda65daeea7c0cb65435633ec5f633193",
+      "license": "CC-BY-4.0",
+      "origin": "Original procedural detail layer reuses CC BY 4.0 Anstett geometry informed by its attributed reference; Peterson site plan and aerial are linked references, no textures."
+    },
+    "apps/web-preview/public/scene/tykeson-north-detail.json": {
+      "bytes": 10176,
+      "sha256": "01bd8c5c4c57eba839f13f0a060052726bfbed5880095f09e43f0f8fd0bb91e1",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified north facade, canopy and illustrative planting inspired by the attributed CC BY 4.0 photograph; no photographic texture."
+    },
+    "apps/web-preview/public/scene/susan-roof-detail.json": {
+      "bytes": 112833,
+      "sha256": "18e7fd09df9e10e01bece9b4bc1e32df414a80575de4f4569fb685dc36fd869a",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Susan Campbell exterior informed by linked UO historical survey; no third-party images.",
+      "previous_record": {
+        "bytes": 62359,
+        "sha256": "cd4b8034968769443d1aded258ca780e401b4d47cf35f3463bb9b02e4118ecfd",
+        "license": "CC-BY-4.0",
+        "origin": "Original simplified L-shaped replacement and roof geometry informed by credited CC BY 4.0 photograph and UO survey; no photo texture."
+      }
+    },
+    "assets/props/campus-props-2026-11-04.blend": {
+      "bytes": 1043055,
+      "sha256": "87802e1320f04d177f6157d8e7e36140f6936f7687e914f45d832d994e3ccc3b",
+      "license": "CC-BY-4.0",
+      "origin": "Editable Blender import snapshot of procedural GLB sha256 749608835fb58a4822f65d2ef9d8ac54795a4b3cccabb9f75a0b6910c089902c; prior Blender files retained."
+    },
+    "apps/web-preview/public/scene/straub-west-detail.json": {
+      "bytes": 77454,
+      "sha256": "ed818c21b223526e6ee86a789018c4e7ca36f9b0c301bd81fdf9189ce7927d30",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified exterior overlay informed by linked UO Straub survey; no third-party image or texture included."
+    },
+    "apps/web-preview/public/scene/condon-east-detail.json": {
+      "bytes": 13765,
+      "sha256": "cc930e202cc55e349858d817edc439a2e8cdf258f7e847429766104512a45ea8",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Condon exterior overlay informed by linked UO historical survey; no third-party images.",
+      "previous_record": {
+        "bytes": 7272,
+        "sha256": "08246169edd5f7163682744ee3426006a8b5c1aa3fcb9addac34d51c1cc5ca42",
+        "license": "CC-BY-4.0",
+        "origin": "Original simplified east-entry and planting overlay informed by linked UO Condon survey; no third-party image or texture included."
+      }
+    },
+    "apps/web-preview/public/scene/fenton-south-detail.json": {
+      "bytes": 39617,
+      "sha256": "79e9de8bc8a5176d76d65037f476340b8c217bb7ffef5f92eb08e8f2f6b0af25",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Fenton exterior informed by linked UO survey and Oregon historical archive; no third-party images.",
+      "previous_record": {
+        "bytes": 11053,
+        "sha256": "d743329f20675189b64e249d08f5d55d059a1e81891fa7c7d60a4e85f1c18220",
+        "license": "CC-BY-4.0",
+        "origin": "Original simplified south-entry, stair and planting overlay informed by linked UO Fenton survey; no third-party image or texture included."
+      }
+    },
+    "apps/web-preview/public/scene/chapman-west-detail.json": {
+      "bytes": 39817,
+      "sha256": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Chapman exterior informed by linked UO historic assessment; no third-party images.",
+      "previous_record": {
+        "bytes": 11446,
+        "sha256": "8591c19fdd6ebe2e1afb8bd88e3ffa27f60d05e826829053886ab1674dc5f7ca",
+        "license": "CC-BY-4.0",
+        "origin": "Original simplified west-entry and planting overlay informed by linked UO Chapman survey and assessment; no third-party image or texture included."
+      }
+    },
+    "apps/web-preview/public/scene/oregon-south-detail.json": {
+      "bytes": 49751,
+      "sha256": "de430768ce0a530ddc173e1ccda1a53aeca434a29e4e310c44a5123ea9e44cfa",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Oregon Hall exterior informed by linked UO historic survey; no third-party images.",
+      "previous_record": {
+        "bytes": 24412,
+        "sha256": "28a9c77eb336c9a2d8ede0101e272db3b83e514bce7096c140baf2b67b6908be",
+        "license": "CC-BY-4.0",
+        "origin": "Original simplified south-west-wing facade overlay informed by linked UO Oregon Hall survey; no third-party image or texture included."
+      }
+    },
+    "apps/web-preview/public/scene/oregon-planter-detail.json": {
+      "bytes": 930,
+      "sha256": "569ddbdf51a70f3ded2e5bbeca249a3f679295a3cb5b01bcb4083384c6605a61",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic raised lawn and planter informed by linked UO Oregon Hall survey; no third-party image or texture included."
+    },
+    "apps/web-preview/public/scene/collier-house-detail.json": {
+      "bytes": 74712,
+      "sha256": "5ddf7032c90127d7b14dd58a89f6b622e586da7aa15c0d746941cb0cbfd27820",
+      "license": "CC-BY-4.0",
+      "origin": "Original simplified Collier exterior and conservative collision envelopes informed by linked UO 2025 survey and 2018 reference photos; no third-party images.",
+      "previous_record": {
+        "bytes": 44855,
+        "sha256": "b66f333944fdb8078188e03baa4cdba2d675024d1041e2a6ecd77fe208e622ef",
+        "license": "CC-BY-4.0",
+        "origin": "Original simplified Collier exterior and conservative collision envelopes informed by linked UO survey; no third-party images.",
+        "previous_record": {
+          "bytes": 44542,
+          "sha256": "db84b2b2b7e26f498bee9646b3d8f0dd23aa5f0753315c9da51103a6988878b2",
+          "status": "Prior exterior without collision supplements"
+        }
+      }
+    },
+    "apps/web-preview/public/scene/barn-solar-detail.json": {
+      "bytes": 6370,
+      "sha256": "acc557fc53fbfba400f806bfa0268895a7764ab6777c79c9a1484089690ad6d7",
+      "license": "CC-BY-4.0",
+      "origin": "Original illustrative solar tiles informed by linked UO sustainability descriptions; no third-party image or texture included."
+    },
+    "apps/web-preview/public/scene/volcanology-south-detail.json": {
+      "bytes": 12313,
+      "sha256": "2dc0273f48a70571ac13a56b7e08c0f807d8e3a60c883da5ef485e28a4f37d37",
+      "license": "CC-BY-4.0",
+      "origin": "Original illustrative south elevation geometry informed by linked UO historic survey; no third-party image or texture included. Map identity and dimensions unverified."
+    },
+    "apps/web-preview/public/scene/anstett-lamps-detail.json": {
+      "bytes": 7949,
+      "sha256": "69757f743fcf030acfb6cf9dce56bc9743e36faf17acaf00a7f964eea50b9760",
+      "license": "CC-BY-4.0",
+      "origin": "Original illustrative globe lamps and flower basket informed by the attributed 2019 Anstett photo; no third-party image or texture included."
+    },
+    "assets/props/campus-props-vehicles-2026-11-04.blend": {
+      "bytes": 1232691,
+      "sha256": "e9b0455f9c5a88f97a23b254c241b4d747383be93626399527ee2a01d42c6f9d",
+      "license": "CC-BY-4.0",
+      "origin": "New editable six-mesh Blender snapshot imported from the current procedural GLB; original code remains source of truth."
+    },
+    "apps/web-preview/public/scene/pilot-bench-back-suppression.json": {
+      "bytes": 5436,
+      "sha256": "1792365814eed96132310063c77c86f949b440df0727c68be319ce328dad7c5f",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned selection of nine existing generated bench backs; no third-party model or image."
+    },
+    "apps/web-preview/public/scene/pilot-bench-detail.json": {
+      "bytes": 43681,
+      "sha256": "02066062919fefedc83918baef58803f2831949ea7204489e982e901f4eb1590",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned stylized bench backs and seat slats; existing locations are illustrative.",
+      "previous_record": {
+        "bytes": 39439,
+        "sha256": "f6c071511d1dcd2395ccc4b637dac8f014d32183397fe29050570f492f307c4e",
+        "license": "CC-BY-4.0",
+        "origin": "Original stylized reusable bench slat geometry, informed in general by the attributed 2019 Anstett photo; locations are existing inferred placements, not surveyed."
+      }
+    },
+    "apps/web-preview/public/scene/pilot-fern-suppression.json": {
+      "bytes": 17638,
+      "sha256": "0c656af5beda0ee775f4aaf72dceb912d8267bc3fd7a9a91b35952fa6fed7020",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned selection of three existing inferred understory clusters; no third-party image or model."
+    },
+    "apps/web-preview/public/scene/pilot-fern-detail.json": {
+      "bytes": 1422,
+      "sha256": "95ef0b4f7a6a78dedfc9fb41f788edafae7099e75295b8be1c7aca9f483cf247",
+      "license": "CC-BY-4.0",
+      "origin": "Original illustrative sword-fern-like geometry with OSU Extension and UO regional context, not a surveyed species inventory."
+    },
+    "apps/web-preview/public/scene/pilot-plaza-plant-suppression.json": {
+      "bytes": 17575,
+      "sha256": "141c23b27e9576afb22226cdb4d1e3c0587844e69956f746ab1830871c734f50",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned selection to suppress three inferred plaza plants based on public-domain 2024 USDA NAIP reference; no image embedded."
+    },
+    "apps/web-preview/public/scene/pilot-lamp-detail.json": {
+      "bytes": 10641,
+      "sha256": "bea242e9f0e1f581a1c5d4ee5e3e6a07834a2aceb31d674e89a10006318ff9c8",
+      "license": "CC-BY-4.0",
+      "origin": "Original generic lamp components inspired by the attributed 2019 Anstett photograph; existing locations and actual fixtures are not surveyed."
+    },
+    "assets/exterior-refinement/anstett-south-before-2026-11-04.json": {
+      "bytes": 28204,
+      "sha256": "860502633a3badc43c0f06a67cb79540959f291b7bfa15959e403aa359a3ed59",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Anstett south facade and landscape specification before the 2026-11-04 elevation follow-up."
+    },
+    "assets/exterior-refinement/collier-before-multiface-2026-11-04.json": {
+      "bytes": 44855,
+      "sha256": "b66f333944fdb8078188e03baa4cdba2d675024d1041e2a6ecd77fe208e622ef",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Collier exterior and collision specification before multi-elevation follow-up."
+    },
+    "assets/exterior-refinement/villard-before-multiface-2026-11-04.json": {
+      "bytes": 21949,
+      "sha256": "4d63e73aa8ad60265f46b69f676ed1fc215d682c81ddda91eb8cd40a82101a32",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Villard exterior before multi-elevation follow-up."
+    },
+    "assets/exterior-refinement/susan-before-multiface-2026-11-04.json": {
+      "bytes": 62359,
+      "sha256": "cd4b8034968769443d1aded258ca780e401b4d47cf35f3463bb9b02e4118ecfd",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Susan Campbell exterior before multi-elevation follow-up."
+    },
+    "assets/exterior-refinement/condon-before-addition-2026-11-04.json": {
+      "bytes": 7272,
+      "sha256": "08246169edd5f7163682744ee3426006a8b5c1aa3fcb9addac34d51c1cc5ca42",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Condon exterior overlay before addition follow-up."
+    },
+    "assets/exterior-refinement/friendly-before-multiface-2026-11-04.json": {
+      "bytes": 53726,
+      "sha256": "b9a223af64d6039703e89df8f7852f7c50543b29fa2b1220b3910926704e25de",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Friendly Hall exterior before multi-elevation follow-up."
+    },
+    "assets/exterior-refinement/chapman-before-multiface-2026-11-04.json": {
+      "bytes": 11446,
+      "sha256": "8591c19fdd6ebe2e1afb8bd88e3ffa27f60d05e826829053886ab1674dc5f7ca",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Chapman exterior overlay before multi-elevation follow-up."
+    },
+    "assets/exterior-refinement/fenton-before-orientation-2026-11-04.json": {
+      "bytes": 11053,
+      "sha256": "d743329f20675189b64e249d08f5d55d059a1e81891fa7c7d60a4e85f1c18220",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior Fenton overlay before correcting the source-photo entrance orientation."
+    },
+    "assets/exterior-refinement/gerlinger-east-before-multiface-2026-11-04.json": {
+      "bytes": 30105,
+      "sha256": "a8ad074cf916698a840ba9042aa209e4c92e8861d03288703b7ca3bc569bf61c",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Gerlinger east overlay before multi-elevation follow-up."
+    },
+    "assets/exterior-refinement/oregon-before-multiface-2026-11-04.json": {
+      "bytes": 24412,
+      "sha256": "28a9c77eb336c9a2d8ede0101e272db3b83e514bce7096c140baf2b67b6908be",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior source-pinned Oregon Hall exterior before east-wing follow-up."
+    },
+    "apps/web-preview/public/scene/mckenzie-exterior-detail.json": {
+      "bytes": 28142,
+      "sha256": "4bada8560498222738edf2385887d5ac17f6818f2b1c0ce1e6e8f7c838e02547",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic McKenzie exterior geometry informed by linked sources; no third-party photos or textures included."
+    },
+    "apps/web-preview/public/scene/allen-west-detail.json": {
+      "bytes": 23223,
+      "sha256": "7fdba87babc1a6969ef031de060f0ec5ac1ec04d26c2d716e1e577ad966c8c74",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic Allen exterior geometry informed by linked sources; no third-party photos or textures included."
+    },
+    "apps/web-preview/public/scene/carson-exterior-detail.json": {
+      "bytes": 96063,
+      "sha256": "e17f3a213627ada64530baa6969c8103ef60180d9bf1f26164c1954ee65cc436",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic geometry or source-matched color parameters informed by the linked UO survey; no third-party imagery included."
+    },
+    "apps/web-preview/public/scene/carson-wall-color.json": {
+      "bytes": 417,
+      "sha256": "52a291bf4438dd811a21043f366669e037a613708d690a122d2f0e5ecffa3729",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic geometry or source-matched color parameters informed by the linked UO survey; no third-party imagery included."
+    },
+    "apps/web-preview/public/scene/plc-tower-detail.json": {
+      "bytes": 105246,
+      "sha256": "dcb168ea364bc17f01012819ce0e453977dc291fcac0ee97b975a344e8a4a4c9",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic PLC tower exterior geometry informed by linked UO survey; no third-party imagery included."
+    },
+    "apps/web-preview/public/scene/museum-west-detail.json": {
+      "bytes": 45385,
+      "sha256": "d35ba05481c6f9af2baeb02676271f67e4b88fa4e30393d15ea93f8e39ea8e3f",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic museum exterior geometry informed by linked UO survey; no third-party imagery included."
+    },
+    "apps/web-preview/public/scene/bean-exterior-detail.json": {
+      "bytes": 38667,
+      "sha256": "6a1d52758b6b521b8a40bd2aaa8f90579ef04dcb89b5e34a3da6896c2995aea3",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic exterior geometry or source-matched color parameters informed by linked UO survey; no third-party imagery included."
+    },
+    "apps/web-preview/public/scene/bean-wall-color.json": {
+      "bytes": 388,
+      "sha256": "ed24405110542a57d7c8f8f9cb0addb27c7123e6886d16fa8ddb67fbaabbe10c",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic exterior geometry or source-matched color parameters informed by linked UO survey; no third-party imagery included."
+    },
+    "apps/web-preview/public/scene/llc-north-detail.json": {
+      "bytes": 33580,
+      "sha256": "77eda2d20fd333709f03a462d8f495680f11a8ab6869c8e893ba2e85bb77131e",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic exterior geometry or source-matched color parameters informed by linked sources; no reference photographs included."
+    },
+    "apps/web-preview/public/scene/llc-north-wall-color.json": {
+      "bytes": 383,
+      "sha256": "da9a75e93175a7e8419894c99d1d661cdf7fbac9e597be7424ffa7f5a3fc57cf",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic exterior geometry or source-matched color parameters informed by linked sources; no reference photographs included."
+    },
+    "apps/web-preview/public/scene/llc-south-detail.json": {
+      "bytes": 55428,
+      "sha256": "d5d21c6bc5011408bdfac8053a68d253b2bac27e40c2a2142bc535d15da894f8",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic exterior geometry or source-matched color parameters informed by linked UO references; no source photographs included."
+    },
+    "apps/web-preview/public/scene/llc-south-wall-color.json": {
+      "bytes": 384,
+      "sha256": "0d2f7970a7c8ece7846f4d4c5877407c9de32c5ad82d440e821eff1f8e425ebf",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic exterior geometry or source-matched color parameters informed by linked UO references; no source photographs included."
+    },
+    "apps/web-preview/public/scene/natural-museum-detail.json": {
+      "bytes": 11419,
+      "sha256": "5983f2381287bfdf8694840f3833e1ba3606e16a5cc93272d71e834a39751876",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic building geometry or source-matched color parameters informed by linked UO references; no third-party photographs or artworks included."
+    },
+    "apps/web-preview/public/scene/natural-museum-wall-color.json": {
+      "bytes": 388,
+      "sha256": "b85941efe6d324bc7446cade12af08fd9e20131f06250292f878dc83eaa6c9e6",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic building geometry or source-matched color parameters informed by linked UO references; no third-party photographs or artworks included."
+    },
+    "apps/web-preview/public/scene/power-station-detail.json": {
+      "bytes": 11701,
+      "sha256": "88a462f3370c3987ce7a213a34cd042aec27974178a31f60905ea95d741f5c8a",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic building geometry or source-matched color parameters informed by linked UO references; no third-party photographs or artworks included."
+    },
+    "apps/web-preview/public/scene/power-station-wall-color.json": {
+      "bytes": 387,
+      "sha256": "f09ca7e8ef79aaec2c618ef7db14851effee28626c0124f2ad5c6a2099456e61",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic building geometry or source-matched color parameters informed by linked UO references; no third-party photographs or artworks included."
+    },
+    "assets/props/campus-props-scooter-2026-11-04.blend": {
+      "bytes": 1268403,
+      "sha256": "58eb3cfc1aed061412ba06c611995775edd05181c892ece4e3f27f6b374af1a9",
+      "license": "CC-BY-4.0",
+      "origin": "Editable Blender import snapshot of procedural prop GLB sha256 bf85abf13ff0efe6b370c73b9ebe9d4b69950b53cebd408b0495131f9b444458; older snapshots retained."
+    },
+    "assets/props/campus-props-bicycle-2026-11-04.blend": {
+      "bytes": 1316019,
+      "sha256": "5dd4bda3cb76bbb5280980adfb525ce12d38481a923290cf85aef2da2782ebe3",
+      "license": "CC-BY-4.0",
+      "origin": "Editable Blender import snapshot of procedural prop GLB sha256 20fc756b3b1d65861db0f1c4f0bf7197256d3eccbfe04efaef7c3c5a3df526f7; prior snapshots retained."
+    },
+    "apps/web-preview/public/scene/pilot-bench-seat-suppression.json": {
+      "bytes": 5474,
+      "sha256": "f121c5a0aad8f8cfdec09efd8ad6e88ee1662fd81d461fc00965ad01ddde5b74",
+      "license": "CC-BY-4.0",
+      "origin": "Original exact source-vertex selection for nine illustrative bench seats; no third-party imagery included."
+    },
+    "assets/exterior-refinement/pilot-bench-detail-before-seats-2026-11-04.json": {
+      "bytes": 39439,
+      "sha256": "f6c071511d1dcd2395ccc4b637dac8f014d32183397fe29050570f492f307c4e",
+      "license": "CC-BY-4.0",
+      "origin": "Preserved prior editable bench detail specification."
+    },
+    "assets/vegetation-refinement/fern-geometry-before-arch-2026-11-04.js": {
+      "bytes": 1494,
+      "sha256": "51bf16f0d205a068094f61c8e9dde4caa0b96b62bca14c3334e250c233640482",
+      "license": "Apache-2.0",
+      "origin": "Preserved prior editable procedural fern implementation."
+    },
+    "apps/web-preview/public/scene/pilot-canopy-tone.json": {
+      "bytes": 735,
+      "sha256": "4dc679531a28159d9b50071664c71803c6b2429d8d25d9c5c367579327f49d9c",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned illustrative canopy color parameters, no third-party imagery."
+    },
+    "assets/vegetation-refinement/presentation-before-canopy-tone-2026-11-04.js": {
+      "bytes": 10884,
+      "sha256": "8d23b205557807ffc1c24f93c5a5965fce6924284c4bb2747ecc06766f5f9bd8",
+      "license": "Apache-2.0",
+      "origin": "Preserved prior editable presentation loader implementation."
+    },
+    "assets/sky-refinement/sky-before-shading-2026-11-04.js": {
+      "bytes": 2694,
+      "sha256": "82250ccd65bea1c2dee1e97c48e3d5f49e6c5d074478c67a6b5a65f4530faa03",
+      "license": "Apache-2.0",
+      "origin": "Preserved prior procedural sky implementation."
+    },
+    "apps/web-preview/public/scene/knight-law-west-detail.json": {
+      "bytes": 14627,
+      "sha256": "12697fa75918de792f55296e3d17b58468aca787356baca14e5edf3d425f6d74",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic building geometry or source-matched color parameters informed by linked UO references; no third-party photographs or artworks included."
+    },
+    "apps/web-preview/public/scene/knight-law-wall-color.json": {
+      "bytes": 392,
+      "sha256": "02f27cc2e5a1bf05a6180520f34c084127ba4142a39a79da40c7f2d3777428a1",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic building geometry or source-matched color parameters informed by linked UO references; no third-party photographs or artworks included."
+    },
+    "apps/web-preview/public/scene/clinical-roof-slope.json": {
+      "bytes": 630,
+      "sha256": "0452756ad92eea89890fe5c9317d67de8eb9355e6de29dad70e87baef587eadc",
+      "license": "CC-BY-4.0",
+      "origin": "Source-pinned illustrative roof slope parameters; no third-party image."
+    },
+    "assets/exterior-refinement/presentation-before-roof-slope-2026-11-04.js": {
+      "bytes": 10837,
+      "sha256": "b5a31951006adb221695216f5025774cb1d6dcc6dc7f80a87cc6f075c26bc967",
+      "license": "Apache-2.0",
+      "origin": "Preserved prior presentation loader."
+    },
+    "assets/exterior-refinement/preserve-before-roof-slope-2026-11-04.py": {
+      "bytes": 7460,
+      "sha256": "343963aaf8e5605b10afa0acbb6ae6825dec195759499fb08eafeb3ab4fa83f3",
+      "license": "Apache-2.0",
+      "origin": "Preserved prior rebuild layer guard."
+    },
+    "apps/web-preview/public/scene/cascade-wall-color.json": {
+      "bytes": 416,
+      "sha256": "3fec8e7060362b697000cdb822372979a8a35770b080490039f76779a53bfa6f",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-matched color parameters informed by linked UO reference; no third-party photographs included."
+    },
+    "apps/web-preview/public/scene/miller-west-detail.json": {
+      "bytes": 3740,
+      "sha256": "d9f044363c86824a5fa7d81b5f8f5bfb973a9334c8f516a09bac613125c24038",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic geometry or source-matched color parameters informed by linked UO and architect references; no third-party photographs included."
+    },
+    "apps/web-preview/public/scene/miller-wall-color.json": {
+      "bytes": 405,
+      "sha256": "6a30a8802936be2457abcfbc080f3b68f056692a46e286be2650abc92f4a4051",
+      "license": "CC-BY-4.0",
+      "origin": "Original schematic geometry or source-matched color parameters informed by linked UO and architect references; no third-party photographs included."
+    },
+    "assets/exterior-refinement/pilot-bench-detail-editable-2026-11-04.blend": {
+      "bytes": 1390933,
+      "sha256": "7e5cdce9bf680b043d5096f1713e7c54c71defa54f8b03c560a9e8b32aea0c05",
+      "license": "CC-BY-4.0",
+      "origin": "Original editable/generated box overlay derived from pilot-bench-detail.json; excludes original bench geometry and third-party images."
+    },
+    "assets/exterior-refinement/pilot-bench-detail-standalone-2026-11-04.glb": {
+      "bytes": 153076,
+      "sha256": "d364ef2b58636eae5e591209fd60b1cf62e9cd7b0b215fb282482d4b4c6df5b1",
+      "license": "CC-BY-4.0",
+      "origin": "Original editable/generated box overlay derived from pilot-bench-detail.json; excludes original bench geometry and third-party images."
     }
   },
   "additional_sources": [

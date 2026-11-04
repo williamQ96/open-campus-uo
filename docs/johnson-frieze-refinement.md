@@ -1,0 +1,9 @@
+# Johnson Hall north frieze correction
+
+2026-11-03; local and unpublished. Building `roof-906c030e` remains level 1.
+
+The previous stylized model placed “JOHNSON HALL” across the north entablature. UO's [historic resource survey](https://cpfm.uoregon.edu/sites/default/files/johnson05_30_07.pdf), researched in 2006, describes retention of the original “Administration Building” plaque after the 1918 renaming. The archived [north photograph](../data/reference-images/photos/johnson-hall/front-pd.jpg), by Adam850, PD-self, shows that inscription in that location. Image attribution and uncertainty are in the [reference manifest](../data/reference-images/manifest.json). These sources do not verify current 2026 condition or measured typography.
+
+A source-pinned, independently removable layer covers the incorrect original runtime lettering and adds the historically supported wording. The text is generated as a browser canvas texture, not taken from the photograph; its fallback serif font, color, dimensions, relief and placement are stylized approximations. No photo pixels are embedded. The original base GLB and historical generator remain unchanged and can be restored by disabling the layer. The text is not an accessibility or building entrance claim. Johnson's rear detail and other layers remain active.
+
+[Before](images/johnson-frieze-before.png) and [after](images/johnson-frieze-after.png) are fixed-camera runtime renders. Local production build, 50 JS unit tests including label input validation, nine rebuild protection tests and landmark/material/draw-call browser checks passed. Chrome/SwiftShader is not a hardware performance claim. Code is Apache-2.0, original scene contribution CC BY 4.0; the reference image retains its PD-self status. Further facade and roof verification remains; no approved level-2 standard or promotion is implied.

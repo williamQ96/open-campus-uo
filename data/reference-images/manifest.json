@@ -523,6 +523,195 @@
       "bytes": 4538778,
       "sha256": "fa943c0635118d4eae28fbc8979edf8c0df0e0e8c0b43f7f572de5cdd534908c",
       "geographic_evidence": "Full scene reference extent and local origin recorded in data/metadata/naip-2024-main-campus-reference.json; ground heights remain the historical source heightfield."
+    },
+    {
+      "id": "friendly-west-2017",
+      "file": "photos/friendly-hall/west-2017.jpg",
+      "kind": "photograph",
+      "title": "Friendly Hall - University of Oregon - Eugene, Oregon - DSC09627",
+      "author": "Daderot",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Friendly_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09627.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Friendly_Hall_-_University_of_Oregon_-_Eugene%2C_Oregon_-_DSC09627.jpg",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence": "Commons source page declares CC0; original file SHA-1 matches the Commons record.",
+      "review_status": "approved",
+      "reviewed_on": "2026-11-03",
+      "accessed_on": "2026-11-03",
+      "captured_at": "2017-11-03",
+      "date_note": "Source date; conditions may have changed since capture.",
+      "attribution": "Daderot, Friendly Hall, 2017, CC0 1.0, https://commons.wikimedia.org/wiki/File:Friendly_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09627.jpg",
+      "modifications": "Original file bytes, renamed locally.",
+      "used_by": [
+        "roof-556799cc",
+        "apps/web-preview/public/scene/friendly-west-detail.json"
+      ],
+      "purpose": [
+        "West facade architectural features; not a dimensional survey."
+      ],
+      "usage_status": "Used as geometric reference only; not bundled as runtime texture.",
+      "width": 5472,
+      "height": 3648,
+      "bytes": 12259970,
+      "sha256": "546ed0df8ecd53ca1b922bff642e1ccf3c47ff9182f6d63106c1376d0f873059"
+    },
+    {
+      "id": "villard-east-2017",
+      "file": "photos/villard-hall/east-2017.jpg",
+      "kind": "photograph",
+      "title": "Villard Hall - University of Oregon - Eugene, Oregon - DSC09617",
+      "author": "Daderot",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Villard_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09617.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Villard_Hall_-_University_of_Oregon_-_Eugene%2C_Oregon_-_DSC09617.jpg",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_evidence": "Commons source page identifies Daderot and CC0 1.0; original downloaded bytes retained.",
+      "review_status": "approved",
+      "reviewed_on": "2026-11-03",
+      "accessed_on": "2026-11-03",
+      "captured_at": "2017-11-03",
+      "date_note": "Photo date supplied by source; present conditions may differ.",
+      "attribution": "Daderot, Villard Hall, 2017, CC0 1.0, https://commons.wikimedia.org/wiki/File:Villard_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09617.jpg",
+      "modifications": "None; original bytes renamed locally.",
+      "used_by": [
+        "roof-399c648e",
+        "apps/web-preview/public/scene/villard-east-detail.json"
+      ],
+      "purpose": [
+        "East facade and foundation planting reference, not a dimensional survey."
+      ],
+      "usage_status": "Reference for original procedural model; not bundled as a texture.",
+      "width": 3648,
+      "height": 5472,
+      "bytes": 11885847,
+      "sha256": "8663c9a2bc748a6773e29aecf96a7e392fadb55d27278f3a3aaea043ae79a261"
+    },
+    {
+      "id": "university-hall-2005",
+      "file": "photos/university-hall/exterior-2005.jpg",
+      "kind": "photograph",
+      "title": "Deady Hall, University of Oregon, Eugene - DPLA - 1ab3ead15b82b80bb858c0fb7db25bec",
+      "author": "Gary Halvorson, Oregon State Archives",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Deady_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_1ab3ead15b82b80bb858c0fb7db25bec.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Deady_Hall%2C_University_of_Oregon%2C_Eugene_-_DPLA_-_1ab3ead15b82b80bb858c0fb7db25bec.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons source credits Gary Halvorson, Oregon State Archives, and declares CC BY 4.0.",
+      "review_status": "approved",
+      "reviewed_on": "2026-11-03",
+      "accessed_on": "2026-11-03",
+      "captured_at": "2005-08-07",
+      "date_note": "Historical source date; current conditions may have changed.",
+      "attribution": "Gary Halvorson, Oregon State Archives, Deady Hall, 2005, CC BY 4.0, https://commons.wikimedia.org/wiki/File:Deady_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_1ab3ead15b82b80bb858c0fb7db25bec.jpg",
+      "modifications": "None; original bytes renamed locally.",
+      "used_by": [
+        "roof-9017feee",
+        "apps/web-preview/public/scene/university-hall-detail.json"
+      ],
+      "purpose": [
+        "Historic roof, tower and facade vocabulary; not a dimensional survey."
+      ],
+      "usage_status": "Reference for original simplified model; not bundled as a runtime texture.",
+      "width": 2000,
+      "height": 1330,
+      "bytes": 1369161,
+      "sha256": "fabe8737c3a482e76887901f6f5096c90c2db241b469e1a3763b9b98f3ae7589"
+    },
+    {
+      "id": "anstett-south-2019",
+      "file": "photos/anstett-hall/south-2019.jpg",
+      "kind": "photograph",
+      "title": "Anstett Hall, University of Oregon, Eugene - DPLA - 7f05aff2c79e236edd0bed0104b6f145",
+      "author": "Gary Halvorson, Oregon State Archives",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anstett_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_7f05aff2c79e236edd0bed0104b6f145.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Anstett_Hall%2C_University_of_Oregon%2C_Eugene_-_DPLA_-_7f05aff2c79e236edd0bed0104b6f145.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons credits Gary Halvorson, Oregon State Archives and declares CC BY 4.0.",
+      "review_status": "approved",
+      "reviewed_on": "2026-11-03",
+      "accessed_on": "2026-11-03",
+      "captured_at": "2019-08-17",
+      "date_note": "Historical source date; present conditions may have changed.",
+      "attribution": "Gary Halvorson, Oregon State Archives, Anstett Hall, 2019, CC BY 4.0, https://commons.wikimedia.org/wiki/File:Anstett_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_7f05aff2c79e236edd0bed0104b6f145.jpg",
+      "modifications": "None; original bytes renamed locally.",
+      "used_by": [
+        "roof-0a498bf7",
+        "apps/web-preview/public/scene/anstett-south-detail.json",
+        "roof-75e776d0",
+        "apps/web-preview/public/scene/peterson-south-detail.json"
+      ],
+      "purpose": [
+        "South frontage and landscaping reference; not a dimensional survey.",
+        "Paired Anstett/Peterson architectural vocabulary; depicts Anstett, not Peterson."
+      ],
+      "usage_status": "Reference for original procedural geometry only; not used as texture.",
+      "width": 2000,
+      "height": 1335,
+      "bytes": 1365014,
+      "sha256": "9e1eeed6b927d54a74886457fd26326934227c54f269270dad8326da0c0bfa87"
+    },
+    {
+      "id": "tykeson-2019",
+      "file": "photos/tykeson-hall/exterior-2019.jpg",
+      "kind": "photograph",
+      "title": "Tykeson Hall, University of Oregon, Eugene - DPLA - 8c33a2d22132624e3de1a4eaf5354e02",
+      "author": "Gary Halvorson, Oregon State Archives",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tykeson_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_8c33a2d22132624e3de1a4eaf5354e02.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Tykeson_Hall%2C_University_of_Oregon%2C_Eugene_-_DPLA_-_8c33a2d22132624e3de1a4eaf5354e02.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons credits Gary Halvorson, Oregon State Archives and declares CC BY 4.0.",
+      "review_status": "approved",
+      "reviewed_on": "2026-11-04",
+      "accessed_on": "2026-11-04",
+      "captured_at": "2019-08-17",
+      "date_note": "Source date; current conditions may differ.",
+      "attribution": "Gary Halvorson, Oregon State Archives, Tykeson Hall, 2019, CC BY 4.0, https://commons.wikimedia.org/wiki/File:Tykeson_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_8c33a2d22132624e3de1a4eaf5354e02.jpg",
+      "modifications": "None; original bytes renamed locally.",
+      "used_by": [
+        "context-b0103",
+        "apps/web-preview/public/scene/tykeson-north-detail.json"
+      ],
+      "purpose": [
+        "Glass, cladding and canopy architectural vocabulary; photo orientation inferred, not surveyed."
+      ],
+      "usage_status": "Reference for original procedural geometry only; not used as a runtime texture.",
+      "width": 2000,
+      "height": 1335,
+      "bytes": 912038,
+      "sha256": "7a40801215a4831a5e2836c94e1eb85221d5f3b1c808e752e7ad6a4a91c1a827"
+    },
+    {
+      "id": "susan-campbell-2011",
+      "file": "photos/susan-campbell-hall/exterior-2011.jpg",
+      "kind": "photograph",
+      "title": "Susan Campbell Hall, University Of Oregon, Eugene - DPLA - 4e7906177b35545a22a8ec321bd92da7",
+      "author": "Gary Halvorson, Oregon State Archives",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Susan_Campbell_Hall,_University_Of_Oregon,_Eugene_-_DPLA_-_4e7906177b35545a22a8ec321bd92da7.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Susan_Campbell_Hall%2C_University_Of_Oregon%2C_Eugene_-_DPLA_-_4e7906177b35545a22a8ec321bd92da7.jpg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Commons credits Gary Halvorson, Oregon State Archives and declares CC BY 4.0.",
+      "review_status": "approved",
+      "reviewed_on": "2026-11-04",
+      "accessed_on": "2026-11-04",
+      "captured_at": "2011-07-29",
+      "date_note": "Historical source date; current conditions may differ.",
+      "attribution": "Gary Halvorson, Oregon State Archives, Susan Campbell Hall, 2011, CC BY 4.0, https://commons.wikimedia.org/wiki/File:Susan_Campbell_Hall,_University_Of_Oregon,_Eugene_-_DPLA_-_4e7906177b35545a22a8ec321bd92da7.jpg",
+      "modifications": "None; original bytes renamed locally.",
+      "used_by": [
+        "roof-fd061857",
+        "apps/web-preview/public/scene/susan-roof-detail.json"
+      ],
+      "purpose": [
+        "Roof and exterior architectural vocabulary; precise orientation and dimensions are not established."
+      ],
+      "usage_status": "Reference for original procedural geometry only; not used as runtime texture.",
+      "width": 2000,
+      "height": 1325,
+      "bytes": 1491645,
+      "sha256": "67f29e0dd0912bf15be524950488f48d993d1b029a707af7d1595b413a5e96ce"
     }
   ],
   "related_outputs": [

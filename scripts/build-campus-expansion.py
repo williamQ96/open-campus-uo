@@ -2,12 +2,21 @@
 """Blender: photo grammar + seeded low-poly context, keeping geographic envelopes."""
 import bpy,bmesh,json,math,hashlib
 from pathlib import Path
+import importlib.util
 from collections import defaultdict
 from mathutils import Vector
 from mathutils.geometry import tessellate_polygon
 ROOT=Path(__file__).resolve().parents[1];PUBLIC=ROOT/'apps/web-preview/public/scene'
+spec=importlib.util.spec_from_file_location('preserve_environment_layers',ROOT/'scripts/preserve_environment_layers.py');layers=importlib.util.module_from_spec(spec);spec.loader.exec_module(layers)
+previous=json.loads((PUBLIC/'presentation.json').read_text(encoding='utf-8')) if (PUBLIC/'presentation.json').exists() else {}
 source=json.loads((ROOT/'artifacts/campus-expansion-input.json').read_text(encoding='utf-8'));config=source['config'];baseline=source['baseline']
 manifest=json.loads((PUBLIC/'manifest.json').read_text(encoding='utf-8'));field=json.loads((PUBLIC/manifest['heightfield_url']).read_text())
+source_blend=ROOT/config.get('output_source_blend','assets/campus-expansion/eugene-campus.blend');source_blend.parent.mkdir(parents=True,exist_ok=True)
+staged_blend=source_blend.with_name(source_blend.stem+'.next.blend');staged_glb=PUBLIC/'campus-expanded.next.glb'
+if staged_blend.exists() or staged_glb.exists():raise RuntimeError('Staged build output already exists; inspect before retrying')
+if previous.get('asset_url')=='campus-expanded.glb':
+ if hashlib.sha256((PUBLIC/previous['asset_url']).read_bytes()).hexdigest()!=previous.get('asset_sha256'):raise RuntimeError('Current expanded GLB changed; inspect before rebuild')
+ layers.carry_layers(previous,{'asset_sha256':previous['asset_sha256'],'reference_image_ids':[],'stats':{'trees':previous.get('stats',{}).get('sourceTrees',previous.get('stats',{}).get('trees',0))}},PUBLIC)
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 with bpy.data.libraries.load(str(ROOT/config['source_blend']),link=False) as (data,loaded):
  loaded.objects=[name for name in data.objects if name in source['protected_ids'] or name in ['landscape-lawn','landscape-paving','vegetation','understory','planting','furniture']]
@@ -213,12 +222,11 @@ for key,(vertices,faces,colors) in parts.items():
  obj['rights']='Original geometry: CC BY 4.0; source photo terms remain separate; no photographic textures';objects.append(obj)
 scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene['art_status']=config['status'];scene['source_manifest_sha256']=source['source_manifest_sha256']
 scene['method']='Photo grammar in focus; inexpensive geography-preserving context; spatial haze is a viewer effect'
-source_blend=ROOT/config.get('output_source_blend','assets/campus-expansion/eugene-campus.blend');source_blend.parent.mkdir(parents=True,exist_ok=True)
 # Keep every geographic identity editable in the Blender source. Merge copies
 # only after saving, so delivery cost does not dictate authoring granularity.
 by_id={o.get('asset_id'):o for o in objects if o.get('asset_id')}
 assert len(by_id)==len(manifest['buildings'])
-bpy.ops.wm.save_as_mainfile(filepath=str(source_blend))
+bpy.ops.wm.save_as_mainfile(filepath=str(staged_blend))
 anonymous={id for ids in members.values() for id in ids}
 export_objects=[o for o in objects if o.get('asset_id') not in anonymous]
 for batch,ids in members.items():
@@ -236,9 +244,11 @@ for batch,ids in members.items():
 bpy.ops.object.select_all(action='DESELECT')
 for obj in export_objects:obj.select_set(True)
 bpy.ops.export_scene.gltf(filepath=str(PUBLIC/'campus-expanded.next.glb'),export_format='GLB',use_selection=True,export_extras=True,export_yup=True,export_animations=False,export_cameras=False,export_lights=False,export_copyright='Open Campus contributors — Original model geometry CC BY 4.0; photographs remain separate')
-(PUBLIC/'campus-expanded.next.glb').replace(PUBLIC/'campus-expanded.glb')
 ids=[b['id'] for b in manifest['buildings']]
-output={**baseline,'editable_source':str(source_blend.relative_to(ROOT)).replace('\\','/'),'roof_status':config['roof_status'],'roof_treatments':{**{p['id']:p['roof_style'] for p in source['plan']},**{id:'retained-landmark-weathered-roof' for id in original_by_id}},'id':config['id'],'asset_url':'campus-expanded.glb','replaces_building_ids':ids,'landmark_building_ids':baseline['landmark_building_ids']+[records[name]['id'] for name in config['photo_refinements']],'context_fog':config['context_fog'],'status':config['status'],'stats':{'trees':300+len(source['trees']),'landmarkBuildings':5,'contextBuildings':source['counts']['background'],'campusBuildings':len(ids)-source['counts']['background']},'inferred_landscape':{'extra_trees':len(source['trees']),'status':'Procedural campus planting and lawns beyond the limited archived aerial crop; not measured or image-extracted'},'reference_image_ids':baseline['reference_image_ids']+[p['reference'] for p in config['photo_refinements'].values()],'source_manifest_text_sha256':source['source_manifest_text_sha256'],'heightfield_text_sha256':source['source_heightfield_text_sha256'],'source_manifest_sha256':source['source_manifest_sha256'],'heightfield_sha256':source['source_heightfield_sha256'],'art_pipeline':source['art_pipeline'],'preserved_source_blend_sha256':config['source_blend_sha256'],'reference_manifest_sha256':hashlib.sha256((ROOT/'data/reference-images/manifest.json').read_bytes()).hexdigest(),'generator_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'asset_sha256':hashlib.sha256((PUBLIC/'campus-expanded.glb').read_bytes()).hexdigest()}
+output={**baseline,'editable_source':str(source_blend.relative_to(ROOT)).replace('\\','/'),'roof_status':config['roof_status'],'roof_treatments':{**{p['id']:p['roof_style'] for p in source['plan']},**{id:'retained-landmark-weathered-roof' for id in original_by_id}},'id':config['id'],'asset_url':'campus-expanded.glb','replaces_building_ids':ids,'landmark_building_ids':baseline['landmark_building_ids']+[records[name]['id'] for name in config['photo_refinements']],'context_fog':config['context_fog'],'status':config['status'],'stats':{'trees':300+len(source['trees']),'landmarkBuildings':5,'contextBuildings':source['counts']['background'],'campusBuildings':len(ids)-source['counts']['background']},'inferred_landscape':{'extra_trees':len(source['trees']),'status':'Procedural campus planting and lawns beyond the limited archived aerial crop; not measured or image-extracted'},'reference_image_ids':baseline['reference_image_ids']+[p['reference'] for p in config['photo_refinements'].values()],'source_manifest_text_sha256':source['source_manifest_text_sha256'],'heightfield_text_sha256':source['source_heightfield_text_sha256'],'source_manifest_sha256':source['source_manifest_sha256'],'heightfield_sha256':source['source_heightfield_sha256'],'art_pipeline':source['art_pipeline'],'preserved_source_blend_sha256':config['source_blend_sha256'],'reference_manifest_sha256':hashlib.sha256((ROOT/'data/reference-images/manifest.json').read_bytes()).hexdigest(),'generator_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'asset_sha256':hashlib.sha256(staged_glb.read_bytes()).hexdigest()}
+output=layers.carry_layers(previous,output,PUBLIC)
+staged_blend.replace(source_blend)
+staged_glb.replace(PUBLIC/'campus-expanded.glb')
 (PUBLIC/'presentation.json').write_text(json.dumps(output,indent=2)+'\n',encoding='utf-8')
 audit={'source_manifest_sha256':source['source_manifest_sha256'],'preserved_source_blend_sha256':config['source_blend_sha256'],'replaced_ids':ids,'protected_ids':source['protected_ids'],'appearance_plan':source['plan'],'window_counts':window_counts,'context_batches':dict(members),'extra_trees':len(source['trees']),'mesh_count':len(export_objects),'editable_source':str(source_blend.relative_to(ROOT)).replace('\\','/'),'roof_style_counts':dict(__import__('collections').Counter([p['roof_style'] for p in source['plan']])),'source_mesh_count':len(objects),'source_building_objects':len(by_id),'runtime_bytes':(PUBLIC/'campus-expanded.glb').stat().st_size,'method':'Randomize archetypes/palette only; original coordinates, footprints, heights and roads are fixed. Background geometry is an illustrative original open component library, not a surveyed building inventory.'}
 (ROOT/'data/metadata/campus-expansion-audit.json').write_text(json.dumps(audit,indent=2)+'\n',encoding='utf-8')

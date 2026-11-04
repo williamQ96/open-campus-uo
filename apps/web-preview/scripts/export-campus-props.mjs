@@ -12,6 +12,7 @@ const bytes = await p.evaluate(async () => {
   const group = new THREE.Group();
   for (const [i, kind] of [
     "car",
+    "suv",
     "van",
     "pickup",
     "bicycle",

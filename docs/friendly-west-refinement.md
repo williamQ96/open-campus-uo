@@ -1,0 +1,19 @@
+# Friendly Hall west facade refinement
+
+The source-pinned procedural replacement retains building identity `roof-556799cc` and the original campus GLB. Its west elevation interprets two entrances, paired semicircular gables and oculi, brick and light trim, roof dormers and windows from [Daderot’s 2017 CC0 photograph](https://commons.wikimedia.org/wiki/File:Friendly_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09627.jpg). The [UO preliminary historic assessment](https://cpfm.uoregon.edu/sites/default/files/friendly_hall_preliminary_hp_assessment.pdf) confirms the west elevation and its architectural vocabulary. The original photograph is archived with its license and hash; the UO document is linked only. No photo is used as a runtime texture.
+
+The footprint, dimensions, dormer and window spacing, roof profile, entrances, landscaping and obscured elevations are approximations. The photograph is historical, not evidence of current site conditions. Original building selection identity is preserved; accessibility and collision geometry were not surveyed. The asset remains level 1 pending further evidence and user-defined acceptance criteria. No interior is modified.
+
+Runtime candidate was reviewed in campus context; unit, browser visual-pilot and Annex regression tests passed. See `friendly-west-before.png` and `friendly-west-after.png` for the same view.
+
+## West facade follow-up
+
+The paired gable windows now have center mullions, each entrance has a second pair of porch columns, and a horizontal belt course was added. Six small illustrative shrubs diversify the existing planting, without placing new vegetation in the entrance axes. These forms are informed by the same archived 2017 photograph, not measured dimensions or a verified species survey. They do not assert current conditions, collision clearance, or accessibility. The photograph does not establish the hidden elevations. The level remains 1. See [scene review](images/friendly-followup-after.png).
+
+## Multi-elevation follow-up, 2026-11-04
+
+The [UO preliminary historic assessment](https://cpfm.uoregon.edu/sites/default/files/friendly_hall_preliminary_hp_assessment.pdf), PDF pages 12, 14, 16 and 24, illustrates the north, south and east elevations and roof plan. The original historic assessment is consulted, not redistributed or used as a texture; local reference SHA-256 `54afa161429c7cb7e0f9562ac1d6dc6a34e823768f7498b9525c29ae46af0cf7`. The assessment distinguishes the 1893 west wing, 1909 east wing and 1914 extension.
+
+The original simplified roof is replaced within the reversible layer by an approximate mansard-like profile; illustrative dormers, north and south window rows and curved gable motifs, and east-wing windows are added. The prior west facade, entrances and landscape objects remain. This is a stylized interpretation rather than a survey: notably, the existing rectangular east wing does not reproduce all 1909/1914 setbacks, and window counts, roof and gable proportions and current conditions are not established. [North before](images/friendly-north-before-next.png), [north after](images/friendly-north-after-next.png), [south](images/friendly-south-after-next.png), [east](images/friendly-east-after-next.png), [west](images/friendly-west-multiface-after.png).
+
+Four conservative ENU rectangles cover the two modeled volumes and the two existing west porch projections; the original footprint remains intact. No existing navigation graph edges intersect those rectangles with a 0.5 m margin. Porch volumes are obstacles, not verified walkable entrances. Some lower windows and entrance bases meet the estimated terrain and need site grading and accessibility verification; no full vegetation clearance survey is claimed. The asset remains level 1. Original GLB and interiors remain unchanged; previous layer: `assets/exterior-refinement/friendly-before-multiface-2026-11-04.json`.

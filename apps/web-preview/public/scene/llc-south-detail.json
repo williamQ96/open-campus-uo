@@ -1,0 +1,3562 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-453966d5",
+  "replace_building": false,
+  "merge_source_vertex_count": 1664,
+  "reference_ids": [],
+  "reference_urls": [
+    "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/living-learning-center",
+    "https://cpfm.uoregon.edu/sites/default/files/uo_rhfmdstudy_101211_0.pdf"
+  ],
+  "note": "Schematic four-story exterior and shallow roof approximation informed by 2011 UO photograph. Source roof above 12.9 m is locally replaced after exact source and triangle-count validation; exact dimensions and current conditions unverified.",
+  "objects": [
+    {
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -103.1,
+        8.98,
+        214.0
+      ],
+      "size": [
+        1.2,
+        15.04,
+        20
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -103.76,
+        16.32,
+        214.0
+      ],
+      "size": [
+        0.15,
+        0.25,
+        20
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        3.4,
+        206.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        3.4,
+        206.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        3.4,
+        211.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        3.4,
+        211.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        3.4,
+        216.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        3.4,
+        216.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        3.4,
+        221.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        3.4,
+        221.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        6.8,
+        206.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        6.8,
+        206.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        6.8,
+        211.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        6.8,
+        211.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        6.8,
+        216.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        6.8,
+        216.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        6.8,
+        221.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        6.8,
+        221.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        10.2,
+        206.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        10.2,
+        206.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        10.2,
+        211.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        10.2,
+        211.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        10.2,
+        216.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        10.2,
+        216.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        10.2,
+        221.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        10.2,
+        221.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        13.6,
+        206.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        13.6,
+        206.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        13.6,
+        211.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        13.6,
+        211.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        13.6,
+        216.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        13.6,
+        216.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -103.83,
+        13.6,
+        221.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -103.92,
+        13.6,
+        221.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -44.9,
+        8.98,
+        214.0
+      ],
+      "size": [
+        1.2,
+        15.04,
+        20
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -44.24,
+        16.32,
+        214.0
+      ],
+      "size": [
+        0.15,
+        0.25,
+        20
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        3.4,
+        206.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        3.4,
+        206.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        3.4,
+        211.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        3.4,
+        211.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        3.4,
+        216.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        3.4,
+        216.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        3.4,
+        221.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        3.4,
+        221.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        6.8,
+        206.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        6.8,
+        206.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        6.8,
+        211.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        6.8,
+        211.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        6.8,
+        216.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        6.8,
+        216.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        6.8,
+        221.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        6.8,
+        221.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        10.2,
+        206.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        10.2,
+        206.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        10.2,
+        211.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        10.2,
+        211.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        10.2,
+        216.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        10.2,
+        216.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        10.2,
+        221.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        10.2,
+        221.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        13.6,
+        206.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        13.6,
+        206.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        13.6,
+        211.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        13.6,
+        211.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        13.6,
+        216.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        13.6,
+        216.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -44.17,
+        13.6,
+        221.5
+      ],
+      "size": [
+        0.12,
+        2,
+        2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -44.08,
+        13.6,
+        221.5
+      ],
+      "size": [
+        0.07,
+        1.76,
+        1.72
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -74.0,
+        8.98,
+        200.9
+      ],
+      "size": [
+        52,
+        15.04,
+        1.2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -74.0,
+        16.32,
+        200.24
+      ],
+      "size": [
+        52,
+        0.25,
+        0.15
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -97.63636363636364,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -97.63636363636364,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -92.9090909090909,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -92.9090909090909,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -88.18181818181819,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -88.18181818181819,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -83.45454545454545,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -83.45454545454545,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -78.72727272727272,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -78.72727272727272,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -74.0,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -74.0,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -69.27272727272728,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -69.27272727272728,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -64.54545454545455,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -64.54545454545455,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -59.81818181818182,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -59.81818181818182,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -55.09090909090909,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -55.09090909090909,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -50.36363636363637,
+        3.4,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -50.36363636363637,
+        3.4,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -97.63636363636364,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -97.63636363636364,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -92.9090909090909,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -92.9090909090909,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -88.18181818181819,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -88.18181818181819,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -83.45454545454545,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -83.45454545454545,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -78.72727272727272,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -78.72727272727272,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -74.0,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -74.0,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -69.27272727272728,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -69.27272727272728,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -64.54545454545455,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -64.54545454545455,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -59.81818181818182,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -59.81818181818182,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -55.09090909090909,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -55.09090909090909,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -50.36363636363637,
+        6.8,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -50.36363636363637,
+        6.8,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -97.63636363636364,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -97.63636363636364,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -92.9090909090909,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -92.9090909090909,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -88.18181818181819,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -88.18181818181819,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -83.45454545454545,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -83.45454545454545,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -78.72727272727272,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -78.72727272727272,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -74.0,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -74.0,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -69.27272727272728,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -69.27272727272728,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -64.54545454545455,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -64.54545454545455,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -59.81818181818182,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -59.81818181818182,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -55.09090909090909,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -55.09090909090909,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -50.36363636363637,
+        10.2,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -50.36363636363637,
+        10.2,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -97.63636363636364,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -97.63636363636364,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -92.9090909090909,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -92.9090909090909,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -88.18181818181819,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -88.18181818181819,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -83.45454545454545,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -83.45454545454545,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -78.72727272727272,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -78.72727272727272,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -74.0,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -74.0,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -69.27272727272728,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -69.27272727272728,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -64.54545454545455,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -64.54545454545455,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -59.81818181818182,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -59.81818181818182,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -55.09090909090909,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -55.09090909090909,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -50.36363636363637,
+        13.6,
+        200.17
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -50.36363636363637,
+        13.6,
+        200.07999999999998
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -74.5,
+        8.98,
+        216.1
+      ],
+      "size": [
+        27,
+        15.04,
+        1.2
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -74.5,
+        16.32,
+        216.76
+      ],
+      "size": [
+        27,
+        0.25,
+        0.15
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -85.75,
+        3.4,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -85.75,
+        3.4,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -81.25,
+        3.4,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -81.25,
+        3.4,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -76.75,
+        3.4,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -76.75,
+        3.4,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -72.25,
+        3.4,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -72.25,
+        3.4,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -67.75,
+        3.4,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -67.75,
+        3.4,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -63.25,
+        3.4,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -63.25,
+        3.4,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -85.75,
+        6.8,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -85.75,
+        6.8,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -81.25,
+        6.8,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -81.25,
+        6.8,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -76.75,
+        6.8,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -76.75,
+        6.8,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -72.25,
+        6.8,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -72.25,
+        6.8,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -67.75,
+        6.8,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -67.75,
+        6.8,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -63.25,
+        6.8,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -63.25,
+        6.8,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -85.75,
+        10.2,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -85.75,
+        10.2,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -81.25,
+        10.2,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -81.25,
+        10.2,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -76.75,
+        10.2,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -76.75,
+        10.2,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -72.25,
+        10.2,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -72.25,
+        10.2,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -67.75,
+        10.2,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -67.75,
+        10.2,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -63.25,
+        10.2,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -63.25,
+        10.2,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -85.75,
+        13.6,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -85.75,
+        13.6,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -81.25,
+        13.6,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -81.25,
+        13.6,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -76.75,
+        13.6,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -76.75,
+        13.6,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -72.25,
+        13.6,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -72.25,
+        13.6,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -67.75,
+        13.6,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -67.75,
+        13.6,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "cream",
+      "shape": "box",
+      "position": [
+        -63.25,
+        13.6,
+        216.83
+      ],
+      "size": [
+        2,
+        2,
+        0.12
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -63.25,
+        13.6,
+        216.92000000000002
+      ],
+      "size": [
+        1.72,
+        1.76,
+        0.07
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "roof-dark",
+      "shape": "box",
+      "position": [
+        -74,
+        16.35,
+        208.5
+      ],
+      "size": [
+        58,
+        0.32,
+        15
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "roof-dark",
+      "shape": "box",
+      "position": [
+        -95.5,
+        16.35,
+        221.5
+      ],
+      "size": [
+        15,
+        0.32,
+        11
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "roof-dark",
+      "shape": "box",
+      "position": [
+        -53,
+        16.35,
+        221.5
+      ],
+      "size": [
+        16,
+        0.32,
+        11
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -103.76,
+        14.72,
+        214.0
+      ],
+      "size": [
+        0.11,
+        3.35,
+        20
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -44.24,
+        14.72,
+        214.0
+      ],
+      "size": [
+        0.11,
+        3.35,
+        20
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -74.0,
+        14.72,
+        200.24
+      ],
+      "size": [
+        52,
+        3.35,
+        0.11
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -74.5,
+        14.72,
+        216.76
+      ],
+      "size": [
+        27,
+        3.35,
+        0.11
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -101.5,
+        14.72,
+        202.5
+      ],
+      "size": [
+        4.24264,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -2.356194490192345,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -103.0,
+        14.72,
+        214.0
+      ],
+      "size": [
+        20.0,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -101.5,
+        14.72,
+        225.5
+      ],
+      "size": [
+        4.24264,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -0.7853981633974483,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -98.5,
+        14.72,
+        227.0
+      ],
+      "size": [
+        3.0,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -0.0,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -96.5,
+        14.72,
+        228.0
+      ],
+      "size": [
+        2.23607,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -1.1071487177940904,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -95.0,
+        14.72,
+        229.0
+      ],
+      "size": [
+        2.0,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -0.0,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -91.5,
+        14.72,
+        226.5
+      ],
+      "size": [
+        7.07107,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        0.7853981633974483,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -88.5,
+        14.72,
+        220.0
+      ],
+      "size": [
+        8.06226,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        1.446441332248135,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -74.5,
+        14.72,
+        216.0
+      ],
+      "size": [
+        27.0,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -0.0,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -61.0,
+        14.72,
+        217.0
+      ],
+      "size": [
+        2.0,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -57.0,
+        14.72,
+        223.0
+      ],
+      "size": [
+        12.80625,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -0.8960553845713439,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -50.5,
+        14.72,
+        227.5
+      ],
+      "size": [
+        5.09902,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        0.19739555984988075,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -46.5,
+        14.72,
+        225.5
+      ],
+      "size": [
+        4.24264,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        0.7853981633974483,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -45.0,
+        14.72,
+        214.0
+      ],
+      "size": [
+        20.0,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -46.5,
+        14.72,
+        202.5
+      ],
+      "size": [
+        4.24264,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        2.356194490192345,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -74.0,
+        14.72,
+        201.0
+      ],
+      "size": [
+        52.0,
+        3.35,
+        0.16
+      ],
+      "rotation": [
+        0,
+        -3.141592653589793,
+        0
+      ]
+    }
+  ],
+  "trim_source_min_y": 12.9,
+  "trim_source_expected_triangles": 162
+}

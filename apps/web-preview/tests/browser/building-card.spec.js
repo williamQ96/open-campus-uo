@@ -20,7 +20,7 @@ test("Overview label opens a card, hides only its label, and Enter inspects with
   const card = page.locator(".building-card");
   await expect(card).toBeVisible();
   await expect(card.getByRole("heading")).toHaveText(name);
-  await expect(card.locator("p")).toHaveText("to be fill");
+  await expect(card.locator(".building-card-summary")).not.toBeEmpty();
   await expect(label).toBeHidden();
   await expect(page.locator("#selection")).toBeHidden();
   await page.getByRole("button", { name: "Close building card" }).click();
@@ -159,4 +159,62 @@ test("phone building card stays on-screen and taps Enter into hero-free Overview
     "aerial",
   );
   await context.close();
+});
+
+test("sourced and unknown buildings show honest information", async ({
+  page,
+}) => {
+  await page.route("**/scene/building-info.json", async (route) => {
+    const response = await route.fetch();
+    const data = await response.json();
+    delete data.records["context-oc-knight-1"];
+    await route.fulfill({ response, json: data });
+  });
+  await ready(page);
+  const search = page.getByRole("combobox", { name: "Search buildings" });
+  await search.fill("Knight Library");
+  await page
+    .getByRole("option", { name: /Knight Library/ })
+    .first()
+    .click();
+  const card = page.locator(".building-card");
+  await expect(card.locator(".building-card-occupants")).toContainText(
+    "UO Libraries",
+  );
+  await expect(card.locator(".building-card-source")).toHaveAttribute(
+    "href",
+    "https://library.uoregon.edu/knight",
+  );
+  await search.fill("Collier House");
+  await page
+    .getByRole("option", { name: /Collier House/ })
+    .first()
+    .click();
+  await expect(card.locator(".building-card-summary")).toContainText(
+    "musicology faculty",
+  );
+  await expect(card.locator(".building-card-source")).toHaveAttribute(
+    "href",
+    "https://musicanddance.uoregon.edu/directory/faculty/R",
+  );
+  await search.fill("Knight Campus 1");
+  await page
+    .getByRole("option", { name: /Knight Campus 1/ })
+    .first()
+    .click();
+  await expect(card.locator(".building-card-summary")).toHaveText(
+    "Information not yet verified.",
+  );
+  await expect(card.locator(".building-card-source")).toBeHidden();
+});
+
+test("missing information file does not prevent campus loading", async ({
+  page,
+}) => {
+  await page.route("**/scene/building-info.json", (route) => route.abort());
+  await ready(page);
+  await page.locator(".building-label:visible").first().click();
+  await expect(page.locator(".building-card-summary")).toHaveText(
+    "Information not yet verified.",
+  );
 });

@@ -1,0 +1,15 @@
+# Condon Hall east entry and planting
+
+A reversible source-pinned overlay adds an arched east entry, wood-coloured double doors, paired upper arched windows, steps and a small group of shrubs to the existing `roof-7ffcf31b` model. The [UO cultural resource survey](https://cpfm.uoregon.edu/condonhall2025) identifies the main entrance as east-facing and depicts these architectural and planting elements. The historic survey image and site plan were consulted on 2026-11-04, but are linked only, not redistributed or used as textures. Original procedural geometry is CC BY 4.0.
+
+The target building footprint comes from an estimated LiDAR model; the exact facade position, window and stair dimensions, plant species, plant positions and present conditions are unverified. The entry, steps and shrub heights were adjusted against the existing estimated heightfield and visually checked, not field surveyed. The steps meet illustrative terrain in the viewer but do not establish a route, collision or accessibility. [Before](images/condon-east-before.png) / [after](images/condon-east-after.png). Other elevations remain generic, existing vegetation and source GLB remain untouched, and the building and shared environment entries remain level 1.
+
+The existing card identifies the Department of Anthropology using a separate UO department contact source; no new occupant claim was inferred from the historical survey.
+
+## Original entrance and south addition follow-up, 2026-11-04
+
+The [UO historic survey](https://cpfm.uoregon.edu/condonhall2025) identifies a flat roof, ornate original cornice and the south addition's horizontal concrete window frames. Its historical photograph and site plan are consulted only, not redistributed or used as textures. The existing procedural overlay now adds simplified original-entry cornice blocks, a schematic frame over the addition's east wall and an edge at its flat roof. Frame spacing follows the present model's approximate windows, not a measured survey; the original geometry, existing shrubs and prior entry layer remain.
+
+A local ray sample located the addition's current east wall and found tree geometry in some sight lines. [Before](images/condon-multiface-before.png), [after in context](images/condon-multiface-after.png), [isolated inspection](images/condon-clear-after.png). The isolated view hides unrelated meshes only for the screenshot; the [south contextual view](images/condon-south-context.png) shows substantial existing tree occlusion. This is not a complete 3D clearance survey.
+
+New pieces sit above ground and do not alter collision footprints or navigation graph. The prior entry steps still lack a verified collision or accessible route; historic records describe an accessible courtyard route but the viewer's route is not verified. The west, north and south elevations, precise roof edge and frame dimensions, existing window positions, tree relationships and current conditions remain uncertain. The asset stays level 1; no interior is modified. Previous overlay: `assets/exterior-refinement/condon-before-addition-2026-11-04.json`.

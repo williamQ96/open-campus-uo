@@ -572,10 +572,11 @@
   },
   "status": "Photo-informed landmark grammar; inferred campus appearance; seeded low-poly background at unchanged historical coordinates. Priority polygon is not a surveyed campus boundary.",
   "stats": {
-    "trees": 600,
+    "trees": 598,
     "landmarkBuildings": 5,
     "contextBuildings": 399,
-    "campusBuildings": 135
+    "campusBuildings": 135,
+    "sourceTrees": 600
   },
   "reference_image_ids": [
     "knight-north-a-2018",
@@ -604,10 +605,10 @@
     "module_sha256": "7bac8020d6b802547bd82894a7f85e75125a2bcb556d1f4a299d4bd77dea8f42"
   },
   "inference_policy": "Recognizable first pass; editable assumptions corrected over long-term maintenance",
-  "reference_manifest_sha256": "9a7aaa4eee396b9a986c0923533e655fac3f3e546d6091e83f5f840f2bc398eb",
+  "reference_manifest_sha256": "805b550d571ee82641a0a7bf5718885c1b62497a937fce5e378b04badc049f0e",
   "source_manifest_sha256": "c503f1cc2ce190b73bff32bd396cd1bcb4183fcb781b077acd2f125e21445141",
   "heightfield_sha256": "cb52d2e7ba0c7fb471f4c208be24688c82446d0c2656b7fe0bc378031743e65c",
-  "asset_sha256": "a64bc831729deb0591d7a02e98d7ca4324dd1188636c03ce8ad77852432cfc12",
+  "asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
   "generator_sha256": "c53485bf1998fd7f80f8664f2c3082c14162e425930b74d141726a4a629f6c2d",
   "credit": "Open Campus: UO \u2014 Zhongyi \"William\" Qiu and contributors \u2014 CC BY 4.0",
   "editable_source": "assets/roof-refinement/eugene-campus.blend",
@@ -1190,8 +1191,245 @@
   },
   "source_manifest_text_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
   "heightfield_text_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
-  "preserved_source_blend_sha256": "ae87554c191380eaebbfd47962b0c90a664be1e2bde1c2cb013302def4af8307",
+  "preserved_source_blend_sha256": "a8ae899ebf6bea06af9d53f5e6eb23ec9965da05b4457b6d3d45894a39cbaa2b",
   "landcover_url": "landcover.glb",
   "landcover_sha256": "0e93a8f129ba9368cfa90b09da610169054f5288dd434e290a5c390010d8a0cd",
-  "landcover_status": "Full-extent inferred grass/concrete/asphalt foundation, guided by archived 2024 NAIP; not a land-use survey"
+  "landcover_status": "Full-extent inferred grass/concrete/asphalt foundation, guided by archived 2024 NAIP; not a land-use survey",
+  "vegetation_patch_url": "pilot-vegetation-patch.json",
+  "vegetation_patch_sha256": "fc0f847645d47efd0902eb0f4ec53aaf135be5cab9b89a714c7f3974374b97ba",
+  "vegetation_patch_status": "One inferred pilot conifer moved clear of illustrative Knight stair; not a survey",
+  "understory_patch_url": "pilot-understory-patch.json",
+  "understory_patch_sha256": "c45f91ea2a3cc5c6ac0237b4ecf0177a7f7e5f5811cb3dc45d448c40d7d5dd3a",
+  "understory_patch_status": "Paired inferred shrub moved with conifer; not a survey",
+  "tree_suppression_url": "pilot-tree-273-suppression.json",
+  "tree_suppression_sha256": "32d617c541948787b999dbc965417c322ed1d704a4c474bd2381f86b5cc08e0b",
+  "tree_suppression_status": "One inferred tree suppressed at dated open lawn; not a surveyed present-day inventory",
+  "exterior_detail_url": "johnson-rear-detail.json",
+  "exterior_detail_sha256": "0ff3a99c236d78a409831a31945f0267ee073d85c0c3259e43c3ecf6585fcf61",
+  "exterior_detail_status": "Photo-informed interpretation; dated 2012 reference, no surveyed dimensions",
+  "exterior_details": [
+    {
+      "url": "gerlinger-annex-correction.json",
+      "sha256": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
+      "status": "Source-informed approximate replacement; 2025 survey, hidden elevations unverified"
+    },
+    {
+      "url": "gerlinger-east-detail.json",
+      "sha256": "86b2ef379efde7ae1d1c0f930a92ce8fc550b8fcdfa2014ff603b59360f78255",
+      "status": "East photo and north/south 2013 views interpreted; dimensions and present condition unverified"
+    },
+    {
+      "url": "johnson-frieze-detail.json",
+      "sha256": "a8131e6d28594128d80b0dfc72e16821bce4fbf37f6294c374a46055c4e404a0",
+      "status": "Historic frieze correction; letter proportions and current condition unverified"
+    },
+    {
+      "url": "friendly-west-detail.json",
+      "sha256": "d8b439add6401343e891aa641fd4d12ae4aebe9a53bbc9cc99667f1bdcebdaba",
+      "status": "West facade informed by 2017 CC0 photograph and UO survey; other elevations approximate"
+    },
+    {
+      "url": "villard-east-detail.json",
+      "sha256": "2417f082ecb1916e2d90c3d4ac3a5d63487e739102b494cdd21335a53947513a"
+    },
+    {
+      "url": "university-hall-detail.json",
+      "sha256": "d085e34cb35e55ca0ee78522f0cccd0a91abdcfe0bdff45f124ccd4815df7a31"
+    },
+    {
+      "url": "anstett-south-detail.json",
+      "sha256": "f5eac974a53e5df339d337ef8e96f9e6b8e41f41c8dd0ea5692905e02fb1ca5c"
+    },
+    {
+      "url": "peterson-south-detail.json",
+      "sha256": "8ee390592f8136d570938614b2299becda65daeea7c0cb65435633ec5f633193"
+    },
+    {
+      "url": "tykeson-north-detail.json",
+      "sha256": "01bd8c5c4c57eba839f13f0a060052726bfbed5880095f09e43f0f8fd0bb91e1"
+    },
+    {
+      "url": "susan-roof-detail.json",
+      "sha256": "18e7fd09df9e10e01bece9b4bc1e32df414a80575de4f4569fb685dc36fd869a"
+    },
+    {
+      "url": "straub-west-detail.json",
+      "sha256": "ed818c21b223526e6ee86a789018c4e7ca36f9b0c301bd81fdf9189ce7927d30"
+    },
+    {
+      "url": "condon-east-detail.json",
+      "sha256": "cc930e202cc55e349858d817edc439a2e8cdf258f7e847429766104512a45ea8"
+    },
+    {
+      "url": "fenton-south-detail.json",
+      "sha256": "79e9de8bc8a5176d76d65037f476340b8c217bb7ffef5f92eb08e8f2f6b0af25"
+    },
+    {
+      "url": "chapman-west-detail.json",
+      "sha256": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009"
+    },
+    {
+      "url": "oregon-south-detail.json",
+      "sha256": "de430768ce0a530ddc173e1ccda1a53aeca434a29e4e310c44a5123ea9e44cfa"
+    },
+    {
+      "url": "oregon-planter-detail.json",
+      "sha256": "569ddbdf51a70f3ded2e5bbeca249a3f679295a3cb5b01bcb4083384c6605a61"
+    },
+    {
+      "url": "collier-house-detail.json",
+      "sha256": "5ddf7032c90127d7b14dd58a89f6b622e586da7aa15c0d746941cb0cbfd27820"
+    },
+    {
+      "url": "barn-solar-detail.json",
+      "sha256": "acc557fc53fbfba400f806bfa0268895a7764ab6777c79c9a1484089690ad6d7"
+    },
+    {
+      "url": "volcanology-south-detail.json",
+      "sha256": "2dc0273f48a70571ac13a56b7e08c0f807d8e3a60c883da5ef485e28a4f37d37"
+    },
+    {
+      "url": "anstett-lamps-detail.json",
+      "sha256": "69757f743fcf030acfb6cf9dce56bc9743e36faf17acaf00a7f964eea50b9760"
+    },
+    {
+      "url": "pilot-bench-detail.json",
+      "sha256": "02066062919fefedc83918baef58803f2831949ea7204489e982e901f4eb1590"
+    },
+    {
+      "url": "pilot-fern-detail.json",
+      "sha256": "95ef0b4f7a6a78dedfc9fb41f788edafae7099e75295b8be1c7aca9f483cf247"
+    },
+    {
+      "url": "pilot-lamp-detail.json",
+      "sha256": "bea242e9f0e1f581a1c5d4ee5e3e6a07834a2aceb31d674e89a10006318ff9c8"
+    },
+    {
+      "url": "mckenzie-exterior-detail.json",
+      "sha256": "4bada8560498222738edf2385887d5ac17f6818f2b1c0ce1e6e8f7c838e02547",
+      "status": "UO-informed schematic west/east facades; east arrangement and dimensions unverified"
+    },
+    {
+      "url": "allen-west-detail.json",
+      "sha256": "7fdba87babc1a6969ef031de060f0ec5ac1ec04d26c2d716e1e577ad966c8c74",
+      "status": "UO-informed schematic west facade; alignment and dimensions unverified"
+    },
+    {
+      "url": "carson-exterior-detail.json",
+      "sha256": "e17f3a213627ada64530baa6969c8103ef60180d9bf1f26164c1954ee65cc436",
+      "status": "UO survey-informed schematic elevations; site match and dimensions unverified"
+    },
+    {
+      "url": "plc-tower-detail.json",
+      "sha256": "dcb168ea364bc17f01012819ce0e453977dc291fcac0ee97b975a344e8a4a4c9",
+      "status": "UO survey-informed tower overlay; dimensions and current condition unverified"
+    },
+    {
+      "url": "museum-west-detail.json",
+      "sha256": "d35ba05481c6f9af2baeb02676271f67e4b88fa4e30393d15ea93f8e39ea8e3f",
+      "status": "Historical survey-informed schematic facade; exact ornament and placement unverified"
+    },
+    {
+      "url": "bean-exterior-detail.json",
+      "sha256": "6a1d52758b6b521b8a40bd2aaa8f90579ef04dcb89b5e34a3da6896c2995aea3",
+      "status": "UO survey-informed outer faces; renovated details and boundaries unverified"
+    },
+    {
+      "url": "llc-north-detail.json",
+      "sha256": "77eda2d20fd333709f03a462d8f495680f11a8ab6869c8e893ba2e85bb77131e",
+      "status": "Source-informed schematic outer faces; exact dimensions and present condition unverified"
+    },
+    {
+      "url": "llc-south-detail.json",
+      "sha256": "d5d21c6bc5011408bdfac8053a68d253b2bac27e40c2a2142bc535d15da894f8",
+      "status": "UO reference-informed schematic exterior; roof and exact elevations unverified"
+    },
+    {
+      "url": "natural-museum-detail.json",
+      "sha256": "5983f2381287bfdf8694840f3833e1ba3606e16a5cc93272d71e834a39751876",
+      "status": "UO site-informed schematic frontage and gables; exact placement and conditions unverified"
+    },
+    {
+      "url": "power-station-detail.json",
+      "sha256": "88a462f3370c3987ce7a213a34cd042aec27974178a31f60905ea95d741f5c8a",
+      "status": "Public-photo-informed schematic frontage; orientation and dimensions unverified"
+    },
+    {
+      "url": "knight-law-west-detail.json",
+      "sha256": "12697fa75918de792f55296e3d17b58468aca787356baca14e5edf3d425f6d74"
+    },
+    {
+      "url": "miller-west-detail.json",
+      "sha256": "d9f044363c86824a5fa7d81b5f8f5bfb973a9334c8f516a09bac613125c24038"
+    }
+  ],
+  "additional_tree_suppressions": [
+    {
+      "url": "pilot-tree-216-suppression.json",
+      "sha256": "6e4a7c0b21d40673024e15c302b407a6905647fe39f4d07ef22186e1a1f68521",
+      "status": "One inferred tree suppressed at dated open surface near EMU"
+    }
+  ],
+  "furniture_patch_url": "pilot-bench-back-suppression.json",
+  "furniture_patch_sha256": "1792365814eed96132310063c77c86f949b440df0727c68be319ce328dad7c5f",
+  "fern_patch_url": "pilot-fern-suppression.json",
+  "fern_patch_sha256": "0c656af5beda0ee775f4aaf72dceb912d8267bc3fd7a9a91b35952fa6fed7020",
+  "additional_environment_patches": [
+    {
+      "url": "pilot-plaza-plant-suppression.json",
+      "sha256": "141c23b27e9576afb22226cdb4d1e3c0587844e69956f746ab1830871c734f50"
+    },
+    {
+      "url": "pilot-bench-seat-suppression.json",
+      "sha256": "f121c5a0aad8f8cfdec09efd8ad6e88ee1662fd81d461fc00965ad01ddde5b74"
+    },
+    {
+      "url": "pilot-canopy-tone.json",
+      "sha256": "4dc679531a28159d9b50071664c71803c6b2429d8d25d9c5c367579327f49d9c"
+    }
+  ],
+  "wall_color_patches": [
+    {
+      "url": "carson-wall-color.json",
+      "sha256": "52a291bf4438dd811a21043f366669e037a613708d690a122d2f0e5ecffa3729"
+    },
+    {
+      "url": "bean-wall-color.json",
+      "sha256": "ed24405110542a57d7c8f8f9cb0addb27c7123e6886d16fa8ddb67fbaabbe10c"
+    },
+    {
+      "url": "llc-north-wall-color.json",
+      "sha256": "da9a75e93175a7e8419894c99d1d661cdf7fbac9e597be7424ffa7f5a3fc57cf"
+    },
+    {
+      "url": "llc-south-wall-color.json",
+      "sha256": "0d2f7970a7c8ece7846f4d4c5877407c9de32c5ad82d440e821eff1f8e425ebf"
+    },
+    {
+      "url": "natural-museum-wall-color.json",
+      "sha256": "b85941efe6d324bc7446cade12af08fd9e20131f06250292f878dc83eaa6c9e6"
+    },
+    {
+      "url": "power-station-wall-color.json",
+      "sha256": "f09ca7e8ef79aaec2c618ef7db14851effee28626c0124f2ad5c6a2099456e61"
+    },
+    {
+      "url": "knight-law-wall-color.json",
+      "sha256": "02f27cc2e5a1bf05a6180520f34c084127ba4142a39a79da40c7f2d3777428a1"
+    },
+    {
+      "url": "cascade-wall-color.json",
+      "sha256": "3fec8e7060362b697000cdb822372979a8a35770b080490039f76779a53bfa6f"
+    },
+    {
+      "url": "miller-wall-color.json",
+      "sha256": "6a30a8802936be2457abcfbc080f3b68f056692a46e286be2650abc92f4a4051"
+    }
+  ],
+  "building_roof_patches": [
+    {
+      "url": "clinical-roof-slope.json",
+      "sha256": "0452756ad92eea89890fe5c9317d67de8eb9355e6de29dad70e87baef587eadc"
+    }
+  ]
 }

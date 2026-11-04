@@ -1,0 +1,616 @@
+{
+  "version": 1,
+  "scope": "environment",
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "replace_building": false,
+  "merge_target": "furniture_2",
+  "reference_ids": [
+    "anstett-south-2019"
+  ],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/anstetthall2025"
+  ],
+  "note": "Eight original illustrative globe lamps retain their positions; small stepped bases and collars are a generic interpretation, not a surveyed fixture inventory.",
+  "objects": [
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        5.033200130462647,
+        170
+      ],
+      "size": [
+        0.42,
+        0.22,
+        0.42
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        5.2132001304626465,
+        170
+      ],
+      "size": [
+        0.29,
+        0.18,
+        0.29
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        5.373200130462647,
+        170
+      ],
+      "size": [
+        0.2,
+        0.14,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        8.903200130462647,
+        170
+      ],
+      "size": [
+        0.3,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        9.793200130462647,
+        170
+      ],
+      "size": [
+        0.12,
+        0.08,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -576,
+        3.6174400901794432,
+        100
+      ],
+      "size": [
+        0.42,
+        0.22,
+        0.42
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -576,
+        3.7974400901794434,
+        100
+      ],
+      "size": [
+        0.29,
+        0.18,
+        0.29
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -576,
+        3.9574400901794435,
+        100
+      ],
+      "size": [
+        0.2,
+        0.14,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -576,
+        7.487440090179444,
+        100
+      ],
+      "size": [
+        0.3,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -576,
+        8.377440090179444,
+        100
+      ],
+      "size": [
+        0.12,
+        0.08,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        2.5591798877716063,
+        36
+      ],
+      "size": [
+        0.42,
+        0.22,
+        0.42
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        2.7391798877716065,
+        36
+      ],
+      "size": [
+        0.29,
+        0.18,
+        0.29
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        2.8991798877716066,
+        36
+      ],
+      "size": [
+        0.2,
+        0.14,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        6.429179887771607,
+        36
+      ],
+      "size": [
+        0.3,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -530,
+        7.3191798877716066,
+        36
+      ],
+      "size": [
+        0.12,
+        0.08,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -430,
+        4.6406000709533695,
+        85
+      ],
+      "size": [
+        0.42,
+        0.22,
+        0.42
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -430,
+        4.820600070953369,
+        85
+      ],
+      "size": [
+        0.29,
+        0.18,
+        0.29
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -430,
+        4.980600070953369,
+        85
+      ],
+      "size": [
+        0.2,
+        0.14,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -430,
+        8.51060007095337,
+        85
+      ],
+      "size": [
+        0.3,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -430,
+        9.40060007095337,
+        85
+      ],
+      "size": [
+        0.12,
+        0.08,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -360,
+        5.515700206756592,
+        85
+      ],
+      "size": [
+        0.42,
+        0.22,
+        0.42
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -360,
+        5.695700206756592,
+        85
+      ],
+      "size": [
+        0.29,
+        0.18,
+        0.29
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -360,
+        5.855700206756592,
+        85
+      ],
+      "size": [
+        0.2,
+        0.14,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -360,
+        9.385700206756592,
+        85
+      ],
+      "size": [
+        0.3,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -360,
+        10.275700206756593,
+        85
+      ],
+      "size": [
+        0.12,
+        0.08,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -313,
+        4.584500179290772,
+        30
+      ],
+      "size": [
+        0.42,
+        0.22,
+        0.42
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -313,
+        4.7645001792907715,
+        30
+      ],
+      "size": [
+        0.29,
+        0.18,
+        0.29
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -313,
+        4.924500179290772,
+        30
+      ],
+      "size": [
+        0.2,
+        0.14,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -313,
+        8.454500179290772,
+        30
+      ],
+      "size": [
+        0.3,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -313,
+        9.344500179290772,
+        30
+      ],
+      "size": [
+        0.12,
+        0.08,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -420,
+        3.3832000350952147,
+        10
+      ],
+      "size": [
+        0.42,
+        0.22,
+        0.42
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -420,
+        3.563200035095215,
+        10
+      ],
+      "size": [
+        0.29,
+        0.18,
+        0.29
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -420,
+        3.723200035095215,
+        10
+      ],
+      "size": [
+        0.2,
+        0.14,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -420,
+        7.253200035095215,
+        10
+      ],
+      "size": [
+        0.3,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -420,
+        8.143200035095216,
+        10
+      ],
+      "size": [
+        0.12,
+        0.08,
+        0.12
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -382,
+        3.7077001190185546,
+        10
+      ],
+      "size": [
+        0.42,
+        0.22,
+        0.42
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -382,
+        3.8877001190185547,
+        10
+      ],
+      "size": [
+        0.29,
+        0.18,
+        0.29
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -382,
+        4.047700119018555,
+        10
+      ],
+      "size": [
+        0.2,
+        0.14,
+        0.2
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -382,
+        7.577700119018555,
+        10
+      ],
+      "size": [
+        0.3,
+        0.12,
+        0.3
+      ]
+    },
+    {
+      "kind": "prop",
+      "material": "lamp-metal",
+      "shape": "column",
+      "position": [
+        -382,
+        8.467700119018556,
+        10
+      ],
+      "size": [
+        0.12,
+        0.08,
+        0.12
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Prince Lucien Campbell Hall tower exterior, 2026-11-04
+
+The [UO cultural resource survey](https://cpfm.uoregon.edu/plccampbell2025) describes the nine-story tower, four-story wing, single-story auditorium, brick, concrete fins and floor bands, brown tile panels, and flat roof. Its survey photograph was consulted, not redistributed or used as a texture. The procedural overlay is original CC BY 4.0 work.
+
+A reversible, source-pinned layer adds illustrative concrete fins, nine levels of windows and tile-colored spandrels to both long tower faces, plus brick-colored end panels and flat roof-edge trim. [West before](images/plc-west-before.png) / [after](images/plc-west-after.png); [east before](images/plc-east-before.png) / [after](images/plc-east-after.png). `roof-8f611273` is a curated approximate locator, not verified building survey geometry. Bay counts, spacings, materials, dimensions and window details are interpretive; the source photograph does not prove every elevation. The existing flat roof, source GLB, terrain and trees remain unchanged. The four-story wing, auditorium, entrances, elevated east court and sunken south court are not reconstructed. No independent collision was added; conservative rectangles screening the tower faces found no navigation-graph edge within 0.5 m. This does not establish actual pedestrian clearance or accessibility. Interior is unchanged. Retain level 1.
+
+## Nearby planting batching
+
+To keep the existing draw-call budget, the Anstett and Chapman vegetation detail meshes are merged at load time when both independently pinned layers are present and their expected building identities and compatible static geometry are validated. Buildings remain individually identified and source layers remain editable. Unit tests compare all positions and colors, and a fixed Anstett view was compared before and after. This trades some frustum-culling granularity across the two nearby planting groups for one fewer draw call.

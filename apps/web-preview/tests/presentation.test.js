@@ -127,3 +127,30 @@ test("multi-primitive metadata, selection and PBR/toon switching stay independen
     /Missing authored/,
   );
 });
+
+test("a batched identity can also have an authored selectable facade", () => {
+  const root = new THREE.Group();
+  const batch = new THREE.Mesh(
+    new THREE.BoxGeometry(),
+    new THREE.MeshStandardMaterial(),
+  );
+  batch.userData = {
+    asset_kind: "context-building-batch",
+    asset_ids: ["roof-399a0551"],
+  };
+  const facade = new THREE.Mesh(
+    new THREE.BoxGeometry(),
+    new THREE.MeshStandardMaterial(),
+  );
+  facade.userData = { asset_kind: "building", asset_id: "roof-399a0551" };
+  root.add(batch, facade);
+  const layer = createPresentation(root, {
+    replaces_building_ids: ["roof-399a0551"],
+  });
+  assert.equal(layer.groups.size, 1);
+  assert.equal(layer.batchedIds.size, 1);
+  assert.ok(
+    layer.groups.has("roof-399a0551") && layer.batchedIds.has("roof-399a0551"),
+  );
+  assert.equal(new Set([...layer.groups.keys(), ...layer.batchedIds]).size, 1);
+});

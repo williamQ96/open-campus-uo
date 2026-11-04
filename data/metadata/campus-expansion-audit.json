@@ -1,6 +1,6 @@
 {
   "source_manifest_sha256": "c503f1cc2ce190b73bff32bd396cd1bcb4183fcb781b077acd2f125e21445141",
-  "preserved_source_blend_sha256": "ae87554c191380eaebbfd47962b0c90a664be1e2bde1c2cb013302def4af8307",
+  "preserved_source_blend_sha256": "a8ae899ebf6bea06af9d53f5e6eb23ec9965da05b4457b6d3d45894a39cbaa2b",
   "replaced_ids": [
     "roof-0151b728",
     "roof-01775601",
@@ -100819,6 +100819,6 @@
   },
   "source_mesh_count": 542,
   "source_building_objects": 534,
-  "runtime_bytes": 34638580,
+  "runtime_bytes": 34766896,
   "method": "Randomize archetypes/palette only; original coordinates, footprints, heights and roads are fixed. Background geometry is an illustrative original open component library, not a surveyed building inventory."
 }

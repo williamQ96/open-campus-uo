@@ -1,0 +1,1554 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-7b7893d6",
+  "replace_building": false,
+  "reference_ids": [],
+  "reference_urls": [
+    "https://cpfm.uoregon.edu/allenhall2025",
+    "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/allen-hall"
+  ],
+  "note": "Schematic west facade based on the 1954 west wing of Allen Hall; dimensions, glazing layout and alignment approximate. Sunken courtyard and other elevations not reconstructed.",
+  "objects": [
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -367.66,
+        9.05,
+        -90.5
+      ],
+      "size": [
+        0.75,
+        9.5,
+        22
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.4631,
+        7.1,
+        -100.2
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.5331,
+        7.1,
+        -100.2
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.5831,
+        7.1,
+        -100.2
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.3823,
+        7.1,
+        -98.1
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.4523,
+        7.1,
+        -98.1
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.5023,
+        7.1,
+        -98.1
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.3015,
+        7.1,
+        -96
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.3715,
+        7.1,
+        -96
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.4215,
+        7.1,
+        -96
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.2208,
+        7.1,
+        -93.9
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.2908,
+        7.1,
+        -93.9
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.3408,
+        7.1,
+        -93.9
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.14,
+        7.1,
+        -91.8
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.21,
+        7.1,
+        -91.8
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.26,
+        7.1,
+        -91.8
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.0592,
+        7.1,
+        -89.7
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.1292,
+        7.1,
+        -89.7
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.1792,
+        7.1,
+        -89.7
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.9785,
+        7.1,
+        -87.6
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.0485,
+        7.1,
+        -87.6
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.0985,
+        7.1,
+        -87.6
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.8977,
+        7.1,
+        -85.5
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -367.9677,
+        7.1,
+        -85.5
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.0177,
+        7.1,
+        -85.5
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.8169,
+        7.1,
+        -83.4
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -367.8869,
+        7.1,
+        -83.4
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.9369,
+        7.1,
+        -83.4
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.7362,
+        7.1,
+        -81.3
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -367.8062,
+        7.1,
+        -81.3
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.8562,
+        7.1,
+        -81.3
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.4631,
+        11.2,
+        -100.2
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.5331,
+        11.2,
+        -100.2
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.5831,
+        11.2,
+        -100.2
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.3823,
+        11.2,
+        -98.1
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.4523,
+        11.2,
+        -98.1
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.5023,
+        11.2,
+        -98.1
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.3015,
+        11.2,
+        -96
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.3715,
+        11.2,
+        -96
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.4215,
+        11.2,
+        -96
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.2208,
+        11.2,
+        -93.9
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.2908,
+        11.2,
+        -93.9
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.3408,
+        11.2,
+        -93.9
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.14,
+        11.2,
+        -91.8
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.21,
+        11.2,
+        -91.8
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.26,
+        11.2,
+        -91.8
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.0592,
+        11.2,
+        -89.7
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.1292,
+        11.2,
+        -89.7
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.1792,
+        11.2,
+        -89.7
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.9785,
+        11.2,
+        -87.6
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -368.0485,
+        11.2,
+        -87.6
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.0985,
+        11.2,
+        -87.6
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.8977,
+        11.2,
+        -85.5
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -367.9677,
+        11.2,
+        -85.5
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.0177,
+        11.2,
+        -85.5
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.8169,
+        11.2,
+        -83.4
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -367.8869,
+        11.2,
+        -83.4
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.9369,
+        11.2,
+        -83.4
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.7362,
+        11.2,
+        -81.3
+      ],
+      "size": [
+        0.1,
+        2.0,
+        1.82
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -367.8062,
+        11.2,
+        -81.3
+      ],
+      "size": [
+        0.06,
+        1.8,
+        1.62
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -367.8562,
+        11.2,
+        -81.3
+      ],
+      "size": [
+        0.04,
+        1.8,
+        0.055
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -368.1,
+        5.6,
+        -90.5
+      ],
+      "size": [
+        0.1,
+        0.17,
+        22
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -368.1,
+        9.1,
+        -90.5
+      ],
+      "size": [
+        0.1,
+        0.17,
+        22
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -368.1,
+        13.65,
+        -90.5
+      ],
+      "size": [
+        0.1,
+        0.17,
+        22
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -367.67,
+        14.15,
+        -90.5
+      ],
+      "size": [
+        0.9,
+        0.2,
+        22
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -368.5284,
+        9.2,
+        -99.3
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -368.4438,
+        9.2,
+        -97.1
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -368.3592,
+        9.2,
+        -94.9
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -368.2746,
+        9.2,
+        -92.7
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -368.19,
+        9.2,
+        -90.5
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -368.1054,
+        9.2,
+        -88.3
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -368.0208,
+        9.2,
+        -86.1
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -367.9362,
+        9.2,
+        -83.9
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -367.8516,
+        9.2,
+        -81.7
+      ],
+      "size": [
+        0.08,
+        0.48,
+        0.48
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.1,
+        12.45,
+        -90.5
+      ],
+      "size": [
+        0.07,
+        0.035,
+        22
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.1,
+        12.62,
+        -90.5
+      ],
+      "size": [
+        0.07,
+        0.035,
+        22
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -368.1,
+        12.79,
+        -90.5
+      ],
+      "size": [
+        0.07,
+        0.035,
+        22
+      ],
+      "rotation": [
+        0,
+        0.03844,
+        0
+      ]
+    }
+  ]
+}
