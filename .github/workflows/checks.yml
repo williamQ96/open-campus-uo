@@ -1,17 +1,18 @@
-name: Isolated Chromium thread diagnostic
+name: Isolated browser context comparison
 on:
   push:
     branches: [ci/scene-timing-20261104]
 permissions:
   contents: read
 jobs:
-  chromium-frame-experiment:
+  context-comparison:
     runs-on: ubuntu-24.04
     timeout-minutes: 8
     strategy:
       fail-fast: false
       matrix:
-        fps: [native, "10"]
+        context: [fresh, reuse]
+        repeat: [a, b]
     defaults:
       run:
         working-directory: apps/web-preview
@@ -24,27 +25,25 @@ jobs:
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Profile original Collier test with optional diagnostic frame cap
+      - name: Run original assertions with context isolation check
         shell: bash
         env:
-          DIAGNOSTIC_FPS: ${{ matrix.fps }}
+          DIAG_CONTEXT: ${{ matrix.context }}
         run: |
           mkdir -p diagnostic
-          rm -f ../../docs/images/collier-bays-{east,north}-{before,after}-2026-11-04.png
           python diagnostic-thread-sampler.py > diagnostic/threads.log 2>&1 &
           monitor=$!
           trap 'kill "$monitor" 2>/dev/null || true' EXIT
           set +e
-          CI=1 DEBUG=pw:api DEBUG_COLORS=0 npx playwright test tests/browser/diagnostic-original-collier.spec.js --reporter=list > diagnostic/playwright.log 2>&1
+          CI=1 DEBUG=pw:api DEBUG_COLORS=0 npx playwright test tests/browser/diagnostic-context-collier.spec.js --reporter=list > diagnostic/playwright.log 2>&1
           result=$?
           tail -n 100 diagnostic/playwright.log
           exit "$result"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: chromium-frame-experiment-${{ matrix.fps }}
+          name: context-comparison-${{ matrix.context }}-${{ matrix.repeat }}
           path: |
             apps/web-preview/diagnostic/
             apps/web-preview/test-results/
-            docs/images/collier-bays-*-2026-11-04.png
           retention-days: 7
