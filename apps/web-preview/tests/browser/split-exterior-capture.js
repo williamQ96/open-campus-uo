@@ -46,10 +46,13 @@ export function splitExteriorCapture(config) {
               ({ x, z }) => __campus.terrainCheck(x, z).sampled,
               { x, z },
             );
-            const blocked = await page.evaluate(
-              ({ x, z }) => __campus.collisionCheck(x, z),
-              { x, z },
-            );
+            let blocked;
+            if (config.checkCamera) {
+              blocked = await page.evaluate(
+                ({ x, z }) => __campus.collisionCheck(x, z),
+                { x, z },
+              );
+            }
             await page.evaluate(
               ({ x, z, yaw, ground, buildingId, pitch }) =>
                 sessionStorage.setItem(
@@ -82,17 +85,29 @@ export function splitExteriorCapture(config) {
                 __campus.getState().life.density === "No",
             );
             await page.waitForTimeout(500);
-            const state = await page.evaluate(() => ({
-              camera: __campus.getState().camera,
-              draws: __campus.getState().drawCalls,
-            }));
+            let state;
             if (config.checkCamera) {
+              state = await page.evaluate(() => ({
+                camera: __campus.getState().camera,
+                draws: __campus.getState().drawCalls,
+              }));
               expect(state.camera[0]).toBeCloseTo(x, 1);
               expect(state.camera[2]).toBeCloseTo(z, 1);
             }
             await page.screenshot({
               path: `test-results/scene-captures/${config.imagePrefix}-${label}-${phase}-2026-11-04.png`,
             });
+            if (!config.checkCamera) {
+              const sampled = await page.evaluate(
+                ({ x, z }) => ({
+                  draws: __campus.getState().drawCalls,
+                  blocked: __campus.collisionCheck(x, z),
+                }),
+                { x, z },
+              );
+              state = sampled;
+              blocked = sampled.blocked;
+            }
             await page
               .getByRole("combobox", { name: "Search buildings" })
               .fill(config.name);

@@ -5,9 +5,13 @@ on:
 permissions:
   contents: read
 jobs:
-  representative-browser-tests:
+  browser-diagnostic:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        case: [split-a, split-b, original-controls]
     defaults:
       run:
         working-directory: apps/web-preview
@@ -20,8 +24,10 @@ jobs:
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Run split representative tests with timing and resource samples
+      - name: Run selected tests with timing and resource samples
         shell: bash
+        env:
+          DIAGNOSTIC_CASE: ${{ matrix.case }}
         run: |
           mkdir -p diagnostic
           (while true; do
@@ -32,15 +38,20 @@ jobs:
           done) > diagnostic/resources.log 2>&1 &
           monitor=$!
           trap 'kill "$monitor" 2>/dev/null || true' EXIT
+          if [[ "$DIAGNOSTIC_CASE" == original-controls ]]; then
+            files=(tests/browser/agate-west.spec.js tests/browser/batch-pointer-selection.spec.js tests/browser/fenton-basement.spec.js)
+          else
+            files=(tests/browser/gerlinger-portico.spec.js tests/browser/collier-bays.spec.js)
+          fi
           set +e
-          CI=1 DEBUG=pw:api npx playwright test tests/browser/gerlinger-portico.spec.js tests/browser/collier-bays.spec.js --reporter=list > diagnostic/playwright.log 2>&1
+          CI=1 DEBUG=pw:api npx playwright test "${files[@]}" --reporter=list > diagnostic/playwright.log 2>&1
           result=$?
-          tail -n 100 diagnostic/playwright.log
+          tail -n 150 diagnostic/playwright.log
           exit "$result"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: scene-diagnostic
+          name: scene-diagnostic-${{ matrix.case }}
           path: |
             apps/web-preview/diagnostic/
             apps/web-preview/test-results/
