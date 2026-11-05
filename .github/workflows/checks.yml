@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        trace: [retain-on-failure, 'off']
+        trace: [retain-on-failure, no-screencast]
         repeat: [a, b]
     defaults:
       run:
@@ -33,7 +33,7 @@ jobs:
           mkdir -p diagnostic
           cat > diagnostic.trace.config.mjs <<'CONFIG'
           import base from './playwright.config.js';
-          export default { ...base, use: { ...base.use, trace: process.env.TRACE_MODE } };
+          export default { ...base, use: { ...base.use, trace: process.env.TRACE_MODE === 'no-screencast' ? { mode: 'retain-on-failure', screenshots: false, snapshots: true, sources: true } : process.env.TRACE_MODE } };
           CONFIG
           rm -f ../../docs/images/collier-bays-{east,north}-{before,after}-2026-11-04.png
           (while true; do
