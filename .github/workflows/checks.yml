@@ -12,6 +12,7 @@ jobs:
       fail-fast: false
       matrix:
         trace: [retain-on-failure, 'off']
+        repeat: [a, b]
     defaults:
       run:
         working-directory: apps/web-preview
@@ -51,7 +52,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: trace-overhead-${{ matrix.trace }}
+          name: trace-overhead-${{ matrix.trace }}-${{ matrix.repeat }}
           path: |
             apps/web-preview/diagnostic/
             apps/web-preview/test-results/
