@@ -6,7 +6,7 @@ import { createClassroom } from "./classroom.js";
 import { createCharacter } from "./character.js";
 import { loadStudentFactory } from "./student.js";
 import { sceneAssetUrl } from "./presentation.js";
-import { createTouchControls, movementInput } from "./touch.js";
+import { createTouchControls, movementInput, RUN_THRESHOLD } from "./touch.js";
 import { readReturn, leaveInterior } from "./scene-transition.js";
 import { createWalkMotion } from "./ambience.js";
 import { createSound } from "./sound.js";
@@ -262,7 +262,7 @@ renderer.setAnimationLoop((now) => {
     motion = walk.update(dt, travelled, {
       grounded: vertical.grounded,
       enabled: view !== "aerial",
-      running: travelled / Math.max(dt, 0.001) > 2.15,
+      running: travelled / Math.max(dt, 0.001) > RUN_THRESHOLD,
       reducedMotion: reduced.matches,
       motionLevel: snapshot?.motionLevel ?? 1,
     });

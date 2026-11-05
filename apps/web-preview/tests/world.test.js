@@ -97,22 +97,40 @@ test("slow-frame input is bounded, hidden-safe and retains swept collision", () 
   for (let i = 0; i < 6; i++)
     movePlayer(
       open,
-      { x: 4.6 * movementFrameSeconds(1, true), z: 0 },
+      { x: 9.2 * movementFrameSeconds(1, true), z: 0 },
       [],
       100,
       field,
       false,
     );
-  assert.ok(open.x > 6);
+  assert.ok(open.x > 13);
   const blocked = { x: 0, y: 0, z: 0 };
   for (let i = 0; i < 6; i++)
     movePlayer(
       blocked,
-      { x: 4.6 * movementFrameSeconds(1, true), z: 0 },
+      { x: 9.2 * movementFrameSeconds(1, true), z: 0 },
       buildings,
       100,
       field,
       false,
     );
   assert.ok(blocked.x < 1.6);
+});
+
+test("new walk and run speeds travel consistently across frame rates", () => {
+  for (const speed of [4.6, 9.2]) {
+    for (const fps of [30, 60, 120]) {
+      const p = { x: 0, y: 0, z: 0 };
+      for (let i = 0; i < fps; i++)
+        movePlayer(
+          p,
+          { x: speed * movementFrameSeconds(1 / fps, true), z: 0 },
+          [],
+          100,
+          field,
+          false,
+        );
+      assert.ok(Math.abs(p.x - speed) < 1e-9);
+    }
+  }
 });

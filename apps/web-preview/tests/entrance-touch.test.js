@@ -8,16 +8,23 @@ import { installWorldLifecycle } from "../src/world-lifecycle.js";
 
 test("analog drag scales continuously to run without diagonal or mixed-input boost", () => {
   const mild = movementInput(0, 0, false, { forward: 0.3, right: 0 });
-  assert.ok(Math.abs(mild.speed - 1.38) < 1e-10);
+  assert.ok(Math.abs(mild.speed - 2.76) < 1e-10);
   assert.equal(mild.running, false);
-  assert.equal(movementInput(0, 0, false, { forward: 1, right: 0 }).speed, 4.6);
+  assert.equal(
+    movementInput(0, 0, false, { forward: 0.5, right: 0 }).speed,
+    4.6,
+  );
+  assert.equal(movementInput(0, 0, false, { forward: 1, right: 0 }).speed, 9.2);
   assert.equal(
     movementInput(0, 0, false, { forward: 1, right: 0 }).running,
     true,
   );
-  assert.ok(Math.abs(movementInput(1, 1, false).speed - 1.7) < 1e-10);
+  assert.ok(Math.abs(movementInput(1, 1, false).speed - 4.6) < 1e-10);
+  assert.equal(movementInput(1, 0, false).running, false);
+  assert.equal(movementInput(1, 0, true).speed, 9.2);
+  assert.equal(movementInput(1, 0, true).running, true);
   assert.ok(
-    movementInput(1, 1, true, { forward: 1, right: 1 }).speed <= 4.6 + 1e-10,
+    movementInput(1, 1, true, { forward: 1, right: 1 }).speed <= 9.2 + 1e-10,
   );
   assert.equal(movementInput(0, 0, false).speed, 0);
 });

@@ -1,4 +1,8 @@
 // SPDX-License-Identifier: Apache-2.0
+export const WALK_SPEED = 4.6;
+export const RUN_SPEED = 9.2;
+export const RUN_THRESHOLD = (WALK_SPEED + RUN_SPEED) / 2;
+
 // Pointer roles are chosen on contact and stay fixed until that finger lifts.
 export function createTouchControls(
   canvas,
@@ -114,7 +118,7 @@ export function createTouchControls(
     axes,
     reset,
     get running() {
-      return Math.hypot(axes.forward, axes.right) * 4.6 > 2.15;
+      return Math.hypot(axes.forward, axes.right) * RUN_SPEED > RUN_THRESHOLD;
     },
   };
 }
@@ -127,15 +131,15 @@ export function movementInput(
   touch = { forward: 0, right: 0 },
 ) {
   const length = Math.max(1, Math.hypot(forward, right));
-  const keySpeed = sprint ? 4.6 : 1.7;
-  const f = (forward / length) * keySpeed + touch.forward * 4.6;
-  const r = (right / length) * keySpeed + touch.right * 4.6;
+  const keySpeed = sprint ? RUN_SPEED : WALK_SPEED;
+  const f = (forward / length) * keySpeed + touch.forward * RUN_SPEED;
+  const r = (right / length) * keySpeed + touch.right * RUN_SPEED;
   const speed = Math.hypot(f, r),
-    scale = Math.min(1, 4.6 / (speed || 1));
+    scale = Math.min(1, RUN_SPEED / (speed || 1));
   return {
     forward: f * scale,
     right: r * scale,
     speed: speed * scale,
-    running: speed * scale > 2.15,
+    running: speed * scale > RUN_THRESHOLD,
   };
 }

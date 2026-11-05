@@ -113,14 +113,14 @@ for (const mode of ["First person", "Follow"]) {
     await touch("touchMove", 581);
     await expect
       .poll(() => page.evaluate(() => __campus.getState().touchSpeed))
-      .toBeCloseTo((4.6 * 13) / 42, 2);
+      .toBeCloseTo((9.2 * 13) / 42, 2);
     await expect
       .poll(() => page.evaluate(() => __campus.getState().walkMotion.running))
       .toBe(false);
     await touch("touchMove", 548);
     await expect
       .poll(() => page.evaluate(() => __campus.getState().touchSpeed))
-      .toBe(4.6);
+      .toBe(9.2);
     await expect
       .poll(() => page.evaluate(() => __campus.getState().walkMotion.running))
       .toBe(true);

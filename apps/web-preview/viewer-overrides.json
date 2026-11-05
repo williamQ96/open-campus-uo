@@ -24,8 +24,8 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "c7f8336853c4f5ac8674958d6edd51d32f76125d19f5d9a8f2f6d2377874e6f8",
-      "reason": "Optional sourced building information and source-pinned provisional identity annotations; install procedural rounded cloud geometry; non-modal anchored fixed-person card"
+      "local_sha256": "16c0585ee44f863dd1b20267b0c0e3f8f8ae9a8b7e835d30b0e3d1f1671097fe",
+      "reason": "Optional sourced building information and source-pinned provisional identity annotations; install procedural rounded cloud geometry; non-modal anchored fixed-person card; overview wheel forwarding on labels and updated movement thresholds"
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -51,6 +51,16 @@
       "upstream_sha256": "71bf6fc3bf0d8685d778e571f5aace5d341234f02f02f1d97acedb8769a2b9f5",
       "local_sha256": "af795d1c9ccfe6afb24db01df2336cdba591d96cceabba4582ebebf88d96a0d8",
       "reason": "Illustrative shared entrance trim; inferred entry placement and interactions unchanged"
+    },
+    "src/interior-app.js": {
+      "upstream_sha256": "827c310db77b4c26f28a66940e103c66013ca996c2e63b93a8956c7e1632485a",
+      "local_sha256": "579ad0e91f0625d49cd5e968b74e03594a4ac630eea29f2bc1994a084f2d2eb7",
+      "reason": "Updated default and run movement speeds and animation thresholds"
+    },
+    "src/touch.js": {
+      "upstream_sha256": "d7fc38bc8c517eb4d092fb5ddeb4c7990aed18a4db1e5ee725f618acd8fe74be",
+      "local_sha256": "ffa3731ca19ede3ac4ac80ded2226a72dde631e75e0b4f3f05a8b63473cfd79c",
+      "reason": "Updated default and run movement speeds and animation thresholds"
     }
   },
   "outputs": {

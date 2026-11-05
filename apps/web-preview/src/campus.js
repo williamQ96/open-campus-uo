@@ -31,7 +31,12 @@ import {
   setEmissive,
   sceneAssetUrl,
 } from "./presentation.js";
-import { createTouchControls, movementInput } from "./touch.js";
+import {
+  createTouchControls,
+  movementInput,
+  RUN_SPEED,
+  RUN_THRESHOLD,
+} from "./touch.js";
 import { createEntrances } from "./entrances.js";
 import { readReturn, enterInterior, RETURN_KEY } from "./scene-transition.js";
 import { createAnalytics } from "./analytics.js";
@@ -504,6 +509,30 @@ renderer.domElement.addEventListener("pointercancel", () => {
 viewport.addEventListener(
   "wheel",
   (event) => {
+    // Scene labels sit above the canvas. Keep their click behavior while
+    // forwarding overview wheel input to the same OrbitControls handler.
+    if (
+      view === "aerial" &&
+      event.target instanceof Element &&
+      event.target.closest(".building-label, .fixed-person-label")
+    ) {
+      event.preventDefault();
+      renderer.domElement.dispatchEvent(
+        new WheelEvent("wheel", {
+          deltaX: event.deltaX,
+          deltaY: event.deltaY,
+          deltaMode: event.deltaMode,
+          clientX: event.clientX,
+          clientY: event.clientY,
+          ctrlKey: event.ctrlKey,
+          shiftKey: event.shiftKey,
+          altKey: event.altKey,
+          metaKey: event.metaKey,
+          cancelable: true,
+        }),
+      );
+      return;
+    }
     if (view !== "third" || modalOpen() || event.ctrlKey || event.metaKey)
       return;
     event.preventDefault();
@@ -772,7 +801,7 @@ function updatePlayer(dt, movementDt = dt) {
     enabled: view !== "aerial",
     reducedMotion: reducedMotion.matches,
     motionLevel: Number($("#motion-setting").value),
-    running: travelled / Math.max(movementDt, 0.001) > 2.15,
+    running: travelled / Math.max(movementDt, 0.001) > RUN_THRESHOLD,
   });
   if (motion.step) sound.step();
   character.root.position.copy(player);
@@ -1478,7 +1507,8 @@ try {
       nearbyEntrance: entrances.nearby,
       hoveredBuilding: buildingHighlight.hovered,
       touchSpeed:
-        Math.hypot(touchControls.axes.forward, touchControls.axes.right) * 4.6,
+        Math.hypot(touchControls.axes.forward, touchControls.axes.right) *
+        RUN_SPEED,
       riggedHero: !!character.rigged,
       developerMode: developer.enabled,
       dead: death.dead,
