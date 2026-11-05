@@ -1,18 +1,17 @@
-name: Isolated browser context comparison
+name: Isolated behavior and evidence comparison
 on:
   push:
     branches: [ci/scene-timing-20261104]
 permissions:
   contents: read
 jobs:
-  context-comparison:
+  required-check:
     runs-on: ubuntu-24.04
-    timeout-minutes: 8
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
-        context: [fresh, reuse]
-        repeat: [a, b]
+        check: [behavior, evidence]
     defaults:
       run:
         working-directory: apps/web-preview
@@ -25,24 +24,37 @@ jobs:
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Run original assertions with context isolation check
+      - name: Run required independent check
         shell: bash
         env:
-          DIAG_CONTEXT: ${{ matrix.context }}
+          CHECK_KIND: ${{ matrix.check }}
         run: |
           mkdir -p diagnostic
+          if [[ "$CHECK_KIND" == behavior ]]; then
+            file=tests/browser/diagnostic-behavior-collier.spec.js
+          else
+            file=tests/browser/collier-bays.spec.js
+          fi
           python diagnostic-thread-sampler.py > diagnostic/threads.log 2>&1 &
           monitor=$!
           trap 'kill "$monitor" 2>/dev/null || true' EXIT
           set +e
-          CI=1 DEBUG=pw:api DEBUG_COLORS=0 npx playwright test tests/browser/diagnostic-context-collier.spec.js --reporter=list > diagnostic/playwright.log 2>&1
+          CI=1 DEBUG=pw:api DEBUG_COLORS=0 npx playwright test "$file" --reporter=list > diagnostic/playwright.log 2>&1
           result=$?
           tail -n 100 diagnostic/playwright.log
+          if [[ "$CHECK_KIND" == evidence && "$result" == 0 ]]; then
+            for view in east north; do
+              for phase in before after; do
+                image="test-results/scene-captures/collier-bays-${view}-${phase}-2026-11-04.png"
+                if [[ ! -s "$image" ]]; then echo "Missing screenshot: $image"; result=1; fi
+              done
+            done
+          fi
           exit "$result"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: context-comparison-${{ matrix.context }}-${{ matrix.repeat }}
+          name: behavior-evidence-${{ matrix.check }}
           path: |
             apps/web-preview/diagnostic/
             apps/web-preview/test-results/
