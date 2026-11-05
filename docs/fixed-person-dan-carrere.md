@@ -8,10 +8,14 @@ The instance uses the existing rigged student base; a source-defined plaid mater
 
 ## Building occlusion follow-up
 
-Two camera-to-person rays, throttled to at most one check per 120 ms while on screen, test the existing building selection meshes. Fully blocked people hide their name and bubble; a clear head or torso preserves the label. Hidden labels clear hover and return keyboard focus when appropriate; an already-open card is not forcibly closed. Off-screen checks stop. The algorithm is approximate, uses building proxies and does not test trees. No person appearance, dialogue or reviewed preview image was changed.
+Two camera-to-person rays, throttled to at most one check per 120 ms while on screen, test the existing building selection meshes. Fully blocked people hide their name and bubble; a clear head or torso preserves the label. Hidden labels clear hover and return keyboard focus when appropriate; the original card remained open (superseded by the floating-card update below). Off-screen checks stop. The algorithm is approximate, uses building proxies and does not test trees. No person appearance, dialogue or reviewed preview image was changed.
 
 The scene regression uses a camera at (-5, -30) looking at the projected person behind a building and verifies label and bubble hidden, then moves to a clear view and opens the card. Desktop and touch variants passed; unit checks cover full, partial, off-axis and behind-person obstruction. Existing path, selection and 178-draw fixed-view budget and low-frame-rate navigation tests passed. In a four-second local Chrome/SwiftShader clear-view sample, 28 checks totaled 12.6 ms (mean 0.45 ms, maximum 1.9 ms); this is an indicative single-machine sample, not a device-wide frame-time guarantee.
 
 ## Speech bubble reference follow-up
 
 The user-provided reference was visually inspected in the parent thread: a horizontal white rounded rectangle with a white border, subtle inset and outside shadows, and a lower-left tail pointing down-left. The bubble is positioned above and to the person's right; its tail points toward the person. The reference image itself is not redistributed. The existing name remains background-free and does not overlap the bubble in the checked view. [Local scene view](images/dan-carrere-bubble-2026-11-04.png). The character's reviewed appearance and prior review image are unchanged. Desktop and narrow touch tests cover the bubble, person card, and building occlusion; screen-edge placement remains an approximation.
+
+## Floating profile card update
+
+The profile now uses a non-modal card anchored beside the person, falling below when a narrow viewport lacks room on either side. The path pauses while the card is open, while camera and player movement remain available. The card closes when the person becomes fully occluded or exits the viewport; Escape and close restore focus. The existing profile and speech are unchanged. [Desktop preview](images/dan-floating-card-desktop-2026-11-05.png) and [touch preview](images/dan-floating-card-mobile-2026-11-05.png). The occlusion test remains an approximation using building meshes.

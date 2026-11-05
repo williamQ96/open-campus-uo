@@ -24,8 +24,8 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "44cef4105093d64d4591bc9c8e528d9785727363d6b03363116ddc9e623209c1",
-      "reason": "Optional sourced building information and source-pinned provisional identity annotations; install procedural rounded cloud geometry"
+      "local_sha256": "c7f8336853c4f5ac8674958d6edd51d32f76125d19f5d9a8f2f6d2377874e6f8",
+      "reason": "Optional sourced building information and source-pinned provisional identity annotations; install procedural rounded cloud geometry; non-modal anchored fixed-person card"
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -34,8 +34,8 @@
     },
     "src/style.css": {
       "upstream_sha256": "7ef8336da7df7d502eb32edc85fcb7f82f8ea4044c714f8f1770f2639834c709",
-      "local_sha256": "c350fe473958a8e3b0be2c93c354e3c3bd196d5fd7fdd61b9ab62ecf23a39d9c",
-      "reason": "Optional sourced building information cards"
+      "local_sha256": "b651799a6ab52a0792912cf1b0e86d42532cd89605f29a23813a53ec057d9468",
+      "reason": "Optional sourced building information cards; non-modal anchored fixed-person card"
     },
     "src/world.js": {
       "upstream_sha256": "ca35ab32d55da7f5a95b7004db80e743736e2ebeb05be943ed13eb6ee0dddc79",
@@ -60,7 +60,7 @@
     "public/scene/pilot-understory-patch.json": "c45f91ea2a3cc5c6ac0237b4ecf0177a7f7e5f5811cb3dc45d448c40d7d5dd3a",
     "public/scene/pilot-tree-273-suppression.json": "32d617c541948787b999dbc965417c322ed1d704a4c474bd2381f86b5cc08e0b",
     "src/fixed-npc-occlusion.js": "f523b1fc279c4bdad0a2006cf0d4c104a37a37936e9b1e59b5f510460f5c1d32",
-    "src/fixed-npc.js": "a982536df9d9d72d56203f33fb49ba8129aba6993117f6a0ad704fc008f41d51",
+    "src/fixed-npc.js": "f8fbf6ad4b4f693d3789ec413b502742c45e18e38ed9fdc7605e4c54ef41cd9f",
     "src/fixed-npc-path.js": "4427c560781fe4433f1380940a45635ce239c462c755174388efa05d5f6cb711",
     "src/exterior-detail.js": "c0181be4a2256830571390bfb8497335d368e9d4e3aed9b9da625b5044fa1e40",
     "public/scene/johnson-rear-detail.json": "2f8673dd96875d0f680e7a8431922e0989db8816500c63bdc6d4c0ea7249f81b",

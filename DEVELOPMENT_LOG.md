@@ -796,3 +796,7 @@ Adjusted the dialogue bubble to the user-provided rounded white reference, with 
 ## 2026-11-04 - Six-view test fixture efficiency
 
 CI-mode full browser regression produced 168 passes and three 90-second timeouts in Gerlinger, Tykeson and University Hall six-view comparisons; the original isolated retest reproduced two timeouts. Reused one browser context per comparison with a new page per version and explicit local storage and cookie cleanup, retaining every original camera, screenshot, assertion and 90-second limit. All three passed in an isolated CI-mode retest. Failure artifacts remain in the local task workspace; full regression is being rerun before publication.
+
+## 2026-11-05 - Fixed person floating card (local)
+
+Changed the named-person profile to a non-modal card projected beside the person, with left/right or below-person placement and viewport bounds. The path remains paused while its card is open; moving the camera or player updates the anchor and the card closes when the person leaves view or is occluded. Escape, close, focus restoration, model/label activation and touch remain supported. Preserved the speech and profile data. Local validation: 164 unit tests, production build, formatting, four fixed-person desktop/touch and occlusion browser tests, and five existing building-card browser tests passed. The full browser suite was not rerun; the previously reported Linux CI timeouts remain unresolved. Prepared for user-authorized publication.

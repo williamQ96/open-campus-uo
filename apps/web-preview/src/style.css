@@ -1466,24 +1466,46 @@ dialog::backdrop {
   clip-path: polygon(42% 0, 100% 0, 0 100%);
 }
 .fixed-person-card {
-  border: 0;
-  border-radius: 12px;
+  position: absolute;
+  inset: 0 auto auto 0;
+  margin: 0;
+  z-index: 7;
+  width: min(248px, calc(100% - 24px));
+  height: auto;
+  max-width: none;
+  max-height: calc(100% - 24px);
+  overflow: auto;
+  border: 1px solid #ffffffc4;
+  border-radius: 4px;
   color: #183b2d;
-  background: #fffdf4;
-  padding: 24px;
-  max-width: min(360px, 85vw);
-  box-shadow: 0 8px 35px #0005;
-}
-.fixed-person-card::backdrop {
-  background: #0006;
+  background: #f5f5eff5;
+  padding: 18px;
+  box-shadow: 0 8px 28px #1e38252b;
+  pointer-events: auto;
+  touch-action: manipulation;
 }
 .fixed-person-card h2 {
-  margin: 0 0 8px;
+  margin: 0;
+  padding-right: 24px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+.fixed-person-card p {
+  margin: 10px 0;
+  color: var(--muted);
+  font-size: 13px;
 }
 .fixed-person-card a {
-  display: inline-block;
-  margin-right: 24px;
+  display: block;
+  color: var(--green);
+  font-size: 11px;
 }
-.fixed-person-card button {
+.fixed-person-card-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
   cursor: pointer;
 }

@@ -154,12 +154,42 @@ export function createFixedNpc({
   }
   const close = document.createElement("button");
   close.type = "button";
-  close.textContent = "Close";
-  close.addEventListener("click", () => dialog.close());
+  close.className = "fixed-person-card-close";
+  close.textContent = "x";
+  close.setAttribute("aria-label", "Close");
   dialog.append(title, info);
   if (config.url) dialog.append(link);
   dialog.append(close);
   viewport.append(dialog);
+  for (const type of ["pointerdown", "pointerup", "wheel"])
+    dialog.addEventListener(type, (event) => event.stopPropagation());
+  let returnFocus = null;
+  function closeCard() {
+    if (!dialog.open) return;
+    dialog.close();
+    const target = returnFocus === label && !label.hidden ? label : viewport;
+    target.focus({ preventScroll: true });
+    returnFocus = null;
+  }
+  function openCard() {
+    if (dialog.open) return;
+    returnFocus = document.activeElement;
+    dialog.show();
+    close.focus({ preventScroll: true });
+  }
+  close.addEventListener("click", closeCard);
+  function onKeyDown(event) {
+    if (
+      event.key === "Escape" &&
+      dialog.open &&
+      !document.querySelector("dialog:modal")
+    ) {
+      event.preventDefault();
+      event.stopPropagation();
+      closeCard();
+    }
+  }
+  document.addEventListener("keydown", onKeyDown);
   const materials = [];
   actor.root.traverse((o) => {
     if (o.isMesh)
@@ -176,10 +206,14 @@ export function createFixedNpc({
   label.addEventListener("pointerleave", () => hover(false));
   label.addEventListener("focus", () => hover(true));
   label.addEventListener("blur", () => hover(false));
-  label.addEventListener("click", () => dialog.showModal());
+  label.addEventListener("click", openCard);
   let elapsed = 0,
     state = path.state();
   const projected = new THREE.Vector3();
+  const cardMiddle = new THREE.Vector3(),
+    cardEdge = new THREE.Vector3(),
+    cardRight = new THREE.Vector3(),
+    cardFeet = new THREE.Vector3();
   const isOccluded = createPersonOcclusion(camera, occluders);
   let occluded = false,
     lastOcclusion = -Infinity,
@@ -190,9 +224,7 @@ export function createFixedNpc({
     root: actor.root,
     isOpen: () => dialog.open,
     hover,
-    open: () => {
-      if (!dialog.open) dialog.showModal();
-    },
+    open: openCard,
     update(dt, player) {
       elapsed += dt;
       state = path.update(hovered || dialog.open ? 0 : dt);
@@ -222,6 +254,7 @@ export function createFixedNpc({
         occlusionMaxMs = Math.max(occlusionMaxMs, duration);
       }
       const visible = inView && !occluded;
+      if (!visible && dialog.open) closeCard();
       if (!visible && hovered) hover(false);
       if (!visible && document.activeElement === label && !dialog.open)
         viewport.focus({ preventScroll: true });
@@ -232,6 +265,52 @@ export function createFixedNpc({
       label.hidden = !visible;
       bubble.hidden =
         !config.line || !visible || player.distanceTo(actor.root.position) > 4;
+      if (dialog.open) {
+        const width = viewport.clientWidth,
+          height = viewport.clientHeight,
+          w = dialog.offsetWidth,
+          h = dialog.offsetHeight,
+          anchorX = ((projected.x + 1) * width) / 2,
+          anchorY = ((1 - projected.y) * height) / 2;
+        cardMiddle.copy(actor.root.position);
+        cardMiddle.y += 1;
+        cardRight.setFromMatrixColumn(camera.matrixWorld, 0).normalize();
+        cardEdge
+          .copy(cardMiddle)
+          .addScaledVector(cardRight, 0.5)
+          .project(camera);
+        cardMiddle.project(camera);
+        cardFeet.copy(actor.root.position).project(camera);
+        const radius = Math.max(
+            20,
+            (Math.abs(cardEdge.x - cardMiddle.x) * width) / 2,
+          ),
+          right = anchorX + radius + 12,
+          left = anchorX - radius - 12 - w,
+          fitsRight = right + w <= width - 12,
+          fitsLeft = left >= 12;
+        const preferredX = fitsRight
+          ? right
+          : fitsLeft
+            ? left
+            : anchorX - w / 2;
+        const x = THREE.MathUtils.clamp(
+          preferredX,
+          12,
+          Math.max(12, width - w - 12),
+        );
+        const top = height < 500 ? 88 : width <= 600 ? 154 : 174,
+          bottom = width <= 600 || height < 500 ? 110 : 24,
+          maxY = Math.max(12, height - bottom - h);
+        const y = THREE.MathUtils.clamp(
+          fitsRight || fitsLeft
+            ? anchorY + 12
+            : ((1 - cardFeet.y) * height) / 2 + 8,
+          Math.min(top, maxY),
+          maxY,
+        );
+        dialog.style.transform = `translate(${Math.round(x)}px, ${Math.round(y)}px)`;
+      }
     },
     state: () => ({
       ...state,
@@ -245,6 +324,7 @@ export function createFixedNpc({
       gait: actor.gaitState?.() || null,
     }),
     dispose() {
+      document.removeEventListener("keydown", onKeyDown);
       actor.dispose();
       owned.forEach((x) => x.dispose());
       label.remove();

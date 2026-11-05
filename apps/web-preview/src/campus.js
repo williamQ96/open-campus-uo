@@ -86,11 +86,7 @@ const death = createDeathFlow({
     walkMotion.reset();
   },
 });
-const modalOpen = () =>
-  dialog.open ||
-  $("#feedback-dialog").open ||
-  death.dead ||
-  !!fixedNpc?.isOpen();
+const modalOpen = () => dialog.open || $("#feedback-dialog").open || death.dead;
 const developer = createDeveloperTools({
   getLife: () => ({
     inspect: (id) => life?.inspect(id) || zombies?.inspect(id),
