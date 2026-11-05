@@ -1,18 +1,13 @@
-name: Isolated trace overhead diagnostic
+name: Isolated Chromium thread diagnostic
 on:
   push:
     branches: [ci/scene-timing-20261104]
 permissions:
   contents: read
 jobs:
-  browser-diagnostic:
+  chromium-thread-diagnostic:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
-    strategy:
-      fail-fast: false
-      matrix:
-        trace: [retain-on-failure, no-screencast]
-        repeat: [a, b]
+    timeout-minutes: 8
     defaults:
       run:
         working-directory: apps/web-preview
@@ -25,34 +20,23 @@ jobs:
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Run original Collier test with a single trace setting changed
+      - name: Profile unchanged original Collier test
         shell: bash
-        env:
-          TRACE_MODE: ${{ matrix.trace }}
         run: |
           mkdir -p diagnostic
-          cat > diagnostic.trace.config.mjs <<'CONFIG'
-          import base from './playwright.config.js';
-          export default { ...base, use: { ...base.use, trace: process.env.TRACE_MODE === 'no-screencast' ? { mode: 'retain-on-failure', screenshots: false, snapshots: true, sources: true } : process.env.TRACE_MODE } };
-          CONFIG
           rm -f ../../docs/images/collier-bays-{east,north}-{before,after}-2026-11-04.png
-          (while true; do
-            date --iso-8601=seconds
-            free -m
-            ps -eo pid,ppid,rss,pcpu,comm --sort=-rss | head -25
-            sleep 5
-          done) > diagnostic/resources.log 2>&1 &
+          python diagnostic-thread-sampler.py > diagnostic/threads.log 2>&1 &
           monitor=$!
           trap 'kill "$monitor" 2>/dev/null || true' EXIT
           set +e
-          CI=1 DEBUG=pw:api npx playwright test tests/browser/diagnostic-original-collier.spec.js --config diagnostic.trace.config.mjs --reporter=list > diagnostic/playwright.log 2>&1
+          CI=1 DEBUG=pw:api DEBUG_COLORS=0 npx playwright test tests/browser/diagnostic-original-collier.spec.js --reporter=list > diagnostic/playwright.log 2>&1
           result=$?
           tail -n 100 diagnostic/playwright.log
           exit "$result"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: trace-overhead-${{ matrix.trace }}-${{ matrix.repeat }}
+          name: chromium-thread-diagnostic
           path: |
             apps/web-preview/diagnostic/
             apps/web-preview/test-results/
