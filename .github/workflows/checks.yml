@@ -1,4 +1,4 @@
-name: Isolated browser timing diagnostic
+name: Isolated trace overhead diagnostic
 on:
   push:
     branches: [ci/scene-timing-20261104]
@@ -7,11 +7,11 @@ permissions:
 jobs:
   browser-diagnostic:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
-        case: [split-a, split-b, original-controls]
+        trace: [retain-on-failure, 'off']
     defaults:
       run:
         working-directory: apps/web-preview
@@ -24,12 +24,17 @@ jobs:
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Run selected tests with timing and resource samples
+      - name: Run original Collier test with a single trace setting changed
         shell: bash
         env:
-          DIAGNOSTIC_CASE: ${{ matrix.case }}
+          TRACE_MODE: ${{ matrix.trace }}
         run: |
           mkdir -p diagnostic
+          cat > diagnostic.trace.config.mjs <<'CONFIG'
+          import base from './playwright.config.js';
+          export default { ...base, use: { ...base.use, trace: process.env.TRACE_MODE } };
+          CONFIG
+          rm -f ../../docs/images/collier-bays-{east,north}-{before,after}-2026-11-04.png
           (while true; do
             date --iso-8601=seconds
             free -m
@@ -38,21 +43,17 @@ jobs:
           done) > diagnostic/resources.log 2>&1 &
           monitor=$!
           trap 'kill "$monitor" 2>/dev/null || true' EXIT
-          if [[ "$DIAGNOSTIC_CASE" == original-controls ]]; then
-            files=(tests/browser/agate-west.spec.js tests/browser/batch-pointer-selection.spec.js tests/browser/fenton-basement.spec.js)
-          else
-            files=(tests/browser/gerlinger-portico.spec.js tests/browser/collier-bays.spec.js)
-          fi
           set +e
-          CI=1 DEBUG=pw:api npx playwright test "${files[@]}" --reporter=list > diagnostic/playwright.log 2>&1
+          CI=1 DEBUG=pw:api npx playwright test tests/browser/diagnostic-original-collier.spec.js --config diagnostic.trace.config.mjs --reporter=list > diagnostic/playwright.log 2>&1
           result=$?
-          tail -n 150 diagnostic/playwright.log
+          tail -n 100 diagnostic/playwright.log
           exit "$result"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: scene-diagnostic-${{ matrix.case }}
+          name: trace-overhead-${{ matrix.trace }}
           path: |
             apps/web-preview/diagnostic/
             apps/web-preview/test-results/
+            docs/images/collier-bays-*-2026-11-04.png
           retention-days: 7
