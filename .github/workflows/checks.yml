@@ -20,7 +20,7 @@ jobs:
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Run unchanged representative tests with timing and resource samples
+      - name: Run split representative tests with timing and resource samples
         shell: bash
         run: |
           mkdir -p diagnostic
