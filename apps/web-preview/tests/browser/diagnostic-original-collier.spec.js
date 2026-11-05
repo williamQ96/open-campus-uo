@@ -16,6 +16,39 @@ test("Collier exterior retains campus selection, entrances, collision and draw c
         reducedMotion: "reduce",
       }),
       errors = [];
+    if (process.env.DIAGNOSTIC_FPS === "10") {
+      await page.addInitScript(() => {
+        const nativeRequest = window.requestAnimationFrame.bind(window);
+        const nativeCancel = window.cancelAnimationFrame.bind(window);
+        let pending = new Map(),
+          nextId = 1,
+          nativeId = null,
+          last = -Infinity;
+        function tick(time) {
+          nativeId = null;
+          if (time - last >= 100) {
+            last = time;
+            const batch = pending;
+            pending = new Map();
+            for (const cb of batch.values()) cb(time);
+          }
+          if (pending.size && nativeId === null) nativeId = nativeRequest(tick);
+        }
+        window.requestAnimationFrame = (cb) => {
+          const id = nextId++;
+          pending.set(id, cb);
+          if (nativeId === null) nativeId = nativeRequest(tick);
+          return id;
+        };
+        window.cancelAnimationFrame = (id) => {
+          pending.delete(id);
+          if (!pending.size && nativeId !== null) {
+            nativeCancel(nativeId);
+            nativeId = null;
+          }
+        };
+      });
+    }
     page.on("pageerror", (e) => errors.push(e.message));
     page.on("console", (m) => {
       if (m.type() === "error") errors.push(m.text());

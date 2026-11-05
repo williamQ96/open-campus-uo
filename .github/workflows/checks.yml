@@ -5,9 +5,13 @@ on:
 permissions:
   contents: read
 jobs:
-  chromium-thread-diagnostic:
+  chromium-frame-experiment:
     runs-on: ubuntu-24.04
     timeout-minutes: 8
+    strategy:
+      fail-fast: false
+      matrix:
+        fps: [native, "10"]
     defaults:
       run:
         working-directory: apps/web-preview
@@ -20,8 +24,10 @@ jobs:
           cache-dependency-path: apps/web-preview/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Profile unchanged original Collier test
+      - name: Profile original Collier test with optional diagnostic frame cap
         shell: bash
+        env:
+          DIAGNOSTIC_FPS: ${{ matrix.fps }}
         run: |
           mkdir -p diagnostic
           rm -f ../../docs/images/collier-bays-{east,north}-{before,after}-2026-11-04.png
@@ -36,7 +42,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: chromium-thread-diagnostic
+          name: chromium-frame-experiment-${{ matrix.fps }}
           path: |
             apps/web-preview/diagnostic/
             apps/web-preview/test-results/
