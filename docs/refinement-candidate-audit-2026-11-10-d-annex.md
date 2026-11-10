@@ -1,0 +1,29 @@
+# Gerlinger Annex renewed-source candidate, 2026-11-10
+
+Status: reference-verified candidate, not implemented. This pass reopened external sources instead of treating the previous archived-photo audit as exhaustive. Only Gerlinger Annex was substantively investigated; a second-building search produced no useful source and was not expanded.
+
+## Identity, face and rights
+
+Primary source: [UO Cultural Resources Survey, Summer 2006](https://cpfm.uoregon.edu/sites/default/files/gerlingerannex05_30_07.pdf), page 4. Downloaded to an external temporary review location and visually inspected with the installed PDF renderer. Exact reviewed PDF SHA-256: `7a2bc8406f5bddd6f7bdecd4d14c50213c5f1b3790679d4cf57dec9e592dab6d`. The building name on the photographed sign, modern flat roof and accompanying site plan identify the Annex, not the historic Hall. The north arrow and court between Annex and Hall support interpreting the photographed long frontage as north-facing. This is stronger than trusting the misidentified Commons filename.
+
+Cross-check: [UO Libraries building history](https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/gerlinger-annex) identifies the Annex as the 1969 Morin and Longwood building at 1484 University Street. [Updated survey](https://cpfm.uoregon.edu/sites/default/files/2025-01/gerlingerannex_2025.pdf) is an additional public reference, but this pass's actual image inspection used the 2006 PDF, not a claim of new photography.
+
+Rights: no Creative Commons or equivalent image-redistribution license was verified for the survey. It remains **link-only reference**, not a repo-archivable open photograph and not a runtime texture. The [Libraries permissions page](https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/copyright-and-permissions) permits factual text use; it is not a blanket CC grant for this separate survey PDF. Existing Commons Rick Obst image has CC BY 4.0 but that license does not fix its building-identity mismatch. No photo has been added to the repository. A future implementation can use independently authored geometry informed by the reference; if archiving the source pixels is required, seek separately licensed imagery first.
+
+## Candidate: restrained upper concrete panel joints
+
+The photograph clearly shows vertical joints separating the large concrete panels over the glazed lower frontage. The current `apps/web-preview/public/scene/gerlinger-annex-correction.json` has 84 objects. Index 2 is one smooth concrete box centered at `[-466,18.421,241.84]`, size `[61,5.2,0.24]`. Its modeled north face is z=241.72 and its existing vertical span is y=15.821..21.021. Only indices 1 (roof) and 2 have centers above y=17: no separate upper joint strips are hidden elsewhere in this specification. The generator consumes these explicit primitives; this is not a helper-generated missing-detail assumption.
+
+Recommended limited scope: subdivide or recess only this existing upper panel surface to suggest the photo-supported vertical joint rhythm. Preserve its overall envelope, roof band, glazing, lower structure, entrance, planter and building placement. Retain exact original bytes first. Do not extrapolate the photograph into a claim of measured panel width/count across the whole facade: the oblique view, trees and existing approximate dimensions prevent that. Establish each implemented seam from the visible bays or explicitly mark rhythm as stylized; if that mapping cannot be made convincingly, use fewer confirmed seams rather than regular invented repetition. Use actual shallow geometry instead of opaque black painted stripes.
+
+The existing layer merges building primitives, so zero additional draw calls is a feasible **target**, not a measured result. Require unchanged mesh/draw counts, finite geometry, retained apertures and collision/entry records, plus genuinely positioned north and oblique before/after captures. The change should improve the large blank panel at normal walking views without pretending to correct the whole building. No exterior level upgrade, proposed breezeway, entry stairs, post-2006 condition or surveyed accuracy is implied.
+
+## Remaining qualification
+
+This is actionable as a link-only-reference original modeling study under the same approach used by existing Annex refinement. It does **not** fulfill a stricter requirement to obtain a freely redistributable new Annex photograph; that licensing gap remains explicit. No active specification, runtime, tests, global manifest or development log was modified in this pass.
+
+## Registration and conservative mapping follow-up
+
+The registered replacement identity is `roof-f0b575d6`, presentation SHA-256 `debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c`. Current body object 0 is centered at (-466,15.871,256), size (63,13.2,28), giving a north wall plane z=242. The upper panel is therefore 0.28 m in front of that body plane, rather than buried inside it. These are the actual current replacement-spec dimensions, **not a newly parsed original-campus-GLB survey**. Lower beam object 3 and the repeated small projections centered at y=16.221 could obscure the bottom; restrict any candidate grooves to approximately y>=16.6 before detailed geometry checks. The roof begins above the panel span and does not cover its front surface. Vegetation may obscure particular campus views and must not be moved to improve a screenshot.
+
+At least five central vertical joints are discernible in the inspected survey image; perspective compression, branches and cropped extent prevent a defensible full-facade count or exact world registration. Existing lower window modules repeat at x=-495,-491.2,-487.4,... (3.8 m). A sparse seam interpretation can use that already approximate module as an explicit design convention, not claim exact correspondence or copy every photo joint onto a guessed grid. Parent review is pending; no implementation has begun.

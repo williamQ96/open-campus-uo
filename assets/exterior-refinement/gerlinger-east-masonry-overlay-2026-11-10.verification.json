@@ -1,0 +1,26 @@
+{
+  "source": "gerlinger-east-masonry-detail.json",
+  "source_sha256": "fdae26b98f8f49b2de41d9475157d2e4fdc4b182e995f5a4346d660cbb9fb832",
+  "base_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "output": "assets/exterior-refinement/gerlinger-east-masonry-overlay-2026-11-10.glb",
+  "output_sha256": "630bfafbad535188c12a1c96a70c22d910ea69f8fea8ee029dbf7569df189f7f",
+  "bytes": 67676,
+  "exporter": "apps/web-preview/scripts/export-exterior-detail.mjs",
+  "exporter_sha256": "ef4c37949636e311def958d0699dbe94d00cd4cb6ca42da8295df3b2cc88d0b0",
+  "verification": {
+    "position": {
+      "count": 1836,
+      "max_abs_error": 0
+    },
+    "normal": {
+      "count": 1836,
+      "max_abs_error": 0
+    },
+    "color": {
+      "count": 1836,
+      "max_abs_error": 0
+    }
+  },
+  "command": "From apps/web-preview with local Vite at 127.0.0.1:5173: node scripts/export-exterior-detail.mjs gerlinger-east-masonry-detail.json ../../assets/exterior-refinement/<new-output-name>.glb",
+  "scope": "Additive masonry overlay only; no base building, terrain, collision, navigation or interior; do not double-load over the active runtime layer."
+}

@@ -401,6 +401,8 @@ $("#shadows-setting").addEventListener("change", (event) => {
 });
 
 addEventListener("keydown", (event) => {
+  // Native buttons own Space activation; other movement shortcuts stay available.
+  if (event.code === "Space" && event.target.closest?.("button")) return;
   if (
     modalOpen() ||
     ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName) ||

@@ -27,6 +27,36 @@ export function createBuildingCard(viewport, camera, { onEnter, onClose }) {
   viewport.append(card);
   for (const type of ["pointerdown", "pointerup", "wheel"])
     card.addEventListener(type, (event) => event.stopPropagation());
+  let keyboardOrigin = null,
+    returnFocus = null,
+    pendingRestore = null;
+  viewport.addEventListener(
+    "pointerdown",
+    () => {
+      keyboardOrigin = null;
+    },
+    true,
+  );
+  viewport.addEventListener(
+    "keydown",
+    (event) => {
+      if (
+        event.key === " " &&
+        card.contains(event.target) &&
+        event.target.closest?.("button")
+      ) {
+        event.stopPropagation();
+        return;
+      }
+      const label = event.target.closest?.(".building-label");
+      if (label && ["Enter", " "].includes(event.key)) {
+        keyboardOrigin = label;
+        // Keep the native button activation; do not let movement swallow Space.
+        event.stopPropagation();
+      }
+    },
+    true,
+  );
   close.onclick = onClose;
   enter.onclick = () => record && onEnter(record);
   let record = null,
@@ -67,12 +97,58 @@ export function createBuildingCard(viewport, camera, { onEnter, onClose }) {
       source.textContent = `${details.source.label} · checked ${details.source.checked_on}`;
     } else source.removeAttribute("href");
   }
+  function updatePosition() {
+    if (pendingRestore) {
+      const target = pendingRestore;
+      pendingRestore = null;
+      if (
+        document.activeElement === viewport &&
+        target.isConnected &&
+        !target.hidden &&
+        target.getClientRects().length
+      )
+        target.focus({ preventScroll: true });
+    }
+    if (!record) return;
+    const point = anchor.clone().project(camera);
+    card.hidden = point.z <= -1 || point.z >= 1;
+    if (card.hidden) return;
+    const width = viewport.clientWidth,
+      height = viewport.clientHeight,
+      w = card.offsetWidth,
+      h = card.offsetHeight;
+    const top = height < 500 ? 88 : width <= 600 ? 154 : 174,
+      bottom = width <= 600 || height < 500 ? 110 : 24;
+    const x = THREE.MathUtils.clamp(
+      ((point.x + 1) * width) / 2 + 18,
+      12,
+      Math.max(12, width - w - 12),
+    );
+    const maxY = Math.max(12, height - bottom - h);
+    const y = THREE.MathUtils.clamp(
+      ((1 - point.y) * height) / 2 - h / 2,
+      Math.min(top, maxY),
+      maxY,
+    );
+    const position = `translate(${Math.round(x)}px, ${Math.round(y)}px)`;
+    if (position !== lastPosition) {
+      card.style.transform = position;
+      lastPosition = position;
+    }
+  }
   return {
     setInfo(value) {
       dataset = value;
       if (record) renderInfo();
     },
     show(building, position) {
+      const keyboard =
+        keyboardOrigin?.dataset.buildingId === building.id
+          ? keyboardOrigin
+          : null;
+      keyboardOrigin = null;
+      if (record?.id !== building.id) returnFocus = keyboard;
+      pendingRestore = null;
       record = building;
       card.dataset.buildingId = building.id;
       heading.textContent = building.name || "Unidentified structure";
@@ -80,38 +156,18 @@ export function createBuildingCard(viewport, camera, { onEnter, onClose }) {
       anchor.copy(position);
       card.hidden = false;
       lastPosition = "";
+      updatePosition();
+      if (keyboard && !card.hidden) close.focus({ preventScroll: true });
     },
     hide() {
+      if (card.contains(document.activeElement)) {
+        pendingRestore = returnFocus;
+        viewport.focus({ preventScroll: true });
+      }
+      returnFocus = null;
       record = null;
       card.hidden = true;
     },
-    update() {
-      if (!record) return;
-      const point = anchor.clone().project(camera);
-      card.hidden = point.z <= -1 || point.z >= 1;
-      if (card.hidden) return;
-      const width = viewport.clientWidth,
-        height = viewport.clientHeight,
-        w = card.offsetWidth,
-        h = card.offsetHeight;
-      const top = height < 500 ? 88 : width <= 600 ? 154 : 174,
-        bottom = width <= 600 || height < 500 ? 110 : 24;
-      const x = THREE.MathUtils.clamp(
-        ((point.x + 1) * width) / 2 + 18,
-        12,
-        Math.max(12, width - w - 12),
-      );
-      const maxY = Math.max(12, height - bottom - h);
-      const y = THREE.MathUtils.clamp(
-        ((1 - point.y) * height) / 2 - h / 2,
-        Math.min(top, maxY),
-        maxY,
-      );
-      const position = `translate(${Math.round(x)}px, ${Math.round(y)}px)`;
-      if (position !== lastPosition) {
-        card.style.transform = position;
-        lastPosition = position;
-      }
-    },
+    update: updatePosition,
   };
 }

@@ -6,7 +6,7 @@
   "reference_urls": [
     "https://cpfm.uoregon.edu/gerlingerannex2025"
   ],
-  "note": "Approximate 1969 modern flat-roof mass and photo-informed north frontage; exact orientation, dimensions, hidden elevations, current plants and access remain unverified.",
+  "note": "Approximate 1969 modern flat-roof mass and photo-informed north frontage; exact orientation, dimensions, hidden elevations, current plants and access remain unverified. 2026-11-10: five sparse shallow upper-panel joints interpret the 2006 UO north-frontage photo using existing model modules; not surveyed joint count/spacing. Source image remains link-only.",
   "objects": [
     {
       "kind": "building",
@@ -45,12 +45,12 @@
       "position": [
         -466,
         18.421,
-        241.84
+        241.855
       ],
       "size": [
         61,
         5.2,
-        0.24
+        0.21
       ]
     },
     {
@@ -73,7 +73,7 @@
       "material": "dark",
       "shape": "box",
       "position": [
-        -495.0,
+        -495,
         12.521,
         241.51
       ],
@@ -88,7 +88,7 @@
       "material": "glass",
       "shape": "box",
       "position": [
-        -495.0,
+        -495,
         12.521,
         241.38
       ],
@@ -118,7 +118,7 @@
       "material": "dark",
       "shape": "box",
       "position": [
-        -495.0,
+        -495,
         16.221,
         241.45
       ],
@@ -373,7 +373,7 @@
       "material": "dark",
       "shape": "box",
       "position": [
-        -476.0,
+        -476,
         12.521,
         241.51
       ],
@@ -388,7 +388,7 @@
       "material": "glass",
       "shape": "box",
       "position": [
-        -476.0,
+        -476,
         12.521,
         241.38
       ],
@@ -418,7 +418,7 @@
       "material": "dark",
       "shape": "box",
       "position": [
-        -476.0,
+        -476,
         16.221,
         241.45
       ],
@@ -673,7 +673,7 @@
       "material": "dark",
       "shape": "box",
       "position": [
-        -457.0,
+        -457,
         12.521,
         241.51
       ],
@@ -688,7 +688,7 @@
       "material": "glass",
       "shape": "box",
       "position": [
-        -457.0,
+        -457,
         12.521,
         241.38
       ],
@@ -718,7 +718,7 @@
       "material": "dark",
       "shape": "box",
       "position": [
-        -457.0,
+        -457,
         16.221,
         241.45
       ],
@@ -973,7 +973,7 @@
       "material": "dark",
       "shape": "box",
       "position": [
-        -438.0,
+        -438,
         12.521,
         241.51
       ],
@@ -988,7 +988,7 @@
       "material": "glass",
       "shape": "box",
       "position": [
-        -438.0,
+        -438,
         12.521,
         241.38
       ],
@@ -1018,7 +1018,7 @@
       "material": "dark",
       "shape": "box",
       "position": [
-        -438.0,
+        -438,
         16.221,
         241.45
       ],
@@ -1266,6 +1266,111 @@
         1.25,
         0.45,
         0.7
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -466,
+        16.2105,
+        241.735
+      ],
+      "size": [
+        61,
+        0.7790000000000017,
+        0.03
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -485.2125,
+        18.8105,
+        241.735
+      ],
+      "size": [
+        22.57499999999999,
+        4.420999999999999,
+        0.03
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -471.98,
+        18.8105,
+        241.735
+      ],
+      "size": [
+        3.7099999999999795,
+        4.420999999999999,
+        0.03
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -468.17999999999995,
+        18.8105,
+        241.735
+      ],
+      "size": [
+        3.7099999999999795,
+        4.420999999999999,
+        0.03
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -464.38,
+        18.8105,
+        241.735
+      ],
+      "size": [
+        3.7099999999999227,
+        4.420999999999999,
+        0.03
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -460.58000000000004,
+        18.8105,
+        241.735
+      ],
+      "size": [
+        3.7099999999999795,
+        4.420999999999999,
+        0.03
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "concrete",
+      "shape": "box",
+      "position": [
+        -447.0675,
+        18.8105,
+        241.735
+      ],
+      "size": [
+        23.13499999999999,
+        4.420999999999999,
+        0.03
       ]
     }
   ]

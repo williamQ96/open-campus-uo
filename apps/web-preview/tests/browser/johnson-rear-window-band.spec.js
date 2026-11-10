@@ -96,6 +96,14 @@ test("Johnson rear window and cornice retain selection, entrances, collision and
     await page.close();
   }
   expect(out[1].entries).toEqual(out[0].entries);
-  expect(out[1].views).toEqual(out[0].views);
+  // Current pinned layers may batch while historical source variants remain separate.
+  // All non-render-cost observations stay exact; draw calls must never increase.
+  expect(out[1].views).toHaveLength(out[0].views.length);
+  for (let i = 0; i < out[0].views.length; i++) {
+    const { draws: beforeDraws, ...beforeState } = out[0].views[i];
+    const { draws: afterDraws, ...afterState } = out[1].views[i];
+    expect(afterState).toEqual(beforeState);
+    expect(afterDraws).toBeLessThanOrEqual(beforeDraws);
+  }
   expect(out.flatMap((x) => x.errors)).toEqual([]);
 });

@@ -10,7 +10,7 @@
     "https://cas.uoregon.edu/diversity-equity-inclusion",
     "https://facadesplus.com/university-oregons-tykeson-hall-announces-campus-presence-terra-cotta-and-brick-facade/"
   ],
-  "note": "North-facing glass, upper cladding, canopy and illustrative planting interpreted from 2019 photo; envelope, dimensions and current conditions are unverified.",
+  "note": "North-facing glass, upper cladding, canopy and illustrative planting interpreted from 2019 photo; envelope, dimensions and current conditions are unverified. Canopy frame/ribs and stylized glass-colored panes replace only its two solid plates; clipped vertical cladding seams reference archived 2019 photo. Geometry and spacing approximate; opaque glass-colored material is not physical transparent glazing. Existing upper windows and canopy envelope retained.",
   "objects": [
     {
       "kind": "building",
@@ -523,33 +523,35 @@
       ]
     },
     {
+      "role": "canopy-front-frame",
       "kind": "building",
       "material": "metal",
       "shape": "box",
       "position": [
         -447.5,
-        7.0,
-        28.6
-      ],
-      "size": [
-        19,
-        0.25,
-        3.0
-      ]
-    },
-    {
-      "kind": "building",
-      "material": "concrete",
-      "shape": "box",
-      "position": [
-        -447.5,
-        7.17,
-        28.6
+        7.08,
+        27.08
       ],
       "size": [
         19.2,
-        0.1,
-        3.2
+        0.2,
+        0.16
+      ]
+    },
+    {
+      "role": "canopy-back-frame",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -447.5,
+        7.08,
+        30.12
+      ],
+      "size": [
+        19.2,
+        0.2,
+        0.16
       ]
     },
     {
@@ -790,6 +792,1910 @@
         1.08,
         1.85,
         0.08
+      ]
+    },
+    {
+      "role": "canopy-end-frame",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -457.02,
+        7.08,
+        28.6
+      ],
+      "size": [
+        0.16,
+        0.2,
+        3.04
+      ]
+    },
+    {
+      "role": "canopy-end-frame",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -437.98,
+        7.08,
+        28.6
+      ],
+      "size": [
+        0.16,
+        0.2,
+        3.04
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -456.5,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -455.3,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -454.1,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -452.9,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -451.7,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -450.5,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -449.3,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -448.1,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -446.9,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -445.7,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -444.5,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -443.3,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -442.1,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -440.9,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -439.7,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-rib",
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -438.5,
+        7.045,
+        28.6
+      ],
+      "size": [
+        0.075,
+        0.13,
+        2.88
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -455.9,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -454.7,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -453.5,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -452.3,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -451.1,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -449.9,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -448.7,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -447.5,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -446.3,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -445.1,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -443.9,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -442.7,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -441.5,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -440.3,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "canopy-pane",
+      "kind": "building",
+      "material": "glass",
+      "shape": "box",
+      "position": [
+        -439.1,
+        7.14,
+        28.6
+      ],
+      "size": [
+        1.12,
+        0.055,
+        2.85
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -465.8,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -465.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -464.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -464.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -463.4,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -463.4,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -463.4,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -462.8,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -462.8,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -462.8,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -462.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -461.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -461.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -460.4,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -459.8,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -459.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -458.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -458.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -457.4,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -457.4,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -457.4,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -456.8,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -456.8,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -456.8,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -456.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -455.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -455.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -454.4,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -453.8,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -453.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -452.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -452.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -451.4,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -451.4,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -451.4,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -450.8,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -450.8,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -450.8,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -450.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -449.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -449.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -448.4,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -447.8,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -447.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -446.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -446.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -445.4,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -445.4,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -445.4,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -444.8,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -444.8,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -444.8,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -444.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -443.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -443.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -442.4,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -441.8,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -441.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -440.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -440.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -439.4,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -439.4,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -439.4,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -438.8,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -438.8,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -438.8,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -438.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -437.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -437.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -436.4,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.8,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -435.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -434.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -434.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -433.4,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -433.4,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -433.4,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -432.8,
+        15.135,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.17,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -432.8,
+        18.65,
+        30.04
+      ],
+      "size": [
+        0.035,
+        1.34,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -432.8,
+        22.04,
+        30.04
+      ],
+      "size": [
+        0.035,
+        0.92,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -432.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -431.6,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -431.0,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -430.4,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -429.8,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
+      ]
+    },
+    {
+      "role": "cladding-seam",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -429.2,
+        18.525,
+        30.04
+      ],
+      "size": [
+        0.035,
+        7.95,
+        0.06
       ]
     }
   ]

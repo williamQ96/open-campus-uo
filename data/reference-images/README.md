@@ -2,7 +2,7 @@
 
 # Image and photo archive
 
-This is the versioned source-material directory for Open Campus: UO. It contains **9 licensed ground photographs, 2 dated USDA NAIP aerial subsets, 5 project-design images and one CC0 character-skin texture**. Downloaded bytes are retained; aerial records describe service-side mosaicking/cropping and reprojection. Original design/runtime locations are preserved and linked to byte-identical archive copies. Gerlinger Hall and Annex extend the landmark photo archive; the second aerial covers the full 2 × 2 km scene for inferred ground materials.
+This is the versioned source-material directory for Open Campus: UO. It contains **15 licensed ground-photograph files, 2 dated USDA NAIP aerial subsets, 5 project-design images and one CC0 character-skin texture**. Downloaded bytes are retained; aerial records describe service-side mosaicking/cropping and reprojection. Original design/runtime locations are preserved and linked to byte-identical archive copies. Gerlinger Hall and Annex extend the landmark photo archive; the second aerial covers the full 2 × 2 km scene for inferred ground materials.
 
 - [Manifest](manifest.json): local files, authors, source/download links, capture/access dates, license evidence, building/use links, modifications and SHA-256/byte size.
 - [Attribution](ATTRIBUTION.md): credits and license links for each image.
@@ -59,3 +59,5 @@ The [2024-06-08 full-scene NAIP mosaic](aerial/naip-2024-main-campus-rgb.png) gu
 2026-11-04: Added the CC BY 4.0 Tykeson Hall photograph; source and original hash are in the manifest.
 
 2026-11-04: Added the CC BY 4.0 Susan Campbell Hall photograph; source and original hash are in the manifest.
+
+2026-11-10: Reconciled the inventory against all 23 manifest entries and verified each archived file's SHA-256 and size: 15 photograph files, 2 aerial subsets, 5 project-design images and 1 texture. A retained photograph is not necessarily a valid current modeling reference: the Gerlinger Annex identity correction still applies. Historical dated intake entries above are unchanged.

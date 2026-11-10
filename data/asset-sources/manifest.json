@@ -241,10 +241,16 @@
       "origin": "Original source-pinned Gerlinger Hall entry, railings and illustrative planting, informed by Rick Obst 2013 CC BY 4.0 photo; no image bytes."
     },
     "apps/web-preview/public/scene/gerlinger-annex-correction.json": {
-      "bytes": 21010,
-      "sha256": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
+      "bytes": 21747,
+      "sha256": "cd95ca5f79a425d3c67b8c3532a983cadcf5d197214b7cccc5cbfe18426e35ea",
       "license": "CC-BY-4.0",
-      "origin": "Original source-pinned Gerlinger Annex approximate replacement and planted frontage; informed by link-only official UO survey, no source image bytes."
+      "origin": "Original sparse shallow concrete joints on existing upper north panel, informed by link-only UO survey. Five module-spaced grooves are stylized, not surveyed count/dimensions; no source photo pixels.",
+      "previous_record": {
+        "bytes": 21010,
+        "sha256": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
+        "license": "CC-BY-4.0",
+        "origin": "Original source-pinned Gerlinger Annex approximate replacement and planted frontage; informed by link-only official UO survey, no source image bytes."
+      }
     },
     "apps/web-preview/public/scene/gerlinger-east-detail.json": {
       "bytes": 85215,
@@ -277,15 +283,21 @@
       "origin": "Original source-pinned Johnson Hall north frieze wording layer; informed by UO historic survey and PD-self archived photograph, no photograph pixels."
     },
     "apps/web-preview/public/scene/friendly-west-detail.json": {
-      "bytes": 120595,
-      "sha256": "d8b439add6401343e891aa641fd4d12ae4aebe9a53bbc9cc99667f1bdcebdaba",
+      "bytes": 113171,
+      "sha256": "967cb118e6ae7fe3df80ed3b250f91e84798224a531c4f0a5ea360586dee3931",
       "license": "CC-BY-4.0",
-      "origin": "Original simplified Friendly Hall exterior informed by linked UO historic assessment and prior CC0 photo; no third-party images.",
+      "origin": "Four freestanding west-porch shafts changed from box to existing octagonal column primitive using archived CC0 photo. All other geometry, locations, dimensions and materials preserved; shape approximation not survey.",
       "previous_record": {
-        "bytes": 53726,
-        "sha256": "b9a223af64d6039703e89df8f7852f7c50543b29fa2b1220b3910926704e25de",
+        "bytes": 120595,
+        "sha256": "d8b439add6401343e891aa641fd4d12ae4aebe9a53bbc9cc99667f1bdcebdaba",
         "license": "CC-BY-4.0",
-        "origin": "Original procedural geometry informed by archived CC0 2017 Friendly Hall west photograph and UO historic assessment; no photo textures."
+        "origin": "Original simplified Friendly Hall exterior informed by linked UO historic assessment and prior CC0 photo; no third-party images.",
+        "previous_record": {
+          "bytes": 53726,
+          "sha256": "b9a223af64d6039703e89df8f7852f7c50543b29fa2b1220b3910926704e25de",
+          "license": "CC-BY-4.0",
+          "origin": "Original procedural geometry informed by archived CC0 2017 Friendly Hall west photograph and UO historic assessment; no photo textures."
+        }
       }
     },
     "apps/web-preview/public/scene/villard-east-detail.json": {
@@ -349,37 +361,49 @@
       "origin": "Original procedural detail layer reuses CC BY 4.0 Anstett geometry informed by its attributed reference; Peterson site plan and aerial are linked references, no textures."
     },
     "apps/web-preview/public/scene/tykeson-north-detail.json": {
-      "bytes": 13042,
-      "sha256": "83dc8689edf6656926631570d704c75b98612834a6ab4ed81897ebfcf30c395a",
+      "bytes": 43382,
+      "sha256": "27bdfbf31a2159fed4cb5b29429ba22b624f440f67ecad70765b184a5de5ddec",
       "license": "CC-BY-4.0",
-      "origin": "Original stylized Tykeson frontage, inspired by attributed CC BY 4.0 photograph and architect design description; no photographic texture.",
+      "origin": "Source-pinned Tykeson canopy frame/cladding refinement, existing other 50 objects retained. See docs/tykeson-north-refinement.md.",
       "previous_record": {
-        "bytes": 10176,
-        "sha256": "01bd8c5c4c57eba839f13f0a060052726bfbed5880095f09e43f0f8fd0bb91e1",
+        "bytes": 13042,
+        "sha256": "83dc8689edf6656926631570d704c75b98612834a6ab4ed81897ebfcf30c395a",
         "license": "CC-BY-4.0",
-        "origin": "Original simplified north facade, canopy and illustrative planting inspired by the attributed CC BY 4.0 photograph; no photographic texture."
+        "origin": "Original stylized Tykeson frontage, inspired by attributed CC BY 4.0 photograph and architect design description; no photographic texture.",
+        "previous_record": {
+          "bytes": 10176,
+          "sha256": "01bd8c5c4c57eba839f13f0a060052726bfbed5880095f09e43f0f8fd0bb91e1",
+          "license": "CC-BY-4.0",
+          "origin": "Original simplified north facade, canopy and illustrative planting inspired by the attributed CC BY 4.0 photograph; no photographic texture."
+        }
       }
     },
     "apps/web-preview/public/scene/susan-roof-detail.json": {
-      "bytes": 114513,
-      "sha256": "0e303860273701f0e7bb2b0c31487116b774d607e5b76b02acb50876f525c14a",
+      "bytes": 109842,
+      "sha256": "63c5638a8a3ae5b049316e2599efd077223d948997d097341130a4479cfd96ed",
       "license": "CC-BY-4.0",
-      "origin": "Original local schematic courtyard entry and facade; UO sources are referenced without photographic textures.",
+      "origin": "Original restrained arched parapet details informed by archived 2011 CC BY photograph; all 463 previous components preserved. Dimensions and relief are schematic, no photographic textures.",
       "previous_record": {
-        "bytes": 106483,
-        "sha256": "6bcfacf17d80aa9e934ed27c6280c8dd48e2556b350b54500725a99757450189",
+        "bytes": 114513,
+        "sha256": "0e303860273701f0e7bb2b0c31487116b774d607e5b76b02acb50876f525c14a",
         "license": "CC-BY-4.0",
-        "origin": "Original local procedural exterior refinement; source references and limitations documented in project notes, no photographic textures.",
+        "origin": "Original local schematic courtyard entry and facade; UO sources are referenced without photographic textures.",
         "previous_record": {
-          "bytes": 112833,
-          "sha256": "18e7fd09df9e10e01bece9b4bc1e32df414a80575de4f4569fb685dc36fd869a",
+          "bytes": 106483,
+          "sha256": "6bcfacf17d80aa9e934ed27c6280c8dd48e2556b350b54500725a99757450189",
           "license": "CC-BY-4.0",
-          "origin": "Original simplified Susan Campbell exterior informed by linked UO historical survey; no third-party images.",
+          "origin": "Original local procedural exterior refinement; source references and limitations documented in project notes, no photographic textures.",
           "previous_record": {
-            "bytes": 62359,
-            "sha256": "cd4b8034968769443d1aded258ca780e401b4d47cf35f3463bb9b02e4118ecfd",
+            "bytes": 112833,
+            "sha256": "18e7fd09df9e10e01bece9b4bc1e32df414a80575de4f4569fb685dc36fd869a",
             "license": "CC-BY-4.0",
-            "origin": "Original simplified L-shaped replacement and roof geometry informed by credited CC BY 4.0 photograph and UO survey; no photo texture."
+            "origin": "Original simplified Susan Campbell exterior informed by linked UO historical survey; no third-party images.",
+            "previous_record": {
+              "bytes": 62359,
+              "sha256": "cd4b8034968769443d1aded258ca780e401b4d47cf35f3463bb9b02e4118ecfd",
+              "license": "CC-BY-4.0",
+              "origin": "Original simplified L-shaped replacement and roof geometry informed by credited CC BY 4.0 photograph and UO survey; no photo texture."
+            }
           }
         }
       }
@@ -445,15 +469,21 @@
       }
     },
     "apps/web-preview/public/scene/chapman-west-detail.json": {
-      "bytes": 39817,
-      "sha256": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009",
+      "bytes": 76289,
+      "sha256": "ff62b519c289b69deef6aa1d0c59419450f48f2c4cb057e5ace13d9959186bc4",
       "license": "CC-BY-4.0",
-      "origin": "Original simplified Chapman exterior informed by linked UO historic assessment; no third-party images.",
+      "origin": "Original shallow west frieze on retained 10 m entry projection; all 144 preceding components preserved. UO survey is link-only; 12 relief motifs are stylized, not measured carving or current-condition claim.",
       "previous_record": {
-        "bytes": 11446,
-        "sha256": "8591c19fdd6ebe2e1afb8bd88e3ffa27f60d05e826829053886ab1674dc5f7ca",
+        "bytes": 39817,
+        "sha256": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009",
         "license": "CC-BY-4.0",
-        "origin": "Original simplified west-entry and planting overlay informed by linked UO Chapman survey and assessment; no third-party image or texture included."
+        "origin": "Original simplified Chapman exterior informed by linked UO historic assessment; no third-party images.",
+        "previous_record": {
+          "bytes": 11446,
+          "sha256": "8591c19fdd6ebe2e1afb8bd88e3ffa27f60d05e826829053886ab1674dc5f7ca",
+          "license": "CC-BY-4.0",
+          "origin": "Original simplified west-entry and planting overlay informed by linked UO Chapman survey and assessment; no third-party image or texture included."
+        }
       }
     },
     "apps/web-preview/public/scene/oregon-south-detail.json": {
@@ -1330,6 +1360,96 @@
       "sha256": "a8b77dc98835544d1d2de953d0a1c27f3470e17593b206524081ef043c40f83f",
       "license": "CC-BY-4.0",
       "origin": "Original Gerlinger Hall exterior overlay and two illustrative shrubs; inspired by linked UO assessment and attributed photo, no photo texture."
+    },
+    "assets/animals/campus-squirrel-fur-v3-2026-11-10.glb": {
+      "bytes": 116552,
+      "sha256": "76fa737ec3d01fa49ef90d13eea1e09505d7dea7306a1afc6dcd2de3ac6ad659",
+      "license": "CC-BY-4.0",
+      "origin": "Original eye, nose and chest-color adaptation of the preserved Innerscene CC0 source. Standalone runtime-derived export; excludes routes, collision and instance colors. See docs/squirrel-eyes-2026-11-04.md."
+    },
+    "assets/exterior-refinement/knight-library-balconies-2026-11-10.glb": {
+      "bytes": 30284,
+      "sha256": "79f0eef62f0dab23248eb09f7b3e1bff802dbb9a1de7ae116bee0ddc33acebba",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-informed additive Knight Library layer; excludes original building, collision and Blender scene. See docs/knight-standalone-export-2026-11-10.md and associated evidence."
+    },
+    "assets/exterior-refinement/knight-library-window-reveals-2026-11-10.glb": {
+      "bytes": 56216,
+      "sha256": "4e33f4a00c348f22d8f2b4b6d3d3907b09552b97ca7684266fe05aa2c8afe23c",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-informed additive Knight Library layer; excludes original building, collision and Blender scene. See docs/knight-standalone-export-2026-11-10.md and associated evidence."
+    },
+    "assets/exterior-refinement/gerlinger-east-masonry-overlay-2026-11-10.glb": {
+      "bytes": 67676,
+      "sha256": "630bfafbad535188c12a1c96a70c22d910ea69f8fea8ee029dbf7569df189f7f",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-informed additive building layer; excludes original building, collision and Blender scene. See docs/gerlinger-east-refinement.md and associated verification evidence."
+    },
+    "assets/exterior-refinement/johnson-north-capitals-2026-11-10.glb": {
+      "bytes": 307644,
+      "sha256": "b42e41649d340d0e44c925716dfa5b8f3ce16f2852f23325be56dde9de717567",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-informed additive building layer; excludes original building, collision and Blender scene. See docs/johnson-north-capitals-2026-11-10.md and associated verification evidence."
+    },
+    "assets/exterior-refinement/tykeson-canopy-cladding-overlay-2026-11-10.glb": {
+      "bytes": 253580,
+      "sha256": "91bacb470a9625c831e9c5c9c569e428c4affb89cc6c13279150c30fcdde3abc",
+      "license": "CC-BY-4.0",
+      "origin": "Tykeson versioned procedural facade evidence; see docs/tykeson-north-refinement.md. Historical source retained; standalone overlay excludes base campus/collision/Blender."
+    },
+    "assets/exterior-refinement/tykeson-before-canopy-cladding-2026-11-10.json": {
+      "bytes": 13042,
+      "sha256": "83dc8689edf6656926631570d704c75b98612834a6ab4ed81897ebfcf30c395a",
+      "license": "CC-BY-4.0",
+      "origin": "Tykeson versioned procedural facade evidence; see docs/tykeson-north-refinement.md. Historical source retained; standalone overlay excludes base campus/collision/Blender."
+    },
+    "assets/exterior-refinement/susan-before-parapet-arches-2026-11-10.json": {
+      "bytes": 114513,
+      "sha256": "0e303860273701f0e7bb2b0c31487116b774d607e5b76b02acb50876f525c14a",
+      "license": "CC-BY-4.0",
+      "origin": "Immutable exact previous source specification before two parapet arch motifs."
+    },
+    "assets/exterior-refinement/susan-parapet-arches-exterior-2026-11-10.glb": {
+      "bytes": 642704,
+      "sha256": "40b507d808bab0d438e7481b572a0f03631a409fa68bb7e882c08b27efaffb25",
+      "license": "CC-BY-4.0",
+      "origin": "Original merged Susan Campbell replacement with two schematic parapet arches; documented immutable snapshot and exact export/reimport attributes. Not double-loaded over runtime."
+    },
+    "assets/exterior-refinement/friendly-before-round-shafts-2026-11-10.json": {
+      "bytes": 120595,
+      "sha256": "d8b439add6401343e891aa641fd4d12ae4aebe9a53bbc9cc99667f1bdcebdaba",
+      "license": "CC-BY-4.0",
+      "origin": "Exact immutable Friendly source before four outer porch shafts were rounded."
+    },
+    "assets/exterior-refinement/friendly-round-shafts-2026-11-10.glb": {
+      "bytes": 796100,
+      "sha256": "cc96fee2b2bf1564a3deb81335557cb1a3e9e9d87bc955fc5f862e1ea2f4311a",
+      "license": "CC-BY-4.0",
+      "origin": "Original standalone Friendly building-only replacement with four round porch shafts; source and export/reimport equivalence documented. Vegetation intentionally excluded only from export; not double-loaded over runtime."
+    },
+    "assets/exterior-refinement/annex-before-panel-joints-2026-11-10.json": {
+      "bytes": 21010,
+      "sha256": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
+      "license": "CC-BY-4.0",
+      "origin": "Immutable original Annex correction specification before shallow-joint study."
+    },
+    "assets/exterior-refinement/gerlinger-annex-joints-exterior-2026-11-10.glb": {
+      "bytes": 179300,
+      "sha256": "9572877db1ce9a010e09f87eddb953926bd38faaf4bcb782ba7bd30776ed7bf8",
+      "license": "CC-BY-4.0",
+      "origin": "Original Annex replacement export with five shallow north concrete panel grooves and retained illustrative vegetation. Photo reference is link-only UO survey, no image pixels. Exact geometry/source provenance in Annex refinement documentation."
+    },
+    "assets/exterior-refinement/chapman-before-west-frieze-2026-11-10.json": {
+      "bytes": 39817,
+      "sha256": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009",
+      "license": "CC-BY-4.0",
+      "origin": "Immutable exact Chapman source before west frieze."
+    },
+    "assets/exterior-refinement/chapman-west-frieze-overlay-2026-11-10.glb": {
+      "bytes": 419904,
+      "sha256": "90ebcc700a8809c30242066f3f8877344f53c6e7cf8d56e726e7c5c704d5573d",
+      "license": "CC-BY-4.0",
+      "origin": "Original Chapman overlay with shallow west frieze and retained illustrative shrubs; no source image pixels. Exact source/export-reimport evidence adjacent."
     }
   },
   "additional_sources": [

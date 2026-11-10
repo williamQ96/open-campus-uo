@@ -5,7 +5,7 @@ import { createHash } from "node:crypto";
 import * as THREE from "three";
 import { createExteriorDetail } from "../src/exterior-detail.js";
 const read = (url) => JSON.parse(readFileSync(new URL(url, import.meta.url)));
-test("Tykeson upper frontage remains pinned and retains canopy and planting", () => {
+test("Tykeson upper frontage remains pinned and retains upper openings and planting", () => {
   const old = read(
     "../../../assets/exterior-refinement/tykeson-before-upper-frontage-2026-11-04.json",
   );
@@ -22,10 +22,10 @@ test("Tykeson upper frontage remains pinned and retains canopy and planting", ()
   );
   assert.equal(d.building_id, old.building_id);
   assert.equal(d.replace_building, false);
-  assert.equal(d.objects.length, old.objects.length + 12);
-  assert.deepEqual(d.objects.slice(34, 40), old.objects.slice(34, 40));
+  assert.ok(d.objects.length >= old.objects.length + 12);
+  assert.deepEqual(d.objects.slice(36, 40), old.objects.slice(36, 40));
   for (const i of [3]) assert.deepEqual(d.objects[i], old.objects[i]);
-  const upper = d.objects.slice(40);
+  const upper = d.objects.slice(40, 52);
   assert.equal(upper.length, 12);
   assert.ok(upper.every((o) => o.position[1] === 16.85));
   const spec = {

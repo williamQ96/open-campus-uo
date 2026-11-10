@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-11-10T22:04:20.272050+00:00",
+  "stats": {
+    "startTime": "2026-11-10T22:01:55.862Z",
+    "duration": 132520.477,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "changed_runtime_test_scene_files": [],
+  "report_sha256": "b471cda45e3bfeec2884befa2a73693cadf89055738c7fc438620d9e5d7c07cf",
+  "scope": "Frozen targeted Chapman/native-button integration; supplements previous receipts, not full-suite or deployment acceptance.",
+  "fixed_draw_calls": 179,
+  "evidence_directory": "chapman-space-integration-2026-11-10/prepared-140038"
+}

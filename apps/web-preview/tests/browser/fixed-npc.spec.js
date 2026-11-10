@@ -171,6 +171,8 @@ test("Dan fixed person path, label, speech and model interaction", async ({
     () => window.__campus?.getState().ready && __campus.fixedNpcInfo(),
   );
   await expect(label).toBeVisible();
+  // Focus pauses the walking target before Playwright waits for a stable click.
+  await label.focus();
   await label.click();
   await expect(card).toBeVisible();
   await card.getByRole("button", { name: "Close" }).click();

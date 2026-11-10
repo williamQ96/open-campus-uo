@@ -1,0 +1,685 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-6684e091",
+  "replace_building": false,
+  "reference_ids": [
+    "knight-north-a-2018",
+    "knight-north-b-2018"
+  ],
+  "note": "Photo-informed original masonry jambs and heads with real depth. Additive projection around retained glazing approximates recessed openings without cutting or replacing the source wall. Dimensions, wall thickness and current condition unverified; existing balconies and blank plaques retained; no level change.",
+  "objects": [
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -592.175,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -587.825,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "head",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -590,
+        18.116,
+        192.2
+      ],
+      "size": [
+        4.9,
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -592.4,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -587.6,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "head-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -590,
+        18.286,
+        191.67
+      ],
+      "size": [
+        4.9,
+        0.08,
+        0.1
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -582.775,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -578.425,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "head",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -580.6,
+        18.116,
+        192.2
+      ],
+      "size": [
+        4.9,
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -583.0,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -578.2,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "head-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -580.6,
+        18.286,
+        191.67
+      ],
+      "size": [
+        4.9,
+        0.08,
+        0.1
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -573.375,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -569.025,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "head",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -571.2,
+        18.116,
+        192.2
+      ],
+      "size": [
+        4.9,
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -573.6,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -568.8,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "head-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -571.2,
+        18.286,
+        191.67
+      ],
+      "size": [
+        4.9,
+        0.08,
+        0.1
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -563.975,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -559.625,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "head",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -561.8,
+        18.116,
+        192.2
+      ],
+      "size": [
+        4.9,
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -564.2,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -559.4,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "head-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -561.8,
+        18.286,
+        191.67
+      ],
+      "size": [
+        4.9,
+        0.08,
+        0.1
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -554.575,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -550.225,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "head",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -552.4,
+        18.116,
+        192.2
+      ],
+      "size": [
+        4.9,
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -554.8,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -550.0,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "head-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -552.4,
+        18.286,
+        191.67
+      ],
+      "size": [
+        4.9,
+        0.08,
+        0.1
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -545.175,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -540.825,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "head",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -543,
+        18.116,
+        192.2
+      ],
+      "size": [
+        4.9,
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -545.4,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -540.6,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "head-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -543,
+        18.286,
+        191.67
+      ],
+      "size": [
+        4.9,
+        0.08,
+        0.1
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -535.775,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "jamb",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -531.425,
+        14.166,
+        192.2
+      ],
+      "size": [
+        0.55,
+        7.9,
+        1.0
+      ]
+    },
+    {
+      "role": "head",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -533.6,
+        18.116,
+        192.2
+      ],
+      "size": [
+        4.9,
+        0.4,
+        1.0
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -536.0,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "outer-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -531.2,
+        14.166,
+        191.67
+      ],
+      "size": [
+        0.1,
+        7.9,
+        0.1
+      ]
+    },
+    {
+      "role": "head-edge",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -533.6,
+        18.286,
+        191.67
+      ],
+      "size": [
+        4.9,
+        0.08,
+        0.1
+      ]
+    }
+  ]
+}

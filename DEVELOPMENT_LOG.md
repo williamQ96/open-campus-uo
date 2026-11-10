@@ -809,3 +809,114 @@ Forwarded Overview wheel events from building and fixed-person labels to the exi
 ## 2026-11-05 - Touch zoom bounds and person-card investigation (local)
 
 Extended the browser regression to exercise real two-finger gestures to the existing 12 and 6000 orbit-distance limits, both before and after a two-finger pan; both desktop and touch tests passed. The two existing fixed-person failures reproduce with the HEAD versions of the changed runtime modules: the moving label keeps Playwright waiting for a stable target before hover can pause the person, and the mobile dialog is initially at (0, 0) before its next render update positions it beside the person (observed at 50 ms). These failures remain unresolved; no person behavior or test assertions were changed. Of 43 locked viewer files, the three modified files match their override hashes and upstream pins; wildlife.js is the sole mismatch and its actual hash equals HEAD, with no registered override. No push or deployment.
+
+## 2026-11-10 - Squirrel close-up accents and immediate person-card anchoring (local)
+
+Refined the existing generic CC0-derived squirrel with an original charcoal nose and restrained chest/fur vertex colors. Source geometry, silhouette, placement, routes and original GLB remain unchanged; the refined animal retains one draw object and 1,060 triangles. Temporary merge geometries are now released. A new independently reimported standalone GLB preserves all 3,180 position, normal and color values exactly; previous exports remain. See `docs/squirrel-eyes-2026-11-04.md` for limitations and review images. LIFE-01 stays level 1.
+
+Fixed the named-person card's initial top-left flash by computing its anchor synchronously after opening, reusing that calculation during subsequent updates. New same-task desktop/mobile assertions fail 0/2 against the original implementation and pass 2/2 against the fix; all six related person-card/occlusion browser regressions pass. The existing moving-target test focuses the label before a real click rather than waiting indefinitely for animation stability; no interaction assertion was removed.
+
+Validation so far: 169 JS unit tests, 23 Python unit tests, production build, semantic activity, campus expansion and landcover checks pass; the squirrel campus/batching browser regression passes. All 189 archived model/source files verify after restoring the existing sky archive's LF checkout bytes (no Git content change). The downstream override now explicitly records the previously unregistered wildlife customization; the upstream template pin is unchanged. Entire-tree formatting passes with line endings set to auto; the ordinary check reports pre-existing Windows CRLF checkout differences, and no unrelated reformat was applied. Existing sound-bundle size warning remains. No full browser suite/Linux CI rerun and no push/deployment; remaining usage is not visible.
+
+## 2026-11-10 - Knight Library solid balcony silhouettes (local)
+
+Added three source-informed solid stone balcony parapets, side returns, coping and tapered undersides on the north elevation using the archived CC-BY-4.0 photograph. The source-pinned layer has 21 pieces merged into one mesh. Original building GLB, footprint, windows, entrances and collision remain. Dedicated before/after browser test passes: 42 to 43 draw calls, unchanged sampled collision/entrances and no page errors. See `docs/knight-refinement.md` for images and limitations: dimensions, carvings and current conditions are not verified; single-view acceptance only. Knight remains level 2. No push/deployment.
+
+## 2026-11-10 - Integration follow-up and archive byte protection (local)
+
+Completed all 14 selected browser integration tests: five building-card cases, two overview pan/zoom cases, one low-render-rate sprint case and six fixed-person opening/interaction/occlusion cases. A direct-node Vite server on a unique strict port prevented accidentally testing another checkout; no browser/runtime tests were weakened. The missing-information warning is deliberately induced by its passing fault-tolerance test. These results supersede the earlier interrupted partial navigation run, not the unrun full browser/Linux CI suites. Protected the already-checksummed historical sky JS archive with a precise `-text` Git attribute so future Windows checkouts preserve its expected bytes; the archive content and digest did not change. No push/deployment.
+
+## 2026-11-10 - Knight tall-window depth and reusable layer exports (local)
+
+Added seven photo-informed masonry window reveals as a separate source-pinned, one-mesh layer (42 components), preserving the pane apertures, blank plaques and completed balconies. This is interpreted outward wall thickness around the existing glazing, not surveyed recess geometry; Knight stays level 2. Front and oblique before/after browser checks now assert actual player coordinates and viewing direction, preventing a rejected viewpoint's default-spawn fallback from passing as visual evidence. Both corrected views passed with unchanged sampled collision/entrances and no page errors; draw calls changed 44 to 45 and 41 to 42. Existing tree occlusion remains. See `docs/knight-refinement.md`.
+
+Exported the balcony and reveal layers as separate reusable GLBs with source/generator hashes and true generation-time evidence. Positions, normals and colors survive reimport with zero error, and local/browser construction agrees; material and identity also verify. The exporter accepts only the two pinned Knight layers, an explicit localhost port and new output files. It does not export the original building, collision or Blender scene. Original evidence is retained; the shareable verification record omits workstation paths. See `docs/knight-standalone-export-2026-11-10.md`.
+
+Final local checks: 173/173 JS unit tests, production build, format with automatic line endings and all 191 archived source/model checksums pass. This complements the 14/14 integrated browser regressions above and the dedicated Knight views; full browser suite/Linux CI remain unrun. Earlier geometry and source evidence remain intact. No commit, push or deployment.
+
+## 2026-11-10 - Gerlinger masonry, Johnson capitals and evidence corrections (local)
+
+Added a shallow Gerlinger east masonry overlay: 36 central alternating brick accents and 15 compact window-crown pieces, preserving existing apertures and awnings. Rejected floating outer-corner candidates after visual review and fitted the retained accents against the actual source mesh. Front/oblique checks retain entrances and sampled collision, with 64 to 65 / 44 to 45 draw calls. Added six Johnson north column capitals with twelve original simplified volutes, preserving the inscription and original column geometry; the 2,832-triangle layer passed front/oblique checks at 81 to 82 / 86 to 87 draws. Both buildings stay level 1. Standalone GLBs and zero-error attribute roundtrip evidence are retained; see their dated refinement documents. Aggregate scene draw-budget validation is separate: the full diagnostic suite subsequently detected 182 draws against the existing <180 budget; a guarded overlay batching fix is in progress, not a reason to increase the threshold.
+
+The Johnson rail audit corrected an earlier candidate premise: the source stair generator and actual GLB already contain two rail assemblies. Adding two more would be unsupported; no rail geometry was changed. Inventory evidence links were updated without changing any status/level, and its count was reconciled to 1,082 rows including the later fixed-person entry. A locally registered Knight balcony output digest was corrected to exact raw JSON bytes rather than an LF-normalized digest; the source JSON, presentation pin and exported artifact were already consistent and unchanged.
+
+Windows autocrlf also altered the unchanged bike-rack, sky and random-template generator working bytes, causing exact-export provenance checks to fail. Their GLB embedded hashes match both Git HEAD and LF source bytes. Restored only those canonical LF bytes and added exact file attributes to preserve them; no geometry, export checksum or assertion was changed. Stable browser reruns are pending. No push/deployment.
+
+## 2026-11-10 - Tykeson canopy, keyboard access and draw-budget recovery (local)
+
+Refined Tykeson's two existing canopy plates into a framed/ribbed, glass-colored infill treatment and added fine upper-cladding seams clipped around the retained window openings. The complete prior 52-object JSON is preserved; all other 50 original objects remain exact. Both verified viewpoints retained 71 draws, entrances and collision. The new standalone GLB roundtrips exactly; opaque glass-colored shading, inferred spacing and unresolved hidden massing remain documented. Level stays 1.
+
+Building cards now anchor synchronously when opened or switched, with desktop/mobile same-task regressions failing on the original implementation and passing after the fix. Keyboard Enter/Space activates labels and card buttons without global movement shortcuts swallowing the native action; keyboard-opened cards receive focus and restore it safely on closing, while pointer opening does not steal focus and Tab remains non-modal. Ten focused browser cases passed, with a strengthened keyboard-enter test pass afterward.
+
+Recovered the original scene budget without removing geometry or raising its threshold: three fixed-source, same-building overlay pairs are merged only after exact JSON digests, generated geometry, static transforms, material and unique ownership checks all succeed. Positions/normals/colors and raycast identity are preserved, along with vegetation and independent source exports. Actual comparison is 182 draws before versus 179 after; the existing toon/PBR <180 regression passes. A configured historical source pin is not eligible for the new recipe and remains separate, whereas corruption under a supported current pin is rejected atomically. Historical before/after tests retain all non-draw exact assertions and permit only fewer/equal draws, rather than requiring redundant work.
+
+Canonical source line endings are now pinned in Git attributes so strict viewer hash checks and the ordinary formatter pass on Windows. Three historically literal-CRLF exporters remain exact-byte exceptions. Past raw-byte generation receipts are unchanged; see `docs/source-byte-normalization-2026-11-10.md`. Full-suite work remains diagnostic until its changed-source/HMR failures are reconciled under the stable version. No commit, push or deployment.
+
+## 2026-11-10 - Frozen current-browser acceptance completed (local)
+
+The current 186 browser tests across 144 files all passed on a frozen source/scene/test state: 182/182 in the main stable batch, plus four complementary fixed-person tests, with zero skipped or flaky results. Raw SHA-256 snapshots confirmed no changes across either stable batch. This is complete current-suite coverage in two batches, not a single 186-test invocation. The earlier non-frozen diagnostic (163 passes, 14 failures) remains preserved; all fourteen failures subsequently passed after the documented fixes and stable reruns. See `docs/browser-validation-2026-11-10.json` for actual times and report hashes.
+
+Final supporting checks passed: 183 JavaScript unit tests, 23 Python tests, production build, default formatting, all 43 viewer baseline/override raw hashes, registered viewer outputs and 195 source/model file checksums. Existing large sound-chunk warning remains. Windows Chrome/SwiftShader acceptance is not Linux CI, real mobile-GPU benchmarking or live deployment verification. Isolated exporter tests retain their artificial removed-DOM console warnings in raw logs. No commit, push or deployment. The next source-supported Susan Campbell candidates remain a plan, not completed geometry.
+
+## 2026-11-10: Next local refinement batch (in progress)
+
+Continued the authorized UO refinement after the frozen 186-case browser acceptance. Susan Campbell's two photo-supported small arched parapet details are being added to the existing merged layer; the complete pre-change specification is preserved. The source pin is updated locally, but visual/export/regression acceptance is still pending. Earlier acceptance applies to the preceding checkpoint, not automatically to this new geometry. No commit, push or deployment.
+
+### Local Susan/NPC results before integration retest
+
+- Susan: retained all 463 existing components and added eight parts for two shallow arched motifs supported by the archived 2011 photo. Exact old source snapshot retained; level remains 1. Front/oblique actual-camera comparisons pass with 81→81 / 79→79 draw calls; entrances and collision contracts unchanged. Standalone GLB 642704 bytes, SHA-256 `40b507d808bab0d438e7481b572a0f03631a409fa68bb7e882c08b27efaffb25`; all 17808 position/normal/color attributes round-trip exactly. The initially tree-obscured front proof was replaced by a verified unobstructed local facade close-up, not claimed as a full-building view. Uncertain projecting window groups remain deferred.
+- NPC controls: Space on the person label or close button incorrectly triggered campus jumping. Two new browser cases failed before the fix; all eight related cases pass after narrowly preserving native button Space activation without propagating to movement. Enter/Escape remain tested.
+- Local production build and standard formatter pass. Frozen targeted integration retest is running; preceding full-suite receipt is retained separately. No commit, push or deployment.
+
+### Susan/NPC batch acceptance
+
+Frozen focused browser regression: **27/27 passed**, zero failures/skips/flaky, 4.7 minutes; source/browser-test/scene pre/post hashes identical. Existing global draw budget remains **179 (<180)**. The expected invalid-source negative test remains enforced. Full current JS suite **186/186** and Python suite **23/23** pass; build, format, viewer hashes and **197** archived asset records verified. See `docs/browser-validation-2026-11-10-round2.json`. This focused retest supplements, not replaces, the earlier 186-case full-browser receipt. Uncommitted/local only.
+
+## 2026-11-10: Friendly Hall round-shaft batch (in progress)
+
+Following the verified Susan/NPC checkpoint, four photo-supported freestanding porch shafts change only their primitive from box to existing octagonal column. All positions, dimensions, materials and the other 486 objects are preserved. The old source is archived with nested provenance. Local source pin updated; final visual/export/regression evidence is still pending. No commit, push or deployment.
+
+### Friendly batch acceptance and evidence-based stopping point
+
+Only four shaft shape fields changed semantically; all other 486 objects, dimensions/materials/placement, collision and navigation remain exact. New serialized source uses LF and preserves the complete prior raw-byte snapshot, so raw Git text diff is larger than the semantic edit. The building adds 80 triangles but no draw calls. Three actual-camera comparisons pass; standalone building-only GLB (796100 bytes; `cc96fee2b2bf1564a3deb81335557cb1a3e9e9d87bc955fc5f862e1ea2f4311a`) round-trips 22068 position/normal/color attributes exactly. Export stdout receipt was recorded later with actual record time; no unavailable export timestamp invented.
+
+Final frozen focused browser regression **7/7 passes**, zero failed/skipped/flaky, source/test/scene hashes unchanged; fixed scene budget remains **179**. See `docs/browser-validation-2026-11-10-round3.json`. All **187 JS tests**, build and normal formatter pass; all **43** template/override raw hashes and **199** archived asset records verified. The unchanged Python scope passed 23/23 in the preceding batch.
+
+A bounded review of University Hall, Villard Hall and Gerlinger Annex found no reliable new small addition: existing details already cover the visible candidates, unresolved roof mappings need better evidence, and the Annex reference has an existing identity warning. See `docs/refinement-candidate-audit-2026-11-10-c-stop.md`. End this batch rather than invent geometry or consume quota without benefit. Usage balance is not exposed. Every change remains local/uncommitted; no push/deploy or upstream-pin claim.
+
+## 2026-11-10: Continued evidence and interaction quality pass (in progress)
+
+Following the final geometry checkpoint, the continued request now checks new public sources rather than repeating exhausted photo candidates, and tests real interaction defects. Archived reference README counts were stale: verified all 23 manifest records against raw bytes and corrected both languages to 15 photo files, 2 aerial subsets, 5 design images and 1 texture. Retained files are not all valid current building references; the existing Gerlinger Annex identity warning remains explicit. No source image added or relicensed. A newly reproduced person-label pointer/focus conflict is under bounded repair and verification. No publication.
+
+### New-source Annex and NPC focus results (integration pending)
+
+- Reopened official UO survey evidence and independently inspected the photographed building sign and site plan: the modern Annex north frontage can be distinguished from the misidentified archived Commons image. The survey image has no verified open image license and stays link-only; no source pixels are added or reused as textures. Five shallow 0.03 m recesses are an explicitly stylized use of the existing module, not measured count/spacing. Only the upper panel is repartitioned; the other 83 objects, facade envelope, collision and entrance records remain unchanged. Real raycasts verify 0.03 m depth. Context/oblique/close comparisons keep 39/38/36 draws unchanged; trees are not moved or hidden.
+- Annex export: 179300 bytes, SHA `9572877db1ce9a010e09f87eddb953926bd38faaf4bcb782ba7bd30776ed7bf8`; 2700 building and 2208 vegetation vertices round-trip position/normal/color exactly. Raw stdout retained, unknown export time stays null.
+- Reproduced NPC pointerleave incorrectly clearing ongoing keyboard focus (red 0/1). Separated model-hover, label-hover and focus; 10/10 related browser checks now pass, including reverse blur, hidden/disposed cleanup and not stealing another input focus.
+- All 189 JS tests, build and normal formatter pass. Frozen 16-case integration retest is running; no publication.
+
+### Annex/NPC batch acceptance
+
+Frozen integration **16/16 passed**, 144.9 s, no failed/skipped/flaky cases and no runtime/scene/browser-test hash drift. Global draw count remains **179**; Annex context/oblique/close counts remain **39/38/36**. Current 189 JS tests, build/format, 43 raw viewer/template records, 201 asset registry records and 23 reference-image archive records verified. See `docs/browser-validation-2026-11-10-round4.json`. Local uncommitted only; continuing independent source research after this checkpoint.
+
+## 2026-11-10: Chapman west relief batch (in progress)
+
+Independent review confirms the west entry projection lacks the photo-visible shallow arcade pattern; existing other-face motifs are outside this scope. Proceeding with original, limited 10 m relief using the existing generator and retained 144 objects. Source remains link-only UO survey: a new attribution-only low-resolution photo does not satisfy the pinned archival license whitelist, and focused CC/PD replacements were different universities. No false license, CI relaxation or public photo intake. Source pin updated locally; visual/export/regression checks pending. The reviewed pinned reference checker passes all 23 existing records; semantic activity, campus identity and landcover checks also passed.
+
+### Chapman and native-button results (integration pending)
+
+Chapman now retains all 144 prior objects and adds 121 pieces for a continuous shallow stone band with twelve 4 cm arch-relief motifs. The first isolated-arch version looked like hanging horseshoes and was rejected, not accepted because tests passed. Equivalent rotations were normalized into the existing validator range without relaxing it; corrected close/oblique cameras now show the actual frieze. Final three-view local comparisons maintain 109/44/41 draws. The original 144-object fixture now checks the exact preserved prefix and explicit added count, not a weakened inequality.
+
+Independent overlay GLB is 419904 bytes, SHA `90ebcc700a8809c30242066f3f8877344f53c6e7cf8d56e726e7c5c704d5573d`, with 10872 building and 720 shrub vertices; position/normal/color round-trip error is zero. Raw stdout is retained and unknown generation time remains null.
+
+A further real keyboard defect was reproduced: Follow and Settings buttons consumed Space as a world jump (red 0/2). The shared key handler now returns only for Space targeted at a native button. Native activation works without jumping; viewport Space still jumps and mouse-click Follow then W still moves. Eight local related cases pass. Existing upstream baseline remains unchanged; the downstream override is explicitly hashed. Frozen 15-case integration retest is running. No commit/push/deploy.
+
+### Chapman/native-button batch acceptance
+
+Frozen integration **15/15 passed**, 132.5 s, zero failed/skipped/flaky; source/scene/browser-test hashes unchanged. Chapman view budgets **109/44/41** remain unchanged; global count **179**. Native button activation, viewport jumping, W movement, NPC/building keyboard controls and overview wheel/pinch/slow-frame regressions pass. Current **191 JS tests**, build/format, 43 viewer raw hashes, 203 open-asset records and all 23 reference-image records pass. See `docs/browser-validation-2026-11-10-round5.json`. This supplements previous full/focused receipts, not a fresh full-browser run. No commit, push or deployment.
+
+## Release closeout, 2026-11-10T22:09:23.045485+00:00
+
+The user instructed: finish the current batch, record it, push/deploy, then stop. No further implementation started. The latest Carson candidate remains explicitly unimplemented; the additional search/touch audit passed 6/6 without code changes. Read-only proposed extra overlay batching was rejected: incompatible semantic buckets or already-batched content, no safe new benefit.
+
+Publishing the complete locally verified November 10 batch from existing `main` baseline `8cbb19b71268090c086a8ec2eb25ed8476137fb3`. A fresh fetch showed no ahead/behind divergence with origin/main. Existing GitHub Pages workflow is the deployment route; no credentials, permissions or hosting settings are being changed. Release commit and actual workflow/deployment outcomes are recorded by GitHub after this entry, not assumed here. All earlier local/pending statements are historical. No additional refinement will run after publication verification.

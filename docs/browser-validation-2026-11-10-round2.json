@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-11-10T21:33:18.920952+00:00",
+  "stats": {
+    "startTime": "2026-11-10T21:28:26.021Z",
+    "duration": 282464.75899999996,
+    "expected": 27,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "changed_runtime_test_scene_files": [],
+  "report_sha256": "0159c0c204bdd381220e75c964c46bb00fd8b3f66af9ef1f2f1395238d8862c7",
+  "scope": "Frozen focused regression for Susan arches and NPC Space plus renderer/source/navigation contracts; not a new full-suite or deployment acceptance.",
+  "evidence_directory": "targeted-integration-2026-11-10/prepared-132656"
+}

@@ -102,6 +102,14 @@ test("Gerlinger portico preserves campus selection, entrances and collision", as
   }
   await context.close();
   expect(results[0].entries).toEqual(results[1].entries);
-  expect(results[0].views).toEqual(results[1].views);
+  // Current pinned layers may batch while historical source variants remain separate.
+  // All non-render-cost observations stay exact; draw calls must never increase.
+  expect(results[1].views).toHaveLength(results[0].views.length);
+  for (let i = 0; i < results[0].views.length; i++) {
+    const { draws: beforeDraws, ...beforeState } = results[0].views[i];
+    const { draws: afterDraws, ...afterState } = results[1].views[i];
+    expect(afterState).toEqual(beforeState);
+    expect(afterDraws).toBeLessThanOrEqual(beforeDraws);
+  }
   expect(results.flatMap((x) => x.errors)).toEqual([]);
 });

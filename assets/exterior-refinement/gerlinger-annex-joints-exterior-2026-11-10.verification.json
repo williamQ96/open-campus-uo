@@ -1,0 +1,31 @@
+{
+  "output": "assets/exterior-refinement/gerlinger-annex-joints-exterior-2026-11-10.glb",
+  "bytes": 179300,
+  "output_sha256": "9572877db1ce9a010e09f87eddb953926bd38faaf4bcb782ba7bd30776ed7bf8",
+  "source": "apps/web-preview/public/scene/gerlinger-annex-correction.json",
+  "source_sha256": "cd95ca5f79a425d3c67b8c3532a983cadcf5d197214b7cccc5cbfe18426e35ea",
+  "snapshot": "assets/exterior-refinement/annex-before-panel-joints-2026-11-10.json",
+  "snapshot_sha256": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
+  "exporter": "apps/web-preview/scripts/export-annex-exterior.mjs",
+  "exporter_sha256": "13ccbc58dad2803ca6e75358d082a999a384bb7bfc1dd1f3c22651bcd5f049b4",
+  "roundtrip": {
+    "building": {
+      "position_count": 2700,
+      "normal_count": 2700,
+      "color_count": 2700,
+      "max_abs_error": 0
+    },
+    "existing_shrubs": {
+      "position_count": 2208,
+      "normal_count": 2208,
+      "color_count": 2208,
+      "max_abs_error": 0
+    },
+    "material_colors_match": true
+  },
+  "command": "From apps/web-preview with local Vite on port 5198: node scripts/export-annex-exterior.mjs ../../assets/exterior-refinement/<new-name>.glb",
+  "scope": "Merged building replacement plus eight existing illustrative shrubs; no campus, terrain, navigation, collision or Blender editing source. Never double-load with runtime replacement.",
+  "generated_at": null,
+  "receipt_recorded_at": "2026-11-10T21:49:26.922Z",
+  "export_stdout": "{\"output\":\"../../assets/exterior-refinement/gerlinger-annex-joints-exterior-2026-11-10.glb\",\"sha256\":\"9572877db1ce9a010e09f87eddb953926bd38faaf4bcb782ba7bd30776ed7bf8\",\"size\":179300,\"stats\":{\"annex-part-0-position\":{\"count\":2700,\"max\":0},\"annex-part-0-normal\":{\"count\":2700,\"max\":0},\"annex-part-0-color\":{\"count\":2700,\"max\":0},\"annex-part-1-position\":{\"count\":2208,\"max\":0},\"annex-part-1-normal\":{\"count\":2208,\"max\":0},\"annex-part-1-color\":{\"count\":2208,\"max\":0}}}"
+}

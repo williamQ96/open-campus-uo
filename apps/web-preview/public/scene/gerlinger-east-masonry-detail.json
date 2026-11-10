@@ -1,0 +1,903 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-9ac93ab7",
+  "replace_building": false,
+  "reference_ids": [
+    "gerlinger-hall-2013"
+  ],
+  "note": "Original simplified east-facade alternating brick quoins and restrained light window-crown wedges, referenced to Rick Obst 2013 photograph. Existing facade fit, openings, awnings and portico retained. Crown height intentionally compressed to existing available gap; dimensions, carving and current conditions unverified. No level change. Outer-corner candidates rejected after actual GLB intersection inspection; central quoin strips fit sampled source wall surfaces.",
+  "objects": [
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        9.3,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        9.99,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        10.68,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        11.37,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        12.06,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        12.75,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        13.44,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        14.13,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        14.82,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        15.51,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        16.2,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        16.89,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        17.58,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        18.27,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        18.96,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        19.65,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        20.34,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.225,
+        21.03,
+        202.7
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        9.3,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        9.99,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        10.68,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        11.37,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        12.06,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        12.75,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        13.44,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        14.13,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        14.82,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        15.51,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        16.2,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        16.89,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        17.58,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        18.27,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        18.96,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        19.65,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        20.34,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.88
+      ]
+    },
+    {
+      "role": "quoin",
+      "kind": "building",
+      "material": "brick",
+      "shape": "box",
+      "position": [
+        -359.747353,
+        21.03,
+        217.3
+      ],
+      "size": [
+        0.2,
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.16,
+        17.85,
+        199.1
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        -0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.16,
+        17.85,
+        200
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.16,
+        17.85,
+        200.9
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -358.418824,
+        17.85,
+        204.1
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        -0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -358.418824,
+        17.85,
+        205
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -358.418824,
+        17.85,
+        205.9
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -358.712941,
+        17.85,
+        209.1
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        -0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -358.712941,
+        17.85,
+        210
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -358.712941,
+        17.85,
+        210.9
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.007059,
+        17.85,
+        214.1
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        -0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.007059,
+        17.85,
+        215
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.007059,
+        17.85,
+        215.9
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.301176,
+        17.85,
+        219.1
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        -0.17,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.301176,
+        17.85,
+        220
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "window-crown",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -359.301176,
+        17.85,
+        220.9
+      ],
+      "size": [
+        0.3,
+        0.2,
+        0.64
+      ],
+      "rotation": [
+        0.17,
+        0,
+        0
+      ]
+    }
+  ]
+}

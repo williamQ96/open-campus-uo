@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-11-10T21:39:01.181885+00:00",
+  "export_generated_at": null,
+  "attribution": "Actual successful exporter stdout retained from the assigned worker tool result; the exporter did not emit a generation timestamp. Receipt recorded later without rerunning or overwriting the artifact.",
+  "artifact": "assets/exterior-refinement/friendly-round-shafts-2026-11-10.glb",
+  "exporter": "apps/web-preview/scripts/export-friendly-round-shafts.mjs",
+  "exporter_sha256": "0096a2d5755ce92ad01b0d9114debe99948581830afedb2d611d23e447bad19a",
+  "exit_code": 0,
+  "stdout": {
+    "output": "../../assets/exterior-refinement/friendly-round-shafts-2026-11-10.glb",
+    "source_sha256": "967cb118e6ae7fe3df80ed3b250f91e84798224a531c4f0a5ea360586dee3931",
+    "generator_sha256": "c0181be4a2256830571390bfb8497335d368e9d4e3aed9b9da625b5044fa1e40",
+    "base_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "scope": "building-only; vegetation excluded",
+    "sha256": "cc96fee2b2bf1564a3deb81335557cb1a3e9e9d87bc955fc5f862e1ea2f4311a",
+    "size": 796100,
+    "stats": {
+      "friendly-part-0-position": {
+        "count": 22068,
+        "max": 0
+      },
+      "friendly-part-0-normal": {
+        "count": 22068,
+        "max": 0
+      },
+      "friendly-part-0-color": {
+        "count": 22068,
+        "max": 0
+      }
+    }
+  }
+}

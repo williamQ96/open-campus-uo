@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-11-10T20:29:25.402Z",
+  "exporter_sha256": "49d8ff8c76c2b66d3c815e292c6824fe25081212be1c88c783a0e184b53f632a",
+  "building_id": "roof-906c030e",
+  "generator_sha256": {
+    "src/exterior-detail.js": "671133697d3a2f293de95944307b7e40e4c7ccd9889be2266f2017f51034e58c",
+    "src/fern-geometry.js": "8fdfe298ef46917a6734bb538ba09c300ee03689b724f901321c7d0445564aab"
+  },
+  "scope": "additive layer only; no original building, collision or Blender scene",
+  "source": "johnson-north-capitals.json",
+  "source_sha256": "95b1c547e803ad37d48b70d389c80d2fe28850e5c6f3b8fe6c9a290828f73a7d",
+  "base_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "output": "johnson-north-capitals-2026-11-10.glb",
+  "output_sha256": "b42e41649d340d0e44c925716dfa5b8f3ce16f2852f23325be56dde9de717567",
+  "bytes": 307644,
+  "verification": {
+    "position": {
+      "count": 8496,
+      "max_abs_error": 0
+    },
+    "normal": {
+      "count": 8496,
+      "max_abs_error": 0
+    },
+    "color": {
+      "count": 8496,
+      "max_abs_error": 0
+    }
+  },
+  "material_verified": true
+}

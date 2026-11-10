@@ -5,6 +5,10 @@ import { applyWallColorPatch } from "./wall-color-patch.js";
 import { applySourceTrianglePatch } from "./source-triangle-patch.js";
 import { applyBatchPalette } from "./batch-palette.js";
 import { mergeBatchBuildingDetail } from "./batch-building-detail.js";
+import {
+  recipeSupports,
+  mergePinnedBuildingOverlays,
+} from "./building-overlay-batches.js";
 import { applyBuildingRoofSlope } from "./building-roof-slope.js";
 import { applyVegetationPatch } from "./vegetation-patch.js";
 import { applyCanopyTone } from "./canopy-tone.js";
@@ -193,10 +197,19 @@ export async function loadPresentation(base, name, buildingIds) {
     throw new Error("Duplicate exterior detail layer.");
   const collisionSupplements = [];
   const localDetails = new Map();
+  const buildingOverlayEntries = new Map();
   for (const detailUrl of detailUrls) {
     const result = await fetch(sceneAssetUrl(base, detailUrl));
     if (!result.ok)
       throw new Error("Could not load exterior detail: " + result.status);
+    const configuredSha =
+      detailUrl === config.exterior_detail_url
+        ? config.exterior_detail_sha256
+        : config.exterior_details?.find((entry) => entry.url === detailUrl)
+            ?.sha256;
+    const rawBytes = recipeSupports(detailUrl, configuredSha)
+      ? await result.clone().arrayBuffer()
+      : null;
     const detail = await result.json();
     const boxes = collisionBoxesForDetail(detail);
     const overlayBoxes = overlayCollisionBoxesForDetail(detail);
@@ -213,6 +226,8 @@ export async function loadPresentation(base, name, buildingIds) {
       config.asset_sha256,
       buildingIds,
     );
+    if (rawBytes)
+      buildingOverlayEntries.set(detailUrl, { rawBytes, group: installed });
     if (detail.merge_target)
       mergeEnvironmentDetail(gltf.scene, installed, detail);
     if (detail.merge_batch_target !== undefined)
@@ -315,6 +330,11 @@ export async function loadPresentation(base, name, buildingIds) {
       "vegetation",
     );
   }
+  await mergePinnedBuildingOverlays(
+    gltf.scene,
+    buildingOverlayEntries,
+    config.asset_sha256,
+  );
   if (config.landcover_url) {
     const land = await new GLTFLoader().loadAsync(
       sceneAssetUrl(base, config.landcover_url),

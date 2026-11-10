@@ -169,7 +169,7 @@
     {
       "kind": "building",
       "material": "stone",
-      "shape": "box",
+      "shape": "column",
       "position": [
         -365.6,
         4.752,
@@ -184,7 +184,7 @@
     {
       "kind": "building",
       "material": "stone",
-      "shape": "box",
+      "shape": "column",
       "position": [
         -365.6,
         4.752,
@@ -364,7 +364,7 @@
     {
       "kind": "building",
       "material": "stone",
-      "shape": "box",
+      "shape": "column",
       "position": [
         -365.6,
         4.752,
@@ -379,7 +379,7 @@
     {
       "kind": "building",
       "material": "stone",
-      "shape": "box",
+      "shape": "column",
       "position": [
         -365.6,
         4.752,

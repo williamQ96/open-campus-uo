@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-11-10T20:19:48.058Z",
+  "exporter_sha256": "f28c7479fa6198dfde3356c5e1c1e9f316005ab20b9f33644e0b96365d44d827",
+  "building_id": "roof-6684e091",
+  "generator_sha256": {
+    "src/exterior-detail.js": "671133697d3a2f293de95944307b7e40e4c7ccd9889be2266f2017f51034e58c",
+    "src/fern-geometry.js": "8fdfe298ef46917a6734bb538ba09c300ee03689b724f901321c7d0445564aab"
+  },
+  "scope": "additive layer only; no original building, collision or Blender scene",
+  "source": "knight-library-window-reveals.json",
+  "source_sha256": "aa58ed85991c5db92b921ede21bec4d9c1959b782e5acc815cf57a2302417dbf",
+  "base_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "output": "../../assets/exterior-refinement/knight-library-window-reveals-2026-11-10.glb",
+  "output_sha256": "4e33f4a00c348f22d8f2b4b6d3d3907b09552b97ca7684266fe05aa2c8afe23c",
+  "bytes": 56216,
+  "verification": {
+    "position": {
+      "count": 1512,
+      "max_abs_error": 0
+    },
+    "normal": {
+      "count": 1512,
+      "max_abs_error": 0
+    },
+    "color": {
+      "count": 1512,
+      "max_abs_error": 0
+    }
+  },
+  "material_verified": true
+}

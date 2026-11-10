@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-11-10T20:18:10.622Z",
+  "building_id": "roof-6684e091",
+  "generator_sha256": {
+    "src/exterior-detail.js": "671133697d3a2f293de95944307b7e40e4c7ccd9889be2266f2017f51034e58c",
+    "src/fern-geometry.js": "8fdfe298ef46917a6734bb538ba09c300ee03689b724f901321c7d0445564aab"
+  },
+  "scope": "additive layer only; no original building, collision or Blender scene",
+  "source": "knight-library-balcony-detail.json",
+  "source_sha256": "b8344565659668b48f6ba00fceda9d096f7bac5f23c365ad1607495566a9ed74",
+  "base_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "output": "../../assets/exterior-refinement/knight-library-balconies-2026-11-10.glb",
+  "output_sha256": "79f0eef62f0dab23248eb09f7b3e1bff802dbb9a1de7ae116bee0ddc33acebba",
+  "bytes": 30284,
+  "verification": {
+    "position": {
+      "count": 792,
+      "max_abs_error": 0
+    },
+    "normal": {
+      "count": 792,
+      "max_abs_error": 0
+    },
+    "color": {
+      "count": 792,
+      "max_abs_error": 0
+    }
+  },
+  "material_verified": true
+}

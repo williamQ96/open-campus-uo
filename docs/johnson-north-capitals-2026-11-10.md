@@ -1,0 +1,19 @@
+# Johnson Hall north capital refinement, 2026-11-10
+
+The archived `johnson-front-pd` photograph by Adam850 (author PD-self dedication, not CC0) shows paired Ionic volutes beneath the north entablature. The approved source and rights remain in `data/reference-images/manifest.json`; no photograph pixels or copied mesh are embedded.
+
+The existing source GLB has six fluted columns at east coordinates -414, -408.8, -403.6, -398.4, -393.2 and -388 m. Its actual stone capital vertices occupy y 14.687–15.187 m; the retained original base is 3.337 m. These were checked by reading the source GLB rather than assigning new campus placement. `johnson-north-capitals.json` adds original simplified paired circular volutes, shallow segmented spiral relief, neck bands and thin abacus edges, pinned to the unchanged building source. 168 components merge into one vertex-colored mesh, 2,832 triangles. Original cap geometry remains behind the additive detail; this is not a literal sculptural reconstruction or measured carving.
+
+The previous Administration Building wording, rear/roof details, panes, column shafts, campus location, paths and collision remain. The layer is independently removable and Johnson stays level 1. Dimensions, actual carving profile and current conditions remain unverified. The accepted style is Architectural Toon, not photorealism. Code is Apache-2.0; original geometry contribution CC BY 4.0.
+
+Validation: dedicated unit test checks six centers, twelve volutes, bounded finite merged geometry, one mesh and rejection of wrong source hash. Local Chrome/SwiftShader front and oblique before/after checks assert actual player x/z and first-person camera direction. Both viewpoints are collision-clear, entrance records remain equal, and draw calls are 81→82 and 86→87. Four screenshots in `docs/images/johnson-capitals-{front,oblique}-{before,after}-2026-11-10.png` were visually reviewed. All twelve volutes align with retained columns and the inscription is unchanged. The automated test observed no pageerror events; its server log included a transient failed-fetch console message during parallel development, so this is not a clean-console/full-release claim.
+
+No source GLB or Blender file was regenerated, no standalone export yet, and no push/deployment. Parent integration records broader tests and pins.
+
+## Standalone additive export
+
+`assets/exterior-refinement/johnson-north-capitals-2026-11-10.glb` now preserves the entire added capital layer as a separate reusable artifact: 307,644 bytes, SHA-256 `b42e41649d340d0e44c925716dfa5b8f3ce16f2852f23325be56dde9de717567`. The adjacent `.glb.evidence.json` records actual generation time, exact raw source/generator/exporter hashes and material verification without workstation paths. Existing GLBs were not overwritten. This supersedes the earlier no-standalone-export status above.
+
+All 8,496 positions, normals and colors reimport exactly (zero maximum error). Reimported material, building identity, base hash, layer hash and generator provenance are checked. The local Node generator and actual browser generator also match attribute-for-attribute, avoiding an accidentally stale preview server. The output contains only the added capital details, not the original building, collision/navigation or Blender authoring scene.
+
+Reproduce with installed dependencies from `apps/web-preview`, running the local Vite server on a free explicit port: `node scripts/export-johnson-capitals.mjs johnson-north-capitals.json ../../assets/exterior-refinement/<new-name>.glb --base-url http://127.0.0.1:5299/`. The dedicated exporter accepts this one pinned additive layer, only a localhost HTTP URL, and refuses existing outputs/receipts. Its frozen UTF-8 SHA-256 is `49d8ff8c76c2b66d3c815e292c6824fe25081212be1c88c783a0e184b53f632a`. Source changes during export reject without writing. No publication or deployment.

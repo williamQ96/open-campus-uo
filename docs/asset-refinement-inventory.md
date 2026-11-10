@@ -38,3 +38,9 @@
 
 
 **2026-11-03 后续：**EMU 第 216 棵程序树依据 2024 航拍复核被局部抑制；现为原始 600 棵、可见 598 棵。详见 [单树证据](emu-tree-216.md)，等级不变。
+
+
+**2026-11-10 local refinement record:** Knight Library retains level 2 after source-pinned balcony and tall-window reveal additions; the generic squirrel retains level 1 after close-up color accents. The CSV links the tested standalone exports and their limitations. No interior, placement, species or measured-geometry status was promoted.
+
+
+**2026-11-10 inventory reconciliation:** The current CSV has 1,082 unique rows: 534 exterior identities, 534 planned individual interiors, the original 13 shared/environment/life rows, and the later-added `PERSON:dan-carrere` row. The original 1,081-row table above records the earlier baseline. This reconciliation changes no identity, status or level.

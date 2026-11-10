@@ -19,18 +19,18 @@
     },
     "src/presentation.js": {
       "upstream_sha256": "d33c5d8f940ae532978e56db6f273154eb51fdd425109fc6bf65849d86eb450f",
-      "local_sha256": "b3119c308eea7777ccc39fa8145b667e895e79bb07e738c6195d80e219a4f7a5",
-      "reason": "Apply source-pinned UO vegetation, furniture, ground materials and exterior layers"
+      "local_sha256": "83786ec3f19c2913666892b9d661a0af58895be7291c2ecf03ab7c4c490d3cea",
+      "reason": "Source-pinned UO layers with verified same-building overlay batching; historical source pins retain separate geometry"
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "16c0585ee44f863dd1b20267b0c0e3f8f8ae9a8b7e835d30b0e3d1f1671097fe",
-      "reason": "Optional sourced building information and source-pinned provisional identity annotations; install procedural rounded cloud geometry; non-modal anchored fixed-person card; overview wheel forwarding on labels and updated movement thresholds"
+      "local_sha256": "97ad111332c0fad44f89b9b22896b66d02b998783e544d62dfd873cb818d1467",
+      "reason": "Optional sourced building information and source-pinned provisional identity annotations; install procedural rounded cloud geometry; non-modal anchored fixed-person card; overview wheel forwarding on labels and updated movement thresholds; preserve native button Space without campus jump while retaining WASD"
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
-      "local_sha256": "43be4c7c1405fd91d8927d93e5691a0c3a586060498ddf0c4a980d0f09e043d7",
-      "reason": "Optional sourced building information cards"
+      "local_sha256": "fe112c43d323f29af5f26356515048d2842339261e39590dfa8acc3b141cb0e5",
+      "reason": "Sourced building information; synchronous first-frame placement and keyboard focus/native activation"
     },
     "src/style.css": {
       "upstream_sha256": "7ef8336da7df7d502eb32edc85fcb7f82f8ea4044c714f8f1770f2639834c709",
@@ -61,6 +61,11 @@
       "upstream_sha256": "d7fc38bc8c517eb4d092fb5ddeb4c7990aed18a4db1e5ee725f618acd8fe74be",
       "local_sha256": "ffa3731ca19ede3ac4ac80ded2226a72dde631e75e0b4f3f05a8b63473cfd79c",
       "reason": "Updated default and run movement speeds and animation thresholds"
+    },
+    "src/wildlife.js": {
+      "upstream_sha256": "9f635277d7d267d4446f15f57b98ad362b77f28e3b7799a62724811e1d727ca1",
+      "local_sha256": "c4af56d5bfd86688fe41cfdc5ca96c5049c1fcb44a8486be108275e6af59f912",
+      "reason": "Register existing downstream squirrel accents and fur-color material handling; runtime unchanged in this batch."
     }
   },
   "outputs": {
@@ -70,26 +75,26 @@
     "public/scene/pilot-understory-patch.json": "c45f91ea2a3cc5c6ac0237b4ecf0177a7f7e5f5811cb3dc45d448c40d7d5dd3a",
     "public/scene/pilot-tree-273-suppression.json": "32d617c541948787b999dbc965417c322ed1d704a4c474bd2381f86b5cc08e0b",
     "src/fixed-npc-occlusion.js": "f523b1fc279c4bdad0a2006cf0d4c104a37a37936e9b1e59b5f510460f5c1d32",
-    "src/fixed-npc.js": "f8fbf6ad4b4f693d3789ec413b502742c45e18e38ed9fdc7605e4c54ef41cd9f",
+    "src/fixed-npc.js": "67c3f445a4a4048d949e94ac6a16684f8bc94d11de2a03b0795fc4a6ffd6bc2e",
     "src/fixed-npc-path.js": "4427c560781fe4433f1380940a45635ce239c462c755174388efa05d5f6cb711",
     "src/exterior-detail.js": "c0181be4a2256830571390bfb8497335d368e9d4e3aed9b9da625b5044fa1e40",
     "public/scene/johnson-rear-detail.json": "2f8673dd96875d0f680e7a8431922e0989db8816500c63bdc6d4c0ea7249f81b",
     "public/scene/gerlinger-hall-detail.json": "5b7f19502761155f6e3837d588967c40540726ebed1429e9b95200703e45a94d",
-    "public/scene/gerlinger-annex-correction.json": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
+    "public/scene/gerlinger-annex-correction.json": "cd95ca5f79a425d3c67b8c3532a983cadcf5d197214b7cccc5cbfe18426e35ea",
     "public/scene/gerlinger-east-detail.json": "db6f5c816dcd48ec46cb1f7bac00e6202abe56e9f2465584745ad9bdb87f9e8a",
     "public/scene/pilot-tree-216-suppression.json": "6e4a7c0b21d40673024e15c302b407a6905647fe39f4d07ef22186e1a1f68521",
     "public/scene/johnson-frieze-detail.json": "a8131e6d28594128d80b0dfc72e16821bce4fbf37f6294c374a46055c4e404a0",
-    "public/scene/friendly-west-detail.json": "d8b439add6401343e891aa641fd4d12ae4aebe9a53bbc9cc99667f1bdcebdaba",
+    "public/scene/friendly-west-detail.json": "967cb118e6ae7fe3df80ed3b250f91e84798224a531c4f0a5ea360586dee3931",
     "public/scene/villard-east-detail.json": "d9d6f9a63819636258a276a865f9a6636e3b6821d81608c31ec907003a12cdfb",
     "public/scene/university-hall-detail.json": "d4af432a09a58a7a3d06e66d11f5f90c7c22cb87f3ba76b20050cfdf830f1b99",
     "public/scene/anstett-south-detail.json": "f5eac974a53e5df339d337ef8e96f9e6b8e41f41c8dd0ea5692905e02fb1ca5c",
     "public/scene/peterson-south-detail.json": "8ee390592f8136d570938614b2299becda65daeea7c0cb65435633ec5f633193",
-    "public/scene/tykeson-north-detail.json": "83dc8689edf6656926631570d704c75b98612834a6ab4ed81897ebfcf30c395a",
-    "public/scene/susan-roof-detail.json": "0e303860273701f0e7bb2b0c31487116b774d607e5b76b02acb50876f525c14a",
+    "public/scene/tykeson-north-detail.json": "27bdfbf31a2159fed4cb5b29429ba22b624f440f67ecad70765b184a5de5ddec",
+    "public/scene/susan-roof-detail.json": "63c5638a8a3ae5b049316e2599efd077223d948997d097341130a4479cfd96ed",
     "public/scene/straub-west-detail.json": "6ed3323de4f0811004546f4c2268a5038a7c872b3984fe3931626e6329359592",
     "public/scene/condon-east-detail.json": "cc930e202cc55e349858d817edc439a2e8cdf258f7e847429766104512a45ea8",
     "public/scene/fenton-south-detail.json": "b8db8f805d0fdb89327d52ebeaaded2dfe3c5316cce3557380884397572b15d4",
-    "public/scene/chapman-west-detail.json": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009",
+    "public/scene/chapman-west-detail.json": "ff62b519c289b69deef6aa1d0c59419450f48f2c4cb057e5ace13d9959186bc4",
     "public/scene/oregon-south-detail.json": "de430768ce0a530ddc173e1ccda1a53aeca434a29e4e310c44a5123ea9e44cfa",
     "public/scene/oregon-planter-detail.json": "569ddbdf51a70f3ded2e5bbeca249a3f679295a3cb5b01bcb4083384c6605a61",
     "public/scene/collier-house-detail.json": "ed690d87a7f1a3e980e7eb41262c52b32f491d106037eee643c11c842b176d77",
@@ -168,6 +173,17 @@
     "scripts/export-context-trees-varied.mjs": "1d504e2b8e6e8cbc74d4d35a3524187f13dbb492c230d81caca1ef1927980b9b",
     "src/cloud-volumes.js": "e95eb52eb99f442b2f43d45f97e4b194f3defdb68bcfb7431048bd46593e4e9a",
     "scripts/export-rounded-clouds.mjs": "b7cbaffb596990c2bfd453a8b619aedeee4918398012bb4ca79704c4bc963597",
-    "src/source-triangle-patch.js": "a265055dce404316eb9261df5416cb4d0b15c2e180eecc8cf455503974dfef7c"
+    "src/source-triangle-patch.js": "a265055dce404316eb9261df5416cb4d0b15c2e180eecc8cf455503974dfef7c",
+    "src/squirrel-detail.js": "8439b60e9e8531f1d8c109371c2eeddb1d1b8aba129afbbe64d99fb1a2cf669f",
+    "public/scene/knight-library-balcony-detail.json": "b8344565659668b48f6ba00fceda9d096f7bac5f23c365ad1607495566a9ed74",
+    "public/scene/knight-library-window-reveals.json": "aa58ed85991c5db92b921ede21bec4d9c1959b782e5acc815cf57a2302417dbf",
+    "scripts/export-knight-detail.mjs": "f28c7479fa6198dfde3356c5e1c1e9f316005ab20b9f33644e0b96365d44d827",
+    "public/scene/gerlinger-east-masonry-detail.json": "fdae26b98f8f49b2de41d9475157d2e4fdc4b182e995f5a4346d660cbb9fb832",
+    "public/scene/johnson-north-capitals.json": "95b1c547e803ad37d48b70d389c80d2fe28850e5c6f3b8fe6c9a290828f73a7d",
+    "src/building-overlay-batches.js": "bf9641a3c4cb592e3afe804b96ce1a4c99ef64d076f207b3a4a4d0801c590467",
+    "scripts/export-johnson-capitals.mjs": "49d8ff8c76c2b66d3c815e292c6824fe25081212be1c88c783a0e184b53f632a",
+    "scripts/export-friendly-round-shafts.mjs": "0096a2d5755ce92ad01b0d9114debe99948581830afedb2d611d23e447bad19a",
+    "scripts/export-annex-exterior.mjs": "13ccbc58dad2803ca6e75358d082a999a384bb7bfc1dd1f3c22651bcd5f049b4",
+    "scripts/export-chapman-exterior.mjs": "4f69378cb24a4d71e2562723048f2466da5a781b74ce026f4b3fcf8fce9abf4e"
   }
 }

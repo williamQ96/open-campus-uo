@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-6684e091",
+  "replace_building": false,
+  "reference_ids": [
+    "knight-north-a-2018",
+    "knight-north-b-2018"
+  ],
+  "note": "Original simplified solid stone parapets and tapered supports informed by archived 2018 north-facade photographs. Existing balcony centers and source building retained; dimensions approximate, carvings omitted, current condition unverified. No level change.",
+  "objects": [
+    {
+      "role": "front-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -571.2,
+        10.986,
+        190.38
+      ],
+      "size": [
+        5.08,
+        1.24,
+        0.42
+      ]
+    },
+    {
+      "role": "return-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -573.55,
+        10.986,
+        191.4
+      ],
+      "size": [
+        0.42,
+        1.24,
+        2.48
+      ]
+    },
+    {
+      "role": "return-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -568.85,
+        10.986,
+        191.4
+      ],
+      "size": [
+        0.42,
+        1.24,
+        2.48
+      ]
+    },
+    {
+      "role": "front-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -571.2,
+        11.656,
+        190.38
+      ],
+      "size": [
+        5.22,
+        0.16,
+        0.57
+      ]
+    },
+    {
+      "role": "return-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -573.55,
+        11.656,
+        191.4
+      ],
+      "size": [
+        0.55,
+        0.16,
+        2.48
+      ]
+    },
+    {
+      "role": "return-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -568.85,
+        11.656,
+        191.4
+      ],
+      "size": [
+        0.55,
+        0.16,
+        2.48
+      ]
+    },
+    {
+      "role": "tapered-support",
+      "kind": "building",
+      "material": "stone",
+      "shape": "hip",
+      "position": [
+        -571.2,
+        9.976,
+        191.55
+      ],
+      "size": [
+        5.02,
+        0.72,
+        2.48
+      ],
+      "rotation": [
+        3.141592653589793,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "front-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -561.8,
+        10.986,
+        190.38
+      ],
+      "size": [
+        5.08,
+        1.24,
+        0.42
+      ]
+    },
+    {
+      "role": "return-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -564.15,
+        10.986,
+        191.4
+      ],
+      "size": [
+        0.42,
+        1.24,
+        2.48
+      ]
+    },
+    {
+      "role": "return-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -559.45,
+        10.986,
+        191.4
+      ],
+      "size": [
+        0.42,
+        1.24,
+        2.48
+      ]
+    },
+    {
+      "role": "front-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -561.8,
+        11.656,
+        190.38
+      ],
+      "size": [
+        5.22,
+        0.16,
+        0.57
+      ]
+    },
+    {
+      "role": "return-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -564.15,
+        11.656,
+        191.4
+      ],
+      "size": [
+        0.55,
+        0.16,
+        2.48
+      ]
+    },
+    {
+      "role": "return-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -559.45,
+        11.656,
+        191.4
+      ],
+      "size": [
+        0.55,
+        0.16,
+        2.48
+      ]
+    },
+    {
+      "role": "tapered-support",
+      "kind": "building",
+      "material": "stone",
+      "shape": "hip",
+      "position": [
+        -561.8,
+        9.976,
+        191.55
+      ],
+      "size": [
+        5.02,
+        0.72,
+        2.48
+      ],
+      "rotation": [
+        3.141592653589793,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "front-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -552.4,
+        10.986,
+        190.38
+      ],
+      "size": [
+        5.08,
+        1.24,
+        0.42
+      ]
+    },
+    {
+      "role": "return-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -554.75,
+        10.986,
+        191.4
+      ],
+      "size": [
+        0.42,
+        1.24,
+        2.48
+      ]
+    },
+    {
+      "role": "return-parapet",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -550.05,
+        10.986,
+        191.4
+      ],
+      "size": [
+        0.42,
+        1.24,
+        2.48
+      ]
+    },
+    {
+      "role": "front-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -552.4,
+        11.656,
+        190.38
+      ],
+      "size": [
+        5.22,
+        0.16,
+        0.57
+      ]
+    },
+    {
+      "role": "return-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -554.75,
+        11.656,
+        191.4
+      ],
+      "size": [
+        0.55,
+        0.16,
+        2.48
+      ]
+    },
+    {
+      "role": "return-coping",
+      "kind": "building",
+      "material": "stone",
+      "shape": "box",
+      "position": [
+        -550.05,
+        11.656,
+        191.4
+      ],
+      "size": [
+        0.55,
+        0.16,
+        2.48
+      ]
+    },
+    {
+      "role": "tapered-support",
+      "kind": "building",
+      "material": "stone",
+      "shape": "hip",
+      "position": [
+        -552.4,
+        9.976,
+        191.55
+      ],
+      "size": [
+        5.02,
+        0.72,
+        2.48
+      ],
+      "rotation": [
+        3.141592653589793,
+        0,
+        0
+      ]
+    }
+  ]
+}

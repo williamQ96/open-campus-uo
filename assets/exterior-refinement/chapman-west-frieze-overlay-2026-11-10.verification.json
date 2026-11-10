@@ -1,0 +1,43 @@
+{
+  "output": "assets/exterior-refinement/chapman-west-frieze-overlay-2026-11-10.glb",
+  "bytes": 419904,
+  "output_sha256": "90ebcc700a8809c30242066f3f8877344f53c6e7cf8d56e726e7c5c704d5573d",
+  "source": "apps/web-preview/public/scene/chapman-west-detail.json",
+  "source_sha256": "ff62b519c289b69deef6aa1d0c59419450f48f2c4cb057e5ace13d9959186bc4",
+  "snapshot": "assets/exterior-refinement/chapman-before-west-frieze-2026-11-10.json",
+  "snapshot_sha256": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009",
+  "exporter": "apps/web-preview/scripts/export-chapman-exterior.mjs",
+  "exporter_sha256": "4f69378cb24a4d71e2562723048f2466da5a781b74ce026f4b3fcf8fce9abf4e",
+  "roundtrip": {
+    "chapman-part-0-position": {
+      "count": 10872,
+      "max": 0
+    },
+    "chapman-part-0-normal": {
+      "count": 10872,
+      "max": 0
+    },
+    "chapman-part-0-color": {
+      "count": 10872,
+      "max": 0
+    },
+    "chapman-part-1-position": {
+      "count": 720,
+      "max": 0
+    },
+    "chapman-part-1-normal": {
+      "count": 720,
+      "max": 0
+    },
+    "chapman-part-1-color": {
+      "count": 720,
+      "max": 0
+    }
+  },
+  "material_colors_match": true,
+  "generated_at": null,
+  "receipt_recorded_at": "2026-11-10T21:58:48.243Z",
+  "export_stdout": "{\"output\":\"../../assets/exterior-refinement/chapman-west-frieze-overlay-2026-11-10.glb\",\"sha256\":\"90ebcc700a8809c30242066f3f8877344f53c6e7cf8d56e726e7c5c704d5573d\",\"size\":419904,\"stats\":{\"chapman-part-0-position\":{\"count\":10872,\"max\":0},\"chapman-part-0-normal\":{\"count\":10872,\"max\":0},\"chapman-part-0-color\":{\"count\":10872,\"max\":0},\"chapman-part-1-position\":{\"count\":720,\"max\":0},\"chapman-part-1-normal\":{\"count\":720,\"max\":0},\"chapman-part-1-color\":{\"count\":720,\"max\":0}}}",
+  "command": "From apps/web-preview with local Vite on port 5198: node scripts/export-chapman-exterior.mjs ../../assets/exterior-refinement/<new-name>.glb",
+  "scope": "Additive overlay plus three existing illustrative shrubs only; not full building, base campus, terrain, navigation, collision or Blender editing source. Never double-load over runtime."
+}

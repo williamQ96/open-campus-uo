@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-11-10T21:20:19.771974+00:00",
+  "scope": "Local Chrome/Swiftshader, one worker, strict isolated localhost ports, no reuse; not deployed or hardware performance benchmark",
+  "initial_diagnostic": {
+    "directory": "run-122414",
+    "stats": {
+      "startTime": "2026-11-10T20:24:14.823Z",
+      "duration": 1689502.74,
+      "expected": 163,
+      "skipped": 0,
+      "unexpected": 14,
+      "flaky": 0
+    },
+    "note": "Concurrent HMR/code and LF normalization changes: diagnostic, not frozen acceptance"
+  },
+  "stable_runs": [
+    {
+      "directory": "stable-125243",
+      "stats": {
+        "startTime": "2026-11-10T20:52:44.257Z",
+        "duration": 1593914.993,
+        "expected": 182,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "report_sha256": "d168aaf790fb833ffb12cd14c11114c0713e4645eb191415deceaa954a11a86a"
+    },
+    {
+      "directory": "final-npc-131932",
+      "stats": {
+        "startTime": "2026-11-10T21:19:32.511Z",
+        "duration": 30336.501,
+        "expected": 4,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "report_sha256": "698808460dfc3de11d0d9a301a15b0152ad904b970271477b24df8bb03a5b70c"
+    }
+  ],
+  "current_list_tests": 186,
+  "current_list_files": 144,
+  "stable_pass_total": 186,
+  "changed_files_during_combined_stable_runs": [],
+  "notes": [
+    "Initial failures preserved; all failed/new/affected tests passed on stable run.",
+    "Stable acceptance comprises 182-test batch plus four complementary fixed-NPC tests, not one 186-test invocation.",
+    "Isolated export tests may remove the app DOM while asynchronous bootstrap remains active; console null-DOM warnings retained, not treated as deployed-site verification.",
+    "All screenshot artifacts routed outside repository; no old evidence overwritten."
+  ]
+}

@@ -1,0 +1,3480 @@
+{
+  "version": 1,
+  "base_asset_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "building_id": "roof-906c030e",
+  "replace_building": false,
+  "reference_ids": [
+    "johnson-front-pd"
+  ],
+  "note": "Original simplified Ionic volute relief and layered capitals, photo-informed but not measured or literal sculptural reproductions. Source column centers and original GLB retained. No level change.",
+  "objects": [
+    {
+      "role": "abacus",
+      "kind": "building",
+      "shape": "box",
+      "material": "cream",
+      "position": [
+        -414,
+        15.155,
+        25.65
+      ],
+      "size": [
+        1.52,
+        0.12,
+        1.42
+      ]
+    },
+    {
+      "role": "neck-band",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414,
+        14.55,
+        25.4
+      ],
+      "size": [
+        1.08,
+        0.12,
+        0.86
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -414.53,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.7515516555578,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1816770985375984
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.6821766555578,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.6488129413552653
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.583125,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.11450493809341103
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.485,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4216097777889952
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.41409417006514,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.9600253941907588
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.38534417006514,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.501431878646231
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.39941708287665,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.0468208173623057
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.4444170828766,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.597666533401578
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.50124999999997,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1269342003475153
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.55062499999997,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.5569052505721044
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.57931209150036,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.969065259322268
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -414.58368709150034,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.3517513597775832
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -413.47,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.2484483444422,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.9599155550521947
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.3178233444422,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.492779712234528
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.416875,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.027087715496382
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.515,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.719982875800798
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.58590582993486,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.1815672593990345
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.61465582993486,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.640160774943562
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.60058291712335,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.0947718362274876
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.5555829171234,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5439261201882154
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.49875000000003,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.014658453242278059
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.44937500000003,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.5846874030176888
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.42068790849964,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1725273942675254
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -413.41631290849966,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.78984129381221
+      ]
+    },
+    {
+      "role": "abacus",
+      "kind": "building",
+      "shape": "box",
+      "material": "cream",
+      "position": [
+        -408.8,
+        15.155,
+        25.65
+      ],
+      "size": [
+        1.52,
+        0.12,
+        1.42
+      ]
+    },
+    {
+      "role": "neck-band",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.8,
+        14.55,
+        25.4
+      ],
+      "size": [
+        1.08,
+        0.12,
+        0.86
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -409.33,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.55155165555783,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1816770985375984
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.48217665555785,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.6488129413552653
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.38312499999995,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.11450493809341103
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.28499999999997,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4216097777889952
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.21409417006515,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.9600253941907588
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.18534417006515,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.501431878646231
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.1994170828766,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.0468208173623057
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.2444170828766,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.597666533401578
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.30125,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1269342003475153
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.350625,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.5569052505721044
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.3793120915003,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.969065259322268
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -409.38368709150035,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.3517513597775832
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -408.27000000000004,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.0484483444422,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.9599155550521947
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.1178233444422,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.492779712234528
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.2168750000001,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.027087715496382
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.31500000000005,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.719982875800798
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.38590582993487,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.1815672593990345
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.4146558299349,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.640160774943562
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.4005829171234,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.0947718362274876
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.3555829171234,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5439261201882154
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.29875000000004,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.014658453242278059
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.24937500000004,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.5846874030176888
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.2206879084997,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1725273942675254
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -408.2163129084997,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.78984129381221
+      ]
+    },
+    {
+      "role": "abacus",
+      "kind": "building",
+      "shape": "box",
+      "material": "cream",
+      "position": [
+        -403.6,
+        15.155,
+        25.65
+      ],
+      "size": [
+        1.52,
+        0.12,
+        1.42
+      ]
+    },
+    {
+      "role": "neck-band",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.6,
+        14.55,
+        25.4
+      ],
+      "size": [
+        1.08,
+        0.12,
+        0.86
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -404.13,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.35155165555784,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1816770985375984
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.2821766555578,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.6488129413552653
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.183125,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.11450493809341103
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.08500000000004,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4216097777889952
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.01409417006516,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.9600253941907588
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.98534417006516,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.501431878646231
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.9994170828767,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.0468208173623057
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.04441708287663,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.597666533401578
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.10125,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1269342003475153
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.150625,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.5569052505721044
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.1793120915004,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.969065259322268
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -404.18368709150036,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.3517513597775832
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -403.07000000000005,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -402.8484483444422,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.9599155550521947
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -402.91782334444224,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.492779712234528
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.016875,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.027087715496382
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.115,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.719982875800798
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.1859058299349,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.1815672593990345
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.2146558299349,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.640160774943562
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.20058291712337,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.0947718362274876
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.1555829171234,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5439261201882154
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.09875000000005,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.014658453242278059
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.04937500000005,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.5846874030176888
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.02068790849967,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1725273942675254
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -403.0163129084997,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.78984129381221
+      ]
+    },
+    {
+      "role": "abacus",
+      "kind": "building",
+      "shape": "box",
+      "material": "cream",
+      "position": [
+        -398.4,
+        15.155,
+        25.65
+      ],
+      "size": [
+        1.52,
+        0.12,
+        1.42
+      ]
+    },
+    {
+      "role": "neck-band",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.4,
+        14.55,
+        25.4
+      ],
+      "size": [
+        1.08,
+        0.12,
+        0.86
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -398.92999999999995,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -399.1515516555578,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1816770985375984
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -399.08217665555776,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.6488129413552653
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.983125,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.11450493809341103
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.885,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4216097777889952
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.8140941700651,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.9600253941907588
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.7853441700651,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.501431878646231
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.79941708287663,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.0468208173623057
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.8444170828766,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.597666533401578
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.90124999999995,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1269342003475153
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.95062499999995,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.5569052505721044
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.97931209150033,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.969065259322268
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.9836870915003,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.3517513597775832
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -397.87,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.64844834444216,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.9599155550521947
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.7178233444422,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.492779712234528
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.816875,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.027087715496382
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.91499999999996,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.719982875800798
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.98590582993484,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.1815672593990345
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.01465582993484,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.640160774943562
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -398.0005829171233,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.0947718362274876
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.95558291712337,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5439261201882154
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.89875,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.014658453242278059
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.849375,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.5846874030176888
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.8206879084996,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1725273942675254
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -397.81631290849964,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.78984129381221
+      ]
+    },
+    {
+      "role": "abacus",
+      "kind": "building",
+      "shape": "box",
+      "material": "cream",
+      "position": [
+        -393.2,
+        15.155,
+        25.65
+      ],
+      "size": [
+        1.52,
+        0.12,
+        1.42
+      ]
+    },
+    {
+      "role": "neck-band",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.2,
+        14.55,
+        25.4
+      ],
+      "size": [
+        1.08,
+        0.12,
+        0.86
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -393.72999999999996,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.9515516555578,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1816770985375984
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.8821766555578,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.6488129413552653
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.7831249999999,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.11450493809341103
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.68499999999995,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4216097777889952
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.61409417006513,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.9600253941907588
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.5853441700651,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.501431878646231
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.5994170828766,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.0468208173623057
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.6444170828766,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.597666533401578
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.70124999999996,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1269342003475153
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.75062499999996,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.5569052505721044
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.7793120915003,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.969065259322268
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -393.7836870915003,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.3517513597775832
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -392.67,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.44844834444217,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.9599155550521947
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.51782334444215,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.492779712234528
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.61687500000005,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.027087715496382
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.71500000000003,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.719982875800798
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.78590582993485,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.1815672593990345
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.81465582993485,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.640160774943562
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.8005829171234,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.0947718362274876
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.7555829171234,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5439261201882154
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.69875,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.014658453242278059
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.649375,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.5846874030176888
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.6206879084997,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1725273942675254
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -392.61631290849965,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.78984129381221
+      ]
+    },
+    {
+      "role": "abacus",
+      "kind": "building",
+      "shape": "box",
+      "material": "cream",
+      "position": [
+        -388,
+        15.155,
+        25.65
+      ],
+      "size": [
+        1.52,
+        0.12,
+        1.42
+      ]
+    },
+    {
+      "role": "neck-band",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388,
+        14.55,
+        25.4
+      ],
+      "size": [
+        1.08,
+        0.12,
+        0.86
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -388.53,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.7515516555578,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1816770985375984
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.6821766555578,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.6488129413552653
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.583125,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.11450493809341103
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.485,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.4216097777889952
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.41409417006514,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.9600253941907588
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.38534417006514,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.501431878646231
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.39941708287665,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.0468208173623057
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.4444170828766,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.597666533401578
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.50124999999997,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.1269342003475153
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.55062499999997,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.5569052505721044
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.57931209150036,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.969065259322268
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -388.58368709150034,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.3517513597775832
+      ]
+    },
+    {
+      "role": "volute",
+      "kind": "building",
+      "shape": "disk",
+      "material": "cream",
+      "position": [
+        -387.47,
+        14.83,
+        24.96
+      ],
+      "size": [
+        0.19,
+        0.63,
+        0.63
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.2484483444422,
+        14.8871875,
+        24.855
+      ],
+      "size": [
+        0.14161609949077264,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.9599155550521947
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.3178233444422,
+        14.979202699152097,
+        24.855
+      ],
+      "size": [
+        0.13327751418135741,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        2.492779712234528
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.416875,
+        15.020140199152095,
+        24.855
+      ],
+      "size": [
+        0.12495036776749172,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        3.027087715496382
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.515,
+        15.006067286340599,
+        24.855
+      ],
+      "size": [
+        0.11663755736343459,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.719982875800798
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.58590582993486,
+        14.9488797863406,
+        24.855
+      ],
+      "size": [
+        0.10834304038999626,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -2.1815672593990345
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.61465582993486,
+        14.8709375,
+        24.855
+      ],
+      "size": [
+        0.1000723634266609,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.640160774943562
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.60058291712335,
+        14.7971875,
+        24.855
+      ],
+      "size": [
+        0.09183353843084677,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -1.0947718362274876
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.5555829171234,
+        14.747391039282395,
+        24.855
+      ],
+      "size": [
+        0.08363856049044467,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5439261201882154
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.49875000000003,
+        14.730828539282395,
+        24.855
+      ],
+      "size": [
+        0.07550617807285108,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.014658453242278059
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.44937500000003,
+        14.744901452093892,
+        24.855
+      ],
+      "size": [
+        0.06746727278804246,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        0.5846874030176888
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.42068790849964,
+        14.777713952093892,
+        24.855
+      ],
+      "size": [
+        0.05957610256964439,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.1725273942675254
+      ]
+    },
+    {
+      "role": "spiral-relief",
+      "kind": "building",
+      "shape": "box",
+      "material": "stone",
+      "position": [
+        -387.41631290849966,
+        14.8134375,
+        24.855
+      ],
+      "size": [
+        0.051935883662104845,
+        0.037,
+        0.035
+      ],
+      "rotation": [
+        0,
+        0,
+        1.78984129381221
+      ]
+    }
+  ]
+}

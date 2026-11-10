@@ -1,0 +1,21 @@
+{
+  "output": "assets/exterior-refinement/tykeson-canopy-cladding-overlay-2026-11-10.glb",
+  "sha256": "91bacb470a9625c831e9c5c9c569e428c4affb89cc6c13279150c30fcdde3abc",
+  "bytes": 253580,
+  "source": "apps/web-preview/public/scene/tykeson-north-detail.json",
+  "source_sha256": "27bdfbf31a2159fed4cb5b29429ba22b624f440f67ecad70765b184a5de5ddec",
+  "original_snapshot": "assets/exterior-refinement/tykeson-before-canopy-cladding-2026-11-10.json",
+  "original_snapshot_sha256": "83dc8689edf6656926631570d704c75b98612834a6ab4ed81897ebfcf30c395a",
+  "base_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "exporter": "apps/web-preview/scripts/export-tykeson-exterior.mjs",
+  "exporter_sha256": "cec125d5f017564b92108238dd5a10ff70273d39fa130abce6cbe27b6679ffd8",
+  "roundtrip": {
+    "building_attribute_count": 6012,
+    "vegetation_attribute_count": 960,
+    "position_max_error": 0,
+    "normal_max_error": 0,
+    "color_max_error": 0
+  },
+  "command": "From apps/web-preview with local Vite on port 5173: node scripts/export-tykeson-exterior.mjs ../../assets/exterior-refinement/<new-name>.glb",
+  "scope": "Facade overlay and four existing illustrative shrubs only; excludes source building, terrain, navigation and collision; do not double-load."
+}

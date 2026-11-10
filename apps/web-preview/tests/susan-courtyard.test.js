@@ -8,7 +8,9 @@ import {
 } from "../src/collision-supplement.js";
 import { isBlocked } from "../src/world.js";
 const read = (p) => JSON.parse(readFileSync(new URL(p, import.meta.url)));
-const d = read("../public/scene/susan-roof-detail.json"),
+const d = read(
+    "../../../assets/exterior-refinement/susan-before-parapet-arches-2026-11-10.json",
+  ),
   before = read(
     "../../../assets/exterior-refinement/susan-before-courtyard-2026-11-04.json",
   ),

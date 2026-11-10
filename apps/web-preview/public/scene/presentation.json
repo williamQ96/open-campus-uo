@@ -1210,8 +1210,27 @@
   "exterior_detail_status": "Photo-informed interpretation; dated 2012 reference, no surveyed dimensions",
   "exterior_details": [
     {
+      "url": "johnson-north-capitals.json",
+      "sha256": "95b1c547e803ad37d48b70d389c80d2fe28850e5c6f3b8fe6c9a290828f73a7d"
+    },
+    {
+      "url": "gerlinger-east-masonry-detail.json",
+      "sha256": "fdae26b98f8f49b2de41d9475157d2e4fdc4b182e995f5a4346d660cbb9fb832",
+      "status": "2013 photo-informed brick quoins and compressed window crowns; dimensions inferred"
+    },
+    {
+      "url": "knight-library-window-reveals.json",
+      "sha256": "aa58ed85991c5db92b921ede21bec4d9c1959b782e5acc815cf57a2302417dbf",
+      "status": "2018 photo-informed masonry reveal depth; additive approximation, not surveyed wall thickness"
+    },
+    {
+      "url": "knight-library-balcony-detail.json",
+      "sha256": "b8344565659668b48f6ba00fceda9d096f7bac5f23c365ad1607495566a9ed74",
+      "status": "2018 photo-informed solid balcony parapets; approximate dimensions, no relief or level claim"
+    },
+    {
       "url": "gerlinger-annex-correction.json",
-      "sha256": "debbf767b3995a149757264323bd8ce8e7d6e50097c48d53007d0aa54215954c",
+      "sha256": "cd95ca5f79a425d3c67b8c3532a983cadcf5d197214b7cccc5cbfe18426e35ea",
       "status": "Source-informed approximate replacement; 2025 survey, hidden elevations unverified"
     },
     {
@@ -1226,7 +1245,7 @@
     },
     {
       "url": "friendly-west-detail.json",
-      "sha256": "d8b439add6401343e891aa641fd4d12ae4aebe9a53bbc9cc99667f1bdcebdaba",
+      "sha256": "967cb118e6ae7fe3df80ed3b250f91e84798224a531c4f0a5ea360586dee3931",
       "status": "West facade informed by 2017 CC0 photograph and UO survey; other elevations approximate"
     },
     {
@@ -1247,11 +1266,11 @@
     },
     {
       "url": "tykeson-north-detail.json",
-      "sha256": "83dc8689edf6656926631570d704c75b98612834a6ab4ed81897ebfcf30c395a"
+      "sha256": "27bdfbf31a2159fed4cb5b29429ba22b624f440f67ecad70765b184a5de5ddec"
     },
     {
       "url": "susan-roof-detail.json",
-      "sha256": "0e303860273701f0e7bb2b0c31487116b774d607e5b76b02acb50876f525c14a"
+      "sha256": "63c5638a8a3ae5b049316e2599efd077223d948997d097341130a4479cfd96ed"
     },
     {
       "url": "straub-west-detail.json",
@@ -1267,7 +1286,7 @@
     },
     {
       "url": "chapman-west-detail.json",
-      "sha256": "c517238075ef611d80920f99a0036e7e711c65d69fe9b6b74408cc937ff27009"
+      "sha256": "ff62b519c289b69deef6aa1d0c59419450f48f2c4cb057e5ace13d9959186bc4"
     },
     {
       "url": "oregon-south-detail.json",

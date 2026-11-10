@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-11-10T21:51:27.706382+00:00",
+  "stats": {
+    "startTime": "2026-11-10T21:48:51.565Z",
+    "duration": 144938.514,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "changed_runtime_test_scene_files": [],
+  "report_sha256": "b25089d59ea407d704ee8df88c72c9aec8e74be0c4b2c49811e531e703ad15c3",
+  "scope": "Frozen focused Annex/NPC integration, supplements earlier full-browser receipt; not deployed or hardware-performance acceptance.",
+  "fixed_draw_calls": 179,
+  "evidence_directory": "annex-npc-final-integration-2026-11-10/prepared-134825"
+}
