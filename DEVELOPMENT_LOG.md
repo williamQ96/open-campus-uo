@@ -6,6 +6,11 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-16 - Scrollable building cards on mobile (release candidate)
+
+- Long building information now scrolls within the viewport; touch scrolling remains available in portrait and landscape, and the Enter action remains reachable. This change was integrated on top of the later landmark and fixed-person work already on main; earlier local working files were retained separately.
+- Verified 191 JavaScript unit tests, the Vite production build, formatting and both 390×844 and 844×390 touch-browser regression cases. The previous main-branch full browser CI failed with multiple timeouts and interaction failures; these targeted checks do not establish that the full suite is fixed. Publication and deployment are to be verified after push.
+
 ## 2026-11-03 - Asset refinement inventory (local)
 
 - Added a maintainable inventory covering 534 exterior identities, 534 planned building-specific interiors and 13 existing environment, prop, shared-interior and character/animal entries. The user-specified baseline assigns Knight exterior level 2 and other existing assets level 1; absent interiors remain ungraded. Levels 3–5 await user criteria.

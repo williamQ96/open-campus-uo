@@ -14,13 +14,17 @@
   inset: 0 auto auto 0;
   z-index: 7;
   width: min(248px, calc(100% - 24px));
+  max-height: max(100px, calc(100dvh - 222px));
   padding: 18px;
   background: #f5f5eff5;
   border: 1px solid #ffffffc4;
   border-radius: 4px;
   box-shadow: 0 8px 28px #1e38252b;
   pointer-events: auto;
-  touch-action: manipulation;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  overflow-wrap: anywhere;
+  touch-action: pan-y;
 }
 .building-card h2 {
   margin: 0;
@@ -59,9 +63,15 @@
 #app[data-inspection="true"] .touch-hint {
   display: none !important;
 }
+@media (max-width: 600px) {
+  .building-card {
+    max-height: max(100px, calc(100dvh - 288px));
+  }
+}
 @media (max-height: 500px) {
   .building-card {
     padding: 12px 16px;
+    max-height: max(100px, calc(100dvh - 222px));
   }
   .building-card p {
     margin: 10px 0;

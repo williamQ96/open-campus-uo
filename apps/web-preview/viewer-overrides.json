@@ -34,7 +34,7 @@
     },
     "src/style.css": {
       "upstream_sha256": "7ef8336da7df7d502eb32edc85fcb7f82f8ea4044c714f8f1770f2639834c709",
-      "local_sha256": "b651799a6ab52a0792912cf1b0e86d42532cd89605f29a23813a53ec057d9468",
+      "local_sha256": "e40368552b4242c4eb69396aa82ed8d1a67be07e8ec4045f79d432022b757290",
       "reason": "Optional sourced building information cards; non-modal anchored fixed-person card"
     },
     "src/world.js": {
