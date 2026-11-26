@@ -17,7 +17,7 @@ test("Lokey entrance and building selection remain usable", async ({
         );
         await r.fulfill({ response, json: j });
       });
-    await page.goto("/");
+    await page.goto("/?exterior-review=plc-lokey-tykeson-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo()),
       ground = await page.evaluate(
@@ -41,7 +41,7 @@ test("Lokey entrance and building selection remain usable", async ({
         ),
       ground,
     );
-    await page.goto("/?return=1");
+    await page.goto("/?return=1&exterior-review=plc-lokey-tykeson-baseline");
     await page.waitForFunction(
       () =>
         window.__campus?.getState().ready &&

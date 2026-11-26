@@ -1,5 +1,7 @@
 # Hendricks Hall exterior: source and placement audit
 
+The November 24 local default resolves the footprint and combines `roof-6cd16f5c` with the existing named `roof-e145c222`. The rebuilt site connects the former refectory and residential wings. [Women's Memorial Quad exterior review](womens-quad-exterior-review-2026-11-24.md).
+
 The [UO historic survey](https://cpfm.uoregon.edu/hendrickshall2025), accessed 2026-11-04, describes a 2.5-storey L-shaped brick building with gambrel roofs, parapets and dormers. Its survey photograph and site plan identify the building in context. The survey is linked as a reference; its images are not redistributed here. An existing campus asset is named Hendricks Hall (`roof-e145c222`), but that match was approximate, and its rectangular footprint does not establish the full L-shaped building boundary. The 2024 NAIP aerial already documented in the reference manifest provides context but is not a measured or current building survey.
 
 A reversible roof-only candidate was evaluated in the staged viewer, using the existing gambrel primitive and approximate rectangular bounds. The result did not reliably correspond to the full surveyed shape and obscured existing roof details, so **it was rejected and is not included in the running campus**. [Existing view](images/hendricks-audit-before.png); [rejected candidate](images/hendricks-audit-rejected.png). The candidate is illustrative, not evidence of Hendricks's actual roof layout. Trees obscure part of the view.

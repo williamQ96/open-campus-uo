@@ -1,0 +1,1549 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_dsm_sha256": {
+    "2017": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+    "2013-2015": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+  },
+  "models": [
+    {
+      "id": "roof-b59639cc",
+      "name": "Womack Hall",
+      "street_address": "850 Franklin Blvd",
+      "municipal_addresses": [
+        "850 FRANKLIN BLVD"
+      ],
+      "type": "residence",
+      "state_feature": "20-1073454",
+      "footprint_enu_m": [
+        [
+          -732.08,
+          391.36
+        ],
+        [
+          -729.62,
+          381.606
+        ],
+        [
+          -743.964,
+          377.988
+        ],
+        [
+          -745.796,
+          377.512
+        ],
+        [
+          -740.59,
+          356.868
+        ],
+        [
+          -679.394,
+          372.302
+        ],
+        [
+          -682.65,
+          385.208
+        ],
+        [
+          -686.072,
+          384.344
+        ],
+        [
+          -688.028,
+          392.096
+        ],
+        [
+          -706.192,
+          387.514
+        ],
+        [
+          -708.374,
+          396.164
+        ],
+        [
+          -722.638,
+          392.566
+        ],
+        [
+          -722.916,
+          393.672
+        ],
+        [
+          -732.08,
+          391.36
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          -730.144,
+          382.016
+        ],
+        [
+          -746.318,
+          377.822
+        ],
+        [
+          -740.9,
+          356.344
+        ],
+        [
+          -678.872,
+          371.99
+        ],
+        [
+          -682.338,
+          385.73
+        ],
+        [
+          -685.76,
+          384.866
+        ],
+        [
+          -687.81,
+          392.99
+        ],
+        [
+          -705.94,
+          388.29
+        ],
+        [
+          -708.052,
+          396.664
+        ],
+        [
+          -722.386,
+          393.05
+        ],
+        [
+          -724.846,
+          402.802
+        ],
+        [
+          -734.756,
+          400.302
+        ],
+        [
+          -730.144,
+          382.016
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -714.79,
+          377.89
+        ],
+        "axis": [
+          0.969632371896265,
+          0.24456709380213715
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -80,
+            -80,
+            80,
+            8.1
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              13.4,
+              0,
+              0
+            ],
+            [
+              0,
+              -2.91,
+              13.4,
+              0,
+              0.329
+            ],
+            [
+              0,
+              -2.91,
+              13.4,
+              0,
+              -0.316
+            ],
+            [
+              -25.5,
+              0,
+              13.4,
+              0.82,
+              0
+            ],
+            [
+              24.8,
+              0,
+              13.4,
+              -0.46,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -7.95,
+            -7.63,
+            8.72,
+            0.89
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              15.68,
+              0,
+              0
+            ],
+            [
+              0,
+              -5.11,
+              15.68,
+              0,
+              0.51
+            ],
+            [
+              0,
+              -2.5,
+              15.68,
+              0,
+              -0.43
+            ],
+            [
+              -5.88,
+              0,
+              15.68,
+              0.64,
+              0
+            ],
+            [
+              7.25,
+              0,
+              15.68,
+              -0.59,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -14.8,
+            7.55,
+            -3.63,
+            18.05
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              3.9,
+              0.004,
+              0.021
+            ]
+          ],
+          "roof_color": [
+            114,
+            115,
+            103
+          ]
+        },
+        {
+          "bounds_m": [
+            -3.66,
+            7.55,
+            11.2,
+            17.2
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.19,
+              -0.009,
+              0.027
+            ]
+          ],
+          "roof_color": [
+            193,
+            189,
+            170
+          ]
+        },
+        {
+          "bounds_m": [
+            -14.55,
+            17.19,
+            -3.64,
+            29
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              5.04,
+              0,
+              0
+            ],
+            [
+              -8.67,
+              0,
+              5.04,
+              0.263,
+              0
+            ],
+            [
+              -8.67,
+              0,
+              5.04,
+              -0.301,
+              0
+            ],
+            [
+              0,
+              19.11,
+              5.04,
+              0,
+              0.24
+            ],
+            [
+              0,
+              23.36,
+              5.04,
+              0,
+              -0.377
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -28.91,
+            0.42,
+            -22.209999999999997,
+            8.11
+          ],
+          "planes": [
+            [
+              -25.56,
+              7.54,
+              11.58,
+              0.57,
+              -0.1
+            ],
+            [
+              -25.56,
+              7.54,
+              11.58,
+              -0.57,
+              -0.1
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -13.92,
+            0.42,
+            -7.220000000000001,
+            8.11
+          ],
+          "planes": [
+            [
+              -10.57,
+              7.54,
+              11.58,
+              0.57,
+              -0.1
+            ],
+            [
+              -10.57,
+              7.54,
+              11.58,
+              -0.57,
+              -0.1
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            1.19,
+            0.42,
+            7.890000000000001,
+            8.11
+          ],
+          "planes": [
+            [
+              4.54,
+              7.54,
+              11.58,
+              0.57,
+              -0.1
+            ],
+            [
+              4.54,
+              7.54,
+              11.58,
+              -0.57,
+              -0.1
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            16.45,
+            0.42,
+            23.150000000000002,
+            8.11
+          ],
+          "planes": [
+            [
+              19.8,
+              7.54,
+              11.58,
+              0.57,
+              -0.1
+            ],
+            [
+              19.8,
+              7.54,
+              11.58,
+              -0.57,
+              -0.1
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -28.73,
+            -16.0,
+            -22.37,
+            -4.44
+          ],
+          "planes": [
+            [
+              -25.55,
+              -14.44,
+              11.4,
+              0.53,
+              0.047
+            ],
+            [
+              -25.55,
+              -14.44,
+              11.4,
+              -0.53,
+              0.047
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -6.29,
+            -16.0,
+            0.07000000000000028,
+            -4.44
+          ],
+          "planes": [
+            [
+              -3.11,
+              -14.44,
+              11.4,
+              0.53,
+              0.047
+            ],
+            [
+              -3.11,
+              -14.44,
+              11.4,
+              -0.53,
+              0.047
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            1.2799999999999998,
+            -16.0,
+            7.640000000000001,
+            -4.44
+          ],
+          "planes": [
+            [
+              4.46,
+              -14.44,
+              11.4,
+              0.53,
+              0.047
+            ],
+            [
+              4.46,
+              -14.44,
+              11.4,
+              -0.53,
+              0.047
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            16.56,
+            -16.0,
+            22.919999999999998,
+            -4.44
+          ],
+          "planes": [
+            [
+              19.74,
+              -14.44,
+              11.4,
+              0.53,
+              0.047
+            ],
+            [
+              19.74,
+              -14.44,
+              11.4,
+              -0.53,
+              0.047
+            ]
+          ]
+        }
+      ],
+      "roof_fit_notes": "The four-level residence uses the university's 2026 photo for the paired openings and color. The north canopy remains open beyond the glazed lobby. The low northeast wing relies on surface elevations and the partially obscured photo. Door and column dimensions are approximate.",
+      "eaves_m": 0.018,
+      "public_references": [
+        {
+          "url": "https://bushnell.edu/wp-content/uploads/2026/07/bushnell-womack-hall-dorm-exterior.jpg",
+          "date": "2026-07 upload",
+          "observation": "Residence conversion photo shows the four-level north facade, lobby entry, and two square piers at the portico."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Ihjph2g-fCCtqi-UxKOecA&heading=142",
+          "date": "2024-06",
+          "observation": "Alder Street view shows the same north glazing and the open space under the drive canopy."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pNdX7naZGGPdf2ovJLxrgQ&heading=240",
+          "date": "2024-06",
+          "observation": "Franklin Boulevard view shows the east return and the parking-side drive behind the foreground tree."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493572.14928888186%2C4877274.282153052%2C493661.14928888186%2C4877341.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=356%2C268",
+        "path": "franklin-exterior-evidence-after-141-l2-aerials/roof-b59639cc.png",
+        "size": [
+          356,
+          268
+        ],
+        "sha256": "bf22d1b1a2ceaa041313942312df095a66cb2010abc7378a6ab438e5e800303d"
+      },
+      "validation_window_local": [
+        -31,
+        -15,
+        34,
+        27
+      ],
+      "entrance": {
+        "outward_degrees": 346,
+        "gate": "north-portico",
+        "width_m": 2.18,
+        "landing_m": 2.47,
+        "glazed_double": true,
+        "threshold_above_grade_m": 0.105,
+        "near_enu_m": [
+          -727.76954,
+          392.46834
+        ]
+      },
+      "additional_entrances": [],
+      "canopy_columns": [
+        [
+          [
+            -12.48,
+            24.36
+          ],
+          1.06
+        ],
+        [
+          [
+            -5.05,
+            24.36
+          ],
+          1.06
+        ]
+      ],
+      "facades": [],
+      "upper_lobby_face_enu_m": [
+        [
+          -706.39715,
+          388.36574
+        ],
+        [
+          -729.84286,
+          382.45211
+        ]
+      ],
+      "roof_equipment": [],
+      "solar_array": [],
+      "landings": [],
+      "wall_color": [
+        89,
+        96,
+        101
+      ],
+      "trim_color": [
+        60,
+        66,
+        69
+      ],
+      "roof_color": [
+        91,
+        89,
+        84
+      ],
+      "door_color": [
+        67,
+        73,
+        77
+      ],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null
+    },
+    {
+      "id": "roof-fc0fcc2e",
+      "name": "1920–1960 Franklin Blvd",
+      "street_address": "1920–1960 Franklin Blvd",
+      "municipal_addresses": [
+        "1920 FRANKLIN BLVD",
+        "1930 FRANKLIN BLVD",
+        "1950 FRANKLIN BLVD",
+        "1960 FRANKLIN BLVD"
+      ],
+      "type": "retail",
+      "state_feature": "20-1073488",
+      "footprint_enu_m": [
+        [
+          503.956,
+          -53.306
+        ],
+        [
+          503.86,
+          -72.606
+        ],
+        [
+          531.242,
+          -72.75
+        ],
+        [
+          531.548,
+          -91.012
+        ],
+        [
+          550.766,
+          -91.4
+        ],
+        [
+          551.55,
+          -109.624
+        ],
+        [
+          577.136,
+          -109.546
+        ],
+        [
+          577.196,
+          -103.486
+        ],
+        [
+          579.596,
+          -103.654
+        ],
+        [
+          579.5,
+          -61.11
+        ],
+        [
+          578.282,
+          -59.394
+        ],
+        [
+          568.378,
+          -57.578
+        ],
+        [
+          537.002,
+          -49.084
+        ],
+        [
+          535.508,
+          -53.798
+        ],
+        [
+          503.956,
+          -53.306
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          503.28,
+          -52.614
+        ],
+        [
+          503.176,
+          -73.284
+        ],
+        [
+          530.574,
+          -73.426
+        ],
+        [
+          530.878,
+          -91.68
+        ],
+        [
+          550.114,
+          -92.066
+        ],
+        [
+          550.898,
+          -110.306
+        ],
+        [
+          577.808,
+          -110.224
+        ],
+        [
+          577.868,
+          -104.214
+        ],
+        [
+          580.278,
+          -104.382
+        ],
+        [
+          580.18,
+          -60.892
+        ],
+        [
+          578.676,
+          -58.774
+        ],
+        [
+          568.528,
+          -56.914
+        ],
+        [
+          536.55,
+          -48.258
+        ],
+        [
+          535.014,
+          -53.11
+        ],
+        [
+          503.28,
+          -52.614
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          549.21,
+          -75.94
+        ],
+        "axis": [
+          0.9999975335787591,
+          0.002220998964076352
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -80,
+            -80,
+            1.85,
+            80
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              9.6,
+              -0.002,
+              0.009
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            1.81,
+            -28.95,
+            80,
+            80
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              11.86,
+              0.004,
+              -0.001
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            1.81,
+            -80,
+            80,
+            -28.9
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              9.34,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            12.6,
+            -80,
+            80,
+            -28.9
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              11.75,
+              0.004,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -6.65,
+            -15.7,
+            2.1,
+            4.61
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              12.25,
+              0.013,
+              0.002
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -20.0,
+            -16.3,
+            2.1,
+            -14.21
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              12.07,
+              0.009,
+              0
+            ]
+          ],
+          "roof_color": [
+            114,
+            115,
+            103
+          ]
+        },
+        {
+          "bounds_m": [
+            -18.52,
+            21.97,
+            -9.36,
+            30.4
+          ],
+          "planes": [
+            [
+              -13.53,
+              0,
+              13.92,
+              0.17,
+              0
+            ],
+            [
+              -13.22,
+              0,
+              13.94,
+              -0.465,
+              0
+            ],
+            [
+              0,
+              27.1,
+              13.95,
+              0,
+              0.082
+            ]
+          ],
+          "roof_color": [
+            114,
+            115,
+            103
+          ]
+        },
+        {
+          "bounds_m": [
+            10.8,
+            14.52,
+            20.1,
+            24.6
+          ],
+          "planes": [
+            [
+              15.4,
+              0,
+              14.32,
+              0.17,
+              0
+            ],
+            [
+              15.1,
+              0,
+              14.33,
+              -0.37,
+              0
+            ],
+            [
+              0,
+              21.26,
+              14.31,
+              0,
+              0.13
+            ]
+          ],
+          "roof_color": [
+            114,
+            115,
+            103
+          ]
+        },
+        {
+          "bounds_m": [
+            2.92,
+            -29.65,
+            24.2,
+            -19.0
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              14.56,
+              0,
+              0
+            ],
+            [
+              10.05,
+              0,
+              14.56,
+              0.353,
+              0
+            ],
+            [
+              15.83,
+              0,
+              14.56,
+              -0.48,
+              0
+            ],
+            [
+              0,
+              -27.2,
+              14.56,
+              0,
+              0.462
+            ],
+            [
+              0,
+              -21.16,
+              14.56,
+              0,
+              -0.84
+            ]
+          ],
+          "roof_color": [
+            193,
+            189,
+            170
+          ]
+        },
+        {
+          "bounds_m": [
+            27.7,
+            -80,
+            80,
+            -30.0
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              11.02,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            114,
+            115,
+            103
+          ]
+        }
+      ],
+      "roof_fit_notes": "One joined roof and scene ID cover four municipal addresses. Unequal storefront heights, the two main raised entries, curved metal awnings and the green-tile corner are based on July street imagery. The smaller doors and the southern delivery-side openings are approximate.",
+      "eaves_m": 0.018,
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4Gfb3sIQ0oYwqlIf97oeIw&heading=172",
+          "date": "2024-07",
+          "observation": "The main Franklin facade shows Hirons, the retail canopy and the small western shop bays."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=n26YNPnxHIwqO2YW_OVvzA&heading=160",
+          "date": "2024-07",
+          "observation": "Villard corner view shows Cafe Seoul awning and the side storefront for both small businesses."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=640jAaA3rQM23wF_clbncQ&heading=210",
+          "date": "2024-07",
+          "observation": "The eastern front shows the larger Market of Choice entry and its curved cover."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q_Fph7pAFmtyVu89iX-wDg&heading=88",
+          "date": "2024-07",
+          "observation": "Orchard Alley shows the rear service area and a lower dock cover."
+        },
+        {
+          "url": "https://www.eugene-or.gov/AgendaCenter/ViewFile/Item/11?fileID=22",
+          "date": "2010-01-15",
+          "observation": "The owner's city-filed letter names the four storefronts on the connected property."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494821.14928888186%2C4876807.282153052%2C494920.14928888186%2C4876890.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=396%2C332",
+        "path": "franklin-exterior-evidence-after-141-l2-aerials/roof-fc0fcc2e.png",
+        "size": [
+          396,
+          332
+        ],
+        "sha256": "c06ddea1aa2b0bdfcc867bd9388cf6504277453e38327c20bd0e48a02b2b9c7b"
+      },
+      "validation_window_local": [
+        -45.8,
+        -34.0,
+        31.0,
+        27.6
+      ],
+      "entrance": {
+        "outward_degrees": 15,
+        "gate": "market-of-choice",
+        "width_m": 2.71,
+        "landing_m": 1.78,
+        "glazed_double": true,
+        "threshold_above_grade_m": 0.105,
+        "near_enu_m": [
+          564.1063,
+          -56.24687
+        ]
+      },
+      "additional_entrances": [
+        {
+          "outward_degrees": 15,
+          "gate": "hirons",
+          "width_m": 2.21,
+          "landing_m": 1.54,
+          "glazed_double": true,
+          "threshold_above_grade_m": 0.105,
+          "near_enu_m": [
+            537.33077,
+            -49.28632
+          ]
+        },
+        {
+          "outward_degrees": 270,
+          "gate": "cafe-seoul",
+          "width_m": 1.3,
+          "landing_m": 1.32,
+          "glazed_double": false,
+          "threshold_above_grade_m": 0.105,
+          "near_enu_m": [
+            503.70987,
+            -57.92101
+          ]
+        },
+        {
+          "outward_degrees": 270,
+          "gate": "subway",
+          "width_m": 1.3,
+          "landing_m": 1.32,
+          "glazed_double": false,
+          "threshold_above_grade_m": 0.105,
+          "near_enu_m": [
+            503.73246,
+            -63.59098
+          ]
+        }
+      ],
+      "canopy_columns": [],
+      "facades": [
+        {
+          "bearing": 0,
+          "base_band_m": 1.0,
+          "small_shops": true,
+          "windows": [
+            [
+              [
+                515.55924,
+                -53.12468
+              ],
+              3.4,
+              0.86,
+              2.97,
+              3
+            ],
+            [
+              [
+                522.15929,
+                -53.14002
+              ],
+              7.1,
+              0.92,
+              3.1,
+              6
+            ],
+            [
+              [
+                530.65938,
+                -53.17114
+              ],
+              5.24,
+              0.91,
+              3.28,
+              4
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                503.75936,
+                -53.19089
+              ],
+              [
+                508.85935,
+                -53.17956
+              ],
+              1.31,
+              2.88,
+              0.52,
+              [
+                213,
+                190,
+                133
+              ]
+            ]
+          ],
+          "near_enu_m": [
+            514.85927,
+            -53.13624
+          ]
+        },
+        {
+          "bearing": 270,
+          "base_band_m": 0.92,
+          "small_shops": true,
+          "windows": [
+            [
+              [
+                503.71445,
+                -55.481
+              ],
+              2.65,
+              0.71,
+              2.66,
+              2
+            ],
+            [
+              [
+                503.72613,
+                -60.74098
+              ],
+              2.62,
+              0.66,
+              2.71,
+              2
+            ],
+            [
+              [
+                503.7397,
+                -66.85097
+              ],
+              2.62,
+              0.66,
+              2.71,
+              2
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                503.74034,
+                -53.63093
+              ],
+              [
+                503.75462,
+                -60.06092
+              ],
+              1.02,
+              2.73,
+              0.55,
+              [
+                213,
+                190,
+                133
+              ]
+            ],
+            [
+              [
+                503.75489,
+                -60.18092
+              ],
+              [
+                503.77217,
+                -67.9609
+              ],
+              0.96,
+              2.7,
+              0.3,
+              [
+                115,
+                125,
+                93
+              ]
+            ]
+          ],
+          "near_enu_m": [
+            503.73157,
+            -63.19098
+          ]
+        },
+        {
+          "bearing": 15,
+          "base_band_m": 0.68,
+          "small_shops": false,
+          "windows": [
+            [
+              [
+                539.4517,
+                -49.70161
+              ],
+              2.22,
+              0.75,
+              2.58,
+              3
+            ],
+            [
+              [
+                537.53071,
+                -49.25587
+              ],
+              4.2,
+              2.51,
+              5.38,
+              3
+            ],
+            [
+              [
+                563.86661,
+                -56.3874
+              ],
+              5.17,
+              2.48,
+              5.46,
+              5
+            ],
+            [
+              [
+                567.42873,
+                -57.33949
+              ],
+              3.13,
+              2.12,
+              4.65,
+              3
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                540.41372,
+                -50.60947
+              ],
+              [
+                560.40611,
+                -56.16508
+              ],
+              1.95,
+              3.03,
+              0.81,
+              [
+                193,
+                181,
+                151
+              ]
+            ]
+          ],
+          "near_enu_m": [
+            552.95988,
+            -53.37162
+          ]
+        },
+        {
+          "bearing": 12,
+          "base_band_m": 0.63,
+          "small_shops": false,
+          "windows": [
+            [
+              [
+                571.28046,
+                -58.11094
+              ],
+              2.38,
+              0.74,
+              3.12,
+              3
+            ],
+            [
+              [
+                575.92251,
+                -59.03063
+              ],
+              3.42,
+              0.72,
+              3.14,
+              3
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                569.27037,
+                -58.0754
+              ],
+              [
+                578.0533,
+                -59.3859
+              ],
+              1.93,
+              3.01,
+              0.84,
+              [
+                193,
+                181,
+                151
+              ]
+            ]
+          ],
+          "near_enu_m": [
+            573.43127,
+            -58.47616
+          ]
+        },
+        {
+          "bearing": 90,
+          "base_band_m": 0.68,
+          "small_shops": false,
+          "windows": [],
+          "awnings": [],
+          "near_enu_m": [
+            579.52317,
+            -77.33268
+          ]
+        },
+        {
+          "bearing": 270,
+          "base_band_m": 0.45,
+          "small_shops": false,
+          "windows": [],
+          "awnings": [
+            [
+              [
+                531.45877,
+                -84.40945
+              ],
+              [
+                531.47069,
+                -89.77943
+              ],
+              1.12,
+              2.85,
+              0.22,
+              [
+                114,
+                115,
+                103
+              ]
+            ]
+          ],
+          "near_enu_m": [
+            531.42441,
+            -82.44952
+          ]
+        },
+        {
+          "bearing": 180,
+          "base_band_m": 0.58,
+          "small_shops": false,
+          "windows": [
+            [
+              [
+                555.42452,
+                -109.48628
+              ],
+              2.38,
+              0.82,
+              2.44,
+              2
+            ]
+          ],
+          "awnings": [],
+          "near_enu_m": [
+            564.00443,
+            -109.43722
+          ]
+        }
+      ],
+      "upper_lobby_face_enu_m": [],
+      "roof_equipment": [
+        [
+          -38.01,
+          15.3,
+          1.28,
+          1.25,
+          10.48,
+          [
+            133,
+            133,
+            124
+          ]
+        ],
+        [
+          -38.97,
+          7.91,
+          1.33,
+          0.95,
+          10.48,
+          [
+            133,
+            133,
+            124
+          ]
+        ],
+        [
+          -24.16,
+          16.22,
+          1.22,
+          0.91,
+          10.63,
+          [
+            133,
+            133,
+            124
+          ]
+        ],
+        [
+          -10.34,
+          12.11,
+          1.25,
+          1.15,
+          10.83,
+          [
+            133,
+            133,
+            124
+          ]
+        ],
+        [
+          9.66,
+          4.15,
+          1.55,
+          1.2,
+          13.1,
+          [
+            133,
+            133,
+            124
+          ]
+        ],
+        [
+          21.89,
+          5.2,
+          1.48,
+          1.21,
+          13.2,
+          [
+            133,
+            133,
+            124
+          ]
+        ],
+        [
+          23.82,
+          -14.72,
+          1.42,
+          1.34,
+          13.02,
+          [
+            133,
+            133,
+            124
+          ]
+        ]
+      ],
+      "solar_array": [],
+      "landings": [],
+      "wall_color": [
+        125,
+        124,
+        108
+      ],
+      "trim_color": [
+        76,
+        81,
+        70
+      ],
+      "roof_color": [
+        193,
+        189,
+        170
+      ],
+      "door_color": [
+        55,
+        60,
+        52
+      ],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null
+    }
+  ]
+}

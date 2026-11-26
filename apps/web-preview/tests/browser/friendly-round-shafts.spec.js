@@ -32,7 +32,7 @@ test("Friendly round shafts preserve campus selection, entrances and collision",
         await r.fulfill({ response: res, json: j });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=friendly-collier-mckenzie-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo()),
       views = [];
@@ -67,7 +67,9 @@ test("Friendly round shafts preserve campus selection, entrances and collision",
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto(
+        "/?return=1&exterior-review=friendly-collier-mckenzie-baseline",
+      );
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&

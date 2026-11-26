@@ -1,0 +1,2307 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "reference_index": {
+    "aerials": [
+      {
+        "source_id": "roof-5d371770",
+        "priority": "separate tax lots",
+        "state_pair": [
+          {
+            "id": "1841279",
+            "overlap_m2": 129.023,
+            "of_state": 0.7843,
+            "of_scene": 0.4991,
+            "alternative_id": "",
+            "alternative_state_coverage": 0.0,
+            "municipal": {
+              "1803042204800": [
+                "1848 VILLARD ST"
+              ]
+            }
+          },
+          {
+            "id": "1841280",
+            "overlap_m2": 115.69,
+            "of_state": 0.5379,
+            "of_scene": 0.4475,
+            "alternative_id": "",
+            "alternative_state_coverage": 0.0,
+            "municipal": {
+              "1803042204900": [
+                "1878 VILLARD ST"
+              ]
+            }
+          }
+        ],
+        "coverage": 0.9466,
+        "aerial_url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494756.14928888186%2C4876237.282153052%2C494794.14928888186%2C4876281.282153052&bboxSR=3740&imageSR=3740&size=342%2C396&format=png&bandIds=0%2C1%2C2",
+        "aerial_sha256": "f261adda2c8234bdc049396e66708e7850bb01befdd952406c54877695fbbf5e",
+        "extent_enu_m": [
+          427,
+          -691,
+          465,
+          -647
+        ]
+      },
+      {
+        "source_id": "roof-3ce27cdc",
+        "priority": "separate tax lots",
+        "state_pair": [
+          {
+            "id": "1841302",
+            "overlap_m2": 383.394,
+            "of_state": 0.8023,
+            "of_scene": 0.4757,
+            "alternative_id": "",
+            "alternative_state_coverage": 0.0,
+            "municipal": {
+              "1703332300200": [
+                "1923 GARDEN AVE"
+              ]
+            }
+          },
+          {
+            "id": "1841318",
+            "overlap_m2": 353.279,
+            "of_state": 0.8414,
+            "of_scene": 0.4383,
+            "alternative_id": "",
+            "alternative_state_coverage": 0.0,
+            "municipal": {
+              "1703332302200": [
+                "1933 GARDEN AVE"
+              ]
+            }
+          }
+        ],
+        "coverage": 0.914,
+        "aerial_url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494899.14928888186%2C4877067.282153052%2C494969.14928888186%2C4877119.282153052&bboxSR=3740&imageSR=3740&size=630%2C468&format=png&bandIds=0%2C1%2C2",
+        "aerial_sha256": "19fedfa783d383b46ffda4336bad4a3fe0e178ed1ba95b3d63c9bf818289c80b",
+        "extent_enu_m": [
+          570,
+          139,
+          640,
+          191
+        ]
+      },
+      {
+        "source_id": "roof-a0566b7b",
+        "priority": "separate tax lots",
+        "state_pair": [
+          {
+            "id": "1820649",
+            "overlap_m2": 135.246,
+            "of_state": 0.6825,
+            "of_scene": 0.5018,
+            "alternative_id": "",
+            "alternative_state_coverage": 0.0,
+            "municipal": {
+              "1803042209800": [
+                "1989 VILLARD ST"
+              ]
+            }
+          },
+          {
+            "id": "1830735",
+            "overlap_m2": 109.467,
+            "of_state": 0.5804,
+            "of_scene": 0.4062,
+            "alternative_id": "",
+            "alternative_state_coverage": 0.0,
+            "municipal": {
+              "1803042209700": [
+                "1991 VILLARD ST"
+              ]
+            }
+          }
+        ],
+        "coverage": 0.908,
+        "aerial_url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494821.14928888186%2C4876044.282153052%2C494858.14928888186%2C4876091.282153052&bboxSR=3740&imageSR=3740&size=333%2C423&format=png&bandIds=0%2C1%2C2",
+        "aerial_sha256": "53fd1f2d5014441910e4f83f4a56dad63ffaee6e25ce867b9dbcc3262f3edbfa",
+        "extent_enu_m": [
+          492,
+          -884,
+          529,
+          -837
+        ]
+      }
+    ],
+    "sources": {
+      "manifest.json": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+      "campus-state-footprints.geojson": "86934759f8ba39dd610ed6ec6691f87c7849ac5c120731a55febec4f7819cda6",
+      "campus-2013-2015-surface-screen.npz": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+      "campus-2017-usace-surface.npz": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+    }
+  },
+  "property_photo_pins": {
+    "1878-1": {
+      "url": "https://ap.rdcpix.com/3515117551/4de4c8f3bd582b410e1ef6b5b10ed346l-m0rd-w960_h720.webp",
+      "sha256": "8a345fb5cb3d7c6d75af393d61c451c503de17e3b008729b215227af17536066"
+    },
+    "1878-2": {
+      "url": "https://ap.rdcpix.com/3898921827/4de4c8f3bd582b410e1ef6b5b10ed346l-m1rd-w960_h720.webp",
+      "sha256": "7996956fdc4b845aa6ca49175d12faee828dc7b363e9c364e0ccf32e816c592b"
+    },
+    "1923-1": {
+      "url": "https://photos.zillowstatic.com/fp/ffc1c2f131b5b0de984fefa61a3c41e5-cc_ft_960.jpg",
+      "sha256": "aa77542c18e647912cd036c24eac926142d0659d09a7f6294a39884b470de8e5"
+    },
+    "1933-operator": {
+      "url": "https://irp.cdn-website.com//f5867252/dms3rep/multi/opt/Treetops-1920w.jpg",
+      "sha256": "042821f379f9be506a6ce06131d3a344645bed21add106d9ca15686282a64f6b",
+      "source": "https://www.mallardproperties.net/portfolio"
+    }
+  },
+  "roof_cells_sha256": "26a9dc0a7b4ba80c215830597f153266e4cdf72faef97d07cc4c11194992d09d",
+  "source_split": {
+    "state-1841280": "roof-5d371770",
+    "state-1830735": "roof-a0566b7b",
+    "state-1841318": "roof-3ce27cdc"
+  },
+  "source_ranges": [
+    {
+      "id": "roof-5d371770",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-a0566b7b",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-3ce27cdc",
+      "target": "context-background-3-2"
+    }
+  ],
+  "models": [
+    {
+      "id": "roof-5d371770",
+      "street_address": "1848 Villard St",
+      "wall_color": [
+        183,
+        176,
+        146
+      ],
+      "roof_color": [
+        122,
+        122,
+        108
+      ],
+      "trim_color": [
+        219,
+        213,
+        187
+      ],
+      "siding_color": [
+        169,
+        165,
+        140
+      ],
+      "garage_color": [
+        205,
+        203,
+        183
+      ],
+      "door_color": [
+        100,
+        93,
+        71
+      ],
+      "siding_spacing_m": 0.233,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            438,
+            -671,
+            460,
+            -650
+          ],
+          "planes": [
+            [
+              450.45,
+              0,
+              15.88,
+              0.33,
+              0
+            ],
+            [
+              450.45,
+              0,
+              15.88,
+              -0.3,
+              0
+            ],
+            [
+              0,
+              -664.35,
+              15.88,
+              0,
+              0.38
+            ],
+            [
+              0,
+              -658.7,
+              15.88,
+              0,
+              -0.38
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            452,
+            -665.49,
+            460,
+            -660.42
+          ],
+          "planes": [
+            [
+              0,
+              -662.82,
+              14.77,
+              0,
+              0.35
+            ],
+            [
+              0,
+              -662.82,
+              14.77,
+              0,
+              -0.35
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "street-entry",
+        "near_enu_m": [
+          456.94,
+          -663.62
+        ],
+        "outward_degrees": 90,
+        "landing_m": 2.3
+      },
+      "porch": [
+        1.04,
+        0.57,
+        0,
+        false
+      ],
+      "facades": [
+        {
+          "near_enu_m": [
+            455.9,
+            -657.7
+          ],
+          "outward_degrees": 90,
+          "windows": [
+            [
+              0.2,
+              11.05,
+              1,
+              0.85
+            ]
+          ],
+          "garage_doors": [
+            [
+              0.65,
+              9.99,
+              2.58,
+              2.18
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            457.1,
+            -663
+          ],
+          "outward_degrees": 90,
+          "windows": [
+            [
+              0.76,
+              10.99,
+              1.76,
+              1.29
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            455.9,
+            -667.0
+          ],
+          "outward_degrees": 90,
+          "windows": [
+            [
+              0.48,
+              11.0,
+              1.48,
+              1.21
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            450.5,
+            -668.7
+          ],
+          "outward_degrees": 180,
+          "windows": [
+            [
+              0.28,
+              11.08,
+              1.6,
+              1.12
+            ],
+            [
+              0.73,
+              11.2,
+              1.2,
+              0.92
+            ]
+          ]
+        }
+      ],
+      "chimneys": [
+        [
+          449.92,
+          -659.96,
+          0.52,
+          0.44,
+          16.23
+        ]
+      ],
+      "references": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=5utOjbzI32nHfVfKoDcp-w&heading=286&fov=62",
+        "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/5559defa-5e34-4add-81ec-348b57c2801a/content"
+      ],
+      "observed": "Low hip, projecting entry bay, pale siding, attached garage and brick chimney.",
+      "name": "1848 Villard St",
+      "state_object_id": 1841279,
+      "outline": [
+        [
+          456.1569,
+          -660.4651
+        ],
+        [
+          457.3322,
+          -660.4545
+        ],
+        [
+          457.3769,
+          -665.3743
+        ],
+        [
+          456.1251,
+          -665.3858
+        ],
+        [
+          456.1572,
+          -668.9328
+        ],
+        [
+          444.797,
+          -669.0359
+        ],
+        [
+          444.7195,
+          -660.5085
+        ],
+        [
+          445.8074,
+          -660.4985
+        ],
+        [
+          445.7537,
+          -654.56
+        ],
+        [
+          456.1026,
+          -654.466
+        ]
+      ],
+      "tax_lots": {
+        "1803042204800": [
+          "1848 VILLARD ST"
+        ]
+      },
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "siding": "lap",
+      "eave_projection_m": 0.24,
+      "reference_coverage": "July 2024 street survey and 2024 aerial, supplemented by operator or archive photos where available."
+    },
+    {
+      "id": "state-1841280",
+      "street_address": "1878 Villard St",
+      "wall_color": [
+        187,
+        176,
+        157
+      ],
+      "roof_color": [
+        102,
+        107,
+        113
+      ],
+      "trim_color": [
+        222,
+        217,
+        194
+      ],
+      "siding_color": [
+        166,
+        155,
+        136
+      ],
+      "garage_color": [
+        198,
+        193,
+        179
+      ],
+      "door_color": [
+        61,
+        65,
+        59
+      ],
+      "siding_spacing_m": 0.183,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            440.6,
+            -686,
+            459,
+            -670
+          ],
+          "planes": [
+            [
+              449.13,
+              0,
+              18.53,
+              0.31,
+              0
+            ],
+            [
+              449.13,
+              0,
+              18.53,
+              -0.35,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            447,
+            -680.45,
+            459,
+            -673.1
+          ],
+          "planes": [
+            [
+              0,
+              -676.39,
+              18.73,
+              0,
+              0.72
+            ],
+            [
+              0,
+              -676.39,
+              18.73,
+              0,
+              -0.61
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            448,
+            -675.24,
+            459,
+            -670
+          ],
+          "planes": [
+            [
+              0,
+              -672.94,
+              17.93,
+              0,
+              0.58
+            ],
+            [
+              0,
+              -672.94,
+              17.93,
+              0,
+              -0.6
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            431,
+            -686,
+            448,
+            -670
+          ],
+          "planes": [
+            [
+              0,
+              -679.89,
+              17.49,
+              0,
+              0.51
+            ],
+            [
+              0,
+              -679.89,
+              17.49,
+              0,
+              -0.49
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "street-entry",
+        "near_enu_m": [
+          457.01,
+          -676.7
+        ],
+        "outward_degrees": 90,
+        "landing_m": 2.85
+      },
+      "porch": [
+        0.91,
+        1.23,
+        0.51,
+        true
+      ],
+      "facades": [
+        {
+          "near_enu_m": [
+            453.85,
+            -680.3
+          ],
+          "outward_degrees": 90,
+          "windows": [
+            [
+              0.5,
+              11.72,
+              2.3,
+              1.5
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            456.99,
+            -676.65
+          ],
+          "outward_degrees": 90,
+          "windows": [
+            [
+              0.55,
+              15.74,
+              1.33,
+              1.46
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            456.15,
+            -673.1
+          ],
+          "outward_degrees": 90,
+          "windows": [
+            [
+              0.54,
+              11.65,
+              1.16,
+              1.52
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            447.9,
+            -671.24
+          ],
+          "outward_degrees": 0,
+          "windows": [
+            [
+              0.17,
+              11.49,
+              1.44,
+              1.24
+            ],
+            [
+              0.51,
+              11.49,
+              1.24,
+              1.26
+            ],
+            [
+              0.78,
+              11.53,
+              1.57,
+              1.26
+            ],
+            [
+              0.48,
+              15.15,
+              1.68,
+              1.2
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            437.18,
+            -678.27
+          ],
+          "outward_degrees": 0,
+          "windows": [
+            [
+              0.53,
+              11.59,
+              1.83,
+              1.28
+            ]
+          ]
+        }
+      ],
+      "chimneys": [
+        [
+          452.67,
+          -681.53,
+          0.56,
+          0.69,
+          19.48
+        ]
+      ],
+      "references": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=5utOjbzI32nHfVfKoDcp-w&heading=260&fov=62",
+        "https://www.realtor.com/realestateandhomes-detail/1878-Villard-St_Eugene_OR_97403_M25851-59726"
+      ],
+      "observed": "Two front gables, paneled windows, a small roofed porch, lap siding and an exposed red chimney.",
+      "name": "1878 Villard St",
+      "state_object_id": 1841280,
+      "outline": [
+        [
+          434.6713,
+          -682.6322
+        ],
+        [
+          434.6394,
+          -678.0534
+        ],
+        [
+          439.6607,
+          -678.0183
+        ],
+        [
+          439.6123,
+          -671.0504
+        ],
+        [
+          456.3742,
+          -670.9334
+        ],
+        [
+          456.4009,
+          -674.7657
+        ],
+        [
+          457.2203,
+          -674.7598
+        ],
+        [
+          457.2465,
+          -678.5152
+        ],
+        [
+          454.0832,
+          -678.5374
+        ],
+        [
+          454.1096,
+          -682.3449
+        ],
+        [
+          449.7033,
+          -682.3756
+        ],
+        [
+          449.7124,
+          -683.6725
+        ],
+        [
+          445.0144,
+          -683.7051
+        ],
+        [
+          445.0065,
+          -682.5603
+        ]
+      ],
+      "tax_lots": {
+        "1803042204900": [
+          "1878 VILLARD ST"
+        ]
+      },
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "siding": "lap",
+      "eave_projection_m": 0.24,
+      "reference_coverage": "July 2024 street survey and 2024 aerial, supplemented by operator or archive photos where available."
+    },
+    {
+      "id": "roof-a0566b7b",
+      "street_address": "1989 Villard St",
+      "wall_color": [
+        208,
+        200,
+        156
+      ],
+      "roof_color": [
+        154,
+        151,
+        134
+      ],
+      "trim_color": [
+        223,
+        217,
+        197
+      ],
+      "siding_color": [
+        187,
+        181,
+        144
+      ],
+      "garage_color": [
+        200,
+        203,
+        192
+      ],
+      "door_color": [
+        95,
+        92,
+        70
+      ],
+      "siding_spacing_m": 0.185,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            496,
+            -853.31,
+            510,
+            -845.08
+          ],
+          "planes": [
+            [
+              0,
+              -848.28,
+              22.51,
+              0,
+              0.44
+            ],
+            [
+              0,
+              -848.28,
+              22.51,
+              0,
+              -0.38
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            505,
+            -859,
+            516,
+            -851.9
+          ],
+          "planes": [
+            [
+              0,
+              -854.7,
+              22.68,
+              0,
+              0.38
+            ],
+            [
+              0,
+              -854.7,
+              22.68,
+              0,
+              -0.61
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            508.98,
+            -856.1,
+            525,
+            -842
+          ],
+          "planes": [
+            [
+              0,
+              -850.05,
+              21.13,
+              0,
+              0.24
+            ],
+            [
+              0,
+              -850.05,
+              21.13,
+              0,
+              -0.48
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "street-entry",
+        "near_enu_m": [
+          499.59,
+          -848.3
+        ],
+        "outward_degrees": 270,
+        "landing_m": 2.3
+      },
+      "porch": [
+        0.69,
+        0.63,
+        0.29,
+        false
+      ],
+      "facades": [
+        {
+          "near_enu_m": [
+            499.6,
+            -848.7
+          ],
+          "outward_degrees": 270,
+          "windows": [
+            [
+              0.48,
+              19.16,
+              1.17,
+              1.15
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            506.75,
+            -855.09
+          ],
+          "outward_degrees": 270,
+          "windows": [
+            [
+              0.48,
+              19.08,
+              1.57,
+              1.23
+            ]
+          ],
+          "garage_doors": [
+            [
+              0.53,
+              15.82,
+              2.62,
+              2.35
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            506.32,
+            -851.75
+          ],
+          "outward_degrees": 270,
+          "windows": [
+            [
+              0.51,
+              16.58,
+              1.25,
+              1.63
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            515.2,
+            -845.21
+          ],
+          "outward_degrees": 0,
+          "windows": [
+            [
+              0.25,
+              16.4,
+              1.86,
+              1.15
+            ],
+            [
+              0.72,
+              16.4,
+              1.54,
+              1.15
+            ]
+          ]
+        }
+      ],
+      "references": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=_m4HxUvpUp3pwnOpyQSmdQ&heading=83&fov=62"
+      ],
+      "observed": "Pale yellow lap siding, shallow front canopy and paneled garage under an upper volume.",
+      "name": "1989 Villard St",
+      "state_object_id": 1820649,
+      "outline": [
+        [
+          521.3373,
+          -844.8707
+        ],
+        [
+          521.5166,
+          -855.0514
+        ],
+        [
+          515.12,
+          -855.1641
+        ],
+        [
+          515.1585,
+          -857.351
+        ],
+        [
+          506.5485,
+          -857.5026
+        ],
+        [
+          506.4718,
+          -853.1448
+        ],
+        [
+          506.0752,
+          -853.1518
+        ],
+        [
+          506.0336,
+          -850.7943
+        ],
+        [
+          501.5052,
+          -850.8741
+        ],
+        [
+          501.4935,
+          -850.213
+        ],
+        [
+          499.378,
+          -850.2502
+        ],
+        [
+          499.3251,
+          -847.2424
+        ],
+        [
+          501.4406,
+          -847.205
+        ],
+        [
+          501.4254,
+          -846.3456
+        ],
+        [
+          509.1271,
+          -846.2101
+        ],
+        [
+          509.1074,
+          -845.0862
+        ]
+      ],
+      "tax_lots": {
+        "1803042209800": [
+          "1989 VILLARD ST"
+        ]
+      },
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "siding": "lap",
+      "eave_projection_m": 0.24,
+      "reference_coverage": "July 2024 street survey and 2024 aerial, supplemented by operator or archive photos where available."
+    },
+    {
+      "id": "state-1830735",
+      "street_address": "1991 Villard St",
+      "wall_color": [
+        126,
+        125,
+        116
+      ],
+      "roof_color": [
+        97,
+        104,
+        111
+      ],
+      "trim_color": [
+        202,
+        202,
+        187
+      ],
+      "siding_color": [
+        112,
+        113,
+        108
+      ],
+      "garage_color": [
+        168,
+        170,
+        159
+      ],
+      "door_color": [
+        136,
+        75,
+        62
+      ],
+      "siding_spacing_m": 0.3,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            498,
+            -879,
+            521,
+            -857
+          ],
+          "planes": [
+            [
+              506.72,
+              0,
+              21.98,
+              0.47,
+              0
+            ],
+            [
+              506.72,
+              0,
+              21.98,
+              -0.33,
+              0
+            ],
+            [
+              0,
+              -870.42,
+              21.98,
+              0,
+              0.35
+            ],
+            [
+              0,
+              -864.64,
+              21.98,
+              0,
+              -0.44
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            509.3,
+            -869.86,
+            518,
+            -862.24
+          ],
+          "planes": [
+            [
+              0,
+              -866.22,
+              20.3,
+              0,
+              0.25
+            ],
+            [
+              0,
+              -866.22,
+              20.3,
+              0,
+              -0.29
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "street-entry",
+        "near_enu_m": [
+          502.86,
+          -870.7
+        ],
+        "outward_degrees": 270,
+        "landing_m": 2.3
+      },
+      "porch": [
+        1.46,
+        1.3,
+        0.17,
+        true
+      ],
+      "facades": [
+        {
+          "near_enu_m": [
+            502.86,
+            -869.8
+          ],
+          "outward_degrees": 270,
+          "windows": [
+            [
+              0.19,
+              17.82,
+              2.16,
+              1.27
+            ],
+            [
+              0.43,
+              17.59,
+              2.01,
+              1.42
+            ],
+            [
+              0.84,
+              18.09,
+              1.51,
+              0.81
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            501.59,
+            -861.6
+          ],
+          "outward_degrees": 270,
+          "windows": [
+            [
+              0.48,
+              17.72,
+              1.59,
+              0.77
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            506.6,
+            -859.82
+          ],
+          "outward_degrees": 0,
+          "windows": [
+            [
+              0.2,
+              17.77,
+              1.22,
+              0.74
+            ],
+            [
+              0.72,
+              17.68,
+              1.77,
+              0.98
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            507.4,
+            -876.13
+          ],
+          "outward_degrees": 180,
+          "windows": [
+            [
+              0.26,
+              18.07,
+              1.45,
+              0.99
+            ],
+            [
+              0.74,
+              18.12,
+              1.53,
+              0.99
+            ]
+          ]
+        }
+      ],
+      "chimneys": [
+        [
+          506.48,
+          -874.31,
+          0.61,
+          0.48,
+          22.78
+        ]
+      ],
+      "skylights": [
+        [
+          509.4,
+          -862.3,
+          0.66,
+          0.72
+        ],
+        [
+          509.08,
+          -866.46,
+          0.84,
+          0.8
+        ]
+      ],
+      "references": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=_m4HxUvpUp3pwnOpyQSmdQ&heading=118&fov=62"
+      ],
+      "observed": "Dark hip, gray shingle-like courses, asymmetric horizontal windows, red door and low porch.",
+      "name": "1991 Villard St",
+      "state_object_id": 1830735,
+      "outline": [
+        [
+          515.5917,
+          -862.413
+        ],
+        [
+          515.6504,
+          -869.6966
+        ],
+        [
+          512.0009,
+          -869.7261
+        ],
+        [
+          512.0541,
+          -876.3286
+        ],
+        [
+          502.6861,
+          -876.404
+        ],
+        [
+          502.5836,
+          -863.6794
+        ],
+        [
+          501.3524,
+          -863.6894
+        ],
+        [
+          501.3197,
+          -859.6258
+        ],
+        [
+          511.8333,
+          -859.541
+        ],
+        [
+          511.8566,
+          -862.4431
+        ]
+      ],
+      "tax_lots": {
+        "1803042209700": [
+          "1991 VILLARD ST"
+        ]
+      },
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "siding": "lap",
+      "eave_projection_m": 0.24,
+      "reference_coverage": "July 2024 street survey and 2024 aerial, supplemented by operator or archive photos where available."
+    },
+    {
+      "id": "roof-3ce27cdc",
+      "street_address": "1923 Garden Ave",
+      "wall_color": [
+        135,
+        150,
+        153
+      ],
+      "roof_color": [
+        113,
+        126,
+        129
+      ],
+      "trim_color": [
+        204,
+        205,
+        190
+      ],
+      "siding_color": [
+        150,
+        162,
+        160
+      ],
+      "door_color": [
+        175,
+        173,
+        149
+      ],
+      "siding": "vertical",
+      "siding_spacing_m": 0.29,
+      "roof_frame": {
+        "origin_enu_m": [
+          589.5693,
+          163.8059
+        ],
+        "axis": [
+          0.276363,
+          0.961053
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -18,
+            -9,
+            -10.35,
+            7.9
+          ],
+          "planes": [
+            [
+              -14.4,
+              0,
+              11.8,
+              0.32,
+              0
+            ],
+            [
+              -14.4,
+              0,
+              11.8,
+              -0.11,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -12,
+            -8.6,
+            -2.9,
+            7.8
+          ],
+          "planes": [
+            [
+              0,
+              -2.82,
+              11.83,
+              0,
+              0.2
+            ],
+            [
+              0,
+              -2.82,
+              11.83,
+              0,
+              -0.19
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -3.7,
+            -8.6,
+            5.62,
+            7.8
+          ],
+          "planes": [
+            [
+              0,
+              -0.08,
+              11.79,
+              0,
+              0.24
+            ],
+            [
+              0,
+              -0.08,
+              11.79,
+              0,
+              -0.26
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            5.3,
+            -8.6,
+            18,
+            7.8
+          ],
+          "planes": [
+            [
+              0,
+              0.34,
+              11.96,
+              0,
+              0.179
+            ],
+            [
+              0,
+              0.34,
+              11.96,
+              0,
+              -0.2
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "street-entry",
+        "near_enu_m": [
+          595.5,
+          156.36
+        ],
+        "outward_degrees": 107,
+        "landing_m": 3.0
+      },
+      "porch": [
+        1.12,
+        0.7,
+        0,
+        false
+      ],
+      "facades": [
+        {
+          "near_enu_m": [
+            582.82,
+            148.08
+          ],
+          "outward_degrees": 198,
+          "windows": [
+            [
+              0.29,
+              5.48,
+              1.04,
+              1.88
+            ],
+            [
+              0.29,
+              8.27,
+              1.04,
+              2.12
+            ],
+            [
+              0.72,
+              5.48,
+              1.49,
+              1.88
+            ],
+            [
+              0.72,
+              8.27,
+              1.49,
+              2.19
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            595.92,
+            157.77
+          ],
+          "outward_degrees": 108,
+          "windows": [
+            [
+              0.16,
+              5.31,
+              1.95,
+              1.62
+            ],
+            [
+              0.16,
+              8.17,
+              1.83,
+              1.63
+            ],
+            [
+              0.6,
+              8.15,
+              1.58,
+              1.66
+            ],
+            [
+              0.86,
+              5.24,
+              1.63,
+              1.53
+            ]
+          ],
+          "galleries": [
+            [
+              0.43,
+              7.65,
+              4.4,
+              1.3
+            ]
+          ],
+          "stairs": [
+            [
+              0.485,
+              1.48,
+              4.68,
+              2.97,
+              true
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            599.9,
+            172.34
+          ],
+          "outward_degrees": 105,
+          "windows": [
+            [
+              0.28,
+              5.34,
+              1.76,
+              1.66
+            ],
+            [
+              0.78,
+              5.34,
+              1.56,
+              1.66
+            ],
+            [
+              0.28,
+              8.37,
+              1.84,
+              1.62
+            ],
+            [
+              0.78,
+              8.37,
+              1.67,
+              1.62
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            582.29,
+            164.68
+          ],
+          "outward_degrees": 286,
+          "windows": [
+            [
+              0.09,
+              5.73,
+              1.85,
+              1.38
+            ],
+            [
+              0.09,
+              8.45,
+              1.85,
+              1.38
+            ],
+            [
+              0.21,
+              5.73,
+              1.85,
+              1.38
+            ],
+            [
+              0.21,
+              8.45,
+              1.85,
+              1.38
+            ],
+            [
+              0.35,
+              5.73,
+              1.85,
+              1.38
+            ],
+            [
+              0.35,
+              8.45,
+              1.85,
+              1.38
+            ],
+            [
+              0.49,
+              5.73,
+              1.85,
+              1.38
+            ],
+            [
+              0.49,
+              8.45,
+              1.85,
+              1.38
+            ],
+            [
+              0.64,
+              5.73,
+              1.85,
+              1.38
+            ],
+            [
+              0.64,
+              8.45,
+              1.85,
+              1.38
+            ],
+            [
+              0.77,
+              5.73,
+              1.85,
+              1.38
+            ],
+            [
+              0.77,
+              8.45,
+              1.85,
+              1.38
+            ],
+            [
+              0.91,
+              5.73,
+              1.85,
+              1.38
+            ],
+            [
+              0.91,
+              8.45,
+              1.85,
+              1.38
+            ]
+          ]
+        }
+      ],
+      "references": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=9tqYk9g2P5KEeCgrOhwdcA&heading=352&fov=62",
+        "https://www.zillow.com/homedetails/1923-Garden-Ave-APT-4-Eugene-OR-97403/453861709_zpid/"
+      ],
+      "observed": "Gray vertical boards, tall window openings, stepped shallow gables and east exterior stair.",
+      "name": "1923 Garden Ave",
+      "state_object_id": 1841302,
+      "outline": [
+        [
+          587.8171,
+          146.3002
+        ],
+        [
+          577.6639,
+          149.4698
+        ],
+        [
+          586.4512,
+          180.0276
+        ],
+        [
+          593.8134,
+          178.092
+        ],
+        [
+          594.2385,
+          179.9008
+        ],
+        [
+          601.6078,
+          177.7259
+        ],
+        [
+          598.699,
+          166.862
+        ],
+        [
+          596.2955,
+          167.1495
+        ],
+        [
+          595.9795,
+          165.703
+        ],
+        [
+          598.4008,
+          164.8174
+        ],
+        [
+          593.917,
+          150.5536
+        ],
+        [
+          589.6867,
+          151.8643
+        ]
+      ],
+      "tax_lots": {
+        "1703332300200": [
+          "1923 GARDEN AVE"
+        ]
+      },
+      "eave_projection_m": 0.24,
+      "reference_coverage": "July 2024 street survey and 2024 aerial, supplemented by operator or archive photos where available."
+    },
+    {
+      "id": "state-1841318",
+      "street_address": "1933 Garden Ave",
+      "name": "Treetops Apartments",
+      "wall_color": [
+        193,
+        176,
+        149
+      ],
+      "roof_color": [
+        143,
+        109,
+        88
+      ],
+      "trim_color": [
+        151,
+        108,
+        89
+      ],
+      "siding_color": [
+        173,
+        150,
+        126
+      ],
+      "door_color": [
+        95,
+        72,
+        62
+      ],
+      "siding_spacing_m": 0.28,
+      "roof_frame": {
+        "origin_enu_m": [
+          616.9743,
+          168.6142
+        ],
+        "axis": [
+          0.81389,
+          -0.581019
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -15,
+            -5.5,
+            15,
+            10
+          ],
+          "planes": [
+            [
+              0,
+              1.86,
+              14.0,
+              0,
+              0.184
+            ],
+            [
+              0,
+              1.86,
+              14.0,
+              0,
+              -0.393
+            ],
+            [
+              -8.92,
+              0,
+              14.0,
+              0.374,
+              0
+            ],
+            [
+              7.14,
+              0,
+              14.0,
+              -0.349,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -12,
+            -10,
+            -2.8,
+            -0.4
+          ],
+          "planes": [
+            [
+              -7.35,
+              0,
+              13.52,
+              0.317,
+              0
+            ],
+            [
+              -7.35,
+              0,
+              13.52,
+              -0.277,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            2.96,
+            -10,
+            12,
+            -0.4
+          ],
+          "planes": [
+            [
+              7.44,
+              0,
+              13.42,
+              0.304,
+              0
+            ],
+            [
+              7.44,
+              0,
+              13.42,
+              -0.364,
+              0
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "street-entry",
+        "near_enu_m": [
+          614.5,
+          164.65
+        ],
+        "outward_degrees": 216,
+        "landing_m": 4.6
+      },
+      "porch": [
+        2.3,
+        1.51,
+        0,
+        true
+      ],
+      "facades": [
+        {
+          "near_enu_m": [
+            605.95,
+            165.6
+          ],
+          "outward_degrees": 216,
+          "windows": [
+            [
+              0.24,
+              6.07,
+              1.91,
+              1.63
+            ],
+            [
+              0.73,
+              6.07,
+              1.83,
+              1.63
+            ],
+            [
+              0.24,
+              9.01,
+              1.92,
+              1.65
+            ]
+          ],
+          "window_bays": [
+            [
+              0.73,
+              9.01,
+              1.97,
+              1.65,
+              0.52,
+              11.8,
+              0.65
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            617.9,
+            157.2
+          ],
+          "outward_degrees": 216,
+          "windows": [
+            [
+              0.25,
+              6.15,
+              1.91,
+              1.62
+            ],
+            [
+              0.74,
+              6.15,
+              1.86,
+              1.62
+            ],
+            [
+              0.74,
+              9.2,
+              1.93,
+              1.65
+            ]
+          ],
+          "window_bays": [
+            [
+              0.25,
+              9.2,
+              1.95,
+              1.65,
+              0.55,
+              11.95,
+              0.64
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            614.5,
+            164.8
+          ],
+          "outward_degrees": 216,
+          "windows": [
+            [
+              0.22,
+              8.82,
+              1.62,
+              1.56
+            ],
+            [
+              0.75,
+              8.82,
+              1.62,
+              1.56
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            630.38,
+            168.92
+          ],
+          "outward_degrees": 36,
+          "windows": [
+            [
+              0.47,
+              2.33,
+              2.15,
+              1.57
+            ],
+            [
+              0.47,
+              5.42,
+              2.15,
+              1.57
+            ],
+            [
+              0.47,
+              8.54,
+              2.15,
+              1.57
+            ]
+          ],
+          "galleries": [
+            [
+              0.47,
+              4.97,
+              3.17,
+              1.0
+            ],
+            [
+              0.47,
+              8.09,
+              3.17,
+              1.0
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            624.54,
+            173.09
+          ],
+          "outward_degrees": 36,
+          "windows": [
+            [
+              0.47,
+              2.33,
+              2.15,
+              1.57
+            ],
+            [
+              0.47,
+              5.42,
+              2.15,
+              1.57
+            ],
+            [
+              0.47,
+              8.54,
+              2.15,
+              1.57
+            ]
+          ],
+          "galleries": [
+            [
+              0.47,
+              4.97,
+              3.17,
+              1.0
+            ],
+            [
+              0.47,
+              8.09,
+              3.17,
+              1.0
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            617.85,
+            177.87
+          ],
+          "outward_degrees": 36,
+          "windows": [
+            [
+              0.47,
+              2.33,
+              2.15,
+              1.57
+            ],
+            [
+              0.47,
+              5.42,
+              2.15,
+              1.57
+            ],
+            [
+              0.47,
+              8.54,
+              2.15,
+              1.57
+            ]
+          ],
+          "galleries": [
+            [
+              0.47,
+              4.97,
+              3.17,
+              1.0
+            ],
+            [
+              0.47,
+              8.09,
+              3.17,
+              1.0
+            ]
+          ]
+        },
+        {
+          "near_enu_m": [
+            612.42,
+            181.74
+          ],
+          "outward_degrees": 36,
+          "windows": [
+            [
+              0.47,
+              2.33,
+              2.15,
+              1.57
+            ],
+            [
+              0.47,
+              5.42,
+              2.15,
+              1.57
+            ],
+            [
+              0.47,
+              8.54,
+              2.15,
+              1.57
+            ]
+          ],
+          "galleries": [
+            [
+              0.47,
+              4.97,
+              3.17,
+              1.0
+            ],
+            [
+              0.47,
+              8.09,
+              3.17,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "references": [
+        "https://www.mallardproperties.net/portfolio",
+        "https://www.mallardproperties.net/floorplans",
+        "https://oregonnews.uoregon.edu/lccn/2004260239/2001-11-20/ed-1/seq-7.pdf"
+      ],
+      "observed": "Paired front gables with nested small gables, recessed central entrance, brown trim and river balconies.",
+      "state_object_id": 1841318,
+      "outline": [
+        [
+          602.232,
+          167.9776
+        ],
+        [
+          604.7293,
+          171.4757
+        ],
+        [
+          603.0233,
+          172.6935
+        ],
+        [
+          610.6162,
+          183.3297
+        ],
+        [
+          614.511,
+          180.5492
+        ],
+        [
+          613.2642,
+          178.8303
+        ],
+        [
+          614.6343,
+          177.8522
+        ],
+        [
+          615.8718,
+          179.5778
+        ],
+        [
+          620.1007,
+          176.5589
+        ],
+        [
+          618.8669,
+          174.8307
+        ],
+        [
+          621.3545,
+          173.0547
+        ],
+        [
+          622.556,
+          174.806
+        ],
+        [
+          626.8091,
+          171.77
+        ],
+        [
+          625.5753,
+          170.0417
+        ],
+        [
+          626.9378,
+          169.069
+        ],
+        [
+          628.1716,
+          170.7973
+        ],
+        [
+          632.8755,
+          167.4393
+        ],
+        [
+          625.2826,
+          156.8032
+        ],
+        [
+          623.8545,
+          157.8227
+        ],
+        [
+          621.3572,
+          154.3245
+        ],
+        [
+          614.1276,
+          159.4856
+        ],
+        [
+          616.6181,
+          162.9742
+        ],
+        [
+          611.8739,
+          166.3609
+        ],
+        [
+          609.3835,
+          162.8723
+        ]
+      ],
+      "tax_lots": {
+        "1703332302200": [
+          "1933 GARDEN AVE"
+        ]
+      },
+      "siding": "lap",
+      "eave_projection_m": 0.24,
+      "reference_coverage": "Operator exterior photo, operator balcony description and 2024 aerial. The river elevation is partly obscured."
+    }
+  ]
+}

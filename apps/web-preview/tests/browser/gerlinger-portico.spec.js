@@ -32,7 +32,7 @@ test("Gerlinger portico preserves campus selection, entrances and collision", as
         await r.fulfill({ response: res, json: j });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=gerlinger-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo()),
       views = [];
@@ -67,7 +67,7 @@ test("Gerlinger portico preserves campus selection, entrances and collision", as
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=gerlinger-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&

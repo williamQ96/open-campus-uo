@@ -130,7 +130,7 @@ test("full main campus loads, is English, and has terrain-aligned walking plus a
 });
 test("jump rises, lands, and works in first-person mode", async ({ page }) => {
   await ready(page);
-  await page.getByRole("button", { name: /Follow/ }).click();
+  await page.keyboard.press("Digit1");
   await page.keyboard.press("Space");
   await expect
     .poll(async () =>

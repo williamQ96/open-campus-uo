@@ -43,6 +43,8 @@ The pilot's historical footprint/terrain mismatch and decorative terraces remain
 
 With the upstream Python environment available, run `python scripts/prepare-explorer-life.py` from the repository root. This creates `public/scene/navigation.json` (7,580 ENU nodes / 7,705 edges) from the existing centerlines plus authored pilot paths, and `activity.json` with local route/parking choices. It retains the base manifest SHA-256; the 2008 measured base and visual-pilot GLB are unchanged.
 
+The generator also trims the dead-end spur by Susan Campbell Hall's south wall to match the registered building footprint. The junction, node and edge counts stay the same. [Women's Memorial Quad exterior review](womens-quad-exterior-review-2026-11-24.md#verification).
+
 The upstream builder nodes intersections, samples centerlines every ~7 m, excludes buffered building interiors and inserts only clear short gap connectors. Browser routing uses weighted shortest paths, collision-checked endpoint attachments and exterior building approaches. The ribbon follows terrain/illustrative landscape surfaces, with depth bias above paving; buildings can still occlude it. Chevrons are instanced and do not require a mesh per arrow.
 
 ## Verification

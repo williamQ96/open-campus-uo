@@ -1,0 +1,218 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_roof_parameters_sha256": "3b7bd0982abf3cd6953e8b98c9c7f750ac281bc5b9c29ef4330bcc04eba263df",
+  "source_roof_recipe_sha256": "226430ae1441939e8dad07e0d3a7eeafbd8139c18e4879605935d6f19199fd77",
+  "sources": {
+    "orthophoto": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer",
+    "elevation": "https://www.fisheries.noaa.gov/inport/item/57407"
+  },
+  "models": [
+    {
+      "id": "roof-4fa203d9",
+      "kind": "alder",
+      "name": "1915 Alder St",
+      "street_address": "1915 Alder St",
+      "state_feature": "20-1073616",
+      "footprint_enu_m": [
+        [
+          -738.1102037468809,
+          -745.151749712415
+        ],
+        [
+          -727.4396515098633,
+          -745.4426143923774
+        ],
+        [
+          -727.8925159038627,
+          -760.8904589721933
+        ],
+        [
+          -738.5630931498599,
+          -760.5996646620333
+        ],
+        [
+          -738.1102037468809,
+          -745.151749712415
+        ]
+      ],
+      "orthophoto_sha256": "02334ecb180ce847388dbac1b4065ba498a8cb3dde2acf8bd4e902d0f18d8376",
+      "eaves_m": 0.35,
+      "wall_color": [
+        153,
+        93,
+        78
+      ],
+      "door_color": [
+        89,
+        65,
+        49
+      ],
+      "entrance": {
+        "near_enu_m": [
+          -740,
+          -753
+        ],
+        "outward_degrees": 270,
+        "landing_m": 2.0,
+        "threshold_above_grade_m": 0.42
+      },
+      "public_references": [
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pis7zBMAGlEsaDs4rcqYBg&heading=90",
+          "observation": "Two brick floors above low windows, pale shuttered picture windows and a centered post-supported hood."
+        }
+      ]
+    },
+    {
+      "id": "roof-7dcf2f03",
+      "kind": "hess",
+      "name": "Hess Apartments",
+      "street_address": "1390 Alder St",
+      "state_feature": "20-1073339",
+      "footprint_enu_m": [
+        [
+          -794.9388857588638,
+          -95.12397032231092
+        ],
+        [
+          -764.9495843318873,
+          -95.03945791255683
+        ],
+        [
+          -764.9212475188542,
+          -105.09829375240952
+        ],
+        [
+          -767.9557056128397,
+          -105.10688146203756
+        ],
+        [
+          -769.8996817088337,
+          -107.08038757182658
+        ],
+        [
+          -789.7945172138861,
+          -107.13632344268262
+        ],
+        [
+          -791.8156552028377,
+          -105.14531630184501
+        ],
+        [
+          -794.910494640877,
+          -105.15419110190123
+        ],
+        [
+          -794.9388857588638,
+          -95.12397032231092
+        ]
+      ],
+      "orthophoto_sha256": "3c67d8bddf842e13acb7fc0bfe13660071d5e996749985f296733de215e5196d",
+      "eaves_m": 0.18,
+      "wall_color": [
+        129,
+        121,
+        96
+      ],
+      "door_color": [
+        105,
+        92,
+        67
+      ],
+      "entrance": {
+        "near_enu_m": [
+          -764.94,
+          -96.75
+        ],
+        "outward_degrees": 90,
+        "landing_m": 5.25,
+        "threshold_above_grade_m": 0
+      },
+      "public_references": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jctcJj_gV1p17eiiTgLCMA&heading=276",
+          "observation": "Alder-facing parking opening, offset stair at the north edge, vertical siding, three rows of windows and balconies."
+        },
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=7IR4ZAs3x_iP31cXMJ-Skw&heading=63",
+          "observation": "Recessed south balconies and covered parking beneath the three residential levels."
+        },
+        {
+          "url": "https://www.zillow.com/apartments/eugene-or/hess-apartments/5XtRxW/",
+          "observation": "Leasing name, address, balcony and parking description."
+        }
+      ]
+    },
+    {
+      "id": "roof-77a7eb6c",
+      "kind": "millrace",
+      "name": "Millrace Apartments",
+      "street_address": "1805 Garden Ave",
+      "state_feature": "20-1073439",
+      "footprint_enu_m": [
+        [
+          350.0764238651609,
+          202.69782458804548
+        ],
+        [
+          378.92549336515367,
+          198.18722763750702
+        ],
+        [
+          377.32621128315805,
+          186.32164458744228
+        ],
+        [
+          347.9921755671385,
+          190.72012692783028
+        ],
+        [
+          350.0764238651609,
+          202.69782458804548
+        ]
+      ],
+      "orthophoto_sha256": "1035760fea64cd933dcad5b4ca36dd98108a38fe88ed353ee14f6dc73b2f9cb7",
+      "eaves_m": 0.12,
+      "wall_color": [
+        207,
+        212,
+        200
+      ],
+      "door_color": [
+        97,
+        113,
+        94
+      ],
+      "entrance": {
+        "near_enu_m": [
+          373.25,
+          187.1
+        ],
+        "outward_degrees": 188.9,
+        "landing_m": 2.45,
+        "threshold_above_grade_m": 0.16
+      },
+      "public_references": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-ZKjZ6ehs-1Tpeo9k6qEug&heading=336",
+          "observation": "Three visible levels, pale lap siding, row of narrow upper sashes, green galleries and ground patio fencing on the south."
+        },
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uHea1IbrMdF6CGTNhA474Q&heading=269",
+          "observation": "Blank return wall, green posts and a balcony at the southeast corner."
+        },
+        {
+          "date": "2023-11-15",
+          "url": "https://ompnetwork.s3-us-west-2.amazonaws.com/sites/134/documents/cc_agenda_packet_11-15-23_ws_post.pdf?V3F_Ie_wlwiSehdcSvQSTtaVQAvpmNCp=",
+          "observation": "Eugene City Council rental inspection photographs for 1805 Garden Avenue."
+        }
+      ]
+    }
+  ]
+}

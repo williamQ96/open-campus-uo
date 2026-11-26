@@ -31,7 +31,7 @@ const recipes = [
     "roof-906c030e",
     [
       "johnson-rear-detail.json",
-      "2f8673dd96875d0f680e7a8431922e0989db8816500c63bdc6d4c0ea7249f81b",
+      "fa736aaae13284c5e7fd8aead9fe684ed72d6138e334d5fa87c73b715eb4cf44",
     ],
     [
       "johnson-north-capitals.json",

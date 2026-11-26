@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-test("pinned same-building batches recover three draws without losing selection or entrances", async ({
+test("pinned same-building batches recover two draws without losing selection or entrances", async ({
   browser,
 }) => {
   const results = [];
@@ -8,20 +8,22 @@ test("pinned same-building batches recover three draws without losing selection 
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
     if (!batched)
-      await page.route("**/src/building-overlay-batches.js", (r) =>
-        r.fulfill({
-          contentType: "text/javascript",
-          body: "export const trackedLayerNames=[]; export function recipeSupports(){return false;} export async function mergePinnedBuildingOverlays(){return 0;}",
-        }),
+      await page.route(
+        (url) => url.pathname.endsWith("/src/building-overlay-batches.js"),
+        (r) =>
+          r.fulfill({
+            contentType: "text/javascript",
+            body: "export const trackedLayerNames=[]; export function recipeSupports(){return false;} export async function mergePinnedBuildingOverlays(){return 0;}",
+          }),
       );
-    await page.goto("/");
+    await page.goto("/?exterior-review=knight-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     await page.locator("#settings-open").click();
     await page
       .getByRole("slider", { name: "Campus activity density" })
       .fill("0");
     await page.locator("#settings-close").click();
-    await page.waitForTimeout(500);
+    await expect(page.locator("#viewport")).toBeFocused();
     const draws = await page.evaluate(() => __campus.getState().drawCalls),
       entrances = await page.evaluate(() => __campus.entranceInfo());
     const selected = [];
@@ -43,7 +45,7 @@ test("pinned same-building batches recover three draws without losing selection 
     results.push({ draws, entrances, selected, errors });
     await page.close();
   }
-  expect(results[1].draws).toBe(results[0].draws - 3);
+  expect(results[1].draws).toBe(results[0].draws - 2);
   expect(results[1].draws).toBeLessThan(180);
   expect(results[1].entrances).toEqual(results[0].entrances);
   expect(results[1].selected).toEqual(results[0].selected);

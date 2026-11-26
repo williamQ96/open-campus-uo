@@ -5,7 +5,7 @@ const source = readFileSync(
     "utf8",
   ),
   start = source.indexOf("  // Adjacent original source-pinned shrub layers"),
-  end = source.indexOf("  if (config.landcover_url)", start),
+  end = source.indexOf("  let contextRoofRefinements;", start),
   block = source.slice(start, end);
 test("pointer selection of each landmark survives shrub batching", async ({
   browser,
@@ -25,7 +25,7 @@ test("pointer selection of each landmark survives shrub batching", async ({
       ["roof-9017feee", -459, -92, 0],
       ["roof-399c648e", -417, -184, Math.PI / 2],
     ]) {
-      await page.goto("/");
+      await page.goto("/?exterior-review=heritage-baseline");
       await page.waitForFunction(() => window.__campus?.getState().ready);
       const ground = await page.evaluate(
         ([x, z]) => __campus.terrainCheck(x, z).sampled,
@@ -49,7 +49,7 @@ test("pointer selection of each landmark survives shrub batching", async ({
           ),
         { id, x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=heritage-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&

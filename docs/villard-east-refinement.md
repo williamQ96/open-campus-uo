@@ -1,5 +1,7 @@
 # Villard Hall east facade
 
+The local default scene now uses the [registered Heritage Core exterior and theater connection](heritage-core-exterior-review-2026-11-24.md#villard-hall-and-the-theater-connection). The previous model remains available through the development preview's `?exterior-review=heritage-baseline`.
+
 The source-pinned procedural replacement retains `roof-399c648e`, the original campus GLB, and the approximate campus footprint. It interprets the east facade using [Daderot's 2017 CC0 photograph](https://commons.wikimedia.org/wiki/File:Villard_Hall_-_University_of_Oregon_-_Eugene,_Oregon_-_DSC09617.jpg) and the [UO 2017 assessment, east elevation](https://cpfm.uoregon.edu/sites/default/files/171103_uo_villard_hall_robinson_assessment_final_reduced.pdf) (page 34, PDF page 40). The original CC0 photograph is archived with metadata and hash; the UO document is linked, not redistributed. No photo texture is used.
 
 The simplified mass, tower roofs, windows, columns, entry porch, rail and ornamental details are interpretations, not a dimensional reconstruction. Eight shrubs represent a garden shown in the photograph; placement and species are illustrative. Non-east elevations are placeholders; current conditions, dimensions, collision clearance and accessibility are unverified. Building remains level 1. Interior is untouched.

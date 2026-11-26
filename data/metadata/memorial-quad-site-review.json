@@ -1,0 +1,45 @@
+{
+  "sources": {
+    "uo_building_map_sha256": "7112477228e8e3ac125548b3abd94180cd8f972c797db78373754cba7384b761",
+    "historical_lidar_grid_sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "osip_2024_sha256": "aa6eb2c7513b77042259b3f6a9a006faca6c6ec586d2d710038d6fbc13743b46",
+    "uo_chapman_2025_sha256": "a253787fe355d435298f34f72c51763e95af10649373dc051bd4ab7f52840aab",
+    "uo_chapman_2016_sha256": "dbfa3289ee67b7e5ed5a611931fc306cccf38e04ba01d59e97cdba8328e005c1",
+    "uo_condon_2025_sha256": "b5fe60cec3753aef4ecffa49cb28d805cce7c392ff1eb6bcd83fa9624c908780"
+  },
+  "chapman": {
+    "id": "roof-f5cea51d",
+    "footprint_enu_m": [
+      [-518.14,-34.28], [-504.25,-34.28], [-504.25,-33.22], [-476.77,-33.22],
+      [-476.77,-22.50], [-479.72,-22.50], [-479.72,-18.91], [-504.25,-18.91],
+      [-504.25,-17.58], [-518.14,-17.58], [-518.14,-21.25], [-518.94,-21.25],
+      [-518.94,-30.54], [-518.14,-30.54]
+    ],
+    "roof_segments": [
+      {"name":"main roof", "bounds":[-519,-35,-476.7,-17], "membrane_z_west_m":16.50, "membrane_z_east_m":16.90, "parapet_rise_m":0.60}
+    ],
+    "entrances": [
+      {"gate":"chapman-west","position_enu_m":[-518.94,-25.90],"outward_degrees":-90,"width_m":2.26,"approach_distance_m":4.82,"snap_to_facade":false,"estimated":true},
+      {"gate":"chapman-north","position_enu_m":[-510.92,-17.58],"outward_degrees":0,"width_m":1.68,"estimated":true}
+    ]
+  },
+  "condon": {
+    "id": "roof-7ffcf31b",
+    "footprint_enu_m": [
+      [-615.39,-30.96], [-611.95,-30.96], [-611.95,-32.50], [-595.85,-32.50],
+      [-595.85,-47.10], [-599.63,-47.10], [-599.63,-42.95], [-609.62,-42.95],
+      [-609.62,-67.94], [-599.84,-67.94], [-599.84,-62.36], [-586.07,-62.36],
+      [-586.07,-33.66], [-572.92,-33.66], [-572.92,-29.93], [-572.26,-29.93],
+      [-572.26,-20.71], [-572.92,-20.71], [-572.92,-16.62], [-587.00,-16.62],
+      [-587.00,-17.86], [-611.95,-17.86], [-611.95,-23.63], [-615.39,-23.63]
+    ],
+    "roof_segments": [
+      {"name":"west stair tower", "bounds":[-616,-34,-611.95,-22], "membrane_z_west_m":14.11, "membrane_z_east_m":14.20, "parapet_rise_m":0.21},
+      {"name":"main roof", "bounds":[-612,-33.66,-572,-16.60], "membrane_z_west_m":16.34, "membrane_z_east_m":15.99, "parapet_rise_m":0.60},
+      {"name":"1967 south addition", "bounds":[-610,-68,-586,-32.5], "membrane_z_west_m":14.60, "membrane_z_east_m":14.68, "parapet_rise_m":0.63}
+    ],
+    "entrances": [
+      {"gate":"condon-east","position_enu_m":[-572.26,-25.35],"outward_degrees":90,"width_m":2.13,"approach_distance_m":4.82,"snap_to_facade":false,"estimated":true}
+    ]
+  }
+}

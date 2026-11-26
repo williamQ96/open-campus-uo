@@ -30,7 +30,7 @@ test("Volcanology map match is explicitly approximate and has sourced informatio
   );
   expect(entry.name_match).toBe("approximate-map-match");
   expect((await page.evaluate(() => __campus.namedBuildings())).length).toBe(
-    64,
+    66,
   );
   expect(errors).toEqual([]);
 });

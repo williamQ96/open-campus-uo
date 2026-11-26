@@ -1,5 +1,13 @@
 # Earl / Straub boundary review (2026-11-04)
 
+The [local model review](straub-earl-exterior-review-2026-11-24.md) records the adopted geometry and split. The earlier checks below preserve evidence leading to the model change.
+
+## Registered footprint follow-up (2026-11-24)
+
+The UO Campus Map has separate outlines for Straub 072 and Earl 073. In the scene coordinate frame, `roof-5ded2bf0` overlaps 81.31% of Straub and 54.74% of Earl. Three additional meshes overlap Earl, including the previously labeled north wing. `roof-303d99fd` covers 8.86% of the map outline, `roof-f01c8434` covers 8.64%, and `roof-aedc356a` covers 8.32%. These three candidates align with the south end, north end and southeast wing in the 2024 aerial screen. The two map polygons together introduce zero new conflicts across 7,705 route edges in the preliminary 2D check at 0.42 m. Floor datums, the grade and the shared wall still need 3D checks. The projected geometries, imagery, matching script and hashes are in the research worktree under `exterior-l2/straub-earl-20261124/`. Both exteriors remain L1. [UO Campus Map](https://map.uoregon.edu/) · [OSIP 2024 imagery](https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer) · [Straub drawing chronology](interior-preflight-straub-hall-2026-11-16.md).
+
+## Initial survey screen
+
 Source: UO [Earl Hall survey](https://cpfm.uoregon.edu/earlhall2025), updated 2025, describes four-storey brick/terracotta flat-roof Earl with five units and shows its east-west relation to Straub in a site plan. Reference only; no third-party imagery redistributed. Existing model `roof-f01c8434` is an approximate-nearest-roof match with an area of 264.5 m², while the adjacent `roof-5ded2bf0` mapped to Straub covers approximately 4,108 m² and includes protrusions toward the Earl side. Their gap is only 0.2 m. The project asset documentation already warns that source LiDAR can merge attached buildings.
 
 The plan supports a likely merged Earl/Straub model but does not supply a registered, dimensioned georeferenced boundary. Four context renders in `docs/images/earl-{north,south,east,west}-before.png` and the isolated material audit show that an x-coordinate-only split would be speculative. Do not bind a full-Earl replacement, recolor the whole Straub mesh, or assign a named hall entrance without boundary evidence. No production asset or maturity level was changed. A registered official GIS footprint or measurements tied to identifiable site features are needed for a reliable split; work can continue elsewhere independently.

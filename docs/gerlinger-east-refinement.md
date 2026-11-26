@@ -1,5 +1,7 @@
 # Gerlinger Hall east facade refinement
 
+The November 24 default replaces this east layer together with the old Hall shell, west and south profiles, roofs and the Annex site. [Registered exterior review](gerlinger-site-review-2026-11-24.md).
+
 2026-11-03; local and unpublished. Building `roof-9ac93ab7`, planting `ENV-03`.
 
 UO's [2016 historic assessment](https://cpfm.uoregon.edu/sites/default/files/gerlinger_hall_historic_assessment_2016-01-20.pdf), pages 4 and 7, identifies the five-bay pedimented entrance as the east elevation. Its floor plan shows the short end of the long east–west hall. The current source-mesh footprint's eastern end is approximately east -359 m, north -198 to -222 m; runtime ray samples at selected heights show a faceted eastern wall from about -359.1 to -360 m. This source, geographic frame and mesh evidence resolve the previous north/east placement error; the historical roof footprint and image alignment still are approximate, not measured field control.

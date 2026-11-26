@@ -8,6 +8,8 @@ Reproduce once the generated input snapshots are available (requires Shapely): `
 
 The [UO campus tree tour](https://cpfm.uoregon.edu/sites/default/files/tree_tour_oct_2021.pdf) documents Douglas-fir and Oregon white oak on campus. [OSU Extension](https://extension.oregonstate.edu/catalog/pub/ec-1577-gardening-oregon-native-plants-west-cascades) supplies regional plant context including sword fern. Sources were consulted as references only; no images or geometry were copied. They do not identify any of these 600 procedural trees by location or species, and no redistribution license is inferred.
 
+A later [production-mesh screen](pilot-tree-clearance-2026-11-23.md) examines the current default source, the adopted site meshes and the 2024 orthophoto. It records the resolved tree 129 case and the east library canopy still under review.
+
 ## Read-only 3D follow-up
 
 The seven 2D candidates were screened against their corresponding **authored Blender building meshes** using per-tree vertex/face slices and BVH surface intersection. Tree 129 and 296 intersect the Knight mesh; tree 273 intersects EMU. Trees 170, 190, 270 and 291 showed no surface intersections in this test; containment is not tested. The original tree 60 had 17 intersecting face pairs with Knight; the separate edited vegetation candidate had zero. See [structured results and hashes](../data/metadata/vegetation-mesh-overlaps-2026-11-03.json). Face-pair counts are not object counts or evidence of real-world locations.

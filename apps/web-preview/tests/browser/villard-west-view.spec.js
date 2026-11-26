@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 test("west seam views are valid and reproducible", async ({ page }) => {
-  await page.goto("/");
+  await page.goto("/?exterior-review=heritage-baseline");
   await page.waitForFunction(() => window.__campus?.getState().ready);
   expect(await page.evaluate(() => __campus.collisionCheck(-495, -185.5))).toBe(
     true,
@@ -37,7 +37,7 @@ test("west seam views are valid and reproducible", async ({ page }) => {
         ),
       { x, z, yaw, pitch, ground: v.ground },
     );
-    await page.goto("/?return=1");
+    await page.goto("/?return=1&exterior-review=heritage-baseline");
     await page.waitForFunction(
       () =>
         window.__campus?.getState().ready &&

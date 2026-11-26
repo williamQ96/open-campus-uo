@@ -1,5 +1,7 @@
 # University Hall exterior refinement
 
+The local default scene now uses the [registered Heritage Core exterior and approaches](heritage-core-exterior-review-2026-11-24.md#university-hall). The previous model remains available through the development preview's `?exterior-review=heritage-baseline`.
+
 The original campus GLB and `roof-9017feee` identity remain intact. A source-pinned replacement approximates the two end towers, sloped roofs, cornice and repeated windows using [Gary Halvorson / Oregon State Archives' 2005 CC BY 4.0 photograph](https://commons.wikimedia.org/wiki/File:Deady_Hall,_University_of_Oregon,_Eugene_-_DPLA_-_1ab3ead15b82b80bb858c0fb7db25bec.jpg) and [UO's 2017 historic assessment](https://cpfm.uoregon.edu/sites/default/files/17079_uo_deady_hall_assessment_report_final_17_1103_rev_reduced.pdf), including labeled south/east elevations. The photo retains its original license and attribution in the archive; UO's document is linked only. No photographic texture is used.
 
 The tower and mansard geometry, simplified arched window profiles, four illustrative shrubs, dimensions and remaining elevations are simplified and not a current survey. Entries, stairs, access and collision behavior are not verified. The building remains level 1; no interior was changed. [Before](images/university-hall-before.png) / [after](images/university-hall-after.png).

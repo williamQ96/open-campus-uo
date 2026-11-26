@@ -1,0 +1,1029 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_dsm_sha256": {
+    "2017": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+    "2013-2015": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+  },
+  "models": [
+    {
+      "id": "roof-3ac532c7",
+      "name": "1848 Garden Ave",
+      "street_address": "1848 Garden Ave",
+      "profile": "three-level",
+      "state_feature": "20-1073460",
+      "footprint_enu_m": [
+        [
+          446.448,
+          114.312
+        ],
+        [
+          441.77,
+          96.944
+        ],
+        [
+          484.264,
+          85.594
+        ],
+        [
+          488.72,
+          102.652
+        ],
+        [
+          446.448,
+          114.312
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          465.228365,
+          99.89021
+        ],
+        "axis": [
+          0.966134,
+          -0.258039
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -22.35,
+            -9.35,
+            0.4,
+            9.6
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              10.97,
+              0.016,
+              -0.007
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            0.25,
+            -9.35,
+            22.65,
+            9.6
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              10.95,
+              -0.013,
+              0.007
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -3.03,
+            -9.35,
+            3.18,
+            9.55
+          ],
+          "planes": [
+            [
+              0.48,
+              0.0,
+              12.36,
+              0.57,
+              0
+            ],
+            [
+              0.48,
+              0.0,
+              12.36,
+              -0.53,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -20.4,
+        -7.55,
+        20.3,
+        7.88
+      ],
+      "eaves_m": 0.16,
+      "wall_color": [
+        142,
+        141,
+        132
+      ],
+      "trim_color": [
+        188,
+        190,
+        171
+      ],
+      "roof_color": [
+        196,
+        199,
+        188
+      ],
+      "door_color": [
+        70,
+        72,
+        62
+      ],
+      "entrance": {
+        "near_enu_m": [
+          467.51975,
+          108.46948
+        ],
+        "outward_degrees": 15,
+        "landing_m": 3.35,
+        "threshold_above_grade_m": 0.26
+      },
+      "solar_fields": [],
+      "public_references": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vyxztA_oRYvdTySVyjbPnQ&heading=189",
+          "observation": "Long gray three-level facade with three gabled accent bays and a covered central entrance."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494763.14928888186%2C4877006.282153052%2C494825.14928888186%2C4877050.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=496%2C352",
+        "sha256": "ff46b5fa158dc52b0fb4e5e8c5cfa8492c032b62ed3e2b12cdb305fcafcc6300"
+      }
+    },
+    {
+      "id": "roof-9c95368e",
+      "name": "Riverview Business Park (1901 Garden)",
+      "street_address": "1901 Garden Ave",
+      "profile": "river-office",
+      "state_feature": "20-1073433",
+      "footprint_enu_m": [
+        [
+          561.896,
+          155.306
+        ],
+        [
+          557.674,
+          141.092
+        ],
+        [
+          570.83,
+          137.138
+        ],
+        [
+          573.958,
+          147.874
+        ],
+        [
+          570.174,
+          149.11
+        ],
+        [
+          573.704,
+          161.354
+        ],
+        [
+          577.788,
+          160.128
+        ],
+        [
+          581.064,
+          170.868
+        ],
+        [
+          578.048,
+          171.526
+        ],
+        [
+          578.438,
+          173.486
+        ],
+        [
+          570.276,
+          175.79
+        ],
+        [
+          569.886,
+          173.83
+        ],
+        [
+          567.318,
+          174.504
+        ],
+        [
+          563.582,
+          164.05
+        ],
+        [
+          561.926,
+          164.3
+        ],
+        [
+          560.986,
+          160.676
+        ],
+        [
+          561.588,
+          160.544
+        ],
+        [
+          560.238,
+          155.558
+        ],
+        [
+          561.896,
+          155.306
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          568.613917,
+          157.022452
+        ],
+        "axis": [
+          0.290356,
+          0.956919
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -18.76,
+            -8.31,
+            18.98,
+            6.52
+          ],
+          "planes": [
+            [
+              0.0,
+              -0.09,
+              11.64,
+              0,
+              0.244
+            ],
+            [
+              0.0,
+              -0.09,
+              11.64,
+              0,
+              -0.459
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -18.78,
+            -8.31,
+            -5.9,
+            6.22
+          ],
+          "planes": [
+            [
+              0.0,
+              -0.11,
+              11.89,
+              0,
+              0.249
+            ],
+            [
+              0.0,
+              -0.11,
+              11.89,
+              0,
+              -0.377
+            ],
+            [
+              -13.93,
+              -0.11,
+              11.89,
+              0.37,
+              0
+            ],
+            [
+              -9.4,
+              -0.11,
+              11.89,
+              -0.26,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            5.29,
+            -8.31,
+            19.08,
+            7.21
+          ],
+          "planes": [
+            [
+              0.0,
+              -0.1,
+              11.9,
+              0,
+              0.23
+            ],
+            [
+              0.0,
+              -0.1,
+              11.9,
+              0,
+              -0.269
+            ],
+            [
+              8.0,
+              -0.1,
+              11.9,
+              0.28,
+              0
+            ],
+            [
+              12.35,
+              -0.1,
+              11.9,
+              -0.31,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4.05,
+            5.44,
+            5.71,
+            8.91
+          ],
+          "planes": [
+            [
+              0,
+              6.5,
+              8.64,
+              0.058,
+              -0.14
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -17.55,
+        -6.75,
+        17.1,
+        6.49
+      ],
+      "eaves_m": 0.16,
+      "wall_color": [
+        184,
+        173,
+        151
+      ],
+      "trim_color": [
+        122,
+        112,
+        93
+      ],
+      "roof_color": [
+        94,
+        97,
+        93
+      ],
+      "door_color": [
+        70,
+        72,
+        62
+      ],
+      "entrance": {
+        "near_enu_m": [
+          561.21982,
+          152.8705
+        ],
+        "outward_degrees": 287,
+        "landing_m": 2.34,
+        "threshold_above_grade_m": 0.4
+      },
+      "solar_fields": [],
+      "public_references": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6e2-KCd0mHaSUCLcQc7Gfg&heading=15",
+          "observation": "Riverview Business Park sign and south hip, banded facade and upper window reveals."
+        },
+        {
+          "url": "https://www.oregonhealingcollective.com/riverview-office",
+          "observation": "Office publishes same building from the parking side, with a glazed canopy entry, banded walls, ramp and steel stair."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494879.14928888186%2C4877058.282153052%2C494918.14928888186%2C4877111.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=312%2C424",
+        "sha256": "6c24d496e730df875b347d59839f5d95966f77381c2662408d6c16a7589f4dde"
+      }
+    },
+    {
+      "id": "roof-f2c952e3",
+      "name": "1976 Garden Ave",
+      "street_address": "1976 Garden Ave",
+      "profile": "solar-office",
+      "state_feature": "20-1073842",
+      "footprint_enu_m": [
+        [
+          609.348,
+          76.088
+        ],
+        [
+          602.346,
+          64.618
+        ],
+        [
+          610.996,
+          59.164
+        ],
+        [
+          611.936,
+          60.498
+        ],
+        [
+          629.94,
+          49.442
+        ],
+        [
+          630.82,
+          50.904
+        ],
+        [
+          645.96,
+          41.776
+        ],
+        [
+          653.02,
+          53.484
+        ],
+        [
+          637.246,
+          62.992
+        ],
+        [
+          636.638,
+          61.986
+        ],
+        [
+          633.51,
+          63.872
+        ],
+        [
+          633.022,
+          63.06
+        ],
+        [
+          618.606,
+          72.122
+        ],
+        [
+          617.638,
+          71.766
+        ],
+        [
+          609.348,
+          76.088
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          627.777664,
+          59.13593
+        ],
+        "axis": [
+          0.889688,
+          -0.456569
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -25.65,
+            -8.1,
+            -13.65,
+            7.24
+          ],
+          "planes": [
+            [
+              0.0,
+              0.42,
+              13.26,
+              0.018,
+              0.277
+            ],
+            [
+              0.0,
+              0.42,
+              13.26,
+              0.018,
+              -0.208
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -14.96,
+            -8.11,
+            6.82,
+            7.92
+          ],
+          "planes": [
+            [
+              0.0,
+              0.15,
+              14.3,
+              0.018,
+              0.258
+            ],
+            [
+              0.0,
+              0.15,
+              14.3,
+              0.018,
+              -0.228
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            6.44,
+            -8.1,
+            25.65,
+            8.22
+          ],
+          "planes": [
+            [
+              0.0,
+              0.07,
+              14.57,
+              -0.006,
+              0.248
+            ],
+            [
+              0.0,
+              0.07,
+              14.57,
+              -0.006,
+              -0.231
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -23.75,
+        -5.85,
+        23.65,
+        6.09
+      ],
+      "eaves_m": 0.16,
+      "wall_color": [
+        200,
+        202,
+        189
+      ],
+      "trim_color": [
+        154,
+        153,
+        131
+      ],
+      "roof_color": [
+        125,
+        132,
+        122
+      ],
+      "door_color": [
+        70,
+        72,
+        62
+      ],
+      "entrance": {
+        "near_enu_m": [
+          630.87483,
+          64.47031
+        ],
+        "outward_degrees": 27,
+        "landing_m": 2.37,
+        "threshold_above_grade_m": 0.35
+      },
+      "solar_fields": [
+        {
+          "columns": 12,
+          "first_u_m": -12.35,
+          "last_u_m": -1.2,
+          "row_v_m": [
+            0.9,
+            -0.78,
+            -2.48,
+            -4.21
+          ]
+        },
+        {
+          "columns": 23,
+          "first_u_m": 1.1,
+          "last_u_m": 23.6,
+          "row_v_m": [
+            0.77,
+            -0.97,
+            -2.69,
+            -4.4
+          ]
+        }
+      ],
+      "public_references": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=r36QVfUd34JYlfhnwFjrnQ&heading=210",
+          "observation": "Two levels with long office window strips, glass and stone entry riser and thin roof fascia."
+        },
+        {
+          "url": "https://coeapps.eugene-or.gov/cmoweblink/0/edoc/1572757/Agenda%20Packet.pdf",
+          "observation": "City agenda packet confirms the office address in the audit documents."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494924.14928888186%2C4876962.282153052%2C494990.14928888186%2C4877012.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=528%2C400",
+        "sha256": "bdcd96fd7594da7c80d2f0f5ca5198f273e61ad109c03276d0a05fe6354673ea"
+      }
+    },
+    {
+      "id": "roof-1a10907d",
+      "name": "Millrace Gardens South Building",
+      "street_address": "2001 Garden Ave",
+      "profile": "millrace",
+      "state_feature": "20-1073466",
+      "footprint_enu_m": [
+        [
+          679.338,
+          118.174
+        ],
+        [
+          674.06,
+          109.022
+        ],
+        [
+          693.008,
+          98.096
+        ],
+        [
+          698.286,
+          107.248
+        ],
+        [
+          679.338,
+          118.174
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          686.173,
+          108.135705
+        ],
+        "axis": [
+          0.866291,
+          -0.49954
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -11.38,
+            -5.75,
+            11.39,
+            5.75
+          ],
+          "planes": [
+            [
+              0.0,
+              -0.42,
+              9.14,
+              -0.061,
+              0.292
+            ],
+            [
+              0.0,
+              -0.42,
+              9.14,
+              -0.061,
+              -0.435
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -11.38,
+            -5.75,
+            -3.37,
+            0.78
+          ],
+          "planes": [
+            [
+              -7.11,
+              0.0,
+              9.57,
+              0.36,
+              0
+            ],
+            [
+              -7.11,
+              0.0,
+              9.57,
+              -0.409,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4.8,
+            -5.75,
+            3.1,
+            0.35
+          ],
+          "planes": [
+            [
+              -1.01,
+              0.0,
+              9.18,
+              0.399,
+              0
+            ],
+            [
+              -1.01,
+              0.0,
+              9.18,
+              -0.392,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            2.35,
+            -5.75,
+            11.39,
+            0.44
+          ],
+          "planes": [
+            [
+              6.37,
+              0.0,
+              8.78,
+              0.356,
+              0
+            ],
+            [
+              6.37,
+              0.0,
+              8.78,
+              -0.411,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -9.85,
+        -4.31,
+        9.91,
+        3.71
+      ],
+      "eaves_m": 0.16,
+      "wall_color": [
+        142,
+        104,
+        77
+      ],
+      "trim_color": [
+        101,
+        91,
+        70
+      ],
+      "roof_color": [
+        91,
+        102,
+        88
+      ],
+      "door_color": [
+        70,
+        72,
+        62
+      ],
+      "entrance": {
+        "near_enu_m": [
+          687.54269,
+          101.26248
+        ],
+        "outward_degrees": 210,
+        "landing_m": 2.37,
+        "threshold_above_grade_m": 0.32
+      },
+      "solar_fields": [],
+      "public_references": [
+        {
+          "url": "https://www.sunny.com/or/eugene/2001-garden-ave",
+          "observation": "Property marketing image with Millrace Gardens name, carved sign, vertical upper siding, bay windows and ground-gallery rails."
+        },
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4rbb2LAFCnvsAC2TRMzq2Q&heading=30",
+          "observation": "July street image shows the tan projecting upper bay east of the screened courtyard."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494996.14928888186%2C4877019.282153052%2C495035.14928888186%2C4877054.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=312%2C280",
+        "sha256": "8bd63643522ab5240d41ce28bf422934303ef569bbd77b38e10c45a01b1568a6"
+      }
+    },
+    {
+      "id": "roof-e3c224a3",
+      "name": "Millrace Gardens North Building",
+      "street_address": "2001 Garden Ave",
+      "profile": "millrace",
+      "state_feature": "20-1073465",
+      "footprint_enu_m": [
+        [
+          687.296,
+          139.02
+        ],
+        [
+          681.642,
+          129.214
+        ],
+        [
+          719.506,
+          107.38
+        ],
+        [
+          725.16,
+          117.186
+        ],
+        [
+          687.296,
+          139.02
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          703.400783,
+          123.199875
+        ],
+        "axis": [
+          0.866292,
+          -0.499538
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -22.26,
+            -6.12,
+            22.3,
+            6.12
+          ],
+          "planes": [
+            [
+              0.0,
+              0.52,
+              7.66,
+              0,
+              0.392
+            ],
+            [
+              0.0,
+              0.52,
+              7.66,
+              0,
+              -0.486
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -11.55,
+            -6.12,
+            -2.5,
+            0.54
+          ],
+          "planes": [
+            [
+              -6.85,
+              0.0,
+              7.8,
+              0.564,
+              0
+            ],
+            [
+              -6.85,
+              0.0,
+              7.8,
+              -0.573,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            1.05,
+            -6.12,
+            9.15,
+            0.6
+          ],
+          "planes": [
+            [
+              5.4,
+              0.0,
+              7.75,
+              0.535,
+              0
+            ],
+            [
+              5.4,
+              0.0,
+              7.75,
+              -0.554,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            13.84,
+            -6.12,
+            21.64,
+            0.43
+          ],
+          "planes": [
+            [
+              17.89,
+              0.0,
+              6.88,
+              0.514,
+              0
+            ],
+            [
+              17.89,
+              0.0,
+              6.88,
+              -0.602,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -15.7,
+        -4.85,
+        16.25,
+        1.0
+      ],
+      "eaves_m": 0.16,
+      "wall_color": [
+        152,
+        116,
+        83
+      ],
+      "trim_color": [
+        101,
+        91,
+        70
+      ],
+      "roof_color": [
+        93,
+        103,
+        89
+      ],
+      "door_color": [
+        70,
+        72,
+        62
+      ],
+      "entrance": {
+        "near_enu_m": [
+          702.67482,
+          117.09644
+        ],
+        "outward_degrees": 210,
+        "landing_m": 2.26,
+        "threshold_above_grade_m": 0.29
+      },
+      "solar_fields": [],
+      "public_references": [
+        {
+          "url": "https://www.sunny.com/or/eugene/2001-garden-ave",
+          "observation": "Property marketing image with Millrace Gardens name, carved sign, vertical upper siding, bay windows and ground-gallery rails."
+        },
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4rbb2LAFCnvsAC2TRMzq2Q&heading=30",
+          "observation": "July street image shows the tan projecting upper bay east of the screened courtyard."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495003.14928888186%2C4877028.282153052%2C495062.14928888186%2C4877075.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=472%2C376",
+        "sha256": "813963d4471300678854bf4ffaa530481c7deef8b8efeea52248ba5268f4e3fa"
+      }
+    }
+  ]
+}

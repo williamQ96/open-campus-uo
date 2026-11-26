@@ -1,0 +1,14 @@
+# East Campus Graduate Village exterior review
+
+The West and East buildings now load as separate registered exteriors under their original IDs, `roof-311b157f` (UO 145) and `roof-03ecaaba` (UO 146). Their 869.50 and 892.55 m² envelopes retain the mirrored L forms, open yards and three-story wings beside lower two-story wings. The models add hipped roof planes with projecting eaves, horizontal green cladding, white story bands, and framed windows. Each has a modeled approach under its own scene ID. The map layers and roof returns both identify the taller wing. [UO building inventory](https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_published.pdf) · [University Housing exterior photographs](https://apartments.uoregon.edu/graduatevillage) · [Public map-layer observations](interior-preflight-graduate-village-2026-11-16.md).
+
+The West outline is shifted 2.35 m west and 2.14 m north from the campus map. The East outline is shifted 2.85 m west and 2.18 m north. These placements align the walls with the aerial eaves and historical elevation edges. Window bays, overhang depths, the doorstep dimensions and portions of the walk edges remain approximate. [University map](https://map.uoregon.edu/) · [2024 OSIP aerial](https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer) · [2017 surface evidence](campus-surface-2017-2026-11-24.md).
+
+| Building | Eligible roof cells | Paired hits | Median absolute height difference before | Median absolute height difference after |
+| --- | ---: | ---: | ---: | ---: |
+| West | 390 | 390 | 1.426 m | 0.232 m |
+| East | 395 | 389 | 1.259 m | 0.031 m |
+
+Both replacements hit all 785 eligible sample locations in the same raster used to place the roof planes. Twelve paired rendered views cover the roof forms, green cladding and both exterior approaches. The 7,710 active route edges clear the envelopes. A shorter East approach fits the gap beside the existing southern neighbor. That neighbor's inferred entrance now uses a newly clear side of its original footprint. The retained triangle positions, normals and colors in the shared context batch match the prior versions, including with the four nearby site replacements active.
+
+Both exteriors were recorded at L2 after comparison with [Knight Library](knight-library-registration-2026-11-23.md). The [editable layout](../data/metadata/graduate-village-site-review.json) and [generator](../scripts/build-graduate-village-site-review.py) reproduce the GLB and site descriptor byte for byte. Run `python scripts/build-graduate-village-site-review.py --audit <audit.json>` from the project root. Roof registration, references and paired renders are in the research worktree's `exterior-l2/east-campus-20261124/`. Only original geometry and colors are in the runtime GLB.

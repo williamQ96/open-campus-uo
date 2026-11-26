@@ -1,0 +1,1503 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "survey_sources": {
+    "building_inventory": "https://cpfm.uoregon.edu/sites/default/files/2025-09/14_buildings_by_ownership_fy2025-1.pdf",
+    "campus_plan": "https://cpfm.uoregon.edu/cp2025appendices",
+    "state_outlines": "https://www.oregon.gov/dogami/pubs/pages/dds/p-sbfo-1.1.aspx",
+    "height_field_2017_sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+  },
+  "models": [
+    {
+      "id": "roof-bef4cf29",
+      "name": "1841 E 15th Ave",
+      "campus_id": "B0620",
+      "state_feature": "20-1086097",
+      "campus_outline_area_m2": 183.254,
+      "footprint_enu_m": [
+        [
+          406.12,
+          -227.926
+        ],
+        [
+          409.04,
+          -227.93
+        ],
+        [
+          409.058,
+          -212.798
+        ],
+        [
+          400.44,
+          -212.79
+        ],
+        [
+          400.436,
+          -216.898
+        ],
+        [
+          396.904,
+          -216.894
+        ],
+        [
+          396.904,
+          -217.284
+        ],
+        [
+          396.276,
+          -217.284
+        ],
+        [
+          396.274,
+          -219.322
+        ],
+        [
+          396.9,
+          -219.324
+        ],
+        [
+          396.892,
+          -227.916
+        ],
+        [
+          399.81,
+          -227.92
+        ],
+        [
+          399.81,
+          -227.91
+        ],
+        [
+          406.12,
+          -227.91
+        ],
+        [
+          406.12,
+          -227.926
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          409.04,
+          -227.93
+        ],
+        [
+          409.058,
+          -212.798
+        ],
+        [
+          400.44,
+          -212.79
+        ],
+        [
+          400.436,
+          -216.898
+        ],
+        [
+          396.904,
+          -216.894
+        ],
+        [
+          396.904,
+          -217.284
+        ],
+        [
+          396.276,
+          -217.284
+        ],
+        [
+          396.274,
+          -219.322
+        ],
+        [
+          396.9,
+          -219.324
+        ],
+        [
+          396.892,
+          -227.916
+        ],
+        [
+          400.26,
+          -227.92
+        ],
+        [
+          400.258,
+          -230.248
+        ],
+        [
+          405.694,
+          -230.254
+        ],
+        [
+          405.696,
+          -227.926
+        ],
+        [
+          409.04,
+          -227.93
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            394,
+            -229.3,
+            411,
+            -216.55
+          ],
+          "planes": [
+            [
+              0.0,
+              -223.16,
+              10.01,
+              0.0,
+              0.527
+            ],
+            [
+              0.0,
+              -223.16,
+              10.01,
+              0.0,
+              -0.53
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            398.8,
+            -220.2,
+            410,
+            -211.5
+          ],
+          "planes": [
+            [
+              403.86,
+              0.0,
+              9.64,
+              0.275,
+              0.0
+            ],
+            [
+              403.86,
+              0.0,
+              9.64,
+              -0.233,
+              0.0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            399.77,
+            -231.0,
+            406.15,
+            -226.4
+          ],
+          "planes": [
+            [
+              403.22,
+              0.0,
+              8.71,
+              0.49,
+              0.0
+            ],
+            [
+              403.22,
+              0.0,
+              8.71,
+              -0.475,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.19,
+      "wall_color": [
+        92,
+        88,
+        73
+      ],
+      "roof_color": [
+        101,
+        99,
+        91
+      ],
+      "trim_color": [
+        221,
+        218,
+        194
+      ],
+      "door_color": [
+        107,
+        82,
+        56
+      ],
+      "entrance": {
+        "near_enu_m": [
+          403.03,
+          -227.9
+        ],
+        "outward_degrees": 180,
+        "landing_m": 1.62,
+        "threshold_above_grade_m": 0.46
+      },
+      "front_windows": [
+        [
+          -1.41,
+          0.93,
+          1.07,
+          1.14
+        ],
+        [
+          1.54,
+          0.95,
+          1.02,
+          1.13
+        ]
+      ],
+      "porch": {
+        "span_m": 5.17,
+        "depth_m": 2.02,
+        "rise_m": 1.22,
+        "posts": "brick",
+        "attached_roof": true
+      },
+      "details": {
+        "garage": [
+          [
+            409.05,
+            -214.8
+          ],
+          90,
+          2.58
+        ]
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6FO0UuBf61pwurAVKunaOA&heading=0",
+          "date": "2024-07",
+          "observation": "Dark siding, cream square posts, brick base and centered shallow gabled porch."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494716.14928888186%2C4876687.282153052%2C494750.14928888186%2C4876725.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=306%2C342",
+        "sha256": "75ac39c90e3e5abfaa08005a7cfd4a13cb9b6744d7dcb66fc8cb3c27954bd5ca"
+      }
+    },
+    {
+      "id": "roof-7dd08283",
+      "name": "1602 Villard St",
+      "campus_id": "B0548",
+      "state_feature": "20-1073345",
+      "campus_outline_area_m2": 217.837,
+      "footprint_enu_m": [
+        [
+          455.246,
+          -373.774
+        ],
+        [
+          434.368,
+          -373.748
+        ],
+        [
+          434.356,
+          -383.202
+        ],
+        [
+          445.294,
+          -383.216
+        ],
+        [
+          445.29,
+          -385.482
+        ],
+        [
+          453.404,
+          -385.492
+        ],
+        [
+          453.406,
+          -384.35
+        ],
+        [
+          455.234,
+          -384.352
+        ],
+        [
+          455.246,
+          -373.774
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          455.246,
+          -373.774
+        ],
+        [
+          434.368,
+          -373.748
+        ],
+        [
+          434.356,
+          -383.202
+        ],
+        [
+          445.294,
+          -383.216
+        ],
+        [
+          445.29,
+          -385.482
+        ],
+        [
+          453.404,
+          -385.492
+        ],
+        [
+          453.406,
+          -384.35
+        ],
+        [
+          455.234,
+          -384.352
+        ],
+        [
+          455.246,
+          -373.774
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            432.5,
+            -386,
+            451,
+            -373.1
+          ],
+          "planes": [
+            [
+              0.0,
+              -378.95,
+              13.75,
+              0.0,
+              0.59
+            ],
+            [
+              0.0,
+              -378.95,
+              13.75,
+              0.0,
+              -0.61
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            448,
+            -385,
+            457,
+            -373.1
+          ],
+          "planes": [
+            [
+              448,
+              -378.7,
+              12.4,
+              -0.38,
+              -0.02
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            448.6,
+            -385.8,
+            456.2,
+            -380.15
+          ],
+          "planes": [
+            [
+              0.0,
+              -382.89,
+              13.48,
+              0.0,
+              0.78
+            ],
+            [
+              0.0,
+              -382.89,
+              13.48,
+              0.0,
+              -0.72
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            450.0,
+            -379.1,
+            456.3,
+            -373.25
+          ],
+          "planes": [
+            [
+              0.0,
+              -376.31,
+              12.18,
+              0.0,
+              0.48
+            ],
+            [
+              0.0,
+              -376.31,
+              12.18,
+              0.0,
+              -0.55
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.19,
+      "wall_color": [
+        204,
+        200,
+        177
+      ],
+      "roof_color": [
+        107,
+        106,
+        91
+      ],
+      "trim_color": [
+        221,
+        218,
+        194
+      ],
+      "door_color": [
+        102,
+        110,
+        88
+      ],
+      "entrance": {
+        "near_enu_m": [
+          455.23,
+          -380.9
+        ],
+        "outward_degrees": 90,
+        "landing_m": 1.62,
+        "threshold_above_grade_m": 0.4
+      },
+      "front_windows": [
+        [
+          -2.48,
+          1.0,
+          1.32,
+          1.2
+        ],
+        [
+          2.31,
+          1.0,
+          1.35,
+          1.14
+        ]
+      ],
+      "porch": {
+        "span_m": 2.45,
+        "depth_m": 1.1,
+        "rise_m": 0.58,
+        "posts": "wood",
+        "attached_roof": false
+      },
+      "details": {
+        "entry_facing": "transom"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jCPP4m9iq5LhN5j1n5rVTw&heading=280",
+          "date": "2024-07",
+          "observation": "Pale sided bungalow, paired street gables, a low entry and raised front lawn."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494754.14928888186%2C4876532.282153052%2C494795.14928888186%2C4876565.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=369%2C297",
+        "sha256": "b33428bbc737d3e214a51d9c11485a75c7ca18338c4d881b9255289766ab5413"
+      }
+    },
+    {
+      "id": "roof-e086d515",
+      "name": "1778 Villard St",
+      "campus_id": "B0609",
+      "state_feature": "20-1073375",
+      "campus_outline_area_m2": 147.883,
+      "footprint_enu_m": [
+        [
+          456.258,
+          -583.574
+        ],
+        [
+          456.262,
+          -580.48
+        ],
+        [
+          455.82,
+          -580.48
+        ],
+        [
+          455.82,
+          -573.266
+        ],
+        [
+          441.54,
+          -573.246
+        ],
+        [
+          441.534,
+          -578.892
+        ],
+        [
+          442.378,
+          -578.894
+        ],
+        [
+          442.372,
+          -583.556
+        ],
+        [
+          456.258,
+          -583.574
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          458.25,
+          -573.27
+        ],
+        [
+          441.54,
+          -573.246
+        ],
+        [
+          441.534,
+          -578.892
+        ],
+        [
+          442.378,
+          -578.894
+        ],
+        [
+          442.372,
+          -583.556
+        ],
+        [
+          456.258,
+          -583.574
+        ],
+        [
+          456.262,
+          -580.444
+        ],
+        [
+          458.24,
+          -580.446
+        ],
+        [
+          458.25,
+          -573.27
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            440,
+            -585,
+            457.1,
+            -572.0
+          ],
+          "planes": [
+            [
+              449.88,
+              0.0,
+              15.2,
+              0.434,
+              0.0
+            ],
+            [
+              449.88,
+              0.0,
+              15.2,
+              -0.48,
+              0.0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            450,
+            -580.85,
+            459,
+            -572.5
+          ],
+          "planes": [
+            [
+              0.0,
+              -576.88,
+              13.75,
+              0.0,
+              0.39
+            ],
+            [
+              0.0,
+              -576.88,
+              13.75,
+              0.0,
+              -0.45
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            449.6,
+            -583.15,
+            454.5,
+            -579.4
+          ],
+          "planes": [
+            [
+              0.0,
+              -581.19,
+              15.1,
+              0.0,
+              0.62
+            ],
+            [
+              0.0,
+              -581.19,
+              15.1,
+              0.0,
+              -0.57
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.19,
+      "wall_color": [
+        189,
+        186,
+        167
+      ],
+      "roof_color": [
+        114,
+        99,
+        84
+      ],
+      "trim_color": [
+        221,
+        218,
+        194
+      ],
+      "door_color": [
+        167,
+        154,
+        119
+      ],
+      "entrance": {
+        "near_enu_m": [
+          455.87,
+          -576.62
+        ],
+        "outward_degrees": 90,
+        "landing_m": 1.62,
+        "threshold_above_grade_m": 0.48
+      },
+      "front_windows": [
+        [
+          -1.44,
+          0.91,
+          1.64,
+          1.42
+        ]
+      ],
+      "porch": {
+        "span_m": 5.09,
+        "depth_m": 2.18,
+        "rise_m": 1.04,
+        "posts": "wood",
+        "attached_roof": true
+      },
+      "details": {
+        "detached_garage": [
+          435.96,
+          -587.05,
+          441.92,
+          -583.49,
+          10.62,
+          11.52
+        ],
+        "dormer": [
+          454.5,
+          -581.19,
+          13.75,
+          2.29,
+          0.65
+        ],
+        "entry_facing": "sidelight"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8kdlxdo1WiHepFxLPqqqwQ&heading=270",
+          "date": "2024-07",
+          "observation": "Vegetated Villard frontage and neighboring drive."
+        },
+        {
+          "date": "2024-06-11",
+          "url": "https://www.klcc.org/housing-homelessness/2024-06-11/the-graceful-edge-thats-marked-a-dividing-line-between-the-university-of-oregon-and-its-eastern-neighbors",
+          "observation": "Direct photo of wood-sided bungalow, three-part dormer, projecting porch and temporary perimeter fence."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494754.14928888186%2C4876330.282153052%2C494798.14928888186%2C4876364.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=396%2C306",
+        "sha256": "c234ad082dc34c6c9b8bdb882e945dfc8368aaced97fb35098248eef45cc1c77"
+      }
+    },
+    {
+      "id": "roof-9fdf719c",
+      "name": "1795 Moss St",
+      "campus_id": "B0588",
+      "state_feature": "20-1086115",
+      "campus_outline_area_m2": 147.657,
+      "footprint_enu_m": [
+        [
+          381.672,
+          -596.126
+        ],
+        [
+          383.392,
+          -596.13
+        ],
+        [
+          383.258,
+          -586.41
+        ],
+        [
+          370.094,
+          -586.396
+        ],
+        [
+          370.09,
+          -589.104
+        ],
+        [
+          370.05,
+          -589.104
+        ],
+        [
+          370.05,
+          -594.1
+        ],
+        [
+          370.046,
+          -594.1
+        ],
+        [
+          370.042,
+          -596.102
+        ],
+        [
+          377.462,
+          -596.088
+        ],
+        [
+          377.688,
+          -597.808
+        ],
+        [
+          381.676,
+          -597.814
+        ],
+        [
+          381.672,
+          -596.126
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          383.392,
+          -596.13
+        ],
+        [
+          383.258,
+          -586.41
+        ],
+        [
+          370.094,
+          -586.396
+        ],
+        [
+          370.09,
+          -589.104
+        ],
+        [
+          367.308,
+          -589.106
+        ],
+        [
+          367.298,
+          -593.404
+        ],
+        [
+          370.048,
+          -593.408
+        ],
+        [
+          370.042,
+          -596.102
+        ],
+        [
+          377.462,
+          -596.088
+        ],
+        [
+          377.688,
+          -597.808
+        ],
+        [
+          381.676,
+          -597.814
+        ],
+        [
+          381.672,
+          -596.126
+        ],
+        [
+          383.392,
+          -596.13
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            369.8,
+            -596.52,
+            384.5,
+            -585.7
+          ],
+          "planes": [
+            [
+              0.0,
+              -591.73,
+              14.56,
+              0.0,
+              0.596
+            ],
+            [
+              0.0,
+              -591.73,
+              14.56,
+              0.0,
+              -0.568
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            366.65,
+            -593.98,
+            371.48,
+            -588.58
+          ],
+          "planes": [
+            [
+              0.0,
+              -591.29,
+              12.99,
+              0.0,
+              0.502
+            ],
+            [
+              0.0,
+              -591.29,
+              12.99,
+              0.0,
+              -0.485
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            377.08,
+            -598.3,
+            382.18,
+            -595.7
+          ],
+          "planes": [
+            [
+              379.67,
+              0.0,
+              12.47,
+              0.43,
+              0.0
+            ],
+            [
+              379.67,
+              0.0,
+              12.47,
+              -0.48,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.19,
+      "wall_color": [
+        211,
+        204,
+        177
+      ],
+      "roof_color": [
+        111,
+        105,
+        88
+      ],
+      "trim_color": [
+        221,
+        218,
+        194
+      ],
+      "door_color": [
+        187,
+        178,
+        147
+      ],
+      "entrance": {
+        "near_enu_m": [
+          370.065,
+          -591.31
+        ],
+        "outward_degrees": 270,
+        "landing_m": 1.62,
+        "threshold_above_grade_m": 0.38
+      },
+      "front_windows": [
+        [
+          -1.23,
+          0.83,
+          1.05,
+          1.19
+        ],
+        [
+          1.22,
+          0.83,
+          1.05,
+          1.19
+        ]
+      ],
+      "porch": {
+        "span_m": 4.04,
+        "depth_m": 2.21,
+        "rise_m": 0.91,
+        "posts": "wood",
+        "attached_roof": true
+      },
+      "details": {},
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GD5d1-c_M13G0PbvLVak8Q&heading=90",
+          "date": "2024-07",
+          "observation": "Pale horizontal siding, front-facing main gable and smaller supported porch gable."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494687.14928888186%2C4876319.282153052%2C494724.14928888186%2C4876352.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=333%2C297",
+        "sha256": "eeea4394cb1a261506798b28f8977230418cfac277d8c133cd74d80dabb63971"
+      }
+    },
+    {
+      "id": "roof-fb6ac47a",
+      "name": "1800 Columbia St",
+      "campus_id": "B0630",
+      "state_feature": "20-1073322",
+      "campus_outline_area_m2": 212.361,
+      "footprint_enu_m": [
+        [
+          202.898,
+          -612.304
+        ],
+        [
+          184.954,
+          -612.21
+        ],
+        [
+          184.916,
+          -619.438
+        ],
+        [
+          190.044,
+          -619.464
+        ],
+        [
+          190.012,
+          -625.71
+        ],
+        [
+          203.478,
+          -625.78
+        ],
+        [
+          203.528,
+          -615.932
+        ],
+        [
+          202.878,
+          -615.928
+        ],
+        [
+          202.898,
+          -612.304
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          202.898,
+          -612.304
+        ],
+        [
+          184.954,
+          -612.21
+        ],
+        [
+          184.916,
+          -619.438
+        ],
+        [
+          190.044,
+          -619.464
+        ],
+        [
+          190.012,
+          -625.71
+        ],
+        [
+          203.478,
+          -625.78
+        ],
+        [
+          203.528,
+          -615.932
+        ],
+        [
+          202.878,
+          -615.928
+        ],
+        [
+          202.898,
+          -612.304
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            184.2,
+            -626.61,
+            204.3,
+            -611.45
+          ],
+          "planes": [
+            [
+              0.0,
+              -621.04,
+              12.64,
+              0.0,
+              0.475
+            ],
+            [
+              0.0,
+              -621.04,
+              12.64,
+              0.0,
+              -0.477
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            184.2,
+            -619.8,
+            190.6,
+            -611.45
+          ],
+          "planes": [
+            [
+              187.5,
+              -617.5,
+              10.57,
+              0.04,
+              -0.205
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.19,
+      "wall_color": [
+        179,
+        149,
+        111
+      ],
+      "roof_color": [
+        112,
+        107,
+        90
+      ],
+      "trim_color": [
+        221,
+        218,
+        194
+      ],
+      "door_color": [
+        93,
+        70,
+        45
+      ],
+      "entrance": {
+        "near_enu_m": [
+          203.51,
+          -621.03
+        ],
+        "outward_degrees": 90,
+        "landing_m": 1.62,
+        "threshold_above_grade_m": 0.32
+      },
+      "front_windows": [
+        [
+          -2.18,
+          0.8,
+          1.1,
+          1.22
+        ],
+        [
+          2.24,
+          0.7,
+          1.8,
+          1.4
+        ]
+      ],
+      "porch": null,
+      "details": {
+        "vertical_siding": true,
+        "door_awning": true
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GZuVpYB8xePiYe17h82Olw&heading=270",
+          "date": "2024-07",
+          "observation": "Tall front gable, tan vertical panels, left divided sash and a wide dark right window."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494505.14928888186%2C4876291.282153052%2C494544.14928888186%2C4876326.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=351%2C315",
+        "sha256": "882aba7819e5ed2ef6c68ce0100e3a9921829651d64ffb8325419b3138f6a123"
+      }
+    },
+    {
+      "id": "roof-6f41ba80",
+      "name": "1848 Moss St",
+      "campus_id": "B0589",
+      "state_feature": "20-1073397",
+      "campus_outline_area_m2": 217.858,
+      "footprint_enu_m": [
+        [
+          329.422,
+          -674.916
+        ],
+        [
+          329.424,
+          -674.4
+        ],
+        [
+          329.42,
+          -674.4
+        ],
+        [
+          329.42,
+          -665.65
+        ],
+        [
+          329.452,
+          -665.65
+        ],
+        [
+          329.454,
+          -664.992
+        ],
+        [
+          318.578,
+          -664.964
+        ],
+        [
+          318.582,
+          -663.696
+        ],
+        [
+          312.61,
+          -663.68
+        ],
+        [
+          312.584,
+          -673.782
+        ],
+        [
+          315.374,
+          -673.788
+        ],
+        [
+          315.372,
+          -674.88
+        ],
+        [
+          329.422,
+          -674.916
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          331.776,
+          -674.208
+        ],
+        [
+          331.798,
+          -665.91
+        ],
+        [
+          329.45,
+          -665.904
+        ],
+        [
+          329.454,
+          -664.992
+        ],
+        [
+          318.578,
+          -664.964
+        ],
+        [
+          318.582,
+          -663.696
+        ],
+        [
+          312.61,
+          -663.68
+        ],
+        [
+          312.584,
+          -673.782
+        ],
+        [
+          315.374,
+          -673.788
+        ],
+        [
+          315.372,
+          -674.88
+        ],
+        [
+          329.422,
+          -674.916
+        ],
+        [
+          329.424,
+          -674.202
+        ],
+        [
+          331.776,
+          -674.208
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0.0,
+          0.0
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            311.6,
+            -675.7,
+            330.2,
+            -662.95
+          ],
+          "planes": [
+            [
+              321.93,
+              0.0,
+              16.63,
+              0.508,
+              0.0
+            ],
+            [
+              321.93,
+              0.0,
+              16.63,
+              -0.518,
+              0.0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            323.25,
+            -674.9,
+            332.6,
+            -665.25
+          ],
+          "planes": [
+            [
+              0.0,
+              -669.79,
+              14.93,
+              0.0,
+              0.541
+            ],
+            [
+              0.0,
+              -669.79,
+              14.93,
+              0.0,
+              -0.516
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.19,
+      "wall_color": [
+        207,
+        211,
+        192
+      ],
+      "roof_color": [
+        96,
+        98,
+        91
+      ],
+      "trim_color": [
+        164,
+        184,
+        173
+      ],
+      "door_color": [
+        141,
+        158,
+        142
+      ],
+      "entrance": {
+        "near_enu_m": [
+          329.38,
+          -669.64
+        ],
+        "outward_degrees": 90,
+        "landing_m": 1.62,
+        "threshold_above_grade_m": 0.57
+      },
+      "front_windows": [
+        [
+          -2.1,
+          0.77,
+          1.32,
+          1.3
+        ],
+        [
+          2.0,
+          0.75,
+          1.4,
+          1.36
+        ]
+      ],
+      "porch": {
+        "span_m": 6.97,
+        "depth_m": 2.35,
+        "rise_m": 1.86,
+        "posts": "wood",
+        "attached_roof": true
+      },
+      "details": {
+        "chimney": [
+          324.19,
+          -666.64,
+          0.6,
+          0.74,
+          17.3
+        ]
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=u4H9z0kDBcEcQslNGPc_VQ&heading=270",
+          "date": "2024-07",
+          "observation": "2024 tree cover obscures part of the front porch."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jXFYGt_pnYewgQCjNYpK3g&heading=270",
+          "date": "2008-09",
+          "observation": "Small projecting gable, pale walls, blue-green trim, centered steps and a pale chimney."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494628.14928888186%2C4876242.282153052%2C494672.14928888186%2C4876277.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=396%2C315",
+        "sha256": "79193aa4f578d5c53587746758530c9d33d40d2fe94ad89fb0d0d6fa4e0cf5e4"
+      }
+    }
+  ]
+}

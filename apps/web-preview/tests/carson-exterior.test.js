@@ -51,6 +51,47 @@ test("Carson layer and color patch remain pinned and avoid the route graph", () 
     0,
   );
 });
+test("Carson east transoms join the upper grouped casements without covering the panes", () => {
+  const detail = JSON.parse(
+    read("../public/scene/carson-exterior-detail.json"),
+  );
+  const group = createExteriorDetail(
+    detail,
+    detail.base_asset_sha256,
+    new Set([detail.building_id]),
+  );
+  assert.equal(group.children.length, 1);
+  group.updateMatrixWorld(true);
+
+  const eastGlass = detail.objects.filter(
+    ({ material, position }) =>
+      material === "glass" && Math.abs(position[0] + 49.37) < 1e-6,
+  );
+  assert.equal(eastGlass.length, 20);
+
+  const paneFace = -49.345;
+  const transomFace = -49.308;
+  const firstEastIntersection = (y, z) => {
+    const ray = new THREE.Raycaster(
+      new THREE.Vector3(-47, y, z),
+      new THREE.Vector3(-1, 0, 0),
+    );
+    return ray.intersectObject(group, true)[0]?.point.x;
+  };
+  const assertFace = (y, z, expected) =>
+    assert.ok(Math.abs(firstEastIntersection(y, z) - expected) < 1e-5);
+
+  for (const {
+    position: [, y, z],
+  } of eastGlass) {
+    const paneCenter = z + 0.25;
+    assertFace(y - 0.2, paneCenter, y === 2.5 ? paneFace : transomFace);
+    assertFace(y + 0.25, paneCenter, paneFace);
+    assertFace(y - 0.45, paneCenter, paneFace);
+    assertFace(y - 0.2, z, -49.305);
+  }
+});
+
 test("wall recolor is atomic, matches vertical source colors and preserves other vertices", () => {
   const root = new THREE.Group(),
     geo = new THREE.BufferGeometry();

@@ -23,6 +23,105 @@ def carry_layers(previous, output, scene):
    if k in previous:result[k]=previous[k]
   if 'naip-2024-main-campus-rgb' in previous.get('reference_image_ids',[]):
    result['reference_image_ids']=list(dict.fromkeys(result.get('reference_image_ids',[])+['naip-2024-main-campus-rgb']))
+ if 'ford_arena_site' in previous:
+  entry=previous['ford_arena_site']
+  if not isinstance(entry,dict) or entry.get('url')!='ford-arena-review/site.json':
+   raise ValueError('Invalid Ford/Arena site descriptor')
+  path=scene/entry['url']
+  if not path.is_file() or sha(path)!=entry.get('sha256'):
+   raise ValueError('Ford/Arena site missing or hash changed')
+  site=json.loads(path.read_text(encoding='utf-8'))
+  if site.get('source_presentation_sha256')!=output.get('asset_sha256') or site.get('source_landcover_sha256')!=result.get('landcover_sha256'):
+   raise ValueError('Ford/Arena site does not match rebuilt presentation')
+  manifest=json.loads(safe_path('manifest.json').read_text(encoding='utf-8'))
+  if manifest['model'].get('sha256')!=site['source_model_sha256']:
+   raise ValueError('Ford/Arena site does not match base scene')
+  for name,digest in [(manifest['model']['url'],site['source_model_sha256']),
+                      (manifest['heightfield_url'],site['source_heightfield_sha256'])]:
+   source=safe_path(name)
+   if not source.is_file() or sha(source)!=digest:
+    raise ValueError('Ford/Arena site does not match base scene')
+  for asset in [*site['buildings'],site['frontage_ground']]:
+   name=asset.get('url')
+   if not isinstance(name,str) or not re.fullmatch(r'ford-arena-review/[a-z-]+\.glb',name):
+    raise ValueError('Invalid Ford/Arena asset path')
+   asset_path=scene/name
+   if not asset_path.is_file() or sha(asset_path)!=asset.get('sha256'):
+    raise ValueError('Ford/Arena site mesh missing or hash changed')
+  result['ford_arena_site']=dict(entry)
+ for key,directory,label in [('cascade_volcanology_site','cascade-volcanology-review','Cascade'),
+                             ('hedco_site_review','hedco-exterior-review','HEDCO'),
+                             ('athletic_site_review','athletic-exterior-review','Athletic block'),
+                             ('emu_green_site','emu-green-review','EMU Green'),
+                             ('frohnmayer_site','frohnmayer-exterior-review','Frohnmayer'),
+                             ('museum_site_review','museum-exterior-review','Museum'),
+                             ('gerlinger_site_review','gerlinger-site-review','Gerlinger'),
+                             ('womens_quad_site','womens-quad-review','Women’s Memorial Quad'),
+                             ('memorial_quad_site','memorial-quad-review','Memorial Quad'),
+                             ('fenton_site_review','fenton-site-review','Fenton Hall'),
+                             ('allen_site_review','allen-site-review','Allen Hall'),
+                             ('lawrence_science_site','lawrence-science-review','Lawrence science complex'),
+                             ('straub_earl_site','straub-earl-review','Straub and Earl'),
+                             ('kalapuya_site','kalapuya-review','Kalapuya Ilihi'),
+                             ('longhouse_site','longhouse-review','Many Nations Longhouse'),
+                             ('global_scholars_site','global-scholars-review','Global Scholars Hall'),
+                             ('moss_street_site','moss-street-review','Moss Street Children’s Center'),
+                             ('vivian_olum_site','vivian-olum-review','Vivian Olum'),
+                             ('graduate_village_site','graduate-village-review','East Campus Graduate Village'),
+                             ('knight_law_site','knight-law-review','Knight Law Center'),
+                             ('bean_unthank_site','bean-unthank-review','Bean and Unthank'),
+                             ('cedar_yasui_site','cedar-yasui-review','Cedar and Yasui'),
+                             ('carson_llc_site','carson-llc-review','Carson and Living-Learning Center'),
+                             ('oregon_jaqua_site','oregon-jaqua-review','Oregon Hall and Jaqua'),
+                             ('lillis_complex_site','lillis-complex-review','Lillis complex and Computing Center'),
+                             ('friendly_collier_mckenzie_site','friendly-collier-mckenzie-review','Friendly, Collier and McKenzie'),
+                             ('plc_lokey_tykeson_site','plc-lokey-tykeson-review','PLC, Lokey Education and Tykeson'),
+                             ('northeast_science_site','northeast-science-review','Northeast science complex'),
+                             ('knight_campus_site','knight-campus-review','Knight Campus Buildings 1 and 2'),
+                             ('northsite_millrace_site','northsite-millrace-review','Fine Arts Studios and 1600 Millrace Drive'),
+                             ('public_building_exterior_site','public-building-exterior-review','Clinical Services, Museum, Barn and Agate Hall'),
+                             ('hayward_exterior_site','hayward-exterior-review','Hayward Field'),
+                             ('campus_frontage_site','campus-frontage-review','Campus public building frontages'),
+                             ('facilities_exterior_site','facilities-exterior-review','UO facilities and Romania'),
+                             ('office_exterior_site','office-exterior-review','Annex, Rainier and UO offices'),
+                             ('residential_exterior_site','residential-exterior-review','Registered off-campus residences'),
+                             ('campus_neighbor_exterior_site','campus-neighbor-exterior-review','Registered campus neighbors'),
+                             ('chapter_house_exterior_site','chapter-house-exterior-review','Separately registered chapter houses'),
+                             ('villard_garden_exterior_site','villard-garden-exterior-review','Split Villard and Garden residential exteriors'),
+                             ('alder_millrace_exterior_site','alder-millrace-exterior-review','Registered Alder and Millrace apartment exteriors'),
+                             ('east_campus_housing_exterior_site','east-campus-housing-exterior-review','Registered East Campus housing exteriors'),
+                             ('hilyard_west_exterior_site','hilyard-west-exterior-review','Four registered Hilyard and West University exteriors'),
+                             ('treated_roof_exterior_site','treated-roof-exterior-review','Six street-verified exteriors with prior context roofs'),
+                             ('fairmount_residential_exterior_site','fairmount-residential-exterior-review','Seven additional Fairmount Boulevard residential exteriors'),
+                             ('broadway_orchard_exterior_site','broadway-orchard-exterior-review','East Broadway and Orchard registered building exteriors'),
+                             ('franklin_complex_exterior_site','franklin-complex-exterior-review','Womack Hall and connected Franklin Boulevard storefronts'),
+                             ('franklin_boulevard_exterior_site','franklin-boulevard-exterior-review','Registered Franklin Boulevard commercial exteriors'),
+                             ('bardell_avenue_exterior_site','bardell-avenue-exterior-review','Registered Bardell Avenue building exteriors'),
+                             ('villard_street_exterior_site','villard-street-exterior-review','Registered Villard Street building exteriors'),
+                             ('garden_avenue_exterior_site','garden-avenue-exterior-review','Registered Garden Avenue building exteriors'),
+                             ('fairmount_boulevard_exterior_site','fairmount-boulevard-exterior-review','Registered Fairmount Boulevard house exteriors'),
+                             ('heritage_core_site','heritage-core-review','Heritage Core'),
+                             ('heritage_miller_site','heritage-miller-review','Heritage Core and Miller Theatre'),
+                             ('knight_library_site','knight-library-review','Knight Library')]:
+  if key not in previous:continue
+  entry=previous[key]
+  site_dir=scene/directory
+  if not isinstance(entry,dict) or entry.get('url')!=f'{directory}/site.json':
+   raise ValueError(f'Invalid {label} site descriptor')
+  site_path=site_dir/'site.json'
+  if not site_path.is_file() or sha(site_path)!=entry.get('sha256'):
+   raise ValueError(f'{label} site missing or hash changed')
+  site=json.loads(site_path.read_text(encoding='utf-8'))
+  manifest=json.loads(safe_path('manifest.json').read_text(encoding='utf-8'))
+  if site.get('source_presentation_sha256')!=output.get('asset_sha256') or site.get('source_base_model_sha256')!=manifest['model'].get('sha256'):
+   raise ValueError(f'{label} site does not match rebuilt presentation or base scene')
+  field=safe_path(manifest['heightfield_url'])
+  if not field.is_file() or sha(field)!=site.get('source_heightfield_sha256'):
+   raise ValueError(f'{label} site terrain missing or hash changed')
+  mesh=site_dir/'site.glb'
+  if site.get('url')!=f'{directory}/site.glb' or not mesh.is_file() or sha(mesh)!=site.get('sha256'):
+   raise ValueError(f'{label} site mesh missing or hash changed')
+  result[key]=dict(entry)
  if previous.get('exterior_detail_url'):
   path=safe_path(previous['exterior_detail_url'])
   if not path.is_file() or sha(path)!=previous.get('exterior_detail_sha256'):raise ValueError('exterior detail missing or hash changed')
@@ -60,6 +159,20 @@ def carry_layers(previous, output, scene):
    if spec.get('base_asset_sha256')!=previous.get('asset_sha256') or spec.get('base_asset_sha256')!=output.get('asset_sha256'):raise ValueError('Batch palette does not match rebuilt GLB')
    if not isinstance(spec.get('building_id'),str) or not spec['building_id'] or not isinstance(spec.get('target_name'),str) or not spec['target_name']:raise ValueError('Invalid batch palette target')
   result['batch_palette_patches']=[dict(entry) for entry in patches]
+ if 'context_roof_refinements' in previous:
+  entry=previous['context_roof_refinements']
+  if not isinstance(entry,dict) or entry.get('url')!='context-roof-refinements.json':
+   raise ValueError('Invalid context roof refinement link')
+  recipe=safe_path(entry['url'])
+  if not recipe.is_file() or sha(recipe)!=entry.get('sha256'):
+   raise ValueError('Context roof refinement missing or hash changed')
+  data=json.loads(recipe.read_text(encoding='utf-8'))
+  if data.get('version')!=1 or data.get('source_presentation_sha256')!=output.get('asset_sha256'):
+   raise ValueError('Context roof refinements do not match rebuilt scene')
+  if previous.get('verify_source_sha256') is not True:
+   raise ValueError('Context roof refinement requires source hash verification')
+  result['verify_source_sha256']=True
+  result['context_roof_refinements']=dict(entry)
  if 'building_roof_patches' in previous:
   patches=previous['building_roof_patches']
   if not isinstance(patches,list):raise ValueError('Invalid building roof patches')
@@ -152,8 +265,23 @@ def carry_layers(previous, output, scene):
    if data.get('base_asset_sha256')!=previous.get('asset_sha256') or data.get('base_asset_sha256')!=output.get('asset_sha256'):raise ValueError('Additional tree suppression does not match rebuilt GLB')
    count=data.get('suppressed_trees')
    if not isinstance(count,int) or isinstance(count,bool) or count<1:raise ValueError('Invalid additional suppressed count')
+   pilot_operation='pilot-tree-triangle-suppression-v1'
+   if pilot_operation in (entry.get('operation'),data.get('operation')):
+    if (entry.get('operation')!=pilot_operation or data.get('operation')!=pilot_operation or
+        data.get('version')!=1 or entry.get('suppressed_trees')!=count or previous.get('verify_source_sha256') is not True):
+     raise ValueError('Invalid pilot tree clearance metadata')
    extra_suppressed+=count
   result['additional_tree_suppressions']=[dict(entry) for entry in patches]
+ if 'registered_pilot_trees' in previous:
+  entry=previous['registered_pilot_trees']
+  if not isinstance(entry,dict) or previous.get('verify_source_sha256') is not True:raise ValueError('Invalid pilot tree registration')
+  path=safe_path(entry.get('url'))
+  if not path.is_file() or sha(path)!=entry.get('sha256'):raise ValueError('Pilot tree registration missing or hash changed')
+  spec=json.loads(path.read_text(encoding='utf-8'))
+  if spec.get('base_asset_sha256')!=previous.get('asset_sha256') or spec.get('base_asset_sha256')!=output.get('asset_sha256'):raise ValueError('Pilot tree registration does not match rebuilt GLB')
+  trees=spec.get('trees')
+  if spec.get('operation')!='registered-pilot-tree-fit-v1' or spec.get('version')!=1 or not isinstance(trees,list) or not trees or len(trees)!=entry.get('trees'):raise ValueError('Invalid pilot tree registration metadata')
+  result['registered_pilot_trees']=dict(entry)
  for prefix in ('vegetation_patch','understory_patch','furniture_patch','fern_patch','tree_suppression'):
   if not previous.get(prefix+'_url'):continue
   path=safe_path(previous[prefix+'_url'])

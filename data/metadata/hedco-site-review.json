@@ -1,0 +1,45 @@
+{
+  "asset_id": "context-b0010",
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_presentation_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "reference": {
+    "orthophoto_sha256": "fb9f34a1cd810e17ca38da03a7a39f13242c97ad0fbf109283d37e81cae0ed77",
+    "noaa_points_sha256": "8d21e279656061e5cf1217f60727bfc1090db8bd27abaca0b1fc56591fca0961",
+    "uo_first_floor_sha256": "6543f7505c8b9e1de2379e700774adedec4ced7325863ba51a6543a4d1d59123",
+    "courtyard_photo_sha256": "2616aefc9b33b71f05e39b7e3cf9763e7a20c3524fc763e913440f4b6f231b9e",
+    "clock_tower_photo_sha256": "99b31b76376b25e7a2571ebf0694522a86f5027e17d03a2a478434b2b66b266d"
+  },
+  "footing_z_m": 3.70,
+  "walls_enu_m": [[-697.05,-402.35],[-682.05,-402.35],[-682.05,-398.62],[-654.15,-398.62],[-654.15,-402.20],[-645.0,-402.20],[-645.0,-413.9],[-641.08,-413.9],[-641.08,-457.68],[-644.60,-457.68],[-644.60,-479.74],[-672.41,-479.74],[-672.41,-463.1],[-671.25,-463.1],[-671.25,-460.9],[-657.60,-460.9],[-657.60,-414.92],[-680.72,-414.92],[-680.72,-429.69],[-697.05,-429.69]],
+  "roofs": [
+    {"name":"west teaching wing","bounds":[-697.57,-433.25,-682.05,-401.37],"eave_z_m":16.02,"ridge_z_m":19.25,"axis":"n"},
+    {"name":"north wing","bounds":[-684.03,-412.83,-653.80,-398.08],"eave_z_m":15.76,"ridge_z_m":19.67,"axis":"e"},
+    {"name":"east wing","bounds":[-658.47,-462.16,-640.18,-415.44],"eave_z_m":19.38,"ridge_z_m":24.50,"axis":"n","ridge_enu_m":[[-646.46,-456.16],[-646.46,-419.96]]},
+    {"name":"south clinic wing","bounds":[-673.66,-479.98,-644.10,-464.12],"eave_z_m":20.46,"ridge_z_m":23.94,"axis":"e"}
+  ],
+  "tower_bounds_enu_m": [-646.36,-416.1,-642.64,-412.62],
+  "tower_z_m": 27.16,
+  "entrances": [
+    {"gate":"hedco-main","position_enu_m":[-645.0,-409.327],"outward_degrees":90,"width_m":3.05},
+    {"gate":"hedco-clinic","position_enu_m":[-672.41,-471.082],"outward_degrees":270,"width_m":2.6}
+  ],
+  "courtyard": {
+    "bounds": [-680.60,-460.64,-657.74,-415.02],
+    "lawn": [-675.1,-441.1,-662.42,-420.0],
+    "south_garden": [-675.3,-459.5,-661.5,-447.3],
+    "covered_walks": [
+      {
+        "roof": [-680.67,-417.07,-658.20,-414.89],
+        "top_z_m": 11.89,
+        "posts": [[-679.75,-416.9],[-673.82,-416.9],[-667.89,-416.9],[-661.96,-416.9]]
+      },
+      {
+        "roof": [-684.38,-464.03,-680.22,-429.57],
+        "top_z_m": 11.32,
+        "posts": [[-684.05,-462.5],[-684.05,-456.4],[-684.05,-450.3],[-684.05,-444.2],[-684.05,-438.1],[-684.05,-432.0]]
+      }
+    ],
+    "west_paving": [-684.63,-464.56,-677.4,-429.57]
+  },
+  "status": "Exterior approximation fitted to public map, dated elevation returns, orthophotography and architect photographs. South and west threshold elevations and exact fixtures remain approximate."
+}

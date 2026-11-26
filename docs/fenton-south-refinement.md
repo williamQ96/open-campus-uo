@@ -1,5 +1,7 @@
 # Fenton Hall exterior refinement
 
+The current local preview uses the [registered Fenton exterior and approaches](fenton-exterior-review-2026-11-24.md). The earlier model and overlay are retained for fallback, available in the development preview with `?exterior-review=fenton-baseline`.
+
 ## Orientation correction and multi-elevation follow-up, 2026-11-04
 
 The earlier layer and its documentation incorrectly interpreted the published principal-entrance photograph as south-facing. The [Oregon state historic archive's Fenton exterior masonry assessment](https://heritagedata.prd.state.or.us/historic/index.cfm?do=main.loadFile&load=56718.pdf), PDF pages 6 and 10, identifies the principal entrance as east-facing and the south elevation as the original eastern building, central tower and western five-story stacks. The [UO 2025 survey](https://cpfm.uoregon.edu/fentonhall2025) documents the west stacks, an east-facing entrance photo, historic south-entry alterations and original entrance balustrade. Its site plan and dated images are historical references; neither document is redistributed or used as a texture. The local archive reference SHA-256 is `57fcf64a16a117c9cc38297c0ace4ad098a1ed62d2bdec5387a2d7db11527ee1`.

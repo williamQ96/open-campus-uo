@@ -34,7 +34,7 @@ test("Susan courtyard study retains campus selection, entrances, collision and d
         await r.fulfill({ response: res, json: j });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=womens-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     const views = [];
@@ -64,7 +64,7 @@ test("Susan courtyard study retains campus selection, entrances, collision and d
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=womens-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&

@@ -19,17 +19,14 @@ test("Collier House exterior retains selectable identity in both render modes", 
     .first()
     .click();
   await expect(
-    page.evaluate(() => __campus.collisionCheck(-345, 47)),
+    page.evaluate(() => __campus.collisionCheck(-338.65, 55.14)),
   ).resolves.toBe(true);
   await expect(
-    page.evaluate(() => __campus.collisionCheck(-345, 42)),
+    page.evaluate(() => __campus.collisionCheck(-336.8, 55.14)),
   ).resolves.toBe(false);
   await expect(
-    page.evaluate(() => __campus.collisionCheck(-334, 53.5)),
+    page.evaluate(() => __campus.collisionCheck(-335.13, 53.42)),
   ).resolves.toBe(true);
-  await expect(
-    page.evaluate(() => __campus.collisionCheck(-332, 53.5)),
-  ).resolves.toBe(false);
   await expect
     .poll(async () => (await state()).selectedBuilding)
     .toBe("roof-e5accf83");

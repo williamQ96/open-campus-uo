@@ -1,0 +1,54 @@
+{
+  "id": "roof-4f0c798e",
+  "campus_map_id": "019",
+  "sources": {
+    "uo_building_map_sha256": "7112477228e8e3ac125548b3abd94180cd8f972c797db78373754cba7384b761",
+    "historical_lidar_grid_sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "osip_2024_sha256": "9dbf27b166adb41f071c64d64e603750ab9468d309dba4902516e294c5dec7ec",
+    "uo_assessment_sha256": "93c599c26e0af6a34ac91d9f08945b1b1c5351672c1cbf9a1d1dfae0592ee3ae",
+    "uo_survey_sha256": "f1b18fbcf137ef6bfc7f0b3aeb2f1db7b428542e38108d2ff5ea49a1be4d6852"
+  },
+  "main": {
+    "wall_bounds": [-456.99, 16.40, -436.81, 45.86],
+    "roof_bounds": [-457.80, 15.70, -436.01, 46.61],
+    "ridge_northings": [26.30, 35.72],
+    "eave_z_m": 17.24,
+    "ridge_z_m": 21.25,
+    "east_skylight_bounds": [-445.25, 29.65, -441.87, 31.45]
+  },
+  "entrance_projection": [-436.81, 25.70, -433.75, 35.86],
+  "stacks": {
+    "wall_bounds": [-476.12, 25.49, -459.85, 36.47],
+    "roof_z_m": 15.56,
+    "coping_z_m": 16.45
+  },
+  "tower": {
+    "wall_bounds": [-463.10, 27.00, -456.99, 32.88],
+    "roof_z_m": 18.73,
+    "coping_z_m": 19.18
+  },
+  "connector": {
+    "wall_bounds": [-459.85, 26.73, -456.99, 36.13],
+    "roof_z_m": 16.05
+  },
+  "entrances": [
+    {
+      "gate": "fenton-east",
+      "position_enu_m": [-433.75, 30.78],
+      "outward_degrees": 90,
+      "width_m": 1.76,
+      "approach_distance_m": 3.45,
+      "snap_to_facade": false,
+      "estimated": true
+    },
+    {
+      "gate": "fenton-south",
+      "position_enu_m": [-442.78, 16.40],
+      "outward_degrees": 180,
+      "width_m": 1.16,
+      "approach_distance_m": 4.42,
+      "snap_to_facade": false,
+      "estimated": true
+    }
+  ]
+}

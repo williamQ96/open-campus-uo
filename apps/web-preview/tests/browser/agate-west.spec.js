@@ -19,7 +19,7 @@ test("Agate frontage preserves entrance image, all entries, picking and modeled 
       });
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
-    await page.goto("/");
+    await page.goto("/?exterior-review=public-building-exterior-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     const g = await page.evaluate(() => __campus.terrainCheck(72, 586).sampled);
@@ -41,7 +41,9 @@ test("Agate frontage preserves entrance image, all entries, picking and modeled 
         ),
       g,
     );
-    await page.goto("/?return=1");
+    await page.goto(
+      "/?exterior-review=public-building-exterior-baseline&return=1",
+    );
     await page.waitForFunction(
       () =>
         window.__campus?.getState().ready &&

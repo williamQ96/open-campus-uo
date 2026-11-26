@@ -8,6 +8,70 @@ class Tests(unittest.TestCase):
    b=data if isinstance(data,bytes) else (json.dumps(data)+'\n').encode();(self.scene/name).write_bytes(b);return hashlib.sha256(b).hexdigest()
   self.ground=put('ground.glb',b'ground');self.patch=put('trees.json',{'base_asset_sha256':'old'})
   self.prev={'asset_sha256':'old','landcover_url':'ground.glb','landcover_sha256':self.ground,'landcover_status':'inferred','vegetation_patch_url':'trees.json','vegetation_patch_sha256':self.patch,'reference_image_ids':['naip-2024-main-campus-rgb']}
+ def test_paired_site_requires_unchanged_source_and_mesh_bytes(self):
+  def put(name,content):
+   path=self.scene/name
+   path.write_bytes(content)
+   return hashlib.sha256(content).hexdigest()
+  model=put('campus.glb',b'model')
+  terrain=put('heightfield.json',b'heightfield')
+  put('manifest.json',json.dumps({'model':{'url':'campus.glb','sha256':model},'heightfield_url':'heightfield.json'}).encode())
+  (self.scene/'ford-arena-review').mkdir()
+  assets=[]
+  for name in ['ford-alumni-site','matthew-knight-arena-site','frontage-ground']:
+   url=f'ford-arena-review/{name}.glb'
+   assets.append({'url':url,'sha256':put(url,name.encode())})
+  site={
+   'source_presentation_sha256':'old',
+   'source_landcover_sha256':self.ground,
+   'source_model_sha256':model,
+   'source_heightfield_sha256':terrain,
+   'buildings':assets[:2],
+   'frontage_ground':assets[2],
+  }
+  url='ford-arena-review/site.json'
+  self.prev['ford_arena_site']={'url':url,'sha256':put(url,json.dumps(site).encode())}
+  result=module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+  self.assertEqual(result['ford_arena_site'],self.prev['ford_arena_site'])
+  with self.assertRaisesRegex(ValueError,'does not match rebuilt presentation'):
+   module.carry_layers(self.prev,{'asset_sha256':'new'},self.scene)
+  put(assets[1]['url'],b'tampered')
+  with self.assertRaisesRegex(ValueError,'site mesh missing or hash changed'):
+   module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+ def test_cascade_site_checks_terrain_and_candidate_hashes(self):
+  directory=self.scene/'cascade-volcanology-review'
+  directory.mkdir()
+  def put(path,data):
+   path.write_bytes(data)
+   return hashlib.sha256(data).hexdigest()
+  field=self.scene/'terrain.json'
+  manifest={'model':{'sha256':'base'},'heightfield_url':field.name}
+  put(self.scene/'manifest.json',json.dumps(manifest).encode())
+  site={'source_presentation_sha256':'old','source_base_model_sha256':'base',
+        'source_heightfield_sha256':put(field,b'terrain'),'url':'cascade-volcanology-review/site.glb',
+        'sha256':put(directory/'site.glb',b'candidate')}
+  entry={'url':'cascade-volcanology-review/site.json','sha256':put(directory/'site.json',json.dumps(site).encode())}
+  self.prev['cascade_volcanology_site']=entry
+  self.assertEqual(module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)['cascade_volcanology_site'],entry)
+  put(directory/'site.glb',b'changed')
+  with self.assertRaisesRegex(ValueError,'site mesh missing or hash changed'):
+   module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+  put(field,b'changed')
+  with self.assertRaisesRegex(ValueError,'terrain missing or hash changed'):
+   module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+ def test_adopted_sites_survive_presentation_rebuild(self):
+  scene=root/'apps/web-preview/public/scene'
+  previous=json.loads((scene/'presentation.json').read_bytes())
+  rebuilt={'asset_sha256':previous['asset_sha256']}
+  for key in ('museum_site_review','gerlinger_site_review','womens_quad_site','memorial_quad_site','fenton_site_review','allen_site_review','lawrence_science_site','straub_earl_site','kalapuya_site','longhouse_site','global_scholars_site','moss_street_site','vivian_olum_site','graduate_village_site','knight_law_site','bean_unthank_site','cedar_yasui_site','carson_llc_site','oregon_jaqua_site','lillis_complex_site','friendly_collier_mckenzie_site','plc_lokey_tykeson_site','northeast_science_site','knight_campus_site','northsite_millrace_site','heritage_core_site','heritage_miller_site'):
+   with self.subTest(key=key):
+    result=module.carry_layers({key:previous[key]},rebuilt,scene)
+    self.assertEqual(result[key],previous[key])
+  key='public_building_exterior_site'
+  self.assertEqual(module.carry_layers({key:previous[key]},rebuilt,scene)[key],previous[key])
+  for key in ('hayward_exterior_site','campus_frontage_site','facilities_exterior_site','office_exterior_site','residential_exterior_site','campus_neighbor_exterior_site','chapter_house_exterior_site','villard_garden_exterior_site','alder_millrace_exterior_site','east_campus_housing_exterior_site','fairmount_boulevard_exterior_site','garden_avenue_exterior_site','villard_street_exterior_site','hilyard_west_exterior_site','treated_roof_exterior_site','fairmount_residential_exterior_site','broadway_orchard_exterior_site','franklin_complex_exterior_site','franklin_boulevard_exterior_site','bardell_avenue_exterior_site'):
+   with self.subTest(key=key):
+    self.assertEqual(module.carry_layers({key:previous[key]},rebuilt,scene)[key],previous[key])
  def test_trunk_variation_requires_valid_base_and_source(self):
   data={'base_asset_sha256':'old','target_name':'campus-trees'};b=(json.dumps(data)+'\n').encode();(self.scene/'context.json').write_bytes(b);(self.scene/'variation.json').write_bytes(b);digest=hashlib.sha256(b).hexdigest()
   self.prev.update({'context_trunks_url':'context.json','context_trunks_sha256':digest,'context_trunk_variation_url':'variation.json','context_trunk_variation_sha256':digest})
@@ -36,6 +100,18 @@ class Tests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'Duplicate'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
   self.prev['building_roof_patches']=[entry];(self.scene/'roof.json').write_bytes(b'changed')
   with self.assertRaisesRegex(ValueError,'missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+ def test_context_roofs_are_pinned_to_the_batch_source(self):
+  path=self.scene/'context-roof-refinements.json'
+  payload=json.dumps({'version':1,'source_presentation_sha256':'old'}).encode()
+  path.write_bytes(payload)
+  entry={'url':path.name,'sha256':hashlib.sha256(payload).hexdigest()}
+  self.prev.update({'verify_source_sha256':True,'context_roof_refinements':entry})
+  self.assertEqual(module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)['context_roof_refinements'],entry)
+  with self.assertRaisesRegex(ValueError,'Context roof refinements do not match'):
+   module.carry_layers(self.prev,{'asset_sha256':'new'},self.scene)
+  path.write_bytes(b'changed')
+  with self.assertRaisesRegex(ValueError,'Context roof refinement missing or hash changed'):
+   module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
  def test_furniture_patch_is_preserved_only_for_exact_source_and_hash(self):
   data={'base_asset_sha256':'old'}; b=(json.dumps(data)+'\n').encode(); (self.scene/'furniture.json').write_bytes(b)
   self.prev.pop('vegetation_patch_url'); self.prev.pop('vegetation_patch_sha256')
@@ -146,6 +222,18 @@ class Tests(unittest.TestCase):
   self.assertEqual(out['stats']['trees'],598);self.assertEqual(len(out['additional_tree_suppressions']),1)
   (self.scene/'hide2.json').write_bytes(b'tampered')
   with self.assertRaisesRegex(ValueError,'Additional tree suppression missing'):module.carry_layers(self.prev,{'asset_sha256':'old','stats':{'trees':600}},self.scene)
+ def test_registered_tree_fits_follow_verified_source(self):
+  b=json.dumps({'version':1,'operation':'registered-pilot-tree-fit-v1','base_asset_sha256':'old','trees':[{'index':114}]}).encode()
+  path=self.scene/'fitted-trees.json';path.write_bytes(b)
+  entry={'url':path.name,'sha256':hashlib.sha256(b).hexdigest(),'trees':1}
+  self.prev.update({'registered_pilot_trees':entry,'verify_source_sha256':True})
+  out=module.carry_layers(self.prev,{'asset_sha256':'old','stats':{'trees':600}},self.scene)
+  self.assertEqual(out['registered_pilot_trees'],entry)
+  self.assertEqual(out['stats']['trees'],600)
+  entry['trees']=2
+  with self.assertRaisesRegex(ValueError,'registration metadata'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
+  path.write_bytes(b'tampered')
+  with self.assertRaisesRegex(ValueError,'registration missing or hash changed'):module.carry_layers(self.prev,{'asset_sha256':'old'},self.scene)
  def test_triangle_patch_requires_verified_source_and_survives_rebuild(self):
   data={'base_asset_sha256':'old','building_id':'roof-test','source_triangle_patch':{'triangles':[]}}
   b=(json.dumps(data)+'\n').encode();(self.scene/'detail.json').write_bytes(b)

@@ -1,0 +1,33 @@
+{
+  "asset_id": "roof-f42d2ea3",
+  "scene_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "reference": {
+    "orthophoto": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer",
+    "orthophoto_sha256": "266208fe8036719a37d7b675cf2c4ff54ef50fdea4e36314319cf1ef41a71a10",
+    "lidar": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1310.copc.laz",
+    "local_point_subset_sha256": "0aeb2e26206228d70342f5bdd80f96664398a44b391f5652a3f7d0892a29ff29",
+    "lidar_collection": "NOAA 2013–2015 Oregon Lidar Consortium Lane County, NAVD88 metres",
+    "courtyard_photo": "https://expo.uoregon.edu/spotlight/history-uo-architecture/catalog/3b89276e18452b0a1d8c0ad5c9034409",
+    "science_complex_context": "https://usmodernist.org/AR/AR-1991-11.pdf"
+  },
+  "walls_enu_m": [[-247.05,109.55],[-218.25,109.55],[-218.25,102.1],[-211.8,102.1],[-211.8,77.75],[-213.05,77.75],[-213.05,75.0],[-215.8,72.85],[-219.3,72.85],[-222.05,75.75],[-235.05,75.75],[-237.0,77.35],[-239.85,77.35],[-242.0,74.2],[-251.35,74.2],[-251.35,82.1],[-248.45,82.1],[-248.45,88.05],[-243.55,88.05],[-243.55,100.95],[-247.05,100.95]],
+  "tower_enu_m": [[-217.8,81.7],[-214.65,80.65],[-213.05,77.75],[-214.15,75.0],[-216.2,73.72],[-219.0,73.72],[-221.45,75.9],[-221.25,79.25]],
+  "main_roof_z_m": 14.64,
+  "south_roof": {"north_break_m": 84.4, "eave_north_m": 75.55, "eave_z_m": 10.95, "rise_per_m": 0.64},
+  "north_roof": {"ridge_north_m": 106.05, "half_width_m": 4.05, "ridge_z_m": 16.86},
+  "east_roof": {"ridge_east_m": -214.6, "half_width_m": 3.25, "ridge_z_m": 16.58},
+  "west_roof": {"ridge_east_m": -241.75, "half_width_m": 2.05, "ridge_z_m": 16.42},
+  "tower_eave_z_m": 20.35,
+  "tower_peak_z_m": 22.72,
+  "south_gables": [[-245.8, -243.1, 76.55, 82.8, 14.9],[-241.15, -238.3, 76.65, 83.1, 15.1],[-229.95, -226.3, 76.25, 84.05, 16.05]],
+  "roof_monitors": [[-239.2, 94.9, 4.2, 0.95, 16.65],[-237.8, 99.4, 5.8, 1.0, 16.7],[-231.7, 105.6, 4.6, 0.95, 17.0]],
+  "openings": {
+    "first_floor_sha256": "5c0e936f303660685a27adeccebafbcec3e5735774fe00c0986ddae7981a1eec",
+    "second_floor_sha256": "4b5a9c73f4bb43cd0b5924472053184738b67a6eafa02d2abf4eb2bb55ae001c",
+    "first_windows_enu_m": [[-244.621,109.55,1.45],[-239.088,109.55,1.02],[-235.542,109.55,1.02],[-232.695,109.55,1.56],[-247.05,107.075,1.02],[-243.55,99.738,1.45],[-243.55,97.543,1.4],[-243.55,95.669,1.4],[-243.55,92.939,1.24],[-243.55,90.53,1.18],[-246.681,88.05,1.72],[-233.638,75.75,1.24],[-231.704,75.75,1.07],[-229.179,75.75,1.18],[-226.708,75.75,1.29],[-223.485,75.75,1.29],[-211.8,98.96,1.4],[-211.8,96.284,1.34],[-211.8,91.359,1.29],[-211.8,89.485,1.24],[-211.8,86.273,1.24],[-211.8,83.971,1.18],[-211.8,80.385,1.29]],
+    "second_windows_enu_m": [[-244.675,109.55,1.45],[-239.625,109.55,1.18],[-235.596,109.55,1.02],[-232.695,109.55,1.5],[-247.05,106.272,1.18],[-243.55,100.059,1.29],[-243.55,97.543,1.29],[-243.55,95.616,1.34],[-243.55,92.243,1.34],[-243.55,90.209,1.34],[-232.939,75.75,1.29],[-230.629,75.75,1.29],[-228.534,75.75,1.29],[-224.505,75.75,1.45],[-211.8,99.442,1.29],[-211.8,96.766,1.34],[-211.8,91.573,1.29],[-211.8,87.344,1.18],[-211.8,84.774,1.29],[-211.8,81.348,1.13]],
+    "south_door_enu_m": [-238.471,77.35,2.31]
+  },
+  "footing_z_m": 0.0,
+  "notes": "ENU coordinates authored against the 2024 orthophoto, with UO and state outlines as checks. Roof elevations are a simplified interpretation of NOAA first returns. Window and trim dimensions are approximate. The detached courtyard arch, planting, stairs and connection to Volcanology are outside the shell."
+}

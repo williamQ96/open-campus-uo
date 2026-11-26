@@ -19,7 +19,7 @@ test("Knight solid balconies preserve entrance and collision contracts within on
         );
         await r.fulfill({ response, json });
       });
-    await page.goto("/");
+    await page.goto("/?exterior-review=knight-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     await page.evaluate(() =>
@@ -38,7 +38,7 @@ test("Knight solid balconies preserve entrance and collision contracts within on
         }),
       ),
     );
-    await page.goto("/?return=1");
+    await page.goto("/?exterior-review=knight-baseline&return=1");
     await page.waitForFunction(
       () =>
         window.__campus?.getState().ready &&

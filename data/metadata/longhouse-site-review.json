@@ -1,0 +1,110 @@
+{
+  "id": "roof-f736712f",
+  "name": "Many Nations Longhouse",
+  "campus_id": "B0167",
+  "footprint_enu_m": [
+    [
+      190.22,
+      -382.06
+    ],
+    [
+      192.2,
+      -382.06
+    ],
+    [
+      192.2,
+      -382.72
+    ],
+    [
+      201.24,
+      -382.72
+    ],
+    [
+      201.24,
+      -382.06
+    ],
+    [
+      203.25,
+      -382.06
+    ],
+    [
+      203.25,
+      -362.25
+    ],
+    [
+      190.22,
+      -362.25
+    ]
+  ],
+  "roof_outline_enu_m": [
+    [
+      189.07,
+      -383.18
+    ],
+    [
+      204.02,
+      -383.18
+    ],
+    [
+      204.02,
+      -361.72
+    ],
+    [
+      189.07,
+      -361.72
+    ]
+  ],
+  "roof_plane": [
+    197,
+    -373,
+    11.33452,
+    0.00179,
+    -0.17924
+  ],
+  "roof_hood": {
+    "bounds_enu_m": [
+      195.71,
+      -370.6,
+      199.46,
+      -366.65
+    ],
+    "rise_m": 1.58
+  },
+  "entrances": [
+    {
+      "gate": "longhouse-east",
+      "position_enu_m": [
+        203.25,
+        -369.97
+      ],
+      "outward_degrees": 90,
+      "width_m": 1.64,
+      "landing_m": 1.88,
+      "rise_m": 0.13,
+      "approach_distance_m": 3.18
+    }
+  ],
+  "south_window": {
+    "east_range_m": [
+      192.25,
+      201.19
+    ],
+    "base_above_grade_m": 0.63,
+    "top_z_m": 11.25
+  },
+  "north_door_east_m": 200.05,
+  "west_door_north_m": -370.71,
+  "absorbed_batches": [
+    {
+      "id": "roof-f736712f",
+      "target": "context-campus-2-1"
+    }
+  ],
+  "references": [
+    "https://longhouse.uoregon.edu/history-many-nations-longhouse",
+    "https://map.uoregon.edu/",
+    "https://news.uoregon.edu/content/geography-conference-set-many-nations-longhouse",
+    "https://cpfm.uoregon.edu/sites/default/files/mnlh_conceptualplanreport02-07-2011_1.pdf",
+    "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer"
+  ]
+}

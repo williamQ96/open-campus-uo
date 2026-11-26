@@ -1,0 +1,87 @@
+{
+  "sources": {
+    "uo_building_map_sha256": "7112477228e8e3ac125548b3abd94180cd8f972c797db78373754cba7384b761",
+    "historic_lidar_grid_sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "osip_2024_sha256": "ffdd59c3c1e44059563da30e98ef2ef66441f0edae637f0f3773adb477d0c8d8",
+    "lawrence_survey_sha256": "0bec65d2da096c9ceb9a991674a4d2b14a42d1ce8e650f10ea9c97bc0f63d3bd",
+    "pacific_survey_sha256": "a0637673e23fdc31b3cd7c2d8b0a9178c3272055927e3ae7944ffcd5d7394686",
+    "columbia_survey_sha256": "841c90438da0ebadf5e12faa7e53f6fa2de6e357997c8ca5e1e90e7ea572cf23"
+  },
+  "absorbed_batches": [{"id":"roof-21450e38","target":"context-campus-1-2"}],
+  "lawrence": {
+    "id":"roof-57a37f8e",
+    "footprint_enu_m":[
+      [-308.82,203.73],[-308.82,194.51],[-298.38,194.51],[-298.38,193.29],
+      [-288.30,193.29],[-288.30,189.88],[-265.14,189.88],[-265.14,158.10],
+      [-282.34,158.10],[-282.34,172.23],[-288.21,172.23],[-288.21,162.96],
+      [-291.91,160.55],[-297.59,160.55],[-297.59,145.94],[-295.48,145.94],
+      [-295.48,119.10],[-319.77,119.10],[-319.77,121.58],[-329.38,121.58],
+      [-329.38,123.90],[-335.93,123.90],[-335.93,129.84],[-331.59,129.84],
+      [-331.59,132.16],[-361.21,132.16],[-361.21,135.44],[-367.43,135.44],
+      [-367.43,138.61],[-361.11,138.61],[-361.11,148.78],[-358.46,148.78],
+      [-358.46,166.65],[-361.44,166.65],[-361.44,200.01],[-348.51,200.01],
+      [-348.51,199.51],[-344.32,199.51],[-344.32,198.39],[-329.58,198.39],
+      [-329.58,200.20],[-312.69,200.20],[-312.69,203.73]
+    ],
+    "footprint_holes_enu_m":[
+      [[-346.19,178.69],[-346.19,148.78],[-312.38,148.78],[-312.38,163.54],
+       [-315.96,163.54],[-315.96,161.66],[-328.72,161.66],[-328.72,178.69]]
+    ],
+    "roof_sections":[
+      {"name":"1991 south and 1971 spine","bounds":[-322.94,118.95,-295.44,194.46],"south_z_m":21.89,"north_z_m":22.03,"skin":"cladding"},
+      {"name":"1971 northeast","bounds":[-308.82,160.60,-288.30,194.55],"south_z_m":17.08,"north_z_m":17.39,"skin":"cladding"},
+      {"name":"1924 east hall","bounds":[-288.30,172.23,-265.12,190.00],"south_z_m":10.95,"north_z_m":11.31,"skin":"ochre"},
+      {"name":"east lower terrace","bounds":[-282.35,158.10,-265.13,172.23],"south_z_m":10.48,"north_z_m":7.03,"skin":"ochre"},
+      {"name":"1957 south bar","bounds":[-368.00,132.16,-322.94,149.02],"south_z_m":16.46,"north_z_m":16.56,"skin":"cladding"},
+      {"name":"south library return","bounds":[-336.00,118.95,-322.94,132.16],"south_z_m":21.59,"north_z_m":21.56,"skin":"brick"},
+      {"name":"1901 west hall","bounds":[-362.00,166.65,-346.19,200.10],"south_z_m":13.16,"north_z_m":13.28,"skin":"brick"},
+      {"name":"west court walk wing","bounds":[-360.00,148.78,-346.19,166.65],"south_z_m":12.10,"north_z_m":12.36,"skin":"brick"},
+      {"name":"north older wings","bounds":[-346.19,178.60,-312.68,200.24],"south_z_m":13.09,"north_z_m":12.44,"skin":"brick"},
+      {"name":"court east return","bounds":[-329.06,161.61,-322.94,178.69],"south_z_m":13.18,"north_z_m":13.94,"skin":"ochre"}
+    ],
+    "default_roof_z_m":12.34,
+    "entrances":[
+      {"gate":"lawrence-west","position_enu_m":[-367.43,137.04],"outward_degrees":-90,"width_m":2.10,"approach_distance_m":2.88,"snap_to_facade":false,"estimated":true},
+      {"gate":"lawrence-east","position_enu_m":[-265.14,176.90],"outward_degrees":90,"width_m":2.34,"approach_distance_m":2.55,"snap_to_facade":false,"estimated":true},
+      {"gate":"lawrence-south","position_enu_m":[-310.40,119.10],"outward_degrees":180,"width_m":2.68,"approach_distance_m":2.41,"snap_to_facade":false,"estimated":true}
+    ]
+  },
+  "pacific": {
+    "id":"uo-035",
+    "name":"Pacific Hall",
+    "campus_id":"B0035",
+    "prior_name_id":"roof-4041562c",
+    "footprint_enu_m":[
+      [-259.23,148.99],[-259.23,128.79],[-261.63,128.79],[-261.63,57.00],
+      [-280.08,57.00],[-280.08,94.59],[-285.65,94.59],[-285.65,103.03],
+      [-295.48,103.03],[-295.48,148.99]
+    ],
+    "roof_sections":[
+      {"name":"west entry wings","bounds":[-295.49,103.01,-282.16,126.96],"south_z_m":9.40,"north_z_m":8.02,"skin":"ochre"},
+      {"name":"south wing","bounds":[-281.00,56.90,-259.16,104.33],"south_z_m":17.35,"north_z_m":17.49,"skin":"ochre"},
+      {"name":"north main wing","bounds":[-296.00,104.33,-259.16,149.10],"south_z_m":17.42,"north_z_m":17.28,"skin":"ochre"}
+    ],
+    "default_roof_z_m":9.41,
+    "entrances":[{"gate":"pacific-west","position_enu_m":[-295.48,111.05],"outward_degrees":-90,"width_m":2.72,"approach_distance_m":3.48,"snap_to_facade":false,"estimated":true}]
+  },
+  "columbia": {
+    "id":"uo-036",
+    "name":"Columbia Hall",
+    "campus_id":"B0036",
+    "prior_name_id":"roof-64589bec",
+    "footprint_enu_m":[
+      [-264.99,50.42],[-264.99,48.72],[-255.04,48.72],[-255.04,16.18],
+      [-271.48,16.18],[-271.48,19.21],[-293.89,19.21],[-294.83,22.03],
+      [-293.70,23.84],[-293.70,45.06],[-290.66,45.06],[-290.66,50.42]
+    ],
+    "roof_sections":[
+      {"name":"east teaching wing","bounds":[-271.48,16.18,-255.02,50.43],"south_z_m":12.87,"north_z_m":12.98,"skin":"brick"},
+      {"name":"south auditorium","bounds":[-295.00,19.21,-271.48,43.19],"south_z_m":9.14,"north_z_m":9.27,"skin":"brick"},
+      {"name":"north service","bounds":[-294.00,43.19,-271.48,50.43],"south_z_m":7.02,"north_z_m":7.12,"skin":"brick"}
+    ],
+    "default_roof_z_m":9.13,
+    "loggia_bounds":[-292.88,16.18,-271.48,19.21],
+    "bridge_bounds":[-273.03,50.42,-264.99,57.00],
+    "entrances":[{"gate":"columbia-south","position_enu_m":[-286.88,19.21],"outward_degrees":180,"width_m":2.70,"approach_distance_m":4.35,"snap_to_facade":false,"estimated":true}]
+  }
+}

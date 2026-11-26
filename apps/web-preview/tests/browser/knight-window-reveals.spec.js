@@ -19,7 +19,7 @@ test("Knight reveals front and oblique preserve balcony, entrances and collision
         );
         await r.fulfill({ response, json });
       });
-    await page.goto("/");
+    await page.goto("/?exterior-review=knight-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     const views = [];
@@ -62,7 +62,7 @@ test("Knight reveals front and oblique preserve balcony, entrances and collision
           ),
         { x, z, yaw },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?exterior-review=knight-baseline&return=1");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&

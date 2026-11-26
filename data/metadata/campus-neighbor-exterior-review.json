@@ -1,0 +1,255 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_roof_recipe_sha256": "226430ae1441939e8dad07e0d3a7eeafbd8139c18e4879605935d6f19199fd77",
+  "source_roof_fits_sha256": "3b7bd0982abf3cd6953e8b98c9c7f750ac281bc5b9c29ef4330bcc04eba263df",
+  "models": [
+    {
+      "id": "roof-4286ad30",
+      "name": "Coho Townhouses (South)",
+      "street_address": "633 E 14th Ave",
+      "kind": "coho-south",
+      "wall_inset_m": 0.53,
+      "entrance_hints": [
+        {
+          "gate": "south-entry",
+          "near_enu_m": [
+            -985.8,
+            -106
+          ],
+          "outward_degrees": 180,
+          "landing_m": 2.05
+        }
+      ],
+      "state_feature": "20-1052356",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493325.14928888186%2C4876813.282153052%2C493357.14928888186%2C4876853.282153052&bboxSR=3740&imageSR=3740&size=288%2C360&format=png&bandIds=0%2C1%2C2",
+        "sha256": "2273e630b44bdb88da3550553b757abbd22a410f6313f348ef8023b4a3181c19"
+      },
+      "facade_sources": [
+        "https://www.eugene-or.gov/AgendaCenter/ViewFile/Item/3?fileID=10",
+        "https://www.new.paradigmpropertiesnw.com/properties-coho-townhouses.html"
+      ],
+      "street_view": {
+        "capture_month": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=zKa4-xnVAbLGNbhalynUhQ&viewpoint=44.0444115%2C-123.0831334&heading=359.55"
+      }
+    },
+    {
+      "id": "roof-2cbfcd06",
+      "name": "Pi Kappa Alpha House",
+      "street_address": "1472 Kincaid St",
+      "kind": "kincaid",
+      "wall_inset_m": 0.63,
+      "entrance_hints": [
+        {
+          "gate": "east-entry",
+          "near_enu_m": [
+            -649.9,
+            -201
+          ],
+          "outward_degrees": 125,
+          "landing_m": 2.25
+        }
+      ],
+      "state_feature": "20-1073337",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493647.14928888186%2C4876693.282153052%2C493694.14928888186%2C4876747.282153052&bboxSR=3740&imageSR=3740&size=423%2C486&format=png&bandIds=0%2C1%2C2",
+        "sha256": "6f0c7e09c4e51bc4ac58b0a27d03c3fceb36b8ea3cd2d2391616ab18cd8b3971"
+      },
+      "facade_sources": [
+        "https://blogs.uoregon.edu/uofsl/chapterhousesmap/",
+        "https://www.eugene-or.gov/DocumentCenter/View/24803/Eugene-Modernism-1935-65"
+      ],
+      "street_view": {
+        "capture_month": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=yk0d6h3JOc0PkvkBQOozJg&viewpoint=44.0436213%2C-123.0786935&heading=268.07"
+      }
+    },
+    {
+      "id": "roof-e17be27c",
+      "name": "Christus House",
+      "street_address": "1834 Potter St",
+      "kind": "christus",
+      "wall_inset_m": 0.55,
+      "entrance_hints": [
+        {
+          "gate": "court-entry",
+          "near_enu_m": [
+            -467.2,
+            -646.0
+          ],
+          "outward_degrees": 0,
+          "landing_m": 2.35
+        }
+      ],
+      "state_feature": "20-1073994",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493833.14928888186%2C4876263.282153052%2C493889.14928888186%2C4876314.282153052&bboxSR=3740&imageSR=3740&size=504%2C459&format=png&bandIds=0%2C1%2C2",
+        "sha256": "d33d974a217c79f416da655bdde9ba2ab006d94d00841beeb453514ea684b68e"
+      },
+      "facade_sources": [
+        "https://www.eugene-or.gov/DocumentCenter/View/24803/Eugene-Modernism-1935-65",
+        "https://www.apartmenthomeliving.com/apartment-finder/Christus-House-Community-Living-Eugene-OR-97403-5923952"
+      ],
+      "street_view": {
+        "capture_month": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=WljxpMO5OMtOxa1oX7MQDw&viewpoint=44.040036%2C-123.0765596&heading=184.24"
+      }
+    },
+    {
+      "id": "roof-f89a9211",
+      "name": "St. Thomas More Newman Center",
+      "street_address": "1850 Emerald St",
+      "kind": "newman",
+      "wall_inset_m": 0.34,
+      "entrance_hints": [
+        {
+          "gate": "emerald-entry",
+          "near_enu_m": [
+            -78.8,
+            -672.5
+          ],
+          "outward_degrees": 90,
+          "landing_m": 2.3
+        }
+      ],
+      "state_feature": "20-1073558",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494225.14928888186%2C4876237.282153052%2C494261.14928888186%2C4876278.282153052&bboxSR=3740&imageSR=3740&size=324%2C369&format=png&bandIds=0%2C1%2C2",
+        "sha256": "5479239adb0e5af293c14a411161b34df566b68c66287572305c4a540f2d041d"
+      },
+      "facade_sources": [
+        "https://www.uonewman.org/visit.html",
+        "https://www.uonewman.org/our-history.html"
+      ],
+      "street_view": {
+        "capture_month": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Jn9YkGuhTwIj-LS3PRZgZA&viewpoint=44.0394138%2C-123.0715574&heading=280.37"
+      }
+    },
+    {
+      "id": "roof-cea1e466",
+      "name": "Hayward House Apartments",
+      "street_address": "1290 E 18th Ave",
+      "kind": "hayward",
+      "wall_inset_m": 0.54,
+      "entrance_hints": [
+        {
+          "gate": "balcony-entry",
+          "near_enu_m": [
+            -218.9,
+            -622
+          ],
+          "outward_degrees": 0,
+          "landing_m": 3.0
+        }
+      ],
+      "state_feature": "20-1073987",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494080.14928888186%2C4876285.282153052%2C494140.14928888186%2C4876314.282153052&bboxSR=3740&imageSR=3740&size=540%2C261&format=png&bandIds=0%2C1%2C2",
+        "sha256": "f4dfbede67dabbc432deac6bf0e32b7a2f335585bebc8cae54472f9baf88d910"
+      },
+      "facade_sources": [
+        "https://darkwing.uoregon.edu/~schlossb/papers/Yanik_bikeparking.pdf",
+        "https://oregonnews.uoregon.edu/lccn/2004260239/2004-05-07/ed-1/seq-27.pdf"
+      ],
+      "street_view": {
+        "capture_month": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mqLkwlkDSFc0kt7wy33BOA&viewpoint=44.0400339%2C-123.0735467&heading=178"
+      }
+    },
+    {
+      "id": "roof-04683fef",
+      "name": "Aldersgate Apartments",
+      "street_address": "1436 Alder St",
+      "kind": "aldersgate",
+      "wall_inset_m": 0.55,
+      "entrance_hints": [
+        {
+          "gate": "alley-entry",
+          "near_enu_m": [
+            -773.6,
+            -175
+          ],
+          "outward_degrees": 180,
+          "landing_m": 3.3
+        }
+      ],
+      "state_feature": "20-1073365",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493525.14928888186%2C4876744.282153052%2C493572.14928888186%2C4876781.282153052&bboxSR=3740&imageSR=3740&size=423%2C333&format=png&bandIds=0%2C1%2C2",
+        "sha256": "f05e24701818dedd12ea9b42092c3e179d6f9fc75b8c2263308af16a2e652ec6"
+      },
+      "facade_sources": [
+        "https://darkwing.uoregon.edu/~schlossb/papers/Yanik_bikeparking.pdf",
+        "https://oregonnews.uoregon.edu/lccn/2004260239/1984-03-08/ed-1/seq-1.pdf"
+      ],
+      "street_view": {
+        "capture_month": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FI1KJI90QQLShjs3fTTADQ&viewpoint=44.043874%2C-123.0803895&heading=318.19"
+      }
+    },
+    {
+      "id": "roof-5e7ce49c",
+      "name": "The 1840",
+      "street_address": "1840 Agate St",
+      "kind": "agate",
+      "wall_inset_m": 0.48,
+      "entrance_hints": [
+        {
+          "gate": "alley-entry",
+          "near_enu_m": [
+            39.4,
+            -663
+          ],
+          "outward_degrees": 180,
+          "landing_m": 2.25
+        }
+      ],
+      "state_feature": "20-1073361",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494348.14928888186%2C4876253.282153052%2C494407.14928888186%2C4876286.282153052&bboxSR=3740&imageSR=3740&size=531%2C297&format=png&bandIds=0%2C1%2C2",
+        "sha256": "9e9658e4d33fd9c0c6125a880f07be05c6ed424c188dfc4a92ffe295c23ea1f1"
+      },
+      "facade_sources": [
+        "https://oregonnews.uoregon.edu/lccn/sn85042472/1962-01-04/ed-1/seq-12.pdf",
+        "https://www.movoto.com/rental/1840ag-eugene-or-97403/pid_77db72w9m7bb/"
+      ],
+      "street_view": {
+        "capture_month": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=liCTeSesH8yjGF05zcsgqg&viewpoint=44.0394761%2C-123.0702212&heading=340.72"
+      }
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-4286ad30",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-2cbfcd06",
+      "target": "context-campus-0-1"
+    },
+    {
+      "id": "roof-e17be27c",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-f89a9211",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-cea1e466",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-04683fef",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-5e7ce49c",
+      "target": "context-background-2-0"
+    }
+  ]
+}

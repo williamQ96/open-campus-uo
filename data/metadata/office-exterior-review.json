@@ -1,0 +1,861 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_roof_cells_sha256": "fe6e45286666b07ae7bbc6a722a200243ccc16541f5136c0e2592f07434dd74f",
+  "orthophotos": {
+    "082": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493649.14928888186%2C4877010.282153052%2C493682.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=297%2C342",
+      "sha256": "3dd66083a9f56323651d668ac3c7f8f9b8198af6f1b147c2df3d2c1d8cce21d6"
+    },
+    "090": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495031.14928888186%2C4876904.282153052%2C495090.14928888186%2C4876958.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=531%2C486",
+      "sha256": "400b43665b941c597135104e12edd8931729e1c429ea1b9cab91ca18b98bbf93"
+    },
+    "115": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494198.14928888186%2C4877313.282153052%2C494238.14928888186%2C4877347.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=360%2C306",
+      "sha256": "6c49e7cd32b746b1d4cb711a2f992836798c67f1546f77483ac8a2bc9396bc6b"
+    },
+    "705": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493442.14928888186%2C4876864.282153052%2C493483.14928888186%2C4876929.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=369%2C585",
+      "sha256": "0a4a208c3d07acc75ea6cced0af85792a4b88089b8d2fa5d00014ee13ad9a528"
+    },
+    "726": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494541.14928888186%2C4877008.282153052%2C494611.14928888186%2C4877135.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=630%2C1143",
+      "sha256": "e2f58cc72d8d258058e10f40e9429a23d1fbc145c225f411aa80080a2319b5d5"
+    }
+  },
+  "reference_sources": [
+    {
+      "url": "https://gtff3544.net/steward-resources/worksite-maps/",
+      "sha256": "fc17fa9091c3555309518633039b25a4558b12c0d7401a8ab1335f382b74677e",
+      "use": "Annex building outline and exterior stair axis"
+    },
+    {
+      "url": "https://is.uoregon.edu/nts/contactus",
+      "use": "Rainier road address and alley access"
+    },
+    {
+      "url": "https://calendar.uoregon.edu/thompsons_university_center",
+      "sha256": "22400eaa5debfee4779b4322dc51b2e5d3c3bef402da5acbfb3cb33a039b5879",
+      "use": "Business Operations Center north facade"
+    },
+    {
+      "url": "https://bpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/2/14032/files/2022/11/1715.pdf",
+      "sha256": "14f3337cb30462021fe115a6ea5a077e1d4feec3e8458a61fc225180949d4ffc",
+      "use": "1715 Franklin east entry and open court"
+    }
+  ],
+  "models": [
+    {
+      "id": "roof-17c233f0",
+      "name": "UO Annex",
+      "campus_id": "B0082",
+      "origin_enu_m": [
+        -664.5,
+        101
+      ],
+      "yaw_degrees": 0,
+      "plan": [
+        [
+          5.42,
+          -7.7
+        ],
+        [
+          5.42,
+          8.12
+        ],
+        [
+          -5.93,
+          8.12
+        ],
+        [
+          -5.93,
+          -7.7
+        ]
+      ],
+      "roofs": [
+        {
+          "planes": [
+            [
+              0.56785714,
+              0,
+              10.17875
+            ],
+            [
+              -0.58671587,
+              0,
+              10.03867159
+            ],
+            [
+              0,
+              0.70982143,
+              12.30111607
+            ],
+            [
+              0,
+              -0.76811594,
+              13.06014493
+            ],
+            [
+              0,
+              0,
+              9.98
+            ]
+          ],
+          "wall": "annex",
+          "finish": "shingle",
+          "clip": null,
+          "overhang_m": 0.4
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "uo-annex-north",
+          "position_enu_m": [
+            -664.59,
+            109.12
+          ],
+          "outward_degrees": 0.0,
+          "width_m": 1.52,
+          "approach_distance_m": 3.0,
+          "rise_m": 0.16,
+          "landing_m": 1.2,
+          "snap_to_facade": false
+        }
+      ],
+      "appearance": {
+        "kind": "annex",
+        "bay_m": 3.47,
+        "stack": [
+          [
+            -0.55,
+            -1.36,
+            -0.1,
+            -0.79,
+            10.35
+          ],
+          [
+            -3.88,
+            3.92,
+            -3.39,
+            4.46,
+            8.91
+          ]
+        ]
+      }
+    },
+    {
+      "id": "roof-b8f94f8e",
+      "name": "Rainier Building",
+      "campus_id": "B0090",
+      "origin_enu_m": [
+        731.52,
+        2.65
+      ],
+      "yaw_degrees": -30.12,
+      "plan": [
+        [
+          -16.11,
+          -9.779
+        ],
+        [
+          16.124,
+          -9.779
+        ],
+        [
+          16.124,
+          9.781
+        ],
+        [
+          -16.11,
+          9.781
+        ]
+      ],
+      "roofs": [
+        {
+          "planes": [
+            [
+              0.28556263,
+              0,
+              19.3018259
+            ],
+            [
+              -0.28495763,
+              0,
+              19.28346398
+            ],
+            [
+              0,
+              0.31170336,
+              17.7402781
+            ],
+            [
+              0,
+              -0.30990783,
+              17.73808756
+            ],
+            [
+              0,
+              0,
+              17.36
+            ]
+          ],
+          "wall": "brown",
+          "finish": "sand",
+          "clip": null,
+          "overhang_m": 0.18
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "rainier-south-approach",
+          "position_enu_m": [
+            730.54842,
+            -8.09185
+          ],
+          "outward_degrees": 210.12,
+          "width_m": 2.1,
+          "approach_distance_m": 3.2,
+          "rise_m": 0.14,
+          "landing_m": 1.2,
+          "snap_to_facade": false
+        }
+      ],
+      "appearance": {
+        "kind": "rainier",
+        "bay_m": 3.51,
+        "monitor": [
+          -7.94,
+          -1.62,
+          8.55,
+          1.23,
+          18.69
+        ],
+        "equipment": [
+          [
+            -11.41,
+            3.54,
+            -10.09,
+            4.41,
+            16.58
+          ],
+          [
+            9.45,
+            -6.29,
+            10.22,
+            -5.55,
+            16.04
+          ]
+        ]
+      }
+    },
+    {
+      "id": "roof-3c2b8bdc",
+      "name": "1311 Franklin",
+      "campus_id": "B0115",
+      "origin_enu_m": [
+        -111,
+        401.6
+      ],
+      "yaw_degrees": 0,
+      "plan": [
+        [
+          -11.14,
+          -6.14
+        ],
+        [
+          7.86,
+          -6.13
+        ],
+        [
+          7.88,
+          6.38
+        ],
+        [
+          -11.09,
+          6.37
+        ]
+      ],
+      "roofs": [
+        {
+          "planes": [
+            [
+              0,
+              0.273,
+              4.20261
+            ],
+            [
+              0,
+              -0.304,
+              4.4507200000000005
+            ]
+          ],
+          "wall": "utility",
+          "finish": "zinc",
+          "clip": null,
+          "overhang_m": 0.26
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "franklin-thirteen-eleven-south",
+          "position_enu_m": [
+            -109.40001,
+            395.46671
+          ],
+          "outward_degrees": 179.9698,
+          "width_m": 1.27,
+          "approach_distance_m": 2.56,
+          "rise_m": 0.07,
+          "landing_m": 1.2,
+          "snap_to_facade": false
+        }
+      ],
+      "appearance": {
+        "kind": "utility",
+        "bay_m": 3.14,
+        "roof_strips": [
+          -3.62,
+          -0.97,
+          1.35,
+          3.78
+        ]
+      }
+    },
+    {
+      "id": "roof-7c1c7fb1",
+      "name": "University Business Operations Center",
+      "campus_id": "B0705",
+      "origin_enu_m": [
+        -866,
+        -32
+      ],
+      "yaw_degrees": 0,
+      "plan": [
+        [
+          5.98,
+          -16.18
+        ],
+        [
+          4.51,
+          -16.18
+        ],
+        [
+          4.51,
+          22.17
+        ],
+        [
+          -10.1,
+          22.17
+        ],
+        [
+          -10.1,
+          -16.18
+        ],
+        [
+          -10.1,
+          -21.39
+        ],
+        [
+          5.98,
+          -21.39
+        ]
+      ],
+      "roofs": [
+        {
+          "planes": [
+            [
+              0,
+              0,
+              10.99
+            ]
+          ],
+          "wall": "sandstone",
+          "finish": "pale",
+          "clip": [
+            [
+              7.0,
+              -24.0
+            ],
+            [
+              7.0,
+              -16.18
+            ],
+            [
+              -11.0,
+              -16.18
+            ],
+            [
+              -11.0,
+              -24.0
+            ]
+          ],
+          "overhang_m": 0.13
+        },
+        {
+          "planes": [
+            [
+              0.515,
+              0,
+              17.5575
+            ],
+            [
+              -0.488,
+              0,
+              15.049999999999999
+            ]
+          ],
+          "wall": "sandstone",
+          "finish": "teal",
+          "clip": null,
+          "overhang_m": 0.22
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "business-operations-east-thirteenth",
+          "position_enu_m": [
+            -873.84,
+            -9.83
+          ],
+          "outward_degrees": 0.0,
+          "width_m": 1.54,
+          "approach_distance_m": 3.06,
+          "rise_m": 0.08,
+          "landing_m": 1.2,
+          "snap_to_facade": false
+        }
+      ],
+      "appearance": {
+        "kind": "business",
+        "front_y": 22.17,
+        "arch_center": -2.58,
+        "arch_radius": 1.59,
+        "front_bay_centers": [
+          -8.34,
+          -6.36,
+          0.27,
+          2.25
+        ],
+        "bay_m": 3.24
+      }
+    },
+    {
+      "id": "roof-bb20ea46",
+      "name": "1715 Franklin",
+      "campus_id": "B0726",
+      "origin_enu_m": [
+        222.71,
+        148.82
+      ],
+      "yaw_degrees": -16.14,
+      "plan": [
+        [
+          46.902,
+          -33.331
+        ],
+        [
+          46.388,
+          -14.825
+        ],
+        [
+          48.655,
+          -14.789
+        ],
+        [
+          48.349,
+          1.088
+        ],
+        [
+          44.719,
+          1.059
+        ],
+        [
+          44.77,
+          20.252
+        ],
+        [
+          43.382,
+          20.205
+        ],
+        [
+          43.312,
+          24.073
+        ],
+        [
+          39.196,
+          23.976
+        ],
+        [
+          35.727,
+          27.41
+        ],
+        [
+          35.6,
+          32.637
+        ],
+        [
+          30.454,
+          32.535
+        ],
+        [
+          26.857,
+          36.197
+        ],
+        [
+          26.784,
+          41.342
+        ],
+        [
+          21.515,
+          41.312
+        ],
+        [
+          17.988,
+          44.844
+        ],
+        [
+          17.886,
+          48.799
+        ],
+        [
+          14.189,
+          48.789
+        ],
+        [
+          14.135,
+          50.104
+        ],
+        [
+          0.023,
+          49.635
+        ],
+        [
+          0.001,
+          0.004
+        ],
+        [
+          20.311,
+          0.21
+        ],
+        [
+          20.513,
+          -14.801
+        ],
+        [
+          37.247,
+          -14.809
+        ],
+        [
+          37.504,
+          -33.62
+        ],
+        [
+          19.489,
+          -33.795
+        ],
+        [
+          19.528,
+          -43.063
+        ],
+        [
+          37.77,
+          -42.801
+        ],
+        [
+          37.768,
+          -47.247
+        ],
+        [
+          47.27,
+          -47.244
+        ],
+        [
+          47.179,
+          -42.994
+        ],
+        [
+          53.906,
+          -42.828
+        ],
+        [
+          53.828,
+          -33.268
+        ]
+      ],
+      "roofs": [
+        {
+          "planes": [
+            [
+              0,
+              0,
+              8.09
+            ]
+          ],
+          "wall": "franklin",
+          "finish": "pale",
+          "clip": [
+            [
+              9.1,
+              6.04
+            ],
+            [
+              35.8,
+              6.04
+            ],
+            [
+              35.8,
+              14.9
+            ],
+            [
+              26.65,
+              14.9
+            ],
+            [
+              26.65,
+              23.35
+            ],
+            [
+              17.46,
+              23.35
+            ],
+            [
+              17.46,
+              33.2
+            ],
+            [
+              9.1,
+              33.2
+            ]
+          ],
+          "overhang_m": 0.035
+        },
+        {
+          "planes": [
+            [
+              0,
+              0,
+              6.78
+            ]
+          ],
+          "wall": "franklin",
+          "finish": "pale",
+          "clip": [
+            [
+              55.0,
+              -20.15
+            ],
+            [
+              55.0,
+              -15.91
+            ],
+            [
+              34.0,
+              -15.91
+            ],
+            [
+              34.0,
+              -20.15
+            ]
+          ],
+          "overhang_m": 0.16
+        },
+        {
+          "planes": [
+            [
+              0,
+              0,
+              4.82
+            ]
+          ],
+          "wall": "franklin",
+          "finish": "pale",
+          "clip": [
+            [
+              55.0,
+              -31.69
+            ],
+            [
+              55.0,
+              -20.05
+            ],
+            [
+              35.1,
+              -20.05
+            ],
+            [
+              35.1,
+              -31.69
+            ]
+          ],
+          "overhang_m": 0.16
+        },
+        {
+          "planes": [
+            [
+              0,
+              0,
+              11.12
+            ]
+          ],
+          "wall": "franklin",
+          "finish": "slate",
+          "clip": [
+            [
+              53.0,
+              -0.47
+            ],
+            [
+              53.0,
+              53.0
+            ],
+            [
+              -4.0,
+              53.0
+            ],
+            [
+              -4.0,
+              -0.47
+            ]
+          ],
+          "overhang_m": 0.21,
+          "mansard": {
+            "inside": [
+              [
+                9.1,
+                6.04
+              ],
+              [
+                35.8,
+                6.04
+              ],
+              [
+                35.8,
+                14.9
+              ],
+              [
+                26.65,
+                14.9
+              ],
+              [
+                26.65,
+                23.35
+              ],
+              [
+                17.46,
+                23.35
+              ],
+              [
+                17.46,
+                33.2
+              ],
+              [
+                9.1,
+                33.2
+              ]
+            ],
+            "outer_z_m": 8.52,
+            "inner_z_m": 11.13
+          }
+        },
+        {
+          "planes": [
+            [
+              0,
+              0,
+              5.22
+            ]
+          ],
+          "wall": "franklin",
+          "finish": "pale",
+          "clip": null,
+          "overhang_m": 0.22
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "seventeen-fifteen-east-entry",
+          "position_enu_m": [
+            259.7527,
+            173.9335
+          ],
+          "outward_degrees": 61.653,
+          "width_m": 1.94,
+          "approach_distance_m": 3.13,
+          "rise_m": 0.13,
+          "landing_m": 1.2,
+          "snap_to_facade": false
+        },
+        {
+          "gate": "seventeen-fifteen-court",
+          "position_enu_m": [
+            252.15773,
+            116.17738
+          ],
+          "outward_degrees": 285.3573,
+          "width_m": 1.72,
+          "approach_distance_m": 3.14,
+          "rise_m": 0.11,
+          "landing_m": 1.2,
+          "snap_to_facade": false
+        }
+      ],
+      "appearance": {
+        "kind": "franklin",
+        "bay_m": 3.12,
+        "equipment": [
+          [
+            11.6,
+            9.3,
+            12.5,
+            10.3,
+            8.64
+          ],
+          [
+            18.1,
+            12.6,
+            19.3,
+            13.4,
+            8.78
+          ],
+          [
+            15.09,
+            20.3,
+            16.32,
+            21.15,
+            8.53
+          ],
+          [
+            11.12,
+            27.1,
+            12.02,
+            28.1,
+            8.58
+          ]
+        ]
+      }
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-17c233f0",
+      "target": "context-campus-0-2"
+    },
+    {
+      "id": "roof-b8f94f8e",
+      "target": "context-background-3-2"
+    },
+    {
+      "id": "roof-3c2b8bdc",
+      "target": "context-background-1-2"
+    },
+    {
+      "id": "roof-7c1c7fb1",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-bb20ea46",
+      "target": "context-campus-2-2"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "roof-7b7893d6",
+  "campus_map_id": "017",
+  "sources": {
+    "uo_map_sha256": "7112477228e8e3ac125548b3abd94180cd8f972c797db78373754cba7384b761",
+    "historical_lidar_grid_sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "osip_2024_sha256": "46238109ea56187bd73ba08c7f9ec89f40dd965e719a5df067ce87018cde9847",
+    "uo_2025_survey_sha256": "ef37c29a6cd384fe56cd0a2e55b1259ecd705d66eb24a17ee4ebeb4bed629b03",
+    "ygh_project_page_sha256": "426e94151e1c846bcc3fc9b7804664d77e5efa9bd95bf7bf1c97bd5e66f6d982"
+  },
+  "footprint_enu_m": [
+    [-364.98,74.87],[-363.45,74.87],[-363.45,74.46],[-355.16,74.46],
+    [-355.16,74.87],[-355.50,74.87],[-355.50,76.29],[-347.60,76.29],
+    [-347.60,74.42],[-318.70,74.42],[-318.70,85.72],[-320.53,85.72],
+    [-320.53,93.94],[-317.02,93.94],[-317.02,109.22],[-341.40,109.22],
+    [-341.40,107.03],[-345.81,107.03],[-345.81,116.43],[-355.51,116.43],
+    [-355.51,120.37],[-355.17,120.37],[-355.17,120.78],[-363.46,120.78],
+    [-363.46,120.36],[-364.84,120.36],[-364.84,116.41],[-364.07,116.41],
+    [-364.07,78.83],[-364.98,78.83]
+  ],
+  "roof_sections": [
+    {"name":"raised atrium west", "bounds":[-360.19,83.21,-345.71,93.57],"south_z_m":19.34,"north_z_m":19.34},
+    {"name":"atrium and service crown", "bounds":[-345.71,81.83,-338.13,93.57],"south_z_m":20.14,"north_z_m":19.47},
+    {"name":"north service block","bounds":[-354.50,95.62,-343.30,97.45],"south_z_m":18.37,"north_z_m":18.43},
+    {"name":"2013 east roof", "bounds":[-341.47,83.07,-321.45,97.63],"south_z_m":17.57,"north_z_m":17.60},
+    {"name":"east brick wing", "bounds":[-341.40,97.63,-317.02,109.23],"south_z_m":14.91,"north_z_m":15.02},
+    {"name":"east entrance canopy","bounds":[-321.45,85.72,-320.53,93.94],"south_z_m":14.91,"north_z_m":14.96},
+    {"name":"south addition","bounds":[-355.49,74.39,-318.70,83.07],"south_z_m":14.74,"north_z_m":14.94},
+    {"name":"central 1954 junction","bounds":[-349.48,93.57,-341.40,107.03],"south_z_m":16.23,"north_z_m":16.49}
+  ],
+  "west_roof_z_m": 14.23,
+  "entrances": [
+    {"gate":"allen-west","position_enu_m":[-364.98,76.91],"outward_degrees":-90,"width_m":2.04,"approach_distance_m":2.90,"snap_to_facade":false,"estimated":true},
+    {"gate":"allen-east","position_enu_m":[-320.53,89.81],"outward_degrees":90,"width_m":2.72,"approach_distance_m":2.65,"snap_to_facade":false,"estimated":true},
+    {"gate":"allen-south","position_enu_m":[-343.71,74.42],"outward_degrees":180,"width_m":2.10,"approach_distance_m":2.69,"snap_to_facade":false,"estimated":true}
+  ]
+}

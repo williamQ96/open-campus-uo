@@ -1,0 +1,529 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "aerial": {
+    "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494221.14928888186%2C4876423.282153052%2C494489.14928888186%2C4876680.282153052&bboxSR=3740&imageSR=3740&size=1340%2C1285&format=png&bandIds=0%2C1%2C2",
+    "sha256": "4de1813df73b1d6359df9a7a6e1aabf6cd35b46e786d5e5def0eb335e0d46383"
+  },
+  "campus_outline_sha256": "bdfc1d9d9a4e7b2feae009e9ffa31f9429e99cd7b545dfc97280599bc397bd61",
+  "press_kit": {
+    "url": "https://goducks.com/documents/download/2021/3/31/HF_UOPressKit_03302021.pdf",
+    "sha256": "19137daa47e65948a51739a8df3f37d590e56128e4318657e5ee0485222a70d5",
+    "tower_page": 6,
+    "bents_page": 10
+  },
+  "building_id": "context-oc-hayward",
+  "retired_ids": [
+    "roof-64589bec",
+    "roof-f7af1b95"
+  ],
+  "batch_removals": [
+    {
+      "id": "roof-f7af1b95",
+      "target": "context-campus-2-1"
+    }
+  ],
+  "outer_canopy_enu_m": [
+    [
+      -49.5,
+      -254.6
+    ],
+    [
+      -57.9,
+      -264.8
+    ],
+    [
+      -71.1,
+      -280
+    ],
+    [
+      -78.0,
+      -295
+    ],
+    [
+      -81.3,
+      -317
+    ],
+    [
+      -82.4,
+      -345
+    ],
+    [
+      -83.4,
+      -380
+    ],
+    [
+      -83.3,
+      -410
+    ],
+    [
+      -79.2,
+      -439
+    ],
+    [
+      -64.7,
+      -461
+    ],
+    [
+      -45.7,
+      -475.1
+    ],
+    [
+      -24.6,
+      -483.2
+    ],
+    [
+      -5.5,
+      -485.9
+    ],
+    [
+      17,
+      -482.9
+    ],
+    [
+      38.5,
+      -471
+    ],
+    [
+      55,
+      -453.5
+    ],
+    [
+      65.7,
+      -434.7
+    ],
+    [
+      71.4,
+      -409
+    ],
+    [
+      71.7,
+      -379.5
+    ],
+    [
+      71.5,
+      -347
+    ],
+    [
+      71.4,
+      -319.8
+    ],
+    [
+      69.0,
+      -309.5
+    ]
+  ],
+  "inner_canopy_enu_m": [
+    [
+      -40.4,
+      -266.7
+    ],
+    [
+      -48.6,
+      -277.1
+    ],
+    [
+      -57.2,
+      -290.5
+    ],
+    [
+      -63.8,
+      -305
+    ],
+    [
+      -66.4,
+      -323
+    ],
+    [
+      -66.5,
+      -347
+    ],
+    [
+      -67.0,
+      -381
+    ],
+    [
+      -66.0,
+      -410
+    ],
+    [
+      -62.1,
+      -431.5
+    ],
+    [
+      -52.2,
+      -448.0
+    ],
+    [
+      -36.6,
+      -458.7
+    ],
+    [
+      -21,
+      -465.2
+    ],
+    [
+      -4.8,
+      -467.2
+    ],
+    [
+      11,
+      -464.6
+    ],
+    [
+      27.1,
+      -454.5
+    ],
+    [
+      40.8,
+      -441.0
+    ],
+    [
+      49.1,
+      -424.5
+    ],
+    [
+      54.4,
+      -405
+    ],
+    [
+      55.2,
+      -379.5
+    ],
+    [
+      55.4,
+      -347
+    ],
+    [
+      55.3,
+      -319.6
+    ],
+    [
+      54.4,
+      -312.5
+    ]
+  ],
+  "roof_rim_height_local_m": [
+    17.5,
+    18.8,
+    21.1,
+    23.0,
+    24.4,
+    25.5,
+    26.0,
+    26.5,
+    26.5,
+    26.2,
+    25.6,
+    24.8,
+    23.8,
+    23.0,
+    22.0,
+    20.4,
+    19.7,
+    18.8,
+    18.1,
+    17.0,
+    16.5,
+    16.0
+  ],
+  "roof_height_evidence": "Illustrative rim elevations from completed photography and aerial shadow lengths. 2017 data predates reconstruction.",
+  "bent_count": 76,
+  "plazas": [
+    [
+      [
+        -57.5,
+        -457
+      ],
+      [
+        -48.6,
+        -452.4
+      ],
+      [
+        48.5,
+        -449.4
+      ],
+      [
+        63.6,
+        -455.4
+      ],
+      [
+        49.9,
+        -472.4
+      ],
+      [
+        30.1,
+        -486.4
+      ],
+      [
+        5.6,
+        -493.6
+      ],
+      [
+        -18.1,
+        -493.9
+      ],
+      [
+        -38.7,
+        -486
+      ],
+      [
+        -52.3,
+        -475.5
+      ]
+    ],
+    [
+      [
+        -36.6,
+        -256.8
+      ],
+      [
+        -20.2,
+        -247.9
+      ],
+      [
+        2.2,
+        -248.1
+      ],
+      [
+        23.2,
+        -249.6
+      ],
+      [
+        42.7,
+        -253.3
+      ],
+      [
+        62.8,
+        -259.3
+      ],
+      [
+        75.8,
+        -271.6
+      ],
+      [
+        75.7,
+        -292
+      ],
+      [
+        69.6,
+        -313.3
+      ],
+      [
+        57.2,
+        -313.1
+      ],
+      [
+        56.3,
+        -297.8
+      ],
+      [
+        46.4,
+        -285.2
+      ],
+      [
+        22.5,
+        -270.0
+      ],
+      [
+        -1.6,
+        -265.7
+      ],
+      [
+        -26.7,
+        -271.4
+      ]
+    ]
+  ],
+  "context_trees": [
+    {
+      "index": 1,
+      "position_enu_m": [
+        14.487,
+        -288.614
+      ]
+    },
+    {
+      "index": 40,
+      "position_enu_m": [
+        -19.42,
+        -433.519
+      ]
+    },
+    {
+      "index": 46,
+      "position_enu_m": [
+        6.814,
+        -490.623
+      ]
+    },
+    {
+      "index": 72,
+      "position_enu_m": [
+        -22.444,
+        -471.839
+      ]
+    },
+    {
+      "index": 86,
+      "position_enu_m": [
+        20.529,
+        -331.522
+      ]
+    },
+    {
+      "index": 98,
+      "position_enu_m": [
+        22.372,
+        -435.324
+      ]
+    },
+    {
+      "index": 113,
+      "position_enu_m": [
+        -80.893,
+        -381.024
+      ]
+    },
+    {
+      "index": 122,
+      "position_enu_m": [
+        -20.202,
+        -410.18
+      ]
+    },
+    {
+      "index": 178,
+      "position_enu_m": [
+        -36.04,
+        -284.416
+      ]
+    },
+    {
+      "index": 182,
+      "position_enu_m": [
+        38.515,
+        -342.706
+      ]
+    },
+    {
+      "index": 208,
+      "position_enu_m": [
+        35.85,
+        -468.747
+      ]
+    },
+    {
+      "index": 218,
+      "position_enu_m": [
+        33.876,
+        -446.478
+      ]
+    },
+    {
+      "index": 219,
+      "position_enu_m": [
+        15.369,
+        -269.341
+      ]
+    },
+    {
+      "index": 223,
+      "position_enu_m": [
+        0.749,
+        -370.44
+      ]
+    },
+    {
+      "index": 224,
+      "position_enu_m": [
+        45.493,
+        -357.819
+      ]
+    },
+    {
+      "index": 230,
+      "position_enu_m": [
+        12.585,
+        -458.797
+      ]
+    },
+    {
+      "index": 235,
+      "position_enu_m": [
+        -3.522,
+        -406.799
+      ]
+    },
+    {
+      "index": 261,
+      "position_enu_m": [
+        -24.825,
+        -381.963
+      ]
+    },
+    {
+      "index": 275,
+      "position_enu_m": [
+        48.398,
+        -272.243
+      ]
+    },
+    {
+      "index": 288,
+      "position_enu_m": [
+        -26.78,
+        -322.53
+      ]
+    }
+  ],
+  "track": {
+    "axis_e_m": 0.35,
+    "north_enu_m": -318.46,
+    "south_enu_m": -402.85,
+    "outer_radius_m": 47.72,
+    "lane_count": 9,
+    "lane_width_m": 1.22
+  },
+  "tower": {
+    "center_enu_m": [
+      65.3,
+      -295.5
+    ],
+    "height_above_grade_m": 57.5056,
+    "base_radius_m": 4.18,
+    "top_radius_m": 6.45,
+    "tip_shift_enu_m": [
+      1.15,
+      1.65
+    ]
+  },
+  "gates": [
+    {
+      "gate": "powell-plaza",
+      "position_enu_m": [
+        72.1,
+        -280.8
+      ],
+      "outward_degrees": 38.0,
+      "width_m": 4.7,
+      "rise_m": 0.05,
+      "landing_m": 1.55,
+      "approach_distance_m": 3.5,
+      "snap_to_facade": false
+    },
+    {
+      "gate": "tower-public-entry",
+      "position_enu_m": [
+        64.8,
+        -291.12
+      ],
+      "outward_degrees": 9.0,
+      "width_m": 2.0,
+      "rise_m": 0.12,
+      "landing_m": 1.4,
+      "approach_distance_m": 2.8,
+      "snap_to_facade": false
+    }
+  ]
+}

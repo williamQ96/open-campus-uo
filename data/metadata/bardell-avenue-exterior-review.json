@@ -1,0 +1,2927 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_dsm_sha256": {
+    "2017": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+    "2013-2015": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+  },
+  "models": [
+    {
+      "id": "roof-3415fe97",
+      "name": "3324 Bardell Ave",
+      "street_address": "3324 Bardell Ave",
+      "state_feature": "20-1073205",
+      "footprint_enu_m": [
+        [
+          754.956,
+          962.816
+        ],
+        [
+          759.804,
+          949.752
+        ],
+        [
+          774.394,
+          955.166
+        ],
+        [
+          774.014,
+          956.19
+        ],
+        [
+          774.4,
+          956.334
+        ],
+        [
+          771.142,
+          965.116
+        ],
+        [
+          770.812,
+          964.992
+        ],
+        [
+          770.502,
+          965.826
+        ],
+        [
+          771.106,
+          966.052
+        ],
+        [
+          770.584,
+          967.46
+        ],
+        [
+          770.974,
+          967.604
+        ],
+        [
+          768.376,
+          977.026
+        ],
+        [
+          764.176,
+          985.926
+        ],
+        [
+          763.964,
+          985.846
+        ],
+        [
+          762.166,
+          990.694
+        ],
+        [
+          756.334,
+          988.53
+        ],
+        [
+          756.112,
+          989.132
+        ],
+        [
+          753.504,
+          988.164
+        ],
+        [
+          753.75,
+          987.502
+        ],
+        [
+          750.636,
+          986.346
+        ],
+        [
+          753.694,
+          978.106
+        ],
+        [
+          742.866,
+          974.088
+        ],
+        [
+          746.788,
+          963.518
+        ],
+        [
+          752.87,
+          965.774
+        ],
+        [
+          754.086,
+          962.494
+        ],
+        [
+          754.956,
+          962.816
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          754.956,
+          962.816
+        ],
+        [
+          759.804,
+          949.752
+        ],
+        [
+          774.394,
+          955.166
+        ],
+        [
+          774.014,
+          956.19
+        ],
+        [
+          774.4,
+          956.334
+        ],
+        [
+          771.142,
+          965.116
+        ],
+        [
+          770.812,
+          964.992
+        ],
+        [
+          770.502,
+          965.826
+        ],
+        [
+          771.106,
+          966.052
+        ],
+        [
+          770.584,
+          967.46
+        ],
+        [
+          770.974,
+          967.604
+        ],
+        [
+          768.376,
+          977.026
+        ],
+        [
+          764.176,
+          985.926
+        ],
+        [
+          763.964,
+          985.846
+        ],
+        [
+          762.166,
+          990.694
+        ],
+        [
+          756.334,
+          988.53
+        ],
+        [
+          756.112,
+          989.132
+        ],
+        [
+          753.504,
+          988.164
+        ],
+        [
+          753.75,
+          987.502
+        ],
+        [
+          750.636,
+          986.346
+        ],
+        [
+          753.694,
+          978.106
+        ],
+        [
+          742.866,
+          974.088
+        ],
+        [
+          746.788,
+          963.518
+        ],
+        [
+          752.87,
+          965.774
+        ],
+        [
+          754.086,
+          962.494
+        ],
+        [
+          754.956,
+          962.816
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          760.0,
+          969.8
+        ],
+        "axis": [
+          0.93752511,
+          0.347917616
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -18,
+            -23,
+            18,
+            23
+          ],
+          "planes": [
+            [
+              -0.99993,
+              0,
+              3.99735,
+              0.24079,
+              0.00079
+            ],
+            [
+              -0.99993,
+              0,
+              3.99735,
+              -0.30124,
+              0.00079
+            ],
+            [
+              -0.99993,
+              -10.2907,
+              3.989220347,
+              0,
+              0.16441
+            ],
+            [
+              -0.99993,
+              15.51102,
+              4.0096037058,
+              0,
+              -0.25016
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -18,
+            -23,
+            13,
+            23
+          ],
+          "planes": [
+            [
+              0,
+              4.73607,
+              4.27337,
+              -0.00076,
+              0.32619
+            ],
+            [
+              0,
+              4.73607,
+              4.27337,
+              -0.00076,
+              -0.32576
+            ],
+            [
+              -7.0,
+              4.73607,
+              4.27869,
+              0.26,
+              0
+            ],
+            [
+              10.7,
+              4.73607,
+              4.265238,
+              -0.04,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -7.5,
+        -19,
+        10.4,
+        17.4
+      ],
+      "eaves_m": 0.23,
+      "roof_fit_notes": {
+        "roof": "2024 orthophoto shows a long gray roof, a transverse center roof mass and a ridgeline or projection on the south half. The 2017 and 2013\u20132015 cells agree across the visible east slope and show a higher center ridge. Canopy contaminates the west wing and north end, so the crosswing extent follows the state footprint and its slopes and covered roof seam remain approximate. MLS #14359418 corroborates a lower garage wing and lifted gabled entry.",
+        "facade": {
+          "outward_degrees": 69.64,
+          "entry_local_uv_m": [
+            10.35,
+            3.9
+          ],
+          "entry_confidence": "midpoint near approach inferred from orthophoto and gabled central entrance seen in 2015 MLS photo",
+          "garage_face_uv_endpoints_m": [
+            [
+              8.82,
+              -17.63
+            ],
+            [
+              8.82,
+              -8.27
+            ]
+          ],
+          "door_centers_uv_m": [
+            [
+              8.82,
+              -15.3
+            ],
+            [
+              8.82,
+              -11.55
+            ]
+          ],
+          "door_widths_m": [
+            2.48,
+            4.65
+          ],
+          "garage_confidence": "single and double gray doors visible in MLS photo; placement and dimensions approximate from driveway and available wall width"
+        }
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495064.14928888186%2C4877870.282153052%2C495111.14928888186%2C4877926.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=376%2C448",
+        "sha256": "47cedafc179803c6b56c5e9cdadfbb694ee50d271d445eecc69d0d95fc06d105"
+      },
+      "public_references": [
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uooO-LL33mRXI95xlu8xEA&heading=297",
+          "observation": "The driveway, low gray eaves and foreground trees remain visible."
+        },
+        {
+          "date": "2015",
+          "url": "https://www.redfin.com/OR/Eugene/3324-Bardell-Ave-97401/home/26112348",
+          "observation": "RMLS 14359418 agent gallery shows single and double gray garage openings, a raised gabled entry, and broad stone columns and glazing."
+        }
+      ],
+      "wall_color": [
+        131,
+        120,
+        98
+      ],
+      "trim_color": [
+        193,
+        181,
+        156
+      ],
+      "roof_color": [
+        116,
+        117,
+        105
+      ],
+      "door_color": [
+        76,
+        68,
+        49
+      ],
+      "course_height_m": 0.196,
+      "entry_trim": {
+        "half_width_m": 2.15,
+        "depth_m": 1.87,
+        "head_above_threshold_m": 2.77,
+        "pier_color": [
+          143,
+          138,
+          118
+        ],
+        "pier_half_width_m": 0.225,
+        "shape": "gable",
+        "roof_rise_m": 0.68,
+        "arched_transom": false,
+        "sidelights": true
+      },
+      "garage_gable_color": null,
+      "entrance": {
+        "near_enu_m": [
+          767.41204,
+          978.97179
+        ],
+        "outward_degrees": 65,
+        "landing_m": 2.31,
+        "threshold_above_grade_m": 0.52
+      },
+      "porch": {
+        "depth": 1.87
+      },
+      "garages": [
+        {
+          "near_enu_m": [
+            773.67213,
+            958.30887
+          ],
+          "bearing": 70,
+          "width_m": 2.45,
+          "color": [
+            132,
+            134,
+            127
+          ],
+          "style": "window-strip",
+          "panels": 4
+        },
+        {
+          "near_enu_m": [
+            772.29438,
+            962.02147
+          ],
+          "bearing": 70,
+          "width_m": 4.58,
+          "color": [
+            132,
+            134,
+            127
+          ],
+          "style": "window-strip",
+          "panels": 6
+        }
+      ],
+      "windows": [
+        {
+          "near_enu_m": [
+            766.14782,
+            981.65988
+          ],
+          "bearing": 65,
+          "width_m": 2.37,
+          "sill_m": 0.82,
+          "height_m": 1.74,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            769.21539,
+            973.42251
+          ],
+          "bearing": 75,
+          "width_m": 2.18,
+          "sill_m": 0.85,
+          "height_m": 1.63,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            763.01207,
+            988.44265
+          ],
+          "bearing": 70,
+          "width_m": 1.65,
+          "sill_m": 0.78,
+          "height_m": 1.38,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            744.16365,
+            970.65358
+          ],
+          "bearing": 250,
+          "width_m": 2.26,
+          "sill_m": 0.63,
+          "height_m": 1.72,
+          "ribs": 2
+        }
+      ],
+      "chimneys": [],
+      "garage_slot_enu_m": null
+    },
+    {
+      "id": "roof-119eb630",
+      "name": "3330 Bardell Ave",
+      "street_address": "3330 Bardell Ave",
+      "state_feature": "20-1073180",
+      "footprint_enu_m": [
+        [
+          771.476,
+          909.626
+        ],
+        [
+          786.706,
+          915.69
+        ],
+        [
+          783.268,
+          924.324
+        ],
+        [
+          775.938,
+          921.406
+        ],
+        [
+          775.766,
+          921.84
+        ],
+        [
+          777.092,
+          922.368
+        ],
+        [
+          775.088,
+          927.4
+        ],
+        [
+          774.14,
+          927.024
+        ],
+        [
+          773.946,
+          927.508
+        ],
+        [
+          776.97,
+          928.712
+        ],
+        [
+          774.786,
+          934.202
+        ],
+        [
+          773.49,
+          933.686
+        ],
+        [
+          772.572,
+          935.992
+        ],
+        [
+          771.626,
+          935.614
+        ],
+        [
+          770.206,
+          939.176
+        ],
+        [
+          763.876,
+          936.654
+        ],
+        [
+          765.256,
+          933.186
+        ],
+        [
+          762.386,
+          932.044
+        ],
+        [
+          763.276,
+          929.81
+        ],
+        [
+          762.114,
+          929.348
+        ],
+        [
+          764.424,
+          923.55
+        ],
+        [
+          763.426,
+          923.152
+        ],
+        [
+          765.68,
+          917.488
+        ],
+        [
+          767.084,
+          918.046
+        ],
+        [
+          768.852,
+          913.602
+        ],
+        [
+          769.75,
+          913.96
+        ],
+        [
+          771.476,
+          909.626
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          771.476,
+          909.626
+        ],
+        [
+          786.706,
+          915.69
+        ],
+        [
+          783.268,
+          924.324
+        ],
+        [
+          775.938,
+          921.406
+        ],
+        [
+          775.766,
+          921.84
+        ],
+        [
+          777.092,
+          922.368
+        ],
+        [
+          775.088,
+          927.4
+        ],
+        [
+          774.14,
+          927.024
+        ],
+        [
+          773.946,
+          927.508
+        ],
+        [
+          776.97,
+          928.712
+        ],
+        [
+          774.786,
+          934.202
+        ],
+        [
+          773.49,
+          933.686
+        ],
+        [
+          772.572,
+          935.992
+        ],
+        [
+          771.626,
+          935.614
+        ],
+        [
+          770.206,
+          939.176
+        ],
+        [
+          763.876,
+          936.654
+        ],
+        [
+          765.256,
+          933.186
+        ],
+        [
+          762.386,
+          932.044
+        ],
+        [
+          763.276,
+          929.81
+        ],
+        [
+          762.114,
+          929.348
+        ],
+        [
+          764.424,
+          923.55
+        ],
+        [
+          763.426,
+          923.152
+        ],
+        [
+          765.68,
+          917.488
+        ],
+        [
+          767.084,
+          918.046
+        ],
+        [
+          768.852,
+          913.602
+        ],
+        [
+          769.75,
+          913.96
+        ],
+        [
+          771.476,
+          909.626
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          772.7,
+          923.3
+        ],
+        "axis": [
+          0.929068024,
+          0.369908916
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -18,
+            -23,
+            18,
+            23
+          ],
+          "planes": [
+            [
+              -2.5,
+              0,
+              4.11457,
+              0.26,
+              -0.00365
+            ],
+            [
+              -2.5,
+              0,
+              4.11457,
+              -0.36856,
+              -0.00365
+            ],
+            [
+              -2.5,
+              -7.04553,
+              4.1402861845,
+              0,
+              0.67203
+            ],
+            [
+              -2.5,
+              5.50876,
+              4.094463026,
+              0,
+              -0.20231
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -10,
+            -15,
+            13,
+            -1.85
+          ],
+          "planes": [
+            [
+              0,
+              -6.78669,
+              4.23274,
+              -0.00158,
+              0.66569
+            ],
+            [
+              0,
+              -6.78669,
+              4.23274,
+              -0.00158,
+              -0.62522
+            ],
+            [
+              -2.0,
+              -6.78669,
+              4.2359,
+              0.45,
+              0
+            ],
+            [
+              5.19244,
+              -6.78669,
+              4.2245359447999995,
+              -0.65757,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4,
+            -3.2,
+            7,
+            5.6
+          ],
+          "planes": [
+            [
+              0,
+              1.17267,
+              3.4,
+              0,
+              0.82
+            ],
+            [
+              0,
+              1.17267,
+              3.4,
+              0,
+              -0.64951
+            ],
+            [
+              -3.0,
+              1.17267,
+              3.4,
+              0.3,
+              0
+            ],
+            [
+              12,
+              1.17267,
+              3.4,
+              -0.2,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -8.7,
+        -12.3,
+        10.3,
+        15.8
+      ],
+      "eaves_m": 0.23,
+      "roof_fit_notes": {
+        "roof": "2024 orthophoto shows a long dark gray main ridge, a small center cross roof and a broad hip over the projecting garage. Paired cells confirm an approximately 4\u20135 m local-Z main ridge, with high canopy returns at the northern end excluded from the fit. Northern step-downs and the center valley are simplified.",
+        "facade": {
+          "outward_degrees": 68.29,
+          "entry_local_uv_m": [
+            3.73,
+            -0.8
+          ],
+          "entry_confidence": "recess to right of paired gray doors corroborated by July 2024 panorama; exact position estimated",
+          "garage_face_uv_endpoints_m": [
+            [
+              10.2,
+              -12.25
+            ],
+            [
+              10.2,
+              -2.96
+            ]
+          ],
+          "door_centers_uv_m": [
+            [
+              10.2,
+              -9.1
+            ],
+            [
+              10.2,
+              -6.15
+            ]
+          ],
+          "door_widths_m": [
+            2.5,
+            2.5
+          ],
+          "garage_confidence": "two doors directly visible in July 2024 panorama; widths approximated from wall length"
+        }
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495084.14928888186%2C4877830.282153052%2C495123.14928888186%2C4877875.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=312%2C360",
+        "sha256": "103fc8ae607d08a8f72f9b55b12e7bf0f704e577d5857ff93ec137be81ee4678"
+      },
+      "public_references": [
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2jBw2fx1L1TGZKiq-4GMUA&heading=272",
+          "observation": "Two adjacent pale garage doors with brick center and end piers; the approach wraps into a recessed entry."
+        },
+        {
+          "date": "2022-08",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6Yjst5Sufe5Horaieuuj-A&heading=272",
+          "observation": "The garage door arrangement and the opening of the recessed entry are visible through the shaded forecourt."
+        }
+      ],
+      "wall_color": [
+        162,
+        115,
+        88
+      ],
+      "trim_color": [
+        205,
+        199,
+        170
+      ],
+      "roof_color": [
+        110,
+        119,
+        117
+      ],
+      "door_color": [
+        79,
+        76,
+        59
+      ],
+      "course_height_m": 0.094,
+      "entry_trim": {
+        "half_width_m": 1.21,
+        "depth_m": 1.2,
+        "head_above_threshold_m": 2.35,
+        "pier_color": [
+          164,
+          118,
+          92
+        ],
+        "pier_half_width_m": 0.14,
+        "shape": "flat",
+        "roof_rise_m": 0,
+        "arched_transom": false,
+        "sidelights": false
+      },
+      "garage_gable_color": null,
+      "entrance": {
+        "near_enu_m": [
+          776.32448,
+          924.28026
+        ],
+        "outward_degrees": 68,
+        "landing_m": 2.16,
+        "threshold_above_grade_m": 0.43
+      },
+      "porch": {
+        "depth": 1.2
+      },
+      "garages": [
+        {
+          "near_enu_m": [
+            785.59815,
+            918.47919
+          ],
+          "bearing": 68,
+          "width_m": 2.59,
+          "color": [
+            151,
+            150,
+            134
+          ],
+          "style": "panel",
+          "panels": 4
+        },
+        {
+          "near_enu_m": [
+            784.38115,
+            921.53583
+          ],
+          "bearing": 68,
+          "width_m": 2.59,
+          "color": [
+            151,
+            150,
+            134
+          ],
+          "style": "panel",
+          "panels": 4
+        }
+      ],
+      "windows": [
+        {
+          "near_enu_m": [
+            775.73116,
+            931.82602
+          ],
+          "bearing": 68,
+          "width_m": 2.38,
+          "sill_m": 0.76,
+          "height_m": 1.47,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            770.98971,
+            937.24661
+          ],
+          "bearing": 68,
+          "width_m": 1.46,
+          "sill_m": 0.78,
+          "height_m": 1.38,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            763.48269,
+            926.01286
+          ],
+          "bearing": 248,
+          "width_m": 2.22,
+          "sill_m": 0.69,
+          "height_m": 1.43,
+          "ribs": 2
+        }
+      ],
+      "chimneys": [],
+      "garage_slot_enu_m": null
+    },
+    {
+      "id": "roof-892a3891",
+      "name": "3336 Bardell Ave",
+      "street_address": "3336 Bardell Ave",
+      "state_feature": "20-1073206",
+      "footprint_enu_m": [
+        [
+          807.748,
+          891.128
+        ],
+        [
+          803.714,
+          898.516
+        ],
+        [
+          794.692,
+          893.592
+        ],
+        [
+          793.306,
+          896.13
+        ],
+        [
+          792.192,
+          895.52
+        ],
+        [
+          790.064,
+          899.418
+        ],
+        [
+          790.324,
+          899.558
+        ],
+        [
+          788.034,
+          903.752
+        ],
+        [
+          787.546,
+          903.486
+        ],
+        [
+          787.128,
+          904.25
+        ],
+        [
+          788.198,
+          904.834
+        ],
+        [
+          785.722,
+          909.37
+        ],
+        [
+          775.606,
+          903.848
+        ],
+        [
+          787.636,
+          881.816
+        ],
+        [
+          796.344,
+          886.57
+        ],
+        [
+          797.046,
+          885.286
+        ],
+        [
+          807.748,
+          891.128
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          807.748,
+          891.128
+        ],
+        [
+          803.714,
+          898.516
+        ],
+        [
+          794.692,
+          893.592
+        ],
+        [
+          793.306,
+          896.13
+        ],
+        [
+          792.192,
+          895.52
+        ],
+        [
+          790.064,
+          899.418
+        ],
+        [
+          790.324,
+          899.558
+        ],
+        [
+          788.034,
+          903.752
+        ],
+        [
+          787.546,
+          903.486
+        ],
+        [
+          787.128,
+          904.25
+        ],
+        [
+          788.198,
+          904.834
+        ],
+        [
+          785.722,
+          909.37
+        ],
+        [
+          775.606,
+          903.848
+        ],
+        [
+          787.636,
+          881.816
+        ],
+        [
+          796.344,
+          886.57
+        ],
+        [
+          797.046,
+          885.286
+        ],
+        [
+          807.748,
+          891.128
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          790.1,
+          894.6
+        ],
+        "axis": [
+          0.877732213,
+          0.479151503
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -10,
+            -5.5,
+            -2.55,
+            11.0
+          ],
+          "planes": [
+            [
+              -3.00542,
+              0,
+              5.55459,
+              0.22998,
+              0.01312
+            ],
+            [
+              -3.00542,
+              0,
+              5.55459,
+              -0.6687,
+              0.01312
+            ],
+            [
+              -3.00542,
+              -4.88232,
+              5.4905339616,
+              0,
+              0.6056
+            ],
+            [
+              -3.00542,
+              10.09117,
+              5.6869861504,
+              0,
+              -0.68817
+            ]
+          ],
+          "roof_color": [
+            195,
+            195,
+            182
+          ]
+        },
+        {
+          "bounds_m": [
+            -18,
+            -23,
+            18,
+            23
+          ],
+          "planes": [
+            [
+              -3.00542,
+              0,
+              5.55459,
+              0.22998,
+              0.01312
+            ],
+            [
+              -3.00542,
+              0,
+              5.55459,
+              -0.6687,
+              0.01312
+            ],
+            [
+              -3.00542,
+              -4.88232,
+              5.4905339616,
+              0,
+              0.6056
+            ],
+            [
+              -3.00542,
+              10.09117,
+              5.6869861504,
+              0,
+              -0.68817
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -3,
+            -14,
+            17,
+            -1.8
+          ],
+          "planes": [
+            [
+              0,
+              -6.57442,
+              4.49106,
+              -0.00728,
+              0.67999
+            ],
+            [
+              0,
+              -6.57442,
+              4.49106,
+              -0.00728,
+              -0.71485
+            ],
+            [
+              0.0,
+              -6.57442,
+              4.49106,
+              0.37,
+              0
+            ],
+            [
+              8.81879,
+              -6.57442,
+              4.4268592088,
+              -0.64991,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -8.4,
+        -11.6,
+        14,
+        15.2
+      ],
+      "eaves_m": 0.23,
+      "roof_fit_notes": {
+        "roof": "2024 orthophoto shows a long hip, distinctly light west roofing over the inner long wing, and an intersecting lower east hip. Paired cells support the taller long ridge and lower east wing. Canopy along west, north and south edges obscures eaves and junctions. The light region follows visible color coverage and uses the underlying fitted pitch.",
+        "facade": {
+          "outward_degrees": 61.37,
+          "entry_local_uv_m": [
+            2.28,
+            1.65
+          ],
+          "entry_confidence": "schematic position along paved arrival; partially obscured street capture does not pin door",
+          "driveway_contact_local_uv_m": [
+            [
+              3.55,
+              -3.08
+            ],
+            [
+              13.83,
+              -3.08
+            ]
+          ],
+          "driveway_contact_bearing_degrees": 331.37,
+          "garage_confidence": "driveway visibly meets the north face of the east wing and wraps past the main street face; vehicle door position and count are unverified"
+        }
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495097.14928888186%2C4877802.282153052%2C495144.14928888186%2C4877845.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=376%2C344",
+        "sha256": "ea6224c2f3fb10af76707685d165e4987e8f49c7af02ac7f78b7c1edceb6ae03"
+      },
+      "public_references": [
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=cnPnU8LD8-YsmtpS0qlhzA&heading=267",
+          "observation": "Coordinates put the camera across Bardell at 3335; the facing 3336 house has a broad shallow hip, light masonry and a drive to the right."
+        }
+      ],
+      "wall_color": [
+        162,
+        162,
+        145
+      ],
+      "trim_color": [
+        206,
+        208,
+        184
+      ],
+      "roof_color": [
+        117,
+        126,
+        122
+      ],
+      "door_color": [
+        103,
+        96,
+        69
+      ],
+      "course_height_m": 0.106,
+      "entry_trim": {
+        "half_width_m": 1.46,
+        "depth_m": 1.18,
+        "head_above_threshold_m": 2.38,
+        "pier_color": [
+          160,
+          160,
+          143
+        ],
+        "pier_half_width_m": 0.159,
+        "shape": "flat",
+        "roof_rise_m": 0,
+        "arched_transom": false,
+        "sidelights": false
+      },
+      "garage_gable_color": null,
+      "entrance": {
+        "near_enu_m": [
+          791.18126,
+          897.37771
+        ],
+        "outward_degrees": 61,
+        "landing_m": 2.11,
+        "threshold_above_grade_m": 0.4
+      },
+      "porch": {
+        "depth": 1.18
+      },
+      "garages": [],
+      "windows": [
+        {
+          "near_enu_m": [
+            789.13587,
+            901.72978
+          ],
+          "bearing": 61,
+          "width_m": 2.45,
+          "sill_m": 0.69,
+          "height_m": 1.42,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            786.96485,
+            907.0842
+          ],
+          "bearing": 61,
+          "width_m": 2.31,
+          "sill_m": 0.71,
+          "height_m": 1.36,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            805.66976,
+            894.9421
+          ],
+          "bearing": 61,
+          "width_m": 1.53,
+          "sill_m": 0.78,
+          "height_m": 1.38,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            779.37371,
+            896.94751
+          ],
+          "bearing": 241,
+          "width_m": 2.6,
+          "sill_m": 0.77,
+          "height_m": 1.31,
+          "ribs": 2
+        }
+      ],
+      "chimneys": [],
+      "garage_slot_enu_m": null
+    },
+    {
+      "id": "roof-57234f59",
+      "name": "3344 Bardell Ave",
+      "street_address": "3344 Bardell Ave",
+      "state_feature": "20-1052444",
+      "footprint_enu_m": [
+        [
+          832.126,
+          848.744
+        ],
+        [
+          826.638,
+          856.148
+        ],
+        [
+          827.246,
+          856.598
+        ],
+        [
+          825.214,
+          859.338
+        ],
+        [
+          817.766,
+          853.818
+        ],
+        [
+          817.362,
+          854.362
+        ],
+        [
+          810.5,
+          849.274
+        ],
+        [
+          817.554,
+          839.756
+        ],
+        [
+          820.338,
+          841.818
+        ],
+        [
+          824.07,
+          836.782
+        ],
+        [
+          824.622,
+          837.192
+        ],
+        [
+          827.064,
+          833.898
+        ],
+        [
+          829.928,
+          836.022
+        ],
+        [
+          832.54,
+          832.496
+        ],
+        [
+          841.404,
+          839.066
+        ],
+        [
+          841.926,
+          838.364
+        ],
+        [
+          844.858,
+          840.536
+        ],
+        [
+          838.37,
+          849.29
+        ],
+        [
+          833.376,
+          845.59
+        ],
+        [
+          833.864,
+          844.932
+        ],
+        [
+          833.164,
+          844.412
+        ],
+        [
+          830.722,
+          847.704
+        ],
+        [
+          832.126,
+          848.744
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          832.126,
+          848.744
+        ],
+        [
+          826.638,
+          856.148
+        ],
+        [
+          827.246,
+          856.598
+        ],
+        [
+          825.214,
+          859.338
+        ],
+        [
+          817.766,
+          853.818
+        ],
+        [
+          817.362,
+          854.362
+        ],
+        [
+          810.5,
+          849.274
+        ],
+        [
+          817.554,
+          839.756
+        ],
+        [
+          820.338,
+          841.818
+        ],
+        [
+          824.07,
+          836.782
+        ],
+        [
+          824.622,
+          837.192
+        ],
+        [
+          827.064,
+          833.898
+        ],
+        [
+          829.928,
+          836.022
+        ],
+        [
+          832.54,
+          832.496
+        ],
+        [
+          841.404,
+          839.066
+        ],
+        [
+          841.926,
+          838.364
+        ],
+        [
+          844.858,
+          840.536
+        ],
+        [
+          838.37,
+          849.29
+        ],
+        [
+          833.376,
+          845.59
+        ],
+        [
+          833.864,
+          844.932
+        ],
+        [
+          833.164,
+          844.412
+        ],
+        [
+          830.722,
+          847.704
+        ],
+        [
+          832.126,
+          848.744
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          827.1,
+          845.1
+        ],
+        "axis": [
+          0.804596897,
+          0.593821382
+        ]
+      },
+      "roof_zones": [
+        {
+          "description": "main gable",
+          "bounds_m": [
+            -12,
+            -15,
+            13,
+            14
+          ],
+          "planes": [
+            [
+              -1.0157,
+              0,
+              4.4063,
+              0.4592,
+              0
+            ],
+            [
+              -1.0157,
+              0,
+              4.4063,
+              -0.3358,
+              0
+            ]
+          ]
+        },
+        {
+          "description": "rear transverse hip",
+          "bounds_m": [
+            -12,
+            0,
+            1.3,
+            14
+          ],
+          "planes": [
+            [
+              0,
+              8.2108,
+              3.8982,
+              0,
+              0.3806
+            ],
+            [
+              0,
+              8.2108,
+              3.8982,
+              0,
+              -0.4765
+            ],
+            [
+              -9.381,
+              0,
+              3.8982,
+              0.2981,
+              0
+            ],
+            [
+              -3.1,
+              0,
+              3.8982,
+              -0.42,
+              0
+            ]
+          ]
+        },
+        {
+          "description": "garage gable",
+          "bounds_m": [
+            -8,
+            -15,
+            13,
+            -2.8
+          ],
+          "planes": [
+            [
+              0,
+              -7.1557,
+              3.2642,
+              0,
+              0.3362
+            ],
+            [
+              0,
+              -7.1557,
+              3.2642,
+              0,
+              -0.4418
+            ],
+            [
+              -3.3981,
+              0,
+              3.2642,
+              0.4502,
+              0
+            ]
+          ]
+        },
+        {
+          "description": "southwest return",
+          "bounds_m": [
+            -8,
+            -14,
+            -1,
+            -4
+          ],
+          "planes": [
+            [
+              0,
+              -8.15,
+              2.85,
+              0,
+              0.31
+            ],
+            [
+              0,
+              -8.15,
+              2.85,
+              0,
+              -0.39
+            ],
+            [
+              -6.0,
+              0,
+              2.85,
+              0.34,
+              0
+            ],
+            [
+              -4.0,
+              0,
+              2.85,
+              -0.34,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -6,
+        -11,
+        10.6,
+        11.8
+      ],
+      "eaves_m": 0.23,
+      "roof_fit_notes": [
+        "Orthophoto and matched historical cells show a north\u2013south local-v main ridge near u=0, a lower western rear return and a low transverse garage ridge in the southeast wing.",
+        "June 2024 Street View 2VDDO45o4YnpP4bUtnex-Q shows the two-car garage gable and brick entry supports to the right; the orthophoto ties the driveway to the northeast-facing projecting wing.",
+        "Canopy strongly contaminates portions of the western rear wall and southern roof edge. Entry center and garage opening width are estimates from the visible bays."
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495132.14928888186%2C4877753.282153052%2C495181.14928888186%2C4877795.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=392%2C336",
+        "sha256": "36af0d1fa146d13f79972fb7911ebf8814685b77a15969364614dcb5dc03b438"
+      },
+      "public_references": [
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2VDDO45o4YnpP4bUtnex-Q&heading=251",
+          "observation": "From the opposite 3345 frontage, the 3344 beige gable spans a double garage. Square brick piers are visible to its right through foliage."
+        }
+      ],
+      "wall_color": [
+        173,
+        151,
+        119
+      ],
+      "trim_color": [
+        218,
+        207,
+        175
+      ],
+      "roof_color": [
+        116,
+        124,
+        114
+      ],
+      "door_color": [
+        104,
+        82,
+        59
+      ],
+      "course_height_m": 0.111,
+      "entry_trim": {
+        "half_width_m": 1.48,
+        "depth_m": 1.49,
+        "head_above_threshold_m": 2.47,
+        "pier_color": [
+          167,
+          140,
+          109
+        ],
+        "pier_half_width_m": 0.205,
+        "shape": "gable",
+        "roof_rise_m": 0.29,
+        "arched_transom": false,
+        "sidelights": false
+      },
+      "garage_gable_color": [
+        213,
+        205,
+        180
+      ],
+      "entrance": {
+        "near_enu_m": [
+          831.81887,
+          846.23369
+        ],
+        "outward_degrees": 53,
+        "landing_m": 2.21,
+        "threshold_above_grade_m": 0.51
+      },
+      "porch": {
+        "depth": 1.49
+      },
+      "garages": [
+        {
+          "near_enu_m": [
+            841.52199,
+            845.04293
+          ],
+          "bearing": 53,
+          "width_m": 5.08,
+          "color": [
+            186,
+            178,
+            151
+          ],
+          "style": "panel",
+          "panels": 4
+        }
+      ],
+      "windows": [
+        {
+          "near_enu_m": [
+            830.25359,
+            851.2679
+          ],
+          "bearing": 53,
+          "width_m": 2.27,
+          "sill_m": 0.78,
+          "height_m": 1.38,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            827.91394,
+            854.43801
+          ],
+          "bearing": 53,
+          "width_m": 1.68,
+          "sill_m": 0.78,
+          "height_m": 1.38,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            814.84033,
+            843.37236
+          ],
+          "bearing": 233,
+          "width_m": 2.39,
+          "sill_m": 0.78,
+          "height_m": 1.38,
+          "ribs": 2
+        }
+      ],
+      "chimneys": [],
+      "garage_slot_enu_m": null
+    },
+    {
+      "id": "roof-045d51bb",
+      "name": "3345 Bardell Ave",
+      "street_address": "3345 Bardell Ave",
+      "state_feature": "20-1052452",
+      "footprint_enu_m": [
+        [
+          866.088,
+          887.02
+        ],
+        [
+          865.018,
+          888.344
+        ],
+        [
+          860.39,
+          884.602
+        ],
+        [
+          858.062,
+          887.482
+        ],
+        [
+          852.15,
+          882.702
+        ],
+        [
+          854.478,
+          879.822
+        ],
+        [
+          853.346,
+          878.908
+        ],
+        [
+          858.874,
+          872.07
+        ],
+        [
+          861.804,
+          874.436
+        ],
+        [
+          864.298,
+          871.352
+        ],
+        [
+          863.116,
+          870.398
+        ],
+        [
+          866.4,
+          866.336
+        ],
+        [
+          870.772,
+          869.868
+        ],
+        [
+          871.02,
+          869.56
+        ],
+        [
+          875.392,
+          873.092
+        ],
+        [
+          872.762,
+          876.346
+        ],
+        [
+          874.56,
+          877.8
+        ],
+        [
+          866.704,
+          887.518
+        ],
+        [
+          866.088,
+          887.02
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          866.088,
+          887.02
+        ],
+        [
+          865.018,
+          888.344
+        ],
+        [
+          860.39,
+          884.602
+        ],
+        [
+          858.062,
+          887.482
+        ],
+        [
+          852.15,
+          882.702
+        ],
+        [
+          854.478,
+          879.822
+        ],
+        [
+          853.346,
+          878.908
+        ],
+        [
+          858.874,
+          872.07
+        ],
+        [
+          861.804,
+          874.436
+        ],
+        [
+          864.298,
+          871.352
+        ],
+        [
+          863.116,
+          870.398
+        ],
+        [
+          866.4,
+          866.336
+        ],
+        [
+          870.772,
+          869.868
+        ],
+        [
+          871.02,
+          869.56
+        ],
+        [
+          875.392,
+          873.092
+        ],
+        [
+          872.762,
+          876.346
+        ],
+        [
+          874.56,
+          877.8
+        ],
+        [
+          866.704,
+          887.518
+        ],
+        [
+          866.088,
+          887.02
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          864.2,
+          878.2
+        ],
+        "axis": [
+          0.778012683,
+          0.628248569
+        ]
+      },
+      "roof_zones": [
+        {
+          "description": "main hip",
+          "bounds_m": [
+            -9,
+            -12,
+            9,
+            12
+          ],
+          "planes": [
+            [
+              1.2141,
+              0,
+              8.2455,
+              0.5078,
+              0
+            ],
+            [
+              1.2141,
+              0,
+              8.2455,
+              -0.5993,
+              0
+            ],
+            [
+              0,
+              0.5436,
+              8.2455,
+              0,
+              0.5271
+            ],
+            [
+              0,
+              0.9433,
+              8.2455,
+              0,
+              -0.6855
+            ]
+          ]
+        },
+        {
+          "description": "front return hip",
+          "bounds_m": [
+            -9,
+            -2,
+            1.3,
+            9
+          ],
+          "planes": [
+            [
+              0,
+              2.9951,
+              5.4738,
+              0,
+              0.2551
+            ],
+            [
+              0,
+              2.9951,
+              5.4738,
+              0,
+              -0.541
+            ],
+            [
+              -7.2,
+              0,
+              5.4738,
+              0.45,
+              0
+            ],
+            [
+              -3.8,
+              0,
+              5.4738,
+              -0.43,
+              0
+            ]
+          ]
+        },
+        {
+          "description": "driveway hip",
+          "bounds_m": [
+            -7.1,
+            6,
+            1.6,
+            12
+          ],
+          "planes": [
+            [
+              -2.7687,
+              0,
+              4.3617,
+              0.5021,
+              0
+            ],
+            [
+              -2.7687,
+              0,
+              4.3617,
+              -0.6223,
+              0
+            ],
+            [
+              0,
+              7.8871,
+              4.3617,
+              0,
+              0.4811
+            ],
+            [
+              0,
+              7.9322,
+              4.3617,
+              0,
+              -0.7565
+            ]
+          ]
+        },
+        {
+          "description": "southeast hip",
+          "bounds_m": [
+            -6.4,
+            -12,
+            8.5,
+            1.0
+          ],
+          "planes": [
+            [
+              1.6262,
+              0,
+              6.0829,
+              0.6397,
+              0
+            ],
+            [
+              1.6262,
+              0,
+              6.0829,
+              -0.2207,
+              0
+            ],
+            [
+              0,
+              -7.0302,
+              6.0829,
+              0,
+              0.4995
+            ],
+            [
+              0,
+              -3.3,
+              6.0829,
+              0,
+              -0.45
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -6.8,
+        -9.5,
+        7.2,
+        10.3
+      ],
+      "eaves_m": 0.23,
+      "roof_fit_notes": [
+        "Orthophoto and matched historical cells show a high center hip, a lower northwestern garage hip, a side front hip and a lower southeast hip return.",
+        "GSV 7CZu0-1qZ-AVToU3gXudsQ and Trulia listing 48459262 show three pale garage panels, tan brick piers and a red door to their right. The northwest projection is aligned to the ortho driveway.",
+        "The porch door wall is the adjacent southwest-facing candidate. Door placement and garage opening dimensions are approximate."
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495174.14928888186%2C4877787.282153052%2C495212.14928888186%2C4877824.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=304%2C296",
+        "sha256": "adcf4c391e8c0cbf2769c1f863aaaa969dc85a9c2af6f2cbadef4a2b7a28ae4f"
+      },
+      "public_references": [
+        {
+          "date": "2022-08",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FPIZVvOkutOvj1QOHvdWZA&heading=96",
+          "observation": "Pale brick and siding meet the attached garage wing and porch hedge."
+        },
+        {
+          "date": "street imagery; date unlabelled in listing",
+          "url": "https://www.trulia.com/home/3345-bardell-ave-eugene-or-97401-48459262",
+          "observation": "The property's street photo shows three light garage panels separated by pale masonry and a red door by the porch."
+        }
+      ],
+      "wall_color": [
+        176,
+        164,
+        139
+      ],
+      "trim_color": [
+        218,
+        211,
+        186
+      ],
+      "roof_color": [
+        123,
+        128,
+        117
+      ],
+      "door_color": [
+        148,
+        70,
+        52
+      ],
+      "course_height_m": 0.105,
+      "entry_trim": {
+        "half_width_m": 1.33,
+        "depth_m": 1.37,
+        "head_above_threshold_m": 2.49,
+        "pier_color": [
+          174,
+          159,
+          132
+        ],
+        "pier_half_width_m": 0.189,
+        "shape": "flat",
+        "roof_rise_m": 0,
+        "arched_transom": false,
+        "sidelights": false
+      },
+      "garage_gable_color": null,
+      "entrance": {
+        "near_enu_m": [
+          854.62105,
+          877.3286
+        ],
+        "outward_degrees": 231,
+        "landing_m": 1.86,
+        "threshold_above_grade_m": 0.44
+      },
+      "porch": {
+        "depth": 1.37
+      },
+      "garages": [
+        {
+          "near_enu_m": [
+            853.18556,
+            883.54721
+          ],
+          "bearing": 321,
+          "width_m": 2.11,
+          "color": [
+            185,
+            182,
+            163
+          ],
+          "style": "panel",
+          "panels": 4
+        },
+        {
+          "near_enu_m": [
+            855.09169,
+            885.08641
+          ],
+          "bearing": 321,
+          "width_m": 2.11,
+          "color": [
+            185,
+            182,
+            163
+          ],
+          "style": "panel",
+          "panels": 4
+        },
+        {
+          "near_enu_m": [
+            856.99782,
+            886.62562
+          ],
+          "bearing": 321,
+          "width_m": 2.11,
+          "color": [
+            185,
+            182,
+            163
+          ],
+          "style": "panel",
+          "panels": 4
+        }
+      ],
+      "windows": [
+        {
+          "near_enu_m": [
+            857.08379,
+            874.27879
+          ],
+          "bearing": 231,
+          "width_m": 2.22,
+          "sill_m": 0.84,
+          "height_m": 1.37,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            865.03146,
+            888.34426
+          ],
+          "bearing": 321,
+          "width_m": 1.81,
+          "sill_m": 0.8,
+          "height_m": 1.32,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            863.95002,
+            887.47099
+          ],
+          "bearing": 321,
+          "width_m": 1.21,
+          "sill_m": 3.49,
+          "height_m": 1.08,
+          "ribs": 1
+        }
+      ],
+      "chimneys": [],
+      "garage_slot_enu_m": null
+    },
+    {
+      "id": "roof-6b824894",
+      "name": "3355 Bardell Ave",
+      "street_address": "3355 Bardell Ave",
+      "state_feature": "20-1052447",
+      "footprint_enu_m": [
+        [
+          897.018,
+          864.608
+        ],
+        [
+          893.912,
+          867.784
+        ],
+        [
+          888.41,
+          862.402
+        ],
+        [
+          886.358,
+          864.5
+        ],
+        [
+          885.11,
+          863.28
+        ],
+        [
+          881.17,
+          867.306
+        ],
+        [
+          877.2,
+          863.422
+        ],
+        [
+          878.42,
+          862.174
+        ],
+        [
+          875.642,
+          859.456
+        ],
+        [
+          878.25,
+          856.79
+        ],
+        [
+          877.4,
+          855.958
+        ],
+        [
+          882.338,
+          850.91
+        ],
+        [
+          880.07,
+          848.69
+        ],
+        [
+          888.06,
+          840.524
+        ],
+        [
+          894.412,
+          846.738
+        ],
+        [
+          891.582,
+          849.632
+        ],
+        [
+          900.314,
+          858.176
+        ],
+        [
+          898.762,
+          859.764
+        ],
+        [
+          900.86,
+          861.818
+        ],
+        [
+          897.586,
+          865.164
+        ],
+        [
+          897.018,
+          864.608
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          897.018,
+          864.608
+        ],
+        [
+          893.912,
+          867.784
+        ],
+        [
+          888.41,
+          862.402
+        ],
+        [
+          886.358,
+          864.5
+        ],
+        [
+          885.11,
+          863.28
+        ],
+        [
+          881.17,
+          867.306
+        ],
+        [
+          877.2,
+          863.422
+        ],
+        [
+          878.42,
+          862.174
+        ],
+        [
+          875.642,
+          859.456
+        ],
+        [
+          878.25,
+          856.79
+        ],
+        [
+          877.4,
+          855.958
+        ],
+        [
+          882.338,
+          850.91
+        ],
+        [
+          880.07,
+          848.69
+        ],
+        [
+          888.06,
+          840.524
+        ],
+        [
+          894.412,
+          846.738
+        ],
+        [
+          891.582,
+          849.632
+        ],
+        [
+          900.314,
+          858.176
+        ],
+        [
+          898.762,
+          859.764
+        ],
+        [
+          900.86,
+          861.818
+        ],
+        [
+          897.586,
+          865.164
+        ],
+        [
+          897.018,
+          864.608
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          888.1,
+          855.9
+        ],
+        "axis": [
+          0.699284671,
+          0.714843304
+        ]
+      },
+      "roof_zones": [
+        {
+          "description": "main crossing gable",
+          "bounds_m": [
+            -8.2,
+            -12,
+            5.6,
+            14
+          ],
+          "planes": [
+            [
+              -2.0428,
+              0,
+              6.7095,
+              0.7133,
+              0
+            ],
+            [
+              -2.0428,
+              0,
+              6.7095,
+              -0.8,
+              0
+            ],
+            [
+              0,
+              0.7053,
+              6.7095,
+              0,
+              0.634
+            ],
+            [
+              0,
+              2.0,
+              6.7095,
+              0,
+              -0.4496
+            ]
+          ]
+        },
+        {
+          "description": "northeast hip",
+          "bounds_m": [
+            -5.0,
+            -12,
+            14.5,
+            14
+          ],
+          "planes": [
+            [
+              0,
+              0.3522,
+              6.1864,
+              0,
+              0.5852
+            ],
+            [
+              0,
+              0.3522,
+              6.1864,
+              0,
+              -0.6223
+            ],
+            [
+              -0.5843,
+              0,
+              6.1864,
+              0.4042,
+              0
+            ],
+            [
+              5.6,
+              0,
+              6.1864,
+              -0.5661,
+              0
+            ]
+          ]
+        },
+        {
+          "description": "garage hip",
+          "bounds_m": [
+            -12.3,
+            -12,
+            -1.5,
+            1.3
+          ],
+          "planes": [
+            [
+              -6.8098,
+              0,
+              4.7524,
+              0.6867,
+              0
+            ],
+            [
+              -6.8098,
+              0,
+              4.7524,
+              -0.7132,
+              0
+            ],
+            [
+              0,
+              -4.9061,
+              4.7524,
+              0,
+              0.6069
+            ],
+            [
+              0,
+              -3.2289,
+              4.7524,
+              0,
+              -0.596
+            ]
+          ]
+        },
+        {
+          "description": "north return hip",
+          "bounds_m": [
+            -7.2,
+            4,
+            4.9,
+            14
+          ],
+          "planes": [
+            [
+              0,
+              11.837,
+              4.0098,
+              0,
+              0.109
+            ],
+            [
+              0,
+              11.837,
+              4.0098,
+              0,
+              -0.3408
+            ],
+            [
+              -4.0,
+              0,
+              4.0098,
+              0.49,
+              0
+            ],
+            [
+              0.3247,
+              0,
+              4.0098,
+              -0.7776,
+              0
+            ]
+          ]
+        },
+        {
+          "description": "rear eave",
+          "bounds_m": [
+            -2.8,
+            -12,
+            11,
+            -3.8
+          ],
+          "planes": [
+            [
+              0,
+              -5.0,
+              2.3,
+              0,
+              0.32
+            ],
+            [
+              0,
+              -5.0,
+              2.3,
+              0,
+              -0.28
+            ],
+            [
+              -1.9,
+              0,
+              2.3,
+              0.33,
+              0
+            ],
+            [
+              8.7,
+              0,
+              2.3,
+              -0.31,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -10.0,
+        -8.8,
+        9.5,
+        9.5
+      ],
+      "eaves_m": 0.23,
+      "roof_fit_notes": [
+        "The orthophoto and matched historical cells show crossing main ridges, a low southwest attached hip at the driveway and low northern returns, with canopy over the far northeast corner.",
+        "MLS 22229568 / Zillow 48459263 shows a pale front gable, red brick below, an arched transom at the recessed entry and three pale arched garage panels under a low hip. Street View xfsH0iFh2wogpoCVd42UpA provides a separate frontage view.",
+        "Tree returns dominate the eastern tip and parts of the northwest wall. Rear return junctions and entry/opening dimensions are approximations."
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495197.14928888186%2C4877761.282153052%2C495237.14928888186%2C4877803.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=320%2C336",
+        "sha256": "c2c63a9d90fe45a12b815950f0d223e14fa33405d2fcf7ae639de4c8f5593223"
+      },
+      "public_references": [
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xfsH0iFh2wogpoCVd42UpA&heading=80",
+          "observation": "Low brick facade wall, muted siding, wide white-trimmed windows and the driveway wing."
+        },
+        {
+          "date": "2023",
+          "url": "https://www.zillow.com/homedetails/3355-Bardell-Ave-Eugene-OR-97401/48459263_zpid/",
+          "observation": "Broker feed 22229568 shows an arched transom beside a pale gable, a recessed entrance, and curved panel heads on the garage."
+        }
+      ],
+      "wall_color": [
+        153,
+        102,
+        76
+      ],
+      "trim_color": [
+        221,
+        215,
+        186
+      ],
+      "roof_color": [
+        111,
+        120,
+        105
+      ],
+      "door_color": [
+        80,
+        76,
+        64
+      ],
+      "course_height_m": 0.095,
+      "entry_trim": {
+        "half_width_m": 1.37,
+        "depth_m": 1.23,
+        "head_above_threshold_m": 2.59,
+        "pier_color": [
+          159,
+          106,
+          82
+        ],
+        "pier_half_width_m": 0.152,
+        "shape": "flat",
+        "roof_rise_m": 0,
+        "arched_transom": true,
+        "sidelights": false
+      },
+      "garage_gable_color": null,
+      "entrance": {
+        "near_enu_m": [
+          881.0263,
+          852.244
+        ],
+        "outward_degrees": 226,
+        "landing_m": 2.21,
+        "threshold_above_grade_m": 0.43
+      },
+      "porch": {
+        "depth": 1.23
+      },
+      "garages": [
+        {
+          "near_enu_m": [
+            884.14494,
+            844.52088
+          ],
+          "bearing": 226,
+          "width_m": 8.49,
+          "color": [
+            193,
+            185,
+            161
+          ],
+          "style": "arched",
+          "panels": 3
+        }
+      ],
+      "windows": [
+        {
+          "near_enu_m": [
+            878.58045,
+            854.73454
+          ],
+          "bearing": 226,
+          "width_m": 2.57,
+          "sill_m": 0.76,
+          "height_m": 1.59,
+          "ribs": 3
+        },
+        {
+          "near_enu_m": [
+            877.05936,
+            858.01312
+          ],
+          "bearing": 226,
+          "width_m": 1.88,
+          "sill_m": 0.93,
+          "height_m": 1.5,
+          "ribs": 2
+        },
+        {
+          "near_enu_m": [
+            883.04631,
+            865.3202
+          ],
+          "bearing": 46,
+          "width_m": 2.29,
+          "sill_m": 0.82,
+          "height_m": 1.55,
+          "ribs": 2
+        }
+      ],
+      "chimneys": [],
+      "garage_slot_enu_m": null
+    }
+  ]
+}

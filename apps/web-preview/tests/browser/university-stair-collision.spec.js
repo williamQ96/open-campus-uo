@@ -29,7 +29,7 @@ test("University stair collision preserves entry and route", async ({
         await r.fulfill({ response: res, json: j });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=heritage-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     const probes = await page.evaluate(() =>

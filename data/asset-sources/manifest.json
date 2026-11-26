@@ -223,8 +223,8 @@
       "origin": "Original additive Johnson rear overlay from pinned sources; excludes original building, terrain and collision."
     },
     "apps/web-preview/public/scene/johnson-rear-detail.json": {
-      "bytes": 35494,
-      "sha256": "2f8673dd96875d0f680e7a8431922e0989db8816500c63bdc6d4c0ea7249f81b",
+      "bytes": 62557,
+      "sha256": "fa736aaae13284c5e7fd8aead9fe684ed72d6138e334d5fa87c73b715eb4cf44",
       "license": "CC-BY-4.0",
       "origin": "Original source-pinned Johnson rear overlay and roof refinement, informed by archived attributed reference imagery; no image texture.",
       "previous_record": {
@@ -666,8 +666,8 @@
       "origin": "Original schematic Allen exterior geometry informed by linked sources; no third-party photos or textures included."
     },
     "apps/web-preview/public/scene/carson-exterior-detail.json": {
-      "bytes": 96063,
-      "sha256": "e17f3a213627ada64530baa6969c8103ef60180d9bf1f26164c1954ee65cc436",
+      "bytes": 99810,
+      "sha256": "6726782bfaab3722c07dd97fa0c770c30c4866a0ea7ba78a029790e1431309fd",
       "license": "CC-BY-4.0",
       "origin": "Original schematic geometry or source-matched color parameters informed by the linked UO survey; no third-party imagery included."
     },
@@ -862,6 +862,72 @@
       "sha256": "bf955f1902674150ab0a56207fb4320cb87fdb5303869bf4c1d961d519210597",
       "license": "CC-BY-4.0",
       "origin": "Original schematic geometry informed by linked UO and architect references; no third-party photographs or building models included."
+    },
+    "apps/web-preview/public/scene/hedco-exterior-review/site.glb": {
+      "bytes": 1282024,
+      "sha256": "c332c90ac78ab5880399f067039b6301be3ef986e3d4cb018083b9890ae3c66e",
+      "license": "CC-BY-4.0",
+      "origin": "Original HEDCO exterior and courtyard model interpreted from public-map, architect photograph, orthophoto and historical elevation references. No reference imagery, point cloud, artwork or source mesh is embedded. Default exterior in the local scene."
+    },
+    "apps/web-preview/public/scene/hedco-exterior-review/site.json": {
+      "bytes": 2217,
+      "sha256": "0f5c5912f9ea81bfa362a75fd50da06aff755de5d313320a93f5153a7866792f",
+      "license": "CC-BY-4.0",
+      "origin": "Original HEDCO placement, collision rings and entrance settings with pinned source hashes."
+    },
+    "apps/web-preview/public/scene/cascade-volcanology-review/site.glb": {
+      "bytes": 1450528,
+      "sha256": "15ec2b4d59b149779c51b0ced4d504419cd110652c481948af075608db3c554f",
+      "license": "CC-BY-4.0",
+      "origin": "Original authored Cascade Hall, Volcanology, bridge and courtyard geometry interpreted from linked Oregon and University of Oregon references. No source photos, point clouds, artwork or third-party meshes are embedded. Local review asset."
+    },
+    "apps/web-preview/public/scene/cascade-volcanology-review/site.json": {
+      "bytes": 1431,
+      "sha256": "6a6e9da1803d1f85f9edfbd2a56322a70c64425ba699ffcc5d3214067b4fe90b",
+      "license": "CC-BY-4.0",
+      "origin": "Original placement, collision and entrance settings for the coordinated Cascade and Volcanology review, with source asset hashes."
+    },
+    "assets/exterior-refinement/cascade-hall-massing-review-2026-11-23.glb": {
+      "bytes": 517132,
+      "sha256": "298fe24753daed63e6693d5be2c1d02fc7e65e98d1355e19fab820538fe9d349",
+      "license": "CC-BY-4.0",
+      "origin": "Original modeled Cascade Hall exterior candidate based on linked Oregon orthophotography, NOAA elevation returns and the UO campus map. Includes original geometry and vertex colors; no source imagery, point cloud or third-party model is embedded. Local review asset."
+    },
+    "assets/exterior-refinement/ford-alumni-massing-review-2026-11-23.glb": {
+      "bytes": 86040,
+      "sha256": "bd582d49cf70e1595dce86af328f1979950380602c825c0e1ac639baeafb1524",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior massing review candidate traced from public-domain USDA NAIP June 2024, with linked study references and no embedded imagery. Isolated from runtime."
+    },
+    "assets/exterior-refinement/matthew-knight-arena-massing-review-2026-11-23.glb": {
+      "bytes": 306820,
+      "sha256": "367a36d9d041d809f04003c93f99c2ae0867d9926972d7784854162f7e5689a0",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior massing review candidate traced from public-domain USDA NAIP June 2024, with linked study references and no embedded imagery. Isolated from runtime."
+    },
+    "apps/web-preview/public/scene/ford-arena-review/ford-alumni-site.glb": {
+      "bytes": 416932,
+      "sha256": "46cee749f2b489793fd5763eb88e52fb29a225697349d5fad37ec16a90cb30be",
+      "license": "CC-BY-4.0",
+      "origin": "Original Ford/Arena development-scene exterior geometry and site metadata interpreted from linked drawings and photographs, situated on the 2023 DOGAMI grade. No third-party mesh or imagery embedded."
+    },
+    "apps/web-preview/public/scene/ford-arena-review/matthew-knight-arena-site.glb": {
+      "bytes": 676704,
+      "sha256": "13117fd65aab6047443e72b311b6c8b6976cbc8dc302ef7e21c07eba12b38186",
+      "license": "CC-BY-4.0",
+      "origin": "Original Ford/Arena development-scene exterior geometry and site metadata interpreted from linked drawings and photographs, situated on the 2023 DOGAMI grade. No third-party mesh or imagery embedded."
+    },
+    "apps/web-preview/public/scene/ford-arena-review/frontage-ground.glb": {
+      "bytes": 766452,
+      "sha256": "76652306e93b46e11e5dd6f8d994d00614479eee5290c29fa60aae27df1bb2c8",
+      "license": "CC-BY-4.0",
+      "origin": "Original terrain-draped paving, modeled stair treads and rails, and low walls and planted beds interpreted from public architect photos and 2024 Oregon orthophotography."
+    },
+    "apps/web-preview/public/scene/ford-arena-review/site.json": {
+      "bytes": 20989,
+      "sha256": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+      "license": "CC-BY-4.0",
+      "origin": "Original Ford/Arena development-scene exterior geometry and site metadata interpreted from linked drawings and photographs, situated on the 2023 DOGAMI grade. No third-party mesh or imagery embedded."
     },
     "assets/exterior-refinement/ford-alumni-detail-2026-11-04.blend": {
       "bytes": 765240,
@@ -1450,6 +1516,648 @@
       "sha256": "90ebcc700a8809c30242066f3f8877344f53c6e7cf8d56e726e7c5c704d5573d",
       "license": "CC-BY-4.0",
       "origin": "Original Chapman overlay with shallow west frieze and retained illustrative shrubs; no source image pixels. Exact source/export-reimport evidence adjacent."
+    },
+    "apps/web-preview/public/scene/athletic-exterior-review/site.glb": {
+      "bytes": 3220600,
+      "sha256": "96d66bbde7a44bbcb2e0aa7551cb20ffee9ef8ef56612bc021acdf5d9356db2c",
+      "license": "CC-BY-4.0",
+      "origin": "Original McArthur Court, Esslinger Hall and Student Recreation Center exterior and approach geometry. Interpreted from linked surveys, orthophotography, historic elevation returns and project photography. No source photos, drawings, points, artwork or meshes are embedded."
+    },
+    "apps/web-preview/public/scene/athletic-exterior-review/site.json": {
+      "bytes": 4626,
+      "sha256": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680",
+      "license": "CC-BY-4.0",
+      "origin": "Original athletic block placement, collision, entry and tree correction settings with pinned source hashes."
+    },
+    "apps/web-preview/public/scene/context-roof-refinements.json": {
+      "bytes": 2206670,
+      "sha256": "226430ae1441939e8dad07e0d3a7eeafbd8139c18e4879605935d6f19199fd77",
+      "license": "CC-BY-4.0",
+      "origin": "Original context roof, wall and courtyard geometry with source triangle ranges. Historical lidar and image references are not bundled."
+    },
+    "apps/web-preview/public/scene/pilot-green-tree-clearance.json": {
+      "bytes": 2233,
+      "sha256": "18ab4ca37f851444c4a0845f5734cdb277e6ddd7de89dd4697f9fb1950fe2068",
+      "license": "CC-BY-4.0",
+      "origin": "Original pilot planting triangle spans for aerial-reviewed removal of 24 trees and three paired shrubs. Reference orthophoto remains outside the runtime."
+    },
+    "apps/web-preview/public/scene/emu-green-review/site.glb": {
+      "bytes": 2569380,
+      "sha256": "327eedcee5ec9f06d46455b98b82017fb31f4dafdf06b40fc0e8bca6c2c7b684",
+      "license": "CC-BY-4.0",
+      "origin": "Original EMU exterior, roof and terrain-draped lawn and pavement geometry. Interpreted from registered current imagery and completed-project photographs with historic elevations. Contains no third-party photos or drawings."
+    },
+    "apps/web-preview/public/scene/emu-green-review/site.json": {
+      "bytes": 2367,
+      "sha256": "a0425a77fc88fb9310561c0da8a8901bace5b33aa92fb4fae3fd3806af5e8bc9",
+      "license": "CC-BY-4.0",
+      "origin": "Original runtime geometry descriptor, collision footprint and doors with hash pins for the EMU Green exterior review."
+    },
+    "apps/web-preview/public/scene/frohnmayer-exterior-review/site.glb": {
+      "bytes": 982056,
+      "sha256": "977517831ca5bab81df733063037be32930467cedfc18059f1c0c00ce98bc3cb",
+      "license": "CC-BY-4.0",
+      "origin": "Original Frohnmayer multi-wing exterior, courtyard lawns and walkway geometry, authored from registered aerial, historical height and documentary exterior evidence. No source photos, plans or textures bundled."
+    },
+    "apps/web-preview/public/scene/frohnmayer-exterior-review/site.json": {
+      "bytes": 2458,
+      "sha256": "7777246ecc92b44279e0db365b8a9be32eafe36cfbde5e0b96efacfcb27af7ba",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Frohnmayer scene descriptor, including authored gate approaches and batch slots for superseded geometry."
+    },
+    "apps/web-preview/public/scene/registered-pilot-trees.json": {
+      "bytes": 8059,
+      "sha256": "df69c8dbc9973bce19aacf537c97490f324cd55d3a82d9dcfff0283265b4ddcf",
+      "license": "CC-BY-4.0",
+      "origin": "Original vertex ranges and geometric fits derived from the UO CampusTrees inventory and 2024 Oregon imagery. Source inventory and images remain outside the runtime."
+    },
+    "apps/web-preview/public/scene/knight-library-review/site.glb": {
+      "bytes": 856824,
+      "sha256": "25596935d9c6aa8622e7c6be7d67635752b79daaf9c7875fcfc35c5287e78d3c",
+      "license": "CC-BY-4.0",
+      "origin": "Original Knight Library exterior registered to UO 018. Includes registered contributors’ north-facade detail and original 1994 wing reconstruction. No source photos, drawings or point cloud bundled."
+    },
+    "apps/web-preview/public/scene/knight-library-review/site.json": {
+      "bytes": 2186,
+      "sha256": "65983f043cf10a13f2fe5169aba754e8b28a70022c46dcfa66c5d879b1070598",
+      "license": "CC-BY-4.0",
+      "origin": "Original site and entrance placement metadata for the Knight Library local exterior preview."
+    },
+    "apps/web-preview/public/scene/museum-exterior-review/site.glb": {
+      "bytes": 1031168,
+      "sha256": "c22a94e235b12748e1dffc689f44b73118918c041d9b2cd4e91da5ce79ca9a63",
+      "license": "CC-BY-4.0",
+      "origin": "Original museum exterior, courtyard details and approach geometry. UO map, aerial imagery, lidar and documentary photos were used as references. No source photos, plans or textures bundled."
+    },
+    "apps/web-preview/public/scene/museum-exterior-review/site.json": {
+      "bytes": 1134,
+      "sha256": "3e7b09f724c322875f975df5ecf636ddb162ac875ea6f7c30f14a71dcd76823f",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned museum descriptor, with exterior footprint, courtyard wall collision and west approach."
+    },
+    "apps/web-preview/public/scene/gerlinger-site-review/site.glb": {
+      "bytes": 2751920,
+      "sha256": "aa33d00d381f690c7bea3bcf8b740186d707950d0d9bc89cbd2cbb59cdb810c2",
+      "license": "CC-BY-4.0",
+      "origin": "Original Gerlinger Hall and Annex architectural exteriors, concrete breezeway and paved approaches. UO maps, aerial imagery, historical lidar and the historic assessments served as references."
+    },
+    "apps/web-preview/public/scene/gerlinger-site-review/site.json": {
+      "bytes": 2193,
+      "sha256": "259b3c2533181e8363e7fc0490721950b0b7e0a739ae54dba9ca6fc98de6dad8",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Gerlinger Hall and Annex scene descriptor, with separate IDs, footprints, structural obstacles and approach coordinates."
+    },
+    "apps/web-preview/public/scene/womens-quad-review/site.glb": {
+      "bytes": 4347964,
+      "sha256": "90bf426d2411fef62db8464e9116196f8a7fe1d9eb4c540417e05c45a20594d9",
+      "license": "CC-BY-4.0",
+      "origin": "Original campus-registered Hendricks and Susan Campbell exterior and approach geometry. Campus maps, OSIP aerial imagery, lidar and historic assessments served as references."
+    },
+    "apps/web-preview/public/scene/womens-quad-review/site.json": {
+      "bytes": 2262,
+      "sha256": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned descriptor for the two models and one historical Hendricks batch slot."
+    },
+    "apps/web-preview/public/scene/memorial-quad-review/site.glb": {
+      "bytes": 7007944,
+      "sha256": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
+      "license": "CC-BY-4.0",
+      "origin": "Original Memorial Quad exterior and approach geometry for Chapman and Condon Hall, including stepped parapets, entrances and Condon’s 1967 south wing."
+    },
+    "apps/web-preview/public/scene/memorial-quad-review/site.json": {
+      "bytes": 2042,
+      "sha256": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned runtime descriptor for Chapman and Condon, including registered footprints and stair approach collision."
+    },
+    "apps/web-preview/public/scene/fenton-site-review/site.glb": {
+      "bytes": 3167764,
+      "sha256": "9fc92408b7e3080f3f3d6e19290565cfb9c3b130879cbe4a8a17fe45b02bd33f",
+      "license": "CC-BY-4.0",
+      "origin": "Original Fenton Hall exterior and approaches, with hipped metal roof, east entrance, tower and western stacks."
+    },
+    "apps/web-preview/public/scene/fenton-site-review/site.json": {
+      "bytes": 1720,
+      "sha256": "129ab481cc704b63ba1867a3c5451741bc61f47d08c548d81626d34dd767c96f",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Fenton Hall site descriptor, including the campus footprint, steps, planter collision and two entrances."
+    },
+    "apps/web-preview/public/scene/heritage-core-review/site.glb": {
+      "bytes": 4385120,
+      "sha256": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
+      "license": "CC-BY-4.0",
+      "origin": "Original University and Villard Hall exteriors with roof, masonry, stair and theater-joint geometry."
+    },
+    "apps/web-preview/public/scene/heritage-core-review/site.json": {
+      "bytes": 3420,
+      "sha256": "6115a399b3088f1e38edc4d71a8f64c95286d04e1b52d51a3d30a884e64e988d",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Heritage Core site descriptor with individual hall footprints, entrances and modeled site collision."
+    },
+    "apps/web-preview/public/scene/heritage-miller-review/site.glb": {
+      "bytes": 5169828,
+      "sha256": "8d17cb6a60ef4110b1f6f9920e0711dd908158d340ce06234489b91556719f1f",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered Miller Theatre Complex, University and Villard Hall exterior geometry and site approaches."
+    },
+    "apps/web-preview/public/scene/heritage-miller-review/site.json": {
+      "bytes": 4553,
+      "sha256": "e0f08268d3162a48998d1e2d72a727d164daeabb1fee40116a29ab9cc290fd1e",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Heritage Core and Miller Theatre descriptor with registered footprints, gate positions and site collision."
+    },
+    "apps/web-preview/public/scene/allen-site-review/site.glb": {
+      "bytes": 2029528,
+      "sha256": "3612159d9bdcf1bbe550e1d05d8b541adbfd1e499b4b82dd4eb5909504ce382b",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered Allen Hall exterior, roof volumes, curtain walls and site approaches."
+    },
+    "apps/web-preview/public/scene/allen-site-review/site.json": {
+      "bytes": 1931,
+      "sha256": "7b649674dbd9d74699f202feaf669253a7690878136589d5b316c8c9650935ba",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned Allen Hall site descriptor with registered outline, entrances and retaining-wall collision."
+    },
+    "apps/web-preview/public/scene/lawrence-science-review/site.glb": {
+      "bytes": 14606176,
+      "sha256": "a39df016f8326df02eed41b68187108ebff4ac1e8590dad2750db9028efccce4",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered Lawrence, Pacific and Columbia Hall exterior geometry and site approaches."
+    },
+    "apps/web-preview/public/scene/lawrence-science-review/site.json": {
+      "bytes": 4094,
+      "sha256": "d30fdbf3d7e56f890de4519661b8365a4f4a2e7f8cf4d75ca6c151bfff4e49f5",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned science complex site descriptor with identity moves, entrance and ground collision records."
+    },
+    "apps/web-preview/public/scene/straub-earl-review/site.glb": {
+      "bytes": 17306336,
+      "sha256": "a3ba4c228451c17fd85f2d865aed398d7b2a88e22417e87c5063a213be6b4573",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered Straub and Earl exterior geometry and modeled approaches."
+    },
+    "apps/web-preview/public/scene/straub-earl-review/site.json": {
+      "bytes": 3991,
+      "sha256": "a1d4cfe11f8e2155815d63784accb9bb848563c659281b5d6469d60951ee1ec4",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned site descriptor with two canonical buildings, four entrance records and two historical batch references."
+    },
+    "apps/web-preview/public/scene/kalapuya-review/site.glb": {
+      "bytes": 7043052,
+      "sha256": "c4c552be68d4e58ccc7dd892e8182299a548fe0a70261403f4b03c391f5d9522",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered Kalapuya Ilihi exterior, entrances, paving and reconstructed road intersection slivers."
+    },
+    "apps/web-preview/public/scene/kalapuya-review/site.json": {
+      "bytes": 4195,
+      "sha256": "add89f7ac3f1ac40d8f725010dbb76ef0a9d66273996dc61d48535c6a42c5cfb",
+      "license": "CC-BY-4.0",
+      "origin": "Original source-pinned site descriptor, registered building identity, preserved batch ranges and scoped road and route edits."
+    },
+    "apps/web-preview/public/scene/longhouse-review/site.glb": {
+      "bytes": 555212,
+      "sha256": "47bfb75c387e44b71e30ef9fde845ff46d3f2aa502298c6b57663fcc5ee31a86",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered exterior and approach geometry for Many Nations Longhouse."
+    },
+    "apps/web-preview/public/scene/longhouse-review/site.json": {
+      "bytes": 1163,
+      "sha256": "48758f603bf7ff174c7a92ce689425dfd1bc4ee8af04187ec9b1b62de530e15b",
+      "license": "CC-BY-4.0",
+      "origin": "Many Nations Longhouse placement, roof and entry metadata with source and model pins."
+    },
+    "apps/web-preview/public/scene/global-scholars-review/site.glb": {
+      "bytes": 4363508,
+      "sha256": "156097e3852fc30b4adb382b1a1f34821de069b39eadbbf11b41952fa4f53a2c",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior, outdoor shelter and approach geometry for Global Scholars Hall."
+    },
+    "apps/web-preview/public/scene/global-scholars-review/site.json": {
+      "bytes": 3791,
+      "sha256": "4ab317688ae7fe36e1219a53503f325698bfb968a1e2e2e7ec2f3d05e68bd128",
+      "license": "CC-BY-4.0",
+      "origin": "Global Scholars Hall registration, entry, collision and asset pins."
+    },
+    "apps/web-preview/public/scene/moss-street-review/site.glb": {
+      "bytes": 1500260,
+      "sha256": "a1fac5cc9107671dffedc24acadd41cf35733cd91af533b20bcd5d806b5bbc2c",
+      "license": "CC-BY-4.0",
+      "origin": "Original facility exterior, courtyard surfaces and registered water oak."
+    },
+    "apps/web-preview/public/scene/moss-street-review/site.json": {
+      "bytes": 4001,
+      "sha256": "e3873ba5254dfa9c8332116be0c842efc75386d57c134ced8bcfc2c815d59557",
+      "license": "CC-BY-4.0",
+      "origin": "Moss Street registration, building batch replacements, entry and asset pins."
+    },
+    "apps/web-preview/public/scene/vivian-olum-review/site.glb": {
+      "bytes": 1055540,
+      "sha256": "f973ab7d97f9c3a929357053431874d28ed76a411e1db63ed3bde2548b6aa905",
+      "license": "CC-BY-4.0",
+      "origin": "Original exteriors and approaches for Vivian Olum main building and annex."
+    },
+    "apps/web-preview/public/scene/vivian-olum-review/site.json": {
+      "bytes": 3349,
+      "sha256": "eb6bc21f30da0dafb4535c8ac276c55487bcefe867c731a9321301fbc8bce85d",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Vivian Olum outlines, approaches and source-mesh pins."
+    },
+    "apps/web-preview/public/scene/graduate-village-review/site.glb": {
+      "bytes": 4213120,
+      "sha256": "1264bb13a99b41d37832bcb1ad587b78d826823d80ca8a2fbcdd0afeb08ec3ca",
+      "license": "CC-BY-4.0",
+      "origin": "Original exteriors and approaches for East Campus Graduate Village West and East."
+    },
+    "apps/web-preview/public/scene/graduate-village-review/site.json": {
+      "bytes": 3323,
+      "sha256": "6b8a94b316c47200ed7dc127b63391d8648f08e083c14aee13701a0bea5728b4",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Graduate Village outlines, approaches and source-mesh pins."
+    },
+    "apps/web-preview/public/scene/knight-law-review/site.glb": {
+      "bytes": 4959344,
+      "sha256": "60c8a0c0e10d9952b337a4ef63a293b5586a0e5667e2d200936a991074078879",
+      "license": "CC-BY-4.0",
+      "origin": "Original Knight Law Center exterior, courtyard and approaches."
+    },
+    "apps/web-preview/public/scene/knight-law-review/site.json": {
+      "bytes": 2858,
+      "sha256": "a76ca721c1fe0de2a93461ea9844f4ff46bd08228b79b218b1223d77c8b23a06",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Knight Law Center outline, three approaches and source pins."
+    },
+    "apps/web-preview/public/scene/bean-unthank-review/site.glb": {
+      "bytes": 8220404,
+      "sha256": "6f1929c3598e2362b03e1e5b47eae79506e3bfff495847361c5532a3ca2f5475",
+      "license": "CC-BY-4.0",
+      "origin": "Original paired Bean and Unthank Hall exteriors, courts and approaches."
+    },
+    "apps/web-preview/public/scene/bean-unthank-review/site.json": {
+      "bytes": 3413,
+      "sha256": "016f11e1ad32ff5a0991294ac097b36eed19961fcb2e4cbae2fbc688c2d650e1",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Bean and Unthank outlines, six approaches and source pins."
+    },
+    "apps/web-preview/public/scene/cedar-yasui-review/site.glb": {
+      "bytes": 6217308,
+      "sha256": "80148117ff6971b2aee8898e57534406b3b1c8bcdfcaab5dd1ef297e2fde53b0",
+      "license": "CC-BY-4.0",
+      "origin": "Original Cedar and Yasui exteriors, courtyard pavilion, paths and trees."
+    },
+    "apps/web-preview/public/scene/cedar-yasui-review/site.json": {
+      "bytes": 5399,
+      "sha256": "d44b44a57a17e3d50b99847b360f25711c8479297570ebc9f0ba9f690b2d141b",
+      "license": "CC-BY-4.0",
+      "origin": "Registered exterior and ground footprints, entrances and three pinned Walton mesh omissions."
+    },
+    "apps/web-preview/public/scene/carson-llc-review/site.glb": {
+      "bytes": 5744832,
+      "sha256": "3fc20573481e9d3c890387b985d39edd6529e1b9e3d3fda3cbc4c0edc64d01a0",
+      "license": "CC-BY-4.0",
+      "origin": "Original Carson Hall and Living-Learning Center exteriors, stairs, courtyards and paths."
+    },
+    "apps/web-preview/public/scene/carson-llc-review/site.json": {
+      "bytes": 5310,
+      "sha256": "2b2d00e6ad1829a693f87adcacc5733e220578382e461d2b7fbeb1ade022ef97",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Carson Hall and Living-Learning Center exterior and ground footprints and entrances."
+    },
+    "apps/web-preview/public/scene/oregon-jaqua-review/site.glb": {
+      "bytes": 4725984,
+      "sha256": "c44ee416cce4d60b08ebc6a2ec9157f938568bf92550e20a91c47d6b890254a0",
+      "license": "CC-BY-4.0",
+      "origin": "Original Oregon Hall and Jaqua exteriors, entry arcades, terraces, reflecting pool and paths."
+    },
+    "apps/web-preview/public/scene/oregon-jaqua-review/site.json": {
+      "bytes": 3972,
+      "sha256": "b3bb7c92d108d07583498712ff4d0c1d5ca61f0f4203f93d5391ad14917dc279",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Oregon Hall and Jaqua exterior and ground footprints, entrances, and one pinned context tree omission."
+    },
+    "apps/web-preview/public/scene/lillis-complex-review/site.glb": {
+      "bytes": 6532272,
+      "sha256": "9215892a4e3353676a98393e744eb69abad9de401ca82a3e00f6da0e2dc518ff",
+      "license": "CC-BY-4.0",
+      "origin": "Original exteriors and courtyard for Lillis Hall, Chiles, Anstett, Peterson and Computing Center."
+    },
+    "apps/web-preview/public/scene/lillis-complex-review/site.json": {
+      "bytes": 8440,
+      "sha256": "d3f48e289718256277134eb6f0786eb71c4e2a23e0b1c1e1b7f1b6c890064279",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Lillis complex and Computing Center footprints, nine entrances and a pinned duplicate roof range."
+    },
+    "apps/web-preview/public/scene/friendly-collier-mckenzie-review/site.glb": {
+      "bytes": 7376448,
+      "sha256": "631d8829816dc162cff39aa2852f7869d24f904be6d1b3614aefd74152745128",
+      "license": "CC-BY-4.0",
+      "origin": "Original exteriors, porches, steps and sunken courtyard for Friendly Hall, Collier House and McKenzie Hall."
+    },
+    "apps/web-preview/public/scene/friendly-collier-mckenzie-review/site.json": {
+      "bytes": 10636,
+      "sha256": "f5c7bc5b818058584c646022c7103dea2d9a0a9320bc061edc46f11e37800f4c",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Friendly, Collier and McKenzie roof and ground footprints, eight entrances and terrain anchors."
+    },
+    "apps/web-preview/public/scene/plc-lokey-tykeson-review/site.glb": {
+      "bytes": 7072768,
+      "sha256": "b3501df08fb4a64a07818b8009b7c5618dd51116e18b31be9501a8d488f1bfd8",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered PLC, Lokey Education A/B and C, and Tykeson Hall exteriors with steps, courts and terraces."
+    },
+    "apps/web-preview/public/scene/plc-lokey-tykeson-review/site.json": {
+      "bytes": 18568,
+      "sha256": "c0884ac85424815bd3209e2e3964ddc040ee49e6e3bac526bf360afd5cff2485",
+      "license": "CC-BY-4.0",
+      "origin": "Registered PLC, Lokey Education and Tykeson plans, thirteen entrances and anchored source batch ranges."
+    },
+    "apps/web-preview/public/scene/northeast-science-review/site.glb": {
+      "bytes": 9109060,
+      "sha256": "50e875b1b427c2d8e47dc9a42c316f0cde2cf0d0a4063f6ce0185af5a3e9502e",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered northeast science exteriors with graded courts, approaches and the Onyx Bridge underpass."
+    },
+    "apps/web-preview/public/scene/northeast-science-review/site.json": {
+      "bytes": 13572,
+      "sha256": "a11a830eed3b0fec81a6c87e64f14f7f1076368b8e62ba602f2b2c32d2701dd7",
+      "license": "CC-BY-4.0",
+      "origin": "Registered northeast science plans, fifteen entrances and anchored source batch ranges."
+    },
+    "apps/web-preview/public/scene/knight-campus-review/site.glb": {
+      "bytes": 3884900,
+      "sha256": "749cff66572bb431d3d1249fdb846b0df2515c0d20491689e2376cc006e337b6",
+      "license": "CC-BY-4.0",
+      "origin": "Original registered Knight Campus exteriors, folded screens, terraces, public approaches and two elevated spans."
+    },
+    "apps/web-preview/public/scene/knight-campus-review/site.json": {
+      "bytes": 5788,
+      "sha256": "44b17abfde67ec823c6081a9b9ef236be5050a7756c36ded594b9da728a6b1ac",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Knight Campus exteriors, six public approaches and an anchored obsolete source mesh range."
+    },
+    "apps/web-preview/public/scene/northsite-millrace-review/site.glb": {
+      "bytes": 2793196,
+      "sha256": "ccf406a8748e953f5f02fc210acbe401a3a116ffba0721972de5b7db8d84e6c6",
+      "license": "CC-BY-4.0",
+      "origin": "Original Fine Arts Studios, separate roof and supports of the kiln shelter, and 1600 Millrace Drive exteriors."
+    },
+    "apps/web-preview/public/scene/northsite-millrace-review/site.json": {
+      "bytes": 7311,
+      "sha256": "5e81d63d1d3c03cc4c20af7e09586c68407fae1ea0023447c0cddf75c5161284",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Northsite and Millrace exteriors, six approaches, and four pinned original building spans."
+    },
+    "apps/web-preview/public/scene/public-building-exterior-review/site.glb": {
+      "bytes": 2567592,
+      "sha256": "650c722ef0debfd4cc9c4424d5689596ec864c91e0a96a51e140fb6831110044",
+      "license": "CC-BY-4.0",
+      "origin": "Original Clinical Services, natural history museum, Outdoor Program Barn and Agate Hall exteriors."
+    },
+    "apps/web-preview/public/scene/public-building-exterior-review/site.json": {
+      "bytes": 10184,
+      "sha256": "3225fe95d21b0078a31cac339b996f75376b3aa30ef34a0dd993a0667d985ff9",
+      "license": "CC-BY-4.0",
+      "origin": "Registered selectable exterior IDs, six approaches and the pinned Agate Hall source range."
+    },
+    "apps/web-preview/public/scene/hayward-exterior-review/site.glb": {
+      "bytes": 3286144,
+      "sha256": "e6a92188ac4d3d2561c563b3df4f2e4f4128d282fc8ffa64545d127690bfc9b7",
+      "license": "CC-BY-4.0",
+      "origin": "Original Hayward Field exterior canopy, seating, track, tower and modeled approaches."
+    },
+    "apps/web-preview/public/scene/hayward-exterior-review/site.json": {
+      "bytes": 19058,
+      "sha256": "7940e7aa05c1ae316c373d57cd022cdc2ad553ee51c1b097772760858e5a6593",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Hayward Field exterior, original source span anchors and twenty context-tree records."
+    },
+    "apps/web-preview/public/scene/campus-frontage-review/site.glb": {
+      "bytes": 2881324,
+      "sha256": "61b9a364b46f530c7b9c7f0892eff102f8ed535acbf799dcec4d30e96b95cd81",
+      "license": "CC-BY-4.0",
+      "origin": "Original exteriors and approaches for University Health Services, Central Power Station, Riley Hall, Student Tennis Center and Alder Building."
+    },
+    "apps/web-preview/public/scene/campus-frontage-review/site.json": {
+      "bytes": 6156,
+      "sha256": "86e915ab85f7df842cfe5d950c83e69cdac57ecb8f77a18c59caeafba5635802",
+      "license": "CC-BY-4.0",
+      "origin": "Building registration and source batch anchors for five reviewed University of Oregon exteriors."
+    },
+    "apps/web-preview/public/scene/facilities-exterior-review/site.glb": {
+      "bytes": 2116192,
+      "sha256": "0f7bc7f22dfea7d8b80a731c29082049d8626242e09b14edf0aa89f61afacc3d",
+      "license": "CC-BY-4.0",
+      "origin": "Original exteriors and approaches for four University of Oregon facilities and the Romania Warehouse and Showroom."
+    },
+    "apps/web-preview/public/scene/facilities-exterior-review/site.json": {
+      "bytes": 5649,
+      "sha256": "05838ea24af4c39d5cf46908181e6f0cf6c510d7b262926ecce38a9e6c2c91f7",
+      "license": "CC-BY-4.0",
+      "origin": "Original campus identities, collision footprints, roof heights and source batch anchors for five University of Oregon building models."
+    },
+    "apps/web-preview/public/scene/office-exterior-review/site.json": {
+      "bytes": 5573,
+      "sha256": "84c7fc5fa4f839d97000f1af93c664e978214f9e20ca11d75792de16c7864df6",
+      "license": "CC-BY-4.0",
+      "origin": "Registered footprints, approaches and source-span anchors for five University of Oregon exteriors."
+    },
+    "apps/web-preview/public/scene/office-exterior-review/site.glb": {
+      "bytes": 2439696,
+      "sha256": "7317ee627060f11551783d25be5e9e40880b9cd233e50a26ab08c1382518bf3d",
+      "license": "CC-BY-4.0",
+      "origin": "Original UO Annex, Rainier, 1311 and 1715 Franklin and Business Operations Center exteriors and approaches."
+    },
+    "apps/web-preview/public/scene/residential-exterior-review/site.json": {
+      "bytes": 6949,
+      "sha256": "3c89e449af2a3d7b351adcbb9b7dbde2b6a16cb47d759c2f5337aeea24f05038",
+      "license": "CC-BY-4.0",
+      "origin": "Registered municipal addresses, approaches, collision and source anchors for five residential exteriors."
+    },
+    "apps/web-preview/public/scene/residential-exterior-review/site.glb": {
+      "bytes": 2904724,
+      "sha256": "a72b81352f488303df082215eb11650553e62f45d16f6852a4db7de66888baea",
+      "license": "CC-BY-4.0",
+      "origin": "Original Lewis, Clark, Student Manor, Royal Terrace and Coho North exterior geometry and approaches."
+    },
+    "apps/web-preview/public/scene/campus-neighbor-exterior-review/site.json": {
+      "bytes": 12232,
+      "sha256": "1c7f5745a1b3a519f0dfae11af85134330efcf91e7f05d155311eca861a3bf67",
+      "license": "CC-BY-4.0",
+      "origin": "Original identity, terrain and batch pins and registered approaches for seven buildings near the University of Oregon."
+    },
+    "apps/web-preview/public/scene/campus-neighbor-exterior-review/site.glb": {
+      "bytes": 3267168,
+      "sha256": "aed785544efd381724380239a2772ce3577db4e7e736afe0f8d279219a9ac4a6",
+      "license": "CC-BY-4.0",
+      "origin": "Original Coho South, Pi Kappa Alpha, Christus House, Newman Center, Hayward House, Aldersgate and The 1840 exteriors and approaches."
+    },
+    "apps/web-preview/public/scene/chapter-house-exterior-review/site.json": {
+      "bytes": 3451,
+      "sha256": "c1fb67161d029cc5cd8ef5cf998d209ee5b247d5381fee3d803a96fbd334078c",
+      "license": "CC-BY-4.0",
+      "origin": "Original independently registered footprints, entrances, model checksums and split source anchors."
+    },
+    "apps/web-preview/public/scene/chapter-house-exterior-review/site.glb": {
+      "bytes": 2179444,
+      "sha256": "fb8df65109e2b4b6c0fcca7d8806bccfbaa8001fc29fbf017ad0bb217de39655",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for Chi Omega House and Delta Delta Delta House."
+    },
+    "apps/web-preview/public/scene/villard-garden-exterior-review/site.json": {
+      "bytes": 7111,
+      "sha256": "8442cb7b8056840752825f0e1377f9a0a624389a186a4d5e69b0adf83502942f",
+      "license": "CC-BY-4.0",
+      "origin": "Original residential footprint, collision, entrance and split source registrations."
+    },
+    "apps/web-preview/public/scene/villard-garden-exterior-review/site.glb": {
+      "bytes": 2649748,
+      "sha256": "f6e0d3eb049aa1de46352e2edbdf601a0014d70c2d0b582c6e6a8c9a1176350a",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for four Villard Street houses and two Garden Avenue apartment buildings."
+    },
+    "apps/web-preview/public/scene/alder-millrace-exterior-review/site.json": {
+      "bytes": 5665,
+      "sha256": "6fcfd7443f6c0e5aa6c9c1eb9e434f67082420707bb5afa26c93e80343b1b9a5",
+      "license": "CC-BY-4.0",
+      "origin": "Original Alder and Millrace footprint, collision, entry and pinned source registrations."
+    },
+    "apps/web-preview/public/scene/alder-millrace-exterior-review/site.glb": {
+      "bytes": 2540308,
+      "sha256": "2885384151e6862553cedaee179f5fd10c716a6f5f4d18a57332bc3366588b3c",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry and entry approaches for Hess Apartments, Millrace Apartments and 1915 Alder Street."
+    },
+    "apps/web-preview/public/scene/east-campus-housing-exterior-review/site.json": {
+      "bytes": 7934,
+      "sha256": "9fd42b15c6e18cbbefb2f2fdce7b4da3894379eeb2000d7a45e80931422cebf6",
+      "license": "CC-BY-4.0",
+      "origin": "Original East Campus six-home registration, approach, collision and source mesh evidence."
+    },
+    "apps/web-preview/public/scene/east-campus-housing-exterior-review/site.glb": {
+      "bytes": 1788444,
+      "sha256": "d6374e8fd46ad10ede4bddfc71f197e272cf7c63f4fe9e8d966c09624b416359",
+      "license": "CC-BY-4.0",
+      "origin": "Six original individual East Campus housing exteriors including porches, roof junctions and a documented garage."
+    },
+    "apps/web-preview/public/scene/fairmount-boulevard-exterior-review/site.json": {
+      "bytes": 8492,
+      "sha256": "1f69e661c60923f16609789b7a3426c3c3ab516825239c6a09dfcf126926e284",
+      "license": "CC-BY-4.0",
+      "origin": "Original Fairmount Boulevard seven-home registration, approach, collision and pinned mesh ranges."
+    },
+    "apps/web-preview/public/scene/fairmount-boulevard-exterior-review/site.glb": {
+      "bytes": 2072200,
+      "sha256": "07952a95d1db92915f6c6e4d131ffba36ab9737b65edb9beaf79a84d031084fb",
+      "license": "CC-BY-4.0",
+      "origin": "Original house exteriors with fitted roof planes, differentiated street elevations and an open garage bay."
+    },
+    "apps/web-preview/public/scene/garden-avenue-exterior-review/site.json": {
+      "bytes": 5338,
+      "sha256": "8529178efcce0caa230d47c952e3b2a9550013ece2766e5bf45cfae115228412",
+      "license": "CC-BY-4.0",
+      "origin": "Original Garden Avenue registrations, separate walkable entries, collision outlines and pinned source ranges."
+    },
+    "apps/web-preview/public/scene/garden-avenue-exterior-review/site.glb": {
+      "bytes": 2565280,
+      "sha256": "b32528df8c7621461ade3d6267991a00980efe31919904852325d8717b079cd6",
+      "license": "CC-BY-4.0",
+      "origin": "Original Garden Avenue exterior meshes with fitted roofs, distinct elevations and two rooftop solar arrays."
+    },
+    "apps/web-preview/public/scene/villard-street-exterior-review/site.json": {
+      "bytes": 8716,
+      "sha256": "bfa60d4dec70de62f9ac8abc9e65bbbd61f66da4e63a64d8fc1632c55d21deb0",
+      "license": "CC-BY-4.0",
+      "origin": "Original Villard Street building, entrance, collision and source-range registrations."
+    },
+    "apps/web-preview/public/scene/villard-street-exterior-review/site.glb": {
+      "bytes": 1932620,
+      "sha256": "7ab655a8ae5c9d86886429de5b0000d55aaf4b20e6cc8359fc2410b0f7f2d94a",
+      "license": "CC-BY-4.0",
+      "origin": "Original Villard Street exteriors with distinct roof sections, wall finishes, stairs and framed porches."
+    },
+    "apps/web-preview/public/scene/bardell-avenue-exterior-review/site.json": {
+      "bytes": 10777,
+      "sha256": "bffc37f7236578ed289a04aaba08a1f4a6065c876095be431e9ba854f570e7e5",
+      "license": "CC-BY-4.0",
+      "origin": "Original Bardell Avenue building, entrance, collision and source-range registration."
+    },
+    "apps/web-preview/public/scene/bardell-avenue-exterior-review/site.glb": {
+      "bytes": 4052740,
+      "sha256": "189b3da4f95e0cc065a52de3e98a17a1d4e7e8cd3e07c31668044b412568a1fd",
+      "license": "CC-BY-4.0",
+      "origin": "Original Bardell Avenue buildings with fitted compound roof sections, porticoes and original facade details."
+    },
+    "apps/web-preview/public/scene/franklin-boulevard-exterior-review/site.json": {
+      "bytes": 6885,
+      "sha256": "5d383640e393efca8c63bde7bf2d934b3fed55bb52ea75e654019f8e7ae87f78",
+      "license": "CC-BY-4.0",
+      "origin": "Original Franklin Boulevard address, approaches, collision and source-range registration."
+    },
+    "apps/web-preview/public/scene/franklin-boulevard-exterior-review/site.glb": {
+      "bytes": 523244,
+      "sha256": "c87e3e84c7a2854b2152f4d1944f06b6939b0a98f471c74d8b6e1c7d7757ec2a",
+      "license": "CC-BY-4.0",
+      "origin": "Original Franklin Boulevard exterior geometry, roofs, storefronts and canopy supports."
+    },
+    "apps/web-preview/public/scene/franklin-complex-exterior-review/site.json": {
+      "bytes": 3676,
+      "sha256": "682004a23215c4c8d944d250e4eecba7b1ba8141bbb4fc3e510e25b0062070b6",
+      "license": "CC-BY-4.0",
+      "origin": "Original Womack Hall and Franklin retail site, multi-entry, collision and source-range registration."
+    },
+    "apps/web-preview/public/scene/franklin-complex-exterior-review/site.glb": {
+      "bytes": 2951812,
+      "sha256": "bfe9032e14895dd202e178bf9de00aa6835a17f2ef70bdbfea6306268ab74c4b",
+      "license": "CC-BY-4.0",
+      "origin": "Original Womack Hall roof, portico and facade, and Franklin retail roof and storefronts."
+    },
+    "apps/web-preview/public/scene/broadway-orchard-exterior-review/site.json": {
+      "bytes": 10881,
+      "sha256": "816779652e40c968026801192ea08cd85a537734b54113a8389a44016effe079",
+      "license": "CC-BY-4.0",
+      "origin": "Original Broadway and Orchard address, site, entrance, collision and source-range registration."
+    },
+    "apps/web-preview/public/scene/broadway-orchard-exterior-review/site.glb": {
+      "bytes": 1107332,
+      "sha256": "22aa9db8231bf6a5df6229b5fb3a480c240cc81ebb02f997edfca9ffaec73439",
+      "license": "CC-BY-4.0",
+      "origin": "Original Broadway and Orchard roofs, storefronts, housing, raised floor and courtyard surfaces."
+    },
+    "apps/web-preview/public/scene/fairmount-residential-exterior-review/site.json": {
+      "bytes": 8188,
+      "sha256": "f51b31f453b322fcf07b36ffd54aa2c7f99eba8af7b762c126147e71bb631cdb",
+      "license": "CC-BY-4.0",
+      "origin": "Fairmount registered addresses, entrances, collision and source-range descriptors."
+    },
+    "apps/web-preview/public/scene/fairmount-residential-exterior-review/site.glb": {
+      "bytes": 2270504,
+      "sha256": "4853e420b849eb8d0bdbd3cd958b39777383f9c14860607f33b0789287a96397",
+      "license": "CC-BY-4.0",
+      "origin": "Seven original Fairmount house exterior meshes and modeled outdoor approaches."
+    },
+    "apps/web-preview/public/scene/treated-roof-exterior-review/site.json": {
+      "bytes": 9650,
+      "sha256": "d4ef00f4c360678c03a92a43ef6beff01690448fa481b66f3d30b1e540cdc659",
+      "license": "CC-BY-4.0",
+      "origin": "Registered addresses, entrances, collision and source ranges for six L2 exteriors."
+    },
+    "apps/web-preview/public/scene/treated-roof-exterior-review/site.glb": {
+      "bytes": 1278248,
+      "sha256": "1a92d2d0d0e09125da938fd76e3e9977093c72b3dc003b1b2088c593d1b09d21",
+      "license": "CC-BY-4.0",
+      "origin": "Six original meshes for street-verified exteriors and their outdoor approaches."
+    },
+    "apps/web-preview/public/scene/hilyard-west-exterior-review/site.json": {
+      "bytes": 9761,
+      "sha256": "1ff6a5b2003222614bac836f84f8593cc6db72d2dd5160699509d9ef30b206f5",
+      "license": "CC-BY-4.0",
+      "origin": "Registered Hilyard and West University footprints, approaches and source ranges."
+    },
+    "apps/web-preview/public/scene/hilyard-west-exterior-review/site.glb": {
+      "bytes": 2130124,
+      "sha256": "f733e9f1866bc08083faff894a92a836e103f4ab31479f80317a1bb1d39de8d1",
+      "license": "CC-BY-4.0",
+      "origin": "Four original local exterior meshes with the Hilyard House courtyard and under-building parking."
     }
   },
   "additional_sources": [

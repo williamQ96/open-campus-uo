@@ -1,0 +1,366 @@
+{
+  "date": "2026-11-23",
+  "status": "Approximate exterior review geometry, positioned on 2024 Oregon orthophotography using the architect's site plan and public-facing exterior photographs.",
+  "references": {
+    "arena_architect": "https://tvaarchitects.com/project/matthew-knight-arena/",
+    "ford_architect": "https://tvaarchitects.com/project/ford-alumni-center/",
+    "ford_published_drawings": "https://www.archdaily.com/777731/alimni-center-tva-architects",
+    "ford_site_plan_sha256": "9e5a69911642fa20e936de8575adbdd1c9fa708a8f13ae379d9e6f79c5829bb1",
+    "ford_level_1_sha256": "16e79f4e58073e0911a19b042c20574fd78da4bfcb74d80f5ee0b0bd3b04b9b5",
+    "ford_section_a_sha256": "8a5452cd5d6a457fc8b665764ffabe677a92c2cc749f1ec6a7d2868efb7628fb",
+    "ford_section_b_sha256": "9f0abd49d4e10ce88694dae8b5e03bdd90efc5b8d48f1ec764e1a3e9cc94d4be",
+    "ford_section_c_sha256": "36199fa341395aa23bd1890822e7a9e1c129306bca3e96ed2e56fa75a715ed29",
+    "landscape_architect": "https://www.walkermacy.com/projects/uo-knight-arena-and-ford-alumni-center/",
+    "public_gates": "https://goducks.com/sports/2020/3/25/arena-accessibility-guide",
+    "site_plan_page": "https://www.arch2o.com/matthew-knight-arena-tva-architects/",
+    "published_elevations": "https://www.archdaily.com/471427/matthew-knight-arena-tva-architects",
+    "north_south_elevations_sha256": "e85689c650b7c36ebe045afcb838b717a263de24616bab21e9d2b3e8ea0c593b",
+    "east_west_elevations_sha256": "62d644e05b7633b169afb8ae78b464a0edbd5fb69209016ca972843b2df4589c",
+    "east_plaza_photo_sha256": "434691e233c5154fd852fd846079f7ea0fb3fc191692bf74e9625f42e49da172",
+    "public_gate_map": "https://business.uoregon.edu/sites/default/files/media/undergrad-commencement-map.pdf",
+    "site_plan_sha256": "de8abfa1acd87a1915e6751e32172cb1c09b2cb23b61e0591aaf0f939d28eb7c",
+    "orthophoto_sha256": "f8c0751e4f3b68f6854ef095ed3dcbd1fb621485ceab7ce48bcae37c58527c14",
+    "ford_shared_plaza_photo_sha256": "d4628a8382b3f55a3f4cd387a3481f85b0c9eb6f4f098090a2239e3ccd4ea6b3",
+    "arena_north_plaza_photo_sha256": "a7a23c33720697dda331ec3f5b850675d845cf1c1e7a6b05088928a9c2ad363d",
+    "north_rail_photo_sha256": "a7a23c33720697dda331ec3f5b850675d845cf1c1e7a6b05088928a9c2ad363d",
+    "east_rail_photo_sha256": "434691e233c5154fd852fd846079f7ea0fb3fc191692bf74e9625f42e49da172",
+    "ford_south_landscape_photo_sha256": "c64856bed4ab4c70902c070e152e784d2782c8ef5defe90d84fec2846087cfb5",
+    "ford_west_landscape_photo_sha256": "602eecb9b634edc18d931ba99736070c2536882b1318035639ede8bd94aac1d5"
+  },
+  "context-b0066": {
+    "gate": "plaza",
+    "facade_ends_enu_m": [
+      [
+        258.0,
+        -15.5
+      ],
+      [
+        274.5,
+        -58.5
+      ]
+    ],
+    "door_along_m": 10.35,
+    "door_width_m": 6.4,
+    "landing_depth_m": 3.6,
+    "door_leaf_count": 6
+  },
+  "ford_envelope": {
+    "reference_entry_local_z_m": 1.75,
+    "office_interfloor_m": 3.92,
+    "west_screen_ends_enu_m": [
+      [
+        247.25,
+        -66.5
+      ],
+      [
+        227.25,
+        -19.25
+      ]
+    ],
+    "south_louver_ends_enu_m": [
+      [
+        267.0,
+        -75.0
+      ],
+      [
+        253.0,
+        -80.75
+      ]
+    ],
+    "north_bay_ends_enu_m": [
+      [
+        227.25,
+        -19.25
+      ],
+      [
+        243.5,
+        -13.5
+      ]
+    ],
+    "north_atrium_ends_enu_m": [
+      [
+        245.1182,
+        -17.588
+      ],
+      [
+        248.75,
+        -16.25
+      ]
+    ],
+    "east_secondary_door_along_m": 24.74,
+    "garden_enu_m": [
+      [
+        236.047,
+        -74.213
+      ],
+      [
+        244.575,
+        -70.435
+      ],
+      [
+        256.704,
+        -95.836
+      ],
+      [
+        236.188,
+        -105.417
+      ]
+    ],
+    "terrace_enu_m": [
+      [
+        256.265,
+        -81.286
+      ],
+      [
+        269.871,
+        -76.074
+      ],
+      [
+        276.27,
+        -91.885
+      ],
+      [
+        257.915,
+        -98.84
+      ]
+    ]
+  },
+  "context-b0074": {
+    "gate": "north",
+    "facade_ends_enu_m": [
+      [
+        285.75,
+        -42.5
+      ],
+      [
+        320.25,
+        -28.75
+      ]
+    ],
+    "door_along_m": 17.1,
+    "door_width_m": 17.2,
+    "door_leaf_count": 10,
+    "landing_depth_m": 3.6,
+    "paved_apron_depth_m": 21.0,
+    "vestibule_depth_m": 17.0,
+    "stair_flights": [
+      {
+        "tread_count": 7,
+        "top_enu_m": [
+          [
+            297.0,
+            -35.25
+          ],
+          [
+            309.2,
+            -30.39
+          ]
+        ],
+        "run_m": 4.3
+      },
+      {
+        "tread_count": 5,
+        "top_enu_m": [
+          [
+            294.2,
+            -24.25
+          ],
+          [
+            306.4,
+            -19.39
+          ]
+        ],
+        "run_m": 3.4
+      }
+    ],
+    "other_frontages": [
+      {
+        "gate": "east",
+        "facade_ends_enu_m": [
+          [
+            423.4,
+            -31.3
+          ],
+          [
+            433.6,
+            -56.4
+          ]
+        ],
+        "door_along_m": 14.2,
+        "door_width_m": 12.8,
+        "door_leaf_count": 8,
+        "landing_depth_m": 3.6,
+        "paved_apron_depth_m": 20.5,
+        "vestibule_depth_m": 10.0,
+        "upper_glazing_height_m": 15.1,
+        "stair_flights": [
+          {
+            "tread_count": 8,
+            "top_enu_m": [
+              [
+                439.3,
+                -32.1
+              ],
+              [
+                445.9,
+                -48.34
+              ]
+            ],
+            "run_m": 5.2
+          }
+        ]
+      },
+      {
+        "gate": "west",
+        "facade_ends_enu_m": [
+          [
+            289.2,
+            -107.8
+          ],
+          [
+            280.4,
+            -84.0
+          ]
+        ],
+        "door_along_m": 13.1,
+        "door_width_m": 13.2,
+        "door_leaf_count": 8,
+        "landing_depth_m": 4.0,
+        "paved_apron_depth_m": 15.0,
+        "vestibule_depth_m": 7.0,
+        "upper_glazing_height_m": 15.1
+      }
+    ]
+  },
+  "arena_envelope": {
+    "practice_cut_enu_m": [
+      [
+        370.5,
+        -114.0
+      ],
+      [
+        426.25,
+        -80.0
+      ]
+    ],
+    "practice_roof_z_m": 15.0,
+    "practice_roof_monitors_enu_m": [
+      [
+        393.5,
+        -113.0
+      ],
+      [
+        433.5,
+        -97.8
+      ]
+    ],
+    "upper_roof_cap_tilt_m_per_east_m": -0.026,
+    "band_top_tilt_m_per_east_m": 0.032
+  },
+  "plaza_detail": {
+    "handrails": {
+      "fractions": [
+        0.055,
+        0.345,
+        0.655,
+        0.945
+      ],
+      "top_above_tread_m": 0.94,
+      "lower_above_tread_m": 0.69,
+      "rail_radius_m": 0.034,
+      "post_radius_m": 0.045,
+      "post_max_spacing_m": 1.55
+    },
+    "planters": [
+      {
+        "owner": "context-b0066",
+        "name": "Ford south terrace",
+        "outline_enu_m": [
+          [
+            260.15,
+            -92.1
+          ],
+          [
+            269.45,
+            -88.49
+          ],
+          [
+            271.22,
+            -92.08
+          ],
+          [
+            261.65,
+            -95.74
+          ]
+        ],
+        "wall_height_m": 0.45,
+        "row_bearing_deg": 20,
+        "row_pitch_m": 0.77
+      },
+      {
+        "owner": "context-b0074",
+        "name": "Arena north west bed",
+        "outline_enu_m": [
+          [
+            284.5,
+            -36.25
+          ],
+          [
+            294.05,
+            -32.38
+          ],
+          [
+            292.22,
+            -28.0
+          ],
+          [
+            282.65,
+            -32.0
+          ]
+        ],
+        "wall_height_m": 0.47,
+        "row_bearing_deg": 21,
+        "row_pitch_m": 0.83
+      },
+      {
+        "owner": "context-b0074",
+        "name": "Arena east south bed",
+        "outline_enu_m": [
+          [
+            451.35,
+            -45.15
+          ],
+          [
+            466.16,
+            -39.03
+          ],
+          [
+            465.0,
+            -35.92
+          ],
+          [
+            450.12,
+            -42.12
+          ]
+        ],
+        "wall_height_m": 0.42,
+        "row_bearing_deg": 22,
+        "row_pitch_m": 0.86
+      }
+    ],
+    "arena_north_accent": {
+      "ends_enu_m": [
+        [
+          311.4,
+          -31.3
+        ],
+        [
+          313.6,
+          -26.0
+        ]
+      ],
+      "height_m": 0.42,
+      "width_m": 0.16
+    }
+  }
+}

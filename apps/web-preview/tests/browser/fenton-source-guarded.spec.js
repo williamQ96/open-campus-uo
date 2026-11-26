@@ -34,7 +34,7 @@ test("Fenton guarded east elevation retains campus selection, entrances, collisi
         await r.fulfill({ response: res, json: j });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=fenton-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     const views = [];
@@ -64,7 +64,7 @@ test("Fenton guarded east elevation retains campus selection, entrances, collisi
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=fenton-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&
@@ -72,7 +72,11 @@ test("Fenton guarded east elevation retains campus selection, entrances, collisi
       );
       await page.waitForTimeout(500);
       await page.screenshot({
-        path: `../../docs/images/fenton-source-guarded-${label}-${before ? "before" : "after"}-2026-11-04.png`,
+        path: test
+          .info()
+          .outputPath(
+            `fenton-source-guarded-${label}-${before ? "before" : "after"}.png`,
+          ),
       });
       views.push(
         await page.evaluate(

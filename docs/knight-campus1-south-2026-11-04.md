@@ -1,5 +1,7 @@
 # Knight Campus Building 1: partial south facade — 2026-11-04
 
+The November 24 registered L2 model supersedes this study in the default preview. The schematic layer is available with the original fallback geometry. [Current exterior review](knight-campus-exterior-review-2026-11-24.md).
+
 [Ennead Architects](https://ennead.com/work/uo-knight/) describes two L-shaped volumes around a courtyard and a southern skin of folded glass. Its images were consulted only; their copyrights are separate, and no photographs or third-party geometry are bundled. Original schematic detail is CC BY 4.0.
 
 The project represents `context-oc-knight-1` as a 95 × 50 m approximate rectangular envelope, not a registered footprint. This approximation does not reproduce the two real L-shaped volumes, courtyard, bridge or accurate elevations. The 2D manifest also reports an overlap with unnamed `roof-a79ff330`; the overlay deliberately stops at model x=24 m, while that neighboring footprint begins at x=28 m. Neither object was moved, suppressed or renamed. That model-coordinate separation is not an on-site clearance survey.

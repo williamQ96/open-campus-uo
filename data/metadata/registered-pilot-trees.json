@@ -1,0 +1,200 @@
+{
+  "source_tree_input_sha256": "ea262a2dc98b77c22940b5f4928ba1ccf7ff37d5bf7947129684a6b24bd05254",
+  "inventory_observation_archive_sha256": "a235e89d256561ceef854fab3c7bc46118fcda039b9b32976a750d67c5329fbb",
+  "tree_service": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "trees": [
+    {
+      "index": 18,
+      "observed_tree_number": 802,
+      "label": "Japanese Maple",
+      "old_enu_m": [
+        -453.299,
+        -235.716
+      ],
+      "new_enu_m": [
+        -450.533,
+        -235.752
+      ],
+      "standing_height_m": 2.134,
+      "canopy_width_m": 2.438,
+      "note": "The model stem intersects Gerlinger Annex. The Japanese Maple inventory point is in the adjoining bed. Dimensions use the recorded observation.",
+      "aerial_url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493859.85028888186%2C4876676.566153052%2C493891.85028888186%2C4876708.566153052&bboxSR=3740&imageSR=3740&size=288%2C288&format=png&bandIds=0%2C1%2C2",
+      "aerial_sha256": "89a0640f59bd6f76043a972dc1ad2d7c0f87c1dd75dc55f13fa7aa4409eaac2e"
+    },
+    {
+      "index": 114,
+      "observed_tree_number": 4102,
+      "label": "Harlequin Glory-bower",
+      "old_enu_m": [
+        -598.329,
+        -321.727
+      ],
+      "new_enu_m": [
+        -601.86,
+        -321.9
+      ],
+      "standing_height_m": 2.44,
+      "canopy_width_m": 1.83,
+      "note": "Recorded small glory-bower in the garden southwest of the library.",
+      "aerial_sha256": "6f084330a3ac6a715363b375c4f74fa2c1158ad68bb3054c2bf1d7952a9d766b"
+    },
+    {
+      "index": 130,
+      "observed_tree_number": 6371,
+      "label": "River Birch",
+      "old_enu_m": [
+        -169.217,
+        -68.571
+      ],
+      "new_enu_m": [
+        -164.01,
+        -69.91
+      ],
+      "standing_height_m": 2.44,
+      "canopy_width_m": 1.22,
+      "note": "Nearest recorded birch in the eastern planting strip; the previous large stem stood at the paving edge.",
+      "aerial_sha256": "58e145ba19134491ec1c9a7796c8d35f0da044ed9b1e742c60f53bb9e1c5274c"
+    },
+    {
+      "index": 142,
+      "observed_tree_number": 6354,
+      "label": "American Elm",
+      "old_enu_m": [
+        -207.487,
+        -123.063
+      ],
+      "new_enu_m": [
+        -204.295,
+        -126.25
+      ],
+      "standing_height_m": 3.66,
+      "canopy_width_m": 1.83,
+      "note": "The mapped southern elm matches the small distinct crown at the end of the southeast planting bed.",
+      "aerial_sha256": "a9e556833bc07abfb43a1dae750b7992b98876624b8eb65f55241b9e9839a661"
+    },
+    {
+      "index": 171,
+      "observed_tree_number": 3967,
+      "label": "Shogetsu Oriental Cherry",
+      "old_enu_m": [
+        -583.507,
+        -324.022
+      ],
+      "new_enu_m": [
+        -586.352,
+        -325.635
+      ],
+      "standing_height_m": 6.1,
+      "canopy_width_m": 4.57,
+      "note": "The public inventory and aerial identify the ornamental cherry southwest of the library tower. A separately registered magnolia lies farther west.",
+      "aerial_sha256": "0757eb0024f1b1b8780859f5c8fc891e0bbd3bca8df3882f00f34394d55908fb"
+    },
+    {
+      "index": 175,
+      "observed_tree_number": 3421,
+      "label": "Portugese Cherry Laurel",
+      "old_enu_m": [
+        -505.419,
+        -229.384
+      ],
+      "new_enu_m": [
+        -504.05,
+        -227.86
+      ],
+      "standing_height_m": 1.22,
+      "canopy_width_m": 1.83,
+      "note": "This small evergreen in the east planting row accounts for a green patch just east of the old stem.",
+      "aerial_sha256": "6fff9b7f5bd6be0b201f7d5c468dd41035901b58ed80e3d77ce0121c0fc15c86"
+    },
+    {
+      "index": 177,
+      "observed_tree_number": 6353,
+      "label": "American Elm",
+      "old_enu_m": [
+        -204.4,
+        -113.644
+      ],
+      "new_enu_m": [
+        -205.526,
+        -113.374
+      ],
+      "standing_height_m": 3.658,
+      "canopy_width_m": 1.829,
+      "note": "The mapped elm corresponds to the next crown north of the previously registered EMU elm 6354. Dimensions use the recorded observation.",
+      "aerial_url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494108.74928888184%2C4876798.638153052%2C494140.74928888184%2C4876830.638153052&bboxSR=3740&imageSR=3740&size=288%2C288&format=png&bandIds=0%2C1%2C2",
+      "aerial_sha256": "6504455d1cfc78f9e2b26f52848710769c9b6051061153b39971bb6382d1bf5f"
+    },
+    {
+      "index": 209,
+      "observed_tree_number": 6370,
+      "label": "River Birch",
+      "old_enu_m": [
+        -159.097,
+        -67.41
+      ],
+      "new_enu_m": [
+        -161.294,
+        -67.922
+      ],
+      "standing_height_m": 2.44,
+      "canopy_width_m": 1.22,
+      "note": "The mapped southwestern birch falls inside the pilot crown in the documented row outside the solar shoulder.",
+      "aerial_sha256": "15e89bb0b6ea2fe35a6f64394804883852155e1980f5ea11f7ecb0ffff04b385"
+    },
+    {
+      "index": 254,
+      "observed_tree_number": 819,
+      "label": "Sugar Maple",
+      "old_enu_m": [
+        -508.146,
+        -281.141
+      ],
+      "new_enu_m": [
+        -505.18,
+        -277.88
+      ],
+      "standing_height_m": 7.32,
+      "canopy_width_m": 3.05,
+      "note": "Recorded sugar maple is the distinct small crown north of the dense east group.",
+      "aerial_sha256": "64deec5615ce238edd9cffd31a15ea7bb523e585f1a7011e7039132d486b6505"
+    },
+    {
+      "index": 262,
+      "observed_tree_number": 800,
+      "label": "Katsura Tree",
+      "old_enu_m": [
+        -448.765,
+        -228.79
+      ],
+      "new_enu_m": [
+        -446.948,
+        -232.439
+      ],
+      "standing_height_m": 12.192,
+      "canopy_width_m": 9.144,
+      "note": "The larger mapped Katsura aligns with the tall canopy northeast of the Annex, away from the maple bed. Dimensions use the recorded observation.",
+      "aerial_url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493864.38428888185%2C4876683.492153052%2C493896.38428888185%2C4876715.492153052&bboxSR=3740&imageSR=3740&size=288%2C288&format=png&bandIds=0%2C1%2C2",
+      "aerial_sha256": "9d864381451b939cf8d0ac5566879605731f25c860ed0c35c86e5568de511517"
+    },
+    {
+      "index": 272,
+      "observed_tree_number": 6446,
+      "label": "Cascara Buckthorn",
+      "old_enu_m": [
+        -398.762,
+        -195.284
+      ],
+      "new_enu_m": [
+        -393.75,
+        -197.64
+      ],
+      "standing_height_m": 2.44,
+      "canopy_width_m": 1.22,
+      "note": "The recorded cascara nearest the modeled stem fits the narrow planting band north of Gerlinger; mature walnut farther north is separate.",
+      "aerial_sha256": "675ddbf3b5973e7abadfa2d338807c9aee665dbf0052216e4cf78e90006da357"
+    }
+  ],
+  "source_presentation_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "current_inventory_export_sha256": "a235e89d256561ceef854fab3c7bc46118fcda039b9b32976a750d67c5329fbb"
+}

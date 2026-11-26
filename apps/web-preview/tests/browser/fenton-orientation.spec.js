@@ -8,7 +8,7 @@ test("Fenton correction retains selection and original building collision", asyn
     (url) => !["127.0.0.1", "localhost"].includes(url.hostname),
     (r) => r.abort(),
   );
-  await page.goto("/");
+  await page.goto("/?exterior-review=fenton-baseline");
   await page.waitForFunction(() => window.__campus?.getState().ready);
   await page
     .getByRole("combobox", { name: "Search buildings" })

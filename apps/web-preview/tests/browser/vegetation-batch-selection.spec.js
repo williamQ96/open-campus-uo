@@ -7,7 +7,7 @@ const source = readFileSync(
 const start = source.indexOf(
     "  // Adjacent original source-pinned shrub layers",
   ),
-  end = source.indexOf("  if (config.landcover_url)", start),
+  end = source.indexOf("  let contextRoofRefinements;", start),
   block = source.slice(start, end);
 test("adjacent shrub batching preserves all entrances and both building selections", async ({
   browser,
@@ -27,7 +27,7 @@ test("adjacent shrub batching preserves all entrances and both building selectio
       });
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
-    await page.goto("/");
+    await page.goto("/?exterior-review=heritage-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     entries.push(await page.evaluate(() => __campus.entranceInfo()));
     const search = page.getByRole("combobox", { name: "Search buildings" });
@@ -47,6 +47,6 @@ test("adjacent shrub batching preserves all entrances and both building selectio
     expect(errors).toEqual([]);
     await page.close();
   }
-  expect(entries[0]).toHaveLength(534);
+  expect(new Set(entries[0].map(({ id }) => id)).size).toBe(519);
   expect(entries[1]).toEqual(entries[0]);
 });

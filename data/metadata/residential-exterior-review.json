@@ -1,0 +1,235 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_roof_recipe_sha256": "226430ae1441939e8dad07e0d3a7eeafbd8139c18e4879605935d6f19199fd77",
+  "models": [
+    {
+      "id": "roof-5f1a5ce2",
+      "name": "The Lewis",
+      "street_address": "1414 E 18th Ave",
+      "kind": "lewis",
+      "wall_inset_m": 0.54,
+      "entrance_hints": [
+        {
+          "gate": "street-entry",
+          "near_enu_m": [
+            -43.1,
+            -623
+          ],
+          "outward_degrees": 0,
+          "landing_m": 2.7
+        }
+      ],
+      "state_feature": "20-1073475",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494270.14928888186%2C4876255.282153052%2C494304.14928888186%2C4876316.282153052&bboxSR=3740&imageSR=3740&size=306%2C549&format=png&bandIds=0%2C1%2C2",
+        "sha256": "95ffdd32e13d78f15bb3872f7839ab013b94d48d41fcc2ab061b9ff164b23f29"
+      },
+      "facade_sources": [
+        "https://www.thelewisandclarkapts.com/gallery",
+        "https://www.eugene-or.gov/AgendaCenter/ViewFile/Item/3?fileID=10"
+      ],
+      "facade_photo_references": [
+        {
+          "url": "https://ar.rdcpix.com/96c8d5b74c75eb2f65bb8337a384a8d2c-f1493064329od-w640_h480.jpg",
+          "sha256": "5a8a391faa9b1b62e4fdc8eb76c3a39234773c028f2ce4581d9e0fad9107c939"
+        },
+        {
+          "url": "https://ar.rdcpix.com/96c8d5b74c75eb2f65bb8337a384a8d2c-f3065162834s.jpg",
+          "sha256": "c6a0add7b9040f3e8e0be98f9df6fd879b86d0e3ca16653884988c24334d033d"
+        }
+      ]
+    },
+    {
+      "id": "roof-4cb05afd",
+      "name": "The Clark",
+      "street_address": "1424 E 18th Ave",
+      "kind": "clark",
+      "wall_inset_m": 1.05,
+      "entrance_hints": [
+        {
+          "gate": "street-entry",
+          "near_enu_m": [
+            -25.1,
+            -624
+          ],
+          "outward_degrees": 0,
+          "landing_m": 2.9
+        }
+      ],
+      "state_feature": "20-1073476",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494287.14928888186%2C4876255.282153052%2C494324.14928888186%2C4876316.282153052&bboxSR=3740&imageSR=3740&size=333%2C549&format=png&bandIds=0%2C1%2C2",
+        "sha256": "52a4aab4683d86cfa40daf6c266ac3d09d50d725d848cd41366309245975616a"
+      },
+      "facade_sources": [
+        "https://www.thelewisandclarkapts.com/gallery",
+        "https://www.eugene-or.gov/AgendaCenter/ViewFile/Item/3?fileID=10"
+      ],
+      "facade_photo_references": [
+        {
+          "url": "https://ar.rdcpix.com/96c8d5b74c75eb2f65bb8337a384a8d2c-f3065162834s.jpg",
+          "sha256": "c6a0add7b9040f3e8e0be98f9df6fd879b86d0e3ca16653884988c24334d033d"
+        }
+      ]
+    },
+    {
+      "id": "roof-175d8088",
+      "name": "Student Manor Apartments",
+      "street_address": "1442 E 18th Ave",
+      "kind": "manor",
+      "wall_inset_m": 0.42,
+      "entrance_hints": [
+        {
+          "gate": "street-entry",
+          "near_enu_m": [
+            -7.2,
+            -623
+          ],
+          "outward_degrees": 0,
+          "landing_m": 2.35
+        }
+      ],
+      "state_feature": "20-1073477",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494307.14928888186%2C4876253.282153052%2C494342.14928888186%2C4876314.282153052&bboxSR=3740&imageSR=3740&size=315%2C549&format=png&bandIds=0%2C1%2C2",
+        "sha256": "3dd159cd6c407d58320229c7da4e29f8a8bb40bdffb45f8b0b0883a52f413074"
+      },
+      "facade_sources": [
+        "https://www.greystoneproperties.com/student-manor-apartments/",
+        "https://www.eugene-or.gov/AgendaCenter/ViewFile/Item/3?fileID=10"
+      ],
+      "facade_photo_references": [
+        {
+          "url": "https://www.greystoneproperties.com/wp-content/uploads/2025/04/greystone-properties-Eugene-Oregon-Apartment-Rentals-Student-Manor-1.jpg",
+          "sha256": "83d983d2d58ef83c593669ee36bd5327f2e8ac370cb52ca8a448720695ad1c39"
+        }
+      ]
+    },
+    {
+      "id": "roof-57cd5529",
+      "name": "Royal Terrace",
+      "street_address": "625 E 16th Ave",
+      "kind": "royal",
+      "wall_inset_m": 0.68,
+      "entrance_hints": [
+        {
+          "gate": "west-court",
+          "near_enu_m": [
+            -983,
+            -320.2
+          ],
+          "outward_degrees": 90,
+          "landing_m": 1.9
+        },
+        {
+          "gate": "east-court",
+          "near_enu_m": [
+            -980,
+            -326.5
+          ],
+          "outward_degrees": 270,
+          "landing_m": 1.9
+        }
+      ],
+      "state_feature": "20-1074178",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493326.14928888186%2C4876570.282153052%2C493370.14928888186%2C4876631.282153052&bboxSR=3740&imageSR=3740&size=396%2C549&format=png&bandIds=0%2C1%2C2",
+        "sha256": "d33d4fd4918378ee3428f1964f1da00c407299ff0a0745e27cafdaa9af30fa5e"
+      },
+      "facade_sources": [
+        "https://www.rent.com/apartment/royal-terrace-eugene-or-lc6686672"
+      ],
+      "facade_photo_references": [
+        {
+          "url": "https://i.rent.com/t_3x2_fixed_webp_w720/36c33c5b7e6709bd309aeb2b976ca7b0",
+          "sha256": "0d7bd3cbf4d637cc46c5a81a446bf29841b04c47a44526b874c04cd876b6caa6"
+        },
+        {
+          "url": "https://i.rent.com/t_3x2_fixed_webp_w720/e7af2a9b0c71cbaac76062b5b36affe2",
+          "sha256": "0da04298bcda4efeeeb270df29e32cf1d2fcac33794756909d5a5960c4703212"
+        },
+        {
+          "url": "https://i.rent.com/t_3x2_fixed_webp_w720/4decf1dd156fdc4ca500d53f6822d31a",
+          "sha256": "11c6a0a7c3360c4e65738dd827104248ed979efb1f5d8e04fc00e7b7b327b707"
+        },
+        {
+          "url": "https://i.rent.com/t_3x2_fixed_webp_w720/3528ea8a77d9fa7b1e2bdfee713c08e0",
+          "sha256": "f9b3fe14236df50ba8de2aba3f6db175ef18e6f29af1874befab14d67fc3c60d"
+        },
+        {
+          "url": "https://i.rent.com/t_3x2_fixed_webp_w720/57df5b8b831d06ec41b889d1bd4ad9b9",
+          "sha256": "21c3f9d96e0ac6d4e01fccedbe4d786bcf0aec3f84b56cfc2e9ab8a38762fdb9"
+        }
+      ]
+    },
+    {
+      "id": "roof-4855fc7e",
+      "name": "Coho Townhouses (North)",
+      "street_address": "622 E 13th Alley",
+      "kind": "coho",
+      "wall_inset_m": 0.53,
+      "entrance_hints": [
+        {
+          "gate": "west-lane",
+          "near_enu_m": [
+            -993.6,
+            -79
+          ],
+          "outward_degrees": 180,
+          "landing_m": 1.9
+        },
+        {
+          "gate": "east-lane",
+          "near_enu_m": [
+            -989.4,
+            -79
+          ],
+          "outward_degrees": 180,
+          "landing_m": 1.9
+        }
+      ],
+      "state_feature": "20-1081603",
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493321.14928888186%2C4876841.282153052%2C493357.14928888186%2C4876871.282153052&bboxSR=3740&imageSR=3740&size=324%2C270&format=png&bandIds=0%2C1%2C2",
+        "sha256": "8b14ad1fa1e5c81c6ef34b51875a0ddbcafb146998323cbbcdb806dd18d16abf"
+      },
+      "facade_sources": [
+        "https://www.new.paradigmpropertiesnw.com/properties-coho-townhouses.html",
+        "https://www.eugene-or.gov/AgendaCenter/ViewFile/Item/66?fileID=77"
+      ],
+      "facade_photo_references": [
+        {
+          "url": "https://www.new.paradigmpropertiesnw.com/assets/img/properties/coho-1.jpg",
+          "sha256": "0335cf38df00ae9dfd703d846b7686404c774422a0c28d6f65c7f19a361e2136"
+        },
+        {
+          "url": "https://www.new.paradigmpropertiesnw.com/assets/img/properties/coho-2.jpg",
+          "sha256": "c4ace373bcd03e9f603f044ede50379a87dcfe5566c9edfb17b5fce19a90ef0a"
+        }
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-5f1a5ce2",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-4cb05afd",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-175d8088",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-57cd5529",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-4855fc7e",
+      "target": "context-background-0-1"
+    }
+  ]
+}

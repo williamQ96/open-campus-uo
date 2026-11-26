@@ -19,7 +19,7 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def screen(manifest, data):
+def screen(manifest, data, *, include_unnamed=False):
     if data.get('type') != 'FeatureCollection' or data.get('crs', {}).get('properties', {}).get('name') != 'EPSG:3740':
         raise ValueError('Expected an EPSG:3740 GeoJSON feature collection')
     if data.get('exceededTransferLimit'):
@@ -36,7 +36,7 @@ def screen(manifest, data):
         geoms.append((geom, prop))
     results = []
     for b in manifest['buildings']:
-        if not b.get('name'):
+        if not include_unnamed and not b.get('name'):
             continue
         candidate = Polygon(b['footprint_enu_m'])
         if not candidate.is_valid:
@@ -52,7 +52,7 @@ def screen(manifest, data):
                 continue
             hits.append({'source_object_id': prop.get('OBJECTID'), 'source_building_id': prop.get('ORBLD_ID'), 'contributor': prop.get('CONTRIBUTOR'), 'source_date': prop.get('SOURCE_DATE'), 'source_area_m2': round(p.area, 2), 'overlap_m2': round(overlap, 2), 'candidate_fraction': round(overlap / candidate.area, 4), 'source_fraction': round(overlap / p.area, 4)})
         hits.sort(key=lambda h: (-h['overlap_m2'], str(h['source_object_id'])))
-        results.append({'id': b['id'], 'name': b['name'], 'name_match': b.get('name_match'), 'candidate_area_m2': round(candidate.area, 2), 'overlaps': hits})
+        results.append({'id': b['id'], 'name': b.get('name'), 'name_match': b.get('name_match'), 'candidate_area_m2': round(candidate.area, 2), 'overlaps': hits})
     return results
 
 

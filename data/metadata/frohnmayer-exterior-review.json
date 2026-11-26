@@ -1,0 +1,493 @@
+{
+  "uo_number": "025",
+  "id": "roof-e4a5429f",
+  "absorbed_batches": [
+    {
+      "id": "roof-cd7b6d76",
+      "target": "context-campus-0-1"
+    },
+    {
+      "id": "roof-fcd40d9f",
+      "target": "context-campus-0-0"
+    }
+  ],
+  "sources": {
+    "uo_map_sha256": "7112477228e8e3ac125548b3abd94180cd8f972c797db78373754cba7384b761",
+    "state_outline_sha256": "86934759f8ba39dd610ed6ec6691f87c7849ac5c120731a55febec4f7819cda6",
+    "scene_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+    "current_orthophoto": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493690.14928888186%2C4876316.282153052%2C493810.14928888186%2C4876507.282153052&bboxSR=3740&imageSR=3740&size=600%2C955&format=png&bandIds=0%2C1%2C2&interpolation=RSP_BilinearInterpolation",
+      "sha256": "b8a372aebd31a90c6c499d5c32528d55e3234426dbb78c37d8bca3885155515b"
+    },
+    "recent_school_exterior": {
+      "url": "https://musicanddance.uoregon.edu/sites/default/files/styles/custom_xl/public/2025-01/somd-2025.jpeg?itok=Snbx5Px0",
+      "sha256": "6de2ce0da890ffd6470327b6ed68db871db00b97fdf81fa09f086b3ebfa4f360"
+    },
+    "historic_survey": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/frohnmayermusicbuilding06_22_07.pdf",
+      "sha256": "32e9bb3d6a2510bc28c8594d2124a421fb6d1f6d3b4232e709eb2d8cf22cd4b6"
+    },
+    "historic_roof_height": "https://www.fisheries.noaa.gov/inport/item/57407",
+    "architect_scope": "https://bora.co/project/school-of-music-dance/",
+    "education_wing_reference_plan": "https://pages.uoregon.edu/music/downloads/floorplan1.pdf"
+  },
+  "source_presentation_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "state_footprint_object_id": 1852729,
+  "outer_enu_m": [
+    [
+      -543.32,
+      -452.097
+    ],
+    [
+      -543.674,
+      -494.927
+    ],
+    [
+      -551.562,
+      -494.999
+    ],
+    [
+      -551.764,
+      -505.717
+    ],
+    [
+      -564.125,
+      -505.543
+    ],
+    [
+      -564.164,
+      -509.868
+    ],
+    [
+      -554.541,
+      -510.007
+    ],
+    [
+      -554.544,
+      -518.865
+    ],
+    [
+      -540.051,
+      -518.931
+    ],
+    [
+      -540.124,
+      -532.692
+    ],
+    [
+      -554.593,
+      -532.6
+    ],
+    [
+      -554.824,
+      -555.649
+    ],
+    [
+      -570.887,
+      -555.671
+    ],
+    [
+      -570.885,
+      -556.7
+    ],
+    [
+      -592.687,
+      -556.68
+    ],
+    [
+      -592.683,
+      -552.518
+    ],
+    [
+      -593.556,
+      -552.517
+    ],
+    [
+      -593.555,
+      -551.684
+    ],
+    [
+      -597.126,
+      -551.681
+    ],
+    [
+      -597.345,
+      -590.232
+    ],
+    [
+      -608.788,
+      -590.222
+    ],
+    [
+      -608.784,
+      -586.354
+    ],
+    [
+      -610.948,
+      -586.352
+    ],
+    [
+      -611.288,
+      -551.506
+    ],
+    [
+      -608.472,
+      -551.509
+    ],
+    [
+      -607.712,
+      -544.967
+    ],
+    [
+      -609.65,
+      -542.982
+    ],
+    [
+      -609.641,
+      -506.002
+    ],
+    [
+      -612.092,
+      -505.999
+    ],
+    [
+      -612.359,
+      -493.435
+    ],
+    [
+      -612.126,
+      -490.707
+    ],
+    [
+      -610.494,
+      -490.71
+    ],
+    [
+      -610.488,
+      -484.807
+    ],
+    [
+      -605.797,
+      -484.179
+    ],
+    [
+      -605.796,
+      -478.682
+    ],
+    [
+      -602.471,
+      -478.684
+    ],
+    [
+      -602.469,
+      -469.292
+    ],
+    [
+      -589.85,
+      -469.29
+    ],
+    [
+      -589.846,
+      -471.682
+    ],
+    [
+      -578.298,
+      -471.692
+    ],
+    [
+      -578.292,
+      -465.569
+    ],
+    [
+      -562.583,
+      -465.584
+    ],
+    [
+      -562.531,
+      -439.98
+    ],
+    [
+      -546.35,
+      -440.091
+    ],
+    [
+      -546.436,
+      -452.116
+    ]
+  ],
+  "courtyard_enu_m": [
+    [
+      -576.745,
+      -545.077
+    ],
+    [
+      -568.912,
+      -545.099
+    ],
+    [
+      -568.747,
+      -532.224
+    ],
+    [
+      -576.812,
+      -532.28
+    ],
+    [
+      -576.662,
+      -519.016
+    ],
+    [
+      -568.572,
+      -518.966
+    ],
+    [
+      -568.491,
+      -510.943
+    ],
+    [
+      -579.773,
+      -510.884
+    ],
+    [
+      -579.754,
+      -508.212
+    ],
+    [
+      -598.654,
+      -508.182
+    ],
+    [
+      -598.645,
+      -539.861
+    ],
+    [
+      -596.155,
+      -542.584
+    ],
+    [
+      -576.726,
+      -542.614
+    ]
+  ],
+  "beall_forecourt": {
+    "plan_sha256": "e590385dee8c47f59148412540722c9f845794ad888fe2dbb1c643b255cdd449",
+    "landing_depth_m": 3.32,
+    "landing_half_width_m": 5.65,
+    "central_flight_width_m": 3.8,
+    "side_flight_width_m": 2.52
+  },
+  "entrances": [
+    {
+      "gate": "beall-west",
+      "position_enu_m": [
+        -612.24,
+        -499.053
+      ],
+      "outward_degrees": -90,
+      "width_m": 2.25
+    },
+    {
+      "gate": "music-south",
+      "position_enu_m": [
+        -603.35,
+        -590.226
+      ],
+      "outward_degrees": 180,
+      "width_m": 1.63
+    }
+  ],
+  "roof_zones": [
+    {
+      "name": "Aasen-Hull hall",
+      "bounds_enu_m": [
+        -563.2,
+        -460.25,
+        -544.9,
+        -438.5
+      ],
+      "height_z_m": 24.81,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "North service stair",
+      "bounds_enu_m": [
+        -546.95,
+        -461.1,
+        -541.8,
+        -451.68
+      ],
+      "height_z_m": 18.16,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "Performance wing lantern",
+      "bounds_enu_m": [
+        -559.1,
+        -485.4,
+        -550.65,
+        -470.6
+      ],
+      "height_z_m": 19.65,
+      "wall": "dark",
+      "roof": "silver"
+    },
+    {
+      "name": "North 1977 east bay",
+      "bounds_enu_m": [
+        -579.05,
+        -483.98,
+        -563.3,
+        -464.84
+      ],
+      "height_z_m": 22.43,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "North 1977 west bay",
+      "bounds_enu_m": [
+        -604.25,
+        -482.5,
+        -588.3,
+        -467.7
+      ],
+      "height_z_m": 22.08,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "North 1977 west connector",
+      "bounds_enu_m": [
+        -611.5,
+        -490.9,
+        -589.3,
+        -483.12
+      ],
+      "height_z_m": 19.66,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "North 1977 central bay",
+      "bounds_enu_m": [
+        -590,
+        -488.1,
+        -577.55,
+        -471.2
+      ],
+      "height_z_m": 17.89,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "1955 band and east rehearsal",
+      "bounds_enu_m": [
+        -573.3,
+        -505.9,
+        -550.1,
+        -495.0
+      ],
+      "height_z_m": 20.14,
+      "wall": "brick",
+      "roof": "tar"
+    },
+    {
+      "name": "Beall hall hipped sides and crown",
+      "bounds_enu_m": [
+        -613.4,
+        -506.62,
+        -573.3,
+        -490.25
+      ],
+      "height_z_m": 24.14,
+      "wall": "brick",
+      "roof": "tar"
+    },
+    {
+      "name": "1921 School of Music west wing",
+      "bounds_enu_m": [
+        -610.5,
+        -543.15,
+        -597.8,
+        -506.58
+      ],
+      "height_z_m": 22.8,
+      "wall": "siding",
+      "roof": "tar"
+    },
+    {
+      "name": "DeArmond academic wing",
+      "bounds_enu_m": [
+        -576.9,
+        -533.0,
+        -538.85,
+        -518.7
+      ],
+      "height_z_m": 25.16,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "DeArmond south garden roof",
+      "bounds_enu_m": [
+        -569.6,
+        -557.15,
+        -553.1,
+        -532.98
+      ],
+      "height_z_m": 17.58,
+      "wall": "brick",
+      "roof": "green"
+    },
+    {
+      "name": "DeArmond north garden roof",
+      "bounds_enu_m": [
+        -569.5,
+        -518.7,
+        -553.1,
+        -509.55
+      ],
+      "height_z_m": 17.64,
+      "wall": "brick",
+      "roof": "green"
+    },
+    {
+      "name": "1977 south connector",
+      "bounds_enu_m": [
+        -599.3,
+        -557.8,
+        -569.6,
+        -542.62
+      ],
+      "height_z_m": 20.23,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "Music Building southwest stair",
+      "bounds_enu_m": [
+        -610.75,
+        -552.95,
+        -596.47,
+        -542.25
+      ],
+      "height_z_m": 22.32,
+      "wall": "brick",
+      "roof": "silver"
+    },
+    {
+      "name": "1948 south wing",
+      "bounds_enu_m": [
+        -612.0,
+        -591.0,
+        -596.8,
+        -551.02
+      ],
+      "height_z_m": 20.83,
+      "wall": "brick",
+      "roof": "silver"
+    }
+  ]
+}

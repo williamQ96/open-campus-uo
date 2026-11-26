@@ -34,7 +34,7 @@ test("Fenton corner windows retain campus selection, entrances, collision and dr
         await r.fulfill({ response: res, json: j });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=fenton-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     const views = [];
@@ -65,7 +65,7 @@ test("Fenton corner windows retain campus selection, entrances, collision and dr
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=fenton-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&
@@ -76,7 +76,11 @@ test("Fenton corner windows retain campus selection, entrances, collision and dr
       expect(camera[0]).toBeCloseTo(x, 1);
       expect(camera[2]).toBeCloseTo(z, 1);
       await page.screenshot({
-        path: `../../docs/images/fenton-basement-${label}-${before ? "before" : "after"}-2026-11-04.png`,
+        path: test
+          .info()
+          .outputPath(
+            `fenton-basement-${label}-${before ? "before" : "after"}.png`,
+          ),
       });
       views.push(
         await page.evaluate(

@@ -20,7 +20,7 @@ test("provisional Longhouse entrance and building selection remain usable", asyn
         );
         await r.fulfill({ response, json: j });
       });
-    await page.goto("/");
+    await page.goto("/?exterior-review=longhouse-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo()),
       ground = await page.evaluate(
@@ -44,7 +44,7 @@ test("provisional Longhouse entrance and building selection remain usable", asyn
         ),
       ground,
     );
-    await page.goto("/?return=1");
+    await page.goto("/?exterior-review=longhouse-baseline&return=1");
     await page.waitForFunction(
       () =>
         window.__campus?.getState().ready &&

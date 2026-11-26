@@ -1,0 +1,1148 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_cells_sha256": "9e565142ef132c7a63e74bfb0684c1b6e2f0f97cc20510da805ec1cc29ffde62",
+  "source_images": {
+    "014": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494314.14928888186%2C4876850.282153052%2C494410.14928888186%2C4876924.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=864%2C666",
+      "sha256": "0ecd754979d4cf7f9b1db7b37eb29e7f85dd201d3a39c6dba1a0879d3d5ae7a7"
+    },
+    "032": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494016.14928888186%2C4877232.282153052%2C494096.14928888186%2C4877293.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=720%2C549",
+      "sha256": "fb8b67a0cbaf2244664c86756a1585fe7bfc8438bcead6c92f0dd0d3c6e9ff4b"
+    },
+    "086": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493330.14928888186%2C4877123.282153052%2C493384.14928888186%2C4877169.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=486%2C414",
+      "sha256": "b03c009373c005f3ab80d08acd66104486083b76b889eac7b6f72df9a947b1ea"
+    },
+    "139": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494106.14928888186%2C4876433.282153052%2C494176.14928888186%2C4876534.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=630%2C909",
+      "sha256": "abd32d54b4760ce560693478026f7b0ecabd91f93ee4dec43a5f80f1728045d4"
+    },
+    "200": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493585.14928888186%2C4876633.282153052%2C493625.14928888186%2C4876679.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=360%2C414",
+      "sha256": "6300c49d9fbcc5351b3d7266477ebd3a025162cab63b8bbdcdc7da74a3bad27b"
+    }
+  },
+  "source_references": {
+    "alder-program-entry.jpg": {
+      "url": "https://humanities.uoregon.edu/sites/default/files/styles/custom_xl/public/2024-03/creative-writing-department-hero-image.png?itok=Qgp4QfhV",
+      "sha256": "4b40c69ebd67f1adc1b5638d739bc10839a8726b9fc928de7c314a665a17b028"
+    },
+    "riley-survey.pdf": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/2025-04/rileyhall_2025.pdf",
+      "sha256": "82cd66d07d122648ee918717d7059fa0caec922f8ff2220aedbb691a9d2bb435",
+      "pdf_pages": [
+        1,
+        4
+      ]
+    },
+    "health-survey.pdf": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/2025-01/univhealthcenter_2025.pdf",
+      "sha256": "7bcde6d490b21ffc12fb6e47a6dac56c62faf71338b69e5400993a9b1d433d3f",
+      "pdf_pages": [
+        1,
+        4
+      ]
+    },
+    "health-2021.jpg": {
+      "url": "https://health.uoregon.edu/sites/default/files/home-update-sept2021.jpg",
+      "sha256": "a6534323407382d865c398339382edfadfa429bf4191a1580cf5ffb7f491b636"
+    },
+    "power-2019.pdf": {
+      "url": "https://crew.org/wp-content/uploads/2019/12/CREW-Energy-Symposium-Lucy-Walsh-2019.pdf",
+      "sha256": "59a203543feee95de39f3c36c87b4c7b42d7e14a3bc8e05e1cfdefa2f31755a8",
+      "pdf_pages": []
+    }
+  },
+  "power_photo_reference": {
+    "name": "Central Power Station",
+    "author": "Visitor7",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Central_Power_Station.jpg"
+  },
+  "health_project_url": "https://www.ckarch.com/projects/uo-student-health-center/",
+  "tennis_project_url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/student-tennis-center",
+  "models": {
+    "014": {
+      "id": "roof-29dae856",
+      "campus_id": "B0014",
+      "name": "University Health Services",
+      "parts": [
+        {
+          "ring": [
+            [
+              7.308,
+              -45.483
+            ],
+            [
+              24.172,
+              -45.536
+            ],
+            [
+              24.143,
+              -55.025
+            ],
+            [
+              15.626,
+              -54.998
+            ],
+            [
+              15.587,
+              -67.43
+            ],
+            [
+              67.901,
+              -67.594
+            ],
+            [
+              67.94,
+              -55.162
+            ],
+            [
+              64.896,
+              -55.153
+            ],
+            [
+              64.926,
+              -45.664
+            ],
+            [
+              67.97,
+              -45.673
+            ],
+            [
+              67.976,
+              -43.847
+            ],
+            [
+              70.716,
+              -43.855
+            ],
+            [
+              70.749,
+              -33.25
+            ],
+            [
+              65.142,
+              -33.233
+            ],
+            [
+              65.163,
+              -26.535
+            ],
+            [
+              68.056,
+              -26.544
+            ],
+            [
+              68.095,
+              -14.112
+            ],
+            [
+              34.986,
+              -14.008
+            ],
+            [
+              34.975,
+              -17.403
+            ],
+            [
+              -4.337,
+              -17.28
+            ],
+            [
+              -4.426,
+              -45.695
+            ],
+            [
+              7.308,
+              -45.732
+            ]
+          ],
+          "holes": [
+            [
+              [
+                51.5,
+                -55.111
+              ],
+              [
+                51.53,
+                -45.622
+              ],
+              [
+                62.49,
+                -45.656
+              ],
+              [
+                62.46,
+                -55.145
+              ]
+            ],
+            [
+              [
+                48.685,
+                -26.483
+              ],
+              [
+                62.423,
+                -26.526
+              ],
+              [
+                62.402,
+                -33.224
+              ],
+              [
+                48.766,
+                -33.181
+              ]
+            ]
+          ]
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "health-north-entrance",
+          "position_enu_m": [
+            27.29991,
+            -17.37899
+          ],
+          "outward_degrees": 0.179,
+          "width_m": 2.86,
+          "approach_distance_m": 3.34,
+          "rise_m": 0.14,
+          "landing_m": 1.42,
+          "snap_to_facade": false
+        },
+        {
+          "gate": "health-west-side",
+          "position_enu_m": [
+            -4.41129,
+            -40.99993
+          ],
+          "outward_degrees": 270.179,
+          "width_m": 1.87,
+          "approach_distance_m": 3.06,
+          "rise_m": 0.12,
+          "landing_m": 1.42,
+          "snap_to_facade": false
+        }
+      ],
+      "roofs": [
+        {
+          "part": 0,
+          "bounds": [
+            -7,
+            -31.1,
+            35.0,
+            -13
+          ],
+          "height_plane": [
+            0,
+            0,
+            12.69
+          ],
+          "finish": "membrane",
+          "wall": "brick"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -6,
+            -47,
+            7.12,
+            -31.1
+          ],
+          "height_plane": [
+            0,
+            0,
+            12.65
+          ],
+          "finish": "membrane",
+          "wall": "brick"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            43.7,
+            -70,
+            72,
+            -45.3
+          ],
+          "height_plane": [
+            0,
+            0,
+            5.23
+          ],
+          "finish": "membrane",
+          "wall": "brick"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            7.1,
+            -46,
+            31.9,
+            -31.1
+          ],
+          "height_plane": [
+            0,
+            0,
+            8.47
+          ],
+          "finish": "zinc",
+          "wall": "brick"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            20.3,
+            -67.5,
+            44.7,
+            -30.0
+          ],
+          "height_plane": [
+            0,
+            0,
+            9.14
+          ],
+          "finish": "membrane",
+          "wall": "brick"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            34.9,
+            -45.67,
+            72,
+            -13
+          ],
+          "height_plane": [
+            0,
+            0,
+            8.84
+          ],
+          "finish": "zinc",
+          "wall": "brick"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -10,
+            -71,
+            75,
+            -10
+          ],
+          "height_plane": [
+            0,
+            0,
+            8.49
+          ],
+          "finish": "membrane",
+          "wall": "brick"
+        }
+      ],
+      "roof_accents": [
+        [
+          46.18,
+          -23.74,
+          48.12,
+          -21.91,
+          9.65
+        ],
+        [
+          23.14,
+          -40.07,
+          25.2,
+          -36.69,
+          9.32
+        ],
+        [
+          37.2,
+          -55.04,
+          39.94,
+          -52.28,
+          9.68
+        ]
+      ]
+    },
+    "032": {
+      "id": "roof-2518e2a2",
+      "campus_id": "B0032",
+      "name": "Central Power Station",
+      "parts": [
+        {
+          "ring": [
+            [
+              -243.241,
+              326.281
+            ],
+            [
+              -243.224,
+              345.818
+            ],
+            [
+              -257.145,
+              345.83
+            ],
+            [
+              -257.147,
+              343.779
+            ],
+            [
+              -302.561,
+              343.88
+            ],
+            [
+              -302.576,
+              325.682
+            ],
+            [
+              -290.017,
+              325.688
+            ],
+            [
+              -290.037,
+              314.226
+            ],
+            [
+              -254.82,
+              314.195
+            ],
+            [
+              -254.822,
+              326.241
+            ]
+          ],
+          "holes": []
+        },
+        {
+          "ring": [
+            [
+              -267.121,
+              345.302
+            ],
+            [
+              -267.111,
+              354.813
+            ],
+            [
+              -275.122,
+              354.82
+            ],
+            [
+              -275.125,
+              352.463
+            ],
+            [
+              -272.928,
+              352.435
+            ],
+            [
+              -272.908,
+              345.307
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "power-frontage",
+          "position_enu_m": [
+            -275.0,
+            314.21276
+          ],
+          "outward_degrees": 180.05,
+          "width_m": 1.65,
+          "approach_distance_m": 2.25,
+          "rise_m": 0.09,
+          "landing_m": 1.42,
+          "snap_to_facade": false
+        }
+      ],
+      "roofs": [
+        {
+          "part": 1,
+          "bounds": [
+            -277,
+            344,
+            -265,
+            356
+          ],
+          "height_plane": [
+            0,
+            0,
+            3.69
+          ],
+          "finish": "zinc",
+          "wall": "dark-metal"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -305,
+            312,
+            -269.85,
+            329
+          ],
+          "height_plane": [
+            0,
+            0,
+            13.44
+          ],
+          "finish": "membrane",
+          "wall": "silver"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -269.85,
+            312,
+            -254.2,
+            329
+          ],
+          "height_plane": [
+            0,
+            0,
+            14.09
+          ],
+          "finish": "membrane",
+          "wall": "silver"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -305,
+            325,
+            -292.0,
+            347
+          ],
+          "height_plane": [
+            0,
+            0,
+            7.92
+          ],
+          "finish": "zinc",
+          "wall": "dark-metal"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -256.6,
+            324,
+            -241.5,
+            347
+          ],
+          "height_plane": [
+            0,
+            0,
+            8.51
+          ],
+          "finish": "zinc",
+          "wall": "dark-metal"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -305,
+            312,
+            -241.5,
+            348
+          ],
+          "height_plane": [
+            0,
+            0,
+            9.1
+          ],
+          "finish": "membrane",
+          "wall": "silver"
+        }
+      ],
+      "roof_accents": [
+        [
+          -285.2,
+          316.3,
+          -278.4,
+          324.3,
+          17.65
+        ],
+        [
+          -264.4,
+          317,
+          -257.7,
+          323.8,
+          17.17
+        ]
+      ]
+    },
+    "086": {
+      "id": "roof-5fd54bd8",
+      "campus_id": "B0086",
+      "name": "Riley Hall",
+      "parts": [
+        {
+          "ring": [
+            [
+              -955.975,
+              230.102
+            ],
+            [
+              -1014.652,
+              230.078
+            ],
+            [
+              -1014.652,
+              229.469
+            ],
+            [
+              -1014.881,
+              229.469
+            ],
+            [
+              -1014.88,
+              227.092
+            ],
+            [
+              -1014.871,
+              206.303
+            ],
+            [
+              -1014.643,
+              206.303
+            ],
+            [
+              -1014.642,
+              205.693
+            ],
+            [
+              -955.966,
+              205.717
+            ],
+            [
+              -955.966,
+              206.326
+            ],
+            [
+              -955.737,
+              206.326
+            ],
+            [
+              -955.747,
+              229.492
+            ],
+            [
+              -955.975,
+              229.492
+            ]
+          ],
+          "holes": [
+            [
+              [
+                -980.374,
+                213.022
+              ],
+              [
+                -1002.778,
+                213.013
+              ],
+              [
+                -1002.782,
+                222.768
+              ],
+              [
+                -980.378,
+                222.777
+              ]
+            ]
+          ]
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "riley-east-entry",
+          "position_enu_m": [
+            -955.7425,
+            219.06002
+          ],
+          "outward_degrees": 89.975,
+          "width_m": 2.08,
+          "approach_distance_m": 2.62,
+          "rise_m": 0.16,
+          "landing_m": 1.42,
+          "snap_to_facade": false
+        }
+      ],
+      "roofs": [
+        {
+          "part": 0,
+          "bounds": [
+            -1018,
+            204,
+            -953,
+            231
+          ],
+          "height_plane": [
+            0,
+            0,
+            6.95
+          ],
+          "finish": "membrane",
+          "wall": "clay"
+        }
+      ],
+      "roof_accents": [
+        [
+          -968.1,
+          212.5,
+          -962.36,
+          220.02,
+          9.32
+        ]
+      ],
+      "upper_frame_pitch_m": 4.03,
+      "north_low_wall": [
+        [
+          -998.3,
+          231.54
+        ],
+        [
+          -982.7,
+          231.55
+        ],
+        [
+          -967.0,
+          231.57
+        ],
+        [
+          -956.8,
+          231.58
+        ]
+      ]
+    },
+    "139": {
+      "id": "roof-a55aea46",
+      "campus_id": "B0139",
+      "name": "Student Tennis Center",
+      "parts": [
+        {
+          "ring": [
+            [
+              -163.206,
+              -404.531
+            ],
+            [
+              -212.524,
+              -404.498
+            ],
+            [
+              -212.371,
+              -484.489
+            ],
+            [
+              -163.054,
+              -484.533
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "tennis-west-entrance",
+          "position_enu_m": [
+            -212.44768,
+            -444.39994
+          ],
+          "outward_degrees": 269.89,
+          "width_m": 2.35,
+          "approach_distance_m": 3.24,
+          "rise_m": 0.13,
+          "landing_m": 1.42,
+          "snap_to_facade": false
+        }
+      ],
+      "roofs": [
+        {
+          "part": 0,
+          "bounds": [
+            -214,
+            -424.4,
+            -161,
+            -403
+          ],
+          "height_plane": [
+            0,
+            -0.312,
+            -108.0228
+          ],
+          "finish": "zinc",
+          "wall": "hall"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -214,
+            -444.5,
+            -161,
+            -424.4
+          ],
+          "height_plane": [
+            0,
+            0.318,
+            159.3492
+          ],
+          "finish": "zinc",
+          "wall": "hall"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -214,
+            -464.6,
+            -161,
+            -444.5
+          ],
+          "height_plane": [
+            0,
+            -0.309,
+            -119.1505
+          ],
+          "finish": "zinc",
+          "wall": "hall"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -214,
+            -486,
+            -161,
+            -464.5
+          ],
+          "height_plane": [
+            0,
+            0.317,
+            171.6265
+          ],
+          "finish": "zinc",
+          "wall": "hall"
+        }
+      ],
+      "metal_seam_pitch_m": 1.82
+    },
+    "200": {
+      "id": "roof-ee63827c",
+      "campus_id": "B0200",
+      "name": "Alder Building",
+      "parts": [
+        {
+          "ring": [
+            [
+              -714.287,
+              -261.66
+            ],
+            [
+              -714.287,
+              -261.49
+            ],
+            [
+              -733.336,
+              -261.49
+            ],
+            [
+              -733.336,
+              -261.643
+            ],
+            [
+              -733.76,
+              -261.643
+            ],
+            [
+              -733.769,
+              -272.489
+            ],
+            [
+              -725.769,
+              -272.496
+            ],
+            [
+              -725.78,
+              -284.85
+            ],
+            [
+              -716.0,
+              -284.858
+            ],
+            [
+              -715.989,
+              -272.505
+            ],
+            [
+              -714.072,
+              -272.507
+            ],
+            [
+              -714.063,
+              -261.66
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "alder-north-porch",
+          "position_enu_m": [
+            -723.88,
+            -261.49
+          ],
+          "outward_degrees": 0.0,
+          "width_m": 1.76,
+          "approach_distance_m": 4.14,
+          "rise_m": 0.23,
+          "landing_m": 1.42,
+          "snap_to_facade": false
+        }
+      ],
+      "roofs": [
+        {
+          "part": 0,
+          "bounds": [
+            -735,
+            -267.8,
+            -712,
+            -259.9
+          ],
+          "height_plane": [
+            0,
+            -0.375,
+            -84.585
+          ],
+          "finish": "shingle",
+          "wall": "masonry"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -735,
+            -272.56,
+            -712,
+            -267.8
+          ],
+          "height_plane": [
+            0,
+            0.33,
+            104.214
+          ],
+          "finish": "shingle",
+          "wall": "masonry"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -728,
+            -287,
+            -720.55,
+            -272.56
+          ],
+          "height_plane": [
+            0.344,
+            0,
+            263.5092
+          ],
+          "finish": "shingle",
+          "wall": "masonry"
+        },
+        {
+          "part": 0,
+          "bounds": [
+            -720.55,
+            -287,
+            -712,
+            -272.56
+          ],
+          "height_plane": [
+            -0.46,
+            0,
+            -315.813
+          ],
+          "finish": "shingle",
+          "wall": "masonry"
+        }
+      ],
+      "porch": {
+        "outline": [
+          [
+            -733.334,
+            -259.154
+          ],
+          [
+            -733.336,
+            -261.49
+          ],
+          [
+            -714.287,
+            -261.49
+          ],
+          [
+            -714.285,
+            -259.171
+          ]
+        ],
+        "top_m": 11.78,
+        "posts": [
+          [
+            -732.65,
+            -259.61
+          ],
+          [
+            -729.18,
+            -259.61
+          ],
+          [
+            -725.55,
+            -259.61
+          ],
+          [
+            -721.92,
+            -259.61
+          ],
+          [
+            -718.48,
+            -259.61
+          ],
+          [
+            -715.19,
+            -259.61
+          ]
+        ]
+      }
+    }
+  },
+  "paths": [
+    {
+      "line": [
+        [
+          27.2,
+          -17.35
+        ],
+        [
+          27.2,
+          -13.65
+        ],
+        [
+          29.8,
+          -10.8
+        ],
+        [
+          33.0,
+          -10.63
+        ]
+      ],
+      "width": 2.7
+    },
+    {
+      "line": [
+        [
+          -4.43,
+          -41.02
+        ],
+        [
+          -8.68,
+          -41.02
+        ],
+        [
+          -8.6,
+          -45.6
+        ]
+      ],
+      "width": 1.75
+    },
+    {
+      "line": [
+        [
+          -275.0,
+          314.21
+        ],
+        [
+          -275.0,
+          310.3
+        ],
+        [
+          -272.8,
+          310.3
+        ]
+      ],
+      "width": 1.78
+    },
+    {
+      "line": [
+        [
+          -955.8,
+          219.06
+        ],
+        [
+          -951.9,
+          219.05
+        ],
+        [
+          -949.0,
+          217.34
+        ]
+      ],
+      "width": 1.8
+    },
+    {
+      "line": [
+        [
+          -212.42,
+          -444.4
+        ],
+        [
+          -217.42,
+          -444.4
+        ],
+        [
+          -219.27,
+          -447.02
+        ]
+      ],
+      "width": 2.31
+    },
+    {
+      "line": [
+        [
+          -723.88,
+          -261.49
+        ],
+        [
+          -723.88,
+          -257.47
+        ],
+        [
+          -723.18,
+          -253.51
+        ]
+      ],
+      "width": 2.1
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-29dae856",
+      "target": "context-campus-2-1"
+    },
+    {
+      "id": "roof-5fd54bd8",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-a55aea46",
+      "target": "context-campus-1-1"
+    },
+    {
+      "id": "roof-ee63827c",
+      "target": "context-background-0-1"
+    }
+  ]
+}

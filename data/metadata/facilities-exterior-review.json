@@ -1,0 +1,1192 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "historical_roof_cells_sha256": "fe6e45286666b07ae7bbc6a722a200243ccc16541f5136c0e2592f07434dd74f",
+  "reference_orthophotos": {
+    "130": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494087.14928888186%2C4877265.282153052%2C494182.14928888186%2C4877321.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=855%2C504",
+      "sha256": "3fd4e234725078c20ebcf9472acc76d1db2c6727b68fab0cca8bb2aea78325a2"
+    },
+    "131": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494085.14928888186%2C4877312.282153052%2C494138.14928888186%2C4877350.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=477%2C342",
+      "sha256": "2b55925a1d1227ca7945e1d982a29019c59ef0b73fc426e12092169bd0039f71"
+    },
+    "134": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494159.14928888186%2C4877327.282153052%2C494213.14928888186%2C4877361.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=486%2C306",
+      "sha256": "bdb04f2b3f99dde82b148782b2d3c613b627b74dbacff7dbe43a0d44b9b2ae37"
+    },
+    "136": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494176.14928888186%2C4877267.282153052%2C494215.14928888186%2C4877325.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=351%2C522",
+      "sha256": "57d4a6883713e5f5bfe3bc73443303be89093cbb47e998919167196fb4480a58"
+    },
+    "180": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494958.14928888186%2C4876699.282153052%2C495043.14928888186%2C4876840.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=765%2C1269",
+      "sha256": "d6fc0bd07b687c71750e43e185d76dc4019cda25a108caf0b3ac5c49dbf6c7c8"
+    }
+  },
+  "references": [
+    {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/2025-07/romania_preliminary-hp-assessment_2025_.pdf",
+      "sha256": "b91bb484075d74c732718ef2fc1fba71f4dc25e3aee596837a7ee9a6d0ae9365",
+      "pages": [
+        11,
+        12,
+        13,
+        26,
+        29,
+        44,
+        47
+      ]
+    },
+    {
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/campus-operations-office",
+      "feature": "refurbished Quonset office"
+    },
+    {
+      "url": "https://bpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/2/14032/files/2019/11/Building-130-Construction-Project.pdf",
+      "sha256": "81449962bd260dd0f3d9fbaafb1a2d6f9dd6aeb5189677522b051d4e48855d70",
+      "feature": "south projection and reference plan arrangement"
+    },
+    {
+      "url": "https://news.uoregon.edu/content/heat-will-be-cpfm-warehouse-during-project",
+      "feature": "ongoing October 2026 project, current minor facade changes unknown"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "roof-2975e487",
+      "name": "CPFM Warehouse and Shops",
+      "campus_id": "B0130",
+      "footprint_enu_m": [
+        [
+          -162.486,
+          350.512
+        ],
+        [
+          -157.827,
+          350.513
+        ],
+        [
+          -157.888,
+          382.644
+        ],
+        [
+          -231.14,
+          382.751
+        ],
+        [
+          -231.079,
+          350.571
+        ],
+        [
+          -174.863,
+          350.521
+        ],
+        [
+          -174.906,
+          347.14
+        ],
+        [
+          -162.489,
+          347.052
+        ]
+      ],
+      "zones": [
+        {
+          "bounds": [
+            -180,
+            343,
+            -159,
+            350.53
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              -185,
+              8.04
+            ],
+            [
+              -154,
+              8.04
+            ]
+          ],
+          "roof": "charcoal",
+          "wall": "cream",
+          "label": "south-entry",
+          "overhang_m": 0.16
+        },
+        {
+          "bounds": [
+            -235,
+            346,
+            -153,
+            386
+          ],
+          "axis": 1,
+          "profile": [
+            [
+              348,
+              8.64
+            ],
+            [
+              365.02,
+              10.42
+            ],
+            [
+              384,
+              8.83
+            ]
+          ],
+          "roof": "charcoal",
+          "wall": "cream",
+          "label": "warehouse",
+          "overhang_m": 0.18
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "facilities-warehouse-south",
+          "position_enu_m": [
+            -168.3999,
+            347.09389
+          ],
+          "outward_degrees": 180.4061,
+          "width_m": 1.88,
+          "approach_distance_m": 3.4,
+          "rise_m": 0.12,
+          "landing_m": 1.18,
+          "snap_to_facade": false
+        }
+      ],
+      "facade": {
+        "kind": "warehouse",
+        "bay_m": 5.8,
+        "roof_strips_n": [
+          353.45,
+          355.39,
+          358.63,
+          360.58,
+          363.32
+        ],
+        "roof_strip_intervals_e": [
+          [
+            -226.4,
+            -222.8
+          ],
+          [
+            -222.6,
+            -164.8
+          ]
+        ]
+      }
+    },
+    {
+      "id": "roof-3b3ed882",
+      "name": "Facilities Services Miscellaneous Quonset",
+      "campus_id": "B0131",
+      "footprint_enu_m": [
+        [
+          -223.241,
+          401.377
+        ],
+        [
+          -223.246,
+          411.66
+        ],
+        [
+          -226.023,
+          411.66
+        ],
+        [
+          -226.025,
+          411.363
+        ],
+        [
+          -233.306,
+          411.352
+        ],
+        [
+          -233.252,
+          394.98
+        ],
+        [
+          -202.359,
+          395.028
+        ],
+        [
+          -202.359,
+          396.767
+        ],
+        [
+          -201.176,
+          396.769
+        ],
+        [
+          -201.16,
+          400.334
+        ],
+        [
+          -202.246,
+          400.335
+        ],
+        [
+          -202.253,
+          401.361
+        ]
+      ],
+      "zones": [
+        {
+          "bounds": [
+            -234,
+            393,
+            -198,
+            401.73
+          ],
+          "axis": 1,
+          "profile": [
+            [
+              393.9,
+              1.78
+            ],
+            [
+              395,
+              2.74
+            ],
+            [
+              395.75,
+              3.75
+            ],
+            [
+              396.65,
+              4.44
+            ],
+            [
+              397.5,
+              4.82
+            ],
+            [
+              398.55,
+              5.02
+            ],
+            [
+              399.5,
+              5.03
+            ],
+            [
+              400.6,
+              4.83
+            ],
+            [
+              401.8,
+              4.45
+            ],
+            [
+              402.15,
+              4.26
+            ]
+          ],
+          "roof": "weathered",
+          "wall": "pale",
+          "label": "corrugated-arch",
+          "overhang_m": 0.18
+        },
+        {
+          "bounds": [
+            -236,
+            401.73,
+            -220,
+            415
+          ],
+          "axis": 1,
+          "profile": [
+            [
+              401,
+              3.18
+            ],
+            [
+              404,
+              2.65
+            ],
+            [
+              412.4,
+              1.72
+            ]
+          ],
+          "roof": "weathered",
+          "wall": "metal",
+          "label": "low-west-wing",
+          "overhang_m": 0.1
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "miscellaneous-quonset-east",
+          "position_enu_m": [
+            -201.16846,
+            398.45008
+          ],
+          "outward_degrees": 90.2571,
+          "width_m": 1.39,
+          "approach_distance_m": 2.52,
+          "rise_m": 0.06,
+          "landing_m": 1.18,
+          "snap_to_facade": false
+        }
+      ],
+      "facade": {
+        "kind": "quonset",
+        "axis": 1,
+        "seam_m": 1.75,
+        "garage_end": "east"
+      }
+    },
+    {
+      "id": "roof-4c8ea72b",
+      "name": "Facilities Services Recycling Quonset",
+      "campus_id": "B0134",
+      "footprint_enu_m": [
+        [
+          -159.549,
+          409.951
+        ],
+        [
+          -126.297,
+          409.921
+        ],
+        [
+          -126.285,
+          422.609
+        ],
+        [
+          -159.537,
+          422.639
+        ]
+      ],
+      "zones": [
+        {
+          "bounds": [
+            -163,
+            406,
+            -124,
+            425
+          ],
+          "axis": 1,
+          "profile": [
+            [
+              409.2,
+              1.31
+            ],
+            [
+              410.1,
+              1.83
+            ],
+            [
+              411.1,
+              2.66
+            ],
+            [
+              412.1,
+              3.52
+            ],
+            [
+              413.1,
+              4.2
+            ],
+            [
+              414.25,
+              4.78
+            ],
+            [
+              415.45,
+              5.06
+            ],
+            [
+              416.8,
+              5.16
+            ],
+            [
+              418.08,
+              5.03
+            ],
+            [
+              419.22,
+              4.75
+            ],
+            [
+              420.28,
+              4.33
+            ],
+            [
+              421.31,
+              3.74
+            ],
+            [
+              422.32,
+              2.94
+            ],
+            [
+              423.24,
+              2.04
+            ]
+          ],
+          "roof": "zinc",
+          "wall": "pale",
+          "label": "corrugated-arch",
+          "overhang_m": 0.15
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "recycling-quonset-east",
+          "position_enu_m": [
+            -126.29128,
+            415.97
+          ],
+          "outward_degrees": 90.0542,
+          "width_m": 1.42,
+          "approach_distance_m": 2.8,
+          "rise_m": 0.12,
+          "landing_m": 1.18,
+          "snap_to_facade": false
+        }
+      ],
+      "facade": {
+        "kind": "quonset",
+        "axis": 1,
+        "seam_m": 1.77,
+        "garage_end": "west"
+      }
+    },
+    {
+      "id": "roof-b5543048",
+      "name": "CPFM Administration",
+      "campus_id": "B0136",
+      "footprint_enu_m": [
+        [
+          -124.947,
+          357.745
+        ],
+        [
+          -127.449,
+          357.731
+        ],
+        [
+          -126.904,
+          386.494
+        ],
+        [
+          -140.006,
+          386.63
+        ],
+        [
+          -140.078,
+          378.216
+        ],
+        [
+          -142.049,
+          378.212
+        ],
+        [
+          -142.277,
+          365.884
+        ],
+        [
+          -140.207,
+          365.856
+        ],
+        [
+          -140.353,
+          350.793
+        ],
+        [
+          -136.384,
+          350.754
+        ],
+        [
+          -136.383,
+          349.295
+        ],
+        [
+          -131.448,
+          349.239
+        ],
+        [
+          -131.446,
+          350.711
+        ],
+        [
+          -127.412,
+          350.666
+        ],
+        [
+          -127.408,
+          352.104
+        ],
+        [
+          -124.966,
+          352.109
+        ]
+      ],
+      "zones": [
+        {
+          "bounds": [
+            -145,
+            382.7,
+            -122,
+            389
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              -150,
+              2.66
+            ],
+            [
+              -117,
+              2.66
+            ]
+          ],
+          "roof": "slate",
+          "wall": "pale",
+          "label": "north-entry",
+          "overhang_m": 0.16
+        },
+        {
+          "bounds": [
+            -144,
+            348,
+            -122,
+            351.08
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              -149,
+              3.52
+            ],
+            [
+              -117,
+              3.52
+            ]
+          ],
+          "roof": "zinc",
+          "wall": "pale",
+          "label": "south-entry",
+          "overhang_m": 0.16
+        },
+        {
+          "bounds": [
+            -145,
+            355,
+            -140.18,
+            380
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              -150,
+              2.6
+            ],
+            [
+              -135.18,
+              2.6
+            ]
+          ],
+          "roof": "zinc",
+          "wall": "pale",
+          "label": "west-awning",
+          "overhang_m": 0.1
+        },
+        {
+          "bounds": [
+            -127.85,
+            350.8,
+            -123.5,
+            358.1
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              -132.85,
+              2.73
+            ],
+            [
+              -118.5,
+              2.73
+            ]
+          ],
+          "roof": "zinc",
+          "wall": "pale",
+          "label": "east-appendage",
+          "overhang_m": 0.1
+        },
+        {
+          "bounds": [
+            -145,
+            348,
+            -123,
+            388
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              -141,
+              2.72
+            ],
+            [
+              -140,
+              3.55
+            ],
+            [
+              -139,
+              4.17
+            ],
+            [
+              -138,
+              4.7
+            ],
+            [
+              -137,
+              5.04
+            ],
+            [
+              -136,
+              5.23
+            ],
+            [
+              -134.67,
+              5.29
+            ],
+            [
+              -133.4,
+              5.2
+            ],
+            [
+              -132.4,
+              5.02
+            ],
+            [
+              -131.4,
+              4.68
+            ],
+            [
+              -130.4,
+              4.19
+            ],
+            [
+              -129.4,
+              3.58
+            ],
+            [
+              -128.4,
+              2.67
+            ],
+            [
+              -126.1,
+              1.86
+            ]
+          ],
+          "roof": "zinc",
+          "wall": "pale",
+          "label": "refurbished-arch",
+          "overhang_m": 0.18
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "facilities-admin-north",
+          "position_enu_m": [
+            -133.3702,
+            386.56112
+          ],
+          "outward_degrees": 0.5947,
+          "width_m": 1.63,
+          "approach_distance_m": 2.8,
+          "rise_m": 0.12,
+          "landing_m": 1.18,
+          "snap_to_facade": false
+        }
+      ],
+      "facade": {
+        "kind": "quonset",
+        "axis": 0,
+        "seam_m": 1.66,
+        "office": true
+      }
+    },
+    {
+      "id": "roof-0151b728",
+      "name": "Romania Warehouse and Showroom",
+      "campus_id": "B0180",
+      "footprint_enu_m": [
+        [
+          639.825,
+          -179.658
+        ],
+        [
+          639.814,
+          -185.205
+        ],
+        [
+          649.911,
+          -185.241
+        ],
+        [
+          649.857,
+          -218.47
+        ],
+        [
+          668.38,
+          -218.472
+        ],
+        [
+          668.459,
+          -180.81
+        ],
+        [
+          671.131,
+          -180.816
+        ],
+        [
+          671.122,
+          -185.09
+        ],
+        [
+          675.397,
+          -185.099
+        ],
+        [
+          675.438,
+          -165.643
+        ],
+        [
+          685.784,
+          -165.664
+        ],
+        [
+          685.945,
+          -177.877
+        ],
+        [
+          698.745,
+          -177.936
+        ],
+        [
+          698.734,
+          -113.001
+        ],
+        [
+          700.486,
+          -112.314
+        ],
+        [
+          702.848,
+          -109.478
+        ],
+        [
+          703.22,
+          -106.861
+        ],
+        [
+          702.347,
+          -103.752
+        ],
+        [
+          699.289,
+          -101.032
+        ],
+        [
+          692.913,
+          -99.072
+        ],
+        [
+          684.207,
+          -98.296
+        ],
+        [
+          674.054,
+          -98.992
+        ],
+        [
+          667.789,
+          -100.733
+        ],
+        [
+          664.653,
+          -102.68
+        ],
+        [
+          663.275,
+          -104.722
+        ],
+        [
+          663.064,
+          -107.935
+        ],
+        [
+          663.851,
+          -110.525
+        ],
+        [
+          665.954,
+          -112.826
+        ],
+        [
+          664.04,
+          -113.729
+        ],
+        [
+          653.995,
+          -113.708
+        ],
+        [
+          653.986,
+          -118.063
+        ],
+        [
+          650.07,
+          -118.055
+        ],
+        [
+          649.952,
+          -179.659
+        ]
+      ],
+      "zones": [
+        {
+          "bounds": [
+            659,
+            -114.42,
+            706,
+            -94
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              659,
+              13.25
+            ],
+            [
+              662,
+              12.97
+            ],
+            [
+              665,
+              12.53
+            ],
+            [
+              668,
+              12.3
+            ],
+            [
+              671,
+              12.11
+            ],
+            [
+              674,
+              11.97
+            ],
+            [
+              677,
+              11.86
+            ],
+            [
+              680,
+              11.8
+            ],
+            [
+              683,
+              11.79
+            ],
+            [
+              686,
+              11.84
+            ],
+            [
+              689,
+              11.9
+            ],
+            [
+              692,
+              12.02
+            ],
+            [
+              695,
+              12.2
+            ],
+            [
+              698,
+              12.45
+            ],
+            [
+              701,
+              12.76
+            ],
+            [
+              706,
+              13.43
+            ]
+          ],
+          "roof": "membrane",
+          "wall": "cream",
+          "label": "showroom",
+          "overhang_m": 2.12
+        },
+        {
+          "bounds": [
+            654.3,
+            -144.1,
+            692.2,
+            -117.45
+          ],
+          "axis": 1,
+          "profile": [
+            [
+              -144.3,
+              12.96
+            ],
+            [
+              -142.5,
+              13.75
+            ],
+            [
+              -140.5,
+              14.61
+            ],
+            [
+              -137.5,
+              15.42
+            ],
+            [
+              -134.5,
+              15.81
+            ],
+            [
+              -130.5,
+              16.12
+            ],
+            [
+              -125.5,
+              16.49
+            ],
+            [
+              -121.7,
+              16.72
+            ],
+            [
+              -121.25,
+              14.36
+            ],
+            [
+              -117.3,
+              13.22
+            ]
+          ],
+          "roof": "membrane",
+          "wall": "cream",
+          "label": "north-bottling-roof",
+          "overhang_m": 0.05
+        },
+        {
+          "bounds": [
+            653.8,
+            -164.7,
+            691.5,
+            -144.1
+          ],
+          "axis": 1,
+          "profile": [
+            [
+              -164.75,
+              13.3
+            ],
+            [
+              -162.5,
+              13.4
+            ],
+            [
+              -159.5,
+              14.37
+            ],
+            [
+              -156.5,
+              14.96
+            ],
+            [
+              -154.8,
+              15.13
+            ],
+            [
+              -152.5,
+              14.94
+            ],
+            [
+              -149.5,
+              14.55
+            ],
+            [
+              -146.5,
+              13.68
+            ],
+            [
+              -143.8,
+              12.87
+            ]
+          ],
+          "roof": "membrane",
+          "wall": "cream",
+          "label": "south-bottling-roof",
+          "overhang_m": 0.07
+        },
+        {
+          "bounds": [
+            645,
+            -221,
+            671,
+            -179
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              640,
+              13.31
+            ],
+            [
+              676,
+              13.31
+            ]
+          ],
+          "roof": "membrane",
+          "wall": "cream",
+          "label": "rear-body-shop",
+          "overhang_m": 0.16
+        },
+        {
+          "bounds": [
+            634,
+            -187,
+            680,
+            -178
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              629,
+              11.5
+            ],
+            [
+              685,
+              11.5
+            ]
+          ],
+          "roof": "slate",
+          "wall": "cream",
+          "label": "west-loading",
+          "overhang_m": 0.16
+        },
+        {
+          "bounds": [
+            645,
+            -180,
+            701,
+            -164.7
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              640,
+              10.91
+            ],
+            [
+              706,
+              10.91
+            ]
+          ],
+          "roof": "membrane",
+          "wall": "cream",
+          "label": "service-wings",
+          "overhang_m": 0.16
+        },
+        {
+          "bounds": [
+            638,
+            -187,
+            705,
+            -113.6
+          ],
+          "axis": 0,
+          "profile": [
+            [
+              633,
+              12.8
+            ],
+            [
+              710,
+              12.8
+            ]
+          ],
+          "roof": "membrane",
+          "wall": "cream",
+          "label": "warehouse-edges",
+          "overhang_m": 0.11
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "romania-showroom-west",
+          "position_enu_m": [
+            663.35677,
+            -108.89849
+          ],
+          "outward_degrees": 253.098,
+          "width_m": 1.74,
+          "approach_distance_m": 4.37,
+          "rise_m": 0.43,
+          "landing_m": 1.18,
+          "snap_to_facade": false
+        },
+        {
+          "gate": "romania-warehouse-east",
+          "position_enu_m": [
+            698.7431,
+            -166.7
+          ],
+          "outward_degrees": 89.9903,
+          "width_m": 1.72,
+          "approach_distance_m": 2.91,
+          "rise_m": 0.12,
+          "landing_m": 1.18,
+          "snap_to_facade": false
+        }
+      ],
+      "facade": {
+        "kind": "romania",
+        "bay_m": 4.32,
+        "glazed_front_above_n": -113.42,
+        "warehouse_loading_height_m": 3.1
+      }
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-2975e487",
+      "target": "context-campus-1-2"
+    },
+    {
+      "id": "roof-3b3ed882",
+      "target": "context-background-1-2"
+    },
+    {
+      "id": "roof-4c8ea72b",
+      "target": "context-background-1-2"
+    },
+    {
+      "id": "roof-b5543048",
+      "target": "context-background-1-2"
+    },
+    {
+      "id": "roof-0151b728",
+      "target": "context-background-3-1"
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "source_presentation_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "source_tree_input_sha256": "ea262a2dc98b77c22940b5f4928ba1ccf7ff37d5bf7947129684a6b24bd05254",
+  "aerial_refs": {
+    "emu": {
+      "bounds": [
+        -221,
+        -127,
+        -129,
+        -35
+      ],
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494108.14928888186%2C4876801.282153052%2C494200.14928888186%2C4876893.282153052&bboxSR=3740&imageSR=3740&size=460%2C460&format=png&bandIds=0%2C1%2C2&interpolation=RSP_BilinearInterpolation",
+      "sha256": "b3cf9390d63131b82ace4eae35680686048a503463d60d0b6385f71f961200d3"
+    },
+    "knight": {
+      "bounds": [
+        -649,
+        -337,
+        -479,
+        -161
+      ],
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493680.14928888186%2C4876591.282153052%2C493850.14928888186%2C4876767.282153052&bboxSR=3740&imageSR=3740&size=850%2C880&format=png&bandIds=0%2C1%2C2&interpolation=RSP_BilinearInterpolation",
+      "sha256": "59eb952900ef28c18a811df9f2523973e4bae80169209acd7c4cd0c50cf175ac"
+    }
+  },
+  "adjustments": [
+    {
+      "index": 3,
+      "east_north_m": [
+        -188.892,
+        -86.738
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 10,
+      "east_north_m": [
+        -607.733,
+        -224.814
+      ],
+      "area": "Knight west",
+      "observation": "Stem projects onto the west courtyard transversal walk.",
+      "paired_understory": false
+    },
+    {
+      "index": 25,
+      "east_north_m": [
+        -175.474,
+        -104.091
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": true
+    },
+    {
+      "index": 50,
+      "east_north_m": [
+        -175.799,
+        -77.098
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": true
+    },
+    {
+      "index": 56,
+      "east_north_m": [
+        -181.266,
+        -112.89
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 72,
+      "east_north_m": [
+        -165.766,
+        -86.882
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 98,
+      "east_north_m": [
+        -179.648,
+        -90.398
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 109,
+      "east_north_m": [
+        -167.862,
+        -109.969
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 119,
+      "east_north_m": [
+        -192.438,
+        -99.784
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 127,
+      "east_north_m": [
+        -169.394,
+        -93.96
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 129,
+      "east_north_m": [
+        -594.159,
+        -212.005
+      ],
+      "area": "Knight west",
+      "observation": "Stem projects onto the junction of two paved walks.",
+      "paired_understory": false
+    },
+    {
+      "index": 147,
+      "east_north_m": [
+        -401.723,
+        -229.769
+      ],
+      "paired_understory": false,
+      "site": "gerlinger-field-green",
+      "reason": "The orthophoto shows open lawn at the stem beside Gerlinger Hall.",
+      "aerial_url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493911.42628888186%2C4876682.513153052%2C493943.42628888186%2C4876714.513153052&bboxSR=3740&imageSR=3740&size=288%2C288&format=png&bandIds=0%2C1%2C2",
+      "aerial_sha256": "b6e8130e332295d5d7905337d444046539ce5b1c17e8c33d4d0c00aefb933b30"
+    },
+    {
+      "index": 148,
+      "east_north_m": [
+        -172.55,
+        -85.134
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 153,
+      "east_north_m": [
+        -181.446,
+        -82.266
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 176,
+      "east_north_m": [
+        -599.79,
+        -206.662
+      ],
+      "area": "Knight north",
+      "observation": "Stem falls on pavement in the 2024 aerial and the nearest inventoried standing tree is 7.67 m away.",
+      "paired_understory": false
+    },
+    {
+      "index": 181,
+      "east_north_m": [
+        -162.011,
+        -99.925
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 187,
+      "east_north_m": [
+        -604.986,
+        -211.62
+      ],
+      "area": "Knight west",
+      "observation": "Stem projects onto open low planting between two separated crowns.",
+      "paired_understory": false
+    },
+    {
+      "index": 204,
+      "east_north_m": [
+        -199.131,
+        -105.634
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 206,
+      "east_north_m": [
+        -168.008,
+        -79.519
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 219,
+      "east_north_m": [
+        -193.565,
+        -111.369
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 224,
+      "east_north_m": [
+        -185.993,
+        -107.038
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 245,
+      "east_north_m": [
+        -612.086,
+        -214.548
+      ],
+      "area": "Knight west",
+      "observation": "Stem projects onto a side walk beside the neighboring west roof edge.",
+      "paired_understory": false
+    },
+    {
+      "index": 252,
+      "east_north_m": [
+        -181.848,
+        -97.941
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": false
+    },
+    {
+      "index": 290,
+      "east_north_m": [
+        -196.942,
+        -86.089
+      ],
+      "area": "EMU Green",
+      "observation": "The modeled stem falls within the open circular lawn in the 2024 image.",
+      "paired_understory": true
+    },
+    {
+      "index": 299,
+      "east_north_m": [
+        -158.974,
+        -89.288
+      ],
+      "area": "EMU Green",
+      "observation": "The source stem lies in open turf beside the circular path. No crown is visible there and the closest listed elm is 14.04 m away.",
+      "paired_understory": false
+    }
+  ]
+}

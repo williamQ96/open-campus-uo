@@ -11,3 +11,13 @@ The wall patch validates the exact source hash, unique building identity, color,
 ## Navigation check correction, 2026-11-04
 
 The initial automated rectangle check used render-space south coordinates as ENU north coordinates. The corrected sign and the same 0.5 m margin were rerun against the actual six facade envelopes and found zero graph-edge intersections. The automated test now uses ENU coordinates. This is still not a pedestrian-clearance or accessibility survey.
+
+## East upper-window transoms, 2026-11-23
+
+Page 4 of the 2006 and [2025 UO surveys](https://cpfm.uoregon.edu/sites/default/files/2025-01/carsonhall_2025.pdf#page=4) shows the same east facade photograph. The updated opening description supports grouped steel casements with an offset horizontal division. The east overlay now has 16 thin metal transoms across four window groups on each of the four upper rows. The 0.20 m offset below each modeled center is an interpretation of the visible proportions. The existing glazing, mullions, ground-floor group, and all 387 prior components remain in place. The survey is a linked reference and no photo pixels are included in the geometry.
+
+The new boxes add 192 model triangles to the existing single merged mesh. Geometry rays checked all 20 east groups, including exposed glass above and below the transoms and the undivided ground-floor row. First-person comparisons used the same verified cameras at front and oblique positions. Draw counts held at 312 and 272 respectively, selection still resolved to `roof-2cd1068b`, and all 534 runtime entrance records and both sampled collision states matched. The Carson selection test also passed in both render modes. The standalone overlay reimported as one mesh with 14,508 vertices and exact position, normal and color values. The source pin, viewer overrides and asset checksums passed.
+
+The [earlier public-map footprint screen](interior-preflight-carson-hall-2026-11-16.md#base-presentation-geometry-screen) found that the projected base mesh intersects 90.67% of the UO 076 map polygon. The remaining envelope, stair-tower glazing, east entry and other elevations still need evidence and scene review. The window work advances the exterior toward the L2 target. Its full-building level remains 1 pending review.
+
+Before/after source and views, reference PDFs and GLB round-trip evidence are retained in `D:/github/opencampus-interior-research-20261116/exterior-l2/carson-20261123/` with hashes in `manifest.json`. Local only.

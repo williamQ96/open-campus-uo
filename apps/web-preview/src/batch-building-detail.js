@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Merge a source-pinned static facade into its registered context batch.
 import { mergeBuildingDetailIntoSource } from "./exterior-detail.js";
+import { preserveContextPrefix } from "./context-roof-refinements.js";
 export function mergeBatchBuildingDetail(root, detail, spec) {
   const bounds = spec.merge_batch_bounds;
   if (
@@ -59,7 +60,9 @@ export function mergeBatchBuildingDetail(root, detail, spec) {
     mesh.name = spec.building_id;
     mesh.userData.asset_kind = "building";
     mesh.userData.asset_id = spec.building_id;
+    const source = mesh.geometry;
     mergeBuildingDetailIntoSource(root, detail, spec);
+    preserveContextPrefix(source, mesh.geometry);
   } finally {
     mesh.name = oldName;
     mesh.userData.asset_kind = oldKind;

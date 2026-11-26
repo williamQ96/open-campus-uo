@@ -32,12 +32,17 @@ export function createMinimap(canvas, buildings, half, corridors = []) {
   }
   for (const building of buildings) {
     b.beginPath();
-    building.footprint_enu_m.forEach(([x, y], i) =>
-      i ? b.lineTo(...point(x, y)) : b.moveTo(...point(x, y)),
-    );
-    b.closePath();
+    for (const ring of [
+      building.footprint_enu_m,
+      ...(building.footprint_holes_enu_m ?? []),
+    ]) {
+      ring.forEach(([x, y], i) =>
+        i ? b.lineTo(...point(x, y)) : b.moveTo(...point(x, y)),
+      );
+      b.closePath();
+    }
     b.fillStyle = building.name ? "#72867d" : "#b0b8b5";
-    b.fill();
+    b.fill("evenodd");
   }
   const context = canvas.getContext("2d");
   let last;

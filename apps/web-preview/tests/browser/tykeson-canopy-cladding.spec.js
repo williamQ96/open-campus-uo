@@ -31,7 +31,7 @@ test("Tykeson canopy and cladding retain openings and draw budget", async ({
         await r.fulfill({ response, json });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=plc-lokey-tykeson-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     const views = [];
@@ -61,7 +61,7 @@ test("Tykeson canopy and cladding retain openings and draw budget", async ({
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=plc-lokey-tykeson-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&
@@ -83,7 +83,11 @@ test("Tykeson canopy and cladding retain openings and draw budget", async ({
         ),
       );
       await page.screenshot({
-        path: `../../docs/images/tykeson-canopy-cladding-${label}-${before ? "before" : "after"}-2026-11-10.png`,
+        path: test
+          .info()
+          .outputPath(
+            `tykeson-canopy-cladding-${label}-${before ? "before" : "after"}.png`,
+          ),
       });
     }
     await page

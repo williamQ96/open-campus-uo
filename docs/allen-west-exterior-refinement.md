@@ -1,5 +1,7 @@
 # Allen Hall west frontage, 2026-11-04
 
+The [registered Allen Hall exterior](allen-exterior-review-2026-11-24.md) is the local default. The earlier overlay remains available through `?exterior-review=allen-baseline` in development.
+
 The [UO historic survey](https://cpfm.uoregon.edu/allenhall2025) identifies the 1953–54 west wing, its brick and limestone exterior, nine relief plaques, three stories and flat roof. The [UO architecture history](https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/allen-hall) documents the 2012–13 expansion. A [Docomomo Oregon photograph](https://www.docomomo-oregon.org/resources/allen-hall/) was consulted to check the renovated west elevation. Reference photographs are linked only, not redistributed or used as textures. Original overlay geometry is CC BY 4.0.
 
 On `roof-7b7893d6` (a curated approximate locator inside the LiDAR-derived footprint), a reversible, source-pinned overlay adds an illustrative limestone-colored panel, two horizontal bands of glazing, simplified plaques and roofline louvers to the western wall. The panel is aligned to sampled existing mesh points; its precise extent, sizes, color, fenestration and plaque details have not been surveyed. [Before](images/allen-west-before.png) / [after](images/allen-west-after.png). Existing flat roof and original mesh remain; the surveyed flat roof shape is supported but exact roof features are unverified.

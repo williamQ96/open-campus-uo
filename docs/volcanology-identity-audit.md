@@ -17,3 +17,9 @@ The rejected initial study placed lower windows below the sampled local terrain 
 The identity is still provisional. The frontage, proportions and elevation are approximate and historical; other elevations and the coarse original roof remain incomplete. Existing estimated entry and collision data are unchanged, and the visible door is not evidence of a navigable or accessible entrance. No level promotion is claimed. No source photographs are redistributed.
 
 [Before](images/volcanology-south-before.png), [front after](images/volcanology-south-after.png), [oblique after](images/volcanology-south-side.png). 63 unit tests, 3 targeted browser checks and the production build passed.
+
+## Coordinated Cascade site candidate, 2026-11-23
+
+The [paired exterior review](cascade-wall-study.md#coordinated-courtyard-and-volcanology-review) rebuilds Volcanology with a flat roof, setback penthouse and a separate raised courtyard connection. The approximate identity, selected roof heights and courtyard boundary are traceable to the UO survey, 2024 orthophoto and NOAA first returns. This local development view keeps the provisional identity and L1 grade.
+
+The November 24 local default adopts the paired version with the new sash divisions, brick corner treatment, and south landing. The exterior is recorded as L2 after individual comparison with Knight Library. The optional search label still marks the source ID as an approximate map match. [Default adoption and verification](cascade-wall-study.md#default-adoption-and-exterior-review-2026-11-24).

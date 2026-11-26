@@ -34,7 +34,7 @@ test("University mansard refinement preserves campus selection, entrances, colli
         await r.fulfill({ response: res, json: j });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=heritage-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     let views = [];
@@ -64,7 +64,7 @@ test("University mansard refinement preserves campus selection, entrances, colli
           ),
         { ground, z, yaw },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=heritage-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&
@@ -72,7 +72,11 @@ test("University mansard refinement preserves campus selection, entrances, colli
       );
       await page.waitForTimeout(500);
       await page.screenshot({
-        path: `../../docs/images/university-mansard-${label}-${before ? "before" : "after"}-2026-11-04.png`,
+        path: test
+          .info()
+          .outputPath(
+            `university-mansard-${label}-${before ? "before" : "after"}.png`,
+          ),
       });
       views.push(
         await page.evaluate(

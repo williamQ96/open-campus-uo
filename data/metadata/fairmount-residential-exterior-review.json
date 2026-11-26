@@ -1,0 +1,1691 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_dsm_sha256": {
+    "2013-2015": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "2017": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+  },
+  "models": [
+    {
+      "id": "roof-41f5448c",
+      "name": "1705 Fairmount Blvd",
+      "street_address": "1705 Fairmount Blvd",
+      "state_feature": "20-1061597",
+      "footprint_enu_m": [
+        [
+          905.178,
+          -529.122
+        ],
+        [
+          906.248,
+          -520.322
+        ],
+        [
+          904.13,
+          -520.064
+        ],
+        [
+          905.144,
+          -511.73
+        ],
+        [
+          895.364,
+          -510.53
+        ],
+        [
+          894.69,
+          -517.082
+        ],
+        [
+          892.796,
+          -516.884
+        ],
+        [
+          892.65,
+          -518.05
+        ],
+        [
+          890.32,
+          -517.83
+        ],
+        [
+          889.058,
+          -526.576
+        ],
+        [
+          893.394,
+          -527.208
+        ],
+        [
+          892.236,
+          -534.61
+        ],
+        [
+          901.796,
+          -536.196
+        ],
+        [
+          902.588,
+          -528.858
+        ],
+        [
+          905.178,
+          -529.122
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          905.178,
+          -529.122
+        ],
+        [
+          906.248,
+          -520.322
+        ],
+        [
+          904.13,
+          -520.064
+        ],
+        [
+          905.144,
+          -511.73
+        ],
+        [
+          895.364,
+          -510.53
+        ],
+        [
+          894.69,
+          -517.082
+        ],
+        [
+          892.796,
+          -516.884
+        ],
+        [
+          892.65,
+          -518.05
+        ],
+        [
+          890.32,
+          -517.83
+        ],
+        [
+          889.058,
+          -526.576
+        ],
+        [
+          893.394,
+          -527.208
+        ],
+        [
+          892.236,
+          -534.61
+        ],
+        [
+          901.796,
+          -536.196
+        ],
+        [
+          902.588,
+          -528.858
+        ],
+        [
+          905.178,
+          -529.122
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          898.1935142633057,
+          -523.167223537881
+        ],
+        "axis": [
+          0.121864,
+          0.992547
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -13,
+            -8,
+            12.6,
+            4.7
+          ],
+          "planes": [
+            [
+              0,
+              -0.96,
+              36.51,
+              0,
+              0.267
+            ],
+            [
+              0,
+              -0.96,
+              36.51,
+              0,
+              -0.275
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -5.24,
+            -8.12,
+            5.9,
+            9
+          ],
+          "planes": [
+            [
+              0.36,
+              0,
+              36.53,
+              0.352,
+              0
+            ],
+            [
+              0.36,
+              0,
+              36.53,
+              -0.344,
+              0
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.19,
+      "wall_color": [
+        167,
+        170,
+        163
+      ],
+      "trim_color": [
+        207,
+        205,
+        189
+      ],
+      "roof_color": [
+        107,
+        111,
+        119
+      ],
+      "door_color": [
+        116,
+        84,
+        50
+      ],
+      "garage_color": [
+        82,
+        77,
+        66
+      ],
+      "entrance": {
+        "near_enu_m": [
+          889.31362,
+          -525.33121
+        ],
+        "outward_degrees": 277,
+        "landing_m": 1.72,
+        "threshold_above_grade_m": 0.39
+      },
+      "front_windows": [
+        [
+          -2.42,
+          0.88,
+          2.72,
+          1.0
+        ],
+        [
+          1.75,
+          0.91,
+          1.51,
+          1.08
+        ]
+      ],
+      "porch": null,
+      "garage": [
+        [
+          889.9205,
+          -520.38833
+        ],
+        277,
+        3.5
+      ],
+      "garage_slot_enu_m": null,
+      "chimneys": [
+        [
+          896.34552,
+          -518.68864,
+          0.49,
+          0.65,
+          0.81
+        ]
+      ],
+      "public_reference": {
+        "url": "https://www.redfin.com/OR/Eugene/1705-Fairmount-Blvd-97403/home/25862409",
+        "date": "2025-03",
+        "observation": "Listing exterior shows a cross gable, pale gray lower and upper walls, dark paired garage doors and a recessed natural-wood entrance."
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495211.14928888186%2C4876384.282153052%2C495243.14928888186%2C4876425.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=256%2C328",
+        "sha256": "57f8d24b37ff65ea96f214f080f1b9b97ebd89c2de7c8c7d3181bf430b5df0f9"
+      },
+      "validation_window_local": [
+        -11.8,
+        -5.8,
+        11.6,
+        6.85
+      ],
+      "solar": null,
+      "balcony": null
+    },
+    {
+      "id": "roof-57f699be",
+      "name": "1799 Fairmount Blvd",
+      "street_address": "1799 Fairmount Blvd",
+      "state_feature": "20-1074217",
+      "footprint_enu_m": [
+        [
+          831.806,
+          -601.08
+        ],
+        [
+          824.282,
+          -607.328
+        ],
+        [
+          833.476,
+          -618.402
+        ],
+        [
+          841.002,
+          -612.154
+        ],
+        [
+          831.806,
+          -601.08
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          823.084,
+          -605.886
+        ],
+        [
+          833.476,
+          -618.402
+        ],
+        [
+          841.002,
+          -612.154
+        ],
+        [
+          830.608,
+          -599.638
+        ],
+        [
+          823.084,
+          -605.886
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          832.0428561211701,
+          -609.0199857477454
+        ],
+        "axis": [
+          -0.638814,
+          0.769361
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -8.6,
+            -5.4,
+            -2.7,
+            5.4
+          ],
+          "planes": [
+            [
+              -4.6,
+              0,
+              36.33,
+              -0.154,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -2.7,
+            -5.4,
+            8.6,
+            5.4
+          ],
+          "planes": [
+            [
+              -0.8,
+              0,
+              36.22,
+              0.216,
+              0
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.18,
+      "wall_color": [
+        151,
+        111,
+        69
+      ],
+      "trim_color": [
+        64,
+        62,
+        57
+      ],
+      "roof_color": [
+        77,
+        81,
+        86
+      ],
+      "door_color": [
+        59,
+        62,
+        58
+      ],
+      "garage_color": [
+        176,
+        178,
+        163
+      ],
+      "entrance": {
+        "near_enu_m": [
+          826.91931,
+          -605.15054
+        ],
+        "outward_degrees": 320,
+        "landing_m": 1.69,
+        "threshold_above_grade_m": 0.49
+      },
+      "front_windows": [
+        [
+          -1.75,
+          1.0,
+          1.36,
+          1.22
+        ]
+      ],
+      "porch": null,
+      "garage": null,
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_reference": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=RVc5Vy1Nm7y0WJ699beK-g&heading=124",
+        "date": "2019-07",
+        "observation": "The modern house has a broad timber soffit, slender dark braces and an elevated street-side covered space. The 2024 ortho shows its photovoltaic field."
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495145.14928888186%2C4876302.282153052%2C495177.14928888186%2C4876336.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=256%2C272",
+        "sha256": "95e74febd998a0e8dce92ce4212b4289cfdece6005ff4bccba8907bc0ef9e884"
+      },
+      "validation_window_local": [
+        -7.72,
+        -3.8,
+        7.65,
+        3.8
+      ],
+      "solar": [
+        0.15,
+        -3.82,
+        6.41,
+        4.18,
+        7,
+        7
+      ],
+      "balcony": null
+    },
+    {
+      "id": "roof-8aa49f9b",
+      "name": "1834 Fairmount Blvd",
+      "street_address": "1834 Fairmount Blvd",
+      "state_feature": "20-1073963",
+      "footprint_enu_m": [
+        [
+          708.274,
+          -635.832
+        ],
+        [
+          708.258,
+          -655.456
+        ],
+        [
+          717.33,
+          -655.464
+        ],
+        [
+          717.332,
+          -653.058
+        ],
+        [
+          718.904,
+          -653.058
+        ],
+        [
+          718.914,
+          -641.674
+        ],
+        [
+          715.768,
+          -641.67
+        ],
+        [
+          715.772,
+          -637.134
+        ],
+        [
+          711.698,
+          -637.132
+        ],
+        [
+          711.7,
+          -635.836
+        ],
+        [
+          708.274,
+          -635.832
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          708.274,
+          -635.832
+        ],
+        [
+          708.258,
+          -655.456
+        ],
+        [
+          717.33,
+          -655.464
+        ],
+        [
+          717.332,
+          -653.058
+        ],
+        [
+          718.904,
+          -653.058
+        ],
+        [
+          718.914,
+          -641.674
+        ],
+        [
+          715.768,
+          -641.67
+        ],
+        [
+          715.772,
+          -637.134
+        ],
+        [
+          711.698,
+          -637.132
+        ],
+        [
+          711.7,
+          -635.836
+        ],
+        [
+          708.274,
+          -635.832
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          713.1103453130698,
+          -646.4328410981691
+        ],
+        "axis": [
+          0.000876,
+          1.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -9.4,
+            -6.2,
+            10.95,
+            5.2
+          ],
+          "planes": [
+            [
+              0.45,
+              0,
+              29.18,
+              0.33,
+              0
+            ],
+            [
+              0.45,
+              0,
+              29.18,
+              -0.405,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -7.02,
+            -5.98,
+            -1.35,
+            4.99
+          ],
+          "planes": [
+            [
+              0,
+              0.16,
+              28.54,
+              0,
+              0.31
+            ],
+            [
+              0,
+              0.16,
+              28.54,
+              0,
+              -0.33
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.22,
+      "wall_color": [
+        118,
+        129,
+        132
+      ],
+      "trim_color": [
+        206,
+        204,
+        182
+      ],
+      "roof_color": [
+        94,
+        98,
+        99
+      ],
+      "door_color": [
+        77,
+        75,
+        62
+      ],
+      "garage_color": [
+        176,
+        178,
+        163
+      ],
+      "entrance": {
+        "near_enu_m": [
+          718.87885,
+          -648.1479
+        ],
+        "outward_degrees": 90,
+        "landing_m": 1.64,
+        "threshold_above_grade_m": 0.31
+      },
+      "front_windows": [
+        [
+          -2.28,
+          0.86,
+          1.49,
+          1.13
+        ],
+        [
+          1.89,
+          0.91,
+          1.4,
+          1.11
+        ]
+      ],
+      "porch": null,
+      "garage": [
+        [
+          715.76613,
+          -639.83516
+        ],
+        90,
+        2.75
+      ],
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_reference": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=cDYy7qMoCye7O-fPHWIkKA&heading=270",
+        "date": "2024-07",
+        "observation": "The street view from Walnut shows dark blue-gray lap siding and a gabled entry return partly screened by mature trees."
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495030.14928888186%2C4876265.282153052%2C495055.14928888186%2C4876300.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=200%2C280",
+        "sha256": "f8c86e5dec4f749dc55a78acfbe6dd4af93055124c0a389958bb1fcf9bd5a2f1"
+      },
+      "validation_window_local": [
+        -4.3,
+        -4.95,
+        6.5,
+        3.95
+      ],
+      "solar": null,
+      "balcony": null
+    },
+    {
+      "id": "roof-e057643a",
+      "name": "1892 Fairmount Blvd",
+      "street_address": "1892 Fairmount Blvd",
+      "state_feature": "20-1074148",
+      "footprint_enu_m": [
+        [
+          686.556,
+          -704.288
+        ],
+        [
+          681.27,
+          -713.852
+        ],
+        [
+          689.318,
+          -718.302
+        ],
+        [
+          691.3,
+          -714.718
+        ],
+        [
+          693.176,
+          -715.756
+        ],
+        [
+          696.99,
+          -708.856
+        ],
+        [
+          695.114,
+          -707.818
+        ],
+        [
+          698.35,
+          -701.968
+        ],
+        [
+          694.84,
+          -700.028
+        ],
+        [
+          693.342,
+          -702.738
+        ],
+        [
+          686.664,
+          -699.046
+        ],
+        [
+          684.42,
+          -703.106
+        ],
+        [
+          686.556,
+          -704.288
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          686.556,
+          -704.288
+        ],
+        [
+          681.27,
+          -713.852
+        ],
+        [
+          689.318,
+          -718.302
+        ],
+        [
+          691.3,
+          -714.718
+        ],
+        [
+          693.176,
+          -715.756
+        ],
+        [
+          696.99,
+          -708.856
+        ],
+        [
+          695.114,
+          -707.818
+        ],
+        [
+          698.35,
+          -701.968
+        ],
+        [
+          694.84,
+          -700.028
+        ],
+        [
+          693.342,
+          -702.738
+        ],
+        [
+          686.664,
+          -699.046
+        ],
+        [
+          684.42,
+          -703.106
+        ],
+        [
+          686.556,
+          -704.288
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          689.835166216575,
+          -708.5610837102546
+        ],
+        "axis": [
+          0.8751531599844421,
+          -0.48384599468141254
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -7.8,
+            -9.2,
+            6.72,
+            10.22
+          ],
+          "planes": [
+            [
+              -2.71,
+              0,
+              29.88,
+              0.34,
+              0
+            ],
+            [
+              -2.71,
+              0,
+              29.88,
+              -0.31,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -7.75,
+            2.15,
+            6.55,
+            7.03
+          ],
+          "planes": [
+            [
+              0,
+              4.3,
+              29.97,
+              0,
+              0.41
+            ],
+            [
+              0,
+              4.3,
+              29.97,
+              0,
+              -0.356
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            0.02,
+            6.91,
+            4.7,
+            10.38
+          ],
+          "planes": [
+            [
+              0,
+              7.2,
+              28.89,
+              0.036,
+              -0.201
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.24,
+      "wall_color": [
+        151,
+        158,
+        160
+      ],
+      "trim_color": [
+        224,
+        224,
+        209
+      ],
+      "roof_color": [
+        115,
+        116,
+        110
+      ],
+      "door_color": [
+        77,
+        75,
+        62
+      ],
+      "garage_color": [
+        176,
+        178,
+        163
+      ],
+      "entrance": {
+        "near_enu_m": [
+          694.95487,
+          -712.36287
+        ],
+        "outward_degrees": 119,
+        "landing_m": 1.64,
+        "threshold_above_grade_m": 0.37
+      },
+      "front_windows": [
+        [
+          1.45,
+          0.95,
+          1.49,
+          1.1
+        ]
+      ],
+      "porch": {
+        "width": 2.48,
+        "depth": 1.08,
+        "kind": "eave",
+        "rise": 0.0
+      },
+      "garage": [
+        [
+          684.05574,
+          -708.90805
+        ],
+        299,
+        3.62
+      ],
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_reference": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=3UEUAqRWmDoB9PABW4O-bQ&heading=295",
+          "date": "2024-07",
+          "observation": "A shallow roof covers the visible street entrance."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JrqLKtKiYzxIYS4fbkW8jQ&heading=90",
+          "date": "2019-07",
+          "observation": "Blue-gray shingle siding, white window surrounds, timber balcony and lower garage face the alley."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495003.14928888186%2C4876202.282153052%2C495035.14928888186%2C4876236.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=256%2C272",
+        "sha256": "25d3cdf052d617fd73067667ee187202b88bf52fad8eba10bf1b30a8c39be2f8"
+      },
+      "validation_window_local": [
+        -4.87,
+        -7.1,
+        4.8,
+        6.6
+      ],
+      "solar": null,
+      "balcony": [
+        684.16795,
+        -708.68442,
+        299,
+        5.3,
+        1.6,
+        2.4
+      ]
+    },
+    {
+      "id": "roof-7bb19f64",
+      "name": "1925 Fairmount Blvd",
+      "street_address": "1925 Fairmount Blvd",
+      "state_feature": "20-1062534",
+      "footprint_enu_m": [
+        [
+          709.98,
+          -824.472
+        ],
+        [
+          712.034,
+          -814.174
+        ],
+        [
+          698.162,
+          -811.41
+        ],
+        [
+          699.01,
+          -807.146
+        ],
+        [
+          690.194,
+          -805.39
+        ],
+        [
+          687.998,
+          -816.41
+        ],
+        [
+          690.37,
+          -816.882
+        ],
+        [
+          689.014,
+          -823.694
+        ],
+        [
+          696.544,
+          -825.194
+        ],
+        [
+          697.196,
+          -821.924
+        ],
+        [
+          709.98,
+          -824.472
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          709.98,
+          -824.472
+        ],
+        [
+          712.034,
+          -814.174
+        ],
+        [
+          698.162,
+          -811.41
+        ],
+        [
+          699.01,
+          -807.146
+        ],
+        [
+          690.194,
+          -805.39
+        ],
+        [
+          687.998,
+          -816.41
+        ],
+        [
+          690.37,
+          -816.882
+        ],
+        [
+          689.014,
+          -823.694
+        ],
+        [
+          696.544,
+          -825.194
+        ],
+        [
+          697.196,
+          -821.924
+        ],
+        [
+          709.98,
+          -824.472
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          698.7001983519086,
+          -816.3820355282137
+        ],
+        "axis": [
+          0.980715,
+          -0.195441
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -10.95,
+            -9.45,
+            -3.38,
+            9.65
+          ],
+          "planes": [
+            [
+              -8.4,
+              0,
+              29.96,
+              0.231,
+              0.029
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -3.38,
+            -6.93,
+            13.1,
+            5.12
+          ],
+          "planes": [
+            [
+              0,
+              -2.9,
+              32.88,
+              0.003,
+              0.205
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -3.38,
+            -9.45,
+            0,
+            -6.93
+          ],
+          "planes": [
+            [
+              -4,
+              -7.5,
+              30.71,
+              0.222,
+              0.065
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -3.38,
+            5.12,
+            -1.06,
+            9.52
+          ],
+          "planes": [
+            [
+              -3.38,
+              5.12,
+              30.9,
+              0.21,
+              0.044
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.22,
+      "wall_color": [
+        178,
+        173,
+        144
+      ],
+      "trim_color": [
+        213,
+        208,
+        171
+      ],
+      "roof_color": [
+        143,
+        139,
+        126
+      ],
+      "door_color": [
+        77,
+        75,
+        62
+      ],
+      "garage_color": [
+        176,
+        178,
+        163
+      ],
+      "entrance": {
+        "near_enu_m": [
+          688.44217,
+          -814.69465
+        ],
+        "outward_degrees": 281,
+        "landing_m": 1.83,
+        "threshold_above_grade_m": 0.39
+      },
+      "front_windows": [
+        [
+          -2.76,
+          0.66,
+          3.25,
+          1.46
+        ],
+        [
+          2.64,
+          0.66,
+          3.5,
+          1.46
+        ]
+      ],
+      "porch": null,
+      "garage": null,
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_reference": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PteaV0gF9U-HSkZIVZgu3w&heading=100",
+        "date": "2020-11",
+        "observation": "Continuous shallow canopy, broad glazing and higher clerestory form behind the street-side wall."
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495010.14928888186%2C4876095.282153052%2C495049.14928888186%2C4876130.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=312%2C280",
+        "sha256": "4d420286c3279870492530fd9250200563b782ff5bf9f32f09dcfad31fdcf48c"
+      },
+      "validation_window_local": [
+        -9.8,
+        -5.25,
+        9.7,
+        1.4
+      ],
+      "solar": null,
+      "balcony": null
+    },
+    {
+      "id": "roof-72b4d323",
+      "name": "2055 Fairmount Blvd",
+      "street_address": "2055 Fairmount Blvd",
+      "state_feature": "20-1062659",
+      "footprint_enu_m": [
+        [
+          699.55,
+          -907.45
+        ],
+        [
+          698.034,
+          -917.136
+        ],
+        [
+          716.916,
+          -920.092
+        ],
+        [
+          718.842,
+          -907.792
+        ],
+        [
+          708.222,
+          -906.13
+        ],
+        [
+          707.814,
+          -908.744
+        ],
+        [
+          699.55,
+          -907.45
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          699.55,
+          -907.45
+        ],
+        [
+          698.034,
+          -917.136
+        ],
+        [
+          716.916,
+          -920.092
+        ],
+        [
+          718.842,
+          -907.792
+        ],
+        [
+          708.222,
+          -906.13
+        ],
+        [
+          707.814,
+          -908.744
+        ],
+        [
+          699.55,
+          -907.45
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          708.9041080369919,
+          -913.0455450641589
+        ],
+        "axis": [
+          0.987971,
+          -0.154642
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -10.62,
+            -6.12,
+            3.5,
+            4.52
+          ],
+          "planes": [
+            [
+              0,
+              -0.76,
+              29.63,
+              0,
+              0.352
+            ],
+            [
+              0,
+              -0.76,
+              29.63,
+              0,
+              -0.365
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -2.16,
+            -6.14,
+            9.42,
+            7.16
+          ],
+          "planes": [
+            [
+              3.52,
+              0,
+              29.8,
+              0.26,
+              0
+            ],
+            [
+              3.52,
+              0,
+              29.8,
+              -0.335,
+              0
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.24,
+      "wall_color": [
+        190,
+        173,
+        135
+      ],
+      "trim_color": [
+        219,
+        209,
+        179
+      ],
+      "roof_color": [
+        125,
+        108,
+        101
+      ],
+      "door_color": [
+        77,
+        75,
+        62
+      ],
+      "garage_color": [
+        176,
+        178,
+        163
+      ],
+      "entrance": {
+        "near_enu_m": [
+          705.13777,
+          -918.22543
+        ],
+        "outward_degrees": 189,
+        "landing_m": 3.06,
+        "threshold_above_grade_m": 0.78
+      },
+      "front_windows": [
+        [
+          -2.2,
+          1.28,
+          1.11,
+          0.78
+        ],
+        [
+          2.82,
+          1.11,
+          1.75,
+          1.02
+        ]
+      ],
+      "porch": null,
+      "garage": [
+        [
+          700.53074,
+          -917.52455
+        ],
+        189,
+        3.55
+      ],
+      "garage_slot_enu_m": null,
+      "chimneys": [
+        [
+          708.83984,
+          -914.36144,
+          0.55,
+          0.51,
+          0.83
+        ]
+      ],
+      "public_reference": {
+        "url": "https://www.redfin.com/OR/Eugene/2055-Fairmount-Blvd-97403/home/26259271",
+        "date": "2025-03",
+        "observation": "Listing shows the tan split-level wall, pale stair railing, dark gable trim and separate double-garage approach."
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495020.14928888186%2C4876000.282153052%2C495055.14928888186%2C4876029.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=280%2C232",
+        "sha256": "e5369d426b96f9eed393e2be4521b7418f02a729f5a7b1dc82b46509580aeffd"
+      },
+      "validation_window_local": [
+        -8.9,
+        -4.91,
+        7.9,
+        5.7
+      ],
+      "solar": null,
+      "balcony": null
+    },
+    {
+      "id": "roof-78a95ac1",
+      "name": "2094 Fairmount Blvd",
+      "street_address": "2094 Fairmount Blvd",
+      "state_feature": "20-1062656",
+      "footprint_enu_m": [
+        [
+          626.042,
+          -917.672
+        ],
+        [
+          626.006,
+          -933.274
+        ],
+        [
+          636.272,
+          -933.296
+        ],
+        [
+          636.308,
+          -917.396
+        ],
+        [
+          635.378,
+          -917.394
+        ],
+        [
+          635.39,
+          -911.536
+        ],
+        [
+          628.502,
+          -911.52
+        ],
+        [
+          628.488,
+          -917.676
+        ],
+        [
+          626.042,
+          -917.672
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          626.042,
+          -917.672
+        ],
+        [
+          626.006,
+          -933.274
+        ],
+        [
+          636.272,
+          -933.296
+        ],
+        [
+          636.308,
+          -917.396
+        ],
+        [
+          635.378,
+          -917.394
+        ],
+        [
+          635.39,
+          -911.536
+        ],
+        [
+          628.502,
+          -911.52
+        ],
+        [
+          628.488,
+          -917.676
+        ],
+        [
+          626.042,
+          -917.672
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          631.3270711064071,
+          -923.1990522485889
+        ],
+        "axis": [
+          0.002234,
+          0.999998
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -10.55,
+            -5.42,
+            6.22,
+            5.78
+          ],
+          "planes": [
+            [
+              0,
+              0.61,
+              29.06,
+              0,
+              0.49
+            ],
+            [
+              0,
+              0.61,
+              29.06,
+              0,
+              -0.43
+            ],
+            [
+              -8.8,
+              0,
+              29.06,
+              0.145,
+              0
+            ],
+            [
+              3.25,
+              0,
+              29.06,
+              -0.53,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -5.74,
+            -5.42,
+            -0.0,
+            5.78
+          ],
+          "planes": [
+            [
+              -2.96,
+              0,
+              29.28,
+              0.38,
+              0
+            ],
+            [
+              -2.96,
+              0,
+              29.28,
+              -0.405,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            5.53,
+            -4.44,
+            12.03,
+            3.2
+          ],
+          "planes": [
+            [
+              0,
+              -0.43,
+              26.38,
+              0,
+              0.22
+            ],
+            [
+              0,
+              -0.43,
+              26.38,
+              0,
+              -0.193
+            ]
+          ]
+        }
+      ],
+      "eaves_m": 0.21,
+      "wall_color": [
+        168,
+        164,
+        146
+      ],
+      "trim_color": [
+        216,
+        213,
+        192
+      ],
+      "roof_color": [
+        107,
+        104,
+        96
+      ],
+      "door_color": [
+        77,
+        75,
+        62
+      ],
+      "garage_color": [
+        176,
+        178,
+        163
+      ],
+      "entrance": {
+        "near_enu_m": [
+          628.54462,
+          -933.24287
+        ],
+        "outward_degrees": 180,
+        "landing_m": 1.69,
+        "threshold_above_grade_m": 0.42
+      },
+      "front_windows": [
+        [
+          -2.05,
+          0.71,
+          1.47,
+          1.19
+        ],
+        [
+          1.48,
+          0.83,
+          1.23,
+          1.12
+        ]
+      ],
+      "porch": null,
+      "garage": [
+        [
+          628.51613,
+          -914.66275
+        ],
+        270,
+        3.6
+      ],
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_reference": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=AUjZyNqad_neOFmC8dtIQg&heading=340",
+          "date": "2020-11",
+          "observation": "Pale gable wall and covered approach seen across Fairmount."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ED4ofHbYgAz_9bhzfP9jLA&heading=90",
+          "date": "2024-07",
+          "observation": "West approach and separate low garage wing seen from Orchard."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494948.14928888186%2C4875987.282153052%2C494973.14928888186%2C4876024.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=200%2C296",
+        "sha256": "c6c7d0e5c12c013a46cb8d3ba7139ad06cbe1fb2d01e30604b1a6835fb909bf5"
+      },
+      "validation_window_local": [
+        -8.91,
+        -4.25,
+        9.64,
+        4.45
+      ],
+      "solar": null,
+      "balcony": null
+    }
+  ]
+}

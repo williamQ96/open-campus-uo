@@ -58,7 +58,10 @@ function blockedByRing(x, north, ring, radius) {
     north > bounds[3] + radius
   )
     return false;
-  if (insidePolygon(x, north, ring)) return true;
+  return insidePolygon(x, north, ring) || nearRing(x, north, ring, radius);
+}
+
+function nearRing(x, north, ring, radius) {
   for (let i = 0; i < ring.length; i++) {
     const [ax, ay] = ring[i],
       [bx, by] = ring[(i + 1) % ring.length],
@@ -75,7 +78,15 @@ function blockedByRing(x, north, ring, radius) {
 export function isBlocked(x, z, buildings, half, radius = 0.42) {
   if (Math.abs(x) > half - radius || Math.abs(z) > half - radius) return true;
   for (const b of buildings) {
-    if (blockedByRing(x, -z, b.footprint_enu_m, radius)) return true;
+    const ground = b.ground_footprints_enu_m;
+    const inside = ground
+      ? ground.some((ring) => blockedByRing(x, -z, ring, radius))
+      : blockedByRing(x, -z, b.footprint_enu_m, radius) &&
+        !b.footprint_holes_enu_m?.some(
+          (hole) =>
+            insidePolygon(x, -z, hole) && !nearRing(x, -z, hole, radius),
+        );
+    if (inside) return true;
     if (b.collision_extra_enu_m)
       for (const ring of b.collision_extra_enu_m)
         if (blockedByRing(x, -z, ring, radius)) return true;

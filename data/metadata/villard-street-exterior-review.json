@@ -1,0 +1,1925 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_dsm_sha256": {
+    "2017": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+    "2013-2015": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+  },
+  "models": [
+    {
+      "id": "roof-efd78630",
+      "name": "1401 Villard St",
+      "street_address": "1401 Villard St",
+      "state_feature": "20-1073489",
+      "profile": "shop",
+      "footprint_enu_m": [
+        [
+          521.854,
+          -106.34
+        ],
+        [
+          495.464,
+          -106.202
+        ],
+        [
+          495.59,
+          -116.566
+        ],
+        [
+          522.066,
+          -116.516
+        ],
+        [
+          521.854,
+          -106.34
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          521.854,
+          -106.34
+        ],
+        [
+          495.464,
+          -106.202
+        ],
+        [
+          495.59,
+          -116.566
+        ],
+        [
+          522.066,
+          -116.516
+        ],
+        [
+          521.854,
+          -106.34
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          508.7,
+          -111.4
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -13.55,
+            -5.45,
+            -7.3,
+            5.51
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              7.97,
+              0.012,
+              0.026
+            ]
+          ],
+          "roof_color": [
+            121,
+            119,
+            105
+          ]
+        },
+        {
+          "bounds_m": [
+            -7.3,
+            -5.45,
+            13.67,
+            5.53
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              8.8,
+              0.002,
+              0.012
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -12.35,
+        -4.36,
+        12.44,
+        4.25
+      ],
+      "eaves_m": 0.12,
+      "wall_color": [
+        169,
+        164,
+        139
+      ],
+      "trim_color": [
+        118,
+        111,
+        95
+      ],
+      "roof_color": [
+        207,
+        207,
+        185
+      ],
+      "door_color": [
+        89,
+        79,
+        67
+      ],
+      "entrance": {
+        "near_enu_m": [
+          507.77,
+          -116.53
+        ],
+        "outward_degrees": 180,
+        "landing_m": 1.58,
+        "threshold_above_grade_m": 0.23
+      },
+      "front_windows": [],
+      "porch": null,
+      "features": [],
+      "garage": null,
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_references": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=QD7oKo7rXZf28dh943C8Fw&heading=61",
+          "observation": "Low cream commercial volume with a dark vertical screen below the west canopy and a south approach."
+        },
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=7rAMC9KMAVZCL3B7D4Wa6Q&heading=270",
+          "observation": "Light east wall with a metal eave facing the parking lot."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494817.14928888186%2C4876804.282153052%2C494859.14928888186%2C4876829.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=336%2C200",
+        "sha256": "42686b388f8face4a85cf252b21445f1172685a0c148aecd10cde94fc2b839cd"
+      }
+    },
+    {
+      "id": "roof-d3e38b75",
+      "name": "1599 Villard St",
+      "street_address": "1599 Villard St",
+      "state_feature": "20-1073517",
+      "profile": "house",
+      "footprint_enu_m": [
+        [
+          514.36,
+          -359.138
+        ],
+        [
+          507.534,
+          -358.846
+        ],
+        [
+          507.282,
+          -364.74
+        ],
+        [
+          502.7,
+          -364.876
+        ],
+        [
+          502.62,
+          -365.594
+        ],
+        [
+          501.09,
+          -365.64
+        ],
+        [
+          501.294,
+          -372.476
+        ],
+        [
+          503.124,
+          -372.218
+        ],
+        [
+          503.152,
+          -373.136
+        ],
+        [
+          512.332,
+          -372.76
+        ],
+        [
+          512.28,
+          -374.396
+        ],
+        [
+          518.816,
+          -374.404
+        ],
+        [
+          518.384,
+          -366.758
+        ],
+        [
+          522.058,
+          -366.648
+        ],
+        [
+          522.094,
+          -367.872
+        ],
+        [
+          530.26,
+          -367.73
+        ],
+        [
+          530.092,
+          -358.646
+        ],
+        [
+          514.368,
+          -358.808
+        ],
+        [
+          514.36,
+          -359.138
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          514.36,
+          -359.138
+        ],
+        [
+          507.534,
+          -358.846
+        ],
+        [
+          507.282,
+          -364.74
+        ],
+        [
+          502.7,
+          -364.876
+        ],
+        [
+          502.62,
+          -365.594
+        ],
+        [
+          501.09,
+          -365.64
+        ],
+        [
+          501.294,
+          -372.476
+        ],
+        [
+          503.124,
+          -372.218
+        ],
+        [
+          503.152,
+          -373.136
+        ],
+        [
+          512.332,
+          -372.76
+        ],
+        [
+          512.28,
+          -374.396
+        ],
+        [
+          518.816,
+          -374.404
+        ],
+        [
+          518.384,
+          -366.758
+        ],
+        [
+          522.058,
+          -366.648
+        ],
+        [
+          522.094,
+          -367.872
+        ],
+        [
+          530.26,
+          -367.73
+        ],
+        [
+          530.092,
+          -358.646
+        ],
+        [
+          514.368,
+          -358.808
+        ],
+        [
+          514.36,
+          -359.138
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          515.5,
+          -365.7
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -14.76,
+            -8.99,
+            3.59,
+            7.33
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              10.43,
+              0,
+              0.004
+            ]
+          ],
+          "roof_color": [
+            198,
+            202,
+            189
+          ]
+        },
+        {
+          "bounds_m": [
+            -14.76,
+            -7.75,
+            -2.96,
+            1.45
+          ],
+          "planes": [
+            [
+              0,
+              -2.81,
+              14.13,
+              0,
+              0.82
+            ],
+            [
+              0,
+              -2.81,
+              14.13,
+              0,
+              -0.72
+            ],
+            [
+              -8.52,
+              -2.81,
+              14.13,
+              0.61,
+              0
+            ],
+            [
+              -5.02,
+              -2.81,
+              14.13,
+              -0.84,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -8.48,
+            0.73,
+            -0.22,
+            7.33
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              11.04,
+              0,
+              -0.068
+            ]
+          ],
+          "roof_color": [
+            200,
+            202,
+            185
+          ]
+        },
+        {
+          "bounds_m": [
+            -0.28,
+            -2.52,
+            15.11,
+            7.34
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              13.98,
+              0.004,
+              -0.126
+            ]
+          ],
+          "roof_color": [
+            204,
+            206,
+            191
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -12.9,
+        -6.9,
+        13.84,
+        5.75
+      ],
+      "eaves_m": 0.21,
+      "wall_color": [
+        152,
+        163,
+        162
+      ],
+      "trim_color": [
+        211,
+        211,
+        191
+      ],
+      "roof_color": [
+        119,
+        122,
+        113
+      ],
+      "door_color": [
+        122,
+        61,
+        50
+      ],
+      "entrance": {
+        "near_enu_m": [
+          501.24,
+          -368.76
+        ],
+        "outward_degrees": 270,
+        "landing_m": 1.89,
+        "threshold_above_grade_m": 0.75
+      },
+      "front_windows": [
+        [
+          -2.02,
+          0.69,
+          1.66,
+          1.24
+        ],
+        [
+          2.1,
+          0.79,
+          1.39,
+          1.12
+        ]
+      ],
+      "porch": {
+        "width": 2.78,
+        "depth": 1.22,
+        "kind": "rail",
+        "rise": 0.29
+      },
+      "features": [
+        [
+          "garage",
+          [
+            530.17,
+            -361.32
+          ],
+          90,
+          0.0,
+          2.58,
+          2.1
+        ],
+        [
+          "garage",
+          [
+            530.23,
+            -365.75
+          ],
+          90,
+          0.0,
+          2.58,
+          2.1
+        ],
+        [
+          "window",
+          [
+            530.14,
+            -362.39
+          ],
+          90,
+          4.34,
+          1.03,
+          1.56
+        ],
+        [
+          "window",
+          [
+            507.4,
+            -360.93
+          ],
+          270,
+          2.88,
+          1.26,
+          1.02
+        ]
+      ],
+      "garage": null,
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_references": [
+        {
+          "date": "2018-05",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PWTfFn58--Pt86x0_8q8eQ&heading=93",
+          "observation": "Pale gray lap siding, low front roof, and shaded entry with a red door."
+        },
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GBP2fXqysC1Btboon6FlFA&heading=96",
+          "observation": "Stepped upper wing and light front cladding."
+        },
+        {
+          "date": "2020-11",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=h2OljjOjMTGyva75FYiDPg&heading=270",
+          "observation": "Rear upper block with a single-slope roof, vertical upstairs siding and two garage doors."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494823.14928888186%2C4876546.282153052%2C494867.14928888186%2C4876577.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=352%2C248",
+        "sha256": "fd55989d8635cd250880a96b36f620d4dc9a2dd3ad25ad6e7fc6ebec3f466f0e"
+      }
+    },
+    {
+      "id": "roof-bb028710",
+      "name": "1637 Villard St",
+      "street_address": "1637 Villard St",
+      "state_feature": "20-1073730",
+      "profile": "house",
+      "footprint_enu_m": [
+        [
+          505.422,
+          -411.026
+        ],
+        [
+          505.418,
+          -416.3
+        ],
+        [
+          506.6,
+          -416.3
+        ],
+        [
+          506.6,
+          -420.548
+        ],
+        [
+          510.386,
+          -420.55
+        ],
+        [
+          510.386,
+          -419.81
+        ],
+        [
+          519.908,
+          -419.818
+        ],
+        [
+          519.908,
+          -419.184
+        ],
+        [
+          524.564,
+          -419.188
+        ],
+        [
+          524.568,
+          -413.792
+        ],
+        [
+          519.914,
+          -413.788
+        ],
+        [
+          519.916,
+          -411.038
+        ],
+        [
+          505.422,
+          -411.026
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          504.678,
+          -416.314
+        ],
+        [
+          504.674,
+          -420.546
+        ],
+        [
+          510.386,
+          -420.55
+        ],
+        [
+          510.386,
+          -419.81
+        ],
+        [
+          519.908,
+          -419.818
+        ],
+        [
+          519.908,
+          -419.184
+        ],
+        [
+          524.564,
+          -419.188
+        ],
+        [
+          524.568,
+          -413.792
+        ],
+        [
+          519.914,
+          -413.788
+        ],
+        [
+          519.916,
+          -411.038
+        ],
+        [
+          505.422,
+          -411.026
+        ],
+        [
+          505.418,
+          -416.314
+        ],
+        [
+          504.678,
+          -416.314
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          513.9,
+          -415.8
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -8.77,
+            -4.34,
+            6.26,
+            5.12
+          ],
+          "planes": [
+            [
+              0,
+              1.38,
+              14.47,
+              0,
+              0.549
+            ],
+            [
+              0,
+              1.38,
+              14.47,
+              0,
+              -0.585
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -9.58,
+            -5.06,
+            -3.13,
+            -0.11
+          ],
+          "planes": [
+            [
+              0,
+              -2.6,
+              11.96,
+              0,
+              0.32
+            ],
+            [
+              0,
+              -2.6,
+              11.96,
+              0,
+              -0.39
+            ],
+            [
+              -7.48,
+              -2.6,
+              11.96,
+              0.36,
+              0
+            ],
+            [
+              -4.5,
+              -2.6,
+              11.96,
+              -0.25,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            5.8,
+            -3.71,
+            11.01,
+            2.33
+          ],
+          "planes": [
+            [
+              0,
+              -0.46,
+              12.85,
+              0,
+              0.31
+            ],
+            [
+              0,
+              -0.46,
+              12.85,
+              0,
+              -0.39
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -8.0,
+        -3.35,
+        9.73,
+        3.96
+      ],
+      "eaves_m": 0.21,
+      "wall_color": [
+        145,
+        116,
+        92
+      ],
+      "trim_color": [
+        220,
+        216,
+        193
+      ],
+      "roof_color": [
+        126,
+        119,
+        106
+      ],
+      "door_color": [
+        89,
+        79,
+        67
+      ],
+      "entrance": {
+        "near_enu_m": [
+          506.59,
+          -418.48
+        ],
+        "outward_degrees": 270,
+        "landing_m": 1.71,
+        "threshold_above_grade_m": 0.64
+      },
+      "front_windows": [],
+      "porch": {
+        "width": 3.3,
+        "depth": 1.72,
+        "kind": "eave",
+        "rise": 0.38
+      },
+      "features": [
+        [
+          "window",
+          [
+            505.42,
+            -413.74
+          ],
+          270,
+          1.68,
+          2.52,
+          1.41
+        ],
+        [
+          "vent",
+          [
+            505.41,
+            -414.33
+          ],
+          270,
+          5.08,
+          1.1,
+          0.64
+        ]
+      ],
+      "garage": null,
+      "garage_slot_enu_m": null,
+      "chimneys": [
+        [
+          512.9,
+          -414.39,
+          0.49,
+          0.46,
+          0.55
+        ]
+      ],
+      "public_references": [
+        {
+          "date": "2018-05",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HeV6vZG17yQ2BWYF8QAtwA&heading=98",
+          "observation": "Wide front gable, triple upper vent, wide picture window and a recessed south porch."
+        },
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=M_sAuV1GBUVERLxJonWLew&heading=97",
+          "observation": "Street tree obscures part of the same frontage."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494826.14928888186%2C4876500.282153052%2C494861.14928888186%2C4876524.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=280%2C192",
+        "sha256": "f65fe5ee70da1a200541a415532094d09006f180cacbf068ba7786cc173804c3"
+      }
+    },
+    {
+      "id": "roof-5f1e62f1",
+      "name": "1801 Villard St",
+      "street_address": "1801 Villard St",
+      "state_feature": "20-1073820",
+      "profile": "house",
+      "footprint_enu_m": [
+        [
+          504.964,
+          -602.968
+        ],
+        [
+          504.958,
+          -610.002
+        ],
+        [
+          507.456,
+          -610.004
+        ],
+        [
+          507.452,
+          -614.17
+        ],
+        [
+          518.282,
+          -614.18
+        ],
+        [
+          518.292,
+          -602.978
+        ],
+        [
+          504.964,
+          -602.968
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          504.964,
+          -602.968
+        ],
+        [
+          504.958,
+          -610.002
+        ],
+        [
+          507.456,
+          -610.004
+        ],
+        [
+          507.452,
+          -614.17
+        ],
+        [
+          518.282,
+          -614.18
+        ],
+        [
+          518.292,
+          -602.978
+        ],
+        [
+          504.964,
+          -602.968
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          512.0,
+          -608.3
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -7.42,
+            -6.2,
+            1.72,
+            5.67
+          ],
+          "planes": [
+            [
+              0,
+              1.48,
+              16.22,
+              0,
+              0.51
+            ],
+            [
+              0,
+              1.48,
+              16.22,
+              0,
+              -0.52
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4.35,
+            -6.22,
+            3.4,
+            5.67
+          ],
+          "planes": [
+            [
+              0.39,
+              0,
+              17.96,
+              0.55,
+              0
+            ],
+            [
+              0.39,
+              0,
+              17.96,
+              -0.52,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4.9,
+            -6.22,
+            1.91,
+            -1.04
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              17.8,
+              0.239,
+              0.025
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            1.48,
+            -6.22,
+            6.6,
+            5.67
+          ],
+          "planes": [
+            [
+              0,
+              -0.09,
+              17.86,
+              0,
+              0.491
+            ],
+            [
+              0,
+              -0.09,
+              17.86,
+              0,
+              -0.49
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -6.35,
+        -4.96,
+        5.77,
+        4.58
+      ],
+      "eaves_m": 0.21,
+      "wall_color": [
+        180,
+        185,
+        150
+      ],
+      "trim_color": [
+        231,
+        226,
+        202
+      ],
+      "roof_color": [
+        121,
+        126,
+        113
+      ],
+      "door_color": [
+        65,
+        76,
+        61
+      ],
+      "entrance": {
+        "near_enu_m": [
+          504.97,
+          -607.85
+        ],
+        "outward_degrees": 270,
+        "landing_m": 1.88,
+        "threshold_above_grade_m": 0.86
+      },
+      "front_windows": [
+        [
+          -1.94,
+          0.81,
+          1.48,
+          1.49
+        ],
+        [
+          1.92,
+          0.82,
+          1.43,
+          1.43
+        ]
+      ],
+      "porch": {
+        "width": 3.18,
+        "depth": 1.7,
+        "kind": "rail",
+        "rise": 0.43
+      },
+      "features": [
+        [
+          "vent",
+          [
+            504.96,
+            -606.81
+          ],
+          270,
+          5.22,
+          0.38,
+          0.57
+        ],
+        [
+          "window",
+          [
+            507.46,
+            -611.33
+          ],
+          270,
+          1.72,
+          1.75,
+          1.46
+        ]
+      ],
+      "garage": null,
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_references": [
+        {
+          "date": "2020-11",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ve4NLBtr3yoNFsNSmzKs8w&heading=90",
+          "observation": "Sage front, raised doorway and sidelights, close front gable with a narrow vent and a darker cross roof."
+        },
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=eC5o3LcDNferBUu0tc3Ljw&heading=90",
+          "observation": "Trees obscure the entrance, with the primary roof silhouette visible."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494826.14928888186%2C4876306.282153052%2C494855.14928888186%2C4876333.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=232%2C216",
+        "sha256": "25c6efd013a2d84db886e8c8d39f44886fe394f2eb4b5e52a5d8fc753c49f8fd"
+      }
+    },
+    {
+      "id": "roof-45158580",
+      "name": "1969 Villard St",
+      "street_address": "1969 Villard St",
+      "state_feature": "20-1052256",
+      "profile": "full-porch",
+      "footprint_enu_m": [
+        [
+          517.8,
+          -820.926
+        ],
+        [
+          517.792,
+          -816.86
+        ],
+        [
+          515.478,
+          -816.866
+        ],
+        [
+          515.474,
+          -815.774
+        ],
+        [
+          511.176,
+          -815.784
+        ],
+        [
+          511.18,
+          -817.04
+        ],
+        [
+          500.238,
+          -817.066
+        ],
+        [
+          500.238,
+          -817.34
+        ],
+        [
+          500.26,
+          -817.34
+        ],
+        [
+          500.26,
+          -826.224
+        ],
+        [
+          510.672,
+          -826.2
+        ],
+        [
+          510.674,
+          -826.926
+        ],
+        [
+          517.616,
+          -826.91
+        ],
+        [
+          517.614,
+          -826.348
+        ],
+        [
+          523.5,
+          -826.336
+        ],
+        [
+          523.496,
+          -825.146
+        ],
+        [
+          524.19,
+          -825.144
+        ],
+        [
+          524.184,
+          -822.234
+        ],
+        [
+          523.49,
+          -822.236
+        ],
+        [
+          523.486,
+          -820.914
+        ],
+        [
+          517.8,
+          -820.926
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          517.792,
+          -816.86
+        ],
+        [
+          515.478,
+          -816.866
+        ],
+        [
+          515.474,
+          -815.774
+        ],
+        [
+          511.176,
+          -815.784
+        ],
+        [
+          511.18,
+          -817.04
+        ],
+        [
+          500.238,
+          -817.066
+        ],
+        [
+          500.238,
+          -817.76
+        ],
+        [
+          497.858,
+          -817.766
+        ],
+        [
+          497.876,
+          -825.666
+        ],
+        [
+          500.258,
+          -825.662
+        ],
+        [
+          500.258,
+          -826.224
+        ],
+        [
+          510.672,
+          -826.2
+        ],
+        [
+          510.674,
+          -826.926
+        ],
+        [
+          517.616,
+          -826.91
+        ],
+        [
+          517.614,
+          -826.348
+        ],
+        [
+          523.5,
+          -826.336
+        ],
+        [
+          523.496,
+          -825.146
+        ],
+        [
+          524.19,
+          -825.144
+        ],
+        [
+          524.184,
+          -822.234
+        ],
+        [
+          523.49,
+          -822.236
+        ],
+        [
+          523.486,
+          -820.914
+        ],
+        [
+          517.8,
+          -820.926
+        ],
+        [
+          517.792,
+          -816.86
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          510.2,
+          -821.9
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -12.68,
+            -4.94,
+            7.87,
+            6.45
+          ],
+          "planes": [
+            [
+              0,
+              0.18,
+              21.38,
+              0,
+              0.535
+            ],
+            [
+              0,
+              0.18,
+              21.38,
+              0,
+              -0.494
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            0.15,
+            -5.34,
+            7.8,
+            -3.73
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              21.43,
+              0,
+              0.51
+            ]
+          ],
+          "roof_color": [
+            165,
+            169,
+            155
+          ]
+        },
+        {
+          "bounds_m": [
+            0.6,
+            4.43,
+            5.72,
+            6.47
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              20.46,
+              0,
+              -0.12
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            7.2,
+            -4.77,
+            14.31,
+            1.28
+          ],
+          "planes": [
+            [
+              0,
+              -1.82,
+              20.12,
+              0,
+              0.075
+            ],
+            [
+              0,
+              -1.82,
+              20.12,
+              0,
+              -0.421
+            ],
+            [
+              11.93,
+              -1.82,
+              20.12,
+              -0.16,
+              0
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -10.77,
+        -3.64,
+        12.9,
+        4.48
+      ],
+      "eaves_m": 0.21,
+      "wall_color": [
+        111,
+        130,
+        143
+      ],
+      "trim_color": [
+        225,
+        227,
+        205
+      ],
+      "roof_color": [
+        169,
+        174,
+        164
+      ],
+      "door_color": [
+        132,
+        101,
+        62
+      ],
+      "entrance": {
+        "near_enu_m": [
+          500.26,
+          -821.78
+        ],
+        "outward_degrees": 270,
+        "landing_m": 2.43,
+        "threshold_above_grade_m": 1.05
+      },
+      "front_windows": [
+        [
+          -2.24,
+          0.763,
+          1.86,
+          1.24
+        ],
+        [
+          2.08,
+          0.763,
+          1.72,
+          1.24
+        ]
+      ],
+      "porch": {
+        "width": 7.34,
+        "depth": 2.32,
+        "kind": "eave",
+        "rise": 0.38
+      },
+      "features": [],
+      "garage": null,
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_references": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=SUAmMU8cMoM4xn-GTHv2EA&heading=90",
+          "observation": "Full-width porch and central stair under the extended gable, with a centered upper window."
+        },
+        {
+          "date": "2026-07",
+          "url": "https://www.realtor.com/realestateandhomes-detail/1969-Villard-St_Eugene_OR_97403_M28388-49753",
+          "observation": "RMLS 396450047 documents the covered porch, wood siding, back addition and separate carport."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494819.14928888186%2C4876094.282153052%2C494861.14928888186%2C4876120.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=336%2C208",
+        "sha256": "b2b44590b00bb76e9943fd48e408bba2a77771e918304a226fb3e33a16a49725"
+      }
+    },
+    {
+      "id": "roof-c2d79893",
+      "name": "1979 Villard St",
+      "street_address": "1979 Villard St",
+      "state_feature": "20-1052253",
+      "profile": "cross-porch",
+      "footprint_enu_m": [
+        [
+          517.72,
+          -843.062
+        ],
+        [
+          519.868,
+          -843.04
+        ],
+        [
+          519.822,
+          -838.346
+        ],
+        [
+          518.862,
+          -838.356
+        ],
+        [
+          518.848,
+          -836.934
+        ],
+        [
+          516.27,
+          -836.96
+        ],
+        [
+          516.214,
+          -831.506
+        ],
+        [
+          513.538,
+          -831.532
+        ],
+        [
+          513.52,
+          -829.778
+        ],
+        [
+          499.98,
+          -829.916
+        ],
+        [
+          499.98,
+          -835.666
+        ],
+        [
+          500.256,
+          -835.664
+        ],
+        [
+          500.29,
+          -839.17
+        ],
+        [
+          507.86,
+          -839.094
+        ],
+        [
+          507.9,
+          -842.962
+        ],
+        [
+          513.354,
+          -842.908
+        ],
+        [
+          513.356,
+          -843.106
+        ],
+        [
+          513.95,
+          -843.1
+        ],
+        [
+          513.96,
+          -844.026
+        ],
+        [
+          517.728,
+          -843.988
+        ],
+        [
+          517.72,
+          -843.062
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          519.868,
+          -843.04
+        ],
+        [
+          519.822,
+          -838.346
+        ],
+        [
+          518.862,
+          -838.356
+        ],
+        [
+          518.848,
+          -836.934
+        ],
+        [
+          516.27,
+          -836.96
+        ],
+        [
+          516.214,
+          -831.506
+        ],
+        [
+          513.538,
+          -831.532
+        ],
+        [
+          513.52,
+          -829.778
+        ],
+        [
+          497.752,
+          -829.938
+        ],
+        [
+          497.808,
+          -835.69
+        ],
+        [
+          500.256,
+          -835.664
+        ],
+        [
+          500.29,
+          -839.17
+        ],
+        [
+          507.86,
+          -839.094
+        ],
+        [
+          507.9,
+          -842.962
+        ],
+        [
+          513.354,
+          -842.908
+        ],
+        [
+          513.356,
+          -843.106
+        ],
+        [
+          513.95,
+          -843.1
+        ],
+        [
+          513.96,
+          -844.026
+        ],
+        [
+          517.728,
+          -843.988
+        ],
+        [
+          517.72,
+          -843.062
+        ],
+        [
+          519.868,
+          -843.04
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          509.1,
+          -836.1
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -9.44,
+            -3.33,
+            -3.68,
+            6.61
+          ],
+          "planes": [
+            [
+              0,
+              2.04,
+              21.01,
+              0,
+              0.351
+            ],
+            [
+              0,
+              2.04,
+              21.01,
+              0,
+              -0.511
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -11.66,
+            0.13,
+            -5.17,
+            6.57
+          ],
+          "planes": [
+            [
+              0,
+              4.11,
+              20.14,
+              0,
+              0.42
+            ],
+            [
+              0,
+              4.11,
+              20.14,
+              0,
+              -0.51
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4.85,
+            -3.34,
+            4.79,
+            6.66
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              21.23,
+              0.023,
+              -0.041
+            ]
+          ],
+          "roof_color": [
+            210,
+            212,
+            195
+          ]
+        },
+        {
+          "bounds_m": [
+            0.9,
+            -7.3,
+            5.02,
+            -2.85
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              21.26,
+              0,
+              0.025
+            ]
+          ],
+          "roof_color": [
+            210,
+            212,
+            195
+          ]
+        },
+        {
+          "bounds_m": [
+            -1.6,
+            -7.19,
+            1.1,
+            -2.71
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              18.94,
+              0,
+              0.062
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            4.43,
+            -8.27,
+            11.08,
+            4.9
+          ],
+          "planes": [
+            [
+              0,
+              -4.35,
+              19.86,
+              0,
+              0.28
+            ],
+            [
+              0,
+              -4.35,
+              19.86,
+              0,
+              -0.137
+            ]
+          ]
+        }
+      ],
+      "validation_window_local": [
+        -8.1,
+        -6.04,
+        9.84,
+        5.83
+      ],
+      "eaves_m": 0.21,
+      "wall_color": [
+        161,
+        170,
+        151
+      ],
+      "trim_color": [
+        222,
+        221,
+        198
+      ],
+      "roof_color": [
+        113,
+        125,
+        114
+      ],
+      "door_color": [
+        87,
+        91,
+        69
+      ],
+      "entrance": {
+        "near_enu_m": [
+          499.96,
+          -833.43
+        ],
+        "outward_degrees": 270,
+        "landing_m": 2.2,
+        "threshold_above_grade_m": 0.76
+      },
+      "front_windows": [
+        [
+          -1.77,
+          0.79,
+          1.63,
+          1.28
+        ],
+        [
+          1.84,
+          0.79,
+          1.4,
+          1.23
+        ]
+      ],
+      "porch": {
+        "width": 3.23,
+        "depth": 1.98,
+        "kind": "eave",
+        "rise": 0.38
+      },
+      "features": [
+        [
+          "window",
+          [
+            499.98,
+            -834.04
+          ],
+          270,
+          4.83,
+          1.16,
+          0.77
+        ]
+      ],
+      "garage": null,
+      "garage_slot_enu_m": null,
+      "chimneys": [],
+      "public_references": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BbhWayZiDP0h_ZyAykxZ9Q&heading=90",
+          "observation": "Gray-green horizontal siding, overlapping gables, porch posts and a raised front stoop."
+        }
+      ],
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494819.14928888186%2C4876076.282153052%2C494856.14928888186%2C4876106.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=296%2C240",
+        "sha256": "5a618a279241b27bdc896fe559b343441c5b897124397c5c05bbb8f301100b44"
+      }
+    }
+  ]
+}

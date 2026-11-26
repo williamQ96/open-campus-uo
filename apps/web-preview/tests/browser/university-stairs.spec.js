@@ -36,7 +36,7 @@ test("University entrance stairs preserve selection, entrances, sampled collisio
         await r.fulfill({ response, json });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=heritage-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo()),
       views = [];
@@ -67,7 +67,7 @@ test("University entrance stairs preserve selection, entrances, sampled collisio
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=heritage-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&
@@ -85,7 +85,11 @@ test("University entrance stairs preserve selection, entrances, sampled collisio
       expect(view.camera[0]).toBeCloseTo(x, 1);
       expect(view.camera[2]).toBeCloseTo(z, 1);
       await page.screenshot({
-        path: `../../docs/images/university-stairs-${label}-${before ? "before" : "after"}-2026-11-04.png`,
+        path: test
+          .info()
+          .outputPath(
+            `university-stairs-${label}-${before ? "before" : "after"}.png`,
+          ),
       });
       views.push(view);
     }

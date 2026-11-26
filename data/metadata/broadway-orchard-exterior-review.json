@@ -1,0 +1,4934 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_dsm_sha256": {
+    "2017": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+    "2013-2015": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+  },
+  "models": [
+    {
+      "id": "roof-b40f786d",
+      "name": "652 E Broadway",
+      "street_address": "652 E Broadway",
+      "group": "Broadway",
+      "state_feature": "20-1073234",
+      "municipal_addresses": [
+        "652 E BROADWAY"
+      ],
+      "footprint_enu_m": [
+        [
+          -959.378,
+          474.644
+        ],
+        [
+          -972.124,
+          474.7
+        ],
+        [
+          -972.218,
+          453.402
+        ],
+        [
+          -958.128,
+          453.34
+        ],
+        [
+          -958.038,
+          473.676
+        ],
+        [
+          -959.384,
+          473.682
+        ],
+        [
+          -959.378,
+          474.644
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          -972.492,
+          475.23
+        ],
+        [
+          -972.59,
+          453.034
+        ],
+        [
+          -957.76,
+          452.968
+        ],
+        [
+          -957.666,
+          474.046
+        ],
+        [
+          -959.012,
+          474.05
+        ],
+        [
+          -959.006,
+          475.17
+        ],
+        [
+          -972.492,
+          475.23
+        ]
+      ],
+      "raised_wall_enu_m": [],
+      "raised_wall_bottom_z_m": null,
+      "roof_frame": {
+        "origin_enu_m": [
+          -965.16,
+          464.05
+        ],
+        "axis": [
+          0.9999902442761912,
+          -0.0044171656572207976
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.23,
+              0.006,
+              0.006
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            -5.37,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.59,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            79,
+            57,
+            107
+          ]
+        },
+        {
+          "bounds_m": [
+            4.75,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.78,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            111,
+            72,
+            134
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            10.25,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.71,
+              0.055,
+              0
+            ]
+          ],
+          "roof_color": [
+            221,
+            180,
+            57
+          ]
+        }
+      ],
+      "roof_fit_notes": "The June and July 2024 views establish the purple and yellow storefront and west approach. Rooftop equipment and the rear openings are approximate.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493345.14928888186%2C4877370.282153052%2C493382.14928888186%2C4877414.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=148%2C176",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-b40f786d.png",
+        "size": [
+          148,
+          176
+        ],
+        "sha256": "f8e25ac2fe7b4bbe2fdb68a1aa0dafa8cad8f48b2999eb03e9b71d9cd3d4180a"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Hg64xX9r-1AFTy_hgtwgwg&heading=135",
+          "date": "2024-06",
+          "observation": "Purple walls and a yellow west entry canopy establish the storefront."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2jmkG0z8CrIxIhfysngSbA&heading=180",
+          "date": "2024-07",
+          "observation": "The Broadway wall has a low centre and raised yellow ends."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 270,
+        "landing_m": 1.2,
+        "threshold_above_grade_m": 0.09,
+        "width_m": 1.43,
+        "glazed_double": true,
+        "near_enu_m": [
+          -972.12299,
+          470.18082
+        ]
+      },
+      "wall_color": [
+        111,
+        72,
+        134
+      ],
+      "trim_color": [
+        79,
+        57,
+        107
+      ],
+      "roof_color": [
+        182,
+        179,
+        159
+      ],
+      "door_color": [
+        79,
+        57,
+        107
+      ],
+      "facades": [
+        {
+          "bearing": 270,
+          "wall": [
+            0.35,
+            [],
+            0.75
+          ],
+          "windows": [
+            [
+              [
+                -972.16756,
+                466.88098
+              ],
+              2.35,
+              0.97,
+              1.18,
+              3
+            ],
+            [
+              [
+                -972.18302,
+                463.38102
+              ],
+              2.24,
+              0.97,
+              1.18,
+              3
+            ],
+            [
+              [
+                -972.19804,
+                459.98105
+              ],
+              2.47,
+              0.97,
+              1.18,
+              3
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                [
+                  -972.12753,
+                  473.68087
+                ],
+                [
+                  -972.19431,
+                  458.56102
+                ],
+                0.68
+              ],
+              2.33,
+              0.34,
+              [
+                221,
+                180,
+                57
+              ],
+              0
+            ]
+          ],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -972.18226,
+            468.08106
+          ]
+        },
+        {
+          "bearing": 0,
+          "wall": [
+            0.39,
+            [],
+            0.82
+          ],
+          "windows": [],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -964.11253,
+            474.79548
+          ]
+        },
+        {
+          "bearing": 90,
+          "wall": [
+            0.27,
+            [],
+            0.73
+          ],
+          "windows": [],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -958.17553,
+            460.51911
+          ]
+        }
+      ],
+      "raised_facades": [],
+      "accents": [
+        {
+          "bearing": 0,
+          "bands": [],
+          "profiles": [
+            [
+              [
+                [
+                  [
+                    -971.93223,
+                    474.88002
+                  ],
+                  3.48
+                ],
+                [
+                  [
+                    -969.82225,
+                    474.8707
+                  ],
+                  3.05
+                ],
+                [
+                  [
+                    -967.66227,
+                    474.86116
+                  ],
+                  2.77
+                ],
+                [
+                  [
+                    -962.71232,
+                    474.83929
+                  ],
+                  2.79
+                ],
+                [
+                  [
+                    -960.91234,
+                    474.83134
+                  ],
+                  3.02
+                ],
+                [
+                  [
+                    -959.51235,
+                    474.82516
+                  ],
+                  3.52
+                ]
+              ],
+              2.4,
+              0.2,
+              [
+                221,
+                180,
+                57
+              ]
+            ]
+          ],
+          "vents": [],
+          "near_enu_m": [
+            -965.11207,
+            474.89989
+          ]
+        }
+      ],
+      "canopy_columns": [],
+      "external_stairs": [],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [],
+      "roof_equipment": [
+        [
+          -1.71,
+          9.49,
+          1.27,
+          0.71,
+          4.62,
+          [
+            126,
+            130,
+            122
+          ]
+        ],
+        [
+          -1.68,
+          -4.61,
+          2.0,
+          0.81,
+          3.28,
+          [
+            126,
+            130,
+            122
+          ]
+        ],
+        [
+          1.65,
+          -1.3,
+          1.11,
+          0.9,
+          3.42,
+          [
+            126,
+            130,
+            122
+          ]
+        ],
+        [
+          2.98,
+          -8.64,
+          1.41,
+          1.05,
+          3.51,
+          [
+            126,
+            130,
+            122
+          ]
+        ]
+      ],
+      "perimeter_fascias": [],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -7.381,
+        -11.049,
+        7.45,
+        11.147
+      ]
+    },
+    {
+      "id": "roof-f8b27077",
+      "name": "659 E Broadway",
+      "street_address": "659 E Broadway",
+      "group": "Broadway",
+      "state_feature": "20-1073732",
+      "municipal_addresses": [
+        "659 E BROADWAY"
+      ],
+      "footprint_enu_m": [
+        [
+          -987.7,
+          538.644
+        ],
+        [
+          -987.72,
+          515.974
+        ],
+        [
+          -978.15,
+          515.966
+        ],
+        [
+          -978.13,
+          538.636
+        ],
+        [
+          -987.7,
+          538.644
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          -987.948,
+          542.536
+        ],
+        [
+          -987.972,
+          515.608
+        ],
+        [
+          -986.214,
+          515.608
+        ],
+        [
+          -986.226,
+          513.216
+        ],
+        [
+          -977.974,
+          513.342
+        ],
+        [
+          -977.99,
+          515.612
+        ],
+        [
+          -976.308,
+          515.612
+        ],
+        [
+          -976.298,
+          528.5
+        ],
+        [
+          -977.554,
+          528.516
+        ],
+        [
+          -977.68,
+          542.086
+        ],
+        [
+          -987.948,
+          542.536
+        ]
+      ],
+      "raised_wall_enu_m": [],
+      "raised_wall_bottom_z_m": null,
+      "roof_frame": {
+        "origin_enu_m": [
+          -982.45,
+          527.68
+        ],
+        "axis": [
+          0.999999614642213,
+          -0.0008779039955868776
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.62,
+              0.005,
+              -0.014
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            -11.87
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.22,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            201,
+            197,
+            172
+          ]
+        },
+        {
+          "bounds_m": [
+            4.88,
+            -65,
+            65,
+            0.84
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.22,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            201,
+            197,
+            172
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            11.05,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              1.66,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            126,
+            124,
+            112
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            9.73,
+            -1.55,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.22,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            126,
+            124,
+            112
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            9.37,
+            4.88,
+            10.91
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.23,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            126,
+            124,
+            112
+          ]
+        },
+        {
+          "bounds_m": [
+            3.49,
+            -5.09,
+            4.96,
+            10.21
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.24,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            180,
+            164,
+            135
+          ]
+        },
+        {
+          "bounds_m": [
+            -5.43,
+            -12.07,
+            -2.18,
+            -10.76
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.12,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            126,
+            124,
+            112
+          ]
+        },
+        {
+          "bounds_m": [
+            -2.18,
+            -12.07,
+            4.88,
+            -10.89
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              3.78,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            180,
+            164,
+            135
+          ]
+        }
+      ],
+      "roof_fit_notes": "The street and parking façades use 2024 finishes. The drive-through lane stays outside the ground wall. Rear cover and openings are approximate.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493328.14928888186%2C4877431.282153052%2C493363.14928888186%2C4877481.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=140%2C200",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-f8b27077.png",
+        "size": [
+          140,
+          200
+        ],
+        "sha256": "1553e025856929a8a1d035b1ca2f22f696e61af1094bedada0b99ce8759de986"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pbzTkF5yxSb7LGd-T7mKcA&heading=1",
+          "date": "2024-07",
+          "observation": "Street-end glazing, pale awnings and standing brick pier."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=kVyl-79_qo3keVgem4ueKQ&heading=302",
+          "date": "2024-06",
+          "observation": "Parking side confirms the elevated east entrance and glazing."
+        },
+        {
+          "url": "https://www.mcdonalds.com/us/en-us/location/or/eugene/659-e-broadway/13471.html",
+          "date": "operator",
+          "observation": "Operator confirms the address and drive-through."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 90,
+        "landing_m": 1.45,
+        "threshold_above_grade_m": 0.1,
+        "width_m": 1.61,
+        "glazed_double": true,
+        "near_enu_m": [
+          -978.14742,
+          519.22622
+        ]
+      },
+      "wall_color": [
+        180,
+        164,
+        135
+      ],
+      "trim_color": [
+        99,
+        93,
+        82
+      ],
+      "roof_color": [
+        182,
+        179,
+        159
+      ],
+      "door_color": [
+        65,
+        70,
+        64
+      ],
+      "facades": [
+        {
+          "bearing": 180,
+          "wall": [
+            0.31,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                -986.61027,
+                515.98365
+              ],
+              1.66,
+              0.46,
+              1.76,
+              2
+            ],
+            [
+              [
+                -981.47027,
+                515.97914
+              ],
+              4.36,
+              0.46,
+              1.75,
+              4
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                [
+                  -984.46027,
+                  515.98176
+                ],
+                [
+                  -978.42027,
+                  515.97646
+                ],
+                0.65
+              ],
+              2.47,
+              0,
+              [
+                201,
+                197,
+                172
+              ],
+              0
+            ]
+          ],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -981.46027,
+            515.97913
+          ]
+        },
+        {
+          "bearing": 90,
+          "wall": [
+            0.35,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                -978.25422,
+                522.87631
+              ],
+              3.54,
+              0.45,
+              1.83,
+              4
+            ],
+            [
+              [
+                -978.15092,
+                526.62623
+              ],
+              2.88,
+              0.47,
+              1.7,
+              4
+            ],
+            [
+              [
+                -978.14695,
+                531.15622
+              ],
+              3.1,
+              0.58,
+              1.66,
+              4
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                [
+                  -978.14853,
+                  517.96622
+                ],
+                [
+                  -978.14608,
+                  520.75622
+                ],
+                0.84
+              ],
+              2.47,
+              0,
+              [
+                201,
+                197,
+                172
+              ],
+              0
+            ],
+            [
+              [
+                [
+                  -978.14575,
+                  521.12622
+                ],
+                [
+                  -978.13627,
+                  531.92621
+                ],
+                0.77
+              ],
+              2.49,
+              0,
+              [
+                201,
+                197,
+                172
+              ],
+              0
+            ]
+          ],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -978.33544,
+            521.47639
+          ]
+        },
+        {
+          "bearing": 270,
+          "wall": [
+            0.25,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                -987.67116,
+                526.36458
+              ],
+              1.37,
+              1.1,
+              1.16,
+              2
+            ],
+            [
+              [
+                -987.66499,
+                533.39458
+              ],
+              1.39,
+              1.1,
+              1.13,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -987.64859,
+            529.28456
+          ]
+        }
+      ],
+      "raised_facades": [],
+      "accents": [
+        {
+          "bearing": 180,
+          "bands": [
+            [
+              [
+                -986.59027,
+                515.98363
+              ],
+              [
+                -984.81027,
+                515.98207
+              ],
+              0,
+              4.3,
+              0.17,
+              [
+                122,
+                105,
+                88
+              ]
+            ]
+          ],
+          "profiles": [],
+          "vents": [],
+          "near_enu_m": [
+            -985.36028,
+            515.97255
+          ]
+        },
+        {
+          "bearing": 90,
+          "bands": [
+            [
+              [
+                -978.14861,
+                517.87622
+              ],
+              [
+                -978.14621,
+                520.60622
+              ],
+              2.51,
+              4.5,
+              0.22,
+              [
+                132,
+                117,
+                100
+              ]
+            ]
+          ],
+          "profiles": [],
+          "vents": [],
+          "near_enu_m": [
+            -978.14742,
+            519.22622
+          ]
+        }
+      ],
+      "canopy_columns": [],
+      "external_stairs": [],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [],
+      "roof_equipment": [
+        [
+          0.09,
+          -6.1,
+          1.31,
+          1.44,
+          3.7,
+          [
+            126,
+            130,
+            122
+          ]
+        ],
+        [
+          0.27,
+          0.37,
+          1.2,
+          0.9,
+          3.59,
+          [
+            126,
+            130,
+            122
+          ]
+        ],
+        [
+          -2.6,
+          7.1,
+          1.39,
+          1.04,
+          3.68,
+          [
+            126,
+            130,
+            122
+          ]
+        ]
+      ],
+      "perimeter_fascias": [],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -5.512,
+        -14.468,
+        6.152,
+        14.851
+      ]
+    },
+    {
+      "id": "roof-060ab58a",
+      "name": "686 E Broadway",
+      "street_address": "686 E Broadway",
+      "group": "Broadway",
+      "state_feature": "20-1073024",
+      "municipal_addresses": [
+        "686 E BROADWAY"
+      ],
+      "footprint_enu_m": [
+        [
+          -924.976,
+          472.098
+        ],
+        [
+          -935.918,
+          472.102
+        ],
+        [
+          -935.922,
+          452.178
+        ],
+        [
+          -925.128,
+          452.176
+        ],
+        [
+          -925.128,
+          453.764
+        ],
+        [
+          -924.248,
+          453.764
+        ],
+        [
+          -924.246,
+          461.906
+        ],
+        [
+          -924.98,
+          461.906
+        ],
+        [
+          -924.976,
+          472.098
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          -936.188,
+          472.478
+        ],
+        [
+          -936.192,
+          451.908
+        ],
+        [
+          -924.858,
+          451.906
+        ],
+        [
+          -924.858,
+          453.494
+        ],
+        [
+          -923.978,
+          453.494
+        ],
+        [
+          -923.976,
+          462.176
+        ],
+        [
+          -924.71,
+          462.176
+        ],
+        [
+          -924.706,
+          472.472
+        ],
+        [
+          -925.484,
+          472.472
+        ],
+        [
+          -925.484,
+          474.614
+        ],
+        [
+          -935.402,
+          474.616
+        ],
+        [
+          -935.402,
+          472.478
+        ],
+        [
+          -936.188,
+          472.478
+        ]
+      ],
+      "raised_wall_enu_m": [],
+      "raised_wall_bottom_z_m": null,
+      "roof_frame": {
+        "origin_enu_m": [
+          -930.31,
+          463.01
+        ],
+        "axis": [
+          0.9999999767829619,
+          -0.0002154856736055153
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -0.7,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.77,
+              -0.008,
+              0.004
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            -0.62
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.91,
+              0.02,
+              0
+            ]
+          ],
+          "roof_color": [
+            182,
+            179,
+            159
+          ]
+        },
+        {
+          "bounds_m": [
+            4.79,
+            -65,
+            65,
+            -0.66
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.02,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            72,
+            102,
+            86
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            8.51,
+            65,
+            9.94
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              5.08,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            141,
+            91,
+            74
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            9.46,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.47,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            65,
+            70,
+            64
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            -9.64
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.05,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            182,
+            179,
+            159
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            -1.3,
+            65,
+            0.3
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              5.06,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            72,
+            102,
+            86
+          ]
+        }
+      ],
+      "roof_fit_notes": "The two-level glazed former brewpub uses the July 2024 Broadway reference. The lower roof, east patio cover and north entry are modeled approximations.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493381.14928888186%2C4877369.282153052%2C493416.14928888186%2C4877414.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=140%2C180",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-060ab58a.png",
+        "size": [
+          140,
+          180
+        ],
+        "sha256": "64d32ee5cdd713bade37dc0fa17c996d4c88a6611b354dd11e786fe1e384ef7f"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jY3FM-vsam9JXtQK7Xz7Cw&heading=180",
+          "date": "2024-07",
+          "observation": "North view shows two tall glazed bays and red upper framing."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=n1qZ4CPaBirHVFBUkQIzGA&heading=263",
+          "date": "2024-06",
+          "observation": "Hilyard view shows the green canopy and lower fenced patio."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 0,
+        "landing_m": 1.29,
+        "threshold_above_grade_m": 0.09,
+        "width_m": 1.51,
+        "glazed_double": true,
+        "near_enu_m": [
+          -926.46803,
+          472.15917
+        ]
+      },
+      "wall_color": [
+        89,
+        91,
+        84
+      ],
+      "trim_color": [
+        65,
+        70,
+        64
+      ],
+      "roof_color": [
+        201,
+        197,
+        172
+      ],
+      "door_color": [
+        65,
+        70,
+        64
+      ],
+      "facades": [
+        {
+          "bearing": 0,
+          "wall": [
+            0.3,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                -932.90803,
+                472.16056
+              ],
+              3.77,
+              0.34,
+              1.91,
+              4
+            ],
+            [
+              [
+                -929.42803,
+                472.15981
+              ],
+              2.75,
+              0.34,
+              1.91,
+              3
+            ],
+            [
+              [
+                -932.94803,
+                472.16057
+              ],
+              3.72,
+              4.05,
+              1.55,
+              4
+            ],
+            [
+              [
+                -928.25803,
+                472.15956
+              ],
+              3.93,
+              4.05,
+              1.55,
+              5
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                [
+                  -935.38804,
+                  472.09109
+                ],
+                [
+                  -925.45804,
+                  472.08895
+                ],
+                0.9
+              ],
+              2.34,
+              0,
+              [
+                65,
+                70,
+                64
+              ],
+              0
+            ]
+          ],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -930.40803,
+            472.16002
+          ]
+        },
+        {
+          "bearing": 90,
+          "wall": [
+            0.42,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                -925.00865,
+                469.25886
+              ],
+              3.56,
+              3.98,
+              1.48,
+              4
+            ],
+            [
+              [
+                -925.00951,
+                465.26886
+              ],
+              2.43,
+              3.78,
+              1.46,
+              3
+            ]
+          ],
+          "awnings": [
+            [
+              [
+                [
+                  -925.00827,
+                  471.02886
+                ],
+                [
+                  -924.9998,
+                  463.94886
+                ],
+                1.49
+              ],
+              2.57,
+              0.91,
+              [
+                72,
+                102,
+                86
+              ],
+              0
+            ]
+          ],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -924.99897,
+            467.80886
+          ]
+        },
+        {
+          "bearing": 90,
+          "wall": [
+            0.22,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                -924.3308,
+                459.30871
+              ],
+              2.18,
+              0.82,
+              1.08,
+              2
+            ],
+            [
+              [
+                -924.33155,
+                455.80871
+              ],
+              2.0,
+              0.82,
+              1.1,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -924.31099,
+            458.40871
+          ]
+        }
+      ],
+      "raised_facades": [],
+      "accents": [
+        {
+          "bearing": 0,
+          "bands": [
+            [
+              [
+                -935.62804,
+                472.11115
+              ],
+              [
+                -925.14804,
+                472.10889
+              ],
+              5.63,
+              5.95,
+              0.11,
+              [
+                141,
+                91,
+                74
+              ]
+            ],
+            [
+              [
+                -935.62804,
+                472.11115
+              ],
+              [
+                -934.87804,
+                472.11098
+              ],
+              3.86,
+              5.87,
+              0.11,
+              [
+                141,
+                91,
+                74
+              ]
+            ],
+            [
+              [
+                -931.08804,
+                472.11017
+              ],
+              [
+                -930.59804,
+                472.11006
+              ],
+              3.87,
+              5.86,
+              0.11,
+              [
+                141,
+                91,
+                74
+              ]
+            ],
+            [
+              [
+                -925.88804,
+                472.10905
+              ],
+              [
+                -925.14804,
+                472.10889
+              ],
+              3.84,
+              5.88,
+              0.11,
+              [
+                141,
+                91,
+                74
+              ]
+            ]
+          ],
+          "profiles": [],
+          "vents": [],
+          "near_enu_m": [
+            -930.30804,
+            472.11
+          ]
+        }
+      ],
+      "canopy_columns": [],
+      "external_stairs": [],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [],
+      "roof_equipment": [
+        [
+          -0.79,
+          1.61,
+          1.37,
+          1.16,
+          5.89,
+          [
+            126,
+            130,
+            122
+          ]
+        ],
+        [
+          -2.81,
+          -4.15,
+          1.39,
+          0.85,
+          4.44,
+          [
+            126,
+            130,
+            122
+          ]
+        ],
+        [
+          -0.49,
+          -5.71,
+          1.23,
+          0.95,
+          4.05,
+          [
+            126,
+            130,
+            122
+          ]
+        ],
+        [
+          2.63,
+          -9.18,
+          1.25,
+          1.11,
+          4.34,
+          [
+            126,
+            130,
+            122
+          ]
+        ]
+      ],
+      "perimeter_fascias": [],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -5.88,
+        -11.103,
+        6.333,
+        11.606
+      ]
+    },
+    {
+      "id": "roof-6c97d6b4",
+      "name": "782 E Broadway",
+      "street_address": "782 E Broadway",
+      "group": "Broadway",
+      "state_feature": "20-1073746",
+      "municipal_addresses": [
+        "782 E BROADWAY"
+      ],
+      "footprint_enu_m": [
+        [
+          -781.886,
+          457.16
+        ],
+        [
+          -804.39,
+          457.18
+        ],
+        [
+          -804.404,
+          441.534
+        ],
+        [
+          -781.9,
+          441.514
+        ],
+        [
+          -781.886,
+          457.16
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          -804.94,
+          457.83
+        ],
+        [
+          -804.954,
+          440.984
+        ],
+        [
+          -781.35,
+          440.962
+        ],
+        [
+          -781.336,
+          457.81
+        ],
+        [
+          -788.092,
+          457.816
+        ],
+        [
+          -788.092,
+          459.482
+        ],
+        [
+          -798.366,
+          459.492
+        ],
+        [
+          -798.368,
+          457.824
+        ],
+        [
+          -804.94,
+          457.83
+        ]
+      ],
+      "raised_wall_enu_m": [],
+      "raised_wall_bottom_z_m": null,
+      "roof_frame": {
+        "origin_enu_m": [
+          -793.15,
+          449.78
+        ],
+        "axis": [
+          0.9999996096664775,
+          -0.0008835535596061471
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.57,
+              0,
+              0
+            ],
+            [
+              0,
+              -0.54,
+              4.57,
+              0,
+              0.385
+            ],
+            [
+              0,
+              -0.54,
+              4.57,
+              0,
+              -0.374
+            ],
+            [
+              -5.78,
+              0,
+              4.57,
+              0.52,
+              0
+            ],
+            [
+              7.46,
+              0,
+              4.57,
+              -0.695,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -6.2,
+            1.0,
+            5.86,
+            9.86
+          ],
+          "planes": [
+            [
+              -0.29,
+              8.76,
+              3.59,
+              0.409,
+              -0.046
+            ],
+            [
+              -0.29,
+              8.76,
+              3.59,
+              -0.422,
+              -0.046
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            8.51,
+            -5.68,
+            12,
+            5.37
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              3.08,
+              0,
+              0
+            ],
+            [
+              0,
+              -0.42,
+              3.08,
+              0,
+              0.29
+            ],
+            [
+              0,
+              -0.42,
+              3.08,
+              0,
+              -0.277
+            ]
+          ]
+        }
+      ],
+      "roof_fit_notes": "The 2024 northern frontage and hipped roof are visible. The northern entrance and vent proportions are approximate.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493514.14928888186%2C4877358.282153052%2C493558.14928888186%2C4877398.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=176%2C160",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-6c97d6b4.png",
+        "size": [
+          176,
+          160
+        ],
+        "sha256": "f0b5355e4176141d5de110ef08fe03010d07c212ac175948dbd4c7cbc9d7985f"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=l7LaHm-xIjPJv-At6Z3dLw&heading=173",
+          "date": "2024-06",
+          "observation": "Northern restaurant façade has cream siding, brick base and octagonal attic vent."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=kz4mKzFf8uL-xeh4rijkuA&heading=223",
+          "date": "2024-06",
+          "observation": "Oblique view shows the broad shingle roof and brick chimney."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 0,
+        "landing_m": 1.34,
+        "threshold_above_grade_m": 0.095,
+        "width_m": 1.52,
+        "glazed_double": true,
+        "near_enu_m": [
+          -798.81342,
+          457.23501
+        ]
+      },
+      "wall_color": [
+        204,
+        191,
+        162
+      ],
+      "trim_color": [
+        211,
+        204,
+        182
+      ],
+      "roof_color": [
+        126,
+        124,
+        112
+      ],
+      "door_color": [
+        65,
+        70,
+        64
+      ],
+      "facades": [
+        {
+          "bearing": 0,
+          "wall": [
+            0.49,
+            [
+              [
+                0.22,
+                0.66,
+                [
+                  141,
+                  91,
+                  74
+                ]
+              ]
+            ],
+            0
+          ],
+          "windows": [
+            [
+              [
+                -801.72342,
+                457.22758
+              ],
+              2.6,
+              0.76,
+              1.2,
+              4
+            ],
+            [
+              [
+                -795.99343,
+                457.22252
+              ],
+              3.4,
+              0.6,
+              1.51,
+              5
+            ],
+            [
+              [
+                -791.74343,
+                457.21876
+              ],
+              3.47,
+              0.6,
+              1.51,
+              5
+            ],
+            [
+              [
+                -787.93343,
+                457.21539
+              ],
+              2.84,
+              0.6,
+              1.38,
+              4
+            ],
+            [
+              [
+                -784.24343,
+                457.21213
+              ],
+              2.61,
+              0.64,
+              1.39,
+              4
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -792.14344,
+            457.20911
+          ]
+        },
+        {
+          "bearing": 90,
+          "wall": [
+            0.4,
+            [],
+            0.6
+          ],
+          "windows": [
+            [
+              [
+                -781.95592,
+                454.39011
+              ],
+              2.34,
+              0.75,
+              1.25,
+              4
+            ],
+            [
+              [
+                -781.95967,
+                450.15011
+              ],
+              2.53,
+              0.71,
+              1.2,
+              4
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -782.02714,
+            453.01017
+          ]
+        },
+        {
+          "bearing": 270,
+          "wall": [
+            0.43,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                -804.40681,
+                453.38995
+              ],
+              2.29,
+              0.72,
+              1.11,
+              3
+            ],
+            [
+              [
+                -804.4112,
+                448.42995
+              ],
+              2.33,
+              0.68,
+              1.14,
+              3
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            -804.38,
+            449.78992
+          ]
+        }
+      ],
+      "raised_facades": [],
+      "accents": [
+        {
+          "bearing": 0,
+          "bands": [],
+          "profiles": [],
+          "vents": [
+            [
+              [
+                -793.09341,
+                457.23995
+              ],
+              0.36,
+              3.98,
+              [
+                123,
+                115,
+                92
+              ]
+            ]
+          ],
+          "near_enu_m": [
+            -793.14341,
+            457.24
+          ]
+        }
+      ],
+      "canopy_columns": [],
+      "external_stairs": [],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [],
+      "roof_equipment": [
+        [
+          -3.92,
+          -3.6,
+          0.89,
+          0.97,
+          4.5,
+          [
+            126,
+            130,
+            122
+          ]
+        ]
+      ],
+      "perimeter_fascias": [],
+      "chimneys": [
+        [
+          -786.13037,
+          449.3538,
+          0.84,
+          1.01,
+          1.67
+        ]
+      ],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -11.797,
+        -8.807,
+        11.808,
+        9.706
+      ]
+    },
+    {
+      "id": "roof-b3252193",
+      "name": "1432 Orchard St",
+      "street_address": "1432 Orchard St",
+      "group": "Orchard",
+      "state_feature": "20-1073424",
+      "municipal_addresses": [
+        "1432 ORCHARD ST"
+      ],
+      "footprint_enu_m": [
+        [
+          556.71,
+          -162.322
+        ],
+        [
+          556.802,
+          -176.75
+        ],
+        [
+          589.506,
+          -177.066
+        ],
+        [
+          589.514,
+          -162.342
+        ],
+        [
+          556.71,
+          -162.322
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          556.444,
+          -177.108
+        ],
+        [
+          592.602,
+          -177.456
+        ],
+        [
+          592.32,
+          -161.984
+        ],
+        [
+          556.348,
+          -161.962
+        ],
+        [
+          556.444,
+          -177.108
+        ]
+      ],
+      "raised_wall_enu_m": [
+        [
+          556.752,
+          -176.8
+        ],
+        [
+          592.286,
+          -177.144
+        ],
+        [
+          592.016,
+          -162.294
+        ],
+        [
+          556.66,
+          -162.272
+        ],
+        [
+          556.752,
+          -176.8
+        ]
+      ],
+      "raised_wall_bottom_z_m": 8.71,
+      "roof_frame": {
+        "origin_enu_m": [
+          574.49,
+          -169.63
+        ],
+        "axis": [
+          0.9999998148476857,
+          -0.0006085265764768269
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              11.876,
+              -0.001,
+              -0.002
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            7.61,
+            -7.23,
+            10.14,
+            0.43
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              9.6,
+              0,
+              -0.052
+            ]
+          ],
+          "roof_color": [
+            126,
+            124,
+            112
+          ]
+        }
+      ],
+      "roof_fit_notes": "The 2024 photo establishes the public ground-level eastern entry, lighter upper wall and external stair. The landing and lower roof opening are approximate.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494875.14928888186%2C4876740.282153052%2C494932.14928888186%2C4876778.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=228%2C152",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-b3252193.png",
+        "size": [
+          228,
+          152
+        ],
+        "sha256": "3b8960f59add913ba828046a22afba2dfa94d883ebda98fa56b05fad71fa59ca"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=cir1V30KUJdPfCvchO-spw&heading=270",
+          "date": "2024-07",
+          "observation": "Animal hospital front shows a raised upper frontage, eastern entry and external stair."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 90,
+        "landing_m": 1.52,
+        "threshold_above_grade_m": 0.105,
+        "width_m": 1.28,
+        "glazed_double": false,
+        "near_enu_m": [
+          589.53201,
+          -166.32915
+        ]
+      },
+      "wall_color": [
+        204,
+        191,
+        162
+      ],
+      "trim_color": [
+        101,
+        113,
+        100
+      ],
+      "roof_color": [
+        182,
+        179,
+        159
+      ],
+      "door_color": [
+        65,
+        70,
+        64
+      ],
+      "facades": [
+        {
+          "bearing": 90,
+          "wall": [
+            0.24,
+            [
+              [
+                1.97,
+                2.65,
+                [
+                  128,
+                  109,
+                  83
+                ]
+              ]
+            ],
+            0
+          ],
+          "windows": [
+            [
+              [
+                589.49779,
+                -173.25913
+              ],
+              2.24,
+              0.91,
+              1.33,
+              3
+            ],
+            [
+              [
+                589.50974,
+                -170.05914
+              ],
+              2.34,
+              0.87,
+              1.42,
+              3
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": true,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            589.50202,
+            -166.31913
+          ]
+        },
+        {
+          "bearing": 180,
+          "wall": [
+            0.26,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                563.48556,
+                -176.9233
+              ],
+              1.27,
+              0.85,
+              1.35,
+              2
+            ],
+            [
+              [
+                569.48557,
+                -176.90696
+              ],
+              1.34,
+              0.84,
+              1.3,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            572.25567,
+            -176.74864
+          ]
+        }
+      ],
+      "raised_facades": [
+        {
+          "bearing": 90,
+          "seams": 0,
+          "windows": [
+            [
+              [
+                592.28733,
+                -174.02083
+              ],
+              0.79,
+              0.84,
+              1.18,
+              1
+            ],
+            [
+              [
+                592.28913,
+                -171.07083
+              ],
+              0.79,
+              0.84,
+              1.18,
+              1
+            ],
+            [
+              [
+                592.2909,
+                -168.15083
+              ],
+              0.79,
+              0.84,
+              1.18,
+              1
+            ],
+            [
+              [
+                592.29283,
+                -164.98083
+              ],
+              0.79,
+              0.84,
+              1.18,
+              1
+            ]
+          ],
+          "near_enu_m": [
+            592.19122,
+            -167.63077
+          ]
+        }
+      ],
+      "accents": [],
+      "canopy_columns": [
+        [
+          [
+            17.13,
+            -6.77
+          ],
+          0.092,
+          8.72,
+          [
+            96,
+            99,
+            84
+          ]
+        ],
+        [
+          [
+            17.19,
+            5.17
+          ],
+          0.109,
+          8.72,
+          [
+            96,
+            99,
+            84
+          ]
+        ]
+      ],
+      "external_stairs": [
+        [
+          22.53,
+          17.51,
+          6.29,
+          1.04,
+          8.76,
+          13
+        ]
+      ],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [],
+      "roof_equipment": [
+        [
+          -10.92,
+          -2.35,
+          1.33,
+          1.22,
+          12.22,
+          [
+            126,
+            130,
+            122
+          ]
+        ]
+      ],
+      "perimeter_fascias": [
+        [
+          [
+            17.18,
+            -65,
+            65,
+            65
+          ],
+          0.172,
+          11.54,
+          11.91,
+          [
+            87,
+            131,
+            150
+          ]
+        ]
+      ],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -18.146,
+        -7.815,
+        18.117,
+        7.657
+      ]
+    },
+    {
+      "id": "roof-bb9ee65a",
+      "name": "1468–1476 Orchard Aly",
+      "street_address": "1468–1476 Orchard Aly",
+      "group": "Orchard",
+      "state_feature": "20-1073492",
+      "municipal_addresses": [
+        "1468 ORCHARD ALY",
+        "1472 ORCHARD ALY",
+        "1476 ORCHARD ALY"
+      ],
+      "footprint_enu_m": [
+        [
+          527.504,
+          -197.21
+        ],
+        [
+          527.862,
+          -213.002
+        ],
+        [
+          535.77,
+          -213.084
+        ],
+        [
+          535.408,
+          -197.102
+        ],
+        [
+          527.504,
+          -197.21
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          527.558,
+          -213.31
+        ],
+        [
+          542.326,
+          -213.46
+        ],
+        [
+          541.826,
+          -196.704
+        ],
+        [
+          527.188,
+          -196.904
+        ],
+        [
+          527.558,
+          -213.31
+        ]
+      ],
+      "raised_wall_enu_m": [
+        [
+          535.218,
+          -197.064
+        ],
+        [
+          535.582,
+          -213.122
+        ],
+        [
+          542.048,
+          -213.186
+        ],
+        [
+          541.564,
+          -196.978
+        ],
+        [
+          535.218,
+          -197.064
+        ]
+      ],
+      "raised_wall_bottom_z_m": 8.65,
+      "roof_frame": {
+        "origin_enu_m": [
+          534.75,
+          -205.11
+        ],
+        "axis": [
+          0.9997436496429496,
+          0.022641444269198525
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              14.15,
+              0,
+              0
+            ],
+            [
+              2.35,
+              0,
+              14.15,
+              0.63,
+              0
+            ],
+            [
+              2.35,
+              0,
+              14.15,
+              -0.544,
+              0
+            ],
+            [
+              0,
+              -1.64,
+              14.15,
+              0,
+              0.56
+            ],
+            [
+              0,
+              3.16,
+              14.15,
+              0,
+              -0.52
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            -4.05,
+            0.91,
+            4.01
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              12.87,
+              0.036,
+              0
+            ],
+            [
+              0,
+              -1.42,
+              12.81,
+              0,
+              0.54
+            ],
+            [
+              0,
+              1.56,
+              12.83,
+              0,
+              -0.47
+            ]
+          ]
+        }
+      ],
+      "roof_fit_notes": "Three municipal points share one continuous roof. Four approximate columns support the raised parking-side volume. The modeled common side approach is approximate.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494846.14928888186%2C4876704.282153052%2C494882.14928888186%2C4876745.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=144%2C164",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-bb9ee65a.png",
+        "size": [
+          144,
+          164
+        ],
+        "sha256": "dcdc669ebf24ac85027b8884c47a0ddefbce5eb9c44363874f760802c39bc686"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=OBOPvDyz1FYeBtTZBZXvqQ&heading=273",
+          "date": "2020-11",
+          "observation": "Street view shows vertical upper siding over open stalls."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ZwmVzMjUb0bBZiX4ztiMEw&heading=220",
+          "date": "2020-11",
+          "observation": "North oblique shows parking stall posts and access along the side."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 0,
+        "landing_m": 1.13,
+        "threshold_above_grade_m": 0.1,
+        "width_m": 1.3,
+        "glazed_double": false,
+        "near_enu_m": [
+          532.98882,
+          -197.12783
+        ]
+      },
+      "wall_color": [
+        158,
+        135,
+        104
+      ],
+      "trim_color": [
+        129,
+        103,
+        79
+      ],
+      "roof_color": [
+        104,
+        102,
+        86
+      ],
+      "door_color": [
+        104,
+        82,
+        65
+      ],
+      "facades": [
+        {
+          "bearing": 0,
+          "wall": [
+            0.26,
+            [],
+            0.58
+          ],
+          "windows": [
+            [
+              [
+                529.88962,
+                -197.19802
+              ],
+              1.42,
+              0.87,
+              1.18,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            532.40897,
+            -197.14096
+          ]
+        },
+        {
+          "bearing": 270,
+          "wall": [
+            0.24,
+            [],
+            0.55
+          ],
+          "windows": [
+            [
+              [
+                527.92288,
+                -211.0561
+              ],
+              1.22,
+              0.86,
+              1.25,
+              2
+            ],
+            [
+              [
+                527.83027,
+                -206.96715
+              ],
+              1.22,
+              0.86,
+              1.25,
+              2
+            ],
+            [
+              [
+                527.73994,
+                -202.97817
+              ],
+              1.22,
+              0.86,
+              1.25,
+              2
+            ],
+            [
+              [
+                527.65254,
+                -199.11916
+              ],
+              1.22,
+              0.86,
+              1.25,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            527.76179,
+            -205.26826
+          ]
+        }
+      ],
+      "raised_facades": [
+        {
+          "bearing": 90,
+          "seams": 0.54,
+          "windows": [
+            [
+              [
+                541.96921,
+                -211.61822
+              ],
+              1.12,
+              0.82,
+              1.35,
+              2
+            ],
+            [
+              [
+                541.88656,
+                -207.96915
+              ],
+              1.12,
+              0.83,
+              1.35,
+              2
+            ],
+            [
+              [
+                541.80007,
+                -204.15013
+              ],
+              1.12,
+              0.82,
+              1.35,
+              2
+            ],
+            [
+              [
+                541.74551,
+                -201.74075
+              ],
+              1.12,
+              0.81,
+              1.35,
+              2
+            ],
+            [
+              [
+                541.66491,
+                -198.18166
+              ],
+              1.12,
+              0.75,
+              1.35,
+              2
+            ]
+          ],
+          "near_enu_m": [
+            541.82819,
+            -204.9497
+          ]
+        },
+        {
+          "bearing": 0,
+          "seams": 0.54,
+          "windows": [
+            [
+              [
+                540.45826,
+                -197.01868
+              ],
+              1.13,
+              0.87,
+              1.25,
+              2
+            ]
+          ],
+          "near_enu_m": [
+            539.18882,
+            -197.05743
+          ]
+        }
+      ],
+      "accents": [],
+      "canopy_columns": [
+        [
+          [
+            6.84,
+            -7.48
+          ],
+          0.083,
+          8.83,
+          [
+            140,
+            114,
+            89
+          ]
+        ],
+        [
+          [
+            6.84,
+            -2.28
+          ],
+          0.083,
+          8.83,
+          [
+            140,
+            114,
+            89
+          ]
+        ],
+        [
+          [
+            6.84,
+            2.61
+          ],
+          0.083,
+          8.83,
+          [
+            140,
+            114,
+            89
+          ]
+        ],
+        [
+          [
+            6.84,
+            7.41
+          ],
+          0.083,
+          8.83,
+          [
+            140,
+            114,
+            89
+          ]
+        ]
+      ],
+      "external_stairs": [],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [
+        [
+          [
+            0.94,
+            -7.82,
+            7.17,
+            7.92
+          ],
+          [
+            153,
+            147,
+            128
+          ]
+        ]
+      ],
+      "roof_equipment": [],
+      "perimeter_fascias": [],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -7.375,
+        -8.519,
+        7.385,
+        8.375
+      ]
+    },
+    {
+      "id": "roof-a8a115d2",
+      "name": "1505 Orchard St",
+      "street_address": "1505 Orchard St",
+      "group": "Orchard",
+      "state_feature": "20-1073892",
+      "municipal_addresses": [
+        "1505 ORCHARD ST"
+      ],
+      "footprint_enu_m": [
+        [
+          625.952,
+          -272.936
+        ],
+        [
+          625.926,
+          -302.524
+        ],
+        [
+          670.418,
+          -302.564
+        ],
+        [
+          670.456,
+          -260.57
+        ],
+        [
+          638.366,
+          -260.542
+        ],
+        [
+          638.36,
+          -268.286
+        ],
+        [
+          641.786,
+          -268.288
+        ],
+        [
+          641.784,
+          -269.678
+        ],
+        [
+          646.658,
+          -269.682
+        ],
+        [
+          646.66,
+          -268.294
+        ],
+        [
+          662.428,
+          -268.308
+        ],
+        [
+          662.422,
+          -273.338
+        ],
+        [
+          660.942,
+          -273.336
+        ],
+        [
+          660.926,
+          -290.614
+        ],
+        [
+          662.408,
+          -290.616
+        ],
+        [
+          662.404,
+          -295.184
+        ],
+        [
+          655.336,
+          -295.178
+        ],
+        [
+          655.338,
+          -293.418
+        ],
+        [
+          640.282,
+          -293.406
+        ],
+        [
+          640.28,
+          -295.164
+        ],
+        [
+          633.306,
+          -295.158
+        ],
+        [
+          633.326,
+          -272.942
+        ],
+        [
+          625.952,
+          -272.936
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          625.612,
+          -272.596
+        ],
+        [
+          625.586,
+          -302.864
+        ],
+        [
+          670.758,
+          -302.904
+        ],
+        [
+          670.796,
+          -260.23
+        ],
+        [
+          638.028,
+          -260.202
+        ],
+        [
+          638.02,
+          -268.626
+        ],
+        [
+          641.444,
+          -268.628
+        ],
+        [
+          641.444,
+          -270.018
+        ],
+        [
+          646.998,
+          -270.022
+        ],
+        [
+          646.998,
+          -268.634
+        ],
+        [
+          662.088,
+          -268.646
+        ],
+        [
+          662.084,
+          -272.998
+        ],
+        [
+          660.602,
+          -272.996
+        ],
+        [
+          660.586,
+          -290.954
+        ],
+        [
+          662.068,
+          -290.956
+        ],
+        [
+          662.064,
+          -294.842
+        ],
+        [
+          655.678,
+          -294.838
+        ],
+        [
+          655.678,
+          -293.078
+        ],
+        [
+          639.942,
+          -293.064
+        ],
+        [
+          639.94,
+          -294.824
+        ],
+        [
+          633.646,
+          -294.818
+        ],
+        [
+          633.666,
+          -272.602
+        ],
+        [
+          625.612,
+          -272.596
+        ]
+      ],
+      "raised_wall_enu_m": [],
+      "raised_wall_bottom_z_m": null,
+      "roof_frame": {
+        "origin_enu_m": [
+          650.77,
+          -283.59
+        ],
+        "axis": [
+          0.9999996164311539,
+          -0.0008758638852191036
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -13.1,
+            -16.9,
+            12
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              15.22,
+              0,
+              0
+            ],
+            [
+              -17,
+              0,
+              15.22,
+              0.215,
+              0
+            ],
+            [
+              0,
+              10.6,
+              15.22,
+              0,
+              -0.206
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            -8.8
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              15.35,
+              0,
+              0
+            ],
+            [
+              0,
+              -9.77,
+              15.35,
+              0,
+              0.202
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            9.63,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              15.66,
+              0,
+              0
+            ],
+            [
+              11.6,
+              0,
+              15.66,
+              -0.235,
+              0
+            ],
+            [
+              0,
+              16.36,
+              15.66,
+              0,
+              -0.214
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            13.18,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              15.36,
+              0,
+              0
+            ],
+            [
+              0,
+              16.12,
+              15.36,
+              0,
+              -0.206
+            ]
+          ]
+        }
+      ],
+      "roof_fit_notes": "Four roof wings surround the planted open courtyard with a northwest gap. The interior-facing main approach and individual window positions are approximate.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494941.14928888186%2C4876615.282153052%2C495010.14928888186%2C4876681.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=276%2C264",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-a8a115d2.png",
+        "size": [
+          276,
+          264
+        ],
+        "sha256": "5050ac901c9c8db67a87aa752ac98457ee8466aafecc6639db0799dc329630e3"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=yf-x46fWtDmEcnabhDyX2w&heading=89",
+          "date": "2024-07",
+          "observation": "Orchard view shows horizontal upper wall and blue vertical skirting."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ONpdLBr1RpbCimvWub8SbQ&heading=270",
+          "date": "2024-07",
+          "observation": "Walnut Alley elevation confirms the two levels and exposed roof overhang."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 270,
+        "landing_m": 1.45,
+        "threshold_above_grade_m": 0.13,
+        "width_m": 1.52,
+        "glazed_double": true,
+        "near_enu_m": [
+          660.72213,
+          -281.15872
+        ]
+      },
+      "wall_color": [
+        143,
+        148,
+        129
+      ],
+      "trim_color": [
+        86,
+        104,
+        100
+      ],
+      "roof_color": [
+        142,
+        128,
+        102
+      ],
+      "door_color": [
+        65,
+        70,
+        64
+      ],
+      "facades": [
+        {
+          "bearing": 270,
+          "wall": [
+            0.3,
+            [
+              [
+                0.13,
+                1.25,
+                [
+                  87,
+                  131,
+                  150
+                ]
+              ]
+            ],
+            0
+          ],
+          "windows": [
+            [
+              [
+                625.96521,
+                -300.46828
+              ],
+              1.39,
+              1.58,
+              0.83,
+              2
+            ],
+            [
+              [
+                625.96521,
+                -300.46828
+              ],
+              1.42,
+              3.34,
+              1.07,
+              2
+            ],
+            [
+              [
+                625.96939,
+                -295.68828
+              ],
+              1.39,
+              1.58,
+              0.83,
+              2
+            ],
+            [
+              [
+                625.96939,
+                -295.68828
+              ],
+              1.42,
+              3.34,
+              1.07,
+              2
+            ],
+            [
+              [
+                625.97358,
+                -290.90828
+              ],
+              1.39,
+              1.58,
+              0.83,
+              2
+            ],
+            [
+              [
+                625.97358,
+                -290.90828
+              ],
+              1.42,
+              3.34,
+              1.07,
+              2
+            ],
+            [
+              [
+                625.97778,
+                -286.11829
+              ],
+              1.39,
+              1.58,
+              0.83,
+              2
+            ],
+            [
+              [
+                625.97778,
+                -286.11829
+              ],
+              1.42,
+              3.34,
+              1.07,
+              2
+            ],
+            [
+              [
+                625.98197,
+                -281.32829
+              ],
+              1.39,
+              1.58,
+              0.83,
+              2
+            ],
+            [
+              [
+                625.98197,
+                -281.32829
+              ],
+              1.42,
+              3.34,
+              1.07,
+              2
+            ],
+            [
+              [
+                625.98652,
+                -276.13829
+              ],
+              1.39,
+              1.58,
+              0.83,
+              2
+            ],
+            [
+              [
+                625.98652,
+                -276.13829
+              ],
+              1.42,
+              3.34,
+              1.07,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            625.96633,
+            -287.76828
+          ]
+        },
+        {
+          "bearing": 90,
+          "wall": [
+            0.26,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                670.37782,
+                -297.50718
+              ],
+              1.62,
+              0.88,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.37782,
+                -297.50718
+              ],
+              1.62,
+              3.3,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.3822,
+                -292.50718
+              ],
+              1.62,
+              0.88,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.3822,
+                -292.50718
+              ],
+              1.62,
+              3.3,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.38658,
+                -287.50718
+              ],
+              1.62,
+              0.88,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.38658,
+                -287.50718
+              ],
+              1.62,
+              3.3,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.39096,
+                -282.50718
+              ],
+              1.62,
+              0.88,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.39096,
+                -282.50718
+              ],
+              1.62,
+              3.3,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.39534,
+                -277.50719
+              ],
+              1.62,
+              0.88,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.39534,
+                -277.50719
+              ],
+              1.62,
+              3.3,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.39971,
+                -272.50719
+              ],
+              1.62,
+              0.88,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.39971,
+                -272.50719
+              ],
+              1.62,
+              3.3,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.40409,
+                -267.50719
+              ],
+              1.62,
+              0.88,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.40409,
+                -267.50719
+              ],
+              1.62,
+              3.3,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.40821,
+                -262.80719
+              ],
+              1.62,
+              0.88,
+              1.02,
+              2
+            ],
+            [
+              [
+                670.40821,
+                -262.80719
+              ],
+              1.62,
+              3.3,
+              1.02,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            670.38367,
+            -279.40718
+          ]
+        },
+        {
+          "bearing": 270,
+          "wall": [
+            0.24,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                660.93516,
+                -289.11891
+              ],
+              1.49,
+              0.81,
+              1.12,
+              2
+            ],
+            [
+              [
+                660.93516,
+                -289.11891
+              ],
+              1.49,
+              3.06,
+              1.12,
+              2
+            ],
+            [
+              [
+                660.93779,
+                -286.11891
+              ],
+              1.49,
+              0.81,
+              1.12,
+              2
+            ],
+            [
+              [
+                660.93779,
+                -286.11891
+              ],
+              1.49,
+              3.06,
+              1.12,
+              2
+            ],
+            [
+              [
+                660.94445,
+                -278.51891
+              ],
+              1.49,
+              0.81,
+              1.12,
+              2
+            ],
+            [
+              [
+                660.94445,
+                -278.51891
+              ],
+              1.49,
+              3.06,
+              1.12,
+              2
+            ],
+            [
+              [
+                660.9472,
+                -275.37891
+              ],
+              1.49,
+              0.81,
+              1.12,
+              2
+            ],
+            [
+              [
+                660.9472,
+                -275.37891
+              ],
+              1.49,
+              3.06,
+              1.12,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            660.92144,
+            -281.94889
+          ]
+        },
+        {
+          "bearing": 180,
+          "wall": [
+            0.25,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                628.8534,
+                -302.53081
+              ],
+              1.47,
+              0.92,
+              1.03,
+              2
+            ],
+            [
+              [
+                628.8534,
+                -302.53081
+              ],
+              1.47,
+              3.32,
+              1.03,
+              2
+            ],
+            [
+              [
+                634.9234,
+                -302.53613
+              ],
+              1.47,
+              0.92,
+              1.03,
+              2
+            ],
+            [
+              [
+                634.9234,
+                -302.53613
+              ],
+              1.47,
+              3.32,
+              1.03,
+              2
+            ],
+            [
+              [
+                641.3634,
+                -302.54177
+              ],
+              1.47,
+              0.92,
+              1.03,
+              2
+            ],
+            [
+              [
+                641.3634,
+                -302.54177
+              ],
+              1.47,
+              3.32,
+              1.03,
+              2
+            ],
+            [
+              [
+                647.35339,
+                -302.54701
+              ],
+              1.47,
+              0.92,
+              1.03,
+              2
+            ],
+            [
+              [
+                647.35339,
+                -302.54701
+              ],
+              1.47,
+              3.32,
+              1.03,
+              2
+            ],
+            [
+              [
+                654.06339,
+                -302.55289
+              ],
+              1.47,
+              0.92,
+              1.03,
+              2
+            ],
+            [
+              [
+                654.06339,
+                -302.55289
+              ],
+              1.47,
+              3.32,
+              1.03,
+              2
+            ],
+            [
+              [
+                660.48339,
+                -302.55851
+              ],
+              1.47,
+              0.92,
+              1.03,
+              2
+            ],
+            [
+              [
+                660.48339,
+                -302.55851
+              ],
+              1.47,
+              3.32,
+              1.03,
+              2
+            ],
+            [
+              [
+                666.48339,
+                -302.56377
+              ],
+              1.47,
+              0.92,
+              1.03,
+              2
+            ],
+            [
+              [
+                666.48339,
+                -302.56377
+              ],
+              1.47,
+              3.32,
+              1.03,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            646.02344,
+            -302.49585
+          ]
+        }
+      ],
+      "raised_facades": [],
+      "accents": [],
+      "canopy_columns": [],
+      "external_stairs": [],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [
+        [
+          [
+            -14.2,
+            -7.9,
+            -8.15,
+            -2.6
+          ],
+          [
+            122,
+            130,
+            94
+          ]
+        ],
+        [
+          [
+            -14.0,
+            1.9,
+            -8.15,
+            7.6
+          ],
+          [
+            127,
+            137,
+            96
+          ]
+        ],
+        [
+          [
+            -4.8,
+            -7.65,
+            1.6,
+            -2.24
+          ],
+          [
+            129,
+            137,
+            93
+          ]
+        ],
+        [
+          [
+            -4.45,
+            2.38,
+            1.82,
+            8.41
+          ],
+          [
+            123,
+            133,
+            88
+          ]
+        ]
+      ],
+      "roof_equipment": [],
+      "perimeter_fascias": [],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -25.167,
+        -19.296,
+        20.005,
+        23.377
+      ]
+    },
+    {
+      "id": "roof-846446eb",
+      "name": "1838 Orchard St",
+      "street_address": "1838 Orchard St",
+      "group": "Orchard",
+      "state_feature": "20-1073829",
+      "municipal_addresses": [
+        "1838 ORCHARD ST"
+      ],
+      "footprint_enu_m": [
+        [
+          572.61,
+          -632.84
+        ],
+        [
+          572.604,
+          -638.64
+        ],
+        [
+          573.716,
+          -638.64
+        ],
+        [
+          573.712,
+          -642.528
+        ],
+        [
+          576.118,
+          -642.53
+        ],
+        [
+          576.116,
+          -645.584
+        ],
+        [
+          594.782,
+          -645.602
+        ],
+        [
+          594.79,
+          -635.914
+        ],
+        [
+          582.572,
+          -635.904
+        ],
+        [
+          582.574,
+          -632.848
+        ],
+        [
+          572.61,
+          -632.84
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          572.27,
+          -632.5
+        ],
+        [
+          572.264,
+          -638.978
+        ],
+        [
+          573.376,
+          -638.98
+        ],
+        [
+          573.372,
+          -642.868
+        ],
+        [
+          575.778,
+          -642.87
+        ],
+        [
+          575.776,
+          -645.924
+        ],
+        [
+          595.122,
+          -645.942
+        ],
+        [
+          595.132,
+          -635.574
+        ],
+        [
+          582.912,
+          -635.564
+        ],
+        [
+          582.914,
+          -632.508
+        ],
+        [
+          572.27,
+          -632.5
+        ]
+      ],
+      "raised_wall_enu_m": [],
+      "raised_wall_bottom_z_m": null,
+      "roof_frame": {
+        "origin_enu_m": [
+          583.51,
+          -639.73
+        ],
+        "axis": [
+          0.9999996115359503,
+          -0.0008814351641772921
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              16.9,
+              0.003,
+              0.002
+            ]
+          ],
+          "roof_color": [
+            182,
+            179,
+            159
+          ]
+        },
+        {
+          "bounds_m": [
+            -2.42,
+            -4.65,
+            11.63,
+            4.44
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              19.27,
+              0,
+              0
+            ],
+            [
+              0,
+              -0.18,
+              19.27,
+              0,
+              0.564
+            ],
+            [
+              0,
+              -0.18,
+              19.27,
+              0,
+              -0.418
+            ],
+            [
+              -1.28,
+              0,
+              19.27,
+              1.18,
+              0
+            ],
+            [
+              9.28,
+              0,
+              19.27,
+              -1.09,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -9.13,
+            -65,
+            65,
+            -4.43
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              16.66,
+              0.001,
+              0.005
+            ]
+          ],
+          "roof_color": [
+            126,
+            124,
+            112
+          ]
+        }
+      ],
+      "roof_fit_notes": "The east side faces Orchard Street. Foliage hides some of the storefront-side roof edges and the rear service opening.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494890.14928888186%2C4876272.282153052%2C494935.14928888186%2C4876308.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=180%2C144",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-846446eb.png",
+        "size": [
+          180,
+          144
+        ],
+        "sha256": "31ac8d8f46fd5667dedd30f95a1a1dd220591352887859308a542db41eadf275"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uD_I2cSVsTqcFIiYpiBwPg&heading=270",
+          "date": "2024-07",
+          "observation": "Green siding, red entry and wide street-facing glazed bay distinguish the center building."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 90,
+        "landing_m": 1.25,
+        "threshold_above_grade_m": 0.19,
+        "width_m": 1.3,
+        "glazed_double": false,
+        "near_enu_m": [
+          594.72896,
+          -640.91989
+        ]
+      },
+      "wall_color": [
+        136,
+        151,
+        127
+      ],
+      "trim_color": [
+        199,
+        196,
+        172
+      ],
+      "roof_color": [
+        115,
+        114,
+        104
+      ],
+      "door_color": [
+        127,
+        76,
+        59
+      ],
+      "facades": [
+        {
+          "bearing": 90,
+          "wall": [
+            0.3,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                594.73117,
+                -638.40989
+              ],
+              2.55,
+              0.78,
+              1.51,
+              4
+            ],
+            [
+              [
+                594.72693,
+                -643.21989
+              ],
+              1.47,
+              0.93,
+              1.32,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            594.7089,
+            -640.97987
+          ]
+        },
+        {
+          "bearing": 0,
+          "wall": [
+            0.23,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                589.68334,
+                -635.94544
+              ],
+              1.59,
+              0.92,
+              1.29,
+              2
+            ],
+            [
+              [
+                586.08334,
+                -635.94227
+              ],
+              1.29,
+              0.95,
+              1.22,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            590.62336,
+            -635.91627
+          ]
+        },
+        {
+          "bearing": 270,
+          "wall": [
+            0.32,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                572.65374,
+                -635.48043
+              ],
+              1.9,
+              0.83,
+              1.18,
+              3
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            572.69388,
+            -635.32046
+          ]
+        }
+      ],
+      "raised_facades": [],
+      "accents": [],
+      "canopy_columns": [],
+      "external_stairs": [],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [],
+      "roof_equipment": [
+        [
+          -6.17,
+          3.86,
+          0.84,
+          0.79,
+          17.84,
+          [
+            126,
+            130,
+            122
+          ]
+        ]
+      ],
+      "perimeter_fascias": [],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -11.246,
+        -6.201,
+        11.617,
+        7.221
+      ]
+    },
+    {
+      "id": "roof-8eff0cee",
+      "name": "2059 Orchard St",
+      "street_address": "2059 Orchard St",
+      "group": "Orchard",
+      "state_feature": "20-1062653",
+      "municipal_addresses": [
+        "2059 ORCHARD ST"
+      ],
+      "footprint_enu_m": [
+        [
+          643.37,
+          -884.6
+        ],
+        [
+          634.18,
+          -884.668
+        ],
+        [
+          634.202,
+          -889.05
+        ],
+        [
+          626.542,
+          -889.106
+        ],
+        [
+          626.574,
+          -893.422
+        ],
+        [
+          625.642,
+          -893.428
+        ],
+        [
+          625.66,
+          -895.744
+        ],
+        [
+          626.442,
+          -895.738
+        ],
+        [
+          626.464,
+          -898.668
+        ],
+        [
+          643.472,
+          -898.544
+        ],
+        [
+          643.37,
+          -884.6
+        ]
+      ],
+      "roof_outline_enu_m": [
+        [
+          643.708,
+          -884.258
+        ],
+        [
+          633.838,
+          -884.33
+        ],
+        [
+          633.86,
+          -888.712
+        ],
+        [
+          626.2,
+          -888.768
+        ],
+        [
+          626.232,
+          -893.084
+        ],
+        [
+          625.3,
+          -893.09
+        ],
+        [
+          625.322,
+          -896.086
+        ],
+        [
+          626.104,
+          -896.082
+        ],
+        [
+          626.126,
+          -899.01
+        ],
+        [
+          643.816,
+          -898.882
+        ],
+        [
+          643.708,
+          -884.258
+        ]
+      ],
+      "raised_wall_enu_m": [],
+      "raised_wall_bottom_z_m": null,
+      "roof_frame": {
+        "origin_enu_m": [
+          635.6,
+          -892.44
+        ],
+        "axis": [
+          0.9999732757932628,
+          0.007310793342116304
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            65
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              23.66,
+              0,
+              0
+            ],
+            [
+              0,
+              1.35,
+              23.66,
+              0,
+              0.44
+            ],
+            [
+              0,
+              1.35,
+              23.66,
+              0,
+              -0.566
+            ],
+            [
+              -6,
+              0,
+              23.66,
+              0.18,
+              0
+            ],
+            [
+              6.75,
+              0,
+              23.66,
+              -0.473,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -10.4,
+            -6.65,
+            -3.01,
+            3.9
+          ],
+          "planes": [
+            [
+              -5.99,
+              0,
+              24.12,
+              0.622,
+              0
+            ],
+            [
+              -5.99,
+              0,
+              24.12,
+              -0.61,
+              0
+            ]
+          ],
+          "roof_color": [
+            89,
+            95,
+            87
+          ]
+        },
+        {
+          "bounds_m": [
+            -65,
+            -65,
+            65,
+            -4.42
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              20.11,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            89,
+            90,
+            77
+          ]
+        }
+      ],
+      "roof_fit_notes": "The street entrance is reached by the modeled raised approach. The tree-obscured door position, riser height, and rear roof breaks are approximate.",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494941.14928888186%2C4876018.282153052%2C494983.14928888186%2C4876054.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=168%2C144",
+        "path": "broadway-orchard-exterior-evidence-after-155-l2-aerials/roof-8eff0cee.png",
+        "size": [
+          168,
+          144
+        ],
+        "sha256": "96ab673301620e6af96a9a04b04e07a819b1e0101467f07ae20162176bdaaf70"
+      },
+      "public_references": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=5yCn1FNsVYpQ25qz_IGK6A&heading=86",
+          "date": "2024-07",
+          "observation": "Street image shows the elevated entrance steps and pale siding beneath a dark roof."
+        }
+      ],
+      "eaves_m": 0.018,
+      "entrance": {
+        "outward_degrees": 270,
+        "landing_m": 2.43,
+        "threshold_above_grade_m": 0.6,
+        "width_m": 1.3,
+        "glazed_double": false,
+        "near_enu_m": [
+          625.6554,
+          -894.58276
+        ]
+      },
+      "wall_color": [
+        204,
+        191,
+        162
+      ],
+      "trim_color": [
+        201,
+        197,
+        172
+      ],
+      "roof_color": [
+        87,
+        90,
+        84
+      ],
+      "door_color": [
+        105,
+        87,
+        61
+      ],
+      "facades": [
+        {
+          "bearing": 270,
+          "wall": [
+            0.24,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                626.45206,
+                -891.38685
+              ],
+              1.87,
+              1.01,
+              1.33,
+              3
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            626.40928,
+            -891.00715
+          ]
+        },
+        {
+          "bearing": 0,
+          "wall": [
+            0.31,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                636.64309,
+                -884.65217
+              ],
+              1.37,
+              0.91,
+              1.31,
+              2
+            ],
+            [
+              [
+                640.87298,
+                -884.62124
+              ],
+              1.73,
+              0.92,
+              1.22,
+              3
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            639.73323,
+            -884.65957
+          ]
+        },
+        {
+          "bearing": 90,
+          "wall": [
+            0.28,
+            [],
+            0
+          ],
+          "windows": [
+            [
+              [
+                643.43611,
+                -895.98281
+              ],
+              1.29,
+              0.91,
+              1.18,
+              2
+            ],
+            [
+              [
+                643.41833,
+                -892.18283
+              ],
+              1.46,
+              0.89,
+              1.23,
+              2
+            ]
+          ],
+          "awnings": [],
+          "service_bays": [],
+          "glazed_door": false,
+          "piers": [],
+          "sloped_fascias": [],
+          "near_enu_m": [
+            643.41871,
+            -893.60287
+          ]
+        }
+      ],
+      "raised_facades": [],
+      "accents": [],
+      "canopy_columns": [],
+      "external_stairs": [],
+      "landings": [],
+      "solar_array": [],
+      "ground_surfaces": [],
+      "roof_equipment": [],
+      "perimeter_fascias": [],
+      "chimneys": [],
+      "porch": null,
+      "garage_slot_enu_m": null,
+      "validation_window_local": [
+        -10.304,
+        -6.501,
+        8.168,
+        8.122
+      ]
+    }
+  ]
+}

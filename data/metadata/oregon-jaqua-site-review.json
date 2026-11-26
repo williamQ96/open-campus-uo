@@ -1,0 +1,516 @@
+{
+  "sources": {
+    "university_map": "https://map.uoregon.edu/",
+    "oregon_hall_survey": "https://cpfm.uoregon.edu/sites/default/files/2025-01/oregonhall_2025_0.pdf#page=4",
+    "oregon_hall_renovation": "https://fortisconstruction.com/project/university-of-oregon-oregon-hall-renovation/",
+    "jaqua_architect": "https://www.zgf.com/work/1156-university-of-oregon-john-e-jaqua-academic-center-for-student-athletes",
+    "aerial_2024": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer",
+    "surface_2017": "docs/campus-surface-2017-2026-11-24.md"
+  },
+  "coordinates": "Projected meters east and north from the campus origin. Roof elevations are absolute scene Y meters.",
+  "oregon_hall": {
+    "id": "roof-11d15952",
+    "name": "Oregon Hall",
+    "campus_id": "B0042",
+    "roof_regions": [
+      {
+        "name": "west-core",
+        "bounds": [
+          2.28,
+          34.32,
+          38.15,
+          61.93
+        ],
+        "deck": 12.77,
+        "parapet": 13.63,
+        "stories": 3
+      },
+      {
+        "name": "north-terrace",
+        "bounds": [
+          2.65,
+          61.93,
+          38.15,
+          70.3
+        ],
+        "deck": 8.56,
+        "parapet": 8.93,
+        "stories": 2
+      },
+      {
+        "name": "north-landing",
+        "bounds": [
+          2.64,
+          70.3,
+          38.15,
+          73.28
+        ],
+        "deck": 5.27,
+        "parapet": 5.4,
+        "stories": 1
+      },
+      {
+        "name": "west-stair",
+        "bounds": [
+          -3.1,
+          36.15,
+          2.28,
+          50.35
+        ],
+        "deck": 8.43,
+        "parapet": 8.65,
+        "stories": 2
+      },
+      {
+        "name": "west-stair-head",
+        "bounds": [
+          -3.1,
+          47.2,
+          2.28,
+          50.35
+        ],
+        "deck": 12.16,
+        "parapet": 12.3,
+        "stories": 3
+      },
+      {
+        "name": "east-wing",
+        "bounds": [
+          47.85,
+          21.25,
+          66.12,
+          57.6
+        ],
+        "deck": 16.48,
+        "parapet": 17.7,
+        "stories": 4
+      },
+      {
+        "name": "entry-tower",
+        "bounds": [
+          38.15,
+          38.83,
+          46.28,
+          45.82
+        ],
+        "deck": 20.34,
+        "parapet": 21.02,
+        "stories": 4
+      },
+      {
+        "name": "east-link",
+        "bounds": [
+          44.65,
+          34.15,
+          47.85,
+          46.44
+        ],
+        "deck": 19.97,
+        "parapet": 20.44,
+        "stories": 4
+      },
+      {
+        "name": "cross-wing",
+        "bounds": [
+          38.15,
+          45.82,
+          47.85,
+          48.4
+        ],
+        "deck": 17.63,
+        "parapet": 17.72,
+        "stories": 4
+      },
+      {
+        "name": "north-link",
+        "bounds": [
+          38.15,
+          48.4,
+          47.85,
+          54.18
+        ],
+        "deck": 8.52,
+        "parapet": 9.07,
+        "stories": 2
+      }
+    ],
+    "equipment": [
+      [
+        10.95,
+        53.42,
+        17.55,
+        55.08,
+        14.48
+      ],
+      [
+        19.1,
+        49.7,
+        26.18,
+        51.87,
+        14.54
+      ],
+      [
+        29.52,
+        49.76,
+        31.6,
+        56.12,
+        14.56
+      ],
+      [
+        17.9,
+        39.28,
+        22.36,
+        42.18,
+        14.55
+      ],
+      [
+        52.68,
+        39.42,
+        56.6,
+        42.1,
+        19.02
+      ],
+      [
+        51.57,
+        46.37,
+        54.58,
+        49.77,
+        18.3
+      ],
+      [
+        60.19,
+        27.43,
+        62.51,
+        30.5,
+        17.65
+      ],
+      [
+        59.48,
+        41.26,
+        60.44,
+        42.65,
+        17.12
+      ]
+    ],
+    "entries": [
+      {
+        "gate": "oregon-west",
+        "position_enu_m": [
+          0.55,
+          36.15
+        ],
+        "outward_degrees": 180,
+        "width_m": 2.35,
+        "landing_m": 1.55,
+        "rise_m": 0.095,
+        "approach_distance_m": 3.3
+      },
+      {
+        "gate": "oregon-south",
+        "position_enu_m": [
+          17.82,
+          36.75
+        ],
+        "outward_degrees": 180,
+        "width_m": 2.8,
+        "landing_m": 1.68,
+        "rise_m": 0.13,
+        "approach_distance_m": 4.65
+      },
+      {
+        "gate": "oregon-link",
+        "position_enu_m": [
+          41.94,
+          38.83
+        ],
+        "outward_degrees": 180,
+        "width_m": 3,
+        "landing_m": 1.78,
+        "rise_m": 0.11,
+        "approach_distance_m": 3.92
+      }
+    ],
+    "arcade": {
+      "start_e": 2.28,
+      "end_e": 38.15,
+      "outer_n": 34.32,
+      "inner_n": 36.75,
+      "balcony_inner_n": 35.96,
+      "pier_edges_e": [
+        2.7,
+        9.3,
+        16.38,
+        23.61,
+        30.76,
+        37.66
+      ]
+    },
+    "planter": [
+      3.1,
+      15.15,
+      38.1,
+      28.18
+    ],
+    "walks": [
+      [
+        [
+          -3.2,
+          31.71
+        ],
+        [
+          37.56,
+          31.71
+        ],
+        [
+          42.22,
+          33.75
+        ],
+        [
+          42.18,
+          36.63
+        ]
+      ],
+      [
+        [
+          40.69,
+          12.12
+        ],
+        [
+          41.27,
+          24.5
+        ],
+        [
+          41.75,
+          31.78
+        ]
+      ],
+      [
+        [
+          45,
+          60.15
+        ],
+        [
+          52.36,
+          63.09
+        ],
+        [
+          63.97,
+          62.89
+        ]
+      ]
+    ]
+  },
+  "jaqua": {
+    "id": "context-b0067",
+    "name": "Jaqua Academic Center",
+    "campus_id": "B0067",
+    "obsolete_context_tree": {
+      "index": 49,
+      "position_enu_m": [
+        114.11,
+        40.601
+      ]
+    },
+    "bounds": [
+      110.28,
+      19.43,
+      148.77,
+      57.82
+    ],
+    "deck_z": 12.33,
+    "top_frame_z": 15.35,
+    "entries": [
+      {
+        "gate": "jaqua-south",
+        "position_enu_m": [
+          132.61,
+          19.43
+        ],
+        "outward_degrees": 180,
+        "width_m": 3.65,
+        "landing_m": 1.85,
+        "rise_m": 0.14,
+        "approach_distance_m": 4
+      },
+      {
+        "gate": "jaqua-west",
+        "position_enu_m": [
+          110.28,
+          26.56
+        ],
+        "outward_degrees": 270,
+        "width_m": 2.16,
+        "landing_m": 1.49,
+        "rise_m": 0.12,
+        "approach_distance_m": 4.55
+      }
+    ],
+    "pool_bounds": [
+      102.35,
+      17.54,
+      154.06,
+      61.25
+    ],
+    "pool_west_start_n": 29.58,
+    "pool_south_start_e": 137.73,
+    "roof_pieces": [
+      [
+        112.4,
+        30.38,
+        122.82,
+        46.27,
+        15.31
+      ],
+      [
+        112.43,
+        26.41,
+        116.11,
+        29.43,
+        15.29
+      ],
+      [
+        112.43,
+        46.27,
+        122.83,
+        52.87,
+        14.36
+      ],
+      [
+        121.88,
+        40.62,
+        127.98,
+        47.15,
+        14.48
+      ],
+      [
+        121.8,
+        24.75,
+        126.77,
+        30.05,
+        14.89
+      ],
+      [
+        127.13,
+        47.05,
+        131.56,
+        52.54,
+        14.82
+      ],
+      [
+        133.93,
+        26.44,
+        136.57,
+        51.36,
+        14.1
+      ],
+      [
+        139.39,
+        26.51,
+        143.98,
+        31.28,
+        14.95
+      ]
+    ],
+    "south_plaza": [
+      102.15,
+      12.85,
+      154.13,
+      19.43
+    ],
+    "west_plaza": [
+      102.15,
+      19.43,
+      110.28,
+      29.58
+    ]
+  },
+  "context_tree_removals": [
+    {
+      "index": 118,
+      "position_enu_m": [
+        -6.464,
+        43.033
+      ]
+    }
+  ],
+  "registered_planting": [
+    {
+      "tree_number": 5825,
+      "position_enu_m": [
+        -8.875,
+        47.614
+      ],
+      "inventory_label": "Norway Maple",
+      "recorded_height_ft": 10,
+      "recorded_spread_ft": 5,
+      "modeled_height_m": 3.048,
+      "modeled_spread_m": [
+        1.524,
+        1.524
+      ],
+      "crown_form": "maple"
+    },
+    {
+      "tree_number": 5826,
+      "position_enu_m": [
+        -8.857,
+        43.763
+      ],
+      "inventory_label": "Norway Maple",
+      "recorded_height_ft": 10,
+      "recorded_spread_ft": 5,
+      "modeled_height_m": 3.048,
+      "modeled_spread_m": [
+        1.524,
+        1.524
+      ],
+      "crown_form": "maple"
+    },
+    {
+      "tree_number": 5827,
+      "position_enu_m": [
+        -8.839,
+        39.976
+      ],
+      "inventory_label": "Norway Maple",
+      "recorded_height_ft": 10,
+      "recorded_spread_ft": 5,
+      "modeled_height_m": 3.048,
+      "modeled_spread_m": [
+        1.524,
+        1.524
+      ],
+      "crown_form": "maple"
+    },
+    {
+      "tree_number": 5828,
+      "position_enu_m": [
+        -8.716,
+        36.104
+      ],
+      "inventory_label": "Norway Maple",
+      "recorded_height_ft": 10,
+      "recorded_spread_ft": 5,
+      "modeled_height_m": 3.048,
+      "modeled_spread_m": [
+        1.524,
+        1.524
+      ],
+      "crown_form": "maple"
+    }
+  ],
+  "planting_evidence": {
+    "live_inventory_layer": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0",
+    "live_inventory_sha256": "a235e89d256561ceef854fab3c7bc46118fcda039b9b32976a750d67c5329fbb",
+    "context_review": [
+      {
+        "index": 118,
+        "evidence": "The source crown enters the modeled Oregon Hall west exterior. The mapped row corresponds to visible narrow planting spots.",
+        "aerial_url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494306.6852888819%2C4876955.315153052%2C494338.6852888819%2C4876987.315153052&bboxSR=3740&imageSR=3740&size=288%2C288&format=png&bandIds=0%2C1%2C2",
+        "aerial_sha256": "3618163a74291f80f449c8f1b6d0f69c117e144294f0b937f822e7741a86dec6"
+      }
+    ],
+    "other_references": [],
+    "dimensions": "Inventory dimensions anchor model scale. Plant ages, lateral canopy and branch details remain approximate."
+  }
+}

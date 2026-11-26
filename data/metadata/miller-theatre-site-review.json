@@ -1,0 +1,38 @@
+{
+  "id": "roof-944fcd46",
+  "campus_map_id": "031A",
+  "sources": {
+    "campus_map_sha256": "7112477228e8e3ac125548b3abd94180cd8f972c797db78373754cba7384b761",
+    "historical_lidar_grid_sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "osip_2024_sha256": "87755d5f7f46c0162a442332e8086b44860acb7d3a30409a2b945eea5c5f8229",
+    "uo_robinson_survey_sha256": "39e5cd0e57f16c7a1b21a68d8fb754b89a994847156aa2dddc7fea5bd7499019",
+    "hacker_project_page_sha256": "440c83c20d9140c72f298df6540ae9071fb2f57c0db10d9a358b123d4a0dc409"
+  },
+  "footprint_enu_m": [
+    [-510.85,156.59],[-488.79,156.59],[-488.79,160.47],[-485.95,160.47],
+    [-485.95,159.68],[-471.57,159.68],[-471.57,161.54],[-464.91,161.54],
+    [-464.91,171.38],[-458.67,171.38],[-458.67,173.25],[-458.06,173.25],
+    [-458.06,196.51],[-463.04,196.51],[-463.04,202.18],[-471.63,202.18],
+    [-471.63,194.73],[-480.46,194.73],[-480.46,193.27],[-497.77,194.53],
+    [-497.77,195.53],[-513.75,195.53],[-513.75,190.85],[-516.13,190.85],
+    [-516.13,173.60],[-513.52,173.60],[-513.52,166.31],[-510.85,166.31]
+  ],
+  "roof_sections": [
+    {"name":"Robinson fly tower","bounds":[-479.19,173.88,-464.12,193.62],"south_z_m":24.50,"north_z_m":24.32},
+    {"name":"West lobby canopy","bounds":[-516.14,173.60,-509.13,190.85],"south_z_m":8.99,"north_z_m":8.90},
+    {"name":"North lobby wing","bounds":[-513.76,190.85,-498.54,196.0],"south_z_m":7.82,"north_z_m":7.69},
+    {"name":"Robinson auditorium","bounds":[-502.41,173.79,-479.19,195.1],"south_z_m":12.67,"north_z_m":13.37},
+    {"name":"Hope and south studios","bounds":[-514.0,156.50,-464.91,173.79],"south_z_m":12.33,"north_z_m":12.88},
+    {"name":"East connection","bounds":[-464.12,171.38,-458.06,192.67],"south_z_m":10.74,"north_z_m":11.58}
+  ],
+  "remaining_roof_z_m": 12.70,
+  "entrance": {
+    "gate": "miller-west",
+    "position_enu_m": [-516.13,183.40],
+    "outward_degrees": -90,
+    "width_m": 2.30,
+    "approach_distance_m": 4.80,
+    "snap_to_facade": false,
+    "estimated": true
+  }
+}

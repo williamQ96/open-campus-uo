@@ -5,9 +5,10 @@
   "replace_building": false,
   "reference_ids": [],
   "reference_urls": [
-    "https://scholarsbank.uoregon.edu/bitstreams/87a6f7fd-12a7-43af-a9b7-f30907a2d778/download"
+    "https://scholarsbank.uoregon.edu/bitstreams/87a6f7fd-12a7-43af-a9b7-f30907a2d778/download",
+    "https://cpfm.uoregon.edu/sites/default/files/2025-01/carsonhall_2025.pdf"
   ],
-  "note": "Schematic brick and five-story window detail on selected wall segments, informed by 2006 UO survey; plan alignment, dimensions, present condition and entrances are unverified.",
+  "note": "UO survey-informed schematic elevations with offset metal transoms on the upper four east window rows. Plan alignment, dimensions, present condition and entrances are unverified.",
   "objects": [
     {
       "kind": "building",
@@ -6197,6 +6198,246 @@
         0.045,
         1.5,
         0.05
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        5.6,
+        34.625
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        5.6,
+        39.875
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        5.6,
+        45.125
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        5.6,
+        50.375
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        8.95,
+        34.625
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        8.95,
+        39.875
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        8.95,
+        45.125
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        8.95,
+        50.375
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        12.3,
+        34.625
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        12.3,
+        39.875
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        12.3,
+        45.125
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        12.3,
+        50.375
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        15.65,
+        34.625
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        15.65,
+        39.875
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        15.65,
+        45.125
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
+      ]
+    },
+    {
+      "kind": "building",
+      "material": "metal",
+      "shape": "box",
+      "position": [
+        -49.328,
+        15.65,
+        50.375
+      ],
+      "size": [
+        0.04,
+        0.045,
+        2.08
       ]
     }
   ]

@@ -10,12 +10,14 @@ const data = JSON.parse(
 );
 test("gable-on-hip roof has supported ridge, slopes and attached markers", () => {
   const roof = data.objects.find((o) => o.shape === "gable-hip");
+  const upper = data.objects.find((o) => o.shape === "gable");
   assert.ok(roof);
+  assert.ok(upper);
   const spec = {
     version: 1,
     base_asset_sha256: data.base_asset_sha256,
     building_id: data.building_id,
-    objects: [roof],
+    objects: [roof, upper],
   };
   const root = createExteriorDetail(
     spec,
@@ -35,7 +37,7 @@ test("gable-on-hip roof has supported ridge, slopes and attached markers", () =>
     end = sample(-413, 42.5);
   assert.ok(center > edge + 0.9);
   assert.ok(center > end + 0.7);
-  assert.ok(Math.abs(center - 17.76) < 1e-5);
+  assert.ok(Math.abs(sample(-401, 42.4) - 20.275) < 1e-5);
   for (const item of data.objects.slice(128, 134)) {
     const [x, y, z] = item.position,
       theta = item.rotation?.[2] || 0,

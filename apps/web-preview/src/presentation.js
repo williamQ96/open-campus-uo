@@ -10,7 +10,13 @@ import {
   mergePinnedBuildingOverlays,
 } from "./building-overlay-batches.js";
 import { applyBuildingRoofSlope } from "./building-roof-slope.js";
-import { applyVegetationPatch } from "./vegetation-patch.js";
+import { installContextRoofRefinements } from "./context-roof-refinements.js";
+import {
+  applyPilotTreeClearance,
+  applyRegisteredPilotTrees,
+  applyVegetationPatch,
+} from "./vegetation-patch.js";
+import { readPinnedScene } from "./pinned-scene.js";
 import { applyCanopyTone } from "./canopy-tone.js";
 import { varyPlanting } from "./planting-variation.js";
 import { refineContextTrunks } from "./context-trunks.js";
@@ -52,11 +58,27 @@ export function setEmissive(object, color) {
   });
 }
 
-export async function loadPresentation(base, name, buildingIds) {
-  const response = await fetch(sceneAssetUrl(base, name));
-  if (!response.ok)
-    throw new Error("Could not load presentation: " + response.status);
-  const config = await response.json();
+export async function loadPresentation(
+  base,
+  name,
+  buildingIds,
+  {
+    config,
+    exteriorReview,
+    cascadeReview,
+    buildingReview,
+    buildingReviews = buildingReview ? [buildingReview] : [],
+    sourceScene,
+    skipContextRoofs,
+    skipPilotClearance,
+  } = {},
+) {
+  if (!config) {
+    const response = await fetch(sceneAssetUrl(base, name));
+    if (!response.ok)
+      throw new Error("Could not load presentation: " + response.status);
+    config = await response.json();
+  }
   if (config.version !== 1 || !Array.isArray(config.replaces_building_ids))
     throw new Error("Unsupported presentation contract.");
   for (const id of config.replaces_building_ids)
@@ -171,13 +193,19 @@ export async function loadPresentation(base, name, buildingIds) {
     new Set(extraPatches.map((entry) => entry.url)).size !== extraPatches.length
   )
     throw new Error("Invalid additional environment patches.");
+  const treeSuppressionEntries = config.additional_tree_suppressions || [];
+  const clearance = treeSuppressionEntries.find(
+    (entry) => entry.operation === "pilot-tree-triangle-suppression-v1",
+  );
   for (const patchUrl of [
     config.vegetation_patch_url,
     config.understory_patch_url,
     config.furniture_patch_url,
     config.fern_patch_url,
     config.tree_suppression_url,
-    ...(config.additional_tree_suppressions || []).map((entry) => entry.url),
+    ...treeSuppressionEntries
+      .filter((entry) => entry !== clearance)
+      .map((entry) => entry.url),
     ...extraPatches.map((entry) => entry.url),
   ]) {
     if (!patchUrl) continue;
@@ -189,6 +217,55 @@ export async function loadPresentation(base, name, buildingIds) {
       applyCanopyTone(gltf.scene, patch, config.asset_sha256);
     else applyVegetationPatch(gltf.scene, patch, config.asset_sha256);
   }
+  let registeredPilotTrees = 0;
+  const registration = config.registered_pilot_trees;
+  if (registration && !skipPilotClearance) {
+    try {
+      if (config.verify_source_sha256 !== true)
+        throw new Error("Tree registration requires source hash verification.");
+      const url = sceneAssetUrl(base, registration.url);
+      const patch = JSON.parse(
+        new TextDecoder().decode(
+          await readPinnedScene(url, registration.sha256),
+        ),
+      );
+      registeredPilotTrees = applyRegisteredPilotTrees(
+        gltf.scene,
+        patch,
+        config.asset_sha256,
+        registration.trees,
+      );
+    } catch (error) {
+      console.warn(
+        "Pilot tree registration unavailable; retaining original tree placement.",
+        error,
+      );
+    }
+  }
+  let omittedPilotTreeClearance = clearance?.suppressed_trees ?? 0;
+  if (clearance && !skipPilotClearance) {
+    try {
+      if (config.verify_source_sha256 !== true)
+        throw new Error(
+          "Pilot tree clearance requires source hash verification.",
+        );
+      const url = sceneAssetUrl(base, clearance.url);
+      const patch = JSON.parse(
+        new TextDecoder().decode(await readPinnedScene(url, clearance.sha256)),
+      );
+      omittedPilotTreeClearance -= applyPilotTreeClearance(
+        gltf.scene,
+        patch,
+        config.asset_sha256,
+        clearance.suppressed_trees,
+      );
+    } catch (error) {
+      console.warn(
+        "Pilot tree clearance unavailable; using the prior planting.",
+        error,
+      );
+    }
+  }
   const detailUrls = [
     ...(config.exterior_detail_url ? [config.exterior_detail_url] : []),
     ...(config.exterior_details || []).map((entry) => entry.url),
@@ -198,7 +275,14 @@ export async function loadPresentation(base, name, buildingIds) {
   const collisionSupplements = [];
   const localDetails = new Map();
   const buildingOverlayEntries = new Map();
+  const replacedDetails = new Set(
+    buildingReviews.flatMap((review) => review.replacedDetails),
+  );
+  const detailReplacements = new Map();
+  const deferredBatchDetails = new Map();
+  let volcanologyOverlay;
   for (const detailUrl of detailUrls) {
+    if (exteriorReview?.skippedDetails.has(detailUrl)) continue;
     const result = await fetch(sceneAssetUrl(base, detailUrl));
     if (!result.ok)
       throw new Error("Could not load exterior detail: " + result.status);
@@ -226,13 +310,25 @@ export async function loadPresentation(base, name, buildingIds) {
       config.asset_sha256,
       buildingIds,
     );
+    if (cascadeReview && detailUrl === "volcanology-south-detail.json")
+      volcanologyOverlay = installed;
     if (rawBytes)
       buildingOverlayEntries.set(detailUrl, { rawBytes, group: installed });
+    if (replacedDetails.has(detailUrl)) {
+      if (detail.replace_building) {
+        installed.name = detail.building_id;
+        installed.userData.asset_id = detail.building_id;
+      }
+      detailReplacements.set(detailUrl, installed);
+    }
     if (detail.merge_target)
       mergeEnvironmentDetail(gltf.scene, installed, detail);
-    if (detail.merge_batch_target !== undefined)
-      mergeBatchBuildingDetail(gltf.scene, installed, detail);
-    else if (detail.merge_source_vertex_count !== undefined)
+    if (detail.merge_batch_target !== undefined) {
+      // Keep replaceable details detachable until the new site is installed.
+      if (replacedDetails.has(detailUrl))
+        deferredBatchDetails.set(detailUrl, { installed, detail });
+      else mergeBatchBuildingDetail(gltf.scene, installed, detail);
+    } else if (detail.merge_source_vertex_count !== undefined)
       mergeBuildingDetailIntoSource(gltf.scene, installed, detail);
     if (
       [
@@ -296,28 +392,6 @@ export async function loadPresentation(base, name, buildingIds) {
       "vegetation",
     );
   }
-  // Consolidate two nearby non-selectable planting layers without merging buildings.
-  if (
-    localDetails.has("tykeson-north-detail.json") &&
-    localDetails.has("fenton-south-detail.json")
-  ) {
-    mergeLocalDetailKind(
-      localDetails.get("tykeson-north-detail.json"),
-      localDetails.get("fenton-south-detail.json"),
-      "vegetation",
-    );
-  }
-  // Nearby generic planting remains independently source-pinned and non-selectable.
-  if (
-    localDetails.has("condon-east-detail.json") &&
-    localDetails.has("peterson-south-detail.json")
-  ) {
-    mergeLocalDetailKind(
-      localDetails.get("condon-east-detail.json"),
-      localDetails.get("peterson-south-detail.json"),
-      "vegetation",
-    );
-  }
   // Adjacent original source-pinned shrub layers share a static material;
   // building meshes and their selection identities remain independent.
   if (
@@ -330,23 +404,141 @@ export async function loadPresentation(base, name, buildingIds) {
       "vegetation",
     );
   }
+  let contextRoofRefinements;
+  if (config.landcover_url) {
+    const url = sceneAssetUrl(base, config.landcover_url);
+    const land = exteriorReview
+      ? await exteriorReview.loadSource(url, config.landcover_sha256, base)
+      : await new GLTFLoader().loadAsync(url);
+    gltf.scene.add(land.scene);
+  }
+  let siteTreeRemovals = 0;
+  if (exteriorReview) {
+    exteriorReview.replaceBuildings(gltf.scene, config);
+    exteriorReview.fitGrade(gltf.scene);
+    siteTreeRemovals += exteriorReview.fitContextTrees(gltf.scene);
+    gltf.scene.add(exteriorReview.frontage);
+  }
+  if (cascadeReview) {
+    try {
+      cascadeReview.install(gltf.scene, volcanologyOverlay);
+    } catch (error) {
+      console.warn(
+        "Cascade courtyard review unavailable; using the prior site.",
+        error,
+      );
+      cascadeReview = null;
+    }
+  }
+  const installedReviews = [];
+  const replacedIds = new Set();
+  const absorbedIds = [];
+  for (const review of buildingReviews) {
+    try {
+      const baseRoot = review.retiredCorridor
+        ? (await sourceScene)?.scene
+        : undefined;
+      siteTreeRemovals += review.install(gltf.scene, baseRoot);
+      installedReviews.push(review);
+      for (const id of [...review.ids, ...review.absorbedIds])
+        replacedIds.add(id);
+      absorbedIds.push(...review.absorbedIds);
+      for (const url of review.replacedDetails) {
+        detailReplacements.get(url)?.removeFromParent();
+        deferredBatchDetails.delete(url);
+        buildingOverlayEntries.delete(url);
+        localDetails.delete(url);
+      }
+    } catch (error) {
+      console.warn("Exterior review unavailable; using the prior site.", error);
+    }
+  }
+  for (const { installed, detail } of deferredBatchDetails.values()) {
+    try {
+      mergeBatchBuildingDetail(gltf.scene, installed, detail);
+    } catch (error) {
+      // Another installed site may have changed this batch. Keep the facade
+      // as a separate mesh when its pinned merge contract does not match.
+      console.warn(
+        "Deferred facade batch merge unavailable; keeping the separate facade.",
+        error,
+      );
+    }
+  }
+  // Full-site reviews use the source ranges before roof caps are appended.
+  // Rejected reviews leave their IDs available for the earlier roof recipe.
+  if (config.context_roof_refinements && !skipContextRoofs) {
+    try {
+      contextRoofRefinements = await installContextRoofRefinements(
+        gltf.scene,
+        base,
+        config,
+        buildingIds,
+        replacedIds,
+      );
+    } catch (error) {
+      console.warn(
+        "Context roof refinements unavailable; using the prior roofs.",
+        error,
+      );
+    }
+  }
+  // Merge only after site replacements so the adopted approaches keep their own planting.
+  if (
+    localDetails.has("tykeson-north-detail.json") &&
+    localDetails.has("fenton-south-detail.json")
+  ) {
+    mergeLocalDetailKind(
+      localDetails.get("tykeson-north-detail.json"),
+      localDetails.get("fenton-south-detail.json"),
+      "vegetation",
+    );
+  }
+  if (
+    localDetails.has("condon-east-detail.json") &&
+    localDetails.has("peterson-south-detail.json")
+  ) {
+    mergeLocalDetailKind(
+      localDetails.get("condon-east-detail.json"),
+      localDetails.get("peterson-south-detail.json"),
+      "vegetation",
+    );
+  }
   await mergePinnedBuildingOverlays(
     gltf.scene,
     buildingOverlayEntries,
     config.asset_sha256,
   );
-  if (config.landcover_url) {
-    const land = await new GLTFLoader().loadAsync(
-      sceneAssetUrl(base, config.landcover_url),
-    );
-    gltf.scene.add(land.scene);
-  }
-  return createPresentation(gltf.scene, config, collisionSupplements);
+  return {
+    ...createPresentation(
+      gltf.scene,
+      config,
+      collisionSupplements.filter(
+        ({ buildingId }) => !replacedIds.has(buildingId),
+      ),
+      absorbedIds,
+      installedReviews.flatMap((review) => review.addedIds),
+    ),
+    cascadeReview,
+    buildingReviews: installedReviews,
+    contextRoofHeights: contextRoofRefinements?.heights,
+    contextBuildingRecords: contextRoofRefinements?.changedRecords,
+    registeredPilotTrees,
+    omittedPilotTreeClearance,
+    siteTreeRemovals,
+  };
 }
 
-export function createPresentation(root, config, collisionSupplements = []) {
+export function createPresentation(
+  root,
+  config,
+  collisionSupplements = [],
+  absorbedIds = [],
+  addedIds = [],
+) {
   const groups = new Map();
   const batchedIds = new Set();
+  const registeredIds = new Set([...config.replaces_building_ids, ...addedIds]);
   const contextFog = createContextFog(config.context_fog);
   const collisionMeshes = [];
   const materials = [];
@@ -409,14 +601,14 @@ export function createPresentation(root, config, collisionSupplements = []) {
       if (!Array.isArray(object.userData.asset_ids))
         throw Error("Missing batch identities");
       for (const batchId of object.userData.asset_ids) {
-        if (!config.replaces_building_ids.includes(batchId))
+        if (!registeredIds.has(batchId))
           throw Error("Unregistered context building: " + batchId);
         batchedIds.add(batchId);
       }
       collisionMeshes.push(object);
     }
     if (id && object.userData.asset_kind === "building") {
-      if (!config.replaces_building_ids.includes(id))
+      if (!registeredIds.has(id))
         throw new Error("Unregistered authored building: " + id);
       if (!groups.has(id)) groups.set(id, new THREE.Group());
       groups.get(id).add(object.clone());
@@ -424,8 +616,8 @@ export function createPresentation(root, config, collisionSupplements = []) {
     }
   });
   // Groups reference the same materials, while original nodes retain their exported transforms.
-  for (const id of config.replaces_building_ids)
-    if (!groups.has(id) && !batchedIds.has(id))
+  for (const id of registeredIds)
+    if (!groups.has(id) && !batchedIds.has(id) && !absorbedIds.includes(id))
       throw new Error("Missing authored building geometry: " + id);
   return {
     root,

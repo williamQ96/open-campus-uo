@@ -1,0 +1,42 @@
+{
+  "id": "roof-16751515",
+  "sources": {
+    "orthophoto_osip_2024_sha256": "542536cd505f094f90086bb180b43e9d16af24fe1572383aa93b7308f945a3f2",
+    "west_forecourt_osip_2024_sha256": "0cb272fab398063fae3e52ed237b0fe087363b185cda45a6d684c8253887ac05",
+    "historical_lidar_grid_sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "uo_building_map_sha256": "7112477228e8e3ac125548b3abd94180cd8f972c797db78373754cba7384b761",
+    "uo_survey_2006_sha256": "211188d48cd0a3dbc13c3195eb89994fd11bcb30c35882ceb03f21095997ab1c",
+    "jsma_visitor_map_2022_sha256": "f758e8cc8c6ce4c9dd315798af52233f7fa66e432cee9c26f177c1f9b0d45450",
+    "hbra_courtyard_photo_sha256": "930c50458fa9af2ce24df7942d48d2dab69f320fa241aeb07a060f85d354fe14"
+  },
+  "outer_enu_m": [
+    [-521.55, -163.28], [-507.0, -163.28], [-507.0, -156.22],
+    [-487.42, -156.22], [-487.42, -163.28], [-474.05, -163.28],
+    [-474.05, -106.72], [-487.42, -106.72], [-487.42, -114.32],
+    [-507.0, -114.32], [-507.0, -106.72], [-521.55, -106.72]
+  ],
+  "campbell_courtyard_bounds_enu_m": [-504.1, -138.5, -485.25, -131.5],
+  "side_courts_bounds_enu_m": [
+    [-507.0, -163.28, -487.42, -156.22],
+    [-507.0, -114.32, -487.42, -106.72]
+  ],
+  "west_forecourt_enu_m": [
+    [-521.51, -123.2], [-537.0, -123.2], [-535.4, -126.2],
+    [-534.7, -130.0], [-534.6, -134.3], [-535.7, -138.6],
+    [-538.5, -142.8], [-535.9, -144.01], [-521.51, -142.0]
+  ],
+  "roof_zones": [
+    {"name": "historic west", "bounds": [-522, -164, -510.25, -106], "bottom_roof_z_m": 19.95, "top_roof_z_m": 21.05, "fall": "east"},
+    {"name": "south west pavilion", "bounds": [-511, -164, -507.0, -153.0], "bottom_roof_z_m": 20.85},
+    {"name": "north west pavilion", "bounds": [-511, -116.7, -507.0, -106], "bottom_roof_z_m": 20.85},
+    {"name": "south east pavilion", "bounds": [-487.42, -164, -474, -154.7], "bottom_roof_z_m": 20.5},
+    {"name": "north east pavilion", "bounds": [-487.42, -117.0, -474, -106], "bottom_roof_z_m": 20.35},
+    {"name": "east addition", "bounds": [-485.25, -164, -474, -106], "bottom_roof_z_m": 16.65},
+    {"name": "south courtyard gallery", "bounds": [-504.1, -144.4, -485.25, -138.5], "bottom_roof_z_m": 11.15, "top_roof_z_m": 15.38, "fall": "north"},
+    {"name": "north courtyard gallery", "bounds": [-504.1, -131.5, -485.25, -125.9], "bottom_roof_z_m": 11.7, "top_roof_z_m": 15.85, "fall": "south"}
+  ],
+  "entrance": {
+    "gate": "museum-west", "position_enu_m": [-521.55, -135.6],
+    "outward_degrees": -90, "width_m": 2.5
+  }
+}

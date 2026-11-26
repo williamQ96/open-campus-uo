@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import * as THREE from "three";
-import { insidePolygon, isBlocked } from "./world.js";
+import { isBlocked } from "./world.js";
 import { setEmissive } from "./presentation.js";
 
 export function resolveBuildingHit(hit, records) {
@@ -10,11 +10,7 @@ export function resolveBuildingHit(hit, records) {
     return (
       data.asset_ids.find((id) => {
         const b = records.get(id);
-        return (
-          b &&
-          (insidePolygon(hit.point.x, -hit.point.z, b.footprint_enu_m) ||
-            isBlocked(hit.point.x, hit.point.z, [b], Infinity, 0.05))
-        );
+        return b && isBlocked(hit.point.x, hit.point.z, [b], Infinity, 0.05);
       }) || null
     );
   }
@@ -48,20 +44,24 @@ export function createBuildingHighlight(scene, meshesById, records) {
     if (!outline) {
       const b = records.get(id);
       if (!b) return;
-      const points = [],
-        ring = b.footprint_enu_m;
-      for (let i = 0; i < ring.length; i++) {
-        const a = ring[i],
-          c = ring[(i + 1) % ring.length];
-        for (const y of [b.base_z_m + 0.1, b.roof_z_m + 0.1])
+      const points = [];
+      for (const ring of [
+        b.footprint_enu_m,
+        ...(b.footprint_holes_enu_m ?? []),
+      ]) {
+        for (let i = 0; i < ring.length; i++) {
+          const a = ring[i],
+            c = ring[(i + 1) % ring.length];
+          for (const y of [b.base_z_m + 0.1, b.roof_z_m + 0.1])
+            points.push(
+              new THREE.Vector3(a[0], y, -a[1]),
+              new THREE.Vector3(c[0], y, -c[1]),
+            );
           points.push(
-            new THREE.Vector3(a[0], y, -a[1]),
-            new THREE.Vector3(c[0], y, -c[1]),
+            new THREE.Vector3(a[0], b.base_z_m + 0.1, -a[1]),
+            new THREE.Vector3(a[0], b.roof_z_m + 0.1, -a[1]),
           );
-        points.push(
-          new THREE.Vector3(a[0], b.base_z_m + 0.1, -a[1]),
-          new THREE.Vector3(a[0], b.roof_z_m + 0.1, -a[1]),
-        );
+        }
       }
       outline = new THREE.LineSegments(
         new THREE.BufferGeometry().setFromPoints(points),

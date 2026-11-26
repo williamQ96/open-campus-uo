@@ -1,0 +1,252 @@
+{
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_surface_manifest_sha256": "fd6627c04ea08f463802fc01c7ce13fe7002373ecf0070ccd0f6b98f99184849",
+  "buildings": [
+    {
+      "id": "roof-53501ed1",
+      "batch": "context-background-0-1",
+      "name": "Canterbury Court",
+      "form": "courtyard",
+      "name_source": "https://caprieugene.com/virtual-tours/",
+      "address_source": "https://www.apartments.com/canterbury-eugene-or/m9nrd1h/",
+      "aerial_reference_sha256": "e658f9ae0d98215df47e47d4d18b8a92f735724928fe394a585490143aa4c921",
+      "state_object_id": 1949484,
+      "outer_enu_m": [
+        [
+          -857.617,
+          -134.112
+        ],
+        [
+          -818.217,
+          -133.973
+        ],
+        [
+          -818.721,
+          -172.666
+        ],
+        [
+          -857.722,
+          -172.274
+        ]
+      ],
+      "holes_enu_m": [
+        [
+          [
+            -846.756,
+            -143.638
+          ],
+          [
+            -846.714,
+            -162.406
+          ],
+          [
+            -842.878,
+            -162.395
+          ],
+          [
+            -842.983,
+            -158.872
+          ],
+          [
+            -838.629,
+            -158.846
+          ],
+          [
+            -838.621,
+            -162.579
+          ],
+          [
+            -829.601,
+            -162.517
+          ],
+          [
+            -829.74,
+            -143.96
+          ],
+          [
+            -833.062,
+            -143.852
+          ],
+          [
+            -832.96,
+            -147.271
+          ],
+          [
+            -837.521,
+            -147.303
+          ],
+          [
+            -837.623,
+            -143.884
+          ]
+        ]
+      ],
+      "reference_ground_rgb": [
+        128,
+        145,
+        100
+      ],
+      "reference_path_rgb": [
+        163,
+        155,
+        139
+      ],
+      "path_center_enu_m": [
+        [
+          -841.05,
+          -159.02
+        ],
+        [
+          -838.52,
+          -157.51
+        ],
+        [
+          -837.89,
+          -155.36
+        ],
+        [
+          -838.72,
+          -152.3
+        ],
+        [
+          -840.17,
+          -149.22
+        ],
+        [
+          -840.44,
+          -145.96
+        ]
+      ],
+      "path_width_m": 1.25,
+      "frontage": {
+        "photo_reference": "https://www.apartments.com/canterbury-court-eugene-or/m9nrd1h/",
+        "photo_observation": "Pale two-story stucco, two rows of windows and a short ramp with yellow railings. South-facing assignment, details and intervals are estimated from the 2024 orthophoto and existing outline.",
+        "eave_trim_segments_enu_m": [
+          [[-857.722, -172.274], [-857.617, -134.112]],
+          [[-818.217, -133.973], [-818.721, -172.666]]
+        ],
+        "door_marks_enu_m": [[-837.685, -172.38], [-837.92, -134.04]],
+        "ramp_enu_m": [-838.55, -175.72, -836.82, -171.98]
+      },
+      "roof_profile": {
+        "west": {
+          "limit_e_m": -846.74,
+          "ridge_e_m": -850.3,
+          "z_m": 6.24,
+          "pitch": 0.107
+        },
+        "east": {
+          "limit_e_m": -829.66,
+          "ridge_e_m": -828.65,
+          "z_m": 6.45,
+          "pitch": 0.104
+        },
+        "connectors": [
+          [
+            -846.74,
+            -842.4,
+            5.46
+          ],
+          [
+            -842.4,
+            -836.78,
+            6.4
+          ],
+          [
+            -836.78,
+            -834.1,
+            5.96
+          ],
+          [
+            -834.1,
+            -829.66,
+            5.49
+          ]
+        ]
+      }
+    },
+    {
+      "id": "roof-8826f960",
+      "batch": "context-campus-1-2",
+      "name": "Millrace 3",
+      "form": "dormers",
+      "name_source": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_published.pdf",
+      "photo_source": "https://artdesign.uoregon.edu/1980s-millrace-and-northsite-complex-active-hub",
+      "photo_reference_sha256": "8fd9354c5c84404a2f99c7f6eb7b30167074b4d861f3e5c57146030fe69b5e0c",
+      "aerial_reference_sha256": "941bec7b0f3251f2eebdf75ffd8e151853ddd6b733fb77918d47d9d50bc71c9f",
+      "state_object_id": 1840949,
+      "uo_number": "097",
+      "outer_enu_m": [
+        [
+          -111.95,
+          309.1
+        ],
+        [
+          -77.75,
+          309.1
+        ],
+        [
+          -77.75,
+          328.7
+        ],
+        [
+          -110.92,
+          328.7
+        ],
+        [
+          -110.92,
+          323.14
+        ],
+        [
+          -111.95,
+          323.14
+        ]
+      ],
+      "holes_enu_m": [],
+      "main_roof": {
+        "ridge_n_m": 318.83,
+        "ridge_z_m": 10.94,
+        "pitch_north": 0.783,
+        "pitch_south": 0.752
+      },
+      "entry_frame": {
+        "center_e_m": -89.4,
+        "half_width_m": 1.38,
+        "depth_m": 1.55,
+        "height_m": 2.93
+      },
+      "dormers": {
+        "eastings_m": [
+          -109.07,
+          -102.86,
+          -96.63,
+          -90.37,
+          -84.08
+        ],
+        "west_e_m": -111.8,
+        "north_face_n_m": 328.7,
+        "north_back_n_m": 323.04,
+        "south_face_n_m": 309.1,
+        "south_back_n_m": 315.05,
+        "width_m": 3.34,
+        "side_eave_z_m": 6.17,
+        "ridge_z_m": 7.46
+      },
+      "skylights": {
+        "north_e_m": [
+          -108.55,
+          -102.2,
+          -95.8
+        ],
+        "south_e_m": [
+          -108.55,
+          -102.15,
+          -95.75,
+          -89.2
+        ],
+        "south_n_m": 317.0,
+        "north_n_m": 322.18
+      }
+    }
+  ]
+}

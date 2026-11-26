@@ -1,5 +1,7 @@
 # Gerlinger Annex identity and exterior correction
 
+The November 24 default uses a registered Annex with stepped flat roofs and the documented concrete connection to the Hall. [Registered exterior review](gerlinger-site-review-2026-11-24.md).
+
 2026-11-03. Local and unpublished. Building ID `roof-f0b575d6` remains unchanged.
 
 The project's approximate locator is longitude -123.0765252, latitude 44.0432758, and the historical roof candidate spans east -499 to -433 m and north -270 to -242 m. It sits east of Knight and south-west of Gerlinger Hall. The UO [2025 Gerlinger Annex survey](https://cpfm.uoregon.edu/gerlingerannex2025), pages 1–4, identifies the Annex at 1484 University Street as the 1969 modern, flat-roofed brick and concrete building next to the field and connected to Hall. Its site plan and photograph support the existing location relationship, not the previous arched, dormered facade. This is a reasoned coordinate/site-plan match, not a surveyed exact footprint. The Commons photo previously labelled Annex remains archived with its own provenance; the photographed building or exact elevation should be independently confirmed, and it must not be used as proof of the Annex facade.

@@ -6,70 +6,88 @@ import { insidePolygon, isBlocked, sampleGround } from "./world.js";
 // Estimated frontage, not a claim about real accessibility or surveyed doors.
 // Per-ID ENU overrides can replace this inference without editing the shared viewer.
 export function inferEntrances(buildings, half, overrides = {}) {
-  return buildings
-    .map((building) => {
-      const ring = building.footprint_enu_m,
-        candidates = [];
-      for (let i = 0; i < ring.length; i++) {
-        const a = ring[i],
-          b = ring[(i + 1) % ring.length];
-        const dx = b[0] - a[0],
-          dn = b[1] - a[1],
-          length = Math.hypot(dx, dn);
-        if (length < 1.3) continue;
-        const east = (a[0] + b[0]) / 2,
-          north = (a[1] + b[1]) / 2;
-        let nx = -dn / length,
-          nn = dx / length;
-        if (insidePolygon(east + nx * 0.1, north + nn * 0.1, ring)) {
-          nx *= -1;
-          nn *= -1;
-        }
-        candidates.push({ east, north, nx, nn, length });
-      }
-      candidates.sort((a, b) => b.length - a.length);
-      const override = overrides[building.id];
-      if (
-        Array.isArray(override?.position_enu_m) &&
-        override.position_enu_m.length === 2 &&
-        override.position_enu_m.every(Number.isFinite) &&
-        Number.isFinite(override.outward_degrees)
-      ) {
-        const angle = (override.outward_degrees * Math.PI) / 180;
-        candidates.unshift({
-          east: override.position_enu_m[0],
-          north: override.position_enu_m[1],
-          nx: Math.sin(angle),
-          nn: Math.cos(angle),
-          authored: true,
-        });
-      }
-      const clear = (p) =>
-        !isBlocked(
-          p.east + p.nx * 2.5,
-          -p.north - p.nn * 2.5,
-          buildings,
-          half,
-          0.5,
-        );
-      const candidate = candidates.find(clear) || candidates[0];
-      if (!candidate) return null;
-      const { east, north, nx, nn } = candidate;
+  return buildings.flatMap((building) => {
+    const approachOf = ({ east, north, nx, nn, approachDistance = 2.5 }) => [
+      east + nx * approachDistance,
+      -north - nn * approachDistance,
+    ];
+    const clear = (p) => !isBlocked(...approachOf(p), buildings, half, 0.5);
+    const describe = (p) => {
+      const { east, north, nx, nn, gate, authored, snapToFacade, thresholdZ } =
+        p;
       return {
         id: building.id,
         name: building.name || "Campus building",
         position: [east, -north],
         outward: [nx, -nn],
-        approach: [east + nx * 2.5, -north - nn * 2.5],
-        estimated: !candidate.authored,
-        walkable: clear(candidate),
+        approach: approachOf(p),
+        estimated: !authored,
+        walkable: clear(p),
+        ...(gate && { gate }),
+        ...(snapToFacade === false && { snapToFacade }),
+        ...(thresholdZ !== undefined && { thresholdZ }),
       };
-    })
-    .filter(Boolean);
+    };
+    const readOverride = (override) => {
+      if (
+        !Array.isArray(override?.position_enu_m) ||
+        override.position_enu_m.length !== 2 ||
+        !override.position_enu_m.every(Number.isFinite) ||
+        !Number.isFinite(override.outward_degrees)
+      )
+        return null;
+      const angle = (override.outward_degrees * Math.PI) / 180;
+      const distance = override.approach_distance_m;
+      return {
+        east: override.position_enu_m[0],
+        north: override.position_enu_m[1],
+        nx: Math.sin(angle),
+        nn: Math.cos(angle),
+        authored: override.estimated !== true,
+        gate: override.gate,
+        snapToFacade: override.snap_to_facade,
+        approachDistance:
+          Number.isFinite(distance) && distance > 0 && distance < 5
+            ? distance
+            : 2.5,
+        thresholdZ: Number.isFinite(override.threshold_z_m)
+          ? override.threshold_z_m
+          : undefined,
+      };
+    };
+    const override = overrides[building.id];
+    if (Array.isArray(override)) {
+      const doors = override.map(readOverride).filter(Boolean);
+      if (doors.length) return doors.map(describe);
+    }
+    const ring = building.footprint_enu_m,
+      candidates = [];
+    for (let i = 0; i < ring.length; i++) {
+      const a = ring[i],
+        b = ring[(i + 1) % ring.length];
+      const dx = b[0] - a[0],
+        dn = b[1] - a[1],
+        length = Math.hypot(dx, dn);
+      if (length < 1.3) continue;
+      const east = (a[0] + b[0]) / 2,
+        north = (a[1] + b[1]) / 2;
+      let nx = -dn / length,
+        nn = dx / length;
+      if (insidePolygon(east + nx * 0.1, north + nn * 0.1, ring)) {
+        nx *= -1;
+        nn *= -1;
+      }
+      candidates.push({ east, north, nx, nn, length });
+    }
+    candidates.sort((a, b) => b.length - a.length);
+    const door = readOverride(override);
+    if (door) candidates.unshift(door);
+    const candidate = candidates.find(clear) || candidates[0];
+    return candidate ? [describe(candidate)] : [];
+  });
 }
 
-// Shared, illustrative portal trim. The same geometry is instanced for all
-// entrances; it does not assert that the inferred locations are real doors.
+// Shared portal trim for entrances whose building mesh has no modeled doors.
 export function createEntranceFrameGeometry() {
   const frameParts = [
     [-0.9, 1.4, 0, 0.15, 2.8, 0.24],
@@ -111,28 +129,44 @@ export function createEntrances({
   onEnter,
 }) {
   const entries = inferEntrances(buildings, half, overrides);
+  const genericEntries = entries.filter((entry) => !entry.gate);
+  const modeledEntries = entries.filter((entry) => entry.gate);
   const frameGeometry = createEntranceFrameGeometry();
   const frame = new THREE.InstancedMesh(
     frameGeometry,
     new THREE.MeshStandardMaterial({ color: 0xead5a0, roughness: 0.85 }),
-    entries.length,
+    genericEntries.length,
   );
   const door = new THREE.InstancedMesh(
     createEntranceDoorGeometry(),
     new THREE.MeshStandardMaterial({ color: 0x285d51, roughness: 0.72 }),
-    entries.length,
+    genericEntries.length,
   );
+  // Raycast the modeled entries without drawing a second door over their mesh.
+  const modeledDoors = modeledEntries.length
+    ? new THREE.InstancedMesh(
+        door.geometry,
+        door.material,
+        modeledEntries.length,
+      )
+    : null;
+  if (modeledDoors) {
+    modeledDoors.name = "Modeled entrance interaction";
+    modeledDoors.visible = false;
+  }
   frame.name = "Estimated entrance frames";
   door.name = "Building entrance portals";
   const matrix = new THREE.Matrix4(),
     quaternion = new THREE.Quaternion(),
     ray = new THREE.Raycaster();
-  for (const [i, entry] of entries.entries()) {
+  let genericIndex = 0;
+  let modeledIndex = 0;
+  for (const entry of entries) {
     let [x, z] = entry.position;
     const [nx, nz] = entry.outward;
     let y = sampleGround(field, x, z);
     const target = meshesById.get(entry.id);
-    if (target) {
+    if (target && entry.snapToFacade !== false) {
       target.updateWorldMatrix(true, true);
       ray.set(
         new THREE.Vector3(x + nx * 6, y + 1.35, z + nz * 6),
@@ -157,16 +191,30 @@ export function createEntrances({
     entry.ground = y;
     quaternion.setFromAxisAngle(new THREE.Vector3(0, 1, 0), Math.atan2(nx, nz));
     matrix.compose(
-      new THREE.Vector3(entry.position[0], y, entry.position[1]),
+      new THREE.Vector3(
+        entry.position[0],
+        entry.thresholdZ ?? y,
+        entry.position[1],
+      ),
       quaternion,
       new THREE.Vector3(1, 1, 1),
     );
-    frame.setMatrixAt(i, matrix);
-    door.setMatrixAt(i, matrix);
+    if (entry.gate) {
+      modeledDoors.setMatrixAt(modeledIndex++, matrix);
+    } else {
+      frame.setMatrixAt(genericIndex, matrix);
+      door.setMatrixAt(genericIndex++, matrix);
+    }
   }
   frame.computeBoundingSphere();
   door.computeBoundingSphere();
   scene.add(frame, door);
+  const pickTargets = [door, frame];
+  if (modeledDoors) {
+    modeledDoors.computeBoundingSphere();
+    scene.add(modeledDoors);
+    pickTargets.push(modeledDoors);
+  }
   const button = document.createElement("button");
   button.className = "entrance-action";
   button.hidden = true;
@@ -204,9 +252,11 @@ export function createEntrances({
       return false;
     },
     pick(raycaster, wallDistance = Infinity) {
-      const hit = raycaster.intersectObjects([door, frame], false)[0];
+      const hit = raycaster.intersectObjects(pickTargets, false)[0];
       if (hit && hit.distance <= wallDistance + 0.35) {
-        onEnter(entries[hit.instanceId]);
+        const source =
+          hit.object === modeledDoors ? modeledEntries : genericEntries;
+        onEnter(source[hit.instanceId]);
         return true;
       }
       return false;

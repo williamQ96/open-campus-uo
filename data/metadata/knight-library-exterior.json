@@ -1,0 +1,597 @@
+{
+  "asset_id": "roof-6684e091",
+  "source_presentation_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "source_site_plan_sha256": "71bf7de6ab2516ab09e12b0703a866109c719d6a50d920ab3dd609c22abf93f1",
+  "source_aerial_sha256": "72496fc29b361a3f9d6551fdd707191229498525ec74216c8506834ee4310c6c",
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_lidar_screen_sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+  "source_detail_sha256": {
+    "knight-library-window-reveals.json": "aa58ed85991c5db92b921ede21bec4d9c1959b782e5acc815cf57a2302417dbf",
+    "knight-library-balcony-detail.json": "b8344565659668b48f6ba00fceda9d096f7bac5f23c365ad1607495566a9ed74"
+  },
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "walls_enu_m": [
+    [
+      -519.676,
+      -226.455
+    ],
+    [
+      -519.648,
+      -230.324
+    ],
+    [
+      -509.783,
+      -230.312
+    ],
+    [
+      -509.773,
+      -240.218
+    ],
+    [
+      -506.328,
+      -240.213
+    ],
+    [
+      -506.322,
+      -246.399
+    ],
+    [
+      -509.844,
+      -246.391
+    ],
+    [
+      -509.805,
+      -282.043
+    ],
+    [
+      -522.799,
+      -282.032
+    ],
+    [
+      -522.756,
+      -317.673
+    ],
+    [
+      -525.737,
+      -320.66
+    ],
+    [
+      -527.803,
+      -320.662
+    ],
+    [
+      -528.804,
+      -321.666
+    ],
+    [
+      -531.561,
+      -321.669
+    ],
+    [
+      -532.565,
+      -320.668
+    ],
+    [
+      -534.943,
+      -320.671
+    ],
+    [
+      -538.439,
+      -317.182
+    ],
+    [
+      -546.773,
+      -317.19
+    ],
+    [
+      -547.416,
+      -318.269
+    ],
+    [
+      -548.44,
+      -318.27
+    ],
+    [
+      -549.097,
+      -317.192
+    ],
+    [
+      -553.742,
+      -317.197
+    ],
+    [
+      -554.35,
+      -318.151
+    ],
+    [
+      -555.595,
+      -318.153
+    ],
+    [
+      -556.166,
+      -317.199
+    ],
+    [
+      -560.88,
+      -317.204
+    ],
+    [
+      -561.434,
+      -318.09
+    ],
+    [
+      -562.747,
+      -318.091
+    ],
+    [
+      -563.277,
+      -317.206
+    ],
+    [
+      -572.178,
+      -317.215
+    ],
+    [
+      -575.566,
+      -320.611
+    ],
+    [
+      -577.463,
+      -320.613
+    ],
+    [
+      -578.43,
+      -321.582
+    ],
+    [
+      -580.837,
+      -321.585
+    ],
+    [
+      -581.807,
+      -320.618
+    ],
+    [
+      -584.448,
+      -320.621
+    ],
+    [
+      -587.855,
+      -317.221
+    ],
+    [
+      -587.9,
+      -280.461
+    ],
+    [
+      -596.248,
+      -280.47
+    ],
+    [
+      -596.251,
+      -277.184
+    ],
+    [
+      -609.115,
+      -277.197
+    ],
+    [
+      -608.876,
+      -248.801
+    ],
+    [
+      -610.804,
+      -246.879
+    ],
+    [
+      -610.806,
+      -245.181
+    ],
+    [
+      -611.952,
+      -244.02
+    ],
+    [
+      -611.956,
+      -241.727
+    ],
+    [
+      -610.804,
+      -240.554
+    ],
+    [
+      -610.806,
+      -238.56
+    ],
+    [
+      -608.776,
+      -236.456
+    ],
+    [
+      -608.781,
+      -233.439
+    ],
+    [
+      -605.061,
+      -233.436
+    ],
+    [
+      -603.571,
+      -232.007
+    ],
+    [
+      -601.197,
+      -232.005
+    ],
+    [
+      -599.744,
+      -233.44
+    ],
+    [
+      -596.168,
+      -233.443
+    ],
+    [
+      -596.183,
+      -229.984
+    ],
+    [
+      -584.979,
+      -229.973
+    ],
+    [
+      -585.029,
+      -195.682
+    ],
+    [
+      -573.911,
+      -195.666
+    ],
+    [
+      -573.901,
+      -202.68
+    ],
+    [
+      -569.956,
+      -202.677
+    ],
+    [
+      -569.956,
+      -202.303
+    ],
+    [
+      -561.812,
+      -202.278
+    ],
+    [
+      -561.811,
+      -203.213
+    ],
+    [
+      -532.357,
+      -203.183
+    ],
+    [
+      -532.359,
+      -202.319
+    ],
+    [
+      -524.036,
+      -202.311
+    ],
+    [
+      -524.035,
+      -202.667
+    ],
+    [
+      -519.997,
+      -202.663
+    ],
+    [
+      -520.003,
+      -196.116
+    ],
+    [
+      -509.182,
+      -196.105
+    ],
+    [
+      -509.152,
+      -226.444
+    ]
+  ],
+  "footing_z_m": 2.85,
+  "roof_zones": [
+    {
+      "label": "south tower west",
+      "bounds_enu_m": [
+        -589,
+        -323,
+        -575.2,
+        -305.8
+      ],
+      "height_z_m": 21.55,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "south tower east",
+      "bounds_enu_m": [
+        -536,
+        -323,
+        -521,
+        -305.8
+      ],
+      "height_z_m": 21.55,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "south upper reading room",
+      "bounds_enu_m": [
+        -582.9,
+        -303,
+        -527.9,
+        -280.15
+      ],
+      "height_z_m": 27.08,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "south upper central roof",
+      "bounds_enu_m": [
+        -575.3,
+        -311.45,
+        -535.95,
+        -303
+      ],
+      "height_z_m": 22.28,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "south recessed center",
+      "bounds_enu_m": [
+        -575.3,
+        -324,
+        -535.95,
+        -311.45
+      ],
+      "height_z_m": 17.63,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "south side terraces",
+      "bounds_enu_m": [
+        -590,
+        -324,
+        -521,
+        -280.15
+      ],
+      "height_z_m": 21.5,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "west octagonal wing",
+      "bounds_enu_m": [
+        -614,
+        -279,
+        -596.7,
+        -230
+      ],
+      "height_z_m": 16.46,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "north upper roof",
+      "bounds_enu_m": [
+        -574.05,
+        -218.5,
+        -519.6,
+        -202.1
+      ],
+      "height_z_m": 20.77,
+      "wall": "heritage",
+      "roof": "silver"
+    },
+    {
+      "label": "north west pavilion",
+      "bounds_enu_m": [
+        -586,
+        -231,
+        -573.85,
+        -194
+      ],
+      "height_z_m": 12.27,
+      "wall": "heritage",
+      "roof": "silver"
+    },
+    {
+      "label": "north east pavilion",
+      "bounds_enu_m": [
+        -520.05,
+        -230.25,
+        -507,
+        -194
+      ],
+      "height_z_m": 12.22,
+      "wall": "heritage",
+      "roof": "silver"
+    },
+    {
+      "label": "central service core",
+      "bounds_enu_m": [
+        -557.75,
+        -234.1,
+        -545.62,
+        -223.63
+      ],
+      "height_z_m": 23.64,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "central equipment terrace",
+      "bounds_enu_m": [
+        -568.55,
+        -248.7,
+        -535.9,
+        -232.78
+      ],
+      "height_z_m": 20.96,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "north intermediate roof",
+      "bounds_enu_m": [
+        -586,
+        -233.5,
+        -519.4,
+        -217.8
+      ],
+      "height_z_m": 12.25,
+      "wall": "heritage",
+      "roof": "silver"
+    },
+    {
+      "label": "central near-east upper band",
+      "bounds_enu_m": [
+        -531.5,
+        -282,
+        -505,
+        -230.25
+      ],
+      "height_z_m": 21.73,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "central near-west upper band",
+      "bounds_enu_m": [
+        -596.7,
+        -281,
+        -585.55,
+        -230.15
+      ],
+      "height_z_m": 21.72,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "central lower upper court",
+      "bounds_enu_m": [
+        -586,
+        -260.8,
+        -531.5,
+        -230.15
+      ],
+      "height_z_m": 17.06,
+      "wall": "red",
+      "roof": "silver"
+    },
+    {
+      "label": "central crossbar",
+      "bounds_enu_m": [
+        -597,
+        -280.9,
+        -509,
+        -260.8
+      ],
+      "height_z_m": 22.11,
+      "wall": "red",
+      "roof": "silver"
+    }
+  ],
+  "north_sections": [
+    {
+      "label": "middle",
+      "source_east_m": [
+        -600,
+        -521.2
+      ],
+      "target_east_m": [
+        -573.55,
+        -520.6
+      ],
+      "south_m": 9.72,
+      "base_z_m": 6.42,
+      "height_scale": 0.98
+    },
+    {
+      "label": "west",
+      "source_east_m": [
+        -612.4,
+        -600
+      ],
+      "target_east_m": [
+        -585.0,
+        -574.1
+      ],
+      "south_m": 3.1,
+      "base_z_m": 6.9,
+      "height_scale": 0.41
+    },
+    {
+      "label": "east",
+      "source_east_m": [
+        -521.2,
+        -508.55
+      ],
+      "target_east_m": [
+        -519.9,
+        -509.35
+      ],
+      "south_m": 3.55,
+      "base_z_m": 6.85,
+      "height_scale": 0.43
+    }
+  ],
+  "south_pavilions": [
+    {
+      "center_enu_m": [
+        -582.2,
+        -314.5
+      ],
+      "radii_m": [
+        5.6,
+        5.25
+      ],
+      "eave_z_m": 21.7,
+      "peak_z_m": 25.15
+    },
+    {
+      "center_enu_m": [
+        -528.3,
+        -314.5
+      ],
+      "radii_m": [
+        5.6,
+        5.25
+      ],
+      "eave_z_m": 21.7,
+      "peak_z_m": 25.15
+    }
+  ],
+  "western_pavilion": {
+    "center_enu_m": [
+      -605.6,
+      -243.6
+    ],
+    "radii_m": [
+      5.45,
+      7.0
+    ],
+    "eave_z_m": 16.6,
+    "peak_z_m": 20.55
+  },
+  "entry_east_enu_m": [
+    -578.5,
+    -515.74
+  ],
+  "source_south_photo_report_sha256": "8c2518cdb00570357d9947f4b19683992b0ba6b0f3a624190331f3880cd9c8de"
+}

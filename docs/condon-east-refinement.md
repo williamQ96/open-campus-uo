@@ -1,5 +1,7 @@
 # Condon Hall east entry and planting
 
+The November 24 default uses the registered original block, west stair tower and south addition. [Memorial Quad exterior review](memorial-quad-exterior-review-2026-11-24.md).
+
 A reversible source-pinned overlay adds an arched east entry, wood-coloured double doors, paired upper arched windows, steps and a small group of shrubs to the existing `roof-7ffcf31b` model. The [UO cultural resource survey](https://cpfm.uoregon.edu/condonhall2025) identifies the main entrance as east-facing and depicts these architectural and planting elements. The historic survey image and site plan were consulted on 2026-11-04, but are linked only, not redistributed or used as textures. Original procedural geometry is CC BY 4.0.
 
 The target building footprint comes from an estimated LiDAR model; the exact facade position, window and stair dimensions, plant species, plant positions and present conditions are unverified. The entry, steps and shrub heights were adjusted against the existing estimated heightfield and visually checked, not field surveyed. The steps meet illustrative terrain in the viewer but do not establish a route, collision or accessibility. [Before](images/condon-east-before.png) / [after](images/condon-east-after.png). Other elevations remain generic, existing vegetation and source GLB remain untouched, and the building and shared environment entries remain level 1.

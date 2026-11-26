@@ -1,5 +1,7 @@
 # Susan Campbell Hall exterior
 
+The November 24 local default uses the campus-registered shell and assessment-aligned east and west approaches. [Women's Memorial Quad exterior review](womens-quad-exterior-review-2026-11-24.md).
+
 A source-pinned runtime replacement retains the building identity `roof-fd061857` and original campus GLB. Its approximate L-shaped body, gambrel main roof and shed dormers are informed by the [UO historic survey](https://cpfm.uoregon.edu/susancampbellhall2025) and an archived [2011 photograph by Gary Halvorson / Oregon State Archives, CC BY 4.0](https://commons.wikimedia.org/wiki/File:Susan_Campbell_Hall,_University_Of_Oregon,_Eugene_-_DPLA_-_4e7906177b35545a22a8ec321bd92da7.jpg). The survey is linked only; the photograph is not a runtime texture.
 
 A first roof-only overlay was rejected because it intersected the existing flat-roof geometry; this replacement is reversible and does not rewrite the base asset. Photo orientation, window count and placement, wing roof, entrances, dimensions, terrain junctions and current conditions remain unverified approximations. Existing tree crowns obscure part of the view. No navigation, collision or accessibility claim is made. The asset remains level 1 and its interior is untouched. [Before](images/susan-campbell-before.png) / [after](images/susan-campbell-after.png).

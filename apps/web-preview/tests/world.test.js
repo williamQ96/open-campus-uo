@@ -62,6 +62,49 @@ test("diagonal movement slides along wall and follows terrain", () => {
   assert.equal(p.y, sampleGround(field, p.x, p.z));
 });
 
+test("a raised volume leaves the gap between its ground footprints walkable", () => {
+  const elevated = [
+    {
+      ...buildings[0],
+      ground_footprints_enu_m: [
+        [
+          [2, -3],
+          [4, -3],
+          [4, -1],
+          [2, -1],
+        ],
+        [
+          [2, 1],
+          [4, 1],
+          [4, 3],
+          [2, 3],
+        ],
+      ],
+      collision_extra_enu_m: [
+        [
+          [3.4, -0.1],
+          [3.6, -0.1],
+          [3.6, 0.1],
+          [3.4, 0.1],
+        ],
+      ],
+    },
+  ];
+  assert.equal(isBlocked(3, 0, elevated, 10, 0.25), false);
+  assert.equal(isBlocked(3, 0.81, elevated, 10, 0.25), true);
+  assert.equal(isBlocked(3, -2, elevated, 10, 0.25), true);
+  assert.equal(isBlocked(3.5, 0, elevated, 10, 0.25), true);
+  const p = { x: 0, y: 0, z: 0 };
+  movePlayer(
+    p,
+    { x: 6, z: 0 },
+    [{ ...elevated[0], collision_extra_enu_m: [] }],
+    10,
+    field,
+  );
+  assert.ok(p.x > 5.9);
+});
+
 test("jump rises to a finite apex, rejects air jumps, and lands on terrain", () => {
   const position = { x: 0, y: 3, z: 0 },
     state = { velocity: 0, grounded: true };

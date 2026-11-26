@@ -32,7 +32,7 @@ test("Tykeson frontage preserves selection, entrances, collision and draw calls"
         await r.fulfill({ response: res, json: j });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=plc-lokey-tykeson-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo()),
       views = [];
@@ -67,7 +67,7 @@ test("Tykeson frontage preserves selection, entrances, collision and draw calls"
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=plc-lokey-tykeson-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&
@@ -81,7 +81,11 @@ test("Tykeson frontage preserves selection, entrances, collision and draw calls"
       expect(state.camera[0]).toBeCloseTo(x, 1);
       expect(state.camera[2]).toBeCloseTo(z, 1);
       await page.screenshot({
-        path: `../../docs/images/tykeson-frontage-${name}-${after ? "after" : "before"}-2026-11-04.png`,
+        path: test
+          .info()
+          .outputPath(
+            `tykeson-frontage-${name}-${after ? "after" : "before"}.png`,
+          ),
       });
       views.push({ blocked, ...state });
     }

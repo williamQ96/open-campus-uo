@@ -573,7 +573,7 @@
   },
   "status": "Photo-informed landmark grammar; inferred campus appearance; seeded low-poly background at unchanged historical coordinates. Priority polygon is not a surveyed campus boundary.",
   "stats": {
-    "trees": 598,
+    "trees": 573,
     "landmarkBuildings": 5,
     "contextBuildings": 399,
     "campusBuildings": 135,
@@ -1194,6 +1194,18 @@
   "heightfield_text_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
   "preserved_source_blend_sha256": "a8ae899ebf6bea06af9d53f5e6eb23ec9965da05b4457b6d3d45894a39cbaa2b",
   "landcover_url": "landcover.glb",
+  "ford_arena_site": {
+    "url": "ford-arena-review/site.json",
+    "sha256": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056"
+  },
+  "cascade_volcanology_site": {
+    "url": "cascade-volcanology-review/site.json",
+    "sha256": "6a6e9da1803d1f85f9edfbd2a56322a70c64425ba699ffcc5d3214067b4fe90b"
+  },
+  "hedco_site_review": {
+    "url": "hedco-exterior-review/site.json",
+    "sha256": "0f5c5912f9ea81bfa362a75fd50da06aff755de5d313320a93f5153a7866792f"
+  },
   "landcover_sha256": "0e93a8f129ba9368cfa90b09da610169054f5288dd434e290a5c390010d8a0cd",
   "landcover_status": "Full-extent inferred grass/concrete/asphalt foundation, guided by archived 2024 NAIP; not a land-use survey",
   "vegetation_patch_url": "pilot-vegetation-patch.json",
@@ -1206,7 +1218,7 @@
   "tree_suppression_sha256": "32d617c541948787b999dbc965417c322ed1d704a4c474bd2381f86b5cc08e0b",
   "tree_suppression_status": "One inferred tree suppressed at dated open lawn; not a surveyed present-day inventory",
   "exterior_detail_url": "johnson-rear-detail.json",
-  "exterior_detail_sha256": "2f8673dd96875d0f680e7a8431922e0989db8816500c63bdc6d4c0ea7249f81b",
+  "exterior_detail_sha256": "fa736aaae13284c5e7fd8aead9fe684ed72d6138e334d5fa87c73b715eb4cf44",
   "exterior_detail_status": "Photo-informed interpretation; dated 2012 reference, no surveyed dimensions",
   "exterior_details": [
     {
@@ -1336,7 +1348,7 @@
     },
     {
       "url": "carson-exterior-detail.json",
-      "sha256": "e17f3a213627ada64530baa6969c8103ef60180d9bf1f26164c1954ee65cc436",
+      "sha256": "6726782bfaab3722c07dd97fa0c770c30c4866a0ea7ba78a029790e1431309fd",
       "status": "UO survey-informed schematic elevations; site match and dimensions unverified"
     },
     {
@@ -1436,6 +1448,13 @@
       "url": "pilot-tree-216-suppression.json",
       "sha256": "6e4a7c0b21d40673024e15c302b407a6905647fe39f4d07ef22186e1a1f68521",
       "status": "One inferred tree suppressed at dated open surface near EMU"
+    },
+    {
+      "url": "pilot-green-tree-clearance.json",
+      "sha256": "18ab4ca37f851444c4a0845f5734cdb277e6ddd7de89dd4697f9fb1950fe2068",
+      "operation": "pilot-tree-triangle-suppression-v1",
+      "suppressed_trees": 25,
+      "status": "Aerial-checked procedural tree clearance at EMU Green, west of Knight Library, and Gerlinger Field Green"
     }
   ],
   "furniture_patch_url": "pilot-bench-back-suppression.json",
@@ -1523,5 +1542,222 @@
     }
   ],
   "context_trunk_variation_url": "context-trunk-variation.json",
-  "context_trunk_variation_sha256": "f602f06d34a8b67c6d76b69ed05295a2c62532219fb71e0d04fdcb053ed52561"
+  "context_trunk_variation_sha256": "f602f06d34a8b67c6d76b69ed05295a2c62532219fb71e0d04fdcb053ed52561",
+  "athletic_site_review": {
+    "url": "athletic-exterior-review/site.json",
+    "sha256": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680"
+  },
+  "context_roof_refinements": {
+    "url": "context-roof-refinements.json",
+    "sha256": "226430ae1441939e8dad07e0d3a7eeafbd8139c18e4879605935d6f19199fd77"
+  },
+  "emu_green_site": {
+    "url": "emu-green-review/site.json",
+    "sha256": "a0425a77fc88fb9310561c0da8a8901bace5b33aa92fb4fae3fd3806af5e8bc9"
+  },
+  "frohnmayer_site": {
+    "url": "frohnmayer-exterior-review/site.json",
+    "sha256": "7777246ecc92b44279e0db365b8a9be32eafe36cfbde5e0b96efacfcb27af7ba"
+  },
+  "registered_pilot_trees": {
+    "url": "registered-pilot-trees.json",
+    "sha256": "df69c8dbc9973bce19aacf537c97490f324cd55d3a82d9dcfff0283265b4ddcf",
+    "trees": 11
+  },
+  "knight_library_site": {
+    "url": "knight-library-review/site.json",
+    "sha256": "65983f043cf10a13f2fe5169aba754e8b28a70022c46dcfa66c5d879b1070598"
+  },
+  "museum_site_review": {
+    "url": "museum-exterior-review/site.json",
+    "sha256": "3e7b09f724c322875f975df5ecf636ddb162ac875ea6f7c30f14a71dcd76823f"
+  },
+  "gerlinger_site_review": {
+    "url": "gerlinger-site-review/site.json",
+    "sha256": "259b3c2533181e8363e7fc0490721950b0b7e0a739ae54dba9ca6fc98de6dad8"
+  },
+  "womens_quad_site": {
+    "url": "womens-quad-review/site.json",
+    "sha256": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152"
+  },
+  "memorial_quad_site": {
+    "url": "memorial-quad-review/site.json",
+    "sha256": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861"
+  },
+  "fenton_site_review": {
+    "url": "fenton-site-review/site.json",
+    "sha256": "129ab481cc704b63ba1867a3c5451741bc61f47d08c548d81626d34dd767c96f"
+  },
+  "heritage_core_site": {
+    "url": "heritage-core-review/site.json",
+    "sha256": "6115a399b3088f1e38edc4d71a8f64c95286d04e1b52d51a3d30a884e64e988d"
+  },
+  "heritage_miller_site": {
+    "url": "heritage-miller-review/site.json",
+    "sha256": "e0f08268d3162a48998d1e2d72a727d164daeabb1fee40116a29ab9cc290fd1e"
+  },
+  "allen_site_review": {
+    "url": "allen-site-review/site.json",
+    "sha256": "7b649674dbd9d74699f202feaf669253a7690878136589d5b316c8c9650935ba"
+  },
+  "lawrence_science_site": {
+    "url": "lawrence-science-review/site.json",
+    "sha256": "d30fdbf3d7e56f890de4519661b8365a4f4a2e7f8cf4d75ca6c151bfff4e49f5"
+  },
+  "straub_earl_site": {
+    "url": "straub-earl-review/site.json",
+    "sha256": "a1d4cfe11f8e2155815d63784accb9bb848563c659281b5d6469d60951ee1ec4"
+  },
+  "kalapuya_site": {
+    "url": "kalapuya-review/site.json",
+    "sha256": "add89f7ac3f1ac40d8f725010dbb76ef0a9d66273996dc61d48535c6a42c5cfb"
+  },
+  "longhouse_site": {
+    "url": "longhouse-review/site.json",
+    "sha256": "48758f603bf7ff174c7a92ce689425dfd1bc4ee8af04187ec9b1b62de530e15b"
+  },
+  "global_scholars_site": {
+    "url": "global-scholars-review/site.json",
+    "sha256": "4ab317688ae7fe36e1219a53503f325698bfb968a1e2e2e7ec2f3d05e68bd128"
+  },
+  "moss_street_site": {
+    "url": "moss-street-review/site.json",
+    "sha256": "e3873ba5254dfa9c8332116be0c842efc75386d57c134ced8bcfc2c815d59557"
+  },
+  "vivian_olum_site": {
+    "url": "vivian-olum-review/site.json",
+    "sha256": "eb6bc21f30da0dafb4535c8ac276c55487bcefe867c731a9321301fbc8bce85d"
+  },
+  "graduate_village_site": {
+    "url": "graduate-village-review/site.json",
+    "sha256": "6b8a94b316c47200ed7dc127b63391d8648f08e083c14aee13701a0bea5728b4"
+  },
+  "knight_law_site": {
+    "url": "knight-law-review/site.json",
+    "sha256": "a76ca721c1fe0de2a93461ea9844f4ff46bd08228b79b218b1223d77c8b23a06"
+  },
+  "bean_unthank_site": {
+    "url": "bean-unthank-review/site.json",
+    "sha256": "016f11e1ad32ff5a0991294ac097b36eed19961fcb2e4cbae2fbc688c2d650e1"
+  },
+  "cedar_yasui_site": {
+    "url": "cedar-yasui-review/site.json",
+    "sha256": "d44b44a57a17e3d50b99847b360f25711c8479297570ebc9f0ba9f690b2d141b"
+  },
+  "carson_llc_site": {
+    "url": "carson-llc-review/site.json",
+    "sha256": "2b2d00e6ad1829a693f87adcacc5733e220578382e461d2b7fbeb1ade022ef97"
+  },
+  "oregon_jaqua_site": {
+    "url": "oregon-jaqua-review/site.json",
+    "sha256": "b3bb7c92d108d07583498712ff4d0c1d5ca61f0f4203f93d5391ad14917dc279"
+  },
+  "lillis_complex_site": {
+    "url": "lillis-complex-review/site.json",
+    "sha256": "d3f48e289718256277134eb6f0786eb71c4e2a23e0b1c1e1b7f1b6c890064279"
+  },
+  "friendly_collier_mckenzie_site": {
+    "url": "friendly-collier-mckenzie-review/site.json",
+    "sha256": "f5c7bc5b818058584c646022c7103dea2d9a0a9320bc061edc46f11e37800f4c"
+  },
+  "plc_lokey_tykeson_site": {
+    "url": "plc-lokey-tykeson-review/site.json",
+    "sha256": "c0884ac85424815bd3209e2e3964ddc040ee49e6e3bac526bf360afd5cff2485"
+  },
+  "northeast_science_site": {
+    "url": "northeast-science-review/site.json",
+    "sha256": "a11a830eed3b0fec81a6c87e64f14f7f1076368b8e62ba602f2b2c32d2701dd7"
+  },
+  "knight_campus_site": {
+    "url": "knight-campus-review/site.json",
+    "sha256": "44b17abfde67ec823c6081a9b9ef236be5050a7756c36ded594b9da728a6b1ac"
+  },
+  "northsite_millrace_site": {
+    "url": "northsite-millrace-review/site.json",
+    "sha256": "5e81d63d1d3c03cc4c20af7e09586c68407fae1ea0023447c0cddf75c5161284"
+  },
+  "public_building_exterior_site": {
+    "url": "public-building-exterior-review/site.json",
+    "sha256": "3225fe95d21b0078a31cac339b996f75376b3aa30ef34a0dd993a0667d985ff9"
+  },
+  "hayward_exterior_site": {
+    "url": "hayward-exterior-review/site.json",
+    "sha256": "7940e7aa05c1ae316c373d57cd022cdc2ad553ee51c1b097772760858e5a6593"
+  },
+  "campus_frontage_site": {
+    "url": "campus-frontage-review/site.json",
+    "sha256": "86e915ab85f7df842cfe5d950c83e69cdac57ecb8f77a18c59caeafba5635802"
+  },
+  "facilities_exterior_site": {
+    "url": "facilities-exterior-review/site.json",
+    "sha256": "05838ea24af4c39d5cf46908181e6f0cf6c510d7b262926ecce38a9e6c2c91f7"
+  },
+  "office_exterior_site": {
+    "url": "office-exterior-review/site.json",
+    "sha256": "84c7fc5fa4f839d97000f1af93c664e978214f9e20ca11d75792de16c7864df6"
+  },
+  "residential_exterior_site": {
+    "url": "residential-exterior-review/site.json",
+    "sha256": "3c89e449af2a3d7b351adcbb9b7dbde2b6a16cb47d759c2f5337aeea24f05038"
+  },
+  "campus_neighbor_exterior_site": {
+    "url": "campus-neighbor-exterior-review/site.json",
+    "sha256": "1c7f5745a1b3a519f0dfae11af85134330efcf91e7f05d155311eca861a3bf67"
+  },
+  "chapter_house_exterior_site": {
+    "url": "chapter-house-exterior-review/site.json",
+    "sha256": "c1fb67161d029cc5cd8ef5cf998d209ee5b247d5381fee3d803a96fbd334078c"
+  },
+  "villard_garden_exterior_site": {
+    "url": "villard-garden-exterior-review/site.json",
+    "sha256": "8442cb7b8056840752825f0e1377f9a0a624389a186a4d5e69b0adf83502942f"
+  },
+  "alder_millrace_exterior_site": {
+    "url": "alder-millrace-exterior-review/site.json",
+    "sha256": "6fcfd7443f6c0e5aa6c9c1eb9e434f67082420707bb5afa26c93e80343b1b9a5"
+  },
+  "east_campus_housing_exterior_site": {
+    "url": "east-campus-housing-exterior-review/site.json",
+    "sha256": "9fd42b15c6e18cbbefb2f2fdce7b4da3894379eeb2000d7a45e80931422cebf6"
+  },
+  "fairmount_boulevard_exterior_site": {
+    "url": "fairmount-boulevard-exterior-review/site.json",
+    "sha256": "1f69e661c60923f16609789b7a3426c3c3ab516825239c6a09dfcf126926e284"
+  },
+  "garden_avenue_exterior_site": {
+    "url": "garden-avenue-exterior-review/site.json",
+    "sha256": "8529178efcce0caa230d47c952e3b2a9550013ece2766e5bf45cfae115228412"
+  },
+  "villard_street_exterior_site": {
+    "url": "villard-street-exterior-review/site.json",
+    "sha256": "bfa60d4dec70de62f9ac8abc9e65bbbd61f66da4e63a64d8fc1632c55d21deb0"
+  },
+  "bardell_avenue_exterior_site": {
+    "url": "bardell-avenue-exterior-review/site.json",
+    "sha256": "bffc37f7236578ed289a04aaba08a1f4a6065c876095be431e9ba854f570e7e5"
+  },
+  "franklin_boulevard_exterior_site": {
+    "url": "franklin-boulevard-exterior-review/site.json",
+    "sha256": "5d383640e393efca8c63bde7bf2d934b3fed55bb52ea75e654019f8e7ae87f78"
+  },
+  "franklin_complex_exterior_site": {
+    "url": "franklin-complex-exterior-review/site.json",
+    "sha256": "682004a23215c4c8d944d250e4eecba7b1ba8141bbb4fc3e510e25b0062070b6"
+  },
+  "broadway_orchard_exterior_site": {
+    "url": "broadway-orchard-exterior-review/site.json",
+    "sha256": "816779652e40c968026801192ea08cd85a537734b54113a8389a44016effe079"
+  },
+  "fairmount_residential_exterior_site": {
+    "url": "fairmount-residential-exterior-review/site.json",
+    "sha256": "f51b31f453b322fcf07b36ffd54aa2c7f99eba8af7b762c126147e71bb631cdb"
+  },
+  "treated_roof_exterior_site": {
+    "url": "treated-roof-exterior-review/site.json",
+    "sha256": "d4ef00f4c360678c03a92a43ef6beff01690448fa481b66f3d30b1e540cdc659"
+  },
+  "hilyard_west_exterior_site": {
+    "url": "hilyard-west-exterior-review/site.json",
+    "sha256": "1ff6a5b2003222614bac836f84f8593cc6db72d2dd5160699509d9ef30b206f5"
+  }
 }

@@ -1,29 +1,28 @@
 import { test, expect } from "@playwright/test";
 test("Alder batch preserves original geometry, resolves facade hits and maintains all entrance positions", async ({
-  browser,
+  page,
 }) => {
-  const pages = [];
-  for (const before of [true, false]) {
-    const p = await browser.newPage();
-    if (before)
-      await p.route("**/scene/presentation.json", async (r) => {
-        const response = await r.fetch(),
-          j = await response.json();
-        j.exterior_details = j.exterior_details.filter(
-          (e) => e.url !== "alder-north-provisional-detail.json",
-        );
-        await r.fulfill({ response, json: j });
-      });
-    await p.goto("/");
-    await p.waitForFunction(() => window.__campus?.getState().ready);
-    pages.push(p);
-  }
-  const entries = [];
-  for (const p of pages)
-    entries.push(await p.evaluate(() => __campus.entranceInfo()));
-  expect(entries[1]).toEqual(entries[0]);
-  expect(entries[1].find((e) => e.id === "roof-ee63827c").walkable).toBe(true);
-  const result = await pages[1].evaluate(async () => {
+  const baseline = "/?exterior-review=campus-frontage-baseline";
+  const configUrl = "**/scene/presentation.json";
+  const entries = async () => {
+    await page.goto(baseline);
+    await page.waitForFunction(() => window.__campus?.getState().ready);
+    return page.evaluate(() => __campus.entranceInfo());
+  };
+  await page.route(configUrl, async (route) => {
+    const response = await route.fetch();
+    const json = await response.json();
+    json.exterior_details = json.exterior_details.filter(
+      ({ url }) => url !== "alder-north-provisional-detail.json",
+    );
+    await route.fulfill({ response, json });
+  });
+  const before = await entries();
+  await page.unroute(configUrl);
+  const after = await entries();
+  expect(after).toEqual(before);
+  expect(after.find((e) => e.id === "roof-ee63827c").walkable).toBe(true);
+  const result = await page.evaluate(async () => {
     const T = await import("/node_modules/three/build/three.module.js"),
       { GLTFLoader } =
         await import("/node_modules/three/examples/jsm/loaders/GLTFLoader.js"),
@@ -107,5 +106,4 @@ test("Alder batch preserves original geometry, resolves facade hits and maintain
     rejected: true,
     ids: 52,
   });
-  for (const p of pages) await p.close();
 });

@@ -31,7 +31,7 @@ test("Chapman west shallow arch relief preserve geometry and draw budget", async
         await r.fulfill({ response, json });
       });
     }
-    await page.goto("/");
+    await page.goto("/?exterior-review=memorial-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     const entries = await page.evaluate(() => __campus.entranceInfo());
     const views = [];
@@ -62,7 +62,7 @@ test("Chapman west shallow arch relief preserve geometry and draw budget", async
           ),
         { x, z, yaw, ground },
       );
-      await page.goto("/?return=1");
+      await page.goto("/?return=1&exterior-review=memorial-baseline");
       await page.waitForFunction(
         () =>
           window.__campus?.getState().ready &&

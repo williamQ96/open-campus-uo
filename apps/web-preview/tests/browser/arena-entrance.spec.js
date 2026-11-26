@@ -14,7 +14,7 @@ test("arena placeholder entrance position and walkability stay unchanged", async
         );
         await route.fulfill({ response, json: data });
       });
-    await page.goto("/");
+    await page.goto("/?exterior-review=ford-arena-baseline");
     await page.waitForFunction(() => window.__campus?.getState().ready);
     entries.push(
       await page.evaluate(() =>
