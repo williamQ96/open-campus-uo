@@ -1,0 +1,2171 @@
+{
+  "source_art_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_recipes": {
+    "pilot-understory-patch.json": "c45f91ea2a3cc5c6ac0237b4ecf0177a7f7e5f5811cb3dc45d448c40d7d5dd3a",
+    "pilot-fern-suppression.json": "0c656af5beda0ee775f4aaf72dceb912d8267bc3fd7a9a91b35952fa6fed7020",
+    "pilot-plaza-plant-suppression.json": "141c23b27e9576afb22226cdb4d1e3c0587844e69956f746ab1830871c734f50",
+    "pilot-green-tree-clearance.json": "18ab4ca37f851444c4a0845f5734cdb277e6ddd7de89dd4697f9fb1950fe2068"
+  },
+  "layout_evidence": {
+    "johnson": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493890.14928888186%2C4876883.282153052%2C493963.14928888186%2C4876942.282153052&bboxSR=3740&imageSR=3740&size=876%2C708&format=png&bandIds=0%2C1%2C2",
+      "extent": [
+        -439,
+        -45,
+        -366,
+        14
+      ],
+      "pixel_per_m": 12
+    },
+    "knight": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493736.14928888186%2C4876712.282153052%2C493824.14928888186%2C4876776.282153052&bboxSR=3740&imageSR=3740&size=1056%2C768&format=png&bandIds=0%2C1%2C2",
+      "extent": [
+        -593,
+        -216,
+        -505,
+        -152
+      ],
+      "pixel_per_m": 12
+    }
+  },
+  "soil_beds": [
+    {
+      "id": "knight-west-strip",
+      "bounds_enu_m": [
+        -563.55,
+        -182.74,
+        -556.31,
+        -181.09
+      ]
+    },
+    {
+      "id": "knight-east-strip",
+      "bounds_enu_m": [
+        -547.63,
+        -182.55,
+        -535.21,
+        -181.04
+      ]
+    },
+    {
+      "id": "johnson-west-planting",
+      "bounds_enu_m": [
+        -405.31,
+        -16.47,
+        -403.03,
+        -8.61
+      ]
+    }
+  ],
+  "source_ranges": {
+    "planting": [
+      40,
+      216,
+      324
+    ],
+    "understory_1": [
+      71,
+      216,
+      324
+    ],
+    "understory_2": [
+      11,
+      24,
+      24
+    ]
+  },
+  "plants": [
+    {
+      "layer": "planting",
+      "index": 0,
+      "anchor_gltf_m": [
+        -562.1,
+        5.0082,
+        182.1
+      ],
+      "size_m": [
+        2.15,
+        0.53,
+        0.91
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "preceding_anchor_gltf_m": [
+        -589.981079,
+        3.289578,
+        172.97921
+      ],
+      "site": "Knight north planted strips"
+    },
+    {
+      "layer": "planting",
+      "index": 1,
+      "anchor_gltf_m": [
+        -559.8,
+        4.991416,
+        182.02
+      ],
+      "size_m": [
+        2.15,
+        0.5850000000000001,
+        0.91
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "preceding_anchor_gltf_m": [
+        -585.981079,
+        3.547353,
+        172.97921
+      ],
+      "site": "Knight north planted strips"
+    },
+    {
+      "layer": "planting",
+      "index": 2,
+      "anchor_gltf_m": [
+        -557.55,
+        4.994227,
+        181.72
+      ],
+      "size_m": [
+        2.15,
+        0.64,
+        0.91
+      ],
+      "form": "branched",
+      "tone": 2,
+      "preceding_anchor_gltf_m": [
+        -581.981079,
+        4.113546,
+        172.97921
+      ],
+      "site": "Knight north planted strips"
+    },
+    {
+      "layer": "planting",
+      "index": 3,
+      "anchor_gltf_m": [
+        -546.3,
+        4.978209,
+        181.73
+      ],
+      "size_m": [
+        2.15,
+        0.53,
+        0.91
+      ],
+      "form": "upright",
+      "tone": 3,
+      "preceding_anchor_gltf_m": [
+        -577.981079,
+        4.407133,
+        172.97921
+      ],
+      "site": "Knight north planted strips"
+    },
+    {
+      "layer": "planting",
+      "index": 4,
+      "anchor_gltf_m": [
+        -543.85,
+        5.003302,
+        181.75
+      ],
+      "size_m": [
+        2.15,
+        0.5850000000000001,
+        0.91
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "preceding_anchor_gltf_m": [
+        -573.981079,
+        4.572744,
+        172.97921
+      ],
+      "site": "Knight north planted strips"
+    },
+    {
+      "layer": "planting",
+      "index": 5,
+      "anchor_gltf_m": [
+        -541.42,
+        5.043078,
+        181.83
+      ],
+      "size_m": [
+        2.15,
+        0.64,
+        0.91
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "preceding_anchor_gltf_m": [
+        -569.981079,
+        4.670558,
+        172.97921
+      ],
+      "site": "Knight north planted strips"
+    },
+    {
+      "layer": "planting",
+      "index": 6,
+      "anchor_gltf_m": [
+        -538.95,
+        5.066801,
+        181.78
+      ],
+      "size_m": [
+        2.15,
+        0.53,
+        0.91
+      ],
+      "form": "branched",
+      "tone": 2,
+      "preceding_anchor_gltf_m": [
+        -565.981079,
+        4.690553,
+        172.97921
+      ],
+      "site": "Knight north planted strips"
+    },
+    {
+      "layer": "planting",
+      "index": 7,
+      "anchor_gltf_m": [
+        -536.55,
+        5.071524,
+        181.79
+      ],
+      "size_m": [
+        2.15,
+        0.5850000000000001,
+        0.91
+      ],
+      "form": "upright",
+      "tone": 3,
+      "preceding_anchor_gltf_m": [
+        -561.981079,
+        4.747278,
+        172.97921
+      ],
+      "site": "Knight north planted strips"
+    },
+    {
+      "layer": "planting",
+      "index": 8,
+      "anchor_gltf_m": [
+        -557.981079,
+        4.785067,
+        172.97921
+      ],
+      "size_m": [
+        3.93335,
+        1.700093,
+        1.95546
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 9,
+      "anchor_gltf_m": [
+        -553.981079,
+        4.813513,
+        172.97921
+      ],
+      "size_m": [
+        3.93335,
+        1.700087,
+        1.95546
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 10,
+      "anchor_gltf_m": [
+        -549.981079,
+        4.838988,
+        172.97921
+      ],
+      "size_m": [
+        3.93335,
+        1.700113,
+        1.95546
+      ],
+      "form": "branched",
+      "tone": 2,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 11,
+      "anchor_gltf_m": [
+        -545.981079,
+        4.856988,
+        172.97921
+      ],
+      "size_m": [
+        3.93335,
+        1.700112,
+        1.95546
+      ],
+      "form": "upright",
+      "tone": 3,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 12,
+      "anchor_gltf_m": [
+        -541.981079,
+        4.870021,
+        172.97921
+      ],
+      "size_m": [
+        3.93335,
+        1.700139,
+        1.95546
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 13,
+      "anchor_gltf_m": [
+        -537.981079,
+        4.872994,
+        172.97921
+      ],
+      "size_m": [
+        3.93335,
+        1.700206,
+        1.95546
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 14,
+      "anchor_gltf_m": [
+        -533.981079,
+        4.883277,
+        172.97921
+      ],
+      "size_m": [
+        3.93335,
+        1.699863,
+        1.95546
+      ],
+      "form": "branched",
+      "tone": 2,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 15,
+      "anchor_gltf_m": [
+        -529.981079,
+        4.93542,
+        172.97921
+      ],
+      "size_m": [
+        3.93335,
+        1.69978,
+        1.95546
+      ],
+      "form": "upright",
+      "tone": 3,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 16,
+      "anchor_gltf_m": [
+        -404.4,
+        3.466125,
+        9.23
+      ],
+      "size_m": [
+        1.03,
+        0.74,
+        0.94
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "preceding_anchor_gltf_m": [
+        -395.992432,
+        3.704239,
+        11.987527
+      ],
+      "site": "Johnson north walk west planting"
+    },
+    {
+      "layer": "planting",
+      "index": 17,
+      "anchor_gltf_m": [
+        -403.65,
+        3.579431,
+        10.85
+      ],
+      "size_m": [
+        1.03,
+        0.84,
+        0.94
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "preceding_anchor_gltf_m": [
+        -396.162796,
+        3.649268,
+        11.133424
+      ],
+      "site": "Johnson north walk west planting"
+    },
+    {
+      "layer": "planting",
+      "index": 18,
+      "anchor_gltf_m": [
+        -404.6,
+        3.699744,
+        12.4
+      ],
+      "size_m": [
+        1.03,
+        0.94,
+        0.94
+      ],
+      "form": "branched",
+      "tone": 2,
+      "preceding_anchor_gltf_m": [
+        -396.662308,
+        3.581304,
+        10.337527
+      ],
+      "site": "Johnson north walk west planting"
+    },
+    {
+      "layer": "planting",
+      "index": 19,
+      "anchor_gltf_m": [
+        -404.35,
+        3.863075,
+        14.4
+      ],
+      "size_m": [
+        1.03,
+        0.74,
+        0.94
+      ],
+      "form": "upright",
+      "tone": 3,
+      "preceding_anchor_gltf_m": [
+        -397.456894,
+        3.529203,
+        9.654075
+      ],
+      "site": "Johnson north walk west planting"
+    },
+    {
+      "layer": "planting",
+      "index": 20,
+      "anchor_gltf_m": [
+        -403.85,
+        3.958441,
+        15.8
+      ],
+      "size_m": [
+        1.03,
+        0.84,
+        0.94
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "preceding_anchor_gltf_m": [
+        -398.492432,
+        3.492848,
+        9.129643
+      ],
+      "site": "Johnson north walk west planting"
+    },
+    {
+      "layer": "planting",
+      "index": 21,
+      "anchor_gltf_m": [
+        -399.698334,
+        3.470171,
+        8.799972
+      ],
+      "size_m": [
+        1.573364,
+        1.200617,
+        1.17327
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 22,
+      "anchor_gltf_m": [
+        -400.992432,
+        3.458252,
+        8.687527
+      ],
+      "size_m": [
+        1.573364,
+        1.200594,
+        1.17327
+      ],
+      "form": "branched",
+      "tone": 2,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 23,
+      "anchor_gltf_m": [
+        -402.28653,
+        3.456892,
+        8.799972
+      ],
+      "size_m": [
+        1.573364,
+        1.200595,
+        1.17327
+      ],
+      "form": "upright",
+      "tone": 3,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 24,
+      "anchor_gltf_m": [
+        -403.492432,
+        3.467091,
+        9.129643
+      ],
+      "size_m": [
+        1.573364,
+        1.200594,
+        1.173271
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 25,
+      "anchor_gltf_m": [
+        -404.527954,
+        3.488152,
+        9.654075
+      ],
+      "size_m": [
+        1.573364,
+        1.200594,
+        1.173271
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 26,
+      "anchor_gltf_m": [
+        -405.322556,
+        3.528604,
+        10.337527
+      ],
+      "size_m": [
+        1.573334,
+        1.200965,
+        1.173271
+      ],
+      "form": "branched",
+      "tone": 2,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 27,
+      "anchor_gltf_m": [
+        -405.822052,
+        3.590069,
+        11.133424
+      ],
+      "size_m": [
+        1.573364,
+        1.200965,
+        1.17327
+      ],
+      "form": "upright",
+      "tone": 3,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 28,
+      "anchor_gltf_m": [
+        -405.992432,
+        3.658215,
+        11.987527
+      ],
+      "size_m": [
+        1.573364,
+        1.200965,
+        1.17327
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 29,
+      "anchor_gltf_m": [
+        -405.822052,
+        3.728399,
+        12.84163
+      ],
+      "size_m": [
+        1.573364,
+        1.200965,
+        1.173271
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 30,
+      "anchor_gltf_m": [
+        -405.322556,
+        3.795838,
+        13.637527
+      ],
+      "size_m": [
+        1.573334,
+        1.200965,
+        1.173271
+      ],
+      "form": "branched",
+      "tone": 2,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 31,
+      "anchor_gltf_m": [
+        -404.527954,
+        3.8557,
+        14.32098
+      ],
+      "size_m": [
+        1.573364,
+        1.200969,
+        1.17327
+      ],
+      "form": "upright",
+      "tone": 3,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 32,
+      "anchor_gltf_m": [
+        -403.492432,
+        3.90387,
+        14.845411
+      ],
+      "size_m": [
+        1.573364,
+        1.200968,
+        1.173271
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 33,
+      "anchor_gltf_m": [
+        -402.28653,
+        3.932657,
+        15.175083
+      ],
+      "size_m": [
+        1.573364,
+        1.200645,
+        1.17327
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 34,
+      "anchor_gltf_m": [
+        -400.992432,
+        3.945961,
+        15.287527
+      ],
+      "size_m": [
+        1.573364,
+        1.200645,
+        1.173271
+      ],
+      "form": "branched",
+      "tone": 2,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 35,
+      "anchor_gltf_m": [
+        -399.698334,
+        3.942062,
+        15.175083
+      ],
+      "size_m": [
+        1.573364,
+        1.200707,
+        1.17327
+      ],
+      "form": "upright",
+      "tone": 3,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 36,
+      "anchor_gltf_m": [
+        -398.492432,
+        3.912687,
+        14.845411
+      ],
+      "size_m": [
+        1.573364,
+        1.200882,
+        1.173271
+      ],
+      "form": "low-rounded",
+      "tone": 0,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 37,
+      "anchor_gltf_m": [
+        -397.456894,
+        3.869545,
+        14.32098
+      ],
+      "size_m": [
+        1.573334,
+        1.200881,
+        1.17327
+      ],
+      "form": "mounded",
+      "tone": 1,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 38,
+      "anchor_gltf_m": [
+        -396.662308,
+        3.818027,
+        13.637527
+      ],
+      "size_m": [
+        1.573334,
+        1.200881,
+        1.173271
+      ],
+      "form": "branched",
+      "tone": 2,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "planting",
+      "index": 39,
+      "anchor_gltf_m": [
+        -396.162796,
+        3.761644,
+        12.84163
+      ],
+      "size_m": [
+        1.573334,
+        1.200881,
+        1.173271
+      ],
+      "form": "upright",
+      "tone": 3,
+      "retired": true,
+      "retirement_basis": "Superseded by the bounded planted strips in the dated aerial review."
+    },
+    {
+      "layer": "understory_1",
+      "index": 0,
+      "anchor_gltf_m": [
+        -388.711914,
+        4.493173,
+        62.003056
+      ],
+      "size_m": [
+        3.343384,
+        1.571869,
+        2.346542
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 1,
+      "anchor_gltf_m": [
+        -223.210915,
+        5.027421,
+        200.377052
+      ],
+      "size_m": [
+        3.343369,
+        1.622396,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 2,
+      "anchor_gltf_m": [
+        -606.616913,
+        4.185992,
+        225.289055
+      ],
+      "size_m": [
+        3.343323,
+        1.651198,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 3,
+      "anchor_gltf_m": [
+        -345.358917,
+        11.228567,
+        238.50605
+      ],
+      "size_m": [
+        3.343384,
+        1.596067,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 4,
+      "anchor_gltf_m": [
+        -366.818909,
+        7.055095,
+        146.836052
+      ],
+      "size_m": [
+        3.343384,
+        1.547709,
+        2.346542
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 5,
+      "anchor_gltf_m": [
+        -174.357903,
+        3.79025,
+        104.566055
+      ],
+      "size_m": [
+        3.343369,
+        1.654876,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 6,
+      "anchor_gltf_m": [
+        -384.462906,
+        7.018407,
+        153.077049
+      ],
+      "size_m": [
+        3.343353,
+        1.597127,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 7,
+      "anchor_gltf_m": [
+        -527.220917,
+        3.706823,
+        92.783054
+      ],
+      "size_m": [
+        3.343323,
+        1.517122,
+        2.346535
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 8,
+      "anchor_gltf_m": [
+        -485.571915,
+        10.422379,
+        224.34005
+      ],
+      "size_m": [
+        3.343353,
+        1.357653,
+        2.346542
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 9,
+      "anchor_gltf_m": [
+        -531.612915,
+        2.112206,
+        21.531054
+      ],
+      "size_m": [
+        3.343384,
+        1.582852,
+        2.34654
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 10,
+      "anchor_gltf_m": [
+        -174.682915,
+        4.294073,
+        77.573051
+      ],
+      "size_m": [
+        3.343369,
+        1.639696,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 11,
+      "anchor_gltf_m": [
+        -369.196915,
+        5.415174,
+        67.661057
+      ],
+      "size_m": [
+        3.343353,
+        1.5081,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 12,
+      "anchor_gltf_m": [
+        -617.883907,
+        3.640296,
+        188.475055
+      ],
+      "size_m": [
+        3.343384,
+        1.547324,
+        2.346527
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 13,
+      "anchor_gltf_m": [
+        -518.185913,
+        10.423925,
+        322.193054
+      ],
+      "size_m": [
+        3.343384,
+        1.484554,
+        2.346558
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 14,
+      "anchor_gltf_m": [
+        -382.503906,
+        6.762927,
+        138.560051
+      ],
+      "size_m": [
+        3.343384,
+        1.59451,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 15,
+      "anchor_gltf_m": [
+        -410.951904,
+        3.557277,
+        -12.811945
+      ],
+      "size_m": [
+        3.343384,
+        1.622296,
+        2.346541
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 16,
+      "anchor_gltf_m": [
+        -407.612915,
+        6.181973,
+        116.001053
+      ],
+      "size_m": [
+        3.343384,
+        1.567614,
+        2.346542
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 17,
+      "anchor_gltf_m": [
+        -415.942917,
+        11.641345,
+        275.595047
+      ],
+      "size_m": [
+        3.343353,
+        1.60012,
+        2.346527
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 18,
+      "anchor_gltf_m": [
+        -258.395905,
+        4.705103,
+        10.386055
+      ],
+      "size_m": [
+        3.343384,
+        1.570116,
+        2.346541
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 19,
+      "anchor_gltf_m": [
+        -500.347916,
+        10.822945,
+        296.011063
+      ],
+      "size_m": [
+        3.343353,
+        1.54378,
+        2.346527
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 20,
+      "anchor_gltf_m": [
+        -544.321899,
+        2.046479,
+        21.191054
+      ],
+      "size_m": [
+        3.343384,
+        1.585231,
+        2.34654
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 21,
+      "anchor_gltf_m": [
+        -246.220909,
+        5.043901,
+        181.586052
+      ],
+      "size_m": [
+        3.343369,
+        1.618803,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 22,
+      "anchor_gltf_m": [
+        -378.456909,
+        11.800705,
+        276.966049
+      ],
+      "size_m": [
+        3.343384,
+        1.576779,
+        2.346527
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 23,
+      "anchor_gltf_m": [
+        -295.540909,
+        5.284463,
+        141.72506
+      ],
+      "size_m": [
+        3.343353,
+        1.591001,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 24,
+      "anchor_gltf_m": [
+        -364.750916,
+        11.658636,
+        274.24205
+      ],
+      "size_m": [
+        3.343384,
+        1.6098,
+        2.346527
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 25,
+      "anchor_gltf_m": [
+        -409.086914,
+        11.656323,
+        278.662048
+      ],
+      "size_m": [
+        3.343384,
+        1.595083,
+        2.346558
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 26,
+      "anchor_gltf_m": [
+        -168.100914,
+        4.110821,
+        69.046055
+      ],
+      "size_m": [
+        3.343369,
+        1.633134,
+        2.346535
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 27,
+      "anchor_gltf_m": [
+        -150.230904,
+        3.183798,
+        76.457054
+      ],
+      "size_m": [
+        3.343369,
+        1.655948,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 28,
+      "anchor_gltf_m": [
+        -400.340912,
+        11.670969,
+        275.060059
+      ],
+      "size_m": [
+        3.343384,
+        1.611717,
+        2.346558
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 29,
+      "anchor_gltf_m": [
+        -428.951904,
+        5.813987,
+        117.413055
+      ],
+      "size_m": [
+        3.343384,
+        1.556648,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 30,
+      "anchor_gltf_m": [
+        -512.881912,
+        10.168926,
+        293.691055
+      ],
+      "size_m": [
+        3.343353,
+        1.543663,
+        2.346527
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 31,
+      "anchor_gltf_m": [
+        -277.150909,
+        6.247997,
+        191.969048
+      ],
+      "size_m": [
+        3.343384,
+        1.606645,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 32,
+      "anchor_gltf_m": [
+        -389.632904,
+        11.862034,
+        265.038055
+      ],
+      "size_m": [
+        3.343384,
+        1.608018,
+        2.346558
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 33,
+      "anchor_gltf_m": [
+        -193.747917,
+        3.817672,
+        128.487053
+      ],
+      "size_m": [
+        3.343369,
+        1.630538,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 34,
+      "anchor_gltf_m": [
+        -570.944916,
+        1.829097,
+        14.300055
+      ],
+      "size_m": [
+        3.343323,
+        1.590155,
+        2.346541
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 35,
+      "anchor_gltf_m": [
+        -504.302917,
+        8.698822,
+        229.859055
+      ],
+      "size_m": [
+        3.343384,
+        1.186157,
+        2.346527
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 36,
+      "anchor_gltf_m": [
+        -365.34491,
+        11.838018,
+        265.259048
+      ],
+      "size_m": [
+        3.343384,
+        1.61259,
+        2.346527
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 37,
+      "anchor_gltf_m": [
+        -367.164917,
+        11.930493,
+        256.613052
+      ],
+      "size_m": [
+        3.343384,
+        1.60255,
+        2.346527
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 38,
+      "anchor_gltf_m": [
+        -388.146912,
+        7.731155,
+        167.328056
+      ],
+      "size_m": [
+        3.343384,
+        1.495891,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 39,
+      "anchor_gltf_m": [
+        -436.779907,
+        6.848625,
+        151.707054
+      ],
+      "size_m": [
+        3.343384,
+        1.58967,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 40,
+      "anchor_gltf_m": [
+        -358.880905,
+        11.844497,
+        281.128052
+      ],
+      "size_m": [
+        3.343353,
+        1.512221,
+        2.346558
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 41,
+      "anchor_gltf_m": [
+        -596.947906,
+        2.579241,
+        80.026054
+      ],
+      "size_m": [
+        3.343323,
+        1.578093,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 42,
+      "anchor_gltf_m": [
+        -258.17691,
+        5.023361,
+        172.204048
+      ],
+      "size_m": [
+        3.343384,
+        1.614114,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 43,
+      "anchor_gltf_m": [
+        -456.347916,
+        8.837133,
+        200.452049
+      ],
+      "size_m": [
+        3.343353,
+        1.536603,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 44,
+      "anchor_gltf_m": [
+        -420.894913,
+        6.750033,
+        138.508049
+      ],
+      "size_m": [
+        3.343353,
+        1.570067,
+        2.346542
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 45,
+      "anchor_gltf_m": [
+        -432.944916,
+        3.555568,
+        -16.561945
+      ],
+      "size_m": [
+        3.343384,
+        1.668452,
+        2.346541
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 46,
+      "anchor_gltf_m": [
+        -498.626907,
+        9.237402,
+        224.196053
+      ],
+      "size_m": [
+        3.343353,
+        1.362489,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 47,
+      "anchor_gltf_m": [
+        -374.974915,
+        6.734482,
+        138.164055
+      ],
+      "size_m": [
+        3.343384,
+        1.592316,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 48,
+      "anchor_gltf_m": [
+        -392.646912,
+        7.084782,
+        151.62606
+      ],
+      "size_m": [
+        3.343384,
+        1.615805,
+        2.346542
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 49,
+      "anchor_gltf_m": [
+        -610.96991,
+        4.484872,
+        215.023048
+      ],
+      "size_m": [
+        3.343384,
+        1.582275,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 50,
+      "anchor_gltf_m": [
+        -524.180908,
+        3.157032,
+        68.752052
+      ],
+      "size_m": [
+        3.343384,
+        1.594322,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 51,
+      "anchor_gltf_m": [
+        -380.921906,
+        11.22115,
+        231.630058
+      ],
+      "size_m": [
+        3.343384,
+        1.584341,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 52,
+      "anchor_gltf_m": [
+        -366.275909,
+        6.639899,
+        135.314049
+      ],
+      "size_m": [
+        3.343384,
+        1.59368,
+        2.346542
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 53,
+      "anchor_gltf_m": [
+        -203.775917,
+        4.009959,
+        15.667055
+      ],
+      "size_m": [
+        3.343369,
+        1.529197,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 54,
+      "anchor_gltf_m": [
+        -636.422913,
+        6.941498,
+        307.705048
+      ],
+      "size_m": [
+        3.343384,
+        1.586135,
+        2.346558
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 55,
+      "anchor_gltf_m": [
+        -210.406914,
+        3.989264,
+        156.009056
+      ],
+      "size_m": [
+        3.343369,
+        1.608453,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 56,
+      "anchor_gltf_m": [
+        -496.034912,
+        7.039877,
+        192.217049
+      ],
+      "size_m": [
+        3.343384,
+        1.412553,
+        2.346542
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 57,
+      "anchor_gltf_m": [
+        -441.448914,
+        5.71191,
+        120.766052
+      ],
+      "size_m": [
+        3.343384,
+        1.531532,
+        2.346542
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 58,
+      "anchor_gltf_m": [
+        -195.825905,
+        4.752871,
+        86.564056
+      ],
+      "size_m": [
+        3.343369,
+        1.605536,
+        2.346542
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 59,
+      "anchor_gltf_m": [
+        -346.391907,
+        11.626083,
+        249.04705
+      ],
+      "size_m": [
+        3.343384,
+        1.600765,
+        2.346542
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 60,
+      "anchor_gltf_m": [
+        -607.982971,
+        3.872849,
+        185.970894
+      ],
+      "size_m": [
+        3.540039,
+        1.299351,
+        2.737625
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 61,
+      "anchor_gltf_m": [
+        -597.982971,
+        4.256923,
+        186.970894
+      ],
+      "size_m": [
+        3.540039,
+        1.298237,
+        2.737625
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 62,
+      "anchor_gltf_m": [
+        -520.982971,
+        5.594539,
+        186.970894
+      ],
+      "size_m": [
+        3.540039,
+        1.301602,
+        2.737625
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 63,
+      "anchor_gltf_m": [
+        -510.982971,
+        5.877736,
+        186.970894
+      ],
+      "size_m": [
+        3.540039,
+        1.302464,
+        2.737625
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 64,
+      "anchor_gltf_m": [
+        -415.982971,
+        3.861255,
+        16.970897
+      ],
+      "size_m": [
+        3.540039,
+        1.301425,
+        2.737631
+      ],
+      "form": "upright",
+      "tone": 0,
+      "clearance_cut": {
+        "direction_xz": [
+          1,
+          0
+        ],
+        "max_depth_m": 0.85
+      }
+    },
+    {
+      "layer": "understory_1",
+      "index": 65,
+      "anchor_gltf_m": [
+        -385.982971,
+        3.8361,
+        16.970897
+      ],
+      "size_m": [
+        3.540039,
+        1.30108,
+        2.737631
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 66,
+      "anchor_gltf_m": [
+        -415.982971,
+        4.27307,
+        58.970898
+      ],
+      "size_m": [
+        3.540039,
+        1.29913,
+        2.737633
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_1",
+      "index": 67,
+      "anchor_gltf_m": [
+        -385.982971,
+        4.454348,
+        58.970898
+      ],
+      "size_m": [
+        3.540039,
+        1.300352,
+        2.737633
+      ],
+      "form": "branched",
+      "tone": 3
+    },
+    {
+      "layer": "understory_1",
+      "index": 68,
+      "anchor_gltf_m": [
+        -274.982971,
+        6.030313,
+        63.970898
+      ],
+      "size_m": [
+        3.540039,
+        1.303687,
+        2.737633
+      ],
+      "form": "upright",
+      "tone": 0
+    },
+    {
+      "layer": "understory_1",
+      "index": 69,
+      "anchor_gltf_m": [
+        -269.982971,
+        6.258066,
+        64.970898
+      ],
+      "size_m": [
+        3.540039,
+        1.306934,
+        2.737633
+      ],
+      "form": "low-rounded",
+      "tone": 1
+    },
+    {
+      "layer": "understory_1",
+      "index": 70,
+      "anchor_gltf_m": [
+        -262.982971,
+        5.635748,
+        64.970898
+      ],
+      "size_m": [
+        3.540039,
+        1.306252,
+        2.737633
+      ],
+      "form": "mounded",
+      "tone": 2
+    },
+    {
+      "layer": "understory_2",
+      "index": 0,
+      "anchor_gltf_m": [
+        -608.0,
+        3.8722,
+        186.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940186
+      ],
+      "form": "fern",
+      "tone": 0
+    },
+    {
+      "layer": "understory_2",
+      "index": 1,
+      "anchor_gltf_m": [
+        -598.0,
+        4.25516,
+        187.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940186
+      ],
+      "form": "fern",
+      "tone": 1
+    },
+    {
+      "layer": "understory_2",
+      "index": 2,
+      "anchor_gltf_m": [
+        -521.0,
+        5.59614,
+        187.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940186
+      ],
+      "form": "fern",
+      "tone": 2
+    },
+    {
+      "layer": "understory_2",
+      "index": 3,
+      "anchor_gltf_m": [
+        -511.0,
+        5.8802,
+        187.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940186
+      ],
+      "form": "fern",
+      "tone": 3
+    },
+    {
+      "layer": "understory_2",
+      "index": 4,
+      "anchor_gltf_m": [
+        -416.0,
+        3.86268,
+        17.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.9402
+      ],
+      "form": "fern",
+      "tone": 0
+    },
+    {
+      "layer": "understory_2",
+      "index": 5,
+      "anchor_gltf_m": [
+        -386.0,
+        3.83718,
+        17.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.9402
+      ],
+      "form": "fern",
+      "tone": 1
+    },
+    {
+      "layer": "understory_2",
+      "index": 6,
+      "anchor_gltf_m": [
+        -416.0,
+        4.2722,
+        59.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940201
+      ],
+      "form": "fern",
+      "tone": 2
+    },
+    {
+      "layer": "understory_2",
+      "index": 7,
+      "anchor_gltf_m": [
+        -386.0,
+        4.4547,
+        59.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940201
+      ],
+      "form": "fern",
+      "tone": 3
+    },
+    {
+      "layer": "understory_2",
+      "index": 8,
+      "anchor_gltf_m": [
+        -275.0,
+        6.034,
+        64.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940201
+      ],
+      "form": "fern",
+      "tone": 0
+    },
+    {
+      "layer": "understory_2",
+      "index": 9,
+      "anchor_gltf_m": [
+        -270.0,
+        6.265,
+        65.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940201
+      ],
+      "form": "fern",
+      "tone": 1
+    },
+    {
+      "layer": "understory_2",
+      "index": 10,
+      "anchor_gltf_m": [
+        -263.0,
+        5.642,
+        65.0
+      ],
+      "size_m": [
+        2.940186,
+        1.35,
+        2.940201
+      ],
+      "form": "fern",
+      "tone": 2
+    }
+  ]
+}

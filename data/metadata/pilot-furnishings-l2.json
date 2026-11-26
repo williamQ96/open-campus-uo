@@ -1,0 +1,1476 @@
+{
+  "source_presentation_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_navigation_sha256": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+  "source_rack_sha256": "c4cdcd595370aa84e5df9a9b32175da153073d6692594c7ea9bebc281be4bab9",
+  "navigation_edge_count": 7710,
+  "campus_standard_sources": [
+    "https://cpfm.uoregon.edu/sites/default/files/2026-05/_div_32_exterior_improvements_050426.pdf",
+    "https://cpfm.uoregon.edu/sites/default/files/lighting_plan-2020.pdf",
+    "https://www.office-52.com/work/tykeson-hall-university-of-oregon/",
+    "https://www.gardenside.com/Gardenside-2011-Catalog.pdf",
+    "https://cpfm.uoregon.edu/sites/default/files/lightingplan_update03_2012_0.pdf"
+  ],
+  "placement_scope": "Representative positions within the modeled site. Existing bench and lamp anchors are retained where clear. The Tykeson rack is registered to the modeled southwest paving near the architect-documented bike parking.",
+  "models": [
+    {
+      "id": "bench-01",
+      "kind": "bench",
+      "position_enu_m": [
+        -579,
+        -59.5
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -579.762,
+        -59.82,
+        -578.238,
+        -59.18
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 2.8647,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.7947
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 2.8359,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.7659
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 2.8778,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.8078
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 2.8717,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.8017
+        }
+      ],
+      "prior_position_enu_m": [
+        -581,
+        -58
+      ],
+      "nearest_building_gap_m": 6.308,
+      "nearest_graph_edge_gap_m": 25.18,
+      "nearest_authored_approach_gap_m": 32.893,
+      "nearest_road_surface_gap_m": 44.842
+    },
+    {
+      "id": "bench-02",
+      "kind": "bench",
+      "position_enu_m": [
+        -581,
+        -131
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -581.762,
+        -131.32,
+        -580.238,
+        -130.68
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 4.7087,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 4.6237
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 4.7104,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 4.6254
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 4.7102,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 4.6252
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 4.7089,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 4.6239
+        }
+      ],
+      "prior_position_enu_m": [
+        -581,
+        -126
+      ],
+      "nearest_building_gap_m": 1.68,
+      "nearest_graph_edge_gap_m": 28.238,
+      "nearest_authored_approach_gap_m": 4.88,
+      "nearest_road_surface_gap_m": 43.106
+    },
+    {
+      "id": "bench-03",
+      "kind": "bench",
+      "position_enu_m": [
+        -530.5,
+        -100
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -531.262,
+        -100.32,
+        -529.738,
+        -99.68
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 3.8583,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.7883
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 3.849,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.779
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 3.8887,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.8187
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 3.8756,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.8056
+        }
+      ],
+      "prior_position_enu_m": [
+        -529,
+        -100
+      ],
+      "nearest_building_gap_m": 10.902,
+      "nearest_graph_edge_gap_m": 14.68,
+      "nearest_authored_approach_gap_m": 47.876,
+      "nearest_road_surface_gap_m": 86.15
+    },
+    {
+      "id": "bench-04",
+      "kind": "bench",
+      "position_enu_m": [
+        -450.5,
+        -95.5
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -451.262,
+        -95.82,
+        -449.738,
+        -95.18
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 4.4252,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.3552
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 4.4243,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.3543
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 4.4117,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.3417
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 4.3967,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.3267
+        }
+      ],
+      "prior_position_enu_m": [
+        -449,
+        -95
+      ],
+      "nearest_building_gap_m": 26.68,
+      "nearest_graph_edge_gap_m": 2.257,
+      "nearest_authored_approach_gap_m": 27.018,
+      "nearest_road_surface_gap_m": 10.922
+    },
+    {
+      "id": "bench-05",
+      "kind": "bench",
+      "position_enu_m": [
+        -422,
+        -180
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -422.762,
+        -180.32,
+        -421.238,
+        -179.68
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 8.5724,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 8.5024
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 8.5602,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 8.4902
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 8.5756,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 8.5056
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 8.5634,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 8.4934
+        }
+      ],
+      "prior_position_enu_m": [
+        -422,
+        -180
+      ],
+      "nearest_building_gap_m": 10.5,
+      "nearest_graph_edge_gap_m": 2.68,
+      "nearest_authored_approach_gap_m": 26.635,
+      "nearest_road_surface_gap_m": 91.986
+    },
+    {
+      "id": "bench-06",
+      "kind": "bench",
+      "position_enu_m": [
+        -380,
+        -96
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -380.762,
+        -96.32,
+        -379.238,
+        -95.68
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 5.8551,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 5.7851
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 5.8414,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 5.7714
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 5.8698,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 5.7998
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 5.8561,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 5.7861
+        }
+      ],
+      "prior_position_enu_m": [
+        -380,
+        -96
+      ],
+      "nearest_building_gap_m": 31.936,
+      "nearest_graph_edge_gap_m": 10.68,
+      "nearest_authored_approach_gap_m": 41.974,
+      "nearest_road_surface_gap_m": 7.405
+    },
+    {
+      "id": "bench-07",
+      "kind": "bench",
+      "position_enu_m": [
+        -317,
+        -120
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -317.762,
+        -120.32,
+        -316.238,
+        -119.68
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 5.3417,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 5.2717
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 5.3419,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 5.2719
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 5.2904,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 5.2204
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 5.2907,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 5.2207
+        }
+      ],
+      "prior_position_enu_m": [
+        -317,
+        -120
+      ],
+      "nearest_building_gap_m": 16.383,
+      "nearest_graph_edge_gap_m": 2.238,
+      "nearest_authored_approach_gap_m": 42.426,
+      "nearest_road_surface_gap_m": 5.559
+    },
+    {
+      "id": "bench-08",
+      "kind": "bench",
+      "position_enu_m": [
+        -279,
+        -27
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -279.762,
+        -27.32,
+        -278.238,
+        -26.68
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 3.1033,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.0333
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 3.1076,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.0376
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 3.1044,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.0344
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 3.1087,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.0387
+        }
+      ],
+      "prior_position_enu_m": [
+        -279,
+        -28
+      ],
+      "nearest_building_gap_m": 24.474,
+      "nearest_graph_edge_gap_m": 1.563,
+      "nearest_authored_approach_gap_m": 41.883,
+      "nearest_road_surface_gap_m": 21.233
+    },
+    {
+      "id": "bench-09",
+      "kind": "bench",
+      "position_enu_m": [
+        -277.5,
+        -67.5
+      ],
+      "size_en_m": [
+        1.524,
+        0.64
+      ],
+      "collision_enu_m": [
+        -278.262,
+        -67.82,
+        -276.738,
+        -67.18
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.545,
+            -0.219
+          ],
+          "surface_z_m": 6.3621,
+          "surface": "landscape-paving",
+          "terrain_z_m": 6.2921
+        },
+        {
+          "offset_enu_m": [
+            -0.545,
+            0.216
+          ],
+          "surface_z_m": 6.3208,
+          "surface": "landscape-paving",
+          "terrain_z_m": 6.2508
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            -0.219
+          ],
+          "surface_z_m": 6.3789,
+          "surface": "landscape-paving",
+          "terrain_z_m": 6.3089
+        },
+        {
+          "offset_enu_m": [
+            0.545,
+            0.216
+          ],
+          "surface_z_m": 6.3578,
+          "surface": "landscape-paving",
+          "terrain_z_m": 6.2878
+        }
+      ],
+      "prior_position_enu_m": [
+        -279,
+        -66
+      ],
+      "nearest_building_gap_m": 5.989,
+      "nearest_graph_edge_gap_m": 2.788,
+      "nearest_authored_approach_gap_m": 55.923,
+      "nearest_road_surface_gap_m": 22.769
+    },
+    {
+      "id": "lamp-01",
+      "kind": "lamp",
+      "position_enu_m": [
+        -573,
+        -171
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -573.255,
+        -171.255,
+        -572.745,
+        -170.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 4.6221,
+          "surface": "landscape-paving",
+          "terrain_z_m": 4.5521
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 4.6134,
+          "surface": "landscape-paving",
+          "terrain_z_m": 4.5434
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 4.6308,
+          "surface": "landscape-paving",
+          "terrain_z_m": 4.5608
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 4.6287,
+          "surface": "landscape-paving",
+          "terrain_z_m": 4.5587
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 4.6155,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.5455
+        }
+      ],
+      "prior_position_enu_m": [
+        -576,
+        -170
+      ],
+      "nearest_building_gap_m": 1.917,
+      "nearest_graph_edge_gap_m": 5.745,
+      "nearest_authored_approach_gap_m": 9.195,
+      "nearest_road_surface_gap_m": 51.829
+    },
+    {
+      "id": "lamp-02",
+      "kind": "lamp",
+      "position_enu_m": [
+        -530,
+        -170
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -530.255,
+        -170.255,
+        -529.745,
+        -169.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 4.9932,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.9232
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 4.9897,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.9197
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 4.9967,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.9267
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 4.9941,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.9241
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 4.9919,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.9219
+        }
+      ],
+      "prior_position_enu_m": [
+        -530,
+        -170
+      ],
+      "nearest_building_gap_m": 12.367,
+      "nearest_graph_edge_gap_m": 6.745,
+      "nearest_authored_approach_gap_m": 51.946,
+      "nearest_road_surface_gap_m": 94.825
+    },
+    {
+      "id": "lamp-03",
+      "kind": "lamp",
+      "position_enu_m": [
+        -574.5,
+        -100
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -574.755,
+        -100.255,
+        -574.245,
+        -99.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 3.6174,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5474
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 3.6167,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5467
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 3.6182,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5482
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 3.6335,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5635
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 3.6151,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5451
+        }
+      ],
+      "prior_position_enu_m": [
+        -576,
+        -100
+      ],
+      "nearest_building_gap_m": 2.328,
+      "nearest_graph_edge_gap_m": 14.745,
+      "nearest_authored_approach_gap_m": 24.245,
+      "nearest_road_surface_gap_m": 49.981
+    },
+    {
+      "id": "lamp-04",
+      "kind": "lamp",
+      "position_enu_m": [
+        -530,
+        -36
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -530.255,
+        -36.255,
+        -529.745,
+        -35.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 2.5192,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.4492
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 2.5194,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.4494
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 2.522,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.452
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 2.5238,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.4538
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 2.5146,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 2.4446
+        }
+      ],
+      "prior_position_enu_m": [
+        -530,
+        -36
+      ],
+      "nearest_building_gap_m": 9.383,
+      "nearest_graph_edge_gap_m": 21.745,
+      "nearest_authored_approach_gap_m": 10.229,
+      "nearest_road_surface_gap_m": 33.97
+    },
+    {
+      "id": "lamp-05",
+      "kind": "lamp",
+      "position_enu_m": [
+        -430,
+        -89
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -430.255,
+        -89.255,
+        -429.745,
+        -88.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 4.8006,
+          "surface": "terrain",
+          "terrain_z_m": 4.8006
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 4.7922,
+          "surface": "terrain",
+          "terrain_z_m": 4.7922
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 4.8038,
+          "surface": "terrain",
+          "terrain_z_m": 4.8038
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 4.8154,
+          "surface": "terrain",
+          "terrain_z_m": 4.8154
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 4.7858,
+          "surface": "terrain",
+          "terrain_z_m": 4.7858
+        }
+      ],
+      "prior_position_enu_m": [
+        -430,
+        -85
+      ],
+      "nearest_building_gap_m": 22.145,
+      "nearest_graph_edge_gap_m": 3.745,
+      "nearest_authored_approach_gap_m": 29.88,
+      "nearest_road_surface_gap_m": 1.18
+    },
+    {
+      "id": "lamp-06",
+      "kind": "lamp",
+      "position_enu_m": [
+        -360,
+        -90
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -360.255,
+        -90.255,
+        -359.745,
+        -89.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 5.6532,
+          "surface": "terrain",
+          "terrain_z_m": 5.6532
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 5.6528,
+          "surface": "terrain",
+          "terrain_z_m": 5.6528
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 5.6541,
+          "surface": "terrain",
+          "terrain_z_m": 5.6541
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 5.6633,
+          "surface": "terrain",
+          "terrain_z_m": 5.6633
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 5.6423,
+          "surface": "terrain",
+          "terrain_z_m": 5.6423
+        }
+      ],
+      "prior_position_enu_m": [
+        -360,
+        -85
+      ],
+      "nearest_building_gap_m": 17.955,
+      "nearest_graph_edge_gap_m": 4.745,
+      "nearest_authored_approach_gap_m": 29.316,
+      "nearest_road_surface_gap_m": 1.196
+    },
+    {
+      "id": "lamp-07",
+      "kind": "lamp",
+      "position_enu_m": [
+        -313,
+        -30
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -313.255,
+        -30.255,
+        -312.745,
+        -29.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 4.5445,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.4745
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 4.5487,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.4787
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 4.5403,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.4703
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 4.5508,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.4808
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 4.5375,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 4.4675
+        }
+      ],
+      "prior_position_enu_m": [
+        -313,
+        -30
+      ],
+      "nearest_building_gap_m": 30.903,
+      "nearest_graph_edge_gap_m": 7.247,
+      "nearest_authored_approach_gap_m": 30.801,
+      "nearest_road_surface_gap_m": 2.747
+    },
+    {
+      "id": "lamp-08",
+      "kind": "lamp",
+      "position_enu_m": [
+        -281,
+        -30.5
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -281.255,
+        -30.755,
+        -280.745,
+        -30.245
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 3.1455,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.0755
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 3.153,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.083
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 3.138,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.068
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 3.1616,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.0916
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 3.1294,
+          "surface": "landscape-paving",
+          "terrain_z_m": 3.0594
+        }
+      ],
+      "prior_position_enu_m": [
+        -280,
+        -30
+      ],
+      "nearest_building_gap_m": 26.093,
+      "nearest_graph_edge_gap_m": 1.451,
+      "nearest_authored_approach_gap_m": 45.269,
+      "nearest_road_surface_gap_m": 19.743
+    },
+    {
+      "id": "lamp-09",
+      "kind": "lamp",
+      "position_enu_m": [
+        -280,
+        -65
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -280.255,
+        -65.255,
+        -279.745,
+        -64.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 6.01,
+          "surface": "landscape-paving",
+          "terrain_z_m": 5.94
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 6.0001,
+          "surface": "landscape-paving",
+          "terrain_z_m": 5.9301
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 6.0206,
+          "surface": "landscape-paving",
+          "terrain_z_m": 5.9506
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 6.0309,
+          "surface": "landscape-paving",
+          "terrain_z_m": 5.9609
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 6.0076,
+          "surface": "landscape-paving",
+          "terrain_z_m": 5.9376
+        }
+      ],
+      "prior_position_enu_m": [
+        -280,
+        -65
+      ],
+      "nearest_building_gap_m": 8.682,
+      "nearest_graph_edge_gap_m": 4.745,
+      "nearest_authored_approach_gap_m": 53.541,
+      "nearest_road_surface_gap_m": 20.774
+    },
+    {
+      "id": "lamp-10",
+      "kind": "lamp",
+      "position_enu_m": [
+        -420,
+        -10
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -420.255,
+        -10.255,
+        -419.745,
+        -9.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 3.3432,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.2732
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 3.3331,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.2631
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 3.3452,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.2752
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 3.3627,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.2927
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 3.3333,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.2633
+        }
+      ],
+      "prior_position_enu_m": [
+        -420,
+        -10
+      ],
+      "nearest_building_gap_m": 18.644,
+      "nearest_graph_edge_gap_m": 11.538,
+      "nearest_authored_approach_gap_m": 30.583,
+      "nearest_road_surface_gap_m": 7.038
+    },
+    {
+      "id": "lamp-11",
+      "kind": "lamp",
+      "position_enu_m": [
+        -382,
+        -10
+      ],
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -382.255,
+        -10.255,
+        -381.745,
+        -9.745
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 3.6677,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5977
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 3.6685,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5985
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 3.6669,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5969
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 3.675,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.605
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 3.6595,
+          "surface": "landscape-lawn",
+          "terrain_z_m": 3.5894
+        }
+      ],
+      "prior_position_enu_m": [
+        -382,
+        -10
+      ],
+      "nearest_building_gap_m": 18.011,
+      "nearest_graph_edge_gap_m": 4.745,
+      "nearest_authored_approach_gap_m": 43.362,
+      "nearest_road_surface_gap_m": 6.715
+    },
+    {
+      "id": "rack-01",
+      "kind": "rack",
+      "position_enu_m": [
+        -472,
+        -65
+      ],
+      "size_en_m": [
+        2.0688,
+        0.460375
+      ],
+      "collision_enu_m": [
+        -473.0344,
+        -65.23019,
+        -470.9656,
+        -64.76981
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            -0.9144,
+            -0.2
+          ],
+          "surface_z_m": 3.1581,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 3.0731
+        },
+        {
+          "offset_enu_m": [
+            -0.9144,
+            0.2
+          ],
+          "surface_z_m": 3.1423,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 3.0573
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.2
+          ],
+          "surface_z_m": 3.1672,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 3.0822
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.2
+          ],
+          "surface_z_m": 3.1514,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 3.0664
+        },
+        {
+          "offset_enu_m": [
+            0.9144,
+            -0.2
+          ],
+          "surface_z_m": 3.1763,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 3.0913
+        },
+        {
+          "offset_enu_m": [
+            0.9144,
+            0.2
+          ],
+          "surface_z_m": 3.1605,
+          "surface": "plc-lokey-tykeson-grounds",
+          "terrain_z_m": 3.0755
+        }
+      ],
+      "nearest_building_gap_m": 2.977,
+      "nearest_graph_edge_gap_m": 19.77,
+      "nearest_authored_approach_gap_m": 15.743,
+      "nearest_road_surface_gap_m": 30.441
+    }
+  ],
+  "source_navigation_patch_sha256": "add89f7ac3f1ac40d8f725010dbb76ef0a9d66273996dc61d48535c6a42c5cfb",
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e"
+}

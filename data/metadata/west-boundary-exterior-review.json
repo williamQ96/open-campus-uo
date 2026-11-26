@@ -1,0 +1,608 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "rasters": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "city_and_ortho": {
+      "e17-625": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493299.14928888186%2C4876441.282153052%2C493359.14928888186%2C4876518.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "5e672c6d8792d42485d60095e1b00bda1a9261a87b58f954d08485b1ddf71175"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493299.14928888186%2C4876441.282153052%2C493359.14928888186%2C4876518.282153052&bboxSR=3740&imageSR=3740&size=720%2C924&format=png&bandIds=0%2C1%2C2",
+          "sha256": "008dd5811a14a6da60e5b41080f301e650b3613460a61c31a801d842822212f1"
+        }
+      },
+      "e19-631": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493300.14928888186%2C4876196.282153052%2C493375.14928888186%2C4876258.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "f2cf19941f379c1b12d674e43f7ad545aadef1b2ba8ddfb0b2374bdcf690251e"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493300.14928888186%2C4876196.282153052%2C493375.14928888186%2C4876258.282153052&bboxSR=3740&imageSR=3740&size=900%2C744&format=png&bandIds=0%2C1%2C2",
+          "sha256": "ddc091bcfa63c839b166bd165ff6060173de2e72dc673788507b76a07f408e0d"
+        }
+      }
+    },
+    "cameras": {
+      "e16-630-alley": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=yBDXEH6IHZOT3juG-2ctlQ&heading=101.91",
+        "first_building": 226904
+      },
+      "e16-638-alley": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FLxH21JnspcBTvDkxVoGzg&heading=113.11",
+        "first_building": 171252
+      },
+      "e17-625-north": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=z16DFgh5ZSfk5OGWg2Ys-Q&heading=111.76",
+        "first_building": 226904
+      },
+      "e17-625-south": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p_BQQ2irBjw2zwiYTVtUGQ&heading=17.5",
+        "first_building": 226902
+      },
+      "e17-625-southwest": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=l1X2pflKZmQUf47hHZdzBg&heading=39.15",
+        "first_building": 226902
+      },
+      "e19-631-east": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HDpWvsaln7RQvcDgfP9a7g&heading=313.63",
+        "first_building": 129749
+      },
+      "e19-631-south": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6j0hECUqeAT3xCcmLKr9Zg&heading=348.96",
+        "first_building": 129749
+      },
+      "e19-631-southeast": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_HcJxhxp3dy8V_QlbTR8QQ&heading=323.08",
+        "first_building": 129749
+      },
+      "east1919-north": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9XnuF_nFnsEZCs4K2T9I9w&heading=213.74",
+        "first_building": 129749
+      },
+      "east1919-southwest": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=rgjNvOFjjWzGY3_hBHKsFw&heading=25.64",
+        "first_building": 129749
+      },
+      "middle-nne": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FLxH21JnspcBTvDkxVoGzg&heading=106.35",
+        "first_building": 171252
+      },
+      "middle-se": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=By6Sd7muliET32o3WKJKCg&heading=314.43",
+        "first_building": 171256
+      },
+      "middle-sse": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=i3ECPheg5rjdyO29r9gz6Q&heading=338.21",
+        "first_building": 226902
+      },
+      "north-nne": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FLxH21JnspcBTvDkxVoGzg&heading=88.72",
+        "first_building": 171252
+      },
+      "north-se": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=By6Sd7muliET32o3WKJKCg&heading=326.14",
+        "first_building": 171256
+      },
+      "south-east": {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=i3ECPheg5rjdyO29r9gz6Q&heading=325.48",
+        "first_building": 226902
+      }
+    },
+    "church_broker": "https://www.cityfeet.com/cont/listing/631-e-19th-ave-eugene-or-97401/cs20806005",
+    "western_building_address": "https://healingattention.org/contact/",
+    "alley_housing_record": "https://www.realtor.com/realestateandhomes-detail/638-E-16th-Aly-1_Eugene_OR_97401_M90335-49405"
+  },
+  "models": [
+    {
+      "id": "roof-dcd48157",
+      "name": "625–627 East 17th Avenue",
+      "street_address": "625 E 17th Ave",
+      "municipal_feature": 226902,
+      "outline_enu_m": [
+        [
+          -987.25,
+          -471.724
+        ],
+        [
+          -1000.0,
+          -471.686
+        ],
+        [
+          -1000.0,
+          -457.484
+        ],
+        [
+          -987.208,
+          -457.522
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "front": {
+        "bearing": 180
+      },
+      "style": "duplex",
+      "eaves_m": 0.32,
+      "wall_color": [
+        159,
+        155,
+        116
+      ],
+      "trim_color": [
+        208,
+        200,
+        166
+      ],
+      "roof_color": [
+        145,
+        111,
+        90
+      ],
+      "porch": null,
+      "porch_recesses_enu_m": [
+        [
+          -999.6,
+          -471.74,
+          -996.76,
+          -469.97
+        ],
+        [
+          -991.08,
+          -471.77,
+          -987.95,
+          -470.0
+        ]
+      ],
+      "entry": {
+        "gate": "east-seventeenth-south-porch",
+        "near": [
+          -998.15,
+          -469.97
+        ],
+        "approach_m": 3.65,
+        "rise_m": 0.28
+      },
+      "eyebrows_enu_m": [
+        [
+          -996.72,
+          -468.69
+        ],
+        [
+          -990.82,
+          -468.72
+        ]
+      ],
+      "chimney_enu_m": [
+        -994.11,
+        -465.74,
+        -993.45,
+        -465.06
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -1001,
+            -472,
+            -986,
+            -457.1
+          ],
+          "planes": [
+            [
+              0,
+              -465.54,
+              3.92,
+              0,
+              0.565
+            ],
+            [
+              0,
+              -465.54,
+              3.92,
+              0,
+              -0.545
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -994.3,
+            -464.0,
+            -987.0,
+            -457.1
+          ],
+          "planes": [
+            [
+              -991.79,
+              0,
+              2.6,
+              0.46,
+              0
+            ],
+            [
+              -991.79,
+              0,
+              2.6,
+              -0.36,
+              0
+            ]
+          ],
+          "roof_color": [
+            139,
+            110,
+            85
+          ]
+        },
+        {
+          "bounds_m": [
+            -1001,
+            -462.5,
+            -996.2,
+            -457.1
+          ],
+          "planes": [
+            [
+              0,
+              -461.1,
+              2.5,
+              0,
+              -0.57
+            ],
+            [
+              0,
+              -461.1,
+              2.5,
+              0,
+              0.01
+            ]
+          ],
+          "roof_color": [
+            132,
+            116,
+            86
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e16-alley-634-640",
+      "name": "634–640 East 16th Alley",
+      "street_address": "638 E 16th Aly",
+      "municipal_feature": 226903,
+      "outline_enu_m": [
+        [
+          -1000.0,
+          -457.484
+        ],
+        [
+          -1000.0,
+          -442.514
+        ],
+        [
+          -991.056,
+          -442.552
+        ],
+        [
+          -991.12,
+          -457.51
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "front": {
+        "bearing": 180
+      },
+      "style": "alley-gable",
+      "eaves_m": 0.19,
+      "wall_color": [
+        164,
+        150,
+        121
+      ],
+      "trim_color": [
+        199,
+        193,
+        165
+      ],
+      "roof_color": [
+        145,
+        130,
+        108
+      ],
+      "porch": null,
+      "entry": null,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -1001,
+            -458.5,
+            -990.5,
+            -442
+          ],
+          "planes": [
+            [
+              -997.47,
+              0,
+              5.16,
+              0.54,
+              0
+            ],
+            [
+              -997.47,
+              0,
+              5.16,
+              -0.296,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e16-alley-630-632",
+      "name": "630–632 East 16th Alley",
+      "street_address": "630 E 16th Aly",
+      "municipal_feature": 226904,
+      "outline_enu_m": [
+        [
+          -992.866,
+          -437.632
+        ],
+        [
+          -992.88,
+          -441.194
+        ],
+        [
+          -999.174,
+          -441.168
+        ],
+        [
+          -999.162,
+          -438.658
+        ],
+        [
+          -1000.0,
+          -438.654
+        ],
+        [
+          -1000.0,
+          -426.878
+        ],
+        [
+          -990.686,
+          -426.918
+        ],
+        [
+          -990.73,
+          -437.642
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "front": {
+        "bearing": 180
+      },
+      "style": "alley-flat",
+      "eaves_m": 0.16,
+      "wall_color": [
+        199,
+        189,
+        155
+      ],
+      "trim_color": [
+        206,
+        199,
+        173
+      ],
+      "roof_color": [
+        169,
+        164,
+        148
+      ],
+      "porch": null,
+      "entry": null,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -1001,
+            -442,
+            -990,
+            -426
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              3.71,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-4dff8a97",
+      "name": "631 East 19th Avenue · East Building",
+      "street_address": "631 E 19th Ave",
+      "municipal_feature": 129749,
+      "outline_enu_m": [
+        [
+          -989.196,
+          -695.572
+        ],
+        [
+          -989.168,
+          -687.268
+        ],
+        [
+          -978.11,
+          -687.302
+        ],
+        [
+          -978.11,
+          -714.542
+        ],
+        [
+          -1000.0,
+          -714.518
+        ],
+        [
+          -1000.0,
+          -699.104
+        ],
+        [
+          -999.112,
+          -699.108
+        ],
+        [
+          -999.1,
+          -695.54
+        ],
+        [
+          -994.908,
+          -695.554
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "front": {
+        "bearing": 180
+      },
+      "style": "church",
+      "eaves_m": 0.17,
+      "wall_color": [
+        189,
+        178,
+        154
+      ],
+      "trim_color": [
+        215,
+        208,
+        187
+      ],
+      "roof_color": [
+        205,
+        204,
+        191
+      ],
+      "cladding_break_z_m": 0.57,
+      "porch": null,
+      "entry": null,
+      "clerestory_east_west_north_m": [
+        -978.43,
+        -995.0,
+        -696.23
+      ],
+      "tower_enu_m": [
+        -998.75,
+        -697.37,
+        -996.25,
+        -695.69
+      ],
+      "tower_z_m": 12.17,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -1000.5,
+            -715,
+            -977.5,
+            -696.24
+          ],
+          "planes": [
+            [
+              0,
+              -700,
+              7.55,
+              0,
+              0.247
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -1000.5,
+            -696.24,
+            -977.5,
+            -687
+          ],
+          "planes": [
+            [
+              0,
+              -691,
+              4.73,
+              0,
+              -0.236
+            ]
+          ],
+          "roof_color": [
+            160,
+            146,
+            124
+          ]
+        }
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-dcd48157",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-4dff8a97",
+      "target": "context-background-0-0"
+    }
+  ],
+  "source_split": {
+    "e16-alley-634-640": "roof-dcd48157",
+    "e16-alley-630-632": "roof-dcd48157"
+  }
+}

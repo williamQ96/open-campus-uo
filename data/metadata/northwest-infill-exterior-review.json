@@ -1,0 +1,627 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "address_points": "City of Eugene address and building layers",
+    "historical_surfaces": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    }
+  },
+  "models": [
+    {
+      "id": "roof-8007cb2f",
+      "name": "Phi Kappa Psi Chapter House",
+      "street_address": "729 E 11th Ave",
+      "architecture": "chapter",
+      "municipal_outline": 170794,
+      "outline_enu_m": [
+        [
+          -866.79722,
+          299.42
+        ],
+        [
+          -866.88483,
+          273.10311
+        ],
+        [
+          -845.43482,
+          273.11966
+        ],
+        [
+          -845.69325,
+          285.95737
+        ],
+        [
+          -858.78759,
+          285.94069
+        ],
+        [
+          -858.56242,
+          299.29165
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -866.9,
+            273.09,
+            -845.42,
+            286.0
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              9.77,
+              0,
+              0
+            ],
+            [
+              -866.9,
+              0,
+              7.92,
+              0.53,
+              0
+            ],
+            [
+              -845.42,
+              0,
+              7.78,
+              -0.51,
+              0
+            ],
+            [
+              0,
+              273.09,
+              7.85,
+              0,
+              0.58
+            ],
+            [
+              0,
+              286.0,
+              8.45,
+              0,
+              -0.36
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -866.91,
+            285.97,
+            -858.53,
+            299.43
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              9.75,
+              0,
+              0
+            ],
+            [
+              -866.91,
+              0,
+              7.95,
+              0.48,
+              0
+            ],
+            [
+              -858.53,
+              0,
+              8.65,
+              -0.31,
+              0
+            ],
+            [
+              0,
+              285.97,
+              9.3,
+              0,
+              0.15
+            ],
+            [
+              0,
+              299.43,
+              8.43,
+              0,
+              -0.44
+            ]
+          ]
+        }
+      ],
+      "wall_color": [
+        215,
+        215,
+        198
+      ],
+      "trim_color": [
+        231,
+        226,
+        207
+      ],
+      "roof_color": [
+        127,
+        134,
+        123
+      ],
+      "entry": {
+        "gate": "phi-psi-south-arcade",
+        "near": [
+          -854.05,
+          275.25
+        ],
+        "approach_m": 4.6,
+        "rise_m": 0.27
+      },
+      "porch": null,
+      "front": {
+        "bearing": 180,
+        "landing_width_m": 1.45
+      },
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493449.14928888186%2C4877191.282153052%2C493496.14928888186%2C4877240.282153052&bboxSR=3740&imageSR=3740&size=564%2C588&format=png&bandIds=0%2C1%2C2",
+        "sha256": "0fadc38bd7d34edea736e6bed2188d5992933f758623d99df4cef242c4b91706"
+      },
+      "elevations": [
+        "https://static1.squarespace.com/static/631fbb77b73893428e0a0a1f/t/66fd946eb1af6e276184d1e2/1727894642560/Duck%2BTales%2B-%2BFall%2B2021.pdf",
+        "https://www.oregonphipsi.org/about/overview"
+      ],
+      "street_views": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=NJNbj8X7x3fh33togEWPBA&heading=5.15"
+      ],
+      "open_bay_enu_m": [
+        -857.35,
+        272.7,
+        -850.75,
+        275.25
+      ],
+      "porch_front_enu_m": [
+        [
+          -857.35,
+          273.28
+        ],
+        [
+          -850.75,
+          273.28
+        ]
+      ],
+      "notes": "Contemporary chapter house geometry checked against 2021 alumni page 4 and July 2024 street image. Main roof has three south dormers. Rear and foundation remain approximate."
+    },
+    {
+      "id": "roof-3961d925",
+      "name": "642 East 8th Avenue",
+      "street_address": "642 E 8th Ave",
+      "architecture": "retail",
+      "municipal_outline": 170809,
+      "outline_enu_m": [
+        [
+          -978.68066,
+          552.49668
+        ],
+        [
+          -967.59426,
+          552.44834
+        ],
+        [
+          -967.68683,
+          595.00935
+        ],
+        [
+          -978.90444,
+          594.97088
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -980,
+            552.3,
+            -967.5,
+            595.15
+          ],
+          "planes": [
+            [
+              -974,
+              0,
+              4.67,
+              0.269,
+              0
+            ],
+            [
+              -974,
+              0,
+              4.67,
+              -0.268,
+              0
+            ]
+          ]
+        }
+      ],
+      "wall_color": [
+        97,
+        105,
+        103
+      ],
+      "trim_color": [
+        157,
+        157,
+        147
+      ],
+      "roof_color": [
+        122,
+        125,
+        119
+      ],
+      "entry": null,
+      "porch": null,
+      "front": {
+        "bearing": 180,
+        "landing_width_m": 1.45
+      },
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493329.14928888186%2C4877469.282153052%2C493373.14928888186%2C4877543.282153052&bboxSR=3740&imageSR=3740&size=528%2C888&format=png&bandIds=0%2C1%2C2",
+        "sha256": "0be1ddff2295e87f4e6e5897f992f45cae26094025eb74e4e5e579aa9de4a3ab"
+      },
+      "elevations": [
+        "https://www.eugene-or.gov/AgendaCenter/ViewFile/Agenda/_06262024-1256",
+        "https://www.loopnet.com/Listing/642-E-8th-Ave-Eugene-OR/34657758/"
+      ],
+      "street_views": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=y-Zb-Btk6iEE8xEe_j_FwA&heading=243.5"
+      ],
+      "open_bay_enu_m": [
+        -970.42,
+        590.84,
+        -966.9,
+        595.4
+      ],
+      "porch_front_enu_m": [
+        [
+          -967.76,
+          590.84
+        ],
+        [
+          -967.76,
+          595.0
+        ]
+      ],
+      "notes": "Post-2025 cladding follows the dated renovation listing while the aerial and historic surfaces constrain the ridge. Northeast covered corner is visibly recessed. Current tenancy and door access are unverified."
+    },
+    {
+      "id": "roof-d830368a",
+      "name": "1414 Alder Street / 790 E 14th Ave",
+      "street_address": "1414 Alder St",
+      "architecture": "mixed",
+      "municipal_outline": 170379,
+      "outline_enu_m": [
+        [
+          -769.18596,
+          -150.62371
+        ],
+        [
+          -769.1893,
+          -145.01652
+        ],
+        [
+          -767.91918,
+          -145.01581
+        ],
+        [
+          -767.92364,
+          -137.8199
+        ],
+        [
+          -769.20075,
+          -137.82091
+        ],
+        [
+          -769.20446,
+          -132.19453
+        ],
+        [
+          -795.19417,
+          -132.21057
+        ],
+        [
+          -795.19312,
+          -134.1153
+        ],
+        [
+          -807.26431,
+          -134.12285
+        ],
+        [
+          -807.26192,
+          -137.86861
+        ],
+        [
+          -808.77075,
+          -137.86944
+        ],
+        [
+          -808.76639,
+          -144.84764
+        ],
+        [
+          -807.22257,
+          -144.84667
+        ],
+        [
+          -807.22026,
+          -148.78414
+        ],
+        [
+          -795.21247,
+          -148.77668
+        ],
+        [
+          -795.21147,
+          -150.63991
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -809,
+            -151,
+            -767.8,
+            -132
+          ],
+          "planes": [
+            [
+              0,
+              -142.8,
+              8.24,
+              0,
+              0.12
+            ],
+            [
+              0,
+              -142.8,
+              8.24,
+              0,
+              -0.105
+            ]
+          ]
+        }
+      ],
+      "wall_color": [
+        176,
+        184,
+        179
+      ],
+      "trim_color": [
+        127,
+        148,
+        157
+      ],
+      "roof_color": [
+        174,
+        180,
+        173
+      ],
+      "entry": null,
+      "porch": null,
+      "front": {
+        "bearing": 180,
+        "landing_width_m": 1.45
+      },
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493507.14928888186%2C4876765.282153052%2C493572.14928888186%2C4876807.282153052&bboxSR=3740&imageSR=3740&size=780%2C504&format=png&bandIds=0%2C1%2C2",
+        "sha256": "a1d5484690a7d5ccef5f63f04889f663f2e8c88e61e8e8689dfe158010003a6a"
+      },
+      "elevations": [
+        "https://traveloregon.com/things-to-do/eat-drink/restaurants/pegasus-smokehouse-pizza-university/",
+        "https://www.pegasuspizza.net/"
+      ],
+      "street_views": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=w1GR9cvLuxUGbxUlsh5fQA&heading=262.32",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=x2l3FJXrD5gAQ1TS48FpqQ&heading=180.43"
+      ],
+      "open_bay_enu_m": [
+        -773.0,
+        -145.8,
+        -766.9,
+        -137.1
+      ],
+      "secondary_address": "790 E 14th Ave",
+      "notes": "Alder side exterior stair and open parking recess, street-side gallery and red canopy. The north storefront remains a dated scene detail after the operator reported closure in June 2026. Current tenant and sign are unverified."
+    },
+    {
+      "id": "roof-ec27d788",
+      "name": "Eugene Steam Plant",
+      "street_address": "701 Annie Mims Ln",
+      "architecture": "steam",
+      "municipal_outline": 229077,
+      "outline_enu_m": [
+        [
+          -947.35577,
+          737.43967
+        ],
+        [
+          -995.06296,
+          775.50404
+        ],
+        [
+          -1009.52219,
+          757.38186
+        ],
+        [
+          -987.51046,
+          739.8192
+        ],
+        [
+          -992.2411,
+          733.84423
+        ],
+        [
+          -980.28092,
+          724.37486
+        ],
+        [
+          -983.25701,
+          720.78233
+        ],
+        [
+          -969.99184,
+          709.79345
+        ],
+        [
+          -961.98793,
+          719.45542
+        ],
+        [
+          -961.815,
+          719.31748
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -998,
+          763
+        ],
+        "axis": [
+          0.782,
+          -0.623
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -20,
+            -30,
+            34.0,
+            12
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              13.43,
+              0,
+              -0.009
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            34.0,
+            -30,
+            58,
+            12
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              14.67,
+              0.002,
+              -0.024
+            ]
+          ],
+          "roof_color": [
+            115,
+            120,
+            117
+          ]
+        }
+      ],
+      "wall_color": [
+        193,
+        188,
+        163
+      ],
+      "trim_color": [
+        204,
+        198,
+        174
+      ],
+      "roof_color": [
+        127,
+        131,
+        123
+      ],
+      "entry": null,
+      "porch": null,
+      "front": {
+        "bearing": 180,
+        "landing_width_m": 1.45
+      },
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493329.14928888186%2C4877628.282153052%2C493389.14928888186%2C4877714.282153052&bboxSR=3740&imageSR=3740&size=720%2C1032&format=png&bandIds=0%2C1%2C2",
+        "sha256": "625d50e9efa5a907f81cc72dca6073ea242625c046b94f6a070e1971e363f63b"
+      },
+      "elevations": [
+        "https://www.eugene-or.gov/3875/Downtown-Riverfront-Steam-Plant",
+        "https://www.eugene-or.gov/DocumentCenter/View/39806",
+        "https://www.eugene-or.gov/DocumentCenter/View/39762"
+      ],
+      "street_views": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIHM0ogKEICAgICp_NCucg&heading=257.89"
+      ],
+      "notes": "Existing concrete-and-steel building before the redevelopment. Industrial window banks, dated blocked lower openings and two main roof elevations. City drawings and dated street image guide form. Visible trim elevations remain approximate."
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-8007cb2f",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-3961d925",
+      "target": "context-background-0-3"
+    },
+    {
+      "id": "roof-d830368a",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-ec27d788",
+      "target": "context-background-0-3"
+    }
+  ]
+}

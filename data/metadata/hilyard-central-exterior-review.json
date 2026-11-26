@@ -1,0 +1,346 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_split": {
+    "hilyard-apartments-971": "roof-9feed235"
+  },
+  "source_ranges": [
+    {
+      "id": "roof-9feed235",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-eab27ea2",
+      "target": "context-background-0-2"
+    }
+  ],
+  "sources": {
+    "city_footprints": {
+      "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493363.14928888186%2C4877293.282153052%2C493499.14928888186%2C4877355.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=OBJECTID&spatialRel=esriSpatialRelIntersects&returnGeometry=true",
+      "sha256": "e39e94320b03a7b4ddba8194997eb00e4876a94a8df53e8f318dc7cd083d966c"
+    },
+    "aerial_2024": {
+      "bounds_enu_m": [
+        -930,
+        345,
+        -819,
+        443
+      ],
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493399.14928888186%2C4877273.282153052%2C493510.14928888186%2C4877371.282153052&bboxSR=3740&imageSR=3740&size=888%2C784&format=png&bandIds=0%2C1%2C2",
+      "sha256": "8eec5158d9512c0be5e65449a914c7e49f24cf077a5d6d59b8748293299a1605"
+    },
+    "historical_grids": {
+      "campus-2013-2015-surface-screen.npz": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+      "campus-2017-usace-surface.npz": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+      "campus-dogami-lane-county-surface.npz": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    },
+    "panoramas": [
+      {
+        "date": "2020-11",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=oj-FXKPaxVd5Aw6HqJqi9g&heading=270",
+        "observed": "Alder Alley west view separates the north three-storey walk-up, central two-storey red brick building and south tan end wall with external stair."
+      },
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lseZZJSDv4wjhvFS9itHsQ&heading=90",
+        "observed": "Hilyard west view gives public north driveway context. 973 occupies foreground. 957 is behind trees."
+      },
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HZelz5IYnWT2XS99nv0QZA&heading=82",
+        "observed": "From Hilyard the 975 wing is set behind the landscaped front and paved access. This corroborates its setback."
+      }
+    ],
+    "historical_leasing": "https://oregonnews.uoregon.edu/lccn/2004260239/1993-05-25/ed-1/seq-7.pdf"
+  },
+  "models": [
+    {
+      "id": "roof-9feed235",
+      "name": "Hilyard Apartments · 957 Hilyard",
+      "street_address": "957 Hilyard St",
+      "city_footprint": 149932,
+      "outline_enu_m": [
+        [
+          -836.8846,
+          416.5071
+        ],
+        [
+          -865.6587,
+          416.724
+        ],
+        [
+          -865.7399,
+          405.9339
+        ],
+        [
+          -836.966,
+          405.7169
+        ],
+        [
+          -836.8846,
+          416.5071
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -851.31228,
+          411.22048
+        ],
+        "axis": [
+          0.9989685,
+          -0.0454077
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -26,
+            -18,
+            26,
+            18
+          ],
+          "planes": [
+            [
+              0,
+              0.673,
+              8.012,
+              0,
+              -0.286
+            ],
+            [
+              0,
+              0.673,
+              8.012,
+              0,
+              0.322
+            ],
+            [
+              -10.9,
+              0,
+              8.012,
+              0.228,
+              0
+            ],
+            [
+              6.514,
+              0,
+              8.012,
+              -0.323,
+              0
+            ]
+          ]
+        }
+      ],
+      "style": "three-storey",
+      "gallery": {
+        "outward": [
+          0,
+          -1
+        ],
+        "level_count": 2
+      },
+      "entrance": {
+        "gate": "south-approach",
+        "near_enu_m": [
+          -859.5,
+          406.1
+        ],
+        "outward_degrees": 180,
+        "landing_m": 2.36,
+        "threshold_above_grade_m": 0.08,
+        "width_m": 1.26,
+        "landing_only": false
+      }
+    },
+    {
+      "id": "hilyard-apartments-971",
+      "name": "Hilyard Apartments · 971 Hilyard",
+      "street_address": "971 Hilyard St",
+      "city_footprint": 178620,
+      "outline_enu_m": [
+        [
+          -861.5378,
+          391.1564
+        ],
+        [
+          -844.4131,
+          391.1412
+        ],
+        [
+          -844.4051,
+          400.2128
+        ],
+        [
+          -861.5298,
+          400.2278
+        ],
+        [
+          -861.5378,
+          391.1564
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -852.97142,
+          395.68455
+        ],
+        "axis": [
+          0.9989685,
+          -0.0454077
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -26,
+            -18,
+            26,
+            18
+          ],
+          "planes": [
+            [
+              0,
+              0.279,
+              6.624,
+              0,
+              -0.541
+            ],
+            [
+              0,
+              0.279,
+              6.624,
+              0,
+              0.557
+            ],
+            [
+              -4.255,
+              0,
+              6.624,
+              0.545,
+              0
+            ],
+            [
+              3.666,
+              0,
+              6.624,
+              -0.594,
+              0
+            ]
+          ]
+        }
+      ],
+      "style": "brick",
+      "gallery": null,
+      "entrance": {
+        "gate": "north-approach",
+        "near_enu_m": [
+          -853.8,
+          400.25
+        ],
+        "outward_degrees": 0,
+        "landing_m": 1.65,
+        "threshold_above_grade_m": 0.055,
+        "width_m": 1.26,
+        "landing_only": true
+      }
+    },
+    {
+      "id": "roof-eab27ea2",
+      "name": "975 Hilyard St",
+      "street_address": "975 Hilyard St",
+      "city_footprint": 170820,
+      "outline_enu_m": [
+        [
+          -868.3098,
+          374.5004
+        ],
+        [
+          -841.3732,
+          374.4767
+        ],
+        [
+          -841.3642,
+          384.5664
+        ],
+        [
+          -868.301,
+          384.5901
+        ],
+        [
+          -868.3098,
+          374.5004
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -854.83705,
+          379.53341
+        ],
+        "axis": [
+          0.9989685,
+          -0.0454077
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -26,
+            -18,
+            26,
+            18
+          ],
+          "planes": [
+            [
+              0,
+              0.368,
+              5.106,
+              0,
+              -0.319
+            ],
+            [
+              0,
+              0.368,
+              5.106,
+              0,
+              0.306
+            ],
+            [
+              -7.966,
+              0,
+              5.106,
+              0.263,
+              0
+            ],
+            [
+              7.965,
+              0,
+              5.106,
+              -0.302,
+              0
+            ]
+          ]
+        }
+      ],
+      "style": "stucco",
+      "gallery": {
+        "outward": [
+          0,
+          1
+        ],
+        "level_count": 1
+      },
+      "entrance": {
+        "gate": "north-approach",
+        "near_enu_m": [
+          -862.8,
+          384.45
+        ],
+        "outward_degrees": 0,
+        "landing_m": 2.26,
+        "threshold_above_grade_m": 0.07,
+        "width_m": 1.26,
+        "landing_only": false
+      }
+    }
+  ]
+}

@@ -7,7 +7,7 @@ test("seat refinement loads with full campus and keeps the original budget", asy
   const p = page.waitForResponse((r) =>
     r.url().endsWith("/pilot-bench-seat-suppression.json"),
   );
-  await page.goto("/");
+  await page.goto("/?exterior-review=furniture-baseline");
   await page.waitForFunction(() => window.__campus?.getState().ready);
   expect((await p).status()).toBe(200);
   await page.locator("#settings-open").click();

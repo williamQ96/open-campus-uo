@@ -5,6 +5,7 @@ data/asset-sources/campus-life/CC0-1.0.txt -text -whitespace
 # Preserve exact bytes for source-pinned runtime layers and archived authoring snapshots.
 apps/web-preview/public/scene/*.json -text
 apps/web-preview/public/scene/**/site.json -text
+apps/web-preview/public/scene/paving-corridors-l2/surfaces.json -text
 assets/exterior-refinement/** -text
 assets/vegetation-refinement/** -text
 apps/web-preview/public/viewer-profile.json -text

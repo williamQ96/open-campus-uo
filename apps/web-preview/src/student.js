@@ -4,6 +4,7 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { clipTimeFromPhase } from "./ambience.js";
 import { clone } from "three/addons/utils/SkeletonUtils.js";
+import { createStudentWalk } from "./student-walk.js";
 
 export async function loadStudentFactory(
   url,
@@ -13,7 +14,7 @@ export async function loadStudentFactory(
     ? footfall_phase_offset
     : 0;
   const asset = await new GLTFLoader().loadAsync(url);
-  return (properties = null) => {
+  return (properties = null, { plantFeet = false } = {}) => {
     const p = properties && typeof properties === "object" ? properties : null;
     const toteFollowers = [];
     const root = new THREE.Group(),
@@ -101,7 +102,7 @@ export async function loadStudentFactory(
       }
       const head = body.getObjectByName("Head"),
         chest = body.getObjectByName("Chest");
-      if (head) {
+      if (head && p.hair !== "none") {
         const pos = head.getWorldPosition(new THREE.Vector3()),
           hair = new THREE.Group(),
           mat = material(p.hairColor);
@@ -251,6 +252,11 @@ export async function loadStudentFactory(
     idle.play();
     walk.play();
     walk.setEffectiveWeight(0);
+    let fittedWalk = null;
+    if (plantFeet && p?.gait === "walk") {
+      mixer.update(0);
+      fittedWalk = createStudentWalk(root, body, height);
+    }
     let last = 0,
       weight = 0,
       phase = 0,
@@ -269,7 +275,7 @@ export async function loadStudentFactory(
               (gait.running ? 4 : 2.6)) *
             Math.PI *
             2;
-        const target = moving ? (gait.running ? 1 : 0.52) : 0;
+        const target = moving && !fittedWalk ? (gait.running ? 1 : 0.52) : 0;
         weight += (target - weight) * (1 - Math.exp(-dt * 15));
         idle.setEffectiveWeight(1 - weight);
         walk.setEffectiveWeight(weight);
@@ -279,7 +285,9 @@ export async function loadStudentFactory(
           walk.getClip().duration,
           contactOffset,
         );
+        fittedWalk?.restore();
         mixer.update(dt);
+        fittedWalk?.apply(gait.distanceM ?? 0, dt, moving);
         for (const { hand, group, ratio } of toteFollowers) {
           root.updateMatrixWorld(true);
           const target = hand
@@ -302,12 +310,13 @@ export async function loadStudentFactory(
         for (const r of owned) r.dispose();
         root.removeFromParent();
       },
-      gaitState: () => ({
-        phase,
-        blend: weight,
-        phaseOffset: contactOffset,
-        clipCycle: walk.time / walk.getClip().duration,
-      }),
+      gaitState: () =>
+        fittedWalk?.state() ?? {
+          phase,
+          blend: weight,
+          phaseOffset: contactOffset,
+          clipCycle: walk.time / walk.getClip().duration,
+        },
     };
   };
 }

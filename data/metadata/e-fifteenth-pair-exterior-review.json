@@ -1,0 +1,402 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_ranges": [
+    {
+      "target": "context-background-0-1",
+      "id": "roof-0c745864"
+    }
+  ],
+  "new_building_ids": [
+    "east-fifteenth-alley-apartments"
+  ],
+  "evidence": {
+    "city_outlines": {
+      "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493429.14928888186%2C4876609.282153052%2C493521.14928888186%2C4876702.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+      "status": 200,
+      "sha256": "b11f5dba9d5c2a3fbd729f49bea3565f27a618bfd1b2cf191954af53bae1295f",
+      "bytes": 6761
+    },
+    "osip_2024": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493429.14928888186%2C4876609.282153052%2C493521.14928888186%2C4876702.282153052&bboxSR=3740&imageSR=3740&size=920%2C930&format=png&bandIds=0%2C1%2C2",
+      "status": 200,
+      "sha256": "167262f6abf9188df683ccd45ca05102672ba6d01b280292e38bb6c2c9b97e81",
+      "bytes": 816886
+    },
+    "city_parcels": {
+      "url": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/ArcGIS/rest/services/EugTaxlots/FeatureServer/0/query?f=json&where=maptaxlot+IN+%28%271703323401900%27%2C%271703323401901%27%2C%271703323401902%27%29&outFields=maptaxlot&returnGeometry=true&outSR=3740",
+      "sha256": "89b3f4be23187afff018556785e5d34a14628eb57db045f8a870fe4b8ec5ef0c",
+      "footprint_overlap_m2": {
+        "1703323401900": {
+          "170401": 0.0,
+          "170420": 69.95
+        },
+        "1703323401901": {
+          "170401": 498.83,
+          "170420": 0.0
+        },
+        "1703323401902": {
+          "170401": 0.0,
+          "170420": 81.8
+        }
+      }
+    },
+    "historical_grids": {
+      "campus-2013-2015-surface-screen.npz": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+      "campus-dogami-lane-county-surface.npz": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    },
+    "address_points": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/ArcGIS/rest/services/EugAddress/FeatureServer/0",
+    "panoramas": [
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FkwxjAUh21jK_tTn9Wy-yw&heading=180",
+        "observed": "North street face has two inward-rising sheds, vertical cladding, a bridge and slatted cover between wings, lower parking and a metal gate. A 750 plate is visible beside the passage."
+      },
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=fwO4YT7IBNigdxtm6s8ftQ&heading=0",
+        "observed": "Alley facade shows two brown gabled wings, three window levels and an open timber stair with central railings."
+      }
+    ],
+    "leases": "https://www.apartments.com/750-e-15th-ave-eugene-or/m3zn9pj/",
+    "identity": "Number 750 is shown in the street panorama and listing photograph at the northern face. Municipal 750 unit points fall in the two southern taxlots. Six 758 unit points fall in the northern taxlot. The modeled street and alley buildings use geographic names until the building number or shared entrance association is verified."
+  },
+  "models": [
+    {
+      "id": "roof-0c745864",
+      "name": "E 15th Apartments · Street Building",
+      "street_address": "E 15th Ave",
+      "city_footprint": 170401,
+      "role": "street",
+      "center_e_m": -825.4,
+      "entrance": {
+        "gate": "street-approach",
+        "anchor_enu_m": [
+          -825.4,
+          -254.8
+        ],
+        "bearing": 0,
+        "distance_m": 2.2
+      },
+      "outline_enu_m": [
+        [
+          -833.7399799854029,
+          -279.57486133277416
+        ],
+        [
+          -814.5354848977295,
+          -279.6028280640021
+        ],
+        [
+          -814.5107972837286,
+          -262.81161418557167
+        ],
+        [
+          -815.847799875075,
+          -262.8097153212875
+        ],
+        [
+          -815.8358571395511,
+          -254.65867899917066
+        ],
+        [
+          -836.2776524801156,
+          -254.62873774766922
+        ],
+        [
+          -836.2906559191179,
+          -263.528331451118
+        ],
+        [
+          -834.6693252084078,
+          -263.53084499109536
+        ],
+        [
+          -834.6811403613538,
+          -271.7330794520676
+        ],
+        [
+          -833.7285666821408,
+          -271.734451145865
+        ],
+        [
+          -833.7399799854029,
+          -279.57486133277416
+        ]
+      ],
+      "wings": [
+        {
+          "origin_enu_m": [
+            -825.8,
+            -271.0
+          ],
+          "outline_enu_m": [
+            [
+              -833.73998,
+              -279.57486
+            ],
+            [
+              -826.5,
+              -279.5854
+            ],
+            [
+              -826.5,
+              -254.64306
+            ],
+            [
+              -836.27765,
+              -254.62874
+            ],
+            [
+              -836.29066,
+              -263.52833
+            ],
+            [
+              -834.66933,
+              -263.53084
+            ],
+            [
+              -834.68114,
+              -271.73308
+            ],
+            [
+              -833.72857,
+              -271.73445
+            ],
+            [
+              -833.73998,
+              -279.57486
+            ]
+          ],
+          "roof_planes": [
+            [
+              0,
+              0,
+              11.115,
+              0.21,
+              0.039
+            ]
+          ]
+        },
+        {
+          "origin_enu_m": [
+            -824.0,
+            -271.0
+          ],
+          "outline_enu_m": [
+            [
+              -815.83586,
+              -254.65868
+            ],
+            [
+              -824.05,
+              -254.64665
+            ],
+            [
+              -824.05,
+              -279.58897
+            ],
+            [
+              -814.53548,
+              -279.60283
+            ],
+            [
+              -814.5108,
+              -262.81161
+            ],
+            [
+              -815.8478,
+              -262.80972
+            ],
+            [
+              -815.83586,
+              -254.65868
+            ]
+          ],
+          "roof_planes": [
+            [
+              0,
+              0,
+              10.808,
+              -0.297,
+              -0.019
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "east-fifteenth-alley-apartments",
+      "name": "E 15th Apartments · Alley Building",
+      "street_address": "E 15th Alley",
+      "city_footprint": 170420,
+      "role": "alley",
+      "center_e_m": -823.32,
+      "entrance": {
+        "gate": "alley-approach",
+        "anchor_enu_m": [
+          -823.32,
+          -292.22
+        ],
+        "bearing": 180,
+        "distance_m": 2.08
+      },
+      "outline_enu_m": [
+        [
+          -833.2087433371344,
+          -283.46574108023196
+        ],
+        [
+          -833.1707946239621,
+          -292.0889052823186
+        ],
+        [
+          -824.303854032536,
+          -292.0498812329024
+        ],
+        [
+          -824.3050675124396,
+          -291.73110647592694
+        ],
+        [
+          -822.2103703916655,
+          -291.72189252637327
+        ],
+        [
+          -822.208601204853,
+          -292.12965376023203
+        ],
+        [
+          -814.680725779559,
+          -292.0966924484819
+        ],
+        [
+          -814.7187194930157,
+          -283.4519288651645
+        ],
+        [
+          -822.2711916017579,
+          -283.4850242305547
+        ],
+        [
+          -822.2572524318821,
+          -286.6796181378886
+        ],
+        [
+          -824.4592412221245,
+          -286.68923408538103
+        ],
+        [
+          -824.473691476509,
+          -283.4272531103343
+        ],
+        [
+          -833.2087433371344,
+          -283.46574108023196
+        ]
+      ],
+      "wings": [
+        {
+          "origin_enu_m": [
+            -829.25,
+            -271.0
+          ],
+          "outline_enu_m": [
+            [
+              -833.17079,
+              -292.08891
+            ],
+            [
+              -824.42,
+              -292.05039
+            ],
+            [
+              -824.42,
+              -286.68906
+            ],
+            [
+              -824.45924,
+              -286.68923
+            ],
+            [
+              -824.47369,
+              -283.42725
+            ],
+            [
+              -833.20874,
+              -283.46574
+            ],
+            [
+              -833.17079,
+              -292.08891
+            ]
+          ],
+          "roof_planes": [
+            [
+              0,
+              0,
+              10.62,
+              0.19,
+              0
+            ],
+            [
+              0,
+              0,
+              10.62,
+              -0.22,
+              0
+            ]
+          ]
+        },
+        {
+          "origin_enu_m": [
+            -819.84,
+            -271.0
+          ],
+          "outline_enu_m": [
+            [
+              -814.71872,
+              -283.45193
+            ],
+            [
+              -822.21,
+              -283.48476
+            ],
+            [
+              -822.21,
+              -291.80726
+            ],
+            [
+              -822.2086,
+              -292.12965
+            ],
+            [
+              -814.68073,
+              -292.09669
+            ],
+            [
+              -814.71872,
+              -283.45193
+            ]
+          ],
+          "roof_planes": [
+            [
+              0,
+              0,
+              10.51,
+              0.29,
+              -0.002
+            ],
+            [
+              0,
+              0,
+              10.51,
+              -0.23,
+              -0.002
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

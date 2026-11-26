@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const chapman = "roof-f5cea51d";
 const condon = "roof-7ffcf31b";
@@ -27,7 +28,7 @@ test("the Memorial Quad exteriors keep their IDs and clear approaches below the 
 }) => {
   await ready(page);
   const actual = await page.evaluate(read, ids);
-  expect(actual.buildings).toBe(519);
+  expect(actual.buildings).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(actual.collision).toEqual([true, false, true, false, true, false]);
   expect(actual.doors.map(({ gate }) => gate).sort()).toEqual([
     "chapman-north",

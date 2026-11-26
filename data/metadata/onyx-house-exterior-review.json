@@ -1,0 +1,459 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "operator": "https://www.faithcenter.org/onyx",
+    "university_directory": "https://dos.uoregon.edu/off-campus-index",
+    "operator_yard_view": {
+      "url": "https://images.squarespace-cdn.com/content/v1/62e6b09e5d92082031249f51/96a94d7a-30a8-48a9-b789-c3588e7c5d41/img-8056_orig.jpeg?format=1000w",
+      "sha256": "fff17d44a67bd02eab563f50531cdcd6a5bcd083fcb1571aecbd395b5ddd8646",
+      "page": "https://www.faithcenter.org/onyx"
+    },
+    "municipal_outline": 224683,
+    "maptaxlot": "1803051200900",
+    "municipal_addresses": [
+      "1850 Onyx Street",
+      "1852 Onyx Street"
+    ],
+    "municipal_and_county_queries": [
+      {
+        "file": "onyx-1850-city.json",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494057.14928888186%2C4876227.282153052%2C494163.14928888186%2C4876324.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "120853de179e5a99d870c11f40fc202e42c9f2fa33ecf5a1d5c68f1f91562f70"
+      },
+      {
+        "file": "onyx-1850-county.json",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494057.14928888186%2C4876227.282153052%2C494163.14928888186%2C4876324.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+        "sha256": "9ee909ec024fbb66bced1284eddd3c1bbdc68074c8e304ab3b9b6352102b4503"
+      },
+      {
+        "file": "onyx-1850-lane-2017.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494057.14928888186%2C4876227.282153052%2C494163.14928888186%2C4876324.282153052&bboxSR=3740&imageSR=3740&size=1060%2C970&layers=show%3A29&format=png32&transparent=true",
+        "sha256": "13bc42898393c986c16915c8a01c14c0386819fdd3c9d3bf1e8663b85db8f1dc",
+        "year": 2017,
+        "layer": 29,
+        "nontransparent_fraction": 1.0
+      },
+      {
+        "file": "onyx-1850-lane-2021.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494057.14928888186%2C4876227.282153052%2C494163.14928888186%2C4876324.282153052&bboxSR=3740&imageSR=3740&size=1060%2C970&layers=show%3A26&format=png32&transparent=true",
+        "sha256": "b07faecf742d77a78db84bf7c50bf35121f0813881252751b9579b6a2a9b6d0c",
+        "year": 2021,
+        "layer": 26,
+        "nontransparent_fraction": 0.99227
+      },
+      {
+        "file": "onyx-1850-lane-2025.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494057.14928888186%2C4876227.282153052%2C494163.14928888186%2C4876324.282153052&bboxSR=3740&imageSR=3740&size=1060%2C970&layers=show%3A57&format=png32&transparent=true",
+        "sha256": "d4f18f7b33c8600f201d8cc08a207bbda101279cdc4af095c31391c85970580b",
+        "year": 2025,
+        "layer": 57,
+        "nontransparent_fraction": 1.0
+      }
+    ],
+    "survey_surfaces": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "street_views": [
+      {
+        "date": "2020-11",
+        "id": "3AGEfw-J4gFXoMQ2dAFpuw",
+        "camera_enu": [
+          -185.05374640517402,
+          -654.1774003403261
+        ],
+        "bearing": 277.78,
+        "distance": 16.1,
+        "file": "street-center-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=3AGEfw-J4gFXoMQ2dAFpuw&heading=277.78",
+        "sha256": "ff856e92231ef304c31817da7f76dd9e27c03d8838fe23b8cae2467c84b2ea90"
+      },
+      {
+        "date": "2020-11",
+        "id": "jCguy2wt9WBtDMsfG9jwrw",
+        "camera_enu": [
+          -185.11656525789294,
+          -643.8345975019038
+        ],
+        "bearing": 257.99,
+        "distance": 15.2,
+        "file": "street-north-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jCguy2wt9WBtDMsfG9jwrw&heading=257.99",
+        "sha256": "ba83ce5daeec4a01fcbba98d60fd0a57e05a583dd8abb903921aa438b14a044a"
+      },
+      {
+        "date": "2020-11",
+        "id": "_fGQ-Z8hUBPTwOMiiJq3pA",
+        "camera_enu": [
+          -184.93112547782948,
+          -663.9747136253864
+        ],
+        "bearing": 280.21,
+        "distance": 22.4,
+        "file": "street-south-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_fGQ-Z8hUBPTwOMiiJq3pA&heading=280.21",
+        "sha256": "9ba41ea686ff198d22703025ba3764d03dcb78c4ae4ed26697e85a192bd47b72"
+      },
+      {
+        "date": "2024-07",
+        "id": "LpFBAkVNWLnwOdHgYefagg",
+        "camera_enu": [
+          -245.05794791394146,
+          -659.2915382105857
+        ],
+        "bearing": 83.79,
+        "distance": 21.2,
+        "file": "alley-southwest-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=LpFBAkVNWLnwOdHgYefagg&heading=83.79",
+        "sha256": "35e0ba4c957f999a267ac9b09006d1ffad06f56ef9457a3b3ef81c698ea0ff74"
+      },
+      {
+        "date": "2024-07",
+        "id": "3Jz30DHpu8DUsxAAsUeysA",
+        "camera_enu": [
+          -245.1571874161018,
+          -648.7490602321923
+        ],
+        "bearing": 97.02,
+        "distance": 10.2,
+        "file": "alley-west-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=3Jz30DHpu8DUsxAAsUeysA&heading=97.02",
+        "sha256": "8d2d372876fbcab9646add8e555a29ed2301503507e259d47297cfbdb3474e9b"
+      },
+      {
+        "date": "2024-07",
+        "id": "aHO60HZZEYPBYLTh-2Ei-w",
+        "camera_enu": [
+          -183.1958050415269,
+          -651.0768595729023
+        ],
+        "bearing": 267.03,
+        "distance": 17.8,
+        "file": "street-center-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=aHO60HZZEYPBYLTh-2Ei-w&heading=267.03",
+        "sha256": "ec5140fcb7254cb26fd4dbb0413ff2404f9a79ca3efe9b8df6a64eaacf6ab72a"
+      },
+      {
+        "date": "2024-07",
+        "id": "_Yqcf9KKVFKYshdnEsAqlQ",
+        "camera_enu": [
+          -183.20426877349382,
+          -641.4701338121668
+        ],
+        "bearing": 251.78,
+        "distance": 17.7,
+        "file": "street-north-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_Yqcf9KKVFKYshdnEsAqlQ&heading=251.78",
+        "sha256": "2574ace0a88bb33657b067a0aed18fa710d3f4239292f6badfd95992bab9efbc"
+      },
+      {
+        "date": "2024-07",
+        "id": "JQk8ADB2GWkrLhU2QaPo_Q",
+        "camera_enu": [
+          -183.19200325687416,
+          -661.2992842141539
+        ],
+        "bearing": 273.12,
+        "distance": 23.8,
+        "file": "street-south-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JQk8ADB2GWkrLhU2QaPo_Q&heading=273.12",
+        "sha256": "dbe5b85d82f0cbdf6af4935a00dd2742190190af71b921fd8bd7b74327cfdac5"
+      }
+    ],
+    "notes": "The main roof is a shallow intersecting T; the yard wing is lower. Rear wall ends open at grade. Colonnade widths, window divisions and screenings use representative dimensions. The current site is referenced from dated aerials and 2020 and 2024 public street views."
+  },
+  "models": [
+    {
+      "id": "roof-9dfbc1af",
+      "name": "Onyx House",
+      "street_address": "1850 Onyx Street",
+      "outline_enu_m": [
+        [
+          -237.3465,
+          -638.2696
+        ],
+        [
+          -237.3652,
+          -659.5623
+        ],
+        [
+          -226.381,
+          -659.572
+        ],
+        [
+          -226.2012,
+          -665.6711
+        ],
+        [
+          -215.2122,
+          -665.5972
+        ],
+        [
+          -215.1945,
+          -666.1893
+        ],
+        [
+          -202.5613,
+          -666.0662
+        ],
+        [
+          -202.5008,
+          -654.1811
+        ],
+        [
+          -200.4287,
+          -654.1859
+        ],
+        [
+          -200.4261,
+          -651.7266
+        ],
+        [
+          -200.4152,
+          -641.3336
+        ],
+        [
+          -225.1784,
+          -641.4304
+        ],
+        [
+          -225.1278,
+          -638.3424
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "high_extent_m": [
+        [
+          -238,
+          -660.01,
+          -223.44,
+          -654.18
+        ],
+        [
+          -238,
+          -654.18,
+          -200,
+          -637.7
+        ]
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -238,
+            -660.1,
+            -223.44,
+            -637.7
+          ],
+          "planes": [
+            [
+              -230.0,
+              -648,
+              23.34,
+              0.151,
+              0
+            ],
+            [
+              -230.0,
+              -648,
+              23.34,
+              -0.157,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -226.5,
+            -654.2,
+            -200,
+            -641.25
+          ],
+          "planes": [
+            [
+              -214,
+              -649.05,
+              23.29,
+              0,
+              -0.116
+            ],
+            [
+              -214,
+              -649.05,
+              23.29,
+              0,
+              0.166
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -226.5,
+            -641.26,
+            -200,
+            -637.7
+          ],
+          "planes": [
+            [
+              -230,
+              -648,
+              23.34,
+              0.151,
+              0
+            ],
+            [
+              -230,
+              -648,
+              23.34,
+              -0.157,
+              0
+            ]
+          ]
+        }
+      ],
+      "low_roof_zones": [
+        {
+          "bounds_m": [
+            -238,
+            -667,
+            -199,
+            -653.9
+          ],
+          "planes": [
+            [
+              -213,
+              -656.8,
+              17.55,
+              0,
+              0.108
+            ],
+            [
+              -213,
+              -656.8,
+              17.55,
+              0,
+              -0.157
+            ],
+            [
+              -205.7,
+              -658,
+              17.51,
+              -0.3,
+              0
+            ]
+          ]
+        }
+      ],
+      "wall_color": [
+        162,
+        163,
+        151
+      ],
+      "trim_color": [
+        220,
+        218,
+        200
+      ],
+      "roof_color": [
+        220,
+        218,
+        202
+      ],
+      "low_roof_color": [
+        154,
+        155,
+        139
+      ],
+      "floor_levels_m": [
+        15.65,
+        18.75
+      ],
+      "bottom_z_m": 11.61,
+      "entry_level_z_m": 13.16,
+      "south_entry_level_z_m": 12.97,
+      "entry_enu_m": [
+        -200.65,
+        -649.95
+      ],
+      "alley_bay_cuts_m": [
+        [
+          -238,
+          -642.5,
+          -233.35,
+          -637.8
+        ],
+        [
+          -238,
+          -660,
+          -232.4,
+          -655.77
+        ]
+      ],
+      "alley_columns_m": [
+        [
+          -236.84,
+          -639.65
+        ],
+        [
+          -236.91,
+          -658.87
+        ]
+      ],
+      "retaining_segments_m": [
+        [
+          -666.1,
+          -651.15
+        ],
+        [
+          -648.75,
+          -641.7
+        ]
+      ],
+      "roof_fixture_bounds_m": [
+        [
+          -211.65,
+          -665.06,
+          -209.1,
+          -662.77
+        ],
+        [
+          -208.37,
+          -665.01,
+          -204.51,
+          -662.68
+        ]
+      ],
+      "south_terrace_bounds_m": [
+        -224.6,
+        -668.4,
+        -203.2,
+        -665.55
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-9dfbc1af",
+      "target": "context-background-1-0"
+    }
+  ]
+}

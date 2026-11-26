@@ -19,3 +19,15 @@ The user-provided reference was visually inspected in the parent thread: a horiz
 ## Floating profile card update
 
 The profile now uses a non-modal card anchored beside the person, falling below when a narrow viewport lacks room on either side. The path pauses while the card is open, while camera and player movement remain available. The card closes when the person becomes fully occluded or exits the viewport; Escape and close restore focus. The existing profile and speech are unchanged. [Desktop preview](images/dan-floating-card-desktop-2026-11-05.png) and [touch preview](images/dan-floating-card-mobile-2026-11-05.png). The occlusion test remains an approximation using building meshes.
+
+## L2 appearance and walking review
+
+The release worktree now uses a custom head with a curved hat brim and band, close-cut hair, a tapered beard, separate eyebrows and a shaped nose. The shirt has a woven check, collar and placket. The public portrait was examined again on November 26 for visible form, while the colors and full-body proportions remain illustrative. The assembly uses original geometry and a generated cloth swatch. [University directory](https://cas.uoregon.edu/directory/school-of-computer-and-data-sciences/all/dcarrere)
+
+![Front, three-quarter and side views of the L2 campus character](images/dan-carrere-l2-views.png)
+
+The existing rig animates the new head and shirt details. Walking uses distance-driven ankle placement along the existing 12 m path at 0.7 m/s. Over two shoes with 414 combined support samples on a flat test, mean ankle slip fell from 0.694–0.708 m/s to 0.0006–0.0042 m/s. Hover and profile interaction pause travel. All 97 collision probes at 0.125 m intervals along the authored path passed. The path and dialogue remain fictional scene behavior.
+
+The viewer uses seven visible meshes and draws one of each in an isolated render. The reproducible GLB contains the same visible parts, a shared source rig and its Idle clip. The walking solver runs in the browser. Start Vite and then run `node scripts/export-fixed-person.mjs` from `apps/web-preview` to rebuild the archive. The original additions are CC BY 4.0, and the underlying Kenney geometry, rig and Idle clip are CC0. [Editable appearance](../apps/web-preview/src/dan-carrere-style.js) · [GLB archive](../assets/characters/dan-carrere-l2.glb)
+
+The local L2 assessment covers the rendered model, walking, path integration and desktop and touch interaction. The new artwork remains in the release worktree for publication review.

@@ -1,0 +1,1144 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "rasters": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "candidates": {
+      "hilyard-1448": {
+        "municipal_feature": 177688,
+        "state_feature": "20-1081116",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493337.14928888186%2C4876734.282153052%2C493429.14928888186%2C4876794.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "645faae747b1ade16652941ddff5e4a53b0a13e0179ede4aebaa8b36b78884f4"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493337.14928888186%2C4876734.282153052%2C493429.14928888186%2C4876794.282153052&bboxSR=3740&imageSR=3740&size=1104%2C720&format=png&bandIds=0%2C1%2C2",
+            "sha256": "e7ae8393154874507acdc2c54362092c95c7a1677042b5c7853ba4112535fbc7"
+          }
+        },
+        "visible_views": [
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mr1kgkBGRVnjzvJN9fGOlg&heading=262.87"
+          },
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ZFKNWCCSX3KKjHc5EhzYNA&heading=229.63"
+          },
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p2pDED2b6h0oNiGjK82Icw&heading=344.73"
+          },
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0h9Hvx5AHRuub4s5bEhhzQ&heading=295.71"
+          }
+        ],
+        "budget_record": "https://www.eugene-or.gov/Archive/ViewFile/Item/4782"
+      },
+      "e20-1131": {
+        "municipal_feature": 171122,
+        "state_feature": "20-1074058",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493920.14928888186%2C4876072.282153052%2C493967.14928888186%2C4876129.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "997ed647576d2220195587371ae9e6062e3ef4b8ad06f50ad50ffd14c2f4657d"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493920.14928888186%2C4876072.282153052%2C493967.14928888186%2C4876129.282153052&bboxSR=3740&imageSR=3740&size=564%2C684&format=png&bandIds=0%2C1%2C2",
+            "sha256": "c6f779dc46ef7322d66c5a2324f4db6b9ea15b2b8f29d0613936ce103ba7c5de"
+          }
+        },
+        "visible_views": [
+          {
+            "date": "2024-07",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XRyzQqG5VhCxKNQfovYPsg&heading=208.08"
+          },
+          {
+            "date": "2024-07",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=QwdSJem-DymVQSBLL9ss5w&heading=27.44"
+          },
+          {
+            "date": "2024-07",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=hciD8jpVXP23il62RXNoLg&heading=326.41"
+          },
+          {
+            "date": "2024-07",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=QwdSJem-DymVQSBLL9ss5w&heading=23.38"
+          }
+        ]
+      },
+      "e21-1039": {
+        "municipal_feature": 129653,
+        "state_feature": "20-1031849",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493798.14928888186%2C4875950.282153052%2C493846.14928888186%2C4876005.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "a4e4dca6a8f18e3b415942e3b028d8f8eaa63f21c26e56553e7988e70eb09dc3"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493798.14928888186%2C4875950.282153052%2C493846.14928888186%2C4876005.282153052&bboxSR=3740&imageSR=3740&size=576%2C660&format=png&bandIds=0%2C1%2C2",
+            "sha256": "0d81e045fe8d3be5e0d6011937f249f13f263e0d3dd6bc8963f991f6517e1d13"
+          }
+        },
+        "visible_views": [
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=DSFrrpvdH4H_2W3jY3S0lA&heading=317.09"
+          },
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pEW2W9jPxnc3kg1nMtIQnw&heading=16.12"
+          },
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=D2gkpKJCHOfudaeD4aP47g&heading=52.2"
+          }
+        ]
+      },
+      "e21-1145": {
+        "municipal_feature": 129650,
+        "state_feature": "20-1031846",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493919.14928888186%2C4875958.282153052%2C493969.14928888186%2C4876009.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "debf797b359a9a6ef0f3746b55e2b9f89659772afd180a499da5f307e9989dab"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493919.14928888186%2C4875958.282153052%2C493969.14928888186%2C4876009.282153052&bboxSR=3740&imageSR=3740&size=600%2C612&format=png&bandIds=0%2C1%2C2",
+            "sha256": "497d0d646f4f02d83cbb85d3e5de4d904e6c0e6badfea0d6dbd1d020f20ac7dc"
+          }
+        },
+        "visible_views": [
+          {
+            "date": "2024-07",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=co9_imPE2-DOCOmjUZfM2Q&heading=355.29"
+          },
+          {
+            "date": "2024-07",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=eAxfjPTojIiicqMjP5gLAA&heading=334.64"
+          }
+        ],
+        "frontage_photo_record": "https://www.zillow.com/homedetails/1145-E-21st-Ave-Eugene-OR-97403/48409032_zpid/"
+      }
+    }
+  },
+  "models": [
+    {
+      "id": "roof-f92cf968",
+      "name": "Parkside Place",
+      "street_address": "1448 Hilyard St",
+      "outline_enu_m": [
+        [
+          -961.7523,
+          -162.845
+        ],
+        [
+          -956.5073,
+          -162.8352
+        ],
+        [
+          -956.5272,
+          -152.2072
+        ],
+        [
+          -941.8964,
+          -152.1798
+        ],
+        [
+          -941.8765,
+          -162.8077
+        ],
+        [
+          -936.7695,
+          -162.7982
+        ],
+        [
+          -936.789,
+          -152.4463
+        ],
+        [
+          -922.4342,
+          -152.4194
+        ],
+        [
+          -922.3897,
+          -176.1598
+        ],
+        [
+          -924.6812,
+          -176.1641
+        ],
+        [
+          -924.6813,
+          -176.265
+        ],
+        [
+          -934.6255,
+          -176.2563
+        ],
+        [
+          -934.6254,
+          -176.1828
+        ],
+        [
+          -936.7445,
+          -176.1867
+        ],
+        [
+          -936.758,
+          -169.0094
+        ],
+        [
+          -941.8649,
+          -169.0189
+        ],
+        [
+          -941.8636,
+          -169.6909
+        ],
+        [
+          -941.4961,
+          -169.6912
+        ],
+        [
+          -941.502,
+          -176.356
+        ],
+        [
+          -947.9552,
+          -176.3503
+        ],
+        [
+          -947.9552,
+          -176.3458
+        ],
+        [
+          -956.4819,
+          -176.3618
+        ],
+        [
+          -956.4957,
+          -169.0463
+        ],
+        [
+          -961.7406,
+          -169.0562
+        ],
+        [
+          -961.7269,
+          -176.3716
+        ],
+        [
+          -976.6338,
+          -176.3995
+        ],
+        [
+          -976.6791,
+          -152.2449
+        ],
+        [
+          -961.7722,
+          -152.217
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "front": {
+        "bearing": 180
+      },
+      "style": "parkside",
+      "eaves_m": 0.34,
+      "wall_color": [
+        147,
+        160,
+        137
+      ],
+      "trim_color": [
+        211,
+        214,
+        191
+      ],
+      "roof_color": [
+        124,
+        121,
+        115
+      ],
+      "garage_cut_enu_m": [
+        -952.6,
+        -177.0,
+        -947.7,
+        -170.85
+      ],
+      "garage_ramp_south_m": -179.43,
+      "garage_visible_floor_m": -1.81,
+      "raised_wall_bottom_z_m": 1.04,
+      "balconies": [
+        [
+          [
+            -956.2,
+            -178.06,
+            -953.1,
+            -175.76
+          ],
+          [
+            1.06,
+            3.93
+          ]
+        ],
+        [
+          [
+            -943.6,
+            -171.2,
+            -940.3,
+            -168.55
+          ],
+          [
+            1.06,
+            3.93
+          ]
+        ],
+        [
+          [
+            -938.51,
+            -171.2,
+            -935.29,
+            -168.55
+          ],
+          [
+            1.06,
+            3.93
+          ]
+        ]
+      ],
+      "floor_lines_z_m": [
+        1.06,
+        3.93,
+        6.55
+      ],
+      "window_sills_z_m": [
+        -0.53,
+        2.05,
+        4.71
+      ],
+      "porch": null,
+      "entry": {
+        "gate": "parkside-south-pedestrian",
+        "near": [
+          -954.55,
+          -176.0
+        ],
+        "approach_m": 3.15,
+        "rise_m": 0.29
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -979,
+            -180,
+            -961.62,
+            -149
+          ],
+          "planes": [
+            [
+              -970.6396,
+              0,
+              11.9994,
+              0.4778,
+              0
+            ],
+            [
+              -970.6396,
+              0,
+              11.9994,
+              -0.4778,
+              0
+            ],
+            [
+              -970.6396,
+              -159.4297,
+              11.9994,
+              0,
+              -0.4375
+            ],
+            [
+              -970.6396,
+              -166.0341,
+              11.9994,
+              0,
+              0.4375
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -956.62,
+            -180,
+            -941.42,
+            -149
+          ],
+          "planes": [
+            [
+              -950.4655,
+              0,
+              11.6752,
+              0.4769,
+              0
+            ],
+            [
+              -950.4655,
+              0,
+              11.6752,
+              -0.4769,
+              0
+            ],
+            [
+              -950.4655,
+              -157.8103,
+              11.6752,
+              0,
+              -0.5729
+            ],
+            [
+              -950.4655,
+              -168.1686,
+              11.6752,
+              0,
+              0.5729
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -936.9,
+            -180,
+            -920,
+            -149
+          ],
+          "planes": [
+            [
+              -930.2797,
+              0,
+              11.875,
+              0.4598,
+              0
+            ],
+            [
+              -930.2797,
+              0,
+              11.875,
+              -0.4598,
+              0
+            ],
+            [
+              -930.2797,
+              -158.9553,
+              11.875,
+              0,
+              -0.3999
+            ],
+            [
+              -930.2797,
+              -165.9844,
+              11.875,
+              0,
+              0.3999
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -967,
+            -167.32,
+            -952.0,
+            -162.65
+          ],
+          "planes": [
+            [
+              0,
+              -164.85,
+              9.57,
+              0,
+              0.4
+            ],
+            [
+              0,
+              -164.85,
+              9.57,
+              0,
+              -0.4
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -967,
+            -169.22,
+            -952.0,
+            -167.29
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              5.73,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            145,
+            143,
+            133
+          ]
+        },
+        {
+          "bounds_m": [
+            -947.5,
+            -169.3,
+            -932.5,
+            -162.6
+          ],
+          "planes": [
+            [
+              0,
+              -164.15,
+              9.59,
+              0,
+              0.418
+            ],
+            [
+              0,
+              -164.15,
+              9.59,
+              0,
+              -0.418
+            ]
+          ]
+        }
+      ],
+      "garage_fascia_n_m": -176.04,
+      "east_gabled_bay": [
+        -922.69,
+        -157.91,
+        -153.6,
+        5.97,
+        8.43,
+        1.04
+      ]
+    },
+    {
+      "id": "roof-10b438f6",
+      "name": "1131 East 20th Avenue",
+      "street_address": "1131 East 20th Avenue",
+      "outline_enu_m": [
+        [
+          -389.3741,
+          -837.6234
+        ],
+        [
+          -389.3661,
+          -828.5349
+        ],
+        [
+          -385.4924,
+          -828.5383
+        ],
+        [
+          -385.4813,
+          -816.0229
+        ],
+        [
+          -377.7337,
+          -816.0298
+        ],
+        [
+          -377.7467,
+          -830.78
+        ],
+        [
+          -382.9614,
+          -830.7754
+        ],
+        [
+          -382.9674,
+          -837.629
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "front": {
+        "bearing": 180
+      },
+      "style": "contemporary",
+      "eaves_m": 0.18,
+      "wall_color": [
+        168,
+        179,
+        181
+      ],
+      "trim_color": [
+        93,
+        106,
+        108
+      ],
+      "roof_color": [
+        161,
+        162,
+        154
+      ],
+      "entry": null,
+      "porch": null,
+      "cladding_break_z_m": 23.6,
+      "lower_recess_enu_m": [
+        -382.51,
+        -831.25,
+        -377.4,
+        -829.32
+      ],
+      "raised_wall_bottom_z_m": 23.72,
+      "recess_face_enu_m": [
+        [
+          -382.51,
+          -829.32
+        ],
+        [
+          -377.93,
+          -829.32
+        ]
+      ],
+      "recess_threshold_z_m": 21.3,
+      "parapet_equipment_enu_m": [
+        [
+          -381.95,
+          -825.68,
+          -381.3,
+          -825.12
+        ],
+        [
+          -386.82,
+          -834.92,
+          -386.42,
+          -834.57
+        ]
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -392,
+            -840,
+            -375,
+            -830.8
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              25.1894,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -392,
+            -830.8,
+            -375,
+            -815
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              28.3197,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "upper_front_face_enu_m": [
+        [
+          -382.45,
+          -830.61
+        ],
+        [
+          -377.96,
+          -830.61
+        ]
+      ]
+    },
+    {
+      "id": "roof-769d99e6",
+      "name": "1039 East 21st Avenue",
+      "street_address": "1039 East 21st Avenue",
+      "outline_enu_m": [
+        [
+          -500.0811,
+          -939.258
+        ],
+        [
+          -500.0581,
+          -948.1443
+        ],
+        [
+          -502.3327,
+          -948.1501
+        ],
+        [
+          -502.2996,
+          -961.0036
+        ],
+        [
+          -512.1909,
+          -961.029
+        ],
+        [
+          -512.2139,
+          -952.1427
+        ],
+        [
+          -512.9014,
+          -952.1445
+        ],
+        [
+          -512.9126,
+          -947.8071
+        ],
+        [
+          -512.225,
+          -947.8053
+        ],
+        [
+          -508.9454,
+          -947.7969
+        ],
+        [
+          -508.5753,
+          -947.7959
+        ],
+        [
+          -508.6,
+          -938.1162
+        ],
+        [
+          -503.4692,
+          -938.103
+        ],
+        [
+          -503.4663,
+          -939.2666
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "front": {
+        "bearing": 180
+      },
+      "style": "bungalow",
+      "eaves_m": 0.26,
+      "wall_color": [
+        137,
+        155,
+        126
+      ],
+      "trim_color": [
+        207,
+        211,
+        185
+      ],
+      "roof_color": [
+        99,
+        105,
+        97
+      ],
+      "bay_enu_m": [
+        -508.37,
+        -960.78
+      ],
+      "bay_and_window_dims_m": [
+        2.53,
+        13.09,
+        14.77
+      ],
+      "bay_roof_rise_m": 0.4,
+      "chimney_enu_m": [
+        -511.35,
+        -951.12,
+        -510.64,
+        -950.43
+      ],
+      "chimney_color": [
+        123,
+        108,
+        93
+      ],
+      "entry": null,
+      "porch": null,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -514,
+            -949.25,
+            -499,
+            -936.5
+          ],
+          "planes": [
+            [
+              0,
+              -942.68,
+              17.89,
+              0,
+              0.44
+            ],
+            [
+              0,
+              -942.68,
+              17.89,
+              0,
+              -0.44
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -514,
+            -956.2,
+            -501.65,
+            -947.65
+          ],
+          "planes": [
+            [
+              0,
+              -951.3,
+              18.04,
+              0,
+              0.46
+            ],
+            [
+              0,
+              -951.3,
+              18.04,
+              0,
+              -0.46
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -512.97,
+            -962,
+            -501.7,
+            -950.0
+          ],
+          "planes": [
+            [
+              -508.35,
+              0,
+              17.76,
+              0.44,
+              0
+            ],
+            [
+              -508.35,
+              0,
+              17.76,
+              -0.44,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-57ecbd31",
+      "name": "1145 East 21st Avenue",
+      "street_address": "1145 East 21st Avenue",
+      "outline_enu_m": [
+        [
+          -378.208,
+          -942.0142
+        ],
+        [
+          -378.23,
+          -951.456
+        ],
+        [
+          -381.7211,
+          -951.4478
+        ],
+        [
+          -381.7259,
+          -953.5107
+        ],
+        [
+          -384.5028,
+          -953.5042
+        ],
+        [
+          -384.4993,
+          -951.9967
+        ],
+        [
+          -389.3392,
+          -951.9855
+        ],
+        [
+          -389.332,
+          -948.9195
+        ],
+        [
+          -390.9999,
+          -948.9155
+        ],
+        [
+          -390.978,
+          -939.5532
+        ],
+        [
+          -386.1365,
+          -939.5645
+        ],
+        [
+          -386.1376,
+          -940.0122
+        ],
+        [
+          -380.2662,
+          -940.0259
+        ],
+        [
+          -380.2708,
+          -942.0094
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "front": {
+        "bearing": 180
+      },
+      "style": "bungalow",
+      "eaves_m": 0.19,
+      "wall_color": [
+        222,
+        219,
+        190
+      ],
+      "trim_color": [
+        235,
+        231,
+        208
+      ],
+      "roof_color": [
+        101,
+        105,
+        101
+      ],
+      "bay_enu_m": [
+        -387.45,
+        -951.86
+      ],
+      "bay_and_window_dims_m": [
+        1.95,
+        21.86,
+        23.21
+      ],
+      "bay_roof_rise_m": 0.24,
+      "chimney_enu_m": [
+        -387.87,
+        -947.31,
+        -387.16,
+        -946.67
+      ],
+      "chimney_color": [
+        192,
+        183,
+        157
+      ],
+      "porch_box_enu_m": [
+        -384.7,
+        -954.0,
+        -381.53,
+        -951.46
+      ],
+      "porch": {
+        "style": "porch",
+        "half_width": 1.33,
+        "depth": 1.95,
+        "rise": 0.78
+      },
+      "entry": {
+        "gate": "twenty-first-front-porch",
+        "near": [
+          -383.23,
+          -951.26
+        ],
+        "approach_m": 4.0,
+        "rise_m": 0.46
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -392,
+            -950.1,
+            -379.78,
+            -938.5
+          ],
+          "planes": [
+            [
+              0,
+              -943.67,
+              28.08,
+              0,
+              0.44
+            ],
+            [
+              0,
+              -943.67,
+              28.08,
+              0,
+              -0.44
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -390,
+            -952.6,
+            -384.5,
+            -947.2
+          ],
+          "planes": [
+            [
+              -387.86,
+              0,
+              26.83,
+              0.38,
+              0
+            ],
+            [
+              -387.86,
+              0,
+              26.83,
+              -0.38,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -384.55,
+            -952.6,
+            -380.15,
+            -947.8
+          ],
+          "planes": [
+            [
+              0,
+              -948.05,
+              25.81,
+              0,
+              0.42
+            ],
+            [
+              0,
+              -948.05,
+              25.81,
+              0,
+              -0.42
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -382.0,
+            -952.6,
+            -377,
+            -941.8
+          ],
+          "planes": [
+            [
+              0,
+              -945.8,
+              26.76,
+              0,
+              0.55
+            ],
+            [
+              0,
+              -945.8,
+              26.76,
+              0,
+              -0.55
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-f92cf968",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-10b438f6",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-769d99e6",
+      "target": "context-background-0-0"
+    },
+    {
+      "id": "roof-57ecbd31",
+      "target": "context-background-1-0"
+    }
+  ]
+}

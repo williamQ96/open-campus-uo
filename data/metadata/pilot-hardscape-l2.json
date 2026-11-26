@@ -1,0 +1,272 @@
+{
+  "source_art_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+  "heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "navigation_sha256": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+  "related_models": {
+    "knight_library_site": "25596935d9c6aa8622e7c6be7d67635752b79daaf9c7875fcfc35c5287e78d3c",
+    "emu_green_site": "327eedcee5ec9f06d46455b98b82017fb31f4dafdf06b40fc0e8bca6c2c7b684",
+    "oregon_jaqua_site": "c44ee416cce4d60b08ebc6a2ec9157f938568bf92550e20a91c47d6b890254a0"
+  },
+  "sources": {
+    "johnson_survey": "https://cpfm.uoregon.edu/sites/default/files/2025-01/johnsonhall_2025.pdf",
+    "johnson_photo": "data/reference-images/photos/johnson-hall/front-pd.jpg",
+    "knight_survey": "https://cpfm.uoregon.edu/sites/default/files/2025-01/knightlibrary_2025.pdf",
+    "knight_photo": "data/reference-images/photos/knight-library/north-oblique-b-2018.jpg",
+    "emu_landscape": {
+      "url": "https://pages.uoregon.edu/moxoby/EMU/Documents/EMU_CD/EMU100CD/EMU100CDs-PKG4-VOLUME%201-Landscape.pdf",
+      "sheets": [
+        "L200",
+        "L300",
+        "L400"
+      ],
+      "sha256": "4e2e58290105d9b98afbce77cdc98bd8981fc2561f9026a0a04f9da5b9332f9e"
+    },
+    "oregon_survey": "https://cpfm.uoregon.edu/oregonhall2025",
+    "orthophotos": {
+      "emu": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494004.14928888186%2C4876820.282153052%2C494114.14928888186%2C4876947.282153052&bboxSR=3740&imageSR=3740&size=1320%2C1524&format=png&bandIds=0%2C1%2C2",
+        "extent": [
+          -325,
+          -108,
+          -215,
+          19
+        ],
+        "pixel_per_m": 12
+      },
+      "johnson": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493890.14928888186%2C4876883.282153052%2C493963.14928888186%2C4876942.282153052&bboxSR=3740&imageSR=3740&size=876%2C708&format=png&bandIds=0%2C1%2C2",
+        "extent": [
+          -439,
+          -45,
+          -366,
+          14
+        ],
+        "pixel_per_m": 12
+      },
+      "knight": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493736.14928888186%2C4876712.282153052%2C493824.14928888186%2C4876776.282153052&bboxSR=3740&imageSR=3740&size=1056%2C768&format=png&bandIds=0%2C1%2C2",
+        "extent": [
+          -593,
+          -216,
+          -505,
+          -152
+        ],
+        "pixel_per_m": 12
+      },
+      "oregon": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494314.14928888186%2C4876933.282153052%2C494384.14928888186%2C4876975.282153052&bboxSR=3740&imageSR=3740&size=840%2C504&format=png&bandIds=0%2C1%2C2",
+        "extent": [
+          -15,
+          5,
+          55,
+          47
+        ],
+        "pixel_per_m": 12
+      }
+    },
+    "street_views": {
+      "emu-amphitheater": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ZDh9HC9DWiZ3SyfBHJ0Uug&heading=86.72",
+      "emu-amphi-north": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIABIhBaHV_kT89yghUEdlPwcCPw&heading=154.84",
+      "oregon-planter": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4-PphMU60YWOcA70gFA3bA&heading=28.77"
+    }
+  },
+  "cuts": [
+    {
+      "target": "roof-906c030e",
+      "file": "campus-expanded.glb",
+      "primitive": 1,
+      "spans": [
+        [
+          1200,
+          1320
+        ]
+      ]
+    },
+    {
+      "target": "roof-906c030e",
+      "file": "campus-expanded.glb",
+      "primitive": 5,
+      "spans": [
+        [
+          0,
+          96
+        ]
+      ]
+    },
+    {
+      "target": "roof-6684e091",
+      "file": "knight-library-review/site.glb",
+      "primitive": 0,
+      "spans": [
+        [
+          3992,
+          4064
+        ],
+        [
+          4288,
+          4360
+        ],
+        [
+          6480,
+          6576
+        ],
+        [
+          6732,
+          6828
+        ]
+      ]
+    },
+    {
+      "target": "oregon-jaqua-grounds",
+      "file": "oregon-jaqua-review/site.glb",
+      "primitive": 0,
+      "spans": [
+        [
+          132,
+          156
+        ]
+      ]
+    }
+  ],
+  "flights": [
+    {
+      "name": "johnson-north",
+      "center_east": -401.13,
+      "width_m": 15.6,
+      "bottom_north": -17.28,
+      "landing_north": -24.72,
+      "threshold_north": -28.18,
+      "treads": 10,
+      "landing_y": 4.508,
+      "lowest_y": 4.093,
+      "rails_east": [
+        -406.0,
+        -396.23
+      ],
+      "cap_width": 0.42,
+      "stone": [
+        169,
+        162,
+        145
+      ]
+    },
+    {
+      "name": "knight-west",
+      "center_east": -578.5,
+      "width_m": 6.94,
+      "bottom_north": -188.14,
+      "landing_north": -193.0,
+      "threshold_north": -195.18,
+      "treads": 15,
+      "landing_y": 7.076,
+      "lowest_y": 4.674,
+      "rails_east": [
+        -581.54,
+        -575.43
+      ],
+      "cap_width": 0.28,
+      "stone": [
+        178,
+        157,
+        121
+      ]
+    },
+    {
+      "name": "knight-east",
+      "center_east": -515.56,
+      "width_m": 6.62,
+      "bottom_north": -188.53,
+      "apron_north": -183.93,
+      "landing_north": -193.37,
+      "threshold_north": -195.58,
+      "treads": 8,
+      "landing_y": 7.138,
+      "lowest_y": 5.99,
+      "rails_east": [
+        -518.19,
+        -512.65
+      ],
+      "cap_width": 0.28,
+      "stone": [
+        178,
+        157,
+        121
+      ]
+    }
+  ],
+  "amphitheater": {
+    "center_enu_m": [
+      -275.69,
+      -30.68
+    ],
+    "paving_radius_m": 10.7,
+    "treads": [
+      [
+        10.7,
+        11.09,
+        0.16
+      ],
+      [
+        11.09,
+        11.5,
+        0.3
+      ],
+      [
+        11.5,
+        11.94,
+        0.44
+      ]
+    ],
+    "tier_angles_degrees": [
+      163,
+      268
+    ],
+    "stage_center_enu_m": [
+      -270.42,
+      -24.58
+    ],
+    "stage_radius_m": 4.76,
+    "stage_height_m": 0.31,
+    "stage_clip_east_m": -267.1,
+    "walls": [
+      {
+        "width_m": 0.28,
+        "radius_m": 17.72,
+        "angles_degrees": [
+          178,
+          207
+        ],
+        "height_m": 0.42
+      },
+      {
+        "width_m": 0.26,
+        "radius_m": 20.05,
+        "angles_degrees": [
+          214,
+          251
+        ],
+        "height_m": 0.39
+      },
+      {
+        "width_m": 0.26,
+        "radius_m": 12.92,
+        "angles_degrees": [
+          10,
+          66
+        ],
+        "height_m": 0.34
+      }
+    ]
+  },
+  "planter": {
+    "outline_enu_m": [
+      3.1,
+      15.15,
+      38.1,
+      28.18
+    ],
+    "coping_height_m": 1.105,
+    "wall_thickness_m": 0.32,
+    "soil_height_m": 1.033
+  }
+}

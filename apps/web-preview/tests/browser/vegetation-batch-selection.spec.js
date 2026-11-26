@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 import { readFileSync } from "node:fs";
 const source = readFileSync(
   new URL("../../src/presentation.js", import.meta.url),
@@ -47,6 +48,8 @@ test("adjacent shrub batching preserves all entrances and both building selectio
     expect(errors).toEqual([]);
     await page.close();
   }
-  expect(new Set(entries[0].map(({ id }) => id)).size).toBe(519);
+  expect(new Set(entries[0].map(({ id }) => id)).size).toBe(
+    DEFAULT_SELECTABLE_BUILDINGS,
+  );
   expect(entries[1]).toEqual(entries[0]);
 });

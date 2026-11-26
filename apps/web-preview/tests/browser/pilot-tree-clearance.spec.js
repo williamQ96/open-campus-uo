@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { exteriorCounts } from "./exterior-counts.js";
 
 async function ready(page, url = "/") {
   await page.goto(url);
@@ -9,12 +10,13 @@ test("default planting clears the two sites and keeps all building approaches", 
   page,
 }) => {
   const read = () => {
-    const { presentation } = __campus.getState();
+    const { buildings, presentation } = __campus.getState();
     return {
       visible: presentation.trees,
       source: presentation.sourceTrees,
       fitted: presentation.registeredPilotTrees,
       roofs: presentation.refinedContextRoofs,
+      buildings,
       gates: __campus.entranceInfo(),
     };
   };
@@ -22,13 +24,15 @@ test("default planting clears the two sites and keeps all building approaches", 
   const before = await page.evaluate(read);
   await ready(page);
   const after = await page.evaluate(read);
-  expect(before.visible).toBe(568);
+  expect(before.visible).toBe(567);
   expect(before.fitted).toBe(0);
-  expect(after.visible).toBe(543);
+  expect(after.visible).toBe(542);
   expect(after.fitted).toBe(11);
   expect(after.source).toBe(600);
-  expect(after.roofs).toBe(7);
-  expect(new Set(before.gates.map(({ id }) => id)).size).toBe(519);
+  const [buildings, , roofs] = exteriorCounts();
+  expect(after.roofs).toBe(roofs);
+  expect(after.buildings).toBe(buildings);
+  expect(before.buildings).toBe(buildings);
   expect(after.gates).toEqual(before.gates);
 });
 
@@ -55,7 +59,7 @@ test("invalid tree clearance bytes keep previous planting and confirmed site ent
     trees: __campus.getState().presentation.trees,
     fitted: __campus.getState().presentation.registeredPilotTrees,
   }));
-  expect(result).toEqual({ trees: 568, fitted: 11 });
+  expect(result).toEqual({ trees: 567, fitted: 11 });
   expect(await page.evaluate(entranceKeys)).toEqual(gates);
 });
 
@@ -74,6 +78,6 @@ test("invalid registration bytes keep clearance and the base tree positions", as
   const { trees, registeredPilotTrees } = await page.evaluate(
     () => __campus.getState().presentation,
   );
-  expect(trees).toBe(543);
+  expect(trees).toBe(542);
   expect(registeredPilotTrees).toBe(0);
 });

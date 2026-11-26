@@ -1,4 +1,33 @@
 import { test, expect } from "@playwright/test";
+
+test("campus squirrels use the articulated asset and recover from damaged bytes", async ({
+  page,
+}) => {
+  const legacy = "/animals/campus-squirrel.glb";
+  const replacement = "/animals/campus-squirrel-l2.glb";
+  const requests = [];
+  page.on("request", (request) =>
+    requests.push(new URL(request.url()).pathname),
+  );
+  const ready = async () => {
+    await page.goto("/");
+    await page.waitForFunction(() => window.__campus?.getState().ready);
+    return page.evaluate(() => window.__campus.getState().life);
+  };
+  const current = await ready();
+  expect(current.squirrels).toBe(8);
+  expect(requests).toContain(replacement);
+  expect(requests).not.toContain(legacy);
+
+  await page.route("**/animals/campus-squirrel-l2.glb", (route) =>
+    route.fulfill({ status: 200, body: "damaged" }),
+  );
+  const fallback = await ready();
+  expect(fallback.squirrels).toBe(8);
+  expect(fallback.colliders).toBe(current.colliders);
+  expect(requests).toContain(legacy);
+});
+
 test("squirrel accents preserve source body, shared material batching and campus budget", async ({
   page,
 }) => {

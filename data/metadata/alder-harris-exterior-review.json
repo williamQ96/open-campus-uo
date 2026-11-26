@@ -1,0 +1,1581 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "candidates": {
+      "alder-1648": {
+        "state_feature": "20-1073388",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493518.14928888186%2C4876495.282153052%2C493578.14928888186%2C4876539.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "98b3e6c5e410f24ce7909d827b54c65c2fd29d781cea8eccb9f993a18ba47aa7"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493518.14928888186%2C4876495.282153052%2C493578.14928888186%2C4876539.282153052&bboxSR=3740&imageSR=3740&size=720%2C528&format=png&bandIds=0%2C1%2C2",
+            "sha256": "f79f83d2344b3e377c6a2d41fcd3698980faaa07cdd4485378a08ab783e76d2d"
+          }
+        }
+      },
+      "alder-1670": {
+        "state_feature": "20-1073367",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493518.14928888186%2C4876464.282153052%2C493578.14928888186%2C4876514.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "94a937837e6e61706ab44e279a1ebcbab9a9c00538b7be4fd2ff965f2f3e5b65"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493518.14928888186%2C4876464.282153052%2C493578.14928888186%2C4876514.282153052&bboxSR=3740&imageSR=3740&size=720%2C600&format=png&bandIds=0%2C1%2C2",
+            "sha256": "7a6d8c97134426ce46156f58c3ccc56bcbc90b966ee38f74e0b6a62240da5a8d"
+          }
+        }
+      },
+      "harris-1810": {
+        "state_feature": "20-1073565",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493699.14928888186%2C4876248.282153052%2C493770.14928888186%2C4876321.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "19c5f82ec5c03674d95a6632fc16684e3df1f16d61667e9d9740431f45065e14"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493699.14928888186%2C4876248.282153052%2C493770.14928888186%2C4876321.282153052&bboxSR=3740&imageSR=3740&size=852%2C876&format=png&bandIds=0%2C1%2C2",
+            "sha256": "a35255a34abbfa77b8c1a13c2cb4f91d061de24fd377a0a24f7a437a0f47ca84"
+          }
+        }
+      },
+      "e19-1065": {
+        "state_feature": "20-1073999",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493818.14928888186%2C4876195.282153052%2C493865.14928888186%2C4876256.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "42a41e36832f2c62f266454617a56735726802663279c68bddbca5edc435a21d"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493818.14928888186%2C4876195.282153052%2C493865.14928888186%2C4876256.282153052&bboxSR=3740&imageSR=3740&size=564%2C732&format=png&bandIds=0%2C1%2C2",
+            "sha256": "d33fad9c904a3c94fe34e51ef6adebb8f3de74ecc8e84f07043fc47a4010980f"
+          }
+        }
+      },
+      "e18-750": {
+        "state_feature": "20-1073588",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493479.14928888186%2C4876253.282153052%2C493531.14928888186%2C4876323.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "96d6b41b74e830fb87a83c240f3c56cda7d4820e58251bbee6543fa69984099d"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493479.14928888186%2C4876253.282153052%2C493531.14928888186%2C4876323.282153052&bboxSR=3740&imageSR=3740&size=624%2C840&format=png&bandIds=0%2C1%2C2",
+            "sha256": "c2ecb18e7f4e99f31a71386ed282a08e35e0a06749e3fdf974d717d889b881b4"
+          }
+        }
+      },
+      "e19-746": {
+        "state_feature": "20-1073597",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493480.14928888186%2C4876146.282153052%2C493528.14928888186%2C4876205.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "0ac718b75673cb3c658a4d765871e5f90cf19dd70f09c98aff27d1c1291188b8"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493480.14928888186%2C4876146.282153052%2C493528.14928888186%2C4876205.282153052&bboxSR=3740&imageSR=3740&size=576%2C708&format=png&bandIds=0%2C1%2C2",
+            "sha256": "346996d6f0043edd634f7e331caa707b82577a5f73dbac79a13fd3e49cf1b891"
+          }
+        }
+      }
+    },
+    "historical_surfaces": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "street_views": {
+      "alder-1648-east": "https://www.google.com/maps/@?api=1&map_action=pano&pano=U2eqlZ3dJF9Xfl6Z8AQYew&heading=261.12",
+      "harris-1810-north": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HBvsSz3il90mSfqWv9eR8Q&heading=188.27",
+      "harris-1810-south": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8Y2cAlwBYRAczfSjxMLn2w&heading=61.33",
+      "harris-1810-east": "https://www.google.com/maps/@?api=1&map_action=pano&pano=kch3Ne6RijC_03TZn4KpQQ&heading=248.3",
+      "alder-1648-north": "https://www.google.com/maps/@?api=1&map_action=pano&pano=YZgGyKhC161QmGyIXPbI9A&heading=186.33",
+      "alder-1670-south": "https://www.google.com/maps/@?api=1&map_action=pano&pano=I95Ks3uxlr3GNxIDVLFeRA&heading=300.77",
+      "alder-1670-east": "https://www.google.com/maps/@?api=1&map_action=pano&pano=AUJUmV-Jc0v33JNPZ7cEsw&heading=274.66",
+      "e18-750-north": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ecgOfWg-al0rVxdEyOUaKA&heading=179.25",
+      "e18-750-west": "https://www.google.com/maps/@?api=1&map_action=pano&pano=98qzoRdoWYE1LTRrg5sesg&heading=171.76",
+      "e19-1065-east": "https://www.google.com/maps/@?api=1&map_action=pano&pano=reEApgdZ7im-NnPtgrPkOA&heading=335.14",
+      "e19-746-north": "https://www.google.com/maps/@?api=1&map_action=pano&pano=DWaUdwWQGl31kKi5IU7kXA&heading=164.33",
+      "e19-746-west": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_u4WwXd-3N_C7AMP7fu70w&heading=157.12",
+      "e19-1065-south": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2EtI7S90J2JX2Js0cPYxpw&heading=8.95"
+    },
+    "lorax": "https://eugenesca.com/loraxmanner/",
+    "campbell_photos": "https://eugenesca.com/campbellclub/campbell-club-photo-album/",
+    "historic_survey": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/64500505_text",
+    "woodside_property": "https://www.rentcollegepads.com/city/eugene-or/listings/woodside-manor-41826",
+    "seventh_hundred_photos": "https://www.redfin.com/OR/Eugene/746-E-19th-Ave-97401/home/26201447"
+  },
+  "models": [
+    {
+      "id": "roof-71f4af04",
+      "name": "Lorax Manner",
+      "street_address": "1648 Alder St",
+      "style": "lorax",
+      "municipal_outline": 170480,
+      "outline_enu_m": [
+        [
+          -794.69657,
+          -419.38149
+        ],
+        [
+          -794.68518,
+          -409.83472
+        ],
+        [
+          -793.23548,
+          -409.83655
+        ],
+        [
+          -793.22865,
+          -404.11115
+        ],
+        [
+          -775.3185,
+          -404.13224
+        ],
+        [
+          -775.32415,
+          -408.93868
+        ],
+        [
+          -774.65042,
+          -408.76797
+        ],
+        [
+          -773.95806,
+          -408.83301
+        ],
+        [
+          -773.32808,
+          -409.12662
+        ],
+        [
+          -772.83289,
+          -409.61475
+        ],
+        [
+          -772.53041,
+          -410.24035
+        ],
+        [
+          -772.45488,
+          -410.93152
+        ],
+        [
+          -772.6158,
+          -411.60784
+        ],
+        [
+          -772.99431,
+          -412.19096
+        ],
+        [
+          -773.54653,
+          -412.61316
+        ],
+        [
+          -774.20831,
+          -412.82581
+        ],
+        [
+          -774.21563,
+          -419.04755
+        ],
+        [
+          -785.64582,
+          -419.03417
+        ],
+        [
+          -785.64604,
+          -419.39209
+        ]
+      ],
+      "eaves_m": 0.2,
+      "wall_color": [
+        136,
+        90,
+        67
+      ],
+      "trim_color": [
+        180,
+        170,
+        144
+      ],
+      "roof_color": [
+        87,
+        111,
+        101
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -797,
+            -419.58,
+            -774.0,
+            -403.5
+          ],
+          "planes": [
+            [
+              -785,
+              -417.7,
+              15.97,
+              0,
+              0
+            ],
+            [
+              -793.4,
+              -416.85,
+              12.65,
+              0,
+              0.84
+            ],
+            [
+              -791.2,
+              -403.92,
+              14.31,
+              0,
+              -0.69
+            ],
+            [
+              -794.8,
+              -407.0,
+              14.55,
+              0.77,
+              0
+            ],
+            [
+              -774.23,
+              -410,
+              12.4,
+              -0.78,
+              0
+            ]
+          ]
+        }
+      ],
+      "windows_m": [
+        [
+          3.62,
+          1.72
+        ],
+        [
+          7.03,
+          1.66
+        ],
+        [
+          10.68,
+          1.18
+        ]
+      ],
+      "bay_spacing_m": 3.04,
+      "window_width_m": 1.24,
+      "band_m": 9.83,
+      "entry": {
+        "gate": "lorax-alder-porch",
+        "near": [
+          -774.42,
+          -415.29
+        ],
+        "approach_m": 5.51,
+        "rise_m": 0.4
+      },
+      "porch": {
+        "style": "pediment",
+        "half_width": 1.42,
+        "depth": 1.3,
+        "rise": 1.38
+      },
+      "tower": [
+        -774.55,
+        -410.83,
+        2.09,
+        9.81,
+        12.45,
+        17.1
+      ],
+      "front": {
+        "bearing": 90
+      }
+    },
+    {
+      "id": "roof-0587b8ad",
+      "name": "Campbell Club",
+      "street_address": "1670 Alder St",
+      "style": "campbell",
+      "municipal_outline": 170460,
+      "outline_enu_m": [
+        [
+          -794.27485,
+          -444.22437
+        ],
+        [
+          -794.25518,
+          -437.41794
+        ],
+        [
+          -796.34784,
+          -437.4118
+        ],
+        [
+          -796.33125,
+          -431.6781
+        ],
+        [
+          -785.86408,
+          -431.70832
+        ],
+        [
+          -785.85379,
+          -428.17989
+        ],
+        [
+          -779.81405,
+          -428.19744
+        ],
+        [
+          -779.82781,
+          -432.94682
+        ],
+        [
+          -777.90058,
+          -432.9524
+        ],
+        [
+          -777.8963,
+          -431.49403
+        ],
+        [
+          -772.8982,
+          -431.50856
+        ],
+        [
+          -772.90314,
+          -433.23267
+        ],
+        [
+          -770.37483,
+          -433.24012
+        ],
+        [
+          -770.41639,
+          -447.58606
+        ],
+        [
+          -778.56558,
+          -447.56256
+        ],
+        [
+          -778.56213,
+          -446.34111
+        ],
+        [
+          -780.02561,
+          -446.33689
+        ],
+        [
+          -780.01943,
+          -444.26553
+        ]
+      ],
+      "eaves_m": 0.19,
+      "wall_color": [
+        151,
+        115,
+        86
+      ],
+      "trim_color": [
+        114,
+        153,
+        113
+      ],
+      "roof_color": [
+        81,
+        93,
+        89
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -798.5,
+            -448.5,
+            -774.52,
+            -427.4
+          ],
+          "planes": [
+            [
+              -793.0,
+              -437.2,
+              14.06,
+              0,
+              0
+            ],
+            [
+              -796.45,
+              -440.0,
+              12.86,
+              0.61,
+              0
+            ],
+            [
+              -774.52,
+              -437.0,
+              10.63,
+              -0.68,
+              0
+            ],
+            [
+              -790,
+              -428.17,
+              12.59,
+              0,
+              -0.438
+            ],
+            [
+              -789,
+              -445.1,
+              11.62,
+              0,
+              0.477
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -774.53,
+            -448.5,
+            -769.9,
+            -427.4
+          ],
+          "planes": [
+            [
+              -774.52,
+              -438.0,
+              6.3,
+              -0.032,
+              0
+            ]
+          ]
+        }
+      ],
+      "windows_m": [
+        [
+          3.33,
+          1.65
+        ],
+        [
+          6.78,
+          1.72
+        ]
+      ],
+      "bay_spacing_m": 3.45,
+      "window_width_m": 1.08,
+      "band_m": null,
+      "entry": {
+        "gate": "campbell-alder-porch",
+        "near": [
+          -774.55,
+          -438.2
+        ],
+        "approach_m": 6.65,
+        "rise_m": 0.62
+      },
+      "porch": null,
+      "porch_recess_enu_m": [
+        -774.55,
+        -449,
+        -765,
+        -428
+      ],
+      "dormers": [
+        {
+          "near": [
+            -776.96,
+            -434.12
+          ],
+          "bearing": 90,
+          "width": 1.29,
+          "depth": 1.58,
+          "sill": 12.35,
+          "top": 14.08,
+          "windows": 1,
+          "style": "shed"
+        },
+        {
+          "near": [
+            -777.08,
+            -438.42
+          ],
+          "bearing": 90,
+          "width": 1.32,
+          "depth": 1.59,
+          "sill": 12.11,
+          "top": 13.88,
+          "windows": 1,
+          "style": "shed"
+        },
+        {
+          "near": [
+            -777.09,
+            -442.63
+          ],
+          "bearing": 90,
+          "width": 1.24,
+          "depth": 1.57,
+          "sill": 11.37,
+          "top": 13.27,
+          "windows": 1,
+          "style": "shed"
+        }
+      ],
+      "front": {
+        "bearing": 90
+      }
+    },
+    {
+      "id": "roof-80aadee0",
+      "name": "Woodside Manor",
+      "street_address": "1810 Harris St",
+      "style": "woodside",
+      "municipal_outline": 170648,
+      "outline_enu_m": [
+        [
+          -591.52414,
+          -622.5817
+        ],
+        [
+          -570.74054,
+          -623.01974
+        ],
+        [
+          -570.93804,
+          -651.86625
+        ],
+        [
+          -571.86325,
+          -651.89386
+        ],
+        [
+          -571.5536,
+          -666.70184
+        ],
+        [
+          -592.45756,
+          -666.66421
+        ],
+        [
+          -592.54823,
+          -654.76019
+        ],
+        [
+          -595.4522,
+          -654.97917
+        ],
+        [
+          -595.63774,
+          -666.49451
+        ],
+        [
+          -615.09958,
+          -666.01702
+        ],
+        [
+          -614.96519,
+          -635.05562
+        ],
+        [
+          -591.54199,
+          -635.28268
+        ]
+      ],
+      "eaves_m": 0.22,
+      "wall_color": [
+        174,
+        183,
+        172
+      ],
+      "trim_color": [
+        205,
+        209,
+        190
+      ],
+      "roof_color": [
+        178,
+        174,
+        160
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -619,
+            -669,
+            -569,
+            -622
+          ],
+          "planes": [
+            [
+              -590,
+              -650,
+              24.08,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -592.05,
+            -636.1,
+            -571.12,
+            -622.8
+          ],
+          "planes": [
+            [
+              -592.05,
+              -636.1,
+              24.37,
+              0.27,
+              0
+            ],
+            [
+              -592.05,
+              -636.1,
+              24.37,
+              0,
+              0.27
+            ],
+            [
+              -571.12,
+              -622.8,
+              24.37,
+              -0.27,
+              0
+            ],
+            [
+              -571.12,
+              -622.8,
+              24.37,
+              0,
+              -0.27
+            ],
+            [
+              -592.05,
+              -636.1,
+              26.15,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            116,
+            123,
+            116
+          ]
+        },
+        {
+          "bounds_m": [
+            -615.45,
+            -649.46,
+            -590.52,
+            -635.54
+          ],
+          "planes": [
+            [
+              -615.45,
+              -649.46,
+              24.27,
+              0.28,
+              0
+            ],
+            [
+              -615.45,
+              -649.46,
+              24.27,
+              0,
+              0.28
+            ],
+            [
+              -590.52,
+              -635.54,
+              24.27,
+              -0.28,
+              0
+            ],
+            [
+              -590.52,
+              -635.54,
+              24.27,
+              0,
+              -0.28
+            ],
+            [
+              -615.45,
+              -649.46,
+              26.24,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            116,
+            123,
+            116
+          ]
+        },
+        {
+          "bounds_m": [
+            -587.15,
+            -651.82,
+            -571.0,
+            -636.25
+          ],
+          "planes": [
+            [
+              -587.15,
+              -651.82,
+              24.2,
+              0.25,
+              0
+            ],
+            [
+              -587.15,
+              -651.82,
+              24.2,
+              0,
+              0.25
+            ],
+            [
+              -571.0,
+              -636.25,
+              24.2,
+              -0.25,
+              0
+            ],
+            [
+              -571.0,
+              -636.25,
+              24.2,
+              0,
+              -0.25
+            ],
+            [
+              -587.15,
+              -651.82,
+              25.91,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            116,
+            123,
+            116
+          ]
+        },
+        {
+          "bounds_m": [
+            -615.1,
+            -666.55,
+            -595.32,
+            -653.32
+          ],
+          "planes": [
+            [
+              -615.1,
+              -666.55,
+              24.18,
+              0.27,
+              0
+            ],
+            [
+              -615.1,
+              -666.55,
+              24.18,
+              0,
+              0.27
+            ],
+            [
+              -595.32,
+              -653.32,
+              24.18,
+              -0.27,
+              0
+            ],
+            [
+              -595.32,
+              -653.32,
+              24.18,
+              0,
+              -0.27
+            ],
+            [
+              -615.1,
+              -666.55,
+              25.89,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            116,
+            123,
+            116
+          ]
+        },
+        {
+          "bounds_m": [
+            -594.12,
+            -666.65,
+            -571.45,
+            -653.28
+          ],
+          "planes": [
+            [
+              -594.12,
+              -666.65,
+              24.13,
+              0.27,
+              0
+            ],
+            [
+              -594.12,
+              -666.65,
+              24.13,
+              0,
+              0.27
+            ],
+            [
+              -571.45,
+              -653.28,
+              24.13,
+              -0.27,
+              0
+            ],
+            [
+              -571.45,
+              -653.28,
+              24.13,
+              0,
+              -0.27
+            ],
+            [
+              -594.12,
+              -666.65,
+              25.96,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            116,
+            123,
+            116
+          ]
+        }
+      ],
+      "windows_m": [],
+      "bay_spacing_m": 3.3,
+      "window_width_m": 1.4,
+      "band_m": null,
+      "entry": {
+        "gate": "woodside-harris-stair",
+        "near": [
+          -571.03,
+          -639.43
+        ],
+        "approach_m": 5.95,
+        "rise_m": 2.57
+      },
+      "porch": null,
+      "balcony_levels_m": [
+        15.05,
+        17.97,
+        20.8
+      ],
+      "front": {
+        "bearing": 89.61
+      },
+      "holes_enu_m": [
+        [
+          [
+            -589.50115,
+            -649.78028
+          ],
+          [
+            -584.68268,
+            -649.79358
+          ],
+          [
+            -584.25083,
+            -649.79479
+          ],
+          [
+            -584.18577,
+            -637.57672
+          ],
+          [
+            -584.18075,
+            -636.62923
+          ],
+          [
+            -579.26811,
+            -636.70832
+          ],
+          [
+            -579.27211,
+            -635.84061
+          ],
+          [
+            -579.27724,
+            -634.69682
+          ],
+          [
+            -589.52897,
+            -634.73818
+          ],
+          [
+            -589.52716,
+            -635.75726
+          ]
+        ],
+        [
+          [
+            -602.90749,
+            -648.98376
+          ],
+          [
+            -602.54844,
+            -652.14815
+          ],
+          [
+            -592.88361,
+            -652.38892
+          ],
+          [
+            -593.11048,
+            -649.22058
+          ]
+        ],
+        [
+          [
+            -573.84708,
+            -634.72266
+          ],
+          [
+            -573.82169,
+            -636.09615
+          ],
+          [
+            -573.81272,
+            -636.5843
+          ],
+          [
+            -572.45414,
+            -636.52836
+          ],
+          [
+            -571.95224,
+            -636.50768
+          ],
+          [
+            -571.94308,
+            -634.68694
+          ]
+        ],
+        [
+          [
+            -576.83282,
+            -634.68477
+          ],
+          [
+            -576.83883,
+            -636.61112
+          ],
+          [
+            -575.97553,
+            -636.55655
+          ],
+          [
+            -575.57117,
+            -636.53098
+          ],
+          [
+            -575.58468,
+            -634.67462
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "roof-73a1a032",
+      "name": "1065–1079 East 19th Avenue",
+      "street_address": "1065–1079 E 19th Ave",
+      "style": "nineteenth",
+      "municipal_outline": 171063,
+      "outline_enu_m": [
+        [
+          -492.77701,
+          -716.41985
+        ],
+        [
+          -492.75108,
+          -686.97144
+        ],
+        [
+          -486.71511,
+          -686.9768
+        ],
+        [
+          -486.72426,
+          -697.40254
+        ],
+        [
+          -482.88312,
+          -697.406
+        ],
+        [
+          -482.8999,
+          -716.42858
+        ],
+        [
+          -486.74104,
+          -716.42511
+        ]
+      ],
+      "eaves_m": 0.21,
+      "wall_color": [
+        91,
+        110,
+        102
+      ],
+      "trim_color": [
+        203,
+        207,
+        187
+      ],
+      "roof_color": [
+        109,
+        116,
+        108
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -496,
+            -717.8,
+            -480,
+            -711.47
+          ],
+          "planes": [
+            [
+              -489.2,
+              -714.0,
+              21.7,
+              0.46,
+              0
+            ],
+            [
+              -489.2,
+              -714.0,
+              21.7,
+              -0.36,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -496,
+            -711.47,
+            -480,
+            -697.37
+          ],
+          "planes": [
+            [
+              -489.05,
+              -704.01,
+              22.16,
+              0.49,
+              0
+            ],
+            [
+              -489.05,
+              -704.01,
+              22.16,
+              -0.43,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -496,
+            -697.37,
+            -480,
+            -685.9
+          ],
+          "planes": [
+            [
+              -490.95,
+              -691.18,
+              21.29,
+              0.49,
+              0
+            ],
+            [
+              -490.95,
+              -691.18,
+              21.29,
+              -0.37,
+              0
+            ]
+          ]
+        }
+      ],
+      "windows_m": [
+        [
+          14.17,
+          1.22
+        ],
+        [
+          17.23,
+          1.27
+        ]
+      ],
+      "bay_spacing_m": 3.61,
+      "window_width_m": 1.1,
+      "band_m": null,
+      "entry": null,
+      "porch": null,
+      "facade_door_enu_m": [
+        -484.94,
+        -716.01
+      ]
+    },
+    {
+      "id": "roof-1a3a0846",
+      "name": "750 East 18th Avenue",
+      "street_address": "750 E 18th Ave",
+      "style": "parapet",
+      "municipal_outline": 170671,
+      "outline_enu_m": [
+        [
+          -832.86162,
+          -621.00423
+        ],
+        [
+          -819.72576,
+          -621.15481
+        ],
+        [
+          -819.89566,
+          -626.36897
+        ],
+        [
+          -821.41689,
+          -626.30586
+        ],
+        [
+          -821.34106,
+          -654.30269
+        ],
+        [
+          -819.70818,
+          -654.47096
+        ],
+        [
+          -819.7907,
+          -662.61271
+        ],
+        [
+          -832.81815,
+          -662.4589
+        ]
+      ],
+      "eaves_m": 0.11,
+      "wall_color": [
+        80,
+        91,
+        88
+      ],
+      "trim_color": [
+        190,
+        197,
+        178
+      ],
+      "roof_color": [
+        196,
+        193,
+        181
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -838,
+            -669,
+            -817,
+            -617
+          ],
+          "planes": [
+            [
+              -830,
+              -643,
+              7.643,
+              0.001,
+              0.0005
+            ]
+          ]
+        }
+      ],
+      "windows_m": [
+        [
+          1.66,
+          1.26
+        ],
+        [
+          4.49,
+          1.43
+        ]
+      ],
+      "bay_spacing_m": 3.3,
+      "window_width_m": 1.4,
+      "band_m": null,
+      "entry": null,
+      "porch": null
+    },
+    {
+      "id": "roof-c7815e30",
+      "name": "746 East 19th Avenue",
+      "street_address": "746 E 19th Ave",
+      "style": "stucco-apartments",
+      "municipal_outline": 170680,
+      "outline_enu_m": [
+        [
+          -830.96527,
+          -764.96663
+        ],
+        [
+          -830.72165,
+          -754.54589
+        ],
+        [
+          -828.66437,
+          -754.51269
+        ],
+        [
+          -828.60277,
+          -751.03803
+        ],
+        [
+          -830.64068,
+          -751.08015
+        ],
+        [
+          -830.51854,
+          -745.85412
+        ],
+        [
+          -830.44237,
+          -742.59293
+        ],
+        [
+          -826.54103,
+          -742.5426
+        ],
+        [
+          -826.53853,
+          -743.06874
+        ],
+        [
+          -826.53465,
+          -743.86545
+        ],
+        [
+          -822.24282,
+          -743.79787
+        ],
+        [
+          -819.49321,
+          -743.75451
+        ],
+        [
+          -819.50002,
+          -745.95569
+        ],
+        [
+          -819.53998,
+          -758.87754
+        ],
+        [
+          -822.51215,
+          -758.95944
+        ],
+        [
+          -822.60291,
+          -760.3513
+        ],
+        [
+          -822.10723,
+          -760.33651
+        ],
+        [
+          -822.2365,
+          -764.87153
+        ],
+        [
+          -821.20168,
+          -764.87754
+        ],
+        [
+          -821.2102,
+          -764.907
+        ],
+        [
+          -821.22069,
+          -765.79864
+        ],
+        [
+          -821.22891,
+          -766.49511
+        ],
+        [
+          -826.85341,
+          -766.43147
+        ],
+        [
+          -826.82977,
+          -765.00861
+        ]
+      ],
+      "eaves_m": 0.16,
+      "wall_color": [
+        207,
+        197,
+        170
+      ],
+      "trim_color": [
+        134,
+        89,
+        72
+      ],
+      "roof_color": [
+        149,
+        132,
+        118
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -834,
+            -752.45,
+            -816,
+            -741
+          ],
+          "planes": [
+            [
+              -825,
+              -746.77,
+              7.93,
+              0,
+              0.251
+            ],
+            [
+              -825,
+              -746.77,
+              7.93,
+              0,
+              -0.624
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -834,
+            -768,
+            -816,
+            -752.45
+          ],
+          "planes": [
+            [
+              -828.45,
+              -758.8,
+              7.85,
+              0.33,
+              0.015
+            ],
+            [
+              -828.45,
+              -758.8,
+              7.85,
+              -0.213,
+              0.015
+            ]
+          ]
+        }
+      ],
+      "windows_m": [
+        [
+          1.69,
+          1.22
+        ],
+        [
+          4.31,
+          1.01
+        ]
+      ],
+      "bay_spacing_m": 3.19,
+      "window_width_m": 1.47,
+      "band_m": null,
+      "entry": {
+        "gate": "nineteenth-north-steps",
+        "near": [
+          -828.96,
+          -742.79
+        ],
+        "approach_m": 4.2,
+        "rise_m": 0.5
+      },
+      "porch": null,
+      "dormers": [
+        {
+          "near": [
+            -825.21,
+            -744.58
+          ],
+          "bearing": 0,
+          "width": 4.08,
+          "depth": 1.91,
+          "sill": 6.53,
+          "top": 8.03,
+          "windows": 2,
+          "style": "shed"
+        }
+      ],
+      "alley_steps_enu_m": [
+        [
+          -821.76,
+          -765.99
+        ],
+        [
+          -821.76,
+          -762.57
+        ]
+      ],
+      "alley_threshold_m": 2.23,
+      "front": {
+        "bearing": 0.7
+      }
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-71f4af04",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-0587b8ad",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-80aadee0",
+      "target": "context-background-0-0"
+    },
+    {
+      "id": "roof-73a1a032",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-1a3a0846",
+      "target": "context-background-0-0"
+    },
+    {
+      "id": "roof-c7815e30",
+      "target": "context-background-0-0"
+    }
+  ],
+  "campbell_source_range": {
+    "id": "roof-0587b8ad",
+    "target": "context-background-0-1",
+    "peer_id": "roof-44344453",
+    "sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "campbell_triangles": [
+      524,
+      712
+    ],
+    "peer_triangles": [
+      3845,
+      4345
+    ]
+  }
+}

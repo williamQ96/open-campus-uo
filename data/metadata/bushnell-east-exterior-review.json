@@ -1,0 +1,590 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_ranges": [
+    {
+      "id": "roof-b1c16a4e",
+      "target": "context-campus-0-2"
+    },
+    {
+      "id": "roof-e3dcdde4",
+      "target": "context-background-0-2"
+    }
+  ],
+  "sources": {
+    "city_and_2024_ortho": {
+      "city": {
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493539.14928888186%2C4877056.282153052%2C493698.14928888186%2C4877174.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "233090f1ce0a31a2c345931f8e413349dcf3b861823d69a63c945c5b778654b4"
+      },
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493539.14928888186%2C4877056.282153052%2C493698.14928888186%2C4877174.282153052&bboxSR=3740&imageSR=3740&size=1272%2C944&format=png&bandIds=0%2C1%2C2",
+        "sha256": "a3c358c11152927ce5981987cfac5cc900f1f1e8525b10456a406e9581661346"
+      }
+    },
+    "historical_surfaces": {
+      "2013-15": {
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz"
+      },
+      "2017": {
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz"
+      },
+      "DOGAMI": {
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18",
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz"
+      }
+    },
+    "campus_map": {
+      "url": "https://bushnell.edu/wp-content/uploads/2026/08/Campus-Map_2026.pdf",
+      "sha256": "9c906554e1ddd1b721d9e0a2d3adce44fffff9764215cfec2cd7bd7c7527daf9"
+    },
+    "campus_map_pins": {
+      "Fennel House": {
+        "latlng": [
+          44.0472715,
+          -123.0798859
+        ]
+      },
+      "Kellenberger Library": {
+        "latlng": [
+          44.0471543,
+          -123.07898
+        ]
+      },
+      "Price Music Hall": {
+        "latlng": [
+          44.0474611,
+          -123.0788848
+        ]
+      },
+      "Burke-Griffeth Residence Hall": {
+        "latlng": [
+          44.0468426,
+          -123.0793426
+        ]
+      }
+    },
+    "library_clock_portal_and_north_face": {
+      "url": "https://bushnell.edu/wp-content/uploads/2026/07/family-visit-campus-tour-library.jpg",
+      "sha256": "ccae51aa1cc0648bc7d44363debda0dad226f3f46bc1b1fb00c7158ea1b164d0"
+    },
+    "price_west_face": {
+      "url": "https://bushnell.edu/wp-content/uploads/2026/04/065dc41e66b0599ef1c66518e227b202263889f5-1024x683.png",
+      "sha256": "f665a3c76bab6f14789461935ef1139267f03a8469f0e56fe47f13b0e3dfff3c"
+    },
+    "burke_quadrangle_face": {
+      "url": "https://bushnell.edu/wp-content/uploads/2026/07/bushnell-burke-griffeth-hall-dorm-exterior.jpg",
+      "sha256": "5b4c8f2dfeeee561b37cfb69a27f4b7958f06f99d2daee0bb465cd6b3e14a574"
+    },
+    "burke_brick_and_windows": {
+      "url": "https://bushnell.edu/wp-content/uploads/2026/09/burke-griffeth-cherry-blossom-scaled.jpg",
+      "sha256": "15272bc4fe1fa478245683458b6258d1fc432f97bf73188f00ec6ac6c15840b5"
+    },
+    "bistro": "https://bushnell.edu/student-life/residence-life/campus-dining/",
+    "addresses": "https://bushnell.edu/student-life/campus-safety/"
+  },
+  "models": [
+    {
+      "id": "roof-b1c16a4e",
+      "name": "Kellenberger Library · Lottie Price Music Building & Ross Evans Chapel",
+      "street_address": "1188 Kincaid St",
+      "role": "library",
+      "city_footprint": 171530,
+      "city_overlap_m2": 1403.508,
+      "outline_enu_m": [
+        [
+          -675.0535955074592,
+          198.612625496462
+        ],
+        [
+          -654.3723404935445,
+          198.8281460488215
+        ],
+        [
+          -654.4396508873906,
+          205.28195156529546
+        ],
+        [
+          -655.3418025710271,
+          205.27262733597308
+        ],
+        [
+          -655.5884679795126,
+          228.9475512309
+        ],
+        [
+          -641.0322135757306,
+          229.0992750786245
+        ],
+        [
+          -640.7839465446887,
+          205.27689412608743
+        ],
+        [
+          -642.1010811349261,
+          205.2631849059835
+        ],
+        [
+          -642.0321117052226,
+          198.64322339184582
+        ],
+        [
+          -641.2783193498035,
+          198.6510199457407
+        ],
+        [
+          -641.0789973581559,
+          179.52783285733312
+        ],
+        [
+          -642.4860057056649,
+          179.51314139179885
+        ],
+        [
+          -642.2642582629924,
+          158.23795099835843
+        ],
+        [
+          -661.2113962852745,
+          158.04048351943493
+        ],
+        [
+          -661.436953842931,
+          179.68127242755145
+        ],
+        [
+          -674.854929444904,
+          179.54152049217373
+        ],
+        [
+          -675.0535955074592,
+          198.612625496462
+        ]
+      ],
+      "entrance": {
+        "near": [
+          -654.4,
+          202.15
+        ],
+        "bearing": 270,
+        "distance": 3.55,
+        "gate": "chapel-music-library",
+        "width_m": 2.1
+      },
+      "roof_frame": {
+        "axis": [
+          1,
+          0
+        ],
+        "origin_enu_m": [
+          -690,
+          190
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            14,
+            -10.5,
+            50,
+            8.860000000000014
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              -0.728,
+              0.51,
+              0
+            ],
+            [
+              0,
+              0,
+              16.2,
+              -0.19,
+              0
+            ],
+            [
+              0,
+              0,
+              8.6451,
+              0,
+              0.137
+            ],
+            [
+              0,
+              0,
+              7.9965,
+              0,
+              -0.145
+            ]
+          ],
+          "roof_color": [
+            171,
+            170,
+            162
+          ]
+        },
+        {
+          "bounds_m": [
+            28.519999999999982,
+            -32.5,
+            50,
+            8.860000000000014
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.0218,
+              0.177,
+              0
+            ],
+            [
+              0,
+              0,
+              13.7338,
+              -0.143,
+              0
+            ],
+            [
+              0,
+              0,
+              16.751,
+              0,
+              0.318
+            ],
+            [
+              0,
+              0,
+              8.2129,
+              0,
+              -0.151
+            ]
+          ],
+          "roof_color": [
+            171,
+            170,
+            162
+          ]
+        },
+        {
+          "bounds_m": [
+            34.25,
+            8.680000000000007,
+            50,
+            15.280000000000001
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              6.656,
+              0,
+              0.147
+            ]
+          ],
+          "roof_color": [
+            159,
+            159,
+            151
+          ]
+        },
+        {
+          "bounds_m": [
+            34,
+            15.27000000000001,
+            50,
+            40
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              -1.69535,
+              0.323,
+              0
+            ],
+            [
+              0,
+              0,
+              23.86905,
+              -0.309,
+              0
+            ],
+            [
+              0,
+              0,
+              4.74375,
+              0,
+              0.285
+            ],
+            [
+              0,
+              0,
+              20.33544,
+              0,
+              -0.288
+            ]
+          ],
+          "roof_color": [
+            92,
+            99,
+            105
+          ]
+        }
+      ],
+      "alternate_street_address": "894 E 11th Ave"
+    },
+    {
+      "id": "roof-e3dcdde4",
+      "name": "Burke-Griffeth Hall",
+      "street_address": "875 E 12th Ave",
+      "role": "burke",
+      "city_footprint": 171529,
+      "city_overlap_m2": 1574.282,
+      "outline_enu_m": [
+        [
+          -697.1763066367712,
+          140.8883724724874
+        ],
+        [
+          -697.1721934997477,
+          139.6280531734228
+        ],
+        [
+          -735.3895766359637,
+          139.50769043155015
+        ],
+        [
+          -735.4056628999533,
+          144.62718115746975
+        ],
+        [
+          -738.2545916204108,
+          144.61825763620436
+        ],
+        [
+          -738.2837752344203,
+          153.8925959477201
+        ],
+        [
+          -735.1540634745033,
+          153.90239916555583
+        ],
+        [
+          -735.1907551520853,
+          165.56609278544784
+        ],
+        [
+          -717.7171340711648,
+          165.26656469609588
+        ],
+        [
+          -717.3679440053529,
+          165.26058571692556
+        ],
+        [
+          -717.2574871616671,
+          154.03710822947323
+        ],
+        [
+          -703.8896965082386,
+          154.07915784604847
+        ],
+        [
+          -703.9409158346243,
+          155.54067796561867
+        ],
+        [
+          -672.7892363411956,
+          155.6766745876521
+        ],
+        [
+          -672.7985930834548,
+          155.3099831249565
+        ],
+        [
+          -672.8993170071044,
+          151.38694635406137
+        ],
+        [
+          -672.4218443614664,
+          151.38839613553137
+        ],
+        [
+          -641.7861195212463,
+          151.48209550976753
+        ],
+        [
+          -641.7249221022357,
+          136.91993624251336
+        ],
+        [
+          -686.5309068178176,
+          136.94974275957793
+        ],
+        [
+          -687.1930420238641,
+          136.9501819740981
+        ],
+        [
+          -687.2384088430554,
+          140.91966049652547
+        ],
+        [
+          -697.1763066367712,
+          140.8883724724874
+        ]
+      ],
+      "entrance": {
+        "near": [
+          -668.8,
+          151.48
+        ],
+        "bearing": 0,
+        "distance": 2.7,
+        "gate": "quad-residence",
+        "width_m": 1.65
+      },
+      "roof_frame": {
+        "axis": [
+          1,
+          0
+        ],
+        "origin_enu_m": [
+          -690,
+          190
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -49,
+            -35.94999999999999,
+            -19,
+            -23
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              5.376,
+              0.036,
+              0
+            ],
+            [
+              0,
+              0,
+              0.898,
+              -0.093,
+              0
+            ],
+            [
+              0,
+              0,
+              8.666,
+              0,
+              0.143
+            ],
+            [
+              0,
+              0,
+              -0.2,
+              0,
+              -0.143
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -49,
+            -54,
+            -18.549999999999955,
+            -35.94999999999999
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              14.4761,
+              0,
+              0.153
+            ],
+            [
+              0,
+              0,
+              1.3224,
+              0,
+              -0.148
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -18.549999999999955,
+            -54,
+            17.0,
+            -34
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              17.7149,
+              0,
+              0.169
+            ],
+            [
+              0,
+              0,
+              5.2112,
+              0,
+              -0.128
+            ],
+            [
+              0,
+              0,
+              13.72,
+              0.24,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            17.0,
+            -54,
+            49,
+            -34
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              17.7558,
+              0,
+              0.158
+            ],
+            [
+              0,
+              0,
+              3.414,
+              0,
+              -0.16
+            ],
+            [
+              0,
+              0,
+              23.65,
+              -0.3,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

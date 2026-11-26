@@ -1,0 +1,1586 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "surfaces": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "onyx-1866-1870": {
+      "city": [
+        {
+          "city_objectid": 171048,
+          "outline_enu_wkt": "POLYGON ((-237.44252282113302 -688.2828285936266, -225.5940944359172 -688.2932100705802, -225.59742494329112 -692.0884435558692, -225.60058014147216 -695.6985652996227, -237.44901171833044 -695.6880839159712, -237.44252282113302 -688.2828285936266))",
+          "area_m2": 87.74,
+          "parcel_fractions": {
+            "1803051201200": 1.0
+          },
+          "inside_addresses": [
+            "1870 ONYX ST"
+          ],
+          "legacy_intersections_m2": {
+            "roof-b0cb5ef5": 83.13
+          }
+        },
+        {
+          "city_objectid": 171049,
+          "outline_enu_wkt": "POLYGON ((-224.02382649626816 -692.0898791970685, -224.0203960860381 -688.2946427352726, -203.65584204747574 -688.3125580186024, -203.6624302584096 -695.717816288583, -224.02698466333095 -695.699901024811, -224.02382649626816 -692.0898791970685))",
+          "area_m2": 150.81,
+          "parcel_fractions": {
+            "1803051201200": 1.0
+          },
+          "inside_addresses": [
+            "1866 ONYX ST",
+            "1870 ONYX ST"
+          ],
+          "legacy_intersections_m2": {
+            "roof-b0cb5ef5": 140.98
+          }
+        }
+      ],
+      "height_sample_counts": {
+        "gaps": [
+          {
+            "ids": [
+              171048,
+              171049
+            ],
+            "edge_distance_m": 1.5736
+          }
+        ],
+        "roofs": {
+          "171048": {
+            "file": "city-171048-height-samples.json",
+            "valid_cells_by_surface": {
+              "2013-15": 66,
+              "2017": 0,
+              "DOGAMI": 66
+            }
+          },
+          "171049": {
+            "file": "city-171049-height-samples.json",
+            "valid_cells_by_surface": {
+              "2013-15": 114,
+              "2017": 0,
+              "DOGAMI": 114
+            }
+          }
+        }
+      },
+      "image_and_parcel_sources": [
+        {
+          "file": "onyx-1866-1870-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494057.14928888186%2C4876198.282153052%2C494160.14928888186%2C4876274.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "e4a6249856b711e2e65110600fa7fc67b54261bdc12e87c50bd4be0f4824fe71"
+        },
+        {
+          "file": "onyx-1866-1870-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494057.14928888186%2C4876198.282153052%2C494160.14928888186%2C4876274.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "df5f209b458986670c459a9d80f1006c063a14a3418335945f82a095e3e9dddc"
+        },
+        {
+          "file": "onyx-1866-1870-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494057.14928888186%2C4876198.282153052%2C494160.14928888186%2C4876274.282153052&bboxSR=3740&imageSR=3740&size=1030%2C760&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "9c45a832d195ca72f4c2fc22c7e34a20466f7b4a33c6fb336e541ab092bd9c63",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "onyx-1866-1870-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494057.14928888186%2C4876198.282153052%2C494160.14928888186%2C4876274.282153052&bboxSR=3740&imageSR=3740&size=1030%2C760&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "21417c49774b4cf220697e314a53fe99a72407be01fbf1cbcbebd35e29b77e5d",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99905
+        },
+        {
+          "file": "onyx-1866-1870-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494057.14928888186%2C4876198.282153052%2C494160.14928888186%2C4876274.282153052&bboxSR=3740&imageSR=3740&size=1030%2C760&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "fc77571ed02a04552e328875b6cda76e0be16b56dd5ea1294ae894bfc9b6d565",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "public_street_views": [
+        {
+          "date": "2024-07",
+          "id": "ZNlvdLY9qUO7QXrHYa_5pg",
+          "camera_enu": [
+            -245.28214489715174,
+            -689.6844997350127
+          ],
+          "bearing": 108.0,
+          "distance": 14.0,
+          "file": "1870-onyx-alley-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ZNlvdLY9qUO7QXrHYa_5pg&heading=108.0",
+          "sha256": "228b7a5e63e89400bd8affc4280f13b79cb5b8e5f57cbaafebeca37f81971ae0"
+        },
+        {
+          "date": "2024-07",
+          "id": "rlBuv0BBNEefqFNLA768Kw",
+          "camera_enu": [
+            -183.50033958861604,
+            -692.4992393972352
+          ],
+          "bearing": 274.33,
+          "distance": 30.4,
+          "file": "1866-onyx-east-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=rlBuv0BBNEefqFNLA768Kw&heading=274.33",
+          "sha256": "606e8775010f721bf096dfcfcfe41bf7119c74fb2e2f2e56d3822974e7cefaea"
+        },
+        {
+          "date": "2024-07",
+          "id": "ZNlvdLY9qUO7QXrHYa_5pg",
+          "camera_enu": [
+            -245.28214489715174,
+            -689.6844997350127
+          ],
+          "bearing": 100.8,
+          "distance": 13.4,
+          "file": "1870-onyx-alley-west-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ZNlvdLY9qUO7QXrHYa_5pg&heading=100.8",
+          "sha256": "100fcbacdfddc5595192d71ce4400eedb7a76a08e2c4ffcf50c0f34679ce93f6"
+        },
+        {
+          "date": "2024-07",
+          "id": "hTPBpHFGkQkCn-RMvAk6bA",
+          "camera_enu": [
+            -183.37369232665515,
+            -682.0021100267768
+          ],
+          "bearing": 250.08,
+          "distance": 25.2,
+          "file": "1866-northeast-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=hTPBpHFGkQkCn-RMvAk6bA&heading=250.08",
+          "sha256": "30c3a56ce89ae98077d7c65e8dfa296c69c2e60f7075e47b7646868bc1bb2eb7"
+        },
+        {
+          "date": "2024-07",
+          "id": "OfOr_wQ_ReF4tTLgW6LQiw",
+          "camera_enu": [
+            -183.53569647943368,
+            -703.1281085256487
+          ],
+          "bearing": 291.69,
+          "distance": 27.4,
+          "file": "1866-southeast-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=OfOr_wQ_ReF4tTLgW6LQiw&heading=291.69",
+          "sha256": "7b5972504153c860b13d851ba13b35ebbf89d2f9429dd7049b579c9d4c2d4d17"
+        }
+      ],
+      "listing_references": [
+        "https://hotpads.com/onyx-apartments-eugene-or-97403-20pn5zb/pad"
+      ]
+    },
+    "e19-1208": {
+      "city": [
+        {
+          "city_objectid": 171126,
+          "outline_enu_wkt": "POLYGON ((-290.7931418849621 -761.42607562989, -283.64160108205397 -761.4323375029489, -283.6512449423317 -772.4578169230372, -290.8028888278641 -772.4514581356198, -290.7931418849621 -761.42607562989))",
+          "area_m2": 78.85,
+          "parcel_fractions": {
+            "1803051208100": 1.0
+          },
+          "inside_addresses": [],
+          "legacy_intersections_m2": {
+            "roof-48d494fc": 43.61
+          }
+        },
+        {
+          "city_objectid": 171127,
+          "outline_enu_wkt": "POLYGON ((-291.82630807033274 -750.2507139192894, -288.69741594436346 -750.2534319832921, -288.69182107254164 -743.8468377618119, -280.1992978553171 -743.8542778911069, -280.20488961588126 -750.2609720220789, -280.21396927256137 -760.5414078561589, -291.8353880168288 -760.5311497719958, -291.82630807033274 -750.2507139192894))",
+          "area_m2": 173.88,
+          "parcel_fractions": {
+            "1803051208100": 1.0
+          },
+          "inside_addresses": [
+            "1208 E 19TH AVE"
+          ],
+          "legacy_intersections_m2": {
+            "roof-48d494fc": 148.04
+          }
+        }
+      ],
+      "height_sample_counts": {
+        "gaps": [
+          {
+            "ids": [
+              171126,
+              171127
+            ],
+            "edge_distance_m": 0.894
+          }
+        ],
+        "roofs": {
+          "171126": {
+            "file": "city-171126-height-samples.json",
+            "valid_cells_by_surface": {
+              "2013-15": 60,
+              "2017": 0,
+              "DOGAMI": 60
+            }
+          },
+          "171127": {
+            "file": "city-171127-height-samples.json",
+            "valid_cells_by_surface": {
+              "2013-15": 139,
+              "2017": 0,
+              "DOGAMI": 139
+            }
+          }
+        }
+      },
+      "image_and_parcel_sources": [
+        {
+          "file": "e19-1208-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494000.14928888186%2C4876125.282153052%2C494083.14928888186%2C4876221.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "1bc0e279503c2b2b89c290119ee5b1a54b4bec0d0a8c50e1602d6b8c245088ff"
+        },
+        {
+          "file": "e19-1208-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494000.14928888186%2C4876125.282153052%2C494083.14928888186%2C4876221.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "d9e50adb659d5fb137701bda8fc9827ac8a670f86ae7784d8eadcfbbaad522f7"
+        },
+        {
+          "file": "e19-1208-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494000.14928888186%2C4876125.282153052%2C494083.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=830%2C960&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "53fadaa6a07a81caaef4a0b5f8abc1fc10a3f568084feaeb6a4e193eb2f353d1",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "e19-1208-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494000.14928888186%2C4876125.282153052%2C494083.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=830%2C960&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "a306a06c63ca6e04b69a3974dc47f2dd589bb09691535a38417bdf2dabb0431e",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99983
+        },
+        {
+          "file": "e19-1208-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494000.14928888186%2C4876125.282153052%2C494083.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=830%2C960&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "c6b65fc2c908c9cbf42d2928f18ae0ce9029cefccb2151076c7807f837357148",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "public_street_views": [
+        {
+          "date": "2024-07",
+          "id": "v7HvDFmNVIM60Yr0AwiFPA",
+          "camera_enu": [
+            -285.633506518323,
+            -731.4995256308466
+          ],
+          "bearing": 180.93,
+          "distance": 23.9,
+          "file": "1208-e19-north-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=v7HvDFmNVIM60Yr0AwiFPA&heading=180.93",
+          "sha256": "162c27356bd1d5109fde7ba4f6c8500e89a9682fe6284bf66a7f39e523d1fa55"
+        },
+        {
+          "date": "2024-07",
+          "id": "dJjHJEldmRbBlc8wXcOshw",
+          "camera_enu": [
+            -308.57814429164864,
+            -756.9674941906705
+          ],
+          "bearing": 86.02,
+          "distance": 22.6,
+          "file": "1208-e19-west-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dJjHJEldmRbBlc8wXcOshw&heading=86.02",
+          "sha256": "cd6e7b1dfaca527f8e337382b204e8406110c2a91bb7d2083a47ce8ee3b8b8e2"
+        },
+        {
+          "date": "2024-07",
+          "id": "3blE8oIYZstXADaKIdqhrg",
+          "camera_enu": [
+            -308.6242141625262,
+            -766.8146130377427
+          ],
+          "bearing": 90.36,
+          "distance": 21.4,
+          "file": "1208-rear-garage-west-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=3blE8oIYZstXADaKIdqhrg&heading=90.36",
+          "sha256": "e2c11d1308ce33f7f4ff59f70bc75cd4523018acc4b4b5170417ea195678aec4"
+        }
+      ],
+      "listing_references": []
+    },
+    "university-1825": {
+      "city": [
+        {
+          "city_objectid": 171041,
+          "outline_enu_wkt": "POLYGON ((-288.86646864475915 -637.4258897313848, -270.353231236164 -637.4421609705314, -270.3565621773596 -641.2373940199614, -259.89661860628985 -641.2466159649193, -259.90531445492525 -651.1512243961915, -275.5489779810305 -651.1374109964818, -275.54862733074697 -650.7671874836087, -279.6215795641765 -650.7635450288653, -279.61754723248305 -646.2278648791835, -288.87421907292446 -646.219630737789, -288.86646864475915 -637.4258897313848))",
+          "area_m2": 310.31,
+          "parcel_fractions": {
+            "1803051201800": 1.0
+          },
+          "inside_addresses": [
+            "1825 UNIVERSITY ST",
+            "1826 ONYX ALY",
+            "1828 ONYX ALY"
+          ],
+          "legacy_intersections_m2": {
+            "roof-27720a8d": 258.07
+          }
+        },
+        {
+          "city_objectid": 171043,
+          "outline_enu_wkt": "POLYGON ((-264.3214350194321 -652.6266761207953, -264.3203874612227 -653.4558740807697, -264.31905893364456 -654.4787704832852, -264.0295156905195 -654.4899294180796, -260.4515703333309 -654.6279500126839, -260.4492325814208 -655.4032075619325, -260.42675608495483 -662.9011011067778, -265.27605460450286 -662.8968289373443, -265.2581853038864 -662.0212647458538, -267.83122841262957 -662.0027568936348, -268.11640081647784 -662.0006678262725, -268.2291309534339 -659.6543495357037, -268.256045663089 -659.0943330638111, -272.08677531959256 -659.0777610642835, -271.9545581997372 -653.4491166099906, -271.93807655310957 -652.748200012371, -264.3214350194321 -652.6266761207953))",
+          "area_m2": 93.75,
+          "parcel_fractions": {
+            "1803051201700": 1.0
+          },
+          "inside_addresses": [
+            "1840 ONYX ALY"
+          ],
+          "legacy_intersections_m2": {
+            "roof-27720a8d": 76.23
+          }
+        }
+      ],
+      "height_sample_counts": {
+        "gaps": [
+          {
+            "ids": [
+              171041,
+              171043
+            ],
+            "edge_distance_m": 1.4794
+          }
+        ],
+        "roofs": {
+          "171041": {
+            "file": "city-171041-height-samples.json",
+            "valid_cells_by_surface": {
+              "2013-15": 262,
+              "2017": 0,
+              "DOGAMI": 262
+            }
+          },
+          "171043": {
+            "file": "city-171043-height-samples.json",
+            "valid_cells_by_surface": {
+              "2013-15": 67,
+              "2017": 0,
+              "DOGAMI": 67
+            }
+          }
+        }
+      },
+      "image_and_parcel_sources": [
+        {
+          "file": "university-1825-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494006.14928888186%2C4876231.282153052%2C494104.14928888186%2C4876325.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "c32dce5b8f064062fc6d74edb1ec08bcc4dad4f6193572d92be0a22cc8e5660d"
+        },
+        {
+          "file": "university-1825-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494006.14928888186%2C4876231.282153052%2C494104.14928888186%2C4876325.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "b7d30b04a45b1f78cbff38efa6d33f531edba82f137e8206c37eb301bff4855e"
+        },
+        {
+          "file": "university-1825-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494006.14928888186%2C4876231.282153052%2C494104.14928888186%2C4876325.282153052&bboxSR=3740&imageSR=3740&size=980%2C940&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "738e30394d717f568c5b83deade48029abc1fc2b0923216391d5fb1cab697c9e",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "university-1825-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494006.14928888186%2C4876231.282153052%2C494104.14928888186%2C4876325.282153052&bboxSR=3740&imageSR=3740&size=980%2C940&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "14e7848ff85a1b20aead6214f3f57a75ac681b5abef0b56efbbe538a073d7440",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.98405
+        },
+        {
+          "file": "university-1825-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494006.14928888186%2C4876231.282153052%2C494104.14928888186%2C4876325.282153052&bboxSR=3740&imageSR=3740&size=980%2C940&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "53742a021ee8a4c33e9f5c530b4a4169b480cb5065d5fb2f76af2a2ea8d01bd0",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "public_street_views": [
+        {
+          "date": "2024-07",
+          "id": "3Jz30DHpu8DUsxAAsUeysA",
+          "camera_enu": [
+            -245.1571874161018,
+            -648.7490602321923
+          ],
+          "bearing": 279.74,
+          "distance": 29.7,
+          "file": "1825-university-alley-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=3Jz30DHpu8DUsxAAsUeysA&heading=279.74",
+          "sha256": "af805a056ca2fd34f2a02774242c2eb28eff75c6511a4c4680a336da396b880f"
+        },
+        {
+          "date": "2024-07",
+          "id": "-xdlCHiGRSljlezEapj7rQ",
+          "camera_enu": [
+            -308.51143694180064,
+            -648.6730310795829
+          ],
+          "bearing": 81.76,
+          "distance": 34.5,
+          "file": "1825-university-west-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-xdlCHiGRSljlezEapj7rQ&heading=81.76",
+          "sha256": "dcb39cfe60feb5a51994356ee3ab3253df6d31668d46e71d49a2917717ee3c7e"
+        },
+        {
+          "date": "2024-07",
+          "id": "-xdlCHiGRSljlezEapj7rQ",
+          "camera_enu": [
+            -308.51143694180064,
+            -648.6730310795829
+          ],
+          "bearing": 101.46,
+          "distance": 43.1,
+          "file": "1840-university-unobstructed-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-xdlCHiGRSljlezEapj7rQ&heading=101.46",
+          "sha256": "dc38c234c076caa11826c0e7c036f9cd421f0dc130dfb98add7de50c2cc4ab69"
+        },
+        {
+          "date": "2024-07",
+          "id": "2NIbd1Ts3kz8biEZQNmW5Q",
+          "camera_enu": [
+            -245.39793519838713,
+            -638.6764485565946
+          ],
+          "bearing": 228.31,
+          "distance": 27.9,
+          "file": "1840-alley-unobstructed-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2NIbd1Ts3kz8biEZQNmW5Q&heading=228.31",
+          "sha256": "a6296a868e464e94e1277b102079bad0da8b35a21276dd3e9861ff7a6db52821"
+        },
+        {
+          "date": "2024-07",
+          "id": "3Jz30DHpu8DUsxAAsUeysA",
+          "camera_enu": [
+            -245.1571874161018,
+            -648.7490602321923
+          ],
+          "bearing": 277.94,
+          "distance": 17.0,
+          "file": "1825-alley-east-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=3Jz30DHpu8DUsxAAsUeysA&heading=277.94",
+          "sha256": "15319f25da2ee230241774c2bf0e5d3f7baad57d9a48117992694a44a4c6bd3e"
+        },
+        {
+          "date": "2024-07",
+          "id": "QValkWQDzW1THv2PoFoZ0A",
+          "camera_enu": [
+            -245.23513238399755,
+            -679.2404751917347
+          ],
+          "bearing": 315.11,
+          "distance": 28.9,
+          "file": "1840-alley-southwest-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=QValkWQDzW1THv2PoFoZ0A&heading=315.11",
+          "sha256": "bc904a4db92943580146dcc7b45e879a5e99e59f699be0f431cc5a351461c728"
+        }
+      ],
+      "listing_references": [
+        "https://www.zillow.com/apartments/eugene-or/1825-university-st.-and-1826-1828-onyx-alley/9P2LHL/",
+        "https://www.zillow.com/apartments/eugene-or/1840-1848-onyx-alley-and-1845-university-st./CGBrpb/"
+      ]
+    },
+    "inference": "The building gaps follow separately mapped City boundaries and 2025 aerials. Screened window positions, appearance of the 1840 alley house, and gate and stair dimensions use estimates. 1840 and the garage have no authored gates."
+  },
+  "models": [
+    {
+      "id": "roof-b0cb5ef5",
+      "name": "1866 Onyx Street",
+      "street_address": "1866 Onyx Street",
+      "outline_enu_m": [
+        [
+          -224.0238,
+          -692.0899
+        ],
+        [
+          -224.027,
+          -695.6999
+        ],
+        [
+          -203.6624,
+          -695.7178
+        ],
+        [
+          -203.6558,
+          -688.3126
+        ],
+        [
+          -224.0204,
+          -688.2946
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "levels_z_m": [
+        13.36,
+        16.42
+      ],
+      "entry": {
+        "gate": "onyx-street-drive",
+        "bearing": 90,
+        "distance_m": 5.05,
+        "approach_z_m": 12.52,
+        "width_m": 1.18,
+        "position_enu_m": [
+          -201.28,
+          -687.04
+        ]
+      },
+      "door": {
+        "near_enu_m": [
+          -206.36,
+          -688.53
+        ],
+        "bearing": 0,
+        "threshold_z_m": 13.48
+      },
+      "type": "apartment",
+      "base_z_m": 12.35,
+      "eaves_m": 0.25,
+      "front_bearing": 90,
+      "cladding": "horizontal",
+      "wall_color": [
+        187,
+        188,
+        177
+      ],
+      "roof_color": [
+        105,
+        109,
+        99
+      ],
+      "trim_color": [
+        219,
+        215,
+        190
+      ],
+      "cladding_color": [
+        175,
+        176,
+        161
+      ],
+      "window_spacing_m": 4.2,
+      "window_width_m": 1.17,
+      "window_height_m": 1.37,
+      "front_windows": {
+        "0": [
+          [
+            0.3,
+            2.18
+          ],
+          [
+            0.78,
+            0.98
+          ]
+        ],
+        "1": [
+          [
+            0.36,
+            0.86
+          ],
+          [
+            0.62,
+            0.86
+          ]
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -225,
+            -697,
+            -203,
+            -687
+          ],
+          "planes": [
+            [
+              -211,
+              -691.54,
+              21.02,
+              0,
+              -0.36
+            ],
+            [
+              -211,
+              -691.54,
+              21.02,
+              0,
+              0.412
+            ],
+            [
+              -207.85,
+              -692,
+              21.02,
+              -0.56,
+              0
+            ]
+          ]
+        }
+      ],
+      "walks_enu_m": [
+        [
+          -205.05,
+          -687.98,
+          -200.89,
+          -686.29
+        ],
+        [
+          -203.67,
+          -694.77,
+          -195.58,
+          -688.08
+        ]
+      ],
+      "side_landing_enu_m": [
+        -207.83,
+        -688.37,
+        -204.96,
+        -687.24
+      ]
+    },
+    {
+      "id": "onyx-1870-west",
+      "name": "1870 Onyx Street",
+      "street_address": "1870 Onyx Street",
+      "outline_enu_m": [
+        [
+          -237.4425,
+          -688.2828
+        ],
+        [
+          -237.449,
+          -695.6881
+        ],
+        [
+          -225.6006,
+          -695.6986
+        ],
+        [
+          -225.5974,
+          -692.0884
+        ],
+        [
+          -225.5941,
+          -688.2932
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "levels_z_m": [
+        14.03,
+        17.17
+      ],
+      "entry": {
+        "gate": "onyx-alley-stair-foot",
+        "bearing": 270,
+        "distance_m": 3.26,
+        "approach_z_m": 14.48,
+        "width_m": 1.14,
+        "position_enu_m": [
+          -239.1,
+          -694.51
+        ]
+      },
+      "door": {
+        "near_enu_m": [
+          -237.25,
+          -689.31
+        ],
+        "bearing": 270,
+        "threshold_z_m": 17.17
+      },
+      "type": "apartment",
+      "base_z_m": 13.32,
+      "eaves_m": 0.2,
+      "front_bearing": 270,
+      "cladding": "horizontal",
+      "wall_color": [
+        155,
+        160,
+        154
+      ],
+      "roof_color": [
+        102,
+        106,
+        96
+      ],
+      "trim_color": [
+        202,
+        201,
+        180
+      ],
+      "cladding_color": [
+        145,
+        150,
+        140
+      ],
+      "window_spacing_m": 4.1,
+      "window_width_m": 1.06,
+      "window_height_m": 1.38,
+      "front_windows": {
+        "0": [],
+        "1": [
+          [
+            0.53,
+            1.04
+          ]
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -239,
+            -696,
+            -224,
+            -687
+          ],
+          "planes": [
+            [
+              -231,
+              -691.12,
+              21.53,
+              0,
+              -0.384
+            ],
+            [
+              -231,
+              -691.12,
+              21.53,
+              0,
+              0.363
+            ]
+          ]
+        }
+      ],
+      "stair_enu_m": [
+        -238.95,
+        -694.78,
+        -237.34,
+        -688.76
+      ]
+    },
+    {
+      "id": "roof-48d494fc",
+      "name": "1208 East 19th House",
+      "street_address": "1208 East 19th Avenue",
+      "outline_enu_m": [
+        [
+          -291.8263,
+          -750.2507
+        ],
+        [
+          -291.8354,
+          -760.5311
+        ],
+        [
+          -280.214,
+          -760.5414
+        ],
+        [
+          -280.2049,
+          -750.261
+        ],
+        [
+          -280.1993,
+          -743.8543
+        ],
+        [
+          -288.6918,
+          -743.8468
+        ],
+        [
+          -288.6974,
+          -750.2534
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "levels_z_m": [
+        20.44,
+        23.36
+      ],
+      "entry": {
+        "gate": "east-nineteenth-front-gate",
+        "bearing": 0,
+        "distance_m": 3.21,
+        "approach_z_m": 18.91,
+        "width_m": 1.27,
+        "position_enu_m": [
+          -285.21,
+          -741.72
+        ]
+      },
+      "door": {
+        "near_enu_m": [
+          -285.21,
+          -746.28
+        ],
+        "bearing": 0,
+        "threshold_z_m": 20.27
+      },
+      "type": "house",
+      "base_z_m": 18.56,
+      "eaves_m": 0.28,
+      "front_bearing": 0,
+      "cladding": "horizontal",
+      "wall_color": [
+        115,
+        124,
+        111
+      ],
+      "roof_color": [
+        121,
+        117,
+        105
+      ],
+      "trim_color": [
+        218,
+        218,
+        199
+      ],
+      "cladding_color": [
+        99,
+        111,
+        97
+      ],
+      "window_spacing_m": 3.91,
+      "window_width_m": 1.24,
+      "window_height_m": 1.26,
+      "front_windows": {
+        "0": [
+          [
+            0.29,
+            1.92
+          ],
+          [
+            0.71,
+            1.39
+          ]
+        ],
+        "1": [
+          [
+            0.41,
+            0.89
+          ]
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -291,
+            -753.45,
+            -279,
+            -743.4
+          ],
+          "planes": [
+            [
+              -284.85,
+              -748,
+              26.65,
+              0.384,
+              0
+            ],
+            [
+              -284.85,
+              -748,
+              26.65,
+              -0.442,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -293,
+            -761.5,
+            -279,
+            -749.98
+          ],
+          "planes": [
+            [
+              -286,
+              -753.41,
+              27.91,
+              0,
+              -0.581
+            ],
+            [
+              -286,
+              -753.41,
+              27.91,
+              0,
+              0.471
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -292.2,
+            -761,
+            -285.98,
+            -753.6
+          ],
+          "planes": [
+            [
+              -288.9,
+              -757,
+              27.84,
+              0.494,
+              0
+            ],
+            [
+              -288.9,
+              -757,
+              27.84,
+              -0.606,
+              0
+            ]
+          ]
+        }
+      ],
+      "porch": {
+        "recess_enu_m": [
+          -288.4,
+          -746.28,
+          -280,
+          -743.55
+        ],
+        "deck_enu_m": [
+          -288.39,
+          -746.51,
+          -280.74,
+          -744.11
+        ],
+        "floor_z_m": 20.27,
+        "posts_enu_m": [
+          [
+            -287.94,
+            -744.62
+          ],
+          [
+            -281.06,
+            -744.62
+          ]
+        ],
+        "post_width_m": 0.235,
+        "rail_segments_enu_m": [
+          [
+            [
+              -287.93,
+              -744.62
+            ],
+            [
+              -285.97,
+              -744.62
+            ]
+          ],
+          [
+            [
+              -284.58,
+              -744.62
+            ],
+            [
+              -281.09,
+              -744.62
+            ]
+          ]
+        ]
+      },
+      "fence_segments_enu_m": [
+        [
+          -290.53,
+          -286.05,
+          -741.72
+        ],
+        [
+          -284.37,
+          -280.22,
+          -741.72
+        ]
+      ],
+      "hood_enu_m": [
+        -286.2,
+        -746.41,
+        -284.23,
+        -744.05
+      ]
+    },
+    {
+      "id": "e19-1208-rear-garage",
+      "name": "1208 East 19th Rear Garage",
+      "street_address": "1208 East 19th Avenue",
+      "outline_enu_m": [
+        [
+          -290.7931,
+          -761.4261
+        ],
+        [
+          -290.8029,
+          -772.4515
+        ],
+        [
+          -283.6512,
+          -772.4578
+        ],
+        [
+          -283.6416,
+          -761.4323
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "levels_z_m": [
+        19.99
+      ],
+      "entry": null,
+      "type": "garage",
+      "base_z_m": 19.1,
+      "eaves_m": 0.215,
+      "front_bearing": 270,
+      "cladding": "vertical",
+      "wall_color": [
+        142,
+        149,
+        140
+      ],
+      "roof_color": [
+        142,
+        142,
+        127
+      ],
+      "trim_color": [
+        196,
+        203,
+        190
+      ],
+      "cladding_color": [
+        134,
+        142,
+        133
+      ],
+      "window_spacing_m": 4.2,
+      "window_width_m": 1,
+      "window_height_m": 0.9,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -291,
+            -769.42,
+            -283,
+            -760.9
+          ],
+          "planes": [
+            [
+              -286.7,
+              -767,
+              24.32,
+              0.158,
+              0
+            ],
+            [
+              -285.24,
+              -766,
+              24.55,
+              -0.47,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -291,
+            -773,
+            -283,
+            -769.42
+          ],
+          "planes": [
+            [
+              -286.7,
+              -770,
+              23.52,
+              0.037,
+              0
+            ]
+          ]
+        }
+      ],
+      "walks_enu_m": [
+        [
+          -303.18,
+          -767.4,
+          -290.7,
+          -761.72
+        ]
+      ]
+    },
+    {
+      "id": "roof-27720a8d",
+      "name": "1825 University Street",
+      "street_address": "1825 University Street",
+      "outline_enu_m": [
+        [
+          -288.8665,
+          -637.4259
+        ],
+        [
+          -288.8742,
+          -646.2196
+        ],
+        [
+          -279.6175,
+          -646.2279
+        ],
+        [
+          -279.6216,
+          -650.7635
+        ],
+        [
+          -275.5486,
+          -650.7672
+        ],
+        [
+          -275.549,
+          -651.1374
+        ],
+        [
+          -259.9053,
+          -651.1512
+        ],
+        [
+          -259.8966,
+          -641.2466
+        ],
+        [
+          -270.3566,
+          -641.2374
+        ],
+        [
+          -270.3532,
+          -637.4422
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "levels_z_m": [
+        13.87,
+        16.12
+      ],
+      "entry": {
+        "gate": "university-street-porch",
+        "bearing": 270,
+        "distance_m": 8.54,
+        "approach_z_m": 15.11,
+        "width_m": 1.18
+      },
+      "door": {
+        "near_enu_m": [
+          -287.11,
+          -641.63
+        ],
+        "bearing": 270,
+        "threshold_z_m": 15.11
+      },
+      "type": "flat",
+      "base_z_m": 12.65,
+      "eaves_m": 0.23,
+      "front_bearing": 270,
+      "cladding": "vertical",
+      "wall_color": [
+        160,
+        151,
+        130
+      ],
+      "roof_color": [
+        218,
+        217,
+        197
+      ],
+      "trim_color": [
+        210,
+        211,
+        190
+      ],
+      "cladding_color": [
+        147,
+        139,
+        120
+      ],
+      "window_spacing_m": 4.12,
+      "window_width_m": 1.61,
+      "window_height_m": 1.29,
+      "front_windows": {
+        "0": [
+          [
+            0.25,
+            1.44
+          ],
+          [
+            0.74,
+            2.04
+          ]
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -290,
+            -646.75,
+            -280.95,
+            -636.9
+          ],
+          "planes": [
+            [
+              -285,
+              -642.23,
+              18.89,
+              0,
+              -0.176
+            ],
+            [
+              -285,
+              -642.23,
+              18.89,
+              0,
+              0.221
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -280.95,
+            -651.65,
+            -273.88,
+            -636.9
+          ],
+          "planes": [
+            [
+              -277,
+              -643.38,
+              19.14,
+              0,
+              -0.171
+            ],
+            [
+              -277,
+              -643.38,
+              19.14,
+              0,
+              0.134
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -273.88,
+            -652,
+            -259,
+            -636.9
+          ],
+          "planes": [
+            [
+              -266,
+              -646.57,
+              19.6,
+              0,
+              -0.161
+            ],
+            [
+              -266,
+              -646.57,
+              19.6,
+              0,
+              0.194
+            ]
+          ]
+        }
+      ],
+      "porch": {
+        "recess_enu_m": [
+          -290,
+          -644.94,
+          -287.11,
+          -638.4
+        ],
+        "deck_enu_m": [
+          -288.93,
+          -644.86,
+          -287.0,
+          -638.54
+        ],
+        "floor_z_m": 15.11,
+        "posts_enu_m": [
+          [
+            -288.56,
+            -644.6
+          ],
+          [
+            -288.56,
+            -638.75
+          ]
+        ],
+        "post_width_m": 0.235
+      },
+      "balcony_enu_m": [
+        -260.17,
+        -648.72,
+        -258.41,
+        -645.49
+      ],
+      "balcony_door": {
+        "near_enu_m": [
+          -260.17,
+          -647.04
+        ],
+        "bearing": 90,
+        "threshold_z_m": 16.12
+      }
+    },
+    {
+      "id": "onyx-alley-1840",
+      "name": "1840 Onyx Alley",
+      "street_address": "1840 Onyx Alley",
+      "outline_enu_m": [
+        [
+          -264.3214,
+          -652.6267
+        ],
+        [
+          -271.9381,
+          -652.7482
+        ],
+        [
+          -271.9546,
+          -653.4491
+        ],
+        [
+          -272.0868,
+          -659.0778
+        ],
+        [
+          -268.256,
+          -659.0943
+        ],
+        [
+          -268.2291,
+          -659.6543
+        ],
+        [
+          -268.1164,
+          -662.0007
+        ],
+        [
+          -267.8312,
+          -662.0028
+        ],
+        [
+          -265.2582,
+          -662.0213
+        ],
+        [
+          -265.2761,
+          -662.8968
+        ],
+        [
+          -260.4268,
+          -662.9011
+        ],
+        [
+          -260.4492,
+          -655.4032
+        ],
+        [
+          -260.4516,
+          -654.628
+        ],
+        [
+          -264.0295,
+          -654.4899
+        ],
+        [
+          -264.3191,
+          -654.4788
+        ],
+        [
+          -264.3204,
+          -653.4559
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "levels_z_m": [
+        14.37,
+        17.0
+      ],
+      "entry": null,
+      "type": "house",
+      "base_z_m": 13.46,
+      "eaves_m": 0.19,
+      "front_bearing": 90,
+      "cladding": "horizontal",
+      "wall_color": [
+        154,
+        154,
+        144
+      ],
+      "roof_color": [
+        104,
+        110,
+        104
+      ],
+      "trim_color": [
+        211,
+        209,
+        192
+      ],
+      "cladding_color": [
+        141,
+        143,
+        133
+      ],
+      "window_spacing_m": 3.2,
+      "window_width_m": 1.02,
+      "window_height_m": 1.16,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -273,
+            -659.23,
+            -264.3,
+            -651.8
+          ],
+          "planes": [
+            [
+              -269.15,
+              -656,
+              21.95,
+              0.52,
+              0
+            ],
+            [
+              -269.15,
+              -656,
+              21.95,
+              -0.421,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -268.45,
+            -663.15,
+            -259.95,
+            -654.38
+          ],
+          "planes": [
+            [
+              -266,
+              -658.13,
+              21.67,
+              0,
+              -0.615
+            ],
+            [
+              -266,
+              -658.13,
+              21.67,
+              0,
+              0.441
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-b0cb5ef5",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-48d494fc",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-27720a8d",
+      "target": "context-background-1-0"
+    }
+  ],
+  "source_split": {
+    "onyx-1870-west": "roof-b0cb5ef5",
+    "e19-1208-rear-garage": "roof-48d494fc",
+    "onyx-alley-1840": "roof-27720a8d"
+  }
+}

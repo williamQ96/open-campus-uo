@@ -118,6 +118,8 @@
   },
   "iteration": 16,
   "wildlife": {
+    "refined_asset_url": "animals/campus-squirrel-l2.glb",
+    "refined_asset_sha256": "bfabbac23524ca2f29f4f5e8d090f9765d7c18e43d8c1686e1688d416d3461b4",
     "asset_url": "animals/campus-squirrel.glb",
     "yaw_correction": -1.5707963267948966,
     "source_license": "CC0-1.0",

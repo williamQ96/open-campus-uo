@@ -1,0 +1,358 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_ranges": [
+    {
+      "target": "context-background-3-1",
+      "id": "roof-b3b290df"
+    },
+    {
+      "target": "context-background-0-2",
+      "id": "roof-8fea5de9"
+    },
+    {
+      "target": "context-background-0-3",
+      "id": "roof-31cf5cf8"
+    }
+  ],
+  "models": [
+    {
+      "id": "roof-b3b290df",
+      "role": "walnut-1401",
+      "name": "Transportation Services",
+      "street_address": "1401 Walnut St",
+      "city_footprint": 170832,
+      "city_outline_enu_m": [
+        [
+          760.528788285621,
+          -128.213707273826
+        ],
+        [
+          760.5389285483398,
+          -116.64291236270219
+        ],
+        [
+          773.0353806617786,
+          -116.65392385143787
+        ],
+        [
+          773.0370235072332,
+          -114.80261208768934
+        ],
+        [
+          784.7929296721704,
+          -114.81292671523988
+        ],
+        [
+          784.7912868757267,
+          -116.66423847526312
+        ],
+        [
+          784.7811472934554,
+          -128.23503335379064
+        ],
+        [
+          760.528788285621,
+          -128.213707273826
+        ]
+      ],
+      "city_overlap_m2": 200.906,
+      "outline_enu_m": [
+        [
+          760.528788285621,
+          -128.213707273826
+        ],
+        [
+          760.5389285483398,
+          -116.64291236270219
+        ],
+        [
+          773.0353806617786,
+          -116.65392385143787
+        ],
+        [
+          773.0370235072332,
+          -114.80261208768934
+        ],
+        [
+          784.7929296721704,
+          -114.81292671523988
+        ],
+        [
+          784.7912868757267,
+          -116.66423847526312
+        ],
+        [
+          784.7811472934554,
+          -128.23503335379064
+        ],
+        [
+          760.528788285621,
+          -128.213707273826
+        ]
+      ],
+      "roof_origin_enu_m": [
+        772,
+        -122
+      ],
+      "roof_planes": [
+        [
+          0,
+          -0.03,
+          12.63,
+          0,
+          -0.346
+        ],
+        [
+          0,
+          -0.03,
+          12.63,
+          0,
+          0.473
+        ],
+        [
+          -6.654,
+          0,
+          12.63,
+          0.493,
+          0
+        ],
+        [
+          6.756,
+          0,
+          12.63,
+          -0.504,
+          0
+        ]
+      ],
+      "entrance": {
+        "gate": "south-office",
+        "anchor_enu_m": [
+          771.5,
+          -127.69
+        ],
+        "bearing": 180,
+        "distance_m": 2.2
+      },
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495052.14928888186%2C4876765.320317064%2C495149.14920090867%2C4876850.279875534&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "dd275cf0aa3912c67c3f8330724f556129cffbf50e6184cc23af036d40feead6"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495052.14928888186%2C4876765.320317064%2C495149.14920090867%2C4876850.279875534&bboxSR=3740&imageSR=3740&size=776%2C680&format=png&bandIds=0%2C1%2C2",
+          "sha256": "8501197d35ce6e7c3044f65bb69107d122cba16e1508abc5d3e7e3a77f077d3c"
+        },
+        "panoramas": [
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=knJ-pJMz8q2STIcPuudP7A&heading=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=BrAumet7e24jO5D9kELvLA&heading=58"
+        ],
+        "campus_listing": "https://transportation.uoregon.edu/pay-citation",
+        "city_address_points": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/ArcGIS/rest/services/EugAddress/FeatureServer/0",
+        "city_taxlot": "1703333101000"
+      }
+    },
+    {
+      "id": "roof-8fea5de9",
+      "role": "alder-968",
+      "name": "968 Alder Apartments",
+      "street_address": "968 Alder St",
+      "city_footprint": 170789,
+      "city_outline_enu_m": [
+        [
+          -824.4161382881575,
+          406.5486241867766
+        ],
+        [
+          -788.0053014666773,
+          406.7883674297482
+        ],
+        [
+          -787.5557803761913,
+          391.7263896474615
+        ],
+        [
+          -824.6435377860325,
+          391.4664438320324
+        ],
+        [
+          -824.4161382881575,
+          406.5486241867766
+        ]
+      ],
+      "city_overlap_m2": 521.219,
+      "outline_enu_m": [
+        [
+          -824.4161382881575,
+          406.5486241867766
+        ],
+        [
+          -788.0053014666773,
+          406.7883674297482
+        ],
+        [
+          -787.5557803761913,
+          391.7263896474615
+        ],
+        [
+          -824.6435377860325,
+          391.4664438320324
+        ],
+        [
+          -824.4161382881575,
+          406.5486241867766
+        ]
+      ],
+      "roof_origin_enu_m": [
+        -806,
+        399.7
+      ],
+      "roof_planes": [
+        [
+          0,
+          0,
+          6.88,
+          0,
+          -0.012
+        ],
+        [
+          0,
+          0,
+          6.88,
+          0,
+          0.012
+        ]
+      ],
+      "entrance": {
+        "gate": "west-alley-entry",
+        "anchor_enu_m": [
+          -825.35,
+          396.35
+        ],
+        "bearing": 270,
+        "distance_m": 1.8
+      },
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493467.14928888186%2C4877283.282153052%2C493578.14928888186%2C4877373.260175029&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "00cef04c47323bacd6b089452915c3a4778f481f282245ffa0f6221f0794f3db"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493467.14928888186%2C4877283.282153052%2C493578.14928888186%2C4877373.260175029&bboxSR=3740&imageSR=3740&size=888%2C720&format=png&bandIds=0%2C1%2C2",
+          "sha256": "714e325b3c4a20eea28261db9f710d78869749fdc8a76cb91ba3d489f122249a"
+        },
+        "panoramas": [
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=oj-FXKPaxVd5Aw6HqJqi9g&heading=90",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=Ihjph2g-fCCtqi-UxKOecA&heading=270"
+        ],
+        "uo_address_register": "https://cpfm.uoregon.edu/sites/default/files/uo_nccup_exhibit_e.pdf",
+        "historical_listing": "https://oregonnews.uoregon.edu/lccn/2004260239/1971-10-01/ed-1/seq-15/ocr/",
+        "city_address_points": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/ArcGIS/rest/services/EugAddress/FeatureServer/0",
+        "city_taxlot": "1703322403200"
+      }
+    },
+    {
+      "id": "roof-31cf5cf8",
+      "role": "broadway-755",
+      "name": "Former Motel 66 Entrance · July 2024",
+      "street_address": "755 E Broadway",
+      "city_footprint": 149934,
+      "city_outline_enu_m": [
+        [
+          -837.8746640902827,
+          514.8023013379425
+        ],
+        [
+          -837.8964487434132,
+          506.9474960966036
+        ],
+        [
+          -858.922066369676,
+          507.00561735220253
+        ],
+        [
+          -858.9002842972986,
+          514.860522530973
+        ],
+        [
+          -837.8746640902827,
+          514.8023013379425
+        ]
+      ],
+      "city_overlap_m2": 146.324,
+      "outline_enu_m": [
+        [
+          -862,
+          510.95
+        ],
+        [
+          -859.85,
+          507.04
+        ],
+        [
+          -842.78,
+          507.04
+        ],
+        [
+          -838.96,
+          510.88
+        ],
+        [
+          -838.96,
+          512.92
+        ],
+        [
+          -841.84,
+          516.03
+        ],
+        [
+          -859.88,
+          516.03
+        ],
+        [
+          -862,
+          513.55
+        ]
+      ],
+      "roof_origin_enu_m": [
+        -850,
+        511
+      ],
+      "roof_planes": [
+        [
+          0,
+          0,
+          2.589,
+          0,
+          0
+        ]
+      ],
+      "entrance": {
+        "gate": "former-office",
+        "anchor_enu_m": [
+          -854.6,
+          508.1
+        ],
+        "bearing": 180,
+        "distance_m": 1.7
+      },
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493430.14928888186%2C4877398.282153052%2C493527.14928888186%2C4877481.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "ebeb2343613630003e40d0c2fe8d11b1fb95bd99ed997d6260991fad9f14c6fe"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493430.14928888186%2C4877398.282153052%2C493527.14928888186%2C4877481.282153052&bboxSR=3740&imageSR=3740&size=776%2C664&format=png&bandIds=0%2C1%2C2",
+          "sha256": "4ae39c48a8ae2c8c8e0945f71900ef719ccb1114f84c9155f4540f8b9881d103"
+        },
+        "panoramas": [
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=-NdWBi91QG7kgAQvL6mP6Q&heading=0"
+        ],
+        "redevelopment": "https://pdd.eugene-or.gov/LandUse/ApplicationReport?file=ARB-24-0001&pdf=True",
+        "city_address_points": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/ArcGIS/rest/services/EugAddress/FeatureServer/0",
+        "city_taxlot": "1703322401600",
+        "city_property_inventory": "https://coeapps.eugene-or.gov/cmoweblink/0/edoc/4198616/Ord.2020700.pdf"
+      }
+    }
+  ]
+}

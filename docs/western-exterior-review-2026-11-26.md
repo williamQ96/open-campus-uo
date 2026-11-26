@@ -1,0 +1,22 @@
+# Marlatt Apartments and the Willamette riverfront exterior review
+
+The local viewer replaces the three Marlatt Apartments source models and the utility building at 777 Annie Mims Lane under their original scene IDs. City outlines 170320, 170342, 170370 and 228788 and the 2024 Oregon orthophoto establish the separate buildings. All model geometry is original, with source imagery referenced externally. [City footprint layer](https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3) · [Editable geometry and source hashes](../data/metadata/western-exterior-review.json).
+
+- **Marlatt Apartments, 749–773 E 17th Ave.** The 2024 street view identifies the two single-storey wings with low pitched roofs, red brick bases, eaves and doors facing their shared lawn. The two-storey building at the rear has a separate hip, upper siding and outdoor stairs at both ends. The residential wings use the complete city outlines. The previous west and east footprints covered 226 and 186 m² of those outlines. The rear building uses a location-based label within the complex. Its finer use, exact stair and threshold dimensions, and openings on screened elevations remain approximate. [Property listing](https://hotpads.com/marlatt-eugene-or-97401-20y6rf2/pad) · [June 2024 courtyard street view](https://www.google.com/maps/@?api=1&map_action=pano&pano=__RkzRRXfOY6mwsvZa7UAw&heading=14).
+- **EWEB Willamette Substation, 777 Annie Mims Ln.** The city register identifies the property, and the June 2024 street view shows the masonry facade, lower band, standing seams, slatted roll-up door and concrete apron. The model includes those exterior elements. Its record has an explicitly empty entrance list, so the explorer displays the building in search without an entry interaction. Obscured elevations and trim dimensions are approximate. [City ordinance property table](https://coeapps.eugene-or.gov/cmoweblink/0/edoc/4198616/Ord.2020700.pdf) · [Riverfront master plan](https://www.eugene-or.gov/DocumentCenter/View/41502/EWEB-Riverfront-Master-Plan) · [June 2024 street view](https://www.google.com/maps/@?api=1&map_action=pano&pano=6QOn3B0NWYEP-ZFtiWYBnw&heading=42).
+
+## Roof and scene verification
+
+All 2,235 usable height cells intersect the new roofs. Medians below compare the same cells hit by the before and after renders, including the earlier roof treatments. Counts per grid at Marlatt are 139 common cells for the rear, 226 for the west wing and 169 for the east wing. The riverfront comparison has 169 common cells per grid. The available 2017 grid has no Marlatt coverage. The revised oldest-grid medians are higher, while the DOGAMI medians are lower for all four roofs. [NOAA LiDAR archive](https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/index.html) · [DOGAMI elevation mosaic](https://gis.dogami.oregon.gov/arcgis/rest/services/lidar/DIGITAL_SURFACE_MODEL_MOSAIC/ImageServer).
+
+| Historical surface | Marlatt rear | Marlatt west | Marlatt east | Riverfront |
+| --- | ---: | ---: | ---: | ---: |
+| NOAA 2013–2015 | 0.177 → 0.323 m | 0.268 → 0.367 m | 0.334 → 0.343 m | 0.092 → 0.180 m |
+| NOAA 2017 | No coverage | No coverage | No coverage | 0.226 → 0.103 m |
+| DOGAMI Lane County | 0.433 → 0.330 m | 0.868 → 0.474 m | 0.943 → 0.481 m | 0.180 → 0.099 m |
+
+Six paired renders cover the courtyard, the two individual wings, the rear stair building and the riverfront facade and roof. Replacing 540 triangles preserves the surviving indices and attributes and 54 other IDs across two source batches. The 7,710-edge route scan finds no new conflicts. Its nearest tested edge is 5.0293 m from a new collision shape.
+
+Desktop and phone production previews verify four searches, three walkable estimated residential approaches, nine collision probes, and the absence of a utility entrance marker. The checked lawn and side walks remain open, and the tested exterior stair and building volumes block movement. Damaging the last source anchor restores the four old volumes and their two preceding roof treatments. Staged, installed and served bytes match.
+
+Formatting, 197 unit tests, seven focused browser tests, the production build, 351 open asset hashes and 284 viewer pins passed. This batch is local and uncommitted. [Builder](../scripts/build-western-exterior-review.py) · [Runtime descriptor](../apps/web-preview/public/scene/western-exterior-review/site.json).

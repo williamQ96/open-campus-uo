@@ -1,0 +1,619 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "candidates": {
+      "e19-1440": {
+        "state_feature": "20-1073420",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494265.14928888186%2C4876127.282153052%2C494335.14928888186%2C4876204.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "881f8dd88315249924dee18ad6fc6d05fcc4557f0db337c426aaa45a5995231d"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494265.14928888186%2C4876127.282153052%2C494335.14928888186%2C4876204.282153052&bboxSR=3740&imageSR=3740&size=840%2C924&format=png&bandIds=0%2C1%2C2",
+            "sha256": "ed9a9889060d541552e21797e5717c4afbc483a6cd2f9381572f1839ce134e37"
+          }
+        }
+      },
+      "e19-1456": {
+        "state_feature": "20-1073656",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494329.14928888186%2C4876147.282153052%2C494384.14928888186%2C4876209.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "65664b9edffaf03535d0f0c5e2338bdb9a18b4031ae7ba4fb13fe5e0c9c2188a"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494329.14928888186%2C4876147.282153052%2C494384.14928888186%2C4876209.282153052&bboxSR=3740&imageSR=3740&size=660%2C744&format=png&bandIds=0%2C1%2C2",
+            "sha256": "43bcaf531f5fc88874c52f9a5ecbc9187c09e986b24cd5743d3ea56f0c63b9a8"
+          }
+        }
+      },
+      "e19-1355": {
+        "state_feature": "20-1073555",
+        "registered": {
+          "city": {
+            "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494192.14928888186%2C4876199.282153052%2C494242.14928888186%2C4876256.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+            "sha256": "893205ee4d98e4b8300d95ec919ab7f8c2b0c214a4c5d00a7be5c324c16b01b9"
+          },
+          "ortho": {
+            "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494192.14928888186%2C4876199.282153052%2C494242.14928888186%2C4876256.282153052&bboxSR=3740&imageSR=3740&size=600%2C684&format=png&bandIds=0%2C1%2C2",
+            "sha256": "bffb70a8facf6515715dc87cabd9287c1a8cc5fa2f2b353b0cfe27791cb4cf5f"
+          }
+        }
+      }
+    },
+    "historical_surfaces": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "registered_street_views": {
+      "e19-1355-west": "https://www.google.com/maps/@?api=1&map_action=pano&pano=rx18wNletQedeLn7rpgNKA&heading=38.54",
+      "sigma-chi-north": "https://www.google.com/maps/@?api=1&map_action=pano&pano=trsPMS79zXVPBP33SShpUg&heading=151.64",
+      "e19-1355-south": "https://www.google.com/maps/@?api=1&map_action=pano&pano=EJJ3YQ8WyzddIqvwgO-MvQ&heading=15.87",
+      "sigma-chi-south": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Y7H68ccDUafZ_QEkCZGdnQ&heading=62.01",
+      "e19-1456-north": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Q_YvBUVKrL6JWjbZaqkYzg&heading=196.18",
+      "sigma-chi-east": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jAY75ugedmZxU81-4UK0-w&heading=288.78"
+    },
+    "sigma_ifc": "https://uoifc.com/sigma-chi/",
+    "city_modernism": "https://www.eugene-or.gov/DocumentCenter/View/24803/Eugene-Modernism-1935-65",
+    "city_agenda": "https://www.eugene-or.gov/AgendaCenter/ViewFile/Item/3?fileID=10"
+  },
+  "models": [
+    {
+      "id": "roof-600a0bef",
+      "name": "Sigma Chi Chapter House",
+      "street_address": "1440 E 19th Ave",
+      "kind": "chapter",
+      "municipal_outline": 170512,
+      "outline_enu_m": [
+        [
+          -36.79276,
+          -745.01706
+        ],
+        [
+          -22.77091,
+          -745.09927
+        ],
+        [
+          -22.57672,
+          -743.2158
+        ],
+        [
+          -10.80221,
+          -743.49029
+        ],
+        [
+          -11.24849,
+          -783.05842
+        ],
+        [
+          -14.12866,
+          -783.01918
+        ],
+        [
+          -14.05027,
+          -785.64553
+        ],
+        [
+          -19.56043,
+          -785.55968
+        ],
+        [
+          -19.39247,
+          -782.80077
+        ],
+        [
+          -22.89044,
+          -783.03038
+        ],
+        [
+          -22.68506,
+          -756.3623
+        ],
+        [
+          -36.70691,
+          -756.28009
+        ],
+        [
+          -37.30987,
+          -773.82241
+        ],
+        [
+          -40.06131,
+          -773.90453
+        ],
+        [
+          -39.99039,
+          -776.2807
+        ],
+        [
+          -45.62564,
+          -776.19858
+        ],
+        [
+          -45.6891,
+          -774.0725
+        ],
+        [
+          -48.94072,
+          -774.16955
+        ],
+        [
+          -48.72959,
+          -743.49576
+        ],
+        [
+          -36.84129,
+          -743.39125
+        ]
+      ],
+      "eaves_m": 0.27,
+      "wall_color": [
+        100,
+        111,
+        103
+      ],
+      "trim_color": [
+        75,
+        82,
+        77
+      ],
+      "roof_color": [
+        102,
+        108,
+        106
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -58,
+            -791,
+            -36.45,
+            -741
+          ],
+          "planes": [
+            [
+              -44.64,
+              -760,
+              14.75,
+              0.17,
+              0
+            ],
+            [
+              -44.64,
+              -760,
+              14.75,
+              -0.215,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -49,
+            -757.02,
+            -10,
+            -741
+          ],
+          "planes": [
+            [
+              -30,
+              -749.33,
+              14.65,
+              0,
+              0.193
+            ],
+            [
+              -30,
+              -749.33,
+              14.65,
+              0,
+              -0.203
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -23.1,
+            -788,
+            -8,
+            -741
+          ],
+          "planes": [
+            [
+              -18.58,
+              -764,
+              14.76,
+              0.2,
+              0
+            ],
+            [
+              -18.58,
+              -764,
+              14.76,
+              -0.217,
+              0
+            ]
+          ]
+        }
+      ],
+      "upper_floor_m": 10.51,
+      "front": {
+        "bearing": 90.62
+      },
+      "entry": {
+        "gate": "sigma-chi-east-canopy",
+        "near": [
+          -11.15,
+          -751.9
+        ],
+        "rise_m": 0.07,
+        "approach_m": 6.15
+      },
+      "porch": null,
+      "roof_vents": [
+        [
+          -33.25,
+          -746.2,
+          0.65,
+          0.76
+        ],
+        [
+          -40.58,
+          -751.62,
+          0.74,
+          0.55
+        ],
+        [
+          -16.95,
+          -781.28,
+          0.65,
+          0.49
+        ]
+      ]
+    },
+    {
+      "id": "roof-a8318b83",
+      "name": "1456 East 19th Avenue / 1458 East 19th Avenue",
+      "street_address": "1456 and 1458 E 19th Ave",
+      "kind": "duplex",
+      "municipal_outline": 170739,
+      "outline_enu_m": [
+        [
+          24.99852,
+          -746.4005
+        ],
+        [
+          25.78277,
+          -759.07644
+        ],
+        [
+          25.32272,
+          -759.20617
+        ],
+        [
+          25.51209,
+          -763.60758
+        ],
+        [
+          24.61643,
+          -763.61331
+        ],
+        [
+          24.59671,
+          -764.59443
+        ],
+        [
+          15.00051,
+          -764.40133
+        ],
+        [
+          15.1513,
+          -756.91247
+        ],
+        [
+          15.31151,
+          -756.91569
+        ],
+        [
+          14.97806,
+          -748.72915
+        ],
+        [
+          20.25198,
+          -748.62974
+        ],
+        [
+          20.188,
+          -746.48607
+        ]
+      ],
+      "eaves_m": 0.28,
+      "wall_color": [
+        178,
+        181,
+        160
+      ],
+      "trim_color": [
+        213,
+        210,
+        188
+      ],
+      "roof_color": [
+        126,
+        116,
+        103
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            12,
+            -752.55,
+            27,
+            -744
+          ],
+          "planes": [
+            [
+              20,
+              -752.55,
+              13.94,
+              0,
+              -0.441
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            12,
+            -768,
+            27,
+            -752.55
+          ],
+          "planes": [
+            [
+              20,
+              -759,
+              13.965,
+              0.001,
+              -0.001
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            20.05,
+            -750.12,
+            25.13,
+            -744
+          ],
+          "planes": [
+            [
+              22.56,
+              -748.5,
+              12.65,
+              0.61,
+              0
+            ],
+            [
+              22.56,
+              -748.5,
+              12.65,
+              -0.61,
+              0
+            ]
+          ]
+        }
+      ],
+      "open_porch_enu_m": [
+        20.24,
+        -748.78,
+        25.6,
+        -745
+      ],
+      "porch_center_enu_m": [
+        22.6,
+        -749.02
+      ],
+      "porch_floor_m": 8.15,
+      "chimney_enu_m": [
+        24.15,
+        -755.2
+      ]
+    },
+    {
+      "id": "roof-028770d6",
+      "name": "1355 East 19th Avenue",
+      "street_address": "1355 E 19th Ave",
+      "kind": "apartment",
+      "municipal_outline": 170639,
+      "outline_enu_m": [
+        [
+          -118.31521,
+          -687.2913
+        ],
+        [
+          -102.88,
+          -687.25
+        ],
+        [
+          -103.65,
+          -715.94
+        ],
+        [
+          -118.87573,
+          -715.98564
+        ]
+      ],
+      "eaves_m": 0.51,
+      "wall_color": [
+        168,
+        168,
+        153
+      ],
+      "trim_color": [
+        104,
+        124,
+        120
+      ],
+      "roof_color": [
+        142,
+        147,
+        142
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -122,
+            -718,
+            -100,
+            -703.6
+          ],
+          "planes": [
+            [
+              -113.36,
+              -711,
+              19.46,
+              0.335,
+              0.004
+            ],
+            [
+              -113.36,
+              -711,
+              19.46,
+              -0.308,
+              0.004
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -122,
+            -703.6,
+            -100,
+            -684
+          ],
+          "planes": [
+            [
+              -112.95,
+              -695,
+              20.02,
+              0.322,
+              -0.004
+            ],
+            [
+              -112.95,
+              -695,
+              20.02,
+              -0.355,
+              -0.004
+            ]
+          ]
+        }
+      ],
+      "parking_ceiling_m": 10.57,
+      "west_balcony_levels_m": [
+        11.07,
+        10.57
+      ],
+      "driveway_from_enu_m": [
+        -111.07,
+        -716.38
+      ],
+      "parking_open_enu_m": [
+        [
+          -116.33,
+          -717,
+          -106.3,
+          -697.0
+        ],
+        [
+          -120,
+          -713.5,
+          -112.25,
+          -689.6
+        ]
+      ],
+      "parking_posts_enu_m": [
+        [
+          -116.97,
+          -712.3
+        ],
+        [
+          -117.45,
+          -705.6
+        ],
+        [
+          -117.3,
+          -698.62
+        ],
+        [
+          -117.16,
+          -692.19
+        ],
+        [
+          -106.66,
+          -713.95
+        ],
+        [
+          -106.9,
+          -704.55
+        ],
+        [
+          -106.95,
+          -697.07
+        ]
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-600a0bef",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-a8318b83",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-028770d6",
+      "target": "context-background-1-0"
+    }
+  ]
+}

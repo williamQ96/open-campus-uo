@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const halls = {
   "roof-5ded2bf0": "Straub Hall",
@@ -38,7 +39,7 @@ test("Straub and Earl keep separate identities and the new set of entrances", as
   await ready(page);
   const after = await page.evaluate(inspect, affected);
   expect(before.count).toBe(after.count + absorbed.length);
-  expect(after.count).toBe(519);
+  expect(after.count).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(after.neighbors).toEqual(before.neighbors);
   expect(after.collision).toEqual([false, true, true, false, false, true]);
   expect(after.gates.map(({ gate, walkable }) => [gate, walkable])).toEqual([

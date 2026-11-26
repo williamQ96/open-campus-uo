@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const susan = "roof-fd061857";
 const hendricks = "roof-e145c222";
@@ -31,7 +32,7 @@ test("the quad keeps two building identities and the combined Hendricks outline"
 }) => {
   await ready(page);
   const actual = await page.evaluate(site, ids);
-  expect(actual.buildings).toBe(519);
+  expect(actual.buildings).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(actual.occupied).toEqual([
     true,
     false,

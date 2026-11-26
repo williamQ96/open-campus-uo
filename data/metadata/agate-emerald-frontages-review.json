@@ -1,0 +1,2855 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "surfaces": {
+    "2013-15": {
+      "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+      "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+    },
+    "2017": {
+      "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+      "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+    },
+    "DOGAMI": {
+      "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+      "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    }
+  },
+  "sources": {
+    "roof-aba1513b": {
+      "city_objectid": 170751,
+      "outline_enu_wkt": "POLYGON ((1.6158547558588907 -865.3777053533122, 2.42636171617778 -865.353514270857, 2.6524400082416832 -876.8683784017339, 5.432690825837199 -876.863399435766, 5.447150423482526 -884.8564537875354, -5.180756836256478 -884.8756527006626, -5.195216229301877 -876.882598336786, -4.530929067230318 -876.8813721304759, -4.872532515786588 -865.4361584149301, -4.062025555060245 -865.4119673445821, -4.110410679189954 -863.7908535087481, 1.563437763019465 -863.6215070271865, 1.6158547558588907 -865.3777053533122))",
+      "area_m2": 177.682,
+      "inside_addresses": [
+        "1442 E 20TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803051114500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-aba1513b": 117.1
+      },
+      "sample_counts": {
+        "2013-15": 144,
+        "2017": 0,
+        "DOGAMI": 144
+      },
+      "aerial_and_query": [
+        {
+          "file": "east20-1442-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494285.14928888186%2C4876009.282153052%2C494369.14928888186%2C4876099.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "2674aae85feb219fbd46cf08258580bfa47ec37c9ab28e71aa1c326ca1a2349b"
+        },
+        {
+          "file": "east20-1442-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494285.14928888186%2C4876009.282153052%2C494369.14928888186%2C4876099.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "7035300c551a1830b6302e85ba15f5c7b8923c7d66e7545112bca9bff87103f4"
+        },
+        {
+          "file": "east20-1442-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494285.14928888186%2C4876009.282153052%2C494369.14928888186%2C4876099.282153052&bboxSR=3740&imageSR=3740&size=840%2C900&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "1193b9cc9a057e711ed3e97fd433e9e12a8353c475e7f5be7f51844deac8f4d8",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east20-1442-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494285.14928888186%2C4876009.282153052%2C494369.14928888186%2C4876099.282153052&bboxSR=3740&imageSR=3740&size=840%2C900&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "3f7d2ea6df972525308fba85bc25e61a7a095296f2d17e4b40d1b90569247ed6",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99586
+        },
+        {
+          "file": "east20-1442-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494285.14928888186%2C4876009.282153052%2C494369.14928888186%2C4876099.282153052&bboxSR=3740&imageSR=3740&size=840%2C900&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "5b12d5a1d969dddbf745f826ddfda2886c2b0e022687cb3cf3a80abd89ecc4cb",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "east20-1470": {
+      "city_objectid": 170752,
+      "outline_enu_wkt": "POLYGON ((33.72116238786839 -876.4532918436453, 33.46096182538895 -881.3286321097985, 29.13402621744899 -881.3225729996338, 29.359864499419928 -870.769355321303, 33.41259915183764 -870.6483936524019, 33.331959021568764 -867.9466038616374, 42.116982506471686 -867.8196026254445, 41.96978001232492 -876.4775055013597, 33.72116238786839 -876.4532918436453))",
+      "area_m2": 119.268,
+      "inside_addresses": [
+        "1470 E 20TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803051114300": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-28502c01": 69.82
+      },
+      "sample_counts": {
+        "2013-15": 88,
+        "2017": 0,
+        "DOGAMI": 88
+      },
+      "aerial_and_query": [
+        {
+          "file": "east20-1460-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "7beef619b235a38352cfe12b6cab278186a6082da0eade2b1573c511f329419b"
+        },
+        {
+          "file": "east20-1460-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "dd2beec266e73fac2bd720645937e86a1ea1a944edb3b8404fa3d1597cec6333"
+        },
+        {
+          "file": "east20-1460-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=1010%2C800&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "7893c51b93ed11c80d42372039136c325c5bc8d389d7aed18c14d8be096ba97f",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east20-1460-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=1010%2C800&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "5a8beef79e898b85054260b0f5dbae48ac40643fdb03d677ea6095085617d6bb",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99727
+        },
+        {
+          "file": "east20-1460-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=1010%2C800&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "a531812c66dff2dd01db0210ed4936f1a1714ffc2c3ed844a41ea4b331458bbf",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99998
+        }
+      ]
+    },
+    "roof-28502c01": {
+      "city_objectid": 170753,
+      "outline_enu_wkt": "POLYGON ((17.2300089240307 -868.9325153799728, 17.2017859602347 -867.986923923716, 22.60536553285783 -867.8256438383833, 22.629556655767374 -868.6361508043483, 27.365877388394438 -868.7651959294453, 27.25899612356443 -878.7740437230095, 13.332497960538603 -878.7840920099989, 13.578495902998839 -868.9062968483195, 17.2300089240307 -868.9325153799728))",
+      "area_m2": 143.131,
+      "inside_addresses": [
+        "1460 E 20TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803051114400": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-28502c01": 112.785
+      },
+      "sample_counts": {
+        "2013-15": 116,
+        "2017": 0,
+        "DOGAMI": 116
+      },
+      "aerial_and_query": [
+        {
+          "file": "east20-1460-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "7beef619b235a38352cfe12b6cab278186a6082da0eade2b1573c511f329419b"
+        },
+        {
+          "file": "east20-1460-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "dd2beec266e73fac2bd720645937e86a1ea1a944edb3b8404fa3d1597cec6333"
+        },
+        {
+          "file": "east20-1460-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=1010%2C800&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "7893c51b93ed11c80d42372039136c325c5bc8d389d7aed18c14d8be096ba97f",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east20-1460-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=1010%2C800&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "5a8beef79e898b85054260b0f5dbae48ac40643fdb03d677ea6095085617d6bb",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99727
+        },
+        {
+          "file": "east20-1460-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494307.14928888186%2C4876015.282153052%2C494408.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=1010%2C800&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "a531812c66dff2dd01db0210ed4936f1a1714ffc2c3ed844a41ea4b331458bbf",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99998
+        }
+      ]
+    },
+    "roof-06636962": {
+      "city_objectid": 214549,
+      "outline_enu_wkt": "POLYGON ((34.218088845780585 -821.5381006384268, 41.825679979345296 -821.3109373645857, 42.08689942071214 -830.0595527952537, 45.890546681242995 -829.9460255270824, 46.225559410464484 -841.167026899755, 34.8142206374323 -841.5077204797417, 34.47362714580959 -830.0963788619265, 34.218088845780585 -821.5381006384268))",
+      "area_m2": 194.776,
+      "inside_addresses": [
+        "1473 E 20TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803051112201": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-06636962": 152.296
+      },
+      "sample_counts": {
+        "2013-15": 159,
+        "2017": 0,
+        "DOGAMI": 159
+      },
+      "aerial_and_query": [
+        {
+          "file": "east20-1473-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494327.14928888186%2C4876052.282153052%2C494410.14928888186%2C4876141.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "79368d72846fc0f48b3fbc7a9959c2dd27074bbd911c310b9f2daa1e9df4745e"
+        },
+        {
+          "file": "east20-1473-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494327.14928888186%2C4876052.282153052%2C494410.14928888186%2C4876141.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "57f88431ef741cffa8af3d946c66ecd7f5e3ef0f6819d7ffaafde2be02a539da"
+        },
+        {
+          "file": "east20-1473-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494327.14928888186%2C4876052.282153052%2C494410.14928888186%2C4876141.282153052&bboxSR=3740&imageSR=3740&size=830%2C890&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "c4fe978f424075c43d0c2ce64502106fc7b541e5d92af39bb678042c5850a5ed",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east20-1473-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494327.14928888186%2C4876052.282153052%2C494410.14928888186%2C4876141.282153052&bboxSR=3740&imageSR=3740&size=830%2C890&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "62811aed64e58a082910b70e92033d165e1798a771d48449421028e4d50a9107",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.9992
+        },
+        {
+          "file": "east20-1473-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494327.14928888186%2C4876052.282153052%2C494410.14928888186%2C4876141.282153052&bboxSR=3740&imageSR=3740&size=830%2C890&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "a28d45234008253378c88819eec200ddda1a8d2e898a53f7b9e511b9d8f9756e",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99998
+        }
+      ]
+    },
+    "roof-a40877e3": {
+      "city_objectid": 149611,
+      "outline_enu_wkt": "POLYGON ((-103.7802878418006 -745.1293424312025, -103.77762797224568 -742.7490786639974, -91.94242129364284 -742.7620509965345, -91.94638666708488 -746.3985982611775, -86.72303117415868 -746.4043044932187, -86.72049842902925 -744.0901468610391, -75.21581346454332 -744.1027833139524, -75.229395744449 -756.4670271538198, -75.75833282421809 -756.466413570568, -75.7961903657997 -790.8481646450236, -88.49095718021272 -790.8342468328774, -88.48999608610757 -789.9349861675873, -109.42312810127623 -789.9119459837675, -109.42313715891214 -789.9384471969679, -119.02359401842114 -789.9278772911057, -118.9755680829403 -746.2101915916428, -118.72425023902906 -746.2104908982292, -118.71998836507555 -742.3359263418242, -108.93442081002286 -742.3466715589166, -108.9375401797588 -745.123663100414, -103.7802878418006 -745.1293424312025), (-92.35229951329529 -754.7952107368037, -92.38293172215344 -782.6576143084094, -88.48196254600771 -782.6619878495112, -88.45179303502664 -755.1962121641263, -88.45943262230139 -754.7995261047035, -92.35229951329529 -754.7952107368037), (-109.41509419353679 -782.6389476452023, -104.48265804577386 -782.6443367125466, -104.4505652760854 -753.3934402707964, -109.3830010802485 -753.3880511838943, -109.41509419353679 -782.6389476452023))",
+      "area_m2": 1761.513,
+      "inside_addresses": [
+        "1370 E 19TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803051112300": 0.18003,
+        "1803051112400": 0.23213,
+        "1803051112500": 0.19086,
+        "1803051112600": 0.39698
+      },
+      "legacy_intersections_m2": {
+        "roof-879f17f5": 124.917,
+        "roof-a40877e3": 155.695
+      },
+      "sample_counts": {
+        "2013-15": 1551,
+        "2017": 0,
+        "DOGAMI": 1551
+      },
+      "aerial_and_query": [
+        {
+          "file": "east19-1370-east-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494175.14928888186%2C4876103.282153052%2C494288.14928888186%2C4876220.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "8dcdd399f259d82efc004eadbd2585ff66d8bde4f51e37f5581f39c22c54a9a5"
+        },
+        {
+          "file": "east19-1370-east-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494175.14928888186%2C4876103.282153052%2C494288.14928888186%2C4876220.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "96cdf3dae27227e6469fac4e2f26eab02cbcb8d953621be3f9aabfcef55c2f06"
+        },
+        {
+          "file": "east19-1370-east-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494175.14928888186%2C4876103.282153052%2C494288.14928888186%2C4876220.282153052&bboxSR=3740&imageSR=3740&size=1130%2C1170&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "37b8e264bda31ab5f246daece17bc7083f9797c448c6199d0d503eb6ffadf082",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east19-1370-east-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494175.14928888186%2C4876103.282153052%2C494288.14928888186%2C4876220.282153052&bboxSR=3740&imageSR=3740&size=1130%2C1170&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "f7b7facc015c7b1678d57ce9684ce21dc70e22c82be8dffc02b3bfa097cb45ff",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99916
+        },
+        {
+          "file": "east19-1370-east-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494175.14928888186%2C4876103.282153052%2C494288.14928888186%2C4876220.282153052&bboxSR=3740&imageSR=3740&size=1130%2C1170&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "8834e56eaa29f514ecde1e5740d9d4f0930d368e12de574c6ec02983d17a7f91",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-a7890474": {
+      "city_objectid": 170742,
+      "outline_enu_wkt": "POLYGON ((69.46895666111959 -740.5995311876759, 69.79705176741118 -745.0685972385108, 64.63545564404922 -745.0279484661296, 64.7457900143927 -755.2481177616864, 64.4539396436885 -755.2568286145106, 64.46985802782001 -759.0535881863907, 51.440213950991165 -759.6371905291453, 51.50989707396366 -755.4483621902764, 51.21804670803249 -755.4570730365813, 51.116427140601445 -752.0523852296174, 49.751687380543444 -751.9957150993869, 49.6326431587222 -748.0072266766801, 51.094699663924985 -748.0609921962023, 51.165883248031605 -740.6590053364635, 69.46895666111959 -740.5995311876759))",
+      "area_m2": 278.962,
+      "inside_addresses": [
+        "1490 E 19TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803051110400": 0.97247
+      },
+      "legacy_intersections_m2": {
+        "roof-a7890474": 146.399
+      },
+      "sample_counts": {
+        "2013-15": 235,
+        "2017": 0,
+        "DOGAMI": 235
+      },
+      "aerial_and_query": [
+        {
+          "file": "east19-1490-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494344.14928888186%2C4876134.282153052%2C494433.14928888186%2C4876224.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "3d8124b662dd7d1740076d3cd120c90d3b4858319d05618930718605563cdc67"
+        },
+        {
+          "file": "east19-1490-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494344.14928888186%2C4876134.282153052%2C494433.14928888186%2C4876224.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "016e82a406b5f53c6aec351bb83d02e65847bfd410bdc1f430e14832342d04f8"
+        },
+        {
+          "file": "east19-1490-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494344.14928888186%2C4876134.282153052%2C494433.14928888186%2C4876224.282153052&bboxSR=3740&imageSR=3740&size=890%2C900&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "17656e7b89ba5e33b6a77dc931820033ba160420aafd06874bb0bf04c974d1aa",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east19-1490-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494344.14928888186%2C4876134.282153052%2C494433.14928888186%2C4876224.282153052&bboxSR=3740&imageSR=3740&size=890%2C900&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "7e03c10c590c10b7d810b98932b17a4953e6dc391759c8b3c2bfdb6e35e08bd0",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99416
+        },
+        {
+          "file": "east19-1490-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494344.14928888186%2C4876134.282153052%2C494433.14928888186%2C4876224.282153052&bboxSR=3740&imageSR=3740&size=890%2C900&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "4f19f627d914788ac3cd4890edc5271aec466647ae72fe06440126c7c5b41479",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-58d0ebc7": {
+      "city_objectid": 170759,
+      "outline_enu_wkt": "POLYGON ((60.374799315293785 -950.0775291165337, 60.37376059865346 -950.290667777881, 66.53447521862108 -950.3205965291709, 66.51709911873331 -953.9031438818201, 67.48727260535816 -953.9077882952988, 67.4738319812459 -956.6806891150773, 66.00466572568985 -956.6735375206918, 65.98568224458722 -960.6009452976286, 60.61401076614857 -960.5748669514433, 60.617195599363185 -959.9109480250627, 55.13940738729434 -959.8844367433339, 55.13457351422403 -960.8650162704289, 44.505255423428025 -960.8135560788214, 44.55764401570195 -950.0009038290009, 60.374799315293785 -950.0775291165337))",
+      "area_m2": 229.83,
+      "inside_addresses": [
+        "1495 E 21ST AVE",
+        "2092 AGATE ST"
+      ],
+      "parcel_fractions": {
+        "1803051115800": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-58d0ebc7": 163.635
+      },
+      "sample_counts": {
+        "2013-15": 180,
+        "2017": 0,
+        "DOGAMI": 180
+      },
+      "aerial_and_query": [
+        {
+          "file": "east21-and-agate-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494339.14928888186%2C4875932.282153052%2C494431.14928888186%2C4876013.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "2b2d85250fb5316a898b4039b00095981fd309e7e624c1562d7b304caa9a6122"
+        },
+        {
+          "file": "east21-and-agate-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494339.14928888186%2C4875932.282153052%2C494431.14928888186%2C4876013.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "9aaecc6b0c53dfbe4974f511cf2b2342883d402f84bdcd591f1f606b9d6855f1"
+        },
+        {
+          "file": "east21-and-agate-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494339.14928888186%2C4875932.282153052%2C494431.14928888186%2C4876013.282153052&bboxSR=3740&imageSR=3740&size=920%2C810&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "3105d74dbc5ba8c4732e572a93013bd3d5f6e10723be9b67a8ffc3375466c2a2",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east21-and-agate-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494339.14928888186%2C4875932.282153052%2C494431.14928888186%2C4876013.282153052&bboxSR=3740&imageSR=3740&size=920%2C810&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "ab5343ae2ebbdce7c3de6343dcaf6b76f32781463ad0a868c08fc9277fc82a87",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99998
+        },
+        {
+          "file": "east21-and-agate-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494339.14928888186%2C4875932.282153052%2C494431.14928888186%2C4876013.282153052&bboxSR=3740&imageSR=3740&size=920%2C810&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "443a44fdcb214aa84be97c7c9b5ff24ae8455594645e38983721d2afe850e318",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-5a32e480": {
+      "city_objectid": 149481,
+      "outline_enu_wkt": "POLYGON ((-83.98677870968822 -999.8038004208356, -89.02604849811178 -999.8042003912851, -89.02590062469244 -1000.8411333709955, -104.10100773861632 -1000.84235844668, -104.10162350325845 -993.9396279351786, -98.26892757037422 -993.9391478998587, -98.26916913274908 -991.3946633972228, -83.98749155551195 -991.3934184936807, -83.98677870968822 -999.8038004208356))",
+      "area_m2": 169.959,
+      "inside_addresses": [
+        "1370 E 21ST AVE"
+      ],
+      "parcel_fractions": {
+        "1803051412100": 0.98826
+      },
+      "legacy_intersections_m2": {
+        "roof-5a32e480": 142.951
+      },
+      "sample_counts": {
+        "2013-15": 124,
+        "2017": 0,
+        "DOGAMI": 124
+      },
+      "aerial_and_query": [
+        {
+          "file": "east21-1370-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494190.14928888186%2C4875893.282153052%2C494279.14928888186%2C4875973.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "4d4627c9b87f4945e7075578dfa06f5ee53f04f35f8e41e6b3a4072b2400af1c"
+        },
+        {
+          "file": "east21-1370-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494190.14928888186%2C4875893.282153052%2C494279.14928888186%2C4875973.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "b40badde85cb6db17139c3e10ad505c0a32f5fed3ccc0ce87641a33ac5aca071"
+        },
+        {
+          "file": "east21-1370-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494190.14928888186%2C4875893.282153052%2C494279.14928888186%2C4875973.282153052&bboxSR=3740&imageSR=3740&size=890%2C800&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "cd798e5582e9cf7b4db12974154fd6bfbce74b4c60767116d028969b78da7fb2",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east21-1370-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494190.14928888186%2C4875893.282153052%2C494279.14928888186%2C4875973.282153052&bboxSR=3740&imageSR=3740&size=890%2C800&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "0f01a85adebe9d22a8ef3481b0b0e02321f2c42d7758d708f7e3384f35555c38",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99983
+        },
+        {
+          "file": "east21-1370-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494190.14928888186%2C4875893.282153052%2C494279.14928888186%2C4875973.282153052&bboxSR=3740&imageSR=3740&size=890%2C800&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "1d0768ca6f9969468c27868cd2943078598d02c974ad27da1a007f661d6a002f",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    }
+  },
+  "street_views": {
+    "1442-e20-north": [
+      {
+        "date": "2024-07",
+        "id": "Zn-qWQKEbl5ATeXXC5UBww",
+        "camera_enu": [
+          -6.876489213609602,
+          -851.4423430738971
+        ],
+        "bearing": 165.14,
+        "distance": 24.8,
+        "file": "1442-e20-north-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Zn-qWQKEbl5ATeXXC5UBww&heading=165.14"
+      }
+    ],
+    "1470-e20-northeast": [
+      {
+        "date": "2024-07",
+        "id": "4wt-9aC-23pAGxgG6_jb3Q",
+        "camera_enu": [
+          55.506867013522424,
+          -851.8085386585444
+        ],
+        "bearing": 222.73,
+        "distance": 29.7,
+        "file": "1470-e20-northeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4wt-9aC-23pAGxgG6_jb3Q&heading=222.73"
+      }
+    ],
+    "1473-e20-south": [
+      {
+        "date": "2024-07",
+        "id": "4RjcTRRwkTR_5U4xoshhjw",
+        "camera_enu": [
+          45.06699272751575,
+          -852.1426268173382
+        ],
+        "bearing": 344.57,
+        "distance": 20.6,
+        "file": "1473-e20-south-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4RjcTRRwkTR_5U4xoshhjw&heading=344.57"
+      }
+    ],
+    "1442-e20-northeast": [
+      {
+        "date": "2024-07",
+        "id": "pLqFLgj0IlmZEMTjzW_rTA",
+        "camera_enu": [
+          13.853085506649222,
+          -851.7059441534802
+        ],
+        "bearing": 211.19,
+        "distance": 27.7,
+        "file": "1442-e20-northeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pLqFLgj0IlmZEMTjzW_rTA&heading=211.19"
+      }
+    ],
+    "1460-e20-north": [
+      {
+        "date": "2024-07",
+        "id": "P-2aJNW0SlBggBoJhaIWGQ",
+        "camera_enu": [
+          24.248339549987577,
+          -851.9104584390298
+        ],
+        "bearing": 190.06,
+        "distance": 22.0,
+        "file": "1460-e20-north-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=P-2aJNW0SlBggBoJhaIWGQ&heading=190.06"
+      }
+    ],
+    "1460-e20-northwest": [
+      {
+        "date": "2024-07",
+        "id": "e0ypTyBmQttbrs7lmS7PQg",
+        "camera_enu": [
+          3.471167310141027,
+          -851.5386412693188
+        ],
+        "bearing": 142.51,
+        "distance": 27.8,
+        "file": "1460-e20-northwest-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=e0ypTyBmQttbrs7lmS7PQg&heading=142.51"
+      }
+    ],
+    "1470-e20-north": [
+      {
+        "date": "2024-07",
+        "id": "tEGEX2eWy5fOXnDJdRjT4Q",
+        "camera_enu": [
+          34.5751658018562,
+          -852.0420646369457
+        ],
+        "bearing": 178.0,
+        "distance": 21.6,
+        "file": "1470-e20-north-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=tEGEX2eWy5fOXnDJdRjT4Q&heading=178.0"
+      }
+    ],
+    "1473-e20-southeast": [
+      {
+        "date": "2024-07",
+        "id": "4wt-9aC-23pAGxgG6_jb3Q",
+        "camera_enu": [
+          55.506867013522424,
+          -851.8085386585444
+        ],
+        "bearing": 320.76,
+        "distance": 25.1,
+        "file": "1473-e20-southeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4wt-9aC-23pAGxgG6_jb3Q&heading=320.76"
+      }
+    ],
+    "studies-west": [
+      {
+        "date": "2024-07",
+        "id": "_F5zSIU1-A1RmUKZYEmj9Q",
+        "camera_enu": [
+          -123.40535875031492,
+          -770.4237564392388
+        ],
+        "bearing": 70.37,
+        "distance": 13.2,
+        "file": "studies-west-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_F5zSIU1-A1RmUKZYEmj9Q&heading=70.37"
+      }
+    ],
+    "studies-northwest": [
+      {
+        "date": "2024-07",
+        "id": "9Xw8QfYJB7SiipkXNhfSLw",
+        "camera_enu": [
+          -125.07337446213933,
+          -731.5665022833273
+        ],
+        "bearing": 140.12,
+        "distance": 26.6,
+        "file": "studies-northwest-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9Xw8QfYJB7SiipkXNhfSLw&heading=140.12"
+      }
+    ],
+    "studies-north-middle": [
+      {
+        "date": "2024-07",
+        "id": "2qT8m7HxtKsINTGomYLRwg",
+        "camera_enu": [
+          -94.74538969516288,
+          -731.7710018306971
+        ],
+        "bearing": 184.71,
+        "distance": 15.3,
+        "file": "studies-north-middle-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2qT8m7HxtKsINTGomYLRwg&heading=184.71"
+      }
+    ],
+    "studies-southeast": [
+      {
+        "date": "2024-07",
+        "id": "Y7H68ccDUafZ_QEkCZGdnQ",
+        "camera_enu": [
+          -64.39475648762891,
+          -795.7457110313699
+        ],
+        "bearing": 302.91,
+        "distance": 19.8,
+        "file": "studies-southeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Y7H68ccDUafZ_QEkCZGdnQ&heading=302.91"
+      }
+    ],
+    "studies-southwest": [
+      {
+        "date": "2024-07",
+        "id": "LY8fROzcbBwm_5gCldAw7Q",
+        "camera_enu": [
+          -123.37516853841953,
+          -790.7887332672253
+        ],
+        "bearing": 61.25,
+        "distance": 14.1,
+        "file": "studies-southwest-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=LY8fROzcbBwm_5gCldAw7Q&heading=61.25"
+      }
+    ],
+    "1490-e19-north": [
+      {
+        "date": "2024-07",
+        "id": "NdUZbDa7smZEJnujtYqatw",
+        "camera_enu": [
+          54.243364746973384,
+          -731.7053801352158
+        ],
+        "bearing": 166.54,
+        "distance": 18.2,
+        "file": "1490-e19-north-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=NdUZbDa7smZEJnujtYqatw&heading=166.54"
+      }
+    ],
+    "studies-northeast": [
+      {
+        "date": "2024-07",
+        "id": "m2Ss96BPjkvFTRz8qvEiRA",
+        "camera_enu": [
+          -64.85416207497474,
+          -731.7745361188427
+        ],
+        "bearing": 214.27,
+        "distance": 26.9,
+        "file": "studies-northeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=m2Ss96BPjkvFTRz8qvEiRA&heading=214.27"
+      }
+    ],
+    "1490-e19-northeast": [
+      {
+        "date": "2024-07",
+        "id": "Ni6h0PuCHIbwbfN4awx7Ow",
+        "camera_enu": [
+          88.47880032501416,
+          -727.0056379651651
+        ],
+        "bearing": 233.3,
+        "distance": 37.4,
+        "file": "1490-e19-northeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Ni6h0PuCHIbwbfN4awx7Ow&heading=233.3"
+      }
+    ],
+    "1490-e19-east": [
+      {
+        "date": "2024-07",
+        "id": "pLV3CXMndchSCBBmImtuYw",
+        "camera_enu": [
+          85.14322818449,
+          -748.6348323337734
+        ],
+        "bearing": 268.42,
+        "distance": 26.7,
+        "file": "1490-e19-east-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pLV3CXMndchSCBBmImtuYw&heading=268.42"
+      }
+    ],
+    "1495-e21-south": [
+      {
+        "date": "2024-07",
+        "id": "cuo_-FJj0ivyUvSGi0PBtA",
+        "camera_enu": [
+          50.61250650230795,
+          -975.552687311545
+        ],
+        "bearing": 13.3,
+        "distance": 20.8,
+        "file": "1495-e21-south-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=cuo_-FJj0ivyUvSGi0PBtA&heading=13.3"
+      }
+    ],
+    "2092-agate-east": [
+      {
+        "date": "2024-07",
+        "id": "wOsKGZfp2ctdqLMiYCnFIg",
+        "camera_enu": [
+          89.85065213497728,
+          -949.2782484451309
+        ],
+        "bearing": 260.09,
+        "distance": 35.0,
+        "file": "2092-agate-east-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=wOsKGZfp2ctdqLMiYCnFIg&heading=260.09"
+      }
+    ],
+    "1370-e21-northwest": [
+      {
+        "date": "2024-07",
+        "id": "GMdewDVXDFqK9PG84e7IGw",
+        "camera_enu": [
+          -111.23101442668121,
+          -972.5721747847274
+        ],
+        "bearing": 143.45,
+        "distance": 29.5,
+        "file": "1370-e21-northwest-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GMdewDVXDFqK9PG84e7IGw&heading=143.45"
+      }
+    ],
+    "1370-e21-north": [
+      {
+        "date": "2024-07",
+        "id": "o-TSyqIj_W8xFLWfs0O4rw",
+        "camera_enu": [
+          -90.356400233577,
+          -973.3580444380641
+        ],
+        "bearing": 188.17,
+        "distance": 23.2,
+        "file": "1370-e21-north-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=o-TSyqIj_W8xFLWfs0O4rw&heading=188.17"
+      }
+    ]
+  },
+  "courtyard_height_evidence": [
+    {
+      "area_m2": 108.689,
+      "bounds_enu_m": [
+        -92.38293172215344,
+        -782.6619878495112,
+        -88.45179303502664,
+        -754.7952107368037
+      ],
+      "geometry_wkt": "POLYGON ((-92.35229951329529 -754.7952107368037, -92.38293172215344 -782.6576143084094, -88.48196254600771 -782.6619878495112, -88.45179303502664 -755.1962121641263, -88.45943262230139 -754.7995261047035, -92.35229951329529 -754.7952107368037))",
+      "surface_summary": {
+        "2013-15": {
+          "count": 81,
+          "quantiles_10_50_90_m": [
+            10.403,
+            10.863,
+            19.903
+          ]
+        },
+        "DOGAMI": {
+          "count": 81,
+          "quantiles_10_50_90_m": [
+            10.388,
+            19.337,
+            19.968
+          ]
+        }
+      }
+    },
+    {
+      "area_m2": 144.278,
+      "bounds_enu_m": [
+        -109.41509419353679,
+        -782.6443367125466,
+        -104.4505652760854,
+        -753.3880511838943
+      ],
+      "geometry_wkt": "POLYGON ((-109.41509419353679 -782.6389476452023, -104.48265804577386 -782.6443367125466, -104.4505652760854 -753.3934402707964, -109.3830010802485 -753.3880511838943, -109.41509419353679 -782.6389476452023))",
+      "surface_summary": {
+        "2013-15": {
+          "count": 112,
+          "quantiles_10_50_90_m": [
+            10.403,
+            10.458,
+            19.853
+          ]
+        },
+        "DOGAMI": {
+          "count": 112,
+          "quantiles_10_50_90_m": [
+            10.38,
+            13.823,
+            20.076
+          ]
+        }
+      }
+    }
+  ],
+  "historical_id_mapping": {
+    "roof-879f17f5": "roof-a40877e3"
+  },
+  "source_split": {
+    "east20-1470": "roof-28502c01"
+  },
+  "absorbed_ids": [
+    "roof-879f17f5"
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-aba1513b",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-28502c01",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-06636962",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-a40877e3",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-879f17f5",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-a7890474",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-58d0ebc7",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-5a32e480",
+      "target": "context-background-1-0"
+    }
+  ],
+  "models": [
+    {
+      "id": "roof-a40877e3",
+      "city_objectid": 149611,
+      "outline_enu_m": [
+        [
+          -103.78029,
+          -745.12934
+        ],
+        [
+          -103.77763,
+          -742.74908
+        ],
+        [
+          -91.94242,
+          -742.76205
+        ],
+        [
+          -91.94639,
+          -746.3986
+        ],
+        [
+          -86.72303,
+          -746.4043
+        ],
+        [
+          -86.7205,
+          -744.09015
+        ],
+        [
+          -75.21581,
+          -744.10278
+        ],
+        [
+          -75.2294,
+          -756.46703
+        ],
+        [
+          -75.75833,
+          -756.46641
+        ],
+        [
+          -75.79619,
+          -790.84816
+        ],
+        [
+          -88.49096,
+          -790.83425
+        ],
+        [
+          -88.49,
+          -789.93499
+        ],
+        [
+          -109.42313,
+          -789.91195
+        ],
+        [
+          -109.42314,
+          -789.93845
+        ],
+        [
+          -119.02359,
+          -789.92788
+        ],
+        [
+          -118.97557,
+          -746.21019
+        ],
+        [
+          -118.72425,
+          -746.21049
+        ],
+        [
+          -118.71999,
+          -742.33593
+        ],
+        [
+          -108.93442,
+          -742.34667
+        ],
+        [
+          -108.93754,
+          -745.12366
+        ]
+      ],
+      "holes_enu_m": [
+        [
+          [
+            -92.3523,
+            -754.79521
+          ],
+          [
+            -92.38293,
+            -782.65761
+          ],
+          [
+            -88.48196,
+            -782.66199
+          ],
+          [
+            -88.45179,
+            -755.19621
+          ],
+          [
+            -88.45943,
+            -754.79953
+          ]
+        ],
+        [
+          [
+            -109.41509,
+            -782.63895
+          ],
+          [
+            -104.48266,
+            -782.64434
+          ],
+          [
+            -104.45057,
+            -753.39344
+          ],
+          [
+            -109.383,
+            -753.38805
+          ]
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "The Studies at 19th",
+      "street_address": "1370 East 19th Avenue",
+      "base_z_m": 7.18,
+      "levels_z_m": [
+        12.58,
+        15.13,
+        17.72
+      ],
+      "wall_color": [
+        180,
+        178,
+        151
+      ],
+      "roof_color": [
+        112,
+        108,
+        93
+      ],
+      "trim_color": [
+        212,
+        204,
+        177
+      ],
+      "seam_color": [
+        154,
+        153,
+        130
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -119.2,
+            -784.3,
+            -109.19,
+            -748.09
+          ],
+          "planes": [
+            [
+              -114.26,
+              -773,
+              21.36,
+              0.35,
+              0
+            ],
+            [
+              -114.26,
+              -773,
+              21.36,
+              -0.35,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -109.68,
+            -784.31,
+            -88.18,
+            -748.29
+          ],
+          "planes": [
+            [
+              -98.36,
+              -768,
+              22.38,
+              0.3,
+              0
+            ],
+            [
+              -98.36,
+              -768,
+              22.38,
+              -0.34,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -92.53,
+            -784.3,
+            -75.03,
+            -748.21
+          ],
+          "planes": [
+            [
+              -83.04,
+              -766,
+              21.9,
+              0.3,
+              0
+            ],
+            [
+              -83.04,
+              -766,
+              21.9,
+              -0.35,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -119.23,
+            -791.04,
+            -75.55,
+            -781.82
+          ],
+          "planes": [
+            [
+              -99,
+              -785.0,
+              21.08,
+              0,
+              0.24
+            ],
+            [
+              -99,
+              -785.0,
+              21.08,
+              0,
+              -0.28
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -119.2,
+            -749.05,
+            -75.03,
+            -742.17
+          ],
+          "planes": [
+            [
+              -97,
+              -746.1,
+              19.19,
+              0,
+              0.02
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -118.96,
+            -752.2,
+            -108.7,
+            -742.19
+          ],
+          "planes": [
+            [
+              -113.76,
+              -747.28,
+              21.42,
+              0.53,
+              0
+            ],
+            [
+              -113.76,
+              -747.28,
+              21.42,
+              -0.51,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -104.02,
+            -752.3,
+            -91.72,
+            -742.59
+          ],
+          "planes": [
+            [
+              -97.89,
+              -748,
+              22.68,
+              0.54,
+              0
+            ],
+            [
+              -97.89,
+              -748,
+              22.68,
+              -0.53,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -87.0,
+            -752.37,
+            -75.04,
+            -743.91
+          ],
+          "planes": [
+            [
+              -81.12,
+              -750,
+              22.05,
+              0.5,
+              0
+            ],
+            [
+              -81.12,
+              -750,
+              22.05,
+              -0.58,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "parking_open": [
+        -119.23,
+        -787.08,
+        -114.05,
+        -752.62
+      ],
+      "parking_ceiling_z_m": 12.79,
+      "parking_posts": [
+        [
+          -118.53,
+          -754.0
+        ],
+        [
+          -118.56,
+          -757.8
+        ],
+        [
+          -118.57,
+          -761.6
+        ],
+        [
+          -118.57,
+          -765.42
+        ],
+        [
+          -118.58,
+          -769.2
+        ],
+        [
+          -118.58,
+          -773.0
+        ],
+        [
+          -118.58,
+          -776.82
+        ],
+        [
+          -118.59,
+          -780.6
+        ],
+        [
+          -118.6,
+          -784.43
+        ]
+      ],
+      "parking_paving": [
+        -122.37,
+        -787.12,
+        -114.16,
+        -752.6
+      ],
+      "north_panels": [
+        [
+          -116.2,
+          -742.57,
+          4.17,
+          [
+            143,
+            156,
+            118
+          ]
+        ],
+        [
+          -111.28,
+          -742.57,
+          3.74,
+          [
+            169,
+            151,
+            105
+          ]
+        ],
+        [
+          -101.0,
+          -742.99,
+          4.35,
+          [
+            107,
+            142,
+            158
+          ]
+        ],
+        [
+          -95.43,
+          -742.99,
+          4.65,
+          [
+            174,
+            110,
+            75
+          ]
+        ],
+        [
+          -83.64,
+          -744.32,
+          4.4,
+          [
+            163,
+            107,
+            73
+          ]
+        ],
+        [
+          -78.48,
+          -744.32,
+          4.51,
+          [
+            134,
+            154,
+            127
+          ]
+        ]
+      ],
+      "north_entry": {
+        "near": [
+          -82.72,
+          -744.34
+        ],
+        "bearing": 0,
+        "route": {
+          "gate": "studies-north-stair",
+          "threshold_z_m": 11.54,
+          "distance_m": 8.05,
+          "stair_run_m": 6.55,
+          "width_m": 1.25
+        }
+      }
+    },
+    {
+      "id": "roof-a7890474",
+      "city_objectid": 170742,
+      "outline_enu_m": [
+        [
+          69.46896,
+          -740.59953
+        ],
+        [
+          69.79705,
+          -745.0686
+        ],
+        [
+          64.63546,
+          -745.02795
+        ],
+        [
+          64.74579,
+          -755.24812
+        ],
+        [
+          64.45394,
+          -755.25683
+        ],
+        [
+          64.46986,
+          -759.05359
+        ],
+        [
+          51.44021,
+          -759.63719
+        ],
+        [
+          51.5099,
+          -755.44836
+        ],
+        [
+          51.21805,
+          -755.45707
+        ],
+        [
+          51.11643,
+          -752.05239
+        ],
+        [
+          49.75169,
+          -751.99572
+        ],
+        [
+          49.63264,
+          -748.00723
+        ],
+        [
+          51.0947,
+          -748.06099
+        ],
+        [
+          51.16588,
+          -740.65901
+        ]
+      ],
+      "holes_enu_m": [],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "Tom's Market",
+      "street_address": "1490 East 19th Avenue",
+      "base_z_m": 6.31,
+      "levels_z_m": [
+        7.19
+      ],
+      "wall_color": [
+        178,
+        165,
+        121
+      ],
+      "roof_color": [
+        122,
+        128,
+        100
+      ],
+      "trim_color": [
+        190,
+        182,
+        143
+      ],
+      "seam_color": [
+        161,
+        149,
+        108
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            50.9,
+            -755.94,
+            64.93,
+            -740.45
+          ],
+          "planes": [
+            [
+              57.0,
+              -747.56,
+              11.67,
+              0.061,
+              0
+            ],
+            [
+              57.0,
+              -747.56,
+              11.67,
+              -0.105,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            50.98,
+            -759.82,
+            64.65,
+            -754.66
+          ],
+          "planes": [
+            [
+              57.35,
+              -757.19,
+              10.98,
+              0.21,
+              0
+            ],
+            [
+              57.35,
+              -757.19,
+              10.98,
+              -0.11,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            49.44,
+            -752.2,
+            51.43,
+            -747.81
+          ],
+          "planes": [
+            [
+              51.27,
+              -750.6,
+              10.9,
+              0.25,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            64.47,
+            -745.31,
+            70.0,
+            -740.43
+          ],
+          "planes": [
+            [
+              67.54,
+              -742.82,
+              11.21,
+              0,
+              0.31
+            ],
+            [
+              67.54,
+              -742.82,
+              11.21,
+              0,
+              -0.37
+            ],
+            [
+              68.15,
+              -742.82,
+              11.21,
+              -0.28,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.2,
+      "recess": [
+        64.38,
+        -745.29,
+        70,
+        -740.41
+      ],
+      "arcade_east": [
+        69.02,
+        -743.04,
+        3.18
+      ],
+      "storefront": {
+        "near": [
+          64.38,
+          -742.82
+        ],
+        "bearing": 90,
+        "route": {
+          "gate": "market-east-storefront",
+          "threshold_z_m": 7.23,
+          "distance_m": 8.05,
+          "stair_run_m": 1.7,
+          "width_m": 1.48
+        }
+      },
+      "apron": [
+        64.14,
+        -752.11,
+        72.0,
+        -741.15
+      ],
+      "wall_blue": [
+        64.52,
+        -750.3
+      ]
+    },
+    {
+      "id": "roof-aba1513b",
+      "city_objectid": 170751,
+      "outline_enu_m": [
+        [
+          1.61585,
+          -865.37771
+        ],
+        [
+          2.42636,
+          -865.35351
+        ],
+        [
+          2.65244,
+          -876.86838
+        ],
+        [
+          5.43269,
+          -876.8634
+        ],
+        [
+          5.44715,
+          -884.85645
+        ],
+        [
+          -5.18076,
+          -884.87565
+        ],
+        [
+          -5.19522,
+          -876.8826
+        ],
+        [
+          -4.53093,
+          -876.88137
+        ],
+        [
+          -4.87253,
+          -865.43616
+        ],
+        [
+          -4.06203,
+          -865.41197
+        ],
+        [
+          -4.11041,
+          -863.79085
+        ],
+        [
+          1.56344,
+          -863.62151
+        ]
+      ],
+      "holes_enu_m": [],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1442 East 20th Avenue",
+      "street_address": "1442 East 20th Avenue",
+      "base_z_m": 8.28,
+      "levels_z_m": [
+        9.58,
+        12.31
+      ],
+      "wall_color": [
+        148,
+        152,
+        130
+      ],
+      "roof_color": [
+        117,
+        112,
+        95
+      ],
+      "trim_color": [
+        204,
+        193,
+        161
+      ],
+      "seam_color": [
+        127,
+        136,
+        115
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -5.01,
+            -878.42,
+            2.87,
+            -863.46
+          ],
+          "planes": [
+            [
+              -1.8,
+              -870,
+              14.43,
+              0.29,
+              0
+            ],
+            [
+              -1.8,
+              -870,
+              14.43,
+              -0.35,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4.25,
+            -866.22,
+            1.85,
+            -863.47
+          ],
+          "planes": [
+            [
+              -1.2,
+              -865.1,
+              13.9,
+              0,
+              -0.17
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -5.39,
+            -885.07,
+            5.63,
+            -873.32
+          ],
+          "planes": [
+            [
+              -0.06,
+              -881,
+              17.34,
+              0.43,
+              0
+            ],
+            [
+              -0.06,
+              -881,
+              17.34,
+              -0.56,
+              0
+            ],
+            [
+              -0.06,
+              -875.16,
+              17.34,
+              0,
+              -0.68
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            -1.29,
+            -863.82
+          ],
+          "bearing": 0,
+          "windows": [
+            [
+              -0.99,
+              1.29,
+              10.76,
+              12.09
+            ],
+            [
+              1.04,
+              1.18,
+              10.76,
+              12.06
+            ]
+          ],
+          "canopy": [
+            3.15,
+            0.87,
+            12.13
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-28502c01",
+      "city_objectid": 170753,
+      "outline_enu_m": [
+        [
+          17.23001,
+          -868.93252
+        ],
+        [
+          17.20179,
+          -867.98692
+        ],
+        [
+          22.60537,
+          -867.82564
+        ],
+        [
+          22.62956,
+          -868.63615
+        ],
+        [
+          27.36588,
+          -868.7652
+        ],
+        [
+          27.259,
+          -878.77404
+        ],
+        [
+          13.3325,
+          -878.78409
+        ],
+        [
+          13.5785,
+          -868.9063
+        ]
+      ],
+      "holes_enu_m": [],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1460 East 20th Avenue",
+      "street_address": "1460 East 20th Avenue",
+      "base_z_m": 8.94,
+      "levels_z_m": [
+        9.81
+      ],
+      "wall_color": [
+        123,
+        122,
+        100
+      ],
+      "roof_color": [
+        112,
+        110,
+        99
+      ],
+      "trim_color": [
+        205,
+        198,
+        168
+      ],
+      "seam_color": [
+        101,
+        106,
+        87
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            13.14,
+            -878.99,
+            27.55,
+            -868.46
+          ],
+          "planes": [
+            [
+              20.41,
+              -873.85,
+              15.11,
+              0,
+              0.43
+            ],
+            [
+              20.41,
+              -873.85,
+              15.11,
+              0,
+              -0.52
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            17.01,
+            -873.0,
+            22.83,
+            -867.66
+          ],
+          "planes": [
+            [
+              19.91,
+              -870.0,
+              14.79,
+              0.54,
+              0
+            ],
+            [
+              19.91,
+              -870.0,
+              14.79,
+              -0.52,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            19.45,
+            -868.15
+          ],
+          "bearing": 0,
+          "windows": [
+            [
+              0.48,
+              1.62,
+              10.63,
+              12.01
+            ]
+          ],
+          "door": [
+            -1.57,
+            9.97
+          ],
+          "door_color": [
+            139,
+            70,
+            50
+          ],
+          "route": {
+            "gate": "east-twentieth-red-door",
+            "threshold_z_m": 9.97,
+            "distance_m": 6.25,
+            "stair_run_m": 1.3,
+            "width_m": 1.12
+          }
+        },
+        {
+          "near": [
+            15.61,
+            -868.7
+          ],
+          "bearing": 0,
+          "windows": [
+            [
+              0,
+              1.81,
+              10.54,
+              11.92
+            ]
+          ],
+          "minimum": 2.72
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "east20-1470",
+      "city_objectid": 170752,
+      "outline_enu_m": [
+        [
+          33.72116,
+          -876.45329
+        ],
+        [
+          33.46096,
+          -881.32863
+        ],
+        [
+          29.13403,
+          -881.32257
+        ],
+        [
+          29.35986,
+          -870.76936
+        ],
+        [
+          33.4126,
+          -870.64839
+        ],
+        [
+          33.33196,
+          -867.9466
+        ],
+        [
+          42.11698,
+          -867.8196
+        ],
+        [
+          41.96978,
+          -876.47751
+        ]
+      ],
+      "holes_enu_m": [],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1470 East 20th Avenue",
+      "street_address": "1470 East 20th Avenue",
+      "base_z_m": 9.22,
+      "levels_z_m": [
+        10.31,
+        12.32
+      ],
+      "wall_color": [
+        149,
+        139,
+        116
+      ],
+      "roof_color": [
+        124,
+        113,
+        93
+      ],
+      "trim_color": [
+        217,
+        206,
+        174
+      ],
+      "seam_color": [
+        132,
+        120,
+        102
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            29.03,
+            -881.52,
+            34.26,
+            -870.48
+          ],
+          "planes": [
+            [
+              31.39,
+              -875.9,
+              15.68,
+              0.57,
+              0
+            ],
+            [
+              31.39,
+              -875.9,
+              15.68,
+              -0.43,
+              0
+            ],
+            [
+              31.39,
+              -876.54,
+              15.68,
+              0,
+              0.55
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            33.11,
+            -876.69,
+            42.35,
+            -867.65
+          ],
+          "planes": [
+            [
+              37.5,
+              -872.24,
+              16.76,
+              0,
+              0.43
+            ],
+            [
+              37.5,
+              -872.24,
+              16.76,
+              0,
+              -0.54
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            33.21,
+            -874.81,
+            38.99,
+            -867.69
+          ],
+          "planes": [
+            [
+              36.1,
+              -870.44,
+              16.61,
+              0.62,
+              0
+            ],
+            [
+              36.1,
+              -870.44,
+              16.61,
+              -0.68,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            37.5,
+            -868.06
+          ],
+          "bearing": 0,
+          "windows": [
+            [
+              -1.93,
+              1.49,
+              11.02,
+              12.27
+            ],
+            [
+              2.23,
+              1.6,
+              11.04,
+              12.3
+            ]
+          ],
+          "dormer": [
+            1.69,
+            1.55,
+            13.57,
+            0.92,
+            0.61
+          ],
+          "door": [
+            0.28,
+            10.37
+          ],
+          "porch": [
+            2.09,
+            0.75,
+            0.4
+          ],
+          "route": {
+            "gate": "east-twentieth-dormer-house",
+            "threshold_z_m": 10.37,
+            "distance_m": 6.8,
+            "stair_run_m": 1.72,
+            "width_m": 1.12
+          }
+        },
+        {
+          "near": [
+            31.53,
+            -871.04
+          ],
+          "bearing": 0,
+          "garages": [
+            [
+              0,
+              2.77
+            ]
+          ],
+          "garage_color": [
+            189,
+            179,
+            155
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "driveway": [
+        29.52,
+        -870.85,
+        32.51,
+        -861.05
+      ]
+    },
+    {
+      "id": "roof-06636962",
+      "city_objectid": 214549,
+      "outline_enu_m": [
+        [
+          34.21809,
+          -821.5381
+        ],
+        [
+          41.82568,
+          -821.31094
+        ],
+        [
+          42.0869,
+          -830.05955
+        ],
+        [
+          45.89055,
+          -829.94603
+        ],
+        [
+          46.22556,
+          -841.16703
+        ],
+        [
+          34.81422,
+          -841.50772
+        ],
+        [
+          34.47363,
+          -830.09638
+        ]
+      ],
+      "holes_enu_m": [],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1473 East 20th Avenue",
+      "street_address": "1473 East 20th Avenue",
+      "base_z_m": 8.42,
+      "levels_z_m": [
+        9.87,
+        13.11
+      ],
+      "wall_color": [
+        103,
+        120,
+        125
+      ],
+      "roof_color": [
+        102,
+        105,
+        95
+      ],
+      "trim_color": [
+        175,
+        181,
+        164
+      ],
+      "seam_color": [
+        83,
+        101,
+        108
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            34.0,
+            -830.46,
+            42.33,
+            -821.1
+          ],
+          "planes": [
+            [
+              38.08,
+              -825.79,
+              17.03,
+              0.17,
+              0
+            ],
+            [
+              38.08,
+              -825.79,
+              17.03,
+              -0.21,
+              0
+            ],
+            [
+              38.08,
+              -821.91,
+              17.03,
+              0,
+              -0.18
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            34.26,
+            -841.72,
+            46.45,
+            -829.76
+          ],
+          "planes": [
+            [
+              40.36,
+              -833.67,
+              18.15,
+              0.14,
+              0
+            ],
+            [
+              40.36,
+              -833.67,
+              18.15,
+              -0.21,
+              0
+            ],
+            [
+              40.36,
+              -834.47,
+              18.15,
+              0,
+              0.43
+            ],
+            [
+              40.36,
+              -832.23,
+              18.15,
+              0,
+              -0.29
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            34.55,
+            -841.72,
+            46.48,
+            -838.1
+          ],
+          "planes": [
+            [
+              40,
+              -839.4,
+              16.5,
+              0.025,
+              0.035
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            40.11,
+            -841.06
+          ],
+          "bearing": 180,
+          "windows": [
+            [
+              -1.57,
+              1.5,
+              10.83,
+              12.53
+            ],
+            [
+              1.55,
+              1.38,
+              13.84,
+              15.38
+            ]
+          ],
+          "canopy": [
+            4.68,
+            0.9,
+            15.89
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.36,
+      "driveway": [
+        46.3,
+        -848.42,
+        49.1,
+        -830.42
+      ]
+    },
+    {
+      "id": "roof-58d0ebc7",
+      "city_objectid": 170759,
+      "outline_enu_m": [
+        [
+          60.3748,
+          -950.07753
+        ],
+        [
+          60.37376,
+          -950.29067
+        ],
+        [
+          66.53448,
+          -950.3206
+        ],
+        [
+          66.5171,
+          -953.90314
+        ],
+        [
+          67.48727,
+          -953.90779
+        ],
+        [
+          67.47383,
+          -956.68069
+        ],
+        [
+          66.00467,
+          -956.67354
+        ],
+        [
+          65.98568,
+          -960.60095
+        ],
+        [
+          60.61401,
+          -960.57487
+        ],
+        [
+          60.6172,
+          -959.91095
+        ],
+        [
+          55.13941,
+          -959.88444
+        ],
+        [
+          55.13457,
+          -960.86502
+        ],
+        [
+          44.50526,
+          -960.81356
+        ],
+        [
+          44.55764,
+          -950.0009
+        ]
+      ],
+      "holes_enu_m": [],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1495 East 21st Avenue / 2092 Agate Street",
+      "street_address": "1495 East 21st Avenue",
+      "base_z_m": 11.68,
+      "levels_z_m": [
+        12.72,
+        15.59
+      ],
+      "wall_color": [
+        139,
+        145,
+        132
+      ],
+      "roof_color": [
+        122,
+        117,
+        99
+      ],
+      "trim_color": [
+        191,
+        186,
+        160
+      ],
+      "seam_color": [
+        118,
+        128,
+        115
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            44.29,
+            -961.06,
+            55.43,
+            -949.81
+          ],
+          "planes": [
+            [
+              50.43,
+              -953.57,
+              20.82,
+              0,
+              0.38
+            ],
+            [
+              50.43,
+              -953.57,
+              20.82,
+              0,
+              -0.43
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            54.67,
+            -960.12,
+            61.18,
+            -949.84
+          ],
+          "planes": [
+            [
+              57.89,
+              -952.71,
+              19.66,
+              0,
+              0.33
+            ],
+            [
+              57.89,
+              -952.71,
+              19.66,
+              0,
+              -0.41
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            60.25,
+            -960.78,
+            67.68,
+            -950.1
+          ],
+          "planes": [
+            [
+              63.1,
+              -954.8,
+              19.1,
+              0,
+              0.39
+            ],
+            [
+              63.1,
+              -954.8,
+              19.1,
+              0,
+              -0.38
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            49.84,
+            -960.48
+          ],
+          "bearing": 180,
+          "garages": [
+            [
+              -0.64,
+              4.3
+            ]
+          ],
+          "garage_color": [
+            164,
+            158,
+            135
+          ],
+          "windows": [
+            [
+              2.66,
+              1.49,
+              16.16,
+              17.39
+            ]
+          ]
+        },
+        {
+          "near": [
+            57.52,
+            -959.65
+          ],
+          "bearing": 180,
+          "door": [
+            -0.11,
+            12.95
+          ],
+          "windows": [
+            [
+              1.34,
+              1.24,
+              15.51,
+              16.29
+            ]
+          ],
+          "minimum": 3.28
+        },
+        {
+          "near": [
+            63.13,
+            -960.34
+          ],
+          "bearing": 180,
+          "windows": [
+            [
+              0,
+              2.15,
+              13.35,
+              14.65
+            ]
+          ],
+          "minimum": 3.86
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "projecting_bay": {
+        "near": [
+          47.74,
+          -960.55
+        ],
+        "bearing": 180,
+        "width_m": 2.78,
+        "projection_m": 0.68,
+        "heights_m": [
+          15.27,
+          17.97
+        ]
+      },
+      "driveway": [
+        45.67,
+        -967.17,
+        53.33,
+        -960.59
+      ]
+    },
+    {
+      "id": "roof-5a32e480",
+      "city_objectid": 149481,
+      "outline_enu_m": [
+        [
+          -83.98678,
+          -999.8038
+        ],
+        [
+          -89.02605,
+          -999.8042
+        ],
+        [
+          -89.0259,
+          -1000.84113
+        ],
+        [
+          -104.10101,
+          -1000.84236
+        ],
+        [
+          -104.10162,
+          -993.93963
+        ],
+        [
+          -98.26893,
+          -993.93915
+        ],
+        [
+          -98.26917,
+          -991.39466
+        ],
+        [
+          -83.98749,
+          -991.39342
+        ]
+      ],
+      "holes_enu_m": [],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1370 East 21st Avenue",
+      "street_address": "1370 East 21st Avenue",
+      "base_z_m": 11.47,
+      "levels_z_m": [
+        12.46,
+        15.42
+      ],
+      "wall_color": [
+        205,
+        205,
+        188
+      ],
+      "roof_color": [
+        133,
+        125,
+        108
+      ],
+      "trim_color": [
+        222,
+        217,
+        191
+      ],
+      "seam_color": [
+        178,
+        182,
+        167
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -104.29,
+            -1001.02,
+            -89.72,
+            -991.17
+          ],
+          "planes": [
+            [
+              -96.2,
+              -995.25,
+              19.39,
+              0,
+              0.31
+            ],
+            [
+              -96.2,
+              -995.25,
+              19.39,
+              0,
+              -0.32
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -104.32,
+            -1001.05,
+            -97.92,
+            -993.69
+          ],
+          "planes": [
+            [
+              -100.9,
+              -996.42,
+              18.71,
+              0.008,
+              0.024
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -93.68,
+            -1001.04,
+            -83.81,
+            -991.18
+          ],
+          "planes": [
+            [
+              -87.8,
+              -995.15,
+              18.17,
+              0,
+              0.43
+            ],
+            [
+              -87.8,
+              -995.15,
+              18.17,
+              0,
+              -0.45
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            -92.75,
+            -991.62
+          ],
+          "bearing": 0,
+          "windows": [
+            [
+              -3.12,
+              1.52,
+              13.29,
+              14.74
+            ],
+            [
+              1.65,
+              2.2,
+              13.28,
+              14.73
+            ],
+            [
+              4.26,
+              1.66,
+              15.87,
+              17.02
+            ]
+          ],
+          "canopy": [
+            5.18,
+            0.74,
+            15.1
+          ],
+          "door": [
+            -0.27,
+            12.62
+          ],
+          "route": {
+            "gate": "east-twenty-first-white-house",
+            "threshold_z_m": 12.62,
+            "distance_m": 7.31,
+            "stair_run_m": 1.48,
+            "width_m": 1.12
+          }
+        },
+        {
+          "near": [
+            -101.11,
+            -994.18
+          ],
+          "bearing": 0,
+          "windows": [
+            [
+              0,
+              1.64,
+              13.48,
+              14.67
+            ],
+            [
+              0.23,
+              1.76,
+              16.23,
+              17.37
+            ]
+          ],
+          "minimum": 4.45
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "terrain_apron": [
+        -107.55,
+        -82.19,
+        -1002.56
+      ]
+    }
+  ]
+}

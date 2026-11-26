@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const id = "roof-4f0c798e";
 
@@ -31,7 +32,7 @@ test("Fenton replaces the exterior with two clear approaches and stable neighbor
   const before = await page.evaluate(inspect, id);
   await ready(page);
   const after = await page.evaluate(inspect, id);
-  expect(after.buildings).toBe(519);
+  expect(after.buildings).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(after.neighbors).toEqual(before.neighbors);
   expect(after.blocked).toEqual([true, false, true, false, true, true]);
   expect(after.doors.map(({ gate }) => gate).sort()).toEqual([

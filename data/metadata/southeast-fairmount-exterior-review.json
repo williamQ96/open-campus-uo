@@ -1,0 +1,1146 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "address_points": "City of Eugene address points",
+    "historical_surfaces": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    }
+  },
+  "models": [
+    {
+      "id": "roof-e0d560b4",
+      "name": "281 Sunset Drive",
+      "street_address": "281 Sunset Dr",
+      "outline_enu_m": [
+        [
+          890.80876,
+          -667.78119
+        ],
+        [
+          890.08554,
+          -666.81985
+        ],
+        [
+          892.35614,
+          -665.11181
+        ],
+        [
+          886.10498,
+          -656.8016
+        ],
+        [
+          874.20211,
+          -665.75539
+        ],
+        [
+          875.13194,
+          -666.99158
+        ],
+        [
+          869.19121,
+          -671.46036
+        ],
+        [
+          876.71231,
+          -681.45872
+        ],
+        [
+          882.1592,
+          -677.3614
+        ],
+        [
+          880.68256,
+          -675.39841
+        ]
+      ],
+      "footprint_feature": 159823,
+      "footprint_layer": "City of Eugene",
+      "roof_frame": {
+        "origin_enu_m": [
+          880.8,
+          -668.81
+        ],
+        "axis": [
+          0.79915,
+          0.60114
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -4.05,
+            -9,
+            13,
+            8
+          ],
+          "planes": [
+            [
+              3.65,
+              0,
+              57.52,
+              0.143,
+              0
+            ],
+            [
+              3.65,
+              0,
+              57.52,
+              -0.224,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -12,
+            -9,
+            -4.05,
+            8
+          ],
+          "planes": [
+            [
+              -6.3,
+              0,
+              56.08,
+              0.16,
+              0
+            ],
+            [
+              -6.3,
+              0,
+              56.08,
+              -0.08,
+              0
+            ]
+          ],
+          "roof_color": [
+            139,
+            135,
+            118
+          ]
+        }
+      ],
+      "wall_color": [
+        181,
+        174,
+        157
+      ],
+      "trim_color": [
+        201,
+        198,
+        178
+      ],
+      "roof_color": [
+        153,
+        144,
+        124
+      ],
+      "front": {
+        "bearing": 143,
+        "siding_pitch_m": 0.215,
+        "brick": false,
+        "secondary_levels": []
+      },
+      "window_rows": [],
+      "facade_details": [
+        {
+          "kind": "garage",
+          "near": [
+            879.46104,
+            -679.38991
+          ],
+          "bearing": 143,
+          "width": 3.75,
+          "color": [
+            154,
+            142,
+            122
+          ]
+        },
+        {
+          "kind": "glazing",
+          "near": [
+            886.61104,
+            -670.94574
+          ],
+          "bearing": 143,
+          "width": 8.7,
+          "sill": 52.72,
+          "panels": 7,
+          "door_offset": -1.84,
+          "walk_length": 4.88
+        }
+      ],
+      "dormers": [],
+      "entry": null,
+      "porch": null,
+      "details": [],
+      "chimneys": [],
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495186.14928888186%2C4876234.282153052%2C495234.14928888186%2C4876284.282153052&bboxSR=3740&imageSR=3740&size=576%2C600&format=png&bandIds=0%2C1%2C2",
+        "sha256": "f9d2ce53052652354cdf83fca0d9f856cbddd78528e969acf9dd6c14945343b0"
+      },
+      "panoramas": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=dFttMrYKeoYiRID4hHnvvw&heading=327.95",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=f-FDN1GmFOjicmtK4W453Q&heading=327.94",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=y4swSYzZoL3tnWvjy7kqBg&heading=324.83"
+      ],
+      "notes": "Distinct shallow glazed gable, low garage and timber approach. Door and deck are interpreted against a steep modeled grade without a gameplay entrance marker."
+    },
+    {
+      "id": "roof-169a7b78",
+      "name": "365 Sunset Drive",
+      "street_address": "365 Sunset Dr",
+      "outline_enu_m": [
+        [
+          953.52081,
+          -569.85194
+        ],
+        [
+          947.35526,
+          -569.3502
+        ],
+        [
+          948.17344,
+          -559.29637
+        ],
+        [
+          933.62249,
+          -558.11213
+        ],
+        [
+          932.17865,
+          -575.85228
+        ],
+        [
+          934.56844,
+          -576.04664
+        ],
+        [
+          934.51398,
+          -576.71535
+        ],
+        [
+          952.84088,
+          -578.20676
+        ]
+      ],
+      "footprint_feature": "20-1062551",
+      "footprint_layer": "Oregon statewide footprints",
+      "roof_frame": {
+        "origin_enu_m": [
+          941.8,
+          -568.82
+        ],
+        "axis": [
+          0.9967,
+          -0.0811
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -10,
+            -10,
+            5.62,
+            12
+          ],
+          "planes": [
+            [
+              1.45,
+              0,
+              52.57,
+              0.32,
+              0
+            ],
+            [
+              1.45,
+              0,
+              52.57,
+              -0.243,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            5.58,
+            -10,
+            13,
+            1
+          ],
+          "planes": [
+            [
+              8,
+              -4,
+              50.75,
+              0.01,
+              -0.018
+            ]
+          ],
+          "roof_color": [
+            168,
+            162,
+            148
+          ]
+        }
+      ],
+      "wall_color": [
+        160,
+        137,
+        112
+      ],
+      "trim_color": [
+        161,
+        150,
+        131
+      ],
+      "roof_color": [
+        143,
+        112,
+        87
+      ],
+      "front": {
+        "bearing": 95,
+        "siding_pitch_m": 0.215,
+        "brick": false,
+        "secondary_levels": []
+      },
+      "window_rows": [],
+      "facade_details": [
+        {
+          "kind": "garage",
+          "near": [
+            953.17439,
+            -574.16006
+          ],
+          "bearing": 95,
+          "width": 3.92,
+          "color": [
+            132,
+            103,
+            80
+          ]
+        }
+      ],
+      "dormers": [],
+      "entry": null,
+      "porch": null,
+      "details": [],
+      "chimneys": [],
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495249.14928888186%2C4876337.282153052%2C495295.14928888186%2C4876382.282153052&bboxSR=3740&imageSR=3740&size=552%2C540&format=png&bandIds=0%2C1%2C2",
+        "sha256": "78d9f0d0f435ba2c75e988f1490b24e70955b689fe81ff650fea084855a15bff"
+      },
+      "panoramas": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=xva09bkm_O8lVTbDSCPHvQ&heading=260.36",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=Tj3XFzF_ux5TzbuKoJUx6A&heading=249.18",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=YNSCHB_ivDfoCL3wHFodAA&heading=260.2"
+      ],
+      "notes": "Broad brown roof, visible long rooftop solar array and lower east wing. Trees obscure the main entrance.",
+      "solar_array": [
+        -4.7,
+        -4.78,
+        -0.72,
+        7.75
+      ]
+    },
+    {
+      "id": "roof-699d6c1e",
+      "name": "366 Sunset Drive",
+      "street_address": "366 Sunset Dr",
+      "outline_enu_m": [
+        [
+          988.8312,
+          -550.93932
+        ],
+        [
+          974.18704,
+          -551.18553
+        ],
+        [
+          974.47415,
+          -568.26226
+        ],
+        [
+          989.11831,
+          -568.01595
+        ]
+      ],
+      "footprint_feature": 159744,
+      "footprint_layer": "City of Eugene",
+      "roof_frame": {
+        "origin_enu_m": [
+          981.65,
+          -559.6
+        ],
+        "axis": [
+          0.99986,
+          0.0168
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -8.5,
+            -10,
+            8.5,
+            10
+          ],
+          "planes": [
+            [
+              3.42,
+              0,
+              60.14,
+              0.326,
+              0
+            ],
+            [
+              3.42,
+              0,
+              60.14,
+              -0.246,
+              0
+            ]
+          ]
+        }
+      ],
+      "wall_color": [
+        139,
+        160,
+        162
+      ],
+      "trim_color": [
+        181,
+        190,
+        175
+      ],
+      "roof_color": [
+        140,
+        133,
+        113
+      ],
+      "front": {
+        "bearing": 271,
+        "siding_pitch_m": 0.215,
+        "brick": false,
+        "secondary_levels": []
+      },
+      "window_rows": [],
+      "facade_details": [
+        {
+          "kind": "balcony",
+          "near": [
+            976.98957,
+            -557.82805
+          ],
+          "bearing": 271,
+          "width": 9.65,
+          "floor": 55.4,
+          "depth": 2.22
+        },
+        {
+          "kind": "garage",
+          "near": [
+            974.43267,
+            -565.77212
+          ],
+          "bearing": 271,
+          "width": 3.08,
+          "color": [
+            184,
+            188,
+            168
+          ]
+        },
+        {
+          "kind": "windows",
+          "near": [
+            976.99209,
+            -557.97802
+          ],
+          "bearing": 271,
+          "windows": [
+            [
+              0.72,
+              52.71,
+              1.46,
+              1.12,
+              3
+            ]
+          ]
+        },
+        {
+          "kind": "windows",
+          "near": [
+            974.42595,
+            -565.37218
+          ],
+          "bearing": 271,
+          "windows": [
+            [
+              0.51,
+              55.3,
+              1.26,
+              1.02,
+              2
+            ]
+          ]
+        }
+      ],
+      "dormers": [],
+      "entry": {
+        "gate": "sunset-recess-west",
+        "near": [
+          977.03107,
+          -560.2977
+        ],
+        "approach_m": 2.75,
+        "rise_m": 0.16
+      },
+      "porch": null,
+      "details": [],
+      "chimneys": [],
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495291.14928888186%2C4876347.282153052%2C495331.14928888186%2C4876390.282153052&bboxSR=3740&imageSR=3740&size=480%2C516&format=png&bandIds=0%2C1%2C2",
+        "sha256": "3b3b79c8a606e9f9050ce120538b3138e9fbd972c8100b1c331db6fee4c0233e"
+      },
+      "panoramas": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=xva09bkm_O8lVTbDSCPHvQ&heading=74.19",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=Tj3XFzF_ux5TzbuKoJUx6A&heading=83.64",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=YNSCHB_ivDfoCL3wHFodAA&heading=74.11"
+      ],
+      "notes": "Wide timber balcony over an open west bay, garage to the south and shallow roof. Ground elevation and porch supports are estimated.",
+      "open_bay": [
+        -9.5,
+        -3.6,
+        -4.57,
+        10.0
+      ]
+    },
+    {
+      "id": "roof-22175da6",
+      "name": "2281 Rose Lane",
+      "street_address": "2281 Rose Ln",
+      "outline_enu_m": [
+        [
+          971.91359,
+          -470.66382
+        ],
+        [
+          972.20497,
+          -480.42575
+        ],
+        [
+          960.97467,
+          -480.76094
+        ],
+        [
+          961.40325,
+          -495.11829
+        ],
+        [
+          972.30723,
+          -494.79277
+        ],
+        [
+          972.07512,
+          -487.01591
+        ],
+        [
+          978.68278,
+          -486.81871
+        ],
+        [
+          978.19498,
+          -470.47629
+        ]
+      ],
+      "footprint_feature": "20-1061602",
+      "footprint_layer": "Oregon statewide footprints",
+      "roof_frame": {
+        "origin_enu_m": [
+          970.09,
+          -484.19
+        ],
+        "axis": [
+          0.9996,
+          0.0298
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -10,
+            -12,
+            9.5,
+            3.71
+          ],
+          "planes": [
+            [
+              -0.3,
+              0,
+              46.88,
+              0.477,
+              0
+            ],
+            [
+              -0.3,
+              0,
+              46.88,
+              -0.145,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            2.1,
+            3.7,
+            10,
+            14.5
+          ],
+          "planes": [
+            [
+              5.98,
+              0,
+              44.72,
+              0.72,
+              0
+            ],
+            [
+              5.98,
+              0,
+              44.72,
+              -0.192,
+              0
+            ]
+          ],
+          "roof_color": [
+            104,
+            115,
+            112
+          ]
+        }
+      ],
+      "wall_color": [
+        137,
+        113,
+        87
+      ],
+      "trim_color": [
+        169,
+        180,
+        153
+      ],
+      "roof_color": [
+        103,
+        109,
+        120
+      ],
+      "front": {
+        "bearing": 268,
+        "siding_pitch_m": 0.215,
+        "brick": true,
+        "secondary_levels": []
+      },
+      "window_rows": [],
+      "facade_details": [
+        {
+          "kind": "windows",
+          "near": [
+            961.20425,
+            -488.15655
+          ],
+          "bearing": 268,
+          "windows": [
+            [
+              0.18,
+              39.68,
+              1.22,
+              1.28,
+              2
+            ],
+            [
+              0.62,
+              39.69,
+              1.36,
+              1.2,
+              3
+            ],
+            [
+              0.81,
+              39.63,
+              1.21,
+              1.22,
+              3
+            ]
+          ]
+        }
+      ],
+      "dormers": [
+        {
+          "near": [
+            964.17158,
+            -492.04985
+          ],
+          "bearing": 268,
+          "width": 1.67,
+          "depth": 2.15,
+          "sill": 43.94,
+          "top": 45.57,
+          "windows": 1,
+          "style": "gable"
+        },
+        {
+          "near": [
+            964.04136,
+            -487.68179
+          ],
+          "bearing": 268,
+          "width": 1.67,
+          "depth": 2.15,
+          "sill": 43.94,
+          "top": 45.57,
+          "windows": 1,
+          "style": "gable"
+        },
+        {
+          "near": [
+            963.91263,
+            -483.36371
+          ],
+          "bearing": 268,
+          "width": 1.67,
+          "depth": 2.15,
+          "sill": 43.94,
+          "top": 45.57,
+          "windows": 1,
+          "style": "gable"
+        }
+      ],
+      "entry": {
+        "gate": "rose-cottage-west",
+        "near": [
+          961.19084,
+          -487.70674
+        ],
+        "approach_m": 3.25,
+        "rise_m": 0.29
+      },
+      "porch": null,
+      "details": [],
+      "chimneys": [
+        [
+          968.91957,
+          -481.84384,
+          0.4,
+          1.45
+        ]
+      ],
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495277.14928888186%2C4876420.282153052%2C495320.14928888186%2C4876470.282153052&bboxSR=3740&imageSR=3740&size=516%2C600&format=png&bandIds=0%2C1%2C2",
+        "sha256": "bc70d21edffa65d5d3ab8bcafc40271b671c7e6fe53e41ecf48d58ae1e9bc511"
+      },
+      "panoramas": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=naRfdw3cBSfUmhnvsqolwQ&heading=83.39",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=wpVDYVll8_K-gXaI10TIJA&heading=92.57",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=L8h1KqQuFjWWRyTGuxRDdQ&heading=88.27"
+      ],
+      "notes": "Brick west elevation, green trim, three individual gabled dormers and a lower north wing. Approach is estimated behind the street hedge."
+    },
+    {
+      "id": "roof-05727176",
+      "name": "2275 Rose Lane",
+      "street_address": "2275 Rose Ln",
+      "outline_enu_m": [
+        [
+          958.08738,
+          -441.82537
+        ],
+        [
+          963.09712,
+          -450.91015
+        ],
+        [
+          962.93585,
+          -465.93729
+        ],
+        [
+          974.15093,
+          -465.73273
+        ],
+        [
+          974.06426,
+          -460.20933
+        ],
+        [
+          975.14364,
+          -460.0633
+        ],
+        [
+          975.24682,
+          -450.42679
+        ],
+        [
+          977.16456,
+          -448.71409
+        ],
+        [
+          967.69018,
+          -435.02301
+        ]
+      ],
+      "footprint_feature": 158798,
+      "footprint_layer": "City of Eugene",
+      "roof_frame": {
+        "origin_enu_m": [
+          968.12,
+          -451.29
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -11,
+            -15.3,
+            11,
+            1.5
+          ],
+          "planes": [
+            [
+              3.78,
+              0,
+              48.06,
+              0.41,
+              0
+            ],
+            [
+              3.78,
+              0,
+              48.06,
+              -0.359,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -12,
+            1.49,
+            11,
+            17.4
+          ],
+          "planes": [
+            [
+              3.0,
+              1.5,
+              44.65,
+              0.34,
+              0.239
+            ],
+            [
+              3.0,
+              1.5,
+              44.65,
+              -0.34,
+              -0.239
+            ]
+          ],
+          "roof_color": [
+            117,
+            109,
+            102
+          ]
+        }
+      ],
+      "wall_color": [
+        145,
+        139,
+        127
+      ],
+      "trim_color": [
+        180,
+        177,
+        156
+      ],
+      "roof_color": [
+        110,
+        116,
+        117
+      ],
+      "front": {
+        "bearing": 270,
+        "siding_pitch_m": 0.215,
+        "brick": false,
+        "secondary_levels": []
+      },
+      "window_rows": [],
+      "facade_details": [
+        {
+          "kind": "windows",
+          "near": [
+            963.05,
+            -459.19
+          ],
+          "bearing": 270,
+          "windows": [
+            [
+              0.28,
+              40.25,
+              1.2,
+              1.08,
+              2
+            ],
+            [
+              0.71,
+              40.41,
+              1.03,
+              1.08,
+              2
+            ]
+          ]
+        }
+      ],
+      "dormers": [],
+      "entry": null,
+      "porch": null,
+      "details": [],
+      "chimneys": [
+        [
+          967.97,
+          -454.09,
+          0.33,
+          0.72
+        ]
+      ],
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495275.14928888186%2C4876450.282153052%2C495319.14928888186%2C4876505.282153052&bboxSR=3740&imageSR=3740&size=528%2C660&format=png&bandIds=0%2C1%2C2",
+        "sha256": "a3037a1f9bf6f0aa9535c2a2ac525fae12a6aa9d6681dd45af9f3fd1ea0e3851"
+      },
+      "panoramas": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=1T23tCTpHbrpfQVFH07tFQ&heading=53.22",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=3ndy7zOWSfh_-Mvmnbp2iQ&heading=53.31",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=ICgw_DuECiJlANYL2_O1HQ&heading=57.38"
+      ],
+      "notes": "Tall gray southern gable joins a lower diagonal roof. Visible eaves and roof junction are retained, with door and lower facade screened by vegetation."
+    },
+    {
+      "id": "roof-b2800bfe",
+      "name": "2293 Birch Lane",
+      "street_address": "2293 Birch Ln",
+      "outline_enu_m": [
+        [
+          976.85078,
+          -294.0221
+        ],
+        [
+          976.21142,
+          -305.43769
+        ],
+        [
+          978.83109,
+          -305.58443
+        ],
+        [
+          978.65716,
+          -308.68907
+        ],
+        [
+          988.90679,
+          -309.26316
+        ],
+        [
+          989.48556,
+          -298.92712
+        ],
+        [
+          991.50503,
+          -299.04022
+        ],
+        [
+          991.73937,
+          -294.85587
+        ]
+      ],
+      "footprint_feature": "20-1061624",
+      "footprint_layer": "Oregon statewide footprints",
+      "roof_frame": {
+        "origin_enu_m": [
+          983.46,
+          -301.19
+        ],
+        "axis": [
+          0.9984,
+          -0.0559
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -8,
+            -9,
+            9,
+            8
+          ],
+          "planes": [
+            [
+              1.55,
+              0,
+              32.36,
+              0.415,
+              0
+            ],
+            [
+              1.55,
+              0,
+              32.36,
+              -0.362,
+              0
+            ]
+          ]
+        }
+      ],
+      "wall_color": [
+        94,
+        116,
+        135
+      ],
+      "trim_color": [
+        205,
+        206,
+        190
+      ],
+      "roof_color": [
+        105,
+        119,
+        127
+      ],
+      "front": {
+        "bearing": 177,
+        "siding_pitch_m": 0.215,
+        "brick": false,
+        "secondary_levels": []
+      },
+      "window_rows": [],
+      "facade_details": [
+        {
+          "kind": "windows",
+          "near": [
+            984.07456,
+            -308.99656
+          ],
+          "bearing": 177,
+          "windows": [
+            [
+              0.2,
+              27.48,
+              1.24,
+              1.08,
+              2
+            ],
+            [
+              0.48,
+              27.72,
+              1.28,
+              1.05,
+              2
+            ],
+            [
+              0.77,
+              27.83,
+              2.23,
+              1.2,
+              3
+            ],
+            [
+              0.59,
+              30.38,
+              0.73,
+              0.82,
+              2
+            ]
+          ],
+          "brackets": [
+            0.18,
+            0.38,
+            0.65,
+            0.85
+          ]
+        }
+      ],
+      "dormers": [],
+      "entry": {
+        "gate": "birch-recess-south",
+        "near": [
+          977.66928,
+          -305.51305
+        ],
+        "approach_m": 2.88,
+        "rise_m": 0.18
+      },
+      "porch": null,
+      "details": [],
+      "chimneys": [
+        [
+          982.57854,
+          -305.12688,
+          0.39,
+          1.62
+        ]
+      ],
+      "orthophoto": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495293.14928888186%2C4876606.282153052%2C495333.14928888186%2C4876646.282153052&bboxSR=3740&imageSR=3740&size=480%2C480&format=png&bandIds=0%2C1%2C2",
+        "sha256": "f52c9495c224afa40cba48d28129492a10c969d07bc77bcd21edc6927aa7dda8"
+      },
+      "panoramas": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=1Q-jbPDrmT_f3RWYy-biLw&heading=4.37",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=7BEtiCrTGq5M-Cy8DW0P-A&heading=1.17",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=qw393x_OzxqkGVv7lJW1fw&heading=3.63"
+      ],
+      "notes": "Blue-gray street gable with white verge trim, three lower window groups, attic sash and chimney. Side timber in the date-stamped photo is outside the registered roof."
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-05727176",
+      "target": "context-background-3-1"
+    },
+    {
+      "id": "roof-22175da6",
+      "target": "context-background-3-1"
+    },
+    {
+      "id": "roof-b2800bfe",
+      "target": "context-background-3-1"
+    },
+    {
+      "id": "roof-169a7b78",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-699d6c1e",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-e0d560b4",
+      "target": "context-background-3-0"
+    }
+  ]
+}

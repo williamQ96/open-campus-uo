@@ -1,0 +1,382 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_ranges": [
+    {
+      "target": "context-background-0-2",
+      "id": "roof-fd7ba44a"
+    },
+    {
+      "target": "context-background-0-2",
+      "id": "roof-ca96d4a8"
+    }
+  ],
+  "new_building_ids": [
+    "bushnell-facilities-1125"
+  ],
+  "sources": {
+    "address_points": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/ArcGIS/rest/services/EugAddress/FeatureServer/0",
+    "2013-2015 NOAA": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "2017 NOAA": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+    "DOGAMI Lane County": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+  },
+  "models": [
+    {
+      "id": "roof-fd7ba44a",
+      "role": "goodrich",
+      "name": "Goodrich Hall",
+      "street_address": "828 E 11th Ave",
+      "city_footprint": 171531,
+      "source_overlap": [
+        [
+          513.704,
+          "roof-fd7ba44a"
+        ]
+      ],
+      "outline_enu_m": [
+        [
+          -704.6890331741888,
+          207.06836525723338
+        ],
+        [
+          -730.8983318171813,
+          207.119577486068
+        ],
+        [
+          -730.8591335518286,
+          227.21421408001333
+        ],
+        [
+          -704.6497362722876,
+          227.16300475690514
+        ],
+        [
+          -704.6890331741888,
+          207.06836525723338
+        ]
+      ],
+      "entrance": {
+        "point": [
+          -717.77,
+          226.67
+        ],
+        "bearing": 0,
+        "distance": 3.1,
+        "gate": "historic-north"
+      },
+      "roof_frame": {
+        "axis": [
+          1,
+          0
+        ],
+        "origin_enu_m": [
+          -717.77406,
+          217.1413
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -18,
+            -15,
+            18,
+            15
+          ],
+          "planes": [
+            [
+              0,
+              -1.20842,
+              16.00581,
+              0,
+              -0.3968
+            ],
+            [
+              0,
+              -1.20842,
+              16.00581,
+              0,
+              0.38365
+            ],
+            [
+              -2.77982,
+              0,
+              16.00581,
+              0.37901,
+              0
+            ],
+            [
+              2.27622,
+              0,
+              16.00581,
+              -0.36216,
+              0
+            ]
+          ]
+        }
+      ],
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493539.14928888186%2C4877056.282153052%2C493698.14928888186%2C4877174.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "233090f1ce0a31a2c345931f8e413349dcf3b861823d69a63c945c5b778654b4"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493539.14928888186%2C4877056.282153052%2C493698.14928888186%2C4877174.282153052&bboxSR=3740&imageSR=3740&size=1272%2C944&format=png&bandIds=0%2C1%2C2",
+          "sha256": "a3c358c11152927ce5981987cfac5cc900f1f1e8525b10456a406e9581661346"
+        },
+        "frontages": [
+          "https://bushnell.edu/student-life/campus-safety/",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=l8990Atdu9-1xm-rxLE1Pw&heading=185",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=HdGyFYG2JNGQu8NRJ10UVg&heading=90",
+          "https://bushnell.edu/the-beacon-magazine/brief-spring-2026/",
+          "https://bushnell.edu/give/legacy/",
+          "https://bushnell.edu/news/beacon-magazine-new-life-for-a-cherished-old-friend/"
+        ]
+      },
+      "tower": {
+        "stone_and_panel_casing_enu_m": [
+          -741.15,
+          207.2,
+          -733.62,
+          216.95
+        ],
+        "joined_link_enu_m": [
+          -733.7,
+          209.37,
+          -730.27,
+          215.6
+        ],
+        "belfry_frame_enu_m": [
+          -741.15,
+          209.72,
+          -740.12,
+          216.32
+        ],
+        "beam_top_z_m": 20.72,
+        "cross_top_z_m": 24.12,
+        "stone_base_height_m": 4.27,
+        "evidence": {
+          "completion_photo": {
+            "url": "https://bushnell.edu/wp-content/uploads/2026/06/NEW-CTA-PHOTO-1024x786.jpg",
+            "sha256": "09edd762a697980171ba983ceabc36fef7f477c3af630ff13bf6a77545f556c7"
+          },
+          "north_entry_photo": {
+            "url": "https://bushnell.edu/wp-content/uploads/2026/07/student-group-goodrich-steps.jpg",
+            "sha256": "2a0fd02bc9b0861aacd2c912fa80aed931204bde7eb82b2790e6064ff0bd5c0c"
+          },
+          "concept": "https://www.linkedin.com/posts/bushnell-university_do-you-know-about-the-goodrich-hall-tower-activity-7046255155238854656-WCAu"
+        }
+      }
+    },
+    {
+      "id": "bushnell-facilities-1125",
+      "role": "facilities",
+      "name": "Bushnell Facilities & Maintenance",
+      "street_address": "1125 Alder St",
+      "city_footprint": 171532,
+      "source_overlap": [],
+      "outline_enu_m": [
+        [
+          -736.0771242498304,
+          191.80391310993582
+        ],
+        [
+          -736.111597864423,
+          202.26743199117482
+        ],
+        [
+          -720.6381056762184,
+          202.3184237042442
+        ],
+        [
+          -720.6037286006031,
+          191.8548019528389
+        ],
+        [
+          -736.0771242498304,
+          191.80391310993582
+        ]
+      ],
+      "entrance": {
+        "point": [
+          -733.82,
+          197.35
+        ],
+        "bearing": 270,
+        "distance": 3.5,
+        "gate": "facilities-porch"
+      },
+      "roof_frame": {
+        "axis": [
+          1,
+          0
+        ],
+        "origin_enu_m": [
+          -728.35763,
+          197.06115
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -12,
+            -8,
+            12,
+            8
+          ],
+          "planes": [
+            [
+              0,
+              -0.08382,
+              6.77362,
+              0.02996,
+              -0.47536
+            ],
+            [
+              0,
+              -0.08382,
+              6.77362,
+              0.02996,
+              0.50342
+            ]
+          ]
+        }
+      ],
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493539.14928888186%2C4877056.282153052%2C493698.14928888186%2C4877174.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "233090f1ce0a31a2c345931f8e413349dcf3b861823d69a63c945c5b778654b4"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493539.14928888186%2C4877056.282153052%2C493698.14928888186%2C4877174.282153052&bboxSR=3740&imageSR=3740&size=1272%2C944&format=png&bandIds=0%2C1%2C2",
+          "sha256": "a3c358c11152927ce5981987cfac5cc900f1f1e8525b10456a406e9581661346"
+        },
+        "frontages": [
+          "https://bushnell.edu/student-life/campus-safety/",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=1sjDqsuBa-5u9O9fERrjFA&heading=100",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=qxduWybK0RX3jDvTxX2e2Q&heading=95"
+        ]
+      }
+    },
+    {
+      "id": "roof-ca96d4a8",
+      "role": "brick",
+      "name": "1145 Alder Building",
+      "street_address": "1145 Alder St",
+      "city_footprint": 171533,
+      "source_overlap": [
+        [
+          174.733,
+          "roof-ca96d4a8"
+        ]
+      ],
+      "outline_enu_m": [
+        [
+          -736.7054124519927,
+          173.59475679509342
+        ],
+        [
+          -736.732705006958,
+          182.89285167958587
+        ],
+        [
+          -716.0830287506105,
+          182.9535215916112
+        ],
+        [
+          -716.055209050246,
+          173.44343539886177
+        ],
+        [
+          -736.7054124519927,
+          173.59475679509342
+        ]
+      ],
+      "entrance": {
+        "point": [
+          -724.1,
+          173.72
+        ],
+        "bearing": 180,
+        "distance": 2.0,
+        "gate": "brick-south"
+      },
+      "roof_frame": {
+        "axis": [
+          1,
+          0
+        ],
+        "origin_enu_m": [
+          -726.35,
+          178.22
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -14,
+            -8,
+            -2.4,
+            2.1
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.68,
+              0,
+              0.21
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -14,
+            2.1,
+            -2.4,
+            8
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              3.87,
+              0,
+              -0.035
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -2.4,
+            -8,
+            13,
+            8
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.34,
+              0,
+              -0.133
+            ]
+          ]
+        }
+      ],
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493539.14928888186%2C4877056.282153052%2C493698.14928888186%2C4877174.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "233090f1ce0a31a2c345931f8e413349dcf3b861823d69a63c945c5b778654b4"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493539.14928888186%2C4877056.282153052%2C493698.14928888186%2C4877174.282153052&bboxSR=3740&imageSR=3740&size=1272%2C944&format=png&bandIds=0%2C1%2C2",
+          "sha256": "a3c358c11152927ce5981987cfac5cc900f1f1e8525b10456a406e9581661346"
+        },
+        "frontages": [
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=WxnY_DSk7VsVsrLNl7tC0A&heading=95",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=qxduWybK0RX3jDvTxX2e2Q&heading=95"
+        ]
+      }
+    }
+  ]
+}

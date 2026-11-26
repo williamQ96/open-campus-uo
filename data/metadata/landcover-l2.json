@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "asset": {
+    "url": "landcover-l2/ground.glb",
+    "sha256": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "source_model_sha256": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "source_landcover_sha256": "0e93a8f129ba9368cfa90b09da610169054f5288dd434e290a5c390010d8a0cd",
+    "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f"
+  },
+  "source_grid": {
+    "horizontal_epsg": 3740,
+    "vertical_epsg": 5703,
+    "spacing_m": 5,
+    "extent_m": [
+      2000,
+      2000
+    ]
+  },
+  "reference_sources": {
+    "dogami_bare_earth": [
+      {
+        "file": "willamette-2023-south-terrain.tif",
+        "raster_id": 179,
+        "year": 2023,
+        "license": "public domain",
+        "evidence": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+        "sha256": "ea82d2b2c69d6b01a0652abf10f62fb8d1448d88da8f4512d8afe24b888814c7",
+        "bytes": 14683329,
+        "url": "https://gis.dogami.oregon.gov/arcgis/rest/services/lidar/DIGITAL_TERRAIN_MODEL_MOSAIC/ImageServer/exportImage?f=image&bbox=493329.14928888%2C4875928.28215305%2C495329.14928888%2C4877928.28215305&bboxSR=3740&imageSR=3740&size=2000%2C2000&format=tiff&pixelType=F32&interpolation=RSP_NearestNeighbor&noData=-9999&mosaicRule=%7B%22mosaicMethod%22%3A%22esriMosaicLockRaster%22%2C%22lockRasterIds%22%3A%5B179%5D%2C%22mosaicOperation%22%3A%22MT_FIRST%22%7D"
+      },
+      {
+        "file": "lane-county-2014-terrain.tif",
+        "raster_id": 96,
+        "year": 2014,
+        "license": "public domain",
+        "evidence": "https://www.oregon.gov/dogami/lidar/Documents/DOGAMI_Lidar_Data_Distribution_Policy_20170411.pdf",
+        "sha256": "a7fb9ccb2a87d94c1f2676888d238d330cc24482518b893f31394352b96e0629",
+        "bytes": 16780481,
+        "url": "https://gis.dogami.oregon.gov/arcgis/rest/services/lidar/DIGITAL_TERRAIN_MODEL_MOSAIC/ImageServer/exportImage?f=image&bbox=493329.14928888%2C4875928.28215305%2C495329.14928888%2C4877928.28215305&bboxSR=3740&imageSR=3740&size=2000%2C2000&format=tiff&pixelType=F32&interpolation=RSP_NearestNeighbor&noData=-9999&mosaicRule=%7B%22mosaicMethod%22%3A%22esriMosaicLockRaster%22%2C%22lockRasterIds%22%3A%5B96%5D%2C%22mosaicOperation%22%3A%22MT_FIRST%22%7D"
+      }
+    ],
+    "usgs_water": [
+      {
+        "file": "water-areas.geojson",
+        "query": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9/query?f=geojson&geometry=493329.14928888186%2C4875928.282153052%2C495329.14928888186%2C4877928.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CGNIS_NAME%2CFTYPE%2CFCODE&returnGeometry=true&where=FTYPE+IN+%28460%2C336%29",
+        "sha256": "69c3008f5d175d5c1ac8018f3b58be5919f0e47cefb9af9c7e63895d9be09fab",
+        "features": [
+          {
+            "OBJECTID": 83209,
+            "GNIS_NAME": null,
+            "FTYPE": 460,
+            "FCODE": 46006
+          },
+          {
+            "OBJECTID": 156008,
+            "GNIS_NAME": null,
+            "FTYPE": 460,
+            "FCODE": 46006
+          }
+        ]
+      },
+      {
+        "file": "waterbodies.geojson",
+        "query": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12/query?f=geojson&geometry=493329.14928888186%2C4875928.282153052%2C495329.14928888186%2C4877928.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CGNIS_NAME%2CFTYPE%2CFCODE&returnGeometry=true&where=FTYPE+IN+%28390%2C436%29",
+        "sha256": "c1418ceb1c5e9dec21d330351d2e69d6d40e3cd7402375fe13b9b7b58522fe96",
+        "features": [
+          {
+            "OBJECTID": 313005,
+            "GNIS_NAME": null,
+            "FTYPE": 390,
+            "FCODE": 39004
+          },
+          {
+            "OBJECTID": 2121654,
+            "GNIS_NAME": null,
+            "FTYPE": 390,
+            "FCODE": 39004
+          },
+          {
+            "OBJECTID": 2242407,
+            "GNIS_NAME": null,
+            "FTYPE": 390,
+            "FCODE": 39004
+          },
+          {
+            "OBJECTID": 2483281,
+            "GNIS_NAME": null,
+            "FTYPE": 390,
+            "FCODE": 39004
+          },
+          {
+            "OBJECTID": 3967306,
+            "GNIS_NAME": null,
+            "FTYPE": 390,
+            "FCODE": 39004
+          },
+          {
+            "OBJECTID": 4290515,
+            "GNIS_NAME": null,
+            "FTYPE": 390,
+            "FCODE": 39004
+          },
+          {
+            "OBJECTID": 6099227,
+            "GNIS_NAME": null,
+            "FTYPE": 390,
+            "FCODE": 39004
+          }
+        ]
+      }
+    ],
+    "usgs_water_license": "LicenseRef-PD-USGov",
+    "usgs_water_license_evidence": "https://www.usgs.gov/media/images/nhd-web-map-service",
+    "naip": "data/metadata/naip-2024-main-campus-reference.json"
+  },
+  "grade_ties_sha256": "3b245fceef571fd0e79225cafd08c24fee76246adb99ff4c9c75037916f1639a",
+  "navigation_sha256": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+  "stats": {
+    "sha256": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "bytes": 9630368,
+    "vertices": 160801,
+    "affected_vertices": 62339,
+    "changed_at_least_0_1m": 51521,
+    "protected_vertices": 98460,
+    "grade_ties": {
+      "buildings": 44412,
+      "entrances": 8125,
+      "corridors": 39534,
+      "surface_meshes": 82536,
+      "ford_arena": 2684,
+      "scene_edge": 1600
+    },
+    "building_footprints": 524,
+    "entrance_pairs": 608,
+    "road_features": 139,
+    "also_protected_route_edges": 7705,
+    "water_vertices": 12419,
+    "water_area_m2": 311462.1617,
+    "fallback_surface_tie_m": 0.07,
+    "delta_range_m": [
+      -0.9633,
+      1.1979
+    ],
+    "max_delta_difference_adjacent_m": 0.8056,
+    "job_source_residual_median_m": [
+      0.4181,
+      0.0662
+    ]
+  },
+  "limits": "The foundation uses a 5 m grid, feathered published elevation, and representative surface colors. The water colors follow mapped polygons on the grid."
+}

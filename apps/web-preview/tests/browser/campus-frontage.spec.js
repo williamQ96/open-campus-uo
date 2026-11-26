@@ -1,6 +1,9 @@
 import { createHash } from "node:crypto";
 import { test, expect } from "@playwright/test";
-import { DEFAULT_BATCHED_BUILDINGS } from "./exterior-counts.js";
+import {
+  DEFAULT_BATCHED_BUILDINGS,
+  DEFAULT_SELECTABLE_BUILDINGS,
+} from "./exterior-counts.js";
 
 const buildings = {
   "roof-29dae856": "University Health Services",
@@ -49,7 +52,7 @@ test("five registered frontages keep their IDs and preserve open courtyards and 
 }) => {
   const state = await frontageState(page, "/");
   expect([state.buildings, state.batches, state.roads]).toEqual([
-    519,
+    DEFAULT_SELECTABLE_BUILDINGS,
     DEFAULT_BATCHED_BUILDINGS,
     139,
   ]);

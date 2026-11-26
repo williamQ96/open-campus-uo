@@ -1,0 +1,318 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_split": {
+    "east-15th-740": "roof-9bdc0828",
+    "hilyard-1547-1549": "roof-9bdc0828"
+  },
+  "source_ranges": [
+    {
+      "id": "roof-9bdc0828",
+      "target": "context-background-0-1"
+    }
+  ],
+  "evidence": {
+    "city_footprints": {
+      "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493429.14928888186%2C4876609.282153052%2C493521.14928888186%2C4876702.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+      "status": 200,
+      "sha256": "b11f5dba9d5c2a3fbd729f49bea3565f27a618bfd1b2cf191954af53bae1295f",
+      "bytes": 6761
+    },
+    "osip_2024": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493429.14928888186%2C4876609.282153052%2C493521.14928888186%2C4876702.282153052&bboxSR=3740&imageSR=3740&size=920%2C930&format=png&bandIds=0%2C1%2C2",
+      "status": 200,
+      "sha256": "167262f6abf9188df683ccd45ca05102672ba6d01b280292e38bb6c2c9b97e81",
+      "bytes": 816886
+    },
+    "street_view": [
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vjc_u1i9lJ5bBahpB9F-HA&heading=180",
+        "observed": "1515 north face and dark fascia opposite 733 E 15th"
+      },
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=qJQIH-RC8JG8uBfL1Z7E3A&heading=180",
+        "observed": "740 Treetop entrance, open sheltered parking and 1515 east face"
+      },
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=J5qfyhb9EjmupoduHlPd_w&heading=0",
+        "observed": "Separate apartment rear faces, lower openings and 740 rear stoop"
+      },
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=tzm6yeZa1mAIwASykh5gyQ&heading=90",
+        "observed": "1547/1549 wood frontage, covered twin doors and balcony, and 1515 west side beyond pool"
+      },
+      {
+        "date": "2024-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ywvbAv-UGyMfXCD6c8ZBNA&heading=90",
+        "observed": "1547/1549 south siding and sheltered alley-side door"
+      }
+    ],
+    "notes": "Leasing image for the duplex shows another street number. Use the registered panorama for modeled facade. Direction, opening and threshold dimensions remain approximate. Historical 2017 coverage here is rejected as unusable."
+  },
+  "models": [
+    {
+      "id": "roof-9bdc0828",
+      "name": "1515 Hilyard Apartments",
+      "street_address": "1515 Hilyard St",
+      "city_footprint": 170382,
+      "kind": "hilyard",
+      "outline_enu_m": [
+        [
+          -881.116,
+          -275.701
+        ],
+        [
+          -878.043,
+          -275.685
+        ],
+        [
+          -877.955,
+          -292.904
+        ],
+        [
+          -859.467,
+          -292.81
+        ],
+        [
+          -859.667,
+          -253.55
+        ],
+        [
+          -881.228,
+          -253.634
+        ],
+        [
+          -881.116,
+          -275.701
+        ]
+      ],
+      "overhang_m": 0.54,
+      "roof_frame": {
+        "origin_enu_m": [
+          -869.6651,
+          -272.3383
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -60,
+            -60,
+            60,
+            60
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              6.413,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "north-approach",
+          "near_enu_m": [
+            -870.3,
+            -253.7
+          ],
+          "outward_degrees": 0,
+          "landing_m": 1.8,
+          "threshold_above_grade_m": 0.15,
+          "width_m": 1.35,
+          "glazed_double": true
+        }
+      ]
+    },
+    {
+      "id": "east-15th-740",
+      "name": "Treetop Apartments · 740 E 15th",
+      "street_address": "740 E 15th Ave",
+      "city_footprint": 170381,
+      "kind": "treetop",
+      "outline_enu_m": [
+        [
+          -857.988,
+          -295.09
+        ],
+        [
+          -838.788,
+          -295.148
+        ],
+        [
+          -838.669,
+          -256.12
+        ],
+        [
+          -857.87,
+          -256.062
+        ],
+        [
+          -857.988,
+          -295.09
+        ]
+      ],
+      "overhang_m": 0.45,
+      "roof_frame": {
+        "origin_enu_m": [
+          -848.3288,
+          -275.6051
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -60,
+            -60,
+            60,
+            60
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              6.495,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "north-steps",
+          "near_enu_m": [
+            -848.45,
+            -256.05
+          ],
+          "outward_degrees": 0,
+          "landing_m": 3.18,
+          "threshold_above_grade_m": 1.13,
+          "width_m": 1.28,
+          "glazed_double": true
+        },
+        {
+          "gate": "alley-steps",
+          "near_enu_m": [
+            -847.85,
+            -295.1
+          ],
+          "outward_degrees": 180,
+          "landing_m": 1.94,
+          "threshold_above_grade_m": 0.63,
+          "width_m": 1.34,
+          "glazed_double": true
+        }
+      ]
+    },
+    {
+      "id": "hilyard-1547-1549",
+      "name": "1547–1549 Hilyard Duplex",
+      "street_address": "1547–1549 Hilyard St",
+      "city_footprint": 170341,
+      "kind": "duplex",
+      "outline_enu_m": [
+        [
+          -898.519,
+          -288.594
+        ],
+        [
+          -898.537,
+          -299.046
+        ],
+        [
+          -880.63,
+          -299.121
+        ],
+        [
+          -880.599,
+          -288.39
+        ],
+        [
+          -898.519,
+          -288.594
+        ]
+      ],
+      "overhang_m": 0.29,
+      "roof_frame": {
+        "origin_enu_m": [
+          -889.55,
+          -293.75
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -60,
+            -60,
+            60,
+            60
+          ],
+          "planes": [
+            [
+              0,
+              0.874,
+              7.563,
+              0,
+              -0.397
+            ],
+            [
+              0,
+              0.874,
+              7.563,
+              0,
+              0.451
+            ],
+            [
+              -6.57,
+              0,
+              7.563,
+              0.85,
+              0
+            ],
+            [
+              4.318,
+              0,
+              7.563,
+              -0.39,
+              0
+            ]
+          ]
+        }
+      ],
+      "entrances": [
+        {
+          "gate": "west-approach",
+          "near_enu_m": [
+            -898.5,
+            -295.0
+          ],
+          "outward_degrees": 270,
+          "landing_m": 2.12,
+          "threshold_above_grade_m": 0.6,
+          "width_m": 1.4,
+          "glazed_double": false
+        }
+      ]
+    }
+  ]
+}

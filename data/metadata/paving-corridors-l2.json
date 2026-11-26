@@ -1,0 +1,501 @@
+{
+  "quad": {
+    "window_enu_m": [
+      -571,
+      -171,
+      -528,
+      -9
+    ],
+    "lawn_boundary_enu_m": [
+      [
+        -568,
+        -10
+      ],
+      [
+        -530,
+        -10
+      ],
+      [
+        -529,
+        -168
+      ],
+      [
+        -570,
+        -168
+      ]
+    ],
+    "walks": [
+      {
+        "id": "north-entrance-link",
+        "width_m": 2.9,
+        "center_enu_m": [
+          [
+            -569.0,
+            -9.5
+          ],
+          [
+            -552.0,
+            -9.5
+          ],
+          [
+            -529.3,
+            -9.5
+          ]
+        ]
+      },
+      {
+        "id": "north-crosswalk",
+        "width_m": 2.8,
+        "center_enu_m": [
+          [
+            -570,
+            -24.4
+          ],
+          [
+            -525,
+            -24.4
+          ]
+        ]
+      },
+      {
+        "id": "northwest-southeast-diagonal",
+        "width_m": 3.05,
+        "center_enu_m": [
+          [
+            -567.2,
+            -25.0
+          ],
+          [
+            -563.9,
+            -30.0
+          ],
+          [
+            -548.2,
+            -49.2
+          ],
+          [
+            -532.3,
+            -72.4
+          ],
+          [
+            -532.0,
+            -75.1
+          ]
+        ]
+      },
+      {
+        "id": "northeast-southwest-diagonal",
+        "width_m": 3.0,
+        "center_enu_m": [
+          [
+            -531.8,
+            -25.4
+          ],
+          [
+            -535.0,
+            -29.4
+          ],
+          [
+            -548.2,
+            -49.2
+          ],
+          [
+            -562.9,
+            -69.0
+          ],
+          [
+            -567.1,
+            -75.3
+          ]
+        ]
+      },
+      {
+        "id": "middle-crosswalk",
+        "width_m": 2.4,
+        "center_enu_m": [
+          [
+            -570.3,
+            -75.8
+          ],
+          [
+            -525.5,
+            -75.8
+          ]
+        ]
+      },
+      {
+        "id": "johnson-lane-crosswalk",
+        "width_m": 3.05,
+        "center_enu_m": [
+          [
+            -572.5,
+            -86.2
+          ],
+          [
+            -525.5,
+            -86.2
+          ]
+        ]
+      },
+      {
+        "id": "east-edge",
+        "width_m": 2.75,
+        "center_enu_m": [
+          [
+            -530.1,
+            -8.2
+          ],
+          [
+            -530.1,
+            -60.5
+          ],
+          [
+            -531.0,
+            -83.2
+          ],
+          [
+            -533.0,
+            -105.0
+          ],
+          [
+            -531.5,
+            -124.4
+          ],
+          [
+            -531.5,
+            -141.0
+          ],
+          [
+            -535.0,
+            -156.0
+          ],
+          [
+            -544.2,
+            -166.0
+          ],
+          [
+            -548.5,
+            -171.9
+          ]
+        ]
+      },
+      {
+        "id": "west-edge",
+        "width_m": 2.4,
+        "center_enu_m": [
+          [
+            -568.4,
+            -8.3
+          ],
+          [
+            -567.2,
+            -25.0
+          ],
+          [
+            -566.0,
+            -50.0
+          ],
+          [
+            -568.0,
+            -75.8
+          ],
+          [
+            -568.7,
+            -90.0
+          ],
+          [
+            -564.0,
+            -108.0
+          ],
+          [
+            -566.0,
+            -129.0
+          ],
+          [
+            -565.1,
+            -142.0
+          ],
+          [
+            -562.4,
+            -156.2
+          ],
+          [
+            -553.5,
+            -166.0
+          ],
+          [
+            -552.2,
+            -171.9
+          ]
+        ]
+      },
+      {
+        "id": "museum-side-link",
+        "width_m": 5.5,
+        "center_enu_m": [
+          [
+            -532,
+            -131.4
+          ],
+          [
+            -525.5,
+            -131.4
+          ]
+        ]
+      },
+      {
+        "id": "plc-side-link",
+        "width_m": 5.5,
+        "center_enu_m": [
+          [
+            -573.0,
+            -131.4
+          ],
+          [
+            -565.3,
+            -131.4
+          ]
+        ]
+      },
+      {
+        "id": "knight-terrace-connector",
+        "width_m": 4.8,
+        "center_enu_m": [
+          [
+            -553.5,
+            -166.0
+          ],
+          [
+            -552.1,
+            -168.4
+          ],
+          [
+            -552.0,
+            -171.9
+          ]
+        ]
+      }
+    ],
+    "ring": {
+      "center_enu_m": [
+        -548.8,
+        -133.0
+      ],
+      "radii_m": [
+        16.6,
+        14.8
+      ],
+      "width_m": 3.3
+    },
+    "tree_pits": [
+      87,
+      124,
+      143,
+      271,
+      286,
+      294
+    ],
+    "route_anchors": [
+      7333,
+      7347,
+      7359
+    ],
+    "source": "2024 OSIP aerial and UO Memorial Quadrangle Landscape Resource Survey. Dates and mapped curves constrain this fitted model."
+  },
+  "pavement_materials_srgb": {
+    "AC": [
+      94,
+      100,
+      98
+    ],
+    "APC": [
+      107,
+      111,
+      107
+    ],
+    "PCC": [
+      160,
+      158,
+      144
+    ],
+    "GR": [
+      131,
+      119,
+      100
+    ],
+    "BST": [
+      104,
+      105,
+      94
+    ]
+  },
+  "reference_sources": {
+    "oregon_2024_orthos": {
+      "memorial-quad": {
+        "extent": [
+          -606,
+          -204,
+          -475,
+          44
+        ],
+        "px_per_m": 7,
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493723.14928888186%2C4876724.282153052%2C493854.14928888186%2C4876972.282153052&bboxSR=3740&imageSR=3740&size=917%2C1736&format=png&bandIds=0%2C1%2C2",
+        "bytes": 2006767,
+        "sha256": "a638b4f592f4f2e6fcfca0fbb8c23a846fc81670f1312371bc20190c00c5979f"
+      },
+      "franklin-west": {
+        "extent": [
+          -755,
+          133,
+          -301,
+          356
+        ],
+        "px_per_m": 4,
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493574.14928888186%2C4877061.282153052%2C494028.14928888186%2C4877284.282153052&bboxSR=3740&imageSR=3740&size=1816%2C892&format=png&bandIds=0%2C1%2C2",
+        "bytes": 2678532,
+        "sha256": "b786bdc00bb25967417a6ab24134f0c1a16a3908d86b1a234d328d544f0b84af"
+      },
+      "franklin-east": {
+        "extent": [
+          -305,
+          -80,
+          508,
+          225
+        ],
+        "px_per_m": 3,
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494024.14928888186%2C4876848.282153052%2C494837.14928888186%2C4877153.282153052&bboxSR=3740&imageSR=3740&size=2439%2C915&format=png&bandIds=0%2C1%2C2",
+        "bytes": 4073944,
+        "sha256": "fd22bd0fae6de9f0fdbc6c800277cc46d835abece1b91bbc7bee0494ec29078b"
+      },
+      "old-campus": {
+        "extent": [
+          -600,
+          -25,
+          -325,
+          229
+        ],
+        "px_per_m": 5,
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493729.14928888186%2C4876903.282153052%2C494004.14928888186%2C4877157.282153052&bboxSR=3740&imageSR=3740&size=1375%2C1270&format=png&bandIds=0%2C1%2C2",
+        "bytes": 2650349,
+        "sha256": "bd1e36499ccfcd0140def63348a13dfe64d1b5eae188424720417e54da6d4a3b"
+      },
+      "student-core": {
+        "extent": [
+          -318,
+          -395,
+          28,
+          62
+        ],
+        "px_per_m": 4,
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494011.14928888186%2C4876533.282153052%2C494357.14928888186%2C4876990.282153052&bboxSR=3740&imageSR=3740&size=1384%2C1828&format=png&bandIds=0%2C1%2C2",
+        "bytes": 3971941,
+        "sha256": "31761174041812f0eb7383fcaa8452c4b54af5a35c3e31142c022c821b77c5f6"
+      }
+    },
+    "eugene_pms": [
+      {
+        "layer": 9,
+        "slug": "pms-streets",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWE/Transportation/MapServer/9/query?where=1%3D1&geometry=493329.14928888186%2C4875928.282153052%2C495329.14928888186%2C4877928.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CStreet_Nam%2CWidth%2CMaterialType%2CSurfaceType%2CFClass&returnGeometry=true&f=geojson",
+        "layer_url": "https://gis.eugene-or.gov/arcgis/rest/services/PWE/Transportation/MapServer/9",
+        "fields": [
+          "OBJECTID",
+          "Street_Nam",
+          "Width",
+          "MaterialType",
+          "SurfaceType",
+          "FClass"
+        ],
+        "sha256": "026a43abff03b40a1b19cf0c9fd92681c00c91fb9a4a7a8ae401df5dd5a8c885",
+        "count": 257
+      },
+      {
+        "layer": 10,
+        "slug": "pms-alleys",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWE/Transportation/MapServer/10/query?where=1%3D1&geometry=493329.14928888186%2C4875928.282153052%2C495329.14928888186%2C4877928.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CAlyName%2CWidth%2CSurface&returnGeometry=true&f=geojson",
+        "layer_url": "https://gis.eugene-or.gov/arcgis/rest/services/PWE/Transportation/MapServer/10",
+        "fields": [
+          "OBJECTID",
+          "AlyName",
+          "Width",
+          "Surface"
+        ],
+        "sha256": "019697348fe15057a68a9b3bcc307d30c7717f6a0635822b612a9a3117226c3d",
+        "count": 90
+      },
+      {
+        "layer": 11,
+        "slug": "pms-bikeways",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWE/Transportation/MapServer/11/query?where=1%3D1&geometry=493329.14928888186%2C4875928.282153052%2C495329.14928888186%2C4877928.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CPath_Name%2CWidth%2CSurface&returnGeometry=true&f=geojson",
+        "layer_url": "https://gis.eugene-or.gov/arcgis/rest/services/PWE/Transportation/MapServer/11",
+        "fields": [
+          "OBJECTID",
+          "Path_Name",
+          "Width",
+          "Surface"
+        ],
+        "sha256": "2471f139917f8f5f0d632abea4b8a5b4202e05978b8ef84380f920d6b9737d25",
+        "count": 31
+      }
+    ],
+    "eugene_pms_use": "Width and material records used as factual references for the existing Census centerlines. No City polygon data distributed in the runtime.",
+    "uo_memorial_quad": "https://cpfm.uoregon.edu/sites/default/files/memorial_quad_.pdf"
+  },
+  "stage_inputs": {
+    "candidate_corridors_sha256": "4b75e1742adb68161c70dbe0c22f29289b7a668b44098558001ea28c25e0c180",
+    "grade_ties_sha256": "3b245fceef571fd0e79225cafd08c24fee76246adb99ff4c9c75037916f1639a",
+    "drape_module_sha256": "841412e2a6111d9f6a9ab09ce74f44469e7c7af5251bdaeb296526522764625f"
+  },
+  "stage_audit": {
+    "glb_sha256": "26f3433e2abc1a8cd0cbf1125711a2ed17d9ebdd0132697a76cc2455bb90aff6",
+    "descriptor_sha256": "37c5d4ecd31e18e4c28e5326512f48dd07e2c1eb54bda191ba0ad716446bad68",
+    "glb_bytes": 3402636,
+    "triangles": {
+      "quad-landscape-paving": 1173,
+      "quad-landscape-lawn": 1661,
+      "corridors-road": 88917,
+      "corridors-path": 3867
+    },
+    "quad_surface_m2": {
+      "walk": 1904.68,
+      "lawn": 4534.35
+    },
+    "quad_source_triangles_replaced": {
+      "landscape-paving": 256,
+      "landscape-lawn": 893
+    },
+    "road_and_path_material_areas_m2": {
+      "road:AC": 263287.38,
+      "road:APC": 26394.23,
+      "road:PCC": 93871.01,
+      "road:GR": 5833.97,
+      "path:AC": 3784.4,
+      "path:PCC": 5322.4
+    },
+    "quad_route_nodes": 207,
+    "quad_route_edges": 211,
+    "quad_retired_route_edges": 26
+  },
+  "rendered_surface_comparison": {
+    "asset_sha256": "26f3433e2abc1a8cd0cbf1125711a2ed17d9ebdd0132697a76cc2455bb90aff6",
+    "area_method": "PMS comparison in buffers around source spans with matched names or bikeway alignment. Legacy GLB is the pinned base before site strip removal.",
+    "previous": {
+      "overlap_with_city_pavement_m2": 278674.97,
+      "surface_outside_city_pavement_m2": 65701.98,
+      "surface_iou": 0.7271,
+      "maximum_source_grid_height_error_m": {
+        "corridors-road": 0.01502431640622632,
+        "corridors-path": 0.01502547645567038
+      }
+    },
+    "revised": {
+      "overlap_with_city_pavement_m2": 292254.55,
+      "surface_outside_city_pavement_m2": 43649.7,
+      "surface_iou": 0.8091,
+      "maximum_source_grid_height_error_m": {
+        "corridors-road": 2.2943115205294184e-05,
+        "corridors-path": 1.958084106428587e-05
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@ test("reusable pilot benches load with the full campus", async ({ page }) => {
   const detail = page.waitForResponse((r) =>
     r.url().endsWith("/pilot-bench-detail.json"),
   );
-  await page.goto("/");
+  await page.goto("/?exterior-review=furniture-baseline");
   await page.waitForFunction(() => window.__campus?.getState().ready);
   expect((await patch).status()).toBe(200);
   expect((await detail).status()).toBe(200);

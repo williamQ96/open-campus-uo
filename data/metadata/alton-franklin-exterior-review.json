@@ -1,0 +1,729 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "rasters": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "municipal_outline_ids": [
+      180405,
+      180406,
+      224679
+    ],
+    "city_map": {
+      "url": "https://www.eugene-or.gov/DocumentCenter/View/81968/Alton-Baker-Rental-Maps",
+      "sha256": "369cee78a53d21290f6da2054b4197d0c9760fc818742032c0572b02890f49c6"
+    },
+    "city_brochure": {
+      "url": "https://www.eugene-or.gov/DocumentCenter/View/39622/Alton-Baker-Park-Flyer",
+      "sha256": "6a910e9d78dcf317f4ab4db8d97e5633da59c960ecf5e267f9a50ccd265cb36f"
+    },
+    "capital_plan": {
+      "url": "https://www.eugene-or.gov/ArchiveCenter/ViewFile/Item/6000",
+      "page": 146,
+      "sha256": "9df72a38adf10228ed8735c77883eec46c55ed3dce11d29f79f6787d1f72f274"
+    },
+    "lane_imagery": {
+      "alton-lane-2025.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493457.14928888186%2C4877860.282153052%2C493537.14928888186%2C4877932.282153052&bboxSR=3740&imageSR=3740&size=960%2C864&layers=show%3A57&format=png32&transparent=true",
+        "sha256": "53bb63c40dc72ae4620278f29f1018b419b152c92da111bf0e6275775066f66a",
+        "extent_enu_m": [
+          -872,
+          932,
+          -792,
+          1004
+        ],
+        "layer": 57,
+        "year": 2025,
+        "nontransparent_fraction": 1.0
+      },
+      "river-lane-2025.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494188.14928888186%2C4877103.282153052%2C494265.14928888186%2C4877193.282153052&bboxSR=3740&imageSR=3740&size=924%2C1080&layers=show%3A57&format=png32&transparent=true",
+        "sha256": "f6fb04ddc1850e5b336951b9315f70886a7357298903b2c24fc03b8903f86cdd",
+        "extent_enu_m": [
+          -141,
+          175,
+          -64,
+          265
+        ],
+        "layer": 57,
+        "year": 2025,
+        "nontransparent_fraction": 1.0
+      },
+      "franklin-lane-2025.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494471.14928888186%2C4877018.282153052%2C494547.14928888186%2C4877096.282153052&bboxSR=3740&imageSR=3740&size=912%2C936&layers=show%3A57&format=png32&transparent=true",
+        "sha256": "12b57f9b13c906dd0e1c60e8be75a3ac9df462e2ae2af5b60e67a60a626f18bb",
+        "extent_enu_m": [
+          142,
+          90,
+          218,
+          168
+        ],
+        "layer": 57,
+        "year": 2025,
+        "nontransparent_fraction": 1.0
+      },
+      "villard-lane-2025.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494752.14928888186%2C4876717.282153052%2C494811.14928888186%2C4876770.282153052&bboxSR=3740&imageSR=3740&size=708%2C636&layers=show%3A57&format=png32&transparent=true",
+        "sha256": "d308c97a015eb286d49bbdedc116181a7a2717e49ed54fe5eead0763d8ba4964",
+        "extent_enu_m": [
+          423,
+          -211,
+          482,
+          -158
+        ],
+        "layer": 57,
+        "year": 2025,
+        "nontransparent_fraction": 1.0
+      },
+      "river-lane-2017.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494188.14928888186%2C4877103.282153052%2C494265.14928888186%2C4877193.282153052&bboxSR=3740&imageSR=3740&size=924%2C1080&layers=show%3A29&format=png32&transparent=true",
+        "sha256": "5aa54c059a7ce152b06cca7f89b727e2357a3d4494833dce521c33e0637a8e89",
+        "extent_enu_m": [
+          -141,
+          175,
+          -64,
+          265
+        ],
+        "layer": 29,
+        "year": 2017,
+        "nontransparent_fraction": 1.0
+      },
+      "river-lane-2021.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494188.14928888186%2C4877103.282153052%2C494265.14928888186%2C4877193.282153052&bboxSR=3740&imageSR=3740&size=924%2C1080&layers=show%3A26&format=png32&transparent=true",
+        "sha256": "382b3481136f57193f39a510e1cebe5baf8510f7c591304235a0281d5093eddd",
+        "extent_enu_m": [
+          -141,
+          175,
+          -64,
+          265
+        ],
+        "layer": 26,
+        "year": 2021,
+        "nontransparent_fraction": 1.0
+      },
+      "river-lane-2023.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494188.14928888186%2C4877103.282153052%2C494265.14928888186%2C4877193.282153052&bboxSR=3740&imageSR=3740&size=924%2C1080&layers=show%3A2&format=png32&transparent=true",
+        "sha256": "3cf3221e2510abb8e9c769e1f3f9a32bb3096a5526cb76a3054a17a877516d8d",
+        "extent_enu_m": [
+          -141,
+          175,
+          -64,
+          265
+        ],
+        "layer": 2,
+        "year": 2023,
+        "nontransparent_fraction": 1.0
+      },
+      "villard-lane-2017.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494752.14928888186%2C4876717.282153052%2C494811.14928888186%2C4876770.282153052&bboxSR=3740&imageSR=3740&size=708%2C636&layers=show%3A29&format=png32&transparent=true",
+        "sha256": "a7aeb4b6844acc6cc00d951872e08a47e48abc3733b1af2133bcd7af94e68f24",
+        "extent_enu_m": [
+          423,
+          -211,
+          482,
+          -158
+        ],
+        "layer": 29,
+        "year": 2017,
+        "nontransparent_fraction": 1.0
+      },
+      "villard-lane-2021.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494752.14928888186%2C4876717.282153052%2C494811.14928888186%2C4876770.282153052&bboxSR=3740&imageSR=3740&size=708%2C636&layers=show%3A26&format=png32&transparent=true",
+        "sha256": "08dae6e7a29f87ae47fde99d8070daeb3351e26b3c5d2cf5199d60906a02d093",
+        "extent_enu_m": [
+          423,
+          -211,
+          482,
+          -158
+        ],
+        "layer": 26,
+        "year": 2021,
+        "nontransparent_fraction": 0.99992
+      },
+      "villard-lane-2023.png": {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494752.14928888186%2C4876717.282153052%2C494811.14928888186%2C4876770.282153052&bboxSR=3740&imageSR=3740&size=708%2C636&layers=show%3A2&format=png32&transparent=true",
+        "sha256": "a8bf51856eaa77524764b469f9ce839578adeb66472c6ca4a65e29fc3a9bdf26",
+        "extent_enu_m": [
+          423,
+          -211,
+          482,
+          -158
+        ],
+        "layer": 2,
+        "year": 2023,
+        "nontransparent_fraction": 1.0
+      }
+    },
+    "hotel": {
+      "url": "https://www.bestwestern.com/en-us/book/hotel/eugene/best-western-new-oregon/38013",
+      "photos": [
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=LwLckn9SzdkgkJm7NjEbcg&heading=325.17",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=soHypamkmNsC14XoLWxC7Q&heading=357.3",
+        "https://www.google.com/maps/@?api=1&map_action=pano&pano=ehyVdjRF1q5kA6cK9aF2lg&heading=55.63"
+      ]
+    }
+  },
+  "models": [
+    {
+      "id": "roof-abe13121",
+      "name": "Alton Baker Park Shelter 2",
+      "street_address": "632 Day Island Road",
+      "kind": "pavilion",
+      "municipal_feature": 180405,
+      "outline_enu_m": [
+        [
+          -819.3986,
+          953.2456
+        ],
+        [
+          -827.3937,
+          961.7964
+        ],
+        [
+          -822.4586,
+          965.7034
+        ],
+        [
+          -824.9835,
+          968.9522
+        ],
+        [
+          -821.2804,
+          972.3423
+        ],
+        [
+          -818.5886,
+          970.0613
+        ],
+        [
+          -813.7216,
+          974.011
+        ],
+        [
+          -805.7264,
+          965.4602
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -816.9768888675899,
+          964.143083025961
+        ],
+        "axis": [
+          0.745,
+          0.667
+        ]
+      },
+      "roof_color": [
+        124,
+        145,
+        126
+      ],
+      "trim_color": [
+        104,
+        108,
+        89
+      ],
+      "wall_color": [
+        123,
+        100,
+        75
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -10,
+            -7.0,
+            10,
+            5.52
+          ],
+          "planes": [
+            [
+              0,
+              0.78,
+              0.26,
+              0,
+              0.438
+            ],
+            [
+              0,
+              0.78,
+              0.26,
+              0,
+              -0.48
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -3.27,
+            0.7,
+            3.06,
+            9.18
+          ],
+          "planes": [
+            [
+              0.4,
+              0,
+              1.52,
+              0.68,
+              0
+            ],
+            [
+              0.4,
+              0,
+              1.52,
+              -0.69,
+              0
+            ],
+            [
+              0,
+              3.35,
+              1.52,
+              0,
+              -0.535
+            ]
+          ],
+          "roof_color": [
+            117,
+            139,
+            120
+          ]
+        }
+      ],
+      "post_rows_m": [
+        -5.56,
+        4.05
+      ],
+      "post_spacing_m": [
+        -7.86,
+        -3.72,
+        0.0,
+        3.77,
+        7.75
+      ],
+      "table_rows_m": [
+        -4.0,
+        -1.18,
+        1.61,
+        3.55
+      ],
+      "table_lengths_m": [
+        [
+          -5.32,
+          4.8768
+        ],
+        [
+          0.0,
+          2.4384
+        ],
+        [
+          5.16,
+          4.8768
+        ]
+      ],
+      "slab_bounds_m": [
+        -8.83,
+        -6.14,
+        8.89,
+        4.87
+      ],
+      "utility_bounds_m": [
+        -2.15,
+        5.42,
+        1.85,
+        8.48
+      ],
+      "utility_height_m": 4.02
+    },
+    {
+      "id": "alton-baker-shelter-one",
+      "name": "Alton Baker Park Shelter 1",
+      "street_address": "632 Day Island Road",
+      "kind": "pavilion",
+      "municipal_feature": 180406,
+      "outline_enu_m": [
+        [
+          -848.492,
+          971.5024
+        ],
+        [
+          -852.1908,
+          975.0929
+        ],
+        [
+          -856.8035,
+          980.2026
+        ],
+        [
+          -845.4319,
+          990.3808
+        ],
+        [
+          -842.0535,
+          987.0709
+        ],
+        [
+          -844.4812,
+          984.8995
+        ],
+        [
+          -839.7413,
+          979.9247
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -847.9427592481943,
+          980.6516948241552
+        ],
+        "axis": [
+          0.745,
+          0.667
+        ]
+      },
+      "roof_color": [
+        124,
+        145,
+        126
+      ],
+      "trim_color": [
+        104,
+        108,
+        89
+      ],
+      "wall_color": [
+        123,
+        100,
+        75
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -8,
+            -7,
+            9.19,
+            6.06
+          ],
+          "planes": [
+            [
+              0,
+              0.97,
+              0.03,
+              0,
+              0.454
+            ],
+            [
+              0,
+              0.97,
+              0.03,
+              0,
+              -0.5
+            ]
+          ]
+        }
+      ],
+      "post_rows_m": [
+        -5.32,
+        4.11
+      ],
+      "post_spacing_m": [
+        -5.83,
+        -2.28,
+        1.55,
+        4.84
+      ],
+      "table_rows_m": [
+        -4.08,
+        -1.21,
+        1.55,
+        3.67
+      ],
+      "table_lengths_m": [
+        [
+          -4.75,
+          2.4384
+        ],
+        [
+          -0.51,
+          4.8768
+        ],
+        [
+          3.35,
+          2.4384
+        ]
+      ],
+      "slab_bounds_m": [
+        -6.23,
+        -5.96,
+        5.29,
+        5.2
+      ],
+      "utility_bounds_m": [
+        5.65,
+        2.35,
+        7.97,
+        5.04
+      ],
+      "utility_height_m": 1.11
+    },
+    {
+      "id": "roof-4b32d15b",
+      "name": "Best Western New Oregon · Franklin Wing",
+      "street_address": "1655 Franklin Boulevard",
+      "kind": "hotel",
+      "municipal_feature": 224679,
+      "outline_enu_m": [
+        [
+          172.1396,
+          140.2492
+        ],
+        [
+          186.0675,
+          136.379
+        ],
+        [
+          186.8796,
+          138.7811
+        ],
+        [
+          196.0176,
+          136.2426
+        ],
+        [
+          195.305,
+          133.8122
+        ],
+        [
+          188.7575,
+          111.4799
+        ],
+        [
+          175.896,
+          115.0536
+        ],
+        [
+          176.5537,
+          117.4209
+        ],
+        [
+          169.5757,
+          119.3599
+        ],
+        [
+          171.1943,
+          125.1848
+        ],
+        [
+          168.186,
+          126.0208
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          181.0,
+          125.0
+        ],
+        "axis": [
+          0.963,
+          -0.27
+        ]
+      },
+      "roof_color": [
+        135,
+        130,
+        119
+      ],
+      "trim_color": [
+        126,
+        120,
+        106
+      ],
+      "wall_color": [
+        157,
+        151,
+        138
+      ],
+      "terrace_cut_m": [
+        -2.24,
+        -11.5,
+        12.2,
+        -6.52
+      ],
+      "east_setback_m": [
+        9.5,
+        -8.0,
+        12.15,
+        12.36
+      ],
+      "roof_units_m": [
+        [
+          -9.5,
+          3.25,
+          -8.2,
+          4.42
+        ],
+        [
+          -5.38,
+          5.02,
+          -4.19,
+          6.41
+        ],
+        [
+          -2.8,
+          7.6,
+          -1.75,
+          8.75
+        ]
+      ],
+      "terrace_bounds_m": [
+        -2.04,
+        -10.72,
+        10.0,
+        -6.44
+      ],
+      "terrace_walls_m": [
+        [
+          -2.06,
+          -10.78,
+          9.33,
+          -10.57
+        ],
+        [
+          -2.12,
+          -10.58,
+          -1.94,
+          -7.46
+        ],
+        [
+          9.75,
+          -9.5,
+          9.94,
+          -6.48
+        ]
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -13,
+            -2.68,
+            1.75,
+            12.55
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              8.013,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            190,
+            188,
+            176
+          ]
+        },
+        {
+          "bounds_m": [
+            -10.1,
+            -9,
+            -1.25,
+            -1.72
+          ],
+          "planes": [
+            [
+              0,
+              -8.47,
+              3.44,
+              0,
+              0.462
+            ]
+          ],
+          "roof_color": [
+            136,
+            133,
+            120
+          ]
+        },
+        {
+          "bounds_m": [
+            -2.26,
+            -6.69,
+            11.8,
+            12.6
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              4.61,
+              0.338,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            1.5,
+            12.25,
+            11.8,
+            15.25
+          ],
+          "planes": [
+            [
+              0,
+              14,
+              5.12,
+              0,
+              0
+            ]
+          ],
+          "roof_color": [
+            157,
+            152,
+            138
+          ]
+        }
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-abe13121",
+      "target": "context-background-0-3"
+    },
+    {
+      "id": "roof-4b32d15b",
+      "target": "context-campus-2-2"
+    },
+    {
+      "id": "roof-885f60ba",
+      "target": "context-campus-1-2"
+    },
+    {
+      "id": "roof-6dc8ed19",
+      "target": "context-campus-2-1"
+    }
+  ],
+  "new_building_ids": [
+    "alton-baker-shelter-one"
+  ],
+  "absorbed_ids": [
+    "roof-885f60ba",
+    "roof-6dc8ed19"
+  ]
+}

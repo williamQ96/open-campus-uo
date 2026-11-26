@@ -24,7 +24,6 @@ function validBuilding(building) {
     [building.roof_z_m, building.base_z_m].every(Number.isFinite) &&
     building.roof_z_m > building.base_z_m &&
     Array.isArray(building.entrances) &&
-    building.entrances.length > 0 &&
     building.entrances.every(
       ({ gate, position_enu_m: point, outward_degrees }) =>
         /^[a-z][a-z-]+$/.test(gate) &&
@@ -264,6 +263,8 @@ export async function loadBuildingSiteReview(
     replacedDetails = [],
     identityMoves = {},
     splitBuildings = {},
+    newBuildingIds = [],
+    routeToApproaches = false,
     registeredNames = {},
     registeredAddresses = {},
     sourceBatchIds = [],
@@ -297,10 +298,12 @@ export async function loadBuildingSiteReview(
   const splits = Object.entries(splitBuildings);
   const declaredSplits = Object.entries(site.split_buildings ?? {});
   const splitIds = splits.map(([id]) => id);
-  const addedIds = [...movedIds, ...splitIds];
+  const declaredNewIds = site.new_building_ids ?? [];
+  const addedIds = [...movedIds, ...splitIds, ...newBuildingIds];
   const trees =
     site.context_trees ?? (site.context_tree ? [site.context_tree] : []);
   const batches = site.batch_removals ?? [];
+  const closedSiteBoxes = site.closed_site_boxes_enu_m ?? [];
   const corridor = site.corridor_patch;
   if (
     site.source_presentation_sha256 !== config.asset_sha256 ||
@@ -308,6 +311,20 @@ export async function loadBuildingSiteReview(
     site.url !== `${directory}/site.glb` ||
     site.ground_node !== groundNode ||
     !Array.isArray(batches) ||
+    !Array.isArray(closedSiteBoxes) ||
+    closedSiteBoxes.length > 16 ||
+    closedSiteBoxes.some(
+      (box) =>
+        !Array.isArray(box) ||
+        box.length !== 4 ||
+        !box.every(
+          (value) => Number.isFinite(value) && Math.abs(value) <= 2000,
+        ) ||
+        box[0] >= box[2] ||
+        box[1] >= box[3] ||
+        box[2] - box[0] > 100 ||
+        box[3] - box[1] > 100,
+    ) ||
     new Set(batches.map((item) => item?.id)).size !== batches.length ||
     batches.some(
       (item) =>
@@ -334,6 +351,16 @@ export async function loadBuildingSiteReview(
         originals.get(previousId).name !== replacements.get(id)?.name ||
         originals.get(previousId).campus_id !== replacements.get(id)?.campus_id,
     ) ||
+    !Array.isArray(declaredNewIds) ||
+    declaredNewIds.length !== newBuildingIds.length ||
+    newBuildingIds.some(
+      (id, index) =>
+        declaredNewIds[index] !== id ||
+        originals.has(id) ||
+        !ids.includes(id) ||
+        !Object.hasOwn(registeredAddresses, id),
+    ) ||
+    new Set(addedIds).size !== addedIds.length ||
     declaredSplits.length !== splits.length ||
     splits.some(
       ([id, sourceId]) =>
@@ -420,7 +447,11 @@ export async function loadBuildingSiteReview(
     replacedDetails,
     identityMoves,
     addedIds,
+    newBuildingIds,
+    assetSha: site.sha256,
+    routeApproachIds: routeToApproaches ? ids : newBuildingIds,
     ground,
+    closedSiteBoxes,
     navigation: graph,
     retiredCorridor: corridorId,
     entrances: Object.fromEntries(
@@ -441,6 +472,11 @@ export async function loadBuildingSiteReview(
             kind: "building",
             status: "registered-exterior",
             split_source_id: sourceId,
+          })),
+          newBuildingIds.map((id) => ({
+            id,
+            kind: "building",
+            status: "registered-exterior",
           })),
         )
         .filter(({ id }) => !absorbedIds.includes(id))

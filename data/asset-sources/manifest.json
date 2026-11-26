@@ -20,44 +20,50 @@
       "sha256": "d8433e61bcbb722516da0b3878978280352a4c5ec70a2c4da1191dbd9910bcbe"
     },
     "apps/web-preview/public/props/campus-props.glb": {
-      "bytes": 736804,
-      "sha256": "3af8526930d21de0ea42a38c9e3d4e9f79f3413ee44041fa1b5c5b9ab8c64a65",
+      "bytes": 968344,
+      "sha256": "3b427b6612681ea8a93bec416dd54ea166b2b1043b535cdc13c2134e3dbfe2b4",
       "license": "CC-BY-4.0",
-      "origin": "Original six-kind transport export with four L2 road vehicles and established cycle meshes; no third-party geometry.",
+      "origin": "Original six-kind transport export with L2 road, bicycle and scooter geometry. Manufacturing specifications inform generic dimensions.",
       "previous_record": {
-        "bytes": 625996,
-        "sha256": "1b0be7e2af6385e2718295e808979b1f831042f37be2e4fd26e913d46bd7c4ee",
+        "bytes": 736804,
+        "sha256": "3af8526930d21de0ea42a38c9e3d4e9f79f3413ee44041fa1b5c5b9ab8c64a65",
         "license": "CC-BY-4.0",
-        "origin": "Original generic six-kind transport export, including sloped van hood; no third-party geometry.",
+        "origin": "Original six-kind transport export with four L2 road vehicles and established cycle meshes; no third-party geometry.",
         "previous_record": {
-          "bytes": 625564,
-          "sha256": "0bc9fe96c787eca107b7e618ad27c209d58bb4ee64f5a7d598f128c6a65b08ca",
+          "bytes": 625996,
+          "sha256": "1b0be7e2af6385e2718295e808979b1f831042f37be2e4fd26e913d46bd7c4ee",
           "license": "CC-BY-4.0",
-          "origin": "Original generic six-kind transport export; car, SUV and pickup profile refinement, no third-party geometry.",
+          "origin": "Original generic six-kind transport export, including sloped van hood; no third-party geometry.",
           "previous_record": {
-            "bytes": 622972,
-            "sha256": "20fc756b3b1d65861db0f1c4f0bf7197256d3eccbfe04efaef7c3c5a3df526f7",
+            "bytes": 625564,
+            "sha256": "0bc9fe96c787eca107b7e618ad27c209d58bb4ee64f5a7d598f128c6a65b08ca",
             "license": "CC-BY-4.0",
-            "origin": "Original generic six-kind transport export with bicycle and scooter details; no third-party model or texture.",
+            "origin": "Original generic six-kind transport export; car, SUV and pickup profile refinement, no third-party geometry.",
             "previous_record": {
-              "bytes": 581496,
-              "sha256": "bf85abf13ff0efe6b370c73b9ebe9d4b69950b53cebd408b0495131f9b444458",
+              "bytes": 622972,
+              "sha256": "20fc756b3b1d65861db0f1c4f0bf7197256d3eccbfe04efaef7c3c5a3df526f7",
               "license": "CC-BY-4.0",
-              "origin": "Original generic six-kind transport export with scooter detailing; no third-party model or texture.",
+              "origin": "Original generic six-kind transport export with bicycle and scooter details; no third-party model or texture.",
               "previous_record": {
-                "bytes": 550392,
-                "sha256": "020150ee1617b450ce8eafe461a3c95b34b0ee045bae7d5f8ad4def12aff6763",
+                "bytes": 581496,
+                "sha256": "bf85abf13ff0efe6b370c73b9ebe9d4b69950b53cebd408b0495131f9b444458",
                 "license": "CC-BY-4.0",
-                "origin": "Original generic procedural transport model export, six kinds including SUV; no third-party model or texture.",
+                "origin": "Original generic six-kind transport export with scooter detailing; no third-party model or texture.",
                 "previous_record": {
-                  "bytes": 411052,
-                  "sha256": "749608835fb58a4822f65d2ef9d8ac54795a4b3cccabb9f75a0b6910c089902c",
+                  "bytes": 550392,
+                  "sha256": "020150ee1617b450ce8eafe461a3c95b34b0ee045bae7d5f8ad4def12aff6763",
                   "license": "CC-BY-4.0",
-                  "origin": "Original procedural prop export with generic vehicle and scooter details; no third-party model or texture.",
+                  "origin": "Original generic procedural transport model export, six kinds including SUV; no third-party model or texture.",
                   "previous_record": {
-                    "bytes": 363972,
-                    "sha256": "6985f4fa638f3c9086928ce2b049d7db97eb1fbd9581533244ee3ae819da799a",
-                    "status": "Prior local rider contact refinement"
+                    "bytes": 411052,
+                    "sha256": "749608835fb58a4822f65d2ef9d8ac54795a4b3cccabb9f75a0b6910c089902c",
+                    "license": "CC-BY-4.0",
+                    "origin": "Original procedural prop export with generic vehicle and scooter details; no third-party model or texture.",
+                    "previous_record": {
+                      "bytes": 363972,
+                      "sha256": "6985f4fa638f3c9086928ce2b049d7db97eb1fbd9581533244ee3ae819da799a",
+                      "status": "Prior local rider contact refinement"
+                    }
                   }
                 }
               }
@@ -2164,6 +2170,612 @@
       "sha256": "f733e9f1866bc08083faff894a92a836e103f4ab31479f80317a1bb1d39de8d1",
       "license": "CC-BY-4.0",
       "origin": "Four original local exterior meshes with the Hilyard House courtyard and under-building parking."
+    },
+    "apps/web-preview/public/scene/university-district-exterior-review/site.json": {
+      "bytes": 4309,
+      "sha256": "5834333bed6f4e776278175eb8f1f11420d340914639529851584cf58aca6296",
+      "license": "CC-BY-4.0",
+      "origin": "Original University District registration, outdoor approaches and source batch ranges."
+    },
+    "apps/web-preview/public/scene/university-district-exterior-review/site.glb": {
+      "bytes": 1749156,
+      "sha256": "5928e30842a731d0d90cc98b94ddad7c919d7bc3f6a6b36a52727d2e5a5a7ac4",
+      "license": "CC-BY-4.0",
+      "origin": "Original three-building University District exterior export with the retained Bushnell bridge and two parking structures."
+    },
+    "apps/web-preview/public/scene/university-district-clinic-review/site.json": {
+      "bytes": 4000,
+      "sha256": "101c3a09dfc28356eed74c0a427c66c5f6f19fb1e8b03d3e647fae868beaa9f1",
+      "license": "CC-BY-4.0",
+      "origin": "Original University District clinic and garage split, outdoor approaches and source ranges."
+    },
+    "apps/web-preview/public/scene/university-district-clinic-review/site.glb": {
+      "bytes": 2567996,
+      "sha256": "4a8c4c2b8661473331a683f24efe56e15ff599cf9a9ad1e48612b5b94257dc5f",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior models for the PeaceHealth University District Clinic, South Garage and North Building."
+    },
+    "apps/web-preview/public/scene/former-hospital-site-review/site.json": {
+      "bytes": 1911,
+      "sha256": "9ae2c52ea5b7ff620c10caad6ad6a7c719b4aa4d2584ab9d992a63113d50f35a",
+      "license": "CC-BY-4.0",
+      "origin": "Original dated site registration and ranges for the five former-hospital candidates."
+    },
+    "apps/web-preview/public/scene/former-hospital-site-review/site.glb": {
+      "bytes": 2684488,
+      "sha256": "4164b13c479c7c8f1842aa7ad686795095d18229318c7bd52beb02ae093a7486",
+      "license": "CC-BY-4.0",
+      "origin": "Original The Mark Eugene Phase 1 construction site model with soil, framing, fencing, crane and protected sidewalk."
+    },
+    "apps/web-preview/public/scene/hilyard-apartments-exterior-review/site.json": {
+      "bytes": 1297,
+      "sha256": "4fb69711291a86900b3fb1ed43341f58d6814b6afdac5f6de3e5a4cab3d14c85",
+      "license": "CC-BY-4.0",
+      "origin": "Original municipal registration, entrance and validation for the missing 973 Hilyard building."
+    },
+    "apps/web-preview/public/scene/hilyard-apartments-exterior-review/site.glb": {
+      "bytes": 585684,
+      "sha256": "513a67075db8788d8df8cb621fe2b0cd3dcdbdb79ee92469d655ffcc65ed34c6",
+      "license": "CC-BY-4.0",
+      "origin": "Original 973 Hilyard exterior and approach model based on the municipal outline, aerial and elevation surfaces."
+    },
+    "apps/web-preview/public/scene/zirc-exterior-review/site.json": {
+      "bytes": 1896,
+      "sha256": "134be703db2692092737117430f436f0e14fab2a68d20628cba7f0e40a80ea5a",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration and source patch for the ZIRC exterior."
+    },
+    "apps/web-preview/public/scene/zirc-exterior-review/site.glb": {
+      "bytes": 1466488,
+      "sha256": "8900ef2d9bf19566b0b9d38db1a43baa194aa547c72cc37d9d96decb72dee59a",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior model for the retained ZIRC roofs, completed west addition and surrounding walk."
+    },
+    "apps/web-preview/public/scene/hilyard-fifteenth-exterior-review/site.json": {
+      "bytes": 3983,
+      "sha256": "0e33037dab6c8e35ffe3a4d728ff98a8ca621d2b0e9edf299fcb9c42415d73d6",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration of three separate Hilyard and E 15th exteriors with signed source-range removal."
+    },
+    "apps/web-preview/public/scene/hilyard-fifteenth-exterior-review/site.glb": {
+      "bytes": 1651112,
+      "sha256": "00a7dcc900c8b6ac21b3f5ad231d620adc5a2c0a38f27346b196de3b7b16fb45",
+      "license": "CC-BY-4.0",
+      "origin": "Original Hilyard and E 15th models from municipal footprints, observed public facades and historical elevations."
+    },
+    "apps/web-preview/public/scene/hilyard-central-exterior-review/site.json": {
+      "bytes": 4044,
+      "sha256": "0c0b526cc17984ff4f831c87aff349da1f3c44b4df8a31771d528e71d7a1b2ce",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration for three distinct Hilyard exteriors with verified source-range replacements."
+    },
+    "apps/web-preview/public/scene/hilyard-central-exterior-review/site.glb": {
+      "bytes": 1191332,
+      "sha256": "f073c9a50b8e69256c6555caf3cd68de9f9bd2ee61fc0da321fe3d6a5d7d2da5",
+      "license": "CC-BY-4.0",
+      "origin": "Original model of three Hilyard apartment exteriors and approaches from public observations and historical elevation data."
+    },
+    "apps/web-preview/public/scene/e-fifteenth-pair-exterior-review/site.json": {
+      "bytes": 4566,
+      "sha256": "df36be6a6eff99e3a92ee41df81baff59db2bad7693c9430d7baade645672b44",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration of the E 15th street and alley building geometries."
+    },
+    "apps/web-preview/public/scene/e-fifteenth-pair-exterior-review/site.glb": {
+      "bytes": 1314064,
+      "sha256": "0494bb6692ae471070390a2eb5aaeb47112d071be34c151482ec981e5ff19ea6",
+      "license": "CC-BY-4.0",
+      "origin": "Original street and alley apartment geometry including independent roof forms and exterior stairs."
+    },
+    "apps/web-preview/public/scene/walnut-alder-broadway-exterior-review/site.json": {
+      "bytes": 3789,
+      "sha256": "8e90b1d2217bbc4c3cc06cf05f8a5fc5876357e8c8e913a5d640b0b7bc39558c",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration of the Walnut office, Alder apartments and dated Motel 66 entrance."
+    },
+    "apps/web-preview/public/scene/walnut-alder-broadway-exterior-review/site.glb": {
+      "bytes": 585784,
+      "sha256": "10e2ac3f8abe65694039239341abda8719019f71b68437384e9027bbf894b8bf",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior and approach geometry for three sourced sites, including the open Broadway canopy."
+    },
+    "assets/exterior-refinement/entrance-portal-l2-2026-11-26.glb": {
+      "bytes": 30132,
+      "sha256": "2c1798f04cc06ba424d49d0e61f5df5b5ec6387343468df7ecf8acb5d3692a6e",
+      "license": "CC-BY-4.0",
+      "origin": "Original Open Campus generic paired storefront entrance with frame, transom and modeled hardware."
+    },
+    "assets/sky-refinement/eugene-fair-weather-sky-2026-11-26.glb": {
+      "bytes": 319308,
+      "sha256": "ac7748a5e8beb0bf796073fa0f6e673ba88622d2df61ae405bd816899c7cdf56",
+      "license": "CC-BY-4.0",
+      "origin": "Original procedural Eugene sky dome and paired heights of cloud banks. Vertex colors only."
+    },
+    "apps/web-preview/public/scene/alder-bushnell-exterior-review/site.json": {
+      "bytes": 7314,
+      "sha256": "4c9616ed4d42df280cf1a8d5f2d7bb13e3c1dd5ff5acad95a06ca2c59725e4f9",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration of Alder Suites, Morse Center and Pomajevich Hall."
+    },
+    "apps/web-preview/public/scene/alder-bushnell-exterior-review/site.glb": {
+      "bytes": 2017204,
+      "sha256": "71f18097bc0e7e2075a0a9365a84681f959c242347e1656a51b214c11184085f",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior and approach meshes for two Bushnell buildings and the Alder Suites apartments."
+    },
+    "apps/web-preview/public/scene/goodrich-quad-exterior-review/site.json": {
+      "bytes": 3758,
+      "sha256": "31065eaf293a4cde5ea08efb24e64ff1ce8685bf11d6271b658dcd0768c387a7",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration for Goodrich Hall, Bushnell Facilities & Maintenance and 1145 Alder."
+    },
+    "apps/web-preview/public/scene/goodrich-quad-exterior-review/site.glb": {
+      "bytes": 1673568,
+      "sha256": "432d60fb22d82208f2b564cfc0b3962d0b56af058a8ee932a0346d2aeada706c",
+      "license": "CC-BY-4.0",
+      "origin": "Original facade, bell tower, porch and approach geometry for the Goodrich quadrangle."
+    },
+    "apps/web-preview/public/scene/bushnell-east-exterior-review/site.json": {
+      "bytes": 5109,
+      "sha256": "229cf526944bf8e8ac0d6c7b82de74779e6428c442fd4c9b6830199fcf0d8baa",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration of the connected Price and Kellenberger building and Burke-Griffeth Hall."
+    },
+    "apps/web-preview/public/scene/bushnell-east-exterior-review/site.glb": {
+      "bytes": 3951300,
+      "sha256": "97b5114a75130581b6d1cce1dfcfb3865a5c65eea343a2865fb48a84bd77106a",
+      "license": "CC-BY-4.0",
+      "origin": "Original Bushnell East Quad exteriors, restored clock portal and exterior approaches."
+    },
+    "apps/web-preview/public/scene/east-station-exterior-review/site.json": {
+      "bytes": 3818,
+      "sha256": "92849b0ccf0b0e653fa754f2321016ce34523f8dc5c61009539209798bdec702",
+      "license": "CC-BY-4.0",
+      "origin": "Original downstream registration of three UO East Station exterior models."
+    },
+    "apps/web-preview/public/scene/east-station-exterior-review/site.glb": {
+      "bytes": 894320,
+      "sha256": "774e8823fcadd4faa8ecbe4d81fad9cce3d8ad6f9c067865ffd4fb51d74ccdb0",
+      "license": "CC-BY-4.0",
+      "origin": "Original UO East Station exteriors, roof details and modeled approaches."
+    },
+    "apps/web-preview/public/scene/western-exterior-review/site.json": {
+      "bytes": 4638,
+      "sha256": "86f87d4abc06a0bd97b91eedde0742edae891dc6ce816430bda5e4d8418beece",
+      "license": "CC-BY-4.0",
+      "origin": "Original registration of three Marlatt exteriors and the riverfront utility building."
+    },
+    "apps/web-preview/public/scene/western-exterior-review/site.glb": {
+      "bytes": 1003872,
+      "sha256": "76e2d21fe964abb0c07602dd0b7ec0b8aa7c5bb754c5e02bb661d749c1be9551",
+      "license": "CC-BY-4.0",
+      "origin": "Original Marlatt and Willamette riverfront shell, roof, wall and approach meshes."
+    },
+    "apps/web-preview/public/scene/pilot-furnishings-l2.glb": {
+      "bytes": 745672,
+      "sha256": "90516efda69a3420035865c955dadfa1d85f63dd5f1fb932da3c707c4497a286",
+      "license": "CC-BY-4.0",
+      "origin": "Original pilot bench, acorn lamp and rack geometry informed by university and manufacturer specifications. Authored approximate locations. The three-hoop rack reuses the separately archived original model. No reference imagery is embedded."
+    },
+    "apps/web-preview/public/scene/millrace-fairmount-exterior-review/site.json": {
+      "bytes": 7122,
+      "sha256": "1cd8d2e7d46d967dd2c7872804d4cb73df29063c7ff4e8facdc59f0e9419cb15",
+      "license": "CC-BY-4.0",
+      "origin": "Original independent Millrace and Fairmount exterior review assets with registered outlines, source batch replacements and scene approach records. Reference photography remains external."
+    },
+    "apps/web-preview/public/scene/millrace-fairmount-exterior-review/site.glb": {
+      "bytes": 1140588,
+      "sha256": "fffe72fbb7d89facc757712db131e42bbf4562fed88d132662d718c7ead8968e",
+      "license": "CC-BY-4.0",
+      "origin": "Original independent Millrace and Fairmount exterior review assets with registered outlines, source batch replacements and scene approach records. Reference photography remains external."
+    },
+    "apps/web-preview/public/scene/rive-eugene-exterior-review/site.json": {
+      "bytes": 1696,
+      "sha256": "53363c87c124167880b8d9d14c8798ad50118db5469cf32bdbbbd15e1b33585c",
+      "license": "CC-BY-4.0",
+      "origin": "Original twelve-level Rive Eugene exterior geometry and placement record. Sources are the registered municipal ground plan, state orthophoto, operator, architect and dated panoramas; no reference images are embedded."
+    },
+    "apps/web-preview/public/scene/rive-eugene-exterior-review/site.glb": {
+      "bytes": 2457032,
+      "sha256": "5fb2706c54644ac72c2e1aada53637e800522ba292c62103c14bdd4903c6c7a2",
+      "license": "CC-BY-4.0",
+      "origin": "Original twelve-level Rive Eugene exterior geometry and placement record. Sources are the registered municipal ground plan, state orthophoto, operator, architect and dated panoramas; no reference images are embedded."
+    },
+    "apps/web-preview/public/scene/alder-thirteenth-exterior-review/site.json": {
+      "bytes": 4176,
+      "sha256": "16784b0368bee8daca75d6e2e79a0886636c8f7b06e1027497ca32cb2c6006c1",
+      "license": "CC-BY-4.0",
+      "origin": "Original editable geometry and placement for the four Alder and E 13th exteriors and the Chapter Alder construction snapshot. Public reference photographs remain external.",
+      "previous_record": {
+        "bytes": 4109,
+        "sha256": "71a6b58bce2bf18c52eb4597c65b82a0c4839ff0d54f965baf6c384b82e723b1",
+        "license": "CC-BY-4.0",
+        "origin": "Original editable geometry and placement for the four Alder and E 13th exteriors and the Chapter Alder construction snapshot. Public reference photographs remain external."
+      }
+    },
+    "apps/web-preview/public/scene/alder-thirteenth-exterior-review/site.glb": {
+      "bytes": 3917848,
+      "sha256": "2e3486f8f3bb7f4aabc84a768d309f7e770ea48c162a88c23db65edb88d8b3a2",
+      "license": "CC-BY-4.0",
+      "origin": "Original editable geometry and placement for the four Alder and E 13th exteriors and the Chapter Alder construction snapshot. Public reference photographs remain external."
+    },
+    "apps/web-preview/public/scene/fairmount-kincaid-exterior-review/site.json": {
+      "bytes": 14785,
+      "sha256": "7f989d0291437b7d87702d5c3d48b84c71a426b9bc4b042fa604fc84eedb8d2e",
+      "license": "CC-BY-4.0",
+      "origin": "Original editable geometry for six Fairmount houses and two chapter houses, with registered exteriors and estimated site approaches. Reference photographs remain external."
+    },
+    "apps/web-preview/public/scene/fairmount-kincaid-exterior-review/site.glb": {
+      "bytes": 4617992,
+      "sha256": "574f87a941360750fadbf30557c1326d83497a01871ae0755e02db7de4d4c132",
+      "license": "CC-BY-4.0",
+      "origin": "Original editable geometry for six Fairmount houses and two chapter houses, with registered exteriors and estimated site approaches. Reference photographs remain external."
+    },
+    "apps/web-preview/public/scene/pilot-hardscape-review/site.glb": {
+      "bytes": 869492,
+      "sha256": "e576108f00983745829d97abcd710f05dc289d651674a5ba396e28c7b486b3fb",
+      "license": "CC-BY-4.0",
+      "origin": "Original pilot stair flights, curved amphitheater, and raised planter geometry based on publicly documented site design and scene registration. No reference images are embedded."
+    },
+    "apps/web-preview/public/scene/pilot-hardscape-review/site.json": {
+      "bytes": 2903,
+      "sha256": "f025768022b594acd808ec6ad21dcc57b0dbb380ebfe0d8a4f56abcd135bf109",
+      "license": "CC-BY-4.0",
+      "origin": "Pilot hardscape asset digest, legacy geometry anchors, sample bounds and rail collision envelopes."
+    },
+    "apps/web-preview/public/scene/southeast-fairmount-exterior-review/site.json": {
+      "bytes": 7462,
+      "sha256": "74ab0c93638515b8a29cc7e89f26ac9acce17e293dd3a511833583843a3ba83a",
+      "license": "CC-BY-4.0",
+      "origin": "Original residential site registration, model hashes and exact legacy triangle ranges for Sunset Drive, Rose Lane and Birch Lane."
+    },
+    "apps/web-preview/public/scene/southeast-fairmount-exterior-review/site.glb": {
+      "bytes": 1108024,
+      "sha256": "bead8a9df848d2dbccaab5083e89229c5e2297691887d6041eb60624e5267b8a",
+      "license": "CC-BY-4.0",
+      "origin": "Original six-house hillside exterior and approach geometry, based on open outline data and reference imagery used for observation."
+    },
+    "apps/web-preview/public/scene/pilot-trees-l2/trees.json": {
+      "bytes": 1012,
+      "sha256": "875b5473c3972a975a53c102b680d641e7aee7ef2bc29ae8a135447603e59ac7",
+      "license": "CC-BY-4.0",
+      "origin": "Original project canopy batch identity, checked source recipe hashes and art digest."
+    },
+    "apps/web-preview/public/scene/pilot-trees-l2/trees.glb": {
+      "bytes": 2836568,
+      "sha256": "9a129558d22a314f8dbddee5ed9f914c5e905665a3c1209a3732612cc5e296ef",
+      "license": "CC-BY-4.0",
+      "origin": "Original pilot stem, branch and canopy geometry with 273 modeled tree anchors and recorded size envelopes."
+    },
+    "apps/web-preview/public/scene/context-trees-l2/trees.json": {
+      "bytes": 7332,
+      "sha256": "f84fcdc9d19b3b7aaa82910f98b99a944de3d6755795328b7fd537936180ad56",
+      "license": "CC-BY-4.0",
+      "origin": "Original background tree model ranges and exact source recipe digests."
+    },
+    "apps/web-preview/public/scene/context-trees-l2/trees.glb": {
+      "bytes": 1242248,
+      "sha256": "09bad144a398a7f57240a0255e2037f926ecc95db49e299aec434b1e08560142",
+      "license": "CC-BY-4.0",
+      "origin": "Original campus background woody stems and canopy geometry. The runtime selects the shapes retained by active site models."
+    },
+    "apps/web-preview/public/scene/understory-l2/plants.json": {
+      "bytes": 2919,
+      "sha256": "eab9ce21c668a5ff9f0d6f605d23b9cad6d9d3f649d5d51050e11913f3c337ab",
+      "license": "CC-BY-4.0",
+      "origin": "Original understory source contracts and selection ranges."
+    },
+    "apps/web-preview/public/scene/understory-l2/plants.glb": {
+      "bytes": 744940,
+      "sha256": "8ddf5c1d85ee5ab56ad616e27c88e722cf5f5dc9fc86c476f26603fdba24cbde",
+      "license": "CC-BY-4.0",
+      "origin": "Original pilot shrub, layered fern and planted-soil geometry anchored to the modeled site."
+    },
+    "apps/web-preview/public/scene/landcover-l2/ground.glb": {
+      "bytes": 9630368,
+      "sha256": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+      "license": "CC-BY-4.0",
+      "origin": "Original terrain fitting and vertex-color ground model informed by open DOGAMI 2023 and 2014 lidar, USGS NHD and USDA NAIP. Source rasters and imagery remain separate."
+    },
+    "apps/web-preview/public/scene/paving-corridors-l2/surfaces.glb": {
+      "bytes": 3402636,
+      "sha256": "26f3433e2abc1a8cd0cbf1125711a2ed17d9ebdd0132697a76cc2455bb90aff6",
+      "license": "CC-BY-4.0",
+      "origin": "Original modeled Memorial Quad paths and lawn and rebuilt road and path buffers on Census centerlines. Open imagery and published city measurement facts inform approximate widths and materials. No reference photos or city polygon files embedded."
+    },
+    "apps/web-preview/public/scene/paving-corridors-l2/surfaces.json": {
+      "bytes": 66532,
+      "sha256": "37c5d4ecd31e18e4c28e5326512f48dd07e2c1eb54bda191ba0ad716446bad68",
+      "license": "CC-BY-4.0",
+      "origin": "Original Memorial Quad paving and lawn, rebuilt road and path buffers on Census centerlines, and revised activity centerlines based on the rendered paving and lawn. No reference imagery or city polygon files embedded."
+    },
+    "apps/web-preview/public/animals/campus-squirrel-l2.glb": {
+      "bytes": 140664,
+      "sha256": "bfabbac23524ca2f29f4f5e8d090f9765d7c18e43d8c1686e1688d416d3461b4",
+      "license": "CC-BY-4.0",
+      "origin": "Original generic campus squirrel model and animation from apps/web-preview/src/squirrel-model.js and apps/web-preview/scripts/export-campus-squirrel.mjs. Editorial anatomy reference from OSU Extension EM 9573. No reference imagery embedded."
+    },
+    "assets/characters/dan-carrere-l2.glb": {
+      "bytes": 404020,
+      "sha256": "2a2dd8ca567182cd1aca2752480c613cfddc0b685ece1ae4ab50c7325f67df9c",
+      "license": "CC-BY-4.0 (original additions); CC0-1.0 (Kenney rig, retained geometry and Idle action)",
+      "origin": "Original stylized face, facial hair, hat, collar, placket and textile from apps/web-preview/src/dan-carrere-style.js over the project's Kenney student rig. Exported with apps/web-preview/scripts/export-fixed-person.mjs. The official UO portrait was examined as a shape reference and is absent from the archive."
+    },
+    "apps/web-preview/public/scene/northwest-infill-exterior-review/site.json": {
+      "bytes": 5718,
+      "sha256": "d8107c25546705de16901d304df5f4d91cb3ad09f7f45629e7ac516118182388",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for four northwest Eugene buildings. City footprints, Oregon imagery and historic surfaces inform the geometry, with public exterior references documented in docs/northwest-infill-exterior-review-2026-11-26.md. No source imagery embedded."
+    },
+    "apps/web-preview/public/scene/northwest-infill-exterior-review/site.glb": {
+      "bytes": 1840748,
+      "sha256": "143be5a4c0774f14732f7bf9c923922c60a118b6e44e48adfc5c1b246eaa8d3a",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for four northwest Eugene buildings. City footprints, Oregon imagery and historic surfaces inform the geometry, with public exterior references documented in docs/northwest-infill-exterior-review-2026-11-26.md. No source imagery embedded."
+    },
+    "apps/web-preview/public/scene/millrace-research-exterior-review/site.json": {
+      "bytes": 1928,
+      "sha256": "d1af3a4a22652e2ccea054ebabfb8a8e41c8a1c58cabce8c18661381ea60435d",
+      "license": "CC-BY-4.0",
+      "origin": "Original building geometry for 1800 and 1850 Millrace Drive. City footprints, Oregon imagery and historic surfaces inform the geometry. Exterior sources are linked in docs/millrace-research-exterior-review-2026-11-26.md. No source imagery embedded."
+    },
+    "apps/web-preview/public/scene/millrace-research-exterior-review/site.glb": {
+      "bytes": 573888,
+      "sha256": "b6179d8324a6884bb973e4d3ae2650b7e847fa81659aa99330f8287103381706",
+      "license": "CC-BY-4.0",
+      "origin": "Original building geometry for 1800 and 1850 Millrace Drive. City footprints, Oregon imagery and historic surfaces inform the geometry. Exterior sources are linked in docs/millrace-research-exterior-review-2026-11-26.md. No source imagery embedded."
+    },
+    "apps/web-preview/public/scene/parkside-exterior-review/site.json": {
+      "bytes": 3280,
+      "sha256": "ab0de33824e12d9448e8c3c7707491203d8dfaaae406b2579ee73503afdf68b9",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for 2300 Parkside Lane. City building data, Oregon aerial and historical elevation data inform the geometry. Public exterior references are linked in docs/parkside-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/parkside-exterior-review/site.glb": {
+      "bytes": 716804,
+      "sha256": "82811c25c03ec6e4d9f714ed6acd48d41177d9bfa34d28a02c1368ea0479b760",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for 2300 Parkside Lane. City building data, Oregon aerial and historical elevation data inform the geometry. Public exterior references are linked in docs/parkside-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/east-nineteenth-exterior-review/site.json": {
+      "bytes": 6183,
+      "sha256": "2c67bcb1700885541241268a33127ee9e4c5dd71ceb947f5f0565c196a6fb621",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for the Sigma Chi Chapter House, 1456 and 1458 East 19th Avenue, and 1355 East 19th Avenue. City building data and Oregon imagery and elevation surfaces are documented in docs/east-nineteenth-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/east-nineteenth-exterior-review/site.glb": {
+      "bytes": 938320,
+      "sha256": "064a0c7821e00e0f090af147d9b8199bc3bc5ffa99b965a2c117f9159f473f74",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for the Sigma Chi Chapter House, 1456 and 1458 East 19th Avenue, and 1355 East 19th Avenue. City building data and Oregon imagery and elevation surfaces are documented in docs/east-nineteenth-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/alder-harris-exterior-review/site.json": {
+      "bytes": 9686,
+      "sha256": "8a960e5f599952731230c28941910e7ae38647c28802aa1a04785f1c274a1a62",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for six buildings in the Alder and Harris area. City building data and Oregon aerial and elevation sources are documented in docs/alder-harris-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/alder-harris-exterior-review/site.glb": {
+      "bytes": 2958756,
+      "sha256": "a86c52d0559bde2f847fe8456bef7ed94a7fe74c65101394b9e0b7beb737875a",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for six buildings in the Alder and Harris area. City building data and Oregon aerial and elevation sources are documented in docs/alder-harris-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/hilyard-south-exterior-review/site.json": {
+      "bytes": 5738,
+      "sha256": "9816d74217f143d2128011c17cb3c3a421bbdfced48f286eb0c082d3c7d48608",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for Parkside Place and three south neighborhood residences. City building data, Oregon aerial imagery, elevation surfaces and street references are documented in docs/hilyard-south-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/hilyard-south-exterior-review/site.glb": {
+      "bytes": 2357392,
+      "sha256": "5ece715fdb19a1e7c163941f7398931f136587bf9e53ca8c75ca9b21024b7916",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for Parkside Place and three south neighborhood residences. City building data, Oregon aerial imagery, elevation surfaces and street references are documented in docs/hilyard-south-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/west-boundary-exterior-review/site.json": {
+      "bytes": 3752,
+      "sha256": "71efc290d1e755c5c196f0421bb3da22edcd1fa2135c4b5ba9e953a6765628fb",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for the East 17th Avenue, 16th Alley and East 19th Avenue boundary candidates. City, aerial and elevation references are documented in docs/west-boundary-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/west-boundary-exterior-review/site.glb": {
+      "bytes": 374028,
+      "sha256": "c20b95383213fac56d2887531d5f0ab3859b410c5d4e5f6edc3140f145bde77b",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for the East 17th Avenue, 16th Alley and East 19th Avenue boundary candidates. City, aerial and elevation references are documented in docs/west-boundary-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/alton-franklin-exterior-review/site.json": {
+      "bytes": 10341,
+      "sha256": "f69ac61074c16235b9fb7cd9f145beae57c1e40ec73c609c16012f460a539d80",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for both Alton Baker shelters and the Best Western Franklin wing, with two historical source footprints retired by a dated imagery review. See docs/alton-franklin-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/alton-franklin-exterior-review/site.glb": {
+      "bytes": 837876,
+      "sha256": "8b4a9194e18b0588acc4336a866461d9003657fcaa8356e2568db762e481c18e",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for both Alton Baker shelters and the Best Western Franklin wing, with two historical source footprints retired by a dated imagery review. See docs/alton-franklin-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/east-nineteenth-court-exterior-review/site.json": {
+      "bytes": 2172,
+      "sha256": "2d1334268c3eb05a736fc86778da0732b823b14a3ecbd6b7d44076b126cbf928",
+      "license": "CC-BY-4.0",
+      "origin": "Original two-wing apartment exterior, courtyard gallery, stair and street approach. See docs/east-nineteenth-court-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/east-nineteenth-court-exterior-review/site.glb": {
+      "bytes": 360708,
+      "sha256": "c79a1142c26e402231ba31361cc984e2bca27ce48ba78f055f74282168bd0428",
+      "license": "CC-BY-4.0",
+      "origin": "Original two-wing apartment exterior, courtyard gallery, stair and street approach. See docs/east-nineteenth-court-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/onyx-house-exterior-review/site.json": {
+      "bytes": 3878,
+      "sha256": "6bd59e7205c35f22a77a891de710595e10285b9f7449656afe8c8543f43e7df7",
+      "license": "CC-BY-4.0",
+      "origin": "Original Onyx House exterior geometry, parking recesses and east entrance. See docs/onyx-house-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/onyx-house-exterior-review/site.glb": {
+      "bytes": 649868,
+      "sha256": "073ddd07bf81892a879f0b7cd0e53f97eecdc09dd9ad2e74a29493e83bd67ad1",
+      "license": "CC-BY-4.0",
+      "origin": "Original Onyx House exterior geometry, parking recesses and east entrance. See docs/onyx-house-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/south-university-exterior-review/site.json": {
+      "bytes": 5544,
+      "sha256": "abbc118987fe20191e7908978c04ac9abec0133d15587fec72d91f38c56c06cb",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for Sigma Nu, 1306 East 18th and 1874 Emerald. See docs/south-university-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/south-university-exterior-review/site.glb": {
+      "bytes": 1601864,
+      "sha256": "d5b229eb50b656c5bf6b34805fe0a712f12d21f26e6b880dfbfcf42ee48a2bee",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for Sigma Nu, 1306 East 18th and 1874 Emerald. See docs/south-university-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/onyx-university-split-exterior-review/site.json": {
+      "bytes": 6586,
+      "sha256": "f323cfff9b565172d5b7a5e276816e0401b67df2367077adbbdc56af3727ff89",
+      "license": "CC-BY-4.0",
+      "origin": "Original models for six distinct exteriors on Onyx, East 19th and University. See docs/onyx-university-split-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/onyx-university-split-exterior-review/site.glb": {
+      "bytes": 1624896,
+      "sha256": "a7f5a318b138176ec43300383d34337487d8689ad0f0514be7cd546784078ca0",
+      "license": "CC-BY-4.0",
+      "origin": "Original models for six distinct exteriors on Onyx, East 19th and University. See docs/onyx-university-split-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/south-campus-frontages-review/site.json": {
+      "bytes": 6907,
+      "sha256": "e4c00282238198032613a9672760e3695ed01a7ba38306a0e808434c1bf4597b",
+      "license": "CC-BY-4.0",
+      "origin": "Original models for six South University exteriors. See docs/south-campus-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/south-campus-frontages-review/site.glb": {
+      "bytes": 2938084,
+      "sha256": "ab54316a6dd08efec8f0ff63d76f376f73f9b2f33475de4130be3f689f044207",
+      "license": "CC-BY-4.0",
+      "origin": "Original models for six South University exteriors. See docs/south-campus-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/potter-university-exterior-review/site.json": {
+      "bytes": 14316,
+      "sha256": "b52cb0611e9180c9921f712a6309234d29d55bc5036d682abb2b1e488893bc91",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for Central Lutheran and seven nearby buildings. See docs/potter-university-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/potter-university-exterior-review/site.glb": {
+      "bytes": 4033680,
+      "sha256": "6e8afb4f9318b55dd9241a47ebeb376e04cd8e5b740c07a63fb89bbb2150e0c1",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for Central Lutheran and seven nearby buildings. See docs/potter-university-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/harris-potter-exterior-review/site.json": {
+      "bytes": 12330,
+      "sha256": "df6800d1f8148c1cc083b5d7915212ce2d5dc9474291cad82848f5ddcbd632a2",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for ten Harris, Potter and East 20th exteriors. See docs/harris-potter-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/harris-potter-exterior-review/site.glb": {
+      "bytes": 3663732,
+      "sha256": "2c056b42e2dea5a33a003bf7456e38d3cfdea6597ecd39fa1cdd156e109015c1",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for ten Harris, Potter and East 20th exteriors. See docs/harris-potter-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/southern-boundary-exterior-review/site.json": {
+      "bytes": 13495,
+      "sha256": "b456bbaffa5b4a6de52b4c925c54c70a79ea9d4c47694cb74629a8ce1cc2ab44",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eight southern boundary exteriors. See docs/southern-boundary-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/southern-boundary-exterior-review/site.glb": {
+      "bytes": 3691356,
+      "sha256": "73215684d73ecbbca0c763f8a6deb11f84636352e4735d13e773dee0b12a8824",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eight southern boundary exteriors. See docs/southern-boundary-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/onyx-university-frontages-review/site.json": {
+      "bytes": 13694,
+      "sha256": "5eee51e8dfe98171659e6af2e9f41acab1dc0687b4e0849cbb4e5adc01648619",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eight Onyx and University exteriors. See docs/onyx-university-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/onyx-university-frontages-review/site.glb": {
+      "bytes": 2969288,
+      "sha256": "4e3256518b5be6a3365efd633cfab5f01d55563aa197362aee88ee657069638c",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eight Onyx and University exteriors. See docs/onyx-university-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/emerald-onyx-frontages-review/site.json": {
+      "bytes": 11315,
+      "sha256": "a0efcce4db0aa46397c95b35e2917c02d738b2acec0deaa23d638a2ebfbc21db",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eleven Emerald and Onyx area exteriors. See docs/emerald-onyx-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/emerald-onyx-frontages-review/site.glb": {
+      "bytes": 3256732,
+      "sha256": "d9db5f9ab777ce1c112122a293181b88660c3943795103be5bff7f81e438396e",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eleven Emerald and Onyx area exteriors. See docs/emerald-onyx-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/agate-emerald-frontages-review/site.json": {
+      "bytes": 10622,
+      "sha256": "e371c267bf7dd6ee90ab5cba67a842026981f25961a2693d69106c3223ae9eb6",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eight Agate and Emerald exteriors. See docs/agate-emerald-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/agate-emerald-frontages-review/site.glb": {
+      "bytes": 2790472,
+      "sha256": "82f919a4939119b02b150e9f4a0d7e6b123c5374b77700a17f6bbaa7853a04be",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eight Agate and Emerald exteriors. See docs/agate-emerald-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/columbia-moss-frontages-review/site.json": {
+      "bytes": 15425,
+      "sha256": "7fdd8ccde71501f20574e15d865e59c400fcdd61efe4e1b20908f7569b2ac8eb",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for fourteen Columbia, Moss and Agate exteriors. See docs/columbia-moss-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/columbia-moss-frontages-review/site.glb": {
+      "bytes": 5196864,
+      "sha256": "9c3714a3a53ae19c2d247c8e53b6a5a01a3116c331d19ccc510e01a65c1e5acc",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for fourteen Columbia, Moss and Agate exteriors. See docs/columbia-moss-frontages-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/fairmount-moss-slope-review/site.json": {
+      "bytes": 20194,
+      "sha256": "f71b45c46c300a2390a7be5206dc3abb4a4526a1a7c43694d66ea9aeb29ba39b",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eleven Fairmount, Moss and McMorran hillside exteriors. See docs/fairmount-moss-slope-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/fairmount-moss-slope-review/site.glb": {
+      "bytes": 3592772,
+      "sha256": "9b0624d2b34c095104a3370979ae90a76c964e35bc4aaa9ce725e4443d6f8c89",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eleven Fairmount, Moss and McMorran hillside exteriors. See docs/fairmount-moss-slope-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/orchard-villard-hillside-review/site.json": {
+      "bytes": 16151,
+      "sha256": "4da306733c3feac9118ef61c7f4cfe300f5a917de2aa2626749d382448fd1cac",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for sixteen Orchard, Villard and Fairmount exteriors. See docs/orchard-villard-hillside-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/orchard-villard-hillside-review/site.glb": {
+      "bytes": 5203304,
+      "sha256": "bb454526d01abacbbceedbff17bfae9d3c0ff7b859d22b15c0d5055e28051076",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for sixteen Orchard, Villard and Fairmount exteriors. See docs/orchard-villard-hillside-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/fairmount-summit-hamble-review/site.json": {
+      "bytes": 14978,
+      "sha256": "7dc51833bac31923096c9be1d463909f5bd49fc606843b4fb3cb6a02b36a5b92",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for thirteen Fairmount, Summit, Hamble and Hubbard exteriors. See docs/fairmount-summit-hamble-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/fairmount-summit-hamble-review/site.glb": {
+      "bytes": 3979728,
+      "sha256": "202a25e38143c8fc2255cd71b6a6a6d603d9e73c0e8efbcce0ddcbf3fcc01658",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for thirteen Fairmount, Summit, Hamble and Hubbard exteriors. See docs/fairmount-summit-hamble-review-2026-11-26.md."
     }
   },
   "additional_sources": [

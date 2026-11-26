@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const hall = "roof-9ac93ab7";
 const annex = "roof-f0b575d6";
@@ -29,7 +30,7 @@ test("Gerlinger exteriors keep distinct IDs, modeled approaches and breezeway cl
 }) => {
   await ready(page);
   const state = await page.evaluate(readSite, ids);
-  expect(state.count).toBe(519);
+  expect(state.count).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(state.collision).toEqual([true, true, false, true, true, true, false]);
   expect(state.landing["gerlinger-paving"] - state.landing.sampled).toBeCloseTo(
     0.085,

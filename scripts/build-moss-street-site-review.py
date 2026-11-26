@@ -294,11 +294,11 @@ def covers(parts, specs, field):
     return supports
 
 
-def branch(parts, start, end, lower_radius, upper_radius, color):
+def branch(parts, start, end, lower_radius, upper_radius, color, *, sections=9):
     points = np.array([(e, y, -n) for e, n, y in (start, end)])
     axis = points[1] - points[0]
     section = trimesh.creation.cylinder(
-        radius=1, height=np.linalg.norm(axis), sections=9
+        radius=1, height=np.linalg.norm(axis), sections=sections
     )
     ratio = (section.vertices[:, 2] > 0).astype(float)
     vertices = section.vertices.copy()

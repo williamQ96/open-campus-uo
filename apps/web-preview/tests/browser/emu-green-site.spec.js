@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const review = "/";
 const baseline = "/?exterior-review=emu-baseline";
@@ -34,7 +35,7 @@ test("the default EMU opens the green and gives five entrances clear approaches"
   expect(after.opensGreen).toBe(true);
   expect(after.ballroomBlocks).toBe(true);
   expect(after.ground.paving - after.ground.sampled).toBeCloseTo(0.12, 3);
-  expect(after.buildings).toBe(519);
+  expect(after.buildings).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(after.knightGates.map(({ gate }) => gate)).toEqual([
     "memorial-west",
     "memorial-east",

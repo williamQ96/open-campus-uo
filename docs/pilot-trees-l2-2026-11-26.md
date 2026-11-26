@@ -1,0 +1,13 @@
+# Pilot trees at L2
+
+ENV-01 covers the 273 displayed pilot trees within the Memorial Quad and the adjoining pilot area. The replacement separates tapered trunks, spreading branches and irregular foliage into two mesh batches. Crown shapes range from rounded and low-spreading broadleaf forms to narrow and tiered conifer forms. The modeled shapes and foliage tones are illustrative. [Editable register](../data/metadata/pilot-trees-l2.json) · [Tree mesh builder](../scripts/build-pilot-trees-l2.py).
+
+The 11 previously registered stems retain the coordinates and height envelopes from the current scene fits. These include the Gerlinger Japanese maple and Katsura, the Knight southwest cherry and the EMU elms and birches. The other stems derive from the original NAIP-guided placement. Seven branch and crown envelopes are reduced on the side facing a building. A separate modeled stem at the Gerlinger Annex moves two metres north into the same visible 2024 crown. That move resolves an intersection in the scene, and its precise field stem remains unverified. [UO campus trees](https://cpfm.uoregon.edu/trees) · [2024 Oregon imagery](https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer) · [Earlier registration](pilot-tree-registration-2026-11-23.md).
+
+## Verification
+
+- The repeatable export contains 40,608 woody triangles and 61,176 foliage triangles. All 273 stem anchors match the sampled scene ground. Their modeled canopy extents stay within the prior size envelopes. Twenty-seven retired indices stay out of the pilot tree layer.
+- A non-coplanar surface test compared the 273 trees with 18 active building mesh parts that intersected the broad-phase bounds. Of seven trees with previous surface intersections, all clear in the revised layer. The screen describes the active scene geometry and current sample bounds.
+- Six matched WebGL views showed different branch and crown silhouettes and two fewer draw calls in each view. Desktop and phone production previews at this checkpoint displayed 273 rebuilt pilot trees and 270 background source trees. The building and approach records matched the baseline. The staging, installed, built and served asset bytes match.
+- Corrupt replacement bytes or an unsuccessful placement recipe leave the preceding tree meshes visible. The new layer verifies both asset hashes and its placement recipe dependencies. Use `/?exterior-review=tree-model-baseline` to compare crown geometry at the prior positions. The source register and adopted layer are local and uncommitted.
+- All 197 unit tests and six pilot tree browser cases passed. The browser cases verify the clearance comparison, appearance counts and fallback to the previous layer.

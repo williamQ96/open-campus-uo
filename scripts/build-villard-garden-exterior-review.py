@@ -68,7 +68,9 @@ def roof_sections(parts, outline, wall, floor, row, *, grid=None):
                         area, chapter.half_plane(local.bounds, plane - other), grid_size=grid
                     )
             if area.area > 0.012:
-                candidates.append((area, plane, zone.get("roof_color", row["roof_color"])))
+                candidates.append(
+                    (polygonal(area), plane, zone.get("roof_color", row["roof_color"]))
+                )
 
     regions = []
     for index, (candidate, plane, color) in enumerate(candidates):

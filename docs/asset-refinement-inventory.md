@@ -1,6 +1,6 @@
 # Open Campus: UO 资产精细化清单
 
-更新于 2026-11-25。清单记录本地模型与后续工作，发布状态另记。
+更新于 2026-11-26。清单记录本地模型与后续工作，发布状态另记。
 
 ## 等级和适用范围
 
@@ -16,25 +16,131 @@
 
 | 范围 | 明细行 | 当前状态 |
 | --- | ---: | --- |
-| 建筑外部 | 540 | 181 项 L2、338 项独立 L1、21 项停用或并入模型的 L1 历史记录 |
-| 各建筑独立内部 | 540 | 均标为未创建，等级留空；当前进入时使用共用教室 |
-| 室外植被、景观、道具及角色动物 | 13 | 1 组 L2、12 组 L1 |
+| 建筑外部 | 586 | 387 项 L2、168 项独立 L1、31 项停用或并入模型的 L1 历史记录 |
+| 各建筑独立内部 | 586 | 均标为未创建，等级留空，当前进入时使用共用教室 |
+| 室外植被、景观、道具及角色动物 | 15 | 15 组 L2 |
 | 共用室内 | 1 | 现有 L1 共用教室 |
-| **合计** | **1,094** | **554 项现有；540 项独立室内待创建** |
+| **合计** | **1,188** | **602 项现有，586 项独立室内待创建** |
 
-源场景的 534 个建筑候选包括 64 个独立节点和 470 个批次成员。科学楼群配准增加了 Pacific 和 Columbia 两个场景 ID，社团建筑拆分增加了 Chi Omega 的独立 ID，Villard 与 Garden 住宅拆分增加了三个独立 ID。区域字段沿用项目艺术优先区及背景制作分区。部分记录可能对应同一建筑、树冠或其他候选，需要逐项确认。
+源场景的 534 个建筑候选包括 64 个独立节点和 470 个批次成员。科学楼群配准增加了 Pacific 和 Columbia 两个场景 ID，社团建筑拆分增加了 Chi Omega 的独立 ID，Villard 与 Garden 住宅拆分增加了三个独立 ID，大学区南停车楼拆分增加一个独立 ID，973 Hilyard 新增一个此前缺失的建筑 ID，1515 Hilyard 合并候选拆分增加两个独立 ID，957/971 Hilyard 拆分增加一个独立 ID，E 15th 巷侧楼、950 Alder Suites 和 1125 Alder 校方设施维护楼各新增一个此前缺失的建筑 ID。区域字段沿用项目艺术优先区及背景制作分区。部分记录可能对应同一建筑、树冠或其他候选，需要逐项确认。
 
 项目现有一套通用教室，所有建筑暂时使用该模板。CSV 的 `INT-SHARED` 为共用模板 L1，每个 `INT:建筑ID` 为待建的专属内部，等级留空。[通用教室](../assets/interiors/README.md)。
 
-两个程序化乔木源层各含 300 株。本地默认预览显示试点区 273 株及背景源树 270 株。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 新增 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
+两个程序化乔木源层各含 300 株。本地默认预览显示试点区 273 株及背景源树 269 株。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
 
 ## 室外 L2 目标核对
 
-室外目标追踪 553 条记录，包括 540 条建筑外部和 13 个植被、景观、天空、道具及户外活动资产组。共用教室和 540 条计划室内记录另列。当前有 181 项 L2 建筑、338 项独立 L1 建筑、1 组 L2 和 12 组 L1 室外资产，以及 21 条合并或停用后的历史映射。历史映射涉及 EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus 和 Hayward Field，原 ID 和等级记录保存在 CSV。默认场景有 519 个可选建筑。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
+室外目标追踪 601 条记录，包括 586 条建筑外部和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 586 条计划室内记录另列。当前有 387 项 L2 建筑、168 项独立 L1 建筑、15 组 L2 室外资产，以及 31 条合并或停用后的历史映射。历史映射涉及 Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church 和 The Studies at 19th，原 ID 和等级记录保存在 CSV。默认场景有 555 个可选建筑。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
+
+Orchard、Villard 与 Fairmount 周边十六栋外部登记为 L2。六处拆分保留实测图上的屋面间距，东 19 街 1978 号恢复开放停车棚，Orchard 1994 号保留两片光伏阵列。Villard 1996 号同地块的独立附属建筑保留单独 ID，其用途待核。[十六栋外部核对](orchard-villard-hillside-review-2026-11-26.md)。
+
+Fairmount、Moss 与 McMorran 周边十一栋外部登记为 L2，新增东 19 街 1836 号和 Fairmount 2241 号。保留 McMorran 2303 号的开放连廊、1911 Moss 的退入式门廊及 Fairmount 2415 号朝泳池的双层露台。1911 Moss 与东 19 街 1820 号仍对应同一个场景 ID。[十一栋外部核对](fairmount-moss-slope-review-2026-11-26.md)。
+
+Columbia、Moss 与 Agate 周边十四栋外部登记为 L2。两家咖啡馆、巷侧楼、两栋 Emerald Apartments 和东 19 街 1445 号可独立选择。Agate 两家店共用雨棚，各有独立门廊。新增 Columbia 2003 号独立外部，并按 2021 年外观照重建 Columbia 1980 号的木瓦外墙和双车库。[十四栋外部核对](columbia-moss-frontages-review-2026-11-26.md)。
+
+Agate 与 Emerald 周边八栋外部登记为 L2。The Studies at 19th 统一两段旧网格并保留两个天井与西侧架空停车。Tom's Market 采用 2024 年临街形态，东 20 街 1460 与 1470 号独立可选。[八栋外部核对](agate-emerald-frontages-review-2026-11-26.md)。
+
+Emerald 与 Onyx 周边十一栋外部登记为 L2。1959 Onyx 西栋和巷侧楼共用门牌但可分别选择。增补 1940 Emerald Alley 的独立外部，分开东 20 街 1405 和 1425 号，并复核 1361 东 21 街门廊、1959 Onyx 巷侧楼梯及四处估算接近点。[十一栋外部核对](emerald-onyx-frontages-review-2026-11-26.md)。
+
+Trinity House 和 Onyx 周边七栋建筑登记为 L2。东 20 街 1256 号和东 19 街 1262 号获得独立 ID，两处屋间隙通过核对。1931 Onyx Alley 西侧架空停车开口保持地面净空，并保留立柱和后墙碰撞。[八栋外部核对](onyx-university-frontages-review-2026-11-26.md)。
+
+南缘八栋建筑登记为 L2。Harris 街 2039 号与 2061 号独立可选，University 街 2028 号后侧体量也设立独立模型。两个间隙与 Potter 街 2086 号关闭的院门通过碰撞核对。[南缘八栋外部核对](southern-boundary-exterior-review-2026-11-26.md)。
+
+Harris、Potter 和东 20 街十栋建筑登记为 L2。六个原 ID 保留，四栋拆分建筑新增独立 ID。四处间隙、1925 Harris 雨棚及 1959 Harris 台阶与挡墙均通过碰撞核对。[十栋外部核对](harris-potter-exterior-review-2026-11-26.md)。
+
+Central Lutheran Church、东 19 街三栋住宅以及 University 街 1910、1940、1960 和 1976 号登记为 L2。教堂两个旧网格并为一栋，保留露天内院。University 街四栋住宅各自可选，三个间隙通过碰撞检查。[八栋外部核对](potter-university-exterior-review-2026-11-26.md)。
+
+Theta Chi、Delta Tau Delta、Potter 街 1860 号、Onyx 街 1930 和 1976 号以及 University 街 1941 号均沿用原 ID 登记为 L2。Theta Chi 恢复完整建筑轮廓。六处估算接近点都在桌面和手机生产预览中通过导航核对。[六栋 South University 临街外部核对](south-campus-frontages-review-2026-11-26.md)。
+
+Onyx 街 1866 与 1870 号、东 19 街 1208 号主屋与后车库、University 街 1825 号与 Onyx 巷 1840 号均已拆成独立的 L2 外部。保留三个原场景 ID，并新增三个拆分 ID。验证覆盖三处建筑间隙和四处估算接近点。[六栋外部拆分核对](onyx-university-split-exterior-review-2026-11-26.md)。
+
+Sigma Nu、东 18 街 1306 号和 Emerald 街 1874 号均已沿用原 ID 升为 L2。分别恢复四根通高门廊柱、开敞低檐和后侧外楼梯、两层蓝色立面与四坡屋顶，并登记三处临街接近点。[South University 三栋建筑外部核对](south-university-exterior-review-2026-11-26.md)。
+
+Onyx House（Onyx 街 1850、1852 号）已登记为 L2，沿用原场景 ID。重建交叉浅坡屋顶、南侧低翼、巷侧底层两端开口和东门廊台阶。[Onyx House 外部核对](onyx-house-exterior-review-2026-11-26.md)。
+
+东 19 街 1340 号公寓已登记为 L2，沿用原场景 ID。重建交叉屋脊、蓝色立面、院内二层外廊和楼梯，并登记北侧临街接近点。[1340 号外部核对](east-nineteenth-court-exterior-review-2026-11-26.md)。
+
+Alton Baker 公园两座凉亭及 Best Western New Oregon 的 Franklin 侧翼已登记为 L2。1 号凉亭有新增场景 ID。两处已拆建筑从默认场景移除，原 ID 保存在历史台账中。[凉亭和酒店外部核对](alton-franklin-exterior-review-2026-11-26.md)。
+
+东 17 街 625–627 号、东 16 巷 630–632 号和东 19 街 631 号东侧楼体升为 L2。东 17 街旧合并模型拆成三个独立对象。东 16 巷 634–640 号按市政轮廓和高程建模，主要立面仍待核实，保留 L1。[西边界外部核对](west-boundary-exterior-review-2026-11-26.md)。
+
+Parkside Place、东 20 街 1131 号和东 21 街 1039、1145 号共四栋建筑外部已登记为 L2。沿用原场景 ID，恢复连通屋面、车库前段、退入式下层及两栋临街凸窗。Parkside 和 1145 号分别登记一处步行接近点。[四栋外部核对](hilyard-south-exterior-review-2026-11-26.md)。
+
+Lorax Manner、Campbell Club、Woodside Manor、东 19 街 1065–1079 号与 746 号、东 18 街 750 号共六栋建筑外部已登记为 L2。沿用原场景 ID，补建塔楼、门廊、分段屋顶、阳台和外楼梯。Woodside Manor 保留市政轮廓中的四处开口。[六栋外部核对](alder-harris-exterior-review-2026-11-26.md)。
+
+东 19 街 Sigma Chi 会馆、1456／1458 号与 1355 号三栋建筑外部已升为 L2，保留原场景 ID。恢复会馆东侧雨篷及庭院走廊、1456／1458 号的共用门廊和 1355 号的开敞停车层与西走廊。[东 19 街外部核对](east-nineteenth-exterior-review-2026-11-26.md)。
+
+2300 Parkside Lane 已登记为 L2，保留原场景 ID。市政轮廓、航片与挂牌资料支持开敞车棚、木格栅门、高窗和沿坡三层露台。露台及楼层标高为近似值。[Parkside 外部核对](parkside-exterior-review-2026-11-26.md)。
+
+1800 和 1850 Millrace Drive 共用一栋 L2 外部，按市政轮廓恢复高低屋面、设备组、带状窗和北侧有雨篷的入口。两个门牌均可搜索并导航到同一栋楼。[Millrace 外部核对](millrace-research-exterior-review-2026-11-26.md)。
+
+Phi Kappa Psi 会馆、东 8 街 642 号、1414 Alder 和 Eugene 蒸汽厂四栋外部已登记为 L2，沿用原场景 ID。模型包括会馆三拱入口、商铺退入式木饰面入口、公寓外楼梯及架空区、蒸汽厂高窗和分层屋顶。[四栋外部核对](northwest-infill-exterior-review-2026-11-26.md)。
+
+Deschutes 附近的固定人物 PERSON:dan-carrere 已登记为本地 L2。风格化模型包含带帽带的弧形帽檐、面部与胡须轮廓、格纹衬衫和接地步态，保留原有路线和资料卡交互。[固定人物核对](fixed-person-dan-carrere.md#l2-appearance-and-walking-review)。
+
+通用校园学生和松鼠 LIFE-01 已登记为 L2。步行接地、松鼠九关节动作、纪念广场西侧步道与八段草地活动路径均纳入本次核对。松鼠为通用模型，树上路线与物种仍属示意。[校园活动核对](campus-life-l2-2026-11-26.md)。
+
+草坪、铺装、道路与步道 ENV-05 已登记为 L2。纪念广场恢复北侧 X 形步道和南侧环道，更新对应导航并保留六处树池。139 条在用道路与步道记录已重建为两组地表，其中 96 条至少有一段按市政记录核对宽度与材质。[铺装与道路核对](paving-corridors-l2-2026-11-26.md)。
+
+地形与地表覆盖 ENV-04 已登记为 L2。全范围地表更新 62,339 个高程点，按 USGS 水域多边形重着色，并以 2024 年航片判断地表类型。全部 608 段入口接近线和 7,705 条源路径边的高程采样一致。[地形与地表核对](landcover-l2-2026-11-26.md)。
+
+灌木、林下植物和种植带 ENV-03 已登记为 L2。Knight Library 和 Johnson Hall 北侧共重排三处种植床并保留中央通行空间。默认场景采用 75 株重建灌木、五组重建蕨类和三组既有详细蕨类。植物物种与种植株数仍待实地核实。[林下植物核对](understory-l2-2026-11-26.md)。
+
+背景乔木 ENV-02 已登记为 L2。默认场景换用 269 株轻量树形，收窄四处靠近建筑的树冠，撤下 Flock13 屋面内的旧程序树。配准场地树继续由各自场地模型显示。[背景乔木核对](context-trees-l2-2026-11-26.md)。
+
+试点乔木 ENV-01 已登记为 L2。重建 273 株乔木的树干、分枝和树冠，沿用 11 株登记树的场景坐标，并针对建筑收窄七处枝冠。Gerlinger Annex 北侧一株推断树干在同一航片冠幅内向北调整两米。[试点乔木核对](pilot-trees-l2-2026-11-26.md)。
+
+Fairmount 东南侧的 281、365、366 Sunset，2275、2281 Rose 和 2293 Birch 共六栋住宅外部已登记为 L2，并沿用原场景 ID。恢复玻璃山墙、可见屋面太阳能板、架空阳台、老虎窗及分段屋面。已设三处估计接近点。[六栋外部核对](southeast-fairmount-exterior-review-2026-11-26.md)。
+
+台阶、露台及花坛 ENV-06 已登记为 L2。重建 Johnson Hall 和 Knight Library 的北入口台阶及栏杆，补建 EMU 西北侧圆形剧场，并细化 Oregon Hall 南侧抬高花坛。入口和露台标高按当前模型和地面估算。[室外硬质景观核对](pilot-hardscape-l2-2026-11-26.md)。
+
+1517、1671、1680 Walnut，1879、1931 Moss，1991 E 19th，以及 Pi Beta Phi 和 Alpha Chi Omega 会馆共八栋外部登记为 L2，沿用原场景 ID。[Fairmount 和 Kincaid 外部核对](fairmount-kincaid-exterior-review-2026-11-26.md)。
+
+Alder 与 E 13th 街角商铺、Gopuran、Flock13 和 The Duck Store 的四栋独立外部已登记为 L2。Chapter Alder 工地按 2026 年 9 月市政资料登记为 L2 景观，施工范围和保留建筑各自配准。[街区与施工场地核对](alder-thirteenth-exterior-review-2026-11-26.md)。
+
+The Rive Eugene 已登记为 L2。700 E Broadway 现有的 12 层住宅替换同一位置的旧模型，沿用原场景 ID。模型恢复临街裙楼、带退入门厅的 Hilyard 入口、分层露台和屋顶泳池。[The Rive 外部核对](rive-eugene-exterior-review-2026-11-26.md)。
+
+Alpha Tau Omega 会馆、1956 E 15th、1871 E 19th 和 Walnut 巷车库已登记为 L2。四栋各自沿用原场景 ID。会馆新增东侧接近路线，车库保留独立外观和空入口列表。[外部核对](millrace-fairmount-exterior-review-2026-11-26.md)。
+
+试点家具 PROP-01 已登记为 L2。默认场景换用九张五英尺木长椅、十一盏橡果灯和 Tykeson 西南铺装的三环车架。坡度、建筑与通行边缘均按当前场景核对，实际安装点仍待实地核实。[家具核对](pilot-furnishings-l2-2026-11-26.md)。
+
+Marlatt Apartments 两侧住宅、后方两层楼和 777 Annie Mims Lane 河滨设备楼已登记为 L2。庭院步道保持通行，设备楼以独立外观展示并保留闭合卷帘门。[Marlatt 与河滨核对](western-exterior-review-2026-11-26.md)。
+
+UO East Station 主楼及 A、B 两栋附楼已登记为 L2。沿用三个 ID，分别恢复主楼金属四坡屋顶与南侧门廊、A 附楼窗带、B 附楼的斜向双坡顶。[三处东站外部核对](east-station-exterior-review-2026-11-26.md)。
+
+Bushnell 东庭院的两个原模型已登记为 L2。Kellenberger 图书馆、Price 音乐楼及 Evans 礼拜堂保留相连楼体并恢复共用西入口。Burke-Griffeth 宿舍恢复西端餐厅、宿舍错层屋面和方庭立面。[东庭院外部核对](bushnell-east-exterior-review-2026-11-26.md)。
+
+Goodrich Hall、1125 Alder 校方设施维护楼和 1145 Alder 砖楼已登记为 L2。Goodrich 恢复石砌正立面和 2025 年钟楼，1125 号独立登记并保留开放门廊，1145 号恢复烟囱与分段屋面。[三处外部核对](goodrich-quad-exterior-review-2026-11-26.md)。
+
+950 Alder Suites、1075 Alder 的 Morse Center 和 1090 Alder 的 Pomajevich Hall 登记为 L2。原场景缺失的 950 号新增独立 ID，保留架空停车和临街阳台。其余两栋沿用原 ID，分别恢复体育馆分段屋面及教学楼的门廊、台阶和坡道。[三处外部核对](alder-bushnell-exterior-review-2026-11-26.md)。
+
+天空与云层 ENV-07 已登记为 L2。新版天穹增加方向色彩，云层由 12 组低层积云和 6 组高处薄云组成，保留减弱动态设置并归档两层完整几何。[天空与云层核对](eugene-sky-l2-2026-11-26.md)。
+
+通用入口标识 PROP-04 已登记为 L2。双扇门补齐门楣、门槛、外拉手和内推杆。323 处通用入口仍共用两组实例化网格，611 条入口的场景位置与接近点沿用上一版。[入口门组核对](entrance-portal-l2-2026-11-26.md)。
+
+1401 Walnut、968 Alder 和 755 E Broadway 登记为 L2。Walnut 恢复校方办公室的四坡顶和分格窗，Alder 恢复巷侧砖墙与入口，Broadway 采用 2024 年 7 月的原 Motel 66 入口形态并保持雨棚下可通行。[三处外部核对](walnut-alder-broadway-exterior-review-2026-11-26.md)。
+
+E 15th 临街楼与巷侧楼分别登记为 L2。临街楼恢复分坡屋顶、格栅和退台停车位。巷侧楼原场景缺失，本次恢复双山墙与外楼梯。两栋暂按位置命名，750 和 758 的门牌归属待核。[两栋外部核对](e-fifteenth-pair-exterior-review-2026-11-26.md)。
+
+957、971 和 975 Hilyard 分别登记为 L2。957 恢复两层外走廊，971 恢复砖立面与独立四坡顶，975 恢复北侧外走廊。三栋与 973 分别可选。[三栋外部核对](hilyard-central-exterior-review-2026-11-26.md)。
+
+1515 Hilyard、740 E 15th 与 1548–1549 Hilyard 已拆成三栋 L2 外部。740 号恢复两处停车棚开口与临街、巷侧楼梯，复式住宅恢复西侧木立面、阳台和双门。[三栋外部核对](hilyard-fifteenth-exterior-review-2026-11-26.md)。
+
+Zebrafish International Resource Center 的 B0101 外部已更新为 L2。新模型按 2024 年航片和竣工照片补齐西侧扩建，区分深色压型金属、灰色砌块和原有铜色坡顶，并沿用原场景 ID。[扩建外部核对](zirc-exterior-review-2026-11-26.md)。
+
+Hilyard Apartments 的 973 号楼在原场景缺失，现作为独立 L2 外部启用。市政门牌与 2024 年航片表明 973 和 975 是两栋分别登记的楼。新模型保留砖立面、灰色四坡顶和蓝色入口雨篷，西侧接近点可导航。[973 Hilyard 核对](hilyard-apartments-exterior-review-2026-11-26.md)。
+
+自行车、滑板车与骑行者组 PROP-03 已采用 L2 模型。参考代表尺寸重建车架、轮轴、踏板和滑板车站板，两个车型均验证轮胎触地、骑行者接触与运行时碰撞包络。[骑行道具核对](cycle-props-l2-2026-11-26.md)。
+
+旧 Sacred Heart 医院地块已采用 The Mark Eugene 一期施工快照。新场地作为 L2 室外资产组 ENV-08，按 2026 年 10 月 17 日照片呈现首层木框架、围栏和塔吊，并用 11 月市政通告核对 Hilyard 一侧封闭。经 2024 年航片复查，五条旧候选中一条对应已拆医院，另四条与可见屋面无重叠。五条原 ID 保留为历史记录。[施工场地核对](former-hospital-site-review-2026-11-26.md)。
+
+本地预览已采用 PeaceHealth 1200 Hilyard 诊所、650 E 12th 南停车楼和 677 E 12th 北办公楼的 L2 外部。旧网格由两条来源记录拆成三处可选建筑，保留诊所与停车楼间的电梯连接。[诊所与停车楼核对](university-district-clinic-review-2026-11-26.md)。
+
+本地预览已采用 770 E 11th、633 E 12th 和 666 E 13th 的三个 L2 外部。770 号与 722 号恢复保留的三层连桥，桥下可走。两座停车楼恢复开敞车层与分坡屋面，633 号西侧超出源地形的部分以航片注册。[大学区核对](university-district-exterior-review-2026-11-25.md)。
 
 车辆道具组 PROP-02 已复核四种通用车型的形体、尺寸、轮胎触地点、碰撞和导出模型。20 个场景泊位均容纳对应车型，坡面接触仍有近似。该组记为 L2。[车辆道具核对](vehicle-l2-2026-11-25.md)。
 
-源校园 GLB 中 64 个为独立建筑节点，470 个归在 21 个批次中。更新后的室外建筑台账含 202 个具名条目（含暂定名称和历史映射）和 338 个未确认条目。暂定 Volcanology、Canterbury Court 和 Millrace 3 属于批次。在最初筛查的 470 个批次候选中，有 59 个找到覆盖至少 50% 模型足迹的 UO 候选，其余 411 个当时没有选定 UO 候选。批次继续按场景 ID 跟踪。[源场景清单](../apps/web-preview/public/scene/manifest.json) · [室外细化计划](exterior-refinement-plan.md)。
+源校园 GLB 中 64 个为独立建筑节点，470 个归在 21 个批次中。更新后的室外建筑台账含 241 个已有名称或历史映射的条目和 307 个未确认条目。暂定 Volcanology、Canterbury Court 和 Millrace 3 属于批次。在最初筛查的 470 个批次候选中，有 59 个找到覆盖至少 50% 模型足迹的 UO 候选，其余 411 个当时没有选定 UO 候选。批次继续按场景 ID 跟踪。[源场景清单](../apps/web-preview/public/scene/manifest.json) · [室外细化计划](exterior-refinement-plan.md)。
 
 2026-11-23 本地默认预览已采用 Ford Alumni Center 与 Matthew Knight Arena 的成对场景，包含地形、碰撞及四个入口交互点。州足迹资料也已与全部 534 个建筑场景 ID 对照，其中 241 个在双向重合筛查中满足较高阈值。重合结果用于安排外形复核。两栋于 2026-11-24 通过项目内的 L2 审核，补齐幕墙横框、广场墙体、种植槽及台阶扶手。[成对场景](ford-arena-exterior-massing-2026-11-23.md#default-campus-preview) 和 [足迹筛查](exterior-refinement-plan.md#campus-footprint-comparison-2026-11-23)。
 
@@ -42,7 +148,7 @@
 
 本地默认预览已采用 15 个依据历史高程和 2024 年航片修正的背景屋面。新增 4 个在单独保留的 139 个历史高程样点上，各栋误差中位数的中位值从 1.145 米降至 0.168 米。建筑身份、门窗和屋缘现状仍待核实，台账按原场景 ID 保留 L1。[批量屋面对照](context-roof-refinements-2026-11-23.md#expanded-review)。
 
-本地默认预览累计移除 24 株落在铺装或草坪上的程序树及 3 株配对灌木，按校方台账和航片配准 8 株的树干、株高和冠幅。在筛查的 84 组建筑网格中，仍有 4 株与表面相交，三株在 Knight Library 东侧，一株在 EMU 东侧。两个植被组保持 L1。[初轮清理](pilot-tree-clearance-2026-11-23.md) · [台账配准及复核](pilot-tree-registration-2026-11-23.md)。
+较早的默认预览累计移除 24 株落在铺装或草坪上的程序树及 3 株配对灌木，并配准 8 株树木。在当时筛查的 84 组建筑网格中，4 株仍与表面相交。此后试点层和背景乔木层已按当前场景重建。[初轮清理](pilot-tree-clearance-2026-11-23.md) · [台账配准及复核](pilot-tree-registration-2026-11-23.md)。
 
 Knight Library 的默认模型已配准北立面、重建南翼，并按校方足迹更新碰撞。覆盖率从 71.52% 升至约 100%。北门交互已核验，台阶和平台标高仍为近似。该建筑保持 L2。[外壳配准与核验](knight-library-registration-2026-11-23.md)。
 

@@ -21,28 +21,27 @@ try {
   await page.goto("http://127.0.0.1:5173/");
   const result = await page.evaluate(async (digest) => {
     const T = await import("/node_modules/three/build/three.module.js"),
-      { createEntranceFrameGeometry, createEntranceDoorGeometry } =
-        await import("/src/entrances.js"),
+      { createEntrancePortalParts } = await import("/src/entrances.js"),
       { GLTFExporter } =
         await import("/node_modules/three/examples/jsm/exporters/GLTFExporter.js"),
       { GLTFLoader } =
         await import("/node_modules/three/examples/jsm/loaders/GLTFLoader.js");
-    const root = new T.Group(),
-      frame = new T.Mesh(
-        createEntranceFrameGeometry(),
-        new T.MeshStandardMaterial({ color: 0xead5a0, roughness: 0.85 }),
-      ),
-      door = new T.Mesh(
-        createEntranceDoorGeometry(),
-        new T.MeshStandardMaterial({ color: 0x285d51, roughness: 0.72 }),
-      );
-    frame.name = "portal-trim";
-    door.name = "portal-door";
+    const root = new T.Group();
+    for (const [name, { geometry, roughness }] of Object.entries(
+      createEntrancePortalParts(),
+    )) {
+      const material = new T.MeshStandardMaterial({
+        vertexColors: true,
+        roughness,
+      });
+      const mesh = new T.Mesh(geometry, material);
+      mesh.name = name;
+      root.add(mesh);
+    }
     root.userData = {
       source_sha256: digest,
       scope: "illustrative-portal-no-placement",
     };
-    root.add(frame, door);
     const raw = await new GLTFExporter().parseAsync(root, {
         binary: true,
         copyright:
@@ -57,17 +56,24 @@ try {
     if (meshes.length !== 2)
       throw Error("Expected two materials and two meshes");
     const stats = {};
-    for (const src of [frame, door]) {
+    for (const src of root.children) {
       const dst = meshes.find((x) => x.name === src.name);
       if (!dst || !dst.matrixWorld.equals(new T.Matrix4()))
         throw Error("Invalid mesh or transform");
       if (
-        src.material.color
-          .toArray()
-          .some((x, i) => Math.abs(x - dst.material.color.toArray()[i]) > 1e-6)
+        !dst.material.vertexColors ||
+        Math.abs(src.material.roughness - dst.material.roughness) > 1e-6 ||
+        !src.material.color.equals(dst.material.color)
       )
-        throw Error("Color mismatch");
-      for (const k of ["position", "normal"]) {
+        throw Error("Material mismatch");
+      const sourceIndex = src.geometry.index.array;
+      const outputIndex = dst.geometry.index.array;
+      if (
+        sourceIndex.length !== outputIndex.length ||
+        !sourceIndex.every((v, i) => v === outputIndex[i])
+      )
+        throw Error("Index mismatch");
+      for (const k of ["position", "normal", "color"]) {
         const a = src.geometry.attributes[k],
           b = dst.geometry.attributes[k];
         if (a.count !== b.count || a.itemSize !== b.itemSize)

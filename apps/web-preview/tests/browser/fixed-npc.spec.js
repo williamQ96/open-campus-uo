@@ -45,6 +45,9 @@ test("Dan fixed person path, label, speech and model interaction", async ({
   expect(
     (await page.evaluate(() => __campus.fixedNpcInfo())).gait.phase,
   ).toBeGreaterThan(initial.gait.phase);
+  await expect
+    .poll(() => page.evaluate(() => __campus.fixedNpcInfo().gait.blend))
+    .toBeGreaterThan(0.85);
   const label = page.getByRole("button", { name: "View Dan Carrere profile" });
   await expect(label).toBeVisible();
   await expect(page.locator(".fixed-person-bubble")).toHaveText(

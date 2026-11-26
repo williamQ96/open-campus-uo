@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const university = "roof-9017feee";
 const villard = "roof-399c648e";
@@ -35,7 +36,7 @@ test("University and Villard keep their building identities and close the theate
   const before = await page.evaluate(inspect, ids);
   await ready(page, "/?exterior-review=miller-baseline");
   const after = await page.evaluate(inspect, ids);
-  expect(after.count).toBe(519);
+  expect(after.count).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(after.neighbors).toEqual(before.neighbors);
   expect(before.blocked.at(-1)).toBe(false);
   expect(after.blocked).toEqual([true, false, true, false, true, false, true]);

@@ -1,0 +1,287 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "city": {
+      "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495105.14928888186%2C4876689.282153052%2C495209.14928888186%2C4876815.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+      "sha256": "9d4eb274ece3e9a50ede5e26dd76a064b63f738ea6b8c2f9a2d8aaf7f2743f94"
+    },
+    "ortho": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=495105.14928888186%2C4876689.282153052%2C495209.14928888186%2C4876815.282153052&bboxSR=3740&imageSR=3740&size=1040%2C1260&format=png&bandIds=0%2C1%2C2",
+      "sha256": "dd05d203e8fccfe73ed05961ee01b312120a11cb900db4149b57e300c920095b"
+    },
+    "2013-15": {
+      "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+      "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+    },
+    "2017": {
+      "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+      "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+    },
+    "DOGAMI": {
+      "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+      "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    },
+    "uo_inventory": "https://cpfm.uoregon.edu/sites/default/files/uo_building_inventory_published.pdf",
+    "campus_map": "https://cpfm.uoregon.edu/sites/default/files/2025-07/how-to-use-the-campus-plan_2025.pdf",
+    "public_front_lobby": "https://clery.uoregon.edu/reports/crime-log",
+    "south_frontage_2024_07": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lz9A9cjGUqIcvBvYznsRhg&heading=352",
+    "annex_a_frontage_2024_07": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lz9A9cjGUqIcvBvYznsRhg&heading=34",
+    "annex_b_roof_2024_07": "https://www.google.com/maps/@?api=1&map_action=pano&pano=qPX655pGQ4FMPtpI01aPSg&heading=180"
+  },
+  "source_ranges": [
+    {
+      "id": "roof-4cf339e8",
+      "target": "context-background-3-1"
+    },
+    {
+      "id": "roof-ce1d33a1",
+      "target": "context-background-3-1"
+    },
+    {
+      "id": "roof-38958a7f",
+      "target": "context-background-3-1"
+    }
+  ],
+  "models": [
+    {
+      "id": "roof-4cf339e8",
+      "role": "main",
+      "name": "UO Police Department East Station",
+      "street_address": "2141 E 15th Ave",
+      "campus_id": "B0187L",
+      "city_footprint": 170834,
+      "source_overlap_m2": 313.619,
+      "outline_enu_m": [
+        [
+          786.0272190510877,
+          -230.23071254976094
+        ],
+        [
+          786.0521184090176,
+          -201.81299962382764
+        ],
+        [
+          800.492389511317,
+          -201.82569189090282
+        ],
+        [
+          800.4674911422189,
+          -230.24340476561338
+        ],
+        [
+          786.0272190510877,
+          -230.23071254976094
+        ]
+      ],
+      "entrance": {
+        "point": [
+          791.28,
+          -229.82
+        ],
+        "bearing": 180,
+        "gate": "fifteenth-lobby"
+      },
+      "roof_frame": {
+        "origin_enu_m": [
+          793.25980453,
+          -216.02820221
+        ],
+        "axis": [
+          0.000876191,
+          0.999999616
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -36,
+            -9,
+            36,
+            9
+          ],
+          "planes": [
+            [
+              0,
+              0.592575,
+              16.744542,
+              0,
+              0.490717
+            ],
+            [
+              0,
+              0.592575,
+              16.744542,
+              0,
+              -0.488549
+            ],
+            [
+              -4.199873,
+              0,
+              16.744542,
+              0.433069,
+              0
+            ],
+            [
+              8.080115,
+              0,
+              16.744542,
+              -0.501828,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-ce1d33a1",
+      "role": "annex-a",
+      "name": "UOPD East Station Annex A",
+      "street_address": "2191 E 15th Ave",
+      "campus_id": "B0188L",
+      "city_footprint": 170833,
+      "source_overlap_m2": 264.478,
+      "outline_enu_m": [
+        [
+          815.1206687314552,
+          -198.59866161551327
+        ],
+        [
+          815.130385711207,
+          -187.5832963194698
+        ],
+        [
+          852.5270380614093,
+          -187.6160915903747
+        ],
+        [
+          852.5174219862674,
+          -198.63145385868847
+        ],
+        [
+          815.1206687314552,
+          -198.59866161551327
+        ]
+      ],
+      "entrance": {
+        "point": [
+          841.45,
+          -198.19
+        ],
+        "bearing": 180,
+        "gate": "south-model-approach"
+      },
+      "roof_frame": {
+        "origin_enu_m": [
+          833.82387862,
+          -193.10737585
+        ],
+        "axis": [
+          0.999999616,
+          -0.000876874
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -36,
+            -9,
+            36,
+            9
+          ],
+          "planes": [
+            [
+              0,
+              0.975838,
+              17.488857,
+              0.000393,
+              0.654842
+            ],
+            [
+              0,
+              0.975838,
+              17.488857,
+              0.000393,
+              -0.674038
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-38958a7f",
+      "role": "annex-b",
+      "name": "UOPD East Station Annex B",
+      "street_address": "2141 E 15th Ave",
+      "campus_id": "B0189L",
+      "city_footprint": 170835,
+      "source_overlap_m2": 479.685,
+      "outline_enu_m": [
+        [
+          799.2420126327779,
+          -128.47541874833405
+        ],
+        [
+          801.2871374778915,
+          -120.52020684536546
+        ],
+        [
+          865.2359128500102,
+          -136.96053770929575
+        ],
+        [
+          863.1906892675324,
+          -144.91575316898525
+        ],
+        [
+          799.2420126327779,
+          -128.47541874833405
+        ]
+      ],
+      "entrance": {
+        "point": [
+          805.75,
+          -129.73
+        ],
+        "bearing": 194.42,
+        "gate": "lot-model-approach"
+      },
+      "roof_frame": {
+        "origin_enu_m": [
+          832.23893806,
+          -132.71797912
+        ],
+        "axis": [
+          0.96850623,
+          -0.24898933
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -36,
+            -9,
+            36,
+            9
+          ],
+          "planes": [
+            [
+              0,
+              -0.438154,
+              14.141845,
+              0.000813,
+              0.555599
+            ],
+            [
+              0,
+              -0.438154,
+              14.141845,
+              0.000813,
+              -0.575822
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@ test("pilot lamp detail loads in the complete campus", async ({ page }) => {
   const response = page.waitForResponse((r) =>
     r.url().endsWith("/pilot-lamp-detail.json"),
   );
-  await page.goto("/");
+  await page.goto("/?exterior-review=furniture-baseline");
   await page.waitForFunction(() => window.__campus?.getState().ready);
   expect((await response).status()).toBe(200);
   expect(errors).toEqual([]);

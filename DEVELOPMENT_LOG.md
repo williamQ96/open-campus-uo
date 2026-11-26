@@ -6,6 +6,334 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-26 - Outdoor L2 release checkpoint
+
+- This checkpoint brings 387 building exteriors and all 15 outdoor asset groups to L2. The ledger retains 168 active L1 exteriors and 31 historical mappings. The default scene has 555 selectable buildings and 559 approaches. [Asset inventory](docs/asset-refinement-inventory.md).
+- Local production build, formatting, 197 unit tests, seven targeted browser cases, 421 archive files, 364 viewer hashes, and the inventory, geography, source-media and landcover checks passed. The 421 archive files and 364 viewer hashes also match the Git index. Git retains the exact bytes of the paving descriptor across platforms. The entire downstream browser suite runs separately in GitHub Actions. The Pages workflow verifies and publishes the release commit after push.
+
+## 2026-11-26 - Thirteen Fairmount, Summit, Hamble and Hubbard exteriors
+
+- Rebuilt thirteen hillside buildings under their original scene IDs. Added the dual dormers, chimney and raised porch at 2081 Fairmount, the double garage at 2095, and the updated roof, recessed entry and curved brick terraces at 2105. Four models lack clear street views, and eleven have no verified approach. [Hillside exterior review](docs/fairmount-summit-hamble-review-2026-11-26.md).
+- All 8,774 survey rays hit. Thirty-two of 35 paired medians improve over 6,743 samples. Eighteen paired views preserve 79 peers, and 7,710 route edges pass. Desktop and phone select all thirteen models, pass 32 collision checks and route to both estimated approaches. Invalid model bytes and an invalid final anchor both restore the earlier meshes and approaches. The staged, repeat, installed, built and served assets match.
+
+## 2026-11-26 - Sixteen Orchard, Villard and Fairmount exteriors (local)
+
+- Rebuilt ten old shapes as sixteen exteriors. Preserved six measured separations, the open parking bay at 1978 East 19th and two solar arrays at 1994 Orchard. Registered the unnumbered 1996 Villard outbuilding as independent geometry under its City ID. [Orchard and Villard review](docs/orchard-villard-hillside-review-2026-11-26.md).
+- All 7,178 roof survey rays hit, and 42 of 44 paired medians decrease over 4,806 cells. The DOGAMI medians rise at 1964 Villard and City outbuilding 171184. Twenty matched views preserve 82 peers and 7,710 graph edges pass. Desktop and phone select sixteen models, find four alternate addresses and route to two estimated approaches. Both invalid resource cases restore the ten prior meshes and approaches.
+- The ledger has 374 L2 exteriors, 181 active L1 exteriors, 31 historical records and 15 L2 outdoor groups. Formatting, 197 unit tests, seven focused browser cases, repeat export, production build, inventory, 419 archived assets and 362 viewer hashes pass. This batch is local and uncommitted.
+
+## 2026-11-26 - Eleven Fairmount, Moss and McMorran exteriors (local)
+
+- Rebuilt nine legacy shapes and added the previously missing 1836 East 19th and 2241 Fairmount buildings. Preserved the open McMorran connector, the 1911 Moss porch and the two pool-side decks at 2415 Fairmount. Both addresses for the 1911 Moss roof resolve to one building. [Hillside exterior review](docs/fairmount-moss-slope-review-2026-11-26.md).
+- The models hit all 5,245 usable survey cells. Nineteen of twenty paired medians decrease across 3,427 samples. The older 2323 Fairmount median rises to 0.9369 m and a single 2309 Fairmount 2017 sample is anomalously high. Seventeen matched views preserve 26 peers and all 7,710 graph edges pass. Desktop and phone select all eleven buildings, route to two estimated approaches and pass 30 collision probes and eight approach probes. Both invalid inputs restore the earlier entrances and collision.
+- The ledger has 358 L2 exteriors, 191 active L1 exteriors, 31 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven focused browser cases, deterministic export, production build, inventory, 417 archive assets and 360 viewer hashes passed. This batch is local and uncommitted.
+
+## 2026-11-26 - Fourteen Columbia, Moss and Agate exteriors (local)
+
+- Rebuilt nine legacy shapes as fourteen building exteriors. Two cafés, the East 18th alley building and three independent apartment roofs are separately selectable. Both Agate shops retain recessed frontages under a shared canopy. Added independent 2003 Columbia and used the 2021 agent photo to model the balcony, dormers and double garage at 1980 Columbia. [Fourteen-exterior review](docs/columbia-moss-frontages-review-2026-11-26.md).
+- The revised roofs intersect all 8,583 survey samples. All 29 paired median errors decrease across 6,751 pairs, with three pairs per survey for 2003 Columbia. Twenty matched views preserve 83 batch peers, and 7,710 route edges pass. Desktop and phone select fourteen buildings and pass 27 collision and 20 approach probes. Directions reach four building destinations. Two invalid resource cases restore the nine legacy roofs and entrances.
+- The ledger has 347 L2 exteriors, 200 active L1 exteriors, 31 historical records and 15 L2 outdoor asset groups. Formatting, 197 unit tests, seven focused browser cases, repeat export, production build, inventory structure, 415 archived assets and 358 viewer hashes passed. The package remains local and uncommitted.
+
+## 2026-11-26 - Eight Agate and Emerald-area exteriors (local)
+
+- Rebuilt The Studies at 19th from two partial meshes, preserving both open roof courts, the west parking bays and the north approach. Modeled the 2024 Tom's Market canopy and storefront, split 1460/1470 East 20th and rebuilt four additional exteriors. [Eight-exterior review](docs/agate-emerald-frontages-review-2026-11-26.md).
+- Both useful surfaces supplied 5,194 hits, improving all 16 median comparisons across 2,150 paired cells. Sixteen matched views preserve 84 batch peers. Checked 7,710 route edges, the two roof openings, three parking bays and 31 stair elevations. Desktop and phone select eight buildings and route to five estimated approaches. Both invalid-asset cases restore all eight earlier meshes and entrances.
+- The ledger has 333 L2 and 209 active L1 building exteriors, 31 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven focused browser cases, repeat export, production build, inventory structure, 413 archived files and 356 viewer hashes passed. The package is local and uncommitted.
+
+## 2026-11-26 - Eleven Emerald and Onyx-area exteriors (local)
+
+- Rebuilt eleven exteriors from seven candidate meshes. Separated the two 1959 Onyx buildings and their Emerald Alley neighbor, added the largely missing 1940 Emerald Alley, and registered two distinct East 20th houses. Rebuilt the alley stair and three garage doors at 1959 Onyx and the raised porch at 1361 East 21st. [Eleven-exterior review](docs/emerald-onyx-frontages-review-2026-11-26.md).
+- All 2,768 surveyed rays on the two useful grids hit. Twenty-one of 22 paired medians improve. At 1940 Emerald Alley, the DOGAMI comparison uses two earlier overlap points and increases. Eighteen matched views, 50 retained batch peers and 7,710 route edges pass. Desktop and phone select all eleven buildings, route to four estimated approaches and pass 26 collision probes. Both invalid asset cases restore all seven source meshes.
+- The ledger has 325 L2 and 217 active L1 building exteriors, 30 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven focused browser tests, repeat export, production build, inventory structure, 411 archived files and 354 viewer hashes passed. The package is local and uncommitted.
+
+## 2026-11-26 - Trinity House and seven Onyx-area exteriors (local)
+
+- Rebuilt eight buildings from six source shapes. Registered 1256 East 20th and 1262 East 19th as separate selectable models. Restored the Trinity House brick facade and name panel, the East 19th stacked arches and the open parking level at 1931 Onyx Alley. [Eight-exterior review](docs/onyx-university-frontages-review-2026-11-26.md).
+- All 2,866 useful elevation rays hit. All 16 paired medians improve across 2,016 paired cells. Compared 16 matched views, preserved all 51 source peers and checked 7,710 route edges. Desktop and phone select eight buildings, route to both estimated approaches and pass 20 collision probes. Damaged bytes and an invalid source anchor each restore the six originals.
+- The ledger has 314 L2 and 224 active L1 building exteriors, 30 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven focused browser tests, deterministic export, production build, inventory structure, 409 archived files and 352 viewer hashes passed. The package is local and uncommitted.
+
+## 2026-11-26 - Eight southern boundary exteriors (local)
+
+- Rebuilt 2039 and 2061 Harris as separate houses. Added the independently registered rear roof at 2028 University, preserved the covered link at 2000 University and rebuilt the East 21st porch, Potter gate, retaining walls and approach stairs. [Eight-exterior review](docs/southern-boundary-exterior-review-2026-11-26.md).
+- Two height grids supplied 3,462 hits and all 16 paired median errors improve. Fourteen paired views and exact source checks preserve 106 peers. The production viewers select all eight models, keep both gaps open and route to six estimated approaches. Both invalid asset cases restore the six old source meshes and approaches.
+- The ledger has 306 L2 and 230 active L1 building exteriors, 30 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven focused browser tests, build, inventory structure, 407 archive files and 350 viewer hashes passed. This revision is local and uncommitted.
+
+## 2026-11-26 - Ten Harris, Potter and East 20th exteriors (local)
+
+- Replaced six merged or incomplete source shapes with ten independently registered exteriors. Preserved four openings between houses and the shared 1992 and 1994 Potter footprint. Rebuilt the panel bays and covered approach at 1925 Harris, the broad dormer and stair at 1959 Harris, and the stepped roofs and fence at 1045 East 20th. [Ten-exterior review](docs/harris-potter-exterior-review-2026-11-26.md).
+- Both useful surfaces supplied 3,196 roof hits. All 20 paired medians improve. The audit compares 16 cameras and preserves 106 peers across two source batches, and checks 7,710 route edges. Desktop and phone select all ten buildings and reach eight estimated approaches. Both bad model bytes and an invalid last source anchor restore the six old models.
+- The ledger has 298 L2 building exteriors, 236 active L1 building exteriors, 30 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven focused browser cases, production build, repeat export, inventory structure, 405 archived files and 348 viewer hashes passed. This revision is local and uncommitted.
+
+## 2026-11-26 - Central Lutheran Church and seven nearby exteriors (local)
+
+- Rebuilt Central Lutheran Church as one connected complex, including the open court, west sanctuary face and east covered approach. Restored 1081–1083, 1085–1089 and 1136 East 19th, and split the former 1910 University shape into four buildings with their own municipal addresses. [Eight-exterior review](docs/potter-university-exterior-review-2026-11-26.md).
+- All 6,751 rays in the two useful elevation grids hit, and all 16 paired medians improve. Checked 15 matched views, 51 source peers and 7,710 route edges. Desktop and phone select and route to all eight addresses. Nine approaches and the open courtyard and gaps pass collision checks. Both bad model bytes and an invalid source anchor restore all six earlier shapes.
+- The ledger has 288 L2 and 242 active L1 building exteriors, 30 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven focused browser cases, production build, repeat export, inventory structure, 403 archive files and 346 viewer hashes passed. This revision is local and uncommitted.
+
+## 2026-11-26 - Six South University street exteriors (local)
+
+- Rebuilt Theta Chi, Delta Tau Delta, 1860 Potter, 1930 and 1976 Onyx and 1941 University under their original scene IDs. Theta Chi gains the full registered footprint, its roof dormers and the south steps. Rebuilt the Delta Tau Delta arch, Potter's two recessed doors and the alley garage at 1941 University. The Campbell nomination identifies a property on Aspen Drive, so 1860 Potter uses its street address. [Exterior review](docs/south-campus-frontages-review-2026-11-26.md).
+- All 3,472 rays on the two useful elevation grids hit the revised roofs. All 12 paired medians improve. Checked 12 paired views, 51 untouched batch peers and 7,710 route edges. Desktop and phone production find all six buildings and route to their estimated approaches. Invalid bytes and a bad source anchor each restore all six previous models.
+- The ledger has 280 L2 and 248 active L1 building exteriors, 29 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven browser tests, deterministic export, production build, inventory structure, 401 archive files and 344 viewer hashes passed. This revision is local and uncommitted.
+
+## 2026-11-26 - Six Onyx and University-area exteriors from three source candidates (local)
+
+- Replaced the three old merged ranges with six L2 exteriors. Independently registered 1870 Onyx, the 1208 East 19th rear garage and 1840 Onyx Alley. Restored the west stair, fenced front porch, garage doors and 1825 porch and balcony. Parts of the 1840 elevations remain screened and use approximate finishes and openings. [Six-exterior review](docs/onyx-university-split-exterior-review-2026-11-26.md).
+- Compared 1,296 paired height cells and ten matched views. All twelve paired medians improved and 54 peer geometries were preserved. Desktop and phone pass fourteen collision probes, all three model gaps and four routes. Invalid model bytes and an invalid source anchor independently restore the original three candidates and approaches.
+- The local ledger has 274 L2 and 254 active L1 building exteriors, 29 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven related browser cases, production build, inventory structure, 399 archived files and 342 viewer hashes passed. This revision is local and uncommitted.
+
+## 2026-11-26 - Sigma Nu, 1306 East 18th and 1874 Emerald (local)
+
+- Raised all three building exteriors to L2 under their existing IDs. Restored Sigma Nu's four-column west portico, the open canopy and rear stair at 1306, and the hip roof and blue front at 1874. All three street approaches are estimated. The 1306 label uses its street address. [Exterior review](docs/south-university-exterior-review-2026-11-26.md).
+- All 2,239 rays in both usable height grids hit the model and all six matched medians improved across 2,043 paired cells. The sole 2017 cell has a 43.90 m residual. Ten view pairs and exact geometry checks preserve 54 peers. Desktop and phone pass 13 collision probes, three routes and two package fallbacks.
+- The local ledger has 268 L2 building exteriors, 257 active L1 building exteriors, 29 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven related browser cases, build, inventory structure, 397 archived files and 340 viewer pins passed. This revision is local and uncommitted.
+
+## 2026-11-26 - Onyx House exterior (local)
+
+- Raised Onyx House to L2 under its existing ID. The municipal 1850 and 1852 address points share one building. Rebuilt the intersecting shallow roof, lower yard wing, rear open bays and east porch with offset stairs. Screened windows, recess depths and stair dimensions remain approximate. [Exterior review](docs/onyx-house-exterior-review-2026-11-26.md).
+- Checked 1,562 roof rays, five view pairs, 56 preserved batch neighbors and 7,710 route edges. Both production sizes pass ten collision probes and complete the 170-point route from Knight Library. A damaged GLB and invalid source anchor independently restore the old model and approach. Stage, repeat, installed, built and served bytes match.
+- The local ledger has 265 L2 and 260 active L1 building exteriors, 29 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven related browser cases, production build, inventory structure, 395 archived files and 338 viewer pins passed. This revision is local and uncommitted.
+
+## 2026-11-26 - 1340 East 19th Avenue courtyard apartments (local)
+
+- Raised 1340 East 19th Avenue to L2 under its previous ID. Rebuilt the intersecting gables, blue siding, two connected gallery wings, open stair and raised lawn. The estimated north street approach serves the modeled steps. Opening sizes, steps and landscape elevations use approximate dimensions. [Model review](docs/east-nineteenth-court-exterior-review-2026-11-26.md).
+- The roof hits all 782 available rays. Over 361 paired points per surface, median error drops from 1.0634 to 0.2904 m and 1.1953 to 0.2949 m. Reviewed four matched views and exact geometry checks for 56 retained peers. Desktop and phone pass six collision probes and the 193-point route from Knight Library. Invalid model bytes and an invalid anchor each restore the previous exterior and entrance.
+- The ledger has 264 L2 and 261 active L1 building exteriors, 29 historical mappings and 15 L2 outdoor groups. Formatting, 197 unit tests, seven related browser cases, production build, inventory structure, 393 archived files and 336 viewer pins passed. This revision is local and uncommitted.
+
+## 2026-11-26 - Alton Baker shelters and the Franklin hotel wing (local)
+
+- Raised Alton Baker Park shelters 1 and 2 and the Best Western New Oregon Franklin wing to L2. The open shelters have green roofs, timber framing and twelve stationary picnic tables each. Shelter 1 gains a new scene ID. The Franklin wing and Shelter 2 keep their original IDs. Screened facade details, post spacing and table placement use approximate dimensions. [Exterior review](docs/alton-franklin-exterior-review-2026-11-26.md).
+- Retired the former Millrace and Villard Alley models, their collisions and generic approaches from the default scene. County aerials show both buildings in 2017 and both sites open by the 2021 capture. Their former geometry and IDs remain available for fallback and historical comparison.
+- Compared 1,623 paired roof cells. The 2013–15 median error at Shelter 2 rose from 1.1504 to 1.1958 m. Five other paired medians improved. Reviewed ten matched views, exact source trim with 47 retained peers, 7,710 route edges and thirteen collision probes on desktop and phone. The two invalid asset cases restore all four original candidates and their approaches.
+- Formatting, 197 unit tests, nine related browser cases, production build, inventory structure, 391 archive files and 334 viewer hashes passed. The local ledger has 263 L2 and 262 active L1 building exteriors, 29 historical mappings and 15 outdoor groups at L2. This revision is local and uncommitted.
+
+## 2026-11-26 - West study boundary exteriors and alley split (local)
+
+- Split the old East 17th model into 625–627 East 17th and the 630–632 and 634–640 East 16th Alley buildings. The houses and 631 East 19th east building now restore the photographed roof, porches, flat roof, masonry, clerestory and tower. The 634–640 model remains L1 while its facade evidence is screened. [West boundary review](docs/west-boundary-exterior-review-2026-11-26.md).
+- Compared 1,534 paired roof samples and reviewed nine matched views. The 631 east edge excludes 52 samples per reference where the two height surfaces differ. Exact source checks retain 105 neighboring records. Desktop and phone pass nine collision probes, a 93-point route to the 625–627 porch, and both whole-package fallbacks. The preceding Hilyard package reproduces byte for byte.
+- The local ledger has 260 L2 and 266 active L1 building exteriors, 27 historical mappings and 15 outdoor groups at L2. Formatting, 197 unit tests, production build, inventory structure, 389 archived files and 332 viewer pins passed. Thirteen related browser cases passed on the first run. The isolated Lawrence case now asserts the one-building change in its fixture and passed on rerun. This revision is local and uncommitted.
+
+## 2026-11-26 - Parkside Place and three south neighborhood exteriors at L2 (local)
+
+- Rebuilt Parkside Place at 1448 Hilyard, 1131 East 20th and 1039 and 1145 East 21st under their original IDs. The exteriors restore the connected Parkside roofs, balconies and recessed garage, the 1131 stepped roof masses and lower entry, and both East 21st frontages and bay windows. Two estimated approaches are available. Garage depth and screened openings remain approximate. [Exterior review](docs/hilyard-south-exterior-review-2026-11-26.md).
+- All 2,829 roof rays hit and 2,659 samples have paired observations. The 2013–15 Parkside median error moves from 0.83 m to 0.88 m, while its DOGAMI median improves to 0.12 m. Ten camera pairs and exact index and attribute checks retain 160 batch peers. Both production previews pass ten collision probes and reach Parkside and 1145 East 21st in 58 and 194 route points. Invalid model bytes and an invalid anchor independently restore the four source exteriors.
+- Formatting, 197 unit tests, seven related browser cases, production build, inventory structure, 387 archive files and 330 viewer pins passed. The local ledger has 257 L2 and 267 active L1 building exteriors, 27 historical mappings and 15 outdoor groups at L2. This revision is local and uncommitted.
+
+## 2026-11-26 - Six Alder and Harris area exteriors at L2 (local)
+
+- Rebuilt Lorax Manner, Campbell Club, Woodside Manor, 1065–1079 and 746 East 19th, and 750 East 18th under their original IDs. The new geometry includes the Lorax turret, Campbell porch, four Woodside openings and visible apartment roof, facade and stair details. Screened walls and opening dimensions remain approximate. [Exterior review](docs/alder-harris-exterior-review-2026-11-26.md).
+- Compared 5,084 paired roof samples and reviewed 12 matched camera pairs. All six DOGAMI median errors improved. The 2013–15 median error at 1065–1079 rose from 0.71 m to 1.15 m, where that surface places the ridge farther east. Checked all 158 retained batch peers, eleven collision probes and a 47-point route to Campbell Club on desktop and phone. Corrupt bytes and a bad source anchor independently restore the old meshes and approaches.
+- Formatting, 197 unit tests, seven related browser cases, production build, inventory structure, 385 archive files and viewer hashes passed. The local ledger has 253 L2 building exteriors, 271 active L1 building exteriors, 27 historical mappings and 15 outdoor groups at L2. This revision is local and uncommitted.
+
+## 2026-11-26 - Three East 19th Avenue exteriors at L2 (local)
+
+- Rebuilt Sigma Chi, the shared 1456 and 1458 exterior, and the apartments at 1355 East 19th Avenue under their original IDs. Restored the chapter house courtyard walk and east canopy, the shared porch, and the open parking bay and stepped apartment balcony. Screened opening, eave and entrance dimensions remain approximate. [East 19th exterior review](docs/east-nineteenth-exterior-review-2026-11-26.md).
+- The new roofs intercepted 2,824 height rays. The six comparisons across 2,716 paired cells all improved. Nine camera pairs and source batch checks preserve 89 peer records. Desktop and phone each select three buildings via four queries and follow the 221-point route from Knight Library to Sigma Chi. Invalid GLB bytes restore all three original candidates and approaches.
+- Formatting, 197 unit tests, seven related browser cases, production build, inventory structure, 383 archive files and 326 viewer pins passed. The local ledger has 247 L2 building exteriors, 277 active L1 building exteriors, 27 historical mappings and 15 outdoor groups at L2. This revision is local and uncommitted.
+
+## 2026-11-26 - 2300 Parkside Lane exterior at L2 (local)
+
+- Restored the hillside house's shallow roof, raised clerestory, open carport, closed timber gate and three levels of downhill glazing and decking under its original ID. The deck dimensions and floor elevations are approximate. The closed gate has no scene entry marker. [Parkside exterior review](docs/parkside-exterior-review-2026-11-26.md).
+- All 438 historical height rays hit the new mesh. The three paired median errors fell from 1.33–1.82 m to 0.04–0.20 m. Five render pairs cover the exterior, and all 56 peers in the source batch retained their geometry. Desktop and phone production verified search, the open carport and driveway, solid wall and post collisions, and the pinned export bytes. A damaged GLB restored the original building and generic approach.
+- Formatting, 197 unit tests, seven related browser cases, production build, inventory structure, 381 archive files and 324 viewer pins passed. The local ledger has 244 L2 building exteriors, 280 active L1 building exteriors, 27 historical mappings and 15 outdoor groups at L2. This revision is local and uncommitted.
+
+## 2026-11-26 - Millrace research building exterior at L2 (local)
+
+- Rebuilt 1800 and 1850 Millrace Drive as one selectable building under its existing ID. Restored the shallow ridges, low wings, grouped rooftop equipment, dark window bands and the north approach. Screened openings and equipment dimensions remain approximate. [Millrace exterior review](docs/millrace-research-exterior-review-2026-11-26.md).
+- The new mesh intercepted all 9,936 historical height rays. The three paired median errors fell from 1.20–1.31 m to 0.02–0.06 m. Four browser camera pairs and exact index and attribute checks preserved eight batch neighbors. Desktop and phone production matched the staged bytes, accepted both addresses and navigated 26 route points to the north approach. Damaged bytes restored the original selectable building.
+- Formatting, 197 unit tests, four related browser cases, production build, inventory structure, 379 archive files and 322 viewer pins passed. The local ledger has 243 L2 building exteriors, 281 active L1 building exteriors, 27 historical mappings and 15 outdoor groups at L2. This change is local and uncommitted.
+
+## 2026-11-26 - Four western campus and riverfront exteriors at L2 (local)
+
+- Rebuilt the Phi Kappa Psi Chapter House, 642 E 8th, the shared 1414 Alder / 790 E 14th exterior and the Eugene Steam Plant under their existing scene IDs. The new models include the south arcade, recessed timber corner, open parking and exterior stair, and the plant's gridded windows and stepped roof. [Exterior review](docs/northwest-infill-exterior-review-2026-11-26.md).
+- All 8,625 roof samples hit the intended replacement meshes. The 7,710 shared samples show a lower median error for every building on all three surfaces. Seven camera pairs and the exact triangle and attribute checks preserve 92 peer records in the isolated test. The scene has 524 selectable buildings and 605 approaches. Both production sizes matched the staged bytes and followed a 68-point route to the south arcade approach.
+- Formatting, 197 unit tests, seven related browser cases, production build, inventory structure, 377 archive files and 320 viewer pins passed. The local ledger now has 242 L2 and 282 active L1 building exteriors, plus all 15 outdoor groups at L2. The package is local and uncommitted.
+
+## 2026-11-26 - Fixed outdoor figure at L2 (local)
+
+- Raised PERSON:dan-carrere to L2 with an original stylized head, curved brim, tapered beard, woven shirt, collar and placket. The 12 m outdoor path uses distance-driven foot placement at 0.7 m/s. The role, scripted dialogue and profile interaction retain their original design. [Fixed person review](docs/fixed-person-dan-carrere.md#l2-appearance-and-walking-review).
+- All 97 path collision samples passed in the active scene. Mean stance slip on the flat walk fell from 0.694–0.708 m/s to 0.0006–0.0042 m/s across the two shoes. Three model views used seven draws per figure. Both GLB exports match the archive and retain seven meshes, the Idle clip and the generated cloth texture. Desktop and phone production verified card bounds, walking pauses and the university link.
+- Formatting, 197 unit tests, ten related browser cases, production build, inventory structure, 375 archive files and 318 viewer pins passed. All 15 outdoor asset groups and 238 building exteriors are now local L2. Another 286 active building exteriors remain L1. This revision is local and uncommitted.
+
+## 2026-11-26 - Campus activity at L2 (local)
+
+- Raised LIFE-01 to L2. Ordinary walking students plant their shoes according to travel distance. The new squirrel uses nine joints for its four paws, tail, body and head and has bounding, perching and climbing poses. Refit the western Memorial Quad path and eight lawn paths against the active surfaces. [Campus activity review](docs/campus-life-l2-2026-11-26.md).
+- Sampled 1,075 positions on the actual paving and lawn meshes. All rays hit the intended surface. At 1.4 m/s, average stance slip fell from 1.31–1.39 m/s to 0.001–0.027 m/s across two student body widths. The squirrel has one mesh and matching repeated, installed, built and served GLBs. Desktop and phone previews verified the activity and density counts. Invalid assets restored the prior squirrel or the prior habitat paths.
+- Formatting, 197 unit tests, seven targeted browser cases, the production build, inventory structure, 374 archive files and 317 viewer pins passed. Two existing desktop draw-budget assertions still fail at 211 draws with activity off. The result is the same with either squirrel model. The local ledger has 238 L2 buildings, 286 active L1 buildings, 14 L2 outdoor groups and one L1 outdoor group. This checkpoint is local and uncommitted.
+
+## 2026-11-26 - Campus paving and corridors at L2 (local)
+
+- Raised ENV-05 to L2. Fitted the X and O walks and lawns at Memorial Quadrangle from the university survey and 2024 aerial. Added six tree pits around the existing stems and replaced the straight route across the lawn. Rebuilt the two batches for 139 active corridor features, with City pavement width and material matches on 96 features. [Surface and route review](docs/paving-corridors-l2-2026-11-26.md).
+- The two GLB footprints move from 0.7271 to 0.8091 IoU against City pavement in the examined matched strips. Seven matched frames keep the same draw counts. Desktop and phone production use byte-identical staged and built assets and route from Condon Hall to Knight Library in 32 points. Bad surface assets keep the preceding meshes and route graph.
+- Formatting, 197 unit tests, ten related browser cases, the production build, inventory structure, 373 archive files and 313 viewer pins passed. The local ledger has 238 L2 buildings, 286 active L1 buildings, 13 L2 outdoor groups and two L1 outdoor groups. The package is local and uncommitted.
+
+## 2026-11-26 - Terrain and land cover at L2 (local)
+
+- Raised ENV-04 to L2 across the 2 km square. The ground combines 2023 and 2014–2015 bare-earth references with existing site grade ties and an updated NAIP-informed palette. Nine USGS water areas set the water colors. The foundation uses lighter haze so the river remains visible. [Ground review](docs/landcover-l2-2026-11-26.md).
+- Updated 62,339 vertices. On 2023-sampled vertices eligible for change, the median absolute difference from that survey fell from 0.4181 m to 0.0662 m. All 112,524 samples along 7,705 route edges and 608 entrance approaches had zero grade change. Seven matched render pairs kept the same draw and triangle counts. Desktop and phone production used the same bytes as both exports. The prior field and foundation remain the damaged-file fallback.
+- Formatting, 197 unit tests, nine related browser cases, the production build, inventory structure, 371 archive files and 310 viewer pins passed. The local ledger has 238 L2 buildings, 286 active L1 buildings, 12 L2 outdoor groups and three L1 outdoor groups. The package is local and uncommitted.
+
+## 2026-11-26 - Shrubs, understory and planted beds at L2 (local)
+
+- Raised ENV-03 to L2. Replaced the old Knight Library band and Johnson Hall ring with three aerial-informed beds and kept the central walks clear. The default scene draws 75 rebuilt shrubs, five rebuilt fern clusters and three retained detailed fern clusters. Beds and their shrubs use the existing ground, lawn and paving grades. [Understory review](docs/understory-l2-2026-11-26.md).
+- Checked 12,000 bed surface samples, 235 nearby surface triangles, 13 relocated shrub centers, 7,705 route edges and 608 entrance approaches. The new plant triangles clear the sampled surfaces. Six matched render pairs kept their draw counts. Desktop and phone production loaded the same staged and installed bytes. The existing vegetation returns when the replacement fails validation.
+- Formatting, 197 unit tests, nine related browser cases, the production build, inventory structure, 370 archive files and 307 viewer pins passed. The ledger has 238 L2 buildings, 286 active L1 buildings, 11 L2 outdoor groups and four L1 outdoor groups. The package is local and uncommitted.
+
+## 2026-11-26 - Background trees at L2 (local)
+
+- Raised ENV-02 to L2. Rebuilt the 269 displayed background trees in one batch with four crown forms and forked stems. The active site masks, four existing foundation height offsets and 12 registered site trees carry over. Narrowed four crowns near buildings and removed the old Flock13 roof tree through its site descriptor. [Background tree review](docs/context-trees-l2-2026-11-26.md).
+- Compared the actual scene triangles and resolved four preceding surface contacts. Six matched views kept their draw counts. The visible background batch increased from 21,520 to 38,736 triangles. Desktop and phone production loaded the verified package. Damaged replacement assets leave site masking and the prior tree geometry in use.
+- Formatting, 197 unit tests, nine focused browser cases, the production build, inventory structure, 368 archive files and 304 viewer pins passed. The local ledger records 238 L2 buildings, 286 active L1 buildings, ten L2 outdoor groups and five L1 outdoor groups. The update is local and uncommitted.
+
+## 2026-11-26 - Pilot tree layer at L2 (local)
+
+- Raised ENV-01 to L2. Rebuilt 273 pilot tree stems, branches and crowns with six modeled forms and the ground anchors from the current scene. The 11 registered pilot stems retain their authored positions. Seven branch and crown envelopes taper away from buildings, and one inferred stem moves two metres north at Gerlinger Annex. [Pilot tree review](docs/pilot-trees-l2-2026-11-26.md).
+- The runtime surface screen compared all 273 trees with 18 active building mesh parts near the modeled crowns. Seven prior tree/building contacts fell to zero. Six matched images each use two fewer draw calls. Desktop and phone production both load the two verified batches and match the staged file hashes. Corruption of a placement recipe or the replacement GLB activates the preceding tree layer.
+- Formatting, 197 unit tests, six focused browser cases, the production build, the inventory structure, 366 archived files and 301 viewer pins passed. The ledger has 238 L2 buildings, 286 active L1 buildings, nine L2 outdoor groups and six L1 outdoor groups. The update is local and uncommitted.
+
+## 2026-11-26 - Six southeast Fairmount hillside exteriors at L2 (local)
+
+- Rebuilt 281, 365 and 366 Sunset, 2275 and 2281 Rose, and 2293 Birch under their original IDs. The houses now have individual roof planes, three estimated approaches and features such as the glazed gable at 281 Sunset, the rooftop solar array at 365 Sunset, the west balcony at 366 Sunset and the three dormers at 2281 Rose. [Exterior review](docs/southeast-fairmount-exterior-review-2026-11-26.md).
+- Checked eight matched views, 4,083 historical roof samples, 94 surviving batch peers and 7,710 route edges. Median absolute roof residuals fell for all six houses across all three surveys. Desktop and phone production previews passed six address searches, nine collision probes and the 365-point route from 968 Alder to 2281 Rose. A displaced source anchor restores all six prior shapes.
+- Formatting, 197 unit tests, six focused browser cases, production build, inventory structure, 364 archive hashes and 298 viewer pins passed. The local scene has 524 selectable buildings and 288 batch members. The ledger has 238 L2 building exteriors, 286 active L1 building exteriors, 27 historical records, eight L2 outdoor groups and seven L1 outdoor groups. The package is local and uncommitted.
+
+## 2026-11-26 - Pilot stairs, terraces and raised planter at L2 (local)
+
+- Raised ENV-06 to L2. Rebuilt the Johnson and Knight Library north stairs with six rails and added the separate EMU northwest amphitheater and revised Oregon Hall south planter. The model fits its levels to the current scene and retains the representative EMU furniture. [Pilot hardscape review](docs/pilot-hardscape-l2-2026-11-26.md).
+- Compared five matched views and verified 576 targeted triangle removals with all surviving source attributes and indices retained. Tested 37 support samples, six rail collisions, west stair traversal, side-entry blocking and recovery when the final source anchor fails. All six rail boxes clear the 7,705 edges in the pinned source graph.
+- Formatting, 197 unit tests, 13 focused hardscape and neighboring-site browser cases, the production build, inventory structure, 362 archive hashes and 296 viewer pins passed. Both Knight entrance interaction heights follow their landings. West pointer entry and east keyboard entry passed. The desktop and phone previews load identical assets. The local inventory has 232 L2 building exteriors and eight L2 outdoor groups, with 292 active L1 building exteriors and seven L1 groups. The package remains local and uncommitted.
+
+## 2026-11-26 - Six Fairmount and two Kincaid-area exteriors at L2 (local)
+
+- Rebuilt 1517, 1671 and 1680 Walnut, 1879 and 1931 Moss, 1991 E 19th, and the Pi Beta Phi and Alpha Chi Omega chapter houses under their existing IDs. Restored individual roof forms, principal facades and six estimated approaches. The two houses with screened doors have empty entrance lists. [Exterior review](docs/fairmount-kincaid-exterior-review-2026-11-26.md).
+- Verified nine matched views, 5,396 roof intersections, 7,710 route edges and 140 surviving batch peers. The oldest shared-cell median at 1931 Moss rises by 0.045 m while its two newer medians fall. Desktop and phone production passed eight searches, 14 collision probes and the 159-point route to Pi Beta Phi. A damaged source anchor restores all eight source candidates.
+- Formatting, 197 unit tests, six focused browser tests, production build, 360 archive hashes and 293 viewer pins passed. The local ledger has 232 L2 buildings, 292 active L1 buildings and 27 historical records. The local scene has 524 selectable buildings and 294 batch members. The package remains local and uncommitted.
+
+## 2026-11-26 - Alder and East 13th exteriors and construction site at L2 (local)
+
+- Replaced the old combined Alder and East 13th footprint with four independent exteriors. Flock13 retains the old ID. The retained corner shops, Gopuran Building and The Duck Store have new IDs. Replaced the former 1261 Alder house with the Chapter Alder site as shown in the municipal September update. Framing, fence and approach dimensions are approximate. [Block and construction review](docs/alder-thirteenth-exterior-review-2026-11-26.md).
+- Verified five matched views, the surviving attributes and indices for 40 batch peers, the registered construction enclosure and 7,710 route edges. Desktop and phone production passed four searches, four walkable estimated approaches, 11 collision probes and the 108-point route to Flock13. An invalid source anchor restores the baseline.
+- Formatting, 197 unit tests, nine focused browser tests, the production build, 358 archived files and 291 viewer pins passed. The local ledger has 224 L2 buildings, 300 active L1 buildings and 27 historical records, with seven L2 and eight L1 outdoor groups. The default scene has 524 selectable buildings and 302 batch members. This change is local and uncommitted.
+
+## 2026-11-26 - The Rive Eugene exterior at L2 (local)
+
+- Rebuilt 700 E Broadway as the current 12-storey apartment building under its existing scene ID. Registered the 2,540 m² footprint to the city permit parcels and dated aerial imagery. Modeled the street podium, recessed Hilyard entry, terrace and rooftop pool. Roof heights, screened elevations and the approach include estimates. [Exterior review](docs/rive-eugene-exterior-review-2026-11-26.md).
+- Verified five matched render pairs, all surviving geometry for 37 batch peers and clearance against 7,710 route edges. Desktop and phone production passed search, eight collision probes and the route to the modeled Hilyard approach. An invalid anchor restores the old Broadway candidate. A repeat export reproduces both installed assets byte for byte.
+- Formatting, 197 unit tests, six focused browser tests, production build, 356 archive files and 289 viewer pins passed. The local ledger has 220 L2 buildings, 302 active L1 buildings and 26 historical records. The scene has 522 selectable buildings, 304 batch members and two separate roof refinements. This package is local and uncommitted.
+
+## 2026-11-26 - Millrace, Fairmount and Walnut Alley exteriors at L2 (local)
+
+- Rebuilt the Alpha Tau Omega chapter house at 1000 Alder, 1956 E 15th, 1871 E 19th and the Walnut Alley garage building with separate roof forms, source-backed facade details and three estimated approaches. The garage uses a descriptive name and an empty entrance list. The chapter's southeast wing replaces a false dead-end on the TIGER-derived route. [Exterior review](docs/millrace-fairmount-exterior-review-2026-11-26.md).
+- Verified seven matched render pairs, 3,705 roof intersections, 7,709 retained route edges and surviving geometry for 112 batch neighbors. Desktop and phone production previews passed four searches, 11 collision probes and the 33-point route from 968 Alder to the chapter approach. The bungalow's DOGAMI median residual increased from 0.419 to 0.523 m while both NOAA medians fell. Source-anchor failure restores the preceding four exteriors.
+- Formatting, 197 unit tests, eight focused browser tests, production build, 354 archive checks and 287 viewer pins passed. The local inventory has 219 L2 buildings, 303 active L1 buildings and 26 historical records. The default scene has 522 buildings and 305 batch members. The batch remains local and uncommitted.
+
+## 2026-11-26 - Pilot furnishings at L2 (local)
+
+- Rebuilt nine 1.524 m slatted benches and eleven dark-green fluted lights with acorn globes. Adopted an original three-hoop rack on modeled paving at southwest Tykeson. Moved eleven older anchors away from steep ground, building footprints or travel lanes. Placements remain representative and unsurveyed. [Pilot furnishings review](docs/pilot-furnishings-l2-2026-11-26.md).
+- Checked 97 support samples, 7,710 navigation edges and four matched WebGL views. The three material batches preserved draw calls at all four views. Desktop and phone production builds mounted all 21 collision envelopes. Invalid replacement bytes restored the four baseline patches and removed the replacement envelopes.
+- Formatting, 197 unit tests, six focused browser checks, production build, 352 archive hashes and 285 viewer pins passed. The older clean-map test requires fewer than 180 draws. The same spawn camera measured 203 draws with either furniture version. PROP-01 brings the local ledger to six L2 outdoor groups and eight L1 groups alongside 215 L2 buildings and 307 active L1 buildings. Publication status is local and uncommitted.
+
+## 2026-11-26 - Marlatt Apartments and the riverfront utility exterior at L2 (local)
+
+- Rebuilt the three Marlatt Apartment exteriors around their shared courtyard, including the two single-storey wings, rear building, exterior stairs and paved walks. Rebuilt the riverfront utility exterior at 777 Annie Mims Lane with masonry walls, a metal roof and a closed roll-up door. The utility building is searchable and has an explicitly empty scene entrance list.
+- Verified six visual pairs, 2,235 roof intersections, 7,710 route edges and continuity for 54 source batch peers. The oldest-grid common-cell medians are higher on all four meshes, and all four DOGAMI medians are lower. The available 2017 volume has no Marlatt coverage. Desktop and phone passed four searches, three modeled walkable approaches, nine collision probes and the utility marker exclusion. A damaged last source anchor restores four old models and two roof treatments.
+- Formatting, 197 unit tests, seven focused browser tests, production build, 351 archive hashes and 284 viewer pins passed. The local ledger has 215 L2 exteriors, 307 active L1 exteriors and 26 historical mappings. Five outdoor groups are L2 and nine remain L1. The default scene has 522 selectable buildings, 309 batched members and two context roof treatments. This batch is local and uncommitted. [Marlatt and riverfront review](docs/western-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Three UO East Station exteriors at L2 (local)
+
+- Registered the main East Station building and two annexes as UO inventory entries B0187L–B0189L with their existing scene IDs. Rebuilt the standing-seam hip and south lobby cover, Annex A's horizontal south windows, and Annex B's angled gable and vents. Screened openings and the annex approach locations include estimates.
+- Verified five visual pairs, 3,525 historical roof hits, 7,710 route edges and the preserved indices and attributes of 40 source batch peers. The main roof median improved in the 2017 and DOGAMI grids and rose by 0.094 m in the oldest grid. Desktop and phone production verified three searches, three walkable modeled approaches and eight collision probes. A damaged last source anchor restores all three preceding meshes.
+- Formatting, 197 unit tests, four focused browser tests, production build, 349 archived asset hashes and 282 viewer pins passed. The local ledger now contains 211 L2 buildings, 311 active L1 buildings, 26 historical mappings, five L2 outdoor groups and nine L1 groups. The viewer has 522 selectable buildings and 313 batched members. This batch is local and uncommitted. [East Station review](docs/east-station-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Bushnell East Quad exteriors at L2 (local)
+
+- Rebuilt the connected Kellenberger Library, Lottie Price Music Building and Ross Evans Chapel with their distinct roofs, brick and stucco wings, and shared west clock portal. Rebuilt Burke-Griffeth Hall with the attached west dining wing and stepped dormitory roof. Both keep their existing scene IDs. Screened openings and exact thresholds include estimates.
+- Verified five paired renders, 8,514 roof hits, 7,710 route edges and the surviving indices and attributes across two source batches. Desktop and phone production verified four searches, two modeled walkable approaches and ten collision probes. An invalid second source anchor restores both original volumes. Formatting, 197 unit tests, four focused browser tests, production build, 347 open archive hashes and 280 viewer pins passed.
+- The local ledger now contains 208 L2 buildings, 314 active L1 buildings, 26 historical mappings, five L2 outdoor groups and nine L1 outdoor groups. The default preview has 522 selectable buildings, 316 batch members and four context roof treatments. This batch is local and uncommitted. [Bushnell East Quad review](docs/bushnell-east-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Goodrich Hall and two Alder Street exteriors at L2 (local)
+
+- Rebuilt Goodrich Hall with its historic stone facade and 2025 four-bell tower under the existing scene ID. Added the omitted Bushnell Facilities & Maintenance building at 1125 Alder and restored the brick facade and chimney at 1145 Alder under its existing ID. Tower dimensions, screened elevations and the modeled south access at 1145 include estimates.
+- Verified five paired render views, 2,331 roof intersections, 7,710 route edges and the preserved attributes of 36 source batch peers. Desktop and phone production verified three searches, three walkable estimated approaches and eight collision probes. A damaged second source anchor restores the two former candidates and removes the new one. Formatting, 197 unit tests, six focused browser checks, production build, 345 archive hashes and 278 viewer pins passed.
+- The local ledger has 206 L2 buildings, 316 active L1 buildings and 26 historical mappings. Five outdoor groups are L2 and nine remain L1. The default viewer has 522 selectable buildings, 318 batch members and four separate context roof treatments. This batch is local and uncommitted. [Exterior review](docs/goodrich-quad-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Alder Suites and two Bushnell exteriors at L2 (local)
+
+- Added the previously missing Alder Suites at 950 Alder as a separate scene building. Its stone frontage, balcony stack, hip and open ground-floor parking follow the dated exterior references. Replaced the existing Morse Center and Pomajevich Hall volumes under their previous IDs with registered roofs and detailed street entries. Concealed elevations and thresholds include estimates.
+- Checked six render pairs, 10,441 roof intersections, 7,710 route edges and every surviving index and attribute in the source batch. Desktop and phone production verified all searches, three estimated walkable approaches and eight collision probes. A bad second source anchor restores the old candidates and drops the new selection. Formatting, 197 unit tests, six focused browser checks, production build, 343 archive hashes and 276 viewer pins passed.
+- The local ledger has 203 L2 buildings, 318 active L1 buildings, 26 historical mappings, five L2 outdoor groups and nine L1 outdoor groups. The viewer has 521 selectable buildings, 320 batch members and four separate context roof treatments. This batch is local and uncommitted. [Exterior review](docs/alder-bushnell-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Eugene daytime sky and clouds at L2 (local)
+
+- Rebuilt ENV-07 as a directional sky dome with 12 lower cumulus banks and six thinner banks at a higher level. Preserved camera tracking and made drift resume without jumping after reduced motion. Exported both visible meshes and their colors in one standalone GLB.
+- Three matched cameras preserve the draw counts and render 264 fewer triangles each. The default overview stays at 202 draws with either sky, above the existing 180-call threshold. Desktop and phone production previews verified toon and PBR. Formatting, 197 unit tests, four other focused browser checks, production build, byte-identical sky export, 341 open asset hashes and 274 viewer pins passed.
+- The local ledger has 200 L2 buildings, 320 active L1 buildings, five L2 outdoor groups and nine L1 outdoor groups. Cloud shape and colors are authored for a fair-weather daytime setting. This batch is local and uncommitted. [Sky review](docs/eugene-sky-l2-2026-11-26.md).
+
+## 2026-11-26 - Generic entrance portal set at L2 (local)
+
+- Rebuilt PROP-04 as paired green leaves in a gold frame, with recessed glazing, transom, threshold and separate front pulls and rear bars. Two instanced meshes serve the 323 generic approach markers. All 611 entrance records match the previous viewer, and building-authored gates keep their own visible doors.
+- The front and rear geometry, GLB equivalence, center-seam picking, wall occlusion and desktop and phone entry and return passed. The matched first-person view remained at 49 draws with 73,644 added triangles. Formatting, 195 unit tests, six focused browser tests, production build, 340 archive hashes and 272 viewer pins passed.
+- The local ledger contains 200 L2 buildings and 320 active L1 buildings. Four outdoor groups are now L2 and 10 remain L1. The marker represents a generic approach. Physical door and accessibility surveys remain open. This batch is local and uncommitted. [Portal review](docs/entrance-portal-l2-2026-11-26.md).
+
+## 2026-11-26 - Walnut, Alder and Broadway exteriors at L2 (local)
+
+- Registered Transportation Services at 1401 Walnut, the 968 Alder apartments and the July 2024 former Motel 66 entrance at 755 E Broadway. Rebuilt the Walnut hip and gridded windows, the Alder brick and boarded alley elevation and the Broadway canopy around a clear drive-through. Alder's screened elevations and the post-2024 condition of the motel site remain open.
+- Checked four render pairs, 2,655 revised roof hits, 7,710 route edges and all surviving geometry in three source batches. Historical roof differences dropped in all nine common-cell comparisons. Desktop and phone production passed three searches, three walkable estimated approaches and eight collision probes. A damaged third source anchor restores all three prior exteriors. Formatting, 195 unit tests, seven focused browser tests, production build, 339 archive hashes and 272 viewer pins passed.
+- The local ledger has 200 L2 buildings, 320 active L1 buildings and 26 historical mappings. Outdoor groups include three L2 and 11 L1. The default viewer has 520 selectable buildings, 322 batched members and four independent context roof treatments. This batch is local and uncommitted. [Exterior review](docs/walnut-alder-broadway-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - E 15th street and alley apartment exteriors at L2 (local)
+
+- Refined the north street building and added the previously missing alley building as a separate exterior. The street model has inward-rising roofs, a slatted stair bay and recessed parking. The alley model has twin gables and open timber stairs. Location-based names preserve the two identities while the visible 750 sign and municipal unit data disagree on the address assignment. Roof and stair details and thresholds include estimates.
+- Checked four render pairs, 1,019 roof samples, 7,710 route edges and preservation of 51 batch peers. Desktop and phone verified both searches, two estimated walkable approaches and nine collision probes. The old street model returns if the source anchor is invalid. Formatting, 195 unit tests, six focused browser tests, production build, 337 archive hashes and 270 viewer pins passed.
+- The current ledger has 197 L2 buildings, 323 active L1 buildings and 26 historical mappings. Three outdoor groups are L2 and 11 remain L1. The default viewer has 520 selectable buildings, 325 batched members and six independent context roof treatments. This batch is local and uncommitted. [Exterior review](docs/e-fifteenth-pair-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Three separate 957, 971 and 975 Hilyard exteriors at L2 (local)
+
+- Replaced the merged 957/971 mesh and the old 975 volume with three city-registered exteriors. 957 retains its ID and gains two green exterior galleries. 971 gains an independent ID, brick elevations and a compact hip. 975 retains its ID and gains a tan facade, upper gallery and its own north approach. Gallery dimensions, some openings and thresholds are approximate.
+- All 1,783 usable roof samples intersect the revised roofs. The 975 median difference rises from 0.13 to 0.29 m in the oldest grid and drops in the two other grids. Four render pairs, 7,710 route edges, 195 unit tests, six focused browser tests, production build, 335 archive hashes and 268 viewer pins passed. Desktop and phone production verified search, three walkable approaches and the clear courtyard probes. A damaged second source anchor restores both old candidates, including the earlier 975 roof treatment.
+- The ledger now has 195 L2 buildings, 324 active L1 buildings, 26 historical mappings, three L2 outdoor groups and 11 L1 outdoor groups. The viewer has 519 selectable buildings, 326 batched members and six independent context roof treatments. This batch is local and uncommitted. [Exterior review](docs/hilyard-central-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Separated three Hilyard and E 15th exteriors at L2 (local)
+
+- Split the merged candidate at 1515 Hilyard into three municipal outlines. Retained the existing ID for 1515 and added independent registrations for Treetop Apartments at 740 E 15th and the 1547–1549 Hilyard duplex. Registered street views support the separate flat and hip roofs, dark apartment eaves, Treetop's open parking recesses and the duplex's west doors, balcony and wood siding. Some dimensions and thresholds are estimated.
+- Verified five render pairs, both historical surfaces over 1,543 roof cells, 7,710 route edges and the surviving 51 members of the source batch. Desktop and phone production verified all three searches, four walkable estimated approaches and seven collision probes. A damaged anchor restores the merged source. Formatting, 195 unit tests, eight focused browser tests, production build, 333 archive hashes and 266 viewer pins passed.
+- The ledger now has 192 L2 buildings, 326 active L1 buildings and 26 historical records. Three outdoor groups are L2 and 11 remain L1. The 518 selectable buildings include 328 batched members and seven separate context roof treatments. This update is local and uncommitted. [Exterior review](docs/hilyard-fifteenth-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Zebrafish International Resource Center exterior at L2 (local)
+
+- Registered B0101 under the existing scene ID. Rebuilt the completed west expansion with separate masonry and metal volumes, a paved walk and retained east cross-gables. The three historical surfaces agree more closely with the revised retained roofs. The height of the newer west roof, some openings and the south canopy and threshold are estimates.
+- Four paired renders, 7,710 route edges, 195 unit tests, six focused browser tests, the production build, 331 archived files and 264 viewer hashes passed. Desktop and phone production verified search, three blocked volumes, two clear exterior points and the estimated walkable south approach. A damaged source anchor restores the old batch member.
+- The ledger has 189 L2 building exteriors, 327 active L1 exteriors, three L2 outdoor groups, 11 L1 outdoor groups and 26 historical mappings. The local preview has 516 selectable buildings, 329 batched buildings and seven independent context roof treatments. This model is local and uncommitted. [Exterior review](docs/zirc-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Standalone 973 Hilyard exterior at L2 (local)
+
+- Added the previously omitted 973 Hilyard Apartments building, with a brick facade, blue west canopy and sloped roof over the lower wings. City outline 170822 and five address points place it separately from 975 and the merged 957/971 source candidate. The 2017 roof comparison has 163 cells and a median absolute difference of 0.138 m. Exact entry dimensions, window layout on partially observed sides and thresholds remain approximate.
+- Verified the separate search and collision footprint, an invalid-ID fallback and the 40-point route from Bushnell to the authored west approach on desktop and phone. The existing route graph has a disconnected component near 978. The production census is 516 buildings with 330 batched and seven roof treatments. The current ledger has 188 L2 buildings and 328 active L1 buildings, with three L2 outdoor groups and 11 L1 outdoor groups.
+- Formatting, 195 unit tests, four final focused browser tests, the production build, 329 archive hashes and 262 viewer pins passed. Three paired renders and the 7,710-edge graph scan verified local integration. This batch is local and uncommitted. [Hilyard Apartments review](docs/hilyard-apartments-exterior-review-2026-11-26.md).
+
+## 2026-11-26 - Bicycle, kick scooter and riders at L2 (local)
+
+- Reviewed and raised PROP-03 to L2. Rebuilt the original commuter bicycle and electric kick scooter with representative dimensions, grounded tires, smaller frame elements, working visual contact at the handlebars and fixed pedals or deck. Runtime capsules use the refined envelopes and rider height. The rider and vehicle pairs each remain a single mesh.
+- Eight paired render views, 195 JavaScript unit tests, four focused browser tests, the production build, desktop and phone activity checks, the ledger and viewer hashes passed. All six exported meshes match runtime positions, normals and colors. The four road-vehicle attribute arrays match the prior export. The ledger has 187 L2 buildings, 328 active L1 buildings, three L2 outdoor groups and 11 L1 outdoor groups. Poses are static and terrain contact follows authored path heights. This update is local and uncommitted. [Cycle prop review](docs/cycle-props-l2-2026-11-26.md).
+
+## 2026-11-26 - Former Sacred Heart hospital site and dated construction model (local)
+
+- Replaced the demolished hospital and four source candidates on lawn, parking or paths with the dated The Mark Eugene Phase 1 construction site. The north lot uses an inferred interim surface. The south lot has original wood framing, temporary site fencing, a crane and a protected sidewalk. The construction site is L2 as ENV-08. The model follows the October 17 ground observation and uses the November 23–27 city advisory for road-side closures.
+- The 2024 registered roof overlaps one source footprint by 3,977.13 m². The five historical IDs remain in the ledger. The review omitted 5,474 batch triangles and preserved the arrays of 33 neighbors. Four closure boxes keep the early work area out of player movement and navigation. An invalid descriptor restores the earlier geometry and walking area.
+- Desktop and mobile production verified 515 selectable buildings, three nearby approaches, nine collision samples and a 51-point route around the closure. The 7,710 graph edges avoid the 0.5 m buffered closure boxes. Formatting, 195 unit tests, six focused browser tests, production build, 327 archive hashes and 259 viewer pins passed. The current ledger has 187 L2 buildings, 328 active L1 buildings, 26 historical records, two L2 outdoor groups and 12 L1 groups. This batch is local and uncommitted. [Site model and evidence](docs/former-hospital-site-review-2026-11-26.md).
+
+## 2026-11-26 - University District clinic, South Garage and North Building at L2 (local)
+
+- Replaced two joined source candidates with three selectable exterior models. The clinic retains its blue window bands, pale piers and recessed entrance. The split garage has its low open decks, roof markings and clinic connector. The North Building has its own stepped massing, window ribbons and roof equipment.
+- Compared the three roofs on shared cells from three historical surfaces. The 2017 median for the South Garage fell from 12.170 to 0.046 m across 2,910 paired cells. The garage west apron and connector dimensions remain approximate. Checked 7,710 route edges and exact preservation of the surviving raw batch geometry after omitting 2,226 source triangles.
+- Desktop and mobile production each verified three searchable names, three walkable approaches, four clear samples and six blocking samples. Bad source anchors restore the two earlier candidates. Formatting, 195 JavaScript tests, 12 targeted browser checks, the production build, 325 archive hashes and 257 viewer pins passed. The local ledger has 187 L2 buildings, 333 active L1 buildings, one L2 outdoor group and 12 L1 groups. No commit, push or deployment. [Clinic, garage and office review](docs/university-district-clinic-review-2026-11-26.md).
+
+## 2026-11-25 - Three University District exteriors at L2 (local)
+
+- Adopted Bushnell University at 770 E 11th and the garages at 633 E 12th and 666 E 13th. Restored the retained bridge to 722 E 11th, the open east-wing recess, the west roof of 633 and the open parking bays with street retail at 666. All three source IDs remain searchable. The 633 extension beyond the source terrain uses an extrapolated apron and deck elevation.
+- Median roof errors fell at all three buildings on the shared samples from three historic surfaces. Checked 7,710 route edges, 1,506 replaced batch triangles and the exact retained arrays for 83 neighbors. Desktop and mobile production each verified four searchable names, four approaches, four open samples and seven solid samples. A failed district or prerequisite mesh restores the relevant source members.
+- Formatting, 195 JavaScript tests, 11 targeted browser checks, the production build and the audit of 323 archive files and 255 viewer pins passed. The local ledger has 184 L2 buildings, 335 active L1 buildings, one L2 outdoor group and 12 L1 groups. No commit, push or deployment. [University District review](docs/university-district-exterior-review-2026-11-25.md).
+
 ## 2026-11-25 - Campus loading progress and L2 road vehicles
 
 - Added an accessible campus startup progress bar. It advances with metadata, site packs and scene setup, then clears after the first WebGL frame. The retry panel handles startup failures. Desktop and phone share the same indicator.

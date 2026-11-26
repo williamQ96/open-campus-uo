@@ -1,0 +1,449 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "registered_ortho": {
+    "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493300.14928888186%2C4876932.282153052%2C493422.14928888186%2C4877120.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=488%2C752",
+    "size": [
+      488,
+      752
+    ],
+    "sha256": "9cfbb56afab9fef5db8efff8876487a17434654e92d12c50ea7543034c47c72c"
+  },
+  "source_split": {
+    "university-district-650-e-12th-garage": "roof-4c79682d"
+  },
+  "source_ranges": {
+    "roof-4c79682d": [
+      2542,
+      4444
+    ],
+    "roof-4a7d9b5a": [
+      1720,
+      2044
+    ]
+  },
+  "reference_sources": {
+    "clinic_owner": "https://montecitomac.com/news/montecito-medical-acquires-peacehealth-outpatient-asset/",
+    "clinic_sale": "https://www.jll.com/en-us/newsroom/jll-completes-monetization-of-1200-hilyard-st-in-eugene",
+    "office_listing": "https://invest.jll.com/us/en/listings/office/university-district",
+    "sale_brochure": "https://res.cloudinary.com/jll-global-cmg/image/upload/v1740167326/Prod/DealX/Doc/be8e7d68-eba7-4679-9ebc-a4d1c17d3f04/University_District_Flyer.pdf",
+    "visual_references": {
+      "clinic-owner": {
+        "url": "https://montecitomac.com/wp-content/uploads/2026/06/peacehealth.jpg",
+        "source_sha256": "18f814b7b59163901ac4f1ef0e886551a4a9903cda877383cb4fcd4612f3bfc1"
+      },
+      "office-jll": {
+        "url": "https://res.cloudinary.com/jll-global-cmg/image/upload/v1741561403/Prod/DealX/Img/c1aa3888-fea3-45cc-a499-8b6996c1603c.jpg",
+        "source_sha256": "4e5bfd22d7bfaef92775a131b61b72f114af9f5f08b43acc59f2511147b193fb"
+      },
+      "campus-map": {
+        "url": "https://www.peacehealth.org/sites/default/files/2022-03/Sacred-Heart-University-District_campus.pdf",
+        "source_sha256": "3fc4a33f60cebab5de602f56d352fda1aff955758c764e7d0ca491f321bd334d"
+      }
+    }
+  },
+  "models": [
+    {
+      "id": "roof-4c79682d",
+      "kind": "clinic",
+      "name": "PeaceHealth University District Clinic",
+      "street_address": "1200 Hilyard St",
+      "main_enu_m": [
+        [
+          -970.5,
+          121.5
+        ],
+        [
+          -930.5,
+          121.5
+        ],
+        [
+          -930.5,
+          60.25
+        ],
+        [
+          -936.25,
+          55.5
+        ],
+        [
+          -945.0,
+          50.5
+        ],
+        [
+          -970.5,
+          50.5
+        ]
+      ],
+      "low_enu_m": [
+        [
+          -965.0,
+          124.0
+        ],
+        [
+          -964.5,
+          135.25
+        ],
+        [
+          -955.0,
+          135.25
+        ],
+        [
+          -955.0,
+          139.25
+        ],
+        [
+          -921.0,
+          139.75
+        ],
+        [
+          -921.0,
+          122.5
+        ],
+        [
+          -930.25,
+          121.0
+        ],
+        [
+          -930.25,
+          122.0
+        ]
+      ],
+      "junction_enu_m": [
+        [
+          -956,
+          120.5
+        ],
+        [
+          -930.5,
+          120.5
+        ],
+        [
+          -930.25,
+          124.25
+        ],
+        [
+          -956.1,
+          124.25
+        ]
+      ],
+      "entry_recess_enu_m": [
+        -936.0,
+        96.5,
+        -929.7,
+        115.5
+      ],
+      "support_centres_enu_m": [
+        [
+          -931.11,
+          98.6
+        ],
+        [
+          -931.11,
+          105.6
+        ],
+        [
+          -931.11,
+          112.15
+        ]
+      ],
+      "roof_surface_z_m": 22.21,
+      "low_roof_z_m": 9.8,
+      "equipment": [
+        [
+          -960.4,
+          96.9,
+          -954,
+          105.83,
+          25.92
+        ],
+        [
+          -952,
+          67.83,
+          -945.4,
+          74.48,
+          25.88
+        ],
+        [
+          -968.7,
+          85.14,
+          -964.9,
+          103.8,
+          26.67
+        ],
+        [
+          -969.75,
+          99.3,
+          -968.35,
+          115.46,
+          25.7
+        ]
+      ],
+      "entrance": {
+        "gate": "hilyard-entry",
+        "near_enu_m": [
+          -936.0,
+          108.25
+        ],
+        "outward_degrees": 90,
+        "landing_m": 1.12,
+        "width_m": 2.66,
+        "threshold_above_grade_m": 0.11,
+        "glazed_double": true,
+        "landing_only": false
+      },
+      "low_road_overhang_enu_m": [
+        -969,
+        122.3,
+        -962,
+        126.2
+      ]
+    },
+    {
+      "id": "university-district-650-e-12th-garage",
+      "kind": "garage",
+      "name": "University District South Parking Garage",
+      "street_address": "650 E 12th Ave",
+      "outline_enu_m": [
+        [
+          -1017.75,
+          121.75
+        ],
+        [
+          -971.0,
+          121.5
+        ],
+        [
+          -971.0,
+          50.0
+        ],
+        [
+          -967.75,
+          50.0
+        ],
+        [
+          -967.0,
+          20.75
+        ],
+        [
+          -1017.75,
+          19.75
+        ],
+        [
+          -1017.75,
+          39.5
+        ],
+        [
+          -1004.5,
+          40.0
+        ],
+        [
+          -1004.5,
+          79.25
+        ],
+        [
+          -1017.5,
+          79.25
+        ]
+      ],
+      "edge_pad_enu_m": [
+        -1020,
+        18.5,
+        -999.75,
+        123
+      ],
+      "deck_sections": [
+        {
+          "bounds_enu_m": [
+            -1019,
+            18,
+            -966,
+            123
+          ],
+          "surface_z_m": 5.83,
+          "slope": [
+            0.002,
+            -0.0004
+          ]
+        }
+      ],
+      "floor_offsets_m": [
+        0,
+        3.02,
+        6.04
+      ],
+      "level_step_m": 3.02,
+      "bay_m": 6.9,
+      "cores": [
+        {
+          "bounds_enu_m": [
+            -975.55,
+            83.6,
+            -968.1,
+            92.7
+          ],
+          "top_z_m": 10.89
+        },
+        {
+          "bounds_enu_m": [
+            -971.25,
+            57.9,
+            -967.0,
+            63.5
+          ],
+          "top_z_m": 8.17
+        },
+        {
+          "bounds_enu_m": [
+            -1004.5,
+            56.2,
+            -1001.1,
+            64.1
+          ],
+          "top_z_m": 7.84
+        },
+        {
+          "bounds_enu_m": [
+            -974,
+            107.2,
+            -970.65,
+            113.1
+          ],
+          "top_z_m": 7.04
+        }
+      ],
+      "clinic_link_enu_m": [
+        -972.4,
+        85.62,
+        -970.18,
+        90.43
+      ],
+      "clinic_link_z_m": [
+        2.04,
+        6.72
+      ],
+      "entrance": {
+        "gate": "thirteenth-avenue-entry",
+        "near_enu_m": [
+          -976.1,
+          20.26
+        ],
+        "outward_degrees": 180,
+        "landing_m": 1.46,
+        "width_m": 1.78,
+        "threshold_above_grade_m": 0.11,
+        "glazed_double": true,
+        "landing_only": false
+      },
+      "stall_rows_enu_m": [
+        [
+          -998.9,
+          -994.7
+        ],
+        [
+          -987.6,
+          -983.1
+        ],
+        [
+          -982.9,
+          -978.55
+        ]
+      ]
+    },
+    {
+      "id": "roof-4a7d9b5a",
+      "kind": "office",
+      "name": "University District North Building",
+      "street_address": "677 E 12th Ave",
+      "outline_enu_m": [
+        [
+          -969.0,
+          182.0
+        ],
+        [
+          -925.25,
+          182.0
+        ],
+        [
+          -924.75,
+          140.25
+        ],
+        [
+          -947.0,
+          140.25
+        ],
+        [
+          -947.0,
+          152.25
+        ],
+        [
+          -957.5,
+          162.5
+        ],
+        [
+          -969.0,
+          162.5
+        ]
+      ],
+      "roof_surface_z_m": 15.96,
+      "equipment": [
+        [
+          -958.2,
+          165.57,
+          -935.7,
+          175.23,
+          19.86
+        ],
+        [
+          -964.1,
+          170.3,
+          -958.04,
+          174.97,
+          19.05
+        ],
+        [
+          -942.48,
+          158.88,
+          -935.9,
+          165.59,
+          20.34
+        ],
+        [
+          -939.83,
+          145.54,
+          -928.39,
+          159.24,
+          19.35
+        ],
+        [
+          -950.6,
+          175.35,
+          -946.62,
+          178.64,
+          18.52
+        ],
+        [
+          -942.22,
+          175.35,
+          -938.37,
+          178.93,
+          18.64
+        ]
+      ],
+      "entrance": {
+        "gate": "twelfth-avenue-entry",
+        "near_enu_m": [
+          -952.9,
+          158.0
+        ],
+        "outward_degrees": 225,
+        "landing_m": 1.56,
+        "width_m": 2.22,
+        "threshold_above_grade_m": 0.11,
+        "glazed_double": true,
+        "landing_only": false
+      }
+    }
+  ],
+  "source_batch": "context-background-0-2",
+  "source_presentation_model_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896"
+}

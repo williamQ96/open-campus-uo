@@ -149,6 +149,8 @@ export async function loadFordArenaReview(base, manifest, descriptor) {
   );
   return {
     field: adjustedField,
+    sourceField: field,
+    sourceHeightfieldSha256: site.source_heightfield_sha256,
     entrances: Object.fromEntries(
       replacements.map(({ id, entrances }) => [id, entrances]),
     ),

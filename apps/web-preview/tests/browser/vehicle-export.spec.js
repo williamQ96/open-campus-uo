@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
-test("road vehicle exports are updated and cycle meshes retain their geometry", async ({
+test("all six refined prop meshes retain their export transforms", async ({
   page,
 }) => {
   const bytes = readFileSync(
@@ -56,15 +56,8 @@ test("road vehicle exports are updated and cycle meshes retain their geometry", 
     "suv",
     "van",
   ]);
-  for (const [kind, value] of Object.entries(result)) {
+  for (const value of Object.values(result)) {
     expect(value.transform).toBe(true);
-    if (kind !== "bicycle" && kind !== "scooter") {
-      expect(value.attributes.position).toBe(false);
-    } else
-      expect(value.attributes).toEqual({
-        position: true,
-        normal: true,
-        color: true,
-      });
+    expect(value.attributes.position).toBe(false);
   }
 });

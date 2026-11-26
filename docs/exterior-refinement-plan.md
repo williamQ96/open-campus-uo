@@ -1,6 +1,98 @@
 # Exterior refinement: working plan
 
-The four generic road vehicles in PROP-02 are at L2. The outdoor ledger has 181 L2 buildings, 338 active L1 buildings, one L2 outdoor group, 12 L1 outdoor groups and 21 historical mappings. [Vehicle review](vehicle-l2-2026-11-25.md).
+The local ledger has 387 L2 building exteriors, 168 active L1 building exteriors, 31 historical records and all 15 outdoor asset groups at L2. Thirteen Fairmount, Summit, Hamble and Hubbard exteriors include the 2081 Fairmount dormers and porch, the rebuilt 2105 entry and terracing, and thirteen stable scene IDs. [Fairmount and Hamble review](fairmount-summit-hamble-review-2026-11-26.md).
+
+Sixteen Orchard, Villard and Fairmount exteriors include six separations, an open parking bay at 1978 East 19th and two solar arrays at 1994 Orchard. [Orchard and Villard exterior review](orchard-villard-hillside-review-2026-11-26.md).
+
+Eleven Fairmount, Moss and McMorran exteriors include the two new standalone buildings at 1836 East 19th and 2241 Fairmount, the open McMorran connector and the two hillside decks at 2415 Fairmount. [Hillside exterior review](fairmount-moss-slope-review-2026-11-26.md).
+
+Fourteen Columbia, Moss and Agate exteriors include the two cafés and alley building, separate Emerald apartment blocks, two recessed shops, the independent 2003 Columbia model and broker-sourced details for 1980 Columbia. [Columbia, Moss and Agate exterior review](columbia-moss-frontages-review-2026-11-26.md).
+
+Eight Agate and Emerald exteriors recover two courtyard openings and the open west parking level at The Studies, the Tom's Market canopy and the 1460/1470 East 20th roof separation. [Agate and Emerald exterior review](agate-emerald-frontages-review-2026-11-26.md).
+
+Eleven Emerald and Onyx exteriors include two separate buildings at 1959 Onyx, the previously missing 1940 Emerald Alley and four estimated street approaches. [Emerald and Onyx exterior review](emerald-onyx-frontages-review-2026-11-26.md).
+
+Trinity House and seven Onyx-area exteriors restore two separate roof gaps and the open parking level at 1931 Onyx Alley. [Onyx and University exterior review](onyx-university-frontages-review-2026-11-26.md).
+
+Eight southern boundary exteriors replace six source shapes and restore two separate roof gaps. [Southern boundary exterior review](southern-boundary-exterior-review-2026-11-26.md).
+
+Sigma Nu, 1306 East 18th and 1874 Emerald retain their original IDs and have rebuilt roofs, distinct facades and estimated street approaches. [South University exterior review](south-university-exterior-review-2026-11-26.md).
+
+Onyx House keeps its scene ID across both municipal addresses and now has the shallow intersecting roof, lower yard wing, open alley bays and east porch approach. [Onyx House exterior review](onyx-house-exterior-review-2026-11-26.md).
+
+The East 19th Avenue apartment at 1340 keeps its scene ID and has two intersecting gables, a courtyard gallery and a north approach. [1340 East 19th exterior review](east-nineteenth-court-exterior-review-2026-11-26.md).
+
+Two open Alton Baker shelters and the Best Western Franklin wing are L2. The two dated former Millrace and Villard building footprints are historical records. [Alton Baker and Franklin exterior review](alton-franklin-exterior-review-2026-11-26.md).
+
+Three West University boundary exteriors were upgraded. The East 17th source candidate now represents three separate buildings. The middle 634–640 East 16th Alley model keeps L1 while its exterior elevations are checked. [West boundary exterior review](west-boundary-exterior-review-2026-11-26.md).
+
+Parkside Place and three houses on East 20th and East 21st retain their original IDs. The new exteriors include the recessed Parkside garage, the taller 1131 roof box and both East 21st front bay windows. [Parkside Place and south neighborhood review](hilyard-south-exterior-review-2026-11-26.md).
+
+Six Alder, Harris and nearby residential exteriors retain their original IDs. The new geometry includes the Lorax turret, Campbell porch, Woodside courtyard openings and apartment roof, facade and stair details. [Alder and Harris exterior review](alder-harris-exterior-review-2026-11-26.md).
+
+Three East 19th Avenue exteriors are L2. Sigma Chi has its east canopy and upper courtyard walk, 1456 and 1458 share the rebuilt porch, and 1355 has its open parking bay and stepped west walk. [East 19th exterior review](east-nineteenth-exterior-review-2026-11-26.md).
+
+2300 Parkside Lane is L2 with its shallow roof and clerestory, open carport, closed timber gate and three downhill decks. [Parkside exterior review](parkside-exterior-review-2026-11-26.md).
+
+The 1800 and 1850 Millrace Drive addresses now share one L2 model with independent low wings, shallow roof ridges, dark window bands and a navigable north approach. [Millrace exterior review](millrace-research-exterior-review-2026-11-26.md).
+
+Four western campus and riverfront exteriors are L2. Phi Kappa Psi has the south arcade, 642 E 8th has the recessed timber corner, 1414 Alder has the open parking bay and the Steam Plant has its tall windows and stepped roof. [Four-building review](northwest-infill-exterior-review-2026-11-26.md).
+
+The fixed outdoor figure is L2. The local model uses a custom head, hat and shirt details and plants its shoes along the existing route. [Fixed person review](fixed-person-dan-carrere.md#l2-appearance-and-walking-review).
+
+LIFE-01 is L2. Generic walking students plant their shoes by measured travel and the original squirrel bounds, perches and climbs. Nine activity paths use the refined Memorial Quad surfaces. [Campus activity review](campus-life-l2-2026-11-26.md).
+
+ENV-05 is L2. Memorial Quadrangle uses the aerial-registered X and O. The two corridor batches cover 139 active features with fitted pavement width and material on 96 features. [Paving and corridor review](paving-corridors-l2-2026-11-26.md).
+
+ENV-04 is L2. The 2 km ground foundation uses 2023 and 2014–2015 bare-earth references with fixed grade ties and USGS water polygons. [Ground foundation review](landcover-l2-2026-11-26.md).
+
+ENV-03 is L2, with 75 rebuilt shrubs, five rebuilt fern clusters, three retained detailed fern clusters and three planted beds. [Understory review](understory-l2-2026-11-26.md).
+
+ENV-02 is L2, with 269 rebuilt background source trees in the default scene and the separately registered site plantings. [Background tree review](context-trees-l2-2026-11-26.md).
+
+ENV-01 is L2, with new trunks, branches and canopies for 273 pilot trees. [Pilot tree review](pilot-trees-l2-2026-11-26.md).
+
+Six southeast Fairmount exteriors are L2 along Sunset Drive, Rose Lane and Birch Lane. [Southeast Fairmount review](southeast-fairmount-exterior-review-2026-11-26.md).
+
+Pilot hardscape ENV-06 is L2, with new stairs and rails at the Johnson Hall and Knight Library north entries, the EMU northwest amphitheater and the refined Oregon Hall south planter. [Pilot hardscape review](pilot-hardscape-l2-2026-11-26.md).
+
+Six Fairmount houses and the two Kincaid-area chapter houses advanced to L2 under their existing IDs at the preceding checkpoint. [Fairmount and Kincaid exterior review](fairmount-kincaid-exterior-review-2026-11-26.md).
+
+The Alder and E 13th block split covers the corner shops, Gopuran Building, Flock13 and The Duck Store at L2, alongside the observed Chapter Alder site. That checkpoint recorded 224 L2 buildings, 300 active L1 buildings, 27 historical records, seven L2 outdoor groups and eight L1 outdoor groups. [Block and construction review](alder-thirteenth-exterior-review-2026-11-26.md).
+
+The current Rive Eugene replaces the old Broadway source candidate under the same ID. That checkpoint recorded 220 L2 buildings, 302 active L1 buildings, six L2 outdoor groups, eight L1 outdoor groups and 26 historical records. [The Rive exterior review](rive-eugene-exterior-review-2026-11-26.md).
+
+Four Millrace and Fairmount-area source exteriors retain their IDs and move to L2. That checkpoint recorded 219 L2 buildings and 303 active L1 buildings. [Millrace and Fairmount exterior review](millrace-fairmount-exterior-review-2026-11-26.md).
+
+PROP-01 is now L2. Nine benches, eleven acorn lights and one three-hoop rack are installed in the default local scene. This outdoor-group checkpoint recorded six L2 outdoor groups and eight L1 outdoor groups. [Pilot furnishings review](pilot-furnishings-l2-2026-11-26.md).
+
+The three Marlatt exteriors and the riverfront utility building at 777 Annie Mims Lane retain their IDs. That building checkpoint recorded 215 L2 buildings, 307 active L1 buildings and 26 historical records. [Marlatt and riverfront exterior review](western-exterior-review-2026-11-26.md).
+
+The Eugene directional sky and two cloud heights are at L2 as ENV-07. The local ledger has 200 L2 buildings, 320 active L1 buildings, five L2 outdoor groups, nine L1 outdoor groups and 26 historical records. [Sky review](eugene-sky-l2-2026-11-26.md).
+
+The generic exterior entrance set PROP-04 is at L2. The current local ledger has 200 L2 buildings, 320 active L1 buildings, four L2 outdoor groups, 10 L1 outdoor groups and 26 historical records. [Portal review](entrance-portal-l2-2026-11-26.md).
+
+The Walnut office, 968 Alder apartments and dated former Motel 66 entrance are registered at L2. The current local ledger has 200 L2 buildings, 320 active L1 buildings, three L2 outdoor groups, 11 L1 outdoor groups and 26 historical records. [Walnut, Alder and Broadway review](walnut-alder-broadway-exterior-review-2026-11-26.md).
+
+The E 15th street and alley apartment exteriors are both at L2. The previously omitted alley building has a separate scene ID. The current ledger has 197 L2 buildings, 323 active L1 buildings, three L2 outdoor groups, 11 L1 outdoor groups and 26 historical records. The address discrepancy remains under review. [Street and alley exteriors](e-fifteenth-pair-exterior-review-2026-11-26.md).
+
+957, 971 and 975 Hilyard now have three registered L2 exteriors with independent roofs and approaches. The current ledger records 195 L2 buildings, 324 active L1 buildings, three L2 outdoor groups, 11 L1 outdoor groups and 26 historical mappings. [Hilyard courtyard review](hilyard-central-exterior-review-2026-11-26.md).
+
+The merged Hilyard and E 15th candidate is now three registered L2 exteriors. The ledger has 192 L2 buildings, 326 active L1 buildings, three L2 outdoor groups, 11 L1 outdoor groups and 26 historical mappings. [Three-building split](hilyard-fifteenth-exterior-review-2026-11-26.md).
+
+The completed west addition and retained east roofs of ZIRC are registered at L2 under the original scene ID. The ledger has 189 L2 buildings, 327 active L1 buildings, three L2 outdoor groups, 11 L1 outdoor groups and 26 historical mappings. [ZIRC renovation](zirc-exterior-review-2026-11-26.md).
+
+The previously omitted 973 Hilyard building has a registered L2 exterior and a routed west entrance approach. The ledger has 188 L2 buildings, 328 active L1 buildings, three L2 outdoor groups, 11 L1 outdoor groups and 26 historical mappings. [Hilyard Apartments review](hilyard-apartments-exterior-review-2026-11-26.md).
+
+The generic bicycle, kick scooter and riders in PROP-03 are at L2 after a geometry, contact and runtime review. The current ledger has 187 L2 buildings, 328 active L1 buildings, three L2 outdoor groups, 11 L1 outdoor groups and 26 historical mappings. [Cycle prop review](cycle-props-l2-2026-11-26.md).
+
+The default local scene shows The Mark Eugene Phase 1 in its dated early construction stage. Five former-hospital source candidates move to historical status. The ledger has 187 L2 buildings, 328 active L1 buildings, two L2 outdoor groups, 12 L1 outdoor groups and 26 historical mappings. [Former hospital site review](former-hospital-site-review-2026-11-26.md).
+
+The 1200 Hilyard clinic, attached South Parking Garage at 650 E 12th, and North Building at 677 E 12th have local L2 exteriors. The two old source records now resolve to three selectable buildings. The ledger has 187 L2 buildings, 333 active L1 buildings, one L2 outdoor group, 12 L1 groups and 21 historical mappings. [Clinic, garage and office review](university-district-clinic-review-2026-11-26.md).
+
+Bushnell at 770 E 11th and the garages at 633 E 12th and 666 E 13th have local L2 exteriors. The 722 and 770 models include their retained skybridge. [University District review](university-district-exterior-review-2026-11-25.md).
+
+The four generic road vehicles in PROP-02 are at L2. [Vehicle review](vehicle-l2-2026-11-25.md).
 
 Catherine Cornwall Townhouses, Hilyard House, Campus Studios and Bushnell University at 722 E 11th have L2 exteriors. The models open the Hilyard House courtyard and retain the covered parking and exterior gallery. [Hilyard and West University exterior review](hilyard-west-exterior-review-2026-11-24.md).
 

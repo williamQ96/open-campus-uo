@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { exteriorCounts } from "./exterior-counts.js";
 
 async function ready(page, url = "/") {
   await page.goto(url);
@@ -52,7 +53,7 @@ test("default context roofs keep the selected building footprints and both front
     };
   };
   const after = await page.evaluate(read);
-  expect(after.roofCount).toBe(7);
+  expect(after.roofCount).toBe(exteriorCounts()[2]);
   expect(after.collides).toEqual(Array(29).fill(true));
   expect(after.gates).toEqual(
     expect.arrayContaining(["allen-west", "fenton-south"]),

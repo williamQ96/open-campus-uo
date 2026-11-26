@@ -10,6 +10,11 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { createCharacter } from "./character.js";
+import { applyFoundationGrade } from "./foundation-l2.js";
+import {
+  installPavingCorridors,
+  updateQuadActivity,
+} from "./paving-corridors-l2.js";
 import {
   sampleGround,
   isBlocked,
@@ -42,10 +47,10 @@ import { readReturn, enterInterior, RETURN_KEY } from "./scene-transition.js";
 import { createAnalytics } from "./analytics.js";
 import { loadStudentFactory } from "./student.js";
 import { createFixedNpc } from "./fixed-npc.js";
+import { danCarrereAppearance, styleDanCarrere } from "./dan-carrere-style.js";
 import { createRouter, distance } from "./routing.js";
 import { createNavigation } from "./navigation.js";
-import { createSky } from "./sky.js";
-import { shapeCloudVolumes } from "./cloud-volumes.js";
+import { createEugeneSky } from "./eugene-sky.js";
 import {
   createOverviewDepth,
   freezeStaticTransforms,
@@ -117,6 +122,7 @@ let view = "aerial",
   drawMap,
   presentation;
 let buildings = [],
+  outdoorObstacleBoxes = [],
   elapsed = 0,
   lastTime = 0,
   frames = 0,
@@ -166,8 +172,7 @@ touchHint.className = "touch-hint";
 touchHint.textContent =
   "Lower half: drag to walk / run · Upper half: drag to look";
 $("#app").append(touchHint);
-const sky = createSky(scene);
-shapeCloudVolumes(scene);
+const sky = createEugeneSky(scene);
 scene.add(new THREE.HemisphereLight(0xffffff, 0x929b94, 1.9));
 const sun = new THREE.DirectionalLight(0xfff9ef, 2.4);
 sun.position.set(-1400, 2400, 1300);
@@ -310,18 +315,35 @@ document
   .forEach((button) =>
     button.addEventListener("click", () => setView(button.dataset.view)),
   );
+function isOutdoorObstacle(x, z) {
+  const point = [x, -z];
+  return segmentHitsBoxes(point, point, outdoorObstacleBoxes, 0.42);
+}
+function standingGround(x, z) {
+  const ground = sampleGround(field, x, z);
+  return Math.max(ground, presentation?.hardscape?.height(x, z) ?? ground);
+}
+function blocksHardscapeStep(x, z, y) {
+  const nextSurface = presentation?.hardscape?.height(x, z);
+  if (nextSurface === undefined) return false;
+  const footing = vertical.grounded ? standingGround(player.x, player.z) : y;
+  return nextSurface - footing > 0.28;
+}
 function resetPlayer() {
   if (!manifest) return;
   clearSelection();
   player.set(manifest.spawn_enu_m[0], 0, -manifest.spawn_enu_m[1]);
-  if (isBlocked(player.x, player.z, buildings, half)) {
+  if (
+    isBlocked(player.x, player.z, buildings, half) ||
+    isOutdoorObstacle(player.x, player.z)
+  ) {
     const origin = player.clone();
     let found = false;
     for (let r = 2; r < 100 && !found; r += 2)
       for (let a = 0; a < Math.PI * 2; a += Math.PI / 12) {
         const x = origin.x + Math.cos(a) * r,
           z = origin.z + Math.sin(a) * r;
-        if (!isBlocked(x, z, buildings, half)) {
+        if (!isBlocked(x, z, buildings, half) && !isOutdoorObstacle(x, z)) {
           player.set(x, 0, z);
           found = true;
           break;
@@ -329,7 +351,7 @@ function resetPlayer() {
       }
     if (!found) throw new Error("No walkable starting point was found.");
   }
-  player.y = sampleGround(field, player.x, player.z);
+  player.y = standingGround(player.x, player.z);
   vertical.velocity = 0;
   vertical.grounded = true;
   character.root.position.copy(player);
@@ -788,6 +810,8 @@ function updatePlayer(dt, movementDt = dt) {
       field,
       false,
       (x, z, y) =>
+        isOutdoorObstacle(x, z) ||
+        blocksHardscapeStep(x, z, y) ||
         life?.blockedPlayer(x, z, y) ||
         zombies?.blockedPlayer(x, z, y) ||
         false,
@@ -797,7 +821,7 @@ function updatePlayer(dt, movementDt = dt) {
       player.z - before.z,
     );
   }
-  const ground = sampleGround(field, player.x, player.z);
+  const ground = standingGround(player.x, player.z);
   stepVertical(player, vertical, dt, ground);
   const travelled = Math.hypot(player.x - previous.x, player.z - previous.z);
   moving = travelled > 0.0001;
@@ -950,6 +974,25 @@ async function loadCampusScene(base, manifest, settings) {
     "roof-ca59da4d": ["Hilyard House", "725 E 14th Ave"],
     "roof-dcc94271": ["Campus Studios", "735 E 14th Ave"],
     "roof-ae986c58": ["Bushnell University · 722 E 11th Ave", "722 E 11th Ave"],
+  };
+  const universityDistrictAddresses = {
+    "roof-62a81026": ["Bushnell University · 770 E 11th Ave", "770 E 11th Ave"],
+    "roof-19858777": ["633 E 12th Avenue Parking Garage", "633 E 12th Ave"],
+    "roof-bdbcb4fc": [
+      "666 E 13th Avenue Parking Garage & Retail",
+      "666 E 13th Ave",
+    ],
+  };
+  const districtClinicAddresses = {
+    "roof-4c79682d": [
+      "PeaceHealth University District Clinic",
+      "1200 Hilyard St",
+    ],
+    "university-district-650-e-12th-garage": [
+      "University District South Parking Garage",
+      "650 E 12th Ave",
+    ],
+    "roof-4a7d9b5a": ["University District North Building", "677 E 12th Ave"],
   };
   const treatedRoofAddresses = {
     "roof-76af1329": ["1951 Onyx Alley", "1951 Onyx Alley"],
@@ -1551,6 +1594,1132 @@ async function loadCampusScene(base, manifest, settings) {
       sourceBatchIds: Object.keys(hilyardWestAddresses),
       registeredAddresses: hilyardWestAddresses,
     },
+    "university-district-exterior": {
+      descriptor: config?.university_district_exterior_site,
+      directory: "university-district-exterior-review",
+      groundNode: "university-district-approaches",
+      ids: Object.keys(universityDistrictAddresses),
+      sourceBatchIds: Object.keys(universityDistrictAddresses),
+      registeredAddresses: universityDistrictAddresses,
+      prerequisiteIds: ["roof-ae986c58"],
+    },
+    "university-district-clinic": {
+      descriptor: config?.university_district_clinic_site,
+      directory: "university-district-clinic-review",
+      groundNode: "university-district-clinic-approaches",
+      ids: Object.keys(districtClinicAddresses),
+      sourceBatchIds: ["roof-4c79682d", "roof-4a7d9b5a"],
+      splitBuildings: {
+        "university-district-650-e-12th-garage": "roof-4c79682d",
+      },
+      registeredAddresses: districtClinicAddresses,
+    },
+    "former-hospital-site": {
+      descriptor: config?.former_hospital_site,
+      directory: "former-hospital-site-review",
+      groundNode: "former-hospital-construction",
+      ids: [],
+      absorbedIds: [
+        "roof-a3f76ab6",
+        "roof-eb5ba9b8",
+        "roof-8caa7792",
+        "roof-6d2ad952",
+        "roof-8e0e504c",
+      ],
+    },
+    "zirc-exterior": {
+      descriptor: config?.zirc_exterior_site,
+      directory: "zirc-exterior-review",
+      groundNode: "zirc-exterior-approaches",
+      ids: ["roof-f0cd697a"],
+      sourceBatchIds: ["roof-f0cd697a"],
+      registeredNames: {
+        "roof-f0cd697a": "Zebrafish International Resource Center",
+      },
+    },
+    "hilyard-central-exterior": {
+      descriptor: config?.hilyard_central_exterior_site,
+      directory: "hilyard-central-exterior-review",
+      groundNode: "hilyard-central-approaches",
+      ids: ["roof-9feed235", "hilyard-apartments-971", "roof-eab27ea2"],
+      sourceBatchIds: ["roof-9feed235", "roof-eab27ea2"],
+      splitBuildings: { "hilyard-apartments-971": "roof-9feed235" },
+      registeredAddresses: {
+        "roof-9feed235": ["Hilyard Apartments · 957 Hilyard", "957 Hilyard St"],
+        "hilyard-apartments-971": [
+          "Hilyard Apartments · 971 Hilyard",
+          "971 Hilyard St",
+        ],
+        "roof-eab27ea2": ["975 Hilyard St", "975 Hilyard St"],
+      },
+    },
+    "e-fifteenth-pair-exterior": {
+      descriptor: config?.e_fifteenth_pair_site,
+      directory: "e-fifteenth-pair-exterior-review",
+      groundNode: "e-fifteenth-pair-approaches",
+      ids: ["roof-0c745864", "east-fifteenth-alley-apartments"],
+      sourceBatchIds: ["roof-0c745864"],
+      newBuildingIds: ["east-fifteenth-alley-apartments"],
+      registeredAddresses: {
+        "roof-0c745864": ["E 15th Apartments · Street Building", "E 15th Ave"],
+        "east-fifteenth-alley-apartments": [
+          "E 15th Apartments · Alley Building",
+          "E 15th Alley",
+        ],
+      },
+    },
+    "rive-eugene-exterior": {
+      descriptor: config?.rive_eugene_exterior_site,
+      directory: "rive-eugene-exterior-review",
+      groundNode: "rive-eugene-approaches",
+      routeToApproaches: true,
+      ids: ["roof-513d7fee"],
+      sourceBatchIds: ["roof-513d7fee"],
+      registeredAddresses: {
+        "roof-513d7fee": ["The Rive Eugene", "700 E Broadway"],
+      },
+    },
+    "alder-thirteenth-exterior": {
+      descriptor: config?.alder_thirteenth_exterior_site,
+      directory: "alder-thirteenth-exterior-review",
+      groundNode: "alder-thirteenth-ground",
+      routeToApproaches: true,
+      ids: [
+        "alder-thirteenth-corner",
+        "alder-gopuran",
+        "roof-5ed4d412",
+        "alder-duck-store",
+      ],
+      sourceBatchIds: ["roof-5ed4d412"],
+      absorbedIds: ["roof-f6be07b4"],
+      splitBuildings: {
+        "alder-thirteenth-corner": "roof-5ed4d412",
+        "alder-gopuran": "roof-5ed4d412",
+        "alder-duck-store": "roof-5ed4d412",
+      },
+      registeredAddresses: {
+        "alder-thirteenth-corner": [
+          "Alder & 13th Corner Shops",
+          "1285 Alder St",
+        ],
+        "alder-gopuran": [
+          "Gopuran Building · Webfoot Bar & Grill",
+          "839 E 13th Ave",
+        ],
+        "roof-5ed4d412": ["Flock13", "871 E 13th Ave"],
+        "alder-duck-store": ["The Duck Store", "895 E 13th Ave"],
+      },
+    },
+    "millrace-fairmount-exterior": {
+      descriptor: config?.millrace_fairmount_exterior_site,
+      directory: "millrace-fairmount-exterior-review",
+      groundNode: "millrace-fairmount-approaches",
+      routeToApproaches: true,
+      ids: ["roof-4bcb9296", "roof-01c76e05", "roof-e7592432", "roof-f9fb8501"],
+      sourceBatchIds: [
+        "roof-4bcb9296",
+        "roof-01c76e05",
+        "roof-e7592432",
+        "roof-f9fb8501",
+      ],
+      registeredAddresses: {
+        "roof-4bcb9296": ["Alpha Tau Omega Chapter House", "1000 Alder St"],
+        "roof-01c76e05": ["1956 E 15th Avenue", "1956 E 15th Ave"],
+        "roof-e7592432": ["1871 E 19th Avenue", "1871 E 19th Ave"],
+        "roof-f9fb8501": ["Walnut Alley Garage Building", "Walnut Aly"],
+      },
+    },
+    "fairmount-kincaid-exterior": {
+      descriptor: config?.fairmount_kincaid_exterior_site,
+      directory: "fairmount-kincaid-exterior-review",
+      groundNode: "fairmount-kincaid-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-046adce7",
+        "roof-58551b68",
+        "roof-622a75af",
+        "roof-c4396bfc",
+        "roof-d427a5ce",
+        "roof-c54987d3",
+        "roof-d6ddd6ae",
+        "roof-f414e967",
+      ],
+      sourceBatchIds: [
+        "roof-046adce7",
+        "roof-58551b68",
+        "roof-622a75af",
+        "roof-c4396bfc",
+        "roof-d427a5ce",
+        "roof-c54987d3",
+        "roof-d6ddd6ae",
+        "roof-f414e967",
+      ],
+      registeredAddresses: {
+        "roof-046adce7": ["1517 Walnut Street", "1517 Walnut St"],
+        "roof-58551b68": ["1680 Walnut Street", "1680 Walnut St"],
+        "roof-622a75af": ["1671 Walnut Street", "1671 Walnut St"],
+        "roof-c4396bfc": ["1991 E 19th Avenue", "1991 E 19th Ave"],
+        "roof-d427a5ce": ["1931 Moss Street", "1931 Moss St"],
+        "roof-c54987d3": ["1879 Moss Street", "1879 Moss St"],
+        "roof-d6ddd6ae": ["Pi Beta Phi Chapter House", "1518 Kincaid St"],
+        "roof-f414e967": ["Alpha Chi Omega Chapter House", "850 E 15th Ave"],
+      },
+    },
+    "southeast-fairmount-exterior": {
+      descriptor: config?.southeast_fairmount_exterior_site,
+      directory: "southeast-fairmount-exterior-review",
+      groundNode: "southeast-fairmount-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-e0d560b4",
+        "roof-169a7b78",
+        "roof-699d6c1e",
+        "roof-22175da6",
+        "roof-05727176",
+        "roof-b2800bfe",
+      ],
+      sourceBatchIds: [
+        "roof-e0d560b4",
+        "roof-169a7b78",
+        "roof-699d6c1e",
+        "roof-22175da6",
+        "roof-05727176",
+        "roof-b2800bfe",
+      ],
+      registeredAddresses: {
+        "roof-e0d560b4": ["281 Sunset Drive", "281 Sunset Dr"],
+        "roof-169a7b78": ["365 Sunset Drive", "365 Sunset Dr"],
+        "roof-699d6c1e": ["366 Sunset Drive", "366 Sunset Dr"],
+        "roof-22175da6": ["2281 Rose Lane", "2281 Rose Ln"],
+        "roof-05727176": ["2275 Rose Lane", "2275 Rose Ln"],
+        "roof-b2800bfe": ["2293 Birch Lane", "2293 Birch Ln"],
+      },
+    },
+    "northwest-infill-exterior": {
+      descriptor: config?.northwest_infill_exterior_site,
+      directory: "northwest-infill-exterior-review",
+      groundNode: "northwest-infill-approaches",
+      routeToApproaches: true,
+      ids: ["roof-8007cb2f", "roof-3961d925", "roof-d830368a", "roof-ec27d788"],
+      sourceBatchIds: [
+        "roof-8007cb2f",
+        "roof-3961d925",
+        "roof-d830368a",
+        "roof-ec27d788",
+      ],
+      registeredAddresses: {
+        "roof-8007cb2f": ["Phi Kappa Psi Chapter House", "729 E 11th Ave"],
+        "roof-3961d925": ["642 East 8th Avenue", "642 E 8th Ave"],
+        "roof-d830368a": [
+          "1414 Alder Street / 790 E 14th Ave",
+          "1414 Alder St",
+        ],
+        "roof-ec27d788": ["Eugene Steam Plant", "701 Annie Mims Ln"],
+      },
+    },
+    "fairmount-summit-hamble": {
+      descriptor: config?.fairmount_summit_hamble_site,
+      directory: "fairmount-summit-hamble-review",
+      groundNode: "fairmount-summit-hamble-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-0b345e8f",
+        "roof-3d7a4503",
+        "roof-61b268c3",
+        "roof-d709354e",
+        "roof-8d4cf396",
+        "roof-3466a919",
+        "roof-b8804a72",
+        "roof-efd79ec7",
+        "roof-d25e3df8",
+        "roof-636f0355",
+        "roof-b2bced50",
+        "roof-99cda8af",
+        "roof-f5434b03",
+      ],
+      sourceBatchIds: [
+        "roof-0b345e8f",
+        "roof-3d7a4503",
+        "roof-61b268c3",
+        "roof-d709354e",
+        "roof-8d4cf396",
+        "roof-3466a919",
+        "roof-b8804a72",
+        "roof-efd79ec7",
+        "roof-d25e3df8",
+        "roof-636f0355",
+        "roof-b2bced50",
+        "roof-99cda8af",
+        "roof-f5434b03",
+      ],
+      registeredAddresses: {
+        "roof-0b345e8f": [
+          "2081 Fairmount Boulevard",
+          "2081 Fairmount Boulevard",
+        ],
+        "roof-3d7a4503": [
+          "2091 Fairmount Boulevard",
+          "2091 Fairmount Boulevard",
+        ],
+        "roof-61b268c3": [
+          "2095 Fairmount Boulevard",
+          "2095 Fairmount Boulevard",
+        ],
+        "roof-d709354e": [
+          "2105 Fairmount Boulevard",
+          "2105 Fairmount Boulevard",
+        ],
+        "roof-8d4cf396": [
+          "2125 Fairmount Boulevard",
+          "2125 Fairmount Boulevard",
+        ],
+        "roof-3466a919": [
+          "2209 Fairmount Boulevard",
+          "2209 Fairmount Boulevard",
+        ],
+        "roof-b8804a72": ["2130 Summit Avenue", "2130 Summit Avenue"],
+        "roof-efd79ec7": ["2195 Summit Avenue", "2195 Summit Avenue"],
+        "roof-d25e3df8": ["2197 Summit Avenue", "2197 Summit Avenue"],
+        "roof-636f0355": ["2110 Hamble Avenue", "2110 Hamble Avenue"],
+        "roof-b2bced50": ["2140 Hamble Avenue", "2140 Hamble Avenue"],
+        "roof-99cda8af": ["2171 Hamble Avenue", "2171 Hamble Avenue"],
+        "roof-f5434b03": ["2010 Hubbard Lane", "2010 Hubbard Lane"],
+      },
+    },
+    "orchard-villard-hillside": {
+      descriptor: config?.orchard_villard_hillside_site,
+      directory: "orchard-villard-hillside-review",
+      groundNode: "orchard-villard-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-6133a11a",
+        "east-nineteenth-1978",
+        "roof-28a8e5f0",
+        "orchard-1966",
+        "roof-29aaebb6",
+        "orchard-1994",
+        "roof-7e12343c",
+        "villard-1963",
+        "roof-2cb36f2e",
+        "villard-1946",
+        "roof-b315719c",
+        "villard-outbuilding-171184",
+        "roof-d4f7e70c",
+        "roof-a53a0c57",
+        "roof-b23b2dec",
+        "roof-31f27b04",
+      ],
+      sourceBatchIds: [
+        "roof-6133a11a",
+        "roof-28a8e5f0",
+        "roof-29aaebb6",
+        "roof-7e12343c",
+        "roof-2cb36f2e",
+        "roof-b315719c",
+        "roof-d4f7e70c",
+        "roof-a53a0c57",
+        "roof-b23b2dec",
+        "roof-31f27b04",
+      ],
+      splitBuildings: {
+        "east-nineteenth-1978": "roof-6133a11a",
+        "orchard-1966": "roof-29aaebb6",
+        "orchard-1994": "roof-7e12343c",
+        "villard-1963": "roof-2cb36f2e",
+        "villard-1946": "roof-b315719c",
+        "villard-outbuilding-171184": "roof-d4f7e70c",
+      },
+      registeredAddresses: {
+        "roof-6133a11a": ["1910 / 1924 Orchard Street", "1910 Orchard Street"],
+        "east-nineteenth-1978": [
+          "1978 East 19th Avenue",
+          "1978 East 19th Avenue",
+        ],
+        "roof-28a8e5f0": ["1935 / 1937 Orchard Street", "1937 Orchard Street"],
+        "orchard-1966": [
+          "1966 Orchard Street / 1965 Orchard Alley",
+          "1966 Orchard Street",
+        ],
+        "roof-29aaebb6": ["1950 Orchard Street", "1950 Orchard Street"],
+        "orchard-1994": [
+          "1994 Orchard Street / 1991 Orchard Alley",
+          "1994 Orchard Street",
+        ],
+        "roof-7e12343c": ["1990 Orchard Street", "1990 Orchard Street"],
+        "villard-1963": ["1963 Villard Street", "1963 Villard Street"],
+        "roof-2cb36f2e": ["1947 Villard Street", "1947 Villard Street"],
+        "villard-1946": ["1946 Villard Street", "1946 Villard Street"],
+        "roof-b315719c": ["1964 Villard Street", "1964 Villard Street"],
+        "villard-outbuilding-171184": [
+          "Detached outbuilding near 1996 Villard",
+          "1996 Villard Street",
+        ],
+        "roof-d4f7e70c": ["1996 Villard Street", "1996 Villard Street"],
+        "roof-a53a0c57": ["2012 Villard Street", "2012 Villard Street"],
+        "roof-b23b2dec": ["2075 Villard Street", "2075 Villard Street"],
+        "roof-31f27b04": [
+          "1999 Fairmount Boulevard",
+          "1999 Fairmount Boulevard",
+        ],
+      },
+    },
+    "fairmount-moss-slope": {
+      descriptor: config?.fairmount_moss_slope_site,
+      directory: "fairmount-moss-slope-review",
+      groundNode: "fairmount-moss-slope-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-b8fa3497",
+        "roof-6a4f93e6",
+        "roof-100b2613",
+        "roof-136be56b",
+        "roof-f6bcefaf",
+        "roof-5245ef5e",
+        "roof-daca02ed",
+        "roof-d5a8b80c",
+        "roof-b62a90ef",
+        "east19-1836",
+        "fairmount-2241",
+      ],
+      newBuildingIds: ["east19-1836", "fairmount-2241"],
+      sourceBatchIds: [
+        "roof-b8fa3497",
+        "roof-6a4f93e6",
+        "roof-100b2613",
+        "roof-136be56b",
+        "roof-f6bcefaf",
+        "roof-5245ef5e",
+        "roof-daca02ed",
+        "roof-d5a8b80c",
+        "roof-b62a90ef",
+      ],
+      registeredAddresses: {
+        "roof-b8fa3497": ["1864 Moss Street", "1864 Moss Street"],
+        "roof-6a4f93e6": ["1926 Moss Street", "1926 Moss Street"],
+        "roof-100b2613": [
+          "1911 Moss Street / 1820 East 19th Avenue",
+          "1911 Moss Street",
+        ],
+        "roof-136be56b": ["2303 McMorran Avenue", "2303 McMorran Avenue"],
+        "roof-f6bcefaf": [
+          "2288 Fairmount Boulevard",
+          "2288 Fairmount Boulevard",
+        ],
+        "roof-5245ef5e": [
+          "2309 Fairmount Boulevard",
+          "2309 Fairmount Boulevard",
+        ],
+        "roof-daca02ed": [
+          "2323 Fairmount Boulevard",
+          "2323 Fairmount Boulevard",
+        ],
+        "roof-d5a8b80c": [
+          "2275 Fairmount Boulevard",
+          "2275 Fairmount Boulevard",
+        ],
+        "roof-b62a90ef": [
+          "2415 Fairmount Boulevard",
+          "2415 Fairmount Boulevard",
+        ],
+        "east19-1836": ["1836 East 19th Avenue", "1836 East 19th Avenue"],
+        "fairmount-2241": [
+          "2241 Fairmount Boulevard",
+          "2241 Fairmount Boulevard",
+        ],
+      },
+    },
+    "columbia-moss-frontages": {
+      descriptor: config?.columbia_moss_frontages_site,
+      directory: "columbia-moss-frontages-review",
+      groundNode: "columbia-moss-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-99c1fdae",
+        "east18-alley-1472",
+        "east19-1473",
+        "roof-bf2551ce",
+        "emerald-apartments-north",
+        "roof-825d1e23",
+        "east19-1445",
+        "roof-2d8c25c4",
+        "roof-c0961aa0",
+        "roof-424f6339",
+        "roof-f262cbec",
+        "columbia-2003",
+        "roof-c03b3a5d",
+        "roof-7cc5046c",
+      ],
+      newBuildingIds: ["columbia-2003"],
+      sourceBatchIds: [
+        "roof-99c1fdae",
+        "roof-bf2551ce",
+        "roof-825d1e23",
+        "roof-2d8c25c4",
+        "roof-c0961aa0",
+        "roof-424f6339",
+        "roof-f262cbec",
+        "roof-c03b3a5d",
+        "roof-7cc5046c",
+      ],
+      splitBuildings: {
+        "east18-alley-1472": "roof-99c1fdae",
+        "east19-1473": "roof-99c1fdae",
+        "emerald-apartments-north": "roof-825d1e23",
+        "east19-1445": "roof-825d1e23",
+      },
+      registeredAddresses: {
+        "roof-99c1fdae": ["McMenamins East 19th Café", "1485 East 19th Avenue"],
+        "east18-alley-1472": ["1472 East 18th Alley", "1472 East 18th Alley"],
+        "east19-1473": ["Studio One Café", "1473 East 19th Avenue"],
+        "roof-bf2551ce": [
+          "Prince Puckler's / Sweet Life Petite",
+          "1605 East 19th Avenue",
+        ],
+        "emerald-apartments-north": [
+          "Emerald Apartments — North Building",
+          "1877 Emerald Street",
+        ],
+        "roof-825d1e23": [
+          "Emerald Apartments — South Building",
+          "1877 Emerald Street",
+        ],
+        "east19-1445": ["1445 East 19th Avenue", "1445 East 19th Avenue"],
+        "roof-2d8c25c4": ["1980 Columbia Street", "1980 Columbia Street"],
+        "roof-c0961aa0": ["1935 Columbia Street", "1935 Columbia Street"],
+        "roof-424f6339": ["1895 Columbia Street", "1895 Columbia Street"],
+        "roof-f262cbec": ["1969 Columbia Street", "1969 Columbia Street"],
+        "columbia-2003": ["2003 Columbia Street", "2003 Columbia Street"],
+        "roof-c03b3a5d": [
+          "2367 Fairmount Boulevard",
+          "2367 Fairmount Boulevard",
+        ],
+        "roof-7cc5046c": ["1964 Moss Street", "1964 Moss Street"],
+      },
+    },
+    "agate-emerald-frontages": {
+      descriptor: config?.agate_emerald_frontages_site,
+      directory: "agate-emerald-frontages-review",
+      groundNode: "agate-emerald-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-a40877e3",
+        "roof-a7890474",
+        "roof-aba1513b",
+        "roof-28502c01",
+        "east20-1470",
+        "roof-06636962",
+        "roof-58d0ebc7",
+        "roof-5a32e480",
+      ],
+      sourceBatchIds: [
+        "roof-a40877e3",
+        "roof-a7890474",
+        "roof-aba1513b",
+        "roof-28502c01",
+        "roof-06636962",
+        "roof-58d0ebc7",
+        "roof-5a32e480",
+      ],
+      absorbedIds: ["roof-879f17f5"],
+      splitBuildings: { "east20-1470": "roof-28502c01" },
+      registeredAddresses: {
+        "roof-a40877e3": ["The Studies at 19th", "1370 East 19th Avenue"],
+        "roof-a7890474": ["Tom's Market", "1490 East 19th Avenue"],
+        "roof-aba1513b": ["1442 East 20th Avenue", "1442 East 20th Avenue"],
+        "roof-28502c01": ["1460 East 20th Avenue", "1460 East 20th Avenue"],
+        "east20-1470": ["1470 East 20th Avenue", "1470 East 20th Avenue"],
+        "roof-06636962": ["1473 East 20th Avenue", "1473 East 20th Avenue"],
+        "roof-58d0ebc7": [
+          "1495 East 21st Avenue / 2092 Agate Street",
+          "1495 East 21st Avenue",
+        ],
+        "roof-5a32e480": ["1370 East 21st Avenue", "1370 East 21st Avenue"],
+      },
+    },
+    "emerald-onyx-frontages": {
+      descriptor: config?.emerald_onyx_frontages_site,
+      directory: "emerald-onyx-frontages-review",
+      groundNode: "emerald-onyx-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-9752966f",
+        "onyx-1959-west",
+        "roof-b1caff97",
+        "roof-b7484145",
+        "emerald-alley-1946",
+        "emerald-alley-1940",
+        "roof-b36b0ddb",
+        "roof-c0e5df84",
+        "roof-90b1b81e",
+        "roof-4ad5629d",
+        "east20-1425",
+      ],
+      newBuildingIds: ["emerald-alley-1940"],
+      sourceBatchIds: [
+        "roof-9752966f",
+        "roof-b1caff97",
+        "roof-b7484145",
+        "roof-b36b0ddb",
+        "roof-c0e5df84",
+        "roof-90b1b81e",
+        "roof-4ad5629d",
+      ],
+      splitBuildings: {
+        "onyx-1959-west": "roof-9752966f",
+        "emerald-alley-1946": "roof-b7484145",
+        "east20-1425": "roof-4ad5629d",
+      },
+      registeredAddresses: {
+        "roof-9752966f": ["1975–1981 Onyx Street", "1975 Onyx Street"],
+        "onyx-1959-west": [
+          "1959 Onyx Street – West Building",
+          "1959 Onyx Street",
+        ],
+        "roof-b1caff97": ["1314 East 21st Avenue", "1314 East 21st Avenue"],
+        "roof-b7484145": [
+          "1959 Onyx Street – Alley Building",
+          "1959 Onyx Street",
+        ],
+        "emerald-alley-1946": ["1946 Emerald Alley", "1946 Emerald Alley"],
+        "emerald-alley-1940": ["1940 Emerald Alley", "1940 Emerald Alley"],
+        "roof-b36b0ddb": ["1361 East 21st Avenue", "1361 East 21st Avenue"],
+        "roof-c0e5df84": ["2072 Emerald Street", "2072 Emerald Street"],
+        "roof-90b1b81e": [
+          "1407 East 21st Avenue / 2087 Emerald Street",
+          "1407 East 21st Avenue",
+        ],
+        "roof-4ad5629d": ["1405 East 20th Avenue", "1405 East 20th Avenue"],
+        "east20-1425": ["1425 East 20th Avenue", "1425 East 20th Avenue"],
+      },
+    },
+    "onyx-university-frontages": {
+      descriptor: config?.onyx_university_frontages_site,
+      directory: "onyx-university-frontages-review",
+      groundNode: "onyx-university-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-14401667",
+        "east20-1256",
+        "roof-e01f1a78",
+        "roof-a1c68f4b",
+        "roof-df1012d3",
+        "roof-bece0173",
+        "east19-1262",
+        "roof-96f32dee",
+      ],
+      sourceBatchIds: [
+        "roof-14401667",
+        "roof-e01f1a78",
+        "roof-a1c68f4b",
+        "roof-df1012d3",
+        "roof-bece0173",
+        "roof-96f32dee",
+      ],
+      splitBuildings: {
+        "east20-1256": "roof-e01f1a78",
+        "east19-1262": "roof-96f32dee",
+      },
+      registeredAddresses: {
+        "roof-14401667": ["Trinity House", "1987 University Street"],
+        "east20-1256": ["1256 East 20th Avenue", "1256 East 20th Avenue"],
+        "roof-e01f1a78": [
+          "1276 East 20th Avenue / 2008 Onyx Street",
+          "1276 East 20th Avenue",
+        ],
+        "roof-a1c68f4b": ["1237 East 21st Avenue", "1237 East 21st Avenue"],
+        "roof-df1012d3": ["2066 University Street", "2066 University Street"],
+        "roof-bece0173": ["1136 East 20th Avenue", "1136 East 20th Avenue"],
+        "east19-1262": ["1262 East 19th Avenue", "1262 East 19th Avenue"],
+        "roof-96f32dee": ["1931 Onyx Alley", "1931 Onyx Alley"],
+      },
+    },
+    "southern-boundary-exterior": {
+      descriptor: config?.southern_boundary_exterior_site,
+      directory: "southern-boundary-exterior-review",
+      groundNode: "southern-boundary-approaches",
+      routeToApproaches: true,
+      ids: [
+        "harris-2061",
+        "roof-6594bfe8",
+        "roof-d44341e6",
+        "roof-24910633",
+        "roof-8d87ddf2",
+        "roof-496beafd",
+        "university-2028-rear",
+        "roof-7873e057",
+      ],
+      sourceBatchIds: [
+        "roof-6594bfe8",
+        "roof-d44341e6",
+        "roof-24910633",
+        "roof-8d87ddf2",
+        "roof-496beafd",
+        "roof-7873e057",
+      ],
+      splitBuildings: {
+        "harris-2061": "roof-6594bfe8",
+        "university-2028-rear": "roof-7873e057",
+      },
+      registeredAddresses: {
+        "harris-2061": ["2061 Harris Street", "2061 Harris Street"],
+        "roof-6594bfe8": ["2039 Harris Street", "2039 Harris Street"],
+        "roof-d44341e6": ["1025 East 21st Avenue", "1025 East 21st Avenue"],
+        "roof-24910633": ["2086 Potter Street", "2086 Potter Street"],
+        "roof-8d87ddf2": ["2089 Potter Street", "2089 Potter Street"],
+        "roof-496beafd": ["2000 University Street", "2000 University Street"],
+        "university-2028-rear": [
+          "2028 University Rear Building",
+          "2028 University Street",
+        ],
+        "roof-7873e057": ["2028 University Street", "2028 University Street"],
+      },
+    },
+    "harris-potter-exterior": {
+      descriptor: config?.harris_potter_exterior_site,
+      directory: "harris-potter-exterior-review",
+      groundNode: "harris-potter-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-5be21a96",
+        "potter-1938",
+        "potter-1976",
+        "roof-b0798c1b",
+        "roof-ae77fb78",
+        "roof-da8142c0",
+        "harris-1911",
+        "roof-84ccdaf5",
+        "harris-1941",
+        "roof-7e72b4ca",
+      ],
+      sourceBatchIds: [
+        "roof-5be21a96",
+        "roof-b0798c1b",
+        "roof-ae77fb78",
+        "roof-da8142c0",
+        "roof-84ccdaf5",
+        "roof-7e72b4ca",
+      ],
+      splitBuildings: {
+        "potter-1938": "roof-5be21a96",
+        "potter-1976": "roof-b0798c1b",
+        "harris-1911": "roof-84ccdaf5",
+        "harris-1941": "roof-7e72b4ca",
+      },
+      registeredAddresses: {
+        "roof-5be21a96": ["1926 Potter Street", "1926 Potter Street"],
+        "potter-1938": ["1938 Potter Street", "1938 Potter Street"],
+        "potter-1976": ["1976 Potter Street", "1976 Potter Street"],
+        "roof-b0798c1b": ["1992–1994 Potter Street", "1992 Potter Street"],
+        "roof-ae77fb78": ["1045 East 20th Avenue", "1045 East 20th Avenue"],
+        "roof-da8142c0": ["1096 East 20th Avenue", "1096 East 20th Avenue"],
+        "harris-1911": ["1911 Harris Street", "1911 Harris Street"],
+        "roof-84ccdaf5": ["1925 Harris Street", "1925 Harris Street"],
+        "harris-1941": ["1941 Harris Street", "1941 Harris Street"],
+        "roof-7e72b4ca": ["1959 Harris Street", "1959 Harris Street"],
+      },
+    },
+    "potter-university-exterior": {
+      descriptor: config?.potter_university_exterior_site,
+      directory: "potter-university-exterior-review",
+      groundNode: "potter-university-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-c82780ef",
+        "roof-77b9b163",
+        "roof-09fb4f67",
+        "roof-b6ce8f92",
+        "roof-b74469f2",
+        "university-1940",
+        "university-1960",
+        "university-1976",
+      ],
+      sourceBatchIds: [
+        "roof-c82780ef",
+        "roof-77b9b163",
+        "roof-09fb4f67",
+        "roof-b6ce8f92",
+        "roof-b74469f2",
+      ],
+      absorbedIds: ["roof-7b05979c"],
+      splitBuildings: {
+        "university-1940": "roof-b74469f2",
+        "university-1960": "roof-b74469f2",
+        "university-1976": "roof-b74469f2",
+      },
+      registeredAddresses: {
+        "roof-c82780ef": ["Central Lutheran Church", "1857 Potter Street"],
+        "roof-77b9b163": [
+          "1081–1083 East 19th Avenue",
+          "1081 East 19th Avenue",
+        ],
+        "roof-09fb4f67": [
+          "1085–1089 East 19th Avenue",
+          "1085 East 19th Avenue",
+        ],
+        "roof-b6ce8f92": ["1136 East 19th Avenue", "1136 East 19th Avenue"],
+        "roof-b74469f2": ["1910 University Street", "1910 University Street"],
+        "university-1940": ["1940 University Street", "1940 University Street"],
+        "university-1960": ["1960 University Street", "1960 University Street"],
+        "university-1976": ["1976 University Street", "1976 University Street"],
+      },
+    },
+    "south-campus-frontages": {
+      descriptor: config?.south_campus_frontages_site,
+      directory: "south-campus-frontages-review",
+      groundNode: "south-campus-frontage-walks",
+      routeToApproaches: true,
+      ids: [
+        "roof-213417ee",
+        "roof-649a6455",
+        "roof-35a23996",
+        "roof-7b1d50e1",
+        "roof-16023474",
+        "roof-b3d39b2f",
+      ],
+      sourceBatchIds: [
+        "roof-213417ee",
+        "roof-649a6455",
+        "roof-35a23996",
+        "roof-7b1d50e1",
+        "roof-16023474",
+        "roof-b3d39b2f",
+      ],
+      registeredAddresses: {
+        "roof-213417ee": ["Theta Chi Chapter House", "1125 East 19th Avenue"],
+        "roof-649a6455": [
+          "Delta Tau Delta Chapter House",
+          "1886 University Street",
+        ],
+        "roof-35a23996": ["1860 Potter Street", "1860 Potter Street"],
+        "roof-7b1d50e1": ["1930 Onyx Street", "1930 Onyx Street"],
+        "roof-16023474": ["1941 University Street", "1941 University Street"],
+        "roof-b3d39b2f": ["1976 Onyx Street", "1976 Onyx Street"],
+      },
+    },
+    "onyx-university-split-exterior": {
+      descriptor: config?.onyx_university_split_site,
+      directory: "onyx-university-split-exterior-review",
+      groundNode: "onyx-university-walks",
+      routeToApproaches: true,
+      ids: [
+        "roof-b0cb5ef5",
+        "onyx-1870-west",
+        "roof-48d494fc",
+        "e19-1208-rear-garage",
+        "roof-27720a8d",
+        "onyx-alley-1840",
+      ],
+      sourceBatchIds: ["roof-b0cb5ef5", "roof-48d494fc", "roof-27720a8d"],
+      splitBuildings: {
+        "onyx-1870-west": "roof-b0cb5ef5",
+        "e19-1208-rear-garage": "roof-48d494fc",
+        "onyx-alley-1840": "roof-27720a8d",
+      },
+      registeredAddresses: {
+        "roof-b0cb5ef5": ["1866 Onyx Street", "1866 Onyx Street"],
+        "onyx-1870-west": ["1870 Onyx Street", "1870 Onyx Street"],
+        "roof-48d494fc": ["1208 East 19th House", "1208 East 19th Avenue"],
+        "e19-1208-rear-garage": [
+          "1208 East 19th Rear Garage",
+          "1208 East 19th Avenue",
+        ],
+        "roof-27720a8d": ["1825 University Street", "1825 University Street"],
+        "onyx-alley-1840": ["1840 Onyx Alley", "1840 Onyx Alley"],
+      },
+    },
+    "south-university-exterior": {
+      descriptor: config?.south_university_exterior_site,
+      directory: "south-university-exterior-review",
+      groundNode: "south-university-entry-walks",
+      routeToApproaches: true,
+      ids: ["roof-b048deca", "roof-82ccbe9b", "roof-e0385ede"],
+      sourceBatchIds: ["roof-b048deca", "roof-82ccbe9b", "roof-e0385ede"],
+      registeredAddresses: {
+        "roof-b048deca": ["Sigma Nu Chapter House", "1851 Onyx Street"],
+        "roof-82ccbe9b": ["1306 East 18th Avenue", "1306 East 18th Avenue"],
+        "roof-e0385ede": ["1874 Emerald Street", "1874 Emerald Street"],
+      },
+    },
+    "onyx-house-exterior": {
+      descriptor: config?.onyx_house_exterior_site,
+      directory: "onyx-house-exterior-review",
+      groundNode: "onyx-house-approaches",
+      routeToApproaches: true,
+      ids: ["roof-9dfbc1af"],
+      sourceBatchIds: ["roof-9dfbc1af"],
+      registeredAddresses: {
+        "roof-9dfbc1af": ["Onyx House", "1850 Onyx Street"],
+      },
+    },
+    "east-nineteenth-court-exterior": {
+      descriptor: config?.east_nineteenth_court_site,
+      directory: "east-nineteenth-court-exterior-review",
+      groundNode: "east-nineteenth-court-approach",
+      routeToApproaches: true,
+      ids: ["roof-0eb55b68"],
+      sourceBatchIds: ["roof-0eb55b68"],
+      registeredAddresses: {
+        "roof-0eb55b68": ["1340 East 19th Apartments", "1340 East 19th Avenue"],
+      },
+    },
+    "alton-franklin-exterior": {
+      descriptor: config?.alton_franklin_exterior_site,
+      directory: "alton-franklin-exterior-review",
+      groundNode: "alton-franklin-paving",
+      ids: ["roof-abe13121", "alton-baker-shelter-one", "roof-4b32d15b"],
+      sourceBatchIds: ["roof-abe13121", "roof-4b32d15b"],
+      newBuildingIds: ["alton-baker-shelter-one"],
+      absorbedIds: ["roof-885f60ba", "roof-6dc8ed19"],
+      registeredAddresses: {
+        "roof-abe13121": ["Alton Baker Park Shelter 2", "632 Day Island Road"],
+        "alton-baker-shelter-one": [
+          "Alton Baker Park Shelter 1",
+          "632 Day Island Road",
+        ],
+        "roof-4b32d15b": [
+          "Best Western New Oregon · Franklin Wing",
+          "1655 Franklin Boulevard",
+        ],
+      },
+    },
+    "west-boundary-exterior": {
+      descriptor: config?.west_boundary_exterior_site,
+      directory: "west-boundary-exterior-review",
+      groundNode: "west-boundary-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-dcd48157",
+        "e16-alley-634-640",
+        "e16-alley-630-632",
+        "roof-4dff8a97",
+      ],
+      sourceBatchIds: ["roof-dcd48157", "roof-4dff8a97"],
+      splitBuildings: {
+        "e16-alley-634-640": "roof-dcd48157",
+        "e16-alley-630-632": "roof-dcd48157",
+      },
+      registeredAddresses: {
+        "roof-dcd48157": ["625–627 East 17th Avenue", "625 E 17th Ave"],
+        "e16-alley-634-640": ["634–640 East 16th Alley", "638 E 16th Aly"],
+        "e16-alley-630-632": ["630–632 East 16th Alley", "630 E 16th Aly"],
+        "roof-4dff8a97": [
+          "631 East 19th Avenue · East Building",
+          "631 E 19th Ave",
+        ],
+      },
+    },
+    "hilyard-south-exterior": {
+      descriptor: config?.hilyard_south_exterior_site,
+      directory: "hilyard-south-exterior-review",
+      groundNode: "hilyard-south-approaches",
+      routeToApproaches: true,
+      ids: ["roof-f92cf968", "roof-10b438f6", "roof-769d99e6", "roof-57ecbd31"],
+      sourceBatchIds: [
+        "roof-f92cf968",
+        "roof-10b438f6",
+        "roof-769d99e6",
+        "roof-57ecbd31",
+      ],
+      registeredAddresses: {
+        "roof-f92cf968": ["Parkside Place", "1448 Hilyard St"],
+        "roof-10b438f6": ["1131 East 20th Avenue", "1131 East 20th Avenue"],
+        "roof-769d99e6": ["1039 East 21st Avenue", "1039 East 21st Avenue"],
+        "roof-57ecbd31": ["1145 East 21st Avenue", "1145 East 21st Avenue"],
+      },
+    },
+    "alder-harris-exterior": {
+      descriptor: config?.alder_harris_exterior_site,
+      directory: "alder-harris-exterior-review",
+      groundNode: "alder-harris-approaches",
+      routeToApproaches: true,
+      ids: [
+        "roof-71f4af04",
+        "roof-0587b8ad",
+        "roof-80aadee0",
+        "roof-73a1a032",
+        "roof-1a3a0846",
+        "roof-c7815e30",
+      ],
+      sourceBatchIds: [
+        "roof-71f4af04",
+        "roof-0587b8ad",
+        "roof-80aadee0",
+        "roof-73a1a032",
+        "roof-1a3a0846",
+        "roof-c7815e30",
+      ],
+      registeredAddresses: {
+        "roof-71f4af04": ["Lorax Manner", "1648 Alder St"],
+        "roof-0587b8ad": ["Campbell Club", "1670 Alder St"],
+        "roof-80aadee0": ["Woodside Manor", "1810 Harris St"],
+        "roof-73a1a032": ["1065–1079 East 19th Avenue", "1065–1079 E 19th Ave"],
+        "roof-1a3a0846": ["750 East 18th Avenue", "750 E 18th Ave"],
+        "roof-c7815e30": ["746 East 19th Avenue", "746 E 19th Ave"],
+      },
+    },
+    "east-nineteenth-exterior": {
+      descriptor: config?.east_nineteenth_exterior_site,
+      directory: "east-nineteenth-exterior-review",
+      groundNode: "east-nineteenth-approaches",
+      routeToApproaches: true,
+      ids: ["roof-600a0bef", "roof-a8318b83", "roof-028770d6"],
+      sourceBatchIds: ["roof-600a0bef", "roof-a8318b83", "roof-028770d6"],
+      registeredAddresses: {
+        "roof-600a0bef": ["Sigma Chi Chapter House", "1440 E 19th Ave"],
+        "roof-a8318b83": [
+          "1456 East 19th Avenue / 1458 East 19th Avenue",
+          "1456 and 1458 E 19th Ave",
+        ],
+        "roof-028770d6": ["1355 East 19th Avenue", "1355 E 19th Ave"],
+      },
+    },
+    "parkside-exterior": {
+      descriptor: config?.parkside_exterior_site,
+      directory: "parkside-exterior-review",
+      groundNode: "parkside-driveway",
+      ids: ["roof-6f59699a"],
+      sourceBatchIds: ["roof-6f59699a"],
+      registeredAddresses: {
+        "roof-6f59699a": ["2300 Parkside Lane", "2300 Parkside Ln"],
+      },
+    },
+    "millrace-research-exterior": {
+      descriptor: config?.millrace_research_exterior_site,
+      directory: "millrace-research-exterior-review",
+      groundNode: "millrace-research-approach",
+      routeToApproaches: true,
+      ids: ["roof-8bd064b7"],
+      sourceBatchIds: ["roof-8bd064b7"],
+      registeredAddresses: {
+        "roof-8bd064b7": [
+          "1800 Millrace Drive / 1850 Millrace Drive",
+          "1800 and 1850 Millrace Dr",
+        ],
+      },
+    },
+    "western-exterior": {
+      descriptor: config?.western_exterior_site,
+      directory: "western-exterior-review",
+      groundNode: "western-exterior-approaches",
+      ids: ["roof-fd954de8", "roof-7c73e16e", "roof-990dddda", "roof-be421cdc"],
+      sourceBatchIds: [
+        "roof-fd954de8",
+        "roof-7c73e16e",
+        "roof-990dddda",
+        "roof-be421cdc",
+      ],
+      registeredAddresses: {
+        "roof-fd954de8": [
+          "Marlatt Apartments · Courtyard Building",
+          "749–773 E 17th Ave",
+        ],
+        "roof-7c73e16e": ["Marlatt Apartments · West Wing", "749 E 17th Ave"],
+        "roof-990dddda": ["Marlatt Apartments · East Wing", "761 E 17th Ave"],
+        "roof-be421cdc": ["EWEB Willamette Substation", "777 Annie Mims Ln"],
+      },
+    },
+    "east-station-exterior": {
+      descriptor: config?.east_station_site,
+      directory: "east-station-exterior-review",
+      groundNode: "east-station-frontages",
+      ids: ["roof-4cf339e8", "roof-ce1d33a1", "roof-38958a7f"],
+      sourceBatchIds: ["roof-4cf339e8", "roof-ce1d33a1", "roof-38958a7f"],
+      registeredNames: {
+        "roof-4cf339e8": "UO Police Department East Station",
+        "roof-ce1d33a1": "UOPD East Station Annex A",
+        "roof-38958a7f": "UOPD East Station Annex B",
+      },
+    },
+    "bushnell-east-exterior": {
+      descriptor: config?.bushnell_east_site,
+      directory: "bushnell-east-exterior-review",
+      groundNode: "bushnell-east-approaches",
+      ids: ["roof-b1c16a4e", "roof-e3dcdde4"],
+      sourceBatchIds: ["roof-b1c16a4e", "roof-e3dcdde4"],
+      registeredAddresses: {
+        "roof-b1c16a4e": [
+          "Kellenberger Library · Lottie Price Music Building & Ross Evans Chapel",
+          "1188 Kincaid St",
+        ],
+        "roof-e3dcdde4": ["Burke-Griffeth Hall", "875 E 12th Ave"],
+      },
+    },
+    "goodrich-quad-exterior": {
+      descriptor: config?.goodrich_quad_site,
+      directory: "goodrich-quad-exterior-review",
+      groundNode: "goodrich-quad-approaches",
+      ids: ["roof-fd7ba44a", "bushnell-facilities-1125", "roof-ca96d4a8"],
+      sourceBatchIds: ["roof-fd7ba44a", "roof-ca96d4a8"],
+      newBuildingIds: ["bushnell-facilities-1125"],
+      registeredAddresses: {
+        "roof-fd7ba44a": ["Goodrich Hall", "828 E 11th Ave"],
+        "bushnell-facilities-1125": [
+          "Bushnell Facilities & Maintenance",
+          "1125 Alder St",
+        ],
+        "roof-ca96d4a8": ["1145 Alder Building", "1145 Alder St"],
+      },
+    },
+    "alder-bushnell-exterior": {
+      descriptor: config?.alder_bushnell_site,
+      directory: "alder-bushnell-exterior-review",
+      groundNode: "alder-bushnell-approaches",
+      ids: ["alder-suites-950", "roof-e45bcd54", "roof-b98e8e3e"],
+      sourceBatchIds: ["roof-e45bcd54", "roof-b98e8e3e"],
+      newBuildingIds: ["alder-suites-950"],
+      registeredAddresses: {
+        "alder-suites-950": ["Alder Suites", "950 Alder St"],
+        "roof-e45bcd54": ["Morse Center", "1075 Alder St"],
+        "roof-b98e8e3e": ["Pomajevich Hall", "1090 Alder St"],
+      },
+    },
+    "walnut-alder-broadway-exterior": {
+      descriptor: config?.walnut_alder_broadway_site,
+      directory: "walnut-alder-broadway-exterior-review",
+      groundNode: "walnut-alder-broadway-approaches",
+      ids: ["roof-b3b290df", "roof-8fea5de9", "roof-31cf5cf8"],
+      sourceBatchIds: ["roof-b3b290df", "roof-8fea5de9", "roof-31cf5cf8"],
+      registeredAddresses: {
+        "roof-b3b290df": ["Transportation Services", "1401 Walnut St"],
+        "roof-8fea5de9": ["968 Alder Apartments", "968 Alder St"],
+        "roof-31cf5cf8": [
+          "Former Motel 66 Entrance · July 2024",
+          "755 E Broadway",
+        ],
+      },
+    },
+    "hilyard-fifteenth-exterior": {
+      descriptor: config?.hilyard_1515_exterior_site,
+      directory: "hilyard-fifteenth-exterior-review",
+      groundNode: "hilyard-1515-approaches",
+      ids: ["roof-9bdc0828", "east-15th-740", "hilyard-1547-1549"],
+      sourceBatchIds: ["roof-9bdc0828"],
+      splitBuildings: {
+        "east-15th-740": "roof-9bdc0828",
+        "hilyard-1547-1549": "roof-9bdc0828",
+      },
+      registeredAddresses: {
+        "roof-9bdc0828": ["1515 Hilyard Apartments", "1515 Hilyard St"],
+        "east-15th-740": ["Treetop Apartments · 740 E 15th", "740 E 15th Ave"],
+        "hilyard-1547-1549": [
+          "1547–1549 Hilyard Duplex",
+          "1547–1549 Hilyard St",
+        ],
+      },
+    },
+    "hilyard-apartments-exterior": {
+      descriptor: config?.hilyard_apartments_exterior_site,
+      directory: "hilyard-apartments-exterior-review",
+      groundNode: "hilyard-apartments-approach",
+      ids: ["hilyard-apartments-973"],
+      newBuildingIds: ["hilyard-apartments-973"],
+      registeredAddresses: {
+        "hilyard-apartments-973": [
+          "Hilyard Apartments · 973 Hilyard",
+          "973 Hilyard St",
+        ],
+      },
+    },
     "treated-roof-exterior": {
       descriptor: config?.treated_roof_exterior_site,
       directory: "treated-roof-exterior-review",
@@ -1677,6 +2846,48 @@ async function loadCampusScene(base, manifest, settings) {
     "alder-millrace-exterior",
     "east-campus-housing",
     "hilyard-west-exterior",
+    "university-district-exterior",
+    "university-district-clinic",
+    "former-hospital-site",
+    "zirc-exterior",
+    "hilyard-central-exterior",
+    "e-fifteenth-pair-exterior",
+    "walnut-alder-broadway-exterior",
+    "alder-bushnell-exterior",
+    "goodrich-quad-exterior",
+    "bushnell-east-exterior",
+    "east-station-exterior",
+    "western-exterior",
+    "millrace-fairmount-exterior",
+    "fairmount-kincaid-exterior",
+    "southeast-fairmount-exterior",
+    "northwest-infill-exterior",
+    "millrace-research-exterior",
+    "parkside-exterior",
+    "east-nineteenth-exterior",
+    "alder-harris-exterior",
+    "hilyard-south-exterior",
+    "west-boundary-exterior",
+    "alton-franklin-exterior",
+    "east-nineteenth-court-exterior",
+    "onyx-house-exterior",
+    "south-university-exterior",
+    "onyx-university-split-exterior",
+    "south-campus-frontages",
+    "potter-university-exterior",
+    "harris-potter-exterior",
+    "fairmount-summit-hamble",
+    "orchard-villard-hillside",
+    "fairmount-moss-slope",
+    "columbia-moss-frontages",
+    "agate-emerald-frontages",
+    "emerald-onyx-frontages",
+    "onyx-university-frontages",
+    "southern-boundary-exterior",
+    "rive-eugene-exterior",
+    "alder-thirteenth-exterior",
+    "hilyard-fifteenth-exterior",
+    "hilyard-apartments-exterior",
     "treated-roof-exterior",
     "fairmount-residential-exterior",
     "broadway-orchard-exterior",
@@ -1753,8 +2964,15 @@ async function loadCampusScene(base, manifest, settings) {
           cascadeReview,
           buildingReviews,
           sourceScene,
+          manifest,
+          skipFoundationL2: reviewMode === "landcover-baseline",
           skipContextRoofs: reviewMode === "roof-baseline",
           skipPilotClearance: reviewMode === "tree-baseline",
+          skipPilotTrees: reviewMode === "tree-model-baseline",
+          skipContextTrees: reviewMode === "context-tree-model-baseline",
+          skipUnderstory: reviewMode === "understory-model-baseline",
+          skipPilotFurnishings: reviewMode === "furniture-baseline",
+          skipPilotHardscape: reviewMode === "hardscape-baseline",
         }),
       sourceScene,
     ]);
@@ -1762,7 +2980,20 @@ async function loadCampusScene(base, manifest, settings) {
       if (result.status === "rejected") throw result.reason;
     const [heightfield, art, gltf] = results.map(({ value }) => value);
     exteriorReview?.fitGrade(gltf.scene);
-    return { heightfield, art, root: gltf.scene, exteriorReview };
+    const field = applyFoundationGrade(
+      gltf.scene,
+      heightfield,
+      art?.foundationGrade,
+    );
+    if (art && reviewMode !== "paving-corridors-baseline")
+      art.refinedPavingCorridors = await installPavingCorridors(
+        base,
+        gltf.scene,
+        manifest,
+        art,
+        exteriorReview,
+      );
+    return { heightfield: field, art, root: gltf.scene, exteriorReview };
   }
   if (config?.ford_arena_site && reviewMode !== "ford-arena-baseline") {
     try {
@@ -1853,6 +3084,15 @@ try {
     squirrelFactory = await loadWildlifeFactory(
       sceneAssetUrl(import.meta.env.BASE_URL, profile.wildlife.asset_url),
       profile.wildlife.yaw_correction,
+      profile.wildlife.refined_asset_url
+        ? {
+            refinedUrl: sceneAssetUrl(
+              import.meta.env.BASE_URL,
+              profile.wildlife.refined_asset_url,
+            ),
+            sha256: profile.wildlife.refined_asset_sha256,
+          }
+        : undefined,
     );
   analytics = createAnalytics(profile.analytics);
   if (analytics.enabled) {
@@ -1896,10 +3136,16 @@ try {
     : siteRecords;
   for (const record of buildings) buildingRecords.set(record.id, record);
   presentation = campusScene.art;
+  outdoorObstacleBoxes = buildingReviews
+    .flatMap((review) => review.closedSiteBoxes)
+    .concat(
+      presentation?.furnishingBoxes ?? [],
+      presentation?.hardscape?.boxes ?? [],
+    );
   const extraCollisionBoxes = attachCollisionBoxes(
     buildings,
     presentation?.collisionSupplements || [],
-  );
+  ).concat(outdoorObstacleBoxes);
   model = campusScene.root;
   model.updateMatrixWorld(true);
   const contextGeometries = [],
@@ -1933,7 +3179,10 @@ try {
       }
     }
     if (object.userData.asset_kind === "corridor") {
-      object.material.color.set(0x5e6765);
+      object.material.color.set(
+        object.material.vertexColors ? 0xffffff : 0x5e6765,
+      );
+      if (object.material.vertexColors) object.material.metalness = 0;
       object.material.roughness = 0.98;
       applySurfaceGrain(object.material, 0.08);
       object.material.polygonOffset = true;
@@ -2050,22 +3299,13 @@ try {
         viewport,
         camera,
         studentFactory,
+        decorate: styleDanCarrere,
         ground: (x, z) => sampleGround(field, x, z),
         occluders: collisionMeshes,
         config: {
           name: "Dan Carrere",
-          appearance: {
-            heightM: 1.88,
-            bodyWidth: 1.02,
-            skinColor: "#cda98e",
-            hairColor: "#57504b",
-            hair: "short",
-            bag: "none",
-            shirtColor: "#64574e",
-            trouserColor: "#394342",
-          },
-          plaid: true,
-          hatAndBeard: true,
+          appearance: danCarrereAppearance,
+          plantFeet: true,
           linkLabel: "University profile",
           role: "Associate Teaching Professor · Computer Science",
           url: "https://cas.uoregon.edu/directory/school-of-computer-and-data-sciences/all/dcarrere",
@@ -2079,6 +3319,7 @@ try {
   }
   if (viewerSettings.navigation_url) {
     const graph =
+      presentation?.refinedPavingCorridors?.navigation ??
       buildingReviews.find(({ navigation }) => navigation)?.navigation ??
       (await loadJson(sceneAssetUrl(base, viewerSettings.navigation_url)));
     const clearSegment = (a, b) => {
@@ -2123,6 +3364,9 @@ try {
       (a, b) => !segmentHitsBoxes(a, b, extraCollisionBoxes, 0.5),
     );
     outdoorRouter = router;
+    const siteApproachIds = new Set(
+      buildingReviews.flatMap((review) => review.routeApproachIds),
+    );
     navigation = createNavigation({
       scene,
       router,
@@ -2134,6 +3378,13 @@ try {
         $("#building-search-input").select();
       },
       canPin: (p) => clearSegment(p, p),
+      getBuildingApproach: ({ id }) => {
+        if (!siteApproachIds.has(id)) return null;
+        const entry = entrances?.entries.find(
+          (item) => item.id === id && item.walkable,
+        );
+        return entry ? [entry.approach[0], -entry.approach[1]] : null;
+      },
       fitRoute: (points) => {
         if (view !== "aerial") return;
         cancelCameraTransition();
@@ -2160,7 +3411,10 @@ try {
       life = createCampusLife({
         scene,
         router,
-        activity,
+        activity: updateQuadActivity(
+          activity,
+          presentation?.refinedPavingCorridors?.quadActivity,
+        ),
         studentFactory: studentFactory || createCharacter,
         squirrelFactory,
         getPlayer: () => player,
@@ -2240,6 +3494,7 @@ try {
     half,
     field,
     meshesById,
+    surfaceHeight: presentation?.hardscape?.height,
     overrides: {
       ...viewerSettings.entrances,
       ...exteriorReview?.entrances,
@@ -2263,8 +3518,8 @@ try {
         absorbedBuildingIds.has(saved.buildingId))
     ) {
       const [x, , z] = saved.player;
-      if (!isBlocked(x, z, buildings, half)) {
-        player.set(x, sampleGround(field, x, z), z);
+      if (!isBlocked(x, z, buildings, half) && !isOutdoorObstacle(x, z)) {
+        player.set(x, standingGround(x, z), z);
         character.root.position.copy(player);
       }
       yaw = saved.yaw;
@@ -2469,7 +3724,7 @@ try {
       grounded: vertical.grounded,
       verticalVelocity: vertical.velocity,
       blocked: isBlocked(player.x, player.z, buildings, half),
-      ground: sampleGround(field, player.x, player.z),
+      ground: standingGround(player.x, player.z),
       drawCalls: renderer.info.render.calls,
       triangles: renderer.info.render.triangles,
       presentation: presentation
@@ -2480,6 +3735,9 @@ try {
             backgroundHaze: presentation.contextFog?.enabled || false,
             hazeCache: presentation.contextFog?.state(),
             landcover: Boolean(presentation.config.landcover_url),
+            landcoverLevel: presentation.foundationGrade ? 2 : 1,
+            refinedPavingCorridors:
+              presentation.refinedPavingCorridors?.summary,
             batchedBuildings: presentation.batchedIds.size,
             ...presentation.config.stats,
             ...((presentation.omittedPilotTreeClearance ||
@@ -2491,6 +3749,11 @@ try {
             }),
             refinedContextRoofs: contextRoofs?.size ?? 0,
             registeredPilotTrees: presentation.registeredPilotTrees,
+            refinedPilotTrees: presentation.refinedPilotTrees,
+            refinedContextTrees: presentation.refinedContextTrees,
+            refinedUnderstory: presentation.refinedUnderstory,
+            pilotFurnishings: presentation.furnishingBoxes.length,
+            hardscapeRailBoxes: presentation.hardscape?.boxes.length ?? 0,
           }
         : null,
     }),
@@ -2507,7 +3770,8 @@ try {
         visible: p.z > -1 && p.z < 1 && Math.abs(p.x) < 1 && Math.abs(p.y) < 1,
       };
     },
-    collisionCheck: (x, z) => isBlocked(x, z, buildings, half),
+    collisionCheck: (x, z) =>
+      isBlocked(x, z, buildings, half) || isOutdoorObstacle(x, z),
     entranceInfo: () => entrances.entries.map((e) => ({ ...e })),
     lifeColliders: () => life?.colliders() || [],
     npcInfo: (id) => life?.inspect(id) || zombies?.inspect(id),
@@ -2547,6 +3811,10 @@ try {
       return {
         mesh: hit?.point.y,
         sampled: sampleGround(field, x, z),
+        ...(presentation?.hardscape && {
+          hardscape: presentation.hardscape.height(x, z),
+          standing: standingGround(x, z),
+        }),
         ...(reviewFoundation && {
           foundation: ray.intersectObject(reviewFoundation, true)[0]?.point.y,
           frontage: ray.intersectObject(exteriorReview.frontage, false)[0]

@@ -1,0 +1,394 @@
+{
+  "phase_1_observation_date": "2026-10-17",
+  "public_road_notice_dates": [
+    "2026-11-23",
+    "2026-11-27"
+  ],
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "taxlots_enu_m": {
+    "1703323104701": [
+      [
+        -760.545,
+        90.351
+      ],
+      [
+        -760.943,
+        12.964
+      ],
+      [
+        -897.9,
+        12.995
+      ],
+      [
+        -897.699,
+        90.382
+      ],
+      [
+        -760.545,
+        90.351
+      ]
+    ],
+    "1703323104702": [
+      [
+        -870.067,
+        186.194
+      ],
+      [
+        -856.779,
+        186.188
+      ],
+      [
+        -816.075,
+        186.172
+      ],
+      [
+        -795.723,
+        186.161
+      ],
+      [
+        -780.425,
+        186.155
+      ],
+      [
+        -760.052,
+        186.146
+      ],
+      [
+        -760.545,
+        90.351
+      ],
+      [
+        -897.699,
+        90.382
+      ],
+      [
+        -897.475,
+        186.205
+      ],
+      [
+        -870.067,
+        186.194
+      ]
+    ]
+  },
+  "construction_fence_enu_m": [
+    [
+      -897.4,
+      13.92
+    ],
+    [
+      -761.23,
+      13.94
+    ],
+    [
+      -760.95,
+      89.82
+    ],
+    [
+      -897.2,
+      89.86
+    ]
+  ],
+  "closed_site_boxes_enu_m": [
+    [
+      -897.4,
+      13.94,
+      -829.3,
+      89.82
+    ],
+    [
+      -829.3,
+      13.94,
+      -761.23,
+      89.82
+    ],
+    [
+      -900.85,
+      15.65,
+      -897.22,
+      89.9
+    ],
+    [
+      -900.84,
+      89.9,
+      -897.2,
+      184.6
+    ]
+  ],
+  "closed_sidewalk_enu_m": [
+    [
+      -900.85,
+      16.2
+    ],
+    [
+      -900.84,
+      184.6
+    ]
+  ],
+  "protected_sidewalk_enu_m": [
+    [
+      -897.12,
+      9.99
+    ],
+    [
+      -761.43,
+      10.02
+    ],
+    [
+      -761.41,
+      12.08
+    ],
+    [
+      -897.08,
+      12.05
+    ]
+  ],
+  "south_framing_runs_enu_m": [
+    [
+      [
+        -893.2,
+        18.28
+      ],
+      [
+        -860.6,
+        18.28
+      ]
+    ],
+    [
+      [
+        -859.1,
+        21.62
+      ],
+      [
+        -847.8,
+        21.62
+      ]
+    ],
+    [
+      [
+        -846.65,
+        18.3
+      ],
+      [
+        -809.5,
+        18.3
+      ]
+    ],
+    [
+      [
+        -808.35,
+        21.46
+      ],
+      [
+        -800.15,
+        21.46
+      ]
+    ],
+    [
+      [
+        -798.94,
+        18.34
+      ],
+      [
+        -764.88,
+        18.34
+      ]
+    ]
+  ],
+  "framing_return_depth_m": 11.8,
+  "tower_crane_enu_m": [
+    -831.3,
+    44.0
+  ],
+  "former_roofs_enu_m": {
+    "north slab": [
+      [
+        -901.5,
+        149.25
+      ],
+      [
+        -863.25,
+        149.25
+      ],
+      [
+        -863.25,
+        134.5
+      ],
+      [
+        -855.0,
+        134.0
+      ],
+      [
+        -855.0,
+        119.75
+      ],
+      [
+        -863.25,
+        119.5
+      ],
+      [
+        -863.25,
+        95.25
+      ],
+      [
+        -901.75,
+        95.0
+      ],
+      [
+        -901.5,
+        149.25
+      ]
+    ],
+    "connector": [
+      [
+        -876.75,
+        95.25
+      ],
+      [
+        -866.75,
+        95.25
+      ],
+      [
+        -866.75,
+        78.0
+      ],
+      [
+        -876.75,
+        78.0
+      ],
+      [
+        -876.75,
+        95.25
+      ]
+    ],
+    "south tower and helipad": [
+      [
+        -892.25,
+        79.25
+      ],
+      [
+        -866.75,
+        79.5
+      ],
+      [
+        -866.75,
+        58.5
+      ],
+      [
+        -857.5,
+        48.25
+      ],
+      [
+        -857.5,
+        32.75
+      ],
+      [
+        -865.75,
+        23.0
+      ],
+      [
+        -884.5,
+        22.75
+      ],
+      [
+        -892.75,
+        32.25
+      ],
+      [
+        -892.75,
+        44.25
+      ],
+      [
+        -901.5,
+        53.25
+      ],
+      [
+        -901.75,
+        70.0
+      ],
+      [
+        -892.25,
+        79.25
+      ]
+    ],
+    "west shed": [
+      [
+        -899.25,
+        154.75
+      ],
+      [
+        -888.5,
+        161.0
+      ],
+      [
+        -885.25,
+        161.0
+      ],
+      [
+        -885.25,
+        150.75
+      ],
+      [
+        -898.5,
+        149.75
+      ],
+      [
+        -899.25,
+        154.75
+      ]
+    ]
+  },
+  "source_candidates": {
+    "roof-a3f76ab6": {
+      "source_area_m2": 4856.0,
+      "overlap_with_reviewed_2024_roof_m2": 3977.13,
+      "overlap_fraction": 0.819
+    },
+    "roof-eb5ba9b8": {
+      "source_area_m2": 1771.5,
+      "overlap_with_reviewed_2024_roof_m2": 0.0,
+      "overlap_fraction": 0.0
+    },
+    "roof-8caa7792": {
+      "source_area_m2": 183.5,
+      "overlap_with_reviewed_2024_roof_m2": 0.0,
+      "overlap_fraction": 0.0
+    },
+    "roof-6d2ad952": {
+      "source_area_m2": 473.0,
+      "overlap_with_reviewed_2024_roof_m2": 0.0,
+      "overlap_fraction": 0.0
+    },
+    "roof-8e0e504c": {
+      "source_area_m2": 3767.0,
+      "overlap_with_reviewed_2024_roof_m2": 0.0,
+      "overlap_fraction": 0.0
+    }
+  },
+  "retired_ids": [
+    "roof-a3f76ab6",
+    "roof-eb5ba9b8",
+    "roof-8caa7792",
+    "roof-6d2ad952",
+    "roof-8e0e504c"
+  ],
+  "context_trees": [],
+  "source_references": {
+    "ground_observation": "https://sworegonarchitect.blogspot.com/2026/10/missing-mark.html",
+    "ground_observation_photo": {
+      "source_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUltjMv-fIL8OZe6q6ixDpo6scAj34tJCJndN-CERL0qtJPSIxc16fnTby3-vDfWrzYw4dCjHNu5KY1ReK0teFXyo5soBtH22uXzwMG8GRDxKBccNtVw1pu95fbiumqldckpDLg5N75m7pf3c8Fu8qBbR7tiUzZIMgiG9S6JKG-QXs7rpwgYk6nQ6T81H3/s1400/PXL_20261017_153941628.jpg",
+      "sha256": "fe4bdf3e9ef98da8a403f853ac7bbaffd0e66863f9b1f364daa4910448a8d620",
+      "publication": "https://sworegonarchitect.blogspot.com/2026/10/missing-mark.html"
+    },
+    "program": "https://www.landmarkproperties.com/the-mark-eugene-breaks-ground-donates-10k-to-local-nonprofit/",
+    "parcel_service": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/arcgis/rest/services/EugTaxlots/FeatureServer/0/query?f=json&where=maptaxlot+LIKE+%2717033231047%25%27&outFields=maptaxlot&outSR=3740&returnGeometry=true",
+    "parcel_result_sha256": "775a2397e9606d0c640df1a8116efda0658b2f77a00b83da2dda5a01c8c624c4",
+    "phase_one_application": "https://pdd.eugene-or.gov/LandUse/ApplicationReport?file=ARA-25-0023&pdf=True",
+    "recorded_partition": "https://pdd.eugene-or.gov/LandUse/SearchApplicationDocuments?file=PF-26-0002",
+    "phase_two_application": "https://pdd.eugene-or.gov/LandUse/SearchApplicationDocuments?file=ARA-26-0003",
+    "advisory": "https://www.eugene-or.gov/1191/Road-Work-Advisories",
+    "archive_aerial": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493406.14928888186%2C4876937.282153052%2C493563.14928888186%2C4877123.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=628%2C744",
+    "archive_aerial_sha256": "36b0838cfe2b6626c5b161f98b2ee84d14575d8e64f7b126ab96d9692192abc2"
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "municipal_outline": 170721,
+    "maptaxlot": "1803051208200",
+    "municipal_and_county_queries": [
+      {
+        "file": "east19-1340-city.json",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494141.14928888186%2C4876122.282153052%2C494236.14928888186%2C4876220.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "2a418ca7c5f804699570c858e63bab55ad5ec96f2cf08827d721e019e40104e5"
+      },
+      {
+        "file": "east19-1340-county.json",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494141.14928888186%2C4876122.282153052%2C494236.14928888186%2C4876220.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+        "sha256": "413e03ab0fd86c7d2518ce10ba2b51b4b6297620462111bd8c4a51eff33817ee"
+      },
+      {
+        "file": "east19-1340-lane-2017.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494141.14928888186%2C4876122.282153052%2C494236.14928888186%2C4876220.282153052&bboxSR=3740&imageSR=3740&size=950%2C980&layers=show%3A29&format=png32&transparent=true",
+        "sha256": "f166302e809d09f55c711a2fec85b16f051f8ae60b7ed1859f5e17de0a712920",
+        "year": 2017,
+        "layer": 29,
+        "nontransparent_fraction": 1.0
+      },
+      {
+        "file": "east19-1340-lane-2021.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494141.14928888186%2C4876122.282153052%2C494236.14928888186%2C4876220.282153052&bboxSR=3740&imageSR=3740&size=950%2C980&layers=show%3A26&format=png32&transparent=true",
+        "sha256": "9003d4321f3bc24a1db8c11b132ed76a531710a86aff1571b5168769b805c585",
+        "year": 2021,
+        "layer": 26,
+        "nontransparent_fraction": 0.99962
+      },
+      {
+        "file": "east19-1340-lane-2025.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494141.14928888186%2C4876122.282153052%2C494236.14928888186%2C4876220.282153052&bboxSR=3740&imageSR=3740&size=950%2C980&layers=show%3A57&format=png32&transparent=true",
+        "sha256": "3639efae5e37a2d59af08f6948b97b7fd2c1942ca1092fbc69a04ed18db9743c",
+        "year": 2025,
+        "layer": 57,
+        "nontransparent_fraction": 1.0
+      }
+    ],
+    "survey_surfaces": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "street_views": [
+      {
+        "date": "2024-07",
+        "id": "avIdgp7UC_c7gbRilubajQ",
+        "camera_enu": [
+          -145.66761221020715,
+          -731.8728893650696
+        ],
+        "bearing": 177.38,
+        "distance": 18.8,
+        "file": "east19-1340-north-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=avIdgp7UC_c7gbRilubajQ&heading=177.38",
+        "sha256": "91e854ed397fd55cdd6d94ef85a1135d16ac4ab76daeb6e2a9eaff5e02c23c56"
+      },
+      {
+        "date": "2024-07",
+        "id": "h7LgqHj8svjH3DMZhKVZig",
+        "camera_enu": [
+          -123.10576369526098,
+          -723.6979033751413
+        ],
+        "bearing": 218.86,
+        "distance": 34.6,
+        "file": "east19-1340-northeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=h7LgqHj8svjH3DMZhKVZig&heading=218.86",
+        "sha256": "6c62bdee48899f281784d974a23d432a4b6349a428e0bb6338dfc02a934498cb"
+      },
+      {
+        "date": "2024-07",
+        "id": "I8o-t1-PdcxHaOxHPnqbSw",
+        "camera_enu": [
+          -123.44312824279768,
+          -750.0621023625135
+        ],
+        "bearing": 268.45,
+        "distance": 21.4,
+        "file": "east19-1340-alley-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=I8o-t1-PdcxHaOxHPnqbSw&heading=268.45",
+        "sha256": "54430b4d3968158eea4cdefb791e9274c1d79d42b8f7a4ea296b0e95aa2041e4"
+      }
+    ],
+    "listing": "https://www.windermere.com/listing/OR/Eugene/1340-E-19th-Ave-97403/186516931",
+    "notes": "Street and alley elevations registered to City 170721. Approximate stair and openings. The 2017 USACE height raster ends north of this building."
+  },
+  "models": [
+    {
+      "id": "roof-0eb55b68",
+      "name": "1340 East 19th Apartments",
+      "street_address": "1340 East 19th Avenue",
+      "outline_enu_m": [
+        [
+          -139.2153,
+          -742.8098
+        ],
+        [
+          -150.5128,
+          -742.8737
+        ],
+        [
+          -150.3105,
+          -771.0252
+        ],
+        [
+          -138.9218,
+          -770.9586
+        ],
+        [
+          -138.9517,
+          -769.9571
+        ],
+        [
+          -127.1133,
+          -769.6949
+        ],
+        [
+          -127.4503,
+          -758.4056
+        ],
+        [
+          -139.1121,
+          -758.4802
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -151,
+            -772,
+            -138.83,
+            -742
+          ],
+          "planes": [
+            [
+              -145.65,
+              -758,
+              19.33,
+              0.285,
+              0
+            ],
+            [
+              -145.65,
+              -758,
+              19.33,
+              -0.32,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -145.9,
+            -772,
+            -126,
+            -758.25
+          ],
+          "planes": [
+            [
+              -138,
+              -764.72,
+              18.99,
+              0,
+              -0.302
+            ],
+            [
+              -138,
+              -764.72,
+              18.99,
+              0,
+              0.322
+            ]
+          ]
+        }
+      ],
+      "wall_color": [
+        115,
+        141,
+        158
+      ],
+      "trim_color": [
+        209,
+        211,
+        203
+      ],
+      "roof_color": [
+        126,
+        126,
+        117
+      ],
+      "gallery_recess_bounds_m": [
+        -141.18,
+        -760.56,
+        -123,
+        -740
+      ],
+      "level_z_m": 11.55,
+      "gallery_rise_m": 2.76,
+      "gallery_bounds_m": [
+        [
+          -141.29,
+          -759.85,
+          -139.34,
+          -743.43
+        ],
+        [
+          -141.25,
+          -760.73,
+          -127.53,
+          -758.73
+        ],
+        [
+          -139.49,
+          -747.72,
+          -137.85,
+          -746.59
+        ]
+      ],
+      "gallery_rail_lines_m": [
+        [
+          [
+            -139.47,
+            -758.92
+          ],
+          [
+            -139.47,
+            -747.77
+          ]
+        ],
+        [
+          [
+            -139.47,
+            -746.57
+          ],
+          [
+            -139.47,
+            -743.54
+          ]
+        ],
+        [
+          [
+            -139.47,
+            -758.86
+          ],
+          [
+            -127.68,
+            -758.86
+          ]
+        ],
+        [
+          [
+            -127.67,
+            -758.86
+          ],
+          [
+            -127.67,
+            -760.56
+          ]
+        ]
+      ],
+      "gallery_columns_m": [
+        [
+          -139.47,
+          -758.91
+        ],
+        [
+          -139.47,
+          -752.7
+        ],
+        [
+          -139.47,
+          -743.58
+        ],
+        [
+          -127.68,
+          -758.85
+        ]
+      ],
+      "courtyard_stair_bounds_m": [
+        -139.33,
+        -752.05,
+        -137.89,
+        -747.65
+      ],
+      "street_entry_enu_m": [
+        -145.14,
+        -743.04
+      ],
+      "courtyard_lawn_bounds_m": [
+        -137.8,
+        -758.48,
+        -128.2,
+        -748.1
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-0eb55b68",
+      "target": "context-background-1-0"
+    }
+  ]
+}

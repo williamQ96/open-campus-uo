@@ -1,0 +1,4752 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "surfaces": {
+    "2013-15": {
+      "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+      "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+    },
+    "2017": {
+      "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+      "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+    },
+    "DOGAMI": {
+      "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+      "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    }
+  },
+  "sources": {
+    "roof-6133a11a": {
+      "city_objectid": 149825,
+      "outline_enu_wkt": "POLYGON ((593.6873394122231 -765.697999805212, 592.1004716188763 -765.6942632263526, 592.0906785196858 -769.8825040487573, 596.390995110618 -770.4977734545246, 595.4358255313127 -777.1739194430411, 595.4322077321121 -777.1733274012804, 595.432104769221 -777.2000314211473, 590.7246095590526 -777.1890365798026, 590.7324484622804 -773.8633846146986, 583.8693227775511 -773.847229026258, 583.8806505132816 -769.0470206560567, 584.515416423732 -769.0484747346491, 584.5278354627662 -763.7722169738263, 582.4252133879927 -763.7672741282731, 582.4284722963348 -762.3788276314735, 582.0714344684384 -762.3779841754586, 582.0993986024405 -750.5163292037323, 588.1690385882393 -750.5305680781603, 588.1681951320497 -750.8876058980823, 591.9765965717379 -750.8965361332521, 591.9652539136005 -755.7364461412653, 593.7107382002287 -755.7405484756455, 593.6873394122231 -765.697999805212))",
+      "area_m2": 256.976,
+      "inside_addresses": [
+        "1910 ORCHARD ST",
+        "1924 ORCHARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042207800": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-6133a11a": 135.567
+      },
+      "sample_counts": {
+        "2013-15": 202,
+        "2017": 202,
+        "DOGAMI": 202
+      },
+      "aerial_and_query": [
+        {
+          "file": "orchard-1910-1924-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "8a419067329b4e45f0091e654e9c4bf2021900843be5ce2554513b2201c7053e"
+        },
+        {
+          "file": "orchard-1910-1924-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "869ac4b69480b470c2761ad1065e27b10c917eef4a7fc3541db1ca5b08d66d99"
+        },
+        {
+          "file": "orchard-1910-1924-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&bboxSR=3740&imageSR=3740&size=1000%2C980&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "2d7f82db3bb8cfd5eeddf7f0dbea3f7f09c5ff9e555465a0a913161c970f7cfa",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "orchard-1910-1924-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&bboxSR=3740&imageSR=3740&size=1000%2C980&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "59c0a57929d9c9eae025013d8d84f693ea21c332b6ce5b920c394b3fd4b35df5",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99936
+        },
+        {
+          "file": "orchard-1910-1924-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&bboxSR=3740&imageSR=3740&size=1000%2C980&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "91ede5f16e3c0502f04a356b562b531520e8a5e038d7c5d9918d87383ecd2a9b",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "east-nineteenth-1978": {
+      "city_objectid": 149826,
+      "outline_enu_wkt": "POLYGON ((580.5554646230303 -762.2233261065558, 581.5471758902422 -762.2292265379801, 581.4985894237761 -770.4013664815575, 580.5067782251281 -770.395469032228, 578.7215979926987 -770.3848512256518, 576.4604145391495 -770.371340656653, 576.5272320386139 -759.1446482948959, 574.2660486465902 -759.131137708202, 574.2705511834356 -758.3773766038939, 572.8024400366703 -758.3686952339485, 572.7989877674845 -758.9566191099584, 566.094659359951 -758.9167227353901, 566.1541817397228 -748.9197919685394, 572.8585099878255 -748.9596883524209, 572.8532689549029 -749.8394759427756, 574.3212831348064 -749.8482602154836, 578.3677465345827 -749.8723856369033, 579.8751658104593 -749.8812937615439, 579.8415997225093 -755.5144951771945, 580.5953608184936 -755.5189977064729, 580.5554646230303 -762.2233261065558))",
+      "area_m2": 187.39,
+      "inside_addresses": [
+        "1978 E 19TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803042207900": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-6133a11a": 95.173
+      },
+      "sample_counts": {
+        "2013-15": 143,
+        "2017": 143,
+        "DOGAMI": 143
+      },
+      "aerial_and_query": [
+        {
+          "file": "orchard-1910-1924-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "8a419067329b4e45f0091e654e9c4bf2021900843be5ce2554513b2201c7053e"
+        },
+        {
+          "file": "orchard-1910-1924-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "869ac4b69480b470c2761ad1065e27b10c917eef4a7fc3541db1ca5b08d66d99"
+        },
+        {
+          "file": "orchard-1910-1924-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&bboxSR=3740&imageSR=3740&size=1000%2C980&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "2d7f82db3bb8cfd5eeddf7f0dbea3f7f09c5ff9e555465a0a913161c970f7cfa",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "orchard-1910-1924-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&bboxSR=3740&imageSR=3740&size=1000%2C980&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "59c0a57929d9c9eae025013d8d84f693ea21c332b6ce5b920c394b3fd4b35df5",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99936
+        },
+        {
+          "file": "orchard-1910-1924-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494860.14928888186%2C4876116.282153052%2C494960.14928888186%2C4876214.282153052&bboxSR=3740&imageSR=3740&size=1000%2C980&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "91ede5f16e3c0502f04a356b562b531520e8a5e038d7c5d9918d87383ecd2a9b",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-28a8e5f0": {
+      "city_objectid": 169373,
+      "outline_enu_wkt": "POLYGON ((627.1356953284703 -768.9803750766441, 640.5841557845124 -768.9965754635632, 640.5584182897583 -790.2970995670184, 627.1099571482628 -790.280899216421, 627.1356953284703 -768.9803750766441))",
+      "area_m2": 286.46,
+      "inside_addresses": [
+        "1935 ORCHARD ST",
+        "1937 ORCHARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042206600": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-28a8e5f0": 174.858
+      },
+      "sample_counts": {
+        "2013-15": 240,
+        "2017": 240,
+        "DOGAMI": 240
+      },
+      "aerial_and_query": [
+        {
+          "file": "orchard-1937-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494920.14928888186%2C4876103.282153052%2C495004.14928888186%2C4876194.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "312f8b10b803fb0d5d2efbe6688df83c06ce5f0af59d4775e556ae8961573bcb"
+        },
+        {
+          "file": "orchard-1937-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494920.14928888186%2C4876103.282153052%2C495004.14928888186%2C4876194.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "e9f7a07de9aec6427ec43472402389962e39a8aa638d822d0a75c23540c14c81"
+        },
+        {
+          "file": "orchard-1937-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494920.14928888186%2C4876103.282153052%2C495004.14928888186%2C4876194.282153052&bboxSR=3740&imageSR=3740&size=840%2C910&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "960655a555beba1573102c0f88d876239a67f700d176c251be68743e93c1a8c6",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "orchard-1937-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494920.14928888186%2C4876103.282153052%2C495004.14928888186%2C4876194.282153052&bboxSR=3740&imageSR=3740&size=840%2C910&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "0cb1a958a01bd3d66e506f145b6c3783fd711791958e6ab6bb7e16773bc34cf9",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99996
+        },
+        {
+          "file": "orchard-1937-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494920.14928888186%2C4876103.282153052%2C495004.14928888186%2C4876194.282153052&bboxSR=3740&imageSR=3740&size=840%2C910&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "8537dddc96cacd46337ca3e1494c059d8d88bc4dbf6f37336a9ff7bf3b2b88b9",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "orchard-1966": {
+      "city_objectid": 149818,
+      "outline_enu_wkt": "POLYGON ((594.1434791486827 -817.941540970467, 591.8425577268936 -817.9536174666137, 591.855936986336 -820.4925084784627, 583.4457605580101 -820.5368301821873, 583.4501263762941 -821.3699295213446, 577.5789408705896 -821.4008689038455, 577.5678914227756 -819.3052241196856, 575.5885337375803 -819.3157027009875, 575.5770028574043 -817.1268689790741, 575.2554420929519 -817.128566714935, 575.212141660857 -808.9167670020834, 583.4636371813831 -808.8732816828415, 583.4707963321707 -810.222115971148, 591.8015807654592 -810.1781639186665, 591.8206316133146 -813.7882237061858, 594.1215500276885 -813.7760472958907, 594.1434791486827 -817.941540970467))",
+      "area_m2": 193.037,
+      "inside_addresses": [
+        "1965 ORCHARD ALY",
+        "1966 ORCHARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042208300": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-29aaebb6": 147.665
+      },
+      "sample_counts": {
+        "2013-15": 157,
+        "2017": 157,
+        "DOGAMI": 157
+      },
+      "aerial_and_query": [
+        {
+          "file": "orchard-1950-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "1ba43891955e2cc07eddd38968b31d8711326f333a20b082c2eb172276484b3a"
+        },
+        {
+          "file": "orchard-1950-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "47cc516ed5e8a93ce1d3e28c44a31c4141ee93e76a2f6a096954ee08180ef2d2"
+        },
+        {
+          "file": "orchard-1950-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&bboxSR=3740&imageSR=3740&size=890%2C970&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "5a30572ea4f82de51075e598459a31785cdf93729a576b7007a8a4d5f34b50a0",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "orchard-1950-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&bboxSR=3740&imageSR=3740&size=890%2C970&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "1a61c9652e97f3a842a441c16a56c0fe95c2ff2f0b75b40a4a9ce1c0b72345fd",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99838
+        },
+        {
+          "file": "orchard-1950-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&bboxSR=3740&imageSR=3740&size=890%2C970&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "2a48ae07938fa275a16be29e504c0f018aec1532c875cd33300d69280d66b5af",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-29aaebb6": {
+      "city_objectid": 149821,
+      "outline_enu_wkt": "POLYGON ((590.9741636321996 -800.3954122047871, 593.9827912813053 -800.4765159813687, 593.7990703095566 -807.2974420059472, 574.3829667999526 -806.7743393331766, 574.5666880874196 -799.9534133020788, 574.5773968388676 -799.9536936897784, 574.720660871244 -794.6352286785841, 591.1174274558434 -795.0769471954554, 590.9741636321996 -800.3954122047871))",
+      "area_m2": 219.801,
+      "inside_addresses": [
+        "1950 ORCHARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042208200": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-29aaebb6": 167.846
+      },
+      "sample_counts": {
+        "2013-15": 180,
+        "2017": 180,
+        "DOGAMI": 180
+      },
+      "aerial_and_query": [
+        {
+          "file": "orchard-1950-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "1ba43891955e2cc07eddd38968b31d8711326f333a20b082c2eb172276484b3a"
+        },
+        {
+          "file": "orchard-1950-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "47cc516ed5e8a93ce1d3e28c44a31c4141ee93e76a2f6a096954ee08180ef2d2"
+        },
+        {
+          "file": "orchard-1950-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&bboxSR=3740&imageSR=3740&size=890%2C970&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "5a30572ea4f82de51075e598459a31785cdf93729a576b7007a8a4d5f34b50a0",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "orchard-1950-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&bboxSR=3740&imageSR=3740&size=890%2C970&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "1a61c9652e97f3a842a441c16a56c0fe95c2ff2f0b75b40a4a9ce1c0b72345fd",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99838
+        },
+        {
+          "file": "orchard-1950-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494869.14928888186%2C4876071.282153052%2C494958.14928888186%2C4876168.282153052&bboxSR=3740&imageSR=3740&size=890%2C970&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "2a48ae07938fa275a16be29e504c0f018aec1532c875cd33300d69280d66b5af",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "orchard-1994": {
+      "city_objectid": 149809,
+      "outline_enu_wkt": "POLYGON ((557.2810557699995 -839.8092583371326, 557.5092728561722 -839.6755419457331, 557.8180163838551 -840.2026456268504, 567.972469831293 -840.2157648010179, 567.9739161913167 -839.1049820482731, 571.0682441475801 -839.10892532859, 571.0679482793203 -839.3469426389784, 580.9856832654914 -839.3597268546, 580.9808674643282 -843.1351051414385, 583.096621995559 -843.1377559378743, 583.0874552494497 -850.2785841217265, 578.8889447543188 -850.273197600618, 578.8901132282917 -849.3541299551725, 572.8005649331608 -849.3463854119182, 572.7995443972759 -850.1397441644222, 567.9596854303381 -850.1334999315441, 567.9689853615128 -842.9133649431169, 559.3995507830987 -842.9023376014084, 561.1988934798865 -845.9739418877289, 559.5558619850781 -846.9364159703255, 560.518438965024 -848.5795444017276, 557.8256246580277 -850.1569734085351, 556.8631505791564 -848.5139418942854, 554.9919019768131 -849.610132355243, 554.6175178557169 -848.9711838578805, 554.0242691467865 -849.3187030078843, 550.0672188075259 -842.5639686873183, 554.676884528657 -839.8635872649029, 555.3185015816125 -840.9589758887887, 556.0031558197807 -840.5579266445711, 555.3347737176227 -839.4168352540582, 556.6126766508096 -838.6682668654248, 557.2810557699995 -839.8092583371326))",
+      "area_m2": 248.642,
+      "inside_addresses": [
+        "1991 ORCHARD ALY",
+        "1994 ORCHARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042208500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-7e12343c": 39.406
+      },
+      "sample_counts": {
+        "2013-15": 176,
+        "2017": 176,
+        "DOGAMI": 176
+      },
+      "aerial_and_query": [
+        {
+          "file": "orchard-1990-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "4498f425898539b78f5600aea3a5f74d29d76dfa3db2233a56cb9a3eb1ccf474"
+        },
+        {
+          "file": "orchard-1990-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "058acef89567a615e678d25dff46374e175e55110d4931a8cd69dbf4bc2ae35a"
+        },
+        {
+          "file": "orchard-1990-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&bboxSR=3740&imageSR=3740&size=890%2C910&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "1c03fa215cad831286fda13efcec19bb39c76a3f1562d888232cc96a9ba3e32b",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "orchard-1990-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&bboxSR=3740&imageSR=3740&size=890%2C910&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "8aca88e43ebd3a24d6874461b83b0565dfada4901cdd7f779ca26ee0e8d84352",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99848
+        },
+        {
+          "file": "orchard-1990-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&bboxSR=3740&imageSR=3740&size=890%2C910&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "8548572abf241e5b8f1d5b6080fb66fdc0f5e1095f9e16a622ac468096cb9463",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99998
+        }
+      ]
+    },
+    "roof-7e12343c": {
+      "city_objectid": 149813,
+      "outline_enu_wkt": "POLYGON ((561.808758199797 -828.5365178817883, 561.7933586724685 -829.4177088923752, 564.6343600419932 -829.3909121984616, 565.4272609484033 -829.3866462251171, 565.4286188380793 -829.64321483206, 568.8496032000403 -829.6252075918019, 568.8726932369755 -834.0004742564633, 561.8377491971478 -834.0375485038385, 561.8380279250559 -834.0904420716688, 561.8472260488779 -835.8359297141433, 553.7544106673449 -835.8785784477368, 553.7452125785057 -834.1330908033997, 552.5207613697276 -834.1395373605192, 552.5220282803639 -834.3964086957276, 552.0990915005095 -834.4057324687019, 550.3590737319901 -834.4440683210269, 550.3406265015947 -833.9902027510107, 550.312169278739 -828.5874596871436, 552.4914023216115 -828.5759154856205, 552.491391853313 -828.5856161415577, 561.808758199797 -828.5365178817883))",
+      "area_m2": 110.278,
+      "inside_addresses": [
+        "1990 ORCHARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042208400": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-7e12343c": 53.957
+      },
+      "sample_counts": {
+        "2013-15": 79,
+        "2017": 79,
+        "DOGAMI": 79
+      },
+      "aerial_and_query": [
+        {
+          "file": "orchard-1990-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "4498f425898539b78f5600aea3a5f74d29d76dfa3db2233a56cb9a3eb1ccf474"
+        },
+        {
+          "file": "orchard-1990-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "058acef89567a615e678d25dff46374e175e55110d4931a8cd69dbf4bc2ae35a"
+        },
+        {
+          "file": "orchard-1990-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&bboxSR=3740&imageSR=3740&size=890%2C910&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "1c03fa215cad831286fda13efcec19bb39c76a3f1562d888232cc96a9ba3e32b",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "orchard-1990-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&bboxSR=3740&imageSR=3740&size=890%2C910&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "8aca88e43ebd3a24d6874461b83b0565dfada4901cdd7f779ca26ee0e8d84352",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99848
+        },
+        {
+          "file": "orchard-1990-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494843.14928888186%2C4876043.282153052%2C494932.14928888186%2C4876134.282153052&bboxSR=3740&imageSR=3740&size=890%2C910&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "8548572abf241e5b8f1d5b6080fb66fdc0f5e1095f9e16a622ac468096cb9463",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99998
+        }
+      ]
+    },
+    "villard-1963": {
+      "city_objectid": 149820,
+      "outline_enu_wkt": "POLYGON ((513.3702862916398 -808.1074372772127, 508.1865606753272 -808.1194563833997, 508.19081475160783 -809.970695251599, 501.15585022966843 -809.9869683403522, 501.15159320883686 -808.1356295524165, 501.1458898819401 -805.6495113736019, 501.13523830717895 -801.047665684484, 513.353934166953 -801.0195733336732, 513.3702862916398 -808.1074372772127))",
+      "area_m2": 99.63,
+      "inside_addresses": [
+        "1963 VILLARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042210101": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-2cb36f2e": 83.277
+      },
+      "sample_counts": {
+        "2013-15": 71,
+        "2017": 71,
+        "DOGAMI": 71
+      },
+      "aerial_and_query": [
+        {
+          "file": "villard-1947-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "8fb4de45e7fceabd65d8d130a4aebe1220054f625e75b149ae3b1121dafeab73"
+        },
+        {
+          "file": "villard-1947-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "88733e3b6f7ad3b71d120c4e55fb841d2b3b5909fa430a7237c4fe57e4a51270"
+        },
+        {
+          "file": "villard-1947-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&bboxSR=3740&imageSR=3740&size=910%2C940&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "179590c4a6fbda7809e06ab6c511957a01b8d44bdb3ca0853d05b8779abbbddc",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-1947-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&bboxSR=3740&imageSR=3740&size=910%2C940&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "bbd46bfa69bd9046b2f47d06071076086e621a1923312c19ae46a53adb5f0367",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99799
+        },
+        {
+          "file": "villard-1947-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&bboxSR=3740&imageSR=3740&size=910%2C940&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "f743d2263a1f69d9b1f635cd56b5f4a0a39727b58766569447bdcd162eb514a6",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99991
+        }
+      ]
+    },
+    "roof-2cb36f2e": {
+      "city_objectid": 149822,
+      "outline_enu_wkt": "POLYGON ((514.2917003663606 -789.4047711165622, 514.2848902361584 -786.4426691792905, 519.5214151861728 -786.4305741023272, 519.5410935936961 -794.9465892584994, 514.3044686195208 -794.9586873240769, 514.2994384218473 -792.7899604095146, 511.1786438449053 -792.7972070481628, 511.1868213727139 -796.3411888936535, 500.60787224111846 -796.3655395628884, 500.6064259429113 -795.7307601692155, 498.1203078291728 -795.736463480629, 498.09647276846226 -785.3691066168249, 500.5824909087969 -785.3634062958881, 506.08360742375953 -785.3507141014561, 511.7433196105994 -785.3376882243901, 511.752682769089 -789.41055340413, 514.2917003663606 -789.4047711165622))",
+      "area_m2": 199.696,
+      "inside_addresses": [
+        "1947 VILLARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042210200": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-2cb36f2e": 122.332
+      },
+      "sample_counts": {
+        "2013-15": 154,
+        "2017": 154,
+        "DOGAMI": 154
+      },
+      "aerial_and_query": [
+        {
+          "file": "villard-1947-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "8fb4de45e7fceabd65d8d130a4aebe1220054f625e75b149ae3b1121dafeab73"
+        },
+        {
+          "file": "villard-1947-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "88733e3b6f7ad3b71d120c4e55fb841d2b3b5909fa430a7237c4fe57e4a51270"
+        },
+        {
+          "file": "villard-1947-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&bboxSR=3740&imageSR=3740&size=910%2C940&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "179590c4a6fbda7809e06ab6c511957a01b8d44bdb3ca0853d05b8779abbbddc",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-1947-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&bboxSR=3740&imageSR=3740&size=910%2C940&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "bbd46bfa69bd9046b2f47d06071076086e621a1923312c19ae46a53adb5f0367",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99799
+        },
+        {
+          "file": "villard-1947-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494792.14928888186%2C4876083.282153052%2C494883.14928888186%2C4876177.282153052&bboxSR=3740&imageSR=3740&size=910%2C940&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "f743d2263a1f69d9b1f635cd56b5f4a0a39727b58766569447bdcd162eb514a6",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99991
+        }
+      ]
+    },
+    "villard-1946": {
+      "city_objectid": 171192,
+      "outline_enu_wkt": "POLYGON ((445.56507129670354 -786.493646511808, 448.84287331363885 -786.4965145494789, 455.696596939757 -786.5025526173413, 455.69475532585056 -788.5884816730395, 457.1846450039302 -788.5897131683305, 457.1809617972467 -792.76157130301, 455.6910691203084 -792.7602398917079, 455.69004276313353 -793.9521128740162, 448.83632200118154 -793.9461747240275, 447.49543916940456 -793.9449958158657, 447.49912246724125 -789.7731376653537, 445.5622032484389 -789.7714485405013, 445.56507129670354 -786.493646511808))",
+      "area_m2": 73.611,
+      "inside_addresses": [
+        "1946 VILLARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042210900": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-b315719c": 35.745
+      },
+      "sample_counts": {
+        "2013-15": 52,
+        "2017": 52,
+        "DOGAMI": 52
+      },
+      "aerial_and_query": [
+        {
+          "file": "villard-1964-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "3371a73921f6ec469eb1a0cdcc5c7583a4ea7e55d1c29c5aca43b65d9e1c9838"
+        },
+        {
+          "file": "villard-1964-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "7934760888883c81b7cf5958f003029050cbca371da1aa29007a4f4f3af5ab0e"
+        },
+        {
+          "file": "villard-1964-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&bboxSR=3740&imageSR=3740&size=900%2C930&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "206d05681028039c1e8c97969ab9832b431340c1521dc6ea992f6519edc02a20",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-1964-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&bboxSR=3740&imageSR=3740&size=900%2C930&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "fd2c082d860c24ce527b27f913e71401ddf39bac16e20e63c34bc91d773df569",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-1964-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&bboxSR=3740&imageSR=3740&size=900%2C930&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "dc4eb5b953a1311629b7ac443780dd6d281d2aa1fce2c2e6c640a5ba9fe0f324",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ]
+    },
+    "roof-b315719c": {
+      "city_objectid": 171196,
+      "outline_enu_wkt": "POLYGON ((436.31618485500803 -799.4478567810729, 446.14969112403924 -799.4564580293372, 446.1458522983012 -803.7772262142971, 447.3378282125923 -803.7783495318145, 447.340235662763 -800.9474770277739, 455.83285910001723 -800.9548991378397, 455.8307124392013 -803.3388479640707, 457.61862186854705 -803.3403845131397, 457.61473055474926 -807.8101595994085, 455.8268211038667 -807.8086230559275, 455.8254896927974 -809.2985157836229, 447.33296302100644 -809.2909907884896, 447.3354733704473 -806.4602151792496, 446.1434974531876 -806.4590918673202, 440.0348197691492 -806.453716413118, 436.30999101971975 -806.4504906218499, 436.31618485500803 -799.4478567810729))",
+      "area_m2": 150.907,
+      "inside_addresses": [
+        "1964 VILLARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042211100": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-b315719c": 77.571
+      },
+      "sample_counts": {
+        "2013-15": 113,
+        "2017": 113,
+        "DOGAMI": 113
+      },
+      "aerial_and_query": [
+        {
+          "file": "villard-1964-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "3371a73921f6ec469eb1a0cdcc5c7583a4ea7e55d1c29c5aca43b65d9e1c9838"
+        },
+        {
+          "file": "villard-1964-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "7934760888883c81b7cf5958f003029050cbca371da1aa29007a4f4f3af5ab0e"
+        },
+        {
+          "file": "villard-1964-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&bboxSR=3740&imageSR=3740&size=900%2C930&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "206d05681028039c1e8c97969ab9832b431340c1521dc6ea992f6519edc02a20",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-1964-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&bboxSR=3740&imageSR=3740&size=900%2C930&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "fd2c082d860c24ce527b27f913e71401ddf39bac16e20e63c34bc91d773df569",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-1964-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494731.14928888186%2C4876083.282153052%2C494821.14928888186%2C4876176.282153052&bboxSR=3740&imageSR=3740&size=900%2C930&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "dc4eb5b953a1311629b7ac443780dd6d281d2aa1fce2c2e6c640a5ba9fe0f324",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ]
+    },
+    "villard-outbuilding-171184": {
+      "city_objectid": 171184,
+      "outline_enu_wkt": "POLYGON ((436.8717274006922 -845.4870146783069, 443.72535208723275 -845.4930558754131, 443.7195160968113 -852.0486638648435, 436.8658942828188 -852.0427225874737, 436.8717274006922 -845.4870146783069))",
+      "area_m2": 44.93,
+      "inside_addresses": [],
+      "parcel_fractions": {
+        "1803042211300": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-d4f7e70c": 19.314
+      },
+      "sample_counts": {
+        "2013-15": 30,
+        "2017": 0,
+        "DOGAMI": 30
+      },
+      "aerial_and_query": [
+        {
+          "file": "villard-1996-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "183773f141f14c3a24aff60b711b41c8ea9678810f0b3700461f94ebc4fd6ebe"
+        },
+        {
+          "file": "villard-1996-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "69867e33ad779fa8de73b23e81ddd1b65a1c9fded60ecec83d02261296307937"
+        },
+        {
+          "file": "villard-1996-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&bboxSR=3740&imageSR=3740&size=890%2C880&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "91fbf57d9161192cdb26373e7459ded3541d129adc8f1c6217a20c49981667a7",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-1996-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&bboxSR=3740&imageSR=3740&size=890%2C880&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "8fda3dcc007fb29ce7e7c4254d981a3e76e8334087819b6054546c0f8b9df328",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99996
+        },
+        {
+          "file": "villard-1996-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&bboxSR=3740&imageSR=3740&size=890%2C880&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "630834b1db1e6ff58a45db38a7405d413cdc0c3966f6f7408db68e11e0b90a58",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ]
+    },
+    "roof-d4f7e70c": {
+      "city_objectid": 171185,
+      "outline_enu_wkt": "POLYGON ((438.07353327731835 -834.1646410152316, 455.65462112345267 -834.1801014374942, 455.64786185877165 -841.9276792919263, 446.41029116424033 -841.9195915078744, 446.40905964252306 -843.4094813782722, 441.79027427441906 -843.4054374070838, 441.79160572908586 -841.9155445555225, 438.06677368242526 -841.9122188827023, 438.07353327731835 -834.1646410152316))",
+      "area_m2": 143.093,
+      "inside_addresses": [
+        "1996 VILLARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042211300": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-d4f7e70c": 125.675
+      },
+      "sample_counts": {
+        "2013-15": 104,
+        "2017": 0,
+        "DOGAMI": 104
+      },
+      "aerial_and_query": [
+        {
+          "file": "villard-1996-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "183773f141f14c3a24aff60b711b41c8ea9678810f0b3700461f94ebc4fd6ebe"
+        },
+        {
+          "file": "villard-1996-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "69867e33ad779fa8de73b23e81ddd1b65a1c9fded60ecec83d02261296307937"
+        },
+        {
+          "file": "villard-1996-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&bboxSR=3740&imageSR=3740&size=890%2C880&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "91fbf57d9161192cdb26373e7459ded3541d129adc8f1c6217a20c49981667a7",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-1996-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&bboxSR=3740&imageSR=3740&size=890%2C880&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "8fda3dcc007fb29ce7e7c4254d981a3e76e8334087819b6054546c0f8b9df328",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99996
+        },
+        {
+          "file": "villard-1996-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494730.14928888186%2C4876042.282153052%2C494819.14928888186%2C4876130.282153052&bboxSR=3740&imageSR=3740&size=890%2C880&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "630834b1db1e6ff58a45db38a7405d413cdc0c3966f6f7408db68e11e0b90a58",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ]
+    },
+    "roof-a53a0c57": {
+      "city_objectid": 171186,
+      "outline_enu_wkt": "POLYGON ((423.5634969812818 -871.1629392802715, 428.3869301562081 -871.1247738525271, 428.2480036657653 -864.5504855895415, 452.0102615674259 -864.0482394061983, 452.18599771673325 -874.7002746555954, 437.1585607799352 -874.9482051553205, 437.21913985844003 -877.7282963991165, 423.6678226494114 -877.9114666031674, 423.5634969812818 -871.1629392802715))",
+      "area_m2": 308.307,
+      "inside_addresses": [
+        "2012 VILLARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042211500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-a53a0c57": 217.726
+      },
+      "sample_counts": {
+        "2013-15": 251,
+        "2017": 0,
+        "DOGAMI": 251
+      },
+      "aerial_and_query": [
+        {
+          "file": "villard-2012-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494718.14928888186%2C4876015.282153052%2C494816.14928888186%2C4876104.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "6abdc2cac59d57a6d48846324208388d27ad44e55bcbe846981d5eceba6f58f4"
+        },
+        {
+          "file": "villard-2012-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494718.14928888186%2C4876015.282153052%2C494816.14928888186%2C4876104.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "0b6897dc07af447ee0654dd21be6d1734cdf230f9f3f33ad9b9dd7757520b0b7"
+        },
+        {
+          "file": "villard-2012-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494718.14928888186%2C4876015.282153052%2C494816.14928888186%2C4876104.282153052&bboxSR=3740&imageSR=3740&size=980%2C890&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "5cfcc13ec63863f54a5e5d3a34c8e9f49754c453c56915a50591bb87a8f628f7",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-2012-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494718.14928888186%2C4876015.282153052%2C494816.14928888186%2C4876104.282153052&bboxSR=3740&imageSR=3740&size=980%2C890&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "e3ed317c061ffce443c00c526f8ba6b65278a177f844a3eb4af31f6177f4cca7",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99971
+        },
+        {
+          "file": "villard-2012-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494718.14928888186%2C4876015.282153052%2C494816.14928888186%2C4876104.282153052&bboxSR=3740&imageSR=3740&size=980%2C890&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "85331e75c145a04ca32ab93f57cb62a7c51ef9f8b543c979882aadd806219866",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-b23b2dec": {
+      "city_objectid": 159911,
+      "outline_enu_wkt": "POLYGON ((500.45100451493636 -905.41301091481, 497.03607250080677 -905.4428373901173, 496.96621651097666 -897.4536364674568, 510.35400073230267 -897.3365471903235, 510.5257775365026 -916.9757232628763, 507.63072923512664 -917.0010326905176, 507.6796246941085 -922.5993739031255, 501.9402174963034 -922.6495797671378, 501.94330943207024 -923.0011000810191, 500.60491209471365 -923.0128476303071, 500.6046914610197 -922.9853532286361, 500.45100451493636 -905.41301091481))",
+      "area_m2": 263.256,
+      "inside_addresses": [
+        "2075 VILLARD ST"
+      ],
+      "parcel_fractions": {
+        "1803042209500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-b23b2dec": 187.157
+      },
+      "sample_counts": {
+        "2013-15": 219,
+        "2017": 0,
+        "DOGAMI": 219
+      },
+      "aerial_and_query": [
+        {
+          "file": "villard-2075-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494791.14928888186%2C4875970.282153052%2C494874.14928888186%2C4876066.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "0cd11e77f4f3cee5a427ebd429e12302a257b4edbc29150fa5af0b702ee9a397"
+        },
+        {
+          "file": "villard-2075-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494791.14928888186%2C4875970.282153052%2C494874.14928888186%2C4876066.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "0dc3feaef464d98d8d5dad04d3eeb6ae02581fcbcc46152a8340e808e4673f6e"
+        },
+        {
+          "file": "villard-2075-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494791.14928888186%2C4875970.282153052%2C494874.14928888186%2C4876066.282153052&bboxSR=3740&imageSR=3740&size=830%2C960&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "6dc4048da59f8aa3b9a479ba7293ea8b2b1ad9b68fe3733a946092c218774be2",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "villard-2075-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494791.14928888186%2C4875970.282153052%2C494874.14928888186%2C4876066.282153052&bboxSR=3740&imageSR=3740&size=830%2C960&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "0d9dbe25fe38f83daf7975eeb5795b22bceba07fa5502fc3846da9eaa3f40a8c",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99731
+        },
+        {
+          "file": "villard-2075-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494791.14928888186%2C4875970.282153052%2C494874.14928888186%2C4876066.282153052&bboxSR=3740&imageSR=3740&size=830%2C960&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "a0cea08328321deddd75e21bf862e07a3d66c994c9ba1f7213e87b94626eba9a",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-31f27b04": {
+      "city_objectid": 159839,
+      "outline_enu_wkt": "POLYGON ((713.6679169420968 -860.9496858129278, 714.2319031647057 -860.2952288901433, 719.9451447765459 -865.2181785693392, 719.0863592013484 -866.214746744372, 724.7482777782134 -871.0934267072007, 736.2814602638246 -873.1026613926515, 734.7838033960434 -881.6995698297396, 712.0363084941637 -877.7366845104843, 712.6290701795369 -874.334070536308, 702.3643046088982 -865.4891321379691, 697.6768420771696 -866.8193884724751, 695.5619182936498 -859.3665476068854, 702.637044570758 -857.358801449649, 700.6377985227737 -850.3138226345181, 707.7605227420572 -848.2925552790985, 710.602877079451 -858.30857533589, 713.6679169420968 -860.9496858129278))",
+      "area_m2": 498.135,
+      "inside_addresses": [
+        "1999 FAIRMOUNT BLVD"
+      ],
+      "parcel_fractions": {
+        "1803042106800": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-31f27b04": 303.133
+      },
+      "sample_counts": {
+        "2013-15": 423,
+        "2017": 423,
+        "DOGAMI": 423
+      },
+      "aerial_and_query": [
+        {
+          "file": "fairmount-1999-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494990.14928888186%2C4876012.282153052%2C495100.14928888186%2C4876114.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "3b9fb74d49223331b8575fd4d63b07612c0693c597f806b347bef4b787307081"
+        },
+        {
+          "file": "fairmount-1999-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494990.14928888186%2C4876012.282153052%2C495100.14928888186%2C4876114.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "d0d2b9a5ba494cf2fe8d0615e4bed38e83530ebee05f905c86c0252da843d1b4"
+        },
+        {
+          "file": "fairmount-1999-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494990.14928888186%2C4876012.282153052%2C495100.14928888186%2C4876114.282153052&bboxSR=3740&imageSR=3740&size=1100%2C1020&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "9344b31a6cc93f672ef79e10b8b61d87649903f872aca5ff07b7cd3ed937740d",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "fairmount-1999-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494990.14928888186%2C4876012.282153052%2C495100.14928888186%2C4876114.282153052&bboxSR=3740&imageSR=3740&size=1100%2C1020&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "9f9c71fb270df34f3c492897620b692e2963546eaa2b9ae2a9a4124cc8909639",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99999
+        },
+        {
+          "file": "fairmount-1999-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494990.14928888186%2C4876012.282153052%2C495100.14928888186%2C4876114.282153052&bboxSR=3740&imageSR=3740&size=1100%2C1020&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "17b0eb6c47cab9cb4b294d090be084c049df2799ba8f61cd90225939eb4a5665",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    }
+  },
+  "street_views": {
+    "149825-orchard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "ekoVWb2LIplVUn6cSo3Whw",
+        "camera_enu": [
+          609.3780226957751,
+          -781.0339104272425
+        ],
+        "bearing": 308.8,
+        "distance": 26.0,
+        "file": "149825-orchard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ekoVWb2LIplVUn6cSo3Whw&heading=308.8"
+      }
+    ],
+    "169373-orchard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "ekoVWb2LIplVUn6cSo3Whw",
+        "camera_enu": [
+          609.3780226957751,
+          -781.0339104272425
+        ],
+        "bearing": 86.74,
+        "distance": 24.5,
+        "file": "169373-orchard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ekoVWb2LIplVUn6cSo3Whw&heading=86.74"
+      }
+    ],
+    "149825-orchard-aly-side": [
+      {
+        "date": "2024-07",
+        "id": "REVC2YheM3uIUiCodknzIQ",
+        "camera_enu": [
+          530.7825309489854,
+          -733.7069313880056
+        ],
+        "bearing": 118.01,
+        "distance": 66.1,
+        "file": "149825-orchard-aly-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=REVC2YheM3uIUiCodknzIQ&heading=118.01"
+      }
+    ],
+    "149825-orchard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "sQ5RhbBRq68cSnH_kgVMZw",
+        "camera_enu": [
+          609.7671789511805,
+          -760.1607429366559
+        ],
+        "bearing": 257.52,
+        "distance": 21.2,
+        "file": "149825-orchard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=sQ5RhbBRq68cSnH_kgVMZw&heading=257.52"
+      }
+    ],
+    "149826-e-19th-ave-front": [
+      {
+        "date": "2024-07",
+        "id": "HkJ507nZaG1LrfzLW1kQbg",
+        "camera_enu": [
+          580.0371301195701,
+          -733.6822081021965
+        ],
+        "bearing": 183.17,
+        "distance": 27.0,
+        "file": "149826-e-19th-ave-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HkJ507nZaG1LrfzLW1kQbg&heading=183.17"
+      }
+    ],
+    "149825-orchard-aly-front": [
+      {
+        "date": "2024-07",
+        "id": "J9nVhsJ4IvLVR7PR5H8qoQ",
+        "camera_enu": [
+          550.9849499143311,
+          -733.2833567233756
+        ],
+        "bearing": 129.52,
+        "distance": 49.4,
+        "file": "149825-orchard-aly-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=J9nVhsJ4IvLVR7PR5H8qoQ&heading=129.52"
+      }
+    ],
+    "149826-e-19th-ave-side": [
+      {
+        "date": "2024-07",
+        "id": "M4yZJkYzOe2FgOhNunCNLA",
+        "camera_enu": [
+          592.3235424289596,
+          -733.8568175872788
+        ],
+        "bearing": 207.19,
+        "distance": 30.2,
+        "file": "149826-e-19th-ave-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=M4yZJkYzOe2FgOhNunCNLA&heading=207.19"
+      }
+    ],
+    "169373-orchard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "PkDum-Cs1qgnIhS9nJblpA",
+        "camera_enu": [
+          609.2941183195799,
+          -791.2780578769743
+        ],
+        "bearing": 64.64,
+        "distance": 27.2,
+        "file": "169373-orchard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PkDum-Cs1qgnIhS9nJblpA&heading=64.64"
+      }
+    ],
+    "149818-orchard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "JhllZRlL0DBz4JaPJnif_A",
+        "camera_enu": [
+          609.20728422096,
+          -811.392802849412
+        ],
+        "bearing": 260.59,
+        "distance": 24.9,
+        "file": "149818-orchard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JhllZRlL0DBz4JaPJnif_A&heading=260.59"
+      }
+    ],
+    "149821-orchard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "2Wkv9A6qlX9sNo1QUsyJww",
+        "camera_enu": [
+          609.1138060381636,
+          -821.5806979713961
+        ],
+        "bearing": 305.76,
+        "distance": 30.7,
+        "file": "149821-orchard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2Wkv9A6qlX9sNo1QUsyJww&heading=305.76"
+      }
+    ],
+    "149818-orchard-aly-front": [
+      {
+        "date": "2024-07",
+        "id": "2Wkv9A6qlX9sNo1QUsyJww",
+        "camera_enu": [
+          609.1138060381636,
+          -821.5806979713961
+        ],
+        "bearing": 284.07,
+        "distance": 25.2,
+        "file": "149818-orchard-aly-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2Wkv9A6qlX9sNo1QUsyJww&heading=284.07"
+      }
+    ],
+    "149818-orchard-aly-side": [
+      {
+        "date": "2024-07",
+        "id": "2Wkv9A6qlX9sNo1QUsyJww",
+        "camera_enu": [
+          609.1138060381636,
+          -821.5806979713961
+        ],
+        "bearing": 284.07,
+        "distance": 25.2,
+        "file": "149818-orchard-aly-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2Wkv9A6qlX9sNo1QUsyJww&heading=284.07"
+      }
+    ],
+    "149821-orchard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "0JrtFfex5VVLU_Efm30AkA",
+        "camera_enu": [
+          609.2042891704477,
+          -801.377933120355
+        ],
+        "bearing": 264.87,
+        "distance": 25.1,
+        "file": "149821-orchard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0JrtFfex5VVLU_Efm30AkA&heading=264.87"
+      }
+    ],
+    "149821-orchard-aly-front": [
+      {
+        "date": "2024-07",
+        "id": "0JrtFfex5VVLU_Efm30AkA",
+        "camera_enu": [
+          609.2042891704477,
+          -801.377933120355
+        ],
+        "bearing": 264.87,
+        "distance": 25.1,
+        "file": "149821-orchard-aly-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0JrtFfex5VVLU_Efm30AkA&heading=264.87"
+      }
+    ],
+    "149821-orchard-aly-side": [
+      {
+        "date": "2024-07",
+        "id": "2Wkv9A6qlX9sNo1QUsyJww",
+        "camera_enu": [
+          609.1138060381636,
+          -821.5806979713961
+        ],
+        "bearing": 305.76,
+        "distance": 30.7,
+        "file": "149821-orchard-aly-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2Wkv9A6qlX9sNo1QUsyJww&heading=305.76"
+      }
+    ],
+    "149818-orchard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "iZx_t4cTXN1kpS78V5U5ow",
+        "camera_enu": [
+          608.8724863716052,
+          -831.8523874357343
+        ],
+        "bearing": 304.13,
+        "distance": 29.2,
+        "file": "149818-orchard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=iZx_t4cTXN1kpS78V5U5ow&heading=304.13"
+      }
+    ],
+    "149809-orchard-aly-side": [
+      {
+        "date": "2024-07",
+        "id": "5efceT7cnR1REO9yppex8w",
+        "camera_enu": [
+          608.0570889765513,
+          -862.4319264339283
+        ],
+        "bearing": 298.79,
+        "distance": 37.1,
+        "file": "149809-orchard-aly-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=5efceT7cnR1REO9yppex8w&heading=298.79"
+      }
+    ],
+    "149809-orchard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "5efceT7cnR1REO9yppex8w",
+        "camera_enu": [
+          608.0570889765513,
+          -862.4319264339283
+        ],
+        "bearing": 298.79,
+        "distance": 37.1,
+        "file": "149809-orchard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=5efceT7cnR1REO9yppex8w&heading=298.79"
+      }
+    ],
+    "149809-orchard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "FAbJbNYjxSPRfA3o7IApsw",
+        "camera_enu": [
+          608.504136952688,
+          -842.1725788637996
+        ],
+        "bearing": 265.87,
+        "distance": 33.1,
+        "file": "149809-orchard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FAbJbNYjxSPRfA3o7IApsw&heading=265.87"
+      }
+    ],
+    "149809-orchard-aly-front": [
+      {
+        "date": "2024-07",
+        "id": "FAbJbNYjxSPRfA3o7IApsw",
+        "camera_enu": [
+          608.504136952688,
+          -842.1725788637996
+        ],
+        "bearing": 265.87,
+        "distance": 33.1,
+        "file": "149809-orchard-aly-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FAbJbNYjxSPRfA3o7IApsw&heading=265.87"
+      }
+    ],
+    "149813-orchard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "iZx_t4cTXN1kpS78V5U5ow",
+        "camera_enu": [
+          608.8724863716052,
+          -831.8523874357343
+        ],
+        "bearing": 270.04,
+        "distance": 49.3,
+        "file": "149813-orchard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=iZx_t4cTXN1kpS78V5U5ow&heading=270.04"
+      }
+    ],
+    "149813-orchard-aly-side": [
+      {
+        "date": "2024-07",
+        "id": "FAbJbNYjxSPRfA3o7IApsw",
+        "camera_enu": [
+          608.504136952688,
+          -842.1725788637996
+        ],
+        "bearing": 281.96,
+        "distance": 50.0,
+        "file": "149813-orchard-aly-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FAbJbNYjxSPRfA3o7IApsw&heading=281.96"
+      }
+    ],
+    "149813-orchard-aly-front": [
+      {
+        "date": "2024-07",
+        "id": "FAbJbNYjxSPRfA3o7IApsw",
+        "camera_enu": [
+          608.504136952688,
+          -842.1725788637996
+        ],
+        "bearing": 281.96,
+        "distance": 50.0,
+        "file": "149813-orchard-aly-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FAbJbNYjxSPRfA3o7IApsw&heading=281.96"
+      }
+    ],
+    "149813-orchard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "FAbJbNYjxSPRfA3o7IApsw",
+        "camera_enu": [
+          608.504136952688,
+          -842.1725788637996
+        ],
+        "bearing": 281.96,
+        "distance": 50.0,
+        "file": "149813-orchard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FAbJbNYjxSPRfA3o7IApsw&heading=281.96"
+      }
+    ],
+    "149820-villard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "f9AK0xKZKnRn28h7BQdYtg",
+        "camera_enu": [
+          484.32362883369206,
+          -801.9310405971482
+        ],
+        "bearing": 93.54,
+        "distance": 23.0,
+        "file": "149820-villard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=f9AK0xKZKnRn28h7BQdYtg&heading=93.54"
+      }
+    ],
+    "149822-villard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "f9AK0xKZKnRn28h7BQdYtg",
+        "camera_enu": [
+          484.32362883369206,
+          -801.9310405971482
+        ],
+        "bearing": 66.15,
+        "distance": 26.8,
+        "file": "149822-villard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=f9AK0xKZKnRn28h7BQdYtg&heading=66.15"
+      }
+    ],
+    "149822-villard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "bZuZvN5wNBF7x2zGuWQd2A",
+        "camera_enu": [
+          484.47576089121867,
+          -791.6907517462969
+        ],
+        "bearing": 88.61,
+        "distance": 24.4,
+        "file": "149822-villard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=bZuZvN5wNBF7x2zGuWQd2A&heading=88.61"
+      }
+    ],
+    "149820-villard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "X6sOUSvuUFdOOZPlrLjd-Q",
+        "camera_enu": [
+          484.06561585713644,
+          -812.3917994275689
+        ],
+        "bearing": 68.69,
+        "distance": 24.9,
+        "file": "149820-villard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=X6sOUSvuUFdOOZPlrLjd-Q&heading=68.69"
+      }
+    ],
+    "171192-villard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "bZuZvN5wNBF7x2zGuWQd2A",
+        "camera_enu": [
+          484.47576089121867,
+          -791.6907517462969
+        ],
+        "bearing": 270.76,
+        "distance": 32.1,
+        "file": "171192-villard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=bZuZvN5wNBF7x2zGuWQd2A&heading=270.76"
+      }
+    ],
+    "171192-villard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "f9AK0xKZKnRn28h7BQdYtg",
+        "camera_enu": [
+          484.32362883369206,
+          -801.9310405971482
+        ],
+        "bearing": 288.44,
+        "distance": 33.7,
+        "file": "171192-villard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=f9AK0xKZKnRn28h7BQdYtg&heading=288.44"
+      }
+    ],
+    "171196-villard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "f9AK0xKZKnRn28h7BQdYtg",
+        "camera_enu": [
+          484.32362883369206,
+          -801.9310405971482
+        ],
+        "bearing": 265.13,
+        "distance": 37.5,
+        "file": "171196-villard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=f9AK0xKZKnRn28h7BQdYtg&heading=265.13"
+      }
+    ],
+    "171196-villard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "SUAmMU8cMoM4xn-GTHv2EA",
+        "camera_enu": [
+          483.61973808077164,
+          -822.8247321909294
+        ],
+        "bearing": 295.79,
+        "distance": 40.7,
+        "file": "171196-villard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=SUAmMU8cMoM4xn-GTHv2EA&heading=295.79"
+      }
+    ],
+    "171184-villard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "8gNzoHnsPnH841KmLWU3ZQ",
+        "camera_enu": [
+          483.1606211052276,
+          -843.7378077078611
+        ],
+        "bearing": 263.31,
+        "distance": 43.2,
+        "file": "171184-villard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8gNzoHnsPnH841KmLWU3ZQ&heading=263.31"
+      }
+    ],
+    "171185-villard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "BbhWayZiDP0h_ZyAykxZ9Q",
+        "camera_enu": [
+          483.4279818091891,
+          -833.1951327119023
+        ],
+        "bearing": 262.44,
+        "distance": 36.9,
+        "file": "171185-villard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BbhWayZiDP0h_ZyAykxZ9Q&heading=262.44"
+      }
+    ],
+    "171186-villard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "XKBuSV16D7saAMxVLwUXHw",
+        "camera_enu": [
+          483.3322266761097,
+          -864.012625454925
+        ],
+        "bearing": 264.93,
+        "distance": 43.3,
+        "file": "171186-villard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XKBuSV16D7saAMxVLwUXHw&heading=264.93"
+      }
+    ],
+    "171184-villard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "XKBuSV16D7saAMxVLwUXHw",
+        "camera_enu": [
+          483.3322266761097,
+          -864.012625454925
+        ],
+        "bearing": 289.51,
+        "distance": 45.7,
+        "file": "171184-villard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XKBuSV16D7saAMxVLwUXHw&heading=289.51"
+      }
+    ],
+    "171185-villard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "_m4HxUvpUp3pwnOpyQSmdQ",
+        "camera_enu": [
+          483.220710484602,
+          -853.8133417759091
+        ],
+        "bearing": 293.44,
+        "distance": 39.6,
+        "file": "171185-villard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_m4HxUvpUp3pwnOpyQSmdQ&heading=293.44"
+      }
+    ],
+    "171186-villard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "M7L6KEpX9hWNh-BBdyNf0g",
+        "camera_enu": [
+          483.5909571205848,
+          -884.1962951757014
+        ],
+        "bearing": 290.65,
+        "distance": 46.4,
+        "file": "171186-villard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=M7L6KEpX9hWNh-BBdyNf0g&heading=290.65"
+      }
+    ],
+    "159911-villard-st-side": [
+      {
+        "date": "2024-07",
+        "id": "jGdt6p8OE2OnUB9PWI5Bkg",
+        "camera_enu": [
+          484.50666264636675,
+          -925.6199504705146
+        ],
+        "bearing": 55.52,
+        "distance": 25.5,
+        "file": "159911-villard-st-side-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jGdt6p8OE2OnUB9PWI5Bkg&heading=55.52"
+      }
+    ],
+    "159911-villard-st-front": [
+      {
+        "date": "2024-07",
+        "id": "jwlU9Js1PDvXaUlhmM8tIg",
+        "camera_enu": [
+          483.465167329472,
+          -915.199808373116
+        ],
+        "bearing": 79.73,
+        "distance": 22.4,
+        "file": "159911-villard-st-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jwlU9Js1PDvXaUlhmM8tIg&heading=79.73"
+      }
+    ],
+    "159839-fairmount-blvd-side": [
+      {
+        "date": "2020-11",
+        "id": "uMSQsDjp7ZIdwl0EyUa_Ng",
+        "camera_enu": [
+          686.5980300090741,
+          -882.6549369301647
+        ],
+        "bearing": 46.25,
+        "distance": 28.3,
+        "file": "159839-fairmount-blvd-side-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uMSQsDjp7ZIdwl0EyUa_Ng&heading=46.25"
+      }
+    ],
+    "159839-fairmount-blvd-front": [
+      {
+        "date": "2020-11",
+        "id": "wmvKN2p_c1po-V0ZWB2Wwg",
+        "camera_enu": [
+          683.877107859531,
+          -873.0423661107197
+        ],
+        "bearing": 66.74,
+        "distance": 25.2,
+        "file": "159839-fairmount-blvd-front-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=wmvKN2p_c1po-V0ZWB2Wwg&heading=66.74"
+      }
+    ]
+  },
+  "exterior_reference_pages": {
+    "roof-31f27b04": {
+      "page": "https://www.homes.com/property/1999-fairmount-blvd-eugene-or/k6r4kg8w4vw74/",
+      "date": 2019
+    },
+    "east-nineteenth-1978": {
+      "page": "https://hotpads.com/1978-e-19th-ave-eugene-or-97403-vfacmh/pad",
+      "date": 2025
+    }
+  },
+  "source_split": {
+    "east-nineteenth-1978": "roof-6133a11a",
+    "orchard-1966": "roof-29aaebb6",
+    "orchard-1994": "roof-7e12343c",
+    "villard-1963": "roof-2cb36f2e",
+    "villard-1946": "roof-b315719c",
+    "villard-outbuilding-171184": "roof-d4f7e70c"
+  },
+  "source_ranges": [
+    {
+      "id": "roof-6133a11a",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-28a8e5f0",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-29aaebb6",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-7e12343c",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-2cb36f2e",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-b315719c",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-d4f7e70c",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-a53a0c57",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-b23b2dec",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-31f27b04",
+      "target": "context-background-3-0"
+    }
+  ],
+  "models": [
+    {
+      "id": "roof-6133a11a",
+      "city_objectid": 149825,
+      "outline_enu_m": [
+        [
+          593.68734,
+          -765.698
+        ],
+        [
+          592.10047,
+          -765.69426
+        ],
+        [
+          592.09068,
+          -769.8825
+        ],
+        [
+          596.391,
+          -770.49777
+        ],
+        [
+          595.43583,
+          -777.17392
+        ],
+        [
+          595.43221,
+          -777.17333
+        ],
+        [
+          595.4321,
+          -777.20003
+        ],
+        [
+          590.72461,
+          -777.18904
+        ],
+        [
+          590.73245,
+          -773.86338
+        ],
+        [
+          583.86932,
+          -773.84723
+        ],
+        [
+          583.88065,
+          -769.04702
+        ],
+        [
+          584.51542,
+          -769.04847
+        ],
+        [
+          584.52784,
+          -763.77222
+        ],
+        [
+          582.42521,
+          -763.76727
+        ],
+        [
+          582.42847,
+          -762.37883
+        ],
+        [
+          582.07143,
+          -762.37798
+        ],
+        [
+          582.0994,
+          -750.51633
+        ],
+        [
+          588.16904,
+          -750.53057
+        ],
+        [
+          588.1682,
+          -750.88761
+        ],
+        [
+          591.9766,
+          -750.89654
+        ],
+        [
+          591.96525,
+          -755.73645
+        ],
+        [
+          593.71074,
+          -755.74055
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1910 / 1924 Orchard Street",
+      "street_address": "1910 Orchard Street",
+      "base_z_m": 13.54,
+      "levels_z_m": [
+        14.86
+      ],
+      "wall_color": [
+        199,
+        196,
+        173
+      ],
+      "roof_color": [
+        118,
+        118,
+        105
+      ],
+      "trim_color": [
+        211,
+        207,
+        179
+      ],
+      "seam_color": [
+        183,
+        180,
+        159
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            581.95,
+            -769.2,
+            593.84,
+            -750.39
+          ],
+          "planes": [
+            [
+              586.18,
+              -757.5,
+              19.85,
+              0.3,
+              0
+            ],
+            [
+              586.18,
+              -757.5,
+              19.85,
+              -0.32,
+              0
+            ],
+            [
+              586.18,
+              -755,
+              20.42,
+              0,
+              -0.23
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            590.2,
+            -766.0,
+            594.02,
+            -755.56
+          ],
+          "planes": [
+            [
+              592.3,
+              -759,
+              18.29,
+              -0.01,
+              -0.02
+            ]
+          ],
+          "roof_color": [
+            175,
+            175,
+            159
+          ]
+        },
+        {
+          "bounds_m": [
+            583.7,
+            -777.34,
+            596.55,
+            -768.77
+          ],
+          "planes": [
+            [
+              588.18,
+              -770.5,
+              19.08,
+              0.31,
+              0
+            ],
+            [
+              588.18,
+              -770.5,
+              19.08,
+              -0.45,
+              0
+            ],
+            [
+              590,
+              -771,
+              18.89,
+              0,
+              0.52
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            590.55,
+            -777.33,
+            596.55,
+            -770.41
+          ],
+          "planes": [
+            [
+              593,
+              -773.9,
+              17.29,
+              -0.05,
+              0.02
+            ]
+          ],
+          "roof_color": [
+            179,
+            176,
+            158
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            593.47,
+            -760.04
+          ],
+          "bearing": 90,
+          "windows": [
+            [
+              -2,
+              1.49,
+              15.55,
+              16.75
+            ],
+            [
+              2.31,
+              1.82,
+              15.57,
+              16.78
+            ]
+          ],
+          "canopy": [
+            6.66,
+            0.82,
+            17.25
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "east-nineteenth-1978",
+      "city_objectid": 149826,
+      "outline_enu_m": [
+        [
+          580.55546,
+          -762.22333
+        ],
+        [
+          581.54718,
+          -762.22923
+        ],
+        [
+          581.49859,
+          -770.40137
+        ],
+        [
+          580.50678,
+          -770.39547
+        ],
+        [
+          578.7216,
+          -770.38485
+        ],
+        [
+          576.46041,
+          -770.37134
+        ],
+        [
+          576.52723,
+          -759.14465
+        ],
+        [
+          574.26605,
+          -759.13114
+        ],
+        [
+          574.27055,
+          -758.37738
+        ],
+        [
+          572.80244,
+          -758.3687
+        ],
+        [
+          572.79899,
+          -758.95662
+        ],
+        [
+          566.09466,
+          -758.91672
+        ],
+        [
+          566.15418,
+          -748.91979
+        ],
+        [
+          572.85851,
+          -748.95969
+        ],
+        [
+          572.85327,
+          -749.83948
+        ],
+        [
+          574.32128,
+          -749.84826
+        ],
+        [
+          578.36775,
+          -749.87239
+        ],
+        [
+          579.87517,
+          -749.88129
+        ],
+        [
+          579.8416,
+          -755.5145
+        ],
+        [
+          580.59536,
+          -755.519
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1978 East 19th Avenue",
+      "street_address": "1978 East 19th Avenue",
+      "base_z_m": 12.61,
+      "levels_z_m": [
+        13.64,
+        15.68
+      ],
+      "wall_color": [
+        156,
+        167,
+        164
+      ],
+      "roof_color": [
+        105,
+        108,
+        104
+      ],
+      "trim_color": [
+        212,
+        211,
+        190
+      ],
+      "seam_color": [
+        139,
+        153,
+        149
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            566.0,
+            -759.21,
+            580.78,
+            -748.78
+          ],
+          "planes": [
+            [
+              574.42,
+              -753.9,
+              18.96,
+              0,
+              0.46
+            ],
+            [
+              574.42,
+              -753.9,
+              18.96,
+              0,
+              -0.53
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            572.65,
+            -754.87,
+            580.03,
+            -749.72
+          ],
+          "planes": [
+            [
+              576.71,
+              -751.01,
+              19.15,
+              0.32,
+              0
+            ],
+            [
+              576.71,
+              -751.01,
+              19.15,
+              -0.32,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            576.26,
+            -770.58,
+            581.7,
+            -758.85
+          ],
+          "planes": [
+            [
+              578.99,
+              -764.8,
+              17.34,
+              0.26,
+              0
+            ],
+            [
+              578.99,
+              -764.8,
+              17.34,
+              -0.39,
+              0
+            ],
+            [
+              579,
+              -763,
+              19.0,
+              0,
+              0.31
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            576.4,
+            -750.06
+          ],
+          "bearing": 0,
+          "windows": [
+            [
+              -0.4,
+              2.21,
+              16.15,
+              17.48
+            ],
+            [
+              0.95,
+              1.19,
+              14.1,
+              15.24
+            ]
+          ],
+          "minimum": 3.9
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "parking_cut": [
+        565.8,
+        -752.72,
+        572.29,
+        -748.65
+      ],
+      "parking_posts": [
+        [
+          566.76,
+          -749.22
+        ],
+        [
+          571.85,
+          -749.2
+        ]
+      ],
+      "parking_paving": [
+        566.01,
+        -752.72,
+        572.25,
+        -746.6
+      ]
+    },
+    {
+      "id": "roof-28a8e5f0",
+      "city_objectid": 169373,
+      "outline_enu_m": [
+        [
+          627.1357,
+          -768.98038
+        ],
+        [
+          640.58416,
+          -768.99658
+        ],
+        [
+          640.55842,
+          -790.2971
+        ],
+        [
+          627.10996,
+          -790.2809
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1935 / 1937 Orchard Street",
+      "street_address": "1937 Orchard Street",
+      "base_z_m": 14.54,
+      "levels_z_m": [
+        15.66,
+        18.72
+      ],
+      "wall_color": [
+        176,
+        181,
+        170
+      ],
+      "roof_color": [
+        103,
+        109,
+        113
+      ],
+      "trim_color": [
+        220,
+        221,
+        204
+      ],
+      "seam_color": [
+        157,
+        165,
+        152
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            626.95,
+            -790.47,
+            640.74,
+            -768.84
+          ],
+          "planes": [
+            [
+              633.78,
+              -780,
+              24.11,
+              0.4,
+              0
+            ],
+            [
+              633.78,
+              -780,
+              24.11,
+              -0.42,
+              0
+            ],
+            [
+              633.78,
+              -788,
+              24.08,
+              0,
+              0.24
+            ],
+            [
+              633.78,
+              -772.8,
+              25.08,
+              0,
+              -0.34
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            627.35,
+            -780.4
+          ],
+          "bearing": 270,
+          "garages": [
+            [
+              0.1,
+              4.75
+            ]
+          ],
+          "garage_color": [
+            185,
+            190,
+            187
+          ],
+          "windows": [
+            [
+              -6.9,
+              1.86,
+              19.53,
+              20.78
+            ],
+            [
+              -4.27,
+              1.78,
+              19.53,
+              20.78
+            ],
+            [
+              2.95,
+              2.39,
+              19.49,
+              20.82
+            ],
+            [
+              6.14,
+              1.45,
+              19.49,
+              20.82
+            ]
+          ],
+          "stair": [
+            8.2,
+            18.42,
+            3.2,
+            1.07
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "driveway": [
+        622.8,
+        -782.9,
+        627.36,
+        -777.9
+      ],
+      "chimney": [
+        633.3,
+        -780.12,
+        0.72,
+        0.57,
+        0.85,
+        [
+          139,
+          111,
+          87
+        ]
+      ]
+    },
+    {
+      "id": "orchard-1966",
+      "city_objectid": 149818,
+      "outline_enu_m": [
+        [
+          594.14348,
+          -817.94154
+        ],
+        [
+          591.84256,
+          -817.95362
+        ],
+        [
+          591.85594,
+          -820.49251
+        ],
+        [
+          583.44576,
+          -820.53683
+        ],
+        [
+          583.45013,
+          -821.36993
+        ],
+        [
+          577.57894,
+          -821.40087
+        ],
+        [
+          577.56789,
+          -819.30522
+        ],
+        [
+          575.58853,
+          -819.3157
+        ],
+        [
+          575.577,
+          -817.12687
+        ],
+        [
+          575.25544,
+          -817.12857
+        ],
+        [
+          575.21214,
+          -808.91677
+        ],
+        [
+          583.46364,
+          -808.87328
+        ],
+        [
+          583.4708,
+          -810.22212
+        ],
+        [
+          591.80158,
+          -810.17816
+        ],
+        [
+          591.82063,
+          -813.78822
+        ],
+        [
+          594.12155,
+          -813.77605
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1966 Orchard Street / 1965 Orchard Alley",
+      "street_address": "1966 Orchard Street",
+      "base_z_m": 13.16,
+      "levels_z_m": [
+        14.83,
+        17.46
+      ],
+      "wall_color": [
+        137,
+        129,
+        111
+      ],
+      "roof_color": [
+        110,
+        112,
+        106
+      ],
+      "trim_color": [
+        203,
+        188,
+        154
+      ],
+      "seam_color": [
+        124,
+        119,
+        101
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            575.04,
+            -821.56,
+            583.63,
+            -808.72
+          ],
+          "planes": [
+            [
+              579.95,
+              -814.0,
+              19.54,
+              0.25,
+              0
+            ],
+            [
+              579.95,
+              -814.0,
+              19.54,
+              -0.3,
+              0
+            ],
+            [
+              579.95,
+              -814.0,
+              21.02,
+              0,
+              0.42
+            ]
+          ],
+          "roof_color": [
+            170,
+            168,
+            146
+          ]
+        },
+        {
+          "bounds_m": [
+            583.25,
+            -821.56,
+            594.3,
+            -810.0
+          ],
+          "planes": [
+            [
+              586.58,
+              -815.4,
+              21.93,
+              0.47,
+              0
+            ],
+            [
+              586.58,
+              -815.4,
+              21.93,
+              -0.43,
+              0
+            ],
+            [
+              586.58,
+              -816.0,
+              22.51,
+              0,
+              0.32
+            ],
+            [
+              586.58,
+              -816.0,
+              23.19,
+              0,
+              -0.37
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            593.91,
+            -815.87
+          ],
+          "bearing": 90,
+          "windows": [
+            [
+              0.25,
+              1.77,
+              15.62,
+              16.79
+            ]
+          ],
+          "canopy": [
+            3.1,
+            0.77,
+            17.7
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-29aaebb6",
+      "city_objectid": 149821,
+      "outline_enu_m": [
+        [
+          590.97416,
+          -800.39541
+        ],
+        [
+          593.98279,
+          -800.47652
+        ],
+        [
+          593.79907,
+          -807.29744
+        ],
+        [
+          574.38297,
+          -806.77434
+        ],
+        [
+          574.56669,
+          -799.95341
+        ],
+        [
+          574.5774,
+          -799.95369
+        ],
+        [
+          574.72066,
+          -794.63523
+        ],
+        [
+          591.11743,
+          -795.07695
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1950 Orchard Street",
+      "street_address": "1950 Orchard Street",
+      "base_z_m": 13.96,
+      "levels_z_m": [
+        15.54
+      ],
+      "wall_color": [
+        151,
+        115,
+        93
+      ],
+      "roof_color": [
+        102,
+        110,
+        109
+      ],
+      "trim_color": [
+        184,
+        190,
+        172
+      ],
+      "seam_color": [
+        132,
+        104,
+        88
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            574.24,
+            -807.5,
+            584.62,
+            -794.49
+          ],
+          "planes": [
+            [
+              579.84,
+              -801,
+              19.56,
+              0.18,
+              0
+            ],
+            [
+              579.84,
+              -801,
+              19.56,
+              -0.17,
+              0
+            ],
+            [
+              579.87,
+              -798,
+              20.4,
+              0,
+              -0.39
+            ]
+          ],
+          "roof_color": [
+            147,
+            153,
+            148
+          ]
+        },
+        {
+          "bounds_m": [
+            584.2,
+            -807.48,
+            594.15,
+            -794.84
+          ],
+          "planes": [
+            [
+              586.65,
+              -801.26,
+              19.78,
+              0.31,
+              0
+            ],
+            [
+              586.65,
+              -801.26,
+              19.78,
+              -0.2,
+              0
+            ],
+            [
+              586.65,
+              -801,
+              20.41,
+              0,
+              -0.3
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            593.66,
+            -804.1
+          ],
+          "bearing": 90,
+          "windows": [
+            [
+              -1.52,
+              1.43,
+              16.3,
+              17.48
+            ],
+            [
+              1.66,
+              1.37,
+              16.27,
+              17.46
+            ]
+          ],
+          "canopy": [
+            4.62,
+            0.82,
+            18.08
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "orchard-1994",
+      "city_objectid": 149809,
+      "outline_enu_m": [
+        [
+          557.28106,
+          -839.80926
+        ],
+        [
+          557.50927,
+          -839.67554
+        ],
+        [
+          557.81802,
+          -840.20265
+        ],
+        [
+          567.97247,
+          -840.21576
+        ],
+        [
+          567.97392,
+          -839.10498
+        ],
+        [
+          571.06824,
+          -839.10893
+        ],
+        [
+          571.06795,
+          -839.34694
+        ],
+        [
+          580.98568,
+          -839.35973
+        ],
+        [
+          580.98087,
+          -843.13511
+        ],
+        [
+          583.09662,
+          -843.13776
+        ],
+        [
+          583.08746,
+          -850.27858
+        ],
+        [
+          578.88894,
+          -850.2732
+        ],
+        [
+          578.89011,
+          -849.35413
+        ],
+        [
+          572.80056,
+          -849.34639
+        ],
+        [
+          572.79954,
+          -850.13974
+        ],
+        [
+          567.95969,
+          -850.1335
+        ],
+        [
+          567.96899,
+          -842.91336
+        ],
+        [
+          559.39955,
+          -842.90234
+        ],
+        [
+          561.19889,
+          -845.97394
+        ],
+        [
+          559.55586,
+          -846.93642
+        ],
+        [
+          560.51844,
+          -848.57954
+        ],
+        [
+          557.82562,
+          -850.15697
+        ],
+        [
+          556.86315,
+          -848.51394
+        ],
+        [
+          554.9919,
+          -849.61013
+        ],
+        [
+          554.61752,
+          -848.97118
+        ],
+        [
+          554.02427,
+          -849.3187
+        ],
+        [
+          550.06722,
+          -842.56397
+        ],
+        [
+          554.67688,
+          -839.86359
+        ],
+        [
+          555.3185,
+          -840.95898
+        ],
+        [
+          556.00316,
+          -840.55793
+        ],
+        [
+          555.33477,
+          -839.41684
+        ],
+        [
+          556.61268,
+          -838.66827
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1994 Orchard Street / 1991 Orchard Alley",
+      "street_address": "1994 Orchard Street",
+      "base_z_m": 13.42,
+      "levels_z_m": [
+        14.84,
+        17.6,
+        20.3
+      ],
+      "wall_color": [
+        171,
+        177,
+        168
+      ],
+      "roof_color": [
+        122,
+        127,
+        126
+      ],
+      "trim_color": [
+        207,
+        210,
+        191
+      ],
+      "seam_color": [
+        149,
+        156,
+        146
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            549.9,
+            -850.32,
+            560.25,
+            -838.52
+          ],
+          "planes": [
+            [
+              555.15,
+              -844.68,
+              22.47,
+              0.23,
+              -0.39836
+            ],
+            [
+              555.15,
+              -844.68,
+              22.47,
+              -0.24,
+              0.41568
+            ],
+            [
+              555.0,
+              -844.7,
+              22.67,
+              0.39,
+              0.23
+            ],
+            [
+              555.0,
+              -844.7,
+              23.18,
+              -0.39,
+              -0.23
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            557.1,
+            -849.02,
+            568.25,
+            -839.53
+          ],
+          "planes": [
+            [
+              564,
+              -841.58,
+              19.3,
+              0.018,
+              0.04
+            ]
+          ],
+          "roof_color": [
+            177,
+            178,
+            164
+          ]
+        },
+        {
+          "bounds_m": [
+            567.58,
+            -850.42,
+            583.26,
+            -838.92
+          ],
+          "planes": [
+            [
+              575.2,
+              -844.22,
+              24.57,
+              0,
+              0.53
+            ],
+            [
+              575.2,
+              -844.22,
+              24.57,
+              0,
+              -0.39
+            ],
+            [
+              575.0,
+              -844.2,
+              26.53,
+              0.45,
+              0
+            ],
+            [
+              575.0,
+              -844.2,
+              27.59,
+              -0.4,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            582.86,
+            -846.69
+          ],
+          "bearing": 90,
+          "windows": [
+            [
+              -1.77,
+              1.44,
+              18.01,
+              19.46
+            ],
+            [
+              1.62,
+              1.34,
+              18.04,
+              19.45
+            ]
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "solar_arrays": [
+        {
+          "center": [
+            577.96,
+            -846.65
+          ],
+          "axis": [
+            1.0,
+            0.0
+          ],
+          "columns": 12,
+          "rows": 3,
+          "module": [
+            0.79,
+            1.28
+          ]
+        },
+        {
+          "center": [
+            558.23,
+            -846.34
+          ],
+          "axis": [
+            0.866,
+            0.5
+          ],
+          "columns": 6,
+          "rows": 2,
+          "module": [
+            0.77,
+            1.07
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-7e12343c",
+      "city_objectid": 149813,
+      "outline_enu_m": [
+        [
+          561.80876,
+          -828.53652
+        ],
+        [
+          561.79336,
+          -829.41771
+        ],
+        [
+          564.63436,
+          -829.39091
+        ],
+        [
+          565.42726,
+          -829.38665
+        ],
+        [
+          565.42862,
+          -829.64321
+        ],
+        [
+          568.8496,
+          -829.62521
+        ],
+        [
+          568.87269,
+          -834.00047
+        ],
+        [
+          561.83775,
+          -834.03755
+        ],
+        [
+          561.83803,
+          -834.09044
+        ],
+        [
+          561.84723,
+          -835.83593
+        ],
+        [
+          553.75441,
+          -835.87858
+        ],
+        [
+          553.74521,
+          -834.13309
+        ],
+        [
+          552.52076,
+          -834.13954
+        ],
+        [
+          552.52203,
+          -834.39641
+        ],
+        [
+          552.09909,
+          -834.40573
+        ],
+        [
+          550.35907,
+          -834.44407
+        ],
+        [
+          550.34063,
+          -833.9902
+        ],
+        [
+          550.31217,
+          -828.58746
+        ],
+        [
+          552.4914,
+          -828.57592
+        ],
+        [
+          552.49139,
+          -828.58562
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1990 Orchard Street",
+      "street_address": "1990 Orchard Street",
+      "base_z_m": 13.38,
+      "levels_z_m": [
+        14.83,
+        17.33
+      ],
+      "wall_color": [
+        159,
+        146,
+        127
+      ],
+      "roof_color": [
+        114,
+        110,
+        101
+      ],
+      "trim_color": [
+        205,
+        189,
+        158
+      ],
+      "seam_color": [
+        145,
+        135,
+        117
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            550.17,
+            -836.02,
+            561.98,
+            -828.39
+          ],
+          "planes": [
+            [
+              557.16,
+              -831.84,
+              21.46,
+              0,
+              0.52
+            ],
+            [
+              557.16,
+              -831.84,
+              21.46,
+              0,
+              -0.61
+            ],
+            [
+              557.16,
+              -831.84,
+              24.0,
+              0.39,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            561.65,
+            -834.21,
+            569.03,
+            -829.24
+          ],
+          "planes": [
+            [
+              564.1,
+              -831.58,
+              17.2,
+              -0.23,
+              0.03
+            ]
+          ],
+          "roof_color": [
+            157,
+            160,
+            147
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            568.64,
+            -831.82
+          ],
+          "bearing": 90,
+          "windows": [
+            [
+              0.03,
+              1.3,
+              14.86,
+              16.02
+            ]
+          ],
+          "canopy": [
+            3.18,
+            0.58,
+            16.44
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "villard-1963",
+      "city_objectid": 149820,
+      "outline_enu_m": [
+        [
+          513.37029,
+          -808.10744
+        ],
+        [
+          508.18656,
+          -808.11946
+        ],
+        [
+          508.19081,
+          -809.9707
+        ],
+        [
+          501.15585,
+          -809.98697
+        ],
+        [
+          501.15159,
+          -808.13563
+        ],
+        [
+          501.14589,
+          -805.64951
+        ],
+        [
+          501.13524,
+          -801.04767
+        ],
+        [
+          513.35393,
+          -801.01957
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1963 Villard Street",
+      "street_address": "1963 Villard Street",
+      "base_z_m": 12.86,
+      "levels_z_m": [
+        14.09,
+        16.21
+      ],
+      "wall_color": [
+        135,
+        77,
+        66
+      ],
+      "roof_color": [
+        102,
+        111,
+        108
+      ],
+      "trim_color": [
+        206,
+        189,
+        156
+      ],
+      "seam_color": [
+        120,
+        67,
+        57
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            500.99,
+            -810.14,
+            513.51,
+            -800.9
+          ],
+          "planes": [
+            [
+              506.1,
+              -804.92,
+              20.44,
+              0,
+              0.35
+            ],
+            [
+              506.1,
+              -804.92,
+              20.44,
+              0,
+              -0.42
+            ],
+            [
+              506,
+              -805.0,
+              23.16,
+              -0.72,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            501.38,
+            -803.48
+          ],
+          "bearing": 270,
+          "windows": [
+            [
+              -1.35,
+              0.85,
+              14.91,
+              16.28
+            ]
+          ],
+          "door": [
+            0.08,
+            14.17
+          ],
+          "door_color": [
+            100,
+            66,
+            55
+          ],
+          "canopy": [
+            2.59,
+            0.79,
+            16.58
+          ]
+        },
+        {
+          "near": [
+            501.38,
+            -806.84
+          ],
+          "bearing": 270,
+          "windows": [
+            [
+              0.12,
+              1.25,
+              14.94,
+              16.24
+            ]
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-2cb36f2e",
+      "city_objectid": 149822,
+      "outline_enu_m": [
+        [
+          514.2917,
+          -789.40477
+        ],
+        [
+          514.28489,
+          -786.44267
+        ],
+        [
+          519.52142,
+          -786.43057
+        ],
+        [
+          519.54109,
+          -794.94659
+        ],
+        [
+          514.30447,
+          -794.95869
+        ],
+        [
+          514.29944,
+          -792.78996
+        ],
+        [
+          511.17864,
+          -792.79721
+        ],
+        [
+          511.18682,
+          -796.34119
+        ],
+        [
+          500.60787,
+          -796.36554
+        ],
+        [
+          500.60643,
+          -795.73076
+        ],
+        [
+          498.12031,
+          -795.73646
+        ],
+        [
+          498.09647,
+          -785.36911
+        ],
+        [
+          500.58249,
+          -785.36341
+        ],
+        [
+          506.08361,
+          -785.35071
+        ],
+        [
+          511.74332,
+          -785.33769
+        ],
+        [
+          511.75268,
+          -789.41055
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1947 Villard Street",
+      "street_address": "1947 Villard Street",
+      "base_z_m": 12.44,
+      "levels_z_m": [
+        14.42
+      ],
+      "wall_color": [
+        186,
+        186,
+        171
+      ],
+      "roof_color": [
+        105,
+        110,
+        105
+      ],
+      "trim_color": [
+        215,
+        211,
+        187
+      ],
+      "seam_color": [
+        166,
+        168,
+        153
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            497.94,
+            -796.54,
+            514.42,
+            -785.18
+          ],
+          "planes": [
+            [
+              503.23,
+              -790.76,
+              19.09,
+              0,
+              0.21
+            ],
+            [
+              503.23,
+              -790.76,
+              19.09,
+              0,
+              -0.3
+            ],
+            [
+              503.23,
+              -790.7,
+              21.8,
+              -0.3,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            514.06,
+            -795.11,
+            519.73,
+            -786.29
+          ],
+          "planes": [
+            [
+              516.7,
+              -790.81,
+              20.43,
+              0.4,
+              0
+            ],
+            [
+              516.7,
+              -790.81,
+              20.43,
+              -0.44,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            511.5,
+            -792.91,
+            514.65,
+            -789.26
+          ],
+          "planes": [
+            [
+              513,
+              -791,
+              16.98,
+              0.13,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            498.34,
+            -791.1
+          ],
+          "bearing": 270,
+          "windows": [
+            [
+              -2.94,
+              1.31,
+              15.04,
+              16.56
+            ],
+            [
+              3.01,
+              1.48,
+              15.04,
+              16.54
+            ]
+          ],
+          "door": [
+            -0.08,
+            14.46
+          ],
+          "door_color": [
+            122,
+            88,
+            62
+          ],
+          "porch": [
+            3.05,
+            0.94,
+            0.45
+          ],
+          "route": {
+            "gate": "villard-west-porch",
+            "threshold_z_m": 14.46,
+            "distance_m": 7.15,
+            "stair_run_m": 1.82,
+            "width_m": 1.12
+          }
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "villard-1946",
+      "city_objectid": 171192,
+      "outline_enu_m": [
+        [
+          445.56507,
+          -786.49365
+        ],
+        [
+          448.84287,
+          -786.49651
+        ],
+        [
+          455.6966,
+          -786.50255
+        ],
+        [
+          455.69476,
+          -788.58848
+        ],
+        [
+          457.18465,
+          -788.58971
+        ],
+        [
+          457.18096,
+          -792.76157
+        ],
+        [
+          455.69107,
+          -792.76024
+        ],
+        [
+          455.69004,
+          -793.95211
+        ],
+        [
+          448.83632,
+          -793.94617
+        ],
+        [
+          447.49544,
+          -793.945
+        ],
+        [
+          447.49912,
+          -789.77314
+        ],
+        [
+          445.5622,
+          -789.77145
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1946 Villard Street",
+      "street_address": "1946 Villard Street",
+      "base_z_m": 12.51,
+      "levels_z_m": [
+        13.79,
+        16.09
+      ],
+      "wall_color": [
+        145,
+        153,
+        143
+      ],
+      "roof_color": [
+        106,
+        114,
+        116
+      ],
+      "trim_color": [
+        208,
+        206,
+        186
+      ],
+      "seam_color": [
+        128,
+        140,
+        132
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            445.42,
+            -794.07,
+            457.34,
+            -786.34
+          ],
+          "planes": [
+            [
+              449.36,
+              -790.4,
+              21.17,
+              0.42,
+              0
+            ],
+            [
+              449.36,
+              -790.4,
+              21.17,
+              -0.48,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            454.65,
+            -793.08,
+            457.32,
+            -788.47
+          ],
+          "planes": [
+            [
+              455.8,
+              -790.67,
+              17.73,
+              0,
+              0.26
+            ],
+            [
+              455.8,
+              -790.67,
+              17.73,
+              0,
+              -0.3
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            456.95,
+            -790.56
+          ],
+          "bearing": 90,
+          "windows": [
+            [
+              -1.1,
+              1.16,
+              14.46,
+              15.57
+            ],
+            [
+              0.95,
+              1.34,
+              14.45,
+              15.64
+            ]
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-b315719c",
+      "city_objectid": 171196,
+      "outline_enu_m": [
+        [
+          436.31618,
+          -799.44786
+        ],
+        [
+          446.14969,
+          -799.45646
+        ],
+        [
+          446.14585,
+          -803.77723
+        ],
+        [
+          447.33783,
+          -803.77835
+        ],
+        [
+          447.34024,
+          -800.94748
+        ],
+        [
+          455.83286,
+          -800.9549
+        ],
+        [
+          455.83071,
+          -803.33885
+        ],
+        [
+          457.61862,
+          -803.34038
+        ],
+        [
+          457.61473,
+          -807.81016
+        ],
+        [
+          455.82682,
+          -807.80862
+        ],
+        [
+          455.82549,
+          -809.29852
+        ],
+        [
+          447.33296,
+          -809.29099
+        ],
+        [
+          447.33547,
+          -806.46022
+        ],
+        [
+          446.1435,
+          -806.45909
+        ],
+        [
+          440.03482,
+          -806.45372
+        ],
+        [
+          436.30999,
+          -806.45049
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1964 Villard Street",
+      "street_address": "1964 Villard Street",
+      "base_z_m": 12.91,
+      "levels_z_m": [
+        14.21,
+        16.86
+      ],
+      "wall_color": [
+        161,
+        162,
+        146
+      ],
+      "roof_color": [
+        114,
+        118,
+        108
+      ],
+      "trim_color": [
+        213,
+        207,
+        185
+      ],
+      "seam_color": [
+        142,
+        146,
+        130
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            436.17,
+            -806.62,
+            447.49,
+            -799.3
+          ],
+          "planes": [
+            [
+              441.12,
+              -802.97,
+              21.8,
+              0,
+              0.43
+            ],
+            [
+              441.12,
+              -802.97,
+              21.8,
+              0,
+              -0.55
+            ],
+            [
+              441.12,
+              -803,
+              23.15,
+              -0.78,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            447.18,
+            -809.47,
+            457.79,
+            -800.79
+          ],
+          "planes": [
+            [
+              450.78,
+              -805.04,
+              20.06,
+              0.55,
+              0
+            ],
+            [
+              450.78,
+              -805.04,
+              20.06,
+              -0.45,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            457.39,
+            -805.51
+          ],
+          "bearing": 90,
+          "windows": [
+            [
+              -1.12,
+              1.46,
+              14.84,
+              15.98
+            ],
+            [
+              1.08,
+              1.39,
+              14.85,
+              15.99
+            ]
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "villard-outbuilding-171184",
+      "city_objectid": 171184,
+      "outline_enu_m": [
+        [
+          436.87173,
+          -845.48701
+        ],
+        [
+          443.72535,
+          -845.49306
+        ],
+        [
+          443.71952,
+          -852.04866
+        ],
+        [
+          436.86589,
+          -852.04272
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "Detached outbuilding near 1996 Villard",
+      "street_address": "1996 Villard Street",
+      "base_z_m": 14.92,
+      "levels_z_m": [
+        15.91
+      ],
+      "wall_color": [
+        145,
+        151,
+        135
+      ],
+      "roof_color": [
+        111,
+        114,
+        106
+      ],
+      "trim_color": [
+        191,
+        194,
+        166
+      ],
+      "seam_color": [
+        132,
+        138,
+        121
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            436.73,
+            -852.22,
+            443.91,
+            -845.34
+          ],
+          "planes": [
+            [
+              439.47,
+              -848.6,
+              19.97,
+              0.34,
+              0
+            ],
+            [
+              439.47,
+              -848.6,
+              19.97,
+              -0.54,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "opaque_outbuilding": true
+    },
+    {
+      "id": "roof-d4f7e70c",
+      "city_objectid": 171185,
+      "outline_enu_m": [
+        [
+          438.07353,
+          -834.16464
+        ],
+        [
+          455.65462,
+          -834.1801
+        ],
+        [
+          455.64786,
+          -841.92768
+        ],
+        [
+          446.41029,
+          -841.91959
+        ],
+        [
+          446.40906,
+          -843.40948
+        ],
+        [
+          441.79027,
+          -843.40544
+        ],
+        [
+          441.79161,
+          -841.91554
+        ],
+        [
+          438.06677,
+          -841.91222
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1996 Villard Street",
+      "street_address": "1996 Villard Street",
+      "base_z_m": 14.07,
+      "levels_z_m": [
+        15.83,
+        18.09
+      ],
+      "wall_color": [
+        157,
+        167,
+        160
+      ],
+      "roof_color": [
+        103,
+        112,
+        107
+      ],
+      "trim_color": [
+        205,
+        209,
+        193
+      ],
+      "seam_color": [
+        142,
+        153,
+        147
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            437.9,
+            -843.56,
+            455.81,
+            -834.0
+          ],
+          "planes": [
+            [
+              445.82,
+              -838.23,
+              22.16,
+              0,
+              0.3
+            ],
+            [
+              445.82,
+              -838.23,
+              22.16,
+              0,
+              -0.44
+            ],
+            [
+              445.82,
+              -838.23,
+              23.4,
+              -0.48,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            441.63,
+            -843.55,
+            446.55,
+            -837.13
+          ],
+          "planes": [
+            [
+              444.11,
+              -841.57,
+              21.99,
+              0.54,
+              0
+            ],
+            [
+              444.11,
+              -841.57,
+              21.99,
+              -0.54,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            455.4,
+            -837.59
+          ],
+          "bearing": 90,
+          "windows": [
+            [
+              -2.17,
+              1.46,
+              16.46,
+              17.7
+            ],
+            [
+              1.67,
+              1.36,
+              16.45,
+              17.68
+            ]
+          ],
+          "canopy": [
+            4.1,
+            0.75,
+            18.48
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-a53a0c57",
+      "city_objectid": 171186,
+      "outline_enu_m": [
+        [
+          423.5635,
+          -871.16294
+        ],
+        [
+          428.38693,
+          -871.12477
+        ],
+        [
+          428.248,
+          -864.55049
+        ],
+        [
+          452.01026,
+          -864.04824
+        ],
+        [
+          452.186,
+          -874.70027
+        ],
+        [
+          437.15856,
+          -874.94821
+        ],
+        [
+          437.21914,
+          -877.7283
+        ],
+        [
+          423.66782,
+          -877.91147
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2012 Villard Street",
+      "street_address": "2012 Villard Street",
+      "base_z_m": 15.48,
+      "levels_z_m": [
+        17.11,
+        19.52
+      ],
+      "wall_color": [
+        184,
+        178,
+        155
+      ],
+      "roof_color": [
+        110,
+        114,
+        112
+      ],
+      "trim_color": [
+        206,
+        200,
+        173
+      ],
+      "seam_color": [
+        161,
+        160,
+        139
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            428.05,
+            -875.09,
+            452.37,
+            -863.89
+          ],
+          "planes": [
+            [
+              441.73,
+              -870.44,
+              22.32,
+              0,
+              0.27
+            ],
+            [
+              441.73,
+              -870.44,
+              22.32,
+              0,
+              -0.26
+            ],
+            [
+              443,
+              -869,
+              24.42,
+              -0.41,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            423.42,
+            -878.05,
+            437.39,
+            -870.92
+          ],
+          "planes": [
+            [
+              430.61,
+              -874.62,
+              22.1,
+              0,
+              0.44
+            ],
+            [
+              430.61,
+              -874.62,
+              22.1,
+              0,
+              -0.48
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            451.94,
+            -870.03
+          ],
+          "bearing": 90,
+          "garages": [
+            [
+              2.42,
+              2.33
+            ]
+          ],
+          "garage_color": [
+            164,
+            170,
+            161
+          ],
+          "windows": [
+            [
+              -2.77,
+              1.36,
+              17.96,
+              19.14
+            ],
+            [
+              -0.68,
+              1.5,
+              17.96,
+              19.15
+            ]
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "driveway": [
+        452.1,
+        -873.5,
+        458.9,
+        -869.0
+      ]
+    },
+    {
+      "id": "roof-b23b2dec",
+      "city_objectid": 159911,
+      "outline_enu_m": [
+        [
+          500.451,
+          -905.41301
+        ],
+        [
+          497.03607,
+          -905.44284
+        ],
+        [
+          496.96622,
+          -897.45364
+        ],
+        [
+          510.354,
+          -897.33655
+        ],
+        [
+          510.52578,
+          -916.97572
+        ],
+        [
+          507.63073,
+          -917.00103
+        ],
+        [
+          507.67962,
+          -922.59937
+        ],
+        [
+          501.94022,
+          -922.64958
+        ],
+        [
+          501.94331,
+          -923.0011
+        ],
+        [
+          500.60491,
+          -923.01285
+        ],
+        [
+          500.60469,
+          -922.98535
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2075 Villard Street",
+      "street_address": "2075 Villard Street",
+      "base_z_m": 18.66,
+      "levels_z_m": [
+        20.22
+      ],
+      "wall_color": [
+        168,
+        158,
+        117
+      ],
+      "roof_color": [
+        104,
+        110,
+        109
+      ],
+      "trim_color": [
+        211,
+        196,
+        151
+      ],
+      "seam_color": [
+        153,
+        146,
+        111
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            496.83,
+            -917.1,
+            510.71,
+            -897.18
+          ],
+          "planes": [
+            [
+              505.4,
+              -906.2,
+              25.88,
+              0.43,
+              0
+            ],
+            [
+              505.4,
+              -906.2,
+              25.88,
+              -0.4,
+              0
+            ],
+            [
+              505.4,
+              -908,
+              27.0,
+              0,
+              0.3
+            ],
+            [
+              505.4,
+              -904.0,
+              26.6,
+              0,
+              -0.29
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            500.34,
+            -923.18,
+            507.87,
+            -916.84
+          ],
+          "planes": [
+            [
+              504.26,
+              -920.7,
+              24.76,
+              0.39,
+              0
+            ],
+            [
+              504.26,
+              -920.7,
+              24.76,
+              -0.39,
+              0
+            ],
+            [
+              504.26,
+              -919,
+              24.92,
+              0,
+              0.49
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            497.21,
+            -901.28
+          ],
+          "bearing": 270,
+          "windows": [
+            [
+              -2.58,
+              1.64,
+              20.89,
+              22.14
+            ],
+            [
+              2.13,
+              1.73,
+              20.9,
+              22.15
+            ]
+          ],
+          "door": [
+            0.05,
+            20.35
+          ],
+          "door_color": [
+            113,
+            108,
+            82
+          ],
+          "canopy": [
+            4.02,
+            0.97,
+            23.1
+          ],
+          "route": {
+            "gate": "villard-west-path",
+            "threshold_z_m": 20.35,
+            "distance_m": 7.3,
+            "stair_run_m": 1.28,
+            "width_m": 1.12
+          }
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-31f27b04",
+      "city_objectid": 159839,
+      "outline_enu_m": [
+        [
+          713.66792,
+          -860.94969
+        ],
+        [
+          714.2319,
+          -860.29523
+        ],
+        [
+          719.94514,
+          -865.21818
+        ],
+        [
+          719.08636,
+          -866.21475
+        ],
+        [
+          724.74828,
+          -871.09343
+        ],
+        [
+          736.28146,
+          -873.10266
+        ],
+        [
+          734.7838,
+          -881.69957
+        ],
+        [
+          712.03631,
+          -877.73668
+        ],
+        [
+          712.62907,
+          -874.33407
+        ],
+        [
+          702.3643,
+          -865.48913
+        ],
+        [
+          697.67684,
+          -866.81939
+        ],
+        [
+          695.56192,
+          -859.36655
+        ],
+        [
+          702.63704,
+          -857.3588
+        ],
+        [
+          700.6378,
+          -850.31382
+        ],
+        [
+          707.76052,
+          -848.29256
+        ],
+        [
+          710.60288,
+          -858.30858
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1999 Fairmount Boulevard",
+      "street_address": "1999 Fairmount Boulevard",
+      "base_z_m": 21.02,
+      "levels_z_m": [
+        23.24
+      ],
+      "wall_color": [
+        154,
+        144,
+        123
+      ],
+      "roof_color": [
+        111,
+        113,
+        103
+      ],
+      "trim_color": [
+        199,
+        189,
+        164
+      ],
+      "seam_color": [
+        137,
+        130,
+        110
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            695.4,
+            -875.3,
+            724.93,
+            -856.22
+          ],
+          "planes": [
+            [
+              709.4,
+              -866.26,
+              28.4,
+              0.22440000000000002,
+              0.255
+            ],
+            [
+              709.4,
+              -866.26,
+              28.4,
+              -0.2376,
+              -0.27
+            ],
+            [
+              709,
+              -866,
+              30.68,
+              0.17,
+              -0.16
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            700.49,
+            -861.01,
+            714.39,
+            -848.12
+          ],
+          "planes": [
+            [
+              705.97,
+              -854.81,
+              28.06,
+              0.34559999999999996,
+              -0.09828
+            ],
+            [
+              705.97,
+              -854.81,
+              28.06,
+              -0.4416,
+              0.12558000000000002
+            ],
+            [
+              706,
+              -853,
+              29.27,
+              0,
+              -0.31
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            711.9,
+            -881.89,
+            736.47,
+            -870.91
+          ],
+          "planes": [
+            [
+              723.45,
+              -875.49,
+              27.72,
+              0.061200000000000004,
+              0.3332
+            ],
+            [
+              723.45,
+              -875.49,
+              27.72,
+              -0.07379999999999999,
+              -0.4018
+            ],
+            [
+              724,
+              -875.5,
+              30.5,
+              -0.32,
+              0.03
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            735.37,
+            -877.23
+          ],
+          "bearing": 100,
+          "garages": [
+            [
+              0.42,
+              4.55
+            ]
+          ],
+          "garage_color": [
+            146,
+            151,
+            137
+          ],
+          "minimum": 5.8
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "driveway": [
+        735.2,
+        -879.03,
+        739.4,
+        -874.15
+      ]
+    }
+  ]
+}

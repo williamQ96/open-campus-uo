@@ -1457,6 +1457,138 @@
       "status": "Aerial-checked procedural tree clearance at EMU Green, west of Knight Library, and Gerlinger Field Green"
     }
   ],
+  "pilot_furnishings": {
+    "url": "pilot-furnishings-l2.glb",
+    "sha256": "90516efda69a3420035865c955dadfa1d85f63dd5f1fb932da3c707c4497a286",
+    "collision_boxes_enu_m": [
+      [
+        -579.762,
+        -59.82,
+        -578.238,
+        -59.18
+      ],
+      [
+        -581.762,
+        -131.32,
+        -580.238,
+        -130.68
+      ],
+      [
+        -531.262,
+        -100.32,
+        -529.738,
+        -99.68
+      ],
+      [
+        -451.262,
+        -95.82,
+        -449.738,
+        -95.18
+      ],
+      [
+        -422.762,
+        -180.32,
+        -421.238,
+        -179.68
+      ],
+      [
+        -380.762,
+        -96.32,
+        -379.238,
+        -95.68
+      ],
+      [
+        -317.762,
+        -120.32,
+        -316.238,
+        -119.68
+      ],
+      [
+        -279.762,
+        -27.32,
+        -278.238,
+        -26.68
+      ],
+      [
+        -278.262,
+        -67.82,
+        -276.738,
+        -67.18
+      ],
+      [
+        -573.255,
+        -171.255,
+        -572.745,
+        -170.745
+      ],
+      [
+        -530.255,
+        -170.255,
+        -529.745,
+        -169.745
+      ],
+      [
+        -574.755,
+        -100.255,
+        -574.245,
+        -99.745
+      ],
+      [
+        -530.255,
+        -36.255,
+        -529.745,
+        -35.745
+      ],
+      [
+        -430.255,
+        -89.255,
+        -429.745,
+        -88.745
+      ],
+      [
+        -360.255,
+        -90.255,
+        -359.745,
+        -89.745
+      ],
+      [
+        -313.255,
+        -30.255,
+        -312.745,
+        -29.745
+      ],
+      [
+        -281.255,
+        -30.755,
+        -280.745,
+        -30.245
+      ],
+      [
+        -280.255,
+        -65.255,
+        -279.745,
+        -64.745
+      ],
+      [
+        -420.255,
+        -10.255,
+        -419.745,
+        -9.745
+      ],
+      [
+        -382.255,
+        -10.255,
+        -381.745,
+        -9.745
+      ],
+      [
+        -473.0344,
+        -65.23019,
+        -470.9656,
+        -64.76981
+      ]
+    ]
+  },
   "furniture_patch_url": "pilot-bench-back-suppression.json",
   "furniture_patch_sha256": "1792365814eed96132310063c77c86f949b440df0727c68be319ce328dad7c5f",
   "fern_patch_url": "pilot-fern-suppression.json",
@@ -1759,5 +1891,200 @@
   "hilyard_west_exterior_site": {
     "url": "hilyard-west-exterior-review/site.json",
     "sha256": "1ff6a5b2003222614bac836f84f8593cc6db72d2dd5160699509d9ef30b206f5"
+  },
+  "university_district_exterior_site": {
+    "url": "university-district-exterior-review/site.json",
+    "sha256": "5834333bed6f4e776278175eb8f1f11420d340914639529851584cf58aca6296"
+  },
+  "university_district_clinic_site": {
+    "url": "university-district-clinic-review/site.json",
+    "sha256": "101c3a09dfc28356eed74c0a427c66c5f6f19fb1e8b03d3e647fae868beaa9f1"
+  },
+  "former_hospital_site": {
+    "url": "former-hospital-site-review/site.json",
+    "sha256": "9ae2c52ea5b7ff620c10caad6ad6a7c719b4aa4d2584ab9d992a63113d50f35a"
+  },
+  "hilyard_apartments_exterior_site": {
+    "url": "hilyard-apartments-exterior-review/site.json",
+    "sha256": "4fb69711291a86900b3fb1ed43341f58d6814b6afdac5f6de3e5a4cab3d14c85"
+  },
+  "zirc_exterior_site": {
+    "url": "zirc-exterior-review/site.json",
+    "sha256": "134be703db2692092737117430f436f0e14fab2a68d20628cba7f0e40a80ea5a"
+  },
+  "hilyard_1515_exterior_site": {
+    "url": "hilyard-fifteenth-exterior-review/site.json",
+    "sha256": "0e33037dab6c8e35ffe3a4d728ff98a8ca621d2b0e9edf299fcb9c42415d73d6"
+  },
+  "hilyard_central_exterior_site": {
+    "url": "hilyard-central-exterior-review/site.json",
+    "sha256": "0c0b526cc17984ff4f831c87aff349da1f3c44b4df8a31771d528e71d7a1b2ce"
+  },
+  "e_fifteenth_pair_site": {
+    "url": "e-fifteenth-pair-exterior-review/site.json",
+    "sha256": "df36be6a6eff99e3a92ee41df81baff59db2bad7693c9430d7baade645672b44"
+  },
+  "walnut_alder_broadway_site": {
+    "url": "walnut-alder-broadway-exterior-review/site.json",
+    "sha256": "8e90b1d2217bbc4c3cc06cf05f8a5fc5876357e8c8e913a5d640b0b7bc39558c"
+  },
+  "alder_bushnell_site": {
+    "url": "alder-bushnell-exterior-review/site.json",
+    "sha256": "4c9616ed4d42df280cf1a8d5f2d7bb13e3c1dd5ff5acad95a06ca2c59725e4f9"
+  },
+  "goodrich_quad_site": {
+    "url": "goodrich-quad-exterior-review/site.json",
+    "sha256": "31065eaf293a4cde5ea08efb24e64ff1ce8685bf11d6271b658dcd0768c387a7"
+  },
+  "bushnell_east_site": {
+    "url": "bushnell-east-exterior-review/site.json",
+    "sha256": "229cf526944bf8e8ac0d6c7b82de74779e6428c442fd4c9b6830199fcf0d8baa"
+  },
+  "east_station_site": {
+    "url": "east-station-exterior-review/site.json",
+    "sha256": "92849b0ccf0b0e653fa754f2321016ce34523f8dc5c61009539209798bdec702"
+  },
+  "western_exterior_site": {
+    "url": "western-exterior-review/site.json",
+    "sha256": "86f87d4abc06a0bd97b91eedde0742edae891dc6ce816430bda5e4d8418beece"
+  },
+  "millrace_fairmount_exterior_site": {
+    "url": "millrace-fairmount-exterior-review/site.json",
+    "sha256": "1cd8d2e7d46d967dd2c7872804d4cb73df29063c7ff4e8facdc59f0e9419cb15"
+  },
+  "rive_eugene_exterior_site": {
+    "url": "rive-eugene-exterior-review/site.json",
+    "sha256": "53363c87c124167880b8d9d14c8798ad50118db5469cf32bdbbbd15e1b33585c"
+  },
+  "alder_thirteenth_exterior_site": {
+    "url": "alder-thirteenth-exterior-review/site.json",
+    "sha256": "16784b0368bee8daca75d6e2e79a0886636c8f7b06e1027497ca32cb2c6006c1"
+  },
+  "fairmount_kincaid_exterior_site": {
+    "url": "fairmount-kincaid-exterior-review/site.json",
+    "sha256": "7f989d0291437b7d87702d5c3d48b84c71a426b9bc4b042fa604fc84eedb8d2e"
+  },
+  "pilot_hardscape_site": {
+    "url": "pilot-hardscape-review/site.json",
+    "sha256": "f025768022b594acd808ec6ad21dcc57b0dbb380ebfe0d8a4f56abcd135bf109"
+  },
+  "southeast_fairmount_exterior_site": {
+    "url": "southeast-fairmount-exterior-review/site.json",
+    "sha256": "74ab0c93638515b8a29cc7e89f26ac9acce17e293dd3a511833583843a3ba83a"
+  },
+  "pilot_trees_l2": {
+    "url": "pilot-trees-l2/trees.json",
+    "sha256": "875b5473c3972a975a53c102b680d641e7aee7ef2bc29ae8a135447603e59ac7"
+  },
+  "context_trees_l2": {
+    "url": "context-trees-l2/trees.json",
+    "sha256": "f84fcdc9d19b3b7aaa82910f98b99a944de3d6755795328b7fd537936180ad56"
+  },
+  "understory_l2": {
+    "url": "understory-l2/plants.json",
+    "sha256": "eab9ce21c668a5ff9f0d6f605d23b9cad6d9d3f649d5d51050e11913f3c337ab"
+  },
+  "landcover_l2": {
+    "url": "landcover-l2/ground.glb",
+    "sha256": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "source_model_sha256": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "source_landcover_sha256": "0e93a8f129ba9368cfa90b09da610169054f5288dd434e290a5c390010d8a0cd",
+    "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f"
+  },
+  "paving_corridors_l2": {
+    "url": "paving-corridors-l2/surfaces.json",
+    "sha256": "37c5d4ecd31e18e4c28e5326512f48dd07e2c1eb54bda191ba0ad716446bad68"
+  },
+  "northwest_infill_exterior_site": {
+    "url": "northwest-infill-exterior-review/site.json",
+    "sha256": "d8107c25546705de16901d304df5f4d91cb3ad09f7f45629e7ac516118182388"
+  },
+  "millrace_research_exterior_site": {
+    "url": "millrace-research-exterior-review/site.json",
+    "sha256": "d1af3a4a22652e2ccea054ebabfb8a8e41c8a1c58cabce8c18661381ea60435d"
+  },
+  "parkside_exterior_site": {
+    "url": "parkside-exterior-review/site.json",
+    "sha256": "ab0de33824e12d9448e8c3c7707491203d8dfaaae406b2579ee73503afdf68b9"
+  },
+  "east_nineteenth_exterior_site": {
+    "url": "east-nineteenth-exterior-review/site.json",
+    "sha256": "2c67bcb1700885541241268a33127ee9e4c5dd71ceb947f5f0565c196a6fb621"
+  },
+  "alder_harris_exterior_site": {
+    "url": "alder-harris-exterior-review/site.json",
+    "sha256": "8a960e5f599952731230c28941910e7ae38647c28802aa1a04785f1c274a1a62"
+  },
+  "hilyard_south_exterior_site": {
+    "url": "hilyard-south-exterior-review/site.json",
+    "sha256": "9816d74217f143d2128011c17cb3c3a421bbdfced48f286eb0c082d3c7d48608"
+  },
+  "west_boundary_exterior_site": {
+    "url": "west-boundary-exterior-review/site.json",
+    "sha256": "71efc290d1e755c5c196f0421bb3da22edcd1fa2135c4b5ba9e953a6765628fb"
+  },
+  "alton_franklin_exterior_site": {
+    "url": "alton-franklin-exterior-review/site.json",
+    "sha256": "f69ac61074c16235b9fb7cd9f145beae57c1e40ec73c609c16012f460a539d80"
+  },
+  "east_nineteenth_court_site": {
+    "url": "east-nineteenth-court-exterior-review/site.json",
+    "sha256": "2d1334268c3eb05a736fc86778da0732b823b14a3ecbd6b7d44076b126cbf928"
+  },
+  "onyx_house_exterior_site": {
+    "url": "onyx-house-exterior-review/site.json",
+    "sha256": "6bd59e7205c35f22a77a891de710595e10285b9f7449656afe8c8543f43e7df7"
+  },
+  "south_university_exterior_site": {
+    "url": "south-university-exterior-review/site.json",
+    "sha256": "abbc118987fe20191e7908978c04ac9abec0133d15587fec72d91f38c56c06cb"
+  },
+  "onyx_university_split_site": {
+    "url": "onyx-university-split-exterior-review/site.json",
+    "sha256": "f323cfff9b565172d5b7a5e276816e0401b67df2367077adbbdc56af3727ff89"
+  },
+  "south_campus_frontages_site": {
+    "url": "south-campus-frontages-review/site.json",
+    "sha256": "e4c00282238198032613a9672760e3695ed01a7ba38306a0e808434c1bf4597b"
+  },
+  "potter_university_exterior_site": {
+    "url": "potter-university-exterior-review/site.json",
+    "sha256": "b52cb0611e9180c9921f712a6309234d29d55bc5036d682abb2b1e488893bc91"
+  },
+  "harris_potter_exterior_site": {
+    "url": "harris-potter-exterior-review/site.json",
+    "sha256": "df6800d1f8148c1cc083b5d7915212ce2d5dc9474291cad82848f5ddcbd632a2"
+  },
+  "southern_boundary_exterior_site": {
+    "url": "southern-boundary-exterior-review/site.json",
+    "sha256": "b456bbaffa5b4a6de52b4c925c54c70a79ea9d4c47694cb74629a8ce1cc2ab44"
+  },
+  "onyx_university_frontages_site": {
+    "url": "onyx-university-frontages-review/site.json",
+    "sha256": "5eee51e8dfe98171659e6af2e9f41acab1dc0687b4e0849cbb4e5adc01648619"
+  },
+  "emerald_onyx_frontages_site": {
+    "url": "emerald-onyx-frontages-review/site.json",
+    "sha256": "a0efcce4db0aa46397c95b35e2917c02d738b2acec0deaa23d638a2ebfbc21db"
+  },
+  "agate_emerald_frontages_site": {
+    "url": "agate-emerald-frontages-review/site.json",
+    "sha256": "e371c267bf7dd6ee90ab5cba67a842026981f25961a2693d69106c3223ae9eb6"
+  },
+  "columbia_moss_frontages_site": {
+    "url": "columbia-moss-frontages-review/site.json",
+    "sha256": "7fdd8ccde71501f20574e15d865e59c400fcdd61efe4e1b20908f7569b2ac8eb"
+  },
+  "fairmount_moss_slope_site": {
+    "url": "fairmount-moss-slope-review/site.json",
+    "sha256": "f71b45c46c300a2390a7be5206dc3abb4a4526a1a7c43694d66ea9aeb29ba39b"
+  },
+  "orchard_villard_hillside_site": {
+    "url": "orchard-villard-hillside-review/site.json",
+    "sha256": "4da306733c3feac9118ef61c7f4cfe300f5a917de2aa2626749d382448fd1cac"
+  },
+  "fairmount_summit_hamble_site": {
+    "url": "fairmount-summit-hamble-review/site.json",
+    "sha256": "7dc51833bac31923096c9be1d463909f5bd49fc606843b4fb3cb6a02b36a5b92"
   }
 }

@@ -1,0 +1,466 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "id": "roof-f0cd697a",
+  "campus_id": "B0101",
+  "name": "Zebrafish International Resource Center",
+  "street_address": "1307 Franklin Blvd",
+  "roof_outline_enu_m": [
+    [
+      -110.18,
+      352.46
+    ],
+    [
+      -110.18,
+      347.5
+    ],
+    [
+      -84.65,
+      347.5
+    ],
+    [
+      -84.65,
+      346.671
+    ],
+    [
+      -82.087,
+      346.669
+    ],
+    [
+      -82.078,
+      356.461
+    ],
+    [
+      -67.446,
+      356.448
+    ],
+    [
+      -67.453,
+      347.841
+    ],
+    [
+      -56.538,
+      347.831
+    ],
+    [
+      -56.525,
+      361.866
+    ],
+    [
+      -54.4,
+      361.864
+    ],
+    [
+      -54.397,
+      366.267
+    ],
+    [
+      -55.232,
+      366.267
+    ],
+    [
+      -61.823,
+      372.639
+    ],
+    [
+      -81.104,
+      372.656
+    ],
+    [
+      -81.109,
+      367.123
+    ],
+    [
+      -82.128,
+      367.124
+    ],
+    [
+      -82.148,
+      371.368
+    ],
+    [
+      -84.6,
+      371.37
+    ],
+    [
+      -84.6,
+      377.68
+    ],
+    [
+      -114.05,
+      377.68
+    ],
+    [
+      -114.05,
+      370.48
+    ],
+    [
+      -115.66,
+      370.48
+    ],
+    [
+      -115.66,
+      352.46
+    ],
+    [
+      -110.18,
+      352.46
+    ]
+  ],
+  "wall_outline_enu_m": [
+    [
+      -109.83,
+      352.81
+    ],
+    [
+      -115.31,
+      352.81
+    ],
+    [
+      -115.31,
+      370.13
+    ],
+    [
+      -113.7,
+      370.13
+    ],
+    [
+      -113.7,
+      377.33
+    ],
+    [
+      -84.95,
+      377.33
+    ],
+    [
+      -84.95,
+      371.021
+    ],
+    [
+      -82.496,
+      371.018
+    ],
+    [
+      -82.476,
+      366.774
+    ],
+    [
+      -80.76,
+      366.773
+    ],
+    [
+      -80.755,
+      372.306
+    ],
+    [
+      -61.964,
+      372.289
+    ],
+    [
+      -55.374,
+      365.917
+    ],
+    [
+      -54.747,
+      365.917
+    ],
+    [
+      -54.75,
+      362.214
+    ],
+    [
+      -56.875,
+      362.216
+    ],
+    [
+      -56.887,
+      348.182
+    ],
+    [
+      -67.103,
+      348.191
+    ],
+    [
+      -67.096,
+      356.798
+    ],
+    [
+      -82.428,
+      356.812
+    ],
+    [
+      -82.436,
+      347.019
+    ],
+    [
+      -84.3,
+      347.021
+    ],
+    [
+      -84.3,
+      347.85
+    ],
+    [
+      -109.83,
+      347.85
+    ],
+    [
+      -109.83,
+      352.81
+    ]
+  ],
+  "baseline_city_outline_id": 169880,
+  "trim_color": [
+    169,
+    152,
+    126
+  ],
+  "wall_color": [
+    184,
+    184,
+    162
+  ],
+  "roof_color": [
+    154,
+    107,
+    77
+  ],
+  "roof_frame": {
+    "origin_enu_m": [
+      0,
+      0
+    ],
+    "axis": [
+      1,
+      0
+    ]
+  },
+  "roof_zones": [
+    {
+      "bounds_m": [
+        -110.19,
+        347.49,
+        -84.42,
+        369.19
+      ],
+      "planes": [
+        [
+          -105,
+          347.5,
+          6.53,
+          0,
+          -0.105
+        ]
+      ],
+      "roof_color": [
+        185,
+        190,
+        186
+      ]
+    },
+    {
+      "bounds_m": [
+        -114.06,
+        368.57,
+        -84.59,
+        377.69
+      ],
+      "planes": [
+        [
+          -100,
+          375,
+          3.68,
+          0,
+          0.022
+        ]
+      ],
+      "roof_color": [
+        166,
+        171,
+        163
+      ]
+    },
+    {
+      "bounds_m": [
+        -115.67,
+        352.45,
+        -109.87,
+        370.49
+      ],
+      "planes": [
+        [
+          -114,
+          360,
+          6.42,
+          0.021,
+          0
+        ]
+      ],
+      "roof_color": [
+        143,
+        151,
+        152
+      ]
+    },
+    {
+      "bounds_m": [
+        -84.65,
+        356.4,
+        -54.3,
+        373.0
+      ],
+      "planes": [
+        [
+          -70,
+          364.27,
+          7.65,
+          0,
+          0.62
+        ],
+        [
+          -70,
+          364.27,
+          7.65,
+          0,
+          -0.59
+        ],
+        [
+          -62.65,
+          364.27,
+          7.65,
+          -0.54,
+          0
+        ]
+      ]
+    },
+    {
+      "bounds_m": [
+        -70.58,
+        347.7,
+        -56.44,
+        369.12
+      ],
+      "planes": [
+        [
+          -63.22,
+          356,
+          6.02,
+          0.57,
+          0
+        ],
+        [
+          -63.22,
+          356,
+          6.02,
+          -0.56,
+          0
+        ],
+        [
+          -63.22,
+          360,
+          7.2,
+          0,
+          -0.13
+        ]
+      ]
+    },
+    {
+      "bounds_m": [
+        -83.21,
+        356.4,
+        -66.6,
+        360.15
+      ],
+      "planes": [
+        [
+          -75,
+          357,
+          3.3,
+          0,
+          0.23
+        ]
+      ],
+      "roof_color": [
+        149,
+        101,
+        71
+      ]
+    },
+    {
+      "bounds_m": [
+        -84.77,
+        346.5,
+        -54.24,
+        372.84
+      ],
+      "planes": [
+        [
+          -75,
+          358.0,
+          2.42,
+          0,
+          0
+        ]
+      ],
+      "roof_color": [
+        152,
+        110,
+        79
+      ]
+    }
+  ],
+  "entrance": {
+    "near_enu_m": [
+      -75.45,
+      356.55
+    ],
+    "outward_degrees": 180,
+    "gate": "south-approach",
+    "landing_m": 1.92,
+    "width_m": 1.8,
+    "threshold_above_grade_m": 0.46,
+    "glazed_double": true
+  },
+  "photos": {
+    "identity": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/zebrafish-international-resource-center",
+    "completed": "https://fortisconstruction.com/project/university-of-oregon-zebrafish-international-resource-center/",
+    "architect": "https://rowellbrokaw.com/blog/2022/3/4/zebrafish-international-resource-center-expansion-featured-in-the-register-guard",
+    "historic": "https://cpfm.uoregon.edu/sites/default/files/2019_capital_plan_compiled_masterv2.pdf#page=10",
+    "space_accounting": "https://cpfm.uoregon.edu/sites/default/files/2026-02/fact_sheet_2yr_summary_2024-25_rev.pdf",
+    "source_files": {
+      "bounds_enu_m": [
+        -140,
+        325,
+        -47,
+        399
+      ],
+      "files": {
+        "ortho-2024.png": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494189.14928888186%2C4877253.282153052%2C494282.14928888186%2C4877327.282153052&bboxSR=3740&imageSR=3740&size=744%2C592&format=png&bandIds=0%2C1%2C2",
+          "sha256": "28348893a9044f753272d342f28f7332dc0c7736cfc5e84a44467f27bd5d1056",
+          "bytes": 552503
+        },
+        "city-outlines.json": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494189.14928888186%2C4877253.282153052%2C494282.14928888186%2C4877327.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "53d67eb7794e03f40454c58a75b7fd064923ff3732c1dbd555b9d43fc90f563c",
+          "bytes": 7090
+        },
+        "completed-fortis.jpg": {
+          "url": "https://fortisconstruction.com/wp-content/uploads/2023/03/ZIRC_Website.jpg",
+          "sha256": "389b86cffa2294ba2be9be091667baf5f5373fa56e31b4ef5edbc04a2c457fba",
+          "bytes": 1916631
+        },
+        "architect-render": {
+          "url": "https://images.squarespace-cdn.com/content/v1/50c934d4e4b0b58a9c48b108/1647467721316-YY98VII7W1BVYUEZK3A9/base__13A%2B-%2BNorth-01_sm.jpg",
+          "sha256": "f103fb0c8ec1297db210b094e81a6a78fe33a32a910cc59458ed48a354f29ef4",
+          "bytes": 265634
+        }
+      }
+    }
+  },
+  "door_color": [
+    101,
+    87,
+    70
+  ]
+}

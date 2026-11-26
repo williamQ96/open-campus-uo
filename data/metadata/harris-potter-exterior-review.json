@@ -1,0 +1,2660 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "surfaces": {
+    "2013-15": {
+      "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+      "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+    },
+    "2017": {
+      "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+      "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+    },
+    "DOGAMI": {
+      "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+      "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    }
+  },
+  "sources": {
+    "roof-5be21a96": {
+      "city_objectid": 171103,
+      "outline_enu_wkt": "POLYGON ((-471.42940251680557 -756.9781817579642, -465.32072477514157 -756.9835705952719, -465.32405856071273 -760.7084023719653, -454.1495661760564 -760.7183036589995, -454.152594154526 -764.1451157471165, -452.06676486996 -764.1469648908824, -452.07030730479164 -768.1697135372087, -454.1561366102542 -768.1678643999621, -454.15895581117366 -771.2967597339302, -466.6742314945441 -771.2856736285612, -466.66530011518626 -761.154247097671, -471.43309501581825 -761.1500401236117, -471.42940251680557 -756.9781817579642))",
+      "area_m2": 165.669,
+      "inside_addresses": [
+        "1926 POTTER ST"
+      ],
+      "parcel_fractions": {
+        "1803051204200": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-5be21a96": 124.883
+      },
+      "sample_counts": {
+        "2013-15": 131,
+        "2017": 0,
+        "DOGAMI": 131
+      },
+      "aerial_and_query": [
+        {
+          "file": "potter-1926-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "85281ec89f25ad004778fa9629d0fd75e69bafb91b8e816ec6c80610dc82e8a0"
+        },
+        {
+          "file": "potter-1926-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "291329de07fba93f562590e3449d1da9628a021f5068123742caabc13911e06b"
+        },
+        {
+          "file": "potter-1926-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&bboxSR=3740&imageSR=3740&size=880%2C1030&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "6c459fc54b5ffccc8fa181660099845206cd63b969671ed4574e339979dc5532",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "potter-1926-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&bboxSR=3740&imageSR=3740&size=880%2C1030&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "fc5821421bab39843a86df6bb9a45835edfc1ca5abdc55f47db69813f2a4ec03",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99994
+        },
+        {
+          "file": "potter-1926-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&bboxSR=3740&imageSR=3740&size=880%2C1030&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "b0268055c010ee331df5f3b194bd7d49b8ac7a4727e0a6ab99c63252a65cbf77",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "potter-1938": {
+      "city_objectid": 171105,
+      "outline_enu_wkt": "POLYGON ((-468.5928261888912 -775.4228804958984, -463.2496379094082 -775.369212959893, -463.2970624070149 -777.3285979870707, -453.72135682351654 -777.24031101726, -453.637299508031 -780.0567025020719, -452.2523643185268 -779.9858670197427, -452.257660350122 -786.077541757375, -464.1453661393025 -786.1384286750108, -464.2722952456097 -783.5341241825372, -468.6141922050738 -783.57290799357, -468.5928261888912 -775.4228804958984))",
+      "area_m2": 139.194,
+      "inside_addresses": [
+        "1938 POTTER ST"
+      ],
+      "parcel_fractions": {
+        "1803051204300": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-5be21a96": 110.79
+      },
+      "sample_counts": {
+        "2013-15": 107,
+        "2017": 0,
+        "DOGAMI": 107
+      },
+      "aerial_and_query": [
+        {
+          "file": "potter-1926-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "85281ec89f25ad004778fa9629d0fd75e69bafb91b8e816ec6c80610dc82e8a0"
+        },
+        {
+          "file": "potter-1926-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "291329de07fba93f562590e3449d1da9628a021f5068123742caabc13911e06b"
+        },
+        {
+          "file": "potter-1926-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&bboxSR=3740&imageSR=3740&size=880%2C1030&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "6c459fc54b5ffccc8fa181660099845206cd63b969671ed4574e339979dc5532",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "potter-1926-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&bboxSR=3740&imageSR=3740&size=880%2C1030&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "fc5821421bab39843a86df6bb9a45835edfc1ca5abdc55f47db69813f2a4ec03",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99994
+        },
+        {
+          "file": "potter-1926-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493823.14928888186%2C4876103.282153052%2C493911.14928888186%2C4876206.282153052&bboxSR=3740&imageSR=3740&size=880%2C1030&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "b0268055c010ee331df5f3b194bd7d49b8ac7a4727e0a6ab99c63252a65cbf77",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "potter-1976": {
+      "city_objectid": 171108,
+      "outline_enu_wkt": "POLYGON ((-466.3272982255439 -819.0805210331455, -462.90048566268524 -819.0835490664467, -462.89237763523124 -809.8459777990356, -452.31392044224776 -809.8553674500436, -452.32218406989705 -819.2418486634269, -460.21877243864583 -819.2349196122959, -460.22246777336113 -823.4066786738113, -466.3311464783037 -823.401289970614, -466.3272982255439 -819.0805210331455))",
+      "area_m2": 125.29,
+      "inside_addresses": [
+        "1976 POTTER ST"
+      ],
+      "parcel_fractions": {
+        "1803051204500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-b0798c1b": 100.764
+      },
+      "sample_counts": {
+        "2013-15": 97,
+        "2017": 0,
+        "DOGAMI": 97
+      },
+      "aerial_and_query": [
+        {
+          "file": "potter-1992-1994-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "d389703ad00342dc5a24062240a1a3c041fed8407c2213ef63057ca3812b7c69"
+        },
+        {
+          "file": "potter-1992-1994-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "c786d2063b798e65cab6f31bfc397f8022d56021df1e37c64c3a23d05a5dd4cf"
+        },
+        {
+          "file": "potter-1992-1994-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&bboxSR=3740&imageSR=3740&size=950%2C1000&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "ee8f6a6a93f822436617b468f8136d64ee6cce6819b662ddfe15dbd8a2ffce45",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "potter-1992-1994-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&bboxSR=3740&imageSR=3740&size=950%2C1000&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "de3282b01d0bd528bc907c936636b5a7d924cd9d370fc2b324274d79d3f37bef",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99992
+        },
+        {
+          "file": "potter-1992-1994-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&bboxSR=3740&imageSR=3740&size=950%2C1000&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "f6a6f5fb164a2857db2d5a2968c2da31d7de86a8a67f5f3f82b3490d7ebfcef1",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ]
+    },
+    "roof-b0798c1b": {
+      "city_objectid": 171109,
+      "outline_enu_wkt": "POLYGON ((-479.29550247022416 -825.7737912191078, -474.0807800872717 -825.7783598890528, -474.07990692253225 -824.7353966208175, -463.7994690917549 -824.74448081851, -455.3068440949428 -824.7519214265049, -455.31916168605676 -838.7571888510138, -463.81178697309224 -838.7497482616454, -463.8104522859794 -837.2598552303389, -468.7271580232773 -837.2554925028235, -468.72510303137824 -834.8716460736468, -473.93982552428497 -834.8670774782076, -473.9374647777295 -832.1852113027126, -479.30119712115265 -832.1804897803813, -479.29550247022416 -825.7737912191078))",
+      "area_m2": 267.828,
+      "inside_addresses": [
+        "1992 POTTER ST",
+        "1994 POTTER ST"
+      ],
+      "parcel_fractions": {
+        "1803051204600": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-b0798c1b": 151.18
+      },
+      "sample_counts": {
+        "2013-15": 232,
+        "2017": 0,
+        "DOGAMI": 232
+      },
+      "aerial_and_query": [
+        {
+          "file": "potter-1992-1994-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "d389703ad00342dc5a24062240a1a3c041fed8407c2213ef63057ca3812b7c69"
+        },
+        {
+          "file": "potter-1992-1994-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "c786d2063b798e65cab6f31bfc397f8022d56021df1e37c64c3a23d05a5dd4cf"
+        },
+        {
+          "file": "potter-1992-1994-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&bboxSR=3740&imageSR=3740&size=950%2C1000&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "ee8f6a6a93f822436617b468f8136d64ee6cce6819b662ddfe15dbd8a2ffce45",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "potter-1992-1994-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&bboxSR=3740&imageSR=3740&size=950%2C1000&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "de3282b01d0bd528bc907c936636b5a7d924cd9d370fc2b324274d79d3f37bef",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99992
+        },
+        {
+          "file": "potter-1992-1994-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493815.14928888186%2C4876055.282153052%2C493910.14928888186%2C4876155.282153052&bboxSR=3740&imageSR=3740&size=950%2C1000&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "f6a6f5fb164a2857db2d5a2968c2da31d7de86a8a67f5f3f82b3490d7ebfcef1",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ]
+    },
+    "roof-ae77fb78": {
+      "city_objectid": 171100,
+      "outline_enu_wkt": "POLYGON ((-500.7104145308258 -815.1270311111584, -500.7602544394322 -827.7913702474907, -500.7713056242792 -830.6076005613431, -503.4149452029378 -830.686501682736, -503.40624546649633 -836.295542257838, -513.0954608238535 -836.2731118444353, -513.0875575345708 -827.3335569035262, -509.3187239447725 -827.3368778619915, -509.42628944903845 -821.0790648739785, -513.38003499154 -821.0755625171587, -513.3747984258225 -815.1158937187865, -508.45809291902697 -815.1202569883317, -500.7104145308258 -815.1270311111584))",
+      "area_m2": 224.753,
+      "inside_addresses": [
+        "1045 E 20TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803051204802": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-ae77fb78": 129.804
+      },
+      "sample_counts": {
+        "2013-15": 182,
+        "2017": 0,
+        "DOGAMI": 182
+      },
+      "aerial_and_query": [
+        {
+          "file": "east20-1045-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493779.14928888186%2C4876057.282153052%2C493864.14928888186%2C4876148.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "8193671203455c6dd58dfdba55299e8f74ed67a92f262be11bcd40f1b4b415de"
+        },
+        {
+          "file": "east20-1045-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493779.14928888186%2C4876057.282153052%2C493864.14928888186%2C4876148.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "bfedd78b2b1a019582a9b4dd1b22fdee0f7c3ef49e897844baf3fee4e10ef8c3"
+        },
+        {
+          "file": "east20-1045-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493779.14928888186%2C4876057.282153052%2C493864.14928888186%2C4876148.282153052&bboxSR=3740&imageSR=3740&size=850%2C910&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "dd9408f834fcc392928232ed760673fe96ba1f97e61a9885182e59b688937ba0",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east20-1045-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493779.14928888186%2C4876057.282153052%2C493864.14928888186%2C4876148.282153052&bboxSR=3740&imageSR=3740&size=850%2C910&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "428a7258f2fb448a9cb8c912b07281ef3f7d5afa858991512665942c415e7dce",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99993
+        },
+        {
+          "file": "east20-1045-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493779.14928888186%2C4876057.282153052%2C493864.14928888186%2C4876148.282153052&bboxSR=3740&imageSR=3740&size=850%2C910&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "034c3a8e9d77299cdb14245e6e859aa398ad2b8f4162e30ca72d84da06da0b76",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-da8142c0": {
+      "city_objectid": 129711,
+      "outline_enu_wkt": "POLYGON ((-456.90184526576195 -868.6007901495323, -453.9661794915446 -868.606176299043, -453.9647573531838 -867.8128054756671, -451.0290915859514 -867.818191608414, -451.0305107386084 -868.611662347801, -451.0367895110976 -872.0233718054369, -451.04891748091904 -878.5294666215777, -464.0610043288907 -878.5053074182943, -466.91736336424947 -878.5000543147326, -468.6629214954446 -878.4968497920781, -468.6548572400934 -874.1330529209226, -466.90929913078435 -874.1362574407831, -466.89895624434575 -868.5822500204667, -462.85248660936486 -868.589784745127, -462.8508011941449 -867.6377003844827, -456.9000599512947 -867.6487028030679, -456.90184526576195 -868.6007901495323))",
+      "area_m2": 172.993,
+      "inside_addresses": [
+        "1096 E 20TH AVE"
+      ],
+      "parcel_fractions": {
+        "1803051212500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-da8142c0": 141.422
+      },
+      "sample_counts": {
+        "2013-15": 137,
+        "2017": 0,
+        "DOGAMI": 137
+      },
+      "aerial_and_query": [
+        {
+          "file": "east20-1096-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493824.14928888186%2C4876015.282153052%2C493912.14928888186%2C4876095.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "cd0ad76cbfa2f13d80d87f4c2f0df9da7ed08087512d94b9e9aa762d19513e04"
+        },
+        {
+          "file": "east20-1096-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493824.14928888186%2C4876015.282153052%2C493912.14928888186%2C4876095.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "d0b6fde6ae2fb3d13808478ea7b6d685c77dab7dadf3aab99f439ef3509d8fd4"
+        },
+        {
+          "file": "east20-1096-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493824.14928888186%2C4876015.282153052%2C493912.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=880%2C800&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "e17779f37d0210523673e678416611e11ea6ad96c61ab480781e9fe30db7162e",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east20-1096-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493824.14928888186%2C4876015.282153052%2C493912.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=880%2C800&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "2c1d473b70cf8d43811abbc177810431c8a44421551427a6613c449b267d9101",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99992
+        },
+        {
+          "file": "east20-1096-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493824.14928888186%2C4876015.282153052%2C493912.14928888186%2C4876095.282153052&bboxSR=3740&imageSR=3740&size=880%2C800&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "ee226fcd3e05d69a3dcba45349fd9bf6d6b1c81ebc28c00101f0d1be220a02b3",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "harris-1911": {
+      "city_objectid": 171094,
+      "outline_enu_wkt": "POLYGON ((-544.8423148713191 -743.8465913599357, -544.369134514709 -743.8386692591012, -529.1716718752868 -743.5847997907549, -529.1759325159364 -748.5016014315188, -529.1797814609017 -752.8223696844652, -536.7591504536103 -752.815671893768, -536.6859522479353 -756.0456020226702, -542.9703990666312 -756.034757678397, -543.0924564769375 -749.2846607612446, -544.7422405878315 -749.2435962324962, -544.8423148713191 -743.8465913599357))",
+      "area_m2": 156.231,
+      "inside_addresses": [
+        "1911 HARRIS ST"
+      ],
+      "parcel_fractions": {
+        "1803051205400": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-84ccdaf5": 136.652
+      },
+      "sample_counts": {
+        "2013-15": 121,
+        "2017": 0,
+        "DOGAMI": 121
+      },
+      "aerial_and_query": [
+        {
+          "file": "harris-1925-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "743cbbc2cefcc317554ad036bcfe3596cfa379bae63932fc1f0ddc59d43cd796"
+        },
+        {
+          "file": "harris-1925-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "6a4b0352378a87a1779b644358b690220f6d0bca4fb69b7d2bee9b38c57be618"
+        },
+        {
+          "file": "harris-1925-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=1020%2C950&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "44aac0fd1795229de6fb0c433a2f8d23bf9572dcad615e6078313612905636b6",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "harris-1925-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=1020%2C950&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "1ffb7b1c1e891cf544b64cf218711a57dea35a141c38e29188091a334d7f543a",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99968
+        },
+        {
+          "file": "harris-1925-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=1020%2C950&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "6b339e008104d23bad3141afd3babd375d1bfec4dd7b98b9a1b3b129d3c48962",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99998
+        }
+      ]
+    },
+    "roof-84ccdaf5": {
+      "city_objectid": 171095,
+      "outline_enu_wkt": "POLYGON ((-544.7223737891763 -757.7834065416828, -511.7469634124427 -757.7880718195811, -511.75589291058714 -767.9195982534438, -544.731304080924 -767.9149330239743, -544.7223737891763 -757.7834065416828))",
+      "area_m2": 334.091,
+      "inside_addresses": [
+        "1925 HARRIS ST"
+      ],
+      "parcel_fractions": {
+        "1803051205200": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-84ccdaf5": 320.086
+      },
+      "sample_counts": {
+        "2013-15": 288,
+        "2017": 0,
+        "DOGAMI": 288
+      },
+      "aerial_and_query": [
+        {
+          "file": "harris-1925-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "743cbbc2cefcc317554ad036bcfe3596cfa379bae63932fc1f0ddc59d43cd796"
+        },
+        {
+          "file": "harris-1925-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "6a4b0352378a87a1779b644358b690220f6d0bca4fb69b7d2bee9b38c57be618"
+        },
+        {
+          "file": "harris-1925-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=1020%2C950&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "44aac0fd1795229de6fb0c433a2f8d23bf9572dcad615e6078313612905636b6",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "harris-1925-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=1020%2C950&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "1ffb7b1c1e891cf544b64cf218711a57dea35a141c38e29188091a334d7f543a",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99968
+        },
+        {
+          "file": "harris-1925-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493750.14928888186%2C4876126.282153052%2C493852.14928888186%2C4876221.282153052&bboxSR=3740&imageSR=3740&size=1020%2C950&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "6b339e008104d23bad3141afd3babd375d1bfec4dd7b98b9a1b3b129d3c48962",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99998
+        }
+      ]
+    },
+    "harris-1941": {
+      "city_objectid": 171096,
+      "outline_enu_wkt": "POLYGON ((-539.2933795399731 -773.4245368698612, -529.4598695529858 -773.4332610480487, -529.4650534184766 -779.2439223891124, -529.468649557035 -783.4156781118363, -528.4257833186421 -783.4166543120518, -528.4316875899094 -790.1212691077963, -529.4745508586639 -790.1203928198665, -536.1792656296166 -790.1144914664328, -536.1696680992609 -779.2380180414766, -539.2984606460668 -779.2352951494977, -539.2933795399731 -773.4245368698612))",
+      "area_m2": 137.055,
+      "inside_addresses": [
+        "1941 HARRIS ST"
+      ],
+      "parcel_fractions": {
+        "1803051205100": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-7e72b4ca": 107.118
+      },
+      "sample_counts": {
+        "2013-15": 117,
+        "2017": 0,
+        "DOGAMI": 117
+      },
+      "aerial_and_query": [
+        {
+          "file": "harris-1959-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "968252c695f23d1c89dd1fd013b0ca9415bde5c570f697fb0169c283a0b06720"
+        },
+        {
+          "file": "harris-1959-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "36c59b1621ab3c91e9d0189750d636e4cef847828549cb472a811e5d3fc23c37"
+        },
+        {
+          "file": "harris-1959-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&bboxSR=3740&imageSR=3740&size=910%2C1030&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "61fc1789c55e4ed13e0b6b99dc9c858cd8e03aa382e7a288d6f5a341d0e947eb",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "harris-1959-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&bboxSR=3740&imageSR=3740&size=910%2C1030&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "a2c62104c1d524cbb233cf43f1609ebd3c2fade0b1ace5becbd25f2b10144841",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99968
+        },
+        {
+          "file": "harris-1959-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&bboxSR=3740&imageSR=3740&size=910%2C1030&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "8d24e28a77f7c4ca70516b259498462e07bf1442727844e0f84213356ee36f92",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99997
+        }
+      ]
+    },
+    "roof-7e72b4ca": {
+      "city_objectid": 171097,
+      "outline_enu_wkt": "POLYGON ((-525.4913856809726 -791.508366602473, -525.5214161117328 -797.1700644204393, -525.540398942132 -800.7458583079278, -525.5466295510414 -801.9242862313986, -524.0106402455713 -801.9254454057664, -520.3604278124985 -801.9282066458836, -520.3632038284559 -807.2934806440026, -527.0193260379019 -807.2772288564593, -527.0968288262375 -804.4693418424577, -528.0356855602586 -804.4685615357012, -529.8235982229235 -804.4669208554551, -539.806115830841 -804.4581437464803, -539.8043922818033 -802.5155230984092, -541.9896690541063 -802.4150379728526, -541.9945898699807 -801.7743620052934, -542.0341774083208 -796.7085630530491, -539.7992381491931 -796.7105625215918, -539.7946686674841 -791.4958404842764, -529.8121513715596 -791.5046176137403, -525.4913856809726 -791.508366602473))",
+      "area_m2": 229.81,
+      "inside_addresses": [
+        "1959 HARRIS ST"
+      ],
+      "parcel_fractions": {
+        "1803051205000": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-7e72b4ca": 172.923
+      },
+      "sample_counts": {
+        "2013-15": 186,
+        "2017": 0,
+        "DOGAMI": 186
+      },
+      "aerial_and_query": [
+        {
+          "file": "harris-1959-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "968252c695f23d1c89dd1fd013b0ca9415bde5c570f697fb0169c283a0b06720"
+        },
+        {
+          "file": "harris-1959-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "36c59b1621ab3c91e9d0189750d636e4cef847828549cb472a811e5d3fc23c37"
+        },
+        {
+          "file": "harris-1959-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&bboxSR=3740&imageSR=3740&size=910%2C1030&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "61fc1789c55e4ed13e0b6b99dc9c858cd8e03aa382e7a288d6f5a341d0e947eb",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "harris-1959-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&bboxSR=3740&imageSR=3740&size=910%2C1030&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "a2c62104c1d524cbb233cf43f1609ebd3c2fade0b1ace5becbd25f2b10144841",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99968
+        },
+        {
+          "file": "harris-1959-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493752.14928888186%2C4876086.282153052%2C493843.14928888186%2C4876189.282153052&bboxSR=3740&imageSR=3740&size=910%2C1030&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "8d24e28a77f7c4ca70516b259498462e07bf1442727844e0f84213356ee36f92",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99997
+        }
+      ]
+    }
+  },
+  "street_views": {
+    "1992-potter-northeast": [
+      {
+        "date": "2020-11",
+        "id": "KHMf6GNRhHs_kL2-fKfpGA",
+        "camera_enu": [
+          -434.65604813362006,
+          -822.3696475476027
+        ],
+        "bearing": 257.67,
+        "distance": 31.1,
+        "file": "1992-potter-northeast-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KHMf6GNRhHs_kL2-fKfpGA&heading=257.67"
+      }
+    ],
+    "1045-east20-south": [
+      {
+        "date": "2024-07",
+        "id": "Hv7t1QUtr0zBCCReOa5NlA",
+        "camera_enu": [
+          -503.09775702515617,
+          -850.9859580555931
+        ],
+        "bearing": 351.12,
+        "distance": 25.3,
+        "file": "1045-east20-south-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Hv7t1QUtr0zBCCReOa5NlA&heading=351.12"
+      }
+    ],
+    "1926-potter-southeast": [
+      {
+        "date": "2020-11",
+        "id": "j-tnDFsHpOyWSvi9x5NtIQ",
+        "camera_enu": [
+          -435.0372577053495,
+          -792.1029650624841
+        ],
+        "bearing": 297.61,
+        "distance": 30.4,
+        "file": "1926-potter-southeast-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=j-tnDFsHpOyWSvi9x5NtIQ&heading=297.61"
+      }
+    ],
+    "1994-potter-east": [
+      {
+        "date": "2020-11",
+        "id": "nmbb3_hLrYHW84gZKy3x0w",
+        "camera_enu": [
+          -434.49388935184106,
+          -833.0130961863324
+        ],
+        "bearing": 266.39,
+        "distance": 31.6,
+        "file": "1994-potter-east-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=nmbb3_hLrYHW84gZKy3x0w&heading=266.39"
+      }
+    ],
+    "1926-potter-east": [
+      {
+        "date": "2020-11",
+        "id": "HT2Gn1iOtV6TiC5CFrITRw",
+        "camera_enu": [
+          -435.1309178174706,
+          -772.5788024840876
+        ],
+        "bearing": 283.76,
+        "distance": 27.7,
+        "file": "1926-potter-east-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HT2Gn1iOtV6TiC5CFrITRw&heading=283.76"
+      }
+    ],
+    "1938-potter-east": [
+      {
+        "date": "2020-11",
+        "id": "XAfMkkJhPod0O1omRMelXw",
+        "camera_enu": [
+          -435.152455285599,
+          -782.3025246206671
+        ],
+        "bearing": 272.62,
+        "distance": 25.4,
+        "file": "1938-potter-east-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XAfMkkJhPod0O1omRMelXw&heading=272.62"
+      }
+    ],
+    "1976-potter-east": [
+      {
+        "date": "2020-11",
+        "id": "_qiEo--s-MLKePz4BGq9OA",
+        "camera_enu": [
+          -434.68282862880733,
+          -812.1232888838276
+        ],
+        "bearing": 261.0,
+        "distance": 24.4,
+        "file": "1976-potter-east-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_qiEo--s-MLKePz4BGq9OA&heading=261.0"
+      }
+    ],
+    "1096-east20-northeast": [
+      {
+        "date": "2020-11",
+        "id": "469CxrzFGFtzxzAEjj5mJg",
+        "camera_enu": [
+          -432.3923850535648,
+          -859.5842151418328
+        ],
+        "bearing": 244.99,
+        "distance": 29.4,
+        "file": "1096-east20-northeast-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=469CxrzFGFtzxzAEjj5mJg&heading=244.99"
+      }
+    ],
+    "1941-harris-west": [
+      {
+        "date": "2024-06",
+        "id": "v0O53KVbXi3DYebKH9cYkg",
+        "camera_enu": [
+          -558.800450464827,
+          -777.023251212202
+        ],
+        "bearing": 99.53,
+        "distance": 25.9,
+        "file": "1941-harris-west-2024-06.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=v0O53KVbXi3DYebKH9cYkg&heading=99.53"
+      }
+    ],
+    "1925-harris-west": [
+      {
+        "date": "2022-06",
+        "id": "pvlxMRPxhAoJ-Ylq8iseaA",
+        "camera_enu": [
+          -558.2522930330015,
+          -763.4931573756039
+        ],
+        "bearing": 89.07,
+        "distance": 30.3,
+        "file": "1925-harris-west-2022-06.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pvlxMRPxhAoJ-Ylq8iseaA&heading=89.07"
+      }
+    ],
+    "1925-harris-southwest": [
+      {
+        "date": "2024-06",
+        "id": "v0O53KVbXi3DYebKH9cYkg",
+        "camera_enu": [
+          -558.800450464827,
+          -777.023251212202
+        ],
+        "bearing": 77.15,
+        "distance": 31.6,
+        "file": "1925-harris-southwest-2024-06.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=v0O53KVbXi3DYebKH9cYkg&heading=77.15"
+      }
+    ],
+    "1911-harris-west": [
+      {
+        "date": "2024-06",
+        "id": "CtPgTNzZz_C9N10qxX3HBQ",
+        "camera_enu": [
+          -558.8430286186631,
+          -746.3013002928346
+        ],
+        "bearing": 96.93,
+        "distance": 22.0,
+        "file": "1911-harris-west-2024-06.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CtPgTNzZz_C9N10qxX3HBQ&heading=96.93"
+      }
+    ],
+    "1096-east20-north": [
+      {
+        "date": "2024-07",
+        "id": "T-qo1CToZwIjxsXNFtRX0g",
+        "camera_enu": [
+          -461.73797818733146,
+          -850.382089308463
+        ],
+        "bearing": 172.78,
+        "distance": 21.8,
+        "file": "1096-east20-north-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=T-qo1CToZwIjxsXNFtRX0g&heading=172.78"
+      }
+    ],
+    "1045-east20-southeast": [
+      {
+        "date": "2024-07",
+        "id": "ITWSyqHdvwehuT93B1nD4w",
+        "camera_enu": [
+          -493.0423109938856,
+          -850.8852480072528
+        ],
+        "bearing": 332.49,
+        "distance": 28.1,
+        "file": "1045-east20-southeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ITWSyqHdvwehuT93B1nD4w&heading=332.49"
+      }
+    ],
+    "1959-harris-west": [
+      {
+        "date": "2024-06",
+        "id": "ry6pCh4xOq8pO527Wd7mGA",
+        "camera_enu": [
+          -558.7333986677695,
+          -797.5532958824188
+        ],
+        "bearing": 92.88,
+        "distance": 28.8,
+        "file": "1959-harris-west-2024-06.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ry6pCh4xOq8pO527Wd7mGA&heading=92.88"
+      }
+    ],
+    "1959-harris-southwest": [
+      {
+        "date": "2024-06",
+        "id": "pHcaeBbPw2UJi9AaG5Fi5w",
+        "camera_enu": [
+          -558.6666942000738,
+          -817.8759912988171
+        ],
+        "bearing": 66.54,
+        "distance": 32.3,
+        "file": "1959-harris-southwest-2024-06.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pHcaeBbPw2UJi9AaG5Fi5w&heading=66.54"
+      }
+    ]
+  },
+  "models": [
+    {
+      "id": "roof-5be21a96",
+      "city_objectid": 171103,
+      "outline_enu_m": [
+        [
+          -471.4294,
+          -756.97818
+        ],
+        [
+          -465.32072,
+          -756.98357
+        ],
+        [
+          -465.32406,
+          -760.7084
+        ],
+        [
+          -454.14957,
+          -760.7183
+        ],
+        [
+          -454.15259,
+          -764.14512
+        ],
+        [
+          -452.06676,
+          -764.14696
+        ],
+        [
+          -452.07031,
+          -768.16971
+        ],
+        [
+          -454.15614,
+          -768.16786
+        ],
+        [
+          -454.15896,
+          -771.29676
+        ],
+        [
+          -466.67423,
+          -771.28567
+        ],
+        [
+          -466.6653,
+          -761.15425
+        ],
+        [
+          -471.4331,
+          -761.15004
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1926 Potter Street",
+      "street_address": "1926 Potter Street",
+      "base_z_m": 15.22,
+      "levels_z_m": [
+        16.38,
+        19.45
+      ],
+      "wall_color": [
+        165,
+        162,
+        135
+      ],
+      "roof_color": [
+        115,
+        106,
+        90
+      ],
+      "trim_color": [
+        211,
+        203,
+        179
+      ],
+      "seam_color": [
+        149,
+        143,
+        116
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -467,
+            -771.58,
+            -453.92,
+            -760.52
+          ],
+          "planes": [
+            [
+              -460,
+              -766.02,
+              23.52,
+              0,
+              0.51
+            ],
+            [
+              -460,
+              -766.02,
+              23.52,
+              0,
+              -0.43
+            ],
+            [
+              -456.04,
+              -766,
+              23.52,
+              -0.68,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -456.03,
+            -768.46,
+            -451.9,
+            -763.94
+          ],
+          "planes": [
+            [
+              -454,
+              -766.19,
+              21.28,
+              0,
+              0.41
+            ],
+            [
+              -454,
+              -766.19,
+              21.28,
+              0,
+              -0.46
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -471.66,
+            -761.4,
+            -465.03,
+            -756.74
+          ],
+          "planes": [
+            [
+              -468,
+              -759.0,
+              22.61,
+              0,
+              0.82
+            ],
+            [
+              -468,
+              -759.0,
+              22.61,
+              0,
+              -0.66
+            ]
+          ]
+        }
+      ],
+      "entry": {
+        "gate": "potter-north-east",
+        "near": [
+          -452.4,
+          -766.12
+        ],
+        "bearing": 90,
+        "distance_m": 13.3,
+        "threshold_z_m": 16.41,
+        "stair_run_m": 1.41,
+        "width_m": 1.06
+      },
+      "eaves_m": 0.27,
+      "porch": [
+        2.54,
+        1.05,
+        0.37
+      ],
+      "chimney": [
+        -461.7,
+        -766.2,
+        0.71,
+        0.8,
+        0.91,
+        [
+          168,
+          123,
+          93
+        ]
+      ]
+    },
+    {
+      "id": "potter-1938",
+      "city_objectid": 171105,
+      "outline_enu_m": [
+        [
+          -468.59283,
+          -775.42288
+        ],
+        [
+          -463.24964,
+          -775.36921
+        ],
+        [
+          -463.29706,
+          -777.3286
+        ],
+        [
+          -453.72136,
+          -777.24031
+        ],
+        [
+          -453.6373,
+          -780.0567
+        ],
+        [
+          -452.25236,
+          -779.98587
+        ],
+        [
+          -452.25766,
+          -786.07754
+        ],
+        [
+          -464.14537,
+          -786.13843
+        ],
+        [
+          -464.2723,
+          -783.53412
+        ],
+        [
+          -468.61419,
+          -783.57291
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1938 Potter Street",
+      "street_address": "1938 Potter Street",
+      "base_z_m": 15.18,
+      "levels_z_m": [
+        16.31,
+        19.15
+      ],
+      "wall_color": [
+        192,
+        183,
+        157
+      ],
+      "roof_color": [
+        132,
+        112,
+        88
+      ],
+      "trim_color": [
+        205,
+        195,
+        164
+      ],
+      "seam_color": [
+        176,
+        166,
+        139
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -464.46,
+            -786.38,
+            -452.06,
+            -777.04
+          ],
+          "planes": [
+            [
+              -459.07,
+              -782,
+              23.93,
+              0.65,
+              0
+            ],
+            [
+              -459.07,
+              -782,
+              23.93,
+              -0.65,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -460.18,
+            -786.36,
+            -452.02,
+            -781.02
+          ],
+          "planes": [
+            [
+              -456,
+              -783.82,
+              23.81,
+              0,
+              0.98
+            ],
+            [
+              -456,
+              -783.82,
+              23.81,
+              0,
+              -0.95
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -468.82,
+            -784.01,
+            -462.95,
+            -775.08
+          ],
+          "planes": [
+            [
+              -465.6,
+              -779.49,
+              20.72,
+              0,
+              0.38
+            ],
+            [
+              -465.6,
+              -779.49,
+              20.72,
+              0,
+              -0.32
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -463.53,
+            -778.0,
+            -453.49,
+            -775.23
+          ],
+          "planes": [
+            [
+              -461,
+              -776.9,
+              21.13,
+              0.12,
+              -0.12
+            ]
+          ]
+        }
+      ],
+      "entry": {
+        "gate": "potter-gabled-east",
+        "near": [
+          -452.52,
+          -783.11
+        ],
+        "bearing": 90,
+        "distance_m": 13.9,
+        "threshold_z_m": 16.29,
+        "stair_run_m": 1.38,
+        "width_m": 1.06
+      },
+      "eaves_m": 0.27,
+      "arched_door": true,
+      "front_picture_windows": true,
+      "dormers": [
+        {
+          "near": [
+            -454.08,
+            -779.43
+          ],
+          "bearing": 90,
+          "width": 1.29,
+          "depth": 1.0,
+          "sill": 21.53,
+          "top": 22.96,
+          "windows": 1,
+          "style": "gable"
+        }
+      ]
+    },
+    {
+      "id": "potter-1976",
+      "city_objectid": 171108,
+      "outline_enu_m": [
+        [
+          -466.3273,
+          -819.08052
+        ],
+        [
+          -462.90049,
+          -819.08355
+        ],
+        [
+          -462.89238,
+          -809.84598
+        ],
+        [
+          -452.31392,
+          -809.85537
+        ],
+        [
+          -452.32218,
+          -819.24185
+        ],
+        [
+          -460.21877,
+          -819.23492
+        ],
+        [
+          -460.22247,
+          -823.40668
+        ],
+        [
+          -466.33115,
+          -823.40129
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1976 Potter Street",
+      "street_address": "1976 Potter Street",
+      "base_z_m": 14.81,
+      "levels_z_m": [
+        15.79,
+        18.55
+      ],
+      "wall_color": [
+        188,
+        187,
+        178
+      ],
+      "roof_color": [
+        112,
+        112,
+        102
+      ],
+      "trim_color": [
+        210,
+        208,
+        187
+      ],
+      "seam_color": [
+        178,
+        179,
+        165
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -463.14,
+            -819.46,
+            -452.08,
+            -809.65
+          ],
+          "planes": [
+            [
+              -457,
+              -814.16,
+              22.48,
+              0,
+              0.6
+            ],
+            [
+              -457,
+              -814.16,
+              22.48,
+              0,
+              -0.65
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -466.56,
+            -823.65,
+            -460.0,
+            -818.84
+          ],
+          "planes": [
+            [
+              -463,
+              -821.02,
+              20.84,
+              0,
+              0.58
+            ],
+            [
+              -463,
+              -821.02,
+              20.84,
+              0,
+              -0.54
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -463.2,
+            -820.6,
+            -459.99,
+            -817.5
+          ],
+          "planes": [
+            [
+              -461.5,
+              -819,
+              20.72,
+              0.2,
+              0.18
+            ]
+          ]
+        }
+      ],
+      "entry": {
+        "gate": "potter-white-gable-east",
+        "near": [
+          -452.59,
+          -814.76
+        ],
+        "bearing": 90,
+        "distance_m": 11.7,
+        "threshold_z_m": 15.74,
+        "stair_run_m": 1.34,
+        "width_m": 1.06
+      },
+      "eaves_m": 0.27,
+      "porch": [
+        1.94,
+        0.76,
+        0.35
+      ],
+      "chimney": [
+        -460.4,
+        -814.21,
+        0.48,
+        0.63,
+        1.0,
+        [
+          137,
+          97,
+          76
+        ]
+      ]
+    },
+    {
+      "id": "roof-b0798c1b",
+      "city_objectid": 171109,
+      "outline_enu_m": [
+        [
+          -479.2955,
+          -825.77379
+        ],
+        [
+          -474.08078,
+          -825.77836
+        ],
+        [
+          -474.07991,
+          -824.7354
+        ],
+        [
+          -463.79947,
+          -824.74448
+        ],
+        [
+          -455.30684,
+          -824.75192
+        ],
+        [
+          -455.31916,
+          -838.75719
+        ],
+        [
+          -463.81179,
+          -838.74975
+        ],
+        [
+          -463.81045,
+          -837.25986
+        ],
+        [
+          -468.72716,
+          -837.25549
+        ],
+        [
+          -468.7251,
+          -834.87165
+        ],
+        [
+          -473.93983,
+          -834.86708
+        ],
+        [
+          -473.93746,
+          -832.18521
+        ],
+        [
+          -479.3012,
+          -832.18049
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1992–1994 Potter Street",
+      "street_address": "1992 Potter Street",
+      "base_z_m": 14.92,
+      "levels_z_m": [
+        16.09,
+        19.17
+      ],
+      "wall_color": [
+        165,
+        153,
+        111
+      ],
+      "roof_color": [
+        118,
+        107,
+        93
+      ],
+      "trim_color": [
+        191,
+        186,
+        159
+      ],
+      "seam_color": [
+        149,
+        135,
+        102
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -474.28,
+            -837.49,
+            -455.08,
+            -824.51
+          ],
+          "planes": [
+            [
+              -465,
+              -830.55,
+              24.76,
+              0,
+              0.47
+            ],
+            [
+              -465,
+              -830.55,
+              24.76,
+              0,
+              -0.46
+            ],
+            [
+              -459.58,
+              -830,
+              24.76,
+              -0.61,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -464.02,
+            -839.02,
+            -455.08,
+            -826.09
+          ],
+          "planes": [
+            [
+              -459.4,
+              -832.0,
+              24.21,
+              0.52,
+              0
+            ],
+            [
+              -459.4,
+              -832,
+              24.21,
+              -0.51,
+              0
+            ],
+            [
+              -459.4,
+              -835.5,
+              24.21,
+              0,
+              0.64
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -479.55,
+            -835.04,
+            -473.73,
+            -825.61
+          ],
+          "planes": [
+            [
+              -476.7,
+              -830,
+              20.76,
+              0.42,
+              0
+            ],
+            [
+              -476.7,
+              -830,
+              20.76,
+              -0.34,
+              0
+            ]
+          ]
+        }
+      ],
+      "entry": null,
+      "eaves_m": 0.27,
+      "bay_pitch_m": 3.31
+    },
+    {
+      "id": "roof-ae77fb78",
+      "city_objectid": 171100,
+      "outline_enu_m": [
+        [
+          -500.71041,
+          -815.12703
+        ],
+        [
+          -500.76025,
+          -827.79137
+        ],
+        [
+          -500.77131,
+          -830.6076
+        ],
+        [
+          -503.41495,
+          -830.6865
+        ],
+        [
+          -503.40625,
+          -836.29554
+        ],
+        [
+          -513.09546,
+          -836.27311
+        ],
+        [
+          -513.08756,
+          -827.33356
+        ],
+        [
+          -509.31872,
+          -827.33688
+        ],
+        [
+          -509.42629,
+          -821.07906
+        ],
+        [
+          -513.38003,
+          -821.07556
+        ],
+        [
+          -513.3748,
+          -815.11589
+        ],
+        [
+          -508.45809,
+          -815.12026
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1045 East 20th Avenue",
+      "street_address": "1045 East 20th Avenue",
+      "base_z_m": 10.99,
+      "levels_z_m": [
+        12.25,
+        15.55
+      ],
+      "wall_color": [
+        125,
+        135,
+        126
+      ],
+      "roof_color": [
+        109,
+        104,
+        92
+      ],
+      "trim_color": [
+        185,
+        178,
+        152
+      ],
+      "seam_color": [
+        110,
+        123,
+        111
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -513.64,
+            -830.91,
+            -500.43,
+            -814.9
+          ],
+          "planes": [
+            [
+              -505.44,
+              -821.6,
+              20.24,
+              0.4,
+              0
+            ],
+            [
+              -505.44,
+              -821.6,
+              20.24,
+              -0.64,
+              0
+            ],
+            [
+              -505.44,
+              -828.38,
+              20.24,
+              0,
+              0.45
+            ],
+            [
+              -505.44,
+              -817.27,
+              20.24,
+              0,
+              -0.55
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -513.37,
+            -836.57,
+            -503.15,
+            -827.13
+          ],
+          "planes": [
+            [
+              -508.51,
+              -830.8,
+              17.63,
+              0.34,
+              0
+            ],
+            [
+              -508.51,
+              -830.8,
+              17.63,
+              -0.36,
+              0
+            ],
+            [
+              -508.51,
+              -832.48,
+              17.63,
+              0,
+              0.37
+            ]
+          ]
+        }
+      ],
+      "entry": null,
+      "eaves_m": 0.27,
+      "fence_enu_m": [
+        -512.93,
+        -503.92,
+        -837.18
+      ]
+    },
+    {
+      "id": "roof-da8142c0",
+      "city_objectid": 129711,
+      "outline_enu_m": [
+        [
+          -456.90185,
+          -868.60079
+        ],
+        [
+          -453.96618,
+          -868.60618
+        ],
+        [
+          -453.96476,
+          -867.81281
+        ],
+        [
+          -451.02909,
+          -867.81819
+        ],
+        [
+          -451.03051,
+          -868.61166
+        ],
+        [
+          -451.03679,
+          -872.02337
+        ],
+        [
+          -451.04892,
+          -878.52947
+        ],
+        [
+          -464.061,
+          -878.50531
+        ],
+        [
+          -466.91736,
+          -878.50005
+        ],
+        [
+          -468.66292,
+          -878.49685
+        ],
+        [
+          -468.65486,
+          -874.13305
+        ],
+        [
+          -466.9093,
+          -874.13626
+        ],
+        [
+          -466.89896,
+          -868.58225
+        ],
+        [
+          -462.85249,
+          -868.58978
+        ],
+        [
+          -462.8508,
+          -867.6377
+        ],
+        [
+          -456.90006,
+          -867.6487
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1096 East 20th Avenue",
+      "street_address": "1096 East 20th Avenue",
+      "base_z_m": 15.23,
+      "levels_z_m": [
+        16.71
+      ],
+      "wall_color": [
+        159,
+        180,
+        176
+      ],
+      "roof_color": [
+        155,
+        153,
+        130
+      ],
+      "trim_color": [
+        218,
+        214,
+        190
+      ],
+      "seam_color": [
+        144,
+        163,
+        158
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -468.92,
+            -878.79,
+            -450.79,
+            -867.59
+          ],
+          "planes": [
+            [
+              -460,
+              -872.91,
+              22.7,
+              0,
+              0.38
+            ],
+            [
+              -460,
+              -872.91,
+              22.7,
+              0,
+              -0.425
+            ],
+            [
+              -464.85,
+              -873,
+              22.7,
+              0.49,
+              0
+            ],
+            [
+              -452.52,
+              -873,
+              22.7,
+              -0.57,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -463.08,
+            -873.88,
+            -456.67,
+            -867.42
+          ],
+          "planes": [
+            [
+              -459.76,
+              -871,
+              22.64,
+              0.58,
+              0
+            ],
+            [
+              -459.76,
+              -871,
+              22.64,
+              -0.56,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -454.2,
+            -870.48,
+            -450.84,
+            -867.59
+          ],
+          "planes": [
+            [
+              -452.2,
+              -869,
+              20.61,
+              0,
+              -0.23
+            ]
+          ]
+        }
+      ],
+      "entry": {
+        "gate": "east-twentieth-north",
+        "near": [
+          -452.42,
+          -868.04
+        ],
+        "bearing": 0,
+        "distance_m": 12.3,
+        "threshold_z_m": 17.05,
+        "stair_run_m": 1.31,
+        "width_m": 1.06
+      },
+      "eaves_m": 0.27,
+      "narrow_front": true,
+      "door_color": [
+        163,
+        97,
+        66
+      ],
+      "front_picture_windows": true
+    },
+    {
+      "id": "harris-1911",
+      "city_objectid": 171094,
+      "outline_enu_m": [
+        [
+          -544.84231,
+          -743.84659
+        ],
+        [
+          -544.36913,
+          -743.83867
+        ],
+        [
+          -529.17167,
+          -743.5848
+        ],
+        [
+          -529.17593,
+          -748.5016
+        ],
+        [
+          -529.17978,
+          -752.82237
+        ],
+        [
+          -536.75915,
+          -752.81567
+        ],
+        [
+          -536.68595,
+          -756.0456
+        ],
+        [
+          -542.9704,
+          -756.03476
+        ],
+        [
+          -543.09246,
+          -749.28466
+        ],
+        [
+          -544.74224,
+          -749.2436
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1911 Harris Street",
+      "street_address": "1911 Harris Street",
+      "base_z_m": 9.53,
+      "levels_z_m": [
+        10.59,
+        12.69
+      ],
+      "wall_color": [
+        137,
+        140,
+        127
+      ],
+      "roof_color": [
+        120,
+        118,
+        104
+      ],
+      "trim_color": [
+        205,
+        203,
+        182
+      ],
+      "seam_color": [
+        125,
+        130,
+        119
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -545.06,
+            -753.02,
+            -528.94,
+            -743.34
+          ],
+          "planes": [
+            [
+              -536,
+              -749.03,
+              16.69,
+              0,
+              0.414
+            ],
+            [
+              -536,
+              -749.03,
+              16.69,
+              0,
+              -0.44
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -543.19,
+            -756.28,
+            -536.5,
+            -748.83
+          ],
+          "planes": [
+            [
+              -540.08,
+              -751,
+              16.48,
+              0.48,
+              0
+            ],
+            [
+              -540.08,
+              -751,
+              16.48,
+              -0.44,
+              0
+            ]
+          ]
+        }
+      ],
+      "entry": {
+        "gate": "harris-north-house-west",
+        "near": [
+          -542.75,
+          -752.46
+        ],
+        "bearing": 270,
+        "distance_m": 12.7,
+        "threshold_z_m": 10.44,
+        "stair_run_m": 1.28,
+        "width_m": 1.06
+      },
+      "eaves_m": 0.27,
+      "garage": {
+        "near": [
+          -540.41,
+          -755.77
+        ],
+        "bearing": 180,
+        "width_m": 3.48,
+        "color": [
+          126,
+          73,
+          62
+        ]
+      }
+    },
+    {
+      "id": "roof-84ccdaf5",
+      "city_objectid": 171095,
+      "outline_enu_m": [
+        [
+          -544.72237,
+          -757.78341
+        ],
+        [
+          -511.74696,
+          -757.78807
+        ],
+        [
+          -511.75589,
+          -767.9196
+        ],
+        [
+          -544.7313,
+          -767.91493
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1925 Harris Street",
+      "street_address": "1925 Harris Street",
+      "base_z_m": 9.19,
+      "levels_z_m": [
+        10.49,
+        13.38
+      ],
+      "wall_color": [
+        153,
+        146,
+        123
+      ],
+      "roof_color": [
+        173,
+        168,
+        151
+      ],
+      "trim_color": [
+        77,
+        106,
+        79
+      ],
+      "seam_color": [
+        138,
+        133,
+        114
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -544.95,
+            -768.12,
+            -511.58,
+            -757.54
+          ],
+          "planes": [
+            [
+              -538,
+              -763,
+              16.48,
+              0.003,
+              -0.001
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -522.02,
+            -767.81,
+            -511.59,
+            -758.02
+          ],
+          "planes": [
+            [
+              -518.0,
+              -763.0,
+              17.39,
+              0.026,
+              0.004
+            ]
+          ]
+        }
+      ],
+      "entry": {
+        "gate": "harris-apartments-covered-west",
+        "near": [
+          -540.34,
+          -766.12
+        ],
+        "bearing": 270,
+        "distance_m": 15.35,
+        "threshold_z_m": 10.15,
+        "stair_run_m": 1.45,
+        "width_m": 1.2
+      },
+      "eaves_m": 0.12,
+      "covered_recess_enu_m": [
+        -545.03,
+        -768.08,
+        -540.31,
+        -765.06
+      ],
+      "canopy_posts_enu_m": [
+        [
+          -544.24,
+          -767.53
+        ],
+        [
+          -541.83,
+          -767.51
+        ]
+      ],
+      "frontage_fields": true
+    },
+    {
+      "id": "harris-1941",
+      "city_objectid": 171096,
+      "outline_enu_m": [
+        [
+          -539.29338,
+          -773.42454
+        ],
+        [
+          -529.45987,
+          -773.43326
+        ],
+        [
+          -529.46505,
+          -779.24392
+        ],
+        [
+          -529.46865,
+          -783.41568
+        ],
+        [
+          -528.42578,
+          -783.41665
+        ],
+        [
+          -528.43169,
+          -790.12127
+        ],
+        [
+          -529.47455,
+          -790.12039
+        ],
+        [
+          -536.17927,
+          -790.11449
+        ],
+        [
+          -536.16967,
+          -779.23802
+        ],
+        [
+          -539.29846,
+          -779.2353
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1941 Harris Street",
+      "street_address": "1941 Harris Street",
+      "base_z_m": 9.63,
+      "levels_z_m": [
+        10.74
+      ],
+      "wall_color": [
+        183,
+        181,
+        158
+      ],
+      "roof_color": [
+        128,
+        112,
+        94
+      ],
+      "trim_color": [
+        203,
+        197,
+        173
+      ],
+      "seam_color": [
+        171,
+        170,
+        149
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -539.55,
+            -779.51,
+            -529.22,
+            -773.19
+          ],
+          "planes": [
+            [
+              -534.24,
+              -776.27,
+              16.05,
+              0.48,
+              0
+            ],
+            [
+              -534.24,
+              -776.27,
+              16.05,
+              -0.43,
+              0
+            ],
+            [
+              -534.3,
+              -775.3,
+              16.05,
+              0,
+              -0.5
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -536.42,
+            -790.35,
+            -528.18,
+            -778.93
+          ],
+          "planes": [
+            [
+              -532.62,
+              -784.3,
+              15.94,
+              0.49,
+              0
+            ],
+            [
+              -532.62,
+              -784.3,
+              15.94,
+              -0.49,
+              0
+            ],
+            [
+              -532.62,
+              -786.88,
+              15.94,
+              0,
+              0.46
+            ]
+          ]
+        }
+      ],
+      "entry": {
+        "gate": "harris-low-house-west",
+        "near": [
+          -535.87,
+          -784.13
+        ],
+        "bearing": 270,
+        "distance_m": 14.3,
+        "threshold_z_m": 10.81,
+        "stair_run_m": 1.34,
+        "width_m": 1.06
+      },
+      "eaves_m": 0.27,
+      "porch": [
+        2.02,
+        0.97,
+        0.32
+      ]
+    },
+    {
+      "id": "roof-7e72b4ca",
+      "city_objectid": 171097,
+      "outline_enu_m": [
+        [
+          -525.49139,
+          -791.50837
+        ],
+        [
+          -525.52142,
+          -797.17006
+        ],
+        [
+          -525.5404,
+          -800.74586
+        ],
+        [
+          -525.54663,
+          -801.92429
+        ],
+        [
+          -524.01064,
+          -801.92545
+        ],
+        [
+          -520.36043,
+          -801.92821
+        ],
+        [
+          -520.3632,
+          -807.29348
+        ],
+        [
+          -527.01933,
+          -807.27723
+        ],
+        [
+          -527.09683,
+          -804.46934
+        ],
+        [
+          -528.03569,
+          -804.46856
+        ],
+        [
+          -529.8236,
+          -804.46692
+        ],
+        [
+          -539.80612,
+          -804.45814
+        ],
+        [
+          -539.80439,
+          -802.51552
+        ],
+        [
+          -541.98967,
+          -802.41504
+        ],
+        [
+          -541.99459,
+          -801.77436
+        ],
+        [
+          -542.03418,
+          -796.70856
+        ],
+        [
+          -539.79924,
+          -796.71056
+        ],
+        [
+          -539.79467,
+          -791.49584
+        ],
+        [
+          -529.81215,
+          -791.50462
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "1959 Harris Street",
+      "street_address": "1959 Harris Street",
+      "base_z_m": 9.13,
+      "levels_z_m": [
+        10.11,
+        12.74
+      ],
+      "wall_color": [
+        116,
+        116,
+        97
+      ],
+      "roof_color": [
+        109,
+        106,
+        94
+      ],
+      "trim_color": [
+        194,
+        187,
+        160
+      ],
+      "seam_color": [
+        103,
+        105,
+        88
+      ],
+      "bay_m": 2.95,
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -540.05,
+            -804.73,
+            -525.28,
+            -791.26
+          ],
+          "planes": [
+            [
+              -534.94,
+              -798.44,
+              17.56,
+              0.62,
+              0
+            ],
+            [
+              -534.94,
+              -798.44,
+              17.56,
+              -0.39,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -542.24,
+            -802.82,
+            -538.0,
+            -796.47
+          ],
+          "planes": [
+            [
+              -540.16,
+              -799,
+              14.69,
+              0.38,
+              0
+            ],
+            [
+              -540.16,
+              -799,
+              14.69,
+              -0.33,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -527.35,
+            -807.54,
+            -520.1,
+            -801.72
+          ],
+          "planes": [
+            [
+              -523.7,
+              -804.59,
+              15.38,
+              0,
+              0.42
+            ],
+            [
+              -523.7,
+              -804.59,
+              15.38,
+              0,
+              -0.55
+            ]
+          ]
+        }
+      ],
+      "entry": {
+        "gate": "harris-raised-house-west",
+        "near": [
+          -541.72,
+          -799.4
+        ],
+        "bearing": 270,
+        "distance_m": 13.2,
+        "threshold_z_m": 10.14,
+        "stair_run_m": 1.38,
+        "width_m": 1.19
+      },
+      "eaves_m": 0.27,
+      "porch": [
+        4.72,
+        1.06,
+        0.31
+      ],
+      "dormers": [
+        {
+          "near": [
+            -537.74,
+            -798.46
+          ],
+          "bearing": 270,
+          "width": 4.29,
+          "depth": 1.54,
+          "sill": 16.11,
+          "top": 17.33,
+          "windows": 3,
+          "style": "shed"
+        }
+      ],
+      "street_landing": {
+        "inner_m": 6.95,
+        "outer_m": 10.08,
+        "level_z_m": 9.62
+      }
+    }
+  ],
+  "source_split": {
+    "potter-1938": "roof-5be21a96",
+    "potter-1976": "roof-b0798c1b",
+    "harris-1911": "roof-84ccdaf5",
+    "harris-1941": "roof-7e72b4ca"
+  },
+  "source_ranges": [
+    {
+      "id": "roof-5be21a96",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-b0798c1b",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-da8142c0",
+      "target": "context-background-1-0"
+    },
+    {
+      "id": "roof-84ccdaf5",
+      "target": "context-background-0-0"
+    },
+    {
+      "id": "roof-7e72b4ca",
+      "target": "context-background-0-0"
+    },
+    {
+      "id": "roof-ae77fb78",
+      "target": "context-background-0-0"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import { exteriorCounts } from "./exterior-counts.js";
 
 const directory = "hilyard-west-exterior-review";
 const baseline = "/?exterior-review=hilyard-west-exterior-baseline";
+const dependentDistrict = ["roof-62a81026", "roof-19858777", "roof-bdbcb4fc"];
 const names = {
   "roof-a3d5625f": "Catherine Cornwall Townhouses",
   "roof-ca59da4d": "Hilyard House",
@@ -14,32 +15,37 @@ const names = {
 async function inspect(page, url = "/") {
   await page.goto(url);
   await page.waitForFunction(() => window.__campus?.getState().ready);
-  return page.evaluate((ids) => {
-    const { buildings, presentation } = __campus.getState();
-    const entries = __campus.entranceInfo();
-    return {
-      counts: [
-        buildings,
-        presentation.batchedBuildings,
-        presentation.refinedContextRoofs,
-      ],
-      names: Object.fromEntries(
-        __campus
-          .namedBuildings()
-          .filter(({ id }) => ids.includes(id))
-          .map(({ id, name }) => [id, name]),
-      ),
-      entries: entries.filter(({ id }) => ids.includes(id)),
-      otherEntries: entries.filter(({ id }) => !ids.includes(id)),
-      openSpaces: [
-        [-880.1755, 82.9155],
-        [-876.9664, 105.0442],
-        [-947.1785, -379.0058],
-        [-846.375, 98.9088],
-        [-846.4197, 74.4088],
-      ].map(([x, z]) => !__campus.collisionCheck(x, z)),
-    };
-  }, Object.keys(names));
+  return page.evaluate(
+    ({ ids, dependentIds }) => {
+      const { buildings, presentation } = __campus.getState();
+      const entries = __campus.entranceInfo();
+      return {
+        counts: [
+          buildings,
+          presentation.batchedBuildings,
+          presentation.refinedContextRoofs,
+        ],
+        names: Object.fromEntries(
+          __campus
+            .namedBuildings()
+            .filter(({ id }) => ids.includes(id))
+            .map(({ id, name }) => [id, name]),
+        ),
+        entries: entries.filter(({ id }) => ids.includes(id)),
+        otherEntries: entries.filter(
+          ({ id }) => !ids.includes(id) && !dependentIds.includes(id),
+        ),
+        openSpaces: [
+          [-880.1755, 82.9155],
+          [-876.9664, 105.0442],
+          [-947.1785, -379.0058],
+          [-846.375, 98.9088],
+          [-846.4197, 74.4088],
+        ].map(([x, z]) => !__campus.collisionCheck(x, z)),
+      };
+    },
+    { ids: Object.keys(names), dependentIds: dependentDistrict },
+  );
 }
 
 test("the L2 models retain the open courtyard, covered parking and four approaches", async ({
@@ -47,7 +53,8 @@ test("the L2 models retain the open courtyard, covered parking and four approach
 }) => {
   const before = await inspect(page, baseline);
   const after = await inspect(page);
-  expect(before.counts).toEqual(exteriorCounts({ batched: 4 }));
+  // Disabling the 722 model also restores the dependent University District batch.
+  expect(before.counts).toEqual(exteriorCounts({ batched: 7 }));
   expect(after.counts).toEqual(exteriorCounts());
   expect(after.otherEntries).toEqual(before.otherEntries);
   expect(after.names).toEqual(names);

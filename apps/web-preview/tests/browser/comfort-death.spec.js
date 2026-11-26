@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 const state = (page) => page.evaluate(() => __campus.getState());
 
-test("blue block-cloud sky and adjustable first-person comfort keep movement available", async ({
+test("layered sky and adjustable first-person comfort keep movement available", async ({
   page,
 }) => {
   await page.goto("/");
@@ -10,6 +10,7 @@ test("blue block-cloud sky and adjustable first-person comfort keep movement ava
     blue: true,
     clouds: 18,
     roundedEdges: true,
+    layers: [12, 6],
   });
   expect((await state(page)).motionLevel).toBe(1);
   await page.locator("#settings-open").click();

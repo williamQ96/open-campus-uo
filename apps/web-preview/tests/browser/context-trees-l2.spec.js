@@ -1,0 +1,58 @@
+import { expect, test } from "@playwright/test";
+
+const baseline = "/?exterior-review=context-tree-model-baseline";
+
+async function readScene(page, url = "/") {
+  await page.goto(url, { waitUntil: "commit" });
+  await page.waitForFunction(() => window.__campus?.getState().ready);
+  return page.evaluate(() => {
+    const campus = window.__campus;
+    const { buildings, presentation } = campus.getState();
+    return {
+      buildings,
+      sourceTrees: presentation.sourceTrees,
+      trees: presentation.trees,
+      contextTrees: presentation.refinedContextTrees,
+      pilotTrees: presentation.refinedPilotTrees,
+      approaches: campus.entranceInfo(),
+    };
+  });
+}
+
+test("the rebuilt background layer retains the active site tree decisions", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  const prior = await readScene(page, baseline);
+  expect(prior).toMatchObject({
+    sourceTrees: 600,
+    trees: 542,
+    contextTrees: 0,
+    pilotTrees: 273,
+  });
+  expect(await readScene(page)).toEqual({ ...prior, contextTrees: 269 });
+});
+
+test("the Alder baseline also restores its original background tree", async ({
+  page,
+}) => {
+  const restored = await readScene(
+    page,
+    "/?exterior-review=alder-thirteenth-exterior-baseline",
+  );
+  expect(restored).toMatchObject({ trees: 543, contextTrees: 270 });
+  expect(await readScene(page)).toMatchObject({
+    trees: 542,
+    contextTrees: 269,
+  });
+});
+
+test("invalid replacement bytes retain the existing site tree decisions", async ({
+  page,
+}) => {
+  const prior = await readScene(page, baseline);
+  await page.route("**/context-trees-l2/trees.glb", (route) =>
+    route.fulfill({ body: "damaged background mesh" }),
+  );
+  expect(await readScene(page)).toEqual(prior);
+});

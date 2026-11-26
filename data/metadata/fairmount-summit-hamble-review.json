@@ -1,0 +1,3690 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "surfaces": {
+    "2013-15": {
+      "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+      "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+    },
+    "2017": {
+      "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+      "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+    },
+    "DOGAMI": {
+      "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+      "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    }
+  },
+  "sources": {
+    "roof-0b345e8f": {
+      "city_objectid": 159897,
+      "outline_enu_wkt": "POLYGON ((692.5593718779273 -931.3010384840891, 693.4432777370675 -929.7321999138221, 700.5756831904291 -933.7509598201141, 696.8547503623995 -940.3545570354909, 706.1431948285899 -945.5882082507014, 701.6464402535348 -953.5690114591271, 684.4148290887824 -943.8598826155066, 685.5657033071038 -941.8172587025911, 682.9052651904058 -940.3182121580467, 684.6976844246965 -937.1371989678591, 683.1173527058563 -936.246835866943, 685.8036529034143 -931.4793857811019, 687.3395375995315 -932.3447745945305, 689.0437229136587 -929.3202006090432, 692.5593718779273 -931.3010384840891))",
+      "area_m2": 297.177,
+      "inside_addresses": [
+        "2081 FAIRMOUNT BLVD"
+      ],
+      "parcel_fractions": {
+        "1803042107000": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-0b345e8f": 201.715
+      },
+      "sample_counts": {
+        "2013-15": 248,
+        "2017": 248,
+        "DOGAMI": 248
+      },
+      "aerial_and_query": [
+        {
+          "file": "fairmount-2081-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494977.14928888186%2C4875940.282153052%2C495070.14928888186%2C4876033.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "0e1b8f69db79b9dde79bd9110afde6876bf2f585e71ca067bdf2b707bbf3ffda"
+        },
+        {
+          "file": "fairmount-2081-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494977.14928888186%2C4875940.282153052%2C495070.14928888186%2C4876033.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "d3a21a8101f68bb0ffb0d21076d9867b30df7dd6d40226fdef54587da1a422e2"
+        },
+        {
+          "file": "fairmount-2081-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494977.14928888186%2C4875940.282153052%2C495070.14928888186%2C4876033.282153052&bboxSR=3740&imageSR=3740&size=930%2C930&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "ff3ba3ab4e7415479c6fc0a3e38c65ec9f30ca413ad5746867bfeff471fa2cf3",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "fairmount-2081-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494977.14928888186%2C4875940.282153052%2C495070.14928888186%2C4876033.282153052&bboxSR=3740&imageSR=3740&size=930%2C930&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "76842caaa320312db4ec229db2813ef04ddbe07267c77cc6a3067e22517791db",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99994
+        },
+        {
+          "file": "fairmount-2081-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494977.14928888186%2C4875940.282153052%2C495070.14928888186%2C4876033.282153052&bboxSR=3740&imageSR=3740&size=930%2C930&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "376d7f8ee65d05d0e3c5b71e68d60e9d515eafec5a3dfcfe98addc7b9c592284",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-3d7a4503": {
+      "city_objectid": 159873,
+      "outline_enu_wkt": "POLYGON ((678.1451455412316 -976.1655768454075, 668.0491363844485 -981.2029976518825, 668.7029758545686 -982.5135293919593, 650.198192277865 -991.7465807488188, 646.5503445560462 -984.4354962119833, 650.9430834623054 -982.2437057727948, 649.8241051002406 -980.0010236380622, 663.964528240147 -972.9456155914813, 664.365744544426 -973.7497692452744, 668.7645944408141 -971.5549961775541, 668.3797610636102 -970.7837547231466, 674.0486413547769 -967.9552517477423, 678.1451455412316 -976.1655768454075))",
+      "area_m2": 307.791,
+      "inside_addresses": [
+        "2091 FAIRMOUNT BLVD"
+      ],
+      "parcel_fractions": {
+        "1803042214700": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-3d7a4503": 246.905
+      },
+      "sample_counts": {
+        "2013-15": 257,
+        "2017": 21,
+        "DOGAMI": 257
+      },
+      "aerial_and_query": [
+        {
+          "file": "fairmount-2091-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494941.14928888186%2C4875902.282153052%2C495042.14928888186%2C4875995.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "b8b5413e5eee38bb99e7d6a423b4955dbbaff2a235a2845c221969203996edf8"
+        },
+        {
+          "file": "fairmount-2091-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494941.14928888186%2C4875902.282153052%2C495042.14928888186%2C4875995.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "03d7ff168325dc097561848140e35f4a547f69c002f43a831444c56f47353e46"
+        },
+        {
+          "file": "fairmount-2091-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494941.14928888186%2C4875902.282153052%2C495042.14928888186%2C4875995.282153052&bboxSR=3740&imageSR=3740&size=1010%2C930&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "859a016caab68cb8000c98351dac75760a4da8ea5086860deeedcd733a937715",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "fairmount-2091-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494941.14928888186%2C4875902.282153052%2C495042.14928888186%2C4875995.282153052&bboxSR=3740&imageSR=3740&size=1010%2C930&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "ca88877c7b4a20aca009f2dc1ee0220f052dfbf63b5fd29e90d577a93e3c03d4",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99999
+        },
+        {
+          "file": "fairmount-2091-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494941.14928888186%2C4875902.282153052%2C495042.14928888186%2C4875995.282153052&bboxSR=3740&imageSR=3740&size=1010%2C930&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "e91793045b3c6b7a6c7e77ebcbf17c240cdbf2363607800e157dcc1f275862ac",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-61b268c3": {
+      "city_objectid": 159874,
+      "outline_enu_wkt": "POLYGON ((621.6062204740592 -987.0144039811566, 621.0567275920184 -987.015304881148, 621.0590357399196 -988.399285797961, 628.7969245472341 -988.3862303374335, 628.8114438500488 -997.0275080511346, 617.8171986014931 -997.0459570735693, 617.8109115184052 -993.2839092724025, 614.6652561463416 -993.2891986761242, 614.6591492232401 -989.6571502108127, 607.4759518050705 -989.6692493632436, 607.4816461349255 -993.076402050443, 601.7388261492597 -993.0860097175464, 601.7329917974421 -989.6339595932513, 601.2378002461046 -989.634839723818, 601.2245845238795 -981.7508504819125, 621.597297498316 -981.7166797025129, 621.6062204740592 -987.0144039811566))",
+      "area_m2": 281.999,
+      "inside_addresses": [
+        "2095 FAIRMOUNT BLVD"
+      ],
+      "parcel_fractions": {
+        "1803042214600": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-61b268c3": 222.816
+      },
+      "sample_counts": {
+        "2013-15": 228,
+        "2017": 0,
+        "DOGAMI": 228
+      },
+      "aerial_and_query": [
+        {
+          "file": "fairmount-2095-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494895.14928888186%2C4875896.282153052%2C494992.14928888186%2C4875982.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "4653cb198c6046f11511d76587a6f497a8f3662e188f0a526c49ef71bb413bc8"
+        },
+        {
+          "file": "fairmount-2095-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494895.14928888186%2C4875896.282153052%2C494992.14928888186%2C4875982.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "4878b58ab06a97a71058801541f272bb6608338a3c92f708a693cd4d786aa812"
+        },
+        {
+          "file": "fairmount-2095-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494895.14928888186%2C4875896.282153052%2C494992.14928888186%2C4875982.282153052&bboxSR=3740&imageSR=3740&size=970%2C860&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "37c5586cec7729756f7c5a9805e944c36239f5023803d845169a0bb5d7570e42",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "fairmount-2095-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494895.14928888186%2C4875896.282153052%2C494992.14928888186%2C4875982.282153052&bboxSR=3740&imageSR=3740&size=970%2C860&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "f1c7873a4868d7b733ba52d2b4f7831556185d01feec99ce0c0ada4952efc80b",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99997
+        },
+        {
+          "file": "fairmount-2095-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494895.14928888186%2C4875896.282153052%2C494992.14928888186%2C4875982.282153052&bboxSR=3740&imageSR=3740&size=970%2C860&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "d734b71dba0b4837130668b6778fdaa9bfc1758e2a014f563f467f7e60108b03",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ]
+    },
+    "roof-d709354e": {
+      "city_objectid": 159875,
+      "outline_enu_wkt": "POLYGON ((576.5901007525972 -975.6465012980625, 594.814065725368 -975.5630641048774, 594.930751177948 -1001.0220976416022, 593.318414688576 -1001.0295216627419, 593.3523704282707 -1008.4390751421452, 585.0985028714058 -1008.4769313624129, 585.0590951828635 -999.8795978240669, 584.5510474392795 -999.8819617088884, 584.5209715245874 -993.316022945568, 576.6712632034323 -993.3520159106702, 576.6707608833676 -993.2581275235862, 576.5901007525972 -975.6465012980625))",
+      "area_m2": 463.666,
+      "inside_addresses": [
+        "2105 FAIRMOUNT BLVD"
+      ],
+      "parcel_fractions": {
+        "1803042214500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-d709354e": 341.445
+      },
+      "sample_counts": {
+        "2013-15": 351,
+        "2017": 0,
+        "DOGAMI": 351
+      },
+      "aerial_and_query": [
+        {
+          "file": "fairmount-2105-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494870.14928888186%2C4875885.282153052%2C494968.14928888186%2C4875990.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "fbc9268007765df8caf47629bef482ecb97a00fc35e1a02f5fc295127d0fba5a"
+        },
+        {
+          "file": "fairmount-2105-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494870.14928888186%2C4875885.282153052%2C494968.14928888186%2C4875990.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "63dbc4fee45ef2883b7bec2e90a7f88d58835e00248ca85332fa02fdec51dc3e"
+        },
+        {
+          "file": "fairmount-2105-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494870.14928888186%2C4875885.282153052%2C494968.14928888186%2C4875990.282153052&bboxSR=3740&imageSR=3740&size=980%2C1050&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "814317620192f11a1996bf757be708f862fac5d3555d7090ebc78492448d1023",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "fairmount-2105-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494870.14928888186%2C4875885.282153052%2C494968.14928888186%2C4875990.282153052&bboxSR=3740&imageSR=3740&size=980%2C1050&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "98a28284d91ddf0e14368d40070d491e1f314ba717ca03e3cf7a294934d7e2eb",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.9994
+        },
+        {
+          "file": "fairmount-2105-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494870.14928888186%2C4875885.282153052%2C494968.14928888186%2C4875990.282153052&bboxSR=3740&imageSR=3740&size=980%2C1050&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "01ba885ea055a0d4c6ee88cda58f42133610c33594ae34f6c562f381ae93cba4",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ]
+    },
+    "roof-8d4cf396": {
+      "city_objectid": 159876,
+      "outline_enu_wkt": "POLYGON ((560.6898323983769 -988.7232494866475, 566.9746861953172 -988.6169607462361, 567.1622381773195 -999.7049620859325, 547.5877141510719 -1000.0360172977671, 547.1662952121114 -975.1188986366615, 549.1648566835793 -975.0850461525843, 549.0960423850338 -971.01725379657, 546.667481401877 -971.058340780437, 546.5472502685734 -963.9478737581521, 558.1345179973287 -963.7519202399999, 558.2570753447362 -971.0006227893755, 560.3895760090672 -970.9645724706352, 560.6898323983769 -988.7232494866475))",
+      "area_m2": 529.005,
+      "inside_addresses": [
+        "2125 FAIRMOUNT BLVD"
+      ],
+      "parcel_fractions": {
+        "1803042214400": 0.98755
+      },
+      "legacy_intersections_m2": {
+        "roof-8d4cf396": 404.267
+      },
+      "sample_counts": {
+        "2013-15": 458,
+        "2017": 0,
+        "DOGAMI": 458
+      },
+      "aerial_and_query": [
+        {
+          "file": "fairmount-2125-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494838.14928888186%2C4875893.282153052%2C494931.14928888186%2C4876000.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "14ec66ff7daca845c4e5dc46edf0ff189a626e79da5395dad72795cf6e95578f"
+        },
+        {
+          "file": "fairmount-2125-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494838.14928888186%2C4875893.282153052%2C494931.14928888186%2C4876000.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "5682bcfa6a16eb18f85073d44d15400602e353a287a5788857460b866f4ff643"
+        },
+        {
+          "file": "fairmount-2125-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494838.14928888186%2C4875893.282153052%2C494931.14928888186%2C4876000.282153052&bboxSR=3740&imageSR=3740&size=930%2C1070&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "9a5275cfb9ccc7e2f6840eb7a70966f549e7a39ddbfdb459bbca3bcc21802a3f",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "fairmount-2125-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494838.14928888186%2C4875893.282153052%2C494931.14928888186%2C4876000.282153052&bboxSR=3740&imageSR=3740&size=930%2C1070&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "e175785f395042da9d0f70a3a4d8f6db7c15279baa5002ce78d00b8a7aed8e3a",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99939
+        },
+        {
+          "file": "fairmount-2125-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494838.14928888186%2C4875893.282153052%2C494931.14928888186%2C4876000.282153052&bboxSR=3740&imageSR=3740&size=930%2C1070&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "b7194739a0a63a67d21792e6d0cd8afbf13cb3dd78a1ae566e943172c6f8e675",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-3466a919": {
+      "city_objectid": 159881,
+      "outline_enu_wkt": "POLYGON ((463.2181883797748 -971.7688773013651, 457.3956440194743 -971.8447648817673, 457.3574952505296 -968.9148981627077, 451.94770400581183 -968.985366079025, 451.9257334683207 -967.3044614037499, 448.65898762259167 -967.3470650641248, 448.5191030607675 -956.6129544433206, 463.018181073654 -956.4238954009488, 463.2181883797748 -971.7688773013651))",
+      "area_m2": 191.608,
+      "inside_addresses": [
+        "2209 FAIRMOUNT BLVD"
+      ],
+      "parcel_fractions": {
+        "1803042213800": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-3466a919": 152.737
+      },
+      "sample_counts": {
+        "2013-15": 159,
+        "2017": 0,
+        "DOGAMI": 159
+      },
+      "aerial_and_query": [
+        {
+          "file": "fairmount-2209-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494743.14928888186%2C4875922.282153052%2C494827.14928888186%2C4876006.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "b14c8c53bd5f27028d615ac7efb15cd60e8ab7e3992a3855d55bbda29b0da155"
+        },
+        {
+          "file": "fairmount-2209-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=494743.14928888186%2C4875922.282153052%2C494827.14928888186%2C4876006.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "5e1515be2131e16ddc218664374776e90ba30b411fba25d74f22fe2576f636c2"
+        },
+        {
+          "file": "fairmount-2209-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494743.14928888186%2C4875922.282153052%2C494827.14928888186%2C4876006.282153052&bboxSR=3740&imageSR=3740&size=840%2C840&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "5ed30c9e1a39f98f0317b33cff9c43b8910d912adb97a0ce51937ddec334822c",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "fairmount-2209-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494743.14928888186%2C4875922.282153052%2C494827.14928888186%2C4876006.282153052&bboxSR=3740&imageSR=3740&size=840%2C840&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "0d2579bb7eaf8938f453b4efe94a3ace0b60e9ea87fc1dea4b6e43077df60046",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99991
+        },
+        {
+          "file": "fairmount-2209-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494743.14928888186%2C4875922.282153052%2C494827.14928888186%2C4876006.282153052&bboxSR=3740&imageSR=3740&size=840%2C840&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "b96460b6823d7fcc9a784d50ff51d26d0d490512fd4f85115f25448aa9cb777f",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-b8804a72": {
+      "city_objectid": 159852,
+      "outline_enu_wkt": "POLYGON ((769.1253821237478 -931.9498548628762, 753.6984277116717 -932.7371408203617, 752.8809012720594 -937.1060986574739, 747.4678754314664 -936.0932280821726, 748.9657874368713 -928.0878320652992, 750.2997819898883 -928.337324491702, 749.9682969637797 -921.8418857865036, 768.5610410940135 -920.8930029068142, 769.1253821237478 -931.9498548628762))",
+      "area_m2": 236.048,
+      "inside_addresses": [
+        "2130 SUMMIT AVE"
+      ],
+      "parcel_fractions": {
+        "1803042107200": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-b8804a72": 146.481
+      },
+      "sample_counts": {
+        "2013-15": 192,
+        "2017": 192,
+        "DOGAMI": 192
+      },
+      "aerial_and_query": [
+        {
+          "file": "summit-2130-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495041.14928888186%2C4875956.282153052%2C495133.14928888186%2C4876042.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "befa76e997cb7002b63aece171833dc4ae9c52b189234275579fb9b73e6a34fc"
+        },
+        {
+          "file": "summit-2130-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=495041.14928888186%2C4875956.282153052%2C495133.14928888186%2C4876042.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "d11465785ecebfb497da7b77f0cb0d91c77b49c111c63b2fd1fc716c724e76c0"
+        },
+        {
+          "file": "summit-2130-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495041.14928888186%2C4875956.282153052%2C495133.14928888186%2C4876042.282153052&bboxSR=3740&imageSR=3740&size=920%2C860&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "88cbaa9fd3789f43a0c4b49e6539dbbecb463d89bdaff0c9dd35ebcd198aafcf",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "summit-2130-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495041.14928888186%2C4875956.282153052%2C495133.14928888186%2C4876042.282153052&bboxSR=3740&imageSR=3740&size=920%2C860&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "7a727c16fd6f1cb69c8f29fdbb78ba38023a77fea459f3f028a8e367e5a5a3fc",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99997
+        },
+        {
+          "file": "summit-2130-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495041.14928888186%2C4875956.282153052%2C495133.14928888186%2C4876042.282153052&bboxSR=3740&imageSR=3740&size=920%2C860&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "ae262e61b6bf60749950d82bf2b0ebc9c2cb536cac617322ea810d1b7ad8f759",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-efd79ec7": {
+      "city_objectid": 159837,
+      "outline_enu_wkt": "POLYGON ((752.7059059626772 -855.0830886280164, 756.8738714833744 -856.2395261377096, 759.0692562644253 -859.9117301637307, 762.5687361535383 -857.8196044377983, 779.4354168953141 -862.4993409272283, 777.67268625414 -868.8526810258627, 773.3455970452633 -867.6520915795118, 772.6993942179834 -869.9812623411417, 760.1802699288819 -866.5077044218779, 757.101418903505 -868.2920644264668, 755.2793092550128 -865.1479378035292, 750.2968690899434 -863.765502284281, 752.7059059626772 -855.0830886280164))",
+      "area_m2": 236.833,
+      "inside_addresses": [
+        "2195 SUMMIT AVE"
+      ],
+      "parcel_fractions": {
+        "1803042108900": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-efd79ec7": 169.605
+      },
+      "sample_counts": {
+        "2013-15": 191,
+        "2017": 191,
+        "DOGAMI": 191
+      },
+      "aerial_and_query": [
+        {
+          "file": "summit-2195-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495044.14928888186%2C4876024.282153052%2C495143.14928888186%2C4876107.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "7d9135a4cf962a084b9666fdd2ed64188589ddabc5e0df2527d9eae11272525b"
+        },
+        {
+          "file": "summit-2195-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=495044.14928888186%2C4876024.282153052%2C495143.14928888186%2C4876107.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "3831ac5a5e0894d022921b5221a1884e89db226b9b5513d6a42d9fd042825577"
+        },
+        {
+          "file": "summit-2195-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495044.14928888186%2C4876024.282153052%2C495143.14928888186%2C4876107.282153052&bboxSR=3740&imageSR=3740&size=990%2C830&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "3689c966be86ac5017585dd0dafe9346ae301f7308d8eddcbcde63d4a3dd19f5",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "summit-2195-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495044.14928888186%2C4876024.282153052%2C495143.14928888186%2C4876107.282153052&bboxSR=3740&imageSR=3740&size=990%2C830&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "0c9c4655646078ae9a0413ee016b23d310063c01adcb4973682d150352f3c8db",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99998
+        },
+        {
+          "file": "summit-2195-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495044.14928888186%2C4876024.282153052%2C495143.14928888186%2C4876107.282153052&bboxSR=3740&imageSR=3740&size=990%2C830&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "630bd33d4d81544bbaa24db5446333c289d609cac88f2c672c7d4dcd5a29e2cc",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-d25e3df8": {
+      "city_objectid": 159838,
+      "outline_enu_wkt": "POLYGON ((830.1777791828499 -883.8996615791693, 828.849832956621 -887.7358348965645, 826.5771676921868 -886.9490407593548, 824.8284804158611 -892.0005157105625, 819.1038264113013 -890.0188129385933, 818.6861260854639 -891.2254234794527, 816.525221876509 -890.4773948574439, 816.9386810348951 -889.2828113371506, 813.5286251064972 -888.1023516012356, 812.7632007964421 -890.3136768192053, 809.2500778631074 -889.0975920883939, 808.9387125424109 -889.9970177831128, 803.4346474310732 -888.0917334584519, 806.6247044299962 -878.8763883057982, 811.2198474030592 -880.4670905759558, 812.187355234928 -877.6720128282905, 830.1777791828499 -883.8996615791693))",
+      "area_m2": 228.506,
+      "inside_addresses": [
+        "2197 SUMMIT AVE"
+      ],
+      "parcel_fractions": {
+        "1803042109100": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-d25e3df8": 159.863
+      },
+      "sample_counts": {
+        "2013-15": 183,
+        "2017": 183,
+        "DOGAMI": 183
+      },
+      "aerial_and_query": [
+        {
+          "file": "summit-2197-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495098.14928888186%2C4876001.282153052%2C495194.14928888186%2C4876085.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "77e715645d175f30cd9850a1ad633e21675daa57c7e03b6fe550d6bf703ce286"
+        },
+        {
+          "file": "summit-2197-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=495098.14928888186%2C4876001.282153052%2C495194.14928888186%2C4876085.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "3d55de89715a2806f82180b421db75d0684ffb0121eb92276b96d0c94d3d6b8f"
+        },
+        {
+          "file": "summit-2197-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495098.14928888186%2C4876001.282153052%2C495194.14928888186%2C4876085.282153052&bboxSR=3740&imageSR=3740&size=960%2C840&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "c59927f7a23c2a29543b8c00cfefe9d8634b4fe2fdedcd93162ed3e8dfddca2c",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "summit-2197-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495098.14928888186%2C4876001.282153052%2C495194.14928888186%2C4876085.282153052&bboxSR=3740&imageSR=3740&size=960%2C840&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "92afa425dfd78e3ddca8d96f7b482c6be1489b31403e748181129e0834519bca",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99997
+        },
+        {
+          "file": "summit-2197-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495098.14928888186%2C4876001.282153052%2C495194.14928888186%2C4876085.282153052&bboxSR=3740&imageSR=3740&size=960%2C840&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "8aa99a0fcfac0a91873e4edfb9a86ee73b39b9815a7754a9b6392b115598e674",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-636f0355": {
+      "city_objectid": 159869,
+      "outline_enu_wkt": "POLYGON ((781.2573994028498 -984.218019570224, 771.180394853407 -983.9887862224132, 771.4805218158872 -970.7956537865102, 773.4923597386805 -970.841406817548, 773.6688275974593 -963.084060951136, 785.4052156897378 -963.3509668642655, 785.0514452215284 -978.9046850716695, 790.9020276783267 -979.0377635611221, 790.7115052586305 -987.4164515743032, 781.1895976458327 -987.1998505629599, 781.193273930985 -987.0382350198925, 781.2573994028498 -984.218019570224))",
+      "area_m2": 332.566,
+      "inside_addresses": [
+        "2110 HAMBLE AVE"
+      ],
+      "parcel_fractions": {
+        "1803042107700": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-636f0355": 235.951
+      },
+      "sample_counts": {
+        "2013-15": 282,
+        "2017": 282,
+        "DOGAMI": 282
+      },
+      "aerial_and_query": [
+        {
+          "file": "hamble-2110-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495065.14928888186%2C4875906.282153052%2C495154.14928888186%2C4876000.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "7216e2864f7c6c5a00fdaba1c62e5f799bcf29241f61af7c5d23ff464ddf450e"
+        },
+        {
+          "file": "hamble-2110-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=495065.14928888186%2C4875906.282153052%2C495154.14928888186%2C4876000.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "bf51c85a028fe7b96628a3eea1148d7a63710aad18e8fc2cac91b9a1f1f7a402"
+        },
+        {
+          "file": "hamble-2110-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495065.14928888186%2C4875906.282153052%2C495154.14928888186%2C4876000.282153052&bboxSR=3740&imageSR=3740&size=890%2C940&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "906b329896003a837137f566233004d72543b0457e1da4e8430e12fb4324a68a",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "hamble-2110-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495065.14928888186%2C4875906.282153052%2C495154.14928888186%2C4876000.282153052&bboxSR=3740&imageSR=3740&size=890%2C940&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "467517bec7d095338295b9b5e26c24bd28b439e2efbab28bc88393df95f5969d",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99989
+        },
+        {
+          "file": "hamble-2110-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495065.14928888186%2C4875906.282153052%2C495154.14928888186%2C4876000.282153052&bboxSR=3740&imageSR=3740&size=890%2C940&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "275337e3ff5ca68d6a0416ece1c04756da8906e0382ec78f2cd9bd59da0d9f1e",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-b2bced50": {
+      "city_objectid": 159868,
+      "outline_enu_wkt": "POLYGON ((824.9932853229111 -981.9670224217698, 819.0369070990128 -981.6398951951414, 818.7851985851303 -986.223172981292, 807.2512762889965 -985.5897116754204, 807.1272271964117 -987.849695559591, 800.4890065678628 -987.4851181656122, 800.7228045898373 -983.2264866391197, 792.8933877233067 -982.7964612450451, 793.3149932134547 -975.1205012872815, 799.4435599184944 -975.4570897873491, 799.7466191216954 -969.9373457729816, 805.4247306579491 -970.2491783443838, 805.3251853664988 -972.0603146338835, 825.4765411489061 -973.1669819327071, 824.9932853229111 -981.9670224217698))",
+      "area_m2": 388.479,
+      "inside_addresses": [
+        "2140 HAMBLE AVE"
+      ],
+      "parcel_fractions": {
+        "1803042107500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-b2bced50": 199.114
+      },
+      "sample_counts": {
+        "2013-15": 324,
+        "2017": 324,
+        "DOGAMI": 324
+      },
+      "aerial_and_query": [
+        {
+          "file": "hamble-2140-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495086.14928888186%2C4875906.282153052%2C495189.14928888186%2C4875993.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "02ec1fec240806b99f1269016bafbdb406ec0cd47ac1fa88b4b6e0f1456b8dc0"
+        },
+        {
+          "file": "hamble-2140-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=495086.14928888186%2C4875906.282153052%2C495189.14928888186%2C4875993.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "776c6bc2258c53e9edacaf5657032012e924405133b93568083862de32ca0851"
+        },
+        {
+          "file": "hamble-2140-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495086.14928888186%2C4875906.282153052%2C495189.14928888186%2C4875993.282153052&bboxSR=3740&imageSR=3740&size=1030%2C870&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "eb2b74bcb41ea20fdb01d51bc7ba33b92685b0b1b76457de75d6e5e3c240db55",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "hamble-2140-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495086.14928888186%2C4875906.282153052%2C495189.14928888186%2C4875993.282153052&bboxSR=3740&imageSR=3740&size=1030%2C870&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "6e32743fed7ee9f194ae6dedb79da23b80d29504e627abcf3c4fec65fbbd91f3",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99505
+        },
+        {
+          "file": "hamble-2140-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495086.14928888186%2C4875906.282153052%2C495189.14928888186%2C4875993.282153052&bboxSR=3740&imageSR=3740&size=1030%2C870&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "a675fa3bf798c70a4044ab5efb085b6c2a59006ac8bd3ffcba3e3b089bf72a6b",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-99cda8af": {
+      "city_objectid": 159854,
+      "outline_enu_wkt": "POLYGON ((815.5237171622575 -946.7373022744432, 811.4501196662895 -941.4789013005793, 809.7601353723439 -942.7880904544145, 807.7042507964652 -940.1342587489635, 809.3038212204701 -938.8950707688928, 807.0356485859957 -935.9671655725688, 813.7763259491767 -930.7451844690368, 816.4212262511137 -934.1593625545502, 819.9598309407593 -931.4180449135602, 817.941285979352 -928.8124005524442, 824.7478441545973 -923.5394511539489, 832.519246546959 -933.5711515890434, 815.5237171622575 -946.7373022744432))",
+      "area_m2": 274.263,
+      "inside_addresses": [
+        "2171 HAMBLE AVE"
+      ],
+      "parcel_fractions": {
+        "1803042107400": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-99cda8af": 189.869
+      },
+      "sample_counts": {
+        "2013-15": 222,
+        "2017": 222,
+        "DOGAMI": 222
+      },
+      "aerial_and_query": [
+        {
+          "file": "hamble-2171-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495101.14928888186%2C4875947.282153052%2C495196.14928888186%2C4876039.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "d20eb45f9b20d43845b4bf3a4bb705157d3c69197dd86afaa15475a982ff436a"
+        },
+        {
+          "file": "hamble-2171-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=495101.14928888186%2C4875947.282153052%2C495196.14928888186%2C4876039.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "4be922b1b933e9c7041a856b6814fb2f0e19d6cf43b8d3276f747dfcb2a1e16c"
+        },
+        {
+          "file": "hamble-2171-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495101.14928888186%2C4875947.282153052%2C495196.14928888186%2C4876039.282153052&bboxSR=3740&imageSR=3740&size=950%2C920&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "3357d0b36461a79e4b28afd148a7de341a2c14d27815906fd66fdf9691d03f33",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "hamble-2171-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495101.14928888186%2C4875947.282153052%2C495196.14928888186%2C4876039.282153052&bboxSR=3740&imageSR=3740&size=950%2C920&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "06ec9027e4a9f8afed5257a68553ec29ab0966e35871d4d1cd0ff316b227ba35",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99903
+        },
+        {
+          "file": "hamble-2171-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495101.14928888186%2C4875947.282153052%2C495196.14928888186%2C4876039.282153052&bboxSR=3740&imageSR=3740&size=950%2C920&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "1881d295f927f2c3f3533deb98bec7e45cf54879cf6c8bcdc827a9aaebdf4918",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    },
+    "roof-f5434b03": {
+      "city_objectid": 159855,
+      "outline_enu_wkt": "POLYGON ((866.5704139748123 -929.9141673343256, 854.542157576303 -957.7511834232137, 851.5473222734872 -956.4570263009518, 850.0751628442667 -959.864089390263, 845.5839783751289 -957.923471772112, 846.6438990097959 -955.470447389409, 843.8422640584758 -954.2598266080022, 856.2827658427414 -925.468972238712, 856.4023112750147 -925.52060591802, 866.5704139748123 -929.9141673343256))",
+      "area_m2": 361.176,
+      "inside_addresses": [
+        "2010 HUBBARD LN"
+      ],
+      "parcel_fractions": {
+        "1803042108100": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-f5434b03": 194.501
+      },
+      "sample_counts": {
+        "2013-15": 307,
+        "2017": 307,
+        "DOGAMI": 307
+      },
+      "aerial_and_query": [
+        {
+          "file": "hubbard-2010-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495137.14928888186%2C4875934.282153052%2C495230.14928888186%2C4876037.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "d922889675769c8ad6be3f4ed6db759f4360658ae9e45529ea5ebc4c2dfbf41d"
+        },
+        {
+          "file": "hubbard-2010-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=495137.14928888186%2C4875934.282153052%2C495230.14928888186%2C4876037.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "5b1591ece6ba9e3440119de8c1887b85b4196a03b2273e30a75a288b4514969c"
+        },
+        {
+          "file": "hubbard-2010-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495137.14928888186%2C4875934.282153052%2C495230.14928888186%2C4876037.282153052&bboxSR=3740&imageSR=3740&size=930%2C1030&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "76d18e336e3482acb35cff9d5b9af2829b13ee0bd445b1e126b3cdb4a4e7bfcf",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "hubbard-2010-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495137.14928888186%2C4875934.282153052%2C495230.14928888186%2C4876037.282153052&bboxSR=3740&imageSR=3740&size=930%2C1030&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "c6d2d8e2e7e490feb3eab7ed1c089ba4ea81070a9a2f1d1cb0fc9c3ee7561485",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99703
+        },
+        {
+          "file": "hubbard-2010-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495137.14928888186%2C4875934.282153052%2C495230.14928888186%2C4876037.282153052&bboxSR=3740&imageSR=3740&size=930%2C1030&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "a749e07daa1d4eeb1a49a4db901b474a1bf12d46e4a89e568e0d918ab6b8089b",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ]
+    }
+  },
+  "street_views": {
+    "159897-fairmount-blvd-side-b": [
+      {
+        "date": "2022-08",
+        "id": "B80xy7L-9JJZlPrZ7sbSJQ",
+        "camera_enu": [
+          662.0598648532177,
+          -938.5144887873903
+        ],
+        "bearing": 95.04,
+        "distance": 29.3,
+        "file": "159897-fairmount-blvd-side-b-2022-08.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=B80xy7L-9JJZlPrZ7sbSJQ&heading=95.04"
+      }
+    ],
+    "159897-fairmount-blvd-front": [
+      {
+        "date": "2020-11",
+        "id": "GU3t5LFf5tuNOiPCSfwoaw",
+        "camera_enu": [
+          672.5725485426374,
+          -927.1898726308718
+        ],
+        "bearing": 126.71,
+        "distance": 23.2,
+        "file": "159897-fairmount-blvd-front-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GU3t5LFf5tuNOiPCSfwoaw&heading=126.71"
+      }
+    ],
+    "159873-fairmount-blvd-side-a": [
+      {
+        "date": "2022-08",
+        "id": "B80xy7L-9JJZlPrZ7sbSJQ",
+        "camera_enu": [
+          662.0598648532177,
+          -938.5144887873903
+        ],
+        "bearing": 177.22,
+        "distance": 39.6,
+        "file": "159873-fairmount-blvd-side-a-2022-08.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=B80xy7L-9JJZlPrZ7sbSJQ&heading=177.22"
+      }
+    ],
+    "159897-fairmount-blvd-side-a": [
+      {
+        "date": "2020-11",
+        "id": "_-WZ6qWZIR4BElqPwi7fPQ",
+        "camera_enu": [
+          683.6319139376865,
+          -911.3674024054781
+        ],
+        "bearing": 165.69,
+        "distance": 30.7,
+        "file": "159897-fairmount-blvd-side-a-2020-11.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_-WZ6qWZIR4BElqPwi7fPQ&heading=165.69"
+      }
+    ],
+    "159873-fairmount-blvd-front": [
+      {
+        "date": "2022-08",
+        "id": "lcIMLwbndSv36DWgH8tWkA",
+        "camera_enu": [
+          649.4971407456906,
+          -944.4703638339415
+        ],
+        "bearing": 156.68,
+        "distance": 36.6,
+        "file": "159873-fairmount-blvd-front-2022-08.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lcIMLwbndSv36DWgH8tWkA&heading=156.68"
+      }
+    ],
+    "159873-fairmount-blvd-side-b": [
+      {
+        "date": "2024-07",
+        "id": "RsqoCTHoH0-H0rX7i8hzGg",
+        "camera_enu": [
+          638.2098904072773,
+          -946.1189753487706
+        ],
+        "bearing": 141.12,
+        "distance": 41.1,
+        "file": "159873-fairmount-blvd-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=RsqoCTHoH0-H0rX7i8hzGg&heading=141.12"
+      }
+    ],
+    "159874-fairmount-blvd-front": [
+      {
+        "date": "2024-07",
+        "id": "Mxx70lvEFIkT8FXaN2vxVw",
+        "camera_enu": [
+          613.3900040538865,
+          -952.2760223131627
+        ],
+        "bearing": 177.46,
+        "distance": 36.8,
+        "file": "159874-fairmount-blvd-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Mxx70lvEFIkT8FXaN2vxVw&heading=177.46"
+      }
+    ],
+    "159875-fairmount-blvd-side-b": [
+      {
+        "date": "2024-07",
+        "id": "9T_ftVQZXEvmDD1xFavn0w",
+        "camera_enu": [
+          579.8809299154673,
+          -950.1497010691091
+        ],
+        "bearing": 170.3,
+        "distance": 34.8,
+        "file": "159875-fairmount-blvd-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9T_ftVQZXEvmDD1xFavn0w&heading=170.3"
+      }
+    ],
+    "159874-fairmount-blvd-side-b": [
+      {
+        "date": "2024-07",
+        "id": "6qwHIa7FtracWAHf1RvpEQ",
+        "camera_enu": [
+          601.3181725136819,
+          -953.2839044108987
+        ],
+        "bearing": 159.02,
+        "distance": 38.3,
+        "file": "159874-fairmount-blvd-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6qwHIa7FtracWAHf1RvpEQ&heading=159.02"
+      }
+    ],
+    "159875-fairmount-blvd-side-a": [
+      {
+        "date": "2024-07",
+        "id": "6qwHIa7FtracWAHf1RvpEQ",
+        "camera_enu": [
+          601.3181725136819,
+          -953.2839044108987
+        ],
+        "bearing": 206.55,
+        "distance": 34.8,
+        "file": "159875-fairmount-blvd-side-a-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6qwHIa7FtracWAHf1RvpEQ&heading=206.55"
+      }
+    ],
+    "159875-fairmount-blvd-front": [
+      {
+        "date": "2024-07",
+        "id": "0EO8mTMLCeDEbmOFoTanog",
+        "camera_enu": [
+          590.6280210632831,
+          -952.3045991864055
+        ],
+        "bearing": 188.64,
+        "distance": 32.5,
+        "file": "159875-fairmount-blvd-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0EO8mTMLCeDEbmOFoTanog&heading=188.64"
+      }
+    ],
+    "159876-fairmount-blvd-side-a": [
+      {
+        "date": "2024-07",
+        "id": "MHH6m1yahBWFDN3kRzzL5Q",
+        "camera_enu": [
+          569.6157196667627,
+          -948.0026375008747
+        ],
+        "bearing": 204.86,
+        "distance": 37.3,
+        "file": "159876-fairmount-blvd-side-a-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=MHH6m1yahBWFDN3kRzzL5Q&heading=204.86"
+      }
+    ],
+    "159874-fairmount-blvd-side-a": [
+      {
+        "date": "2024-07",
+        "id": "xBJmZtu594Eo_KnaCOKXVA",
+        "camera_enu": [
+          623.5220847652527,
+          -950.7410808037966
+        ],
+        "bearing": 192.53,
+        "distance": 39.2,
+        "file": "159874-fairmount-blvd-side-a-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xBJmZtu594Eo_KnaCOKXVA&heading=192.53"
+      }
+    ],
+    "159876-fairmount-blvd-front": [
+      {
+        "date": "2024-07",
+        "id": "JzuqgGjAIjyi1G1AZhS2FQ",
+        "camera_enu": [
+          559.1399438238586,
+          -945.872555683367
+        ],
+        "bearing": 188.24,
+        "distance": 36.4,
+        "file": "159876-fairmount-blvd-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JzuqgGjAIjyi1G1AZhS2FQ&heading=188.24"
+      }
+    ],
+    "159852-summit-ave-front": [],
+    "159852-summit-ave-side-a": [],
+    "159852-summit-ave-side-b": [],
+    "159837-summit-ave-side-a": [],
+    "159881-fairmount-blvd-side-b": [
+      {
+        "date": "2024-07",
+        "id": "h1QhYLjfGiHkTdp-tjoftA",
+        "camera_enu": [
+          439.81077915080823,
+          -923.0317363534123
+        ],
+        "bearing": 157.62,
+        "distance": 42.1,
+        "file": "159881-fairmount-blvd-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=h1QhYLjfGiHkTdp-tjoftA&heading=157.62"
+      }
+    ],
+    "159881-fairmount-blvd-front": [
+      {
+        "date": "2024-07",
+        "id": "GNHyIknJ7BsAvgKQRVirmw",
+        "camera_enu": [
+          460.4669551241677,
+          -927.5285155372694
+        ],
+        "bearing": 187.65,
+        "distance": 34.7,
+        "file": "159881-fairmount-blvd-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GNHyIknJ7BsAvgKQRVirmw&heading=187.65"
+      }
+    ],
+    "159837-summit-ave-front": [],
+    "159837-summit-ave-side-b": [],
+    "159876-fairmount-blvd-side-b": [
+      {
+        "date": "2024-07",
+        "id": "kzkr7Km-wbBCJHi-elSH2g",
+        "camera_enu": [
+          548.6947727419902,
+          -943.9015392679721
+        ],
+        "bearing": 172.15,
+        "distance": 38.3,
+        "file": "159876-fairmount-blvd-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=kzkr7Km-wbBCJHi-elSH2g&heading=172.15"
+      }
+    ],
+    "159881-fairmount-blvd-side-a": [
+      {
+        "date": "2024-07",
+        "id": "21eNYC6rFJZ6k2igY3t1eA",
+        "camera_enu": [
+          471.348650923057,
+          -926.0796426590532
+        ],
+        "bearing": 203.38,
+        "distance": 39.1,
+        "file": "159881-fairmount-blvd-side-a-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=21eNYC6rFJZ6k2igY3t1eA&heading=203.38"
+      }
+    ],
+    "159869-hamble-ave-front": [],
+    "159869-hamble-ave-side-b": [],
+    "159869-hamble-ave-side-a": [],
+    "159838-summit-ave-side-a": [],
+    "159868-hamble-ave-front": [],
+    "159868-hamble-ave-side-a": [],
+    "159854-hamble-ave-front": [],
+    "159854-hamble-ave-side-a": [],
+    "159868-hamble-ave-side-b": [],
+    "159838-summit-ave-front": [
+      {
+        "date": "2024-07",
+        "id": "QDKsJpCZwSdJIXu-zljn8w",
+        "camera_enu": [
+          811.1945807355805,
+          -909.538497056812
+        ],
+        "bearing": 13.55,
+        "distance": 24.8,
+        "file": "159838-summit-ave-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=QDKsJpCZwSdJIXu-zljn8w&heading=13.55"
+      }
+    ],
+    "159838-summit-ave-side-b": [
+      {
+        "date": "2024-07",
+        "id": "TQokaS6HxlOWG-qI5gcZEw",
+        "camera_enu": [
+          821.041790663905,
+          -911.3897906504571
+        ],
+        "bearing": 351.16,
+        "distance": 26.3,
+        "file": "159838-summit-ave-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=TQokaS6HxlOWG-qI5gcZEw&heading=351.16"
+      }
+    ],
+    "159854-hamble-ave-side-b": [
+      {
+        "date": "2024-07",
+        "id": "PR3SFpeK1vu30EtkEuqbBA",
+        "camera_enu": [
+          879.1034509295714,
+          -944.3976851850748
+        ],
+        "bearing": 278.89,
+        "distance": 60.4,
+        "file": "159854-hamble-ave-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PR3SFpeK1vu30EtkEuqbBA&heading=278.89"
+      }
+    ],
+    "159855-hubbard-ln-front": [
+      {
+        "date": "2024-07",
+        "id": "PR3SFpeK1vu30EtkEuqbBA",
+        "camera_enu": [
+          879.1034509295714,
+          -944.3976851850748
+        ],
+        "bearing": 275.52,
+        "distance": 24.0,
+        "file": "159855-hubbard-ln-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PR3SFpeK1vu30EtkEuqbBA&heading=275.52"
+      }
+    ],
+    "159855-hubbard-ln-side-a": [
+      {
+        "date": "2024-07",
+        "id": "RQECZYvbAagR_-AaC6L0Ug",
+        "camera_enu": [
+          879.6113259540289,
+          -934.6285644751042
+        ],
+        "bearing": 253.01,
+        "distance": 25.5,
+        "file": "159855-hubbard-ln-side-a-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=RQECZYvbAagR_-AaC6L0Ug&heading=253.01"
+      }
+    ],
+    "159855-hubbard-ln-side-b": [
+      {
+        "date": "2024-07",
+        "id": "g_86_NS1YFH_t2bSLkJ0NA",
+        "camera_enu": [
+          878.7896389777889,
+          -954.5115459794179
+        ],
+        "bearing": 297.78,
+        "distance": 26.7,
+        "file": "159855-hubbard-ln-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=g_86_NS1YFH_t2bSLkJ0NA&heading=297.78"
+      }
+    ]
+  },
+  "exterior_reference_pages": {
+    "roof-61b268c3": {
+      "page": "https://whipplehomes.com/homes-for-sale-sold-details/2095-FAIRMOUNT-BLVD-EUGENE-OR-97403/722191207/54/",
+      "year": 2025,
+      "photos": [
+        {
+          "url": "https://photos.rmlsweb.com/webphotos/72200000/10000/9000/722191207-1.jpg",
+          "sha256": "72f0898067c1635d0830ec09aa22373c442fc5ad0292fad602b0ac6c37f346ec",
+          "verified": true
+        }
+      ]
+    },
+    "roof-d709354e": {
+      "page": "https://dcfinehomesre.com/home-search/listings/2466272594170022694-2105-FAIRMOUNT-BLVD",
+      "year": 2026,
+      "photos": [
+        {
+          "url": "https://photos.rmlsweb.com/webphotos/49700000/50000/3000/497531896-1.jpg",
+          "sha256": "7eff207297978213ebc723afd4e478bf89f12cb595461301bcfd6f6e7769747b",
+          "verified": true
+        },
+        {
+          "url": "https://photos.rmlsweb.com/webphotos/49700000/50000/3000/497531896-2.jpg",
+          "sha256": "de7515bce6c7b72da64387ae042d361f895bf26a00629c9b0f54fbcfbd6514b7",
+          "verified": true
+        },
+        {
+          "url": "https://photos.rmlsweb.com/webphotos/49700000/50000/3000/497531896-3.jpg",
+          "sha256": "8a109736ce60882e8de8b887fd48349d091d38d9da4eee57493602175eb96c90",
+          "verified": true
+        }
+      ]
+    }
+  },
+  "source_ranges": [
+    {
+      "id": "roof-0b345e8f",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-3d7a4503",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-61b268c3",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-d709354e",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-8d4cf396",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-3466a919",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-b8804a72",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-efd79ec7",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-d25e3df8",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-636f0355",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-b2bced50",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-99cda8af",
+      "target": "context-background-3-0"
+    },
+    {
+      "id": "roof-f5434b03",
+      "target": "context-background-3-0"
+    }
+  ],
+  "models": [
+    {
+      "id": "roof-0b345e8f",
+      "city_objectid": 159897,
+      "outline_enu_m": [
+        [
+          692.55937,
+          -931.30104
+        ],
+        [
+          693.44328,
+          -929.7322
+        ],
+        [
+          700.57568,
+          -933.75096
+        ],
+        [
+          696.85475,
+          -940.35456
+        ],
+        [
+          706.14319,
+          -945.58821
+        ],
+        [
+          701.64644,
+          -953.56901
+        ],
+        [
+          684.41483,
+          -943.85988
+        ],
+        [
+          685.5657,
+          -941.81726
+        ],
+        [
+          682.90527,
+          -940.31821
+        ],
+        [
+          684.69768,
+          -937.1372
+        ],
+        [
+          683.11735,
+          -936.24684
+        ],
+        [
+          685.80365,
+          -931.47939
+        ],
+        [
+          687.33954,
+          -932.34477
+        ],
+        [
+          689.04372,
+          -929.3202
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2081 Fairmount Boulevard",
+      "street_address": "2081 Fairmount Boulevard",
+      "base_z_m": 20.83,
+      "levels_z_m": [
+        22.91,
+        25.44
+      ],
+      "wall_color": [
+        160,
+        174,
+        172
+      ],
+      "roof_color": [
+        119,
+        112,
+        101
+      ],
+      "trim_color": [
+        218,
+        211,
+        187
+      ],
+      "seam_color": [
+        142,
+        158,
+        157
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            682.7,
+            -944.05,
+            701.0,
+            -929.1
+          ],
+          "planes": [
+            [
+              690.42,
+              -937.29,
+              30.12,
+              0.4089,
+              -0.23029999999999998
+            ],
+            [
+              690.42,
+              -937.29,
+              30.12,
+              -0.3915,
+              0.2205
+            ],
+            [
+              690.4,
+              -937.2,
+              30.67,
+              -0.26,
+              -0.44
+            ],
+            [
+              690.4,
+              -937.2,
+              31.34,
+              0.25,
+              0.44
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            683.96,
+            -953.78,
+            706.4,
+            -939.91
+          ],
+          "planes": [
+            [
+              695.12,
+              -946.3,
+              30.38,
+              0.2548,
+              0.4524
+            ],
+            [
+              695.12,
+              -946.3,
+              30.38,
+              -0.2205,
+              -0.3915
+            ],
+            [
+              695,
+              -946,
+              32.0,
+              0.45,
+              -0.26
+            ],
+            [
+              695,
+              -946,
+              33.4,
+              -0.45,
+              0.26
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            682.7,
+            -943.0,
+            688.5,
+            -935.62
+          ],
+          "planes": [
+            [
+              685.0,
+              -938.74,
+              26.3,
+              0.23029999999999998,
+              0.4089
+            ],
+            [
+              685.0,
+              -938.74,
+              26.3,
+              -0.23029999999999998,
+              -0.4089
+            ]
+          ],
+          "roof_color": [
+            132,
+            120,
+            103
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "craftsman": {
+        "near": [
+          684.73,
+          -933.63
+        ],
+        "bearing": 299,
+        "threshold": 22.94,
+        "minimum": 5.0
+      },
+      "dormer_set": [
+        {
+          "near": [
+            688.17,
+            -930.85
+          ],
+          "bearing": 299,
+          "minimum": 2.9,
+          "width": 1.92,
+          "low": 26.76,
+          "rise": 0.62
+        },
+        {
+          "near": [
+            683.83,
+            -938.72
+          ],
+          "bearing": 299,
+          "minimum": 3.05,
+          "width": 2.04,
+          "low": 26.73,
+          "rise": 0.66
+        }
+      ],
+      "chimney": [
+        690.49,
+        -934.42,
+        0.83,
+        1.14,
+        1.47,
+        [
+          144,
+          93,
+          79
+        ]
+      ]
+    },
+    {
+      "id": "roof-3d7a4503",
+      "city_objectid": 159873,
+      "outline_enu_m": [
+        [
+          678.14515,
+          -976.16558
+        ],
+        [
+          668.04914,
+          -981.203
+        ],
+        [
+          668.70298,
+          -982.51353
+        ],
+        [
+          650.19819,
+          -991.74658
+        ],
+        [
+          646.55034,
+          -984.4355
+        ],
+        [
+          650.94308,
+          -982.24371
+        ],
+        [
+          649.82411,
+          -980.00102
+        ],
+        [
+          663.96453,
+          -972.94562
+        ],
+        [
+          664.36574,
+          -973.74977
+        ],
+        [
+          668.76459,
+          -971.555
+        ],
+        [
+          668.37976,
+          -970.78375
+        ],
+        [
+          674.04864,
+          -967.95525
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2091 Fairmount Boulevard",
+      "street_address": "2091 Fairmount Boulevard",
+      "base_z_m": 22.31,
+      "levels_z_m": [
+        23.56
+      ],
+      "wall_color": [
+        200,
+        198,
+        178
+      ],
+      "roof_color": [
+        151,
+        130,
+        100
+      ],
+      "trim_color": [
+        218,
+        213,
+        187
+      ],
+      "seam_color": [
+        177,
+        174,
+        154
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            646.4,
+            -991.91,
+            668.92,
+            -972.75
+          ],
+          "planes": [
+            [
+              656.15,
+              -982.35,
+              29.63,
+              0.162,
+              -0.3204
+            ],
+            [
+              656.15,
+              -982.35,
+              29.63,
+              -0.198,
+              0.3916
+            ],
+            [
+              654.1,
+              -982.7,
+              29.38,
+              0.43,
+              0.22
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            661.86,
+            -982.68,
+            678.32,
+            -967.78
+          ],
+          "planes": [
+            [
+              670.46,
+              -976.13,
+              29.24,
+              0.15300000000000002,
+              -0.30260000000000004
+            ],
+            [
+              670.46,
+              -976.13,
+              29.24,
+              -0.15300000000000002,
+              0.30260000000000004
+            ],
+            [
+              670.52,
+              -976.12,
+              32.17,
+              -0.41,
+              -0.2
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            657.35,
+            -976.2
+          ],
+          "bearing": 333,
+          "windows": [
+            [
+              -3.52,
+              2.23,
+              24.11,
+              25.65
+            ],
+            [
+              0.17,
+              2.6,
+              24.11,
+              25.63
+            ],
+            [
+              3.24,
+              1.53,
+              24.13,
+              25.55
+            ]
+          ],
+          "canopy": [
+            8.22,
+            0.68,
+            26.51
+          ],
+          "minimum": 14.4
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-61b268c3",
+      "city_objectid": 159874,
+      "outline_enu_m": [
+        [
+          621.60622,
+          -987.0144
+        ],
+        [
+          621.05673,
+          -987.0153
+        ],
+        [
+          621.05904,
+          -988.39929
+        ],
+        [
+          628.79692,
+          -988.38623
+        ],
+        [
+          628.81144,
+          -997.02751
+        ],
+        [
+          617.8172,
+          -997.04596
+        ],
+        [
+          617.81091,
+          -993.28391
+        ],
+        [
+          614.66526,
+          -993.2892
+        ],
+        [
+          614.65915,
+          -989.65715
+        ],
+        [
+          607.47595,
+          -989.66925
+        ],
+        [
+          607.48165,
+          -993.0764
+        ],
+        [
+          601.73883,
+          -993.08601
+        ],
+        [
+          601.73299,
+          -989.63396
+        ],
+        [
+          601.2378,
+          -989.63484
+        ],
+        [
+          601.22458,
+          -981.75085
+        ],
+        [
+          621.5973,
+          -981.71668
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2095 Fairmount Boulevard",
+      "street_address": "2095 Fairmount Boulevard",
+      "base_z_m": 23.69,
+      "levels_z_m": [
+        25.45
+      ],
+      "wall_color": [
+        212,
+        209,
+        190
+      ],
+      "roof_color": [
+        126,
+        125,
+        114
+      ],
+      "trim_color": [
+        228,
+        223,
+        200
+      ],
+      "seam_color": [
+        189,
+        188,
+        174
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            601.06,
+            -993.27,
+            621.81,
+            -981.54
+          ],
+          "planes": [
+            [
+              611.15,
+              -985.13,
+              30.78,
+              0,
+              0.39
+            ],
+            [
+              611.15,
+              -985.13,
+              30.78,
+              0,
+              -0.3
+            ],
+            [
+              611.2,
+              -985.1,
+              34.32,
+              -0.41,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            610.15,
+            -987.5,
+            616.32,
+            -981.5
+          ],
+          "planes": [
+            [
+              613.09,
+              -984.4,
+              31.67,
+              0.67,
+              0
+            ],
+            [
+              613.09,
+              -984.4,
+              31.67,
+              -0.65,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            614.52,
+            -997.2,
+            628.97,
+            -987.8
+          ],
+          "planes": [
+            [
+              623.64,
+              -992.79,
+              31.01,
+              0,
+              0.35
+            ],
+            [
+              623.64,
+              -992.79,
+              31.01,
+              0,
+              -0.37
+            ],
+            [
+              623.64,
+              -992.8,
+              33.52,
+              0.51,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            621.0,
+            -989.06,
+            622.02,
+            -986.86
+          ],
+          "planes": [
+            [
+              621.35,
+              -988,
+              28.86,
+              0.06,
+              0.03
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            611.85,
+            -981.98
+          ],
+          "bearing": 0,
+          "windows": [
+            [
+              -6.0,
+              2.1,
+              26.14,
+              27.67
+            ],
+            [
+              -2.34,
+              1.6,
+              26.24,
+              27.66
+            ],
+            [
+              1.61,
+              2.21,
+              25.95,
+              27.8
+            ],
+            [
+              5.64,
+              1.58,
+              26.28,
+              27.64
+            ]
+          ],
+          "minimum": 17
+        },
+        {
+          "near": [
+            624.8,
+            -988.65
+          ],
+          "bearing": 0,
+          "garages": [
+            [
+              -1.64,
+              2.55
+            ],
+            [
+              1.49,
+              2.45
+            ]
+          ],
+          "garage_color": [
+            215,
+            207,
+            186
+          ],
+          "minimum": 6.7
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "driveway": [
+        622.12,
+        -988.62,
+        628.2,
+        -983.1
+      ]
+    },
+    {
+      "id": "roof-d709354e",
+      "city_objectid": 159875,
+      "outline_enu_m": [
+        [
+          576.5901,
+          -975.6465
+        ],
+        [
+          594.81407,
+          -975.56306
+        ],
+        [
+          594.93075,
+          -1001.0221
+        ],
+        [
+          593.31841,
+          -1001.02952
+        ],
+        [
+          593.35237,
+          -1008.43908
+        ],
+        [
+          585.0985,
+          -1008.47693
+        ],
+        [
+          585.0591,
+          -999.8796
+        ],
+        [
+          584.55105,
+          -999.88196
+        ],
+        [
+          584.52097,
+          -993.31602
+        ],
+        [
+          576.67126,
+          -993.35202
+        ],
+        [
+          576.67076,
+          -993.25813
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2105 Fairmount Boulevard",
+      "street_address": "2105 Fairmount Boulevard",
+      "base_z_m": 23.66,
+      "levels_z_m": [
+        26.05
+      ],
+      "wall_color": [
+        207,
+        210,
+        201
+      ],
+      "roof_color": [
+        73,
+        84,
+        91
+      ],
+      "trim_color": [
+        225,
+        224,
+        210
+      ],
+      "seam_color": [
+        187,
+        195,
+        193
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            576.4,
+            -1001.22,
+            595.1,
+            -975.34
+          ],
+          "planes": [
+            [
+              585.47,
+              -984.17,
+              33.16,
+              0,
+              0.53
+            ],
+            [
+              585.47,
+              -984.17,
+              33.16,
+              0,
+              -0.54
+            ],
+            [
+              585.4,
+              -984.2,
+              36.85,
+              0.43,
+              0
+            ],
+            [
+              585.4,
+              -984.2,
+              36.55,
+              -0.46,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            576.42,
+            -989.71,
+            587.32,
+            -975.33
+          ],
+          "planes": [
+            [
+              581.85,
+              -980.97,
+              32.36,
+              0.67,
+              0
+            ],
+            [
+              581.85,
+              -980.97,
+              32.36,
+              -0.53,
+              0
+            ]
+          ],
+          "roof_color": [
+            81,
+            91,
+            98
+          ]
+        },
+        {
+          "bounds_m": [
+            584.85,
+            -1008.67,
+            593.56,
+            -991.8
+          ],
+          "planes": [
+            [
+              588.91,
+              -998.8,
+              31.78,
+              0.33,
+              0
+            ],
+            [
+              588.91,
+              -998.8,
+              31.78,
+              -0.37,
+              0
+            ],
+            [
+              589,
+              -998.8,
+              34.42,
+              0,
+              0.39
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "foyer": [
+        587.51,
+        -978.23,
+        591.82,
+        -975.38
+      ],
+      "brick_terraces": [
+        [
+          [
+            576.74,
+            -973.93
+          ],
+          [
+            579.62,
+            -973.49
+          ],
+          [
+            582.93,
+            -973.22
+          ],
+          [
+            586.88,
+            -973.42
+          ]
+        ],
+        [
+          [
+            591.78,
+            -973.4
+          ],
+          [
+            593.75,
+            -973.58
+          ],
+          [
+            595.18,
+            -974.2
+          ]
+        ],
+        [
+          [
+            576.11,
+            -970.56
+          ],
+          [
+            579.23,
+            -970.15
+          ],
+          [
+            582.35,
+            -969.78
+          ],
+          [
+            586.82,
+            -969.94
+          ]
+        ],
+        [
+          [
+            592.16,
+            -969.9
+          ],
+          [
+            594.63,
+            -970.43
+          ],
+          [
+            595.89,
+            -971.73
+          ]
+        ]
+      ],
+      "terrain_apron": [
+        584.5,
+        593.71,
+        -1008.65
+      ]
+    },
+    {
+      "id": "roof-8d4cf396",
+      "city_objectid": 159876,
+      "outline_enu_m": [
+        [
+          560.68983,
+          -988.72325
+        ],
+        [
+          566.97469,
+          -988.61696
+        ],
+        [
+          567.16224,
+          -999.70496
+        ],
+        [
+          547.58771,
+          -1000.03602
+        ],
+        [
+          547.1663,
+          -975.1189
+        ],
+        [
+          549.16486,
+          -975.08505
+        ],
+        [
+          549.09604,
+          -971.01725
+        ],
+        [
+          546.66748,
+          -971.05834
+        ],
+        [
+          546.54725,
+          -963.94787
+        ],
+        [
+          558.13452,
+          -963.75192
+        ],
+        [
+          558.25708,
+          -971.00062
+        ],
+        [
+          560.38958,
+          -970.96457
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2125 Fairmount Boulevard",
+      "street_address": "2125 Fairmount Boulevard",
+      "base_z_m": 22.95,
+      "levels_z_m": [
+        24.57,
+        27.34
+      ],
+      "wall_color": [
+        159,
+        158,
+        141
+      ],
+      "roof_color": [
+        119,
+        114,
+        101
+      ],
+      "trim_color": [
+        205,
+        198,
+        175
+      ],
+      "seam_color": [
+        137,
+        140,
+        130
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            546.37,
+            -978.55,
+            560.89,
+            -963.56
+          ],
+          "planes": [
+            [
+              552.38,
+              -970.14,
+              30.62,
+              0.36,
+              0
+            ],
+            [
+              552.38,
+              -970.14,
+              30.62,
+              -0.47,
+              0
+            ],
+            [
+              552,
+              -972.8,
+              31.23,
+              0,
+              0.32
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            546.98,
+            -990.0,
+            561.02,
+            -970.75
+          ],
+          "planes": [
+            [
+              551.97,
+              -982.4,
+              32.73,
+              0.37,
+              0
+            ],
+            [
+              551.97,
+              -982.4,
+              32.73,
+              -0.39,
+              0
+            ],
+            [
+              552.1,
+              -982.5,
+              34.23,
+              0,
+              -0.29
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            547.4,
+            -1000.22,
+            567.34,
+            -988.4
+          ],
+          "planes": [
+            [
+              556.06,
+              -994.14,
+              31.67,
+              0,
+              0.39
+            ],
+            [
+              556.06,
+              -994.14,
+              31.67,
+              0,
+              -0.43
+            ],
+            [
+              556,
+              -994,
+              35.59,
+              -0.46,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            552.49,
+            -964.08
+          ],
+          "bearing": 359,
+          "windows": [
+            [
+              -3.59,
+              2.06,
+              26.29,
+              28.07
+            ],
+            [
+              -0.59,
+              2.56,
+              26.29,
+              28.06
+            ],
+            [
+              2.32,
+              2.6,
+              26.29,
+              28.07
+            ]
+          ],
+          "minimum": 10.8
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "terrain_apron": [
+        547.34,
+        567.22,
+        -1000.4
+      ]
+    },
+    {
+      "id": "roof-3466a919",
+      "city_objectid": 159881,
+      "outline_enu_m": [
+        [
+          463.21819,
+          -971.76888
+        ],
+        [
+          457.39564,
+          -971.84476
+        ],
+        [
+          457.3575,
+          -968.9149
+        ],
+        [
+          451.9477,
+          -968.98537
+        ],
+        [
+          451.92573,
+          -967.30446
+        ],
+        [
+          448.65899,
+          -967.34707
+        ],
+        [
+          448.5191,
+          -956.61295
+        ],
+        [
+          463.01818,
+          -956.4239
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2209 Fairmount Boulevard",
+      "street_address": "2209 Fairmount Boulevard",
+      "base_z_m": 22.1,
+      "levels_z_m": [
+        23.75
+      ],
+      "wall_color": [
+        200,
+        191,
+        161
+      ],
+      "roof_color": [
+        135,
+        123,
+        100
+      ],
+      "trim_color": [
+        226,
+        211,
+        170
+      ],
+      "seam_color": [
+        177,
+        171,
+        148
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            448.34,
+            -967.52,
+            463.31,
+            -956.26
+          ],
+          "planes": [
+            [
+              455.48,
+              -962.14,
+              29.28,
+              0,
+              0.3
+            ],
+            [
+              455.48,
+              -962.14,
+              29.28,
+              0,
+              -0.31
+            ],
+            [
+              455.5,
+              -962.3,
+              32.07,
+              0.36,
+              0
+            ],
+            [
+              455.5,
+              -962.3,
+              30.63,
+              -0.39,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            451.78,
+            -971.99,
+            463.4,
+            -967.11
+          ],
+          "planes": [
+            [
+              459.65,
+              -969.28,
+              27.64,
+              0.39,
+              0
+            ],
+            [
+              459.65,
+              -969.28,
+              27.64,
+              -0.35,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            456.46,
+            -956.78
+          ],
+          "bearing": 359,
+          "windows": [
+            [
+              -3.87,
+              1.78,
+              24.83,
+              26.27
+            ],
+            [
+              0.21,
+              1.48,
+              24.73,
+              26.28
+            ],
+            [
+              3.22,
+              1.45,
+              24.8,
+              26.3
+            ]
+          ],
+          "canopy": [
+            3.64,
+            0.92,
+            26.72
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-b8804a72",
+      "city_objectid": 159852,
+      "outline_enu_m": [
+        [
+          769.12538,
+          -931.94985
+        ],
+        [
+          753.69843,
+          -932.73714
+        ],
+        [
+          752.8809,
+          -937.1061
+        ],
+        [
+          747.46788,
+          -936.09323
+        ],
+        [
+          748.96579,
+          -928.08783
+        ],
+        [
+          750.29978,
+          -928.33732
+        ],
+        [
+          749.9683,
+          -921.84189
+        ],
+        [
+          768.56104,
+          -920.893
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2130 Summit Avenue",
+      "street_address": "2130 Summit Avenue",
+      "base_z_m": 27.37,
+      "levels_z_m": [
+        29.44
+      ],
+      "wall_color": [
+        159,
+        160,
+        147
+      ],
+      "roof_color": [
+        173,
+        173,
+        160
+      ],
+      "trim_color": [
+        199,
+        200,
+        176
+      ],
+      "seam_color": [
+        139,
+        144,
+        132
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            748.7,
+            -933.08,
+            769.32,
+            -920.71
+          ],
+          "planes": [
+            [
+              759.43,
+              -925.93,
+              32.88,
+              0.011,
+              0.012
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            747.28,
+            -937.29,
+            754.45,
+            -927.91
+          ],
+          "planes": [
+            [
+              751.32,
+              -932.29,
+              32.3,
+              0.023,
+              0.045
+            ]
+          ],
+          "roof_color": [
+            157,
+            161,
+            150
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-efd79ec7",
+      "city_objectid": 159837,
+      "outline_enu_m": [
+        [
+          752.70591,
+          -855.08309
+        ],
+        [
+          756.87387,
+          -856.23953
+        ],
+        [
+          759.06926,
+          -859.91173
+        ],
+        [
+          762.56874,
+          -857.8196
+        ],
+        [
+          779.43542,
+          -862.49934
+        ],
+        [
+          777.67269,
+          -868.85268
+        ],
+        [
+          773.3456,
+          -867.65209
+        ],
+        [
+          772.69939,
+          -869.98126
+        ],
+        [
+          760.18027,
+          -866.5077
+        ],
+        [
+          757.10142,
+          -868.29206
+        ],
+        [
+          755.27931,
+          -865.14794
+        ],
+        [
+          750.29687,
+          -863.7655
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2195 Summit Avenue",
+      "street_address": "2195 Summit Avenue",
+      "base_z_m": 27.84,
+      "levels_z_m": [
+        29.54,
+        32.15
+      ],
+      "wall_color": [
+        158,
+        159,
+        143
+      ],
+      "roof_color": [
+        108,
+        115,
+        109
+      ],
+      "trim_color": [
+        196,
+        198,
+        176
+      ],
+      "seam_color": [
+        136,
+        141,
+        126
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            750.11,
+            -868.49,
+            761.1,
+            -854.89
+          ],
+          "planes": [
+            [
+              755.84,
+              -861.05,
+              38.02,
+              0.35519999999999996,
+              -0.0999
+            ],
+            [
+              755.84,
+              -861.05,
+              38.02,
+              -0.4224,
+              0.1188
+            ],
+            [
+              756,
+              -861,
+              39.82,
+              0.14,
+              0.41
+            ],
+            [
+              756,
+              -861,
+              40.22,
+              -0.14,
+              -0.41
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            756.81,
+            -870.16,
+            779.62,
+            -857.64
+          ],
+          "planes": [
+            [
+              767.82,
+              -863.7,
+              37.82,
+              0.10800000000000001,
+              0.384
+            ],
+            [
+              767.82,
+              -863.7,
+              37.82,
+              -0.1323,
+              -0.4704
+            ],
+            [
+              767.82,
+              -863.7,
+              40.85,
+              -0.43,
+              0.13
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-d25e3df8",
+      "city_objectid": 159838,
+      "outline_enu_m": [
+        [
+          830.17778,
+          -883.89966
+        ],
+        [
+          828.84983,
+          -887.73583
+        ],
+        [
+          826.57717,
+          -886.94904
+        ],
+        [
+          824.82848,
+          -892.00052
+        ],
+        [
+          819.10383,
+          -890.01881
+        ],
+        [
+          818.68613,
+          -891.22542
+        ],
+        [
+          816.52522,
+          -890.47739
+        ],
+        [
+          816.93868,
+          -889.28281
+        ],
+        [
+          813.52863,
+          -888.10235
+        ],
+        [
+          812.7632,
+          -890.31368
+        ],
+        [
+          809.25008,
+          -889.09759
+        ],
+        [
+          808.93871,
+          -889.99702
+        ],
+        [
+          803.43465,
+          -888.09173
+        ],
+        [
+          806.6247,
+          -878.87639
+        ],
+        [
+          811.21985,
+          -880.46709
+        ],
+        [
+          812.18736,
+          -877.67201
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2197 Summit Avenue",
+      "street_address": "2197 Summit Avenue",
+      "base_z_m": 29.46,
+      "levels_z_m": [
+        31.31,
+        34.33
+      ],
+      "wall_color": [
+        98,
+        119,
+        123
+      ],
+      "roof_color": [
+        104,
+        111,
+        113
+      ],
+      "trim_color": [
+        208,
+        209,
+        196
+      ],
+      "seam_color": [
+        88,
+        105,
+        113
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            803.24,
+            -890.2,
+            813.78,
+            -878.67
+          ],
+          "planes": [
+            [
+              808.98,
+              -884.22,
+              40.33,
+              0.1519,
+              0.46549999999999997
+            ],
+            [
+              808.98,
+              -884.22,
+              40.33,
+              -0.155,
+              -0.475
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            810.94,
+            -892.2,
+            830.36,
+            -877.48
+          ],
+          "planes": [
+            [
+              817.67,
+              -885.08,
+              41.24,
+              0.1364,
+              0.418
+            ],
+            [
+              817.67,
+              -885.08,
+              41.24,
+              -0.1488,
+              -0.45599999999999996
+            ],
+            [
+              818,
+              -885,
+              42.9,
+              -0.31,
+              0.12
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            814.71,
+            -891.4,
+            821.11,
+            -883.32
+          ],
+          "planes": [
+            [
+              817.25,
+              -888.62,
+              40.93,
+              0.627,
+              -0.2046
+            ],
+            [
+              817.25,
+              -888.62,
+              40.93,
+              -0.646,
+              0.21080000000000002
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            806.25,
+            -888.82
+          ],
+          "bearing": 199,
+          "windows": [
+            [
+              -1.42,
+              1.1,
+              32.83,
+              34.08
+            ],
+            [
+              1.17,
+              1.34,
+              35.68,
+              37.17
+            ]
+          ],
+          "minimum": 5.15
+        },
+        {
+          "near": [
+            822.05,
+            -890.76
+          ],
+          "bearing": 199,
+          "windows": [
+            [
+              -1.32,
+              1.62,
+              33.72,
+              35.3
+            ],
+            [
+              1.24,
+              1.22,
+              36.11,
+              37.47
+            ]
+          ],
+          "minimum": 5.4
+        },
+        {
+          "near": [
+            817.62,
+            -890.64
+          ],
+          "bearing": 199,
+          "windows": [
+            [
+              0.0,
+              1.36,
+              36.59,
+              38.07
+            ]
+          ],
+          "minimum": 1.72
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-636f0355",
+      "city_objectid": 159869,
+      "outline_enu_m": [
+        [
+          781.2574,
+          -984.21802
+        ],
+        [
+          771.18039,
+          -983.98879
+        ],
+        [
+          771.48052,
+          -970.79565
+        ],
+        [
+          773.49236,
+          -970.84141
+        ],
+        [
+          773.66883,
+          -963.08406
+        ],
+        [
+          785.40522,
+          -963.35097
+        ],
+        [
+          785.05145,
+          -978.90469
+        ],
+        [
+          790.90203,
+          -979.03776
+        ],
+        [
+          790.71151,
+          -987.41645
+        ],
+        [
+          781.1896,
+          -987.19985
+        ],
+        [
+          781.19327,
+          -987.03824
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2110 Hamble Avenue",
+      "street_address": "2110 Hamble Avenue",
+      "base_z_m": 34.0,
+      "levels_z_m": [
+        35.71,
+        38.05
+      ],
+      "wall_color": [
+        166,
+        164,
+        142
+      ],
+      "roof_color": [
+        121,
+        125,
+        113
+      ],
+      "trim_color": [
+        204,
+        197,
+        170
+      ],
+      "seam_color": [
+        144,
+        146,
+        130
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            771.0,
+            -984.39,
+            785.62,
+            -962.9
+          ],
+          "planes": [
+            [
+              777.64,
+              -975.48,
+              43.0,
+              0.34,
+              0
+            ],
+            [
+              777.64,
+              -975.48,
+              43.0,
+              -0.52,
+              0
+            ],
+            [
+              777.6,
+              -977,
+              45.46,
+              0,
+              -0.3
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            780.99,
+            -987.6,
+            791.1,
+            -978.72
+          ],
+          "planes": [
+            [
+              785.96,
+              -982.02,
+              41.81,
+              0,
+              0.42
+            ],
+            [
+              785.96,
+              -982.02,
+              41.81,
+              0,
+              -0.38
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-b2bced50",
+      "city_objectid": 159868,
+      "outline_enu_m": [
+        [
+          824.99329,
+          -981.96702
+        ],
+        [
+          819.03691,
+          -981.6399
+        ],
+        [
+          818.7852,
+          -986.22317
+        ],
+        [
+          807.25128,
+          -985.58971
+        ],
+        [
+          807.12723,
+          -987.8497
+        ],
+        [
+          800.48901,
+          -987.48512
+        ],
+        [
+          800.7228,
+          -983.22649
+        ],
+        [
+          792.89339,
+          -982.79646
+        ],
+        [
+          793.31499,
+          -975.1205
+        ],
+        [
+          799.44356,
+          -975.45709
+        ],
+        [
+          799.74662,
+          -969.93735
+        ],
+        [
+          805.42473,
+          -970.24918
+        ],
+        [
+          805.32519,
+          -972.06031
+        ],
+        [
+          825.47654,
+          -973.16698
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2140 Hamble Avenue",
+      "street_address": "2140 Hamble Avenue",
+      "base_z_m": 35.61,
+      "levels_z_m": [
+        37.86
+      ],
+      "wall_color": [
+        181,
+        177,
+        155
+      ],
+      "roof_color": [
+        130,
+        128,
+        115
+      ],
+      "trim_color": [
+        211,
+        206,
+        179
+      ],
+      "seam_color": [
+        161,
+        158,
+        141
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            792.69,
+            -988.06,
+            811.4,
+            -969.72
+          ],
+          "planes": [
+            [
+              800.92,
+              -978.68,
+              42.39,
+              0.01064,
+              0.18962
+            ],
+            [
+              800.92,
+              -978.68,
+              42.39,
+              -0.014,
+              -0.2495
+            ],
+            [
+              801,
+              -979,
+              45.07,
+              0.32,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            804.77,
+            -986.44,
+            825.71,
+            -971.84
+          ],
+          "planes": [
+            [
+              814.73,
+              -978.54,
+              42.14,
+              0.015120000000000001,
+              0.26946000000000003
+            ],
+            [
+              814.73,
+              -978.54,
+              42.14,
+              -0.011200000000000002,
+              -0.1996
+            ],
+            [
+              814.7,
+              -978.5,
+              45.67,
+              -0.32,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-99cda8af",
+      "city_objectid": 159854,
+      "outline_enu_m": [
+        [
+          815.52372,
+          -946.7373
+        ],
+        [
+          811.45012,
+          -941.4789
+        ],
+        [
+          809.76014,
+          -942.78809
+        ],
+        [
+          807.70425,
+          -940.13426
+        ],
+        [
+          809.30382,
+          -938.89507
+        ],
+        [
+          807.03565,
+          -935.96717
+        ],
+        [
+          813.77633,
+          -930.74518
+        ],
+        [
+          816.42123,
+          -934.15936
+        ],
+        [
+          819.95983,
+          -931.41804
+        ],
+        [
+          817.94129,
+          -928.8124
+        ],
+        [
+          824.74784,
+          -923.53945
+        ],
+        [
+          832.51925,
+          -933.57115
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2171 Hamble Avenue",
+      "street_address": "2171 Hamble Avenue",
+      "base_z_m": 31.8,
+      "levels_z_m": [
+        33.61
+      ],
+      "wall_color": [
+        165,
+        160,
+        139
+      ],
+      "roof_color": [
+        124,
+        123,
+        108
+      ],
+      "trim_color": [
+        208,
+        201,
+        175
+      ],
+      "seam_color": [
+        142,
+        141,
+        123
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            806.83,
+            -946.96,
+            822.62,
+            -930.54
+          ],
+          "planes": [
+            [
+              814.88,
+              -939.32,
+              38.13,
+              0.2686,
+              0.2074
+            ],
+            [
+              814.88,
+              -939.32,
+              38.13,
+              -0.2923,
+              -0.22569999999999998
+            ],
+            [
+              815,
+              -939.3,
+              39.67,
+              0.27,
+              -0.35
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            815.35,
+            -942.32,
+            832.74,
+            -923.35
+          ],
+          "planes": [
+            [
+              824.27,
+              -933.32,
+              37.99,
+              0.1952,
+              -0.2528
+            ],
+            [
+              824.27,
+              -933.32,
+              37.99,
+              -0.2135,
+              0.27649999999999997
+            ],
+            [
+              824.3,
+              -933.33,
+              40.33,
+              -0.37,
+              -0.29
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    },
+    {
+      "id": "roof-f5434b03",
+      "city_objectid": 159855,
+      "outline_enu_m": [
+        [
+          866.57041,
+          -929.91417
+        ],
+        [
+          854.54216,
+          -957.75118
+        ],
+        [
+          851.54732,
+          -956.45703
+        ],
+        [
+          850.07516,
+          -959.86409
+        ],
+        [
+          845.58398,
+          -957.92347
+        ],
+        [
+          846.6439,
+          -955.47045
+        ],
+        [
+          843.84226,
+          -954.25983
+        ],
+        [
+          856.28277,
+          -925.46897
+        ],
+        [
+          856.40231,
+          -925.52061
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "2010 Hubbard Lane",
+      "street_address": "2010 Hubbard Lane",
+      "base_z_m": 36.36,
+      "levels_z_m": [
+        38.05,
+        40.32
+      ],
+      "wall_color": [
+        178,
+        176,
+        158
+      ],
+      "roof_color": [
+        111,
+        116,
+        112
+      ],
+      "trim_color": [
+        204,
+        202,
+        181
+      ],
+      "seam_color": [
+        156,
+        158,
+        146
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            843.62,
+            -959.99,
+            866.8,
+            -925.27
+          ],
+          "planes": [
+            [
+              855.08,
+              -942.22,
+              43.5,
+              0.33048,
+              -0.14292
+            ],
+            [
+              855.08,
+              -942.22,
+              43.5,
+              -0.42228000000000004,
+              0.18262
+            ],
+            [
+              855.07,
+              -942.2,
+              46.62,
+              0.16,
+              0.36
+            ],
+            [
+              855.07,
+              -942.2,
+              47.0,
+              -0.17,
+              -0.37
+            ]
+          ]
+        }
+      ],
+      "frontages": [],
+      "bay_m": 3.33,
+      "eaves_m": 0.23
+    }
+  ]
+}

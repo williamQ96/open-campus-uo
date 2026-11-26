@@ -1,0 +1,302 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "id": "hilyard-apartments-973",
+  "name": "Hilyard Apartments · 973 Hilyard",
+  "street_address": "973 Hilyard St",
+  "city_feature_id": 170822,
+  "taxlot": "1703322402700",
+  "city_outline_enu_m": [
+    [
+      -885.8911,
+      381.6436
+    ],
+    [
+      -885.8899,
+      382.9395
+    ],
+    [
+      -885.8804,
+      393.6772
+    ],
+    [
+      -885.8765,
+      398.2129
+    ],
+    [
+      -880.6002,
+      398.2082
+    ],
+    [
+      -880.6042,
+      393.6724
+    ],
+    [
+      -869.4963,
+      393.6626
+    ],
+    [
+      -869.5057,
+      382.925
+    ],
+    [
+      -880.6137,
+      382.9348
+    ],
+    [
+      -880.6148,
+      381.6389
+    ],
+    [
+      -885.8911,
+      381.6436
+    ]
+  ],
+  "municipal_points_enu_m": [
+    [
+      -873.939,
+      391.626,
+      "1703322402700",
+      41738
+    ],
+    [
+      -873.886,
+      385.41,
+      "1703322402700",
+      41742
+    ],
+    [
+      -882.675,
+      391.762,
+      "1703322402700",
+      41746
+    ],
+    [
+      -882.874,
+      385.142,
+      "1703322402700",
+      41748
+    ],
+    [
+      -878.339,
+      388.32,
+      "1703322402700",
+      41749
+    ]
+  ],
+  "roof_frame": {
+    "origin_enu_m": [
+      -878.0,
+      389.92
+    ],
+    "axis": [
+      1,
+      0
+    ]
+  },
+  "roof_zones": [
+    {
+      "bounds_m": [
+        -9.25,
+        -5.3,
+        5.45,
+        5.32
+      ],
+      "planes": [
+        [
+          0,
+          0,
+          7.65,
+          0,
+          0.5
+        ],
+        [
+          0,
+          0,
+          7.65,
+          0,
+          -0.465
+        ],
+        [
+          -3.25,
+          0,
+          7.65,
+          0.51,
+          0
+        ],
+        [
+          2,
+          0,
+          7.65,
+          -0.59,
+          0
+        ]
+      ]
+    },
+    {
+      "bounds_m": [
+        -8.65,
+        5.3,
+        -2.32,
+        8.8
+      ],
+      "planes": [
+        [
+          0,
+          5.3,
+          5.68,
+          0,
+          -0.3
+        ]
+      ],
+      "roof_color": [
+        92,
+        98,
+        102
+      ]
+    },
+    {
+      "bounds_m": [
+        -8.65,
+        -8.6,
+        -2.32,
+        -5.3
+      ],
+      "planes": [
+        [
+          0,
+          -5.3,
+          5.24,
+          0,
+          0.3
+        ]
+      ],
+      "roof_color": [
+        96,
+        102,
+        107
+      ]
+    },
+    {
+      "bounds_m": [
+        5.45,
+        -7.34,
+        9.15,
+        4.25
+      ],
+      "planes": [
+        [
+          5.45,
+          0,
+          3.08,
+          -0.31,
+          0
+        ]
+      ],
+      "roof_color": [
+        80,
+        89,
+        95
+      ]
+    },
+    {
+      "bounds_m": [
+        -2.32,
+        -7.3,
+        5.45,
+        -5.3
+      ],
+      "planes": [
+        [
+          0,
+          -5.3,
+          2.86,
+          0,
+          0.26
+        ]
+      ],
+      "roof_color": [
+        81,
+        90,
+        96
+      ]
+    }
+  ],
+  "roof_color": [
+    105,
+    113,
+    118
+  ],
+  "wall_color": [
+    143,
+    81,
+    64
+  ],
+  "door_color": [
+    228,
+    220,
+    199
+  ],
+  "entrance": {
+    "near_enu_m": [
+      -885.89,
+      393.7
+    ],
+    "outward_degrees": 270,
+    "gate": "west-entry",
+    "landing_m": 1.62,
+    "width_m": 1.58,
+    "threshold_above_grade_m": 0.21,
+    "glazed_double": true
+  },
+  "window_rows": {
+    "west": {
+      "stations_n_m": [
+        384.5,
+        387.35,
+        390.38,
+        396.15
+      ],
+      "width_m": 1.49
+    },
+    "north": {
+      "stations_e_m": [
+        -879.2,
+        -876.53,
+        -874.0
+      ],
+      "width_m": 1.42
+    },
+    "south": {
+      "stations_e_m": [
+        -878.7,
+        -876.2,
+        -873.8
+      ],
+      "width_m": 1.4
+    }
+  },
+  "sources": {
+    "municipal_buildings": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493363.14928888186%2C4877293.282153052%2C493499.14928888186%2C4877355.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=OBJECTID&spatialRel=esriSpatialRelIntersects&returnGeometry=true",
+    "municipal_addresses": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/ArcGIS/rest/services/EugAddress/FeatureServer/0",
+    "aerial_2024": {
+      "bounds_enu_m": [
+        -930,
+        345,
+        -819,
+        443
+      ],
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493399.14928888186%2C4877273.282153052%2C493510.14928888186%2C4877371.282153052&bboxSR=3740&imageSR=3740&size=888%2C784&format=png&bandIds=0%2C1%2C2",
+      "sha256": "8eec5158d9512c0be5e65449a914c7e49f24cf077a5d6d59b8748293299a1605"
+    },
+    "facade_gallery": "https://www.apartments.com/hilyard-apartments-eugene-or/ejhh6lm/",
+    "facade_photo": "https://images1.apartments.com/i2/0p2omcgaLfLNJ8BnlzEAV2BEAHSPJydldKiluua1f4E/116/hilyard-apartments-eugene-or-primary-photo.jpg?p=1",
+    "historical_identity": "https://oregonnews.uoregon.edu/lccn/2004260239/1993-05-25/ed-1/seq-7.pdf",
+    "former_management_listing": "https://www.zillow.com/homedetails/973-Hilyard-St-Eugene-OR-97401/2100331898_zpid/"
+  },
+  "trim_color": [
+    220,
+    214,
+    196
+  ]
+}

@@ -307,6 +307,323 @@ function roadVehicle(kind, color, add, box) {
   }
 }
 
+const BICYCLE = {
+  radius: 0.347,
+  axles: [-0.5285, 0.5285],
+  grip: [0.246, 0.971, 0.284],
+  hips: [0.994, -0.209],
+  shoulderRise: 0.378,
+  shoulderZ: 0.028,
+  headRise: 0.574,
+  headZ: 0.085,
+  pedals: [
+    [-0.171, 0.21, -0.152],
+    [0.171, 0.36, 0.002],
+  ],
+};
+const SCOOTER = {
+  radius: 0.127,
+  axles: [-0.466, 0.462],
+  grip: [0.237, 1.23, 0.277],
+  hips: [1.021, -0.067],
+  shoulderRise: 0.507,
+  shoulderZ: 0.014,
+  headRise: 0.741,
+  headZ: 0.047,
+  deckHeight: 0.173,
+  feet: [
+    [-0.049, -0.203],
+    [0.049, 0.074],
+  ],
+};
+const AXLE_ROTATION = [0, 0, Math.PI / 2];
+const WHEEL_ROTATION = [0, Math.PI / 2, 0];
+const METAL = 0x91a19c;
+const GRIP = 0x253530;
+const HELMET_RADIUS = 0.139;
+
+export function cycleCollider(kind, rider) {
+  const bike = kind === "bicycle";
+  const cycle = bike ? BICYCLE : SCOOTER;
+  const radius = bike ? 0.34 : 0.31;
+  const heightScale = (rider?.heightM || 1.78) / 1.78;
+  const top =
+    cycle.hips[0] + cycle.headRise * heightScale + 0.043 + HELMET_RADIUS;
+  return {
+    radius,
+    halfLength: (bike ? 0.9 : 0.64) - radius,
+    height: top + 0.025,
+  };
+}
+
+function drawBicycle({ add, box, beam, color }) {
+  const {
+    radius: r,
+    axles: [rear, front],
+    grip,
+    pedals,
+  } = BICYCLE;
+  const bracket = [0, 0.285, -0.075];
+  const seat = [0, 0.775, -0.216];
+  const headTop = [0, 0.841, 0.267];
+  const headBottom = [0, 0.713, 0.312];
+  for (const z of BICYCLE.axles) {
+    add(
+      new THREE.TorusGeometry(r - 0.0175, 0.0175, 8, 24),
+      0,
+      r,
+      z,
+      TIRE,
+      WHEEL_ROTATION,
+    );
+    add(
+      new THREE.TorusGeometry(r - 0.035, 0.008, 4, 24),
+      0,
+      r,
+      z,
+      METAL,
+      WHEEL_ROTATION,
+    );
+    add(
+      new THREE.CylinderGeometry(0.026, 0.026, 0.105, 8),
+      0,
+      r,
+      z,
+      METAL,
+      AXLE_ROTATION,
+    );
+    add(
+      new THREE.CylinderGeometry(0.071, 0.071, 0.009, 12),
+      -0.041,
+      r,
+      z,
+      0x9ca9a6,
+      AXLE_ROTATION,
+    );
+    for (let i = 0; i < 8; i++) {
+      const a = (i * Math.PI) / 4;
+      beam(
+        [i % 2 ? -0.025 : 0.025, r, z],
+        [0, r + (r - 0.035) * Math.cos(a), z + (r - 0.035) * Math.sin(a)],
+        0.0046,
+        METAL,
+      );
+    }
+  }
+  beam(seat, headTop, 0.022, color);
+  beam(bracket, headBottom, 0.027, color);
+  beam(bracket, seat, 0.022, color);
+  beam(headBottom, headTop, 0.024, color);
+  for (const x of [-0.055, 0.055]) {
+    beam([x, r, rear], [x * 0.7, 0.285, bracket[2]], 0.013, color);
+    beam([x, r, rear], seat, 0.012, color);
+    beam([x, r, front], [x * 0.76, 0.678, 0.35], 0.017, color);
+  }
+  beam([-0.043, 0.678, 0.35], [0.043, 0.678, 0.35], 0.024, color);
+  beam([0, 0.678, 0.35], [0, 0.901, 0.247], 0.018, color);
+  beam([0, 0.901, 0.247], [0, grip[1], grip[2]], 0.018, DARK);
+  beam(seat, [0, 0.911, -0.242], 0.014, METAL);
+  box(0.128, 0.028, 0.158, 0, 0.925, -0.27, GRIP);
+  box(0.071, 0.025, 0.135, 0, 0.923, -0.153, GRIP);
+
+  const chainX = 0.065;
+  for (const [y, z, ring] of [
+    [bracket[1], bracket[2], 0.086],
+    [r, rear, 0.041],
+  ]) {
+    add(
+      new THREE.TorusGeometry(ring, 0.009, 4, 12),
+      chainX,
+      y,
+      z,
+      METAL,
+      WHEEL_ROTATION,
+    );
+  }
+  for (const sign of [-1, 1])
+    beam(
+      [chainX, bracket[1] + sign * 0.086, bracket[2]],
+      [chainX, r + sign * 0.041, rear],
+      0.008,
+      DARK,
+    );
+  beam(
+    [-0.08, bracket[1], bracket[2]],
+    [0.08, bracket[1], bracket[2]],
+    0.019,
+    METAL,
+  );
+  for (const [x, y, z] of pedals) {
+    beam(
+      [Math.sign(x) * 0.08, bracket[1], bracket[2]],
+      [x, y, z],
+      0.014,
+      METAL,
+    );
+    box(0.103, 0.026, 0.092, x, y, z, GRIP);
+  }
+  drawCycleBars(grip, { box, beam });
+  box(0.061, 0.031, 0.033, 0, 0.908, -0.352, 0xb64d42);
+}
+
+function drawScooter({ add, box, beam, color }) {
+  const {
+    radius: r,
+    axles: [rear, front],
+    grip,
+    deckHeight,
+  } = SCOOTER;
+  const stemBase = [0, 0.438, 0.357];
+  box(0.205, 0.082, 0.57, 0, 0.12, -0.075, color);
+  box(0.183, 0.016, 0.535, 0, deckHeight - 0.008, -0.075, GRIP);
+  for (const z of [-0.299, -0.228, -0.151, -0.074, 0.003, 0.08, 0.157])
+    box(0.151, 0.004, 0.014, 0, deckHeight - 0.002, z, 0x586563);
+  for (const z of SCOOTER.axles) {
+    const width = z === rear ? 0.067 : 0.058;
+    add(
+      new THREE.CylinderGeometry(r, r, width, 16),
+      0,
+      r,
+      z,
+      TIRE,
+      AXLE_ROTATION,
+    );
+    add(
+      new THREE.CylinderGeometry(0.067, 0.067, width + 0.008, 12),
+      0,
+      r,
+      z,
+      METAL,
+      AXLE_ROTATION,
+    );
+    add(
+      new THREE.CylinderGeometry(0.045, 0.045, width + 0.018, 10),
+      0,
+      r,
+      z,
+      DARK,
+      AXLE_ROTATION,
+    );
+    for (let i = -2; i <= 2; i++) {
+      const a = (i * Math.PI) / 7;
+      add(
+        new THREE.BoxGeometry(0.085, 0.018, 0.081),
+        0,
+        r + 0.157 * Math.cos(a),
+        z + 0.157 * Math.sin(a),
+        GRIP,
+        [a, 0, 0],
+      );
+    }
+  }
+  for (const sign of [-1, 1]) {
+    const x = sign * 0.05;
+    beam([x, r, rear], [sign * 0.075, 0.13, -0.312], 0.022, color);
+    beam([x, r, rear], [x * 0.75, 0.218, rear - 0.124], 0.012, METAL);
+    beam(
+      [x, 0.285, front - 0.044],
+      [x * 0.75, 0.224, front - 0.12],
+      0.012,
+      METAL,
+    );
+    beam([x, r, front], [x, 0.371, 0.381], 0.019, METAL);
+    beam([x, 0.371, 0.381], stemBase, 0.024, color);
+    box(0.009, 0.026, 0.084, sign * 0.103, 0.123, -0.287, 0xc7874b);
+  }
+  beam([0, 0.156, 0.174], stemBase, 0.048, color);
+  beam(stemBase, [0, grip[1], grip[2]], 0.026, color);
+  beam(stemBase, [0, 0.509, 0.35], 0.037, DARK);
+  drawCycleBars(grip, { box, beam });
+  box(0.098, 0.047, 0.064, 0, 1.113, 0.338, DARK);
+  box(0.08, 0.029, 0.007, 0, 1.111, 0.373, 0xf5edc7);
+  box(0.069, 0.024, 0.025, 0, 0.218, -0.591, 0xb64d42);
+  box(0.071, 0.016, 0.058, 0, 1.25, 0.278, 0x6c8986);
+}
+
+function drawCycleBars([x, y, z], { box, beam }) {
+  beam([-x, y, z], [x, y, z], 0.014, DARK);
+  for (const side of [-1, 1]) {
+    beam([side * (x - 0.057), y, z], [side * (x + 0.054), y, z], 0.022, GRIP);
+    beam(
+      [side * (x - 0.073), y - 0.015, z + 0.004],
+      [side * (x + 0.029), y - 0.042, z + 0.054],
+      0.008,
+      METAL,
+    );
+    box(0.028, 0.024, 0.029, side * (x - 0.064), y, z, DARK);
+  }
+}
+
+function drawCycleRider(cycle, rider, { add, box, beam }) {
+  const bike = cycle === BICYCLE;
+  const shirt = rider?.shirtColor ?? 0x285d43;
+  const skin = rider?.skinColor ?? 0xd3b89a;
+  const trousers = rider?.trouserColor ?? 0x343f43;
+  const height = (rider?.heightM || 1.78) / 1.78;
+  const width = rider?.bodyWidth || 1;
+  const [hipY, hipZ] = cycle.hips;
+  const shoulderY = hipY + cycle.shoulderRise * height;
+  const headY = hipY + cycle.headRise * height;
+  const [gripX, gripY, gripZ] = cycle.grip;
+  box(0.25 * width, 0.106, 0.166, 0, hipY, hipZ, trousers);
+  const torso = new THREE.BoxGeometry(
+    0.314 * width,
+    shoulderY - hipY + 0.095,
+    0.191,
+  );
+  torso.rotateX(Math.atan2(cycle.shoulderZ - hipZ, shoulderY - hipY));
+  add(
+    torso,
+    0,
+    (hipY + shoulderY) / 2 + 0.02,
+    (hipZ + cycle.shoulderZ) / 2,
+    shirt,
+  );
+  beam([0, shoulderY, cycle.shoulderZ], [0, headY, cycle.headZ], 0.054, skin);
+  add(new THREE.SphereGeometry(0.108, 10, 7), 0, headY, cycle.headZ, skin);
+  add(
+    new THREE.SphereGeometry(
+      HELMET_RADIUS,
+      12,
+      6,
+      0,
+      Math.PI * 2,
+      0,
+      Math.PI / 2,
+    ),
+    0,
+    headY + 0.043,
+    cycle.headZ,
+    0xc6a449,
+  );
+  box(0.173, 0.018, 0.054, 0, headY + 0.045, cycle.headZ + 0.116, 0xa38234);
+
+  for (const [i, side] of [-1, 1].entries()) {
+    const x = side * 0.121 * width;
+    const elbow = [
+      side * 0.174 * width,
+      (shoulderY + gripY) / 2 - 0.062,
+      (cycle.shoulderZ + gripZ) / 2 - 0.062,
+    ];
+    const hand = [side * gripX, gripY + 0.016, gripZ];
+    beam([x, shoulderY, cycle.shoulderZ], elbow, 0.055, shirt);
+    beam(elbow, hand, 0.034, skin);
+    add(new THREE.SphereGeometry(0.042, 8, 6), ...hand, skin);
+    const [shoeX, shoeZ] = bike
+      ? [cycle.pedals[i][0], cycle.pedals[i][2] + 0.028]
+      : cycle.feet[i];
+    const sole = bike ? cycle.pedals[i][1] + 0.013 : cycle.deckHeight;
+    const knee = [
+      side * (bike ? 0.124 : 0.082) * width,
+      (hipY + sole) / 2,
+      shoeZ + (bike ? 0.207 : 0.081),
+    ];
+    beam([side * 0.077 * width, hipY, hipZ], knee, 0.067, trousers);
+    beam(knee, [shoeX, sole + 0.068, shoeZ - 0.045], 0.047, trousers);
+    box(0.09, 0.08, 0.203, shoeX, sole + 0.04, shoeZ, 0x39433e);
+  }
+}
+
 export function createCampusProp(kind = "car", color = 0x567a72, rider = null) {
   const parts = [];
   function add(geometry, x, y, z, c, rotation = [0, 0, 0]) {
@@ -325,12 +642,6 @@ export function createCampusProp(kind = "car", color = 0x567a72, rider = null) {
   }
   const box = (w, h, d, x, y, z, c) =>
     add(new THREE.BoxGeometry(w, h, d), x, y, z, c);
-  const wheel = (x, y, z, r = 0.32) =>
-    add(new THREE.CylinderGeometry(r, r, 0.16, 10), x, y, z, 0x273334, [
-      0,
-      0,
-      Math.PI / 2,
-    ]);
   const beam = (a, b, r, c) => {
     const va = new THREE.Vector3(...a),
       vb = new THREE.Vector3(...b),
@@ -353,223 +664,12 @@ export function createCampusProp(kind = "car", color = 0x567a72, rider = null) {
   if (Object.hasOwn(ROAD_VEHICLES, kind)) {
     roadVehicle(kind, color, add, box);
   } else {
-    const bike = kind === "bicycle",
-      r = bike ? 0.32 : 0.16,
-      front = bike ? 0.65 : 0.58,
-      back = -front;
-    if (bike) {
-      // Low-poly tire, rim and crossed spokes keep the wheel open in silhouette.
-      for (const z of [front, back]) {
-        add(
-          new THREE.TorusGeometry(r - 0.025, 0.025, 5, 12),
-          0,
-          r,
-          z,
-          0x273334,
-          [0, Math.PI / 2, 0],
-        );
-        add(
-          new THREE.TorusGeometry(r - 0.055, 0.012, 4, 12),
-          0,
-          r,
-          z,
-          0xaab3a6,
-          [0, Math.PI / 2, 0],
-        );
-        for (let i = 0; i < 6; i++) {
-          const a = (i * Math.PI) / 3;
-          beam(
-            [0, r, z],
-            [0, r + (r - 0.055) * Math.cos(a), z + (r - 0.055) * Math.sin(a)],
-            0.008,
-            0xaab3a6,
-          );
-        }
-      }
-    } else {
-      wheel(0, r, front, r);
-      wheel(0, r, back, r);
-    }
-    if (bike) {
-      beam([0, r, back], [0, 0.9, -0.2], 0.045, color);
-      beam([0, 0.9, -0.2], [0, r, front], 0.045, color);
-      beam([0, r, back], [0, 0.45, 0], 0.045, color);
-      beam([0, 0.45, 0], [0, r, front], 0.045, color);
-      beam([0, 0.45, 0], [0, 0.9, -0.2], 0.04, color);
-      beam([0, 0.45, 0], [0, r, back], 0.035, color);
-      beam([0, 0.9, -0.2], [0, 0.98, -0.2], 0.025, 0x4c5e57);
-      box(0.32, 0.1, 0.36, 0, 1.01, -0.2, 0x34433d);
-      // A simplified right-side drivetrain and wheel hubs make this generic
-      // bike legible without changing its route, rider or visual envelope.
-      for (const z of [front, back])
-        add(
-          new THREE.CylinderGeometry(0.045, 0.045, 0.12, 8),
-          0,
-          r,
-          z,
-          0x9aa99e,
-          [0, 0, Math.PI / 2],
-        );
-      add(
-        new THREE.TorusGeometry(0.12, 0.012, 4, 12),
-        0.095,
-        0.45,
-        0,
-        0x9aa99e,
-        [0, Math.PI / 2, 0],
-      );
-      add(
-        new THREE.TorusGeometry(0.052, 0.009, 4, 10),
-        0.095,
-        r,
-        back,
-        0x9aa99e,
-        [0, Math.PI / 2, 0],
-      );
-      beam([0.095, 0.56, 0], [0.095, 0.37, back], 0.009, 0x9aa99e);
-      beam([0.095, 0.34, 0], [0.095, 0.27, back], 0.009, 0x9aa99e);
-      // A small crank and pedals give the rider a readable connection to the bike.
-      beam([-0.14, 0.45, 0], [0.14, 0.45, 0], 0.025, 0x9aa99e);
-      for (const x of [-0.19, 0.19])
-        box(0.12, 0.04, 0.12, x, 0.45, 0, 0x34433d);
-    } else {
-      box(0.3, 0.1, 1.15, 0, 0.18, 0, color);
-      box(0.25, 0.025, 0.7, 0, 0.24, -0.08, 0x34433d);
-      for (const z of [front, back]) {
-        box(0.21, 0.04, 0.24, 0, 0.34, z, 0x34433d);
-        // Visible hub caps on both sides of the small solid wheel.
-        for (const side of [-1, 1])
-          add(
-            new THREE.CylinderGeometry(0.07, 0.07, 0.018, 10),
-            side * 0.09,
-            r,
-            z,
-            0xaab3a6,
-            [0, 0, Math.PI / 2],
-          );
-      }
-      // Generic wheel supports, deck edge rails and grip marks, kept within
-      // the existing scooter envelope; no branded or model-specific features.
-      for (const side of [-1, 1]) {
-        beam(
-          [side * 0.12, 0.18, back],
-          [side * 0.12, 0.32, back + 0.22],
-          0.025,
-          0x9aa8a2,
-        );
-        beam(
-          [side * 0.12, 0.16, front],
-          [side * 0.12, 0.49, front - 0.025],
-          0.025,
-          0x9aa8a2,
-        );
-        beam(
-          [side * 0.12, 0.46, front - 0.025],
-          [0, 0.46, front - 0.025],
-          0.022,
-          0x9aa8a2,
-        );
-        box(0.025, 0.035, 0.83, side * 0.14, 0.245, -0.04, 0x9aa8a2);
-      }
-      for (const z of [-0.34, -0.18, -0.02, 0.14, 0.3])
-        box(0.2, 0.008, 0.025, 0, 0.258, z, 0x71817b);
-      box(0.13, 0.06, 0.04, 0, 0.35, back - 0.13, 0xa95143);
-      add(
-        new THREE.SphereGeometry(0.055, 8, 6),
-        0,
-        0.95,
-        front + 0.02,
-        0xf5edc7,
-      );
-    }
-    beam([0, r, front], [0, 1.1, front - 0.1], 0.045, color);
-    beam([-0.3, 1.1, front - 0.1], [0.3, 1.1, front - 0.1], 0.035, 0x283a34);
-    if (bike)
-      for (const side of [-1, 1]) {
-        beam(
-          [side * 0.21, 1.1, front - 0.1],
-          [side * 0.29, 1.1, front - 0.1],
-          0.045,
-          0x1f2c2b,
-        );
-        beam(
-          [side * 0.17, 1.08, front - 0.09],
-          [side * 0.23, 1.02, front - 0.04],
-          0.012,
-          0xaab3a6,
-        );
-      }
-    if (!bike) {
-      for (const side of [-1, 1]) {
-        beam(
-          [side * 0.2, 1.1, front - 0.1],
-          [side * 0.3, 1.1, front - 0.1],
-          0.05,
-          0x1f2c2b,
-        );
-        beam(
-          [side * 0.18, 1.08, front - 0.09],
-          [side * 0.25, 1.02, front - 0.04],
-          0.012,
-          0xaab3a6,
-        );
-      }
-      box(0.13, 0.075, 0.13, 0, 0.76, front - 0.065, 0x465450);
-    }
-    const shirt = rider ? new THREE.Color(rider.shirtColor).getHex() : 0x285d43,
-      skin = rider ? new THREE.Color(rider.skinColor).getHex() : 0xd3b89a,
-      height = rider ? rider.heightM / 1.78 : 1,
-      width = rider ? rider.bodyWidth : 1;
-    // Scale the upper body around the seat/deck while keeping hands and feet
-    // connected to fixed vehicle controls for every supported rider height.
-    box(
-      0.4 * width,
-      0.54 * height,
-      0.25,
-      0,
-      1 + 0.35 * height,
-      bike ? -0.16 : 0,
-      shirt,
-    );
-    add(
-      new THREE.SphereGeometry(0.16, 8, 6),
-      0,
-      1 + 0.81 * height,
-      bike ? -0.08 : 0,
-      skin,
-    );
-    add(
-      new THREE.SphereGeometry(0.18, 8, 6, 0, Math.PI * 2, 0, Math.PI / 2),
-      0,
-      1 + 0.85 * height,
-      bike ? -0.08 : 0,
-      0xd3b64b,
-    );
-    for (const side of [-1, 1]) {
-      const x = side * 0.14 * width,
-        shoeX = side * (bike ? 0.19 : 0.1),
-        shoeZ = bike ? 0 : side < 0 ? -0.25 : 0.14,
-        shoeY = bike ? 0.46 : 0.29;
-      beam(
-        [x, 1 + 0.45 * height, bike ? -0.08 : 0],
-        [side * 0.25, 1.1, front - 0.1],
-        0.065,
-        shirt,
-      );
-      beam(
-        [x, 1 + 0.08 * height, bike ? -0.1 : 0],
-        [x, 0.75, bike ? 0.27 : shoeZ],
-        0.075,
-        0x333e42,
-      );
-      beam(
-        [x, 0.75, bike ? 0.27 : shoeZ],
-        [shoeX, shoeY, shoeZ],
-        0.065,
-        0x333e42,
-      );
-      box(0.16, 0.1, 0.23, shoeX, shoeY, shoeZ, 0x39433e);
-    }
+    const bike = kind === "bicycle";
+    const cycle = bike ? BICYCLE : SCOOTER;
+    const drawing = { add, box, beam, color };
+    if (bike) drawBicycle(drawing);
+    else drawScooter(drawing);
+    drawCycleRider(cycle, rider, drawing);
   }
   const geometry = mergeGeometries(parts, false);
   parts.forEach((g) => g.dispose());

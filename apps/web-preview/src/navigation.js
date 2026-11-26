@@ -11,6 +11,7 @@ export function createNavigation({
   focusSearch,
   fitRoute,
   canPin,
+  getBuildingApproach = () => null,
 }) {
   const $ = (s) => document.querySelector(s),
     panel = $("#directions-panel"),
@@ -55,8 +56,8 @@ export function createNavigation({
     const start = live() ? { point: walkingStart } : a;
     if (!start || !b) return;
     current = router.route(start.point, b.point, {
-      startBuilding: !!start.building,
-      endBuilding: !!b.building,
+      startBuilding: !!start.building && !start.hasApproach,
+      endBuilding: !!b.building && !b.hasApproach,
     });
     routeView.set(current);
     if (!current) {
@@ -142,13 +143,15 @@ export function createNavigation({
     acceptBuilding(record) {
       if (!pending || pending.pin) return false;
       const ring = record.footprint_enu_m;
+      const approach = getBuildingApproach(record);
       choose(pending.endpoint, {
-        point: [
+        point: approach ?? [
           ring.reduce((s, p) => s + p[0], 0) / ring.length,
           ring.reduce((s, p) => s + p[1], 0) / ring.length,
         ],
         label: record.name,
         building: true,
+        ...(approach && { hasApproach: true }),
       });
       return true;
     },

@@ -1,0 +1,556 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "taxlots": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/arcgis/rest/services/EugTaxlots/FeatureServer/0/query?f=json&geometry=493565.14928888186%2C4876919.282153052%2C493690.14928888186%2C4877019.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=maptaxlot&returnGeometry=true",
+    "zone_verification": "https://pdd.eugene-or.gov/LandUse/ApplicationReport?file=ZVR-25-0024&pdf=True",
+    "construction_update": "https://www.eugene-or.gov/m/newsflash/home/detail/7547",
+    "construction_photo": {
+      "url": "https://www.eugene-or.gov/ImageRepository/Document?documentId=86041",
+      "sha256": "557ec8975d2b85fb799aa26a3d0e3c98fa2ac385ef6cde24eafc71ba1d1077e9"
+    },
+    "ortho": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493565.14928888186%2C4876919.282153052%2C493690.14928888186%2C4877019.282153052&bboxSR=3740&imageSR=3740&size=1125%2C900&format=png&bandIds=0%2C1%2C2",
+      "sha256": "d9c2635d3162ec633f8f78d57dd96237629c8157ae57754e338701f3e1ca2bd1",
+      "bounds": [
+        -764,
+        -9,
+        -639,
+        91
+      ]
+    },
+    "architect": "https://rowellbrokaw.com/flock13",
+    "as_built_gallery": "https://rowellbrokaw.com/blog/2024/9/26/flock13-welcomes-students",
+    "historical_removal": "https://eugeneweekly.com/2025/12/24/choice-site-steep-price/",
+    "retained_corner": "https://restaurants.daveshotchicken.com/or/eugene/1285-alder-st-1060",
+    "facades": {
+      "alder-stage-south": "https://www.google.com/maps/@?api=1&map_action=pano&pano=G7XEZXAMbm6HwrkKfPGvkw&heading=8.16",
+      "flock13-alley": "https://www.google.com/maps/@?api=1&map_action=pano&pano=AwzEEZmfxmCmKabnFcb8sw&heading=200.57",
+      "duck-store": "https://www.google.com/maps/@?api=1&map_action=pano&pano=DP2-O2ue98y9Bwp2IJPlcA&heading=11.9",
+      "alder-corner": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GeSUjl43td0KZn59HQbp5w&heading=51.14",
+      "webfoot": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mQFZ6tndG0dXGvNCh_vabQ&heading=21.77",
+      "flock13": "https://www.google.com/maps/@?api=1&map_action=pano&pano=v-w1udyMPka-ueI1XWOBig&heading=6.02",
+      "duck-store-east": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lQh3YrQXRl78T8YEEZFg5w&heading=319.76"
+    }
+  },
+  "source_ranges": [
+    {
+      "id": "roof-5ed4d412",
+      "target": "context-campus-0-2"
+    },
+    {
+      "id": "roof-f6be07b4",
+      "target": "context-background-0-2"
+    }
+  ],
+  "retired_ids": [
+    "roof-f6be07b4"
+  ],
+  "taxlots_enu_m": {
+    "01800": [
+      [
+        -680.681,
+        61.131
+      ],
+      [
+        -680.761,
+        12.383
+      ],
+      [
+        -685.818,
+        12.42
+      ],
+      [
+        -685.738,
+        61.168
+      ],
+      [
+        -680.681,
+        61.131
+      ]
+    ],
+    "01500": [
+      [
+        -706.926,
+        61.322
+      ],
+      [
+        -707.059,
+        12.574
+      ],
+      [
+        -723.18,
+        12.691
+      ],
+      [
+        -723.088,
+        37.065
+      ],
+      [
+        -723.065,
+        43.158
+      ],
+      [
+        -723.049,
+        47.424
+      ],
+      [
+        -717.321,
+        47.382
+      ],
+      [
+        -717.267,
+        61.397
+      ],
+      [
+        -706.926,
+        61.322
+      ]
+    ],
+    "01600": [
+      [
+        -700.223,
+        61.273
+      ],
+      [
+        -700.355,
+        12.526
+      ],
+      [
+        -707.059,
+        12.574
+      ],
+      [
+        -706.926,
+        61.322
+      ],
+      [
+        -700.223,
+        61.273
+      ]
+    ],
+    "01900": [
+      [
+        -672.502,
+        61.071
+      ],
+      [
+        -672.551,
+        42.791
+      ],
+      [
+        -664.542,
+        42.733
+      ],
+      [
+        -664.625,
+        12.266
+      ],
+      [
+        -680.761,
+        12.383
+      ],
+      [
+        -680.681,
+        61.131
+      ],
+      [
+        -672.502,
+        61.071
+      ]
+    ],
+    "01300": [
+      [
+        -723.065,
+        43.158
+      ],
+      [
+        -723.088,
+        37.065
+      ],
+      [
+        -742.535,
+        37.206
+      ],
+      [
+        -742.505,
+        43.3
+      ],
+      [
+        -723.065,
+        43.158
+      ]
+    ],
+    "01400": [
+      [
+        -723.088,
+        37.065
+      ],
+      [
+        -723.18,
+        12.691
+      ],
+      [
+        -742.653,
+        12.833
+      ],
+      [
+        -742.535,
+        37.206
+      ],
+      [
+        -723.088,
+        37.065
+      ]
+    ],
+    "01700": [
+      [
+        -685.738,
+        61.168
+      ],
+      [
+        -685.818,
+        12.42
+      ],
+      [
+        -700.355,
+        12.526
+      ],
+      [
+        -700.223,
+        61.273
+      ],
+      [
+        -685.738,
+        61.168
+      ]
+    ],
+    "01200": [
+      [
+        -717.267,
+        61.397
+      ],
+      [
+        -717.321,
+        47.382
+      ],
+      [
+        -723.049,
+        47.424
+      ],
+      [
+        -723.065,
+        43.158
+      ],
+      [
+        -742.505,
+        43.3
+      ],
+      [
+        -742.416,
+        61.58
+      ],
+      [
+        -717.267,
+        61.397
+      ]
+    ],
+    "02000": [
+      [
+        -664.625,
+        12.266
+      ],
+      [
+        -664.542,
+        42.733
+      ],
+      [
+        -672.551,
+        42.791
+      ],
+      [
+        -672.502,
+        61.071
+      ],
+      [
+        -639.523,
+        60.831
+      ],
+      [
+        -639.499,
+        12.083
+      ],
+      [
+        -664.625,
+        12.266
+      ]
+    ]
+  },
+  "site": {
+    "photo_publication": "2026-09",
+    "lots": [
+      "01200",
+      "01300",
+      "01500"
+    ],
+    "closed_boxes_enu_m": [
+      [
+        -741.95,
+        43.66,
+        -707.54,
+        60.46
+      ],
+      [
+        -741.95,
+        37.47,
+        -707.56,
+        43.66
+      ],
+      [
+        -722.88,
+        13.39,
+        -707.59,
+        37.47
+      ]
+    ],
+    "slab_enu_m": [
+      [
+        -741.5,
+        38.17
+      ],
+      [
+        -722.1,
+        38.12
+      ],
+      [
+        -722.08,
+        14.75
+      ],
+      [
+        -708.15,
+        14.65
+      ],
+      [
+        -707.98,
+        60.2
+      ],
+      [
+        -741.36,
+        60.39
+      ]
+    ],
+    "crane_enu_m": [
+      -716.8,
+      48.4
+    ],
+    "nominal_slab_rise_m": [
+      0.22,
+      3.73,
+      7.12,
+      10.51
+    ]
+  },
+  "models": [
+    {
+      "role": "corner",
+      "id": "alder-thirteenth-corner",
+      "name": "Alder & 13th Corner Shops",
+      "street_address": "1285 Alder St",
+      "lots": [
+        "01400"
+      ],
+      "footprint_enu_m": [
+        [
+          -742.45,
+          34.82
+        ],
+        [
+          -742.55,
+          13.34
+        ],
+        [
+          -741.48,
+          12.97
+        ],
+        [
+          -725.43,
+          12.88
+        ],
+        [
+          -725.41,
+          34.78
+        ]
+      ],
+      "entry": {
+        "gate": "alder-corner-south",
+        "east": -736.25,
+        "distance": 2.8
+      },
+      "eave_m": 4.52,
+      "ridge_m": 5.91,
+      "gable_enu_m": [
+        -740.37,
+        17.4,
+        -729.71,
+        33.8
+      ]
+    },
+    {
+      "role": "gopuran",
+      "id": "alder-gopuran",
+      "name": "Gopuran Building · Webfoot Bar & Grill",
+      "street_address": "839 E 13th Ave",
+      "lots": [
+        "01600"
+      ],
+      "footprint_enu_m": [
+        [
+          -706.96,
+          12.79
+        ],
+        [
+          -700.4,
+          12.74
+        ],
+        [
+          -700.24,
+          59.94
+        ],
+        [
+          -706.81,
+          59.99
+        ]
+      ],
+      "entry": {
+        "gate": "webfoot-south",
+        "east": -704.3,
+        "distance": 2.6
+      },
+      "low_roof_m": 4.05,
+      "high_roof_m": 7.05
+    },
+    {
+      "role": "flock",
+      "id": "roof-5ed4d412",
+      "name": "Flock13",
+      "street_address": "871 E 13th Ave",
+      "lots": [
+        "01700",
+        "01800",
+        "01900"
+      ],
+      "footprint_enu_m": [
+        [
+          -700.18,
+          12.66
+        ],
+        [
+          -665.12,
+          12.4
+        ],
+        [
+          -665.04,
+          42.4
+        ],
+        [
+          -673.12,
+          42.46
+        ],
+        [
+          -673.08,
+          60.44
+        ],
+        [
+          -700.04,
+          60.63
+        ]
+      ],
+      "upper_insets_enu_m": [
+        [
+          -700.5,
+          34.92,
+          -691.26,
+          47.0
+        ],
+        [
+          -675.7,
+          32.68,
+          -664.9,
+          46.86
+        ]
+      ],
+      "south_tower_wall_north_m": 18.75,
+      "entry": {
+        "gate": "flock-south",
+        "east": -680.5,
+        "distance": 2.9
+      },
+      "podium_cap_m": 4.33,
+      "tower_roof_m": 23.6,
+      "north_roof_m": 22.69
+    },
+    {
+      "role": "duck",
+      "id": "alder-duck-store",
+      "name": "The Duck Store",
+      "street_address": "895 E 13th Ave",
+      "lots": [
+        "02000"
+      ],
+      "footprint_enu_m": [
+        [
+          -664.47,
+          12.45
+        ],
+        [
+          -640.05,
+          12.28
+        ],
+        [
+          -640.03,
+          60.69
+        ],
+        [
+          -672.14,
+          60.9
+        ],
+        [
+          -672.23,
+          43.14
+        ],
+        [
+          -664.39,
+          43.05
+        ]
+      ],
+      "entry": {
+        "gate": "duck-store-south",
+        "east": -649.4,
+        "distance": 2.95
+      },
+      "porch_setback_m": 1.75,
+      "box_eave_m": 6.44,
+      "clerestory_eave_m": 7.39,
+      "clerestory_ridge_m": 8.58,
+      "south_gable_bounds_enu_m": [
+        -663.05,
+        17.44,
+        -641.46,
+        45.55
+      ]
+    }
+  ],
+  "context_tree_removals": [
+    {
+      "index": 157,
+      "position_enu_m": [
+        -684.834,
+        52.076
+      ],
+      "overlapping_building_id": "roof-5ed4d412",
+      "source": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493619.3152888819%2C4876955.358153053%2C493669.3152888819%2C4877005.358153053&bboxSR=3740&imageSR=3740&size=600%2C600&format=png&bandIds=0%2C1%2C2",
+      "reference_sha256": "e176269c84113acfbc9e6ea8a1b0af596cf4a7488ec70ad44e86a2ac34ce1bb7",
+      "basis": "The inferred stem falls 8.447 m inside the registered Flock13 footprint and on roof pixels in 2024 Oregon imagery."
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "historic_rasters": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "marlatt_street_2024_06": "https://www.google.com/maps/@?api=1&map_action=pano&pano=__RkzRRXfOY6mwsvZa7UAw&heading=14",
+    "marlatt_leasing": "https://hotpads.com/marlatt-eugene-or-97401-20y6rf2/pad",
+    "riverfront_ordinance": "https://coeapps.eugene-or.gov/cmoweblink/0/edoc/4198616/Ord.2020700.pdf",
+    "riverfront_street_2024_06": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6QOn3B0NWYEP-ZFtiWYBnw&heading=42",
+    "riverfront_plan": "https://www.eugene-or.gov/DocumentCenter/View/41502/EWEB-Riverfront-Master-Plan"
+  },
+  "models": [
+    {
+      "id": "roof-fd954de8",
+      "name": "Marlatt Apartments · Courtyard Building",
+      "street_address": "749–773 E 17th Ave",
+      "role": "courtyard",
+      "entrance": {
+        "near": [
+          -817.45,
+          -439.86
+        ],
+        "bearing": 180,
+        "gate": "courtyard-front"
+      },
+      "city_footprint": 170370,
+      "source_overlap_m2": 139.528,
+      "outline_enu_m": [
+        [
+          -825.1251849421533,
+          -440.20471890922636
+        ],
+        [
+          -825.1571645341464,
+          -428.81947749946266
+        ],
+        [
+          -810.7002782803029,
+          -428.7787279114127
+        ],
+        [
+          -810.6682982945349,
+          -440.1639692913741
+        ],
+        [
+          -825.1251849421533,
+          -440.20471890922636
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -817.91273152,
+          -434.49172343
+        ],
+        "axis": [
+          1.0,
+          0.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -24,
+            -11,
+            24,
+            11
+          ],
+          "planes": [
+            [
+              0,
+              0.171954,
+              7.973739,
+              0,
+              0.393729
+            ],
+            [
+              0,
+              0.171954,
+              7.973739,
+              0,
+              -0.397162
+            ],
+            [
+              -1.532099,
+              0,
+              7.973739,
+              0.380531,
+              0
+            ],
+            [
+              1.357058,
+              0,
+              7.973739,
+              -0.440194,
+              0
+            ]
+          ]
+        }
+      ],
+      "source": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493470.14928888186%2C4876460.282153052%2C493539.14928888186%2C4876521.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "d86ea2df39b7799507e14bec5fb9b32675d1c36c8950f851fe5316a1edb1485b"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493470.14928888186%2C4876460.282153052%2C493539.14928888186%2C4876521.282153052&bboxSR=3740&imageSR=3740&size=828%2C732&format=png&bandIds=0%2C1%2C2",
+          "sha256": "2709b03bee36d5e2e1fcd390fe12c3a036b44f457ac4be26c6879eb8b7782bd8"
+        }
+      }
+    },
+    {
+      "id": "roof-7c73e16e",
+      "name": "Marlatt Apartments · West Wing",
+      "street_address": "749 E 17th Ave",
+      "role": "west",
+      "entrance": {
+        "near": [
+          -827.95,
+          -451.4
+        ],
+        "bearing": 90,
+        "gate": "west-wing-court"
+      },
+      "city_footprint": 170320,
+      "source_overlap_m2": 226.0,
+      "outline_enu_m": [
+        [
+          -837.3068394412403,
+          -472.36118479352444
+        ],
+        [
+          -837.1131782918237,
+          -431.0913687516004
+        ],
+        [
+          -827.6441208518227,
+          -431.13587813731283
+        ],
+        [
+          -827.8377810620004,
+          -472.4056941214949
+        ],
+        [
+          -837.3068394412403,
+          -472.36118479352444
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -832.47547991,
+          -451.74853179
+        ],
+        "axis": [
+          0.0,
+          1.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -24,
+            -11,
+            24,
+            11
+          ],
+          "planes": [
+            [
+              0,
+              -0.387418,
+              4.485009,
+              0,
+              0.446971
+            ],
+            [
+              0,
+              -0.387418,
+              4.485009,
+              0,
+              -0.284591
+            ],
+            [
+              -15.390503,
+              0,
+              4.485009,
+              0.355825,
+              0
+            ],
+            [
+              15.64921,
+              0,
+              4.485009,
+              -0.32615,
+              0
+            ]
+          ]
+        }
+      ],
+      "source": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493470.14928888186%2C4876460.282153052%2C493539.14928888186%2C4876521.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "d86ea2df39b7799507e14bec5fb9b32675d1c36c8950f851fe5316a1edb1485b"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493470.14928888186%2C4876460.282153052%2C493539.14928888186%2C4876521.282153052&bboxSR=3740&imageSR=3740&size=828%2C732&format=png&bandIds=0%2C1%2C2",
+          "sha256": "2709b03bee36d5e2e1fcd390fe12c3a036b44f457ac4be26c6879eb8b7782bd8"
+        }
+      }
+    },
+    {
+      "id": "roof-990dddda",
+      "name": "Marlatt Apartments · East Wing",
+      "street_address": "761 E 17th Ave",
+      "role": "east",
+      "entrance": {
+        "near": [
+          -807.81,
+          -451.5
+        ],
+        "bearing": 270,
+        "gate": "east-wing-court"
+      },
+      "city_footprint": 170342,
+      "source_overlap_m2": 186.0,
+      "outline_enu_m": [
+        [
+          -807.9415941560874,
+          -431.1238797819242
+        ],
+        [
+          -798.5430121698882,
+          -431.1558913253248
+        ],
+        [
+          -798.6828166269697,
+          -472.34699721448123
+        ],
+        [
+          -808.0813995443168,
+          -472.3149857278913
+        ],
+        [
+          -807.9415941560874,
+          -431.1238797819242
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -803.31220563,
+          -451.73543885
+        ],
+        "axis": [
+          0.0,
+          1.0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -24,
+            -11,
+            24,
+            11
+          ],
+          "planes": [
+            [
+              0,
+              -0.386407,
+              5.043837,
+              0,
+              0.414582
+            ],
+            [
+              0,
+              -0.386407,
+              5.043837,
+              0,
+              -0.24635
+            ],
+            [
+              -15.530159,
+              0,
+              5.043837,
+              0.358295,
+              0
+            ],
+            [
+              16.26889,
+              0,
+              5.043837,
+              -0.4246,
+              0
+            ]
+          ]
+        }
+      ],
+      "source": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493470.14928888186%2C4876460.282153052%2C493539.14928888186%2C4876521.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "d86ea2df39b7799507e14bec5fb9b32675d1c36c8950f851fe5316a1edb1485b"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493470.14928888186%2C4876460.282153052%2C493539.14928888186%2C4876521.282153052&bboxSR=3740&imageSR=3740&size=828%2C732&format=png&bandIds=0%2C1%2C2",
+          "sha256": "2709b03bee36d5e2e1fcd390fe12c3a036b44f457ac4be26c6879eb8b7782bd8"
+        }
+      }
+    },
+    {
+      "id": "roof-be421cdc",
+      "name": "EWEB Willamette Substation",
+      "street_address": "777 Annie Mims Ln",
+      "role": "riverfront",
+      "entrance": null,
+      "city_footprint": 228788,
+      "source_overlap_m2": 186.572,
+      "outline_enu_m": [
+        [
+          -951.9257326649968,
+          693.0752684231848
+        ],
+        [
+          -940.0099963042303,
+          683.90558021795
+        ],
+        [
+          -947.4754972625524,
+          676.8943595811725
+        ],
+        [
+          -950.4904555332032,
+          673.2339656297117
+        ],
+        [
+          -962.1738534280448,
+          681.8329698210582
+        ],
+        [
+          -957.7599992254982,
+          687.6093791797757
+        ],
+        [
+          -951.9257326649968,
+          693.0752684231848
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -951.34109518,
+          683.22789765
+        ],
+        "axis": [
+          0.80386,
+          -0.59481
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -24,
+            -11,
+            24,
+            11
+          ],
+          "planes": [
+            [
+              0,
+              -0.035107,
+              6.847916,
+              0,
+              0.50277
+            ],
+            [
+              0,
+              -0.035107,
+              6.847916,
+              0,
+              -0.499896
+            ],
+            [
+              -2.920285,
+              0,
+              6.847916,
+              0.1,
+              0
+            ],
+            [
+              2.977399,
+              0,
+              6.847916,
+              -0.1,
+              0
+            ]
+          ]
+        }
+      ],
+      "source": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493352.14928888186%2C4877578.282153052%2C493409.14928888186%2C4877643.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "08f5a7ad031fcd401289910f77cb28e052ff0c7be8254163659aa3b0538f9db9"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493352.14928888186%2C4877578.282153052%2C493409.14928888186%2C4877643.282153052&bboxSR=3740&imageSR=3740&size=684%2C780&format=png&bandIds=0%2C1%2C2",
+          "sha256": "f765bf4652fc5ebc6596f5dbdfaae9c79f75d46516c84a387ca239b13e55f49e"
+        }
+      }
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-fd954de8",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-7c73e16e",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-990dddda",
+      "target": "context-background-0-1"
+    },
+    {
+      "id": "roof-be421cdc",
+      "target": "context-background-0-3"
+    }
+  ]
+}

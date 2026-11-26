@@ -36,6 +36,11 @@ import { applySurfaceGrain } from "./surface-grain.js";
 import { createContextFog } from "./context-fog.js";
 import { markPavingJoints, applyPavingJoints } from "./paving-joints.js";
 import { markLawnTone, applyLawnTone } from "./lawn-tone.js";
+import { installPilotHardscape } from "./pilot-hardscape.js";
+import { installPilotTrees } from "./pilot-trees-l2.js";
+import { installContextTrees } from "./context-trees-l2.js";
+import { installUnderstory } from "./understory-l2.js";
+import { loadFoundationL2 } from "./foundation-l2.js";
 
 export function sceneAssetUrl(base, name) {
   if (
@@ -58,6 +63,61 @@ export function setEmissive(object, color) {
   });
 }
 
+async function installPilotFurnishings(root, base, config) {
+  try {
+    const {
+      url,
+      sha256,
+      collision_boxes_enu_m: boxes,
+    } = config.pilot_furnishings;
+    const original = root.getObjectByName("furniture");
+    const sourceCounts = [432, 960, 2376];
+    if (
+      config.verify_source_sha256 !== true ||
+      original?.children.length !== sourceCounts.length ||
+      original.children.some(
+        (child, index) =>
+          child.geometry?.getAttribute("position")?.count !==
+          sourceCounts[index],
+      )
+    )
+      throw new Error("Source furniture batch changed.");
+    if (
+      !Array.isArray(boxes) ||
+      boxes.length !== 21 ||
+      boxes.some(
+        (box) =>
+          !Array.isArray(box) ||
+          box.length !== 4 ||
+          !box.every((n) => Number.isFinite(n) && Math.abs(n) < 1000) ||
+          box[2] <= box[0] ||
+          box[3] <= box[1] ||
+          box[2] - box[0] > 2.1 ||
+          box[3] - box[1] > 0.65,
+      )
+    )
+      throw new Error("Invalid furnishing collision envelopes.");
+    const bytes = await readPinnedScene(sceneAssetUrl(base, url), sha256);
+    const { scene } = await new GLTFLoader().parseAsync(bytes, base);
+    const replacement = scene.getObjectByName("pilot-furnishings-l2");
+    if (
+      replacement?.children.length !== 3 ||
+      replacement.children.some((child) => !child.isMesh)
+    )
+      throw new Error("Invalid furnishing batches.");
+    replacement.userData.asset_kind = "landscape-detail";
+    original.removeFromParent();
+    root.add(replacement);
+    return boxes;
+  } catch (error) {
+    console.warn(
+      "Pilot furnishings unavailable; retaining the original furnishings.",
+      error,
+    );
+    return [];
+  }
+}
+
 export async function loadPresentation(
   base,
   name,
@@ -69,8 +129,15 @@ export async function loadPresentation(
     buildingReview,
     buildingReviews = buildingReview ? [buildingReview] : [],
     sourceScene,
+    manifest,
+    skipFoundationL2,
     skipContextRoofs,
     skipPilotClearance,
+    skipPilotTrees,
+    skipContextTrees,
+    skipUnderstory,
+    skipPilotFurnishings,
+    skipPilotHardscape,
   } = {},
 ) {
   if (!config) {
@@ -186,6 +253,10 @@ export async function loadPresentation(
       config.asset_sha256,
     );
   }
+  const furnishingBoxes =
+    config.pilot_furnishings && !skipPilotFurnishings
+      ? await installPilotFurnishings(gltf.scene, base, config)
+      : [];
   const extraPatches = config.additional_environment_patches ?? [];
   if (
     !Array.isArray(extraPatches) ||
@@ -200,7 +271,7 @@ export async function loadPresentation(
   for (const patchUrl of [
     config.vegetation_patch_url,
     config.understory_patch_url,
-    config.furniture_patch_url,
+    furnishingBoxes.length ? null : config.furniture_patch_url,
     config.fern_patch_url,
     config.tree_suppression_url,
     ...treeSuppressionEntries
@@ -208,7 +279,12 @@ export async function loadPresentation(
       .map((entry) => entry.url),
     ...extraPatches.map((entry) => entry.url),
   ]) {
-    if (!patchUrl) continue;
+    if (
+      !patchUrl ||
+      (furnishingBoxes.length &&
+        patchUrl === "pilot-bench-seat-suppression.json")
+    )
+      continue;
     const result = await fetch(sceneAssetUrl(base, patchUrl));
     if (!result.ok)
       throw new Error("Could not load vegetation patch: " + result.status);
@@ -282,7 +358,13 @@ export async function loadPresentation(
   const deferredBatchDetails = new Map();
   let volcanologyOverlay;
   for (const detailUrl of detailUrls) {
-    if (exteriorReview?.skippedDetails.has(detailUrl)) continue;
+    if (
+      exteriorReview?.skippedDetails.has(detailUrl) ||
+      (furnishingBoxes.length &&
+        (detailUrl === "pilot-bench-detail.json" ||
+          detailUrl === "pilot-lamp-detail.json"))
+    )
+      continue;
     const result = await fetch(sceneAssetUrl(base, detailUrl));
     if (!result.ok)
       throw new Error("Could not load exterior detail: " + result.status);
@@ -405,11 +487,26 @@ export async function loadPresentation(
     );
   }
   let contextRoofRefinements;
+  let foundationGrade;
   if (config.landcover_url) {
-    const url = sceneAssetUrl(base, config.landcover_url);
-    const land = exteriorReview
-      ? await exteriorReview.loadSource(url, config.landcover_sha256, base)
-      : await new GLTFLoader().loadAsync(url);
+    let land;
+    if (manifest && config.landcover_l2 && !skipFoundationL2) {
+      try {
+        land = await loadFoundationL2(base, manifest, config, exteriorReview);
+        foundationGrade = land.grade;
+      } catch (error) {
+        console.warn(
+          "Ground refinement unavailable; using the prior foundation.",
+          error,
+        );
+      }
+    }
+    if (!land) {
+      const url = sceneAssetUrl(base, config.landcover_url);
+      land = exteriorReview
+        ? await exteriorReview.loadSource(url, config.landcover_sha256, base)
+        : await new GLTFLoader().loadAsync(url);
+    }
     gltf.scene.add(land.scene);
   }
   let siteTreeRemovals = 0;
@@ -509,6 +606,25 @@ export async function loadPresentation(
     buildingOverlayEntries,
     config.asset_sha256,
   );
+  const hardscape = skipPilotHardscape
+    ? null
+    : await installPilotHardscape(gltf.scene, base, config, installedReviews);
+  const refinedPilotTrees =
+    skipPilotClearance || skipPilotTrees
+      ? 0
+      : await installPilotTrees(
+          gltf.scene,
+          base,
+          config,
+          registeredPilotTrees,
+          (clearance?.suppressed_trees ?? 0) - omittedPilotTreeClearance,
+        );
+  const refinedContextTrees = skipContextTrees
+    ? 0
+    : await installContextTrees(gltf.scene, base, config);
+  const refinedUnderstory = skipUnderstory
+    ? null
+    : await installUnderstory(gltf.scene, base, config);
   return {
     ...createPresentation(
       gltf.scene,
@@ -524,8 +640,14 @@ export async function loadPresentation(
     contextRoofHeights: contextRoofRefinements?.heights,
     contextBuildingRecords: contextRoofRefinements?.changedRecords,
     registeredPilotTrees,
+    refinedPilotTrees,
+    refinedContextTrees,
+    refinedUnderstory,
+    foundationGrade,
     omittedPilotTreeClearance,
     siteTreeRemovals,
+    furnishingBoxes,
+    hardscape,
   };
 }
 
@@ -577,7 +699,7 @@ export function createPresentation(
       ? original.map(toToon)
       : toToon(original);
     for (const material of [original, toon].flat()) {
-      contextFog?.apply(material);
+      contextFog?.apply(material, object.userData.context_haze_weight);
       if (object.userData.lawn_tone)
         applyLawnTone(material, object.userData.lawn_tone);
       if (object.userData.paving_joints)

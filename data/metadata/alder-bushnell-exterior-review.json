@@ -1,0 +1,543 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_ranges": [
+    {
+      "target": "context-background-0-2",
+      "id": "roof-e45bcd54"
+    },
+    {
+      "target": "context-background-0-2",
+      "id": "roof-b98e8e3e"
+    }
+  ],
+  "new_building_ids": [
+    "alder-suites-950"
+  ],
+  "models": [
+    {
+      "id": "alder-suites-950",
+      "role": "suites",
+      "name": "Alder Suites",
+      "street_address": "950 Alder St",
+      "city_footprint": 182513,
+      "outline_enu_m": [
+        [
+          -768.657147935417,
+          412.5878796717152
+        ],
+        [
+          -825.8357181964675,
+          412.50745367538184
+        ],
+        [
+          -825.863870349538,
+          431.6120380833745
+        ],
+        [
+          -768.675205950276,
+          431.35415417235345
+        ],
+        [
+          -768.657147935417,
+          412.5878796717152
+        ]
+      ],
+      "source_overlap": [],
+      "entrance": {
+        "point": [
+          -768.9,
+          415.05
+        ],
+        "bearing": 90,
+        "distance": 2.5,
+        "gate": "alder-front"
+      },
+      "roof_frame": {
+        "axis": [
+          1,
+          0
+        ],
+        "origin_enu_m": [
+          -797,
+          422
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -45,
+            -40,
+            45,
+            40
+          ],
+          "planes": [
+            [
+              0,
+              1.4408,
+              17.3183,
+              0,
+              -0.2906
+            ],
+            [
+              0,
+              1.4408,
+              17.3183,
+              0,
+              0.2869
+            ],
+            [
+              -20.0266,
+              0,
+              17.3183,
+              0.3072,
+              0
+            ],
+            [
+              17.8218,
+              0,
+              17.3183,
+              -0.266,
+              0
+            ]
+          ]
+        }
+      ],
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493483.14928888186%2C4877328.282153052%2C493564.14928888186%2C4877378.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "32441a48204647dc0fe69909be5328ee74383e3da55b0a312ae7b4ca08d20040"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493483.14928888186%2C4877328.282153052%2C493564.14928888186%2C4877378.282153052&bboxSR=3740&imageSR=3740&size=648%2C400&format=png&bandIds=0%2C1%2C2",
+          "sha256": "c5324454306417dd1a42cf8aa05724f16204bd2c0378c2dfc07eaf4b8de675e9"
+        },
+        "frontages": [
+          "https://www.apartments.com/alder-suites-eugene-or/jj1ej76/",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=f57HgRqSjGNmjdcfUID1Rw&heading=292",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=KVh-KDO0O11FhGquf68K1g&heading=270",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=oj-FXKPaxVd5Aw6HqJqi9g&heading=66"
+        ]
+      }
+    },
+    {
+      "id": "roof-e45bcd54",
+      "role": "morse",
+      "name": "Morse Center",
+      "street_address": "1075 Alder St",
+      "city_footprint": 214890,
+      "outline_enu_m": [
+        [
+          -738.9145788528258,
+          315.3822219828144
+        ],
+        [
+          -739.0201081400737,
+          326.77904786914587
+        ],
+        [
+          -711.0795165479649,
+          326.8671081084758
+        ],
+        [
+          -711.0464627114125,
+          321.98663390241563
+        ],
+        [
+          -711.0410391541081,
+          321.18836948182434
+        ],
+        [
+          -705.9280336686643,
+          321.11675956007093
+        ],
+        [
+          -705.9394389524823,
+          315.1492226468399
+        ],
+        [
+          -705.7249080890906,
+          261.09064079541713
+        ],
+        [
+          -735.4153992934152,
+          261.13786062505096
+        ],
+        [
+          -738.8304758189479,
+          261.1433415506035
+        ],
+        [
+          -738.9145788528258,
+          315.3822219828144
+        ]
+      ],
+      "source_overlap": [
+        [
+          1965.902,
+          "roof-e45bcd54"
+        ]
+      ],
+      "entrance": {
+        "point": [
+          -738.82,
+          271.6
+        ],
+        "bearing": 270,
+        "distance": 3.85,
+        "gate": "morse-lobby"
+      },
+      "roof_frame": {
+        "axis": [
+          1,
+          0
+        ],
+        "origin_enu_m": [
+          -723,
+          295
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -24,
+            -40,
+            24,
+            -19
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              9.02,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -24,
+            -19,
+            24,
+            20.6
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              12.52,
+              0.038,
+              0
+            ],
+            [
+              0,
+              0,
+              12.52,
+              -0.037,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -24,
+            20.6,
+            24,
+            40
+          ],
+          "planes": [
+            [
+              0,
+              22,
+              5.45,
+              0,
+              -0.025
+            ]
+          ]
+        }
+      ],
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493518.14928888186%2C4877168.282153052%2C493636.14928888186%2C4877266.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "f65c0c5986afb49e26ffab51293894f895e521ddcc837c309eb487e647b14d69"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493518.14928888186%2C4877168.282153052%2C493636.14928888186%2C4877266.282153052&bboxSR=3740&imageSR=3740&size=944%2C784&format=png&bandIds=0%2C1%2C2",
+          "sha256": "a7aab4807744ace0288df77632bac2d1a54f2eba8714c3fcc42bd9dfca418c14"
+        },
+        "frontages": [
+          "https://bushnell.edu/student-life/campus-safety/",
+          "https://bushnellbeacons.com/sports/2008/5/9/Facilities.aspx?tab=faciltiesanddirections",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=HrH03HM2viB5lO9oIVs2Yw&heading=92"
+        ]
+      }
+    },
+    {
+      "id": "roof-b98e8e3e",
+      "role": "pomajevich",
+      "name": "Pomajevich Hall",
+      "street_address": "1090 Alder St",
+      "city_footprint": 170792,
+      "outline_enu_m": [
+        [
+          -784.4109764313907,
+          299.1509991148487
+        ],
+        [
+          -777.0011348866392,
+          299.107535565272
+        ],
+        [
+          -776.979401654331,
+          302.812406363897
+        ],
+        [
+          -774.8645156020066,
+          302.87552471924573
+        ],
+        [
+          -774.7855523574981,
+          309.0958863692358
+        ],
+        [
+          -768.4331040537218,
+          309.0208652736619
+        ],
+        [
+          -768.5120701843989,
+          302.80060354433954
+        ],
+        [
+          -766.9219855379779,
+          302.7157549774274
+        ],
+        [
+          -766.9734440605971,
+          268.9787053344771
+        ],
+        [
+          -768.0348822134547,
+          269.07933126948774
+        ],
+        [
+          -767.9638736250345,
+          266.7000717734918
+        ],
+        [
+          -775.5059023748036,
+          266.73959004320204
+        ],
+        [
+          -775.4407792026759,
+          268.9906079908833
+        ],
+        [
+          -776.8947322617751,
+          268.94721504021436
+        ],
+        [
+          -776.9578476467286,
+          271.06200134474784
+        ],
+        [
+          -784.5077664927812,
+          271.36589304637164
+        ],
+        [
+          -784.5354113013018,
+          281.15499148052186
+        ],
+        [
+          -776.7328547145589,
+          281.25555281247944
+        ],
+        [
+          -776.8354209344252,
+          284.6922053396702
+        ],
+        [
+          -780.9369516791776,
+          284.7021003495902
+        ],
+        [
+          -780.934943831875,
+          289.06790441833436
+        ],
+        [
+          -784.643859736796,
+          289.221821337007
+        ],
+        [
+          -784.4109764313907,
+          299.1509991148487
+        ]
+      ],
+      "source_overlap": [
+        [
+          484.85,
+          "roof-b98e8e3e"
+        ]
+      ],
+      "entrance": {
+        "point": [
+          -766.94,
+          291.8
+        ],
+        "bearing": 90,
+        "distance": 4.2,
+        "gate": "pomajevich-front"
+      },
+      "roof_frame": {
+        "axis": [
+          1,
+          0
+        ],
+        "origin_enu_m": [
+          -775,
+          287
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -18,
+            -25,
+            18,
+            16
+          ],
+          "planes": [
+            [
+              2.65,
+              0,
+              7.67,
+              0.265,
+              0
+            ],
+            [
+              2.65,
+              0,
+              7.67,
+              -0.286,
+              0
+            ],
+            [
+              0,
+              -11.5,
+              7.67,
+              0,
+              0.27
+            ],
+            [
+              0,
+              10,
+              7.67,
+              0,
+              -0.3
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -18,
+            16,
+            18,
+            29
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              3.25,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -15,
+            -16.1,
+            2.75,
+            -5.7
+          ],
+          "planes": [
+            [
+              0,
+              -10.7,
+              7.59,
+              0,
+              -0.37
+            ],
+            [
+              0,
+              -10.7,
+              7.59,
+              0,
+              0.38
+            ],
+            [
+              -5.5,
+              0,
+              7.59,
+              0.36,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -15,
+            2.02,
+            2.75,
+            12.2
+          ],
+          "planes": [
+            [
+              0,
+              7.1,
+              7.64,
+              0,
+              -0.37
+            ],
+            [
+              0,
+              7.1,
+              7.64,
+              0,
+              0.38
+            ],
+            [
+              -5.6,
+              0,
+              7.64,
+              0.36,
+              0
+            ]
+          ]
+        }
+      ],
+      "evidence": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493518.14928888186%2C4877168.282153052%2C493636.14928888186%2C4877266.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "f65c0c5986afb49e26ffab51293894f895e521ddcc837c309eb487e647b14d69"
+        },
+        "aerial": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493518.14928888186%2C4877168.282153052%2C493636.14928888186%2C4877266.282153052&bboxSR=3740&imageSR=3740&size=944%2C784&format=png&bandIds=0%2C1%2C2",
+          "sha256": "a7aab4807744ace0288df77632bac2d1a54f2eba8714c3fcc42bd9dfca418c14"
+        },
+        "frontages": [
+          "https://bushnell.edu/student-life/campus-safety/",
+          "https://www.google.com/maps/@?api=1&map_action=pano&pano=HrH03HM2viB5lO9oIVs2Yw&heading=270",
+          "https://my.bushnell.edu/m/d/m/c0cc99ee-f9d3-4bdf-8f64-39779bdaa513/CampusMap/Index"
+        ]
+      }
+    }
+  ],
+  "survey_grids": {
+    "2013-2015 NOAA": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "2017 NOAA": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+    "DOGAMI Lane County": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+  },
+  "address_points": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/ArcGIS/rest/services/EugAddress/FeatureServer/0"
+}

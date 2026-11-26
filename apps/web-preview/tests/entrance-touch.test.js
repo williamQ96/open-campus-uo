@@ -53,6 +53,7 @@ test("entrances face outside either winding and honor explicit frontage override
     })[0];
     assert.equal(override.estimated, false);
     assert.ok(override.approach[0] > 5);
+    assert.deepEqual(inferEntrances(b, 100, { a: [] }), []);
   }
 });
 test("shared classroom has a clear entry aisle and blocks desks/walls", () => {

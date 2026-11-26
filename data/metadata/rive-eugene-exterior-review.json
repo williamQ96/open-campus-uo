@@ -1,0 +1,163 @@
+{
+  "id": "roof-513d7fee",
+  "name": "The Rive Eugene",
+  "street_address": "700 E Broadway",
+  "source_batch": "context-background-0-2",
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "city_site_plan": {
+      "url": "https://www.eugene-or.gov/AgendaCenter/ViewFile/Agenda/_10212019-987",
+      "pdf_page": 8,
+      "sheet": "L3.0",
+      "sha256": "96c4d1d304429123196b851aa6eefd5864b95407e95aaa962532e7ee420c2848"
+    },
+    "permit": "https://pdd.eugene-or.gov/LandUse/ApplicationReport?file=ARB-19-0001&pdf=True",
+    "taxlots": {
+      "url": "https://services3.arcgis.com/F7NiRLGNbA2hh7gE/arcgis/rest/services/EugTaxlots/FeatureServer/0/query?f=json&geometry=493396.14928888186%2C4877335.282153052%2C493536.14928888186%2C4877439.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=maptaxlot&returnGeometry=true",
+      "map": "17033224",
+      "lots": [
+        "01800",
+        "01900",
+        "02000",
+        "02100",
+        "02200",
+        "02300",
+        "02400"
+      ],
+      "sha256": "8b13bc16d9452d3238545ee7d8988338e84bf764223bc6ebb7283e1cefa8205c"
+    },
+    "ortho": {
+      "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493396.14928888186%2C4877335.282153052%2C493536.14928888186%2C4877439.282153052&bboxSR=3740&imageSR=3740&size=1260%2C936&format=png&bandIds=0%2C1%2C2",
+      "sha256": "a216008ddcaaea7a2e28d748d338bf0836309f0f1319ba7b3d10d3b2d9d92cab",
+      "bounds": [
+        -933,
+        407,
+        -793,
+        511
+      ]
+    },
+    "architect": "https://theljc.com/projects/identity-eugene",
+    "operator": "https://www.theriveeugene.com/contact/",
+    "height_views": {
+      "rive-northwest": {
+        "target": [
+          -894.9,
+          472.7
+        ],
+        "camera_enu": [
+          -911.0560151367681,
+          479.86831961292773
+        ],
+        "distance": 17.67488702007924,
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=5_67uA2fBfcrBhTElOfTAA&heading=114.96",
+        "pano_date": "2024-06"
+      },
+      "rive-broadway": {
+        "target": [
+          -866,
+          470.3
+        ],
+        "camera_enu": [
+          -866.5979802338406,
+          495.4558650450781
+        ],
+        "distance": 25.162971337388708,
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HiIr6PL6477U0dhAENbeHA&heading=176.54",
+        "pano_date": "2024-07"
+      },
+      "rive-southwest": {
+        "target": [
+          -895.2,
+          438.0
+        ],
+        "camera_enu": [
+          -905.5561015304411,
+          432.48137428611517
+        ],
+        "distance": 11.734737691092803,
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=H5laNaQWYhxdFwWxwJ5SVw&heading=84.04",
+        "pano_date": "2024-06"
+      }
+    }
+  },
+  "registered_footprint_enu_m": [
+    [
+      -895.48,
+      473.57
+    ],
+    [
+      -895.63,
+      422.1
+    ],
+    [
+      -864.14,
+      422.02
+    ],
+    [
+      -864.08,
+      435.18
+    ],
+    [
+      -837.35,
+      435.08
+    ],
+    [
+      -837.24,
+      468.94
+    ],
+    [
+      -855.9,
+      470.93
+    ],
+    [
+      -872.6,
+      472.4
+    ],
+    [
+      -886.22,
+      473.3
+    ]
+  ],
+  "roof_frame_y_m": {
+    "podium_top": 5.28,
+    "ninth_terrace": 26.42,
+    "south_roof": 36.62,
+    "main_roof": 40.4
+  },
+  "north_west_recess_enu_m": [
+    -896.2,
+    466.2,
+    -892.7,
+    471.72
+  ],
+  "door_enu_m": [
+    -892.7,
+    469.16
+  ],
+  "upper_court_enu_m": [
+    -879.0,
+    447.98,
+    -846.4,
+    455.12
+  ],
+  "nine_terrace_enu_m": [
+    -896.0,
+    421.8,
+    -864.0,
+    437.98
+  ],
+  "south_roof_enu_m": [
+    -878.98,
+    435.0,
+    -837.0,
+    449.0
+  ],
+  "roof_pool_enu_m": [
+    -871.25,
+    457.25,
+    -856.45,
+    462.2
+  ],
+  "ground_plan_scope": "Wall and entrance setback dimensioned from the registered municipal ground plan and checked against dated street views. Stepped upper geometry estimated from displaced orthophoto roof lines and architect elevations."
+}

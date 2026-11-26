@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 test("Ford/Arena review swaps both footprints and keeps scene ground and approaches aligned", async ({
   page,
@@ -105,7 +106,7 @@ test("Ford/Arena review swaps both footprints and keeps scene ground and approac
     expect(positions[gate][0]).toBeCloseTo(x, 0);
     expect(positions[gate][1]).toBeCloseTo(z, 0);
   }
-  expect((await state()).buildings).toBe(519);
+  expect((await state()).buildings).toBe(DEFAULT_SELECTABLE_BUILDINGS);
 
   await page.locator("#directions-open").click();
   for (const [endpoint, name, id] of [
@@ -170,7 +171,7 @@ test("a late site asset failure restores the prior land, buildings, and doors to
     (route) => route.fulfill({ status: 200, body: "stale-geometry" }),
     { times: 1 },
   );
-  await page.goto("/");
+  await page.goto("/?exterior-review=landcover-baseline");
   await page.waitForFunction(() => window.__campus?.getState().ready);
   const prior = await page.evaluate(() => ({
     gates: __campus

@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const id = "roof-944fcd46";
 
@@ -31,7 +32,7 @@ test("the Miller model keeps its ID, clears the west landing and closes the nort
   const previous = await page.evaluate(inspect, id);
   await ready(page);
   const actual = await page.evaluate(inspect, id);
-  expect(actual.buildings).toBe(519);
+  expect(actual.buildings).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(actual.others).toEqual(previous.others);
   expect(actual.entry).toMatchObject({
     id,

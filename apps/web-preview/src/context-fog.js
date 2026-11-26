@@ -94,7 +94,7 @@ export function createContextFog(config) {
       enabled = !!on;
       uniforms.contextStrength.value = enabled ? config.strength : 0;
     },
-    apply(material) {
+    apply(material, weight = 1) {
       if (applied.has(material)) return;
       const record = { baked: false };
       applied.set(material, record);
@@ -104,6 +104,7 @@ export function createContextFog(config) {
       material.onBeforeCompile = function (shader, renderer) {
         previous.call(this, shader, renderer);
         Object.assign(shader.uniforms, uniforms);
+        shader.uniforms.contextMaterialWeight = { value: weight };
         shader.vertexShader = shader.vertexShader
           .replace(
             "#include <common>",
@@ -122,12 +123,12 @@ export function createContextFog(config) {
         shader.fragmentShader = shader.fragmentShader
           .replace(
             "#include <common>",
-            "#include <common>\nvarying float vContextHaze;\nuniform float contextDesaturation;\nuniform vec3 contextTint;",
+            "#include <common>\nvarying float vContextHaze;\nuniform float contextDesaturation, contextMaterialWeight;\nuniform vec3 contextTint;",
           )
           .replace(
             "#include <tonemapping_fragment>",
             `
-          float contextHaze=vContextHaze;
+          float contextHaze=vContextHaze*contextMaterialWeight;
           float contextLuma=dot(gl_FragColor.rgb,vec3(0.2126,0.7152,0.0722));
           gl_FragColor.rgb=mix(gl_FragColor.rgb,vec3(contextLuma),contextHaze*contextDesaturation);
           gl_FragColor.rgb=mix(gl_FragColor.rgb,contextTint,contextHaze);

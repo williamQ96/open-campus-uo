@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_SELECTABLE_BUILDINGS } from "./exterior-counts.js";
 
 const id = "roof-7b7893d6";
 
@@ -31,7 +32,7 @@ test("Allen keeps its identity and the three modeled approaches clear", async ({
   const before = await page.evaluate(inspect, id);
   await ready(page);
   const after = await page.evaluate(inspect, id);
-  expect(after.buildings).toBe(519);
+  expect(after.buildings).toBe(DEFAULT_SELECTABLE_BUILDINGS);
   expect(after.neighbors).toEqual(before.neighbors);
   expect(after.collision).toEqual([true, false, false, false, true, true]);
   expect(after.entries.map((e) => e.gate).sort()).toEqual([

@@ -244,7 +244,18 @@ def roof_cover(parts, covers, field, light):
     return supports
 
 
-def check_routes(plans, supports, entries, baselines, manifest, graph, config, ids):
+def check_routes(
+    plans,
+    supports,
+    entries,
+    baselines,
+    manifest,
+    graph,
+    config,
+    ids,
+    *,
+    excluded_edges=(),
+):
     combined = shapely.union_all([*plans, *supports])
     for building in manifest["buildings"]:
         if building["id"] not in ids:
@@ -253,7 +264,7 @@ def check_routes(plans, supports, entries, baselines, manifest, graph, config, i
     scheme = json.loads((SCENE / config["kalapuya_site"]["url"]).read_bytes())[
         "corridor_patch"
     ]
-    remove = set(scheme["removed_edges"])
+    remove = set(scheme["removed_edges"]).union(excluded_edges)
     nodes = graph["nodes_enu_m"]
     edges = [
         LineString([nodes[a], nodes[b]])

@@ -1,0 +1,568 @@
+{
+  "study_phase": "2024 orthophoto and building elevations, with identities and retained bridge checked in 2025–2026 publications",
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "surface_sha256": {
+    "campus-surface-2017-20261124/campus-2017-usace-surface.npz": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8",
+    "campus-surface-20261123/campus-2013-2015-surface-screen.npz": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca",
+    "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+  },
+  "models": [
+    {
+      "id": "roof-62a81026",
+      "kind": "academic",
+      "name": "Bushnell University · 770 E 11th Ave",
+      "street_address": "770 E 11th Ave",
+      "outline_enu_m": [
+        [
+          -776.86,
+          226.4
+        ],
+        [
+          -776.86,
+          234.5
+        ],
+        [
+          -761.28,
+          234.5
+        ],
+        [
+          -761.28,
+          222.55
+        ],
+        [
+          -770.08,
+          222.55
+        ],
+        [
+          -770.08,
+          204.35
+        ],
+        [
+          -761.28,
+          204.35
+        ],
+        [
+          -761.28,
+          192.48
+        ],
+        [
+          -786.42,
+          192.48
+        ],
+        [
+          -786.42,
+          192.1
+        ],
+        [
+          -828.0,
+          192.1
+        ],
+        [
+          -828.0,
+          235.8
+        ],
+        [
+          -786.42,
+          235.8
+        ],
+        [
+          -786.42,
+          226.4
+        ],
+        [
+          -776.86,
+          226.4
+        ]
+      ],
+      "entrance": {
+        "near_enu_m": [
+          -801.8,
+          192.13
+        ],
+        "outward_degrees": 180,
+        "landing_m": 2.25,
+        "width_m": 1.96,
+        "gate": "south-entry",
+        "threshold_above_grade_m": 0.1,
+        "glazed_double": true,
+        "landing_only": false
+      },
+      "state_feature": "20-1161183",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493445.14928888186%2C4877101.282153052%2C493585.14928888186%2C4877176.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=840%2C450",
+        "enu": [
+          -884,
+          173,
+          -744,
+          248
+        ],
+        "sha256": "366b5ca1d9735da1ca582e896758a9bd921ec9d8c4d57fbfcf5265ea9e9849b7"
+      },
+      "references": [
+        "https://bushnell.edu/news/the-register-guard-see-inside-bushnells-university-district-campus-renovation/",
+        "https://bushnell.edu/wp-content/uploads/2026/04/bushnell-university-campus-aerial-view-academic-center-health-science-center.jpg",
+        "https://res.cloudinary.com/jll-global-cmg/image/upload/v1740167326/Prod/DealX/Doc/be8e7d68-eba7-4679-9ebc-a4d1c17d3f04/University_District_Flyer.pdf"
+      ],
+      "main_enu_m": [
+        [
+          -828.0,
+          192.1
+        ],
+        [
+          -786.42,
+          192.1
+        ],
+        [
+          -786.42,
+          235.8
+        ],
+        [
+          -828.0,
+          235.8
+        ]
+      ],
+      "annex_enu_m": [
+        [
+          -786.44,
+          192.48
+        ],
+        [
+          -761.28,
+          192.48
+        ],
+        [
+          -761.28,
+          204.35
+        ],
+        [
+          -770.08,
+          204.35
+        ],
+        [
+          -770.08,
+          222.55
+        ],
+        [
+          -761.28,
+          222.55
+        ],
+        [
+          -761.28,
+          234.5
+        ],
+        [
+          -776.86,
+          234.5
+        ],
+        [
+          -776.86,
+          226.4
+        ],
+        [
+          -786.44,
+          226.4
+        ]
+      ],
+      "main_roof_z_m": 15.15,
+      "annex_roof_z_m": 3.02,
+      "main_equipment": [
+        [
+          -826.6,
+          192.15,
+          -812.6,
+          201.2,
+          22.23
+        ],
+        [
+          -810.68,
+          196.25,
+          -807.88,
+          205.0,
+          17.48
+        ],
+        [
+          -799.8,
+          195.8,
+          -795.8,
+          207.25,
+          17.64
+        ],
+        [
+          -803.2,
+          221.4,
+          -799.7,
+          226.4,
+          17.12
+        ],
+        [
+          -812.2,
+          219.88,
+          -809.4,
+          226.8,
+          17.12
+        ],
+        [
+          -818.0,
+          227.3,
+          -815.56,
+          231.07,
+          16.64
+        ]
+      ],
+      "annex_equipment": [
+        [
+          -780.88,
+          215.21,
+          -773.53,
+          220.03,
+          6.86
+        ]
+      ],
+      "bridge": {
+        "neighbor_id": "roof-ae986c58",
+        "bounds_enu_m": [
+          -862.4,
+          187.78,
+          -801.6,
+          191.52
+        ],
+        "bottom_z_m": 7.34,
+        "top_z_m": 10.51,
+        "columns_enu_m": [
+          [
+            -853.45,
+            190.44
+          ],
+          [
+            -851.35,
+            188.83
+          ],
+          [
+            -835.9,
+            190.4
+          ],
+          [
+            -815.65,
+            188.78
+          ]
+        ],
+        "entry_return_enu_m": [
+          -806.2,
+          191.1,
+          -802.24,
+          192.28
+        ]
+      }
+    },
+    {
+      "id": "roof-19858777",
+      "kind": "deck",
+      "name": "633 E 12th Avenue Parking Garage",
+      "street_address": "633 E 12th Ave",
+      "outline_enu_m": [
+        [
+          -1017.9,
+          144.15
+        ],
+        [
+          -1017.8,
+          172.56
+        ],
+        [
+          -1013.6,
+          172.56
+        ],
+        [
+          -1013.6,
+          177.05
+        ],
+        [
+          -978.2,
+          177.1
+        ],
+        [
+          -978.2,
+          173.7
+        ],
+        [
+          -975.15,
+          173.7
+        ],
+        [
+          -975.1,
+          143.96
+        ],
+        [
+          -980.2,
+          143.96
+        ],
+        [
+          -980.2,
+          140.08
+        ],
+        [
+          -1012.5,
+          140.0
+        ],
+        [
+          -1012.5,
+          144.15
+        ]
+      ],
+      "entrance": {
+        "near_enu_m": [
+          -985.0,
+          140.0
+        ],
+        "outward_degrees": 180,
+        "landing_m": 1.28,
+        "width_m": 3.4,
+        "gate": "street-approach",
+        "threshold_above_grade_m": 0.1,
+        "glazed_double": false,
+        "landing_only": true
+      },
+      "state_feature": "20-1074292",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493303.14928888186%2C4877056.282153052%2C493369.14928888186%2C4877116.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=264%2C240",
+        "size": [
+          264,
+          240
+        ],
+        "sha256": "01dbd2e0c155aaec6b7243f40de1faeb8ed6af1f62a6e2941364a05e5f9ac667"
+      },
+      "references": [
+        "https://invest.jll.com/us/en/listings/office/university-district",
+        "https://res.cloudinary.com/jll-global-cmg/image/upload/v1741561433/Prod/DealX/Img/d6e6a981-9cf0-4962-80a0-881ae146a338.jpg",
+        "https://res.cloudinary.com/jll-global-cmg/image/upload/v1740167326/Prod/DealX/Doc/be8e7d68-eba7-4679-9ebc-a4d1c17d3f04/University_District_Flyer.pdf"
+      ],
+      "deck_sections": [
+        {
+          "bounds_enu_m": [
+            -1021,
+            155.69,
+            -972,
+            180
+          ],
+          "surface_z_m": 10.14,
+          "slope": [
+            -0.045,
+            0.004
+          ]
+        },
+        {
+          "bounds_enu_m": [
+            -1021,
+            138,
+            -972,
+            155.7
+          ],
+          "surface_z_m": 8.88,
+          "slope": [
+            0.039,
+            -0.01
+          ]
+        }
+      ],
+      "floor_offsets_m": [
+        0,
+        3.23,
+        6.46,
+        9.69
+      ],
+      "bay_m": 6.05,
+      "level_step_m": 3.23,
+      "cores": [
+        {
+          "bounds_enu_m": [
+            -978.56,
+            168.64,
+            -975.09,
+            174.0
+          ],
+          "top_z_m": 13.54
+        },
+        {
+          "bounds_enu_m": [
+            -1017.85,
+            159,
+            -1014.76,
+            167.15
+          ],
+          "top_z_m": 10.48
+        }
+      ],
+      "edge_pad_enu_m": [
+        -1021,
+        137.8,
+        -999.8,
+        180.0
+      ]
+    },
+    {
+      "id": "roof-bdbcb4fc",
+      "kind": "deck",
+      "name": "666 E 13th Avenue Parking Garage & Retail",
+      "street_address": "666 E 13th Ave",
+      "outline_enu_m": [
+        [
+          -979.25,
+          -45.13
+        ],
+        [
+          -979.25,
+          -17.62
+        ],
+        [
+          -974.56,
+          -17.62
+        ],
+        [
+          -974.56,
+          -12.88
+        ],
+        [
+          -932.66,
+          -12.88
+        ],
+        [
+          -932.66,
+          -16.85
+        ],
+        [
+          -927.18,
+          -16.85
+        ],
+        [
+          -927.18,
+          -29.4
+        ],
+        [
+          -932.78,
+          -29.4
+        ],
+        [
+          -932.78,
+          -36.29
+        ],
+        [
+          -927.18,
+          -36.29
+        ],
+        [
+          -927.18,
+          -45.37
+        ],
+        [
+          -933.62,
+          -45.37
+        ],
+        [
+          -933.62,
+          -50.51
+        ],
+        [
+          -976.72,
+          -50.51
+        ],
+        [
+          -976.72,
+          -45.13
+        ]
+      ],
+      "entrance": {
+        "near_enu_m": [
+          -950.9,
+          -12.88
+        ],
+        "outward_degrees": 0,
+        "landing_m": 1.2,
+        "width_m": 1.74,
+        "gate": "retail-entry",
+        "threshold_above_grade_m": 0.1,
+        "glazed_double": true,
+        "landing_only": false
+      },
+      "state_feature": "20-1073843",
+      "aerial": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493341.14928888186%2C4876867.282153052%2C493420.14928888186%2C4876926.282153052&bboxSR=3740&imageSR=3740&format=png&bandIds=0%2C1%2C2&size=316%2C236",
+        "size": [
+          316,
+          236
+        ],
+        "sha256": "d9e99dab4318d69671873a1eb35959c730dc37448c0c9be0a3988b5c20ca8cfa"
+      },
+      "references": [
+        "https://res.cloudinary.com/jll-global-cmg/image/upload/v1740167326/Prod/DealX/Doc/be8e7d68-eba7-4679-9ebc-a4d1c17d3f04/University_District_Flyer.pdf",
+        "https://www.landmarkproperties.com/the-mark-eugene-breaks-ground-donates-10k-to-local-nonprofit/"
+      ],
+      "deck_sections": [
+        {
+          "bounds_enu_m": [
+            -984,
+            -31.28,
+            -925,
+            -11
+          ],
+          "surface_z_m": 13.04,
+          "slope": [
+            -0.047,
+            0.002
+          ]
+        },
+        {
+          "bounds_enu_m": [
+            -984,
+            -52,
+            -925,
+            -31.22
+          ],
+          "surface_z_m": 14.18,
+          "slope": [
+            0.035,
+            -0.01
+          ]
+        }
+      ],
+      "floor_offsets_m": [
+        0,
+        2.78,
+        5.56,
+        8.34,
+        11.12
+      ],
+      "bay_m": 5.5,
+      "level_step_m": 2.78,
+      "cores": [
+        {
+          "bounds_enu_m": [
+            -935.2,
+            -17.47,
+            -929.2,
+            -13.0
+          ],
+          "top_z_m": 16.9
+        },
+        {
+          "bounds_enu_m": [
+            -979.25,
+            -24.1,
+            -976.8,
+            -18.2
+          ],
+          "top_z_m": 14.24
+        },
+        {
+          "bounds_enu_m": [
+            -936.0,
+            -49.9,
+            -933.66,
+            -45.53
+          ],
+          "top_z_m": 15.52
+        }
+      ]
+    }
+  ]
+}

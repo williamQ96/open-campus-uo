@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: Apache-2.0
 import * as THREE from "three";
-import { createCampusProp, roadVehicleCollider } from "./props.js";
+import {
+  createCampusProp,
+  cycleCollider,
+  roadVehicleCollider,
+} from "./props.js";
 import { overlaps, playerBody } from "./collision.js";
 import {
   DENSITY_COUNTS,
@@ -46,7 +50,7 @@ export function createCampusLife({
     detourWorldChecks = 0,
     lastWorldChecks = 0;
   function makeVisual(kind, p) {
-    if (kind === "walk") return studentFactory(p);
+    if (kind === "walk") return studentFactory(p, { plantFeet: true });
     if (kind === "squirrel") return squirrelFactory(p);
     const root = createCampusProp(
       kind === "car" || kind === "prop" ? p.vehicle : kind,
@@ -75,11 +79,7 @@ export function createCampusLife({
                 height: p.heightM,
                 halfLength: 0,
               }
-            : {
-                radius: 0.33,
-                height: 2.15,
-                halfLength: kind === "bicycle" ? 0.65 : 0.45,
-              };
+            : cycleCollider(kind, p.rider);
     return Object.fromEntries(
       Object.entries(s).map(([k, v]) => [k, v * (p.scale || 1)]),
     );
@@ -194,6 +194,7 @@ export function createCampusLife({
     for (const e of entities.values()) {
       e.moving = false;
       e.distanceMoved = 0;
+      e.climbRise = 0;
     }
     for (let j = 0; j < count; j++) {
       clock += step;
@@ -275,6 +276,7 @@ export function createCampusLife({
           candidate.z - e.body.z,
           candidate.y - e.body.y,
         );
+        if (e.path.surface === "tree") e.climbRise += candidate.y - e.body.y;
         if (e.detour) {
           e.movementMode = e.detour.points.length === 1 ? "rejoin" : "detour";
           const target = e.detour.points[0];
@@ -303,7 +305,12 @@ export function createCampusLife({
         enabled: e.moving,
         running: e.properties.gait === "run",
       });
-      e.animate?.(clock, e.moving, { ...gait, speed: e.properties.speedMps });
+      e.animate?.(clock, e.moving, {
+        ...gait,
+        speed: e.properties.speedMps,
+        distanceM: e.distanceMoved,
+        climbRiseM: e.climbRise,
+      });
     }
   }
   function inspect(id) {

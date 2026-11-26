@@ -1,0 +1,436 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "registered": {
+      "city": {
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494566.14928888186%2C4877168.282153052%2C494685.14928888186%2C4877271.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "eba0c93d9a4d052b82bbbd4ebb4bc95c8cb7ba3ff8f332d4ccb70b15c0c95218"
+      },
+      "ortho": {
+        "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494566.14928888186%2C4877168.282153052%2C494685.14928888186%2C4877271.282153052&bboxSR=3740&imageSR=3740&size=1428%2C1236&format=png&bandIds=0%2C1%2C2",
+        "sha256": "b7bae38f55386307dabc95d1a9cde2eb04f7e1a789687d370a957592ab263caf"
+      }
+    },
+    "state_feature": "20-1072754",
+    "historical_surfaces": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "campus_landscape_survey": "https://cpfm.uoregon.edu/sites/default/files/03_north_campus_riverfront_research_park-rfs.pdf",
+    "broker_exterior": "https://www.loopnet.com/Listing/1800-1850-Millrace-Dr-Eugene-OR/24360431/",
+    "street_views": [
+      "https://www.google.com/maps/@?api=1&map_action=pano&pano=9SLIhM1hvATTlXjynt7ZPA&heading=161.47",
+      "https://www.google.com/maps/@?api=1&map_action=pano&pano=vu3LK5GotxKU7r7X9fHH4Q&heading=220.67",
+      "https://www.google.com/maps/@?api=1&map_action=pano&pano=IjST6u0VwgIPCN0wluplFQ&heading=141.38"
+    ]
+  },
+  "models": [
+    {
+      "id": "roof-8bd064b7",
+      "name": "1800 Millrace Drive / 1850 Millrace Drive",
+      "street_address": "1800 and 1850 Millrace Dr",
+      "municipal_outline": 169881,
+      "outline_enu_m": [
+        [
+          267.87755,
+          320.81004
+        ],
+        [
+          273.73903,
+          320.59248
+        ],
+        [
+          277.37588,
+          320.45752
+        ],
+        [
+          277.28771,
+          318.08081
+        ],
+        [
+          297.40006,
+          317.33427
+        ],
+        [
+          296.97602,
+          305.90994
+        ],
+        [
+          334.35726,
+          304.52249
+        ],
+        [
+          332.85537,
+          264.06023
+        ],
+        [
+          315.74294,
+          264.6954
+        ],
+        [
+          311.2335,
+          264.86272
+        ],
+        [
+          288.78619,
+          265.69597
+        ],
+        [
+          288.62493,
+          261.35222
+        ],
+        [
+          268.76047,
+          262.08956
+        ],
+        [
+          268.92173,
+          266.43322
+        ],
+        [
+          262.64077,
+          266.68626
+        ],
+        [
+          263.14501,
+          280.27186
+        ],
+        [
+          263.88117,
+          300.10568
+        ],
+        [
+          256.5436,
+          300.37799
+        ],
+        [
+          257.22634,
+          318.77147
+        ],
+        [
+          263.0696,
+          318.60857
+        ],
+        [
+          263.15776,
+          320.98528
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          263.88,
+          300.11
+        ],
+        "axis": [
+          0.9993,
+          -0.037
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -20,
+            0.19,
+            32.86,
+            30
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.77,
+              0,
+              -0.0417
+            ]
+          ],
+          "roof_color": [
+            191,
+            188,
+            174
+          ]
+        },
+        {
+          "bounds_m": [
+            -20,
+            -33.47,
+            48.65,
+            0.19
+          ],
+          "planes": [
+            [
+              0,
+              -11.2,
+              4.85,
+              0,
+              0.0418
+            ],
+            [
+              0,
+              -11.2,
+              4.85,
+              0,
+              -0.0417
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            32.86,
+            0.19,
+            48.65,
+            30
+          ],
+          "planes": [
+            [
+              0,
+              -11.2,
+              4.85,
+              0,
+              -0.0417
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            48.65,
+            -33.47,
+            80,
+            30
+          ],
+          "planes": [
+            [
+              0,
+              -13.17,
+              6.7,
+              0,
+              0.0432
+            ],
+            [
+              0,
+              -13.17,
+              6.7,
+              0,
+              -0.0432
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -20,
+            -45,
+            80,
+            -33.47
+          ],
+          "planes": [
+            [
+              0,
+              -36,
+              2.65,
+              0,
+              0.01
+            ]
+          ],
+          "roof_color": [
+            192,
+            190,
+            177
+          ]
+        }
+      ],
+      "wall_color": [
+        167,
+        169,
+        160
+      ],
+      "roof_color": [
+        206,
+        201,
+        186
+      ],
+      "trim_color": [
+        143,
+        149,
+        145
+      ],
+      "front": {
+        "bearing": 2.12
+      },
+      "entry": {
+        "gate": "millrace-research-north-entrance",
+        "near": [
+          323.7,
+          304.82
+        ],
+        "approach_m": 3.3,
+        "rise_m": 0.07
+      },
+      "porch": null,
+      "equipment": [
+        [
+          6.5,
+          6.0,
+          2.05,
+          1.24,
+          0.48
+        ],
+        [
+          11.4,
+          6.0,
+          1.51,
+          1.3,
+          0.53
+        ],
+        [
+          20.0,
+          11.6,
+          1.32,
+          1.15,
+          0.47
+        ],
+        [
+          9.4,
+          -19.41,
+          3.87,
+          2.65,
+          1.55
+        ],
+        [
+          21.0,
+          -20.3,
+          3.0,
+          2.42,
+          1.26
+        ],
+        [
+          26.1,
+          -10.24,
+          2.82,
+          1.65,
+          0.71
+        ],
+        [
+          35.5,
+          -15.1,
+          2.1,
+          1.3,
+          0.8
+        ],
+        [
+          35.65,
+          -19.12,
+          2.54,
+          1.4,
+          0.65
+        ],
+        [
+          35.82,
+          -22.55,
+          2.46,
+          1.39,
+          0.89
+        ],
+        [
+          53.7,
+          -7.0,
+          1.6,
+          1.4,
+          0.67
+        ],
+        [
+          53.7,
+          -10.15,
+          1.47,
+          1.42,
+          0.75
+        ],
+        [
+          53.7,
+          -13.0,
+          1.65,
+          1.42,
+          0.81
+        ],
+        [
+          53.7,
+          -16.0,
+          1.77,
+          1.36,
+          0.83
+        ],
+        [
+          53.7,
+          -19.0,
+          1.53,
+          1.48,
+          0.84
+        ],
+        [
+          53.7,
+          -22.4,
+          1.43,
+          1.47,
+          0.85
+        ],
+        [
+          63.75,
+          -4.37,
+          1.74,
+          1.46,
+          0.55
+        ],
+        [
+          63.75,
+          -8.8,
+          1.52,
+          1.48,
+          0.71
+        ],
+        [
+          63.75,
+          -11.85,
+          1.46,
+          1.47,
+          0.83
+        ],
+        [
+          63.75,
+          -14.93,
+          1.57,
+          1.63,
+          0.91
+        ],
+        [
+          63.75,
+          -18.44,
+          1.57,
+          1.59,
+          0.97
+        ],
+        [
+          63.75,
+          -22.77,
+          1.65,
+          1.59,
+          0.87
+        ]
+      ]
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-8bd064b7",
+      "target": "context-background-2-2"
+    }
+  ]
+}

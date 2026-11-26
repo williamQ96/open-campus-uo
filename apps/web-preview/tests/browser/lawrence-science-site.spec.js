@@ -57,8 +57,7 @@ test("science halls have registered identities, an open courtyard, and a walkabl
   const before = await page.evaluate(inspect, inspectArgs);
   await ready(page);
   const after = await page.evaluate(inspect, inspectArgs);
-  expect(after.count).toBe(524);
-  expect(before.count).toBe(after.count - 1);
+  expect(after.count).toBe(before.count + 1);
   expect(after.names).toEqual(hallNames);
   expect(after.neighbors).toEqual(before.neighbors);
   expect(after.entries.some(({ id }) => id === "roof-21450e38")).toBe(false);

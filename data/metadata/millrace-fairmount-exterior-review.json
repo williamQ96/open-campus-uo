@@ -1,0 +1,916 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "sources": {
+    "historical_grids": {
+      "2013-15": {
+        "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+        "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+      },
+      "2017": {
+        "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      "DOGAMI": {
+        "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    },
+    "alpha_tau_omega": "https://uoifc.squarespace.com/alpha-tau-omega",
+    "orchard_listing": "https://www.redfin.com/OR/Eugene/1956-E-15th-Ave-97403/home/26197095",
+    "bungalow_listing": "https://www.homes.com/property/1871-e-19th-ave-eugene-or/qf0mn72e5w6pp/"
+  },
+  "models": [
+    {
+      "id": "roof-4bcb9296",
+      "role": "chapter",
+      "name": "Alpha Tau Omega Chapter House",
+      "street_address": "1000 Alder St",
+      "city_footprint": 170790,
+      "outline_enu_m": [
+        [
+          -807.852698,
+          385.797259
+        ],
+        [
+          -778.0013319,
+          385.358722
+        ],
+        [
+          -778.7239454,
+          369.9749519
+        ],
+        [
+          -773.2590255,
+          369.9903465
+        ],
+        [
+          -772.4904071,
+          349.1856018
+        ],
+        [
+          -789.6363475,
+          349.560114
+        ],
+        [
+          -789.5041302,
+          364.9263646
+        ],
+        [
+          -807.8351614,
+          365.4132137
+        ],
+        [
+          -807.852698,
+          385.797259
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -790,
+          370
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -23,
+            0.65,
+            18,
+            17
+          ],
+          "planes": [
+            [
+              0,
+              6.1,
+              6.12,
+              0,
+              0.08
+            ],
+            [
+              0,
+              6.1,
+              6.12,
+              0,
+              -0.08
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -0.45,
+            -1.95,
+            18,
+            0.65
+          ],
+          "planes": [
+            [
+              0,
+              6.1,
+              6.12,
+              0,
+              0.08
+            ],
+            [
+              0,
+              6.1,
+              6.12,
+              0,
+              -0.08
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -23,
+            -6,
+            0.12,
+            0.65
+          ],
+          "planes": [
+            [
+              0,
+              -4,
+              1.77,
+              0,
+              0.075
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -1,
+            -23,
+            20,
+            -1.95
+          ],
+          "planes": [
+            [
+              7.15,
+              0,
+              2.24,
+              0.104,
+              0
+            ],
+            [
+              7.15,
+              0,
+              2.24,
+              -0.104,
+              0
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "millrace-east-entry",
+        "near": [
+          -775.8,
+          365.64
+        ],
+        "bearing": 90,
+        "approach_distance_m": 3.32
+      },
+      "street_views": [
+        {
+          "date": "2024-06",
+          "id": "7-1SeDYtv7ICmgfk3nfkXw",
+          "camera_enu": [
+            -758.4449551678263,
+            370.6870291894302
+          ],
+          "bearing": 264.24,
+          "distance": 36.7,
+          "file": "broadway-east-2024-06.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=7-1SeDYtv7ICmgfk3nfkXw&heading=264.24"
+        },
+        {
+          "date": "2020-11",
+          "id": "sMw3qEnswmi8we985wcmxQ",
+          "camera_enu": [
+            -765.139927763259,
+            390.1577538587153
+          ],
+          "bearing": 232.2,
+          "distance": 37.8,
+          "file": "broadway-northeast-2020-11.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=sMw3qEnswmi8we985wcmxQ&heading=232.2"
+        }
+      ],
+      "footprint_sources": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493501.14928888186%2C4877256.282153052%2C493581.14928888186%2C4877330.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "5ed78e6ac95859c31b750c68bddbd8d7dbd4d930be65572ece446e76ca545f93"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=493501.14928888186%2C4877256.282153052%2C493581.14928888186%2C4877330.282153052&bboxSR=3740&imageSR=3740&size=960%2C888&format=png&bandIds=0%2C1%2C2",
+          "sha256": "95de6e0ce561d31c650e1f90a50926ec7e4cd7cc16becede889d20e405b855a0"
+        }
+      }
+    },
+    {
+      "id": "roof-01c76e05",
+      "role": "orchard",
+      "name": "1956 E 15th Avenue",
+      "street_address": "1956 E 15th Ave",
+      "city_footprint": 170824,
+      "outline_enu_m": [
+        [
+          551.2642561,
+          -275.4230119
+        ],
+        [
+          551.2771032,
+          -260.8536293
+        ],
+        [
+          554.045269,
+          -260.8560078
+        ],
+        [
+          554.0469382,
+          -258.9619931
+        ],
+        [
+          557.9078708,
+          -258.9653556
+        ],
+        [
+          557.9062016,
+          -260.8593703
+        ],
+        [
+          560.310148,
+          -260.8615196
+        ],
+        [
+          560.302816,
+          -269.1661229
+        ],
+        [
+          568.5346131,
+          -269.1733278
+        ],
+        [
+          568.5291015,
+          -275.438207
+        ],
+        [
+          560.2973043,
+          -275.4310021
+        ],
+        [
+          559.0589279,
+          -275.429864
+        ],
+        [
+          559.0583967,
+          -276.0855023
+        ],
+        [
+          552.4292951,
+          -276.0796615
+        ],
+        [
+          552.4298293,
+          -275.424123
+        ],
+        [
+          551.2642561,
+          -275.4230119
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          556,
+          -270
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -6,
+            -1.1,
+            5,
+            9.2
+          ],
+          "planes": [
+            [
+              0,
+              4.83,
+              11.43,
+              0,
+              0.61
+            ],
+            [
+              0,
+              4.83,
+              11.43,
+              0,
+              -0.61
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -6,
+            -7,
+            5,
+            2.59
+          ],
+          "planes": [
+            [
+              -1.05,
+              0,
+              10.53,
+              0.61,
+              0
+            ],
+            [
+              -1.05,
+              0,
+              10.53,
+              -0.61,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -1.8,
+            -6.4,
+            14,
+            1.05
+          ],
+          "planes": [
+            [
+              0,
+              -1.61,
+              10.25,
+              0,
+              0.52
+            ],
+            [
+              0,
+              -1.61,
+              10.25,
+              0,
+              -0.52
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -2.18,
+            8.7,
+            2.2,
+            12
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              10.0,
+              0.56,
+              0
+            ],
+            [
+              0,
+              0,
+              10.0,
+              -0.56,
+              0
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "orchard-north-porch",
+        "near": [
+          556,
+          -260.15
+        ],
+        "bearing": 0,
+        "approach_distance_m": 2.91
+      },
+      "street_views": [
+        {
+          "date": "2024-07",
+          "id": "_USKaGROeIu1Mk-YlFM6qw",
+          "camera_enu": [
+            557.2818620061153,
+            -244.19296130537987
+          ],
+          "bearing": 180.78,
+          "distance": 20.8,
+          "file": "orchard-front-north-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=_USKaGROeIu1Mk-YlFM6qw&heading=180.78"
+        },
+        {
+          "date": "2020-11",
+          "id": "bfI2ODb63U91EDvbbK1KXQ",
+          "camera_enu": [
+            547.4238860081532,
+            -265.2764263553545
+          ],
+          "bearing": 101.36,
+          "distance": 8.7,
+          "file": "orchard-front-west-2020-11.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=bfI2ODb63U91EDvbbK1KXQ&heading=101.36"
+        }
+      ],
+      "footprint_sources": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494864.14928888186%2C4876634.282153052%2C494913.14928888186%2C4876686.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "4c1cbf4e8a01c27caaa925873c05ff957e6d6566b2e993a7e8193d2ec2fe3ee4"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494864.14928888186%2C4876634.282153052%2C494913.14928888186%2C4876686.282153052&bboxSR=3740&imageSR=3740&size=588%2C624&format=png&bandIds=0%2C1%2C2",
+          "sha256": "3de87e42a67b45dadb187a36d6c666faa8b324c5660e655554951c073395b8f7"
+        }
+      }
+    },
+    {
+      "id": "roof-e7592432",
+      "role": "bungalow",
+      "name": "1871 E 19th Avenue",
+      "street_address": "1871 E 19th Ave",
+      "city_footprint": 170504,
+      "outline_enu_m": [
+        [
+          428.8750232,
+          -703.7291602
+        ],
+        [
+          428.8118832,
+          -715.0959463
+        ],
+        [
+          425.0145173,
+          -715.0747848
+        ],
+        [
+          425.0009755,
+          -717.5292757
+        ],
+        [
+          419.7759238,
+          -717.5002257
+        ],
+        [
+          419.8212863,
+          -709.3606841
+        ],
+        [
+          418.7384665,
+          -709.3546026
+        ],
+        [
+          418.7576109,
+          -705.9118096
+        ],
+        [
+          419.0344665,
+          -705.9133464
+        ],
+        [
+          419.0879354,
+          -696.2797103
+        ],
+        [
+          421.7052601,
+          -696.2941921
+        ],
+        [
+          421.7107807,
+          -695.2863918
+        ],
+        [
+          423.6420669,
+          -695.2970495
+        ],
+        [
+          423.6365389,
+          -696.2945497
+        ],
+        [
+          426.0565234,
+          -696.3079214
+        ],
+        [
+          426.0153492,
+          -703.7133118
+        ],
+        [
+          428.8750232,
+          -703.7291602
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          423,
+          -707
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -6.5,
+            -12,
+            7,
+            3.38
+          ],
+          "planes": [
+            [
+              0.65,
+              0,
+              16.96,
+              0.61,
+              0
+            ],
+            [
+              0.65,
+              0,
+              16.96,
+              -0.55,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -6,
+            0.63,
+            3.27,
+            12.5
+          ],
+          "planes": [
+            [
+              -0.96,
+              0,
+              18.93,
+              0.57,
+              0
+            ],
+            [
+              -0.96,
+              0,
+              18.93,
+              -0.46,
+              0
+            ],
+            [
+              0,
+              9.0,
+              18.93,
+              0,
+              -0.65
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4.75,
+            -2.65,
+            -2.2,
+            1.53
+          ],
+          "planes": [
+            [
+              0,
+              -0.54,
+              16.62,
+              0,
+              0.66
+            ],
+            [
+              0,
+              -0.54,
+              16.62,
+              0,
+              -0.66
+            ]
+          ]
+        }
+      ],
+      "entrance": {
+        "gate": "fairmount-south-porch",
+        "near": [
+          422.8,
+          -716.0
+        ],
+        "bearing": 180,
+        "approach_distance_m": 2.95
+      },
+      "street_views": [
+        {
+          "date": "2022-08",
+          "id": "jJ6C5teLi8tEP3meLItOlA",
+          "camera_enu": [
+            422.9309721334721,
+            -730.1915338607505
+          ],
+          "bearing": 2.64,
+          "distance": 23.2,
+          "file": "fairmount-south-2022-08.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jJ6C5teLi8tEP3meLItOlA&heading=2.64"
+        },
+        {
+          "date": "2019-07",
+          "id": "KJm7E-PxIM2cG5APRQO3lA",
+          "camera_enu": [
+            412.5548721891828,
+            -706.7995717218146
+          ],
+          "bearing": 86.0,
+          "distance": 11.5,
+          "file": "fairmount-west-2019-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KJm7E-PxIM2cG5APRQO3lA&heading=86.0"
+        }
+      ],
+      "footprint_sources": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494729.14928888186%2C4876193.282153052%2C494776.14928888186%2C4876251.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "4541bc317af9538f684a1823b426b2c601d9287ed6f5082721cc39c821b66a36"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494729.14928888186%2C4876193.282153052%2C494776.14928888186%2C4876251.282153052&bboxSR=3740&imageSR=3740&size=564%2C696&format=png&bandIds=0%2C1%2C2",
+          "sha256": "90cb9f9361dcff2df1a004b973b6ded02ea7879a8ebe54ad67b027ce2498d059"
+        }
+      }
+    },
+    {
+      "id": "roof-f9fb8501",
+      "role": "garages",
+      "name": "Walnut Alley Garage Building",
+      "street_address": "Walnut Aly",
+      "city_footprint": 150060,
+      "outline_enu_m": [
+        [
+          689.9829825,
+          -306.751416
+        ],
+        [
+          689.9411379,
+          -311.8291394
+        ],
+        [
+          689.1926284,
+          -311.8229802
+        ],
+        [
+          689.1903103,
+          -312.1138594
+        ],
+        [
+          689.2253969,
+          -312.6695313
+        ],
+        [
+          689.22277,
+          -312.9869206
+        ],
+        [
+          689.9367703,
+          -312.9928097
+        ],
+        [
+          689.8974557,
+          -317.7532468
+        ],
+        [
+          689.1834554,
+          -317.7473576
+        ],
+        [
+          689.1788312,
+          -318.3027147
+        ],
+        [
+          689.1746216,
+          -318.8183581
+        ],
+        [
+          689.1706299,
+          -319.2943936
+        ],
+        [
+          689.9244439,
+          -319.3006944
+        ],
+        [
+          689.8880709,
+          -323.7040315
+        ],
+        [
+          689.1343598,
+          -323.6978276
+        ],
+        [
+          689.1212196,
+          -325.2845744
+        ],
+        [
+          680.592224,
+          -325.2141402
+        ],
+        [
+          680.6456291,
+          -318.7480239
+        ],
+        [
+          680.6498357,
+          -318.2322806
+        ],
+        [
+          680.6963046,
+          -312.5992
+        ],
+        [
+          680.661215,
+          -312.0434283
+        ],
+        [
+          680.7130405,
+          -305.7756661
+        ],
+        [
+          689.2420327,
+          -305.8460003
+        ],
+        [
+          689.2345729,
+          -306.7452539
+        ],
+        [
+          689.9829825,
+          -306.751416
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          685,
+          -316
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -6,
+            3.37,
+            6,
+            11.0
+          ],
+          "planes": [
+            [
+              0,
+              6.45,
+              16.26,
+              0,
+              0.84
+            ],
+            [
+              0,
+              6.45,
+              16.26,
+              0,
+              -0.84
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -6,
+            -2.76,
+            6,
+            3.37
+          ],
+          "planes": [
+            [
+              0,
+              0.24,
+              16.19,
+              0,
+              0.84
+            ],
+            [
+              0,
+              0.24,
+              16.19,
+              0,
+              -0.84
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -6,
+            -11,
+            6,
+            -2.76
+          ],
+          "planes": [
+            [
+              0,
+              -5.61,
+              16.18,
+              0,
+              0.78
+            ],
+            [
+              0,
+              -5.61,
+              16.18,
+              0,
+              -0.78
+            ]
+          ]
+        }
+      ],
+      "entrance": null,
+      "street_views": [
+        {
+          "date": "2019-07",
+          "id": "L3Dhfhi8gHhnOW0FihgKJg",
+          "camera_enu": [
+            674.3547844488639,
+            -312.600911764428
+          ],
+          "bearing": 107.71,
+          "distance": 11.2,
+          "file": "orchard-back-west-2019-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=L3Dhfhi8gHhnOW0FihgKJg&heading=107.71"
+        },
+        {
+          "date": "2019-07",
+          "id": "oLX8sMc6fwVSxzDflDQSUA",
+          "camera_enu": [
+            675.1776424964773,
+            -322.8355460027233
+          ],
+          "bearing": 55.17,
+          "distance": 12.0,
+          "file": "orchard-back-southwest-2019-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=oLX8sMc6fwVSxzDflDQSUA&heading=55.17"
+        }
+      ],
+      "footprint_sources": {
+        "city": {
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=494996.14928888186%2C4876585.282153052%2C495036.14928888186%2C4876641.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "700ae24a8a0ad89b570bb8537cbdf5243aab9443ca0c3864d4cee52f521365dc"
+        },
+        "ortho": {
+          "url": "https://imagery.oregonexplorer.info/arcgis/rest/services/OSIP_2024/OSIP_2024_SL/ImageServer/exportImage?f=image&bbox=494996.14928888186%2C4876585.282153052%2C495036.14928888186%2C4876641.282153052&bboxSR=3740&imageSR=3740&size=480%2C672&format=png&bandIds=0%2C1%2C2",
+          "sha256": "895d23a85920daf2d662ce2c71564f72cf4207f1407edc3f95f3fe20210cdeec"
+        }
+      }
+    }
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-4bcb9296",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-01c76e05",
+      "target": "context-background-3-1"
+    },
+    {
+      "id": "roof-e7592432",
+      "target": "context-background-2-0"
+    },
+    {
+      "id": "roof-f9fb8501",
+      "target": "context-background-3-1"
+    }
+  ],
+  "millrace_terminal_spur": {
+    "edge_index": 6698,
+    "nodes": [
+      6605,
+      6606
+    ],
+    "collision_box_enu_m": [
+      -777.21,
+      363.78,
+      -775.98,
+      364.16
+    ]
+  }
+}
