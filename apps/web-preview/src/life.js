@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import * as THREE from "three";
-import { createCampusProp } from "./props.js";
+import { createCampusProp, roadVehicleCollider } from "./props.js";
 import { overlaps, playerBody } from "./collision.js";
 import {
   DENSITY_COUNTS,
@@ -11,12 +11,6 @@ import {
 import { npcProperties, seedNumber, randomSource } from "./npc-templates.js";
 import { compileActivityPath, sampleActivityPath } from "./activity-paths.js";
 import { pedestrianMask, planPedestrianDetour } from "./pedestrian-detour.js";
-const VEHICLES = {
-  car: { radius: 1, height: 1.85, halfLength: 1.2 },
-  suv: { radius: 1, height: 2.1, halfLength: 1.3 },
-  van: { radius: 1, height: 2.3, halfLength: 1.4 },
-  pickup: { radius: 1, height: 1.9, halfLength: 1.2 },
-};
 const ALLOWED = {
   walk: ["pedestrian"],
   bicycle: ["pedestrian"],
@@ -72,7 +66,7 @@ export function createCampusLife({
   function shape(kind, p) {
     const s =
       kind === "car" || kind === "prop"
-        ? VEHICLES[p.vehicle]
+        ? roadVehicleCollider(p.vehicle)
         : kind === "squirrel"
           ? { radius: 0.17, height: 0.58, halfLength: 0.1 }
           : kind === "walk"

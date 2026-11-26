@@ -2,6 +2,311 @@
 // Original, exportable low-poly props. No brands, logos or third-party geometry.
 import * as THREE from "three";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
+const ROAD_VEHICLES = {
+  car: {
+    length: 4.64,
+    width: 1.78,
+    mirrors: 2.01,
+    height: 1.44,
+    axles: [-1.43, 1.27],
+    tire: 0.315,
+    belt: 0.86,
+    hood: 1.03,
+    front: 1.44,
+    back: -1.64,
+    roofFront: 0.57,
+    roofBack: -0.81,
+  },
+  suv: {
+    length: 4.69,
+    width: 1.87,
+    mirrors: 2.1,
+    height: 1.68,
+    axles: [-1.41, 1.29],
+    tire: 0.352,
+    belt: 1.03,
+    hood: 1.2,
+    front: 1.32,
+    back: -2.13,
+    roofFront: 0.55,
+    roofBack: -1.8,
+  },
+  van: {
+    length: 4.73,
+    width: 1.73,
+    mirrors: 2.04,
+    height: 1.87,
+    axles: [-1.48, 1.45],
+    tire: 0.315,
+    belt: 1.02,
+    hood: 1.16,
+    front: 1.67,
+    back: -2.24,
+    roofFront: 0.91,
+    roofBack: -2.06,
+  },
+  pickup: {
+    length: 5.08,
+    width: 1.84,
+    mirrors: 2.12,
+    height: 1.75,
+    axles: [-1.57, 1.51],
+    tire: 0.36,
+    belt: 1.04,
+    hood: 1.23,
+    front: 1.54,
+    back: -0.83,
+    roofFront: 0.71,
+    roofBack: -0.51,
+  },
+};
+const TIRE = 0x273334;
+const DARK = 0x394543;
+const GLASS = 0x69958e;
+
+export function roadVehicleCollider(kind) {
+  const { width, length, height } = ROAD_VEHICLES[kind];
+  const radius = width / 2;
+  return { radius, halfLength: length / 2 - radius, height };
+}
+
+function roadVehicle(kind, color, add, box) {
+  const {
+    length,
+    width,
+    mirrors,
+    height,
+    axles,
+    tire,
+    belt,
+    hood,
+    front,
+    back,
+    roofFront,
+    roofBack,
+  } = ROAD_VEHICLES[kind];
+  const end = length / 2,
+    edge = width / 2;
+  const pickup = kind === "pickup",
+    van = kind === "van";
+  const sill = tire + 0.014;
+  const shoulder = end - 0.085;
+  const shell = new THREE.Shape();
+  shell.moveTo(-shoulder, sill);
+  for (const axle of axles) {
+    for (let i = 0; i <= 8; i++) {
+      const angle = Math.PI * (1 - i / 8);
+      shell.lineTo(
+        axle + (tire + 0.073) * Math.cos(angle),
+        sill + (tire + 0.073) * Math.sin(angle),
+      );
+    }
+  }
+  shell.lineTo(shoulder, sill);
+  shell.lineTo(shoulder, hood - 0.14);
+  shell.lineTo(front, hood);
+  shell.lineTo(back, belt);
+  shell.lineTo(-shoulder, belt - 0.04);
+  shell.closePath();
+  const body = new THREE.ExtrudeGeometry(shell, {
+    depth: width - 0.08,
+    bevelEnabled: true,
+    bevelSize: 0.035,
+    bevelThickness: 0.04,
+    bevelSegments: 1,
+    steps: 1,
+  });
+  body.translate(0, 0, -(width - 0.08) / 2).rotateY(-Math.PI / 2);
+  add(body, 0, 0, 0, color);
+
+  // Trapezoidal cabin panels and inset glass share the same sloped faces.
+  const baseWidth = edge - 0.07;
+  const roofWidth = edge - (van ? 0.14 : 0.22);
+  const baseY = belt - 0.035;
+  const point = (side, high, atFront) =>
+    new THREE.Vector3(
+      side * (high ? roofWidth : baseWidth),
+      high ? height : baseY,
+      high ? (atFront ? roofFront : roofBack) : atFront ? front : back,
+    );
+  function panel(points, outward, paint, offset = 0) {
+    const n = new THREE.Vector3(...outward);
+    const a = points[1].clone().sub(points[0]);
+    const b = points[2].clone().sub(points[0]);
+    if (a.cross(b).dot(n) < 0) points = [...points].reverse();
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute(
+      "position",
+      new THREE.Float32BufferAttribute(
+        [0, 1, 2, 0, 2, 3].flatMap((i) =>
+          points[i].clone().addScaledVector(n, offset).toArray(),
+        ),
+        3,
+      ),
+    );
+    geometry.computeVertexNormals();
+    add(geometry, 0, 0, 0, paint);
+  }
+
+  function cabinFace(corners, outward, panes) {
+    panel(corners, outward, color);
+    const [a, b, c, d] = corners;
+    const at = (x, y) => a.clone().lerp(b, x).lerp(d.clone().lerp(c, x), y);
+    for (const [left, right] of panes)
+      panel(
+        [at(left, 0.23), at(right, 0.23), at(right, 0.89), at(left, 0.89)],
+        outward,
+        GLASS,
+        0.012,
+      );
+  }
+
+  panel(
+    [
+      point(-1, true, false),
+      point(1, true, false),
+      point(1, true, true),
+      point(-1, true, true),
+    ],
+    [0, 1, 0],
+    color,
+  );
+  for (const side of [-1, 1]) {
+    cabinFace(
+      [
+        point(side, false, false),
+        point(side, false, true),
+        point(side, true, true),
+        point(side, true, false),
+      ],
+      [side, 0, 0],
+      van
+        ? [[0.7, 0.94]]
+        : [
+            [0.1, 0.48],
+            [0.52, 0.94],
+          ],
+    );
+    const halo = van ? 0.07 : 0.125;
+    const mirrorY = Math.max(baseY + 0.18, hood + 0.09);
+    const mirrorZ = front - 0.24;
+    const stalkInner = baseWidth - 0.22;
+    const stalkOuter = mirrors / 2 - halo / 2;
+    box(
+      stalkOuter - stalkInner,
+      0.034,
+      0.055,
+      (side * (stalkOuter + stalkInner)) / 2,
+      mirrorY - 0.028,
+      mirrorZ,
+      DARK,
+    );
+    box(halo, 0.1, 0.19, (side * (mirrors - halo)) / 2, mirrorY, mirrorZ, DARK);
+    for (const axle of axles) {
+      const x = side * (edge - 0.11);
+      const rotation = [0, 0, Math.PI / 2];
+      add(
+        new THREE.CylinderGeometry(tire, tire, 0.18, 12),
+        x,
+        tire,
+        axle,
+        TIRE,
+        rotation,
+      );
+      add(
+        new THREE.CylinderGeometry(tire * 0.56, tire * 0.56, 0.035, 12),
+        x + side * 0.095,
+        tire,
+        axle,
+        0x9aa8a2,
+        rotation,
+      );
+      add(
+        new THREE.CylinderGeometry(tire * 0.22, tire * 0.22, 0.045, 8),
+        x + side * 0.099,
+        tire,
+        axle,
+        DARK,
+        rotation,
+      );
+    }
+    const doors = van
+      ? [back + 0.13, front - 0.2]
+      : [(back + front) / 2, front - 0.3];
+    for (const z of doors) {
+      box(0.018, 0.2, 0.019, side * (edge - 0.007), belt - 0.13, z, DARK);
+      box(
+        0.031,
+        0.035,
+        0.19,
+        side * (edge - 0.004),
+        belt - 0.063,
+        z - 0.14,
+        0xb1b9a9,
+      );
+    }
+    if (van)
+      box(
+        0.023,
+        0.035,
+        1.62,
+        side * (edge + 0.006),
+        belt - 0.105,
+        back + 1.25,
+        DARK,
+      );
+  }
+  for (const atFront of [false, true]) {
+    const direction = atFront ? 1 : -1;
+    cabinFace(
+      [
+        point(-1, false, atFront),
+        point(1, false, atFront),
+        point(1, true, atFront),
+        point(-1, true, atFront),
+      ],
+      [0, 0, direction],
+      van && !atFront
+        ? [
+            [0.085, 0.48],
+            [0.52, 0.915],
+          ]
+        : [[0.08, 0.92]],
+    );
+    const bumperZ = direction * (end - 0.038);
+    box(width - 0.17, 0.1, 0.076, 0, sill + 0.14, bumperZ, DARK);
+    for (const side of [-1, 1])
+      box(
+        0.31,
+        atFront ? 0.105 : 0.15,
+        0.07,
+        side * (edge - 0.23),
+        atFront ? hood - 0.255 : belt - 0.195,
+        direction * (end - 0.054),
+        atFront ? 0xf5edc7 : 0xa95143,
+      );
+  }
+  box(width * 0.37, 0.135, 0.073, 0, hood - 0.24, end - 0.053, DARK);
+  box(0.31, 0.075, 0.033, 0, belt - 0.28, -end + 0.034, 0xb9b9a8);
+
+  if (pickup) {
+    const bedLength = end + back - 0.09;
+    const middle = back - bedLength / 2;
+    box(width - 0.29, 0.055, bedLength, 0, belt + 0.025, middle, DARK);
+    for (const side of [-1, 1])
+      box(
+        0.15,
+        0.245,
+        bedLength,
+        side * (edge - 0.092),
+        belt + 0.125,
+        middle,
+        color,
+      );
+    box(width - 0.04, 0.245, 0.105, 0, belt + 0.125, -shoulder + 0.033, color);
+  }
+}
+
 export function createCampusProp(kind = "car", color = 0x567a72, rider = null) {
   const parts = [];
   function add(geometry, x, y, z, c, rotation = [0, 0, 0]) {
@@ -45,145 +350,8 @@ export function createCampusProp(kind = "car", color = 0x567a72, rider = null) {
       c,
     );
   };
-  if (["car", "suv", "van", "pickup"].includes(kind)) {
-    const van = kind === "van",
-      suv = kind === "suv",
-      pickup = kind === "pickup";
-    {
-      // Keep existing outer bounds while giving the van and passenger vehicles
-      // a gently sloped hood. These are generic, unbranded silhouettes.
-      const profile = van
-        ? [
-            [-2.35, 0.375],
-            [2.35, 0.375],
-            [2.35, 0.88],
-            [1.22, 1.025],
-            [-2.35, 1.025],
-          ]
-        : [
-            [-2.1, 0.375],
-            [2.1, 0.375],
-            [2.1, 0.86],
-            [1.22, 1.025],
-            [-1.22, 1.025],
-            [-2.1, 0.86],
-          ];
-      const vertices = [];
-      const triangle = (a, b, c) => vertices.push(...a, ...b, ...c);
-      const vertex = (side, i) => [side * 0.9, profile[i][1], profile[i][0]];
-      for (let i = 1; i < profile.length - 1; i++) {
-        triangle(vertex(-1, 0), vertex(-1, i), vertex(-1, i + 1));
-        triangle(vertex(1, 0), vertex(1, i + 1), vertex(1, i));
-      }
-      for (let i = 0; i < profile.length; i++) {
-        const j = (i + 1) % profile.length;
-        triangle(vertex(-1, i), vertex(1, i), vertex(1, j));
-        triangle(vertex(-1, i), vertex(1, j), vertex(-1, j));
-      }
-      const body = new THREE.BufferGeometry();
-      body.setAttribute(
-        "position",
-        new THREE.Float32BufferAttribute(vertices, 3),
-      );
-      body.computeVertexNormals();
-      add(body, 0, 0, 0, color);
-    }
-    box(
-      1.6,
-      van ? 1.35 : suv ? 1.05 : 0.7,
-      van ? 3.3 : pickup ? 1.55 : 2.1,
-      0,
-      van ? 1.5 : suv ? 1.5 : 1.35,
-      van ? -0.35 : pickup ? 0.45 : -0.1,
-      color,
-    );
-    // Front glass sits just outside each cabin; the pickup cabin ends further forward.
-    const windshieldY = van || suv ? 1.65 : 1.43,
-      windshieldZ = van ? 1.32 : pickup ? 1.25 : 1.0;
-    box(1.62, 0.5, 0.045, 0, windshieldY, windshieldZ, 0x69958e);
-    // A low windscreen rail and wiper pair make the front legible at walking scale.
-    for (const x of [-0.4, 0.4])
-      box(
-        0.56,
-        0.035,
-        0.025,
-        x,
-        windshieldY - 0.2,
-        windshieldZ + 0.035,
-        0x34433d,
-      );
-    box(
-      1.62,
-      0.5,
-      0.045,
-      0,
-      van ? 1.65 : 1.43,
-      van ? -2 : pickup ? -0.36 : -1.2,
-      0x69958e,
-    );
-    for (const x of [-0.815, 0.815])
-      box(
-        0.045,
-        0.48,
-        van ? 2.6 : pickup ? 1.25 : 1.8,
-        x,
-        van ? 1.65 : 1.43,
-        pickup ? 0.45 : -0.13,
-        0x69958e,
-      );
-    for (const x of [-0.91, 0.91])
-      for (const z of [-1.3, 1.3]) {
-        wheel(x, 0.39, z, 0.36);
-        add(
-          new THREE.CylinderGeometry(0.19, 0.19, 0.018, 10),
-          x + Math.sign(x) * 0.09,
-          0.39,
-          z,
-          0x9aa8a2,
-          [0, 0, Math.PI / 2],
-        );
-      }
-    for (const x of [-0.62, 0.62]) {
-      box(0.35, 0.17, 0.055, x, 0.78, van ? 2.37 : 2.13, 0xf5edc7);
-      box(0.35, 0.17, 0.055, x, 0.78, van ? -2.37 : -2.13, 0xa95143);
-    }
-    // Generic bumpers, mirrors and side-window pillars improve the vehicle silhouette.
-    for (const z of [van ? -2.39 : -2.15, van ? 2.39 : 2.15])
-      box(1.65, 0.13, 0.09, 0, 0.48, z, 0x465450);
-    for (const side of [-1, 1]) {
-      box(0.22, 0.18, 0.18, side * 0.98, van ? 1.42 : 1.28, 0.83, 0x34433d);
-      box(
-        0.055,
-        0.48,
-        0.08,
-        side * 0.845,
-        van ? 1.65 : 1.43,
-        pickup ? 0.45 : -0.13,
-        0x465450,
-      );
-    }
-    // Body features are bounded within the existing vehicle envelopes. They are
-    // generic original geometry rather than models of particular UO vehicles.
-    const frontZ = van ? 2.37 : 2.13;
-    box(0.82, 0.19, 0.055, 0, 0.71, frontZ, 0x34433d);
-    for (const x of [-0.25, 0, 0.25])
-      box(0.025, 0.15, 0.018, x, 0.71, frontZ + 0.035, 0x9aa8a2);
-    for (const side of [-1, 1]) {
-      const x = side * 0.915;
-      box(0.035, 0.42, 0.035, x, 0.77, 0.82, 0x465450);
-      box(0.035, 0.42, 0.035, x, 0.77, pickup ? -0.43 : -0.9, 0x465450);
-      box(0.04, 0.045, 0.24, x, 0.95, 0.45, 0xc2c5b4);
-      if (!pickup) box(0.04, 0.045, 0.24, x, 0.95, -0.5, 0xc2c5b4);
-      box(0.035, 0.055, van ? 3.7 : 3.25, x, 0.49, 0, 0x465450);
-    }
-    if (van)
-      for (const side of [-1, 1])
-        box(0.035, 0.045, 1.9, side * 0.92, 0.83, -0.85, 0x9aa8a2);
-    if (kind === "pickup") {
-      box(1.44, 0.07, 1.65, 0, 1.055, -1.22, 0x394543);
-      for (const x of [-0.79, 0.79]) box(0.16, 0.3, 1.7, x, 1.18, -1.22, color);
-      box(1.72, 0.3, 0.14, 0, 1.18, -2.02, color);
-    }
+  if (Object.hasOwn(ROAD_VEHICLES, kind)) {
+    roadVehicle(kind, color, add, box);
   } else {
     const bike = kind === "bicycle",
       r = bike ? 0.32 : 0.16,

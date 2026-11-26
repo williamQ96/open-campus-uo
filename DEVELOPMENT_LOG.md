@@ -6,6 +6,12 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-25 - Campus loading progress and L2 road vehicles
+
+- Added an accessible campus startup progress bar. It advances with metadata, site packs and scene setup, then clears after the first WebGL frame. The retry panel handles startup failures. Desktop and phone share the same indicator.
+- Reviewed and promoted PROP-02 to L2. The four generic bodies have sourced proportions, separate silhouettes, ground-plane tire contacts, matching scaled collision capsules and a regenerated six-kind GLB. All 20 authored parking envelopes passed the fit check. The ledger has 181 L2 buildings, 338 active L1 buildings, one L2 outdoor group, 12 L1 outdoor groups and 21 historical mappings. [Vehicle review](docs/vehicle-l2-2026-11-25.md).
+- Formatting, 195 JavaScript tests, production build, asset checks, vehicle export comparison and the mobile loading and error paths passed locally. The clean-map performance test reported 199 draw calls against its old 180 limit. The previous GitHub Pages release also measured 199 draw calls with zero activity colliders. This update is intended for the public GitHub Pages deployment. [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
 ## 2026-11-25 - Outdoor L2 publication checkpoint
 
 - Prepared the current outdoor viewer and evidence for GitHub Pages. The ledger records 181 L2 exteriors, 338 active L1 buildings, 13 L1 outdoor asset groups and 21 historical mappings. The default scene has 519 selectable buildings. [Outdoor ledger](docs/asset-refinement-inventory.md).

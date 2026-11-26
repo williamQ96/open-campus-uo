@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
-test("van export is updated and five other prop meshes remain unchanged", async ({
+test("road vehicle exports are updated and cycle meshes retain their geometry", async ({
   page,
 }) => {
   const bytes = readFileSync(
@@ -44,8 +44,6 @@ test("van export is updated and five other prop meshes remain unchanged", async 
           a.position.equals(b.position) &&
           a.rotation.equals(b.rotation) &&
           a.scale.equals(b.scale),
-        oldCount: a.geometry.attributes.position.count,
-        newCount: b.geometry.attributes.position.count,
       };
     }
     return out;
@@ -60,9 +58,7 @@ test("van export is updated and five other prop meshes remain unchanged", async 
   ]);
   for (const [kind, value] of Object.entries(result)) {
     expect(value.transform).toBe(true);
-    if (kind === "van") {
-      expect(value.oldCount).toBe(2184);
-      expect(value.newCount).toBe(2196);
+    if (kind !== "bicycle" && kind !== "scooter") {
       expect(value.attributes.position).toBe(false);
     } else
       expect(value.attributes).toEqual({

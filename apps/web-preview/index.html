@@ -483,9 +483,15 @@
           <p id="about-footer" class="about-footnote"></p>
         </section>
       </dialog>
-      <div id="loading" class="loading" role="status">
+      <div id="loading" class="loading">
         <img id="loading-mark" alt="" hidden />
-        <p>Loading the Eugene campus…</p>
+        <p id="loading-message" role="status">Loading the Eugene campus…</p>
+        <progress
+          id="loading-progress"
+          aria-labelledby="loading-message"
+          value="2"
+          max="100"
+        ></progress>
       </div>
       <div id="error" class="error" role="alert" hidden>
         <h2>The scene is not ready</h2>

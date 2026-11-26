@@ -923,6 +923,9 @@ async function loadJson(url) {
   return response.json();
 }
 
+const loading = $("#loading");
+const loadingProgress = $("#loading-progress");
+
 async function loadCampusScene(base, manifest, settings) {
   const name = settings.presentation_url;
   const config = name ? await loadJson(sceneAssetUrl(base, name)) : null;
@@ -1689,42 +1692,50 @@ async function loadCampusScene(base, manifest, settings) {
   for (const key of enabledReviews) {
     if (reviewMode === `${key}-baseline`) enabledReviews.delete(key);
   }
+  let completedReviews = 0;
   const [cascadeReview, loadedReviews] = await Promise.all([
     cascadeLoad,
     Promise.all(
-      [...enabledReviews].map(async (key) => {
-        const options = reviewOptions[key];
-        const candidates = [options];
-        if (key === "heritage" && reviewMode !== "miller-baseline") {
-          candidates.unshift({
-            descriptor: config?.heritage_miller_site,
-            directory: "heritage-miller-review",
-            ids: [...options.ids, "roof-944fcd46"],
-            groundNode: "heritage-miller-approaches",
-            replacedDetails: [
-              ...options.replacedDetails,
-              "miller-west-detail.json",
-            ],
-          });
-        }
-        for (const candidate of candidates) {
-          if (!candidate.descriptor) continue;
-          try {
-            return await loadBuildingSiteReview(
-              base,
-              manifest,
-              config,
-              candidate,
-            );
-          } catch (error) {
-            console.warn(
-              `Exterior review ${candidate.directory} unavailable; using the prior site.`,
-              error,
-            );
+      [...enabledReviews]
+        .map(async (key) => {
+          const options = reviewOptions[key];
+          const candidates = [options];
+          if (key === "heritage" && reviewMode !== "miller-baseline") {
+            candidates.unshift({
+              descriptor: config?.heritage_miller_site,
+              directory: "heritage-miller-review",
+              ids: [...options.ids, "roof-944fcd46"],
+              groundNode: "heritage-miller-approaches",
+              replacedDetails: [
+                ...options.replacedDetails,
+                "miller-west-detail.json",
+              ],
+            });
           }
-        }
-        return null;
-      }),
+          for (const candidate of candidates) {
+            if (!candidate.descriptor) continue;
+            try {
+              return await loadBuildingSiteReview(
+                base,
+                manifest,
+                config,
+                candidate,
+              );
+            } catch (error) {
+              console.warn(
+                `Exterior review ${candidate.directory} unavailable; using the prior site.`,
+                error,
+              );
+            }
+          }
+          return null;
+        })
+        .map((review) =>
+          review.finally(() => {
+            loadingProgress.value =
+              16 + (46 * ++completedReviews) / enabledReviews.size;
+          }),
+        ),
     ),
   ]);
   const buildingReviews = loadedReviews.filter(Boolean);
@@ -1773,6 +1784,7 @@ async function loadCampusScene(base, manifest, settings) {
 
 try {
   const base = import.meta.env.BASE_URL + "scene/";
+  loadingProgress.value = 6;
   profile = await loadJson(import.meta.env.BASE_URL + "viewer-profile.json");
   manifest = await loadJson(base + "manifest.json");
   viewerSettings = await loadJson(base + "viewer-settings.json");
@@ -1788,7 +1800,9 @@ try {
       console.warn("Building identity annotations unavailable:", error);
     }
   }
+  loadingProgress.value = 16;
   const campusScene = await loadCampusScene(base, manifest, viewerSettings);
+  loadingProgress.value = 76;
   const { exteriorReview } = campusScene;
   field = campusScene.heightfield;
   if (field.heights_m.length !== field.nx * field.ny)
@@ -2013,6 +2027,7 @@ try {
       presentation.contextFog.setEnabled(e.target.checked),
     );
   }
+  loadingProgress.value = 85;
   if (profile.character?.asset_url) {
     studentFactory = await loadStudentFactory(
       sceneAssetUrl(import.meta.env.BASE_URL, profile.character.asset_url),
@@ -2307,7 +2322,7 @@ try {
   skirt.receiveShadow = true;
   scene.add(skirt);
   renderer.shadowMap.needsUpdate = true;
-  $("#loading").hidden = true;
+  loadingProgress.value = 96;
   const depth = createOverviewDepth(camera, model);
   const frozenStaticNodes = freezeStaticTransforms(model);
   let betaLastUpdate = 0;
@@ -2338,6 +2353,10 @@ try {
         `ZOMBIE SCHOOL!!! · ${zombies.state().chasing} chasing`;
     }
     renderer.render(scene, camera);
+    if (!loading.hidden) {
+      loadingProgress.value = 100;
+      loading.hidden = true;
+    }
     labels.update(now, view);
     buildingCard.update();
     if (
@@ -2551,7 +2570,7 @@ try {
   };
 } catch (error) {
   console.error(error);
-  $("#loading").hidden = true;
+  loading.hidden = true;
   $("#error").hidden = false;
   $("#error p").textContent =
     error.message + " Rebuild the scene assets before trying again.";

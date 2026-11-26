@@ -1,6 +1,8 @@
 # Exterior refinement: working plan
 
-Catherine Cornwall Townhouses, Hilyard House, Campus Studios and Bushnell University at 722 E 11th have L2 exteriors. The models open the Hilyard House courtyard and retain the covered parking and exterior gallery. The outdoor ledger has 181 L2 buildings, 338 active L1 buildings, 13 L1 outdoor groups and 21 historical mappings. [Hilyard and West University exterior review](hilyard-west-exterior-review-2026-11-24.md).
+The four generic road vehicles in PROP-02 are at L2. The outdoor ledger has 181 L2 buildings, 338 active L1 buildings, one L2 outdoor group, 12 L1 outdoor groups and 21 historical mappings. [Vehicle review](vehicle-l2-2026-11-25.md).
+
+Catherine Cornwall Townhouses, Hilyard House, Campus Studios and Bushnell University at 722 E 11th have L2 exteriors. The models open the Hilyard House courtyard and retain the covered parking and exterior gallery. [Hilyard and West University exterior review](hilyard-west-exterior-review-2026-11-24.md).
 
 Six buildings with earlier roof treatments now have street-verified L2 exteriors. The brick block at 1010–1020 E 18th retains its two doorways, and three buildings retain open parking below their roofs. That batch brought the ledger to 177 L2 buildings, 342 active L1 buildings, 13 L1 outdoor groups and 21 historical mappings. [Exterior review](treated-roof-exterior-review-2026-11-24.md).
 

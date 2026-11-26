@@ -20,39 +20,45 @@
       "sha256": "d8433e61bcbb722516da0b3878978280352a4c5ec70a2c4da1191dbd9910bcbe"
     },
     "apps/web-preview/public/props/campus-props.glb": {
-      "bytes": 625996,
-      "sha256": "1b0be7e2af6385e2718295e808979b1f831042f37be2e4fd26e913d46bd7c4ee",
+      "bytes": 736804,
+      "sha256": "3af8526930d21de0ea42a38c9e3d4e9f79f3413ee44041fa1b5c5b9ab8c64a65",
       "license": "CC-BY-4.0",
-      "origin": "Original generic six-kind transport export, including sloped van hood; no third-party geometry.",
+      "origin": "Original six-kind transport export with four L2 road vehicles and established cycle meshes; no third-party geometry.",
       "previous_record": {
-        "bytes": 625564,
-        "sha256": "0bc9fe96c787eca107b7e618ad27c209d58bb4ee64f5a7d598f128c6a65b08ca",
+        "bytes": 625996,
+        "sha256": "1b0be7e2af6385e2718295e808979b1f831042f37be2e4fd26e913d46bd7c4ee",
         "license": "CC-BY-4.0",
-        "origin": "Original generic six-kind transport export; car, SUV and pickup profile refinement, no third-party geometry.",
+        "origin": "Original generic six-kind transport export, including sloped van hood; no third-party geometry.",
         "previous_record": {
-          "bytes": 622972,
-          "sha256": "20fc756b3b1d65861db0f1c4f0bf7197256d3eccbfe04efaef7c3c5a3df526f7",
+          "bytes": 625564,
+          "sha256": "0bc9fe96c787eca107b7e618ad27c209d58bb4ee64f5a7d598f128c6a65b08ca",
           "license": "CC-BY-4.0",
-          "origin": "Original generic six-kind transport export with bicycle and scooter details; no third-party model or texture.",
+          "origin": "Original generic six-kind transport export; car, SUV and pickup profile refinement, no third-party geometry.",
           "previous_record": {
-            "bytes": 581496,
-            "sha256": "bf85abf13ff0efe6b370c73b9ebe9d4b69950b53cebd408b0495131f9b444458",
+            "bytes": 622972,
+            "sha256": "20fc756b3b1d65861db0f1c4f0bf7197256d3eccbfe04efaef7c3c5a3df526f7",
             "license": "CC-BY-4.0",
-            "origin": "Original generic six-kind transport export with scooter detailing; no third-party model or texture.",
+            "origin": "Original generic six-kind transport export with bicycle and scooter details; no third-party model or texture.",
             "previous_record": {
-              "bytes": 550392,
-              "sha256": "020150ee1617b450ce8eafe461a3c95b34b0ee045bae7d5f8ad4def12aff6763",
+              "bytes": 581496,
+              "sha256": "bf85abf13ff0efe6b370c73b9ebe9d4b69950b53cebd408b0495131f9b444458",
               "license": "CC-BY-4.0",
-              "origin": "Original generic procedural transport model export, six kinds including SUV; no third-party model or texture.",
+              "origin": "Original generic six-kind transport export with scooter detailing; no third-party model or texture.",
               "previous_record": {
-                "bytes": 411052,
-                "sha256": "749608835fb58a4822f65d2ef9d8ac54795a4b3cccabb9f75a0b6910c089902c",
+                "bytes": 550392,
+                "sha256": "020150ee1617b450ce8eafe461a3c95b34b0ee045bae7d5f8ad4def12aff6763",
                 "license": "CC-BY-4.0",
-                "origin": "Original procedural prop export with generic vehicle and scooter details; no third-party model or texture.",
+                "origin": "Original generic procedural transport model export, six kinds including SUV; no third-party model or texture.",
                 "previous_record": {
-                  "bytes": 363972,
-                  "sha256": "6985f4fa638f3c9086928ce2b049d7db97eb1fbd9581533244ee3ae819da799a",
-                  "status": "Prior local rider contact refinement"
+                  "bytes": 411052,
+                  "sha256": "749608835fb58a4822f65d2ef9d8ac54795a4b3cccabb9f75a0b6910c089902c",
+                  "license": "CC-BY-4.0",
+                  "origin": "Original procedural prop export with generic vehicle and scooter details; no third-party model or texture.",
+                  "previous_record": {
+                    "bytes": 363972,
+                    "sha256": "6985f4fa638f3c9086928ce2b049d7db97eb1fbd9581533244ee3ae819da799a",
+                    "status": "Prior local rider contact refinement"
+                  }
                 }
               }
             }

@@ -9,8 +9,8 @@
     },
     "src/props.js": {
       "upstream_sha256": "e920a24896edb260b30936d4fa659aee71ceaf44d0f879d4f70f1b517979f4cb",
-      "local_sha256": "6171c20c799d44aeae22749fb73bf9cca3dc476ab1df0fc600ea778a15610079",
-      "reason": "UO vehicle and cycle prop refinement"
+      "local_sha256": "3ba2c9b2e6ce43871297d97e4df10ad1ca27f7afa25fc2d5a5a10924f04aaba4",
+      "reason": "UO road vehicle proportions and cycle prop refinement."
     },
     "src/sky.js": {
       "upstream_sha256": "29f000273c71dc177179d1a3150062250c7b67f55112db405de2d62ac1326dd5",
@@ -24,8 +24,8 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "29bcd18e7eb444c51f3c87b896989311b278396844a34193c3e6032e5422921c",
-      "reason": "Sourced building identities, independently composed UO site replacements and verified context geometry."
+      "local_sha256": "7731aeea6cad8ef8db9059d983770224ae2810363ad6054c55b20694bc36d55b",
+      "reason": "Sourced building identities, independently composed UO site replacements, verified context geometry and campus startup progress."
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -34,8 +34,8 @@
     },
     "src/style.css": {
       "upstream_sha256": "7ef8336da7df7d502eb32edc85fcb7f82f8ea4044c714f8f1770f2639834c709",
-      "local_sha256": "e40368552b4242c4eb69396aa82ed8d1a67be07e8ec4045f79d432022b757290",
-      "reason": "Optional sourced building information cards; non-modal anchored fixed-person card"
+      "local_sha256": "4667c11e6fc418eed79488c5df4ad0778db4c574429b2be90d1041b45f25f6c3",
+      "reason": "Optional sourced building cards, anchored fixed-person card and campus startup progress."
     },
     "src/world.js": {
       "upstream_sha256": "ca35ab32d55da7f5a95b7004db80e743736e2ebeb05be943ed13eb6ee0dddc79",
@@ -71,6 +71,16 @@
       "upstream_sha256": "334e956303e85cca6ec9b7cde84b82e324d15a4ed92d577e5389e57c6bc9f6f5",
       "local_sha256": "24b264bef04a27a5a4f75f6e2fa9b2054aadbed72aeccf17402eb449d247cd25",
       "reason": "Use the same courtyard clearance for picking and draw inner rings in the selection outline."
+    },
+    "index.html": {
+      "upstream_sha256": "6b08b0e49ce2c3cbcc7a48cc5e50718b5265c1ae3cfd9bac334745103dfecf9c",
+      "local_sha256": "ba8314005bdafcb743cfdefda624aeb3928bdfe7df3ebf2913e374a46e91bf2d",
+      "reason": "Campus startup progress with the profile loading label."
+    },
+    "src/life.js": {
+      "upstream_sha256": "8806111f8d99de78e67fb3fafe001892c66c57766715626b820ad2f2ae20e5cf",
+      "local_sha256": "83078e1bdd036e6d6b469faf33e9fc02088ebceefeb549e26679b9d7b1801a1a",
+      "reason": "Use the UO road vehicle dimensions for the matching activity capsules."
     }
   },
   "outputs": {
@@ -85,7 +95,7 @@
     "public/scene/ford-arena-review/frontage-ground.glb": "76652306e93b46e11e5dd6f8d994d00614479eee5290c29fa60aae27df1bb2c8",
     "public/scene/ford-arena-review/ford-alumni-site.glb": "46cee749f2b489793fd5763eb88e52fb29a225697349d5fad37ec16a90cb30be",
     "public/scene/ford-arena-review/matthew-knight-arena-site.glb": "13117fd65aab6047443e72b311b6c8b6976cbc8dc302ef7e21c07eba12b38186",
-    "public/props/campus-props.glb": "1b0be7e2af6385e2718295e808979b1f831042f37be2e4fd26e913d46bd7c4ee",
+    "public/props/campus-props.glb": "3af8526930d21de0ea42a38c9e3d4e9f79f3413ee44041fa1b5c5b9ab8c64a65",
     "public/scene/pilot-vegetation-patch.json": "fc0f847645d47efd0902eb0f4ec53aaf135be5cab9b89a714c7f3974374b97ba",
     "src/vegetation-patch.js": "70906b510ad5cdbe987332ad7e7c694284189d07957e98c17ee4e49b908ac85e",
     "public/scene/pilot-understory-patch.json": "c45f91ea2a3cc5c6ac0237b4ecf0177a7f7e5f5811cb3dc45d448c40d7d5dd3a",

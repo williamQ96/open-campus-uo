@@ -1,6 +1,6 @@
 # Open Campus: UO 资产精细化清单
 
-更新于 2026-11-24。清单记录本地模型与后续工作，发布状态另记。
+更新于 2026-11-25。清单记录本地模型与后续工作，发布状态另记。
 
 ## 等级和适用范围
 
@@ -18,7 +18,7 @@
 | --- | ---: | --- |
 | 建筑外部 | 540 | 181 项 L2、338 项独立 L1、21 项停用或并入模型的 L1 历史记录 |
 | 各建筑独立内部 | 540 | 均标为未创建，等级留空；当前进入时使用共用教室 |
-| 室外植被、景观、道具及角色动物 | 13 | 均为现有资产，按用户基线为 1 级 |
+| 室外植被、景观、道具及角色动物 | 13 | 1 组 L2、12 组 L1 |
 | 共用室内 | 1 | 现有 L1 共用教室 |
 | **合计** | **1,094** | **554 项现有；540 项独立室内待创建** |
 
@@ -30,7 +30,9 @@
 
 ## 室外 L2 目标核对
 
-室外目标追踪 553 条记录，包括 540 条建筑外部和 13 个植被、景观、天空、道具及户外活动资产组。共用教室和 540 条计划室内记录另列。当前有 181 项 L2 建筑、338 项独立 L1 建筑、13 组 L1 室外资产，以及 21 条合并或停用后的历史映射。历史映射涉及 EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus 和 Hayward Field，原 ID 和等级记录保存在 CSV。默认场景有 519 个可选建筑。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
+室外目标追踪 553 条记录，包括 540 条建筑外部和 13 个植被、景观、天空、道具及户外活动资产组。共用教室和 540 条计划室内记录另列。当前有 181 项 L2 建筑、338 项独立 L1 建筑、1 组 L2 和 12 组 L1 室外资产，以及 21 条合并或停用后的历史映射。历史映射涉及 EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus 和 Hayward Field，原 ID 和等级记录保存在 CSV。默认场景有 519 个可选建筑。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
+
+车辆道具组 PROP-02 已复核四种通用车型的形体、尺寸、轮胎触地点、碰撞和导出模型。20 个场景泊位均容纳对应车型，坡面接触仍有近似。该组记为 L2。[车辆道具核对](vehicle-l2-2026-11-25.md)。
 
 源校园 GLB 中 64 个为独立建筑节点，470 个归在 21 个批次中。更新后的室外建筑台账含 202 个具名条目（含暂定名称和历史映射）和 338 个未确认条目。暂定 Volcanology、Canterbury Court 和 Millrace 3 属于批次。在最初筛查的 470 个批次候选中，有 59 个找到覆盖至少 50% 模型足迹的 UO 候选，其余 411 个当时没有选定 UO 候选。批次继续按场景 ID 跟踪。[源场景清单](../apps/web-preview/public/scene/manifest.json) · [室外细化计划](exterior-refinement-plan.md)。
 
