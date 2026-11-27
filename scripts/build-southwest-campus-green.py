@@ -50,7 +50,7 @@ def surfaces(ground, field, spec, buildings, approach):
     return lawn, walks, parking, beds
 
 
-def markings(detail, field, spec, parking):
+def markings(detail, field, spec, parking, *, stall_color=(179, 151, 84)):
     spans = [
         LineString([(x, row["south"]), (x, row["north"])])
         for row in spec["stalls"]
@@ -63,7 +63,7 @@ def markings(detail, field, spec, parking):
         detail,
         field,
         lines.intersection(parking).difference(aisles),
-        (179, 151, 84),
+        stall_color,
         0.137,
         0.75,
     )

@@ -6,6 +6,12 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 East 18th Avenue、Rankin 沿线与 Southgate 室外 L2
+
+- 重建 East 18th Avenue 西段 203.5 米道路及两侧人行道，补建 Kincaid 两处过街线、Clinical Services 南侧停车区、两处植床和 62 条步行导航边。Rankin 沿线接入 University Street，步行高度与可见铺面贴合。[西段复核](docs/east-18th-west-approach-2026-11-27.md) · [Rankin 沿线复核](docs/rankin-frontage-2026-11-27.md)。
+- 配准 Southgate 两处过街、四处路缘坡道、两处南侧人行道接合、自行车导引线及停止线，补建西北角信号杆和 University Street 街名牌。Rankin 最终有 65 条导航边。坡度和部分杆件尺寸采用估算。[Southgate 路口复核](docs/southgate-junction-2026-11-27.md)。
+- 部署前，桌面和手机生产预览各匹配全部 610 个外部模型 ID，加载 457 个出入口和 386 项受检资源，并核对西段六条、沿线及路口七条路线。抽检的 63 个文件通过 SHA-256 比对。三个景观包和路线覆盖文件均可逐字节复现。构建、格式、199 项单元测试、509 项资产归档核对和查看器哈希检查均通过。发布从 `main` 部署到 GitHub Pages。[Pages 工作流](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
 ## 2026-11-27 - Pioneer Cemetery 墓区、HEDCO 落客区和 Memorial Quad 路灯
 
 - 补建 Pioneer Cemetery 的 15 组外露边石、40 处无名碑形、三段草径和两处低植，九处较高碑形加入碰撞。[墓区复核](docs/pioneer-cemetery-inner-grid-2026-11-27.md)。

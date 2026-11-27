@@ -24,8 +24,8 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "63744cf8a43a9b4b8745acb3bb218958ec4e93cffcc43917b5765ce67d65a01a",
-      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green."
+      "local_sha256": "bf2f21f134fb0eaa2c83f5ba26ed47bc2137916a19a5b50f1fd742785f704c3d",
+      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. Pinned East 18th and Rankin pedestrian surfaces."
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -226,7 +226,7 @@
     "scripts/export-friendly-round-shafts.mjs": "0096a2d5755ce92ad01b0d9114debe99948581830afedb2d611d23e447bad19a",
     "scripts/export-annex-exterior.mjs": "13ccbc58dad2803ca6e75358d082a999a384bb7bfc1dd1f3c22651bcd5f049b4",
     "scripts/export-chapman-exterior.mjs": "4f69378cb24a4d71e2562723048f2466da5a781b74ce026f4b3fcf8fce9abf4e",
-    "src/building-site-review.js": "f52d63c539cb21f061b4a7539f648960052417aa6f55a37767cd35dc10abd1cb",
+    "src/building-site-review.js": "0e75a3ef4b71091bee081f98af2e4a1f2f9ba07ae81e2aeaa9dd223467cee35d",
     "public/scene/athletic-exterior-review/site.glb": "96d66bbde7a44bbcb2e0aa7551cb20ffee9ef8ef56612bc021acdf5d9356db2c",
     "public/scene/athletic-exterior-review/site.json": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680",
     "src/context-roof-refinements.js": "a5c7b14decedd27d43aa9af199a6a0f29277cd8dae7aec3aa05a9093b0c4c57b",
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "4fd08139e8651f8045fd76bf8ae0a421ca4cd713f22f2e568537e07fb6d9e221",
+    "public/scene/presentation.json": "53a498cee3fbfce8d16ae495949827d251b4d064984d740267d6300bfd9df23d",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -504,8 +504,8 @@
     "public/scene/agate-fifteenth-eighteenth-review/site.glb": "cfe9fae0d940b871346530086bcdc9fd75c7936c3416c996af1c9830eef45ddb",
     "public/scene/hayward-practice-fields-review/site.json": "45e6a05c8fb10277b5ed8bbeeba7d85bcb17d50a7a9a70846c90c961d58b9ab4",
     "public/scene/hayward-practice-fields-review/site.glb": "b3819561d5f758d5869e8a3111263d0adf66ded6a579b1e186af35c57af930cf",
-    "public/scene/hayward-square-track-review/site.json": "eddd4e1f8099b8663cb3db84c481548de7fb30bd5f9a4f3771ae2cb983c30e25",
-    "public/scene/hayward-square-track-review/site.glb": "2ce2aab138ad3c263a1305b42c989cf334f2a8054622f22871cd9e7d4667ccbd",
+    "public/scene/hayward-square-track-review/site.json": "7208632e9581d2eef8285dfec678046abd0896b533f42a541e477b5706066e58",
+    "public/scene/hayward-square-track-review/site.glb": "ebb9f8cfb6363f1947cfbca2c630d0cafbe4963faeb3b7d8c4357044a49c2fc8",
     "public/scene/university-south-axis-review/site.json": "6f77e40bf8acd6a53d652798c9e2154358b6f8bba33d6f25053734a33cb5a7c8",
     "public/scene/university-south-axis-review/site.glb": "819725ea65ab1d28cb84d5892a0b6048a9bb3a8a95a65e30a73b6086875c68d3",
     "public/scene/hayward-midblock-review/site.json": "dfd08a060df3bd9892fdba19aed98635cc095604cccf52a06313bb5685ec3364",
@@ -515,7 +515,7 @@
     "public/scene/southwest-campus-green-review/site.glb": "ff19c8fdf43935176aa00cf7c912a204a8055ca156ebc91651ce5342aaca9e86",
     "public/scene/southwest-campus-green-review/site.json": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
     "src/paved-route-access.js": "98c5cf05a9ace81997f2a06217cd729e373175453fcc9353303e91ec1d0ba0ce",
-    "data/campus-route-surfaces.json": "53b6f8de2b429d5030f7491ae7fd5ec319d9ba44fb936b078bfd9d79b2a99ead",
+    "data/campus-route-surfaces.json": "461b185475ceb2d7f85b2fb39abcf4baeebc6edf6c1d33215feea4033dcb684f",
     "public/scene/kincaid-education-landscape-review/site.glb": "229086a9a42a4742451657a79a9650a92375243933387fd879268faaa0494af9",
     "public/scene/kincaid-education-landscape-review/site.json": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a",
     "public/scene/kendall-plaza-landscape-review/site.glb": "fb034e7ba495bca4c31e49d32fed3af06e0fe7d3db4d6b8286b54753186d96c4",
@@ -530,6 +530,10 @@
     "public/scene/pioneer-cemetery-inner-grid-review/site.json": "5e2823f4fbefbe161d89aef13f57c5a8ee64112e532ba54b641466fa7483feac",
     "public/scene/pioneer-cemetery-inner-grid-review/site.glb": "374074b1103013c2735f7803539be7bf095b447623ced90a1140cbb595ca4821",
     "public/scene/clinical-dropoff-landscape-review/site.json": "8b9cceb7b1347d647dde7b71473565f9d6636d02ec9ff6fa1465818bd96ba212",
-    "public/scene/clinical-dropoff-landscape-review/site.glb": "e506cf6bcee9a2e6012ae009be239d761a24f25bed86822cd6a4d54033505839"
+    "public/scene/clinical-dropoff-landscape-review/site.glb": "e506cf6bcee9a2e6012ae009be239d761a24f25bed86822cd6a4d54033505839",
+    "public/scene/east-eighteenth-west-approach-review/site.glb": "ba2a95a945d958e4a9a9d63e102eda3be77538fa0dce065548fffde0b8a01242",
+    "public/scene/east-eighteenth-west-approach-review/site.json": "508df2bac25c96682a38589f90885a01e9b986a776e6d7478160ea1e9ba57cad",
+    "public/scene/rankin-frontage-review/site.glb": "0d8d8b6bd5bb6bebd4b736661c93cdb6409fe3721028ecb590a2c3f20ddd3f7c",
+    "public/scene/rankin-frontage-review/site.json": "f619405be55add4e829086ab7c01296e298e51c6645d326e3824204b77fca840"
   }
 }

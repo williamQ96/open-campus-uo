@@ -30,6 +30,9 @@
 | Memorial Quad 的 Gilbert 与 Kincaid Field 铭牌 | 已纳入 L2 发布 | 按校方景观图和 Gilbert 铭牌档案照片补建北端两块嵌地铭牌及东侧 Kincaid Field 铭牌。各点位和尺寸采用近似配准，Kincaid Field 的排版为示意。[铭牌复核](memorial-quad-plaques-2026-11-27.md) |
 | Bailey 纪念橡树、树池与东侧步道 | 已纳入 L2 发布 | 校方 616 至 623 号八株树按现存树位建模。增设 26.45 平方米根区，沿树列外侧配准步道并恢复圆环北方交叉斜道。树干和树冠细部为估算。[树木与步道复核](memorial-quad-bailey-oaks-2026-11-27.md) |
 | Memorial Quad 与 Knight 北广场行人路灯 | 纳入本次 L2 发布 | 校方 2007 年景观图和至少两期航片交叉定位六处，以校方橡果灯标准建模。替换四个推估点，西侧横道灯位向北调整 1.20 米以留出通行空间。树冠遮挡的灯位和现存历史原件待核对。[灯位复核](memorial-quad-lamps-2026-11-27.md) |
+| East 18th Avenue 西段与 Clinical Services 南侧停车区 | 纳入本次 L2 发布 | 配准 Alder 至墓园南缘的道路、两侧人行道、自行车道边线、Kincaid 两处过街、诊所停车区内部过街和两处植床。新增 62 条导航边，六条抽检路线通过铺面核对。[场地复核](east-18th-west-approach-2026-11-27.md) |
+| East 18th Avenue 沿 Rankin 墓园南缘至 University Street | 纳入本次 L2 发布 | 补建道路、自行车道和停车标线，以及南侧人行道。校正墓园侧旧步道的站立高度，并接入 University Street。更新后的区域合计有 65 条导航边。[场地复核](rankin-frontage-2026-11-27.md) |
+| Southgate 与 East 18th Avenue 路口 | 纳入本次 L2 发布 | 四期航片校正东西两组过街线，补建四处坡道、两处南侧人行道接合、自行车导引虚线及南侧停止线。按 2024 年街景建模西北角信号杆和 University Street 街名牌。路缘坡度与杆件尺寸为估算。[路口复核](southgate-junction-2026-11-27.md) |
 | 校园主道路、人行道及广场 | 已有代表性 L2，待逐处复核 | 139 条走廊已有注册铺装。按公共空间逐段核对路缘、过街线、台阶、扶手、道路标识和真实接合。 |
 | Gerlinger Field Green 草坪、步道和东侧边界 | 已纳入 L2 发布 | 恢复开敞草坪、六段铺装、南侧停车地坪、Annex 外梯、矮墙、标识、常春藤和十株登记树。楼梯、停车标线和植物尺寸采用估算。 |
 | Women’s Memorial Quad | 已纳入 L2 发布 | 配准重铺后的曲线步道、约 33 米台地墙、两段外梯和六张石凳。台阶与石凳尺寸为估计。 |

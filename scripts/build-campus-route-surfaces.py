@@ -17,6 +17,8 @@ kendall = import_module("build-kendall-plaza-landscape")
 knight_north = import_module("build-knight-north-plaza")
 plc_east = import_module("build-plc-east-court")
 dropoff = import_module("build-clinical-dropoff-landscape")
+east_18th_west = import_module("build-east-18th-west-approach")
+rankin_frontage = import_module("build-rankin-frontage")
 root = green.site.root
 scene = green.site.scene
 
@@ -66,6 +68,19 @@ def dropoff_coverage(spec):
     buildings, _ = green.east.build_blockers(scene, spec, manifest, box(*spec["extent"]))
     _, sidewalks, crossings, _ = dropoff.footprints(spec, buildings)
     return sidewalks.union(crossings)
+
+
+def east_18th_west_coverage(spec, metadata):
+    manifest, _, _ = green.east.pinned_site(scene, spec)
+    surfaces, _, _ = east_18th_west.site_footprints(spec, manifest, metadata)
+    _, _, _, access, _ = surfaces
+    return access
+
+
+def rankin_frontage_coverage(spec, metadata):
+    manifest, _, _ = green.east.pinned_site(scene, spec)
+    _, _, _, _, access, _, _ = rankin_frontage.footprints(spec, manifest, metadata)
+    return access
 
 
 def encode_coverage(package, footprint):
@@ -127,6 +142,18 @@ def main():
         encode_coverage(
             dropoff.PACKAGE,
             dropoff_coverage(green.site.read(metadata / "clinical-dropoff-landscape.json")),
+        ),
+        encode_coverage(
+            east_18th_west.PACKAGE,
+            east_18th_west_coverage(
+                green.site.read(metadata / "east-18th-west-approach.json"), metadata
+            ),
+        ),
+        encode_coverage(
+            rankin_frontage.PACKAGE,
+            rankin_frontage_coverage(
+                green.site.read(metadata / "rankin-frontage.json"), metadata
+            ),
         ),
     ]
     args.output.write_bytes((json.dumps(rows, separators=(",", ":")) + "\n").encode())

@@ -1,0 +1,525 @@
+{
+  "description": "East 18th Avenue at University Street, coordinated with the Southgate brick entrance crossing and Pioneer Cemetery frontage.",
+  "sources": {
+    "orthophotos": [
+      {
+        "zone": "junction",
+        "year": 2017,
+        "bounds_enu_m": [
+          -337,
+          -631,
+          -281,
+          -575
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493992.14928888186%2C4876297.282153052%2C494048.14928888186%2C4876353.282153052&bboxSR=3740&imageSR=3740&size=1456%2C1456&layers=show%3A29&format=png32",
+        "path": "junction-2017.png",
+        "sha256": "2f4400d6caa8a062e6bf1d8316498b11c86c6ea7f3fa3be5eae369bf0a12c4fd"
+      },
+      {
+        "zone": "junction",
+        "year": 2021,
+        "bounds_enu_m": [
+          -337,
+          -631,
+          -281,
+          -575
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493992.14928888186%2C4876297.282153052%2C494048.14928888186%2C4876353.282153052&bboxSR=3740&imageSR=3740&size=1456%2C1456&layers=show%3A26&format=png32",
+        "path": "junction-2021.png",
+        "sha256": "b94512f07102ebe71b328ca1fb9d15c03ae981df999dea5cfdc558fc24b498fc"
+      },
+      {
+        "zone": "junction",
+        "year": 2023,
+        "bounds_enu_m": [
+          -337,
+          -631,
+          -281,
+          -575
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493992.14928888186%2C4876297.282153052%2C494048.14928888186%2C4876353.282153052&bboxSR=3740&imageSR=3740&size=1456%2C1456&layers=show%3A2&format=png32",
+        "path": "junction-2023.png",
+        "sha256": "1391e4d12477f8633ee97adb8135b0876bfedb464abecb3c05a3fc8bef826eef"
+      },
+      {
+        "zone": "junction",
+        "year": 2025,
+        "bounds_enu_m": [
+          -337,
+          -631,
+          -281,
+          -575
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493992.14928888186%2C4876297.282153052%2C494048.14928888186%2C4876353.282153052&bboxSR=3740&imageSR=3740&size=1456%2C1456&layers=show%3A57&format=png32",
+        "path": "junction-2025.png",
+        "sha256": "b3e31c8c71d571937e3d4446555f43631fc3b500dfbe16c1fad2836cb128a8c6"
+      }
+    ],
+    "street_views": [
+      {
+        "date": "2024-07",
+        "id": "8b0dWBYfCf41sRRjaVvaNw",
+        "camera_enu": [
+          -311.92690132168354,
+          -596.4703203188255
+        ],
+        "bearing": 266.07,
+        "distance": 12.1,
+        "file": "wall-southeast-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8b0dWBYfCf41sRRjaVvaNw&heading=266.07",
+        "sha256": "ef4fa719d0b4a8a86c44330782476f65e5c46805563c304ad0238fc82db0fd11"
+      },
+      {
+        "date": "2021-06",
+        "id": "p0FnrUBf2DeyVwecGIEjGg",
+        "camera_enu": [
+          -308.2886640885845,
+          -597.1404499206692
+        ],
+        "bearing": 269.42,
+        "distance": 15.7,
+        "file": "wall-southeast-2021-06.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p0FnrUBf2DeyVwecGIEjGg&heading=269.42",
+        "sha256": "4142af943b9b4820579d66fa48f9b0abc08487be99326ec16abb433f7d132420"
+      }
+    ],
+    "registration": "Four county dates place both paired white crossings. The two bicycle guides, north approach bicycle symbol, stop bar and sidewalk returns are visible in 2021 through 2025. The 2024 and 2021 ground views confirm the northwest curb return and the signal pole with the University ST nameplate. Areas lost in trees at the southeast curb use a representative fillet."
+  },
+  "crossings": {
+    "west": {
+      "edges_enu_m": [
+        [
+          [
+            -322.6,
+            -601.64
+          ],
+          [
+            -324.01,
+            -613.26
+          ]
+        ],
+        [
+          [
+            -318.62,
+            -599.95
+          ],
+          [
+            -320.26,
+            -613.9
+          ]
+        ]
+      ],
+      "width_m": 0.29
+    },
+    "east": {
+      "edges_enu_m": [
+        [
+          [
+            -299.58,
+            -600.26
+          ],
+          [
+            -299.2,
+            -612.51
+          ]
+        ],
+        [
+          [
+            -296.07,
+            -601.64
+          ],
+          [
+            -295.49,
+            -612.42
+          ]
+        ]
+      ],
+      "width_m": 0.29
+    }
+  },
+  "south_throat_enu_m": [
+    [
+      -321.8,
+      -615.7
+    ],
+    [
+      -296.1,
+      -615.7
+    ],
+    [
+      -299.3,
+      -616.84
+    ],
+    [
+      -301.5,
+      -617.78
+    ],
+    [
+      -303.57,
+      -619.31
+    ],
+    [
+      -304.47,
+      -621.82
+    ],
+    [
+      -313.91,
+      -621.82
+    ],
+    [
+      -314.25,
+      -619.03
+    ],
+    [
+      -316.25,
+      -617.37
+    ],
+    [
+      -319.65,
+      -616.59
+    ]
+  ],
+  "ramps": [
+    {
+      "id": "northwest",
+      "outline_enu_m": [
+        [
+          -324.28,
+          -600.47
+        ],
+        [
+          -322.2,
+          -599.72
+        ],
+        [
+          -321.19,
+          -598.57
+        ],
+        [
+          -319.8,
+          -598.36
+        ],
+        [
+          -318.14,
+          -598.82
+        ],
+        [
+          -317.85,
+          -599.65
+        ],
+        [
+          -319.58,
+          -600.08
+        ],
+        [
+          -321.18,
+          -601.37
+        ],
+        [
+          -322.65,
+          -601.57
+        ],
+        [
+          -323.89,
+          -601.56
+        ]
+      ],
+      "curb_edge_enu_m": [
+        [
+          -322.7,
+          -601.55
+        ],
+        [
+          -318.3,
+          -599.67
+        ]
+      ]
+    },
+    {
+      "id": "southwest",
+      "outline_enu_m": [
+        [
+          -326.1,
+          -616.35
+        ],
+        [
+          -324.78,
+          -615.21
+        ],
+        [
+          -321.85,
+          -614.67
+        ],
+        [
+          -319.72,
+          -614.56
+        ],
+        [
+          -319.28,
+          -615.86
+        ],
+        [
+          -320.04,
+          -616.75
+        ],
+        [
+          -321.06,
+          -618.11
+        ],
+        [
+          -322.18,
+          -618.95
+        ],
+        [
+          -324.37,
+          -618.15
+        ]
+      ],
+      "curb_edge_enu_m": [
+        [
+          -325.1,
+          -615.44
+        ],
+        [
+          -319.86,
+          -614.64
+        ]
+      ]
+    },
+    {
+      "id": "northeast",
+      "outline_enu_m": [
+        [
+          -299.88,
+          -598.96
+        ],
+        [
+          -298.09,
+          -597.13
+        ],
+        [
+          -295.66,
+          -596.7
+        ],
+        [
+          -294.15,
+          -597.42
+        ],
+        [
+          -292.94,
+          -598.48
+        ],
+        [
+          -292.58,
+          -600.24
+        ],
+        [
+          -294.31,
+          -600.87
+        ],
+        [
+          -296.27,
+          -600.83
+        ],
+        [
+          -298.05,
+          -600.24
+        ],
+        [
+          -299.51,
+          -600.18
+        ]
+      ],
+      "curb_edge_enu_m": [
+        [
+          -299.46,
+          -600.18
+        ],
+        [
+          -294.1,
+          -600.81
+        ]
+      ]
+    },
+    {
+      "id": "southeast",
+      "outline_enu_m": [
+        [
+          -300.54,
+          -614.37
+        ],
+        [
+          -298.68,
+          -613.62
+        ],
+        [
+          -296.52,
+          -613.71
+        ],
+        [
+          -294.91,
+          -614.11
+        ],
+        [
+          -293.88,
+          -615.13
+        ],
+        [
+          -294.39,
+          -616.75
+        ],
+        [
+          -296.8,
+          -616.66
+        ],
+        [
+          -298.57,
+          -616.18
+        ],
+        [
+          -299.71,
+          -615.59
+        ]
+      ],
+      "curb_edge_enu_m": [
+        [
+          -299.85,
+          -614.07
+        ],
+        [
+          -295.38,
+          -613.93
+        ]
+      ]
+    }
+  ],
+  "bike_guides": [
+    {
+      "line_enu_m": [
+        [
+          -318.31,
+          -602.65
+        ],
+        [
+          -309.1,
+          -602.73
+        ],
+        [
+          -296.27,
+          -602.92
+        ]
+      ],
+      "spacing_m": 2.5,
+      "dash_length_m": 0.71,
+      "width_m": 0.16
+    },
+    {
+      "line_enu_m": [
+        [
+          -320.12,
+          -612.78
+        ],
+        [
+          -308.9,
+          -612.6
+        ],
+        [
+          -295.65,
+          -612.02
+        ]
+      ],
+      "spacing_m": 2.5,
+      "dash_length_m": 0.72,
+      "width_m": 0.17
+    }
+  ],
+  "south_stop_bar_enu_m": [
+    [
+      -314.08,
+      -618.52
+    ],
+    [
+      -305.18,
+      -618.58
+    ]
+  ],
+  "bike_symbols": [
+    {
+      "center_enu_m": [
+        -325.36,
+        -602.75
+      ],
+      "rotation_degrees": 180,
+      "arrow_enu_m": [
+        -328.51,
+        -602.69
+      ]
+    }
+  ],
+  "pole": {
+    "id": "northwest-university-street",
+    "base_enu_m": [
+      -321.5,
+      -598.35
+    ],
+    "mast_height_m": 7.25,
+    "sign_height_m": 3.45,
+    "signal_height_m": 2.25,
+    "lettering": "UNIVERSITY ST",
+    "evidence": "Northwest pole base and street blade from the 2024 view, with estimated height and hardware thickness. The photo does not supply the operating phase. The registered base is just inside the observed footprint to retain clearance to the existing route."
+  },
+  "sidewalk_returns": [
+    {
+      "id": "southwest",
+      "width_m": 1.56,
+      "points_enu_m": [
+        [
+          -322.43,
+          -616.1
+        ],
+        [
+          -322.18,
+          -618.25
+        ],
+        [
+          -322.1,
+          -620.64
+        ],
+        [
+          -322.03,
+          -624.09
+        ],
+        [
+          -321.96,
+          -627.28
+        ]
+      ]
+    },
+    {
+      "id": "southeast",
+      "width_m": 1.64,
+      "points_enu_m": [
+        [
+          -296.96,
+          -615.34
+        ],
+        [
+          -295.41,
+          -616.14
+        ],
+        [
+          -293.48,
+          -617.12
+        ],
+        [
+          -291.38,
+          -617.62
+        ],
+        [
+          -288.54,
+          -617.37
+        ]
+      ]
+    }
+  ]
+}

@@ -6,9 +6,9 @@ from importlib import import_module
 from pathlib import Path
 
 import numpy as np
-from shapely.affinity import affine_transform
+from shapely.affinity import affine_transform, rotate, translate
 from shapely.geometry import LineString, Point, Polygon, box
-from shapely.ops import unary_union
+from shapely.ops import substring, unary_union
 
 practice = import_module("build-hayward-practice-fields")
 east, site, west, central = (
@@ -275,7 +275,95 @@ def tennis(parts, details, field, spec):
     return unary_union(decks), paint_count, solid, fits
 
 
-def southgate(parts, structures, vegetation, field, spec, road, walks):
+def southgate_walks(spec, junction):
+    ramps = [row["outline_enu_m"] for row in junction["ramps"]]
+    return unary_union(
+        [
+            east.band(spec["south_walk"]),
+            west.surface([*spec["hardscape"], *ramps]),
+            junction_sidewalk_returns(junction),
+        ]
+    )
+
+
+def junction_sidewalk_returns(junction):
+    return unary_union(
+        [
+            LineString(row["points_enu_m"]).buffer(
+                row["width_m"] / 2, cap_style="square"
+            )
+            for row in junction["sidewalk_returns"]
+        ]
+    )
+
+
+def southgate_road(spec, junction, walks, buildings):
+    return (
+        east.band(spec["road"])
+        .union(Polygon(spec["university_entry"]))
+        .union(Polygon(junction["south_throat_enu_m"]))
+        .difference(walks.union(buildings))
+    )
+
+
+def crossing_lines(junction):
+    return unary_union(
+        [
+            LineString(edge).buffer(row["width_m"] / 2, cap_style="flat")
+            for row in junction["crossings"].values()
+            for edge in row["edges_enu_m"]
+        ]
+    )
+
+
+def crossing_corridor(row):
+    edges = []
+    for edge in row["edges_enu_m"]:
+        start, end = np.asarray(edge)
+        direction = (end - start) / np.linalg.norm(end - start)
+        edges.extend([start - 1.80 * direction, end + 2.05 * direction])
+    west_top, west_bottom, east_top, east_bottom = edges
+    return Polygon([west_top, west_bottom, east_bottom, east_top]).buffer(-0.18)
+
+
+def junction_lane_icons(junction):
+    bicycle = practice.agate.bicycle().intersection(box(-1, -1, 1, 0.65))
+    shapes = []
+    for row in junction["bike_symbols"]:
+        heading = row["rotation_degrees"]
+        shapes.extend(
+            [
+                translate(
+                    rotate(bicycle, heading - 90, origin=(0, 0)), *row["center_enu_m"]
+                ),
+                translate(
+                    rotate(central.arrow(), heading, origin=(0, 0)), *row["arrow_enu_m"]
+                ),
+            ]
+        )
+    return unary_union(shapes)
+
+
+def southgate_marks(junction):
+    whites = [crossing_lines(junction), junction_lane_icons(junction)]
+    whites.append(
+        LineString(junction["south_stop_bar_enu_m"]).buffer(0.165, cap_style="flat")
+    )
+    for row in junction["bike_guides"]:
+        line = LineString(row["line_enu_m"])
+        whites.extend(
+            substring(
+                line, start, min(start + row["dash_length_m"], line.length)
+            ).buffer(
+                row["width_m"] / 2,
+                cap_style="flat",
+            )
+            for start in np.arange(0.38, line.length, row["spacing_m"])
+        )
+    return unary_union(whites)
+
+
+def southgate(parts, structures, vegetation, field, spec, junction, road, walks):
     paver = Polygon(spec["brick_cross"])
     e, n = spec["crossing_medallion"]
     ring = Point(e, n).buffer(1.68, quad_segs=24)
@@ -285,15 +373,30 @@ def southgate(parts, structures, vegetation, field, spec, road, walks):
         for x in np.arange(paver.bounds[0] + (k % 2) * 0.25, paver.bounds[2], 0.50):
             courses.append(LineString([(x, north), (x, north + 0.24)]))
     joints = unary_union(courses).buffer(0.009).intersection(paver).difference(ring)
+    ramp_specs = [
+        (Polygon(row["outline_enu_m"]), LineString(row["curb_edge_enu_m"]))
+        for row in junction["ramps"]
+    ]
+    ramp_shapes = unary_union([shape for shape, _ in ramp_specs])
     for shape, tint, lift, resolution in (
         (road.difference(paver), (127, 126, 119), 0.095, 1.5),
-        (walks, (175, 172, 156), 0.137, 1.15),
+        (walks.difference(ramp_shapes), (175, 172, 156), 0.137, 1.15),
         (paver.difference(ring).difference(joints), (155, 142, 123), 0.154, 0.79),
         (joints, (126, 119, 108), 0.154, 0.79),
         (ring, (169, 164, 141), 0.155, 0.61),
         (ring.boundary.buffer(0.045), (112, 125, 96), 0.180, 0.66),
     ):
         site.drape(parts, field, shape, tint, lift, resolution)
+    for shape, curb in ramp_specs:
+        site.landscape.top_surface(
+            parts,
+            shape.intersection(walks),
+            lambda e, n: site.ground_height(field, e, n)
+            + 0.095
+            + 0.042 * min(1.0, curb.distance(Point(e, n)) / 1.45),
+            (175, 172, 156),
+            cell=0.54,
+        )
     boxes = []
     for index, (x, north) in enumerate(spec["north_plinths"]):
         planting = box(x - 1.12, north - 2.18, x + 1.12, north + 1.52)
@@ -376,6 +479,7 @@ def main():
     parser.add_argument("--audit", type=Path, required=True)
     args = parser.parse_args()
     spec = site.read(site.root / "data/metadata/hayward-square-track.json")
+    junction = site.read(site.root / "data/metadata/southgate-junction.json")
     prior = site.read(site.root / "data/metadata/hayward-practice-fields.json")
     agate = site.read(site.root / "data/metadata/agate-fifteenth-eighteenth.json")
     manifest, field, graph = east.pinned_site(site.scene, spec)
@@ -387,20 +491,24 @@ def main():
     turf, turf_grade = turf_field(land, objects, field, spec, track)
     courts, court_count, boxes, court_grades = tennis(land, objects, field, spec)
     sidewalk = east.band(spec["south_walk"])
-    walks = sidewalk.union(west.surface(spec["hardscape"])).difference(
+    walks = southgate_walks(spec, junction).difference(
         buildings.union(track).union(turf).union(courts)
     )
-    road = (
-        east.band(spec["road"])
-        .union(Polygon(spec["university_entry"]))
-        .difference(walks.union(buildings))
-    )
-    boxes.extend(southgate(land, objects, green, field, spec, road, walks))
+    road = southgate_road(spec, junction, walks, buildings)
+    boxes.extend(southgate(land, objects, green, field, spec, junction, road, walks))
     for runs in spec["exterior_fence"]:
         boxes.extend(practice.fence_run(objects, field, runs["points"], runs["height"]))
     assert len(boxes) <= 16
-    for name, color in (("white_lines", WHITE), ("yellow_lines", (185, 160, 83))):
-        marking = central.buffered_lines(spec[name], 0.133).intersection(road)
+    for area, color in (
+        (
+            central.buffered_lines(spec["white_lines"][4:], 0.133).union(
+                southgate_marks(junction)
+            ),
+            WHITE,
+        ),
+        (central.buffered_lines(spec["yellow_lines"], 0.133), (185, 160, 83)),
+    ):
+        marking = area.intersection(road)
         site.drape(land, field, marking, color, 0.168, 0.86)
     plants = fixtures(
         objects, green, land, field, spec, walks.union(track).union(turf).union(courts)
@@ -449,7 +557,7 @@ def main():
             walkable_ground=dict(
                 paths=spec["routes"],
                 bounds_enu_m=[
-                    [-329, -620, -244, -583],
+                    [-329, -628, -244, -583],
                     [-245, -620, -159, -590],
                     [-160, -621, -146, -590],
                     [-160, -551, -74, -470],

@@ -332,6 +332,7 @@ export async function loadBuildingSiteReview(
     ids,
     groundNode,
     walkableGroundNode,
+    walkableGroundOnly = false,
     absorbedIds = [],
     replacedDetails = [],
     identityMoves = {},
@@ -560,12 +561,14 @@ export async function loadBuildingSiteReview(
   if (
     ids.some((id) => !matches(scene.getObjectByName(id), id)) ||
     (groundNode && !ground?.isMesh) ||
+    (walkableGroundOnly && (!surface || surface === ground)) ||
     (walkableGroundNode &&
       (!matches(surface, walkableGroundNode) ||
         surface.userData.asset_kind !== "landscape-surface")) ||
     (corridor && !roadRemainder?.isMesh)
   )
     throw new Error("Missing exterior review building or ground.");
+  if (walkableGroundOnly) surface.visible = false;
 
   return {
     ids,

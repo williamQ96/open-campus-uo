@@ -2222,7 +2222,7 @@
   },
   "hayward_square_track_site": {
     "url": "hayward-square-track-review/site.json",
-    "sha256": "eddd4e1f8099b8663cb3db84c481548de7fb30bd5f9a4f3771ae2cb983c30e25"
+    "sha256": "7208632e9581d2eef8285dfec678046abd0896b533f42a541e477b5706066e58"
   },
   "university_south_axis_site": {
     "url": "university-south-axis-review/site.json",
@@ -2267,5 +2267,13 @@
   "pioneer_cemetery_inner_grid_site": {
     "url": "pioneer-cemetery-inner-grid-review/site.json",
     "sha256": "5e2823f4fbefbe161d89aef13f57c5a8ee64112e532ba54b641466fa7483feac"
+  },
+  "east_18th_west_approach_site": {
+    "url": "east-eighteenth-west-approach-review/site.json",
+    "sha256": "508df2bac25c96682a38589f90885a01e9b986a776e6d7478160ea1e9ba57cad"
+  },
+  "rankin_frontage_site": {
+    "url": "rankin-frontage-review/site.json",
+    "sha256": "f619405be55add4e829086ab7c01296e298e51c6645d326e3824204b77fca840"
   }
 }

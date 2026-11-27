@@ -3139,15 +3139,15 @@
     },
     "apps/web-preview/public/scene/hayward-square-track-review/site.json": {
       "bytes": 2497,
-      "sha256": "eddd4e1f8099b8663cb3db84c481548de7fb30bd5f9a4f3771ae2cb983c30e25",
+      "sha256": "7208632e9581d2eef8285dfec678046abd0896b533f42a541e477b5706066e58",
       "license": "CC-BY-4.0",
-      "origin": "Original Hayward square track, Turf Field 3, tennis courts, East 18th sidewalk and Southgate geometry. See docs/hayward-square-track-review-2026-11-27.md."
+      "origin": "Original Hayward square track, Turf Field 3, tennis courts, East 18th sidewalk and Southgate geometry. See docs/hayward-square-track-review-2026-11-27.md. Junction paint, ramps and original fixtures are documented in docs/southgate-junction-2026-11-27.md."
     },
     "apps/web-preview/public/scene/hayward-square-track-review/site.glb": {
-      "bytes": 5703288,
-      "sha256": "2ce2aab138ad3c263a1305b42c989cf334f2a8054622f22871cd9e7d4667ccbd",
+      "bytes": 5768856,
+      "sha256": "ebb9f8cfb6363f1947cfbca2c630d0cafbe4963faeb3b7d8c4357044a49c2fc8",
       "license": "CC-BY-4.0",
-      "origin": "Original Hayward square track, Turf Field 3, tennis courts, East 18th sidewalk and Southgate geometry. See docs/hayward-square-track-review-2026-11-27.md."
+      "origin": "Original Hayward square track, Turf Field 3, tennis courts, East 18th sidewalk and Southgate geometry. See docs/hayward-square-track-review-2026-11-27.md. Junction paint, ramps and original fixtures are documented in docs/southgate-junction-2026-11-27.md."
     },
     "apps/web-preview/public/scene/university-south-axis-review/site.json": {
       "bytes": 2829,
@@ -3280,6 +3280,30 @@
       "sha256": "e506cf6bcee9a2e6012ae009be239d761a24f25bed86822cd6a4d54033505839",
       "license": "CC-BY-4.0",
       "origin": "Original HEDCO south drop-off surface, Lot 19 crossing, planted islands and sidewalk geometry, informed by Lane County imagery and campus sources. See docs/clinical-dropoff-landscape-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-eighteenth-west-approach-review/site.json": {
+      "bytes": 2331,
+      "sha256": "508df2bac25c96682a38589f90885a01e9b986a776e6d7478160ea1e9ba57cad",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 18th Avenue pavement, markings and planting registration from Lane County orthophotos and UO references. See docs/east-18th-west-approach-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-eighteenth-west-approach-review/site.glb": {
+      "bytes": 924092,
+      "sha256": "ba2a95a945d958e4a9a9d63e102eda3be77538fa0dce065548fffde0b8a01242",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 18th Avenue pavement, markings and planting registration from Lane County orthophotos and UO references. See docs/east-18th-west-approach-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/rankin-frontage-review/site.json": {
+      "bytes": 2378,
+      "sha256": "f619405be55add4e829086ab7c01296e298e51c6645d326e3824204b77fca840",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 18th Avenue Rankin frontage and University Street crossing geometry registered from four Lane County orthophotos. The terrain sampler uses the existing cemetery sidewalk registration. See docs/rankin-frontage-2026-11-27.md. Junction paint, ramps and original fixtures are documented in docs/southgate-junction-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/rankin-frontage-review/site.glb": {
+      "bytes": 797608,
+      "sha256": "0d8d8b6bd5bb6bebd4b736661c93cdb6409fe3721028ecb590a2c3f20ddd3f7c",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 18th Avenue Rankin frontage and University Street crossing geometry registered from four Lane County orthophotos. The terrain sampler uses the existing cemetery sidewalk registration. See docs/rankin-frontage-2026-11-27.md. Junction paint, ramps and original fixtures are documented in docs/southgate-junction-2026-11-27.md."
     }
   },
   "additional_sources": [

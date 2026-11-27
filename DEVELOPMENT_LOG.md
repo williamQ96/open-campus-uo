@@ -6,6 +6,12 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release East 18th Avenue, Rankin frontage and Southgate at L2
+
+- Reconstruct 203.5 m of East 18th Avenue with both sidewalks, two Kincaid crossings, the Clinical Services south parking court, two planted beds and 62 pedestrian route edges. Connect the Rankin frontage to University Street and align the standing height with the visible sidewalk. [West approach](docs/east-18th-west-approach-2026-11-27.md) · [Rankin frontage](docs/rankin-frontage-2026-11-27.md).
+- Register the two Southgate crossings, four curb ramps, two south sidewalk returns, bicycle guides, stop line and northwest signal pole with its University Street blade. The final Rankin graph has 65 edges. Grades and some fixture dimensions use estimates. [Southgate review](docs/southgate-junction-2026-11-27.md).
+- Before deployment, desktop and phone production previews each matched all 610 exterior IDs to geometry, loaded 457 entrances and 386 tracked resources, and exercised six west approach and seven frontage routes. All 63 sampled files match the build by SHA-256. The three site bundles and the route coverage reproduce byte for byte. The build, formatting, all 199 unit tests, 509 archive records and viewer hashes pass. This release targets GitHub Pages from `main`. [Pages workflow](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
 ## 2026-11-27 - Pioneer Cemetery plots, HEDCO drop-off and Memorial Quad lamps
 
 - Add 15 exposed curb traces, 40 anonymous markers, three grass strips and two shrubs to Pioneer Cemetery. Nine taller markers register collision. [Plot review](docs/pioneer-cemetery-inner-grid-2026-11-27.md).
