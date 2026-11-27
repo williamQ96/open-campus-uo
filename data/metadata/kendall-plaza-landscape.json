@@ -1,0 +1,1121 @@
+{
+  "name": "Kendall Plaza and Education south promenade",
+  "extent": [
+    -695,
+    -440,
+    -601,
+    -373
+  ],
+  "surface_bounds": [
+    [
+      -695,
+      -439.9,
+      -646,
+      -373
+    ],
+    [
+      -647,
+      -439.9,
+      -601,
+      -373
+    ]
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "sites": {
+      "knight-library-review": "65983f043cf10a13f2fe5169aba754e8b28a70022c46dcfa66c5d879b1070598",
+      "pioneer-cemetery-landscape-review": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
+      "plc-lokey-tykeson-review": "c0884ac85424815bd3209e2e3964ddc040ee49e6e3bac526bf360afd5cff2485",
+      "riverfront-plant-infrastructure-review": "27b060a8ada406f13e8c71065d01a82d6304c14ee38c2faea54e643348eb18cf",
+      "campus-frontage-review": "86e915ab85f7df842cfe5d950c83e69cdac57ecb8f77a18c59caeafba5635802",
+      "hedco-exterior-review": "0f5c5912f9ea81bfa362a75fd50da06aff755de5d313320a93f5153a7866792f",
+      "southwest-campus-green-review": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
+      "kincaid-education-landscape-review": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a"
+    }
+  },
+  "sources": {
+    "orthophotos": [
+      {
+        "tile": "kendall-plaza",
+        "year": 2017,
+        "file": "kendall-plaza-2017.png",
+        "bounds_enu_m": [
+          -700,
+          -459,
+          -588,
+          -366
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493629.14928888186%2C4876469.282153052%2C493741.14928888186%2C4876562.282153052&bboxSR=3740&imageSR=3740&size=896%2C744&layers=show%3A29&format=png32",
+        "sha256": "d494e025254b1e2bd3054a9028cae13969fa26a6b3413a91648461d03182f92c"
+      },
+      {
+        "tile": "kendall-plaza",
+        "year": 2021,
+        "file": "kendall-plaza-2021.png",
+        "bounds_enu_m": [
+          -700,
+          -459,
+          -588,
+          -366
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493629.14928888186%2C4876469.282153052%2C493741.14928888186%2C4876562.282153052&bboxSR=3740&imageSR=3740&size=896%2C744&layers=show%3A26&format=png32",
+        "sha256": "1be866686cca264004856766059d9508a31a2243e7fdddfaa605caf47cc2f3f1"
+      },
+      {
+        "tile": "kendall-plaza",
+        "year": 2025,
+        "file": "kendall-plaza-2025.png",
+        "bounds_enu_m": [
+          -700,
+          -459,
+          -588,
+          -366
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493629.14928888186%2C4876469.282153052%2C493741.14928888186%2C4876562.282153052&bboxSR=3740&imageSR=3740&size=896%2C744&layers=show%3A57&format=png32",
+        "sha256": "42f21de51039f5537801898482689cbcdf4aa6d808652664830b2967ee6937c9"
+      }
+    ],
+    "trees": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=Removed+%3D+%27No%27+AND+FutureTree+%3D+%27No%27&geometry=493638.14928888186%2C4876488.282153052%2C493729.14928888186%2C4876551.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=TreeNumber%2CCommonName%2CHeight%2CSpread&returnGeometry=True",
+      "sha256": "e9b6dd324dcf473a18b0af3da307407eb20adc82619c257a2fcab475521f0514"
+    },
+    "education_plaza_study": "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/a054136d-556e-4939-a611-daed2b31686a/content#page=107",
+    "accessibility": "https://education.uoregon.edu/coe-campus-and-community",
+    "noaa_ground_source": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1309.copc.laz",
+    "noaa_local_cloud_sha256": "8d21e279656061e5cf1217f60727bfc1090db8bd27abaca0b1fc56591fca0961"
+  },
+  "walks": [
+    {
+      "line": [
+        [
+          -620.13,
+          -402.22
+        ],
+        [
+          -624.4,
+          -403.55
+        ],
+        [
+          -629.1,
+          -404.1
+        ],
+        [
+          -637.2,
+          -406.48
+        ],
+        [
+          -641.0,
+          -409.27
+        ],
+        [
+          -644.0,
+          -409.326
+        ]
+      ],
+      "width": 3.12,
+      "kind": "brick"
+    },
+    {
+      "line": [
+        [
+          -629.1,
+          -404.1
+        ],
+        [
+          -630.3,
+          -397.23
+        ],
+        [
+          -630.5,
+          -389.65
+        ],
+        [
+          -630.5,
+          -385.6
+        ],
+        [
+          -630.5,
+          -380.7
+        ],
+        [
+          -630.6,
+          -380.8
+        ]
+      ],
+      "width": 4.65,
+      "kind": "brick"
+    },
+    {
+      "line": [
+        [
+          -630.5,
+          -385.6
+        ],
+        [
+          -642.5,
+          -385.6
+        ],
+        [
+          -656,
+          -385.7
+        ],
+        [
+          -668,
+          -386.4
+        ],
+        [
+          -680.7,
+          -386.25
+        ],
+        [
+          -687.0,
+          -383.1
+        ],
+        [
+          -688.11,
+          -379
+        ],
+        [
+          -685.05,
+          -374.45
+        ]
+      ],
+      "width": 4.35,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -623.4,
+          -414.0
+        ],
+        [
+          -627.2,
+          -417.4
+        ],
+        [
+          -630,
+          -420.0
+        ],
+        [
+          -630.0,
+          -430.45
+        ],
+        [
+          -629.45,
+          -439.0
+        ]
+      ],
+      "width": 2.56,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -616.43,
+          -424.79
+        ],
+        [
+          -612.26,
+          -423.0
+        ],
+        [
+          -611.32,
+          -420.1
+        ],
+        [
+          -611.27,
+          -411.44
+        ],
+        [
+          -611.47,
+          -404.75
+        ],
+        [
+          -612.9,
+          -399.3
+        ],
+        [
+          -613.52,
+          -390.3
+        ],
+        [
+          -613.42,
+          -386.5
+        ]
+      ],
+      "width": 2.75,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -630.5,
+          -385.6
+        ],
+        [
+          -620.3,
+          -385.6
+        ],
+        [
+          -613.42,
+          -386.5
+        ]
+      ],
+      "width": 3.25,
+      "kind": "concrete"
+    }
+  ],
+  "brick_plaza": [
+    [
+      -643.6,
+      -405.0
+    ],
+    [
+      -637.1,
+      -402.0
+    ],
+    [
+      -631.9,
+      -401.55
+    ],
+    [
+      -629.4,
+      -400.9
+    ],
+    [
+      -624.2,
+      -402.05
+    ],
+    [
+      -620.35,
+      -402.12
+    ],
+    [
+      -620.35,
+      -420.4
+    ],
+    [
+      -637.9,
+      -420.4
+    ],
+    [
+      -641.35,
+      -418.8
+    ],
+    [
+      -643.85,
+      -416.75
+    ],
+    [
+      -644.93,
+      -412.49
+    ],
+    [
+      -644.93,
+      -405.4
+    ]
+  ],
+  "beds": [
+    [
+      [
+        -632.4,
+        -388.0
+      ],
+      [
+        -637.9,
+        -388.0
+      ],
+      [
+        -641.5,
+        -389.0
+      ],
+      [
+        -642.2,
+        -395.55
+      ],
+      [
+        -639.2,
+        -398.66
+      ],
+      [
+        -632.75,
+        -399.63
+      ]
+    ],
+    [
+      [
+        -628.6,
+        -387.8
+      ],
+      [
+        -619.66,
+        -387.56
+      ],
+      [
+        -619.36,
+        -389.11
+      ],
+      [
+        -621.0,
+        -394.0
+      ],
+      [
+        -623.15,
+        -399.42
+      ],
+      [
+        -627.52,
+        -400.02
+      ],
+      [
+        -628.7,
+        -395.77
+      ]
+    ],
+    [
+      [
+        -636.7,
+        -381.6
+      ],
+      [
+        -644.66,
+        -381.19
+      ],
+      [
+        -644.66,
+        -378.6
+      ],
+      [
+        -636.68,
+        -378.71
+      ]
+    ],
+    [
+      [
+        -628.2,
+        -381.77
+      ],
+      [
+        -620.54,
+        -382.15
+      ],
+      [
+        -617.58,
+        -380.6
+      ],
+      [
+        -617.57,
+        -378.8
+      ],
+      [
+        -628.12,
+        -378.72
+      ]
+    ],
+    [
+      [
+        -687.05,
+        -389.68
+      ],
+      [
+        -651,
+        -389.56
+      ],
+      [
+        -649.88,
+        -396.1
+      ],
+      [
+        -655.2,
+        -398.0
+      ],
+      [
+        -683.81,
+        -397.7
+      ],
+      [
+        -686.9,
+        -396.9
+      ]
+    ],
+    [
+      [
+        -642.1,
+        -420.8
+      ],
+      [
+        -634.1,
+        -420.45
+      ],
+      [
+        -633.5,
+        -438.6
+      ],
+      [
+        -639.63,
+        -439.42
+      ],
+      [
+        -641.82,
+        -436.62
+      ]
+    ],
+    [
+      [
+        -619.3,
+        -420.66
+      ],
+      [
+        -615.8,
+        -420.5
+      ],
+      [
+        -614.37,
+        -425.3
+      ],
+      [
+        -613.75,
+        -434.84
+      ],
+      [
+        -619.36,
+        -439.94
+      ],
+      [
+        -620.16,
+        -431.2
+      ]
+    ]
+  ],
+  "lawns": [
+    [
+      [
+        -641.9,
+        -420.41
+      ],
+      [
+        -620.6,
+        -420.62
+      ],
+      [
+        -616.6,
+        -424.7
+      ],
+      [
+        -616.22,
+        -440
+      ],
+      [
+        -640.12,
+        -439.6
+      ]
+    ],
+    [
+      [
+        -645,
+        -381.33
+      ],
+      [
+        -621.45,
+        -381.46
+      ],
+      [
+        -616.48,
+        -383.2
+      ],
+      [
+        -618.66,
+        -389.1
+      ],
+      [
+        -623.42,
+        -398.67
+      ],
+      [
+        -640.81,
+        -399.64
+      ],
+      [
+        -648.12,
+        -397.45
+      ],
+      [
+        -648.8,
+        -389.22
+      ]
+    ]
+  ],
+  "trees": [
+    {
+      "id": 979,
+      "species": "Norway Maple",
+      "position_enu_m": [
+        -607.685,
+        -402.535
+      ],
+      "height_m": 6.096,
+      "crown_radius_m": 1.524,
+      "form": "rounded"
+    },
+    {
+      "id": 982,
+      "species": "Schwedler Norway Maple",
+      "position_enu_m": [
+        -609.227,
+        -423.889
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 4.572,
+      "form": "rounded"
+    },
+    {
+      "id": 983,
+      "species": "Schwedler Norway Maple",
+      "position_enu_m": [
+        -609.449,
+        -434.447
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 4.572,
+      "form": "rounded"
+    },
+    {
+      "id": 977,
+      "species": "Norway Maple",
+      "position_enu_m": [
+        -608.317,
+        -392.412
+      ],
+      "height_m": 5.486,
+      "crown_radius_m": 1.829,
+      "form": "rounded"
+    },
+    {
+      "id": 886,
+      "species": "Kwanzan Oriental Cherry",
+      "position_enu_m": [
+        -641.736,
+        -378.401
+      ],
+      "height_m": 4.572,
+      "crown_radius_m": 2.286,
+      "form": "rounded"
+    },
+    {
+      "id": 885,
+      "species": "Kwanzan Oriental Cherry",
+      "position_enu_m": [
+        -624.52,
+        -379.034
+      ],
+      "height_m": 3.658,
+      "crown_radius_m": 0.914,
+      "form": "rounded"
+    },
+    {
+      "id": 883,
+      "species": "Kwanzan Oriental Cherry",
+      "position_enu_m": [
+        -616.173,
+        -379.269
+      ],
+      "height_m": 3.658,
+      "crown_radius_m": 1.524,
+      "form": "rounded"
+    },
+    {
+      "id": 4568,
+      "species": "Katsura Tree",
+      "position_enu_m": [
+        -636.44,
+        -426.063
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.7,
+      "form": "rounded"
+    },
+    {
+      "id": 4569,
+      "species": "Katsura Tree",
+      "position_enu_m": [
+        -635.453,
+        -439.485
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.7,
+      "form": "rounded"
+    },
+    {
+      "id": 4573,
+      "species": "Green Japanese Maple",
+      "position_enu_m": [
+        -615.527,
+        -396.799
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4574,
+      "species": "Green Japanese Maple",
+      "position_enu_m": [
+        -615.723,
+        -400.181
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4575,
+      "species": "Green Japanese Maple",
+      "position_enu_m": [
+        -614.847,
+        -406.653
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4576,
+      "species": "Green Japanese Maple",
+      "position_enu_m": [
+        -614.748,
+        -411.69
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4577,
+      "species": "Green Japanese Maple",
+      "position_enu_m": [
+        -614.803,
+        -416.019
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4578,
+      "species": "Prairie Fire Crab",
+      "position_enu_m": [
+        -624.792,
+        -394.637
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4579,
+      "species": "Prairie Fire Crab",
+      "position_enu_m": [
+        -625.439,
+        -389.21
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4580,
+      "species": "Prairie Fire Crab",
+      "position_enu_m": [
+        -618.614,
+        -382.146
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4581,
+      "species": "Katsura Tree",
+      "position_enu_m": [
+        -648.275,
+        -396.093
+      ],
+      "height_m": 4.572,
+      "crown_radius_m": 1.829,
+      "form": "rounded"
+    },
+    {
+      "id": 4582,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -680.331,
+        -392.826
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4583,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -676.072,
+        -393.984
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4584,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -664.678,
+        -394.195
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4585,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -661.062,
+        -392.251
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4586,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -657.704,
+        -393.987
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 5860,
+      "species": "Katsura Tree",
+      "position_enu_m": [
+        -639.885,
+        -397.175
+      ],
+      "height_m": 2.134,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 6186,
+      "species": "Paper Bark Cherry",
+      "position_enu_m": [
+        -645.29,
+        -378.663
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.7,
+      "form": "rounded"
+    }
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [
+        -620.13,
+        -402.22
+      ],
+      "points_enu_m": [
+        [
+          -624.4,
+          -403.55
+        ],
+        [
+          -629.1,
+          -404.1
+        ],
+        [
+          -637.2,
+          -406.48
+        ],
+        [
+          -641.0,
+          -409.27
+        ],
+        [
+          -644.0,
+          -409.326
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -629.1,
+        -404.1
+      ],
+      "points_enu_m": [
+        [
+          -630.3,
+          -397.23
+        ],
+        [
+          -630.5,
+          -389.65
+        ],
+        [
+          -630.5,
+          -385.6
+        ],
+        [
+          -630.5,
+          -380.7
+        ],
+        [
+          -630.6,
+          -380.8
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -630.5,
+        -385.6
+      ],
+      "points_enu_m": [
+        [
+          -642.5,
+          -385.6
+        ],
+        [
+          -656,
+          -385.7
+        ],
+        [
+          -668,
+          -386.4
+        ],
+        [
+          -680.7,
+          -386.25
+        ],
+        [
+          -687.0,
+          -383.1
+        ],
+        [
+          -688.11,
+          -379
+        ]
+      ],
+      "end_enu_m": [
+        -685.05,
+        -374.45
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -623.4,
+        -414.0
+      ],
+      "points_enu_m": [
+        [
+          -627.2,
+          -417.4
+        ],
+        [
+          -630,
+          -420.0
+        ],
+        [
+          -630.0,
+          -430.45
+        ],
+        [
+          -629.45,
+          -439.0
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -616.43,
+        -424.79
+      ],
+      "points_enu_m": [
+        [
+          -612.26,
+          -423.0
+        ],
+        [
+          -611.32,
+          -420.1
+        ],
+        [
+          -611.27,
+          -411.44
+        ],
+        [
+          -611.47,
+          -404.75
+        ],
+        [
+          -612.9,
+          -399.3
+        ],
+        [
+          -613.52,
+          -390.3
+        ]
+      ],
+      "end_enu_m": [
+        -613.42,
+        -386.5
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -630.5,
+        -385.6
+      ],
+      "points_enu_m": [
+        [
+          -620.3,
+          -385.6
+        ]
+      ],
+      "end_enu_m": [
+        -613.42,
+        -386.5
+      ]
+    }
+  ],
+  "terrace": {
+    "tiers": [
+      [
+        -620.28,
+        -619.41,
+        8.49
+      ],
+      [
+        -619.41,
+        -618.45,
+        8.8
+      ],
+      [
+        -618.45,
+        -614.0,
+        9.1
+      ]
+    ],
+    "south_north": [
+      -417.55,
+      -404.8
+    ],
+    "planter_bounds": [
+      -616.98,
+      -417.42,
+      -613.95,
+      -404.91
+    ],
+    "rail_northings": [
+      -417.3,
+      -405.12
+    ],
+    "platform_allowance_m": 0.12
+  },
+  "annex_clearance_enu_m": [
+    -609.48,
+    -421.8,
+    -598.76,
+    -402.7
+  ],
+  "benches": [
+    {
+      "center": [
+        -617.53,
+        -407.01
+      ],
+      "bearing": 0,
+      "length": 1.78,
+      "form": "timber",
+      "surface_z_m": 9.1
+    },
+    {
+      "center": [
+        -617.53,
+        -413.73
+      ],
+      "bearing": 0,
+      "length": 1.84,
+      "form": "timber",
+      "surface_z_m": 9.1
+    },
+    {
+      "center": [
+        -633.55,
+        -392.58
+      ],
+      "bearing": 0,
+      "length": 1.74,
+      "form": "timber"
+    },
+    {
+      "center": [
+        -633.93,
+        -397.67
+      ],
+      "bearing": 18,
+      "length": 1.92,
+      "form": "timber"
+    }
+  ],
+  "lamps": [
+    [
+      -633.62,
+      -382.96
+    ],
+    [
+      -635.83,
+      -398.9
+    ],
+    [
+      -615.32,
+      -388.42
+    ]
+  ],
+  "clear_context_trees": [
+    {
+      "index": 225,
+      "position_enu_m": [
+        -606.992,
+        -408.495
+      ]
+    }
+  ],
+  "art": {
+    "name": "Unity and Harmony",
+    "artist": "Masayuki Nagase",
+    "date": 2009,
+    "medium": "Carved natural granite",
+    "location_source": "https://education.uoregon.edu/art-college-education-complex",
+    "field_note": "https://blogs.uoregon.edu/geologyofcampus/",
+    "reported_bench_coordinate_lonlat": [
+      -123.07858,
+      44.0419
+    ],
+    "reported_bench_enu_m": [
+      -623.659,
+      -399.282
+    ],
+    "status": "A February 2026 campus field note identifies a granite seat in Kendall Plaza. The point is approximate. Geometry and the full group require individual current locations and reusable sources."
+  }
+}

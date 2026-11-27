@@ -167,13 +167,18 @@ def drape(parts, field, shape, color, lift, cell):
     )
 
 
-def named_paths(parts, field, spec):
+def named_path_footprints(spec):
     centerlines = [
         (LineString(row["centerline_enu_m"]), row["width_m"]) for row in spec["roads"]
     ]
     bases = [line.buffer(width / 2, cap_style="flat") for line, width in centerlines]
     roads = unary_union(bases)
     approach = Polygon(spec["northwest_refinement"]["west_approach_outline_enu_m"])
+    return roads, approach
+
+
+def named_paths(parts, field, spec):
+    roads, approach = named_path_footprints(spec)
     paving = roads.union(approach)
     areas = Polygon(spec["parcel"]["outline_enu_m"])
     shoulders = paving.buffer(0.43).difference(paving).intersection(areas)
@@ -183,7 +188,7 @@ def named_paths(parts, field, spec):
     return paving
 
 
-def rankin_frontage(parts, field, spec):
+def rankin_frontage_footprint(spec):
     frontage = spec["rankin_fringe"]["sidewalk"]
     line = LineString(frontage["centerline_enu_m"])
     footprint = line.buffer(frontage["width_m"] / 2, cap_style="flat")
@@ -191,7 +196,11 @@ def rankin_frontage(parts, field, spec):
         LineString(row).buffer(0.20, cap_style="flat")
         for row in spec["southern_walls"]
     ]
-    footprint = footprint.difference(unary_union(walls))
+    return footprint.difference(unary_union(walls)), walls
+
+
+def rankin_frontage(parts, field, spec):
+    footprint, walls = rankin_frontage_footprint(spec)
     drape(parts, field, footprint, (150, 147, 134), 0.097, 1.12)
     return footprint.area, [
         unary_union(walls[:2]).bounds,

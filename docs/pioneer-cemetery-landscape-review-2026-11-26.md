@@ -59,6 +59,10 @@ The update adds a 30.75 m grass track east of the library junction, two low ivy 
 
 The four added branches register 50 navigation edges and 48 waypoints. The authored edges remain within the modeled travel surface. Both production profiles found the same 244.03 m route from the library approach to north Risdon Lane on that surface. In two other samples, the viewer's endpoint connections cross 31.35 m and 9.34 m of unpaved ground. The east stair, original detail triangles, canopy, shelter and kiosk are retained. The new work is part of the November 27 outdoor L2 release.
 
+## Paved route access
+
+The local routing refinement checks connections from pins on the modeled paths, east stair and Rankin Lane sidewalk. The library-to-Cherry sample is now 172.26 m and the library-to-west Rankin sample is 255.35 m. The north Risdon control remains 244.03 m. All three are within the 0.13 m survey tolerance across desktop and phone. The west Rankin Lane sidewalk sample also stays within tolerance, compared with 5.04 m outside it before. [Southwest Campus Green route review](southwest-campus-green-review-2026-11-27.md#paved-route-access).
+
 - [Editable model input](../data/metadata/pioneer-cemetery-landscape-review.json)
 - [Exporter](../scripts/build-pioneer-cemetery-landscape-review.py)
 - [Runtime descriptor](../apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.json)

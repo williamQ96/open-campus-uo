@@ -16,3 +16,17 @@ The university art catalogue lists Wayne Chabre's 1994 *Arboretum Illuminatum*, 
 Four branches add 40 navigation edges. The first uses the approach node supplied by the pinned cemetery descriptor. The loader validates the combined graph and appends the branch after the cemetery during scene assembly. The original terrain, campus and navigation source pins are retained. The update is part of the November 27 outdoor L2 release. [Exporter](../scripts/build-southwest-campus-green.py) · [Runtime descriptor](../apps/web-preview/public/scene/southwest-campus-green-review/site.json).
 
 Both production profiles load all 39 added waypoints, 610 exterior meshes and 368 resources. Eight surface probes and three fixture collision probes pass. The 144.98 m library-to-Education sample, the 116.91 m cemetery-to-lot sample and the 89.20 m Education-to-north-lot sample contain endpoint connections outside the measured surfaces. Those stretches measure 15.39 m, 48.33 m and 28.88 m respectively. All four authored branches stay on the registered paving within the 0.13 m audit tolerance. Two deterministic exports, six matched views, formatting, 197 unit tests and 12 focused browser tests pass.
+
+## Paved route access
+
+The viewer uses the modeled terrace, walks and cemetery paving to check how pins on these surfaces join the path graph. The coverage uses the same outlines as the site exporters and is enabled when the matching ground and routes load. Pins placed on grass still use approximate connections. Lot 20 asphalt remains a separate vehicle surface. [Coverage exporter](../scripts/build-campus-route-surfaces.py).
+
+Desktop and phone return 148.71 m, 250.87 m and 146.23 m for the three Southwest Campus Green samples. All three stay within 0.13 m of the modeled paving. The first follows the tolerance at the pavement edge for 1.025 m. Five offset pin pairs were also tested in both directions across the two sites. [Cemetery route comparison](pioneer-cemetery-landscape-review-2026-11-26.md#paved-route-access).
+
+## Reading garden artwork survey
+
+The university's artwork tour describes three approximately 1.22 m tall sculptural lights, and the artist documents the group as reading-garden lighting. The survey maps the group to Knight Library's south side. The published references identify the work and its scale. Individual base locations still need dated site evidence. [University artwork tour, stop 9](https://cpfm.uoregon.edu/sites/default/files/art_tour_august_2020_0.pdf) · [Artist's catalogue](https://www.waynechabre.com/public-art).
+
+## Kendall Plaza connection
+
+The registered east terrace places three tiers across the former southwest connector. The revised branch follows the lower brick court and rounds the south end of the terrace. The branch adds two edges, bringing the Southwest site total to 42. The modeled walk footprint grows from 1,293.48 m² to 1,301.45 m². [Kendall Plaza review](kendall-plaza-landscape-review-2026-11-27.md).

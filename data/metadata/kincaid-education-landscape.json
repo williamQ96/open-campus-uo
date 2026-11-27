@@ -1,0 +1,1964 @@
+{
+  "name": "Kincaid Green and Lokey Education courtyard",
+  "extent": [
+    -708,
+    -378,
+    -594,
+    -278
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "sites": {
+      "knight-library-review": "65983f043cf10a13f2fe5169aba754e8b28a70022c46dcfa66c5d879b1070598",
+      "pioneer-cemetery-landscape-review": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
+      "plc-lokey-tykeson-review": "c0884ac85424815bd3209e2e3964ddc040ee49e6e3bac526bf360afd5cff2485",
+      "riverfront-plant-infrastructure-review": "27b060a8ada406f13e8c71065d01a82d6304c14ee38c2faea54e643348eb18cf",
+      "campus-frontage-review": "86e915ab85f7df842cfe5d950c83e69cdac57ecb8f77a18c59caeafba5635802",
+      "hedco-exterior-review": "0f5c5912f9ea81bfa362a75fd50da06aff755de5d313320a93f5153a7866792f",
+      "southwest-campus-green-review": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53"
+    }
+  },
+  "sources": {
+    "orthophotos": [
+      {
+        "tile": "kincaid-education",
+        "year": 2017,
+        "file": "kincaid-education-2017.png",
+        "bounds_enu_m": [
+          -725,
+          -386,
+          -558,
+          -196
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493604.14928888186%2C4876542.282153052%2C493771.14928888186%2C4876732.282153052&bboxSR=3740&imageSR=3740&size=1336%2C1520&layers=show%3A29&format=png32",
+        "sha256": "4fdc067739e8dee36562f9bbf1cb1fa8dd88a8cc508335c42edf897f66449b9c"
+      },
+      {
+        "tile": "kincaid-education",
+        "year": 2021,
+        "file": "kincaid-education-2021.png",
+        "bounds_enu_m": [
+          -725,
+          -386,
+          -558,
+          -196
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493604.14928888186%2C4876542.282153052%2C493771.14928888186%2C4876732.282153052&bboxSR=3740&imageSR=3740&size=1336%2C1520&layers=show%3A26&format=png32",
+        "sha256": "6bd8fb78b7606017e5b8b3f10924f688c80333ff9ec906f2e3ded3441326203f"
+      },
+      {
+        "tile": "kincaid-education",
+        "year": 2025,
+        "file": "kincaid-education-2025.png",
+        "bounds_enu_m": [
+          -725,
+          -386,
+          -558,
+          -196
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493604.14928888186%2C4876542.282153052%2C493771.14928888186%2C4876732.282153052&bboxSR=3740&imageSR=3740&size=1336%2C1520&layers=show%3A57&format=png32",
+        "sha256": "0e40acd9b69a48953b47c1f70bdf5b65d273121a2cce4a790888fda01fe57afc"
+      }
+    ],
+    "campus_tree_inventory": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=Removed+%3D+%27No%27+AND+FutureTree+%3D+%27No%27&geometry=493608.14928888186%2C4876544.282153052%2C493738.14928888186%2C4876660.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=TreeNumber%2CCommonName%2CHeight%2CSpread&returnGeometry=True",
+      "sha256": "34d4bdeda4d0b7d52e59a4b415b8b9c5133b9e655591514f043a8a80d8106797"
+    },
+    "kincaid_survey": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/kincaid_green_06_12_07.pdf",
+      "pages": [
+        2,
+        3
+      ],
+      "sha256": "759e53715feaf1a7d3875af0a6792f7d2ce19bf7b268583cc2cd48241799ca5e"
+    },
+    "courtyard_thesis": {
+      "url": "https://scholarsbank.uoregon.edu//bitstreams/a054136d-556e-4939-a611-daed2b31686a/download",
+      "pages": [
+        97,
+        98
+      ],
+      "sha256": "89322e015ae45d18be6427268791a6b77d6cb5f3bb924ac738060c048dde96c9"
+    },
+    "campus_plan": "https://cpfm.uoregon.edu/sites/default/files/2023-12/principle-12-design-area-special-conditions_2022_23_.pdf",
+    "education_east_survey": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/educationeast05_30_07.pdf",
+      "page": 5,
+      "sha256": "9fde2ddba9e52ddb1327d0d9d69a106e16cc315cf7960020b0c2cde664c53950"
+    }
+  },
+  "lawns": [
+    [
+      [
+        -682.7,
+        -285.7
+      ],
+      [
+        -648.3,
+        -285.7
+      ],
+      [
+        -643.0,
+        -291.2
+      ],
+      [
+        -633.7,
+        -285.6
+      ],
+      [
+        -614.1,
+        -284.5
+      ],
+      [
+        -604.0,
+        -286.1
+      ],
+      [
+        -598.8,
+        -292.0
+      ],
+      [
+        -597.2,
+        -309.4
+      ],
+      [
+        -599.7,
+        -325.6
+      ],
+      [
+        -609.2,
+        -326.2
+      ],
+      [
+        -611.1,
+        -314.0
+      ],
+      [
+        -646.1,
+        -313.4
+      ],
+      [
+        -652,
+        -318
+      ],
+      [
+        -673,
+        -317
+      ],
+      [
+        -689,
+        -314.7
+      ],
+      [
+        -690.0,
+        -293.0
+      ]
+    ],
+    [
+      [
+        -687.8,
+        -325.3
+      ],
+      [
+        -648.5,
+        -324.9
+      ],
+      [
+        -629.8,
+        -328.4
+      ],
+      [
+        -609.4,
+        -326.8
+      ],
+      [
+        -604.5,
+        -331.8
+      ],
+      [
+        -605.7,
+        -362.4
+      ],
+      [
+        -608.2,
+        -367.3
+      ],
+      [
+        -667.7,
+        -367.2
+      ],
+      [
+        -674.8,
+        -372.5
+      ],
+      [
+        -684.6,
+        -375.2
+      ],
+      [
+        -696.2,
+        -375.0
+      ],
+      [
+        -701.7,
+        -364.0
+      ],
+      [
+        -683.8,
+        -348.6
+      ]
+    ]
+  ],
+  "walks": [
+    {
+      "line": [
+        [
+          -628.996,
+          -283.321
+        ],
+        [
+          -620.2,
+          -282.65
+        ],
+        [
+          -611.35,
+          -282.9
+        ],
+        [
+          -604.9,
+          -285.58
+        ],
+        [
+          -600.51,
+          -291.18
+        ],
+        [
+          -599.22,
+          -299.92
+        ],
+        [
+          -599.41,
+          -310.13
+        ],
+        [
+          -598.87,
+          -319.65
+        ],
+        [
+          -600.04,
+          -326.18
+        ],
+        [
+          -601.78,
+          -330.95
+        ]
+      ],
+      "width": 3.65,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -620.2,
+          -282.65
+        ],
+        [
+          -633.9,
+          -282.91
+        ],
+        [
+          -640.81,
+          -287.1
+        ],
+        [
+          -644.04,
+          -292.87
+        ],
+        [
+          -641.6,
+          -297.3
+        ],
+        [
+          -642.81,
+          -302.18
+        ],
+        [
+          -647.0,
+          -307.57
+        ],
+        [
+          -650.22,
+          -310.52
+        ],
+        [
+          -650.57,
+          -318.5
+        ]
+      ],
+      "width": 3.92,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -599.22,
+          -299.92
+        ],
+        [
+          -602.5,
+          -303.8
+        ],
+        [
+          -603.6,
+          -306.25
+        ],
+        [
+          -607.5,
+          -305.2
+        ],
+        [
+          -612.6,
+          -306.48
+        ],
+        [
+          -620.64,
+          -306.92
+        ],
+        [
+          -629.08,
+          -307.13
+        ],
+        [
+          -637.7,
+          -307.2
+        ],
+        [
+          -644.57,
+          -308.4
+        ],
+        [
+          -650.22,
+          -310.52
+        ]
+      ],
+      "width": 2.2,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -646.98,
+          -307.58
+        ],
+        [
+          -658.5,
+          -309.9
+        ],
+        [
+          -666.8,
+          -309.9
+        ],
+        [
+          -680.8,
+          -311.13
+        ]
+      ],
+      "width": 2.55,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -603.91,
+          -345.55
+        ],
+        [
+          -607.43,
+          -350.4
+        ],
+        [
+          -616.33,
+          -350.1
+        ],
+        [
+          -625.36,
+          -350.32
+        ],
+        [
+          -633.0,
+          -350.3
+        ]
+      ],
+      "width": 2.45,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -633.0,
+          -350.3
+        ],
+        [
+          -641.72,
+          -349.62
+        ],
+        [
+          -647.93,
+          -348.73
+        ],
+        [
+          -654.67,
+          -348.7
+        ]
+      ],
+      "width": 2.8,
+      "kind": "brick"
+    },
+    {
+      "line": [
+        [
+          -654.67,
+          -348.7
+        ],
+        [
+          -661.58,
+          -353.2
+        ],
+        [
+          -669.4,
+          -359.94
+        ],
+        [
+          -677.83,
+          -367.74
+        ],
+        [
+          -685.05,
+          -374.45
+        ]
+      ],
+      "width": 4.4,
+      "kind": "brick"
+    },
+    {
+      "line": [
+        [
+          -654.67,
+          -348.7
+        ],
+        [
+          -654.76,
+          -342.31
+        ],
+        [
+          -654.09,
+          -334.89
+        ],
+        [
+          -652.12,
+          -326.95
+        ]
+      ],
+      "width": 4.8,
+      "kind": "brick"
+    },
+    {
+      "line": [
+        [
+          -633.0,
+          -350.3
+        ],
+        [
+          -633.0,
+          -342
+        ],
+        [
+          -633.01,
+          -334.04
+        ],
+        [
+          -633.09,
+          -330.9
+        ]
+      ],
+      "width": 2.5,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -633.0,
+          -350.3
+        ],
+        [
+          -632.97,
+          -355.0
+        ],
+        [
+          -633.0,
+          -361.7
+        ]
+      ],
+      "width": 2.5,
+      "kind": "concrete"
+    },
+    {
+      "line": [
+        [
+          -680.92,
+          -326.9
+        ],
+        [
+          -670.83,
+          -330.3
+        ],
+        [
+          -669.23,
+          -334.9
+        ],
+        [
+          -669.55,
+          -340.8
+        ],
+        [
+          -667.4,
+          -345.3
+        ],
+        [
+          -661.58,
+          -353.2
+        ]
+      ],
+      "width": 2.14,
+      "kind": "concrete"
+    }
+  ],
+  "brick_plaza": [
+    [
+      -659.5,
+      -344.82
+    ],
+    [
+      -655.9,
+      -343.13
+    ],
+    [
+      -650.4,
+      -343.45
+    ],
+    [
+      -647.35,
+      -345.55
+    ],
+    [
+      -642.6,
+      -346.43
+    ],
+    [
+      -641.09,
+      -349.9
+    ],
+    [
+      -644.35,
+      -354.1
+    ],
+    [
+      -648.97,
+      -354.0
+    ],
+    [
+      -652.48,
+      -352.66
+    ],
+    [
+      -660.05,
+      -351.45
+    ]
+  ],
+  "beds": [
+    [
+      [
+        -632.0,
+        -284.65
+      ],
+      [
+        -614.0,
+        -284.57
+      ],
+      [
+        -611.82,
+        -286.78
+      ],
+      [
+        -613.35,
+        -287.88
+      ],
+      [
+        -629.67,
+        -287.44
+      ],
+      [
+        -631.9,
+        -286.43
+      ]
+    ],
+    [
+      [
+        -605.95,
+        -292.34
+      ],
+      [
+        -602.42,
+        -293.81
+      ],
+      [
+        -601.44,
+        -298.9
+      ],
+      [
+        -602.99,
+        -304.31
+      ],
+      [
+        -606.9,
+        -308.41
+      ],
+      [
+        -609.98,
+        -304.4
+      ],
+      [
+        -608.9,
+        -296.2
+      ]
+    ],
+    [
+      [
+        -643.2,
+        -311.15
+      ],
+      [
+        -641.96,
+        -309.83
+      ],
+      [
+        -635.1,
+        -309.67
+      ],
+      [
+        -630.09,
+        -310.03
+      ],
+      [
+        -629.68,
+        -312.38
+      ],
+      [
+        -633.7,
+        -313.42
+      ],
+      [
+        -640.16,
+        -313.52
+      ]
+    ],
+    [
+      [
+        -627.97,
+        -310.09
+      ],
+      [
+        -616.76,
+        -309.43
+      ],
+      [
+        -611.86,
+        -309.72
+      ],
+      [
+        -610.71,
+        -312.18
+      ],
+      [
+        -613.58,
+        -315.0
+      ],
+      [
+        -620.27,
+        -314.37
+      ],
+      [
+        -627.63,
+        -313.97
+      ]
+    ],
+    [
+      [
+        -645.44,
+        -330.38
+      ],
+      [
+        -640.61,
+        -330.02
+      ],
+      [
+        -636.48,
+        -330.23
+      ],
+      [
+        -635.09,
+        -333.17
+      ],
+      [
+        -635.91,
+        -340.65
+      ],
+      [
+        -642.13,
+        -342.23
+      ],
+      [
+        -645.8,
+        -339.82
+      ]
+    ],
+    [
+      [
+        -683.3,
+        -337.29
+      ],
+      [
+        -678.06,
+        -337.26
+      ],
+      [
+        -674.32,
+        -335.85
+      ],
+      [
+        -672.17,
+        -339.63
+      ],
+      [
+        -673.33,
+        -342.95
+      ],
+      [
+        -679.78,
+        -343.09
+      ]
+    ],
+    [
+      [
+        -653.46,
+        -356.11
+      ],
+      [
+        -647.01,
+        -354.85
+      ],
+      [
+        -640.2,
+        -355.13
+      ],
+      [
+        -638.51,
+        -359.19
+      ],
+      [
+        -640.29,
+        -361.34
+      ],
+      [
+        -654.6,
+        -360.74
+      ]
+    ]
+  ],
+  "trees": [
+    {
+      "id": 2861,
+      "species": "Paperbark Maple",
+      "position_enu_m": [
+        -650.988,
+        -355.659
+      ],
+      "height_m": 7.62,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 4092,
+      "species": "Japanese Snowbell",
+      "position_enu_m": [
+        -603.105,
+        -310.41
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.7,
+      "form": "rounded"
+    },
+    {
+      "id": 3464,
+      "species": "Katsura Tree",
+      "position_enu_m": [
+        -674.37,
+        -337.601
+      ],
+      "height_m": 3.048,
+      "crown_radius_m": 2.438,
+      "form": "rounded"
+    },
+    {
+      "id": 899,
+      "species": "Katsura Tree",
+      "position_enu_m": [
+        -662.311,
+        -338.834
+      ],
+      "height_m": 10.668,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "id": 901,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -668.59,
+        -353.791
+      ],
+      "height_m": 12.192,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "id": 902,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -663.717,
+        -358.263
+      ],
+      "height_m": 12.192,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "id": 903,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -674.138,
+        -359.332
+      ],
+      "height_m": 10.668,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 905,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -678.731,
+        -364.145
+      ],
+      "height_m": 12.192,
+      "crown_radius_m": 3.353,
+      "form": "rounded"
+    },
+    {
+      "id": 906,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -672.535,
+        -367.086
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 5.334,
+      "form": "rounded"
+    },
+    {
+      "id": 900,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -663.546,
+        -348.122
+      ],
+      "height_m": 12.192,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "id": 4096,
+      "species": "Bloodgood Japanese Maple",
+      "position_enu_m": [
+        -665.726,
+        -327.122
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 1.829,
+      "form": "rounded"
+    },
+    {
+      "id": 4097,
+      "species": "Crape Myrtle",
+      "position_enu_m": [
+        -672.142,
+        -329.35
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.7,
+      "form": "rounded"
+    },
+    {
+      "id": 858,
+      "species": "St. Mary's Southern Magnolia",
+      "position_enu_m": [
+        -677.711,
+        -304.174
+      ],
+      "height_m": 6.096,
+      "crown_radius_m": 2.134,
+      "form": "rounded"
+    },
+    {
+      "id": 862,
+      "species": "Coast Redwood",
+      "position_enu_m": [
+        -665.2,
+        -297.56
+      ],
+      "height_m": 12.192,
+      "crown_radius_m": 5.334,
+      "form": "conical"
+    },
+    {
+      "id": 878,
+      "species": "White Oak",
+      "position_enu_m": [
+        -615.045,
+        -356.241
+      ],
+      "height_m": 19.812,
+      "crown_radius_m": 5.791,
+      "form": "rounded"
+    },
+    {
+      "id": 879,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -607.928,
+        -354.302
+      ],
+      "height_m": 16.764,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 880,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -605.357,
+        -361.629
+      ],
+      "height_m": 13.716,
+      "crown_radius_m": 4.572,
+      "form": "rounded"
+    },
+    {
+      "id": 881,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -608.04,
+        -369.331
+      ],
+      "height_m": 13.716,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "id": 882,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -607.877,
+        -377.687
+      ],
+      "height_m": 13.716,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "id": 874,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -609.574,
+        -333.856
+      ],
+      "height_m": 18.288,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 875,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -616.573,
+        -333.953
+      ],
+      "height_m": 21.336,
+      "crown_radius_m": 4.572,
+      "form": "rounded"
+    },
+    {
+      "id": 876,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -623.795,
+        -333.879
+      ],
+      "height_m": 21.336,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 867,
+      "species": "American Planetree",
+      "position_enu_m": [
+        -621.708,
+        -304.818
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 866,
+      "species": "London Planetree",
+      "position_enu_m": [
+        -639.121,
+        -305.407
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 863,
+      "species": "American Sweetgum",
+      "position_enu_m": [
+        -650.243,
+        -298.26
+      ],
+      "height_m": 22.86,
+      "crown_radius_m": 5.334,
+      "form": "rounded"
+    },
+    {
+      "id": 890,
+      "species": "American Elm",
+      "position_enu_m": [
+        -640.081,
+        -337.189
+      ],
+      "height_m": 24.384,
+      "crown_radius_m": 12.192,
+      "form": "rounded"
+    },
+    {
+      "id": 857,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -630.585,
+        -285.994
+      ],
+      "height_m": 25.908,
+      "crown_radius_m": 6.096,
+      "form": "conical"
+    },
+    {
+      "id": 856,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -625.448,
+        -286.025
+      ],
+      "height_m": 36.576,
+      "crown_radius_m": 7.62,
+      "form": "conical"
+    },
+    {
+      "id": 855,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -621.239,
+        -285.965
+      ],
+      "height_m": 39.624,
+      "crown_radius_m": 7.62,
+      "form": "conical"
+    },
+    {
+      "id": 854,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -617.51,
+        -285.874
+      ],
+      "height_m": 42.672,
+      "crown_radius_m": 7.62,
+      "form": "conical"
+    },
+    {
+      "id": 853,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -614.091,
+        -286.038
+      ],
+      "height_m": 44.196,
+      "crown_radius_m": 7.62,
+      "form": "conical"
+    },
+    {
+      "id": 859,
+      "species": "Purple-Leaf European Beech",
+      "position_enu_m": [
+        -676.718,
+        -295.831
+      ],
+      "height_m": 18.288,
+      "crown_radius_m": 6.096,
+      "form": "rounded"
+    },
+    {
+      "id": 868,
+      "species": "Village Green Japanese Zelkova",
+      "position_enu_m": [
+        -634.714,
+        -299.734
+      ],
+      "height_m": 10.668,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "id": 864,
+      "species": "Upright Apple Serviceberr",
+      "position_enu_m": [
+        -639.864,
+        -311.76
+      ],
+      "height_m": 10.668,
+      "crown_radius_m": 2.286,
+      "form": "rounded"
+    },
+    {
+      "id": 865,
+      "species": "Pink Flowering Dogwood",
+      "position_enu_m": [
+        -620.846,
+        -310.233
+      ],
+      "height_m": 3.658,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 891,
+      "species": "Sargent Cherry",
+      "position_enu_m": [
+        -636.198,
+        -354.125
+      ],
+      "height_m": 4.572,
+      "crown_radius_m": 1.829,
+      "form": "rounded"
+    },
+    {
+      "id": 892,
+      "species": "Persian Parrotia",
+      "position_enu_m": [
+        -644.68,
+        -356.072
+      ],
+      "height_m": 3.658,
+      "crown_radius_m": 1.524,
+      "form": "rounded"
+    },
+    {
+      "id": 893,
+      "species": "Persian Parrotia",
+      "position_enu_m": [
+        -644.683,
+        -360.03
+      ],
+      "height_m": 4.572,
+      "crown_radius_m": 0.914,
+      "form": "rounded"
+    },
+    {
+      "id": 838,
+      "species": "Kousa Dogwood",
+      "position_enu_m": [
+        -651.812,
+        -361.377
+      ],
+      "height_m": 6.096,
+      "crown_radius_m": 2.743,
+      "form": "rounded"
+    },
+    {
+      "id": 837,
+      "species": "Voss Goldenchain Tree",
+      "position_enu_m": [
+        -609.275,
+        -294.723
+      ],
+      "height_m": 7.62,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 836,
+      "species": "Voss Goldenchain Tree",
+      "position_enu_m": [
+        -607.343,
+        -298.078
+      ],
+      "height_m": 7.62,
+      "crown_radius_m": 3.048,
+      "form": "rounded"
+    },
+    {
+      "id": 4091,
+      "species": "Big Leaf Maple",
+      "position_enu_m": [
+        -604.833,
+        -304.57
+      ],
+      "height_m": 3.048,
+      "crown_radius_m": 1.219,
+      "form": "rounded"
+    },
+    {
+      "id": 4093,
+      "species": "Japanese Snowbell",
+      "position_enu_m": [
+        -606.159,
+        -307.684
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.7,
+      "form": "rounded"
+    },
+    {
+      "id": 4094,
+      "species": "Persian Parrotia",
+      "position_enu_m": [
+        -603.452,
+        -317.661
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4095,
+      "species": "Sourwood",
+      "position_enu_m": [
+        -604.955,
+        -331.461
+      ],
+      "height_m": 1.524,
+      "crown_radius_m": 0.7,
+      "form": "rounded"
+    },
+    {
+      "id": 4102,
+      "species": "Harlequin Glory-bower",
+      "position_enu_m": [
+        -602.995,
+        -321.304
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.914,
+      "form": "rounded"
+    },
+    {
+      "id": 4103,
+      "species": "Harlequin Glory-bower",
+      "position_enu_m": [
+        -602.0,
+        -325.453
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.914,
+      "form": "rounded"
+    },
+    {
+      "id": 4104,
+      "species": "Harlequin Glory-bower",
+      "position_enu_m": [
+        -603.309,
+        -328.278
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.914,
+      "form": "rounded"
+    },
+    {
+      "id": 4105,
+      "species": "Uneo yama Japanese Maple",
+      "position_enu_m": [
+        -647.76,
+        -332.39
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.914,
+      "form": "rounded"
+    },
+    {
+      "id": 4098,
+      "species": "Crape Myrtle",
+      "position_enu_m": [
+        -681.793,
+        -328.554
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 1.524,
+      "form": "rounded"
+    },
+    {
+      "id": 4099,
+      "species": "Crape Myrtle",
+      "position_enu_m": [
+        -683.439,
+        -335.124
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.7,
+      "form": "rounded"
+    },
+    {
+      "id": 4100,
+      "species": "Crape Myrtle",
+      "position_enu_m": [
+        -680.639,
+        -340.822
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 1.372,
+      "form": "rounded"
+    }
+  ],
+  "benches": [
+    {
+      "center": [
+        -644.8,
+        -301.5
+      ],
+      "bearing": 40,
+      "length": 1.7,
+      "form": "timber"
+    },
+    {
+      "center": [
+        -651.7,
+        -352.92
+      ],
+      "bearing": 88,
+      "length": 2.04,
+      "form": "brick"
+    },
+    {
+      "center": [
+        -648.85,
+        -353.58
+      ],
+      "bearing": 79,
+      "length": 1.93,
+      "form": "brick"
+    },
+    {
+      "center": [
+        -657.6,
+        -342.42
+      ],
+      "bearing": 15,
+      "length": 1.94,
+      "form": "brick"
+    }
+  ],
+  "lamps": [
+    [
+      -642.43,
+      -288.76
+    ],
+    [
+      -599.78,
+      -314.33
+    ],
+    [
+      -641.1,
+      -348.28
+    ]
+  ],
+  "clear_context_trees": [
+    {
+      "index": 116,
+      "position_enu_m": [
+        -658.981,
+        -352.776
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [
+        -628.996,
+        -283.321
+      ],
+      "points_enu_m": [
+        [
+          -620.2,
+          -282.65
+        ],
+        [
+          -611.35,
+          -282.9
+        ],
+        [
+          -604.9,
+          -285.58
+        ],
+        [
+          -600.51,
+          -291.18
+        ],
+        [
+          -599.22,
+          -299.92
+        ],
+        [
+          -599.41,
+          -310.13
+        ],
+        [
+          -598.87,
+          -319.65
+        ],
+        [
+          -600.04,
+          -326.18
+        ]
+      ],
+      "end_enu_m": [
+        -601.78,
+        -330.95
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -620.2,
+        -282.65
+      ],
+      "points_enu_m": [
+        [
+          -633.9,
+          -282.91
+        ],
+        [
+          -640.81,
+          -287.1
+        ],
+        [
+          -644.04,
+          -292.87
+        ],
+        [
+          -641.6,
+          -297.3
+        ],
+        [
+          -642.81,
+          -302.18
+        ],
+        [
+          -647.0,
+          -307.57
+        ],
+        [
+          -650.22,
+          -310.52
+        ],
+        [
+          -650.57,
+          -318.5
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -599.22,
+        -299.92
+      ],
+      "points_enu_m": [
+        [
+          -602.5,
+          -303.8
+        ],
+        [
+          -603.6,
+          -306.25
+        ],
+        [
+          -607.5,
+          -305.2
+        ],
+        [
+          -612.6,
+          -306.48
+        ],
+        [
+          -620.64,
+          -306.92
+        ],
+        [
+          -629.08,
+          -307.13
+        ],
+        [
+          -637.7,
+          -307.2
+        ],
+        [
+          -644.57,
+          -308.4
+        ]
+      ],
+      "end_enu_m": [
+        -650.22,
+        -310.52
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -603.91,
+        -345.55
+      ],
+      "points_enu_m": [
+        [
+          -607.43,
+          -350.4
+        ],
+        [
+          -616.33,
+          -350.1
+        ],
+        [
+          -625.36,
+          -350.32
+        ],
+        [
+          -633.0,
+          -350.3
+        ],
+        [
+          -641.72,
+          -349.62
+        ],
+        [
+          -647.93,
+          -348.73
+        ],
+        [
+          -654.67,
+          -348.7
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -654.67,
+        -348.7
+      ],
+      "points_enu_m": [
+        [
+          -661.58,
+          -353.2
+        ],
+        [
+          -669.4,
+          -359.94
+        ],
+        [
+          -677.83,
+          -367.74
+        ],
+        [
+          -685.05,
+          -374.45
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -654.67,
+        -348.7
+      ],
+      "points_enu_m": [
+        [
+          -654.76,
+          -342.31
+        ],
+        [
+          -654.09,
+          -334.89
+        ],
+        [
+          -652.12,
+          -326.95
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -633.0,
+        -350.3
+      ],
+      "points_enu_m": [
+        [
+          -633.0,
+          -342
+        ],
+        [
+          -633.01,
+          -334.04
+        ],
+        [
+          -633.09,
+          -330.9
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -633.0,
+        -350.3
+      ],
+      "points_enu_m": [
+        [
+          -632.97,
+          -355.0
+        ],
+        [
+          -633.0,
+          -361.7
+        ]
+      ]
+    }
+  ],
+  "pilot_tree_clip": {
+    "source_legacy_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "source_refined_sha256": "9a129558d22a314f8dbddee5ed9f914c5e905665a3c1209a3732612cc5e296ef",
+    "tree_indices": [
+      53,
+      59,
+      77,
+      114,
+      138,
+      164,
+      256,
+      268,
+      270,
+      278
+    ],
+    "legacy": {
+      "vegetation_1": {
+        "vertices": 23832,
+        "removed_indices": 1440,
+        "ranges": [
+          [
+            4050,
+            4140
+          ],
+          [
+            4590,
+            4680
+          ],
+          [
+            5922,
+            6012
+          ],
+          [
+            8964,
+            9054
+          ],
+          [
+            10740,
+            10830
+          ],
+          [
+            12936,
+            13026
+          ],
+          [
+            20400,
+            20490
+          ],
+          [
+            21288,
+            21378
+          ],
+          [
+            21468,
+            21558
+          ],
+          [
+            22140,
+            22230
+          ]
+        ]
+      },
+      "vegetation_4": {
+        "vertices": 62208,
+        "removed_indices": 5184,
+        "ranges": [
+          [
+            10368,
+            11232
+          ],
+          [
+            11232,
+            12096
+          ],
+          [
+            57888,
+            58752
+          ],
+          [
+            60480,
+            61344
+          ]
+        ]
+      },
+      "vegetation_2": {
+        "vertices": 66528,
+        "removed_indices": 1296,
+        "ranges": [
+          [
+            18144,
+            19008
+          ]
+        ]
+      },
+      "vegetation_3": {
+        "vertices": 84132,
+        "removed_indices": 6480,
+        "ranges": [
+          [
+            27702,
+            28566
+          ],
+          [
+            34182,
+            35046
+          ],
+          [
+            39852,
+            40716
+          ],
+          [
+            69390,
+            70254
+          ],
+          [
+            71766,
+            72630
+          ]
+        ]
+      }
+    },
+    "refined": {
+      "pilot-trees-wood": {
+        "vertices": 23506,
+        "removed_indices": 5280,
+        "ranges": [
+          [
+            4018,
+            4120
+          ],
+          [
+            4528,
+            4630
+          ],
+          [
+            5842,
+            5944
+          ],
+          [
+            8992,
+            9094
+          ],
+          [
+            10644,
+            10746
+          ],
+          [
+            12780,
+            12882
+          ],
+          [
+            20094,
+            20196
+          ],
+          [
+            21038,
+            21140
+          ],
+          [
+            21242,
+            21344
+          ],
+          [
+            21886,
+            21988
+          ]
+        ]
+      },
+      "pilot-trees-foliage": {
+        "vertices": 34088,
+        "removed_indices": 6600,
+        "ranges": [
+          [
+            6104,
+            6230
+          ],
+          [
+            6734,
+            6860
+          ],
+          [
+            8846,
+            8972
+          ],
+          [
+            13226,
+            13352
+          ],
+          [
+            15837,
+            15963
+          ],
+          [
+            18720,
+            18846
+          ],
+          [
+            28977,
+            29103
+          ],
+          [
+            30469,
+            30595
+          ],
+          [
+            30721,
+            30847
+          ],
+          [
+            31598,
+            31724
+          ]
+        ]
+      }
+    }
+  },
+  "scholar_walk": [
+    -633.0,
+    -361.65,
+    -330.25,
+    3.65
+  ],
+  "surface_bounds": [
+    [
+      -708,
+      -328,
+      -640,
+      -278
+    ],
+    [
+      -641,
+      -328,
+      -594,
+      -278
+    ],
+    [
+      -708,
+      -378,
+      -640,
+      -327
+    ],
+    [
+      -641,
+      -378,
+      -594,
+      -327
+    ]
+  ],
+  "south_pavilion": {
+    "center": [
+      -652.9,
+      -357.87
+    ],
+    "roof_width_m": 3.75,
+    "bearing_degrees": -42,
+    "elevations_m": [
+      9.08,
+      12.39,
+      13.2
+    ],
+    "flights": [
+      {
+        "line": [
+          [
+            -655.95,
+            -354.86
+          ],
+          [
+            -654.12,
+            -356.72
+          ]
+        ],
+        "elevations_m": [
+          7.35,
+          9.08
+        ],
+        "width_m": 1.54,
+        "treads": 10
+      },
+      {
+        "line": [
+          [
+            -652.82,
+            -359.4
+          ],
+          [
+            -652.8,
+            -362.24
+          ]
+        ],
+        "elevations_m": [
+          9.08,
+          10.6
+        ],
+        "width_m": 1.48,
+        "treads": 9
+      }
+    ],
+    "basis": "2017–2025 Lane County aerial outline, 2017 NOAA point returns at the deck and steps, 2006 courtyard photograph and 2014 description. Tread counts and upper threshold elevation are estimates."
+  }
+}

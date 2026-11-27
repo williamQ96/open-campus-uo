@@ -2225,6 +2225,14 @@
   },
   "southwest_campus_green_site": {
     "url": "southwest-campus-green-review/site.json",
-    "sha256": "9022730a3b8b9dae5d4ff424600fb15df7c9fdcedd49f85b4a60bc6f922a14e4"
+    "sha256": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53"
+  },
+  "kincaid_education_landscape_site": {
+    "url": "kincaid-education-landscape-review/site.json",
+    "sha256": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a"
+  },
+  "kendall_plaza_landscape_site": {
+    "url": "kendall-plaza-landscape-review/site.json",
+    "sha256": "8172b410bf4f7e1e9fee7faf2b2a33fb7b4a7165ded30d0e65e0663c84813af4"
   }
 }

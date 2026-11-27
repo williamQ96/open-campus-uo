@@ -6,6 +6,29 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release southwest campus paths, courtyards and terraces
+
+- Publish the cemetery and Southwest Campus Green endpoint routing corrections with the Kincaid Green and Lokey courtyard site, the Education South pavilion and stairs, and the Kendall Plaza terrace, planters, trees and walkways. [Landscape inventory](docs/landscape-l2-inventory.md).
+- The release keeps the 610 active exterior IDs and 457 entrance records. Desktop and phone production previews each match geometry to all 610 IDs and load 372 tracked resources. Formatting, 198 unit tests, 495 asset archive checks and the viewer hashes pass. The release targets GitHub Pages from `main`. [Pages workflow](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
+## 2026-11-27 - Kendall Plaza terraces and the Education South pavilion (local)
+
+- Register the lower brick plaza, three east terrace levels and raised planting bed from dated orthophotos, ground returns and campus photographs. Add 25 registered trees, four benches, three lamps and 30 navigation edges across the plaza, promenade and east bypass. The Southwest Campus Green connector gains two edges and uses the lower court. [Kendall Plaza review](docs/kendall-plaza-landscape-review-2026-11-27.md).
+- Restore the Lokey courtyard pavilion with four posts, a raised landing and two flights totaling 19 representative treads. The upper threshold and tread count use estimates. The university survey identifies the existing north–south covered route as the south covered walk. [Courtyard pavilion review](docs/kincaid-education-landscape-review-2026-11-27.md#south-pavilion-and-staircase).
+- Desktop and phone production profiles verify all 610 exterior meshes, 372 resources and 27 Kendall waypoints. Four sample routes clear the east terrace within 0.13 m of the registered pavement. Repeat exports match, the build and formatting pass, and 198 unit tests, ten focused browser checks, 495 asset checks and viewer hashes pass. The work is local over Pages revision `c2020b7`.
+
+## 2026-11-27 - Kincaid Green and Lokey Education courtyard (local)
+
+- Rebuild the horseshoe walk and the brick courtyard. Add 841.57 m² of concrete, 408.76 m² of brick paving, 3,990.33 m² of lawn, seven planting beds and 52 registered trees, including the five historic Douglas-firs. Add four benches, three lamps and the 31.40 m covered Scholar's Walk. [Site review](docs/kincaid-education-landscape-review-2026-11-27.md).
+- Add 45 route edges and verify 43 waypoints. The viewer registers the cemetery and Southwest Campus Green path packages in order before installing the linked landscape. Five walk and four collision probes pass in both production profiles. One sampled route strays up to 0.133 m from the paving at a bend.
+- Two exports match byte for byte. Four paired views, 610 exterior meshes, 370 resources per device, 198 unit tests, ten focused browser checks, 493 asset checks and viewer hashes pass. The work is local over Pages revision `c2020b7`.
+
+## 2026-11-27 - Keep cemetery and Southwest Campus Green access links on paving (local)
+
+- Use the modeled paths, terrace, east stair and Rankin Lane sidewalk to constrain route endpoint links when a pin lies on the surveyed paving. Apply coverage for site packages whose geometry hash matches and whose paths loaded successfully. Off-pavement pins retain approximate access. The Lot 20 drive aisle is excluded from the pedestrian coverage. [Site review](docs/southwest-campus-green-review-2026-11-27.md#paved-route-access).
+- Desktop and phone each verify all 610 exterior meshes and 368 resources. Five former shortcuts and the north Risdon control stay within 0.13 m of the modeled pavement, as do five offset pin pairs in both directions. The cemetery-to-lot sample increases from 116.91 m to 250.87 m. One waypoint route tracks the pavement edge for 1.025 m within the registration tolerance.
+- Repeat exports match the two published site packages and the new coverage file byte for byte. The production build, formatting, 198 unit tests, nine focused browser tests, 491 archived assets and viewer hashes pass. The navigation changes are local over Pages revision `c2020b7`.
+
 ## 2026-11-27 - Release Southwest Campus Green and Spangler South Garden
 
 - Model 5,490.41 m² of lawn, 1,293.48 m² of terrace and paths, 11 planting beds and 29 trees placed from the university inventory. Add three benches, four lamps and a representative Lot 20 board. Match the car park's two striped aisles, four accessible symbols and visible tree-island curbs. [Site review](docs/southwest-campus-green-review-2026-11-27.md).

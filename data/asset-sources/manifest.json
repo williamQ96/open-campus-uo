@@ -3186,16 +3186,40 @@
       "origin": "Original East 15th pavement, Powell Plaza frontage, benches, lighting and registered planting. See docs/east-fifteenth-hayward-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/southwest-campus-green-review/site.glb": {
-      "bytes": 2492272,
-      "sha256": "04eb6dbcd940656e8bed5d0d260992daaaaf3ef5f5631e3f817baafb212741f0",
+      "sha256": "ff19c8fdf43935176aa00cf7c912a204a8055ca156ebc91651ce5342aaca9e86",
+      "bytes": 2495496,
       "license": "CC-BY-4.0",
-      "origin": "Original Southwest Campus Green, Spangler South Garden and Lot 20 geometry informed by county aerials and university records. See docs/southwest-campus-green-review-2026-11-27.md."
+      "origin": "Original Southwest Campus Green, Spangler South Garden and Lot 20 geometry. The Kendall Plaza approach follows the lower plaza. See docs/southwest-campus-green-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/southwest-campus-green-review/site.json": {
-      "bytes": 2958,
-      "sha256": "9022730a3b8b9dae5d4ff424600fb15df7c9fdcedd49f85b4a60bc6f922a14e4",
+      "sha256": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
+      "bytes": 2988,
       "license": "CC-BY-4.0",
-      "origin": "Original Southwest Campus Green, Spangler South Garden and Lot 20 geometry informed by county aerials and university records. See docs/southwest-campus-green-review-2026-11-27.md."
+      "origin": "Original Southwest Campus Green, Spangler South Garden and Lot 20 geometry. The Kendall Plaza approach follows the lower plaza. See docs/southwest-campus-green-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/kincaid-education-landscape-review/site.glb": {
+      "sha256": "229086a9a42a4742451657a79a9650a92375243933387fd879268faaa0494af9",
+      "bytes": 2986768,
+      "license": "CC-BY-4.0",
+      "origin": "Original Kincaid Green, Lokey Education courtyard and south pavilion geometry informed by county aerials and University of Oregon surveys. See docs/kincaid-education-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/kincaid-education-landscape-review/site.json": {
+      "sha256": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a",
+      "bytes": 4240,
+      "license": "CC-BY-4.0",
+      "origin": "Original Kincaid Green, Lokey Education courtyard and south pavilion geometry informed by county aerials and University of Oregon surveys. See docs/kincaid-education-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/kendall-plaza-landscape-review/site.json": {
+      "sha256": "8172b410bf4f7e1e9fee7faf2b2a33fb7b4a7165ded30d0e65e0663c84813af4",
+      "bytes": 2026,
+      "license": "CC-BY-4.0",
+      "origin": "Original Kendall Plaza terrace and south Education promenade geometry informed by county aerials, NOAA point returns and University of Oregon records. See docs/kendall-plaza-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/kendall-plaza-landscape-review/site.glb": {
+      "sha256": "79cab3ae6b479c81e33a25bb812377ee6b2ed90932d90c1b5c0a88a9f3d388cc",
+      "bytes": 3250128,
+      "license": "CC-BY-4.0",
+      "origin": "Original Kendall Plaza terrace and south Education promenade geometry informed by county aerials, NOAA point returns and University of Oregon records. See docs/kendall-plaza-landscape-review-2026-11-27.md."
     }
   },
   "additional_sources": [

@@ -49,6 +49,8 @@ import { loadStudentFactory } from "./student.js";
 import { createFixedNpc } from "./fixed-npc.js";
 import { danCarrereAppearance, styleDanCarrere } from "./dan-carrere-style.js";
 import { createRouter, distance } from "./routing.js";
+import routeSurfaces from "../data/campus-route-surfaces.json";
+import { createPavedRouteAccess } from "./paved-route-access.js";
 import { createNavigation } from "./navigation.js";
 import { createEugeneSky } from "./eugene-sky.js";
 import {
@@ -1856,9 +1858,38 @@ async function loadCampusScene(base, manifest, settings) {
       groundNode: "southwest-campus-green-paving",
       walkableGroundNode: "southwest-campus-green-paving",
       navigationUrl: settings.navigation_url,
-      navigationPredecessor: config?.pioneer_cemetery_landscape_site,
+      navigationPredecessors: [config?.pioneer_cemetery_landscape_site].filter(
+        Boolean,
+      ),
       ids: [],
       prerequisiteIds: ["roof-6684e091", "roof-74ecc113"],
+    },
+    "kincaid-education-landscape": {
+      descriptor: config?.kincaid_education_landscape_site,
+      directory: "kincaid-education-landscape-review",
+      groundNode: "kincaid-education-paving",
+      walkableGroundNode: "kincaid-education-paving",
+      navigationUrl: settings.navigation_url,
+      navigationPredecessors: [
+        config?.pioneer_cemetery_landscape_site,
+        config?.southwest_campus_green_site,
+      ].filter(Boolean),
+      ids: [],
+      prerequisiteIds: ["roof-6684e091", "roof-74ecc113", "roof-5bbb5fd1"],
+    },
+    "kendall-plaza-landscape": {
+      descriptor: config?.kendall_plaza_landscape_site,
+      directory: "kendall-plaza-landscape-review",
+      groundNode: "kendall-plaza-paving",
+      walkableGroundNode: "kendall-plaza-paving",
+      navigationUrl: settings.navigation_url,
+      navigationPredecessors: [
+        config?.pioneer_cemetery_landscape_site,
+        config?.southwest_campus_green_site,
+        config?.kincaid_education_landscape_site,
+      ].filter(Boolean),
+      ids: [],
+      prerequisiteIds: ["context-b0010", "roof-5bbb5fd1"],
     },
     "howe-field-gates": {
       descriptor: config?.howe_field_gates_site,
@@ -4141,6 +4172,8 @@ async function loadCampusScene(base, manifest, settings) {
     "harris-potter-exterior",
     "pioneer-cemetery-landscape",
     "southwest-campus-green",
+    "kincaid-education-landscape",
+    "kendall-plaza-landscape",
     "howe-field-gates",
     "dads-gates-landscape",
     "east-thirteenth-west-gateway",
@@ -4619,10 +4652,12 @@ try {
       buildingReviews.find(({ navigation }) => navigation)?.navigation ??
       (await loadJson(sceneAssetUrl(base, viewerSettings.navigation_url)));
     let pathGraph = graph;
-    for (const { appendNavigation } of buildingReviews) {
+    const registeredRouteAssets = new Set();
+    for (const { appendNavigation, assetSha } of buildingReviews) {
       if (!appendNavigation) continue;
       try {
         pathGraph = appendNavigation(pathGraph);
+        registeredRouteAssets.add(assetSha);
       } catch (error) {
         console.warn(
           "Site path unavailable in the current navigation graph.",
@@ -4666,9 +4701,14 @@ try {
       heightCache.set(key, height);
       return height;
     };
+    const pavedRouteAccess = createPavedRouteAccess(
+      routeSurfaces
+        .filter(({ sha256 }) => registeredRouteAssets.has(sha256))
+        .flatMap(({ polygons_enu_m }) => polygons_enu_m),
+    );
     const router = createRouter(
       pathGraph,
-      clearSegment,
+      (a, b) => pavedRouteAccess(a, b) && clearSegment(a, b),
       (a, b) => !segmentHitsBoxes(a, b, extraCollisionBoxes, 0.5),
     );
     outdoorRouter = router;

@@ -81,6 +81,10 @@
       "distance": 15.2,
       "file": "lot-west-2020-11.jpg",
       "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lfVarCezFzHAJ3VbBfVlxg&heading=258.05"
+    },
+    "kendall_plaza_approach": {
+      "study": "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/a054136d-556e-4939-a611-daed2b31686a/content#page=107",
+      "note": "Kendall Plaza lower route bypasses the eastern seating tiers. Aerial registration and terrain profile are recorded in the Kendall Plaza site review."
     }
   },
   "art": {
@@ -343,8 +347,16 @@
           -402.22
         ],
         [
-          -619.56,
-          -413.73
+          -623.0,
+          -405.3
+        ],
+        [
+          -623.4,
+          -414.0
+        ],
+        [
+          -621.9,
+          -420.3
         ],
         [
           -616.43,
@@ -1462,8 +1474,16 @@
           -402.22
         ],
         [
-          -619.56,
-          -413.73
+          -623.0,
+          -405.3
+        ],
+        [
+          -623.4,
+          -414.0
+        ],
+        [
+          -621.9,
+          -420.3
         ],
         [
           -616.43,

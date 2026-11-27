@@ -535,7 +535,11 @@ export async function loadPresentation(
       const baseRoot = review.retiredCorridor
         ? (await sourceScene)?.scene
         : undefined;
-      siteTreeRemovals += review.install(gltf.scene, baseRoot);
+      siteTreeRemovals += review.install(
+        gltf.scene,
+        baseRoot,
+        installedReviews,
+      );
       installedReviews.push(review);
       for (const id of [...review.ids, ...review.absorbedIds])
         replacedIds.add(id);

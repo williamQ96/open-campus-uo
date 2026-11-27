@@ -14,6 +14,7 @@ assets/sky-refinement/sky-before-shading-2026-11-04.js -text
 # Runtime/template and generator hashes use Git canonical LF bytes on every OS.
 apps/web-preview/src/*.js text eol=lf
 apps/web-preview/src/*.css text eol=lf
+apps/web-preview/data/campus-route-surfaces.json text eol=lf
 apps/web-preview/scripts/*.mjs text eol=lf
 apps/web-preview/scripts/*.py text eol=lf
 apps/web-preview/index.html text eol=lf

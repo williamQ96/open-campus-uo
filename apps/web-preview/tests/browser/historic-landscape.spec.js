@@ -3,6 +3,7 @@ import {
   DEFAULT_PILOT_TREES,
   DEFAULT_SELECTABLE_BUILDINGS,
   EAST_THIRTEENTH_PILOT_TREE_REMOVALS,
+  KINCAID_PILOT_TREE_REMOVALS,
   SOUTHWEST_PILOT_TREE_REMOVALS,
 } from "./exterior-counts.js";
 
@@ -468,7 +469,8 @@ test("failed historic site bundles restore the preceding ground and access", asy
     pilotTrees:
       DEFAULT_PILOT_TREES +
       EAST_THIRTEENTH_PILOT_TREE_REMOVALS +
-      SOUTHWEST_PILOT_TREE_REMOVALS,
+      SOUTHWEST_PILOT_TREE_REMOVALS +
+      KINCAID_PILOT_TREE_REMOVALS,
     vault: false,
     vaultApproach: false,
     cherryAvenue: false,

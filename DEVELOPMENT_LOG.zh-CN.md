@@ -6,6 +6,29 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布校园西南侧步道、庭院与阶台
+
+- 发布墓园和 Southwest Campus Green 的铺面导航接入修正、Kincaid Green 与 Lokey 庭院、Education South 南亭与台阶，以及 Kendall Plaza 的阶台、花池、乔木和步道。[景观台账](docs/landscape-l2-inventory.md)。
+- 本版包含 610 个在用外部模型 ID 和 457 处入口。桌面和手机生产预览均逐项核对 610 个模型的网格，各加载 372 项受跟踪资源。格式检查、198 项单测、495 项资产归档校验和查看器哈希通过。本版由 `main` 触发 GitHub Pages 发布。[Pages 工作流](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
+## 2026-11-27 - Kendall Plaza 阶台与 Education South 南亭（本地）
+
+- 用多期航片、地面激光点和校园照片配准下层砖铺广场、东侧三道阶台及架高花池。新增 25 株登记树、四张长凳、三根灯杆和 30 条导航边，串联广场、南侧步道及东侧绕行线路。Southwest Campus Green 的接驳改走下层广场，净增两条边。[Kendall Plaza 复核](docs/kendall-plaza-landscape-review-2026-11-27.md)。
+- 恢复 Lokey 庭院南亭、四根柱、抬高平台和两段合计 19 级的代表性台阶。上门槛与台阶数为估算。校方调查将现有南北向有顶走廊识别为通往 Education South 的南侧廊道。[南亭复核](docs/kincaid-education-landscape-review-2026-11-27.md#south-pavilion-and-staircase)。
+- 桌面及手机生产预览各核对 610 个外部网格、372 项资源和 27 个 Kendall 路径点。四条路线避开东阶台，控制在铺面边缘 0.13 米的容差内。重复导出、构建、格式检查、198 项单测、十项相关浏览器检查、495 项资产归档及查看器哈希均通过。改动保存在本地，Pages 仍为 `c2020b7`。
+
+## 2026-11-27 - Kincaid Green 与 Lokey Education 庭院（本地）
+
+- 恢复马蹄形步道和砖铺庭院。补建 841.57 平方米混凝土铺面、408.76 平方米砖铺、3,990.33 平方米草坪、七处种植区和 52 株登记树，含五株历史道格拉斯杉。补建四张长凳、三根灯杆及 31.40 米的 Scholar’s Walk 有顶廊道。[场地复核](docs/kincaid-education-landscape-review-2026-11-27.md)。
+- 增加 45 条导航边并核对 43 个路径点。查看器先依次登记墓园和 Southwest Campus Green 的路径包，再装载相连场地。两端生产预览均通过五处铺面及四处碰撞探针。一条抽检路线在转弯处距离铺面边缘最远 0.133 米。
+- 两次导出逐字节一致。四组前后对比、两端的 610 个外部网格和各 370 项资源、198 项单测、十项相关浏览器检查、493 项资产归档和查看器哈希通过。改动保存在本地，Pages 仍为 `c2020b7`。
+
+## 2026-11-27 - 校正墓园与 Southwest Campus Green 的步行接入（本地）
+
+- 当落点位于已配准铺面时，按步道、平台、墓园东梯及 Rankin Lane 人行道约束导航端点连线。场地网格哈希匹配、路径成功载入后启用对应边界。铺面外落点仍可近似接入，Lot 20 行车通道不纳入步行铺面。[场地复核](docs/southwest-campus-green-review-2026-11-27.md#paved-route-access)。
+- 桌面和手机各验证 610 个外部模型网格及 368 项资源。五条原有捷径和一条北段 Risdon Lane 对照路线均在铺面边界 0.13 米容差内，五组偏移落点的双向路线也通过。墓园至停车场的样本由 116.91 米增至 250.87 米。一条路径有 1.025 米沿铺面边缘行进，偏移仍在配准容差内。
+- 两个场地包与线上版本逐字节一致，新铺面边界文件重复导出一致。生产构建、格式检查、198 项单元测试、九项相关浏览器测试、491 项资产归档和查看器哈希通过。导航改动保存在本地，Pages 当前为 `c2020b7`。
+
 ## 2026-11-27 - 发布 Southwest Campus Green 与 Spangler South Garden
 
 - 补建 5,490.41 平方米草坪、1,293.48 平方米平台和步道、11 处种植区，并按校园树籍配准 29 株乔木。补建三张长椅、四根灯杆和代表性 Lot 20 标识，恢复停车场的两段斜线通道、四处无障碍图标及可辨树池路缘。[场地复核](docs/southwest-campus-green-review-2026-11-27.md)。

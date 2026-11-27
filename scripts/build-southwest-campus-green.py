@@ -21,7 +21,7 @@ METAL = (59, 70, 60)
 ASPHALT = (130, 127, 118)
 
 
-def surfaces(ground, field, spec, buildings, approach):
+def surface_footprints(spec, buildings):
     beds = [Polygon(outline).difference(buildings) for outline in spec["beds"]]
     beds = [bed for bed in beds if bed.area > 1]
     soil = unary_union(beds)
@@ -37,6 +37,11 @@ def surfaces(ground, field, spec, buildings, approach):
     parking = Polygon(spec["parking"]).difference(open_space.union(walks))
     lawn = Polygon(spec["lawn"]).difference(open_space.union(walks).union(parking))
     assert lawn.area > 4800 and walks.area > 750 and parking.area > 750
+    return lawn, walks, parking, beds
+
+
+def surfaces(ground, field, spec, buildings, approach):
+    lawn, walks, parking, beds = surface_footprints(spec, buildings)
     site.drape(ground, field, lawn, (146, 161, 100), 0.066, 1.8)
     site.drape(ground, field, parking, ASPHALT, 0.094, 1.12)
     site.drape(ground, field, walks.difference(approach), CONCRETE, 0.126, 1.12)

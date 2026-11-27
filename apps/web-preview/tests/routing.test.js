@@ -3,6 +3,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import * as THREE from "three";
 import { createRouter, routeSample } from "../src/routing.js";
+import { createPavedRouteAccess } from "../src/paved-route-access.js";
 import { createRouteView } from "../src/navigation-view.js";
 
 test("routing follows connected paths around an obstacle and rejects disconnected destinations", () => {
@@ -39,6 +40,55 @@ test("routing follows connected paths around an obstacle and rejects disconnecte
     [5, 10],
   );
 });
+test("paved route access follows a bend and preserves approximate access from a lawn", () => {
+  const access = createPavedRouteAccess([
+    [
+      [
+        [-1, -1],
+        [21, -1],
+        [21, 21],
+        [19, 21],
+        [19, 1],
+        [-1, 1],
+      ],
+      [
+        [4, -0.5],
+        [6, -0.5],
+        [6, 0.5],
+        [4, 0.5],
+      ],
+    ],
+  ]);
+  const graph = {
+    version: 1,
+    nodes_enu_m: [
+      [0, 0.75],
+      [20, 0.75],
+      [20, 20],
+    ],
+    edges: [
+      [0, 1, 20, "path"],
+      [1, 2, 19.25, "path"],
+    ],
+  };
+  const router = createRouter(graph, access);
+  const start = [1, 0.75];
+  const end = [20, 19];
+  assert.equal(access(start, end), false);
+  assert.equal(access([2, 0], [8, 0]), false);
+  assert.equal(access([9, 3], graph.nodes_enu_m[1]), true);
+  assert.deepEqual(router.route(start, end).points, [
+    start,
+    graph.nodes_enu_m[1],
+    end,
+  ]);
+  assert.deepEqual(router.route(end, start).points, [
+    end,
+    graph.nodes_enu_m[1],
+    start,
+  ]);
+});
+
 test("route ribbon follows terrain, chevrons advance toward B and clear removes geometry", () => {
   const scene = new THREE.Scene(),
     view = createRouteView(scene, (x, z) => x * 0.01 + z * 0.02);

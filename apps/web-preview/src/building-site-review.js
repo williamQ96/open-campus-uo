@@ -410,7 +410,7 @@ export async function loadBuildingSiteReview(
     prerequisiteIds = [],
     corridorId,
     navigationUrl,
-    navigationPredecessor,
+    navigationPredecessors = [],
   },
 ) {
   if (
@@ -575,10 +575,10 @@ export async function loadBuildingSiteReview(
         const original = JSON.parse(new TextDecoder().decode(data));
         if (walkableGroundNode) {
           let baseGraph = original;
-          if (navigationPredecessor) {
+          for (const predecessorPin of navigationPredecessors) {
             const predecessorBytes = await readPinnedScene(
-              base + navigationPredecessor.url,
-              navigationPredecessor.sha256,
+              base + predecessorPin.url,
+              predecessorPin.sha256,
             );
             const predecessor = JSON.parse(
               new TextDecoder().decode(predecessorBytes),
@@ -590,7 +590,7 @@ export async function loadBuildingSiteReview(
             )
               throw new Error("Exterior review path predecessor changed.");
             baseGraph = appendWalkablePath(
-              original,
+              baseGraph,
               predecessor.walkable_ground,
             );
           }
@@ -625,6 +625,7 @@ export async function loadBuildingSiteReview(
     addedIds,
     newBuildingIds,
     assetSha: site.sha256,
+    descriptorSha: descriptor.sha256,
     routeApproachIds: routeToApproaches ? ids : newBuildingIds,
     ground,
     closedSiteBoxes,
@@ -711,7 +712,14 @@ export async function loadBuildingSiteReview(
         });
       return records;
     },
-    install(root, baseRoot) {
+    install(root, baseRoot, installedReviews = []) {
+      if (
+        navigationPredecessors.some(
+          ({ sha256 }) =>
+            !installedReviews.some((review) => review.descriptorSha === sha256),
+        )
+      )
+        throw new Error("Exterior review path predecessor was not installed.");
       if (
         prerequisiteIds.some(
           (id) => root.getObjectByName(id)?.userData.asset_id !== id,
