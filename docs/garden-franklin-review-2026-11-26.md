@@ -1,0 +1,31 @@
+# Fifteen exteriors along Garden, Millrace and Franklin
+
+| Scene ID | City outline | Modeled exterior |
+| --- | ---: | --- |
+| `villard-1210-1214` | 170528 | One building for 1210, 1212 and 1214 Villard. Low crossing roofs, blue-gray walls and a taller bay face Garden Avenue. |
+| `roof-a49cdd04` | 170551 | 1884 Garden. The stepped shallow roofs, upper gallery and pale rail form their own exterior. The north approach uses an estimated door and threshold. |
+| `roof-df51b598` | 217036 | 1966 Garden. A high pale roof with four equipment housings adjoins the lower dark roof. |
+| `roof-5240d32d` | 170580 | 1997 Garden. Separate gables mark the twin garage bays and red porch door. The porch approach is estimated. |
+| `roof-f6ebca49` | 170529 | 1805 Garden. The long pale roof follows the stepped City outline. The dated aerials show rooftop equipment. |
+| `garden-detached-170532` | 170532 | Independent unnumbered building west of 1805 Garden. Its roof lies 1.258 m from the addressed building. |
+| `roof-c59710ce` | 169977 | 1900 Millrace. Two low gabled volumes and the open eaves above the short-walled timber shelter are visible from the street. |
+| `roof-5bd201f0` | 170547 | University Inn & Suites at 1857 Franklin. Preserves the blue A-frame, covered drive and open motor court with pool. |
+| `roof-04f04915` | 170548 | The Maverick Hotel at 1859 Franklin. Preserves its long lodging wing, blue fascia and open-front gabled porte-cochère. |
+| `roof-28f18190` | 170828 | 1861 Franklin. Low metal frontage slopes over glazing and a low retaining wall bounds the outdoor seating terrace. |
+| `roof-674b7c1b` | 170583 | Franklin Center at 2001 Franklin. Continuous storefront glazing, low central gable and paired rooftop equipment. |
+| `franklin-2025-east` | 226960 | 2025 Franklin. Shallow ridged approximation of the curved roof, six skylights and recessed vehicle bay. |
+| `franklin-2045-east` | 226959 | 2045 Franklin. Lower single roof, gray-blue and yellow frontage and independent selection along the adjoining roof edge. |
+| `roof-91faae5f` | 173484 | Holiday Inn Express & Suites Eugene Downtown – University at 2117 Franklin. Hipped hotel wings and two covers on posts. |
+| `roof-8eca97a4` | 214894 | 2125 Franklin. Five-story housing, stepped parking deck, roof recesses, two courtyard levels and an open-air pool. |
+
+The two Villard and Garden roof boundaries touch and their walls have individual collision rings. The neighboring motel roof outlines come within 0.047 m and enclose separate open volumes. The 2025 and 2045 Franklin City roof rings share an edge. The 1857 and 1859 models keep distinct room wings and drive covers. Source photography and aerials were used for visual reference. The export contains original geometry and material colors. [City outlines](https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3) · [Lane County aerials](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer) · [Maverick operator](https://www.themaverickeugene.com/) · [1900 Millrace university survey](https://cpfm.uoregon.edu/sites/default/files/03_north_campus_riverfront_research_park-rfs.pdf).
+
+At 2125 Franklin the aerials resolve eight north roof recesses, the irregular west court and the east open parking deck. The contractor records five housing stories and a six-level garage. The 2017 survey supports local elevation plateaus near 20.3 and 23.6 m on the housing and 19.7 and 17.7 m on the deck. Visible glazing, canopy, roof equipment, courtyard grades and window placement use approximate dimensions. The unnumbered building west of 1805 Garden has no registered address in the City outline. The three lodging properties and the apartment compound have empty pedestrian approach lists pending entrance measurements. [Contractor](https://adroitbuilt.com/2023/04/franklin-student-housing/) · [Structural case study](https://www.apawood.org/guides-tools-training/technical-document-library/case-studies/2125-franklin-student-housing/) · [Housing operator](https://www.americancampus.com/student-apartments/or/eugene/2125-franklin) · [2117 hotel operator](https://www.ihg.com/holidayinnexpress/hotels/us/en/eugene/eugor/hoteldetail).
+
+Four old source IDs remain in the inventory and fallback. The 2017, 2021 and 2025 aerials show open ground at 1769 Franklin and the shadowed track-side verge along 2125. At 2117 and 2125 Franklin the new whole-building meshes cover the two old partial candidates. The City roof overlaps the former rear trace by only 5.639 m². The dated images establish a vacancy at 1769 while the timing of removal remains open. [Editable dimensions and dated receipts](../data/metadata/garden-franklin-review.json) · [Exporter](../scripts/build-garden-franklin-review.py).
+
+All 22,374 sampled locations in the adopted roof footprints hit new geometry. Forty-three of 45 paired median errors fall across 17,043 paired cells. At 2125 the 2017 grid median falls from 11.4972 to 0.2250 m on 106 pairs. The 2013–15 and DOGAMI samples largely reflect lower surfaces at this redeveloped site, with new paired medians of 10.1426 and 8.3321 m. The compound was sampled at 4 m intervals, and 30 cells per survey in the registered recesses and courtyard margins fall outside the adopted roof outline. The other roofs use the source sample grid.
+
+Twenty-four matched views and exact index and vertex-attribute checks preserve 63 neighbors in four affected batches. Upward probes verify the Millrace shelter, both motor courts, the Walnut hotel canopy and the 2025 vehicle bay. At 2125 a downward probe reaches the pool surface through the open court, the north recess clears, and two parking deck samples differ by 2.01 m. The exporter checks all 7,710 route edges with 9.5459 m minimum clearance from the newly registered walls and supports.
+
+Desktop and phone select all fifteen exteriors, resolve 1212 and 1214 Villard, and navigate to both estimated Garden approaches. Each device passes 23 building and opening collision probes and eight approach probes. An invalid model and an invalid source anchor both restore the fifteen earlier source meshes and approaches, including collision at the two retired traces. The staged, repeated, installed, built and served assets match byte for byte. The package is local and uncommitted.

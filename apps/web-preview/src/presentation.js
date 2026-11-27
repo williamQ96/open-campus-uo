@@ -606,9 +606,28 @@ export async function loadPresentation(
     buildingOverlayEntries,
     config.asset_sha256,
   );
-  const hardscape = skipPilotHardscape
+  const pilotHardscape = skipPilotHardscape
     ? null
     : await installPilotHardscape(gltf.scene, base, config, installedReviews);
+  const siteSurfaces = installedReviews
+    .map(({ walkableHeight }) => walkableHeight)
+    .filter(Boolean);
+  const hardscape = siteSurfaces.length
+    ? {
+        boxes: pilotHardscape?.boxes ?? [],
+        height(x, z) {
+          let height = pilotHardscape?.height(x, z);
+          for (const sample of siteSurfaces) {
+            const surface = sample(x, z);
+            if (surface !== undefined)
+              height =
+                height === undefined ? surface : Math.max(height, surface);
+          }
+          return height;
+        },
+      }
+    : pilotHardscape;
+
   const refinedPilotTrees =
     skipPilotClearance || skipPilotTrees
       ? 0

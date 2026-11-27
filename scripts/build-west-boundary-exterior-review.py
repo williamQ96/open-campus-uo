@@ -13,6 +13,7 @@ import trimesh
 
 fairmount = import_module("build-fairmount-kincaid-exterior-review")
 northwest = import_module("build-northwest-infill-exterior-review")
+neighborhood = import_module("build-neighborhood-exterior-closeout-review")
 garden, base, chapter = fairmount.garden, fairmount.base, fairmount.chapter
 geometry, millrace = fairmount.geometry, fairmount.millrace
 PACKAGE = "west-boundary-exterior-review"
@@ -114,6 +115,75 @@ def alley(parts, row, wall, field, roof_at):
                 northwest.window_grid(add, u, 0.91, z + 1.19, z + 2.26, 2, 1, trim)
 
 
+def alley_gallery(parts, row, wall, field, roof_at):
+    trim = row["trim_color"]
+    metal = (66, 71, 62)
+    gallery = row["gallery"]
+    supports = []
+    for line, (span, add, normal, plan, _, _) in fairmount.views(parts, wall):
+        if span < 2 or line.centroid.x < -999.75:
+            continue
+        grade = geometry.sample_ground(field, *plan(span / 2, 0))
+        level = grade + gallery["rise_m"]
+        top = min(roof_at(plan(u, 0)) for u in np.linspace(0.12, span - 0.12, 6))
+        add(0.026, span - 0.026, 0.007, 0.038, grade - 0.12, grade + 0.18, CEMENT)
+        add(0.02, span - 0.02, 0.01, 0.086, level - 0.07, level + 0.045, trim)
+        for u in np.arange(0.12, span - 0.08, 0.19):
+            add(u, u + 0.018, 0.013, 0.026, level + 0.026, top - 0.17, (163, 158, 132))
+        if normal[0] > 0.95 and span > 13:
+            start, stop = gallery["start_m"], gallery["stop_m"]
+            inner, outer = 0.015, gallery["deck_depth_m"]
+            # This wall runs south to north, and the photographed stair descends south.
+            first, last = span - stop, span - start
+            neighborhood.gallery(
+                parts, plan, first, last, inner, outer, level, field, (trim, metal)
+            )
+            for at in (first + 0.11, last - 0.13):
+                supports.append(
+                    fairmount.rectangle(
+                        plan, at - 0.073, at + 0.073, outer - 0.22, outer - 0.074
+                    )
+                )
+            stair_foot = span - gallery["stair_from_m"]
+            stair_top = span - gallery["stair_to_m"]
+            neighborhood.exterior_stairs(
+                parts,
+                plan,
+                stair_foot,
+                stair_top,
+                inner,
+                outer,
+                grade,
+                level,
+                (112, 109, 92),
+                metal,
+            )
+            for u in (span - 2.58, span - 6.97):
+                millrace.door(add, u, level + 0.035, trim)
+            for u in (span - 4.20, span - 9.57):
+                neighborhood.window(
+                    add, span, u, 1.28, level + 0.78, 1.22, top, trim, 1
+                )
+            for u in (span - 2.59, span - 6.50, span - 11.10):
+                neighborhood.window(
+                    add, span, u, 1.04, grade + 0.78, 1.29, top, trim, 1
+                )
+        elif normal[1] < -0.94:
+            for u in (span * 0.24, span * 0.62):
+                neighborhood.window(
+                    add, span, u, 1.19, level + 0.76, 1.17, top, trim, 1
+                )
+            neighborhood.window(
+                add, span, span * 0.27, 0.75, grade + 0.94, 1.05, top, trim, 1
+            )
+        else:
+            for u in (span * 0.26, span * 0.72):
+                neighborhood.window(
+                    add, span, u, 0.94, level + 0.74, 1.09, top, trim, 1
+                )
+    return supports
+
+
 def church(parts, row, wall, field, roof_at):
     trim = row["trim_color"]
     course = row["cladding_break_z_m"]
@@ -194,6 +264,8 @@ def model(row, field, paving):
         supports.extend(duplex(parts, row, wall, field, roof_at, point))
     elif row["style"] == "church":
         church(parts, row, wall, field, roof_at)
+    elif row["style"] == "alley-gallery":
+        supports.extend(alley_gallery(parts, row, wall, field, roof_at))
     else:
         alley(parts, row, wall, field, roof_at)
     mesh = trimesh.util.concatenate(parts)

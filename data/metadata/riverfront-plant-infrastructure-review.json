@@ -1,0 +1,155 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "source_navigation_sha256": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+  "source_ranges": [
+    {
+      "id": "roof-650750f7",
+      "target": "context-background-1-2"
+    },
+    {
+      "id": "roof-adffd5f7",
+      "target": "context-background-2-2"
+    },
+    {
+      "id": "roof-b2b2c46f",
+      "target": "context-campus-0-1"
+    }
+  ],
+  "bridge": {
+    "source": "https://www.pci.org/Common/Uploaded%20files/PCI/Publications/PCI%20Journal/1998/May-June/Industry%20News.pdf",
+    "center_enu_m": [
+      83.3,
+      440.44
+    ],
+    "axis_enu": [
+      0.9975852846945904,
+      -0.069452140073674
+    ],
+    "span_lengths_m": [
+      9.7536,
+      8.9916,
+      8.9916,
+      9.7536
+    ],
+    "finished_width_m": 6.1976,
+    "girder_depth_m": 0.762,
+    "girder_top_z_m": 0.022,
+    "ballast_top_z_m": 0.25,
+    "approach_run_m": 21.5,
+    "pier_width_m": 1.23,
+    "pier_depth_m": 4.22,
+    "road_edges_enu_m": [
+      [
+        [
+          73.6,
+          421.8
+        ],
+        [
+          74.5,
+          427.0
+        ],
+        [
+          74.7,
+          432.0
+        ],
+        [
+          74.0,
+          436.6
+        ],
+        [
+          73.8,
+          441.0
+        ],
+        [
+          74.0,
+          445.7
+        ],
+        [
+          74.2,
+          450.1
+        ],
+        [
+          75.4,
+          455.5
+        ]
+      ],
+      [
+        [
+          92.7,
+          421.8
+        ],
+        [
+          92.4,
+          427.0
+        ],
+        [
+          92.7,
+          432.0
+        ],
+        [
+          93.2,
+          436.6
+        ],
+        [
+          93.0,
+          441.0
+        ],
+        [
+          91.7,
+          445.7
+        ],
+        [
+          90.1,
+          450.1
+        ],
+        [
+          87.0,
+          455.5
+        ]
+      ]
+    ],
+    "road_points_enu_m": [
+      [
+        85.75,
+        438.0
+      ],
+      [
+        85.39,
+        440.2
+      ],
+      [
+        85.1,
+        442.0
+      ],
+      [
+        84.84,
+        443.6
+      ]
+    ]
+  },
+  "tank": {
+    "source": "https://news.uoregon.edu/content/new-tank-helps-keep-campus-and-planet-little-cooler",
+    "id": "uo-thermal-storage-tank",
+    "name": "Thermal Energy Storage Tank",
+    "street_address": "1149 Franklin Boulevard (Chiller Plant site)",
+    "center_enu_m": [
+      -356.8672,
+      371.6031
+    ],
+    "radius_m": 15.9101,
+    "rim_base_z_m": -2.53,
+    "height_m": 18.57,
+    "course_heights_m": [
+      6.07,
+      11.88
+    ]
+  },
+  "lawn": {
+    "representative_enu_m": [
+      -594.2142857143,
+      -351.0
+    ],
+    "surface": "Existing lawn and path confirmed in 2017, 2021, and 2025 aerials."
+  }
+}

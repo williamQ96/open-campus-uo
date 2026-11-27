@@ -323,25 +323,38 @@
       "front": {
         "bearing": 180
       },
-      "style": "alley-gable",
+      "style": "alley-gallery",
       "eaves_m": 0.19,
       "wall_color": [
-        164,
-        150,
-        121
+        182,
+        176,
+        144
       ],
       "trim_color": [
-        199,
-        193,
+        202,
+        195,
         165
       ],
       "roof_color": [
-        145,
-        130,
-        108
+        137,
+        131,
+        110
       ],
       "porch": null,
       "entry": null,
+      "gallery": {
+        "start_m": 1.05,
+        "stop_m": 7.62,
+        "stair_from_m": 12.93,
+        "stair_to_m": 7.62,
+        "deck_depth_m": 1.34,
+        "rise_m": 2.69
+      },
+      "followup_evidence": {
+        "listing": "https://www.zillow.com/b/640-e-16th-aly-eugene-or-CF2Vpk/",
+        "exterior_photo": "https://photos.zillowstatic.com/fp/c90231bb32093f5a54f314c8507a06de-cc_ft_960.webp",
+        "observation": "East upper gallery and exterior stair descending south, with the west geometry clipped at the study edge."
+      },
       "roof_zones": [
         {
           "bounds_m": [
@@ -352,17 +365,17 @@
           ],
           "planes": [
             [
-              -997.47,
+              -996.85,
               0,
-              5.16,
-              0.54,
+              5.13,
+              0.47,
               0
             ],
             [
-              -997.47,
+              -996.85,
               0,
-              5.16,
-              -0.296,
+              5.13,
+              -0.288,
               0
             ]
           ]

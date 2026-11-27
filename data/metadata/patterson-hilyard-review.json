@@ -1,0 +1,2921 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "absorbed_ids": [
+    "roof-37ab2d9d"
+  ],
+  "new_building_ids": [
+    "sigep-967-patterson"
+  ],
+  "source_ranges": [
+    {
+      "id": "roof-6dee14b1",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-37ab2d9d",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-1fc60a1b",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-903302f0",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-0945ffaf",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-c9808624",
+      "target": "context-background-0-2"
+    },
+    {
+      "id": "roof-acf1c4c2",
+      "target": "context-background-0-2"
+    }
+  ],
+  "surfaces": {
+    "2013-15": {
+      "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+      "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+    },
+    "2017": {
+      "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+      "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+    },
+    "DOGAMI": {
+      "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+      "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    }
+  },
+  "sources": {
+    "roof-6dee14b1": {
+      "city_objectid": 149931,
+      "outline_enu_wkt": "POLYGON ((-974.068163354008 390.03994160704315, -964.6795452078804 389.96922702528536, -964.8001488252194 373.9690029611811, -990.3212275344995 374.1613754853606, -990.3169185910374 374.7307227663696, -998.2619668482803 374.7906184159219, -998.2672295811935 374.08903833385557, -1008.779740479833 374.1683133393526, -1008.76394779369 376.26955361664295, -1014.1707412104588 376.31029871851206, -1014.089558364125 387.08727504406124, -1011.1289973215898 387.0650270394981, -1011.1124404755537 389.26129316724837, -1008.6661113214213 389.2428989596665, -1005.3640582612134 389.2179421344772, -1005.3560284062987 390.27581646014005, -990.2006229261169 390.1615996044129, -974.068163354008 390.03994160704315))",
+      "area_m2": 760.726,
+      "inside_addresses": [
+        "979 PATTERSON ST"
+      ],
+      "parcel_fractions": {
+        "1703322307400": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-6dee14b1": 284.0
+      },
+      "sample_counts": {
+        "2013-15": 507,
+        "2017": 507,
+        "DOGAMI": 507
+      },
+      "city_query": {
+        "file": "patterson-979-city.json",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493280.14928888186%2C4877267.282153052%2C493399.14928888186%2C4877353.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "cb0c9c4f4b18dac673ae10eab2f1bf977dad45c81fc1b6b638b0f368cec8e69c"
+      },
+      "parcels": {
+        "file": "patterson-979-county.json",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493280.14928888186%2C4877267.282153052%2C493399.14928888186%2C4877353.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+        "sha256": "19751295a72fb016669af0cc765f0c444977052cfa2a1dd6d3e076b43a85fd56"
+      },
+      "height_samples_sha256": "e85d900100975dbbbe4241bef402b6470e5651e9ee422780764bf1726a3273ca",
+      "aerial_receipts": [
+        {
+          "file": "patterson-979-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493280.14928888186%2C4877267.282153052%2C493399.14928888186%2C4877353.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "cb0c9c4f4b18dac673ae10eab2f1bf977dad45c81fc1b6b638b0f368cec8e69c"
+        },
+        {
+          "file": "patterson-979-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493280.14928888186%2C4877267.282153052%2C493399.14928888186%2C4877353.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "19751295a72fb016669af0cc765f0c444977052cfa2a1dd6d3e076b43a85fd56"
+        },
+        {
+          "file": "patterson-979-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493280.14928888186%2C4877267.282153052%2C493399.14928888186%2C4877353.282153052&bboxSR=3740&imageSR=3740&size=1190%2C860&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "6becaebf5291d04a93278027e0279306ff175d4d2edfd5258e2f22f5cdba5763",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "patterson-979-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493280.14928888186%2C4877267.282153052%2C493399.14928888186%2C4877353.282153052&bboxSR=3740&imageSR=3740&size=1190%2C860&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "89946b7e5a5c5ef179cad4b65a08277de3f2bf886b92e38e30cc5be12444aeb5",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99925
+        },
+        {
+          "file": "patterson-979-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493280.14928888186%2C4877267.282153052%2C493399.14928888186%2C4877353.282153052&bboxSR=3740&imageSR=3740&size=1190%2C860&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "522bbf821bbf4378d25f0f8a4223747ca24891bd2cd72dbfaa666406604f3419",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "street_views": {
+        "149931-hilyard-aly-oblique": [],
+        "149931-hilyard-aly-straight": [],
+        "149931-patterson-st-straight": [
+          {
+            "date": "2024-06",
+            "id": "xqtu5QbH5D0b0EmWn5L9ng",
+            "camera_enu": [
+              -1027.8536191813182,
+              381.97419238556176
+            ],
+            "bearing": 90.43,
+            "distance": 38.4,
+            "file": "149931-patterson-st-straight-2024-06.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xqtu5QbH5D0b0EmWn5L9ng&heading=90.43"
+          }
+        ],
+        "149931-patterson-st-oblique": [
+          {
+            "date": "2024-06",
+            "id": "aDxAgw6auaHgsY0tvpxS1Q",
+            "camera_enu": [
+              -1028.0374219730147,
+              371.84641094505787
+            ],
+            "bearing": 75.7,
+            "distance": 39.8,
+            "file": "149931-patterson-st-oblique-2024-06.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=aDxAgw6auaHgsY0tvpxS1Q&heading=75.7"
+          }
+        ]
+      },
+      "references": [
+        "https://www.eugene-or.gov/Archive/ViewFile/Item/4782"
+      ]
+    },
+    "sigep-967-patterson": {
+      "historical_outline_receipts": [
+        {
+          "city_objectid": 170331,
+          "outline_enu_wkt": "POLYGON ((-993.6971027869731 392.77743890415877, -1004.9381127299857 392.74196926970035, -1005.9710705530597 391.690607980825, -1008.0085432155756 391.6841029636562, -1009.1615912156994 392.8170294072479, -1011.1545662367134 392.81065236311406, -1011.202630534186 407.9619143558666, -1009.0566614972777 407.9686572467908, -1007.9626556884614 409.0821423875168, -1005.9416808967944 409.0885550500825, -1004.9198836447322 408.0845159282908, -993.7456735188607 408.11989201791584, -993.6971027869731 392.77743890415877))",
+          "area_m2": 273.717,
+          "inside_addresses": [],
+          "parcel_fractions": {
+            "1703322307100": 1.0
+          },
+          "legacy_intersections_m2": {
+            "roof-37ab2d9d": 84.175
+          },
+          "sample_counts": {
+            "2013-15": 87,
+            "2017": 87,
+            "DOGAMI": 87
+          }
+        },
+        {
+          "city_objectid": 170332,
+          "outline_enu_wkt": "POLYGON ((-992.1477353944792 408.63639664743096, -970.7576240103808 408.5120443003252, -970.8143680959474 398.7290304703638, -992.2044770016219 398.8532828744501, -992.1477353944792 408.63639664743096))",
+          "area_m2": 209.268,
+          "inside_addresses": [
+            "967 PATTERSON ST"
+          ],
+          "parcel_fractions": {
+            "1703322307100": 1.0
+          },
+          "legacy_intersections_m2": {
+            "roof-37ab2d9d": 193.682
+          },
+          "sample_counts": {
+            "2013-15": 189,
+            "2017": 189,
+            "DOGAMI": 189
+          }
+        }
+      ],
+      "CityDemolition": "https://coeapps.eugene-or.gov/cmoweblink/0/edoc/4198616/Ord.%2020700.pdf",
+      "concept": "https://www.epageflip.net/i/1527312-pre-campaign-feasibility-study/6",
+      "address": "https://sigepnationalhousingllc.residentportal.com/auth/signup-property",
+      "city_document": "https://pddfiles.eugene-or.gov/documents/ebuild/4594119",
+      "historic_source": "roof-37ab2d9d",
+      "aerial_receipts": [
+        {
+          "file": "patterson-967-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493295.14928888186%2C4877287.282153052%2C493393.14928888186%2C4877372.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "d89049e41407d22af398c8fb3edc4cebedcfc1c46f03b6b103ad69e68145aa51"
+        },
+        {
+          "file": "patterson-967-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493295.14928888186%2C4877287.282153052%2C493393.14928888186%2C4877372.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "8b179bf2c355266d4aaa1c6a0afa161fffb67fe4a974faed2d1792f5852fae13"
+        },
+        {
+          "file": "patterson-967-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493295.14928888186%2C4877287.282153052%2C493393.14928888186%2C4877372.282153052&bboxSR=3740&imageSR=3740&size=980%2C850&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "c4c6f77982ee3ff8c31aec3fccfd622a6ac75d7b9ec09ef5f2a1b44d581c2760",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "patterson-967-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493295.14928888186%2C4877287.282153052%2C493393.14928888186%2C4877372.282153052&bboxSR=3740&imageSR=3740&size=980%2C850&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "37b3f4cb31822cf6a163c5b28478adf57510e5fda19327456befdd3edab7f049",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99983
+        },
+        {
+          "file": "patterson-967-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493295.14928888186%2C4877287.282153052%2C493393.14928888186%2C4877372.282153052&bboxSR=3740&imageSR=3740&size=980%2C850&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "73803402113cf810d480a3c6b4017daa31752edbcdf99559bb217e383ba89501",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "sign_permit_id": "26-6675-01",
+      "interpretation": "Three-story concept by GMA, placed on the cleared parcel. Setbacks, assembled roof and cladding are estimates pending a current site plan or survey."
+    },
+    "roof-1fc60a1b": {
+      "city_objectid": 170360,
+      "outline_enu_wkt": "POLYGON ((-1004.2151343720034 355.3950193691999, -1004.6800459160004 355.39824500400573, -1004.5912015229114 368.20041702408344, -994.5593914057245 368.130696750246, -994.5316610119771 372.1138550993055, -990.4079680443392 372.0851187063381, -990.4346401356161 368.25079683121294, -980.1634697500849 368.17932014819235, -980.1651908946806 367.9119600020349, -979.1661466358928 367.90487456694245, -979.1526038547745 369.86034293752164, -976.529471071437 369.8420253349468, -976.5431602097233 367.85125143732876, -975.9956270385883 367.84739152062684, -976.0815703116241 355.4674199698493, -980.9342379583977 355.5012013576925, -980.9547679099487 352.5232907887548, -1004.2339492937317 352.6846687691286, -1004.2151343720034 355.3950193691999))",
+      "area_m2": 450.477,
+      "inside_addresses": [
+        "1009 PATTERSON ST"
+      ],
+      "parcel_fractions": {
+        "1703322307500": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-1fc60a1b": 222.006
+      },
+      "sample_counts": {
+        "2013-15": 339,
+        "2017": 339,
+        "DOGAMI": 339
+      },
+      "city_query": {
+        "file": "patterson-1009-city.json",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493290.14928888186%2C4877246.282153052%2C493387.14928888186%2C4877335.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "5c4229cd18962e8a896f4fc4fe07b8a6a4416704d45bcad97178eff41a71f61b"
+      },
+      "parcels": {
+        "file": "patterson-1009-county.json",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493290.14928888186%2C4877246.282153052%2C493387.14928888186%2C4877335.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+        "sha256": "edfcc1ad6b4f615b03664b8de11df8c43956a6f1b868d628013116b55bed3aa9"
+      },
+      "height_samples_sha256": "89733d81420b5a2de87442907672f49bacf3c2031558bc805ed75ed8888164bd",
+      "aerial_receipts": [
+        {
+          "file": "patterson-1009-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493290.14928888186%2C4877246.282153052%2C493387.14928888186%2C4877335.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "5c4229cd18962e8a896f4fc4fe07b8a6a4416704d45bcad97178eff41a71f61b"
+        },
+        {
+          "file": "patterson-1009-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493290.14928888186%2C4877246.282153052%2C493387.14928888186%2C4877335.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "edfcc1ad6b4f615b03664b8de11df8c43956a6f1b868d628013116b55bed3aa9"
+        },
+        {
+          "file": "patterson-1009-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493290.14928888186%2C4877246.282153052%2C493387.14928888186%2C4877335.282153052&bboxSR=3740&imageSR=3740&size=970%2C890&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "6dd832d12cc8fdff940383a85a05c1fe904cacf8d8c5e30aa60c10ff46c48845",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "patterson-1009-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493290.14928888186%2C4877246.282153052%2C493387.14928888186%2C4877335.282153052&bboxSR=3740&imageSR=3740&size=970%2C890&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "bd44232ed2f21c5cf520d722081fec72a2bf7b67c50f7ed6a855f4dc3a203b41",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.9991
+        },
+        {
+          "file": "patterson-1009-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493290.14928888186%2C4877246.282153052%2C493387.14928888186%2C4877335.282153052&bboxSR=3740&imageSR=3740&size=970%2C890&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "e34b360d64fec014bfc0098b6c0e00c000e27b931281fe92bd11360c5ca46842",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "street_views": {
+        "170360-hilyard-aly-straight": [],
+        "170360-hilyard-aly-oblique": [],
+        "170360-patterson-st-oblique": [
+          {
+            "date": "2024-06",
+            "id": "clcXGOLxFU1PiPTPOOxlwg",
+            "camera_enu": [
+              -1028.6023282817332,
+              351.57125201728195
+            ],
+            "bearing": 75.21,
+            "distance": 39.6,
+            "file": "170360-patterson-st-oblique-2024-06.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=clcXGOLxFU1PiPTPOOxlwg&heading=75.21"
+          }
+        ],
+        "170360-patterson-st-straight": [
+          {
+            "date": "2024-06",
+            "id": "Uid-rl9363PwDQG5jUcA4A",
+            "camera_enu": [
+              -1028.2477382674697,
+              361.68942662049085
+            ],
+            "bearing": 90.02,
+            "distance": 37.9,
+            "file": "170360-patterson-st-straight-2024-06.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Uid-rl9363PwDQG5jUcA4A&heading=90.02"
+          }
+        ]
+      },
+      "references": [
+        "https://blogs.uoregon.edu/uofsl/chapterhousesmap/"
+      ]
+    },
+    "roof-903302f0": {
+      "city_objectid": 170373,
+      "outline_enu_wkt": "POLYGON ((-925.3125201509683 271.4797718618065, -925.3058729090844 270.6438425928354, -931.6069906422636 270.593893840909, -931.7871584611712 293.27766653429717, -933.761557389691 293.2620431659743, -933.8209352985723 300.73691783938557, -939.8970992757822 300.6887826854363, -939.9941161170136 312.9163906695321, -921.6735500001814 313.06174421403557, -921.6333894006675 308.0100761773065, -919.942129754636 308.0233496678993, -919.8796656524064 300.16025443188846, -921.6742993452935 300.14599586930126, -921.6293303436833 294.47415070515126, -921.9395642296877 294.4715921645984, -921.8445614260272 282.4924317644909, -921.1935407049605 281.7921373397112, -921.1798304269323 280.07618980202824, -921.6365756290616 279.6516449097544, -921.5718808588572 271.50940647441894, -925.3125201509683 271.4797718618065))",
+      "area_m2": 551.458,
+      "inside_addresses": [
+        "1050 HILYARD ST",
+        "1052 HILYARD ST"
+      ],
+      "parcel_fractions": {
+        "1703322307800": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-903302f0": 238.42
+      },
+      "sample_counts": {
+        "2013-15": 466,
+        "2017": 466,
+        "DOGAMI": 466
+      },
+      "city_query": {
+        "file": "hilyard-1050-1052-city.json",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493354.14928888186%2C4877164.282153052%2C493444.14928888186%2C4877276.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "925a9adff1014e31970cc7bf56c71cda8910390dd55545bb1e9fccec0b4cb274"
+      },
+      "parcels": {
+        "file": "hilyard-1050-1052-county.json",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493354.14928888186%2C4877164.282153052%2C493444.14928888186%2C4877276.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+        "sha256": "044856307a4267c3f86087814659f9bd2e3cca61b52695ae2c26405d0994d20d"
+      },
+      "height_samples_sha256": "e30fa4441808e27c7a79aafeed29c198afa8d0c3b30539245eba67efd64331f6",
+      "aerial_receipts": [
+        {
+          "file": "hilyard-1050-1052-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493354.14928888186%2C4877164.282153052%2C493444.14928888186%2C4877276.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "925a9adff1014e31970cc7bf56c71cda8910390dd55545bb1e9fccec0b4cb274"
+        },
+        {
+          "file": "hilyard-1050-1052-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493354.14928888186%2C4877164.282153052%2C493444.14928888186%2C4877276.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "044856307a4267c3f86087814659f9bd2e3cca61b52695ae2c26405d0994d20d"
+        },
+        {
+          "file": "hilyard-1050-1052-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493354.14928888186%2C4877164.282153052%2C493444.14928888186%2C4877276.282153052&bboxSR=3740&imageSR=3740&size=900%2C1120&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "6147340e16f4c64894b353c203968f9f18f589b57e8a552a7813b3fb83bb5d03",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "hilyard-1050-1052-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493354.14928888186%2C4877164.282153052%2C493444.14928888186%2C4877276.282153052&bboxSR=3740&imageSR=3740&size=900%2C1120&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "c1b8fdb59d926236f6d2ddff2bdc4f8f6d9d3cd67d8b369748c0995f14aeab23",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99985
+        },
+        {
+          "file": "hilyard-1050-1052-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493354.14928888186%2C4877164.282153052%2C493444.14928888186%2C4877276.282153052&bboxSR=3740&imageSR=3740&size=900%2C1120&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "538ba57a5c183f8cb55e646855c77396a9cbd1d2378e7ee33981834e2fe2bb41",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "street_views": {
+        "170373-hilyard-st-oblique": [
+          {
+            "date": "2024-06",
+            "id": "sNz7b9tDu9MejMxDDH2Szg",
+            "camera_enu": [
+              -906.2703769186628,
+              279.30689763557166
+            ],
+            "bearing": 292.64,
+            "distance": 22.3,
+            "file": "170373-hilyard-st-oblique-2024-06.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=sNz7b9tDu9MejMxDDH2Szg&heading=292.64"
+          }
+        ],
+        "170373-hilyard-st-straight": [
+          {
+            "date": "2024-06",
+            "id": "CM4r2aWnI54rvtD4hIX14w",
+            "camera_enu": [
+              -906.3407829825883,
+              289.44104041159153
+            ],
+            "bearing": 265.63,
+            "distance": 20.5,
+            "file": "170373-hilyard-st-straight-2024-06.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CM4r2aWnI54rvtD4hIX14w&heading=265.63"
+          }
+        ]
+      },
+      "references": [
+        "https://blogs.uoregon.edu/uofsl/chapterhousesmap/",
+        "https://npgallery.nps.gov/AssetDetail/NRIS/91001564",
+        "https://npgallery.nps.gov/GetAsset/fa408773-7be6-4286-b457-a73f5b1d2d9a"
+      ]
+    },
+    "roof-0945ffaf": {
+      "city_objectid": 170791,
+      "outline_enu_wkt": "POLYGON ((-889.4627864746144 361.21281061321497, -884.6062525096349 361.3577515576035, -884.633248284983 369.83512426167727, -852.4277075426653 370.2310661384836, -852.0737825176329 358.372139162384, -867.2148390935035 358.1462679449469, -867.2771841405192 356.4488515788689, -870.5559440115467 356.46400211565197, -870.3874070996535 350.8168462831527, -867.6733627708163 350.7848420543596, -867.5638982453384 343.3272636765614, -878.1906031497056 343.3492254829034, -878.333874761709 351.9362320676446, -889.5251951383543 351.94134348165244, -889.4627864746144 361.21281061321497))",
+      "area_m2": 610.255,
+      "inside_addresses": [
+        "1021 HILYARD ST"
+      ],
+      "parcel_fractions": {
+        "1703322402800": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-0945ffaf": 297.871
+      },
+      "sample_counts": {
+        "2013-15": 524,
+        "2017": 524,
+        "DOGAMI": 524
+      },
+      "city_query": {
+        "file": "hilyard-1021-city.json",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493405.14928888186%2C4877237.282153052%2C493511.14928888186%2C4877333.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "466f128ecb2e5ff7fee793171ece1dea9951beb8a645a0e9563a4514b8768c18"
+      },
+      "parcels": {
+        "file": "hilyard-1021-county.json",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493405.14928888186%2C4877237.282153052%2C493511.14928888186%2C4877333.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+        "sha256": "9db2ca2bd9cef073e537c4f8e728e887c1a1c5a777399c566e21063171d10de2"
+      },
+      "height_samples_sha256": "0d0be07b2ba664047b4cb8f7c1bf8e41faac698c98b73b02a1e7fa9176723e74",
+      "aerial_receipts": [
+        {
+          "file": "hilyard-1021-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493405.14928888186%2C4877237.282153052%2C493511.14928888186%2C4877333.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "466f128ecb2e5ff7fee793171ece1dea9951beb8a645a0e9563a4514b8768c18"
+        },
+        {
+          "file": "hilyard-1021-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493405.14928888186%2C4877237.282153052%2C493511.14928888186%2C4877333.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "9db2ca2bd9cef073e537c4f8e728e887c1a1c5a777399c566e21063171d10de2"
+        },
+        {
+          "file": "hilyard-1021-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493405.14928888186%2C4877237.282153052%2C493511.14928888186%2C4877333.282153052&bboxSR=3740&imageSR=3740&size=1060%2C960&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "63669a5d51dd4f6f25c8623605983740299f14e143cbf5cc04dcd0b489a507f8",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "hilyard-1021-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493405.14928888186%2C4877237.282153052%2C493511.14928888186%2C4877333.282153052&bboxSR=3740&imageSR=3740&size=1060%2C960&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "873d19c29c32f99a02e654a6061876e9510f3bd15a465533a455f4a69a3cf9ce",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99952
+        },
+        {
+          "file": "hilyard-1021-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493405.14928888186%2C4877237.282153052%2C493511.14928888186%2C4877333.282153052&bboxSR=3740&imageSR=3740&size=1060%2C960&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "d2bea92fdbcc1785f592cab4a72d303d86925f8c173da423030dd9b394edc7c4",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 0.99999
+        }
+      ],
+      "street_views": {
+        "170791-hilyard-st-oblique": [
+          {
+            "date": "2024-06",
+            "id": "2yjEdwteSL1CBLXDK_hlYg",
+            "camera_enu": [
+              -906.0627021967666,
+              350.0516740689054
+            ],
+            "bearing": 75.32,
+            "distance": 28.6,
+            "file": "170791-hilyard-st-oblique-2024-06.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2yjEdwteSL1CBLXDK_hlYg&heading=75.32"
+          }
+        ],
+        "170791-hilyard-st-straight": [
+          {
+            "date": "2024-06",
+            "id": "Jk11a1mzpaz9ES_B5Ej_mA",
+            "camera_enu": [
+              -905.9680155373062,
+              360.1824868125841
+            ],
+            "bearing": 95.95,
+            "distance": 27.8,
+            "file": "170791-hilyard-st-straight-2024-06.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Jk11a1mzpaz9ES_B5Ej_mA&heading=95.95"
+          }
+        ]
+      },
+      "references": [
+        "https://blogs.uoregon.edu/uofsl/chapterhousesmap/",
+        "https://npgallery.nps.gov/AssetDetail/NRIS/91001566",
+        "https://npgallery.nps.gov/GetAsset/1faab1b0-6fa1-4a82-bd98-9ae3af25ecfe"
+      ]
+    },
+    "roof-c9808624": {
+      "city_objectid": 170793,
+      "outline_enu_wkt": "POLYGON ((-808.7241740358877 272.8773340806365, -809.0944154312019 277.4588360991329, -812.9875204029959 277.49825260415673, -813.4226898155757 289.4724610056728, -788.7582281538052 289.81935270223767, -788.2730788984336 278.78076686058193, -793.3257236055797 278.55216927081347, -793.1586079115514 272.95267159864306, -808.7241740358877 272.8773340806365))",
+      "area_m2": 366.396,
+      "inside_addresses": [
+        "763 E 11TH AVE"
+      ],
+      "parcel_fractions": {
+        "1703322404700": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-c9808624": 229.673
+      },
+      "sample_counts": {
+        "2013-15": 314,
+        "2017": 314,
+        "DOGAMI": 314
+      },
+      "city_query": {
+        "file": "east11-763-city.json",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493481.14928888186%2C4877166.282153052%2C493575.14928888186%2C4877253.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "9f83783446aeb3f99083a5a54c43a5a19fdf3a8c8a1c5c47a9e53bac7a9b79df"
+      },
+      "parcels": {
+        "file": "east11-763-county.json",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493481.14928888186%2C4877166.282153052%2C493575.14928888186%2C4877253.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+        "sha256": "b00851c7400fb9c746d6a5123f96bae43ae9e4324d7dfaaf8ac3e4a9f198bd84"
+      },
+      "height_samples_sha256": "0c9f6284f214212ab0274aa03d1a542716ac3aacf49abbff7f6a56eb94efcba8",
+      "aerial_receipts": [
+        {
+          "file": "east11-763-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493481.14928888186%2C4877166.282153052%2C493575.14928888186%2C4877253.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "9f83783446aeb3f99083a5a54c43a5a19fdf3a8c8a1c5c47a9e53bac7a9b79df"
+        },
+        {
+          "file": "east11-763-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493481.14928888186%2C4877166.282153052%2C493575.14928888186%2C4877253.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "b00851c7400fb9c746d6a5123f96bae43ae9e4324d7dfaaf8ac3e4a9f198bd84"
+        },
+        {
+          "file": "east11-763-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493481.14928888186%2C4877166.282153052%2C493575.14928888186%2C4877253.282153052&bboxSR=3740&imageSR=3740&size=940%2C870&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "cbdcf1014335fea5f2f41318b8d05d4ca615bd63056787417f0bcb3dac68855f",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east11-763-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493481.14928888186%2C4877166.282153052%2C493575.14928888186%2C4877253.282153052&bboxSR=3740&imageSR=3740&size=940%2C870&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "0a236a783170cb1509d6a7ce41dfca4423e038e7d1213d53d9686a0439505572",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99953
+        },
+        {
+          "file": "east11-763-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493481.14928888186%2C4877166.282153052%2C493575.14928888186%2C4877253.282153052&bboxSR=3740&imageSR=3740&size=940%2C870&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "5fa308002a6444aecca970196130dcd79acb9c0759f39caa69f2d391581e07a8",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "street_views": {
+        "170793-e-11th-ave-straight": [
+          {
+            "date": "2024-07",
+            "id": "2G857f_eORNA6pjxV_FsYQ",
+            "camera_enu": [
+              -797.5937142454204,
+              248.03413667250425
+            ],
+            "bearing": 354.82,
+            "distance": 36.2,
+            "file": "170793-e-11th-ave-straight-2024-07.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2G857f_eORNA6pjxV_FsYQ&heading=354.82"
+          }
+        ],
+        "170793-e-11th-ave-oblique": [
+          {
+            "date": "2024-07",
+            "id": "u9BjmepmeAFPOTJQ4ao7ng",
+            "camera_enu": [
+              -787.4005701669375,
+              247.98921269085258
+            ],
+            "bearing": 339.56,
+            "distance": 38.6,
+            "file": "170793-e-11th-ave-oblique-2024-07.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=u9BjmepmeAFPOTJQ4ao7ng&heading=339.56"
+          }
+        ]
+      },
+      "references": []
+    },
+    "roof-acf1c4c2": {
+      "city_objectid": 170816,
+      "outline_enu_wkt": "POLYGON ((-840.1392079265788 318.4546971898526, -816.5894117102143 318.43390932958573, -816.6067363342154 298.80914532672614, -816.6122044505319 292.686180094257, -819.7520914718043 292.6889742864296, -819.753208557493 291.4329994888976, -823.3642212870764 291.43613358121365, -823.3631041891058 292.6921083750203, -826.9740199784283 292.69534539431334, -826.9718856791733 295.20729199331254, -828.2278604644816 295.2084091026336, -828.2246234149789 298.8193248528987, -840.1565336675267 298.82993311900645, -840.1392079265788 318.4546971898526))",
+      "area_m2": 534.676,
+      "inside_addresses": [
+        "751 E 11TH AVE",
+        "755 E 11TH AVE"
+      ],
+      "parcel_fractions": {
+        "1703322404800": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-acf1c4c2": 348.144
+      },
+      "sample_counts": {
+        "2013-15": 500,
+        "2017": 500,
+        "DOGAMI": 500
+      },
+      "city_query": {
+        "file": "east11-751-755-city.json",
+        "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493454.14928888186%2C4877185.282153052%2C493547.14928888186%2C4877283.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+        "sha256": "de4ed0e2764c1f8ee968667a1abe9d7ea6785144833f16ecf31af35c84fc2f57"
+      },
+      "parcels": {
+        "file": "east11-751-755-county.json",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493454.14928888186%2C4877185.282153052%2C493547.14928888186%2C4877283.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+        "sha256": "41235a14a03e80260e5b7367e119f6ee97a070b2dbdc82b7fe18f756e578d227"
+      },
+      "height_samples_sha256": "51da5bf89fbb477c5bd6a29b6b52e4a2627102adc9a81ecb7d8a820feb7d8a70",
+      "aerial_receipts": [
+        {
+          "file": "east11-751-755-city.json",
+          "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=493454.14928888186%2C4877185.282153052%2C493547.14928888186%2C4877283.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+          "sha256": "de4ed0e2764c1f8ee968667a1abe9d7ea6785144833f16ecf31af35c84fc2f57"
+        },
+        {
+          "file": "east11-751-755-county.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493454.14928888186%2C4877185.282153052%2C493547.14928888186%2C4877283.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "41235a14a03e80260e5b7367e119f6ee97a070b2dbdc82b7fe18f756e578d227"
+        },
+        {
+          "file": "east11-751-755-lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493454.14928888186%2C4877185.282153052%2C493547.14928888186%2C4877283.282153052&bboxSR=3740&imageSR=3740&size=930%2C980&layers=show%3A29&format=png32&transparent=true",
+          "sha256": "bcf686178aad118d82fe10c90daddbad8c471705ceeefb028419d0bb53eec6d2",
+          "year": 2017,
+          "layer": 29,
+          "nontransparent_fraction": 1.0
+        },
+        {
+          "file": "east11-751-755-lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493454.14928888186%2C4877185.282153052%2C493547.14928888186%2C4877283.282153052&bboxSR=3740&imageSR=3740&size=930%2C980&layers=show%3A26&format=png32&transparent=true",
+          "sha256": "24bba77fde2b4dd245b8a4a3e43b325eb653d0675a846288b436b2f1d5dba5c3",
+          "year": 2021,
+          "layer": 26,
+          "nontransparent_fraction": 0.99958
+        },
+        {
+          "file": "east11-751-755-lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493454.14928888186%2C4877185.282153052%2C493547.14928888186%2C4877283.282153052&bboxSR=3740&imageSR=3740&size=930%2C980&layers=show%3A57&format=png32&transparent=true",
+          "sha256": "6242d7683a6bb83a69033daa0d7bbe47afff451fd6d8c9dd156a2d880e7805b9",
+          "year": 2025,
+          "layer": 57,
+          "nontransparent_fraction": 1.0
+        }
+      ],
+      "street_views": {
+        "170816-e-11th-+14": [
+          {
+            "date": "2024-07",
+            "id": "dEnvmzIt3fT4CqfgvuYccQ",
+            "camera_enu": [
+              -817.7694918945199,
+              248.17551732622087
+            ],
+            "bearing": 350.05,
+            "distance": 61.4,
+            "file": "170816-e-11th-+14-2024-07.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dEnvmzIt3fT4CqfgvuYccQ&heading=350.05"
+          }
+        ],
+        "170816-e-11th--14": [
+          {
+            "date": "2024-07",
+            "id": "FHpCB8bpXpq5oqLhcokpkQ",
+            "camera_enu": [
+              -838.0247199099394,
+              248.16010352782905
+            ],
+            "bearing": 9.07,
+            "distance": 61.2,
+            "file": "170816-e-11th--14-2024-07.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=FHpCB8bpXpq5oqLhcokpkQ&heading=9.07"
+          }
+        ],
+        "170816-e-11th-+0": [
+          {
+            "date": "2024-07",
+            "id": "KlFI0D3lNClzTXWOWvmGuw",
+            "camera_enu": [
+              -827.8677076104796,
+              248.17672307230532
+            ],
+            "bearing": 359.52,
+            "distance": 60.5,
+            "file": "170816-e-11th-+0-2024-07.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KlFI0D3lNClzTXWOWvmGuw&heading=359.52"
+          }
+        ],
+        "170816-e-11th-+24": [
+          {
+            "date": "2024-07",
+            "id": "kdIufcxyrRz59mI3aWD9tA",
+            "camera_enu": [
+              -807.6218395028263,
+              248.11011985689402
+            ],
+            "bearing": 341.07,
+            "distance": 64.0,
+            "file": "170816-e-11th-+24-2024-07.jpg",
+            "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=kdIufcxyrRz59mI3aWD9tA&heading=341.07"
+          }
+        ]
+      },
+      "references": []
+    }
+  },
+  "models": [
+    {
+      "id": "roof-6dee14b1",
+      "city_objectid": 149931,
+      "name": "Patterson House / 979 Patterson Street",
+      "street_address": "979 Patterson Street",
+      "aliases": [],
+      "outline_enu_m": [
+        [
+          -974.068163,
+          390.039942
+        ],
+        [
+          -964.679545,
+          389.969227
+        ],
+        [
+          -964.800149,
+          373.969003
+        ],
+        [
+          -990.321228,
+          374.161375
+        ],
+        [
+          -990.316919,
+          374.730723
+        ],
+        [
+          -998.261967,
+          374.790618
+        ],
+        [
+          -998.26723,
+          374.089038
+        ],
+        [
+          -1008.77974,
+          374.168313
+        ],
+        [
+          -1008.763948,
+          376.269554
+        ],
+        [
+          -1014.170741,
+          376.310299
+        ],
+        [
+          -1014.089558,
+          387.087275
+        ],
+        [
+          -1011.128997,
+          387.065027
+        ],
+        [
+          -1011.11244,
+          389.261293
+        ],
+        [
+          -1008.666111,
+          389.242899
+        ],
+        [
+          -1005.364058,
+          389.217942
+        ],
+        [
+          -1005.356028,
+          390.275816
+        ],
+        [
+          -990.200623,
+          390.1616
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -989.433,
+          382.089
+        ],
+        "axis": [
+          0.999972,
+          -0.007536
+        ]
+      },
+      "base_z_m": -3.1,
+      "eaves_m": 0.19,
+      "wall_color": [
+        150,
+        136,
+        121
+      ],
+      "roof_color": [
+        92,
+        94,
+        92
+      ],
+      "trim_color": [
+        208,
+        203,
+        181
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -24.8,
+            -8.2,
+            24.8,
+            8.2
+          ],
+          "planes": [
+            [
+              0,
+              -1.0,
+              11.68,
+              0.0,
+              0.53
+            ],
+            [
+              0,
+              -1.0,
+              11.68,
+              0.0,
+              -0.53
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -24.8,
+            -6.0,
+            -18.4,
+            7.05
+          ],
+          "planes": [
+            [
+              -18,
+              0.2,
+              9.64,
+              0.0,
+              0.35
+            ],
+            [
+              -18,
+              0.2,
+              9.64,
+              0.0,
+              -0.35
+            ]
+          ]
+        }
+      ],
+      "levels_z_m": [
+        -2.1,
+        0.76,
+        3.63,
+        6.53
+      ],
+      "fronts": [
+        {
+          "side": "W",
+          "stations": [
+            -5.8,
+            4.75
+          ],
+          "near": [
+            -24.6,
+            -0.5
+          ],
+          "skin": [
+            140,
+            87,
+            68
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                -4.55,
+                3.95
+              ],
+              0.92,
+              0.01,
+              8.98,
+              "tall-arch"
+            ],
+            [
+              0,
+              [
+                -1.75,
+                -0.5,
+                0.75
+              ],
+              1.12,
+              3.67,
+              5.05,
+              "sash"
+            ],
+            [
+              0,
+              [
+                -1.75,
+                -0.5,
+                0.75
+              ],
+              1.12,
+              6.3,
+              7.9,
+              "sash"
+            ]
+          ],
+          "timber": null,
+          "canopy": {
+            "z": 1.3,
+            "depth": 3.43,
+            "columns": [
+              -5.05,
+              -2.15,
+              0.72,
+              3.65
+            ],
+            "raised": -1.21
+          },
+          "bands": [
+            1.2,
+            7.89
+          ],
+          "siding": false
+        }
+      ],
+      "entrance": null,
+      "terrain_extension_enu_m": [
+        -1014.170741,
+        352.523291,
+        -964.679545,
+        407.54
+      ]
+    },
+    {
+      "id": "sigep-967-patterson",
+      "city_objectid": null,
+      "name": "Sigma Phi Epsilon / 967 Patterson Street",
+      "street_address": "967 Patterson Street",
+      "outline_enu_m": [
+        [
+          -1013.77,
+          392.93
+        ],
+        [
+          -1013.77,
+          396.89
+        ],
+        [
+          -1012.75,
+          396.89
+        ],
+        [
+          -1012.75,
+          403.54
+        ],
+        [
+          -1013.7,
+          403.54
+        ],
+        [
+          -1013.7,
+          407.54
+        ],
+        [
+          -1012.75,
+          407.54
+        ],
+        [
+          -1010.15,
+          407.54
+        ],
+        [
+          -976.45,
+          407.54
+        ],
+        [
+          -976.45,
+          392.93
+        ],
+        [
+          -1010.15,
+          392.93
+        ],
+        [
+          -1012.75,
+          392.93
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -994.65,
+          400.24
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "base_z_m": -2.8,
+      "eaves_m": 0.15,
+      "wall_color": [
+        157,
+        157,
+        144
+      ],
+      "roof_color": [
+        83,
+        93,
+        96
+      ],
+      "trim_color": [
+        100,
+        103,
+        96
+      ],
+      "levels_z_m": [
+        -2.09,
+        0.98,
+        4.01
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -19.2,
+            -7.39,
+            4.27,
+            7.37
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              7.45,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -5.4,
+            -7.39,
+            18.29,
+            7.37
+          ],
+          "planes": [
+            [
+              2.27,
+              0.36,
+              9.73,
+              0.0,
+              0.38
+            ],
+            [
+              2.27,
+              0.36,
+              9.73,
+              0.0,
+              -0.38
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -19.2,
+            -7.39,
+            -14.22,
+            -3.24
+          ],
+          "planes": [
+            [
+              -18.6,
+              -5.6,
+              9.51,
+              -0.39,
+              0.0
+            ],
+            [
+              -18.6,
+              -5.6,
+              9.51,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -19.2,
+            3.2,
+            -14.22,
+            7.38
+          ],
+          "planes": [
+            [
+              -18.54,
+              5.42,
+              9.34,
+              -0.35,
+              0.0
+            ],
+            [
+              -18.54,
+              5.42,
+              9.34,
+              0.0,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "fronts": [],
+      "entrance": null,
+      "concept_terrace": [
+        -12.9,
+        -2.78,
+        -5.8,
+        2.79
+      ]
+    },
+    {
+      "id": "roof-1fc60a1b",
+      "city_objectid": 170360,
+      "name": "Beta Theta Pi / 1009 Patterson Street",
+      "street_address": "1009 Patterson Street",
+      "aliases": [],
+      "outline_enu_m": [
+        [
+          -1004.215134,
+          355.395019
+        ],
+        [
+          -1004.680046,
+          355.398245
+        ],
+        [
+          -1004.591202,
+          368.200417
+        ],
+        [
+          -994.559391,
+          368.130697
+        ],
+        [
+          -994.531661,
+          372.113855
+        ],
+        [
+          -990.407968,
+          372.085119
+        ],
+        [
+          -990.43464,
+          368.250797
+        ],
+        [
+          -980.16347,
+          368.17932
+        ],
+        [
+          -980.165191,
+          367.91196
+        ],
+        [
+          -979.166147,
+          367.904875
+        ],
+        [
+          -979.152604,
+          369.860343
+        ],
+        [
+          -976.529471,
+          369.842025
+        ],
+        [
+          -976.54316,
+          367.851251
+        ],
+        [
+          -975.995627,
+          367.847392
+        ],
+        [
+          -976.08157,
+          355.46742
+        ],
+        [
+          -980.934238,
+          355.501201
+        ],
+        [
+          -980.954768,
+          352.523291
+        ],
+        [
+          -1004.233949,
+          352.684669
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -990.333,
+          362.337
+        ],
+        "axis": [
+          0.999976,
+          -0.006932
+        ]
+      },
+      "base_z_m": -2.54,
+      "eaves_m": 0.19,
+      "wall_color": [
+        146,
+        99,
+        82
+      ],
+      "roof_color": [
+        101,
+        106,
+        105
+      ],
+      "trim_color": [
+        208,
+        203,
+        181
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -14.4,
+            -9.82,
+            14.4,
+            5.94
+          ],
+          "planes": [
+            [
+              0,
+              -1.46,
+              10.48,
+              0.0,
+              0.51
+            ],
+            [
+              0,
+              -1.46,
+              10.48,
+              0.0,
+              -0.51
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -4.3,
+            3.79,
+            -0.1,
+            9.86
+          ],
+          "planes": [
+            [
+              -2.19,
+              5.65,
+              9.97,
+              0.76,
+              0.0
+            ],
+            [
+              -2.19,
+              5.65,
+              9.97,
+              -0.76,
+              0.0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            8.99,
+            -7.0,
+            14.4,
+            7.65
+          ],
+          "planes": [
+            [
+              11.31,
+              0.21,
+              8.71,
+              0.65,
+              0.0
+            ],
+            [
+              11.31,
+              0.21,
+              8.71,
+              -0.65,
+              0.0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -13.86,
+            -9.8,
+            9.55,
+            -7.0
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              2.37,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "levels_z_m": [
+        -1.6,
+        1.45,
+        4.55
+      ],
+      "fronts": [
+        {
+          "side": "S",
+          "stations": [
+            -13.72,
+            9.37
+          ],
+          "near": [
+            -2.15,
+            -9.7
+          ],
+          "skin": [
+            168,
+            124,
+            97
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                -10.65,
+                -7.55,
+                -4.48,
+                1.96,
+                4.97,
+                8.0
+              ],
+              1.25,
+              -0.45,
+              1.54,
+              "sash"
+            ]
+          ],
+          "timber": null,
+          "canopy": {
+            "z": 2.39,
+            "depth": 0.29,
+            "columns": [
+              -12.83,
+              -9.25,
+              -5.66,
+              1.51,
+              5.1,
+              8.66
+            ],
+            "raised": -1.43
+          },
+          "bands": [
+            2.26
+          ],
+          "siding": false
+        }
+      ],
+      "entrance": {
+        "side": "S",
+        "near": [
+          -2.0,
+          -9.7
+        ],
+        "door": [
+          107,
+          91,
+          71
+        ],
+        "rise": 0.34,
+        "distance": 3.45,
+        "gate": "street-entry"
+      },
+      "equipment": [
+        [
+          -10.6,
+          2.4,
+          1.05,
+          0.79,
+          1.07
+        ]
+      ]
+    },
+    {
+      "id": "roof-903302f0",
+      "city_objectid": 170373,
+      "name": "Alpha Phi Sorority House / 1050 Hilyard Street / 1052 Hilyard Street",
+      "street_address": "1050 Hilyard Street",
+      "aliases": [
+        "1052 Hilyard Street"
+      ],
+      "outline_enu_m": [
+        [
+          -925.31252,
+          271.479772
+        ],
+        [
+          -925.305873,
+          270.643843
+        ],
+        [
+          -931.606991,
+          270.593894
+        ],
+        [
+          -931.787158,
+          293.277667
+        ],
+        [
+          -933.761557,
+          293.262043
+        ],
+        [
+          -933.820935,
+          300.736918
+        ],
+        [
+          -939.897099,
+          300.688783
+        ],
+        [
+          -939.994116,
+          312.916391
+        ],
+        [
+          -921.67355,
+          313.061744
+        ],
+        [
+          -921.633389,
+          308.010076
+        ],
+        [
+          -919.94213,
+          308.02335
+        ],
+        [
+          -919.879666,
+          300.160254
+        ],
+        [
+          -921.674299,
+          300.145996
+        ],
+        [
+          -921.62933,
+          294.474151
+        ],
+        [
+          -921.939564,
+          294.471592
+        ],
+        [
+          -921.844561,
+          282.492432
+        ],
+        [
+          -921.193541,
+          281.792137
+        ],
+        [
+          -921.17983,
+          280.07619
+        ],
+        [
+          -921.636576,
+          279.651645
+        ],
+        [
+          -921.571881,
+          271.509406
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -929.82,
+          291.803
+        ],
+        "axis": [
+          0.007934,
+          -0.999969
+        ]
+      },
+      "base_z_m": -2.4,
+      "eaves_m": 0.19,
+      "wall_color": [
+        158,
+        158,
+        133
+      ],
+      "roof_color": [
+        101,
+        106,
+        105
+      ],
+      "trim_color": [
+        208,
+        203,
+        181
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -21.25,
+            -10.1,
+            -8.78,
+            10.1
+          ],
+          "planes": [
+            [
+              -15.63,
+              0,
+              11.34,
+              0.0,
+              0.62
+            ],
+            [
+              -15.63,
+              0,
+              11.34,
+              0.0,
+              -0.62
+            ],
+            [
+              -22.17,
+              0,
+              11.34,
+              0.52,
+              0
+            ],
+            [
+              -9.09,
+              0,
+              11.34,
+              -0.52,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -10.4,
+            -4.1,
+            21.29,
+            8.64
+          ],
+          "planes": [
+            [
+              0,
+              3.26,
+              10.92,
+              0.0,
+              0.6
+            ],
+            [
+              0,
+              3.26,
+              10.92,
+              0.0,
+              -0.6
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -16.15,
+            3.7,
+            -8.2,
+            10.09
+          ],
+          "planes": [
+            [
+              -12.19,
+              6.07,
+              10.89,
+              0.91,
+              0.0
+            ],
+            [
+              -12.19,
+              6.07,
+              10.89,
+              -0.91,
+              0.0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            9.24,
+            4.33,
+            12.38,
+            8.64
+          ],
+          "planes": [
+            [
+              10.81,
+              6.13,
+              9.99,
+              0.97,
+              0.0
+            ],
+            [
+              10.81,
+              6.13,
+              9.99,
+              -0.97,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "levels_z_m": [
+        -1.62,
+        1.5,
+        4.49
+      ],
+      "fronts": [
+        {
+          "side": "E",
+          "stations": [
+            -16.07,
+            -8.32
+          ],
+          "near": [
+            -12.1,
+            9.95
+          ],
+          "skin": [
+            158,
+            158,
+            133
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                -14.27,
+                -12.19,
+                -10.23
+              ],
+              1.48,
+              1.96,
+              3.71,
+              "sash"
+            ],
+            [
+              0,
+              [
+                -14.27,
+                -12.19,
+                -10.23
+              ],
+              1.44,
+              5.21,
+              6.67,
+              "sash"
+            ]
+          ],
+          "timber": {
+            "bottom": 3.84,
+            "top": 6.9,
+            "bays": [
+              -15.65,
+              -12.2,
+              -8.71
+            ],
+            "color": [
+              180,
+              177,
+              154
+            ]
+          },
+          "canopy": null,
+          "bands": [
+            1.59,
+            4.12
+          ],
+          "siding": true
+        },
+        {
+          "side": "E",
+          "stations": [
+            -2.25,
+            9.22
+          ],
+          "near": [
+            4.17,
+            7.9
+          ],
+          "skin": [
+            158,
+            158,
+            133
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                -0.5,
+                2.9,
+                6.31
+              ],
+              1.39,
+              -0.52,
+              1.31,
+              "sash"
+            ],
+            [
+              0,
+              [
+                -0.5,
+                2.9,
+                6.31
+              ],
+              1.34,
+              2.78,
+              4.2,
+              "sash"
+            ]
+          ],
+          "timber": null,
+          "canopy": null,
+          "bands": [
+            1.56,
+            4.67
+          ],
+          "siding": true
+        },
+        {
+          "side": "E",
+          "stations": [
+            12.44,
+            20.26
+          ],
+          "near": [
+            15.15,
+            8.04
+          ],
+          "skin": [
+            158,
+            158,
+            133
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                13.7,
+                16.2,
+                18.7
+              ],
+              1.4,
+              -0.5,
+              1.37,
+              "sash"
+            ],
+            [
+              0,
+              [
+                13.7,
+                16.2,
+                18.7
+              ],
+              1.24,
+              2.49,
+              4.2,
+              "sash"
+            ]
+          ],
+          "timber": null,
+          "canopy": null,
+          "bands": [
+            1.53,
+            4.65
+          ],
+          "siding": true
+        }
+      ],
+      "entrance": {
+        "side": "E",
+        "near": [
+          -11.99,
+          9.99
+        ],
+        "door": [
+          107,
+          91,
+          71
+        ],
+        "rise": 0.25,
+        "distance": 4.15,
+        "gate": "street-entry"
+      }
+    },
+    {
+      "id": "roof-0945ffaf",
+      "city_objectid": 170791,
+      "name": "Gamma Phi Beta Sorority House / 1021 Hilyard Street",
+      "street_address": "1021 Hilyard Street",
+      "aliases": [],
+      "outline_enu_m": [
+        [
+          -889.462786,
+          361.212811
+        ],
+        [
+          -884.606253,
+          361.357752
+        ],
+        [
+          -884.633248,
+          369.835124
+        ],
+        [
+          -852.427708,
+          370.231066
+        ],
+        [
+          -852.073783,
+          358.372139
+        ],
+        [
+          -867.214839,
+          358.146268
+        ],
+        [
+          -867.277184,
+          356.448852
+        ],
+        [
+          -870.555944,
+          356.464002
+        ],
+        [
+          -870.387407,
+          350.816846
+        ],
+        [
+          -867.673363,
+          350.784842
+        ],
+        [
+          -867.563898,
+          343.327264
+        ],
+        [
+          -878.190603,
+          343.349225
+        ],
+        [
+          -878.333875,
+          351.936232
+        ],
+        [
+          -889.525195,
+          351.941343
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -870.818,
+          356.646
+        ],
+        "axis": [
+          0.999924,
+          0.012293
+        ]
+      },
+      "base_z_m": -2.88,
+      "eaves_m": 0.19,
+      "wall_color": [
+        140,
+        87,
+        68
+      ],
+      "roof_color": [
+        108,
+        108,
+        100
+      ],
+      "trim_color": [
+        208,
+        203,
+        181
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -18.85,
+            -4.69,
+            -4.34,
+            4.99
+          ],
+          "planes": [
+            [
+              -12.3,
+              0.87,
+              9.0,
+              0.0,
+              0.72
+            ],
+            [
+              -12.3,
+              0.87,
+              9.0,
+              0.0,
+              -0.72
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -13.92,
+            -0.44,
+            19.02,
+            13.55
+          ],
+          "planes": [
+            [
+              -2.14,
+              8.9,
+              11.38,
+              0.0,
+              0.65
+            ],
+            [
+              -2.14,
+              8.9,
+              11.38,
+              0.0,
+              -0.65
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -7.78,
+            -13.52,
+            3.26,
+            4.96
+          ],
+          "planes": [
+            [
+              -3.12,
+              -3.78,
+              10.6,
+              0.0,
+              0.81
+            ],
+            [
+              -3.12,
+              -3.78,
+              10.6,
+              0.0,
+              -0.81
+            ],
+            [
+              -9.02,
+              -3.78,
+              10.6,
+              0.65,
+              0
+            ],
+            [
+              2.7800000000000002,
+              -3.78,
+              10.6,
+              -0.65,
+              0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -15.8,
+            4.54,
+            -5.08,
+            12.3
+          ],
+          "planes": [
+            [
+              -10.61,
+              7.89,
+              10.2,
+              0.77,
+              0.0
+            ],
+            [
+              -10.61,
+              7.89,
+              10.2,
+              -0.77,
+              0.0
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -12.65,
+            -3.63,
+            -1.42,
+            5.73
+          ],
+          "planes": [
+            [
+              -5.79,
+              0.8,
+              10.16,
+              0.74,
+              0.0
+            ],
+            [
+              -5.79,
+              0.8,
+              10.16,
+              -0.74,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "levels_z_m": [
+        -1.96,
+        1.61,
+        4.83
+      ],
+      "fronts": [
+        {
+          "side": "W",
+          "stations": [
+            -4.39,
+            4.72
+          ],
+          "near": [
+            -18.69,
+            0.21
+          ],
+          "skin": [
+            140,
+            87,
+            68
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                -2.9,
+                0.16,
+                3.01
+              ],
+              1.28,
+              -0.71,
+              1.05,
+              "sash"
+            ],
+            [
+              0,
+              [
+                -2.9,
+                0.16,
+                3.01
+              ],
+              1.56,
+              3.85,
+              5.45,
+              "sash"
+            ]
+          ],
+          "timber": {
+            "bottom": 2.16,
+            "top": 5.92,
+            "bays": [
+              -4.26,
+              -1.49,
+              1.34,
+              4.18
+            ],
+            "color": [
+              72,
+              65,
+              54
+            ]
+          },
+          "canopy": null,
+          "bands": [
+            2.02
+          ],
+          "siding": false
+        },
+        {
+          "side": "W",
+          "stations": [
+            4.88,
+            12.95
+          ],
+          "near": [
+            -13.68,
+            9.01
+          ],
+          "skin": [
+            140,
+            87,
+            68
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                6.3,
+                8.46,
+                10.53,
+                12.26
+              ],
+              1.19,
+              -0.44,
+              1.29,
+              "sash"
+            ],
+            [
+              0,
+              [
+                6.3,
+                8.46,
+                10.53,
+                12.26
+              ],
+              1.27,
+              3.53,
+              5.03,
+              "sash"
+            ]
+          ],
+          "timber": {
+            "bottom": 1.77,
+            "top": 6.05,
+            "bays": [
+              5.28,
+              8.02,
+              10.35,
+              12.96
+            ],
+            "color": [
+              72,
+              65,
+              54
+            ]
+          },
+          "canopy": null,
+          "bands": [
+            1.76
+          ],
+          "siding": false
+        },
+        {
+          "side": "W",
+          "stations": [
+            -13.0,
+            -4.82
+          ],
+          "near": [
+            -7.55,
+            -8.19
+          ],
+          "skin": [
+            140,
+            87,
+            68
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                -11.3,
+                -8.94,
+                -6.64
+              ],
+              1.56,
+              -0.59,
+              1.04,
+              "sash"
+            ],
+            [
+              0,
+              [
+                -11.3,
+                -8.94,
+                -6.64
+              ],
+              1.49,
+              3.31,
+              4.96,
+              "sash"
+            ]
+          ],
+          "timber": {
+            "bottom": 1.79,
+            "top": 6.23,
+            "bays": [
+              -12.9,
+              -10.26,
+              -7.58,
+              -4.97
+            ],
+            "color": [
+              72,
+              65,
+              54
+            ]
+          },
+          "canopy": null,
+          "bands": [
+            1.71
+          ],
+          "siding": false
+        }
+      ],
+      "entrance": {
+        "side": "W",
+        "near": [
+          -18.64,
+          -2.48
+        ],
+        "door": [
+          109,
+          84,
+          60
+        ],
+        "rise": 0.52,
+        "distance": 4.1,
+        "gate": "street-entry"
+      },
+      "tower": [
+        -13.28,
+        -1.99,
+        2.24,
+        8.52,
+        12.04
+      ]
+    },
+    {
+      "id": "roof-c9808624",
+      "city_objectid": 170793,
+      "name": "763 East 11th Avenue",
+      "street_address": "763 East 11th Avenue",
+      "aliases": [],
+      "outline_enu_m": [
+        [
+          -808.724174,
+          272.877334
+        ],
+        [
+          -809.094415,
+          277.458836
+        ],
+        [
+          -812.98752,
+          277.498253
+        ],
+        [
+          -813.42269,
+          289.472461
+        ],
+        [
+          -788.758228,
+          289.819353
+        ],
+        [
+          -788.273079,
+          278.780767
+        ],
+        [
+          -793.325724,
+          278.552169
+        ],
+        [
+          -793.158608,
+          272.952672
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -800.807,
+          281.247
+        ],
+        "axis": [
+          0.999901,
+          0.014063
+        ]
+      },
+      "base_z_m": -1.72,
+      "eaves_m": 0.19,
+      "wall_color": [
+        141,
+        94,
+        79
+      ],
+      "roof_color": [
+        94,
+        99,
+        99
+      ],
+      "trim_color": [
+        208,
+        203,
+        181
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -12.56,
+            -8.5,
+            12.56,
+            8.5
+          ],
+          "planes": [
+            [
+              0.0,
+              -0.53,
+              11.35,
+              0.0,
+              0.45
+            ],
+            [
+              0.0,
+              -0.53,
+              11.35,
+              0.0,
+              -0.45
+            ]
+          ]
+        }
+      ],
+      "levels_z_m": [
+        -0.92,
+        2.6,
+        5.93
+      ],
+      "fronts": [
+        {
+          "side": "S",
+          "stations": [
+            -7.87,
+            7.33
+          ],
+          "near": [
+            -0.26,
+            -8.36
+          ],
+          "skin": [
+            140,
+            87,
+            68
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                -6.25,
+                -3.68,
+                3.15,
+                5.74
+              ],
+              1.31,
+              0.41,
+              2.44,
+              "arch"
+            ],
+            [
+              0,
+              [
+                -6.25,
+                -3.68,
+                -0.28,
+                3.15,
+                5.74
+              ],
+              1.27,
+              3.9,
+              5.55,
+              "sash"
+            ]
+          ],
+          "timber": null,
+          "canopy": {
+            "z": 7.57,
+            "depth": 0.82,
+            "columns": [
+              -7.15,
+              -4.77,
+              -2.4,
+              2.12,
+              4.49,
+              6.89
+            ],
+            "raised": -0.71
+          },
+          "bands": [
+            2.72,
+            7.42
+          ],
+          "siding": false
+        }
+      ],
+      "entrance": {
+        "side": "S",
+        "near": [
+          -0.26,
+          -8.36
+        ],
+        "door": [
+          208,
+          203,
+          181
+        ],
+        "rise": 0.27,
+        "distance": 4.2,
+        "gate": "street-entry"
+      },
+      "dormers": [
+        [
+          -4.72,
+          -6.4,
+          2.1,
+          2.03,
+          10.46
+        ],
+        [
+          -0.28,
+          -6.4,
+          2.16,
+          2.1,
+          10.5
+        ],
+        [
+          4.11,
+          -6.4,
+          2.13,
+          2.05,
+          10.47
+        ]
+      ],
+      "equipment": [
+        [
+          -8.82,
+          2.08,
+          1.0,
+          0.85,
+          2.01
+        ],
+        [
+          7.1,
+          3.95,
+          1.05,
+          0.93,
+          1.89
+        ]
+      ]
+    },
+    {
+      "id": "roof-acf1c4c2",
+      "city_objectid": 170816,
+      "name": "751 East 11th Avenue / 755 East 11th Avenue",
+      "street_address": "755 East 11th Avenue",
+      "aliases": [
+        "751 East 11th Avenue"
+      ],
+      "outline_enu_m": [
+        [
+          -840.139208,
+          318.454697
+        ],
+        [
+          -816.589412,
+          318.433909
+        ],
+        [
+          -816.606736,
+          298.809145
+        ],
+        [
+          -816.612204,
+          292.68618
+        ],
+        [
+          -819.752091,
+          292.688974
+        ],
+        [
+          -819.753209,
+          291.432999
+        ],
+        [
+          -823.364221,
+          291.436134
+        ],
+        [
+          -823.363104,
+          292.692108
+        ],
+        [
+          -826.97402,
+          292.695345
+        ],
+        [
+          -826.971886,
+          295.207292
+        ],
+        [
+          -828.22786,
+          295.208409
+        ],
+        [
+          -828.224623,
+          298.819325
+        ],
+        [
+          -840.156534,
+          298.829933
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          -828.376,
+          304.942
+        ],
+        "axis": [
+          0.000883,
+          1.0
+        ]
+      },
+      "base_z_m": -2.53,
+      "eaves_m": 0.19,
+      "wall_color": [
+        151,
+        115,
+        99
+      ],
+      "roof_color": [
+        103,
+        106,
+        97
+      ],
+      "trim_color": [
+        208,
+        203,
+        181
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -6.28,
+            -11.9,
+            13.6,
+            11.88
+          ],
+          "planes": [
+            [
+              4.1,
+              0.28,
+              10.18,
+              0.41,
+              0.0
+            ],
+            [
+              4.1,
+              0.28,
+              10.18,
+              -0.41,
+              0.0
+            ],
+            [
+              4.1,
+              -7.8999999999999995,
+              10.18,
+              0,
+              0.22
+            ],
+            [
+              4.1,
+              8.459999999999999,
+              10.18,
+              0,
+              -0.22
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -13.59,
+            -11.9,
+            -4.95,
+            -0.04
+          ],
+          "planes": [
+            [
+              -8.74,
+              -6.31,
+              8.72,
+              0.33,
+              0.0
+            ],
+            [
+              -8.74,
+              -6.31,
+              8.72,
+              -0.33,
+              0.0
+            ],
+            [
+              -8.74,
+              -9.43,
+              8.72,
+              0,
+              0.24
+            ],
+            [
+              -8.74,
+              -3.1899999999999995,
+              8.72,
+              0,
+              -0.24
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -2.17,
+            0.15,
+            6.78,
+            7.98
+          ],
+          "planes": [
+            [
+              0,
+              0,
+              10.08,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "levels_z_m": [
+        -1.54,
+        1.64,
+        4.51
+      ],
+      "fronts": [
+        {
+          "side": "S",
+          "stations": [
+            -8.38,
+            -5.24
+          ],
+          "near": [
+            -13.48,
+            -6.85
+          ],
+          "skin": [
+            181,
+            169,
+            148
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                -6.84
+              ],
+              1.84,
+              2.13,
+              3.58,
+              "square"
+            ]
+          ],
+          "timber": null,
+          "canopy": null,
+          "bands": [
+            3.72
+          ],
+          "siding": false
+        },
+        {
+          "side": "S",
+          "stations": [
+            0.12,
+            11.65
+          ],
+          "near": [
+            -6.1,
+            5.8
+          ],
+          "skin": [
+            167,
+            147,
+            129
+          ],
+          "trim": [
+            208,
+            203,
+            181
+          ],
+          "windows": [
+            [
+              0,
+              [
+                1.93,
+                5.0,
+                8.06,
+                10.93
+              ],
+              1.62,
+              0.07,
+              1.46,
+              "square"
+            ],
+            [
+              0,
+              [
+                1.93,
+                5.0,
+                8.06,
+                10.93
+              ],
+              1.69,
+              2.74,
+              4.14,
+              "square"
+            ]
+          ],
+          "timber": null,
+          "canopy": null,
+          "bands": [
+            4.32
+          ],
+          "siding": false
+        }
+      ],
+      "entrance": {
+        "side": "S",
+        "near": [
+          -13.48,
+          -6.85
+        ],
+        "door": [
+          101,
+          104,
+          92
+        ],
+        "rise": 0.22,
+        "distance": 3.75,
+        "gate": "street-entry"
+      },
+      "equipment": [
+        [
+          2.41,
+          4.3,
+          4.83,
+          3.28,
+          0.82
+        ],
+        [
+          4.22,
+          1.86,
+          1.68,
+          1.26,
+          0.63
+        ],
+        [
+          -0.92,
+          6.49,
+          1.76,
+          1.19,
+          0.52
+        ]
+      ]
+    }
+  ]
+}

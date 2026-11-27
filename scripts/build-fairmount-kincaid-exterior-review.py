@@ -489,7 +489,8 @@ def write_json(path, data, *, compact=False):
 
 
 def export_review(
-    args, package, ground_name, descriptor_key, build_model, *, source_removals=None
+    args, package, ground_name, descriptor_key, build_model, *, source_removals=None,
+    collision_reference=None
 ):
     meta = ROOT / "data/metadata"
     spec = json.loads((meta / f"{package}.json").read_bytes())
@@ -539,7 +540,7 @@ def export_review(
         supports,
         [e for r in records for e in r["entrances"]],
         original,
-        manifest,
+        collision_reference(manifest, config) if collision_reference else manifest,
         graph,
         config,
         original_ids,

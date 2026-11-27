@@ -1,0 +1,629 @@
+{
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "source_heightfield_sha256": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+  "models": [
+    {
+      "id": "roof-ceb2cf04",
+      "city_objectid": 159817,
+      "outline_enu_m": [
+        [
+          970.94212,
+          -604.471948
+        ],
+        [
+          973.724382,
+          -605.288231
+        ],
+        [
+          971.60766,
+          -612.503164
+        ],
+        [
+          970.987306,
+          -612.321174
+        ],
+        [
+          970.061188,
+          -615.477628
+        ],
+        [
+          965.160402,
+          -614.039857
+        ],
+        [
+          966.143783,
+          -610.687787
+        ],
+        [
+          965.511626,
+          -610.502349
+        ],
+        [
+          965.765231,
+          -609.637849
+        ],
+        [
+          961.475214,
+          -608.379254
+        ],
+        [
+          961.085371,
+          -609.708337
+        ],
+        [
+          958.941823,
+          -609.079395
+        ],
+        [
+          960.25279,
+          -604.610809
+        ],
+        [
+          958.75472,
+          -604.171308
+        ],
+        [
+          959.058159,
+          -603.137015
+        ],
+        [
+          960.07843,
+          -603.436372
+        ],
+        [
+          961.279659,
+          -599.341874
+        ],
+        [
+          960.334349,
+          -599.06458
+        ],
+        [
+          962.459059,
+          -591.822408
+        ],
+        [
+          973.686874,
+          -595.116494
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          966.69,
+          -602.97
+        ],
+        "axis": [
+          0.95931397,
+          -0.28234146
+        ]
+      },
+      "name": "360 Sunset Drive",
+      "street_address": "360 Sunset Drive",
+      "base_z_m": 49.65,
+      "levels_z_m": [
+        50.55,
+        53.05
+      ],
+      "wall_color": [
+        208,
+        202,
+        174
+      ],
+      "roof_color": [
+        104,
+        104,
+        98
+      ],
+      "trim_color": [
+        223,
+        220,
+        197
+      ],
+      "seam_color": [
+        166,
+        163,
+        140
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            -7.5,
+            -11.4,
+            7.7,
+            2.05
+          ],
+          "planes": [
+            [
+              2.31,
+              0.0,
+              58.05,
+              0.27,
+              0
+            ],
+            [
+              2.31,
+              0.0,
+              58.05,
+              -0.22,
+              0
+            ],
+            [
+              2.31,
+              -7.0,
+              57.9,
+              0,
+              0.44
+            ]
+          ]
+        },
+        {
+          "bounds_m": [
+            -7.5,
+            1.95,
+            2.38,
+            9.8
+          ],
+          "planes": [
+            [
+              0.0,
+              5.7,
+              56.53,
+              0.045,
+              0.2
+            ],
+            [
+              0.0,
+              5.7,
+              56.53,
+              0.045,
+              -0.18
+            ],
+            [
+              2.2,
+              5.7,
+              57.6,
+              0.13,
+              0.02
+            ]
+          ],
+          "roof_color": [
+            115,
+            115,
+            104
+          ]
+        },
+        {
+          "bounds_m": [
+            1.95,
+            1.95,
+            4.8,
+            9.8
+          ],
+          "planes": [
+            [
+              2.75,
+              5.7,
+              57.94,
+              0.31,
+              0
+            ],
+            [
+              2.75,
+              5.7,
+              57.94,
+              -0.28,
+              0
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            961.5,
+            -596.23
+          ],
+          "bearing": 286.4,
+          "minimum": 6.2,
+          "windows": [
+            [
+              -1.57,
+              1.17,
+              53.61,
+              54.98
+            ],
+            [
+              1.57,
+              1.17,
+              53.61,
+              54.98
+            ]
+          ],
+          "garages": [
+            [
+              0.0,
+              4.95
+            ]
+          ],
+          "garage_color": [
+            206,
+            208,
+            198
+          ]
+        },
+        {
+          "near": [
+            960.56,
+            -601.75
+          ],
+          "bearing": 286.4,
+          "minimum": 3.15,
+          "windows": [
+            [
+              0,
+              3.24,
+              53.68,
+              54.94
+            ]
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "terrace": [
+        53.34,
+        1.68,
+        1.91
+      ]
+    },
+    {
+      "id": "sunset-362",
+      "city_objectid": 159816,
+      "outline_enu_m": [
+        [
+          985.286196,
+          -592.275977
+        ],
+        [
+          967.458446,
+          -586.713607
+        ],
+        [
+          971.356481,
+          -574.220321
+        ],
+        [
+          973.485078,
+          -574.884409
+        ],
+        [
+          972.902582,
+          -576.751361
+        ],
+        [
+          988.601636,
+          -581.649645
+        ]
+      ],
+      "roof_frame": {
+        "origin_enu_m": [
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0
+        ]
+      },
+      "name": "362 Sunset Drive",
+      "street_address": "362 Sunset Drive",
+      "base_z_m": 49.72,
+      "levels_z_m": [
+        50.61,
+        53.24,
+        55.89
+      ],
+      "wall_color": [
+        127,
+        105,
+        81
+      ],
+      "roof_color": [
+        112,
+        110,
+        98
+      ],
+      "trim_color": [
+        214,
+        215,
+        194
+      ],
+      "seam_color": [
+        115,
+        94,
+        76
+      ],
+      "roof_zones": [
+        {
+          "bounds_m": [
+            967.2,
+            -592.56,
+            988.9,
+            -573.96
+          ],
+          "planes": [
+            [
+              977.91,
+              -584.05,
+              59.48,
+              0.065428,
+              0.210056
+            ],
+            [
+              977.91,
+              -584.05,
+              59.48,
+              -0.062453999999999996,
+              -0.200508
+            ]
+          ]
+        }
+      ],
+      "frontages": [
+        {
+          "near": [
+            970.72,
+            -581.1
+          ],
+          "bearing": 287.3,
+          "minimum": 8.0,
+          "windows": [
+            [
+              -2.57,
+              2.42,
+              53.8,
+              55.15
+            ],
+            [
+              0.24,
+              2.22,
+              53.8,
+              55.15
+            ],
+            [
+              -2.57,
+              2.4,
+              56.42,
+              57.87
+            ],
+            [
+              0.24,
+              2.24,
+              56.42,
+              57.87
+            ]
+          ],
+          "garages": [
+            [
+              -1.6,
+              2.63
+            ],
+            [
+              1.21,
+              2.51
+            ]
+          ],
+          "garage_color": [
+            191,
+            195,
+            182
+          ]
+        }
+      ],
+      "bay_m": 3.33,
+      "eaves_m": 0.23,
+      "lower_wall_setback": [
+        0.9548,
+        -0.2974,
+        1.52
+      ],
+      "balconies": [
+        [
+          53.24,
+          1.4,
+          4.68
+        ],
+        [
+          55.89,
+          1.76,
+          5.1
+        ]
+      ]
+    }
+  ],
+  "sources": {
+    "sunset-362": {
+      "city_objectid": 159816,
+      "outline_enu_wkt": "POLYGON ((985.2861962345196 -592.2759769409895, 967.4584457731107 -586.7136068306863, 971.3564814104466 -574.2203207248822, 973.4850776545354 -574.8844094015658, 972.9025822372059 -576.7513610925525, 988.6016361154034 -581.6496452335268, 985.2861962345196 -592.2759769409895))",
+      "area_m2": 212.246,
+      "inside_addresses": [
+        "362 SUNSET DR"
+      ],
+      "parcel_fractions": {
+        "1703333402902": 1.0
+      },
+      "legacy_intersections_m2": {
+        "roof-ceb2cf04": 131.936
+      },
+      "sample_counts": {
+        "2013-15": 175,
+        "2017": 175,
+        "DOGAMI": 175
+      }
+    },
+    "roof-ceb2cf04": {
+      "city_objectid": 159817,
+      "outline_enu_wkt": "POLYGON ((970.9421204184764 -604.4719478543848, 973.7243824505131 -605.2882312284783, 971.6076602948597 -612.5031643295661, 970.9873064855346 -612.3211743291467, 970.061188136402 -615.4776279078797, 965.1604015074554 -614.0398565996438, 966.1437831344083 -610.6877869796008, 965.5116260052891 -610.5023491624743, 965.7652312314603 -609.6378492163494, 961.4752141584177 -608.3792538614944, 961.0853710472002 -609.708336529322, 958.9418232049793 -609.0793952457607, 960.2527904797462 -604.6108087478206, 958.7547197141685 -604.1713078645989, 959.0581586940098 -603.1370145455003, 960.0784296932397 -603.4363719150424, 961.2796589169302 -599.3418740537018, 960.334349100769 -599.0645800111815, 962.4590586364502 -591.8224078342319, 973.6868740741629 -595.1164943566546, 970.9421204184764 -604.4719478543848))",
+      "area_m2": 225.609,
+      "inside_addresses": [
+        "360 SUNSET DR"
+      ],
+      "parcel_fractions": {
+        "1803042100700": 0.99351
+      },
+      "legacy_intersections_m2": {
+        "roof-ceb2cf04": 156.262
+      },
+      "sample_counts": {
+        "2013-15": 181,
+        "2017": 181,
+        "DOGAMI": 181
+      }
+    }
+  },
+  "aerial_and_query": [
+    {
+      "file": "sunset-360-city.json",
+      "url": "https://gis.eugene-or.gov/arcgis/rest/services/PWM/COE_Basemap_Tiled_Pro/MapServer/3/query?f=json&geometry=495253.14928888186%2C4876278.282153052%2C495346.14928888186%2C4876386.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID",
+      "sha256": "6185ab718f23d42119b66510c18aaa1aa8237b19bd7aa675f84484e9a36a3230"
+    },
+    {
+      "file": "sunset-360-county.json",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=495253.14928888186%2C4876278.282153052%2C495346.14928888186%2C4876386.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+      "sha256": "defdade6bbb48ca5c7895e42eabab12020acd0cd92ec501249f81c432dd10a92"
+    },
+    {
+      "file": "sunset-360-lane-2017.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495253.14928888186%2C4876278.282153052%2C495346.14928888186%2C4876386.282153052&bboxSR=3740&imageSR=3740&size=930%2C1080&layers=show%3A29&format=png32&transparent=true",
+      "sha256": "1f436447a654363add7d96b45d118dbcc9b7fc3bd5ade121b9843ec879c30f22",
+      "year": 2017,
+      "layer": 29,
+      "nontransparent_fraction": 1.0
+    },
+    {
+      "file": "sunset-360-lane-2021.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495253.14928888186%2C4876278.282153052%2C495346.14928888186%2C4876386.282153052&bboxSR=3740&imageSR=3740&size=930%2C1080&layers=show%3A26&format=png32&transparent=true",
+      "sha256": "9f8d41605ef9c9d7e87d04c4906e166780311cf9101e2e4d6073711f3b5ff232",
+      "year": 2021,
+      "layer": 26,
+      "nontransparent_fraction": 0.99914
+    },
+    {
+      "file": "sunset-360-lane-2025.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=495253.14928888186%2C4876278.282153052%2C495346.14928888186%2C4876386.282153052&bboxSR=3740&imageSR=3740&size=930%2C1080&layers=show%3A57&format=png32&transparent=true",
+      "sha256": "70fd84704dd56c6db7555a4be1a4712a82d71d6eef2918c0bf61f7cc6db173f1",
+      "year": 2025,
+      "layer": 57,
+      "nontransparent_fraction": 1.0
+    }
+  ],
+  "surfaces": {
+    "2013-15": {
+      "file": "campus-surface-20261123/campus-2013-2015-surface-screen.npz",
+      "sha256": "0fe864b09f478aff2ad84cca01aead4c226a5a03dd87a89da8361ecd364fe5ca"
+    },
+    "2017": {
+      "file": "campus-surface-2017-20261124/campus-2017-usace-surface.npz",
+      "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+    },
+    "DOGAMI": {
+      "file": "campus-surface-dogami-lane-county-20261124/campus-dogami-lane-county-surface.npz",
+      "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+    }
+  },
+  "street_views": {
+    "159817-sunset-dr-front": [
+      {
+        "date": "2024-07",
+        "id": "vweEaWyb0MR-j3xHYGdihA",
+        "camera_enu": [
+          953.7979796266882,
+          -605.7256138296798
+        ],
+        "bearing": 80.27,
+        "distance": 11.4,
+        "file": "159817-sunset-dr-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vweEaWyb0MR-j3xHYGdihA&heading=80.27"
+      }
+    ],
+    "159816-sunset-dr-side-b": [
+      {
+        "date": "2024-07",
+        "id": "xva09bkm_O8lVTbDSCPHvQ",
+        "camera_enu": [
+          960.1538319083047,
+          -565.7027066014707
+        ],
+        "bearing": 135.95,
+        "distance": 25.7,
+        "file": "159816-sunset-dr-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xva09bkm_O8lVTbDSCPHvQ&heading=135.95"
+      }
+    ],
+    "159816-sunset-dr-front": [
+      {
+        "date": "2024-07",
+        "id": "OJmSDx299wXbu88fw14TJA",
+        "camera_enu": [
+          960.1800065600546,
+          -576.1224081134424
+        ],
+        "bearing": 114.3,
+        "distance": 19.6,
+        "file": "159816-sunset-dr-front-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=OJmSDx299wXbu88fw14TJA&heading=114.3"
+      }
+    ],
+    "159816-sunset-dr-side-a": [
+      {
+        "date": "2024-07",
+        "id": "eXiIERkUz5UHYzyiZBlppA",
+        "camera_enu": [
+          956.0625717826188,
+          -595.8739136690274
+        ],
+        "bearing": 61.98,
+        "distance": 24.9,
+        "file": "159816-sunset-dr-side-a-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=eXiIERkUz5UHYzyiZBlppA&heading=61.98"
+      }
+    ],
+    "159817-sunset-dr-side-a": [
+      {
+        "date": "2024-07",
+        "id": "QGgkFbJDoOYH4kEXmyL0lQ",
+        "camera_enu": [
+          950.8065166093875,
+          -615.4117902731523
+        ],
+        "bearing": 50.72,
+        "distance": 18.3,
+        "file": "159817-sunset-dr-side-a-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=QGgkFbJDoOYH4kEXmyL0lQ&heading=50.72"
+      }
+    ],
+    "159817-sunset-dr-side-b": [
+      {
+        "date": "2024-07",
+        "id": "KVYvjV2d9HkpnwnPH4roZA",
+        "camera_enu": [
+          958.110853848455,
+          -585.9985457640141
+        ],
+        "bearing": 158.85,
+        "distance": 19.1,
+        "file": "159817-sunset-dr-side-b-2024-07.jpg",
+        "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KVYvjV2d9HkpnwnPH4roZA&heading=158.85"
+      }
+    ]
+  },
+  "source_ranges": [
+    {
+      "id": "roof-ceb2cf04",
+      "target": "context-background-3-0"
+    }
+  ],
+  "source_split": {
+    "sunset-362": "roof-ceb2cf04"
+  }
+}

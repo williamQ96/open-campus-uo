@@ -1,0 +1,20 @@
+# Riverfront Parkway, thermal storage tank and Knight Library lawn
+
+Three former source ranges are retained in the historical inventory. The Riverfront Parkway bridge and its road surface belong to ENV-05. The independent tank uses a new exterior ID. The area west of Knight Library again displays its existing lawn, path and trees.
+
+## Riverfront Parkway railroad crossing
+
+The built four-span crossing has three intermediate piers, two girder lines, ribbed concrete fascia, side catwalks and railings. The model follows the 37.49 m nominal span total, 6.20 m finished width and 0.762 m girder depth documented in the published project profile. The 1998 article dates construction completion to December 1996. The UO site chronology places the vehicular underpass in 1998. The present alignment registers the 2025 aerial, with rail height checked against three older surface grids. Abutment and pier thicknesses, details of the transition to the embankments and current pavement markings are estimates. [PCI project article, pp. 120–121](https://www.pci.org/Common/Uploaded%20files/PCI/Publications/PCI%20Journal/1998/May-June/Industry%20News.pdf) · [UO site chronology](https://cpfm.uoregon.edu/wrna-site-history).
+
+The draped asphalt and sidewalks connect the two previous ends of the modeled road. The center island follows the aerial. The original standing terrain and path graph still govern movement. The four upward browser rays cover one raised walkway, two girder underside positions and one point immediately beyond the edge. Both central beam probes hit −0.74 m ENU. The estimated modeled clearance at those two points is about 5.1 m.
+
+## Thermal Energy Storage Tank
+
+The current shell diameter is represented by a 31.82 m fit to the 2025 aerial rim. A constrained perspective fit to the UO side photo estimates the shell height at 18.57 m. Variants of the crop center produce 18.36–18.77 m for the same radius. The exterior includes the sage green wall, two shell seams, shallow roof, rim, exterior ladder, partial rail, and service steps. The tank is searchable by name, with the chiller-plant site as the address context. The record has no visitor entrance or separate interior task. Individual fixtures and roof and foundation dimensions retain estimates. [Completed tank](https://news.uoregon.edu/content/new-tank-helps-keep-campus-and-planet-little-cooler) · [UO planning discussion](https://cpfm.uoregon.edu/sites/default/files/record_06_08_21.pdf) · [UO building address list](https://cpfm.uoregon.edu/sites/default/files/20190212buildinglist_byaddress.pdf).
+
+## Verification
+
+- Two independent exports produce identical GLB and descriptor bytes. The three source range comparisons account for 966 removed triangles. Two single-member batches disappear, and the remaining batch keeps the other building's exact index sequence and attributes. [Editable scope](../data/metadata/riverfront-plant-infrastructure-review.json) · [Exporter](../scripts/build-riverfront-plant-infrastructure-review.py) · [Scene descriptor](../apps/web-preview/public/scene/riverfront-plant-infrastructure-review/site.json).
+- The graph check covers 7,710 route edges and measures 2.154 m minimum horizontal separation from the added solids. The browser checks six clear road positions, three solid piers, open lawn terrain and the blocked tank shell. Six downward rays sample the new asphalt about 0.09 m above standing ground. A three-point route crosses beneath the bridge.
+- Desktop and phone select the tank by name. Six paired viewer screenshots cover the roadway, bridge profile, rail, tank wall and roof, and library lawn. A corrupt GLB or changed final source anchor restores all three previous ranges together.
+- The local production scene has 606 selectable buildings and independent facilities, 28 source batch members, two context roof treatments and 470 entrance records. The local inventory has 579 L2 exteriors, 27 active L1 ranges, 44 historical mappings and 15 L2 outdoor groups. The public checkpoint is `c3dc42c`.

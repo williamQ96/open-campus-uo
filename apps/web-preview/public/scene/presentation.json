@@ -2021,7 +2021,7 @@
   },
   "west_boundary_exterior_site": {
     "url": "west-boundary-exterior-review/site.json",
-    "sha256": "71efc290d1e755c5c196f0421bb3da22edcd1fa2135c4b5ba9e953a6765628fb"
+    "sha256": "44c03147374ab932573326fc287307b757d3229ba1cb5195b3b9ae81083ca124"
   },
   "alton_franklin_exterior_site": {
     "url": "alton-franklin-exterior-review/site.json",
@@ -2086,5 +2086,77 @@
   "fairmount_summit_hamble_site": {
     "url": "fairmount-summit-hamble-review/site.json",
     "sha256": "7dc51833bac31923096c9be1d463909f5bd49fc606843b4fb3cb6a02b36a5b92"
+  },
+  "sunset_drive_pair_site": {
+    "url": "sunset-drive-pair-review/site.json",
+    "sha256": "ebc64d968cdafa2737cd62c3fc3a7881e2ed3d0891e3d802149ca9d0d466798c"
+  },
+  "fairmount_sunset_hillside_site": {
+    "url": "fairmount-sunset-hillside-review/site.json",
+    "sha256": "a2cd6ebc51e31084508f5c7821aeb932d13e2574e8d6de28e3ef22803c83b719"
+  },
+  "villard_orchard_garden_site": {
+    "url": "villard-orchard-garden-review/site.json",
+    "sha256": "41b917e3c60f3ea06dfad80f49c4f6cd74595677f4e6e93de8d72a2d633d526f"
+  },
+  "garden_franklin_site": {
+    "url": "garden-franklin-review/site.json",
+    "sha256": "0ee23e71c32fad587757cb10ea21de5fa0234e9c412b12e8f3928d6ad6014fc1"
+  },
+  "hilyard_blocks_site": {
+    "url": "hilyard-blocks-review/site.json",
+    "sha256": "8cca341cc6e943f3bacb75a72c5673ecc7798147ceac6d6ae3918c28e07737e3"
+  },
+  "southwest_exterior_site": {
+    "url": "southwest-exterior-review/site.json",
+    "sha256": "57a24342fdddcfc9e4155e404cc2b290839a68148f7ab8432e13fe93847ed333"
+  },
+  "northwest_blocks_site": {
+    "url": "northwest-blocks-review/site.json",
+    "sha256": "5d2a2e2bb6ac1fb8c1fd583f1981b2f2d26c430f8242842427f637de14b0fd2d"
+  },
+  "east_thirteenth_blocks_site": {
+    "url": "east-thirteenth-blocks-review/site.json",
+    "sha256": "a8acff155780fdcad8e3bfe787e7c224b3908db0cc918e8dd2f547441330a2a5"
+  },
+  "bardell_buckingham_site": {
+    "url": "bardell-buckingham-review/site.json",
+    "sha256": "6f84c3b6bc7795b0247404737ba00c22a74fbfcb2824fb59ca3ffed4e584b093"
+  },
+  "walnut_path_bridge_site": {
+    "url": "walnut-path-bridge-review/site.json",
+    "sha256": "c172d00790616a2928f6699ccbc80195bcb895712a31aeabcfdc15133f35cf09"
+  },
+  "patterson_hilyard_site": {
+    "url": "patterson-hilyard-review/site.json",
+    "sha256": "070ed3c8fe7ffd99199447ed621f3528beeb40631bbfe2fd667c76dd0440e3ab"
+  },
+  "south_university_east_twentieth_site": {
+    "url": "south-university-east-twentieth-review/site.json",
+    "sha256": "22998070cf7835fb4bb65ce3c4fda78f86db613f12e467d0620898687518b017"
+  },
+  "villard_orchard_walnut_site": {
+    "url": "villard-orchard-walnut-review/site.json",
+    "sha256": "eb568223aa2454754318e2d37aee0809f4aa58e18f6a48926a49cde5c4cb7e39"
+  },
+  "riverfront_plant_infrastructure_site": {
+    "url": "riverfront-plant-infrastructure-review/site.json",
+    "sha256": "27b060a8ada406f13e8c71065d01a82d6304c14ee38c2faea54e643348eb18cf"
+  },
+  "west_alder_kincaid_site": {
+    "url": "west-alder-kincaid-review/site.json",
+    "sha256": "94a160305bf61d91a90cc4a364a098b9bcf8829c5a34cedaa6be4a2704103d4d"
+  },
+  "hamilton_dunes_site": {
+    "url": "hamilton-dunes-review/site.json",
+    "sha256": "d955d2fdbd7613d76ab7b9e0bea314fc4dd887f22ba728488d588b8a1fb13962"
+  },
+  "franklin_riverfront_site": {
+    "url": "franklin-riverfront-closeout-review/site.json",
+    "sha256": "f50900642b5e0693be4dcf0061491114e80fe8e25b9ea086552712066e3b7528"
+  },
+  "neighborhood_exterior_closeout_site": {
+    "url": "neighborhood-exterior-closeout-review/site.json",
+    "sha256": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2"
   }
 }

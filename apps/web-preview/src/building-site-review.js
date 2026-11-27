@@ -6,6 +6,7 @@ import {
   retainedContextRange,
 } from "./context-roof-refinements.js";
 import { isFootprintRing, readPinnedScene } from "./pinned-scene.js";
+import { sampleSurface } from "./pilot-hardscape.js";
 
 function validBuilding(building) {
   const supports = building?.support_collision_enu_m ?? [];
@@ -209,6 +210,48 @@ function patchedNavigation(graph, { removed_edges, paths }) {
   };
 }
 
+function validWalkableGround(ground) {
+  const validPoint = (point) =>
+    Array.isArray(point) &&
+    point.length === 2 &&
+    point.every((value) => Number.isFinite(value) && Math.abs(value) < 1000);
+  const bounds = ground?.bounds_enu_m;
+  return (
+    Array.isArray(bounds) &&
+    bounds.length === 1 &&
+    bounds.every(
+      (box) =>
+        Array.isArray(box) &&
+        box.length === 4 &&
+        box.every(
+          (value) => Number.isFinite(value) && Math.abs(value) < 1000,
+        ) &&
+        box[0] < box[2] &&
+        box[1] < box[3] &&
+        box[2] - box[0] < 90 &&
+        box[3] - box[1] < 90,
+    ) &&
+    validPoint(ground.anchor_enu_m) &&
+    Array.isArray(ground.points_enu_m) &&
+    ground.points_enu_m.length > 0 &&
+    ground.points_enu_m.length <= 96 &&
+    ground.points_enu_m.every(validPoint)
+  );
+}
+
+function appendWalkablePath(
+  graph,
+  { anchor_enu_m: [east, north], points_enu_m },
+) {
+  const anchor = graph.nodes_enu_m.findIndex(
+    ([e, n]) => Math.hypot(e - east, n - north) < 0.025,
+  );
+  return patchedNavigation(graph, {
+    removed_edges: [],
+    paths: [{ anchor, points: points_enu_m }],
+  });
+}
+
 function stageCorridor(root, patch) {
   const mesh = root?.getObjectByName("corridors-road");
   const {
@@ -259,6 +302,7 @@ export async function loadBuildingSiteReview(
     directory,
     ids,
     groundNode,
+    walkableGroundNode,
     absorbedIds = [],
     replacedDetails = [],
     identityMoves = {},
@@ -304,12 +348,16 @@ export async function loadBuildingSiteReview(
     site.context_trees ?? (site.context_tree ? [site.context_tree] : []);
   const batches = site.batch_removals ?? [];
   const closedSiteBoxes = site.closed_site_boxes_enu_m ?? [];
+  const walkableGround = site.walkable_ground;
   const corridor = site.corridor_patch;
   if (
     site.source_presentation_sha256 !== config.asset_sha256 ||
     site.source_base_model_sha256 !== manifest.model.sha256 ||
     site.url !== `${directory}/site.glb` ||
     site.ground_node !== groundNode ||
+    Boolean(walkableGroundNode) !== (walkableGround !== undefined) ||
+    (walkableGroundNode &&
+      (!navigationUrl || !validWalkableGround(walkableGround))) ||
     !Array.isArray(batches) ||
     !Array.isArray(closedSiteBoxes) ||
     closedSiteBoxes.length > 16 ||
@@ -421,22 +469,30 @@ export async function loadBuildingSiteReview(
       base + manifest.heightfield_url,
       site.source_heightfield_sha256,
     ),
-    corridor &&
+    (corridor || walkableGroundNode) &&
       readPinnedScene(
         base + navigationUrl,
-        corridor.source_navigation_sha256,
-      ).then((data) =>
-        patchedNavigation(JSON.parse(new TextDecoder().decode(data)), corridor),
-      ),
+        corridor?.source_navigation_sha256 ?? site.source_navigation_sha256,
+      ).then((data) => {
+        const original = JSON.parse(new TextDecoder().decode(data));
+        if (walkableGroundNode) appendWalkablePath(original, walkableGround);
+        return corridor && patchedNavigation(original, corridor);
+      }),
   ]);
   const { scene } = await new GLTFLoader().parseAsync(bytes, base);
   const ground = groundNode ? scene.getObjectByName(groundNode) : undefined;
+  const surface = walkableGroundNode
+    ? scene.getObjectByName(walkableGroundNode)
+    : undefined;
   const roadRemainder = corridor && scene.getObjectByName("corridor-remainder");
   const matches = (object, id) =>
     object?.isMesh && object.userData.asset_id === id;
   if (
     ids.some((id) => !matches(scene.getObjectByName(id), id)) ||
     (groundNode && !ground?.isMesh) ||
+    (walkableGroundNode &&
+      (!matches(surface, walkableGroundNode) ||
+        surface.userData.asset_kind !== "landscape-surface")) ||
     (corridor && !roadRemainder?.isMesh)
   )
     throw new Error("Missing exterior review building or ground.");
@@ -452,6 +508,10 @@ export async function loadBuildingSiteReview(
     routeApproachIds: routeToApproaches ? ids : newBuildingIds,
     ground,
     closedSiteBoxes,
+    walkableHeight:
+      surface && sampleSurface(surface, walkableGround.bounds_enu_m),
+    appendNavigation:
+      surface && ((graph) => appendWalkablePath(graph, walkableGround)),
     navigation: graph,
     retiredCorridor: corridorId,
     entrances: Object.fromEntries(

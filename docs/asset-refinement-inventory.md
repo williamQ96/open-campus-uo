@@ -16,21 +16,55 @@
 
 | 范围 | 明细行 | 当前状态 |
 | --- | ---: | --- |
-| 建筑外部 | 586 | 387 项 L2、168 项独立 L1、31 项停用或并入模型的 L1 历史记录 |
-| 各建筑独立内部 | 586 | 均标为未创建，等级留空，当前进入时使用共用教室 |
+| 建筑外部及独立室外设施 | 664 | 610 项 L2、0 项独立 L1、54 项停用或并入模型的 L1 历史记录 |
+| 各建筑独立内部 | 663 | 均标为未创建，等级留空，当前进入时使用共用教室 |
 | 室外植被、景观、道具及角色动物 | 15 | 15 组 L2 |
 | 共用室内 | 1 | 现有 L1 共用教室 |
-| **合计** | **1,188** | **602 项现有，586 项独立室内待创建** |
+| **合计** | **1,343** | **680 项现有，663 项独立室内待创建** |
 
 源场景的 534 个建筑候选包括 64 个独立节点和 470 个批次成员。科学楼群配准增加了 Pacific 和 Columbia 两个场景 ID，社团建筑拆分增加了 Chi Omega 的独立 ID，Villard 与 Garden 住宅拆分增加了三个独立 ID，大学区南停车楼拆分增加一个独立 ID，973 Hilyard 新增一个此前缺失的建筑 ID，1515 Hilyard 合并候选拆分增加两个独立 ID，957/971 Hilyard 拆分增加一个独立 ID，E 15th 巷侧楼、950 Alder Suites 和 1125 Alder 校方设施维护楼各新增一个此前缺失的建筑 ID。区域字段沿用项目艺术优先区及背景制作分区。部分记录可能对应同一建筑、树冠或其他候选，需要逐项确认。
 
 项目现有一套通用教室，所有建筑暂时使用该模板。CSV 的 `INT-SHARED` 为共用模板 L1，每个 `INT:建筑ID` 为待建的专属内部，等级留空。[通用教室](../assets/interiors/README.md)。
 
-两个程序化乔木源层各含 300 株。本地默认预览显示试点区 273 株及背景源树 269 株。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
+两个程序化乔木源层各含 300 株。本地默认预览显示试点区 273 株及背景源树 268 株。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
 
 ## 室外 L2 目标核对
 
-室外目标追踪 601 条记录，包括 586 条建筑外部和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 586 条计划室内记录另列。当前有 387 项 L2 建筑、168 项独立 L1 建筑、15 组 L2 室外资产，以及 31 条合并或停用后的历史映射。历史映射涉及 Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church 和 The Studies at 19th，原 ID 和等级记录保存在 CSV。默认场景有 555 个可选建筑。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
+室外目标追踪 679 条记录，包括 664 条建筑外部及独立室外设施和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 663 条计划室内记录另列。当前有 610 项 L2 外观、15 组 L2 室外资产，独立在用 L1 为 0 项，另保留 54 条合并或停用后的历史映射。历史映射涉及 Garden、Franklin、Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church、The Studies at 19th、1544 Alder 的旧局部、Walnut Path 步桥旧网格、967 Patterson 旧建筑、Arena 前广场、Walnut 停车区、铁路跨线桥、储冷罐地块、Knight Library 西侧草坪、Grace Lutheran Church 旧分段、Hamilton Hall 五段已拆网格、Franklin 沿线两处停车区旧网格及 Patterson 原 YMCA 已拆网格，原 ID 和等级记录保存在 CSV。默认场景有 610 个可选建筑及独立设施。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
+
+Alpha Omega House、Fire Station 13、Birch 和 Fairmount 一带三栋住宅及 634–640 East 16th Alley 完成 L2。Patterson 旧 YMCA 归入历史映射，现状开敞地和铺装纳入 ENV-05。桌面和手机均已逐项核对 610 个默认可选建筑及独立设施的 ID。[最后一组外观复核](neighborhood-exterior-closeout-2026-11-26.md)。
+
+959 Franklin、Hayward Inn 的 Franklin 屋翼及 Best Western New Oregon 的两处建筑外部完成 L2。两处露天停车区旧屋面转入历史映射，铺装纳入 ENV-05。[外部核对](franklin-riverfront-closeout-2026-11-26.md)。
+
+Hamilton Hall 旧址现为 Great Lawn 和 Duck Dunes。三片沙排球场及草坪步道记入 ENV-05，1680 East 13th Avenue 配套用房成为独立 L2 外观。五段旧建筑归入历史映射。[现场与模型核对](hamilton-great-lawn-duck-dunes-2026-11-26.md)。
+
+Alder 和东 12 至 14 街再完成十四栋外观。Patterson 保留抬高中庭和南露台，The Ellis 与 Chapter at Eugene 独立建模，751 East 14th 的三栋小屋保留物理间距。[十四栋外观复核](east-thirteenth-blocks-review-2026-11-26.md)。
+
+Alder、Kincaid 和东 16 至 18 街的 20 栋新增 L2。Grace Lutheran Church 恢复连续屋面、露天庭院和带柱檐廊。Camelot、Talisman 和 The Arcade 的开放空间已保留。[西侧复核](west-alder-kincaid-exterior-review-2026-11-26.md)。
+
+Riverfront Parkway 恢复四跨铁路桥、三座桥墩和桥下连续铺面。储冷罐作为独立室外设施纳入 L2，Knight Library 西侧草坪恢复可通过。[室外设施复核](riverfront-plant-infrastructure-exterior-review-2026-11-26.md)。
+
+Villard、Orchard、Moss、Walnut 和东 15 街十栋建筑完成 L2。Courtside 与 Skybox 保留露天庭院，1530 Orchard Alley 和 1365 Villard 保留有顶开放空间。Arena 前广场和 Walnut 停车区恢复铺地。[东侧复核](villard-orchard-walnut-exterior-review-2026-11-26.md)。
+
+东 20 至 21 街八段旧网格重建为 13 栋 L2 外观。2090 Hilyard 两条市政记录对应一栋，五处原连体分别设 ID，2028 Kincaid 保留带双柱的可走入门廊。[南侧外观复核](south-university-east-twentieth-exterior-review-2026-11-26.md)。
+
+Patterson、Hilyard 和东 11 街七处建筑完成 L2。967 Patterson 的 Sigma Phi Epsilon 会所另设 ID，保留已拆旧屋面的历史记录。1050 与 1052 Hilyard 和 751 与 755 East 11th 的门牌分别共用一栋模型。[西侧外观复核](patterson-hilyard-exterior-review-2026-11-26.md)。
+
+Bardell、Buckingham、Chevy Chase 和 Merewether 周边 18 栋住宅完成 L2，保留 3370 Bardell 的连接屋翼及 592 Merewether 跨出东侧地形的屋面。Walnut Path 运河步桥纳入 ENV-05，旧建筑网格存为历史映射。[住宅与步桥复核](bardell-buckingham-and-walnut-path-review-2026-11-26.md)。
+
+东 12 至 15 街周边二十四栋外观完成 L2。Campus Court 保留两条露天缝，766 East 15th 保留贯通车道，1360 Alder 两翼可独立选择，640 与 745 East 15th 均保留露天庭院。[二十四栋外观复核](northwest-blocks-review-2026-11-26.md)。
+
+Alder 南段、Harris、Kincaid 与东 19 至 20 街周边二十九栋外观完成 L2。1860 Alder 保留露天采光庭，1884 Alder 保留架空停车和露天楼间楼梯，1875 Alder 的两翼保持连通。960 和 980 East 19th 各自可选。[二十九栋外观复核](southwest-exterior-review-2026-11-26.md)。
+
+Hilyard、Alder 和东 14 至 18 街周边二十八栋外观完成 L2。Campus Quads 重建南向通廊和车道开口，Delta Gamma 恢复四柱门廊，648 East 17th 保留露天内庭和东侧停车开口。东 15 街巷两栋现状车库楼按 2025 年航片重配准。[二十八栋外观复核](hilyard-blocks-review-2026-11-26.md)。
+
+Garden、Franklin 和 Millrace 周边十五栋外观完成 L2。2125 Franklin 重建露天泳池庭院与分层停车甲板，2117 酒店保持独立，三栋 Franklin 商铺可分别选择。1769 空地、2125 后侧屋影和两个旧局部网格保留历史记录。[十五栋外观复核](garden-franklin-review-2026-11-26.md)。
+
+Villard、Orchard 和 Millrace 周边十八栋外观完成 L2。1907 Garden 保留建筑下的水道，五组独立屋顶保留间距。East 18th 的旧巷道轮廓停用，小棚另设独立 ID。[十八栋外观复核](villard-orchard-garden-review-2026-11-26.md)。
+
+Fairmount、Sunset 等街区十三栋建筑达到 L2。2285 Parkside 保留露天环形庭院，30 Sunset 保留车棚开口。Walnut 小屋顶从 1820 的旧候选拆出，两个 Rose 门牌继续共用一栋模型。[十三栋外观复核](fairmount-sunset-hillside-review-2026-11-26.md)。
+
+360 与 362 Sunset Drive 原合并为一栋。按各自的市政轮廓和地块拆分后，两栋屋顶相距约 6.166 米，各自可被搜索和选中。360 保留双车库、绿色遮阳篷和高露台，362 重建两层阳台。[Sunset Drive 外观核对](sunset-drive-pair-review-2026-11-26.md)。
 
 Orchard、Villard 与 Fairmount 周边十六栋外部登记为 L2。六处拆分保留实测图上的屋面间距，东 19 街 1978 号恢复开放停车棚，Orchard 1994 号保留两片光伏阵列。Villard 1996 号同地块的独立附属建筑保留单独 ID，其用途待核。[十六栋外部核对](orchard-villard-hillside-review-2026-11-26.md)。
 
@@ -62,7 +96,7 @@ Onyx House（Onyx 街 1850、1852 号）已登记为 L2，沿用原场景 ID。�
 
 Alton Baker 公园两座凉亭及 Best Western New Oregon 的 Franklin 侧翼已登记为 L2。1 号凉亭有新增场景 ID。两处已拆建筑从默认场景移除，原 ID 保存在历史台账中。[凉亭和酒店外部核对](alton-franklin-exterior-review-2026-11-26.md)。
 
-东 17 街 625–627 号、东 16 巷 630–632 号和东 19 街 631 号东侧楼体升为 L2。东 17 街旧合并模型拆成三个独立对象。东 16 巷 634–640 号按市政轮廓和高程建模，主要立面仍待核实，保留 L1。[西边界外部核对](west-boundary-exterior-review-2026-11-26.md)。
+东 17 街 625–627 号、东 16 巷 630–632 号和东 19 街 640 号东侧楼体升为 L2。东 17 街旧合并模型拆成三个独立对象。东 16 巷 634–640 号按市政轮廓和高程建模，主要立面仍待核实，保留 L1。[西边界外部核对](west-boundary-exterior-review-2026-11-26.md)。
 
 Parkside Place、东 20 街 1131 号和东 21 街 1039、1145 号共四栋建筑外部已登记为 L2。沿用原场景 ID，恢复连通屋面、车库前段、退入式下层及两栋临街凸窗。Parkside 和 1145 号分别登记一处步行接近点。[四栋外部核对](hilyard-south-exterior-review-2026-11-26.md)。
 
@@ -80,7 +114,7 @@ Deschutes 附近的固定人物 PERSON:dan-carrere 已登记为本地 L2。风�
 
 通用校园学生和松鼠 LIFE-01 已登记为 L2。步行接地、松鼠九关节动作、纪念广场西侧步道与八段草地活动路径均纳入本次核对。松鼠为通用模型，树上路线与物种仍属示意。[校园活动核对](campus-life-l2-2026-11-26.md)。
 
-草坪、铺装、道路与步道 ENV-05 已登记为 L2。纪念广场恢复北侧 X 形步道和南侧环道，更新对应导航并保留六处树池。139 条在用道路与步道记录已重建为两组地表，其中 96 条至少有一段按市政记录核对宽度与材质。[铺装与道路核对](paving-corridors-l2-2026-11-26.md)。
+草坪、铺装、道路与步道 ENV-05 已登记为 L2。Riverfront Parkway 铁路桥下铺面恢复连续，Knight Library 西侧草坪保留原路径和地面。[铁路桥与草坪复核](riverfront-plant-infrastructure-exterior-review-2026-11-26.md)。Arena 前广场恢复接缝，Walnut 停车区恢复标线和三处种植岛。[东侧铺地证据](villard-orchard-walnut-exterior-review-2026-11-26.md)。纪念广场恢复北侧 X 形步道和南侧环道，更新对应导航并保留六处树池。139 条在用道路与步道记录已重建为两组地表，其中 96 条至少有一段按市政记录核对宽度与材质。[铺装与道路核对](paving-corridors-l2-2026-11-26.md)。
 
 地形与地表覆盖 ENV-04 已登记为 L2。全范围地表更新 62,339 个高程点，按 USGS 水域多边形重着色，并以 2024 年航片判断地表类型。全部 608 段入口接近线和 7,705 条源路径边的高程采样一致。[地形与地表核对](landcover-l2-2026-11-26.md)。
 

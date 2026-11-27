@@ -1,0 +1,20 @@
+# Hamilton Hall redevelopment exterior review
+
+The current scene at East 13th Avenue and Agate Street depicts Duck Dunes and the Great Lawn. The university reported that Hamilton Hall demolition was complete in May 2026. The Athletics department opened the three courts on September 23, 2026 and hosted a first home competition on October 11. [Demolition notice](https://gcr.uoregon.edu/sites/default/files/2026-04/uo-cc-may-june-2026.pdf) · [First serve](https://goducks.com/news/2026/9/23/womens-beach-volleyball-oregon-beach-volleyball-opens-duck-dunes-with-first-serve-ceremony) · [First home competition](https://goducks.com/news/2026/10/11/womens-beach-volleyball-ducks-open-new-home-courts-with-pair-of-wins).
+
+The redevelopment uses the Athletics site diagram, the university map footprint for building 290, publicly visible completion photos and the CPC scoreboard dimensions. The three court centers were crosschecked against field-mapped positions. Plan registration residuals span 0.087 to 0.174 m at those controls. Building 290 is 2.413 m away from the corresponding schematic center. Its footprint follows the current university map. [Athletics concept and plan](https://goducks.com/sports/2026/5/1/oregon-beach-volleyball-facility) · [University campus map](https://map.uoregon.edu/) · [Scoreboard siting](https://cpfm.uoregon.edu/sites/default/files/2026-03/record_02_20_2026.pdf) · [Architect's opening photographs](https://rowellbrokaw.com/blog/2026/9/23/uo-first-serve-event) · [OpenStreetMap crosscheck attribution](https://www.openstreetmap.org/copyright).
+
+| Scene treatment | Recorded result |
+| --- | --- |
+| Duck Dunes Support Building | L2 exterior `uo-duck-dunes-support` at 1680 East 13th Avenue. A dark ribbed shell, double doorway treatment, yellow canopy and west-side exterior approach follow the visible materials and massing. |
+| Duck Dunes courts | A 1,388.379 m² sand pad with three 8 by 16 m playing areas, low concrete seating edges, a dark fence with a north opening, three nets and the east scoreboard. The eastern and western court openings remain physically clear. |
+| Great Lawn and campus paths | 3,071.992 m² of open lawn and 2,649.879 m² of modeled paving across the site, including ring path, through links, south promenade, approximate benches and globe lamps. An inferred context tree intersecting the new support building is suppressed. [University lawn update](https://news.uoregon.edu/content/get-update-construction-activity-around-university-0). |
+| Former Hamilton Hall | The five historical IDs are `roof-01775601`, `roof-23a897a3`, `roof-78e56866`, `roof-842ec047` and `roof-8e4bc3fa`. The west side lawn and the three courts are tracked under ENV-05. |
+
+The sand plane is 1.25 m above the project's ENU reference zero based on a fit to the older terrain and ramps. Exact modern grades, secondary planting, path widths and door and scoreboard details remain approximate. The identified Cha Uihi art installation still needs a registered as-built location and visible geometry. [Art and tree ceremony](https://rowellbrokaw.com/blog/2026/8/7/tree-blessing-for-project-under-construction-at-uo).
+
+Two clean exports match byte for byte. All 160 sampled rays hit the single level sand surface. Six paired camera positions and the runtime index audit isolate 2,920 removed triangles while preserving the 17 peer members and their source vertices. A 7,710-edge route graph check preserves existing clearance. In production the 163-point route from Knight Library reaches the west approach. The 31 samples along the final paved segment clear collision and have continuous walking heights. Desktop and phone confirm the three net collisions, fence and opening clearances, old collisions removed, and the restored surfaces. An invalid last anchor or corrupt bundle restores all five prior ranges and their entrance records. The public checkpoint is `c3dc42c`.
+
+- [Editable dimensions and anchors](../data/metadata/hamilton-dunes-review.json)
+- [Deterministic exporter](../scripts/build-hamilton-dunes-review.py)
+- [Viewer descriptor](../apps/web-preview/public/scene/hamilton-dunes-review/site.json)

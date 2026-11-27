@@ -6,7 +6,7 @@ The local model splits the merged East 17th source candidate into three register
 | --- | --- | --- |
 | 625–627 East 17th Avenue | `roof-dcd48157` | L2. Street gable, two eyebrow vents, chimney, olive siding and open recessed porches. One estimated approach serves the visible west porch. |
 | 630–632 East 16th Alley | `e16-alley-630-632` | L2. Separate nearly flat roof, stepped footprint, pale walls and the upper sash visible from the north. Side openings are approximations. |
-| 634–640 East 16th Alley | `e16-alley-634-640` | L1. Independent outline and roof ridge. The main elevations remain screened in the registered views. |
+| 634–640 East 16th Alley | `e16-alley-634-640` | L1 in the initial review. Independent outline and roof ridge. A later public exterior photo supported the balcony, vertical siding and exterior stair for the L2 update. [Follow-up exterior review](neighborhood-exterior-closeout-2026-11-26.md). |
 | 631 East 19th Avenue East Building | `roof-4dff8a97` | L2. Two sloping roofs, red masonry base, siding, north clerestory and tower. Rear openings are modeled with approximate dimensions. |
 
 The former church and education leasing material documents the site's prior use. The east building label is based on the registered outline. Public directions for Building B point toward the westerly courtyard building. The east building's current use remains open, so the model has no authored wayfinding gate. [Broker listing and flyer](https://www.cityfeet.com/cont/listing/631-e-19th-ave-eugene-or-97401/cs20806005) · [Building B address](https://healingattention.org/contact/) · [Public event directions](https://dailyeugene.com/or/eugene/events/evt_TJafgtTXv3za).

@@ -1,6 +1,40 @@
 # Exterior refinement: working plan
 
-The local ledger has 387 L2 building exteriors, 168 active L1 building exteriors, 31 historical records and all 15 outdoor asset groups at L2. Thirteen Fairmount, Summit, Hamble and Hubbard exteriors include the 2081 Fairmount dormers and porch, the rebuilt 2105 entry and terracing, and thirteen stable scene IDs. [Fairmount and Hamble review](fairmount-summit-hamble-review-2026-11-26.md).
+The exterior target is complete. Before the release, all 610 selectable building and freestanding facility IDs matched the L2 ledger on desktop and phone. The ledger records zero active L1 exteriors, 54 historical mappings, and 15 L2 outdoor asset groups. [Final neighborhood review](neighborhood-exterior-closeout-2026-11-26.md) · [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
+The previous local checkpoint had 604 L2 building and freestanding facility exteriors, six active L1 exteriors, 53 historical mappings and 15 L2 outdoor groups. Four Franklin Boulevard exteriors and two exposed parking surfaces are integrated locally. [Franklin and riverfront review](franklin-riverfront-closeout-2026-11-26.md).
+
+The previous local checkpoint had 600 L2 building and freestanding facility exteriors, 11 active L1 exteriors, 51 historical mappings and 15 L2 outdoor groups. The former Hamilton Hall site now has Duck Dunes and the Great Lawn, plus a separately selectable support building. [Hamilton redevelopment review](hamilton-great-lawn-duck-dunes-2026-11-26.md).
+
+The previous local checkpoint had 599 L2 building and freestanding facility exteriors, 16 active L1 exteriors, 46 historical mappings and 15 L2 outdoor groups. The west package rebuilds 20 exteriors including one connected Grace Lutheran Church, four Alder galleries, the Camelot slot, Talisman court and two Arcade roof wells. [West neighborhood review](west-alder-kincaid-exterior-review-2026-11-26.md).
+
+The previous local checkpoint had 579 L2 building and freestanding facility exteriors, 27 active L1 exteriors, 44 historical mappings and all 15 outdoor groups at L2. Riverfront Parkway has the four-span railroad bridge and continuous pavement below it. The thermal storage tank has its own exterior, and the existing Knight Library lawn is clear. [Infrastructure review](riverfront-plant-infrastructure-exterior-review-2026-11-26.md).
+
+The previous local checkpoint had 578 L2 building exteriors, 30 active L1 building exteriors, 41 historical mappings and 15 L2 outdoor asset groups. Ten Villard, Orchard, Moss, Walnut and East 15th exteriors restore the apartment courts, covered bays and three distinct gaps. The arena forecourt and Walnut parking are part of ENV-05. [East neighborhood review](villard-orchard-walnut-exterior-review-2026-11-26.md).
+
+The previous local checkpoint had 568 L2 building exteriors, 39 active L1 building exteriors, 39 historical mappings and all 15 outdoor asset groups at L2. Thirteen South University and East 20th–21st exteriors preserve five distinct roof gaps and the open 2028 Kincaid porch. [South neighborhood review](south-university-east-twentieth-exterior-review-2026-11-26.md).
+
+The previous local checkpoint had 555 L2 building exteriors, 47 active L1 building exteriors, 39 historical mappings and all 15 outdoor asset groups at L2. Seven western exteriors include the Gamma Phi Beta tower, the three 763 East 11th dormers and the rebuilt Sigma Phi Epsilon concept at 967 Patterson. [Patterson, Hilyard and East 11th review](patterson-hilyard-exterior-review-2026-11-26.md).
+
+The previous local checkpoint had 548 L2 building exteriors, 54 active L1 building exteriors, 38 historical mappings and all 15 outdoor asset groups at L2. Eighteen northeast residences retain their building IDs. The Walnut Path bridge replaces the obsolete canal roof range within ENV-05. [Northeastern residences and bridge review](bardell-buckingham-and-walnut-path-review-2026-11-26.md).
+
+The previous local checkpoint had 530 L2 building exteriors, 73 active L1 building exteriors, 37 historical mappings and all 15 outdoor asset groups at L2. Fourteen Alder and East 12th–14th exteriors preserve the Patterson court and terrace, separate The Ellis and Chapter towers, and keep the three 751 East 14th roofs independent. [Alder and East 12th–14th review](east-thirteenth-blocks-review-2026-11-26.md).
+
+The previous local checkpoint had 516 L2 building exteriors, 78 active L1 building exteriors, 37 historical mappings and all 15 outdoor asset groups at L2. Twenty-four East 12th–15th exteriors preserve the Campus Court slots, the 766 East 15th through-drive, the 1360 Alder wing gap and three open courts. [East 12th–15th block review](northwest-blocks-review-2026-11-26.md).
+
+The previous local checkpoint had 492 L2 building exteriors, 94 active L1 building exteriors, 36 historical mappings and all 15 outdoor asset groups at L2. Twenty-nine southwest exteriors preserve the 1860 Alder light court, the linked 1884 Alder wings, the 1875 Alder court and the open Potter Alley parking bay. [Southwest exterior review](southwest-exterior-review-2026-11-26.md).
+
+Twenty-eight Hilyard, Alder and East 14th–18th exteriors preserve the Campus Quads covered drive, Delta Gamma portico, the 648 East 17th courtyard and the two redeveloped East 15th Alley garages. [Hilyard exterior review](hilyard-blocks-review-2026-11-26.md).
+
+Fifteen Garden, Franklin and Millrace models preserve the 2125 open court and parking deck, three independent Franklin storefronts and the Millrace shelter. Four old IDs are retained for history and fallback. [Garden and Franklin exterior review](garden-franklin-review-2026-11-26.md).
+
+Eighteen Villard, Orchard and Millrace models include five roof separations, the open waterway at 1907 Garden and an independent East 18th shelter. [Exterior review](villard-orchard-garden-review-2026-11-26.md).
+
+The thirteen Fairmount, Sunset and Walnut-area exteriors include an open carport and circular court. [Hillside exterior review](fairmount-sunset-hillside-review-2026-11-26.md).
+
+The 360 and 362 Sunset Drive exteriors are individually selectable with a 6.166 m roof gap. [Sunset Drive pair](sunset-drive-pair-review-2026-11-26.md).
+
+The published c3dc42c checkpoint has 387 L2 building exteriors. Thirteen Fairmount, Summit, Hamble and Hubbard exteriors include the 2081 Fairmount dormers and porch, the rebuilt 2105 entry and terracing, and thirteen stable scene IDs. [Fairmount and Hamble review](fairmount-summit-hamble-review-2026-11-26.md).
 
 Sixteen Orchard, Villard and Fairmount exteriors include six separations, an open parking bay at 1978 East 19th and two solar arrays at 1994 Orchard. [Orchard and Villard exterior review](orchard-villard-hillside-review-2026-11-26.md).
 

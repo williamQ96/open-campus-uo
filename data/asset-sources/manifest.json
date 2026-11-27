@@ -2574,16 +2574,16 @@
       "origin": "Original exterior geometry for Parkside Place and three south neighborhood residences. City building data, Oregon aerial imagery, elevation surfaces and street references are documented in docs/hilyard-south-exterior-review-2026-11-26.md."
     },
     "apps/web-preview/public/scene/west-boundary-exterior-review/site.json": {
-      "bytes": 3752,
-      "sha256": "71efc290d1e755c5c196f0421bb3da22edcd1fa2135c4b5ba9e953a6765628fb",
+      "bytes": 4073,
+      "sha256": "44c03147374ab932573326fc287307b757d3229ba1cb5195b3b9ae81083ca124",
       "license": "CC-BY-4.0",
-      "origin": "Original exterior geometry for the East 17th Avenue, 16th Alley and East 19th Avenue boundary candidates. City, aerial and elevation references are documented in docs/west-boundary-exterior-review-2026-11-26.md."
+      "origin": "Original exterior geometry for the East 17th Avenue, 16th Alley and East 19th Avenue boundary candidates. City, aerial and elevation references are documented in docs/west-boundary-exterior-review-2026-11-26.md. East 16th Alley siding, upper gallery and stair updated from documented visual sources in docs/neighborhood-exterior-closeout-2026-11-26.md."
     },
     "apps/web-preview/public/scene/west-boundary-exterior-review/site.glb": {
-      "bytes": 374028,
-      "sha256": "c20b95383213fac56d2887531d5f0ab3859b410c5d4e5f6edc3140f145bde77b",
+      "bytes": 649004,
+      "sha256": "b0ebb031e71b2d6bf86af2d41f99038cb8ff9aba916f2629019b852213189d58",
       "license": "CC-BY-4.0",
-      "origin": "Original exterior geometry for the East 17th Avenue, 16th Alley and East 19th Avenue boundary candidates. City, aerial and elevation references are documented in docs/west-boundary-exterior-review-2026-11-26.md."
+      "origin": "Original exterior geometry for the East 17th Avenue, 16th Alley and East 19th Avenue boundary candidates. City, aerial and elevation references are documented in docs/west-boundary-exterior-review-2026-11-26.md. East 16th Alley siding, upper gallery and stair updated from documented visual sources in docs/neighborhood-exterior-closeout-2026-11-26.md."
     },
     "apps/web-preview/public/scene/alton-franklin-exterior-review/site.json": {
       "bytes": 10341,
@@ -2776,6 +2776,222 @@
       "sha256": "202a25e38143c8fc2255cd71b6a6a6d603d9e73c0e8efbcce0ddcbf3fcc01658",
       "license": "CC-BY-4.0",
       "origin": "Original geometry for thirteen Fairmount, Summit, Hamble and Hubbard exteriors. See docs/fairmount-summit-hamble-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/sunset-drive-pair-review/site.json": {
+      "bytes": 2991,
+      "sha256": "ebc64d968cdafa2737cd62c3fc3a7881e2ed3d0891e3d802149ca9d0d466798c",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for 360 and 362 Sunset Drive. See docs/sunset-drive-pair-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/sunset-drive-pair-review/site.glb": {
+      "bytes": 855664,
+      "sha256": "1c8f9daeab50c632b84f5bb51f37ee81430f97fa6118aa6fd79d1c9e1d74eefd",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for 360 and 362 Sunset Drive. See docs/sunset-drive-pair-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/fairmount-sunset-hillside-review/site.json": {
+      "bytes": 13011,
+      "sha256": "a2cd6ebc51e31084508f5c7821aeb932d13e2574e8d6de28e3ef22803c83b719",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for thirteen Fairmount, Sunset, Parkside, Rose and Walnut exteriors. See docs/fairmount-sunset-hillside-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/fairmount-sunset-hillside-review/site.glb": {
+      "bytes": 3922336,
+      "sha256": "db741a6d9ccbccefba96d767ec914bddac7ca3ee2b847c0abaf607b30abc157d",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for thirteen Fairmount, Sunset, Parkside, Rose and Walnut exteriors. See docs/fairmount-sunset-hillside-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/villard-orchard-garden-review/site.json": {
+      "bytes": 17322,
+      "sha256": "41b917e3c60f3ea06dfad80f49c4f6cd74595677f4e6e93de8d72a2d633d526f",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eighteen Villard, Orchard and Millrace exteriors. See docs/villard-orchard-garden-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/villard-orchard-garden-review/site.glb": {
+      "bytes": 3936512,
+      "sha256": "3171db16215c7f1cd08d61ea8521ef2c5b3740a9fb98159e136bef524ba5068a",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for eighteen Villard, Orchard and Millrace exteriors. See docs/villard-orchard-garden-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/garden-franklin-review/site.json": {
+      "bytes": 23223,
+      "sha256": "0ee23e71c32fad587757cb10ea21de5fa0234e9c412b12e8f3928d6ad6014fc1",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for fifteen Garden, Franklin and Millrace exteriors. See docs/garden-franklin-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/garden-franklin-review/site.glb": {
+      "bytes": 9978740,
+      "sha256": "d8e72e6f75505482ebf250fbde31f4eb2314ae785638197ee5e842697f919b56",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for fifteen Garden, Franklin and Millrace exteriors. See docs/garden-franklin-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/hilyard-blocks-review/site.json": {
+      "bytes": 29936,
+      "sha256": "8cca341cc6e943f3bacb75a72c5673ecc7798147ceac6d6ae3918c28e07737e3",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for twenty-eight Hilyard, Alder and East 14th–18th exteriors. See docs/hilyard-blocks-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/hilyard-blocks-review/site.glb": {
+      "bytes": 6957244,
+      "sha256": "699ee350cccdec28d3ef544e5e271a00bb57e81b55ef9f6233c371c0bc2b500c",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for twenty-eight Hilyard, Alder and East 14th–18th exteriors. See docs/hilyard-blocks-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/southwest-exterior-review/site.json": {
+      "bytes": 30626,
+      "sha256": "57a24342fdddcfc9e4155e404cc2b290839a68148f7ab8432e13fe93847ed333",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for twenty-nine South Alder, Harris and Kincaid exteriors. See docs/southwest-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/southwest-exterior-review/site.glb": {
+      "bytes": 9809392,
+      "sha256": "ce4fae520e9f072a12c00b660b7d4d623fc96ddb8f9c5fb7b5924e218d046d60",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for twenty-nine South Alder, Harris and Kincaid exteriors. See docs/southwest-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/northwest-blocks-review/site.json": {
+      "bytes": 24803,
+      "sha256": "5d2a2e2bb6ac1fb8c1fd583f1981b2f2d26c430f8242842427f637de14b0fd2d",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for twenty-four East 12th–15th block exteriors. See docs/northwest-blocks-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/northwest-blocks-review/site.glb": {
+      "bytes": 6528872,
+      "sha256": "f34959b1e4f72db6789a4568a2db2dc5166c8ae0d9cd85401128e64fec5d6786",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for twenty-four East 12th–15th block exteriors. See docs/northwest-blocks-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/east-thirteenth-blocks-review/site.json": {
+      "bytes": 11060,
+      "sha256": "a8acff155780fdcad8e3bfe787e7c224b3908db0cc918e8dd2f547441330a2a5",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for fourteen Alder and East 12th–14th exteriors. See docs/east-thirteenth-blocks-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/east-thirteenth-blocks-review/site.glb": {
+      "bytes": 11351044,
+      "sha256": "1a95834a5743c96aa99f0495e7fab7af072d619bb1d87321217d539e36b6137f",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for fourteen Alder and East 12th–14th exteriors. See docs/east-thirteenth-blocks-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/bardell-buckingham-review/site.json": {
+      "bytes": 26950,
+      "sha256": "6f84c3b6bc7795b0247404737ba00c22a74fbfcb2824fb59ca3ffed4e584b093",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for eighteen Bardell, Buckingham, Chevy Chase and Merewether homes. See docs/bardell-buckingham-and-walnut-path-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/bardell-buckingham-review/site.glb": {
+      "bytes": 9860080,
+      "sha256": "1cd5bf0d64a73ea20d3d711503d617b6bb158397de3cd9e45cf1c54a8f239597",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for eighteen Bardell, Buckingham, Chevy Chase and Merewether homes. See docs/bardell-buckingham-and-walnut-path-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/walnut-path-bridge-review/site.json": {
+      "bytes": 2719,
+      "sha256": "c172d00790616a2928f6699ccbc80195bcb895712a31aeabcfdc15133f35cf09",
+      "license": "CC-BY-4.0",
+      "origin": "Original outdoor geometry for the Walnut Path bridge, ramps, railings and trail connection. See docs/bardell-buckingham-and-walnut-path-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/walnut-path-bridge-review/site.glb": {
+      "bytes": 51668,
+      "sha256": "ff879308c2951b78f5ad8075a9b12b92cfd1b591871e9624a49db15fec6eb675",
+      "license": "CC-BY-4.0",
+      "origin": "Original outdoor geometry for the Walnut Path bridge, ramps, railings and trail connection. See docs/bardell-buckingham-and-walnut-path-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/patterson-hilyard-review/site.json": {
+      "bytes": 18967,
+      "sha256": "070ed3c8fe7ffd99199447ed621f3528beeb40631bbfe2fd667c76dd0440e3ab",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry and presentation detail for seven Patterson, Hilyard and East 11th buildings. See docs/patterson-hilyard-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/patterson-hilyard-review/site.glb": {
+      "bytes": 2616208,
+      "sha256": "2195abbc33aa7f278b8b38cadd174cd6a957289f709580593f3a9098064b2175",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry and presentation detail for seven Patterson, Hilyard and East 11th buildings. See docs/patterson-hilyard-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/south-university-east-twentieth-review/site.json": {
+      "bytes": 13750,
+      "sha256": "22998070cf7835fb4bb65ce3c4fda78f86db613f12e467d0620898687518b017",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for thirteen South University and East 20th–21st houses. See docs/south-university-east-twentieth-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/south-university-east-twentieth-review/site.glb": {
+      "bytes": 3306268,
+      "sha256": "6abdbc9b2f97509114f0951dc6348a2a3f70668e89951348d08c0ff45a7e6c62",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for thirteen South University and East 20th–21st houses. See docs/south-university-east-twentieth-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/villard-orchard-walnut-review/site.json": {
+      "bytes": 14280,
+      "sha256": "eb568223aa2454754318e2d37aee0809f4aa58e18f6a48926a49cde5c4cb7e39",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for ten Villard, Orchard, Moss, East 15th and Walnut exteriors and two adjacent paved sites. See docs/villard-orchard-walnut-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/villard-orchard-walnut-review/site.glb": {
+      "bytes": 5892120,
+      "sha256": "fb989772b8a09fb15dfb7a75eaaf9e6d65fbb22392f6523e35da18c7f779fd02",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for ten Villard, Orchard, Moss, East 15th and Walnut exteriors and two adjacent paved sites. See docs/villard-orchard-walnut-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/riverfront-plant-infrastructure-review/site.json": {
+      "bytes": 6427,
+      "sha256": "27b060a8ada406f13e8c71065d01a82d6304c14ee38c2faea54e643348eb18cf",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for the Riverfront Parkway railroad crossing and UO thermal storage tank. See docs/riverfront-plant-infrastructure-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/riverfront-plant-infrastructure-review/site.glb": {
+      "bytes": 934004,
+      "sha256": "d613742733c4f594025aedc88f1edac057f526e36d423da9809879151c6df844",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for the Riverfront Parkway railroad crossing and UO thermal storage tank. See docs/riverfront-plant-infrastructure-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/west-alder-kincaid-review/site.json": {
+      "bytes": 20143,
+      "sha256": "94a160305bf61d91a90cc4a364a098b9bcf8829c5a34cedaa6be4a2704103d4d",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for twenty Alder, Kincaid and East 16th–18th exteriors. See docs/west-alder-kincaid-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/west-alder-kincaid-review/site.glb": {
+      "bytes": 5079740,
+      "sha256": "9f451d9ed22139f8a8b4efe9b49d8d7fc97259709de59e3655fbe208fd3423f6",
+      "license": "CC-BY-4.0",
+      "origin": "Original exterior geometry for twenty Alder, Kincaid and East 16th–18th exteriors. See docs/west-alder-kincaid-exterior-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/hamilton-dunes-review/site.glb": {
+      "bytes": 1569784,
+      "sha256": "29924a13e90c5b9875a9c5a152ec271f83d718196b3abaf1e536dc836a83f542",
+      "license": "CC-BY-4.0",
+      "origin": "Original model of Duck Dunes, the Great Lawn and their approaches, separately registered against project and campus records. See docs/hamilton-great-lawn-duck-dunes-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/hamilton-dunes-review/site.json": {
+      "bytes": 2930,
+      "sha256": "d955d2fdbd7613d76ab7b9e0bea314fc4dd887f22ba728488d588b8a1fb13962",
+      "license": "CC-BY-4.0",
+      "origin": "Original model of Duck Dunes, the Great Lawn and their approaches, separately registered against project and campus records. See docs/hamilton-great-lawn-duck-dunes-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/franklin-riverfront-closeout-review/site.glb": {
+      "bytes": 7703644,
+      "sha256": "f9e0985903f12fb873000c58d5ad07ac5ee7247a96cc1ffd592861b645404262",
+      "license": "CC-BY-4.0",
+      "origin": "Original model of four Franklin Boulevard exteriors and restored riverfront parking, registered against City and County evidence. See docs/franklin-riverfront-closeout-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/franklin-riverfront-closeout-review/site.json": {
+      "bytes": 7999,
+      "sha256": "f50900642b5e0693be4dcf0061491114e80fe8e25b9ea086552712066e3b7528",
+      "license": "CC-BY-4.0",
+      "origin": "Original model of four Franklin Boulevard exteriors and restored riverfront parking, registered against City and County evidence. See docs/franklin-riverfront-closeout-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/neighborhood-exterior-closeout-review/site.glb": {
+      "bytes": 2375448,
+      "sha256": "de892b9fc3f0166af69c22f652f95ad73f26b502ad371e79ea4675c6131a8687",
+      "license": "CC-BY-4.0",
+      "origin": "Original neighborhood exterior geometry and documented 2025 Patterson ground, see docs/neighborhood-exterior-closeout-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/neighborhood-exterior-closeout-review/site.json": {
+      "bytes": 5778,
+      "sha256": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2",
+      "license": "CC-BY-4.0",
+      "origin": "Original neighborhood exterior geometry and documented 2025 Patterson ground, see docs/neighborhood-exterior-closeout-2026-11-26.md."
     }
   },
   "additional_sources": [

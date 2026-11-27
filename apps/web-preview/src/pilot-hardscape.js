@@ -61,7 +61,7 @@ function stageCut(root, cut) {
   return { geometry, index: new BufferAttribute(index, 1) };
 }
 
-function sampleSurface(mesh, bounds) {
+export function sampleSurface(mesh, bounds) {
   const ray = new Raycaster();
   const from = new Vector3();
   const down = new Vector3(0, -1, 0);
