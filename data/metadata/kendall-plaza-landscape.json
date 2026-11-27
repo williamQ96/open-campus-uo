@@ -1253,7 +1253,8 @@
       "freestanding_group_nominal_height_range_m": [
         0.61,
         1.83
-      ]
+      ],
+      "freestanding_group_boulder_count": 4
     },
     "installation_views": [
       {
@@ -1350,6 +1351,12 @@
         -464.5
       ],
       "notes": "The same traces recur in 2017 and 2021. The current screen uses the 2025 tile without shifting older imagery into place. Aerial positions are estimates. The field report point is about five metres from the northern pavement candidate."
+    },
+    "state_catalogue": "https://www.publicartarchive.org/art/Unity-and-Harmony/6738ad5f",
+    "reuse_record": {
+      "statute": "https://www.oregonlegislature.gov/bills_laws/ors/ors359.html",
+      "reference": "ORS 359.355",
+      "status": "The commission is confirmed by the College and artist. A transferable artwork reproduction license remains to be identified. The campus installation photographs are references for location and screening."
     }
   },
   "south_lawn": {

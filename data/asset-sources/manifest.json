@@ -2352,10 +2352,10 @@
       "origin": "Original Marlatt and Willamette riverfront shell, roof, wall and approach meshes."
     },
     "apps/web-preview/public/scene/pilot-furnishings-l2.glb": {
-      "bytes": 745672,
-      "sha256": "90516efda69a3420035865c955dadfa1d85f63dd5f1fb932da3c707c4497a286",
+      "bytes": 854668,
+      "sha256": "2668ac89a5318eb83aa22980758d5ac81386504353a5687dcd898b57cffcdbe2",
       "license": "CC-BY-4.0",
-      "origin": "Original pilot bench, acorn lamp and rack geometry informed by university and manufacturer specifications. Authored approximate locations. The three-hoop rack reuses the separately archived original model. No reference imagery is embedded."
+      "origin": "Original pilot bench, acorn lamp and rack geometry informed by university and manufacturer specifications. Authored approximate locations. The three-hoop rack reuses the separately archived original model. No reference imagery is embedded. Six original lamp placements follow the 2007 Memorial Quad survey and Lane County imagery. See docs/memorial-quad-lamps-2026-11-27.md."
     },
     "apps/web-preview/public/scene/millrace-fairmount-exterior-review/site.json": {
       "bytes": 7122,
@@ -3256,6 +3256,30 @@
       "bytes": 437540,
       "license": "CC-BY-4.0",
       "origin": "Original modeling of Memorial Quad sidewalk plaque forms and abbreviated relief lettering from the UO landscape survey and National Register record. See docs/memorial-quad-plaques-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/pioneer-cemetery-inner-grid-review/site.json": {
+      "bytes": 1079,
+      "sha256": "5e2823f4fbefbe161d89aef13f57c5a8ee64112e532ba54b641466fa7483feac",
+      "license": "CC-BY-4.0",
+      "origin": "Original Pioneer Cemetery interior curb traces, markers, grass strips and low shrubs informed by Lane County imagery and the historic plat. See docs/pioneer-cemetery-inner-grid-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/pioneer-cemetery-inner-grid-review/site.glb": {
+      "bytes": 259448,
+      "sha256": "374074b1103013c2735f7803539be7bf095b447623ced90a1140cbb595ca4821",
+      "license": "CC-BY-4.0",
+      "origin": "Original Pioneer Cemetery interior curb traces, markers, grass strips and low shrubs informed by Lane County imagery and the historic plat. See docs/pioneer-cemetery-inner-grid-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/clinical-dropoff-landscape-review/site.json": {
+      "bytes": 1600,
+      "sha256": "8b9cceb7b1347d647dde7b71473565f9d6636d02ec9ff6fa1465818bd96ba212",
+      "license": "CC-BY-4.0",
+      "origin": "Original HEDCO south drop-off surface, Lot 19 crossing, planted islands and sidewalk geometry, informed by Lane County imagery and campus sources. See docs/clinical-dropoff-landscape-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/clinical-dropoff-landscape-review/site.glb": {
+      "bytes": 565888,
+      "sha256": "e506cf6bcee9a2e6012ae009be239d761a24f25bed86822cd6a4d54033505839",
+      "license": "CC-BY-4.0",
+      "origin": "Original HEDCO south drop-off surface, Lot 19 crossing, planted islands and sidewalk geometry, informed by Lane County imagery and campus sources. See docs/clinical-dropoff-landscape-2026-11-27.md."
     }
   },
   "additional_sources": [

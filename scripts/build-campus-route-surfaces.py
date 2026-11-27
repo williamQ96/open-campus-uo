@@ -16,6 +16,7 @@ education = import_module("build-kincaid-education-landscape")
 kendall = import_module("build-kendall-plaza-landscape")
 knight_north = import_module("build-knight-north-plaza")
 plc_east = import_module("build-plc-east-court")
+dropoff = import_module("build-clinical-dropoff-landscape")
 root = green.site.root
 scene = green.site.scene
 
@@ -58,6 +59,13 @@ def kendall_coverage(spec):
     brick, concrete, _, _ = kendall.footprints(spec, buildings)
     south_paths, gravel_access, _, _, _ = kendall.south_lawn_footprints(spec, buildings)
     return unary_union([brick, concrete, south_paths, gravel_access])
+
+
+def dropoff_coverage(spec):
+    manifest, _, _ = green.east.pinned_site(scene, spec)
+    buildings, _ = green.east.build_blockers(scene, spec, manifest, box(*spec["extent"]))
+    _, sidewalks, crossings, _ = dropoff.footprints(spec, buildings)
+    return sidewalks.union(crossings)
 
 
 def encode_coverage(package, footprint):
@@ -115,6 +123,10 @@ def main():
             kendall_coverage(
                 green.site.read(metadata / "kendall-plaza-landscape.json")
             ),
+        ),
+        encode_coverage(
+            dropoff.PACKAGE,
+            dropoff_coverage(green.site.read(metadata / "clinical-dropoff-landscape.json")),
         ),
     ]
     args.output.write_bytes((json.dumps(rows, separators=(",", ":")) + "\n").encode())

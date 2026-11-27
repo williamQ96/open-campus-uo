@@ -1459,7 +1459,7 @@
   ],
   "pilot_furnishings": {
     "url": "pilot-furnishings-l2.glb",
-    "sha256": "90516efda69a3420035865c955dadfa1d85f63dd5f1fb932da3c707c4497a286",
+    "sha256": "2668ac89a5318eb83aa22980758d5ac81386504353a5687dcd898b57cffcdbe2",
     "collision_boxes_enu_m": [
       [
         -579.762,
@@ -1516,28 +1516,28 @@
         -67.18
       ],
       [
-        -573.255,
-        -171.255,
-        -572.745,
-        -170.745
+        -565.175,
+        -178.795,
+        -564.665,
+        -178.285
       ],
       [
-        -530.255,
-        -170.255,
-        -529.745,
-        -169.745
+        -528.155,
+        -178.995,
+        -527.645,
+        -178.485
       ],
       [
-        -574.755,
-        -100.255,
-        -574.245,
-        -99.745
+        -564.475,
+        -84.375,
+        -563.965,
+        -83.865
       ],
       [
-        -530.255,
-        -36.255,
-        -529.745,
-        -35.745
+        -527.225,
+        -39.355,
+        -526.715,
+        -38.845
       ],
       [
         -430.255,
@@ -1582,12 +1582,25 @@
         -9.745
       ],
       [
+        -564.855,
+        -125.835,
+        -564.345,
+        -125.325
+      ],
+      [
+        -564.725,
+        -160.435,
+        -564.215,
+        -159.925
+      ],
+      [
         -473.0344,
         -65.23019,
         -470.9656,
         -64.76981
       ]
-    ]
+    ],
+    "placement_count": 23
   },
   "furniture_patch_url": "pilot-bench-back-suppression.json",
   "furniture_patch_sha256": "1792365814eed96132310063c77c86f949b440df0727c68be319ce328dad7c5f",
@@ -2246,5 +2259,13 @@
   "memorial_quad_plaques_site": {
     "url": "memorial-quad-plaques-review/site.json",
     "sha256": "cfb83ddc4140d0693e6e364e501046b6bfc968526fe9f7e41e0054f5f4c92c51"
+  },
+  "clinical_dropoff_landscape_site": {
+    "url": "clinical-dropoff-landscape-review/site.json",
+    "sha256": "8b9cceb7b1347d647dde7b71473565f9d6636d02ec9ff6fa1465818bd96ba212"
+  },
+  "pioneer_cemetery_inner_grid_site": {
+    "url": "pioneer-cemetery-inner-grid-review/site.json",
+    "sha256": "5e2823f4fbefbe161d89aef13f57c5a8ee64112e532ba54b641466fa7483feac"
   }
 }

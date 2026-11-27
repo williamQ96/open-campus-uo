@@ -6,6 +6,13 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - Pioneer Cemetery 墓区、HEDCO 落客区和 Memorial Quad 路灯
+
+- 补建 Pioneer Cemetery 的 15 组外露边石、40 处无名碑形、三段草径和两处低植，九处较高碑形加入碰撞。[墓区复核](docs/pioneer-cemetery-inner-grid-2026-11-27.md)。
+- 补建 HEDCO 南落客区、Lot 19、四处路缘种植岛和两处条纹过街，新增 26 条步行导航边，连通 Kendall Plaza、过街设施及 Clinical Services 北侧步道。[落客区复核](docs/clinical-dropoff-landscape-2026-11-27.md)。
+- 配准 Memorial Quad 至 Knight Library 前广场的六盏行人灯，替换四个推估灯位。灯具尺寸、局部坡度和植物种类采用估算。[灯位复核](docs/memorial-quad-lamps-2026-11-27.md)。
+- 本次 GitHub Pages 发布沿用 610 个有效外观 ID。部署前的桌面和手机生产预览均逐一匹配 610 个 ID 与加载的几何，分别记录 382 项成功响应。抽检的 59 份资源与构建文件的 SHA-256 一致。两组新增场地、墓园基础模型、室外家具及步行覆盖均可按相同字节重新导出。格式检查、生产构建、199 项单元测试、查看器校验和 505 条资产归档检查通过。
+
 ## 2026-11-27 - 校正 610 模型发布版的西南景观回退测试
 
 - 发布版中，Southwest Campus Green、Kincaid 或 Kendall 景观资源加载失败时均保留 610 个可选外观。修正三条沿用研究版 Annex 数量的断言。其余 19 项针对性浏览器测试通过，修正后的三项已重跑通过。本次更新测试断言。

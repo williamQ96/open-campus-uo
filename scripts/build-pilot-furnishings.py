@@ -127,7 +127,11 @@ def build_lamp(row, materials):
     _, metal, glass = materials
     heights = support_heights(row)
     grade = max(heights)
-    base = min(heights) - grade - 0.028
+    lowest_support = min(heights)
+    if row.get("memorial_quad_registration"):
+        # Keep the footing grounded when the Quad or apron surface falls back.
+        lowest_support = min(lowest_support, *(p["terrain_z_m"] for p in row["supports"]))
+    base = lowest_support - grade - 0.028
     post = (
         (0, base),
         (0.252, base),
@@ -226,6 +230,32 @@ def build_rack(row, materials):
         )
 
 
+def memorial_quad_routes(spec):
+    sources = spec.get("memorial_quad_sources")
+    if sources is None:
+        return []
+    quad_path = SCENE / "paving-corridors-l2/surfaces.json"
+    apron_path = SCENE / "knight-north-plaza-review/site.json"
+    if (
+        sha(quad_path) != sources["quad_sha256"]
+        or sha(apron_path) != sources["knight_apron_sha256"]
+    ):
+        raise ValueError("Memorial Quadrangle furnishing supports changed")
+    quad, apron = (json.loads(path.read_bytes()) for path in (quad_path, apron_path))
+    for descriptor in (quad, apron):
+        if sha(SCENE / descriptor["url"]) != descriptor["sha256"]:
+            raise ValueError("Memorial Quadrangle paving mesh changed")
+    routes = quad["quad_routes"]
+    nodes = routes["nodes"]
+    edges = [LineString((nodes[a], nodes[b])) for a, b, *_ in routes["edges"]]
+    for path in apron["walkable_ground"]["paths"]:
+        points = [path["anchor_enu_m"], *path["points_enu_m"]]
+        if "end_enu_m" in path:
+            points.append(path["end_enu_m"])
+        edges.extend(LineString((a, b)) for a, b in zip(points, points[1:]))
+    return edges
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, required=True)
@@ -257,6 +287,7 @@ def main():
     if len(edges) != spec["navigation_edge_count"]:
         raise ValueError("Navigation graph edge count changed")
     streets = STRtree(edges)
+    quad_routes = STRtree(memorial_quad_routes(spec))
     manifest = json.loads((SCENE / "manifest.json").read_bytes())
     roads = STRtree(
         [
@@ -285,6 +316,10 @@ def main():
         clearance = area.buffer(0.6, join_style="mitre")
         if streets.query(clearance, predicate="intersects").size:
             raise ValueError(f"{row['id']} blocks an existing route")
+        if row.get("memorial_quad_registration") and quad_routes.query(
+            clearance, predicate="intersects"
+        ).size:
+            raise ValueError(f"{row['id']} blocks a refined Memorial Quad route")
         if roads.query(clearance, predicate="intersects").size:
             raise ValueError(f"{row['id']} enters the modeled road surface")
         if any(area.distance(other) < 0.84 for other in occupied):

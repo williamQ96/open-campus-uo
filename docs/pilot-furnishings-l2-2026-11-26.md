@@ -2,6 +2,8 @@
 
 The default scene replaces the pilot furniture layer with nine wood benches, eleven dark-green acorn lights and one three-hoop rack. PROP-01 covers these representative pilot furnishings. The asset records campus design cues and modeled positions. A current physical inventory, surveyed offsets, rack count and fixture photometry remain open.
 
+The later Memorial Quadrangle review registers six lamps in place of four inferred positions. The updated pilot set has 23 furnishings. [Memorial Quad placement and verification](memorial-quad-lamps-2026-11-27.md).
+
 ## Shapes and placement
 
 - Each bench is 1.524 m wide and about 0.97 m tall, with separate seat and back slats, shaped armrests, wood legs and adjustable anchor shoes. Seat height is about 0.43 m above the highest sampled support. The campus recommends a five-foot anchored Parkside bench. [UO exterior improvements](https://cpfm.uoregon.edu/sites/default/files/2026-05/_div_32_exterior_improvements_050426.pdf) · [Gardenside catalog](https://www.gardenside.com/Gardenside-2011-Catalog.pdf).

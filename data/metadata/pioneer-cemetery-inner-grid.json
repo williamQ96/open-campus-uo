@@ -1,0 +1,1668 @@
+{
+  "pinned_sources": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "campus": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803"
+  },
+  "cemetery_descriptor_sha256": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
+  "references": {
+    "orthophotos": {
+      "extent_enu_m": [
+        -573.0,
+        -622.0,
+        -284.0,
+        -286.0
+      ],
+      "sources": [
+        {
+          "path": "lane-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&bboxSR=3740&imageSR=3740&size=2312%2C2688&layers=show%3A57&format=png32",
+          "sha256": "2a505962ffe72adbf83bed4ee6ba248d4cc85037e8c98e6609cd06a13cf55fe4",
+          "size": 11466248
+        },
+        {
+          "path": "lane-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&bboxSR=3740&imageSR=3740&size=2312%2C2688&layers=show%3A26&format=png32",
+          "sha256": "8efeb1b05ee3d09a57f9600ae4ded89377b816069afae8e974900593207f8d66",
+          "size": 10915217
+        },
+        {
+          "path": "lane-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&bboxSR=3740&imageSR=3740&size=2312%2C2688&layers=show%3A29&format=png32",
+          "sha256": "1cd0d194f62aa32d7b1a10823ddc440cd42db48fb8f4effd0f3bb2694e9eb950",
+          "size": 11323656
+        },
+        {
+          "path": "county-parcels.json",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+          "sha256": "d3b248a01e834eb87b590e3c758935e18e416bd617c1953b0c812790927f0398",
+          "size": 27980
+        },
+        {
+          "path": "lane-2023.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&bboxSR=3740&imageSR=3740&size=2312%2C2688&layers=show%3A2&format=png32",
+          "sha256": "332cd2fb420f080207b5fd2d3a8187b147f4e59a641c92f2dc5afa7869bf9945",
+          "size": 11191937
+        }
+      ]
+    },
+    "historic_plat": "https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669#page=36",
+    "register_description": "https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669#page=7",
+    "screen": "Trace exposed edges on the 2025 and 2023 imagery, compare 2021 and 2017 where visible, and dissolve unsupported segments.",
+    "rejected_candidates": "The north-west edge duplicates an existing curb. Two stone candidates duplicate existing markers, five crowd a curb and three northern points remain screened by canopy in the comparison dates. One additional pale point falls inside a tree-base clearance when modeled."
+  },
+  "areas": [
+    {
+      "id": "north-interior",
+      "crop_origin_enu_m": [
+        -504,
+        -325
+      ],
+      "pixels_per_m": 12
+    },
+    {
+      "id": "walton-cherry",
+      "crop_origin_enu_m": [
+        -419,
+        -488
+      ],
+      "pixels_per_m": 12
+    },
+    {
+      "id": "dorris-northeast",
+      "crop_origin_enu_m": [
+        -413,
+        -344
+      ],
+      "pixels_per_m": 12
+    }
+  ],
+  "curbs": [
+    {
+      "id": "north-02",
+      "area": "north-interior",
+      "points_enu_m": [
+        [
+          -476.667,
+          -338.583
+        ],
+        [
+          -476.667,
+          -333.083
+        ],
+        [
+          -471.333,
+          -333.083
+        ]
+      ],
+      "aerial_years": [
+        2017,
+        2023
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          328,
+          163
+        ],
+        [
+          328,
+          97
+        ],
+        [
+          392,
+          97
+        ]
+      ]
+    },
+    {
+      "id": "north-03",
+      "area": "north-interior",
+      "points_enu_m": [
+        [
+          -468.083,
+          -347.5
+        ],
+        [
+          -468.083,
+          -341.917
+        ],
+        [
+          -462.083,
+          -341.917
+        ]
+      ],
+      "aerial_years": [
+        2017,
+        2023
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          431,
+          270
+        ],
+        [
+          431,
+          203
+        ],
+        [
+          503,
+          203
+        ]
+      ]
+    },
+    {
+      "id": "north-04",
+      "area": "north-interior",
+      "points_enu_m": [
+        [
+          -458.833,
+          -341.75
+        ],
+        [
+          -452.917,
+          -341.75
+        ],
+        [
+          -452.917,
+          -347.833
+        ],
+        [
+          -458.833,
+          -347.833
+        ]
+      ],
+      "aerial_years": [
+        2017,
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          542,
+          201
+        ],
+        [
+          613,
+          201
+        ],
+        [
+          613,
+          274
+        ],
+        [
+          542,
+          274
+        ]
+      ]
+    },
+    {
+      "id": "north-05",
+      "area": "north-interior",
+      "points_enu_m": [
+        [
+          -468.083,
+          -356.667
+        ],
+        [
+          -468.083,
+          -350.667
+        ],
+        [
+          -462.0,
+          -350.667
+        ],
+        [
+          -462.0,
+          -356.667
+        ]
+      ],
+      "aerial_years": [
+        2017,
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          431,
+          380
+        ],
+        [
+          431,
+          308
+        ],
+        [
+          504,
+          308
+        ],
+        [
+          504,
+          380
+        ]
+      ]
+    },
+    {
+      "id": "north-06",
+      "area": "north-interior",
+      "points_enu_m": [
+        [
+          -450.0,
+          -350.833
+        ],
+        [
+          -447.333,
+          -350.833
+        ],
+        [
+          -447.333,
+          -356.417
+        ],
+        [
+          -450.0,
+          -356.417
+        ]
+      ],
+      "aerial_years": [
+        2017,
+        2023
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          648,
+          310
+        ],
+        [
+          680,
+          310
+        ],
+        [
+          680,
+          377
+        ],
+        [
+          648,
+          377
+        ]
+      ]
+    },
+    {
+      "id": "mid-01",
+      "area": "walton-cherry",
+      "points_enu_m": [
+        [
+          -384.417,
+          -502.0
+        ],
+        [
+          -378.083,
+          -502.0
+        ],
+        [
+          -378.083,
+          -495.5
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          415,
+          168
+        ],
+        [
+          491,
+          168
+        ],
+        [
+          491,
+          90
+        ]
+      ]
+    },
+    {
+      "id": "mid-02",
+      "area": "walton-cherry",
+      "points_enu_m": [
+        [
+          -392.833,
+          -507.75
+        ],
+        [
+          -386.667,
+          -507.75
+        ],
+        [
+          -386.667,
+          -504.667
+        ],
+        [
+          -389.5,
+          -504.667
+        ]
+      ],
+      "aerial_years": [
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          314,
+          237
+        ],
+        [
+          388,
+          237
+        ],
+        [
+          388,
+          200
+        ],
+        [
+          354,
+          200
+        ]
+      ],
+      "registration_note": "The last visible segment ends before the retained tree stem at [-390.175, -504.709]."
+    },
+    {
+      "id": "mid-03",
+      "area": "walton-cherry",
+      "points_enu_m": [
+        [
+          -392.583,
+          -523.583
+        ],
+        [
+          -386.75,
+          -523.583
+        ],
+        [
+          -386.75,
+          -513.667
+        ],
+        [
+          -392.25,
+          -513.667
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          317,
+          427
+        ],
+        [
+          387,
+          427
+        ],
+        [
+          387,
+          308
+        ],
+        [
+          321,
+          308
+        ]
+      ]
+    },
+    {
+      "id": "mid-04",
+      "area": "walton-cherry",
+      "points_enu_m": [
+        [
+          -384.167,
+          -522.75
+        ],
+        [
+          -384.167,
+          -513.833
+        ],
+        [
+          -378.083,
+          -513.833
+        ],
+        [
+          -378.083,
+          -523.0
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          418,
+          417
+        ],
+        [
+          418,
+          310
+        ],
+        [
+          491,
+          310
+        ],
+        [
+          491,
+          420
+        ]
+      ]
+    },
+    {
+      "id": "mid-05",
+      "area": "walton-cherry",
+      "points_enu_m": [
+        [
+          -384.167,
+          -533.833
+        ],
+        [
+          -384.167,
+          -526.333
+        ],
+        [
+          -378.333,
+          -526.333
+        ],
+        [
+          -378.333,
+          -531.833
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          418,
+          550
+        ],
+        [
+          418,
+          460
+        ],
+        [
+          488,
+          460
+        ],
+        [
+          488,
+          526
+        ]
+      ]
+    },
+    {
+      "id": "mid-06",
+      "area": "walton-cherry",
+      "points_enu_m": [
+        [
+          -366.5,
+          -533.833
+        ],
+        [
+          -366.5,
+          -526.333
+        ],
+        [
+          -360.5,
+          -526.333
+        ],
+        [
+          -360.5,
+          -533.833
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          630,
+          550
+        ],
+        [
+          630,
+          460
+        ],
+        [
+          702,
+          460
+        ],
+        [
+          702,
+          550
+        ]
+      ]
+    },
+    {
+      "id": "mid-07",
+      "area": "walton-cherry",
+      "points_enu_m": [
+        [
+          -356.667,
+          -523.5
+        ],
+        [
+          -351.917,
+          -523.583
+        ],
+        [
+          -351.917,
+          -517.583
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          748,
+          426
+        ],
+        [
+          805,
+          427
+        ],
+        [
+          805,
+          355
+        ]
+      ]
+    },
+    {
+      "id": "dorris-01",
+      "area": "dorris-northeast",
+      "points_enu_m": [
+        [
+          -391.833,
+          -357.167
+        ],
+        [
+          -386.083,
+          -357.167
+        ],
+        [
+          -386.083,
+          -351.0
+        ],
+        [
+          -390.0,
+          -351.0
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          254,
+          158
+        ],
+        [
+          323,
+          158
+        ],
+        [
+          323,
+          84
+        ],
+        [
+          276,
+          84
+        ]
+      ]
+    },
+    {
+      "id": "dorris-02",
+      "area": "dorris-northeast",
+      "points_enu_m": [
+        [
+          -392.167,
+          -368.417
+        ],
+        [
+          -392.083,
+          -360.0
+        ],
+        [
+          -386.583,
+          -360.0
+        ]
+      ],
+      "aerial_years": [
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          250,
+          293
+        ],
+        [
+          251,
+          192
+        ],
+        [
+          317,
+          192
+        ]
+      ]
+    },
+    {
+      "id": "dorris-03",
+      "area": "dorris-northeast",
+      "points_enu_m": [
+        [
+          -400.0,
+          -369.917
+        ],
+        [
+          -394.917,
+          -369.917
+        ],
+        [
+          -394.917,
+          -361.75
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb",
+      "map_pixel_coords": [
+        [
+          156,
+          311
+        ],
+        [
+          217,
+          311
+        ],
+        [
+          217,
+          213
+        ]
+      ]
+    }
+  ],
+  "markers": [
+    {
+      "id": "north-interior-05",
+      "area": "north-interior",
+      "position_enu_m": [
+        -458.333,
+        -342.833
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        548,
+        214
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-06",
+      "area": "north-interior",
+      "position_enu_m": [
+        -458.333,
+        -343.833
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        548,
+        226
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-07",
+      "area": "north-interior",
+      "position_enu_m": [
+        -458.25,
+        -344.917
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.4,
+      "height_m": 0.44,
+      "silhouette": "upright",
+      "source_pixel": [
+        549,
+        239
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-08",
+      "area": "north-interior",
+      "position_enu_m": [
+        -458.333,
+        -346.0
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        548,
+        252
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-09",
+      "area": "north-interior",
+      "position_enu_m": [
+        -458.333,
+        -347.0
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        548,
+        264
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-10",
+      "area": "north-interior",
+      "position_enu_m": [
+        -456.167,
+        -344.75
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        574,
+        237
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-11",
+      "area": "north-interior",
+      "position_enu_m": [
+        -465.0,
+        -353.667
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        468,
+        344
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-12",
+      "area": "north-interior",
+      "position_enu_m": [
+        -450.167,
+        -342.75
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        646,
+        213
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-13",
+      "area": "north-interior",
+      "position_enu_m": [
+        -449.833,
+        -337.917
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        650,
+        155
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-14",
+      "area": "north-interior",
+      "position_enu_m": [
+        -443.667,
+        -336.083
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        724,
+        133
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-15",
+      "area": "north-interior",
+      "position_enu_m": [
+        -443.667,
+        -327.0
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.4,
+      "height_m": 0.44,
+      "silhouette": "upright",
+      "source_pixel": [
+        724,
+        24
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-interior-16",
+      "area": "north-interior",
+      "position_enu_m": [
+        -437.083,
+        -327.583
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        803,
+        31
+      ],
+      "aerial_years_reviewed": [
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-01",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -379.75,
+        -500.417
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        471,
+        149
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-02",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -389.917,
+        -506.583
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        349,
+        223
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-03",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -387.083,
+        -505.583
+      ],
+      "width_m": 0.46,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        383,
+        211
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-04",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -387.083,
+        -507.25
+      ],
+      "width_m": 0.46,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        383,
+        231
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-05",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -398.917,
+        -514.417
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.4,
+      "height_m": 0.44,
+      "silhouette": "upright",
+      "source_pixel": [
+        241,
+        317
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-07",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -392.417,
+        -519.583
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        319,
+        379
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-08",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -389.667,
+        -522.417
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        352,
+        413
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-12",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -380.667,
+        -522.25
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        460,
+        411
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-13",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -382.75,
+        -529.583
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        435,
+        499
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-14",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -379.667,
+        -528.167
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.4,
+      "height_m": 0.44,
+      "silhouette": "upright",
+      "source_pixel": [
+        472,
+        482
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-15",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -381.083,
+        -532.083
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        455,
+        529
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-16",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -379.083,
+        -530.917
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.4,
+      "height_m": 0.44,
+      "silhouette": "upright",
+      "source_pixel": [
+        479,
+        515
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-17",
+      "area": "walton-cherry",
+      "position_enu_m": [
+        -363.417,
+        -531.167
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        667,
+        518
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-01",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -391.75,
+        -355.75
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        255,
+        141
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-02",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -389.333,
+        -354.417
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        284,
+        125
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-03",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -382.417,
+        -353.083
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        367,
+        109
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-04",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -379.833,
+        -352.333
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        398,
+        100
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-05",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -379.833,
+        -355.583
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        398,
+        139
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-06",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -374.0,
+        -351.917
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        468,
+        95
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-07",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -373.833,
+        -355.083
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        470,
+        133
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-08",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -373.917,
+        -356.583
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        469,
+        151
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-09",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -400.25,
+        -362.0
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        153,
+        216
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-10",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -400.167,
+        -363.0
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        154,
+        228
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-11",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -399.917,
+        -364.917
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        157,
+        251
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-12",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -400.083,
+        -366.833
+      ],
+      "width_m": 0.54,
+      "depth_m": 0.5,
+      "height_m": 0.25,
+      "silhouette": "low",
+      "source_pixel": [
+        155,
+        274
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-13",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -400.0,
+        -368.667
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.5,
+      "height_m": 0.98,
+      "silhouette": "upright",
+      "source_pixel": [
+        156,
+        296
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-14",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -397.25,
+        -368.417
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        189,
+        293
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "dorris-northeast-15",
+      "area": "dorris-northeast",
+      "position_enu_m": [
+        -388.333,
+        -364.75
+      ],
+      "width_m": 0.66,
+      "depth_m": 0.46,
+      "height_m": 0.74,
+      "silhouette": "upright",
+      "source_pixel": [
+        296,
+        249
+      ],
+      "aerial_years_reviewed": [
+        2023,
+        2025
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "north-west-exposed",
+      "centerline_enu_m": [
+        [
+          -487.94,
+          -331.87
+        ],
+        [
+          -484.3,
+          -331.91
+        ],
+        [
+          -478.1,
+          -331.82
+        ],
+        [
+          -472.8,
+          -331.51
+        ],
+        [
+          -470.2,
+          -331.18
+        ]
+      ],
+      "width_m": 1.27,
+      "aerial_years": [
+        2017,
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "north-east-exposed",
+      "centerline_enu_m": [
+        [
+          -460.7,
+          -330.85
+        ],
+        [
+          -453.3,
+          -330.64
+        ],
+        [
+          -446.6,
+          -331.03
+        ],
+        [
+          -439.7,
+          -331.65
+        ],
+        [
+          -433.2,
+          -332.15
+        ]
+      ],
+      "width_m": 1.23,
+      "aerial_years": [
+        2017,
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "id": "walton-cherry-plot-seam",
+      "centerline_enu_m": [
+        [
+          -392.5,
+          -524.58
+        ],
+        [
+          -386.7,
+          -524.57
+        ],
+        [
+          -381.2,
+          -524.63
+        ],
+        [
+          -376.9,
+          -524.9
+        ]
+      ],
+      "width_m": 1.31,
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ]
+    }
+  ],
+  "low_shrubs": [
+    {
+      "id": "north-plot-edge",
+      "position_enu_m": [
+        -442.05,
+        -343.6
+      ],
+      "spread_m": [
+        0.62,
+        0.88
+      ],
+      "height_m": 0.49,
+      "aerial_years": [
+        2017,
+        2021,
+        2023
+      ]
+    },
+    {
+      "id": "walton-plot-edge",
+      "position_enu_m": [
+        -373.9,
+        -491.65
+      ],
+      "spread_m": [
+        0.79,
+        0.87
+      ],
+      "height_m": 0.53,
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ]
+    }
+  ],
+  "notes": "The short tracks follow exposed mown or worn grass surfaces. Heights, stone profiles and shrub species are representative. Marker identities are anonymous.",
+  "source_context_tree_metadata_sha256": "56b6fbb9e08c65f20e2a78d5ffca0f9a79d92ecabd49c888dda2f548286551e6"
+}

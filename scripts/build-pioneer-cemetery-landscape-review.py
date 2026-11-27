@@ -229,6 +229,27 @@ def branch_lengths(registered, paths, paving, obstacles):
     return lengths
 
 
+def plot_curb(parts, field, line, material):
+    points = list(line.coords)
+    for a, b in zip(points, points[1:]):
+        span = LineString([a, b])
+        count = max(1, int(np.ceil(span.length / 1.4)))
+        for i in range(count):
+            part = LineString(
+                [
+                    span.interpolate(i / count, normalized=True),
+                    span.interpolate((i + 1) / count, normalized=True),
+                ]
+            )
+            mesh = landscape.cap(
+                part.buffer(0.105, cap_style="flat"), -0.05, 0.14, material
+            )
+            mesh.vertices[:, 1] += [
+                ground_height(field, e, -z) for e, _, z in mesh.vertices
+            ]
+            parts.append(mesh)
+
+
 def internal_landscape(paving, details, field, spec, main_paths):
     curbs = []
     previous = spec["grave_plot_edges"]
@@ -245,23 +266,7 @@ def internal_landscape(paving, details, field, spec, main_paths):
         if index >= len(previous):
             assert all(curb.distance(existing) > 0.22 for existing in curbs)
         curbs.append(curb)
-        for a, b in zip(line.coords, list(line.coords)[1:]):
-            span = LineString([a, b])
-            count = max(1, int(np.ceil(span.length / 1.4)))
-            for i in range(count):
-                part = LineString(
-                    [
-                        span.interpolate(i / count, normalized=True),
-                        span.interpolate((i + 1) / count, normalized=True),
-                    ]
-                )
-                mesh = landscape.cap(
-                    part.buffer(0.105, cap_style="flat"), -0.05, 0.14, material
-                )
-                mesh.vertices[:, 1] += [
-                    ground_height(field, e, -z) for e, _, z in mesh.vertices
-                ]
-                details.append(mesh)
+        plot_curb(details, field, line, material)
     alleys = []
     for row in spec["inner_alleys"]:
         center = LineString(row["centerline_enu_m"])

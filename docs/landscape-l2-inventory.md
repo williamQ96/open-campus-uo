@@ -14,12 +14,14 @@
 | Pioneer Cemetery 的 Rankin Lane 南缘 | 已纳入 L2 发布 | 补建 East 18th 人行道、六组边石、十处无名墓碑、三株乔木和 27 条导航边。校正中东段草坡、西侧石墙和东南阶形收边。按协会图纸估放 597 区块的第五株 Charles Lawson 玫瑰。 |
 | Pioneer Cemetery 的 University Street 与 Rankin Lane 周界 | 已纳入 L2 发布 | 配准 1,839.82 平方米草坡、四处低矮种植、16 组外露边石、22 处无名碑形和 13.05 米矮墙。按矮墙修正 Southgate 西侧人行道及两处路径点。[周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#university-street-and-rankin-lane-perimeter) |
 | Pioneer Cemetery 的 Conger Lane、Shelley Lane 与图书馆接驳 | 已纳入 L2 发布 | 配准图书馆侧 197.42 平方米铺面、Conger 路线、短草径、两处低植、七组外露边石及 14 处无名碑形。四条分支新增 50 条导航边。[西北周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#conger-lane-shelley-lane-and-the-library-approach) |
+| Pioneer Cemetery 北部、Dorris 北侧与 Walton–Cherry 间墓区 | 纳入本次 L2 发布 | 多期航片配准 15 组外露边石、40 处无名碑形、三段共 60.94 米草径和两处低植。九处较高碑形加入碰撞，Walton–Cherry 一段边石避开已建模树干。树冠下的延续、碑形细节和植物种类仍待现场证据。[墓区复核](pioneer-cemetery-inner-grid-2026-11-27.md) |
 | Pioneer Cemetery 其余墓区 | 待细化 | 核对树冠遮挡的小巷、边石、历史玫瑰和边界乔木。 |
 | Southwest Campus Green、Knight Library 南侧平台与 Lot 20 | 已纳入 L2 发布 | 配准开敞草坪、南侧平台、11 处种植区、29 株登记树和 40 条导航边，补建停车路缘、无障碍标线、长椅、路灯和场地牌。《Trees of Knowledge》约 1.22 米高，已记录作品群位置。单件底座与可再发布几何待核对。[场地复核](southwest-campus-green-review-2026-11-27.md) |
 | 墓园与 Southwest Campus Green 的铺面导航接入 | 已纳入 L2 发布 | 五条曾走草地的端点连线已校正，同一组路线控制在建模铺面边缘 0.13 米配准容差内。已核对五组偏移落点的双向路线及北段 Risdon Lane 对照路线。[路线复核](southwest-campus-green-review-2026-11-27.md#paved-route-access) |
 | Kincaid Green 与 Lokey Education 庭院 | 已纳入 L2 发布 | 补建马蹄形步道、砖铺庭院、七处种植区、52 株登记树、四张长凳和三根灯杆，恢复五株历史道格拉斯杉和 31.40 米南侧有顶廊道。八条分支增加 45 条导航边。南亭与两段楼梯已建模，上门槛和细部为估算。[场地复核](kincaid-education-landscape-review-2026-11-27.md) |
 | Kendall Plaza 与 Education 南侧步道 | 已纳入 L2 发布 | 根据航片和激光点云补建三道混凝土阶台、花池、砖铺广场、两侧绕行步道和 25 株登记树。新增 30 条导航边，校正 Southwest Campus Green 途经阶台的旧连线。[场地复核](kendall-plaza-landscape-review-2026-11-27.md) |
 | Kendall Plaza 南草坪与砾石场地 | 已纳入 L2 发布 | 补建 279.98 平方米步道、51.98 平方米带收边砾石面、579.48 平方米草坪、三处植床、七株登记树和两盏代表性球罩灯。新增 21 条导航边，四条抽检路线通过铺面校验。[场地复核](kendall-plaza-landscape-review-2026-11-27.md#south-lawn-paths-and-gravel-setting) |
+| HEDCO 南落客区、Lot 19 与 Clinical Services 北侧步道 | 纳入本次 L2 发布 | 四期航片配准 1,858.69 平方米沥青、295.29 平方米步道、四个路缘种植岛、两个条纹过街口、停车导流标线和五枚方向箭头。26 条导航边连接 Kendall 南步道与停车区对侧。标线及路缘坡度为估算。[场地复核](clinical-dropoff-landscape-2026-11-27.md) |
 | Kendall Plaza 的《Unity and Harmony》 | 已配准南草坪作品位置 | 三期航片与校方照片配准两座石盆、中央有孔构件和砾石场地。下层广场标出两张石凳候选位置，单件身份、Clinical Services 点位和雕塑几何待核对。[作品复核](kendall-plaza-landscape-review-2026-11-27.md#unity-and-harmony) |
 | Knight Library 北广场与 Bailey 喷泉 | 已纳入 L2 发布 | 根据历史测绘、三期航片及 2026 年施工照片重建 875.78 平方米混凝土铺面、喷泉、四张石凳、三处植床与 14 条导航边。四株樱花的移除有记录，补植点位、新灯剖面及喷泉运行状态待核对。[场地复核](knight-north-plaza-review-2026-11-27.md) |
 | Memorial Quadrangle 南端步道与 Knight Library 接合 | 已纳入 L2 发布 | 三期航片和校方平面图配准南侧交叉步道、两侧直行道和北广场接合铺面。南端保留中央草坪。导航落点使用建模铺面边界，树冠挡住的末端分段和宽度为估算。[铺面复核](paving-corridors-l2-2026-11-26.md#memorial-quadrangle-south-walks-and-knight-library-apron) |
@@ -27,6 +29,7 @@
 | PLC 东庭院《Vigil》 | 已核对校方档案 | 校方 2025 年测绘确认《Vigil》为东庭院现存雕塑，接替 2008 年失窃的《The Falconer》。航片已配准底座和周边植床，底座剖面与雕塑本体仍待近期近照。[档案复核](plc-east-court-review-2026-11-27.md) |
 | Memorial Quad 的 Gilbert 与 Kincaid Field 铭牌 | 已纳入 L2 发布 | 按校方景观图和 Gilbert 铭牌档案照片补建北端两块嵌地铭牌及东侧 Kincaid Field 铭牌。各点位和尺寸采用近似配准，Kincaid Field 的排版为示意。[铭牌复核](memorial-quad-plaques-2026-11-27.md) |
 | Bailey 纪念橡树、树池与东侧步道 | 已纳入 L2 发布 | 校方 616 至 623 号八株树按现存树位建模。增设 26.45 平方米根区，沿树列外侧配准步道并恢复圆环北方交叉斜道。树干和树冠细部为估算。[树木与步道复核](memorial-quad-bailey-oaks-2026-11-27.md) |
+| Memorial Quad 与 Knight 北广场行人路灯 | 纳入本次 L2 发布 | 校方 2007 年景观图和至少两期航片交叉定位六处，以校方橡果灯标准建模。替换四个推估点，西侧横道灯位向北调整 1.20 米以留出通行空间。树冠遮挡的灯位和现存历史原件待核对。[灯位复核](memorial-quad-lamps-2026-11-27.md) |
 | 校园主道路、人行道及广场 | 已有代表性 L2，待逐处复核 | 139 条走廊已有注册铺装。按公共空间逐段核对路缘、过街线、台阶、扶手、道路标识和真实接合。 |
 | Gerlinger Field Green 草坪、步道和东侧边界 | 已纳入 L2 发布 | 恢复开敞草坪、六段铺装、南侧停车地坪、Annex 外梯、矮墙、标识、常春藤和十株登记树。楼梯、停车标线和植物尺寸采用估算。 |
 | Women’s Memorial Quad | 已纳入 L2 发布 | 配准重铺后的曲线步道、约 33 米台地墙、两段外梯和六张石凳。台阶与石凳尺寸为估计。 |

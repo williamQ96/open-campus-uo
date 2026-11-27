@@ -68,6 +68,7 @@ async function installPilotFurnishings(root, base, config) {
     const {
       url,
       sha256,
+      placement_count: placementCount = 21,
       collision_boxes_enu_m: boxes,
     } = config.pilot_furnishings;
     const original = root.getObjectByName("furniture");
@@ -84,7 +85,10 @@ async function installPilotFurnishings(root, base, config) {
       throw new Error("Source furniture batch changed.");
     if (
       !Array.isArray(boxes) ||
-      boxes.length !== 21 ||
+      !Number.isInteger(placementCount) ||
+      placementCount < 1 ||
+      placementCount > 64 ||
+      boxes.length !== placementCount ||
       boxes.some(
         (box) =>
           !Array.isArray(box) ||

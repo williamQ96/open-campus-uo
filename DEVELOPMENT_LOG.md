@@ -6,6 +6,13 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Pioneer Cemetery plots, HEDCO drop-off and Memorial Quad lamps
+
+- Add 15 exposed curb traces, 40 anonymous markers, three grass strips and two shrubs to Pioneer Cemetery. Nine taller markers register collision. [Plot review](docs/pioneer-cemetery-inner-grid-2026-11-27.md).
+- Model the HEDCO south drop-off, Lot 19, four planted islands and two marked crossings. Add 26 pedestrian edges from Kendall Plaza to the crossings and the Clinical Services north sidewalk. [Drop-off review](docs/clinical-dropoff-landscape-2026-11-27.md).
+- Register six pedestrian lamps along Memorial Quad and the Knight Library apron, replacing four inferred fixtures. Fixture dimensions, small grade transitions and plant species use estimates. [Lamp review](docs/memorial-quad-lamps-2026-11-27.md).
+- The GitHub Pages release keeps 610 active exterior IDs. Before deployment, fresh desktop and phone production previews each matched all 610 IDs to loaded geometry and recorded 382 successful resources. Fifty-nine served files match the build by SHA-256. Both landscape bundles, the parent cemetery mesh and descriptor, the pilot furnishings and the walking coverage reproduce byte for byte. Formatting, the production build, 199 unit tests, viewer pins and 505 asset archive records pass.
+
 ## 2026-11-27 - Align southwest fallback tests with the 610-model release
 
 - The Southwest Campus Green, Kincaid and Kendall failure scenarios each keep 610 selectable exteriors in the release. Correct the three assertions that expected the research-only Annex to disappear. All 19 other focused browser cases passed on the published scene build, and the three corrected cases passed on rerun. This change updates test expectations.

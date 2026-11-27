@@ -591,20 +591,37 @@
     },
     {
       "id": "lamp-01",
-      "kind": "lamp",
       "position_enu_m": [
-        -573,
-        -171
+        -564.92,
+        -178.54
       ],
+      "memorial_quad_registration": {
+        "location": "knight-apron-west",
+        "survey_map_size_px": [
+          734,
+          950
+        ],
+        "survey_symbol_px": [
+          172,
+          589
+        ],
+        "orthophoto_years": [
+          2017,
+          2021,
+          2023
+        ],
+        "observation": "Pale globe at the edge of the apron, partly screened by the oak crown."
+      },
+      "kind": "lamp",
       "size_en_m": [
         0.51,
         0.51
       ],
       "collision_enu_m": [
-        -573.255,
-        -171.255,
-        -572.745,
-        -170.745
+        -565.175,
+        -178.795,
+        -564.665,
+        -178.285
       ],
       "supports": [
         {
@@ -612,72 +629,86 @@
             0,
             0
           ],
-          "surface_z_m": 4.6221,
-          "surface": "landscape-paving",
-          "terrain_z_m": 4.5521
+          "surface_z_m": 5.0142,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 4.8624
         },
         {
           "offset_enu_m": [
             -0.22,
             0
           ],
-          "surface_z_m": 4.6134,
-          "surface": "landscape-paving",
-          "terrain_z_m": 4.5434
+          "surface_z_m": 5.0124,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 4.8604
         },
         {
           "offset_enu_m": [
             0.22,
             0
           ],
-          "surface_z_m": 4.6308,
-          "surface": "landscape-paving",
-          "terrain_z_m": 4.5608
+          "surface_z_m": 5.0165,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 4.8655
         },
         {
           "offset_enu_m": [
             0,
             -0.22
           ],
-          "surface_z_m": 4.6287,
-          "surface": "landscape-paving",
-          "terrain_z_m": 4.5587
+          "surface_z_m": 5.0228,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 4.871
         },
         {
           "offset_enu_m": [
             0,
             0.22
           ],
-          "surface_z_m": 4.6155,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 4.5455
+          "surface_z_m": 5.0056,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 4.8538
         }
       ],
       "prior_position_enu_m": [
-        -576,
-        -170
-      ],
-      "nearest_building_gap_m": 1.917,
-      "nearest_graph_edge_gap_m": 5.745,
-      "nearest_authored_approach_gap_m": 9.195,
-      "nearest_road_surface_gap_m": 51.829
+        -573,
+        -171
+      ]
     },
     {
       "id": "lamp-02",
-      "kind": "lamp",
       "position_enu_m": [
-        -530,
-        -170
+        -527.9,
+        -178.74
       ],
+      "memorial_quad_registration": {
+        "location": "knight-apron-east",
+        "survey_map_size_px": [
+          734,
+          950
+        ],
+        "survey_symbol_px": [
+          242,
+          588
+        ],
+        "orthophoto_years": [
+          2017,
+          2021,
+          2023,
+          2025
+        ],
+        "observation": "Pale globe and a northeast shadow near the east planting terrace."
+      },
+      "kind": "lamp",
       "size_en_m": [
         0.51,
         0.51
       ],
       "collision_enu_m": [
-        -530.255,
-        -170.255,
-        -529.745,
-        -169.745
+        -528.155,
+        -178.995,
+        -527.645,
+        -178.485
       ],
       "supports": [
         {
@@ -685,72 +716,90 @@
             0,
             0
           ],
-          "surface_z_m": 4.9932,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 4.9232
+          "surface_z_m": 5.178,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 5.027
         },
         {
           "offset_enu_m": [
             -0.22,
             0
           ],
-          "surface_z_m": 4.9897,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 4.9197
+          "surface_z_m": 5.1741,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 5.0231
         },
         {
           "offset_enu_m": [
             0.22,
             0
           ],
-          "surface_z_m": 4.9967,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 4.9267
+          "surface_z_m": 5.182,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 5.031
         },
         {
           "offset_enu_m": [
             0,
             -0.22
           ],
-          "surface_z_m": 4.9941,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 4.9241
+          "surface_z_m": 5.1822,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 5.0312
         },
         {
           "offset_enu_m": [
             0,
             0.22
           ],
-          "surface_z_m": 4.9919,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 4.9219
+          "surface_z_m": 5.1739,
+          "surface": "knight-north-plaza-paving",
+          "terrain_z_m": 5.0229
         }
       ],
       "prior_position_enu_m": [
         -530,
         -170
-      ],
-      "nearest_building_gap_m": 12.367,
-      "nearest_graph_edge_gap_m": 6.745,
-      "nearest_authored_approach_gap_m": 51.946,
-      "nearest_road_surface_gap_m": 94.825
+      ]
     },
     {
       "id": "lamp-03",
-      "kind": "lamp",
       "position_enu_m": [
-        -574.5,
-        -100
+        -564.22,
+        -84.12
       ],
+      "memorial_quad_registration": {
+        "location": "west-cross-walk",
+        "survey_map_size_px": [
+          734,
+          950
+        ],
+        "survey_symbol_px": [
+          172,
+          380
+        ],
+        "orthophoto_years": [
+          2017,
+          2021,
+          2023,
+          2025
+        ],
+        "observation": "Globe and shadow at the crossing, with a 1.20 m northward model offset from the aerial pick to clear the walkway.",
+        "aerial_pick_enu_m": [
+          -564.24,
+          -85.32
+        ]
+      },
+      "kind": "lamp",
       "size_en_m": [
         0.51,
         0.51
       ],
       "collision_enu_m": [
-        -574.755,
-        -100.255,
-        -574.245,
-        -99.745
+        -564.475,
+        -84.375,
+        -563.965,
+        -83.865
       ],
       "supports": [
         {
@@ -758,72 +807,85 @@
             0,
             0
           ],
-          "surface_z_m": 3.6174,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 3.5474
+          "surface_z_m": 3.4305,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.3605
         },
         {
           "offset_enu_m": [
             -0.22,
             0
           ],
-          "surface_z_m": 3.6167,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 3.5467
+          "surface_z_m": 3.4292,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.3592
         },
         {
           "offset_enu_m": [
             0.22,
             0
           ],
-          "surface_z_m": 3.6182,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 3.5482
+          "surface_z_m": 3.4316,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.3616
         },
         {
           "offset_enu_m": [
             0,
             -0.22
           ],
-          "surface_z_m": 3.6335,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 3.5635
+          "surface_z_m": 3.4333,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.3633
         },
         {
           "offset_enu_m": [
             0,
             0.22
           ],
-          "surface_z_m": 3.6151,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 3.5451
+          "surface_z_m": 3.4274,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.3574
         }
       ],
       "prior_position_enu_m": [
-        -576,
+        -574.5,
         -100
-      ],
-      "nearest_building_gap_m": 2.328,
-      "nearest_graph_edge_gap_m": 14.745,
-      "nearest_authored_approach_gap_m": 24.245,
-      "nearest_road_surface_gap_m": 49.981
+      ]
     },
     {
       "id": "lamp-04",
-      "kind": "lamp",
       "position_enu_m": [
-        -530,
-        -36
+        -526.97,
+        -39.1
       ],
+      "memorial_quad_registration": {
+        "location": "chapman-south",
+        "survey_map_size_px": [
+          734,
+          950
+        ],
+        "survey_symbol_px": [
+          251,
+          283
+        ],
+        "orthophoto_years": [
+          2021,
+          2023,
+          2025
+        ],
+        "observation": "Pale globe and northeast shadow beside the Chapman approach."
+      },
+      "kind": "lamp",
       "size_en_m": [
         0.51,
         0.51
       ],
       "collision_enu_m": [
-        -530.255,
-        -36.255,
-        -529.745,
-        -35.745
+        -527.225,
+        -39.355,
+        -526.715,
+        -38.845
       ],
       "supports": [
         {
@@ -831,55 +893,51 @@
             0,
             0
           ],
-          "surface_z_m": 2.5192,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 2.4492
+          "surface_z_m": 2.6237,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 2.5537
         },
         {
           "offset_enu_m": [
             -0.22,
             0
           ],
-          "surface_z_m": 2.5194,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 2.4494
+          "surface_z_m": 2.6208,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 2.5508
         },
         {
           "offset_enu_m": [
             0.22,
             0
           ],
-          "surface_z_m": 2.522,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 2.452
+          "surface_z_m": 2.6265,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 2.5565
         },
         {
           "offset_enu_m": [
             0,
             -0.22
           ],
-          "surface_z_m": 2.5238,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 2.4538
+          "surface_z_m": 2.6283,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 2.5583
         },
         {
           "offset_enu_m": [
             0,
             0.22
           ],
-          "surface_z_m": 2.5146,
-          "surface": "landscape-lawn",
-          "terrain_z_m": 2.4446
+          "surface_z_m": 2.619,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 2.549
         }
       ],
       "prior_position_enu_m": [
         -530,
         -36
-      ],
-      "nearest_building_gap_m": 9.383,
-      "nearest_graph_edge_gap_m": 21.745,
-      "nearest_authored_approach_gap_m": 10.229,
-      "nearest_road_surface_gap_m": 33.97
+      ]
     },
     {
       "id": "lamp-05",
@@ -1393,6 +1451,168 @@
       "nearest_road_surface_gap_m": 6.715
     },
     {
+      "id": "lamp-12",
+      "position_enu_m": [
+        -564.6,
+        -125.58
+      ],
+      "memorial_quad_registration": {
+        "location": "west-circle",
+        "survey_map_size_px": [
+          734,
+          950
+        ],
+        "survey_symbol_px": [
+          170,
+          464
+        ],
+        "orthophoto_years": [
+          2021,
+          2023
+        ],
+        "observation": "Pale globe and dark linear trace at the bend of the west walk and circle connector."
+      },
+      "kind": "lamp",
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -564.855,
+        -125.835,
+        -564.345,
+        -125.325
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 4.0312,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.9612
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 4.0295,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.9595
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 4.033,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.963
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 4.035,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.965
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 4.0275,
+          "surface": "quad-landscape-lawn",
+          "terrain_z_m": 3.9575
+        }
+      ]
+    },
+    {
+      "id": "lamp-13",
+      "position_enu_m": [
+        -564.47,
+        -160.18
+      ],
+      "memorial_quad_registration": {
+        "location": "west-oak-walk",
+        "survey_map_size_px": [
+          734,
+          950
+        ],
+        "survey_symbol_px": [
+          171,
+          548
+        ],
+        "orthophoto_years": [
+          2021,
+          2023
+        ],
+        "observation": "Pale globe against the west walk and tree shadows in both views."
+      },
+      "kind": "lamp",
+      "size_en_m": [
+        0.51,
+        0.51
+      ],
+      "collision_enu_m": [
+        -564.725,
+        -160.435,
+        -564.215,
+        -159.925
+      ],
+      "supports": [
+        {
+          "offset_enu_m": [
+            0,
+            0
+          ],
+          "surface_z_m": 4.6224,
+          "surface": "quad-landscape-paving",
+          "terrain_z_m": 4.5524
+        },
+        {
+          "offset_enu_m": [
+            -0.22,
+            0
+          ],
+          "surface_z_m": 4.6215,
+          "surface": "quad-landscape-paving",
+          "terrain_z_m": 4.5515
+        },
+        {
+          "offset_enu_m": [
+            0.22,
+            0
+          ],
+          "surface_z_m": 4.6233,
+          "surface": "quad-landscape-paving",
+          "terrain_z_m": 4.5533
+        },
+        {
+          "offset_enu_m": [
+            0,
+            -0.22
+          ],
+          "surface_z_m": 4.625,
+          "surface": "quad-landscape-paving",
+          "terrain_z_m": 4.555
+        },
+        {
+          "offset_enu_m": [
+            0,
+            0.22
+          ],
+          "surface_z_m": 4.6197,
+          "surface": "quad-landscape-paving",
+          "terrain_z_m": 4.5497
+        }
+      ]
+    },
+    {
       "id": "rack-01",
       "kind": "rack",
       "position_enu_m": [
@@ -1472,5 +1692,13 @@
     }
   ],
   "source_navigation_patch_sha256": "add89f7ac3f1ac40d8f725010dbb76ef0a9d66273996dc61d48535c6a42c5cfb",
-  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e"
+  "source_manifest_sha256": "3ecc78a974e55f8222c10c54d5d956711b05fa2fa89b5e03c81df8ce708e2b7e",
+  "memorial_quad_sources": {
+    "quad_sha256": "fd138b96a36bad1982d8a6bddcb09eb89f44aae00503347a31ff1e5dbdc16d22",
+    "knight_apron_sha256": "2c6bd50754d3c8e0fcc9025989d3e32e159143a703293b945468ddde70c2362b",
+    "survey": "https://cpfm.uoregon.edu/sites/default/files/memorial_quad_.pdf#page=2",
+    "historic_register": "https://npgallery.nps.gov/GetAsset/4fd6205f-6b0b-46bc-af4d-e4df6c8d9378#page=16",
+    "lighting_standard": "https://cpfm.uoregon.edu/sites/default/files/lighting_plan-2020.pdf#page=3",
+    "orthophotos": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer"
+  }
 }

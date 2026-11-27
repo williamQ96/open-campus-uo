@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test";
 import { exteriorCounts } from "./exterior-counts.js";
 
 const replacement = "pilot-furnishings-l2.glb";
+const placementCount = 23;
 const legacyDetails = [
   "pilot-bench-back-suppression.json",
   "pilot-bench-seat-suppression.json",
@@ -60,8 +61,8 @@ for (const width of [1440, 390]) {
     const mounted = page.waitForResponse((r) => r.url().endsWith(replacement));
     const actual = await inspect(page);
     expect(actual.counts).toEqual(exteriorCounts());
-    expect(actual.furnishings).toBe(21);
-    expect(actual.blocked).toEqual(Array(21).fill(true));
+    expect(actual.furnishings).toBe(placementCount);
+    expect(actual.blocked).toEqual(Array(placementCount).fill(true));
     expect(actual.open).toEqual(Array(5).fill(true));
     expect(actual.approachIds).toEqual(["context-b0103", "roof-8f611273"]);
     expect((await mounted).ok()).toBe(true);
@@ -83,7 +84,7 @@ test("bad furnishing bytes restore all baseline patches and clear the replacemen
   const actual = await inspect(page);
   expect(actual.counts).toEqual(exteriorCounts());
   expect(actual.furnishings).toBe(0);
-  expect(actual.blocked).toEqual(Array(21).fill(false));
+  expect(actual.blocked).toEqual(Array(placementCount).fill(false));
   expect(actual.open).toEqual(Array(5).fill(true));
   expect(
     legacyDetails.every((file) => actual.requests.has("/scene/" + file)),
