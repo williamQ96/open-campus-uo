@@ -6,6 +6,30 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Hayward midblock and East 15th landscape L2
+
+- Publish the Hayward south passage, Turf Fields 1 and 2, the Jane Sanders flag walk and the SRC east walkway. Connect the latter to East 15th, rebuild field markings and fencing, and suppress ten inferred trees across the two fields and their frontages. The divider stair still needs a close view to confirm tread and rail dimensions. [Hayward review](docs/hayward-midblock-review-2026-11-27.md).
+- Publish East 15th and Powell Plaza from University Street to Agate Street. The western crossings and eastern planted promenade connect the stadium entrances, SRC and Agate. The package adds 54 route edges, 62 recorded trees and representative plaza furniture, planting and gate details. [East 15th review](docs/east-fifteenth-hayward-review-2026-11-27.md).
+- Both packages reproduced byte for byte. Desktop and phone production previews each matched geometry to all 610 exterior IDs and loaded 366 tracked resources. Both returned a 373.06 m University Street–Agate route. The build, formatting, 197 unit tests, 11 focused browser tests, 489 archive checks and viewer pins passed. Publication targets the Pages workflow on main. [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
+## 2026-11-27 - East 15th and Powell Plaza (local)
+
+- Connect University Street, Straub, Onyx, the SRC frontage and Agate. Restore the western asphalt and paired-line crossings, then the planted paver promenade east of Onyx. Use 62 campus-inventory trees, staggered planting beds, eight benches and nine lamps. [Site review](docs/east-fifteenth-hayward-review-2026-11-27.md).
+- Register Powell Plaza's three tall flagpoles, curved stepped base, three information boards and 47.19 m of entrance fencing. The campus plan, dated aerials and photographs establish the arrangement. Material colors, flag fabric, furniture dimensions and plant shapes use estimates.
+- Add 54 navigation edges across eight branches. The package is local on top of Pages revision `4945461`.
+
+## 2026-11-27 - Turf Field 1 and the SRC east walkway (local)
+
+- Extend the Hayward midblock package north. Add 5,515.37 m² of Field 1 turf, two goals, soccer and multi-use markings, 70.43 m of north fence, two benches, three lights and three planting strips. Remove three inferred trees from the open field. The event map identifies the divider's stadium-side stair. Its tread and railing dimensions remain unverified. [Site review](docs/hayward-midblock-review-2026-11-27.md#turf-field-1-and-the-student-recreation-center-approach).
+- Extend the Field 2 west walkway to East 15th and tie it to the existing SRC east approach. Add 1,378.25 m² of paving and 18 navigation edges over the preceding local package. Production desktop and phone each match all 610 exterior IDs to loaded geometry and load 364 resources. Both sample profiles follow 362.60 m from East 15th to the East 18th sidewalk and 171.51 m from the SRC approach to the south passage.
+- Two exports match byte for byte. Six matched views cover the field, divider, approaches and planting. Build, formatting, 197 unit tests, 11 focused browser tests, 487 asset archive checks and viewer pins pass. The package is local on top of Pages revision `4945461`.
+
+## 2026-11-27 - Hayward south passage, Field 2 and the Jane Sanders flag walk (local)
+
+- Register the east–west corridor from Howe Field plaza to the existing Agate crossing. Add 1,245.65 m² of paving, eight stair treads, two handrails, five planted strips, 70.95 m of fencing and 22 representative flagpoles along the Jane Sanders approach to East 18th. The dimensions, stair rise and flag fabric use estimates. The route documents normal campus circulation and event access follows venue rules. [Site review](docs/hayward-midblock-review-2026-11-27.md).
+- Rebuild Field 2 with 5,894.19 m² of artificial turf, white and amber markings, the divider and the southern goal. Fit a plane to the archived ground heights and suppress seven inferred trees in the field or on its frontage.
+- Two independent exports match byte for byte. Seven paired views show the corridor and field. Desktop and phone production previews each loaded all 610 exterior mesh IDs and 364 tracked resources. Both registered 56 waypoints and followed a 386.99 m route along the passage. Eight stair treads and four turf probes match the modeled elevations. Formatting, production build, 197 unit tests, 11 focused browser tests and all 487 asset archive checks and viewer pins pass. The package is local on top of Pages revision `4945461`.
+
 ## 2026-11-27 - Release Agate south, Hayward outdoor fields and University Street
 
 - Publish four L2 packages from East 15th to East 18th. Agate Street gains both sidewalks and the Hayward and Knight Law approaches. Turf Field 4 and the throwing ground gain field markings, fences and a public frontage. The Hayward square track, Turf Field 3 and six tennis courts connect via the East 18th sidewalk and the Southgate brick crossing. [Agate Street review](docs/agate-fifteenth-eighteenth-review-2026-11-27.md) · [Practice fields review](docs/hayward-practice-fields-review-2026-11-27.md) · [Square track and Southgate review](docs/hayward-square-track-review-2026-11-27.md).

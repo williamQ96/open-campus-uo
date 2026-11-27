@@ -26,7 +26,7 @@
 
 项目现有一套通用教室，所有建筑暂时使用该模板。CSV 的 `INT-SHARED` 为共用模板 L1，每个 `INT:建筑ID` 为待建的专属内部，等级留空。[通用教室](../assets/interiors/README.md)。
 
-两个程序化乔木源层各含 300 株。本地默认预览显示试点区 176 株及背景源树 248 株。Pioneer Cemetery 另有 121 个按高程及航片估算的树冠。Gerlinger Field Green 有十株登记乔木，Women’s Memorial Quad、Gerlinger Entrance Green 与 Straub Hall Green 另有 30 株按树籍配准。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md) · [Gerlinger Field Green 植被](gerlinger-field-green-review-2026-11-26.md) · [校园中部绿地复核](central-campus-greens-review-2026-11-27.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
+两个程序化乔木源层各含 300 株。本地默认预览显示试点区 176 株及背景源树 221 株。Pioneer Cemetery 另有 121 个按高程及航片估算的树冠。Gerlinger Field Green 有十株登记乔木，Women’s Memorial Quad、Gerlinger Entrance Green 与 Straub Hall Green 另有 30 株按树籍配准。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md) · [Gerlinger Field Green 植被](gerlinger-field-green-review-2026-11-26.md) · [校园中部绿地复核](central-campus-greens-review-2026-11-27.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
 
 ## 室外 L2 目标核对
 
@@ -51,6 +51,12 @@ Hayward Field 南侧补建 Turf Field 4、室外投掷区和 East 18th 北侧旗
 Hayward 西侧补建方形跑道、Turf Field 3 与六片室外网球场。East 18th 北侧步道经 Jane Sanders 场馆南面接入 University Street，补建 Southgate 砖铺过街和两根灯柱。[方形跑道与 Southgate 复核](hayward-square-track-review-2026-11-27.md)。
 
 University Street 从 East 15th 到 Southgate 补建两侧人行道、停车标线、两处双线过街、八处路侧设施、24 株登记树和 76 条导航边。路线连接 Dorris 台阶、Rankin Lane 和 Howe Field 入口。停车布局、树冠及路缘标高采用估算。[University Street 南段复核](university-south-axis-review-2026-11-27.md)。
+
+Hayward 南侧的本地 L2 通道串联 Howe Field 广场和 Agate 既有过街线。重建 Jane Sanders 北侧台阶、5,894 平方米 Field 2 人工草坪、标线及花坛，补建通向 East 18th 的旗杆带，并疏除七株与实地冲突的推断树。赛事期间的通行以场馆安排为准。[Hayward 南侧通道复核](hayward-midblock-review-2026-11-27.md)。
+
+Field 1 重建约 5,515 平方米人工草坪、两座球门及北缘围栏，补建座椅、灯杆和种植带。Field 2 西侧步道接至 East 15th 和 Student Recreation Center 东入口。体育场一侧的分隔带台阶待现场近景核对。[Field 1 和 SRC 接驳复核](hayward-midblock-review-2026-11-27.md#turf-field-1-and-the-student-recreation-center-approach)。
+
+East 15th 从 University Street 至 Agate 本地补建 Straub 侧人行道、Onyx 双线过街和 Hayward 北侧铺砖步行道。Powell Plaza 复原三根主旗杆、曲线低台、信息牌和深色门栏。标线、旗帜、树冠和座椅采用现场照片支持的代表性几何。[East 15th 和 Powell Plaza 复核](east-fifteenth-hayward-review-2026-11-27.md)。
 
 室外目标追踪 679 条记录，包括 664 条建筑外部及独立室外设施和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 663 条计划室内记录另列。当前有 610 项 L2 外观、15 组 L2 室外资产，独立在用 L1 为 0 项，另保留 54 条合并或停用后的历史映射。历史映射涉及 Garden、Franklin、Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church、The Studies at 19th、1544 Alder 的旧局部、Walnut Path 步桥旧网格、967 Patterson 旧建筑、Arena 前广场、Walnut 停车区、铁路跨线桥、储冷罐地块、Knight Library 西侧草坪、Grace Lutheran Church 旧分段、Hamilton Hall 五段已拆网格、Franklin 沿线两处停车区旧网格及 Patterson 原 YMCA 已拆网格，原 ID 和等级记录保存在 CSV。默认场景有 610 个可选建筑及独立设施。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
 

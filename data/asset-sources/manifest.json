@@ -3160,6 +3160,30 @@
       "sha256": "819725ea65ab1d28cb84d5892a0b6048a9bb3a8a95a65e30a73b6086875c68d3",
       "license": "CC-BY-4.0",
       "origin": "Original University Street paving, cemetery and stadium connectors, street fixtures and registered trees. See docs/university-south-axis-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/hayward-midblock-review/site.json": {
+      "bytes": 3448,
+      "sha256": "dfd08a060df3bd9892fdba19aed98635cc095604cccf52a06313bb5685ec3364",
+      "license": "CC-BY-4.0",
+      "origin": "Original Hayward midblock passage, SRC Fields 1 and 2, sports fixtures, planting and flagpoles. See docs/hayward-midblock-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/hayward-midblock-review/site.glb": {
+      "bytes": 2940172,
+      "sha256": "128d2d1c432b911d39f96df5f7101fcae57979edf53137a48b1c1cc147900f87",
+      "license": "CC-BY-4.0",
+      "origin": "Original Hayward midblock passage, SRC Fields 1 and 2, sports fixtures, planting and flagpoles. See docs/hayward-midblock-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-fifteenth-hayward-review/site.json": {
+      "bytes": 2636,
+      "sha256": "130d6b16ab22f0325a474568cbf10d48d2cd7760be3e9dd54025c437392e94dc",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 15th pavement, Powell Plaza frontage, benches, lighting and registered planting. See docs/east-fifteenth-hayward-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-fifteenth-hayward-review/site.glb": {
+      "bytes": 5580712,
+      "sha256": "7520ce5aac319ffbbf18774a611e1d28e554da346c41f74dfb4f966431dc4969",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 15th pavement, Powell Plaza frontage, benches, lighting and registered planting. See docs/east-fifteenth-hayward-review-2026-11-27.md."
     }
   },
   "additional_sources": [

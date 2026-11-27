@@ -3,6 +3,7 @@ import {
   DEFAULT_BACKGROUND_TREES,
   DEFAULT_PILOT_TREES,
   DEFAULT_VISIBLE_SOURCE_TREES,
+  HAYWARD_MIDBLOCK_CONTEXT_TREE_REMOVALS,
   HAYWARD_PRACTICE_CONTEXT_TREE_REMOVALS,
   HAYWARD_SQUARE_CONTEXT_TREE_REMOVALS,
 } from "./exterior-counts.js";
@@ -96,5 +97,19 @@ test("a damaged square track bundle restores its context trees", async ({
     contextTrees:
       DEFAULT_BACKGROUND_TREES + HAYWARD_SQUARE_CONTEXT_TREE_REMOVALS,
     pilotTrees: DEFAULT_PILOT_TREES,
+  });
+});
+
+test("a damaged Hayward midblock bundle restores its context trees", async ({
+  page,
+}) => {
+  await page.route("**/hayward-midblock-review/site.glb", (route) =>
+    route.fulfill({ body: "damaged midblock mesh" }),
+  );
+  expect(await readScene(page)).toMatchObject({
+    trees:
+      DEFAULT_VISIBLE_SOURCE_TREES + HAYWARD_MIDBLOCK_CONTEXT_TREE_REMOVALS,
+    contextTrees:
+      DEFAULT_BACKGROUND_TREES + HAYWARD_MIDBLOCK_CONTEXT_TREE_REMOVALS,
   });
 });

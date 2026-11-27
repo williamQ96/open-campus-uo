@@ -1,0 +1,2069 @@
+{
+  "extent": [
+    -310,
+    -294,
+    79,
+    -220
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "sites": {
+      "athletic-exterior-review": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680",
+      "hayward-exterior-review": "7940e7aa05c1ae316c373d57cd022cdc2ad553ee51c1b097772760858e5a6593",
+      "central-campus-greens-review": "f01d3046cc693a896bac8838475a529b4a875a56398ee470a4cfd31ef66dcb69",
+      "agate-thirteenth-fifteenth-review": "063dda28669c3150b4a614d87f7af021d7f43d233a52be5e56c53716ea602418",
+      "agate-fifteenth-eighteenth-review": "aad49c0f2973a695a2ab55105f5f004cb6e33509b1b6069f8e086fe1d35252d1",
+      "university-south-axis-review": "c7bfe3981a4ac0fd500f11385d08051a5436767b5233aee77c16bbe82b9a1d90",
+      "hayward-midblock-review": "dfd08a060df3bd9892fdba19aed98635cc095604cccf52a06313bb5685ec3364",
+      "hamilton-dunes-review": "d955d2fdbd7613d76ab7b9e0bea314fc4dd887f22ba728488d588b8a1fb13962"
+    }
+  },
+  "west_road": [
+    [
+      -301.1,
+      -250.6,
+      -238.5
+    ],
+    [
+      -291.55,
+      -249.7,
+      -238.38
+    ],
+    [
+      -280.16,
+      -249.02,
+      -238.1
+    ],
+    [
+      -265.59,
+      -248.85,
+      -237.63
+    ],
+    [
+      -258.57,
+      -248.84,
+      -238.02
+    ],
+    [
+      -246.6,
+      -248.7,
+      -238.1
+    ],
+    [
+      -230.1,
+      -248.56,
+      -238.21
+    ],
+    [
+      -216.7,
+      -248.47,
+      -238.24
+    ],
+    [
+      -214.35,
+      -248.45,
+      -238.21
+    ]
+  ],
+  "west_paving": [
+    [
+      [
+        -300.32,
+        -238.9
+      ],
+      [
+        -295.51,
+        -232.2
+      ],
+      [
+        -278.26,
+        -232.12
+      ],
+      [
+        -262.57,
+        -232.7
+      ],
+      [
+        -258.0,
+        -233.23
+      ],
+      [
+        -233.42,
+        -233.53
+      ],
+      [
+        -216.6,
+        -234.55
+      ],
+      [
+        -211.35,
+        -231.35
+      ],
+      [
+        -211.1,
+        -224.0
+      ],
+      [
+        -205.7,
+        -224.0
+      ],
+      [
+        -205.71,
+        -235.6
+      ],
+      [
+        -218.0,
+        -239.0
+      ],
+      [
+        -239.02,
+        -238.33
+      ],
+      [
+        -261.05,
+        -238.44
+      ],
+      [
+        -279.96,
+        -238.72
+      ],
+      [
+        -296.9,
+        -239.82
+      ]
+    ],
+    [
+      [
+        -299.46,
+        -251.67
+      ],
+      [
+        -279.48,
+        -250.08
+      ],
+      [
+        -258,
+        -248.8
+      ],
+      [
+        -212.05,
+        -248.43
+      ],
+      [
+        -208.09,
+        -250.25
+      ],
+      [
+        -211.5,
+        -257.23
+      ],
+      [
+        -228.91,
+        -260.4
+      ],
+      [
+        -264.32,
+        -259.26
+      ],
+      [
+        -281.01,
+        -257.08
+      ],
+      [
+        -297.3,
+        -255.6
+      ]
+    ]
+  ],
+  "promenade": [
+    [
+      -217.4,
+      -249.14
+    ],
+    [
+      -215.7,
+      -237.86
+    ],
+    [
+      -210.22,
+      -232.02
+    ],
+    [
+      -201,
+      -229.91
+    ],
+    [
+      -182.55,
+      -230.9
+    ],
+    [
+      -163.81,
+      -232.73
+    ],
+    [
+      -150.2,
+      -232.45
+    ],
+    [
+      -144.1,
+      -231.4
+    ],
+    [
+      -129.8,
+      -229.2
+    ],
+    [
+      -113.2,
+      -225.24
+    ],
+    [
+      -104.3,
+      -226.41
+    ],
+    [
+      -93.6,
+      -227.1
+    ],
+    [
+      -81.2,
+      -226.7
+    ],
+    [
+      -66.8,
+      -226.82
+    ],
+    [
+      -50.34,
+      -226.0
+    ],
+    [
+      -43.65,
+      -225.0
+    ],
+    [
+      -34,
+      -226.7
+    ],
+    [
+      -25,
+      -227.9
+    ],
+    [
+      -7.8,
+      -226.9
+    ],
+    [
+      11.8,
+      -227.5
+    ],
+    [
+      29.3,
+      -228.8
+    ],
+    [
+      53.2,
+      -228.16
+    ],
+    [
+      62.3,
+      -227.1
+    ],
+    [
+      71.5,
+      -225.0
+    ],
+    [
+      77.55,
+      -227.64
+    ],
+    [
+      78.15,
+      -252.85
+    ],
+    [
+      75.58,
+      -251.93
+    ],
+    [
+      75.88,
+      -263.0
+    ],
+    [
+      75.25,
+      -273.5
+    ],
+    [
+      73.71,
+      -285.85
+    ],
+    [
+      67.54,
+      -286.9
+    ],
+    [
+      60.2,
+      -282.96
+    ],
+    [
+      51.65,
+      -274.81
+    ],
+    [
+      41.61,
+      -267.65
+    ],
+    [
+      31.1,
+      -262.9
+    ],
+    [
+      19.93,
+      -257.49
+    ],
+    [
+      5.61,
+      -253.09
+    ],
+    [
+      -7.5,
+      -253.57
+    ],
+    [
+      -21.36,
+      -254.9
+    ],
+    [
+      -35.76,
+      -258.1
+    ],
+    [
+      -53.5,
+      -262.15
+    ],
+    [
+      -66.9,
+      -262.65
+    ],
+    [
+      -75.22,
+      -259.3
+    ],
+    [
+      -90.27,
+      -259.4
+    ],
+    [
+      -122.19,
+      -259.63
+    ],
+    [
+      -147.95,
+      -257.78
+    ],
+    [
+      -174.73,
+      -257.8
+    ],
+    [
+      -198.3,
+      -256.08
+    ],
+    [
+      -213,
+      -254.8
+    ]
+  ],
+  "bed_bounds": [
+    [
+      -200.95,
+      -253.1,
+      -190.0,
+      -249.6
+    ],
+    [
+      -187.9,
+      -242.4,
+      -169.0,
+      -238.5
+    ],
+    [
+      -170.9,
+      -252.3,
+      -146.25,
+      -249.5
+    ],
+    [
+      -146.4,
+      -242.2,
+      -127.1,
+      -237.8
+    ],
+    [
+      -124.45,
+      -252.3,
+      -104.1,
+      -248.2
+    ],
+    [
+      -119.9,
+      -242.0,
+      -105.65,
+      -237.85
+    ],
+    [
+      -102.0,
+      -252.4,
+      -86.1,
+      -248.2
+    ],
+    [
+      -101.9,
+      -241.7,
+      -86.15,
+      -238.2
+    ],
+    [
+      -81.15,
+      -255.35,
+      -76.05,
+      -248.25
+    ],
+    [
+      -68.73,
+      -255.06,
+      -63.84,
+      -247.9
+    ],
+    [
+      -72.2,
+      -241.8,
+      -54.95,
+      -237.6
+    ],
+    [
+      -57.8,
+      -254.12,
+      -49.65,
+      -248.5
+    ],
+    [
+      -46.7,
+      -250.8,
+      -39.63,
+      -247.55
+    ],
+    [
+      -37.4,
+      -247.4,
+      -21.1,
+      -242.9
+    ],
+    [
+      -20.1,
+      -244.0,
+      -7.85,
+      -241.2
+    ],
+    [
+      -2.45,
+      -243.44,
+      4.23,
+      -240.25
+    ],
+    [
+      -34.6,
+      -237.9,
+      -23.7,
+      -233.3
+    ],
+    [
+      -16.83,
+      -233.62,
+      -7.2,
+      -229.1
+    ],
+    [
+      -2.12,
+      -235.05,
+      10.9,
+      -230.56
+    ],
+    [
+      15.2,
+      -236.65,
+      22.15,
+      -231.36
+    ],
+    [
+      28.4,
+      -236.69,
+      38.45,
+      -231.69
+    ],
+    [
+      45.2,
+      -237.0,
+      50.2,
+      -233.75
+    ],
+    [
+      55.05,
+      -238.66,
+      68.7,
+      -232.39
+    ],
+    [
+      -104.03,
+      -233.75,
+      -92.25,
+      -228.25
+    ],
+    [
+      -91.1,
+      -233.97,
+      -65.4,
+      -228.16
+    ],
+    [
+      -61.22,
+      -235.16,
+      -43.31,
+      -230.3
+    ]
+  ],
+  "crossings": [
+    [
+      [
+        -259.84,
+        -238.12
+      ],
+      [
+        -259.75,
+        -248.91
+      ]
+    ],
+    [
+      [
+        -257.4,
+        -237.93
+      ],
+      [
+        -257.35,
+        -248.91
+      ]
+    ],
+    [
+      [
+        -217.67,
+        -238.17
+      ],
+      [
+        -217.72,
+        -248.33
+      ]
+    ],
+    [
+      [
+        -215.18,
+        -238.25
+      ],
+      [
+        -215.28,
+        -248.29
+      ]
+    ]
+  ],
+  "bench": [
+    [
+      -187.5,
+      -249.6,
+      0
+    ],
+    [
+      -115.6,
+      -247.62,
+      0
+    ],
+    [
+      -95.35,
+      -253.8,
+      0
+    ],
+    [
+      -62.97,
+      -241.21,
+      0
+    ],
+    [
+      -16.1,
+      -241.16,
+      0
+    ],
+    [
+      33.0,
+      -235.55,
+      0
+    ],
+    [
+      52.86,
+      -233.1,
+      0
+    ],
+    [
+      66.72,
+      -237.42,
+      0
+    ]
+  ],
+  "lamp": [
+    [
+      -211.04,
+      -249.41
+    ],
+    [
+      -175.63,
+      -241.26
+    ],
+    [
+      -148.12,
+      -241.7
+    ],
+    [
+      -97.9,
+      -246.64
+    ],
+    [
+      -57.34,
+      -237.34
+    ],
+    [
+      -22.02,
+      -236.2
+    ],
+    [
+      18.53,
+      -235.67
+    ],
+    [
+      45.18,
+      -232.63
+    ],
+    [
+      64.22,
+      -237.82
+    ]
+  ],
+  "short_posts": [
+    [
+      -211.02,
+      -241.25
+    ],
+    [
+      -208.45,
+      -241.3
+    ],
+    [
+      -205.74,
+      -241.37
+    ]
+  ],
+  "kiosk": [
+    [
+      34.37,
+      -251.43
+    ],
+    [
+      50.04,
+      -255.83
+    ],
+    [
+      64.6,
+      -265.12
+    ]
+  ],
+  "flags": [
+    [
+      39.83,
+      -249.25,
+      13.0
+    ],
+    [
+      45.96,
+      -253.16,
+      14.5
+    ],
+    [
+      51.96,
+      -258.07,
+      12.3
+    ]
+  ],
+  "seating_line": [
+    [
+      39.15,
+      -247.78
+    ],
+    [
+      43.7,
+      -250.07
+    ],
+    [
+      48.6,
+      -253.39
+    ],
+    [
+      53.82,
+      -257.03
+    ]
+  ],
+  "gate": [
+    [
+      32.0,
+      -254.12
+    ],
+    [
+      41.0,
+      -259.85
+    ],
+    [
+      49.6,
+      -265.6
+    ],
+    [
+      56.46,
+      -272.59
+    ],
+    [
+      62.76,
+      -278.79
+    ],
+    [
+      66.93,
+      -285.08
+    ]
+  ],
+  "trees": [
+    {
+      "tree_id": 1436,
+      "position_enu_m": [
+        -194.77,
+        -232.638
+      ],
+      "common_name": "Douglas-Fir",
+      "height_m": 24,
+      "crown_radius_m": 5.6,
+      "form": "conical"
+    },
+    {
+      "tree_id": 1435,
+      "position_enu_m": [
+        -196.315,
+        -234.347
+      ],
+      "common_name": "Douglas-Fir",
+      "height_m": 24,
+      "crown_radius_m": 5.6,
+      "form": "conical"
+    },
+    {
+      "tree_id": 7350,
+      "position_enu_m": [
+        -191.572,
+        -250.456
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 10.67,
+      "crown_radius_m": 2.9,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7351,
+      "position_enu_m": [
+        -183.084,
+        -250.677
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.62,
+      "crown_radius_m": 2.59,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7352,
+      "position_enu_m": [
+        -166.001,
+        -250.907
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.62,
+      "crown_radius_m": 2.59,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7353,
+      "position_enu_m": [
+        -157.513,
+        -251.342
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.01,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7354,
+      "position_enu_m": [
+        -148.166,
+        -251.136
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.62,
+      "crown_radius_m": 2.74,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7355,
+      "position_enu_m": [
+        -128.61,
+        -250.511
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 4.57,
+      "crown_radius_m": 1.83,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7356,
+      "position_enu_m": [
+        -118.618,
+        -249.985
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 10.67,
+      "crown_radius_m": 2.44,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7357,
+      "position_enu_m": [
+        -108.196,
+        -249.994
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 6.1,
+      "crown_radius_m": 3.2,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7358,
+      "position_enu_m": [
+        -97.623,
+        -249.815
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 8.23,
+      "crown_radius_m": 2.59,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7359,
+      "position_enu_m": [
+        -87.739,
+        -250.359
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 5.49,
+      "crown_radius_m": 2.74,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7373,
+      "position_enu_m": [
+        -77.531,
+        -249.565
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 5.18,
+      "crown_radius_m": 1.22,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7374,
+      "position_enu_m": [
+        -67.216,
+        -249.252
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 4.57,
+      "crown_radius_m": 1.22,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7388,
+      "position_enu_m": [
+        -53.842,
+        -251.405
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.05,
+      "crown_radius_m": 0.76,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7389,
+      "position_enu_m": [
+        -132.657,
+        -257.6
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 4.27,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7391,
+      "position_enu_m": [
+        -124.169,
+        -257.608
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.96,
+      "crown_radius_m": 1.37,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7392,
+      "position_enu_m": [
+        -119.602,
+        -257.505
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.96,
+      "crown_radius_m": 1.52,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7393,
+      "position_enu_m": [
+        -113.639,
+        -257.403
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 4.57,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7394,
+      "position_enu_m": [
+        -107.569,
+        -257.462
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.96,
+      "crown_radius_m": 1.52,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7395,
+      "position_enu_m": [
+        -101.145,
+        -257.769
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.66,
+      "crown_radius_m": 1.37,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7396,
+      "position_enu_m": [
+        -95.45,
+        -257.774
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.05,
+      "crown_radius_m": 1.22,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7397,
+      "position_enu_m": [
+        -89.433,
+        -257.565
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 4.57,
+      "crown_radius_m": 1.52,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7390,
+      "position_enu_m": [
+        -128.865,
+        -257.638
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.96,
+      "crown_radius_m": 1.52,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7404,
+      "position_enu_m": [
+        -60.962,
+        -259.517
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.66,
+      "crown_radius_m": 1.83,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7405,
+      "position_enu_m": [
+        -58.706,
+        -259.733
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.96,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7406,
+      "position_enu_m": [
+        -45.159,
+        -249.145
+      ],
+      "common_name": "English Oak",
+      "height_m": 3.66,
+      "crown_radius_m": 0.76,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7407,
+      "position_enu_m": [
+        -41.076,
+        -249.149
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.66,
+      "crown_radius_m": 1.22,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7408,
+      "position_enu_m": [
+        -34.411,
+        -245.3
+      ],
+      "common_name": "Japanese Maple",
+      "height_m": 3.05,
+      "crown_radius_m": 1.07,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7409,
+      "position_enu_m": [
+        -26.352,
+        -244.772
+      ],
+      "common_name": "Japanese Maple",
+      "height_m": 3.05,
+      "crown_radius_m": 1.07,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7410,
+      "position_enu_m": [
+        -22.377,
+        -244.668
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.05,
+      "crown_radius_m": 0.91,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7411,
+      "position_enu_m": [
+        -10.771,
+        -242.751
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.66,
+      "crown_radius_m": 1.07,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7412,
+      "position_enu_m": [
+        1.586,
+        -241.69
+      ],
+      "common_name": "Stellar Pink Dogwood",
+      "height_m": 2.13,
+      "crown_radius_m": 0.91,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7461,
+      "position_enu_m": [
+        -66.747,
+        -239.597
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 5.49,
+      "crown_radius_m": 2.74,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7462,
+      "position_enu_m": [
+        -88.129,
+        -240.435
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.32,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7463,
+      "position_enu_m": [
+        -98.765,
+        -240.212
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.62,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7464,
+      "position_enu_m": [
+        -108.006,
+        -240.204
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.62,
+      "crown_radius_m": 1.98,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7465,
+      "position_enu_m": [
+        -118.428,
+        -240.087
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.05,
+      "crown_radius_m": 0.91,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7466,
+      "position_enu_m": [
+        -129.065,
+        -240.185
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.92,
+      "crown_radius_m": 1.83,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7467,
+      "position_enu_m": [
+        -139.379,
+        -239.962
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 6.71,
+      "crown_radius_m": 3.35,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7468,
+      "position_enu_m": [
+        -157.644,
+        -239.839
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 5.49,
+      "crown_radius_m": 1.83,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7469,
+      "position_enu_m": [
+        -166.562,
+        -240.045
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 5.79,
+      "crown_radius_m": 1.37,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7470,
+      "position_enu_m": [
+        -174.405,
+        -239.717
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.92,
+      "crown_radius_m": 1.98,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7471,
+      "position_enu_m": [
+        -184.291,
+        -240.243
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 8.23,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7460,
+      "position_enu_m": [
+        -57.292,
+        -240.034
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.92,
+      "crown_radius_m": 2.13,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7459,
+      "position_enu_m": [
+        -28.063,
+        -235.027
+      ],
+      "common_name": "Douglas-Fir",
+      "height_m": 8.23,
+      "crown_radius_m": 2.44,
+      "form": "conical"
+    },
+    {
+      "tree_id": 7458,
+      "position_enu_m": [
+        -13.126,
+        -232.684
+      ],
+      "common_name": "Douglas-Fir",
+      "height_m": 7.92,
+      "crown_radius_m": 2.29,
+      "form": "conical"
+    },
+    {
+      "tree_id": 7457,
+      "position_enu_m": [
+        -9.366,
+        -232.687
+      ],
+      "common_name": "Japanese Maple",
+      "height_m": 3.66,
+      "crown_radius_m": 2.74,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7456,
+      "position_enu_m": [
+        2.345,
+        -232.697
+      ],
+      "common_name": "English Oak",
+      "height_m": 5.49,
+      "crown_radius_m": 3.2,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7455,
+      "position_enu_m": [
+        7.181,
+        -232.38
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 3.35,
+      "crown_radius_m": 1.52,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7454,
+      "position_enu_m": [
+        20.331,
+        -233.591
+      ],
+      "common_name": "English Oak",
+      "height_m": 7.92,
+      "crown_radius_m": 2.44,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7453,
+      "position_enu_m": [
+        33.18,
+        -234.544
+      ],
+      "common_name": "Douglas-Fir",
+      "height_m": 7.92,
+      "crown_radius_m": 1.07,
+      "form": "conical"
+    },
+    {
+      "tree_id": 7452,
+      "position_enu_m": [
+        37.908,
+        -234.334
+      ],
+      "common_name": "English Oak",
+      "height_m": 2.13,
+      "crown_radius_m": 2.44,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7451,
+      "position_enu_m": [
+        47.04,
+        -235.412
+      ],
+      "common_name": "English Oak",
+      "height_m": 6.4,
+      "crown_radius_m": 2.74,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7450,
+      "position_enu_m": [
+        57.891,
+        -235.421
+      ],
+      "common_name": "English Oak",
+      "height_m": 16.76,
+      "crown_radius_m": 3.2,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7449,
+      "position_enu_m": [
+        64.66,
+        -236.069
+      ],
+      "common_name": "Douglas-Fir",
+      "height_m": 16.76,
+      "crown_radius_m": 2.74,
+      "form": "conical"
+    },
+    {
+      "tree_id": 7473,
+      "position_enu_m": [
+        -96.716,
+        -231.112
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.62,
+      "crown_radius_m": 2.74,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7475,
+      "position_enu_m": [
+        -75.979,
+        -230.702
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.32,
+      "crown_radius_m": 2.59,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7476,
+      "position_enu_m": [
+        -68.028,
+        -230.495
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.62,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7477,
+      "position_enu_m": [
+        -57.178,
+        -232.86
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.01,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7478,
+      "position_enu_m": [
+        -45.682,
+        -232.87
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.92,
+      "crown_radius_m": 2.44,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 7474,
+      "position_enu_m": [
+        -89.087,
+        -230.905
+      ],
+      "common_name": "Campus inventory tree",
+      "height_m": 7.62,
+      "crown_radius_m": 2.29,
+      "form": "rounded"
+    }
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [
+        -306.013,
+        -245.858
+      ],
+      "points_enu_m": [
+        [
+          -295.9,
+          -244.8
+        ],
+        [
+          -281.74,
+          -244.22
+        ],
+        [
+          -268.1,
+          -244.42
+        ],
+        [
+          -257.783,
+          -244.816
+        ],
+        [
+          -242.45,
+          -244.36
+        ],
+        [
+          -228.15,
+          -244.16
+        ],
+        [
+          -216.8,
+          -243.88
+        ]
+      ],
+      "end_enu_m": [
+        -209.605,
+        -243.687
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -209.605,
+        -243.687
+      ],
+      "points_enu_m": [
+        [
+          -202.7,
+          -244.27
+        ],
+        [
+          -186.15,
+          -245.38
+        ],
+        [
+          -169.15,
+          -245.64
+        ],
+        [
+          -152.2,
+          -244.92
+        ]
+      ],
+      "end_enu_m": [
+        -137.501,
+        -243.158
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -137.501,
+        -243.158
+      ],
+      "points_enu_m": [
+        [
+          -124.12,
+          -245.27
+        ],
+        [
+          -108.78,
+          -245.07
+        ],
+        [
+          -93.98,
+          -245.26
+        ],
+        [
+          -79.25,
+          -244.07
+        ],
+        [
+          -65.87,
+          -244.12
+        ],
+        [
+          -52.1,
+          -243.65
+        ],
+        [
+          -40.1,
+          -241.38
+        ],
+        [
+          -25.9,
+          -239.53
+        ],
+        [
+          -9.3,
+          -237.7
+        ],
+        [
+          7.92,
+          -239.05
+        ],
+        [
+          24.06,
+          -241.27
+        ],
+        [
+          40.3,
+          -242.82
+        ],
+        [
+          55.3,
+          -242.95
+        ],
+        [
+          69.44,
+          -242.88
+        ]
+      ],
+      "end_enu_m": [
+        76.008,
+        -242.861
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -306.221,
+        -238.953
+      ],
+      "points_enu_m": [
+        [
+          -298.9,
+          -238.1
+        ],
+        [
+          -291.6,
+          -235.7
+        ],
+        [
+          -281.2,
+          -235.4
+        ],
+        [
+          -269.1,
+          -235.64
+        ],
+        [
+          -259.0,
+          -235.65
+        ],
+        [
+          -256.4,
+          -233.82
+        ],
+        [
+          -247.7,
+          -235.56
+        ],
+        [
+          -232.6,
+          -236.39
+        ],
+        [
+          -217.2,
+          -236.71
+        ],
+        [
+          -211.2,
+          -234.15
+        ],
+        [
+          -207.9,
+          -232.05
+        ],
+        [
+          -208.1,
+          -228.3
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -257.783,
+        -244.816
+      ],
+      "points_enu_m": [
+        [
+          -257.81,
+          -239.43
+        ],
+        [
+          -259,
+          -235.65
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -124.12,
+        -245.27
+      ],
+      "points_enu_m": [
+        [
+          -123.24,
+          -239.9
+        ],
+        [
+          -122.6,
+          -236.05
+        ],
+        [
+          -117.7,
+          -231.99
+        ],
+        [
+          -113.49,
+          -227.9
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -65.87,
+        -244.12
+      ],
+      "points_enu_m": [
+        [
+          -61.4,
+          -246.1
+        ],
+        [
+          -60.6,
+          -250.1
+        ],
+        [
+          -59.5,
+          -253.9
+        ],
+        [
+          -59.9,
+          -256.95
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        76.008,
+        -242.861
+      ],
+      "points_enu_m": [
+        [
+          73.82,
+          -251.5
+        ],
+        [
+          73.41,
+          -262.8
+        ],
+        [
+          72.55,
+          -273.95
+        ],
+        [
+          72.25,
+          -279.03
+        ]
+      ]
+    }
+  ],
+  "evidence": {
+    "orthophotos": [
+      {
+        "file": "overview-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -321,
+          -291,
+          110,
+          -179
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494008.14928888186%2C4876637.282153052%2C494439.14928888186%2C4876749.282153052&bboxSR=3740&imageSR=3740&size=2155%2C560&layers=show%3A29&format=png32",
+        "sha256": "8ce8e269112ec7ab267dd30dbbd01510f772d9c437c42bbb13170591dc4ccc2b"
+      },
+      {
+        "file": "overview-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -321,
+          -291,
+          110,
+          -179
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494008.14928888186%2C4876637.282153052%2C494439.14928888186%2C4876749.282153052&bboxSR=3740&imageSR=3740&size=2155%2C560&layers=show%3A26&format=png32",
+        "sha256": "5e7ae729067220b4c944095db8a355f2815f6499b230c11b30b1e6a41db331cd"
+      },
+      {
+        "file": "overview-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -321,
+          -291,
+          110,
+          -179
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494008.14928888186%2C4876637.282153052%2C494439.14928888186%2C4876749.282153052&bboxSR=3740&imageSR=3740&size=2155%2C560&layers=show%3A57&format=png32",
+        "sha256": "b19f4150fabe4f426378ee2eb8eba2fdf9bb08db4265f9cbe2fcc41ba876a4d8"
+      },
+      {
+        "file": "west-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -317,
+          -291,
+          -176,
+          -192
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494012.14928888186%2C4876637.282153052%2C494153.14928888186%2C4876736.282153052&bboxSR=3740&imageSR=3740&size=1269%2C891&layers=show%3A57&format=png32",
+        "sha256": "bf56f2f6b76df070e8f3a74d70e7826c221bcb46bf4a817f18c5782b250c9e53"
+      },
+      {
+        "file": "middle-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -196,
+          -276,
+          -59,
+          -195
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494133.14928888186%2C4876652.282153052%2C494270.14928888186%2C4876733.282153052&bboxSR=3740&imageSR=3740&size=1370%2C810&layers=show%3A57&format=png32",
+        "sha256": "262646179eb1a25a496c083755359f136946f913d1e960365a0a5f2648e5980b"
+      },
+      {
+        "file": "east-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -74,
+          -275,
+          31,
+          -192
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494255.14928888186%2C4876653.282153052%2C494360.14928888186%2C4876736.282153052&bboxSR=3740&imageSR=3740&size=1050%2C830&layers=show%3A57&format=png32",
+        "sha256": "dd94b8da43ec6bce6863c0e1e8672bf26f6420e125d0b4ef7975284ff43abc17"
+      },
+      {
+        "file": "powell-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          16,
+          -304,
+          105,
+          -192
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494345.14928888186%2C4876624.282153052%2C494434.14928888186%2C4876736.282153052&bboxSR=3740&imageSR=3740&size=890%2C1120&layers=show%3A57&format=png32",
+        "sha256": "ea2a77c1e754045f8e7e40306f349d010ba4ef8edb417e5d56c7c79a108be244"
+      }
+    ],
+    "campus_trees": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=Removed+%3D+%27No%27+AND+FutureTree+%3D+%27No%27&geometry=494024.14928888186%2C4876663.282153052%2C494412.14928888186%2C4876712.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=TreeNumber%2CCommonName%2CHeight%2CSpread%2CRemoved%2CFutureTree&returnGeometry=True",
+      "sha256": "79b171fd4d6a91386b5b2652e48a751cd97a51e393804106c7f55cb9594e1781"
+    },
+    "primary_photos": {
+      "place": {
+        "url": "https://place.la/portfolio/hayward-field/",
+        "sha256": "ceba0701224a74d94b56b429cbf899ff97c93a421b0ed9d4ee6cc1b58b8c6b39",
+        "plates": [
+          {
+            "file": "place-01.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-1-scaled.jpg",
+            "sha256": "d8b7cd73e057752aa1736ddfc3c7e42e6d60bbe40a84d02dd5effc949e6345f2"
+          },
+          {
+            "file": "place-02.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-1-1920x1257.jpg",
+            "sha256": "4d08fa13d684f910328481c7fffaa603d7bae652df1be8dc46debbb0e8b8c131"
+          },
+          {
+            "file": "place-03.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-1-1280x838.jpg",
+            "sha256": "bc99d819bd3fb6e077f696b960758392eee0a4841ace34d2ff698ce16e1f08d7"
+          },
+          {
+            "file": "place-04.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-1-960x628.jpg",
+            "sha256": "247b71aa0a30af48a35a96f67eee831411637952e801e808330a3ca9f6168305"
+          },
+          {
+            "file": "place-05.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-1-2560x1676.jpg",
+            "sha256": "d8b7cd73e057752aa1736ddfc3c7e42e6d60bbe40a84d02dd5effc949e6345f2"
+          },
+          {
+            "file": "place-06.jpg",
+            "url": "https://place.la/image/2022/04/IMG_3986-scaled.jpg",
+            "sha256": "4b48e96e554598c4ad293003ae3d492ee430fe56932eb03890e89b32562b6564"
+          },
+          {
+            "file": "place-07.jpg",
+            "url": "https://place.la/image/2022/04/IMG_3986-scaled-1920x1376.jpg",
+            "sha256": "b837acdc65869e553335210f912d84a0d20b04253b91820d0bcd402f497bfc6e"
+          },
+          {
+            "file": "place-08.jpg",
+            "url": "https://place.la/image/2022/04/IMG_3986-scaled-1280x918.jpg",
+            "sha256": "1ab292251f0de29b74cd9593c5b459f7ebb15f2226c91eb48b48618ddc11a8d7"
+          },
+          {
+            "file": "place-09.jpg",
+            "url": "https://place.la/image/2022/04/IMG_3986-scaled-960x688.jpg",
+            "sha256": "65ff92e1bdd97aac6f95022d4df082edbbb2682d87b6f04bef1f33dcd4d00f50"
+          },
+          {
+            "file": "place-10.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-5-scaled.jpg",
+            "sha256": "855e9419cd91a9e8f15a216176bf770d01a959385f44ada657f183237b23e228"
+          },
+          {
+            "file": "place-11.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-5-1920x1260.jpg",
+            "sha256": "ad7c2dea379b08688324e8f07e9206d5f07bcdf3bcd56d053eeb22e8ab9d53b8"
+          },
+          {
+            "file": "place-12.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-5-1280x840.jpg",
+            "sha256": "0fa00694b9be0555a643f0a5d306b3da4454e0c385d0233f56640f139b703799"
+          },
+          {
+            "file": "place-13.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-5-960x630.jpg",
+            "sha256": "4bf84c07703680f53e8528d447ab142b83d868742eca579b410e64fe57798225"
+          },
+          {
+            "file": "place-14.jpg",
+            "url": "https://place.la/image/2019/08/PLACE_Hayward-Field_Jeff-Caven-5-2560x1680.jpg",
+            "sha256": "855e9419cd91a9e8f15a216176bf770d01a959385f44ada657f183237b23e228"
+          },
+          {
+            "file": "place-15.jpg",
+            "url": "https://place.la/image/2022/04/Cavenphoto_210626_6317-scaled.jpg",
+            "sha256": "9b462f131d81caa2bda57a6ae642a5c4c11de0b6900d99e151dedd99384d4189"
+          },
+          {
+            "file": "place-16.jpg",
+            "url": "https://place.la/image/2022/04/Cavenphoto_210626_6317-scaled-1920x1281.jpg",
+            "sha256": "6b4f0e7a07b041eb1f3fb7579ce34c0816a4573cdc351b8e6dfaa2dc505b53fb"
+          },
+          {
+            "file": "place-17.jpg",
+            "url": "https://place.la/image/2022/04/Cavenphoto_210626_6317-scaled-1280x854.jpg",
+            "sha256": "9452b09a07e8f590409b76720e298260792ee6a5ec88ab8534313ee2d9510245"
+          },
+          {
+            "file": "place-18.jpg",
+            "url": "https://place.la/image/2022/04/Cavenphoto_210626_6317-scaled-960x641.jpg",
+            "sha256": "535625dd534eb838c82d2e15ee9ebfeeb5939aa580af604d5c18b52d1ddb0b51"
+          },
+          {
+            "file": "place-19.jpg",
+            "url": "https://place.la/image/2022/04/Cavenphoto_210625_5767-scaled.jpg",
+            "sha256": "13e0dd94bbdcd39e5aca78353dead6c5ab1c863dcc8c907dbbace07f6ffe7f26"
+          },
+          {
+            "file": "place-20.jpg",
+            "url": "https://place.la/image/2022/04/Cavenphoto_210625_5767-scaled-1920x1281.jpg",
+            "sha256": "4867123e3242b4df47101a8d3e0f039ee8cf4a0f9cba2268f7202dd954b8abaa"
+          }
+        ]
+      },
+      "campus": {
+        "url": "https://cpfm.uoregon.edu/sites/default/files/principle_12_design_area_special_conditions_2022.pdf",
+        "sha256": "937c11c37c59c33b4ff990f05127abeb59566973db148b17871c0a7126f68544",
+        "plates": [
+          {
+            "file": "campus-44.jpg",
+            "pdf_page": 44
+          }
+        ]
+      },
+      "museum": {
+        "url": "https://mnch.uoregon.edu/sites/default/files/2025-02/Campus%20Scavenger%20Hunt%20ENTIRE%20DOC%201.pdf",
+        "sha256": "69ad0527aab2689d82b715c41cc9b4e4759a8a24de25e3502f208343cc3b9def",
+        "plates": [
+          {
+            "file": "museum-3.jpg",
+            "pdf_page": 3
+          },
+          {
+            "file": "museum-12.jpg",
+            "pdf_page": 12
+          }
+        ]
+      }
+    },
+    "street_panorama": {
+      "onyx-service": [],
+      "emerald-gateway": [],
+      "recreation-plaza": [],
+      "northwest-entry": [],
+      "field1-join": [],
+      "stadium-edge": [],
+      "straub-cross": [
+        {
+          "date": "2019-07",
+          "id": "oB6WHTPwywDzkK6jUfyS3w",
+          "camera_enu": [
+            -261.55454971955623,
+            -245.6842757780105
+          ],
+          "bearing": 43.97,
+          "distance": 5.1,
+          "file": "straub-cross-2019-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=oB6WHTPwywDzkK6jUfyS3w&heading=43.97"
+        }
+      ],
+      "university-throat": [
+        {
+          "date": "2026-06",
+          "id": "CIABIhCrburB29k7h286eNfSbDrz",
+          "camera_enu": [
+            -313.1592225654167,
+            -246.18806087598205
+          ],
+          "bearing": 83.05,
+          "distance": 26.4,
+          "file": "university-throat-2026-06.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIABIhCrburB29k7h286eNfSbDrz&heading=83.05"
+        },
+        {
+          "date": "2021-06",
+          "id": "kFGCjjkGyk31Vk0gcJ1B2Q",
+          "camera_enu": [
+            -310.5456227266113,
+            -244.50172999408096
+          ],
+          "bearing": 86.35,
+          "distance": 23.6,
+          "file": "university-throat-2021-06.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=kFGCjjkGyk31Vk0gcJ1B2Q&heading=86.35"
+        }
+      ],
+      "powell-pavers": [
+        {
+          "date": "2024-06",
+          "id": "LHsRQ0wBzNresNYITh_jAw",
+          "camera_enu": [
+            91.3013217546395,
+            -241.12412495259196
+          ],
+          "bearing": 262.31,
+          "distance": 21.5,
+          "file": "powell-pavers-2024-06.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=LHsRQ0wBzNresNYITh_jAw&heading=262.31"
+        },
+        {
+          "date": "2020-11",
+          "id": "j9a3J2BoyPl9hUKX_Rtr9g",
+          "camera_enu": [
+            90.77674709225539,
+            -246.3128131777048
+          ],
+          "bearing": 276.35,
+          "distance": 20.9,
+          "file": "powell-pavers-2020-11.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=j9a3J2BoyPl9hUKX_Rtr9g&heading=276.35"
+        }
+      ],
+      "powell-gates": [
+        {
+          "date": "2024-06",
+          "id": "LHsRQ0wBzNresNYITh_jAw",
+          "camera_enu": [
+            91.3013217546395,
+            -241.12412495259196
+          ],
+          "bearing": 253.79,
+          "distance": 46.1,
+          "file": "powell-gates-2024-06.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=LHsRQ0wBzNresNYITh_jAw&heading=253.79"
+        },
+        {
+          "date": "2020-11",
+          "id": "j9a3J2BoyPl9hUKX_Rtr9g",
+          "camera_enu": [
+            90.77674709225539,
+            -246.3128131777048
+          ],
+          "bearing": 260.04,
+          "distance": 44.4,
+          "file": "powell-gates-2020-11.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=j9a3J2BoyPl9hUKX_Rtr9g&heading=260.04"
+        }
+      ],
+      "powell-tower": [
+        {
+          "date": "2024-07",
+          "id": "DdFrSmGl59dQrwkT8GRd5g",
+          "camera_enu": [
+            85.10610461648321,
+            -266.06510995607823
+          ],
+          "bearing": 226.72,
+          "distance": 27.6,
+          "file": "powell-tower-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=DdFrSmGl59dQrwkT8GRd5g&heading=226.72"
+        },
+        {
+          "date": "2020-11",
+          "id": "4MUDJaHi0fSt4tra9llyrw",
+          "camera_enu": [
+            85.19254502194235,
+            -265.5594709441066
+          ],
+          "bearing": 226.09,
+          "distance": 28.0,
+          "file": "powell-tower-2020-11.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4MUDJaHi0fSt4tra9llyrw&heading=226.09"
+        }
+      ]
+    },
+    "venue": "https://hayward.uoregon.edu/about",
+    "source_inferred_trees_sha256": "56b6fbb9e08c65f20e2a78d5ffca0f9a79d92ecabd49c888dda2f548286551e6"
+  },
+  "clear_context_trees": []
+}

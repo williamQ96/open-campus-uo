@@ -2214,5 +2214,13 @@
   "university_south_axis_site": {
     "url": "university-south-axis-review/site.json",
     "sha256": "c7bfe3981a4ac0fd500f11385d08051a5436767b5233aee77c16bbe82b9a1d90"
+  },
+  "hayward_midblock_site": {
+    "url": "hayward-midblock-review/site.json",
+    "sha256": "dfd08a060df3bd9892fdba19aed98635cc095604cccf52a06313bb5685ec3364"
+  },
+  "east_fifteenth_hayward_site": {
+    "url": "east-fifteenth-hayward-review/site.json",
+    "sha256": "130d6b16ab22f0325a474568cbf10d48d2cd7760be3e9dd54025c437392e94dc"
   }
 }

@@ -6,6 +6,30 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Hayward 中段和 East 15th 室外 L2
+
+- 发布 Hayward 南侧通道、Turf Field 1 和 2、Jane Sanders 旗杆步道及 SRC 东侧步道。步道接通 East 15th，练习场恢复标线和围栏，两片球场及其沿线共清除十株推断树。分隔带台阶的踏步与栏杆尺寸仍待近景确认。[Hayward 复核](docs/hayward-midblock-review-2026-11-27.md)。
+- 发布 University Street 至 Agate Street 的 East 15th 和 Powell Plaza。西段过街线和东段带花坛的步道接通体育场入口、SRC 和 Agate。场地包增加 54 条导航边、62 株登记树，并补建代表性的广场设施、种植与门栏。[East 15th 复核](docs/east-fifteenth-hayward-review-2026-11-27.md)。
+- 两包重复导出均逐字节一致。桌面和手机生产预览各核对了 610 个室外模型 ID 及其网格，并加载 366 项受跟踪资源。两端测得 University Street 至 Agate 路线均为 373.06 米。构建、格式检查、197 项单元测试、11 项浏览器测试、489 项归档校验及查看器哈希均通过。发布通过 main 的 GitHub Pages 工作流执行。[部署记录](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
+## 2026-11-27 - East 15th 和 Powell Plaza（本地）
+
+- 接通 University Street、Straub、Onyx、SRC 与 Agate。复原西段沥青铺面和双线过街，补建 Onyx 以东带错列花坛的铺砖步道。使用 62 株校园登记树，并补建八张座椅与九根灯杆。[场地复核](docs/east-fifteenth-hayward-review-2026-11-27.md)。
+- 复原 Powell Plaza 三根高旗杆、曲线阶梯低台、三座信息牌和 47.19 米入口门栏。布局依据校方规划、航片和照片。材质颜色、旗帜、构件尺寸和植物形态采用估算。
+- 八条分支共增加 54 条导航边。本批改动保存在本地，线上版本为 `4945461`。
+
+## 2026-11-27 - Turf Field 1 与 Student Recreation Center 东侧步道（本地）
+
+- 将 Hayward 场地包向北延伸，补建 5,515.37 平方米 Field 1 人工草坪、两座球门、足球和多用途标线、70.43 米北缘围栏、两张长椅、三根灯杆及三处种植带。移除三株与开敞草坪冲突的推断树。赛事图标注的体育场侧分隔带台阶待近景核对踏步和栏杆。[场地复核](docs/hayward-midblock-review-2026-11-27.md#turf-field-1-and-the-student-recreation-center-approach)。
+- 将 Field 2 西侧步道延伸至 East 15th，并接入 SRC 既有东入口前坪。较上一版增加 1,378.25 平方米铺装和 18 条导航边。桌面和手机生产预览均加载 610 个模型的网格及 364 个资源，分别核对 East 15th 至 East 18th 步道的 362.60 米路线，以及 SRC 东入口前坪至南侧通道的 171.51 米路线。
+- 两次导出逐字节一致，六组对比图覆盖球场、分隔带、接驳铺面和种植带。构建、格式检查、197 项单元测试、11 项浏览器测试、487 个归档资产和查看器哈希均通过。本批改动保存在本地，线上版本为 `4945461`。
+
+## 2026-11-27 - Hayward 南侧通道、Field 2 与 Jane Sanders 旗杆步道（本地）
+
+- 配准从 Howe Field 广场到 Agate 既有过街线的东西向通道。增加 1,245.65 平方米铺装、八级台阶、两侧扶手、五处种植带、70.95 米围栏，以及沿 Jane Sanders 东侧通向 East 18th 的 22 根代表性旗杆。构件尺寸、台阶高差与旗帜采用估算。赛事期间通行以场馆安排为准。[场地复核](docs/hayward-midblock-review-2026-11-27.md)。
+- 重建 5,894.19 平方米 Field 2 人工草坪、白色和黄色标线、分隔带及南侧球门。按地形归档拟合场地高程，移除场内和步道边的七株推断树。
+- 两次独立导出逐字节一致，并留存七组对比图。桌面和手机生产预览各加载 610 个模型的网格及 364 个资源，均配准 56 个路径点并沿新通道走完 386.99 米。八级踏步和四处草坪探针与建模高度一致。格式检查、生产构建、197 项单元测试、11 项浏览器测试、487 个归档资产及查看器哈希均通过。场地包保存在本地，线上版本为 `4945461`。
+
 ## 2026-11-27 - 发布 Agate Street 南段、Hayward 室外场地和 University Street
 
 - 发布 East 15th 至 East 18th 的四个 L2 场地包。Agate Street 补建两侧步道并接入 Hayward 和 Knight Law。Turf Field 4 与投掷区新增标线、围栏和公共步道。Hayward 方形跑道、Turf Field 3 与六片网球场经 East 18th 步道接到 Southgate 砖铺过街。[Agate Street 南段复核](docs/agate-fifteenth-eighteenth-review-2026-11-27.md) · [练习场复核](docs/hayward-practice-fields-review-2026-11-27.md) · [方形跑道与 Southgate 复核](docs/hayward-square-track-review-2026-11-27.md)。

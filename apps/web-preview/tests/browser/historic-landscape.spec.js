@@ -239,6 +239,50 @@ async function landscapeState(page) {
         [-297.43, -351.12],
         [-293.68, -535.2],
       ].map(([x, north]) => blocked(x, north)),
+      haywardMidblockSurfaces: [
+        [-121.9, -310],
+        [-137.65, -394],
+        [-137.2, -277],
+        [-106, -441],
+        [-211, -486.55],
+        [-235.1, -487.78],
+        [-137.3, -444.2],
+        [-157.8, -490.8],
+        [69.4, -480.14],
+      ].map(([x, north]) => {
+        const terrain = campus.terrainCheck(x, -north);
+        return [
+          terrain["hayward-midblock-paving"] > terrain.sampled + 0.045,
+          blocked(x, north),
+        ];
+      }),
+      haywardMidblockSolids: [
+        [-110, -259.48],
+        [-103.1, -254.59],
+        [-235, -489.065],
+        [-235, -486.505],
+        [-107, -470.02],
+      ].map(([x, north]) => blocked(x, north)),
+      eastFifteenthSurfaces: [
+        [-276.3, -244.9],
+        [-259.0, -235.65],
+        [-174, -245.4],
+        [-119, -245.25],
+        [-25.9, -239.53],
+        [45.2, -245.2],
+      ].map(([x, north]) => {
+        const terrain = campus.terrainCheck(x, -north);
+        return [
+          terrain["east-fifteenth-hayward-paving"] > terrain.sampled + 0.046,
+          blocked(x, north),
+        ];
+      }),
+      eastFifteenthFixtures: [
+        [-187.5, -249.6],
+        [34.37, -251.43],
+        [50.04, -255.83],
+        [54.8, -271],
+      ].map(([x, north]) => blocked(x, north)),
       rankinWalks: [
         [-435, -600.52],
         [-400, -600.57],
@@ -320,6 +364,10 @@ test("historic landscape solids leave Cherry Avenue and Hello Walk open", async 
     squareTrackSolids: Array(5).fill(true),
     universityAxisWalks: Array(6).fill([true, false]),
     universityAxisFixtures: Array(4).fill(true),
+    haywardMidblockSurfaces: Array(9).fill([true, false]),
+    haywardMidblockSolids: Array(5).fill(true),
+    eastFifteenthSurfaces: Array(6).fill([true, false]),
+    eastFifteenthFixtures: Array(4).fill(true),
     rankinWalks: Array(4).fill([true, false]),
     rankinWalls: [true, false, true],
     heritageWalks: Array(5).fill([true, false]),
@@ -339,7 +387,7 @@ test("failed historic site bundles restore the preceding ground and access", asy
   page,
 }) => {
   await page.route(
-    /\/(?:pioneer-cemetery-landscape-review|fenton-site-review|howe-field-gates-review|dads-gates-landscape-review|east-thirteenth-west-gateway-review|east-thirteenth-central-review|east-thirteenth-east-review|great-lawn-landscape-review|agate-thirteenth-fifteenth-review|agate-fifteenth-eighteenth-review|hayward-practice-fields-review|hayward-square-track-review|university-south-axis-review)\/site\.glb$/,
+    /\/(?:pioneer-cemetery-landscape-review|fenton-site-review|howe-field-gates-review|dads-gates-landscape-review|east-thirteenth-west-gateway-review|east-thirteenth-central-review|east-thirteenth-east-review|great-lawn-landscape-review|agate-thirteenth-fifteenth-review|agate-fifteenth-eighteenth-review|hayward-practice-fields-review|hayward-square-track-review|university-south-axis-review|hayward-midblock-review|east-fifteenth-hayward-review)\/site\.glb$/,
     (route) => route.fulfill({ body: "invalid site mesh" }),
   );
   expect(await landscapeState(page)).toMatchObject({
@@ -375,6 +423,10 @@ test("failed historic site bundles restore the preceding ground and access", asy
     squareTrackSolids: Array(5).fill(false),
     universityAxisWalks: Array(6).fill([false, false]),
     universityAxisFixtures: Array(4).fill(false),
+    haywardMidblockSurfaces: Array(9).fill([false, false]),
+    haywardMidblockSolids: Array(5).fill(false),
+    eastFifteenthSurfaces: Array(6).fill([false, false]),
+    eastFifteenthFixtures: Array(4).fill(false),
     rankinWalks: Array(4).fill([false, false]),
     rankinWalls: Array(3).fill(false),
     heritageWalks: Array(5).fill([false, false]),

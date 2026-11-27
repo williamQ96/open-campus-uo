@@ -33,6 +33,9 @@
 | Hayward Field 的 Turf Field 4、室外投掷区和 East 18th 旗杆步道 | 纳入本次 L2 发布 | 补建 5,126.94 平方米人工草地、两套球场标线、投掷圈、围栏、双扇门、拦球网和旗杆。疏除九株与实地冲突的推断树，人行道增加 19 条导航边。 [练习场复核](hayward-practice-fields-review-2026-11-27.md) |
 | Hayward 方形跑道、Turf Field 3、室外网球场和 Southgate | 纳入本次 L2 发布 | 重建环道、两处八道直道、人工草地与六片球场。沿 East 18th 北侧经 Jane Sanders 接到 University Street，补建南入口两根灯柱与砖铺过街。场地标线、网高和构件尺寸采用估算。 [场地复核](hayward-square-track-review-2026-11-27.md) |
 | University Street 从 East 15th 至 Southgate | 纳入本次 L2 发布 | 重建两侧人行道、停车标线、两处双线过街、八处路侧设施及 24 株登记树。连通 Dorris 台阶、Rankin Lane 和 Howe Field 入口，增加 76 条导航边。 [街道复核](university-south-axis-review-2026-11-27.md) |
+| Hayward 南侧穿行通道与 Jane Sanders 东侧旗杆步道 | 本地 L2 | 补齐 Howe Field 广场至 Agate 的东西向通道。重建北侧窄道和台阶、Field 2 草坪、标线和围栏，复原通向 East 18th 的旗杆带。台阶高差、旗帜和种植为估算。 [场地复核](hayward-midblock-review-2026-11-27.md) |
+| Turf Field 1、Student Recreation Center 东入口与 East 15th 接驳 | 本地 L2 | 补建 Field 1 人工草坪、两座球门、标线、北缘围栏及种植带。延伸 Field 2 西侧步道并接 SRC 东入口。分隔带靠体育场一端的台阶待近景核对。 [场地复核](hayward-midblock-review-2026-11-27.md#turf-field-1-and-the-student-recreation-center-approach) |
+| East 15th 与 Powell Plaza | 本地 L2 | 接通 University Street、Straub、SRC 与 Agate。Onyx 以西配准街道和双线过街，以东补建铺砖步道、错列花坛、座椅和 Powell Plaza 三根主旗杆与门栏。尺寸、高程和细部采用估算。 [场地复核](east-fifteenth-hayward-review-2026-11-27.md) |
 | 校方艺术目录中的户外作品 | 待逐项配准 | 先核对作品仍在原位的证据和场景里的尺寸及基座。目录含纪念性雕塑、场地装置和立面装饰。 |
 | 校园标识、导览图站、交通与停车标识 | 待逐项配准 | 2024 标识计划提供样式，按当前街景和场地照片确认各位置。 |
 | 校园花坛、乔木和林下植被 | 已有代表性 L2，待逐处复核 | 现有植被层和登记树记录作为基线。优先核对已知空地、边界、花坛与通道之间的关系。 |
