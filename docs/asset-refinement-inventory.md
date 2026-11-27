@@ -26,7 +26,7 @@
 
 项目现有一套通用教室，所有建筑暂时使用该模板。CSV 的 `INT-SHARED` 为共用模板 L1，每个 `INT:建筑ID` 为待建的专属内部，等级留空。[通用教室](../assets/interiors/README.md)。
 
-两个程序化乔木源层各含 300 株。本地默认预览显示试点区 176 株及背景源树 221 株。Pioneer Cemetery 另有 121 个按高程及航片估算的树冠。Gerlinger Field Green 有十株登记乔木，Women’s Memorial Quad、Gerlinger Entrance Green 与 Straub Hall Green 另有 30 株按树籍配准。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md) · [Gerlinger Field Green 植被](gerlinger-field-green-review-2026-11-26.md) · [校园中部绿地复核](central-campus-greens-review-2026-11-27.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
+两个程序化乔木源层各含 300 株。本地默认预览显示试点区 173 株及背景源树 218 株。Pioneer Cemetery 另有 124 个按高程及航片估算的树冠。Gerlinger Field Green 有十株登记乔木，Women’s Memorial Quad、Gerlinger Entrance Green 与 Straub Hall Green 另有 30 株按树籍配准。Southwest Campus Green 按校园树籍配准 29 株乔木。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md) · [Gerlinger Field Green 植被](gerlinger-field-green-review-2026-11-26.md) · [校园中部绿地复核](central-campus-greens-review-2026-11-27.md) · [Southwest Campus Green 复核](southwest-campus-green-review-2026-11-27.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
 
 ## 室外 L2 目标核对
 
@@ -35,6 +35,12 @@
 本批室外 L2 发布补建 Dads’ Gates 的铁门、灯柱、铺装和四株登记树，以及 Normal Gate 的铁拱、三处种植带、两株登记树和延伸至 Lillis 北侧的步道。校正后的南北两段共 65 条导航边。[Dads’ Gates 复核](dads-gates-landscape-review-2026-11-27.md) · [Normal Gate 与轴线南段复核](normal-gate-axis-landscape-review-2026-11-27.md)。
 
 早期发布补建了 Pioneer Cemetery 的四处 Charles Lawson 玫瑰、GAR 南侧一组边石和三处墓碑。随后配准 Rankin Lane 南缘，新增人行道、27 条导航边、六组边石、十处无名墓碑和三株乔木。根据协会导览图估放 597 区块的第五株玫瑰。[玫瑰与墓区复核](pioneer-cemetery-landscape-review-2026-11-26.md#rankin-lane-southern-fringe-and-block-597)。
+
+Pioneer Cemetery 周界的本地 L2 补建五处草坡、四处低矮种植、16 组外露边石、22 处无名碑形和东南角 13.05 米矮墙。Southgate 西侧人行道铺面沿墙外缘收回，University Street 绕角路径同步调整。碑形、边石和植物尺寸按影像估算。[周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#university-street-and-rankin-lane-perimeter)。
+
+墓园西北侧补建图书馆接驳铺面、短草径、两处常春藤覆盖及可见墓区边石和碑形。Conger Lane 与三条横向路口按航片校正，新增 50 条导航边。树冠下的道路轮廓和构件尺寸采用估算。[西北周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#conger-lane-shelley-lane-and-the-library-approach)。
+
+Southwest Campus Green 的本地 L2 接通墓园步道、图书馆南园、Education 一侧和 Lot 20。南园恢复三段长花坛和分岔步道，停车边缘恢复树池路缘和无障碍标线。校方目录中的《Trees of Knowledge》已记录作品群位置。[场地复核](southwest-campus-green-review-2026-11-27.md)。
 
 East 13th Avenue 西入口 L2 新增 Kincaid 砖柱、铁栏、路桩、过街标线、两侧步道及 Lillis 广场花坛、登记树和《Thinker Duck》基座。铺装与 40 条新增导航边纳入 ENV-05。[西入口复核](east-thirteenth-west-gateway-review-2026-11-27.md)。
 

@@ -73,16 +73,20 @@
       "width_m": 5.25,
       "centerline_enu_m": [
         [
-          -521.3,
-          -388.55
+          -520.02,
+          -386.5
         ],
         [
-          -480,
-          -388.2
+          -503.15,
+          -386.43
         ],
         [
-          -456,
-          -388.6
+          -486.46,
+          -386.88
+        ],
+        [
+          -470.8,
+          -387.68
         ],
         [
           -438.5,
@@ -169,36 +173,92 @@
           -292.5
         ],
         [
-          -517.7,
+          -518.7,
+          -302.0
+        ],
+        [
+          -520.35,
+          -313.2
+        ],
+        [
+          -520.68,
+          -328.5
+        ],
+        [
+          -520.73,
+          -331.05
+        ],
+        [
+          -520.52,
           -340
         ],
         [
-          -519.0,
-          -370.3
+          -519.85,
+          -350.2
         ],
         [
-          -519.2,
-          -388.55
+          -519.68,
+          -363.5
+        ],
+        [
+          -520.26,
+          -375.4
+        ],
+        [
+          -520.02,
+          -386.5
+        ],
+        [
+          -519.45,
+          -405.7
         ],
         [
           -519.5,
           -423.8
         ],
         [
-          -515.26,
-          -466.8
+          -518.1,
+          -441.8
         ],
         [
-          -514.7,
-          -493.97
+          -517.8,
+          -459.3
         ],
         [
-          -515.15,
+          -517.7,
+          -475.9
+        ],
+        [
+          -517.4,
+          -483.5
+        ],
+        [
+          -517.5,
+          -498.1
+        ],
+        [
+          -517.95,
+          -514.8
+        ],
+        [
+          -518.08,
+          -529.1
+        ],
+        [
+          -517.98,
           -541.1
         ],
         [
-          -515.16,
-          -567
+          -518.15,
+          -553.2
+        ],
+        [
+          -518.1,
+          -567.0
+        ],
+        [
+          -517.2,
+          -579.8
         ],
         [
           -514.14,
@@ -291,7 +351,7 @@
       "width_m": 3.6,
       "centerline_enu_m": [
         [
-          -515.0,
+          -517.4,
           -483.5
         ],
         [
@@ -325,7 +385,7 @@
       "width_m": 3.4,
       "centerline_enu_m": [
         [
-          -515.15,
+          -517.98,
           -541.1
         ],
         [
@@ -3515,6 +3575,2245 @@
     "wellborn_sources": [
       "https://eugenepioneercemetery.org/map/wellborn-heritage-rose/",
       "https://eugenepioneercemetery.org/wp-content/uploads/2023/05/wellbornHeritageRose2.jpeg"
+    ]
+  },
+  "perimeter_refinement": {
+    "reference_note": "County EPSG:3740 tiles at 10 px/m in the existing ENU frame. Open curb traces and stone centers repeat across dated images. Height, complete construction and stone identity are unverified. Street photographs support the open grass slope, a short stepped concrete return, and low woody planting. The aerials and photos inform geometry only. No image texture is embedded.",
+    "orthophotos": [
+      {
+        "tile": "east-north",
+        "file": "east-north-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -377,
+          -407,
+          -310,
+          -321
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493952.14928888186%2C4876521.282153052%2C494019.14928888186%2C4876607.282153052&bboxSR=3740&imageSR=3740&size=670%2C860&layers=show%3A29&format=png32",
+        "sha256": "0ea9b03c6581b60327d2c3553c0bc81be71d51426afedbc3a7109702153afefc"
+      },
+      {
+        "tile": "east-north",
+        "file": "east-north-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -377,
+          -407,
+          -310,
+          -321
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493952.14928888186%2C4876521.282153052%2C494019.14928888186%2C4876607.282153052&bboxSR=3740&imageSR=3740&size=670%2C860&layers=show%3A26&format=png32",
+        "sha256": "ade4eb7f0e2c6dc032eb025bb3a5dc907ef9e8585351c890b2bf6b9509d9dd54"
+      },
+      {
+        "tile": "east-north",
+        "file": "east-north-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -377,
+          -407,
+          -310,
+          -321
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493952.14928888186%2C4876521.282153052%2C494019.14928888186%2C4876607.282153052&bboxSR=3740&imageSR=3740&size=670%2C860&layers=show%3A57&format=png32",
+        "sha256": "50aa8d30ffb781b5552e3b6de8ba16b18a10a3bee3dec82fe9d9340ac1c3849d"
+      },
+      {
+        "tile": "east-middle",
+        "file": "east-middle-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -377,
+          -508,
+          -310,
+          -399
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493952.14928888186%2C4876420.282153052%2C494019.14928888186%2C4876529.282153052&bboxSR=3740&imageSR=3740&size=670%2C1090&layers=show%3A29&format=png32",
+        "sha256": "a0b1602b60b3fba0512e72e92bef7638e87900487e5706f4f7aa5e7cf2ef95ed"
+      },
+      {
+        "tile": "east-middle",
+        "file": "east-middle-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -377,
+          -508,
+          -310,
+          -399
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493952.14928888186%2C4876420.282153052%2C494019.14928888186%2C4876529.282153052&bboxSR=3740&imageSR=3740&size=670%2C1090&layers=show%3A26&format=png32",
+        "sha256": "ee72f9a58f75cb91309024cd8fb1b8736f117718ac117aba3c24d7bbbf4f8d72"
+      },
+      {
+        "tile": "east-middle",
+        "file": "east-middle-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -377,
+          -508,
+          -310,
+          -399
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493952.14928888186%2C4876420.282153052%2C494019.14928888186%2C4876529.282153052&bboxSR=3740&imageSR=3740&size=670%2C1090&layers=show%3A57&format=png32",
+        "sha256": "4ecfa74b5d94143f11d74a9d50a5b84866d93a2a800b67ccc6bdb4b4816ee0b1"
+      },
+      {
+        "tile": "east-south",
+        "file": "east-south-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -379,
+          -605,
+          -312,
+          -501
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493950.14928888186%2C4876323.282153052%2C494017.14928888186%2C4876427.282153052&bboxSR=3740&imageSR=3740&size=670%2C1040&layers=show%3A29&format=png32",
+        "sha256": "2cf27d7e4a9f0dc05cf91ecfd5ca2790a065afd79c3b212df9570e8522bc02fd"
+      },
+      {
+        "tile": "east-south",
+        "file": "east-south-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -379,
+          -605,
+          -312,
+          -501
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493950.14928888186%2C4876323.282153052%2C494017.14928888186%2C4876427.282153052&bboxSR=3740&imageSR=3740&size=670%2C1040&layers=show%3A26&format=png32",
+        "sha256": "65b839c1c37b7c640f62c62eeef4362f04845a3394c6aa340bb5195b37ac869d"
+      },
+      {
+        "tile": "east-south",
+        "file": "east-south-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -379,
+          -605,
+          -312,
+          -501
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493950.14928888186%2C4876323.282153052%2C494017.14928888186%2C4876427.282153052&bboxSR=3740&imageSR=3740&size=670%2C1040&layers=show%3A57&format=png32",
+        "sha256": "0f8f96357cf0095978aa7705c77d8367eaae421e37dc122868a057e14c2b8ac8"
+      },
+      {
+        "tile": "south-east",
+        "file": "south-east-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -404,
+          -608,
+          -337,
+          -548
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493925.14928888186%2C4876320.282153052%2C493992.14928888186%2C4876380.282153052&bboxSR=3740&imageSR=3740&size=670%2C600&layers=show%3A29&format=png32",
+        "sha256": "96f36ffde5fa810fd36c5fe52ce2d951b3909435120ddd50646ea3a6572c9489"
+      },
+      {
+        "tile": "south-east",
+        "file": "south-east-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -404,
+          -608,
+          -337,
+          -548
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493925.14928888186%2C4876320.282153052%2C493992.14928888186%2C4876380.282153052&bboxSR=3740&imageSR=3740&size=670%2C600&layers=show%3A26&format=png32",
+        "sha256": "ab1963fc2ec7f3f9ffae8967c5c0919b449df684761bbeb765230b76132fa78c"
+      },
+      {
+        "tile": "south-east",
+        "file": "south-east-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -404,
+          -608,
+          -337,
+          -548
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493925.14928888186%2C4876320.282153052%2C493992.14928888186%2C4876380.282153052&bboxSR=3740&imageSR=3740&size=670%2C600&layers=show%3A57&format=png32",
+        "sha256": "7b7c63734aec33adff4818033be2320a520de3a0e84ef7950f81357b417b5f0b"
+      },
+      {
+        "tile": "south-middle",
+        "file": "south-middle-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -472,
+          -608,
+          -403,
+          -548
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493857.14928888186%2C4876320.282153052%2C493926.14928888186%2C4876380.282153052&bboxSR=3740&imageSR=3740&size=690%2C600&layers=show%3A29&format=png32",
+        "sha256": "28b74ef9d810dafe210d988e2229cca0497e5d89da22e2a092890ed6c2e34efc"
+      },
+      {
+        "tile": "south-middle",
+        "file": "south-middle-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -472,
+          -608,
+          -403,
+          -548
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493857.14928888186%2C4876320.282153052%2C493926.14928888186%2C4876380.282153052&bboxSR=3740&imageSR=3740&size=690%2C600&layers=show%3A26&format=png32",
+        "sha256": "a3ef855db27dd2ac13b1fb7af1562cd5bc9740ceb35afde7fee8ed58bffb2f91"
+      },
+      {
+        "tile": "south-middle",
+        "file": "south-middle-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -472,
+          -608,
+          -403,
+          -548
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493857.14928888186%2C4876320.282153052%2C493926.14928888186%2C4876380.282153052&bboxSR=3740&imageSR=3740&size=690%2C600&layers=show%3A57&format=png32",
+        "sha256": "899223938c2bf1ca229966ee56875e54134390e66eba837cb04ef592972e817f"
+      },
+      {
+        "tile": "south-west",
+        "file": "south-west-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -516,
+          -608,
+          -468,
+          -543
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493813.14928888186%2C4876320.282153052%2C493861.14928888186%2C4876385.282153052&bboxSR=3740&imageSR=3740&size=480%2C650&layers=show%3A29&format=png32",
+        "sha256": "53288d48d3bcf2c23f37c08dc4f7050a6ed5e99a2f2f6b6a479a687c6a438f94"
+      },
+      {
+        "tile": "south-west",
+        "file": "south-west-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -516,
+          -608,
+          -468,
+          -543
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493813.14928888186%2C4876320.282153052%2C493861.14928888186%2C4876385.282153052&bboxSR=3740&imageSR=3740&size=480%2C650&layers=show%3A26&format=png32",
+        "sha256": "a1d00a3aa71a611f5f9e7356b105d73f89f26bb65c1418ef1a9bb79f8cb90b91"
+      },
+      {
+        "tile": "south-west",
+        "file": "south-west-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -516,
+          -608,
+          -468,
+          -543
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493813.14928888186%2C4876320.282153052%2C493861.14928888186%2C4876385.282153052&bboxSR=3740&imageSR=3740&size=480%2C650&layers=show%3A57&format=png32",
+        "sha256": "301d44a3a30395fbdf2820636cbfa42e818c941c848358b6117f16ebb2f03373"
+      }
+    ],
+    "street_views": {
+      "east-stair": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-xUdMd56U5OekBMXryjUOQ&heading=279.17",
+          "center_enu_m": [
+            -310.862,
+            -389.91
+          ]
+        },
+        {
+          "date": "2021-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=IT1OgqP0AGljV23osdp9-w&heading=277.32",
+          "center_enu_m": [
+            -309.936,
+            -389.597
+          ]
+        }
+      ],
+      "north-grass-edge": [
+        {
+          "date": "2021-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=1NfNLS2J6UKk9hTkD2vw0w&heading=257.08",
+          "center_enu_m": [
+            -309.833,
+            -348.349
+          ]
+        },
+        {
+          "date": "2020-11",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=nXZsukYBClyeKC4lwPgz-A&heading=256.52",
+          "center_enu_m": [
+            -310.209,
+            -348.294
+          ]
+        }
+      ],
+      "open-risdon": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JOWfO6cWDDwVD2oYsGRJog&heading=270.28",
+          "center_enu_m": [
+            -311.296,
+            -472.404
+          ]
+        },
+        {
+          "date": "2021-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6E-TwCHbO2hcjmJOcoOGeA&heading=273.73",
+          "center_enu_m": [
+            -307.619,
+            -473.956
+          ]
+        }
+      ],
+      "deciduous-bank": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HemfY_-APe4O8AxWEWLg3Q&heading=283.59",
+          "center_enu_m": [
+            -311.196,
+            -441.694
+          ]
+        },
+        {
+          "date": "2021-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=l3lJeoYB9itejOwcZ0gF-g&heading=285.38",
+          "center_enu_m": [
+            -307.615,
+            -443.108
+          ]
+        }
+      ],
+      "lower-verge": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=YphQV-_9yDu1idhBgs52aQ&heading=261.18",
+          "center_enu_m": [
+            -311.633,
+            -543.462
+          ]
+        },
+        {
+          "date": "2021-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0AAkwEBa-JgkVUyugSM5Fg&heading=259.1",
+          "center_enu_m": [
+            -311.298,
+            -542.784
+          ]
+        }
+      ],
+      "southeast-grove": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vglZBBIX8YGxeKQ-2esdlg&heading=256.86",
+          "center_enu_m": [
+            -311.868,
+            -563.533
+          ]
+        },
+        {
+          "date": "2021-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q7uahjDwbUs1Gxp72IFOBQ&heading=257.2",
+          "center_enu_m": [
+            -307.749,
+            -562.716
+          ]
+        }
+      ],
+      "wall-north-end": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=kRQ2ui1IoESRYOZu97b4cA&heading=271.39",
+          "center_enu_m": [
+            -312.018,
+            -587.143
+          ]
+        },
+        {
+          "date": "2021-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=LxmB4YWDHw1VQww-l33k4w&heading=279.8",
+          "center_enu_m": [
+            -311.414,
+            -588.729
+          ]
+        }
+      ],
+      "wall-southeast": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8b0dWBYfCf41sRRjaVvaNw&heading=266.07",
+          "center_enu_m": [
+            -311.927,
+            -596.47
+          ]
+        },
+        {
+          "date": "2021-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p0FnrUBf2DeyVwecGIEjGg&heading=269.42",
+          "center_enu_m": [
+            -308.289,
+            -597.14
+          ]
+        }
+      ],
+      "south-lawn-597": [
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JGg19rRquzf3kNNjlDJI2A&heading=350.16",
+          "center_enu_m": [
+            -399.149,
+            -611.432
+          ]
+        },
+        {
+          "date": "2022-08",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xJGmysboG4hYeNc1MTSoxw&heading=352.57",
+          "center_enu_m": [
+            -399.96,
+            -610.648
+          ]
+        }
+      ]
+    },
+    "historical_context": {
+      "url": "https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669",
+      "pages_pdf": [
+        6,
+        7,
+        30,
+        31,
+        36
+      ]
+    },
+    "grave_plot_edges": [
+      {
+        "tile": "east-north",
+        "points_enu_m": [
+          [
+            -356.13,
+            -324.49
+          ],
+          [
+            -351.48,
+            -324.52
+          ],
+          [
+            -351.48,
+            -330.67
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-north",
+        "points_enu_m": [
+          [
+            -347.98,
+            -324.49
+          ],
+          [
+            -342.47,
+            -324.61
+          ],
+          [
+            -342.37,
+            -328.32
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-north",
+        "points_enu_m": [
+          [
+            -357.1,
+            -338.45
+          ],
+          [
+            -357.0,
+            -333.49
+          ],
+          [
+            -351.43,
+            -333.55
+          ],
+          [
+            -351.28,
+            -339.44
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-middle",
+        "points_enu_m": [
+          [
+            -365.22,
+            -414.12
+          ],
+          [
+            -365.24,
+            -406.0
+          ],
+          [
+            -359.47,
+            -405.95
+          ],
+          [
+            -359.33,
+            -414.2
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-middle",
+        "points_enu_m": [
+          [
+            -356.32,
+            -406.02
+          ],
+          [
+            -350.71,
+            -405.88
+          ],
+          [
+            -350.62,
+            -414.21
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-middle",
+        "points_enu_m": [
+          [
+            -365.39,
+            -422.95
+          ],
+          [
+            -365.35,
+            -418.58
+          ],
+          [
+            -359.34,
+            -418.29
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-middle",
+        "points_enu_m": [
+          [
+            -373.95,
+            -429.6
+          ],
+          [
+            -368.63,
+            -429.67
+          ],
+          [
+            -368.6,
+            -433.16
+          ],
+          [
+            -373.91,
+            -433.17
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-middle",
+        "points_enu_m": [
+          [
+            -365.16,
+            -426.81
+          ],
+          [
+            -359.03,
+            -426.8
+          ],
+          [
+            -358.94,
+            -433.04
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-middle",
+        "points_enu_m": [
+          [
+            -357.24,
+            -493.78
+          ],
+          [
+            -351.05,
+            -493.68
+          ],
+          [
+            -351.16,
+            -487.51
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-middle",
+        "points_enu_m": [
+          [
+            -348.7,
+            -487.63
+          ],
+          [
+            -348.82,
+            -493.36
+          ],
+          [
+            -345.62,
+            -493.35
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-south",
+        "points_enu_m": [
+          [
+            -357.42,
+            -547.35
+          ],
+          [
+            -351.8,
+            -547.21
+          ],
+          [
+            -351.49,
+            -553.11
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "east-south",
+        "points_enu_m": [
+          [
+            -348.0,
+            -547.1
+          ],
+          [
+            -342.78,
+            -547.21
+          ],
+          [
+            -342.38,
+            -549.2
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "south-middle",
+        "points_enu_m": [
+          [
+            -444.88,
+            -572.02
+          ],
+          [
+            -441.72,
+            -572.08
+          ],
+          [
+            -441.7,
+            -578.1
+          ],
+          [
+            -444.83,
+            -578.07
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "south-middle",
+        "points_enu_m": [
+          [
+            -417.56,
+            -580.25
+          ],
+          [
+            -414.03,
+            -580.18
+          ],
+          [
+            -414.12,
+            -585.57
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "south-west",
+        "points_enu_m": [
+          [
+            -503.14,
+            -574.89
+          ],
+          [
+            -500.31,
+            -574.9
+          ],
+          [
+            -500.3,
+            -577.2
+          ],
+          [
+            -496.72,
+            -577.35
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "south-west",
+        "points_enu_m": [
+          [
+            -507.11,
+            -581.2
+          ],
+          [
+            -506.94,
+            -586.35
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      }
+    ],
+    "marker_estimates": [
+      {
+        "tile": "east-north",
+        "position_enu_m": [
+          -344.96,
+          -327.44
+        ],
+        "width_m": 0.56,
+        "depth_m": 0.32,
+        "height_m": 0.28,
+        "silhouette": "low"
+      },
+      {
+        "tile": "east-north",
+        "position_enu_m": [
+          -347.89,
+          -329.22
+        ],
+        "width_m": 0.65,
+        "depth_m": 0.41,
+        "height_m": 0.62,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "east-north",
+        "position_enu_m": [
+          -357.36,
+          -334.95
+        ],
+        "width_m": 0.72,
+        "depth_m": 0.39,
+        "height_m": 0.71,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "east-north",
+        "position_enu_m": [
+          -357.14,
+          -336.12
+        ],
+        "width_m": 0.55,
+        "depth_m": 0.31,
+        "height_m": 0.41,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "east-north",
+        "position_enu_m": [
+          -354.21,
+          -337.92
+        ],
+        "width_m": 0.67,
+        "depth_m": 0.37,
+        "height_m": 0.31,
+        "silhouette": "low"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -370.83,
+          -409.94
+        ],
+        "width_m": 0.74,
+        "depth_m": 0.46,
+        "height_m": 0.26,
+        "silhouette": "low"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -365.0,
+          -409.92
+        ],
+        "width_m": 0.57,
+        "depth_m": 0.36,
+        "height_m": 0.52,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -362.3,
+          -407.99
+        ],
+        "width_m": 0.88,
+        "depth_m": 0.45,
+        "height_m": 0.68,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -356.69,
+          -407.45
+        ],
+        "width_m": 0.63,
+        "depth_m": 0.34,
+        "height_m": 0.2,
+        "silhouette": "low"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -370.98,
+          -431.14
+        ],
+        "width_m": 0.71,
+        "depth_m": 0.41,
+        "height_m": 0.49,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -364.4,
+          -430.5
+        ],
+        "width_m": 0.63,
+        "depth_m": 0.29,
+        "height_m": 0.24,
+        "silhouette": "low"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -362.13,
+          -428.67
+        ],
+        "width_m": 0.75,
+        "depth_m": 0.38,
+        "height_m": 0.6,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -357.17,
+          -492.37
+        ],
+        "width_m": 0.72,
+        "depth_m": 0.41,
+        "height_m": 0.23,
+        "silhouette": "low"
+      },
+      {
+        "tile": "east-middle",
+        "position_enu_m": [
+          -345.34,
+          -491.54
+        ],
+        "width_m": 0.58,
+        "depth_m": 0.33,
+        "height_m": 0.22,
+        "silhouette": "low"
+      },
+      {
+        "tile": "east-south",
+        "position_enu_m": [
+          -356.99,
+          -549.4
+        ],
+        "width_m": 0.77,
+        "depth_m": 0.42,
+        "height_m": 0.55,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "east-south",
+        "position_enu_m": [
+          -353.3,
+          -551.53
+        ],
+        "width_m": 0.53,
+        "depth_m": 0.29,
+        "height_m": 0.22,
+        "silhouette": "low"
+      },
+      {
+        "tile": "south-middle",
+        "position_enu_m": [
+          -444.6,
+          -573.93
+        ],
+        "width_m": 0.56,
+        "depth_m": 0.34,
+        "height_m": 0.22,
+        "silhouette": "low"
+      },
+      {
+        "tile": "south-middle",
+        "position_enu_m": [
+          -416.65,
+          -582.14
+        ],
+        "width_m": 0.86,
+        "depth_m": 0.46,
+        "height_m": 0.55,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "south-west",
+        "position_enu_m": [
+          -503.28,
+          -561.48
+        ],
+        "width_m": 0.81,
+        "depth_m": 0.46,
+        "height_m": 0.68,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "south-west",
+        "position_enu_m": [
+          -512.32,
+          -574.79
+        ],
+        "width_m": 0.67,
+        "depth_m": 0.41,
+        "height_m": 0.64,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "south-west",
+        "position_enu_m": [
+          -503.27,
+          -575.94
+        ],
+        "width_m": 0.64,
+        "depth_m": 0.41,
+        "height_m": 0.52,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "south-west",
+        "position_enu_m": [
+          -500.52,
+          -577.55
+        ],
+        "width_m": 0.81,
+        "depth_m": 0.42,
+        "height_m": 0.23,
+        "silhouette": "low"
+      }
+    ],
+    "low_planting": [
+      {
+        "id": "risdon-open-bank",
+        "tile": "east-middle",
+        "street": "open-risdon",
+        "position_enu_m": [
+          -325.45,
+          -470.31
+        ],
+        "radius_m": 0.74,
+        "height_m": 0.87
+      },
+      {
+        "id": "cherry-verge",
+        "tile": "east-south",
+        "street": "lower-verge",
+        "position_enu_m": [
+          -324.02,
+          -546.3
+        ],
+        "radius_m": 1.28,
+        "height_m": 1.32
+      },
+      {
+        "id": "rankin-southwest",
+        "tile": "south-middle",
+        "street": "south-lawn-597",
+        "position_enu_m": [
+          -405.23,
+          -595.87
+        ],
+        "radius_m": 0.83,
+        "height_m": 0.83
+      },
+      {
+        "id": "corner-wall-shrub",
+        "tile": "east-south",
+        "street": "wall-southeast",
+        "position_enu_m": [
+          -322.65,
+          -586.4
+        ],
+        "radius_m": 0.83,
+        "height_m": 0.95
+      }
+    ],
+    "verge_zones": [
+      {
+        "id": "dorris-north-bank",
+        "mood": "open",
+        "outline_enu_m": [
+          [
+            -326.9,
+            -327.0
+          ],
+          [
+            -321.1,
+            -330.2
+          ],
+          [
+            -320.6,
+            -356.6
+          ],
+          [
+            -320.8,
+            -373.0
+          ],
+          [
+            -321.23,
+            -386.3
+          ],
+          [
+            -327.3,
+            -386.3
+          ],
+          [
+            -329.1,
+            -372.0
+          ],
+          [
+            -328.4,
+            -354.0
+          ],
+          [
+            -326.9,
+            -341.6
+          ]
+        ]
+      },
+      {
+        "id": "dorris-south-bank",
+        "mood": "open",
+        "outline_enu_m": [
+          [
+            -328.4,
+            -389.2
+          ],
+          [
+            -321.12,
+            -389.35
+          ],
+          [
+            -320.8,
+            -412.0
+          ],
+          [
+            -320.6,
+            -438.0
+          ],
+          [
+            -321.4,
+            -459.7
+          ],
+          [
+            -326.0,
+            -456.6
+          ],
+          [
+            -325.9,
+            -437.0
+          ],
+          [
+            -326.7,
+            -422.0
+          ],
+          [
+            -328.0,
+            -403.6
+          ]
+        ]
+      },
+      {
+        "id": "risdon-open-bank",
+        "mood": "dry",
+        "outline_enu_m": [
+          [
+            -325.7,
+            -456.4
+          ],
+          [
+            -321.47,
+            -453.3
+          ],
+          [
+            -320.9,
+            -474.6
+          ],
+          [
+            -320.7,
+            -506.0
+          ],
+          [
+            -320.9,
+            -529.2
+          ],
+          [
+            -325.9,
+            -533.5
+          ],
+          [
+            -326.4,
+            -510.3
+          ],
+          [
+            -327.0,
+            -489.5
+          ],
+          [
+            -326.8,
+            -470.8
+          ]
+        ]
+      },
+      {
+        "id": "cherry-southeast-grove",
+        "mood": "grove",
+        "outline_enu_m": [
+          [
+            -325.9,
+            -528.1
+          ],
+          [
+            -321.9,
+            -527.3
+          ],
+          [
+            -321.0,
+            -548.6
+          ],
+          [
+            -321.2,
+            -572.8
+          ],
+          [
+            -322.9,
+            -583.9
+          ],
+          [
+            -321.76,
+            -588.6
+          ],
+          [
+            -322.85,
+            -597.64
+          ],
+          [
+            -332.8,
+            -597.45
+          ],
+          [
+            -334.68,
+            -588.1
+          ],
+          [
+            -333.4,
+            -575.5
+          ],
+          [
+            -333.1,
+            -565.1
+          ],
+          [
+            -328.0,
+            -554.9
+          ],
+          [
+            -325.9,
+            -540.0
+          ]
+        ]
+      },
+      {
+        "id": "rankin-east-verge",
+        "mood": "grove",
+        "outline_enu_m": [
+          [
+            -415.0,
+            -595.2
+          ],
+          [
+            -408.0,
+            -592.0
+          ],
+          [
+            -388.0,
+            -591.8
+          ],
+          [
+            -371.0,
+            -592.25
+          ],
+          [
+            -348.2,
+            -592.21
+          ],
+          [
+            -332.3,
+            -591.36
+          ],
+          [
+            -327.5,
+            -597.3
+          ],
+          [
+            -351.0,
+            -597.84
+          ],
+          [
+            -375.0,
+            -597.75
+          ],
+          [
+            -392.0,
+            -597.71
+          ],
+          [
+            -414.1,
+            -597.6
+          ]
+        ]
+      }
+    ],
+    "corner_return": {
+      "points_enu_m": [
+        [
+          -322.93,
+          -598.58
+        ],
+        [
+          -322.64,
+          -595.88
+        ],
+        [
+          -322.2,
+          -595.65
+        ],
+        [
+          -322.06,
+          -591.58
+        ],
+        [
+          -321.47,
+          -591.34
+        ],
+        [
+          -321.34,
+          -586.21
+        ]
+      ],
+      "rises_m": [
+        0.24,
+        0.29,
+        0.33,
+        0.37,
+        0.41
+      ],
+      "width_m": 0.34
+    }
+  },
+  "northwest_refinement": {
+    "orthophotos": [
+      {
+        "tile": "conger-south",
+        "file": "conger-south-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -534,
+          -578,
+          -475,
+          -491
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493795.14928888186%2C4876350.282153052%2C493854.14928888186%2C4876437.282153052&bboxSR=3740&imageSR=3740&size=590%2C870&layers=show%3A29&format=png32",
+        "sha256": "c6153c13fbed41a6c7d465322f2a9caaf6862c24043aa41c59c1c0dc5574b7eb"
+      },
+      {
+        "tile": "conger-south",
+        "file": "conger-south-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -534,
+          -578,
+          -475,
+          -491
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493795.14928888186%2C4876350.282153052%2C493854.14928888186%2C4876437.282153052&bboxSR=3740&imageSR=3740&size=590%2C870&layers=show%3A26&format=png32",
+        "sha256": "95873d8c3275947ca26b39e7dde98d1b56ebeaf7eebdeb463f574589f7349780"
+      },
+      {
+        "tile": "conger-south",
+        "file": "conger-south-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -534,
+          -578,
+          -475,
+          -491
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493795.14928888186%2C4876350.282153052%2C493854.14928888186%2C4876437.282153052&bboxSR=3740&imageSR=3740&size=590%2C870&layers=show%3A57&format=png32",
+        "sha256": "7cc1f2d04952d415942810550a40e1813c9edf235af020a24c5bb3b1faac36bd"
+      },
+      {
+        "tile": "conger-mid",
+        "file": "conger-mid-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -535,
+          -503,
+          -476,
+          -417
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493794.14928888186%2C4876425.282153052%2C493853.14928888186%2C4876511.282153052&bboxSR=3740&imageSR=3740&size=590%2C860&layers=show%3A29&format=png32",
+        "sha256": "46954d836db50819465f3af658c7961ba7c9e12468f69ab2dfa3365c44ccfd2d"
+      },
+      {
+        "tile": "conger-mid",
+        "file": "conger-mid-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -535,
+          -503,
+          -476,
+          -417
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493794.14928888186%2C4876425.282153052%2C493853.14928888186%2C4876511.282153052&bboxSR=3740&imageSR=3740&size=590%2C860&layers=show%3A26&format=png32",
+        "sha256": "2c3b80f04556a4dcf3218e0398f06feebc1b765b627ec98433b2804e9b9aa8c2"
+      },
+      {
+        "tile": "conger-mid",
+        "file": "conger-mid-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -535,
+          -503,
+          -476,
+          -417
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493794.14928888186%2C4876425.282153052%2C493853.14928888186%2C4876511.282153052&bboxSR=3740&imageSR=3740&size=590%2C860&layers=show%3A57&format=png32",
+        "sha256": "7c36bfda6a7363cf38d33b4a6dcef7ca2d43a5bd787ad2549f34f56c251fc10d"
+      },
+      {
+        "tile": "conger-north",
+        "file": "conger-north-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -537,
+          -428,
+          -474,
+          -339
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493792.14928888186%2C4876500.282153052%2C493855.14928888186%2C4876589.282153052&bboxSR=3740&imageSR=3740&size=630%2C890&layers=show%3A29&format=png32",
+        "sha256": "4e7a9cbb0a9b624c0ef4ac619f8d7644385c3e5842595f3ba02aab75c95453b7"
+      },
+      {
+        "tile": "conger-north",
+        "file": "conger-north-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -537,
+          -428,
+          -474,
+          -339
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493792.14928888186%2C4876500.282153052%2C493855.14928888186%2C4876589.282153052&bboxSR=3740&imageSR=3740&size=630%2C890&layers=show%3A26&format=png32",
+        "sha256": "507f3616df867692506831d79d8535d72d4fbecad2c23bee1afc93dfe7b58736"
+      },
+      {
+        "tile": "conger-north",
+        "file": "conger-north-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -537,
+          -428,
+          -474,
+          -339
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493792.14928888186%2C4876500.282153052%2C493855.14928888186%2C4876589.282153052&bboxSR=3740&imageSR=3740&size=630%2C890&layers=show%3A57&format=png32",
+        "sha256": "e0d684b9a3eced2ed654cae2e0bc8942032b0a608a9646cd0d8dff6fffdc5428"
+      },
+      {
+        "tile": "north-west",
+        "file": "north-west-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -538,
+          -351,
+          -453,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493791.14928888186%2C4876577.282153052%2C493876.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=850%2C730&layers=show%3A29&format=png32",
+        "sha256": "da0f93fc17a92d44e33dec69df0bc4092e5bb4aa8ccca5653d4cd72887399d18"
+      },
+      {
+        "tile": "north-west",
+        "file": "north-west-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -538,
+          -351,
+          -453,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493791.14928888186%2C4876577.282153052%2C493876.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=850%2C730&layers=show%3A26&format=png32",
+        "sha256": "033062136d283544619e6fc32d6756800e3b2445686a4c7abcc36d06c0190e70"
+      },
+      {
+        "tile": "north-west",
+        "file": "north-west-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -538,
+          -351,
+          -453,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493791.14928888186%2C4876577.282153052%2C493876.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=850%2C730&layers=show%3A57&format=png32",
+        "sha256": "a5a48c1b0a0ff7874a3c6b4701c236967e1953e31612d91bab1d75908d9a64eb"
+      },
+      {
+        "tile": "north-center",
+        "file": "north-center-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -463,
+          -327,
+          -374,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493866.14928888186%2C4876601.282153052%2C493955.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=890%2C490&layers=show%3A29&format=png32",
+        "sha256": "ed9513e0b8f1e33548d2906a66195352505a63e2473bdf932215168bbd745341"
+      },
+      {
+        "tile": "north-center",
+        "file": "north-center-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -463,
+          -327,
+          -374,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493866.14928888186%2C4876601.282153052%2C493955.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=890%2C490&layers=show%3A26&format=png32",
+        "sha256": "bd4da76e7e511b0f4053bef9f85e207014ce3fb727b87a4ed59ea890123a2f5d"
+      },
+      {
+        "tile": "north-center",
+        "file": "north-center-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -463,
+          -327,
+          -374,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493866.14928888186%2C4876601.282153052%2C493955.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=890%2C490&layers=show%3A57&format=png32",
+        "sha256": "6c42222ad0699787fa6498122dc8e61a9dc9d8d3ac8a615da9580118639d6df0"
+      },
+      {
+        "tile": "north-east",
+        "file": "north-east-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -384,
+          -339,
+          -315,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493945.14928888186%2C4876589.282153052%2C494014.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=690%2C610&layers=show%3A29&format=png32",
+        "sha256": "fea16e44eba4b35d59ea810c92e50b0b90b42ac37c35691c8f0e4369d3535e84"
+      },
+      {
+        "tile": "north-east",
+        "file": "north-east-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -384,
+          -339,
+          -315,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493945.14928888186%2C4876589.282153052%2C494014.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=690%2C610&layers=show%3A26&format=png32",
+        "sha256": "282948a457fca04da76442b7bca2f15b2acdf93ba872da9dbdd9ed085454468c"
+      },
+      {
+        "tile": "north-east",
+        "file": "north-east-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -384,
+          -339,
+          -315,
+          -278
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493945.14928888186%2C4876589.282153052%2C494014.14928888186%2C4876650.282153052&bboxSR=3740&imageSR=3740&size=690%2C610&layers=show%3A57&format=png32",
+        "sha256": "577140d09ece6d9c5a16abafc53eeb65f64533e24a0f01158f637b7ff77cc5ef"
+      }
+    ],
+    "historic_easement": {
+      "url": "https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669",
+      "pages_pdf": [
+        6,
+        9,
+        29,
+        30,
+        36
+      ]
+    },
+    "campus_survey": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/sw_campus_green_04_12_07.pdf",
+      "pages_pdf": [
+        3,
+        6,
+        7
+      ]
+    },
+    "north_street_view": {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIABIhC3kbMj5RoUuL8cVxXV0GK9&heading=158.5",
+      "date": "2026-06"
+    },
+    "west_approach_outline_enu_m": [
+      [
+        -523.9,
+        -306.0
+      ],
+      [
+        -519.2,
+        -306.0
+      ],
+      [
+        -519.03,
+        -315.8
+      ],
+      [
+        -518.94,
+        -326.5
+      ],
+      [
+        -518.82,
+        -331.95
+      ],
+      [
+        -518.88,
+        -335.95
+      ],
+      [
+        -522.0,
+        -336.98
+      ],
+      [
+        -523.53,
+        -334.45
+      ],
+      [
+        -524.75,
+        -332.45
+      ],
+      [
+        -528.4,
+        -331.98
+      ],
+      [
+        -537.65,
+        -331.97
+      ],
+      [
+        -537.65,
+        -328.75
+      ],
+      [
+        -528.4,
+        -328.75
+      ],
+      [
+        -525.2,
+        -328.45
+      ],
+      [
+        -523.93,
+        -326.55
+      ],
+      [
+        -524.16,
+        -321.35
+      ],
+      [
+        -523.9,
+        -316.0
+      ]
+    ],
+    "short_grass_track": {
+      "centerline_enu_m": [
+        [
+          -518.65,
+          -331.7
+        ],
+        [
+          -505.35,
+          -331.8
+        ],
+        [
+          -496.7,
+          -332.02
+        ],
+        [
+          -487.9,
+          -331.87
+        ]
+      ],
+      "width_m": 1.24
+    },
+    "north_ivy_outlines_enu_m": [
+      [
+        [
+          -431.6,
+          -286.3
+        ],
+        [
+          -429.18,
+          -286.21
+        ],
+        [
+          -426.13,
+          -287.1
+        ],
+        [
+          -424.23,
+          -286.65
+        ],
+        [
+          -423.5,
+          -287.8
+        ],
+        [
+          -424.1,
+          -289.66
+        ],
+        [
+          -427.12,
+          -290.33
+        ],
+        [
+          -431.6,
+          -289.06
+        ]
+      ],
+      [
+        [
+          -418.4,
+          -286.6
+        ],
+        [
+          -416.97,
+          -286.49
+        ],
+        [
+          -413.97,
+          -286.9
+        ],
+        [
+          -411.24,
+          -287.68
+        ],
+        [
+          -411.71,
+          -289.15
+        ],
+        [
+          -413.45,
+          -289.65
+        ],
+        [
+          -416.41,
+          -289.23
+        ],
+        [
+          -419.31,
+          -288.92
+        ]
+      ]
+    ],
+    "grave_plot_edges": [
+      {
+        "tile": "north-west",
+        "points_enu_m": [
+          [
+            -493.65,
+            -306.73
+          ],
+          [
+            -487.53,
+            -306.67
+          ],
+          [
+            -487.48,
+            -312.98
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "north-west",
+        "points_enu_m": [
+          [
+            -494.55,
+            -338.49
+          ],
+          [
+            -494.53,
+            -334.52
+          ],
+          [
+            -489.8,
+            -334.49
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "north-center",
+        "points_enu_m": [
+          [
+            -436.73,
+            -301.96
+          ],
+          [
+            -436.66,
+            -298.08
+          ],
+          [
+            -433.09,
+            -298.12
+          ],
+          [
+            -433.03,
+            -302.43
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "north-center",
+        "points_enu_m": [
+          [
+            -430.75,
+            -298.91
+          ],
+          [
+            -430.65,
+            -303.51
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "conger-north",
+        "points_enu_m": [
+          [
+            -493.86,
+            -368.7
+          ],
+          [
+            -493.85,
+            -361.91
+          ],
+          [
+            -487.61,
+            -361.9
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "conger-north",
+        "points_enu_m": [
+          [
+            -502.73,
+            -408.8
+          ],
+          [
+            -502.72,
+            -405.8
+          ],
+          [
+            -497.18,
+            -405.73
+          ]
+        ],
+        "material": "concrete",
+        "closed": false
+      },
+      {
+        "tile": "conger-north",
+        "points_enu_m": [
+          [
+            -486.03,
+            -405.18
+          ],
+          [
+            -482.4,
+            -405.09
+          ]
+        ],
+        "material": "stone",
+        "closed": false
+      }
+    ],
+    "marker_estimates": [
+      {
+        "tile": "north-west",
+        "position_enu_m": [
+          -492.1,
+          -309.53
+        ],
+        "width_m": 0.75,
+        "depth_m": 0.42,
+        "height_m": 0.65,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "north-west",
+        "position_enu_m": [
+          -499.56,
+          -337.12
+        ],
+        "width_m": 0.61,
+        "depth_m": 0.32,
+        "height_m": 0.28,
+        "silhouette": "low"
+      },
+      {
+        "tile": "north-west",
+        "position_enu_m": [
+          -493.87,
+          -335.59
+        ],
+        "width_m": 0.63,
+        "depth_m": 0.38,
+        "height_m": 0.57,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "north-center",
+        "position_enu_m": [
+          -436.45,
+          -299.54
+        ],
+        "width_m": 0.7,
+        "depth_m": 0.43,
+        "height_m": 0.66,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "north-center",
+        "position_enu_m": [
+          -430.88,
+          -301.48
+        ],
+        "width_m": 0.55,
+        "depth_m": 0.34,
+        "height_m": 0.29,
+        "silhouette": "low"
+      },
+      {
+        "tile": "conger-north",
+        "position_enu_m": [
+          -487.28,
+          -363.99
+        ],
+        "width_m": 0.73,
+        "depth_m": 0.41,
+        "height_m": 0.51,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "conger-north",
+        "position_enu_m": [
+          -487.46,
+          -367.75
+        ],
+        "width_m": 0.62,
+        "depth_m": 0.35,
+        "height_m": 0.29,
+        "silhouette": "low"
+      },
+      {
+        "tile": "conger-north",
+        "position_enu_m": [
+          -503.02,
+          -378.62
+        ],
+        "width_m": 0.67,
+        "depth_m": 0.4,
+        "height_m": 0.45,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "conger-north",
+        "position_enu_m": [
+          -501.32,
+          -409.24
+        ],
+        "width_m": 0.64,
+        "depth_m": 0.38,
+        "height_m": 0.48,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "conger-north",
+        "position_enu_m": [
+          -491.48,
+          -408.77
+        ],
+        "width_m": 0.77,
+        "depth_m": 0.42,
+        "height_m": 0.71,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "conger-mid",
+        "position_enu_m": [
+          -522.68,
+          -421.92
+        ],
+        "width_m": 0.68,
+        "depth_m": 0.42,
+        "height_m": 0.62,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "conger-mid",
+        "position_enu_m": [
+          -523.2,
+          -425.16
+        ],
+        "width_m": 0.56,
+        "depth_m": 0.34,
+        "height_m": 0.47,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "conger-mid",
+        "position_enu_m": [
+          -488.22,
+          -466.95
+        ],
+        "width_m": 0.75,
+        "depth_m": 0.46,
+        "height_m": 0.67,
+        "silhouette": "upright"
+      },
+      {
+        "tile": "conger-south",
+        "position_enu_m": [
+          -510.77,
+          -563.07
+        ],
+        "width_m": 0.61,
+        "depth_m": 0.36,
+        "height_m": 0.53,
+        "silhouette": "upright"
+      }
+    ],
+    "paths": [
+      {
+        "anchor_enu_m": [
+          -419.65,
+          -387.72
+        ],
+        "points_enu_m": [
+          [
+            -438.5,
+            -388.09
+          ],
+          [
+            -456,
+            -388.6
+          ],
+          [
+            -470.8,
+            -387.68
+          ],
+          [
+            -486.46,
+            -386.88
+          ],
+          [
+            -503.15,
+            -386.43
+          ],
+          [
+            -520.02,
+            -386.5
+          ],
+          [
+            -520.26,
+            -375.4
+          ],
+          [
+            -519.68,
+            -363.5
+          ],
+          [
+            -519.85,
+            -350.2
+          ],
+          [
+            -520.52,
+            -340
+          ],
+          [
+            -520.73,
+            -331.05
+          ],
+          [
+            -520.68,
+            -328.5
+          ],
+          [
+            -520.35,
+            -313.2
+          ],
+          [
+            -518.7,
+            -302.0
+          ],
+          [
+            -517.6,
+            -292.5
+          ],
+          [
+            -502.36,
+            -292.73
+          ],
+          [
+            -486.51,
+            -292.98
+          ],
+          [
+            -471.85,
+            -293.21
+          ],
+          [
+            -454.76,
+            -293.3
+          ],
+          [
+            -438.44,
+            -293.4
+          ],
+          [
+            -421.2,
+            -293.5
+          ],
+          [
+            -404.13,
+            -293.67
+          ],
+          [
+            -387.78,
+            -293.82
+          ],
+          [
+            -369.2,
+            -294.0
+          ],
+          [
+            -354.7,
+            -294.3
+          ],
+          [
+            -341.15,
+            -294.6
+          ],
+          [
+            -326.25,
+            -294.9
+          ]
+        ]
+      },
+      {
+        "anchor_enu_m": [
+          -520.73,
+          -331.05
+        ],
+        "points_enu_m": [
+          [
+            -524.2,
+            -330.28
+          ],
+          [
+            -531.64,
+            -330.38
+          ],
+          [
+            -537.05,
+            -330.36
+          ]
+        ]
+      },
+      {
+        "anchor_enu_m": [
+          -421.2,
+          -293.5
+        ],
+        "points_enu_m": [
+          [
+            -421.57,
+            -312.1
+          ],
+          [
+            -421.8,
+            -330.6
+          ],
+          [
+            -421.18,
+            -348.4
+          ],
+          [
+            -420.55,
+            -366
+          ],
+          [
+            -420.1,
+            -379.0
+          ]
+        ],
+        "end_enu_m": [
+          -419.65,
+          -387.72
+        ]
+      },
+      {
+        "anchor_enu_m": [
+          -520.02,
+          -386.5
+        ],
+        "points_enu_m": [
+          [
+            -519.45,
+            -405.7
+          ],
+          [
+            -519.5,
+            -423.8
+          ],
+          [
+            -518.1,
+            -441.8
+          ],
+          [
+            -517.8,
+            -459.3
+          ],
+          [
+            -517.7,
+            -475.9
+          ],
+          [
+            -517.4,
+            -483.5
+          ],
+          [
+            -517.5,
+            -498.1
+          ],
+          [
+            -517.95,
+            -514.8
+          ],
+          [
+            -518.08,
+            -529.1
+          ],
+          [
+            -517.98,
+            -541.1
+          ],
+          [
+            -518.15,
+            -553.2
+          ],
+          [
+            -518.1,
+            -567.0
+          ],
+          [
+            -517.2,
+            -579.8
+          ]
+        ],
+        "end_enu_m": [
+          -514.14,
+          -585.9
+        ]
+      }
     ]
   }
 }

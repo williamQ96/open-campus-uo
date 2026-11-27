@@ -410,6 +410,7 @@ export async function loadBuildingSiteReview(
     prerequisiteIds = [],
     corridorId,
     navigationUrl,
+    navigationPredecessor,
   },
 ) {
   if (
@@ -570,9 +571,31 @@ export async function loadBuildingSiteReview(
       readPinnedScene(
         base + navigationUrl,
         corridor?.source_navigation_sha256 ?? site.source_navigation_sha256,
-      ).then((data) => {
+      ).then(async (data) => {
         const original = JSON.parse(new TextDecoder().decode(data));
-        if (walkableGroundNode) appendWalkablePath(original, walkableGround);
+        if (walkableGroundNode) {
+          let baseGraph = original;
+          if (navigationPredecessor) {
+            const predecessorBytes = await readPinnedScene(
+              base + navigationPredecessor.url,
+              navigationPredecessor.sha256,
+            );
+            const predecessor = JSON.parse(
+              new TextDecoder().decode(predecessorBytes),
+            );
+            if (
+              predecessor.source_navigation_sha256 !==
+                site.source_navigation_sha256 ||
+              !validWalkableGround(predecessor.walkable_ground)
+            )
+              throw new Error("Exterior review path predecessor changed.");
+            baseGraph = appendWalkablePath(
+              original,
+              predecessor.walkable_ground,
+            );
+          }
+          appendWalkablePath(baseGraph, walkableGround);
+        }
         return corridor && patchedNavigation(original, corridor);
       }),
   ]);

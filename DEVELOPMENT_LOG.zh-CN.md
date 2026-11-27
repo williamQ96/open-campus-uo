@@ -6,6 +6,24 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Southwest Campus Green 与 Spangler South Garden
+
+- 补建 5,490.41 平方米草坪、1,293.48 平方米平台和步道、11 处种植区，并按校园树籍配准 29 株乔木。补建三张长椅、四根灯杆和代表性 Lot 20 标识，恢复停车场的两段斜线通道、四处无障碍图标及可辨树池路缘。[场地复核](docs/southwest-campus-green-review-2026-11-27.md)。
+- 增加 40 条导航边，核对 39 个路径点。西南场地通过哈希锁定的墓园描述文件验证共用接点。浏览器抽检中的端点捷径仍会离开建模铺面。已在台账标注 Wayne Chabre 的《Trees of Knowledge》作品群，单件底座和可再发布的造型仍待核对。
+- 两次导出逐字节一致。六组对比图及八处铺面探针核对了平台、草坪、停车场和墓园接驳。桌面和手机均加载 610 个模型网格与 368 项资源。生产构建、格式检查、197 项单元测试、12 项相关浏览器测试、491 项归档及查看器哈希通过。改动纳入 11 月 27 日室外 L2 发布。
+
+## 2026-11-27 - 发布 Pioneer Cemetery 西北侧与 Knight Library 接驳
+
+- 配准 Knight Library 侧 197.42 平方米铺面，校正 Conger Lane 的可见走线及 Dorris、Walton 和 Cherry 三处横向接点。补建 30.75 米草径、两处常春藤地被、七组边石和 14 处无名碑形。树冠下的路宽和小构件剖面仍用估算。[墓园西北侧复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md#conger-lane-shelley-lane-and-the-library-approach)。
+- 增加 50 条导航边。桌面和手机均配准 48 个路径点，并在建模道路上找到从图书馆接驳处至北段 Risdon Lane 的 244.03 米路线。另两条查询路径的端点捷径分别经过 31.35 米和 9.34 米未铺面草地。登记的导航边沿建模路面布置。
+- 留存六组对比图，两次导出一致，方形跑道和 University Street 对照导出逐字节一致。桌面和手机生产预览各核对 610 个模型网格、366 项资源及七处西北侧铺面和净空。构建、格式检查、197 项单元测试、11 项相关浏览器测试及 489 项归档校验通过。改动纳入 11 月 27 日室外 L2 发布。
+
+## 2026-11-27 - 发布 Pioneer Cemetery 东侧与南侧周界
+
+- 在 University Street 与 Rankin Lane 一带补建 1,839.82 平方米草坡、四处低矮种植、16 组外露边石、22 处无名碑形和东南角 13.05 米分级矮墙。可见位置按多期影像配准，墙体尺寸、碑形和植物形态采用估算。短矮墙为视觉几何。[墓园周界复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md#university-street-and-rankin-lane-perimeter)。
+- 校正 Southgate 西侧人行道，将 University Street 的两处路径点移到改正后的铺面上。墓园原有三角面全部保留。University Street 的网格及 Hayward 中段与 East 15th 的对照导出逐字节一致。墓园、方形跑道与 University Street 三处改动均通过重复导出。[Southgate 复核](docs/hayward-square-track-review-2026-11-27.md#southgate-west-approach-at-pioneer-cemetery)。
+- 桌面和手机生产预览各核对了 610 个外部模型 ID 与网格，并加载 366 项受跟踪资源。到 Memorial Square 和 Southgate 至 Agate 的路线分别为 113.62 米和 409.09 米。七组前后对比、15 处墙顶探针、生产构建、格式检查、197 项单元测试、11 项相关浏览器测试、489 项归档及查看器哈希均通过。改动纳入 11 月 27 日室外 L2 发布。
+
 ## 2026-11-27 - 发布 Hayward 中段和 East 15th 室外 L2
 
 - 发布 Hayward 南侧通道、Turf Field 1 和 2、Jane Sanders 旗杆步道及 SRC 东侧步道。步道接通 East 15th，练习场恢复标线和围栏，两片球场及其沿线共清除十株推断树。分隔带台阶的踏步与栏杆尺寸仍待近景确认。[Hayward 复核](docs/hayward-midblock-review-2026-11-27.md)。

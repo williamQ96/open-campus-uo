@@ -172,10 +172,13 @@ def named_paths(parts, field, spec):
         (LineString(row["centerline_enu_m"]), row["width_m"]) for row in spec["roads"]
     ]
     bases = [line.buffer(width / 2, cap_style="flat") for line, width in centerlines]
-    paving = unary_union(bases)
+    roads = unary_union(bases)
+    approach = Polygon(spec["northwest_refinement"]["west_approach_outline_enu_m"])
+    paving = roads.union(approach)
     areas = Polygon(spec["parcel"]["outline_enu_m"])
     shoulders = paving.buffer(0.43).difference(paving).intersection(areas)
-    drape(parts, field, paving, GRAVEL, 0.082, 2.0)
+    drape(parts, field, roads.difference(approach), GRAVEL, 0.082, 2.0)
+    drape(parts, field, approach, (146, 143, 132), 0.096, 1.10)
     drape(parts, field, shoulders, SHOULDER, 0.058, 2.0)
     return paving
 
@@ -196,12 +199,15 @@ def rankin_frontage(parts, field, spec):
     ]
 
 
-def rankin_routes(first, paths, paving, obstacles):
-    available = set(map(tuple, first["points_enu_m"]))
+def branch_lengths(registered, paths, paving, obstacles):
+    available = set(map(tuple, registered))
     lengths = []
     for path in paths:
         assert tuple(path["anchor_enu_m"]) in available
         points = [path["anchor_enu_m"], *path["points_enu_m"]]
+        if "end_enu_m" in path:
+            assert tuple(path["end_enu_m"]) in available
+            points.append(path["end_enu_m"])
         spans = np.linalg.norm(np.diff(points, axis=0), axis=1)
         assert all(0.05 < span < 20 for span in spans)
         line = LineString(points)
@@ -214,12 +220,19 @@ def rankin_routes(first, paths, paving, obstacles):
 
 def internal_landscape(paving, details, field, spec, main_paths):
     curbs = []
-    for row in spec["grave_plot_edges"]:
+    previous = spec["grave_plot_edges"]
+    additions = [
+        *spec["perimeter_refinement"]["grave_plot_edges"],
+        *spec["northwest_refinement"]["grave_plot_edges"],
+    ]
+    for index, row in enumerate([*previous, *additions]):
         points = row["points_enu_m"]
         line = LineString([*points, points[0]] if row["closed"] else points)
         material = CONCRETE if row["material"] == "concrete" else STONE
         curb = line.buffer(0.105, cap_style="flat", join_style="mitre")
         assert not curb.intersects(main_paths)
+        if index >= len(previous):
+            assert all(curb.distance(existing) > 0.22 for existing in curbs)
         curbs.append(curb)
         for a, b in zip(line.coords, list(line.coords)[1:]):
             span = LineString([a, b])
@@ -247,6 +260,147 @@ def internal_landscape(paving, details, field, spec, main_paths):
         drape(paving, field, alley, (147, 159, 112), 0.086, 1.15)
         alleys.append(alley)
     return unary_union(alleys), sum(edge.area for edge in curbs)
+
+
+def northwest_planting(ground, field, spec, paving):
+    info = spec["northwest_refinement"]
+    trail = info["short_grass_track"]
+    trace = LineString(trail["centerline_enu_m"])
+    grass = trace.buffer(trail["width_m"] / 2, cap_style="flat").difference(
+        paving.buffer(0.24)
+    )
+    drape(ground, field, grass, (152, 154, 112), 0.079, 0.84)
+    ivy = []
+    for outline in info["north_ivy_outlines_enu_m"]:
+        patch = Polygon(outline).difference(paving.buffer(0.62))
+        assert patch.is_valid and patch.area > 3
+        drape(ground, field, patch, (105, 131, 76), 0.069, 0.64)
+        ivy.append(patch)
+    return {
+        "west_approach_m2": round(Polygon(info["west_approach_outline_enu_m"]).area, 2),
+        "grass_trace_m": round(trace.length, 2),
+        "grass_trace_m2": round(grass.area, 2),
+        "ivy_m2": round(sum(patch.area for patch in ivy), 2),
+    }
+
+
+def perimeter_landscape(ground, details, field, spec, paving, alleys):
+    info = spec["perimeter_refinement"]
+    parcel = Polygon(spec["parcel"]["outline_enu_m"])
+    street = read(root / "data/metadata/university-south-axis.json")
+    west = [(e, n) for n, e, _ in street["west_walk"]]
+    east = [(e, n) for n, _, e in reversed(street["west_walk"])]
+    sidewalk = Polygon([*west, *east])
+    stair = spec["east_stair"]
+    landing = box(
+        stair["top_east_m"] - 0.78,
+        stair["north_m"] - 1.38,
+        stair["bottom_east_m"] + 0.16,
+        stair["north_m"] + 1.38,
+    )
+    rankin = spec["rankin_fringe"]["sidewalk"]
+    frontage = LineString(rankin["centerline_enu_m"]).buffer(
+        rankin["width_m"] / 2, cap_style="flat"
+    )
+    clear = unary_union([paving.buffer(0.43), alleys, sidewalk, landing, frontage])
+    keep_open = clear.union(
+        unary_union([Polygon(x) for x in street["approach_paving"]])
+    ).buffer(0.12)
+
+    corner = info["corner_return"]
+    width = corner["width_m"]
+    wall_points = corner["points_enu_m"]
+    wall = LineString(wall_points)
+    wall_footprint = wall.buffer(width / 2 + 0.025)
+    assert wall_footprint.distance(clear) > 0.21
+    for a, b, rise in zip(wall_points, wall_points[1:], corner["rises_m"]):
+        foot = landscape.rect_on(a, b, width)
+        cap = LineString([a, b]).buffer(width / 2 + 0.025, cap_style="square")
+        for shape, bottom, top, color in (
+            (foot, -0.22, rise - 0.064, (176, 173, 161)),
+            (cap, rise - 0.064, rise, (155, 153, 138)),
+        ):
+            mesh = landscape.cap(shape, bottom, top, color)
+            mesh.vertices[:, 1] += [
+                ground_height(field, e + 0.12, -z) for e, _, z in mesh.vertices
+            ]
+            details.append(mesh)
+
+    grass = np.array([160, 183, 118])
+    palettes = {
+        "open": (168, 174, 117),
+        "dry": (172, 169, 119),
+        "grove": (153, 153, 109),
+    }
+    planted = Polygon()
+    areas = {}
+    for row in info["verge_zones"]:
+        zone = (
+            Polygon(row["outline_enu_m"])
+            .intersection(parcel)
+            .difference(keep_open.union(wall_footprint).union(planted))
+        )
+        assert zone.is_valid and zone.area > 10
+        begin = len(ground)
+        drape(ground, field, zone, grass, 0.068, 0.95)
+        xy = ground[begin].vertices[:, [0, 2]]
+        points = [Point(e, -z) for e, z in xy]
+        strength = np.minimum([p.distance(zone.boundary) for p in points], 1.0)
+        variation = np.sin(xy[:, 0] * 0.91 + xy[:, 1] * 0.63)[:, None] * 2.8
+        delta = np.array(palettes[row["mood"]]) - grass
+        ground[begin].visual.vertex_colors[:, :3] = np.rint(
+            grass + strength[:, None] * (delta + variation)
+        ).astype(np.uint8)
+        planted = planted.union(zone)
+        areas[row["id"]] = round(zone.area, 2)
+
+    established = [
+        Point(row["position_enu_m"])
+        for row in [
+            *spec["heritage_rose_positions"],
+            *spec["charles_lawson_roses"]["placements"],
+        ]
+    ]
+    leaves = (
+        (91, 115, 68),
+        (111, 128, 75),
+        (94, 112, 69),
+        (105, 123, 73),
+        (113, 131, 80),
+        (121, 135, 79),
+    )
+    for index, row in enumerate(info["low_planting"]):
+        e, n = row["position_enu_m"]
+        center = Point(e, n)
+        radius, height = row["radius_m"], row["height_m"]
+        assert keep_open.distance(center) > radius
+        assert parcel.covers(center.buffer(radius))
+        assert min(center.distance(p) for p in established) > radius + 1.0
+        z = ground_height(field, e, n)
+        for i, color in enumerate(leaves):
+            angle = index * 1.37 + i * 2 * np.pi / 5
+            offset = radius * 0.43 if i < 5 else 0.0
+            x, y = e + offset * np.cos(angle), n + offset * np.sin(angle)
+            top = height * (0.55 if i < 5 else 0.71)
+            cylinder_between(
+                details,
+                (e, n, z - 0.03),
+                (x, y, z + top),
+                0.024,
+                (100, 89, 71),
+                sides=6,
+            )
+            orb(
+                details,
+                (x, y, z + top),
+                (radius * 0.55, radius * 0.52, height * 0.29),
+                color,
+            )
+    return {
+        "verge_areas_m2": areas,
+        "corner_return_length_m": round(wall.length, 2),
+        "low_planting": len(info["low_planting"]),
+    }
 
 
 def support_structures(paved, details, field, spec, paths):
@@ -933,15 +1087,40 @@ def main():
     memorial(details, field, spec["gar_monument"])
     vault_box = smith_vault(details, field, spec["smith_vault"], site)
     rankin_paths = spec["rankin_fringe"]["paths"]
-    rankin_lengths = rankin_routes(
-        route, rankin_paths, site,
-        unary_union([box(*b) for b in [*support_boxes, *kiosk_boxes, vault_box, *wall_boxes]]),
+    obstacles = unary_union(
+        [box(*b) for b in [*support_boxes, *kiosk_boxes, vault_box, *wall_boxes]]
+    )
+    rankin_lengths = branch_lengths(
+        route["points_enu_m"], rankin_paths, site, obstacles
+    )
+    northwest = spec["northwest_refinement"]
+    northwest_lengths = branch_lengths(
+        [
+            *route["points_enu_m"],
+            *(p for row in rankin_paths for p in row["points_enu_m"]),
+        ],
+        northwest["paths"],
+        site,
+        obstacles,
     )
     for i, row in enumerate(spec["heritage_rose_positions"]):
         rose(details, field, row, i)
-    for i, row in enumerate(spec["marker_estimates"]):
+    perimeter = spec["perimeter_refinement"]
+    old_markers = spec["marker_estimates"]
+    marker_centers = []
+    marker_rows = [
+        *old_markers,
+        *perimeter["marker_estimates"],
+        *northwest["marker_estimates"],
+    ]
+    for i, row in enumerate(marker_rows):
+        center = Point(row["position_enu_m"])
+        if i >= len(old_markers):
+            assert all(center.distance(existing) > 0.82 for existing in marker_centers)
+            assert alleys.distance(center) > 0.3
+        marker_centers.append(center)
         marker(details, field, row, i)
-        assert site.distance(Point(row["position_enu_m"])) > 0.6
+        assert site.distance(center) > 0.6
     lawson_roses = spec["charles_lawson_roses"]["placements"]
     for row in lawson_roses:
         center = Point(row["position_enu_m"])
@@ -955,6 +1134,8 @@ def main():
     assert not site.intersects(bed)
     for row in spec["heritage_rose_positions"]:
         assert not site.contains(Point(row["position_enu_m"]))
+    perimeter_audit = perimeter_landscape(ground, details, field, spec, site, alleys)
+    northwest_audit = northwest_planting(ground, field, spec, site)
     args.stage.mkdir(parents=True, exist_ok=True)
     asset = args.stage / "site.glb"
     faces = export(
@@ -999,6 +1180,7 @@ def main():
             "paths": [
                 {key: route[key] for key in ("anchor_enu_m", "points_enu_m")},
                 *rankin_paths,
+                *northwest["paths"],
             ],
         },
         "context_trees": spec["procedural_context_trees_to_remove"],
@@ -1024,13 +1206,15 @@ def main():
         "registered_rose_clusters": len(spec["heritage_rose_positions"]),
         "charles_lawson_rose_clusters": len(lawson_roses),
         "registered_canopy_estimates": len(spec["canopy_estimates"]),
-        "aerial_marker_estimates": len(spec["marker_estimates"]),
+        "aerial_marker_estimates": len(marker_centers),
         "rankin_frontage_area_m2": round(frontage_area, 2),
         "rankin_new_route_edges": sum(len(path["points_enu_m"]) for path in rankin_paths),
         "rankin_route_lengths_m": rankin_lengths,
         "inner_alleys": len(spec["inner_alleys"]),
         "inner_alley_area_m2": round(alleys.area, 2),
-        "grave_plot_edges": len(spec["grave_plot_edges"]),
+        "grave_plot_edges": len(spec["grave_plot_edges"])
+        + len(perimeter["grave_plot_edges"])
+        + len(northwest["grave_plot_edges"]),
         "grave_plot_curb_area_m2": round(curb_area, 2),
         "support_structures": 2,
         "memorial_square_kiosk_and_sign": 2,
@@ -1041,6 +1225,21 @@ def main():
         "removed_procedural_tree_indices": [
             x["index"] for x in payload["context_trees"]
         ],
+        "perimeter": {
+            **perimeter_audit,
+            "grave_plot_edges": len(perimeter["grave_plot_edges"]),
+            "marker_estimates": len(perimeter["marker_estimates"]),
+        },
+        "northwest": {
+            **northwest_audit,
+            "grave_plot_edges": len(northwest["grave_plot_edges"]),
+            "marker_estimates": len(northwest["marker_estimates"]),
+            "route_edges": sum(
+                len(row["points_enu_m"]) + ("end_enu_m" in row)
+                for row in northwest["paths"]
+            ),
+            "route_lengths_m": northwest_lengths,
+        },
         "faces": faces,
         "asset_sha256": pin(asset),
         "descriptor_sha256": pin(descriptor),

@@ -3,6 +3,7 @@ import {
   DEFAULT_PILOT_TREES,
   DEFAULT_SELECTABLE_BUILDINGS,
   EAST_THIRTEENTH_PILOT_TREE_REMOVALS,
+  SOUTHWEST_PILOT_TREE_REMOVALS,
 } from "./exterior-counts.js";
 
 async function landscapeState(page) {
@@ -283,6 +284,70 @@ async function landscapeState(page) {
         [50.04, -255.83],
         [54.8, -271],
       ].map(([x, north]) => blocked(x, north)),
+      cemeteryVerges: [
+        [-324.0, -350.0],
+        [-324.4, -433.0],
+        [-324.75, -485.0],
+        [-324.8, -553.0],
+        [-378.2, -595.5],
+      ].map(([x, north]) => {
+        const heights = campus.terrainCheck(x, -north);
+        const rise = heights["pioneer-cemetery-paving"] - heights.sampled;
+        return rise > 0.045 && rise < 0.09;
+      }),
+      cemeteryWestWalk: [
+        [-319.76, -350.0],
+        [-320.0, -435.0],
+        [-319.9, -485.0],
+        [-320.8, -558.0],
+      ].map(([x, north]) => {
+        const heights = campus.terrainCheck(x, -north);
+        return [
+          Number.isFinite(heights["university-south-axis-paving"]),
+          Number.isFinite(heights["pioneer-cemetery-paving"]),
+          blocked(x, north),
+        ];
+      }),
+      southgateCemeteryEdge: [
+        [-324.0, -592.5],
+        [-320.38, -591.5],
+      ].map(([x, north]) => {
+        const heights = campus.terrainCheck(x, -north);
+        return [
+          Number.isFinite(heights["pioneer-cemetery-paving"]),
+          Number.isFinite(heights["hayward-square-track-ground"]),
+          blocked(x, north),
+        ];
+      }),
+      southwestGreenSurfaces: [
+        [-565.84, -330.43],
+        [-604.19, -359.5],
+        [-555.0, -424.0],
+        [-565.0, -365.0],
+        [-568.4, -327.0],
+      ].map(([x, north]) => {
+        const { sampled, "southwest-campus-green-paving": surface } =
+          campus.terrainCheck(x, -north);
+        return [surface - sampled > 0.038, blocked(x, north)];
+      }),
+      southwestGreenFurniture: [
+        [-572.84, -321.87],
+        [-589.04, -326.8],
+        [-592.95, -421.43],
+      ].map(([x, north]) => blocked(x, north)),
+      cemeteryNorthwest: [
+        [-533, -330.4],
+        [-521.25, -322.8],
+        [-520.05, -357.5],
+        [-517.85, -554.5],
+        [-486.51, -292.98],
+      ].map(([x, north]) => {
+        const heights = campus.terrainCheck(x, -north);
+        return [
+          heights["pioneer-cemetery-paving"] - heights.sampled > 0.055,
+          blocked(x, north),
+        ];
+      }),
       rankinWalks: [
         [-435, -600.52],
         [-400, -600.57],
@@ -368,6 +433,15 @@ test("historic landscape solids leave Cherry Avenue and Hello Walk open", async 
     haywardMidblockSolids: Array(5).fill(true),
     eastFifteenthSurfaces: Array(6).fill([true, false]),
     eastFifteenthFixtures: Array(4).fill(true),
+    cemeteryVerges: Array(5).fill(true),
+    cemeteryWestWalk: Array(4).fill([true, false, false]),
+    southgateCemeteryEdge: [
+      [true, false, false],
+      [false, true, false],
+    ],
+    cemeteryNorthwest: Array(5).fill([true, false]),
+    southwestGreenSurfaces: Array(5).fill([true, false]),
+    southwestGreenFurniture: Array(3).fill(true),
     rankinWalks: Array(4).fill([true, false]),
     rankinWalls: [true, false, true],
     heritageWalks: Array(5).fill([true, false]),
@@ -387,11 +461,14 @@ test("failed historic site bundles restore the preceding ground and access", asy
   page,
 }) => {
   await page.route(
-    /\/(?:pioneer-cemetery-landscape-review|fenton-site-review|howe-field-gates-review|dads-gates-landscape-review|east-thirteenth-west-gateway-review|east-thirteenth-central-review|east-thirteenth-east-review|great-lawn-landscape-review|agate-thirteenth-fifteenth-review|agate-fifteenth-eighteenth-review|hayward-practice-fields-review|hayward-square-track-review|university-south-axis-review|hayward-midblock-review|east-fifteenth-hayward-review)\/site\.glb$/,
+    /\/(?:pioneer-cemetery-landscape-review|southwest-campus-green-review|fenton-site-review|howe-field-gates-review|dads-gates-landscape-review|east-thirteenth-west-gateway-review|east-thirteenth-central-review|east-thirteenth-east-review|great-lawn-landscape-review|agate-thirteenth-fifteenth-review|agate-fifteenth-eighteenth-review|hayward-practice-fields-review|hayward-square-track-review|university-south-axis-review|hayward-midblock-review|east-fifteenth-hayward-review)\/site\.glb$/,
     (route) => route.fulfill({ body: "invalid site mesh" }),
   );
   expect(await landscapeState(page)).toMatchObject({
-    pilotTrees: DEFAULT_PILOT_TREES + EAST_THIRTEENTH_PILOT_TREE_REMOVALS,
+    pilotTrees:
+      DEFAULT_PILOT_TREES +
+      EAST_THIRTEENTH_PILOT_TREE_REMOVALS +
+      SOUTHWEST_PILOT_TREE_REMOVALS,
     vault: false,
     vaultApproach: false,
     cherryAvenue: false,
@@ -427,6 +504,12 @@ test("failed historic site bundles restore the preceding ground and access", asy
     haywardMidblockSolids: Array(5).fill(false),
     eastFifteenthSurfaces: Array(6).fill([false, false]),
     eastFifteenthFixtures: Array(4).fill(false),
+    cemeteryVerges: Array(5).fill(false),
+    cemeteryWestWalk: Array(4).fill([false, false, false]),
+    southgateCemeteryEdge: Array(2).fill([false, false, false]),
+    cemeteryNorthwest: Array(5).fill([false, false]),
+    southwestGreenSurfaces: Array(5).fill([false, false]),
+    southwestGreenFurniture: Array(3).fill(false),
     rankinWalks: Array(4).fill([false, false]),
     rankinWalls: Array(3).fill(false),
     heritageWalks: Array(5).fill([false, false]),

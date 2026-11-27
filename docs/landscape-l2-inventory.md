@@ -12,7 +12,10 @@
 | Pioneer Cemetery Smith Vault 与邻近墓区 | 已纳入 L2 发布 | 补建蓝灰抹灰四坡顶墓室、端面铭牌和两组邻近边石，核对 Cherry Avenue 通行。屋高与铭牌位置为估计。 |
 | Pioneer Cemetery 的 Charles Lawson 玫瑰与 GAR 南侧墓区 | 已纳入 L2 发布 | 1930 年编号图接合现有道路。首批在四个区块估放玫瑰，并补建一组可见边石和三处无名墓碑。第五处见下方 Rankin Lane 记录。 |
 | Pioneer Cemetery 的 Rankin Lane 南缘 | 已纳入 L2 发布 | 补建 East 18th 人行道、六组边石、十处无名墓碑、三株乔木和 27 条导航边。校正中东段草坡、西侧石墙和东南阶形收边。按协会图纸估放 597 区块的第五株 Charles Lawson 玫瑰。 |
-| Pioneer Cemetery 其余墓区 | 待细化 | 继续核对被树冠遮挡的小巷、边石、历史玫瑰和边界乔木。 |
+| Pioneer Cemetery 的 University Street 与 Rankin Lane 周界 | 本地 L2 | 配准 1,839.82 平方米草坡、四处低矮种植、16 组外露边石、22 处无名碑形和 13.05 米矮墙。按矮墙修正 Southgate 西侧人行道及两处路径点。[周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#university-street-and-rankin-lane-perimeter) |
+| Pioneer Cemetery 的 Conger Lane、Shelley Lane 与图书馆接驳 | 本地 L2 | 配准图书馆侧 197.42 平方米铺面、Conger 路线、短草径、两处低植、七组外露边石及 14 处无名碑形。四条分支新增 50 条导航边。[西北周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#conger-lane-shelley-lane-and-the-library-approach) |
+| Pioneer Cemetery 其余墓区 | 待细化 | 核对树冠遮挡的小巷、边石、历史玫瑰和边界乔木。两组抽检路线出现端点捷径，已记录离开铺面的距离。 |
+| Southwest Campus Green、Knight Library 南侧平台与 Lot 20 | 本地 L2 | 配准开敞草坪、南侧平台、11 处种植区、29 株登记树和 40 条导航边，补建停车路缘、无障碍标线、长椅、路灯和场地牌。《Trees of Knowledge》已记录作品群位置，单件底座与可再发布几何待核对。[场地复核](southwest-campus-green-review-2026-11-27.md) |
 | 校园主道路、人行道及广场 | 已有代表性 L2，待逐处复核 | 139 条走廊已有注册铺装。按公共空间逐段核对路缘、过街线、台阶、扶手、道路标识和真实接合。 |
 | Gerlinger Field Green 草坪、步道和东侧边界 | 已纳入 L2 发布 | 恢复开敞草坪、六段铺装、南侧停车地坪、Annex 外梯、矮墙、标识、常春藤和十株登记树。楼梯、停车标线和植物尺寸采用估算。 |
 | Women’s Memorial Quad | 已纳入 L2 发布 | 配准重铺后的曲线步道、约 33 米台地墙、两段外梯和六张石凳。台阶与石凳尺寸为估计。 |
@@ -34,8 +37,8 @@
 | Hayward 方形跑道、Turf Field 3、室外网球场和 Southgate | 纳入本次 L2 发布 | 重建环道、两处八道直道、人工草地与六片球场。沿 East 18th 北侧经 Jane Sanders 接到 University Street，补建南入口两根灯柱与砖铺过街。场地标线、网高和构件尺寸采用估算。 [场地复核](hayward-square-track-review-2026-11-27.md) |
 | University Street 从 East 15th 至 Southgate | 纳入本次 L2 发布 | 重建两侧人行道、停车标线、两处双线过街、八处路侧设施及 24 株登记树。连通 Dorris 台阶、Rankin Lane 和 Howe Field 入口，增加 76 条导航边。 [街道复核](university-south-axis-review-2026-11-27.md) |
 | Hayward 南侧穿行通道与 Jane Sanders 东侧旗杆步道 | 本地 L2 | 补齐 Howe Field 广场至 Agate 的东西向通道。重建北侧窄道和台阶、Field 2 草坪、标线和围栏，复原通向 East 18th 的旗杆带。台阶高差、旗帜和种植为估算。 [场地复核](hayward-midblock-review-2026-11-27.md) |
-| Turf Field 1、Student Recreation Center 东入口与 East 15th 接驳 | 本地 L2 | 补建 Field 1 人工草坪、两座球门、标线、北缘围栏及种植带。延伸 Field 2 西侧步道并接 SRC 东入口。分隔带靠体育场一端的台阶待近景核对。 [场地复核](hayward-midblock-review-2026-11-27.md#turf-field-1-and-the-student-recreation-center-approach) |
-| East 15th 与 Powell Plaza | 本地 L2 | 接通 University Street、Straub、SRC 与 Agate。Onyx 以西配准街道和双线过街，以东补建铺砖步道、错列花坛、座椅和 Powell Plaza 三根主旗杆与门栏。尺寸、高程和细部采用估算。 [场地复核](east-fifteenth-hayward-review-2026-11-27.md) |
+| Turf Field 1、Student Recreation Center 东入口与 East 15th 接驳 | 已纳入 L2 发布 | 补建 Field 1 人工草坪、两座球门、标线、北缘围栏及种植带。延伸 Field 2 西侧步道并接 SRC 东入口。分隔带靠体育场一端的台阶待近景核对。 [场地复核](hayward-midblock-review-2026-11-27.md#turf-field-1-and-the-student-recreation-center-approach) |
+| East 15th 与 Powell Plaza | 已纳入 L2 发布 | 接通 University Street、Straub、SRC 与 Agate。Onyx 以西配准街道和双线过街，以东补建铺砖步道、错列花坛、座椅和 Powell Plaza 三根主旗杆与门栏。尺寸、高程和细部采用估算。 [场地复核](east-fifteenth-hayward-review-2026-11-27.md) |
 | 校方艺术目录中的户外作品 | 待逐项配准 | 先核对作品仍在原位的证据和场景里的尺寸及基座。目录含纪念性雕塑、场地装置和立面装饰。 |
 | 校园标识、导览图站、交通与停车标识 | 待逐项配准 | 2024 标识计划提供样式，按当前街景和场地照片确认各位置。 |
 | 校园花坛、乔木和林下植被 | 已有代表性 L2，待逐处复核 | 现有植被层和登记树记录作为基线。优先核对已知空地、边界、花坛与通道之间的关系。 |

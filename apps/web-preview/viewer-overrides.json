@@ -24,7 +24,7 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "4618100a8635c6da24e090a285aff9b11374a908f7d626d21753094d8db4d33c",
+      "local_sha256": "3db977dc410eafef84cbb691abb6aa0dac768f98fdabe09cf21e747b3c88f9af",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife."
     },
     "src/building-card.js": {
@@ -226,7 +226,7 @@
     "scripts/export-friendly-round-shafts.mjs": "0096a2d5755ce92ad01b0d9114debe99948581830afedb2d611d23e447bad19a",
     "scripts/export-annex-exterior.mjs": "13ccbc58dad2803ca6e75358d082a999a384bb7bfc1dd1f3c22651bcd5f049b4",
     "scripts/export-chapman-exterior.mjs": "4f69378cb24a4d71e2562723048f2466da5a781b74ce026f4b3fcf8fce9abf4e",
-    "src/building-site-review.js": "5ca9b8e306d052674f5300c8f36d897910e03c33ddb2deb163e7fa1ed786f6c2",
+    "src/building-site-review.js": "5df280daec3441ef1316058a700baa9b51003ed4657d239a3060a0690e62ef0c",
     "public/scene/athletic-exterior-review/site.glb": "96d66bbde7a44bbcb2e0aa7551cb20ffee9ef8ef56612bc021acdf5d9356db2c",
     "public/scene/athletic-exterior-review/site.json": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680",
     "src/context-roof-refinements.js": "a5c7b14decedd27d43aa9af199a6a0f29277cd8dae7aec3aa05a9093b0c4c57b",
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "117251faf20bc0f751ca32b821a8647e7f50a2e4cee63703c6294be90c9b0b87",
+    "public/scene/presentation.json": "13c6c0b4bd0331c8e20a96752dfb854165b60403a37b656675590dcb4bd41cfa",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -480,8 +480,8 @@
     "public/scene/franklin-riverfront-closeout-review/site.json": "f50900642b5e0693be4dcf0061491114e80fe8e25b9ea086552712066e3b7528",
     "public/scene/neighborhood-exterior-closeout-review/site.glb": "de892b9fc3f0166af69c22f652f95ad73f26b502ad371e79ea4675c6131a8687",
     "public/scene/neighborhood-exterior-closeout-review/site.json": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2",
-    "public/scene/pioneer-cemetery-landscape-review/site.glb": "a3a49c73d25b2d20985e2d15a1bc6b58f1307b9a03063257cb7b951e535d158a",
-    "public/scene/pioneer-cemetery-landscape-review/site.json": "baef9a8711cdf7a39eb6824018b1bae02408726a37cfb2088d82352d581918b5",
+    "public/scene/pioneer-cemetery-landscape-review/site.glb": "4d8f9d4af79b5d76b4498940e0a6bfb1b604d2cabb47363fbdb296bf331cb951",
+    "public/scene/pioneer-cemetery-landscape-review/site.json": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
     "public/scene/gerlinger-field-green-review/site.glb": "4d940cd30c55aa98bde831bb218c83c49cc254c93bb14e375941de3207e9c884",
     "public/scene/gerlinger-field-green-review/site.json": "a5862622431e886b5824c1204465bee48e10cca68126db51c1a3da1706b41efb",
     "public/scene/central-campus-greens-review/site.glb": "984f4a8f8354cb960afc82d9ab9360433ea5fbef61030f341f7c9feac1801bd7",
@@ -504,13 +504,15 @@
     "public/scene/agate-fifteenth-eighteenth-review/site.glb": "cfe9fae0d940b871346530086bcdc9fd75c7936c3416c996af1c9830eef45ddb",
     "public/scene/hayward-practice-fields-review/site.json": "45e6a05c8fb10277b5ed8bbeeba7d85bcb17d50a7a9a70846c90c961d58b9ab4",
     "public/scene/hayward-practice-fields-review/site.glb": "b3819561d5f758d5869e8a3111263d0adf66ded6a579b1e186af35c57af930cf",
-    "public/scene/hayward-square-track-review/site.json": "0f7567136cea8304828db9b117e54b89428490c55162ac774cd3d74dc288016d",
-    "public/scene/hayward-square-track-review/site.glb": "fba7e5351d13de4bd4240585db28e0955c0725937cfa5b812134d27a374b0a2c",
-    "public/scene/university-south-axis-review/site.json": "c7bfe3981a4ac0fd500f11385d08051a5436767b5233aee77c16bbe82b9a1d90",
+    "public/scene/hayward-square-track-review/site.json": "eddd4e1f8099b8663cb3db84c481548de7fb30bd5f9a4f3771ae2cb983c30e25",
+    "public/scene/hayward-square-track-review/site.glb": "2ce2aab138ad3c263a1305b42c989cf334f2a8054622f22871cd9e7d4667ccbd",
+    "public/scene/university-south-axis-review/site.json": "6f77e40bf8acd6a53d652798c9e2154358b6f8bba33d6f25053734a33cb5a7c8",
     "public/scene/university-south-axis-review/site.glb": "819725ea65ab1d28cb84d5892a0b6048a9bb3a8a95a65e30a73b6086875c68d3",
     "public/scene/hayward-midblock-review/site.json": "dfd08a060df3bd9892fdba19aed98635cc095604cccf52a06313bb5685ec3364",
     "public/scene/hayward-midblock-review/site.glb": "128d2d1c432b911d39f96df5f7101fcae57979edf53137a48b1c1cc147900f87",
     "public/scene/east-fifteenth-hayward-review/site.json": "130d6b16ab22f0325a474568cbf10d48d2cd7760be3e9dd54025c437392e94dc",
-    "public/scene/east-fifteenth-hayward-review/site.glb": "7520ce5aac319ffbbf18774a611e1d28e554da346c41f74dfb4f966431dc4969"
+    "public/scene/east-fifteenth-hayward-review/site.glb": "7520ce5aac319ffbbf18774a611e1d28e554da346c41f74dfb4f966431dc4969",
+    "public/scene/southwest-campus-green-review/site.glb": "04eb6dbcd940656e8bed5d0d260992daaaaf3ef5f5631e3f817baafb212741f0",
+    "public/scene/southwest-campus-green-review/site.json": "9022730a3b8b9dae5d4ff424600fb15df7c9fdcedd49f85b4a60bc6f922a14e4"
   }
 }

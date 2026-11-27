@@ -2161,7 +2161,7 @@
   },
   "pioneer_cemetery_landscape_site": {
     "url": "pioneer-cemetery-landscape-review/site.json",
-    "sha256": "baef9a8711cdf7a39eb6824018b1bae02408726a37cfb2088d82352d581918b5"
+    "sha256": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d"
   },
   "gerlinger_field_green_site": {
     "url": "gerlinger-field-green-review/site.json",
@@ -2209,11 +2209,11 @@
   },
   "hayward_square_track_site": {
     "url": "hayward-square-track-review/site.json",
-    "sha256": "0f7567136cea8304828db9b117e54b89428490c55162ac774cd3d74dc288016d"
+    "sha256": "eddd4e1f8099b8663cb3db84c481548de7fb30bd5f9a4f3771ae2cb983c30e25"
   },
   "university_south_axis_site": {
     "url": "university-south-axis-review/site.json",
-    "sha256": "c7bfe3981a4ac0fd500f11385d08051a5436767b5233aee77c16bbe82b9a1d90"
+    "sha256": "6f77e40bf8acd6a53d652798c9e2154358b6f8bba33d6f25053734a33cb5a7c8"
   },
   "hayward_midblock_site": {
     "url": "hayward-midblock-review/site.json",
@@ -2222,5 +2222,9 @@
   "east_fifteenth_hayward_site": {
     "url": "east-fifteenth-hayward-review/site.json",
     "sha256": "130d6b16ab22f0325a474568cbf10d48d2cd7760be3e9dd54025c437392e94dc"
+  },
+  "southwest_campus_green_site": {
+    "url": "southwest-campus-green-review/site.json",
+    "sha256": "9022730a3b8b9dae5d4ff424600fb15df7c9fdcedd49f85b4a60bc6f922a14e4"
   }
 }

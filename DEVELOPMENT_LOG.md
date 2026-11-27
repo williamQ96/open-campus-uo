@@ -6,6 +6,24 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Southwest Campus Green and Spangler South Garden
+
+- Model 5,490.41 m² of lawn, 1,293.48 m² of terrace and paths, 11 planting beds and 29 trees placed from the university inventory. Add three benches, four lamps and a representative Lot 20 board. Match the car park's two striped aisles, four accessible symbols and visible tree-island curbs. [Site review](docs/southwest-campus-green-review-2026-11-27.md).
+- Add 40 navigation edges and verify 39 waypoints. The southwest path validator uses the pinned cemetery descriptor for the shared approach anchor. Across three browser route samples, the viewer's endpoint shortcuts still leave the modeled pavement. Register Wayne Chabre's *Trees of Knowledge* as a group in the site inventory. Individual supports and redistributable shapes remain pending.
+- Two exports match byte for byte. Six paired renders and eight surface probes verify the terrace, lawn, parking and cemetery seam. Desktop and phone both load all 610 IDs with triangle geometry and 368 resources. Production build, formatting, 197 unit tests, 12 focused browser tests, 491 asset checks and viewer pins pass. These changes are part of the November 27 outdoor L2 release.
+
+## 2026-11-27 - Release Pioneer Cemetery northwest and Knight Library approach
+
+- Register 197.42 m² of pavement beside Knight Library, correct the exposed Conger Lane alignment and reconnect Dorris, Walton and Cherry avenues. Add a 30.75 m grass trace, two ivy patches, seven curb groups and 14 anonymous stone forms. Screened route widths and the smaller profiles remain approximate. [Cemetery northwest review](docs/pioneer-cemetery-landscape-review-2026-11-26.md#conger-lane-shelley-lane-and-the-library-approach).
+- Add 50 navigation edges. Both profiles register all 48 waypoints and find the 244.03 m route from the library approach to north Risdon Lane on the modeled surface. Two other route queries use endpoint shortcuts across 31.35 m and 9.34 m of grass. The authored graph edges follow the modeled lanes.
+- Six paired views and two matching exports verify the changes. The Square Track and University Street controls reproduce byte for byte. Desktop and phone production previews match all 610 exterior mesh IDs, load 366 resources per profile and clear seven northwest surface probes. The build, formatting, 197 unit tests, 11 focused browser tests and 489 archive checks pass. This refinement is part of the November 27 outdoor L2 release.
+
+## 2026-11-27 - Release Pioneer Cemetery east and south perimeter
+
+- Register the open grass bank beside University Street, the eastern Rankin Lane verge and the southeast retaining return. Add 1,839.82 m² of grass, four low shrubs, 16 exposed plot curb groups, 22 anonymous marker forms and a 13.05 m stepped wall. The aerials establish the visible traces. Wall dimensions, stone profiles and planting shapes use estimates. The short wall is visual geometry. [Cemetery perimeter review](docs/pioneer-cemetery-landscape-review-2026-11-26.md#university-street-and-rankin-lane-perimeter).
+- Correct the Southgate west sidewalk and shift two University Street route points onto the revised paving. The cemetery keeps every previous triangle, and the University Street geometry and Hayward midblock and East 15th control exports reproduce byte for byte. The cemetery, Square Track and University Street revisions reproduce on repeat export. [Southgate review](docs/hayward-square-track-review-2026-11-27.md#southgate-west-approach-at-pioneer-cemetery).
+- Desktop and phone production previews each match all 610 exterior IDs with geometry and load 366 tracked resources. The measured routes include 113.62 m to Memorial Square and 409.09 m from Southgate to Agate. Seven paired views, 15 wall-cap probes, the production build, formatting, 197 unit tests, 11 focused browser tests, 489 asset archive checks and viewer hashes pass. This revision is part of the November 27 outdoor L2 release.
+
 ## 2026-11-27 - Release Hayward midblock and East 15th landscape L2
 
 - Publish the Hayward south passage, Turf Fields 1 and 2, the Jane Sanders flag walk and the SRC east walkway. Connect the latter to East 15th, rebuild field markings and fencing, and suppress ten inferred trees across the two fields and their frontages. The divider stair still needs a close view to confirm tread and rail dimensions. [Hayward review](docs/hayward-midblock-review-2026-11-27.md).

@@ -2994,16 +2994,16 @@
       "origin": "Original neighborhood exterior geometry and documented 2025 Patterson ground, see docs/neighborhood-exterior-closeout-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.glb": {
-      "bytes": 3561984,
-      "sha256": "a3a49c73d25b2d20985e2d15a1bc6b58f1307b9a03063257cb7b951e535d158a",
+      "bytes": 4182668,
+      "sha256": "4d8f9d4af79b5d76b4498940e0a6bfb1b604d2cabb47363fbdb296bf331cb951",
       "license": "CC-BY-4.0",
-      "origin": "Original landscape scene geometry from documented Pioneer Cemetery paths, masonry, canopy, landmarks and the Rankin Lane southern fringe. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
+      "origin": "Original Pioneer Cemetery site geometry and documented east, south and northwest perimeter. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.json": {
-      "bytes": 3190,
-      "sha256": "baef9a8711cdf7a39eb6824018b1bae02408726a37cfb2088d82352d581918b5",
+      "bytes": 4258,
+      "sha256": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
       "license": "CC-BY-4.0",
-      "origin": "Original landscape scene geometry from documented Pioneer Cemetery paths, masonry, canopy, landmarks and the Rankin Lane southern fringe. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
+      "origin": "Original Pioneer Cemetery site geometry and documented east, south and northwest perimeter. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
     "apps/web-preview/public/scene/gerlinger-field-green-review/site.glb": {
       "bytes": 968248,
@@ -3139,19 +3139,19 @@
     },
     "apps/web-preview/public/scene/hayward-square-track-review/site.json": {
       "bytes": 2497,
-      "sha256": "0f7567136cea8304828db9b117e54b89428490c55162ac774cd3d74dc288016d",
+      "sha256": "eddd4e1f8099b8663cb3db84c481548de7fb30bd5f9a4f3771ae2cb983c30e25",
       "license": "CC-BY-4.0",
       "origin": "Original Hayward square track, Turf Field 3, tennis courts, East 18th sidewalk and Southgate geometry. See docs/hayward-square-track-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/hayward-square-track-review/site.glb": {
-      "bytes": 5712124,
-      "sha256": "fba7e5351d13de4bd4240585db28e0955c0725937cfa5b812134d27a374b0a2c",
+      "bytes": 5703288,
+      "sha256": "2ce2aab138ad3c263a1305b42c989cf334f2a8054622f22871cd9e7d4667ccbd",
       "license": "CC-BY-4.0",
       "origin": "Original Hayward square track, Turf Field 3, tennis courts, East 18th sidewalk and Southgate geometry. See docs/hayward-square-track-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/university-south-axis-review/site.json": {
       "bytes": 2829,
-      "sha256": "c7bfe3981a4ac0fd500f11385d08051a5436767b5233aee77c16bbe82b9a1d90",
+      "sha256": "6f77e40bf8acd6a53d652798c9e2154358b6f8bba33d6f25053734a33cb5a7c8",
       "license": "CC-BY-4.0",
       "origin": "Original University Street paving, cemetery and stadium connectors, street fixtures and registered trees. See docs/university-south-axis-review-2026-11-27.md."
     },
@@ -3184,6 +3184,18 @@
       "sha256": "7520ce5aac319ffbbf18774a611e1d28e554da346c41f74dfb4f966431dc4969",
       "license": "CC-BY-4.0",
       "origin": "Original East 15th pavement, Powell Plaza frontage, benches, lighting and registered planting. See docs/east-fifteenth-hayward-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/southwest-campus-green-review/site.glb": {
+      "bytes": 2492272,
+      "sha256": "04eb6dbcd940656e8bed5d0d260992daaaaf3ef5f5631e3f817baafb212741f0",
+      "license": "CC-BY-4.0",
+      "origin": "Original Southwest Campus Green, Spangler South Garden and Lot 20 geometry informed by county aerials and university records. See docs/southwest-campus-green-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/southwest-campus-green-review/site.json": {
+      "bytes": 2958,
+      "sha256": "9022730a3b8b9dae5d4ff424600fb15df7c9fdcedd49f85b4a60bc6f922a14e4",
+      "license": "CC-BY-4.0",
+      "origin": "Original Southwest Campus Green, Spangler South Garden and Lot 20 geometry informed by county aerials and university records. See docs/southwest-campus-green-review-2026-11-27.md."
     }
   },
   "additional_sources": [

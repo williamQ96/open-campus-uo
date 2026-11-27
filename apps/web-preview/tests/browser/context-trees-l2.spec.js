@@ -6,6 +6,8 @@ import {
   HAYWARD_MIDBLOCK_CONTEXT_TREE_REMOVALS,
   HAYWARD_PRACTICE_CONTEXT_TREE_REMOVALS,
   HAYWARD_SQUARE_CONTEXT_TREE_REMOVALS,
+  SOUTHWEST_CONTEXT_TREE_REMOVALS,
+  SOUTHWEST_PILOT_TREE_REMOVALS,
 } from "./exterior-counts.js";
 
 const baseline = "/?exterior-review=context-tree-model-baseline";
@@ -111,5 +113,18 @@ test("a damaged Hayward midblock bundle restores its context trees", async ({
       DEFAULT_VISIBLE_SOURCE_TREES + HAYWARD_MIDBLOCK_CONTEXT_TREE_REMOVALS,
     contextTrees:
       DEFAULT_BACKGROUND_TREES + HAYWARD_MIDBLOCK_CONTEXT_TREE_REMOVALS,
+  });
+});
+
+test("a damaged Southwest Campus Green bundle restores both tree layers", async ({
+  page,
+}) => {
+  await page.route("**/southwest-campus-green-review/site.glb", (route) =>
+    route.fulfill({ body: "damaged Southwest Campus Green mesh" }),
+  );
+  expect(await readScene(page)).toMatchObject({
+    buildings: 610,
+    contextTrees: DEFAULT_BACKGROUND_TREES + SOUTHWEST_CONTEXT_TREE_REMOVALS,
+    pilotTrees: DEFAULT_PILOT_TREES + SOUTHWEST_PILOT_TREE_REMOVALS,
   });
 });

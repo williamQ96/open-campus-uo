@@ -1,0 +1,1710 @@
+{
+  "name": "Southwest Campus Green and Spangler South Garden",
+  "extent": [
+    -622,
+    -436,
+    -520,
+    -311
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "sites": {
+      "knight-library-review": "65983f043cf10a13f2fe5169aba754e8b28a70022c46dcfa66c5d879b1070598",
+      "pioneer-cemetery-landscape-review": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
+      "plc-lokey-tykeson-review": "c0884ac85424815bd3209e2e3964ddc040ee49e6e3bac526bf360afd5cff2485",
+      "riverfront-plant-infrastructure-review": "27b060a8ada406f13e8c71065d01a82d6304c14ee38c2faea54e643348eb18cf",
+      "campus-frontage-review": "86e915ab85f7df842cfe5d950c83e69cdac57ecb8f77a18c59caeafba5635802"
+    }
+  },
+  "sources": {
+    "orthophotos": [
+      {
+        "tile": "southwest-green",
+        "file": "southwest-green-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -625,
+          -449,
+          -514,
+          -308
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493704.14928888186%2C4876479.282153052%2C493815.14928888186%2C4876620.282153052&bboxSR=3740&imageSR=3740&size=1110%2C1410&layers=show%3A29&format=png32",
+        "sha256": "5f96ff7cca540636bc4931b2cddba24e1b0292ac995d752b6ab34fab60b0de0b"
+      },
+      {
+        "tile": "southwest-green",
+        "file": "southwest-green-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -625,
+          -449,
+          -514,
+          -308
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493704.14928888186%2C4876479.282153052%2C493815.14928888186%2C4876620.282153052&bboxSR=3740&imageSR=3740&size=1110%2C1410&layers=show%3A26&format=png32",
+        "sha256": "00038bb1df89ed3c48e7c44589e47e9d08e45f16ab06fdc9bd77c7af8ce0ac94"
+      },
+      {
+        "tile": "southwest-green",
+        "file": "southwest-green-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -625,
+          -449,
+          -514,
+          -308
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493704.14928888186%2C4876479.282153052%2C493815.14928888186%2C4876620.282153052&bboxSR=3740&imageSR=3740&size=1110%2C1410&layers=show%3A57&format=png32",
+        "sha256": "8c8fb5ba5875a34d850f9763f28a6cbfaf1da94fe032b66ca3eeae4b6ce4eea3"
+      }
+    ],
+    "trees": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=Removed+%3D+%27No%27+AND+FutureTree+%3D+%27No%27&geometry=493700.14928888186%2C4876479.282153052%2C493815.14928888186%2C4876620.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=TreeNumber%2CCommonName%2CHeight%2CSpread%2CRemoved%2CFutureTree&returnGeometry=True",
+      "sha256": "35d77d17e140d9ba3a13c5aee25fac0bfb1019b240725adb8446be7c7a9caad5"
+    },
+    "landscape_survey": "https://cpfm.uoregon.edu/sites/default/files/sw_campus_green_04_12_07.pdf",
+    "library_survey": "https://cpfm.uoregon.edu/sites/default/files/2025-01/knightlibrary_2025.pdf",
+    "lot_description": "https://testing.uoregon.edu/directions-and-parking",
+    "street_west_lot": {
+      "date": "2020-11",
+      "id": "lfVarCezFzHAJ3VbBfVlxg",
+      "camera_enu": [
+        -574.0958880985854,
+        -417.8445474887267
+      ],
+      "bearing": 258.05,
+      "distance": 15.2,
+      "file": "lot-west-2020-11.jpg",
+      "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lfVarCezFzHAJ3VbBfVlxg&heading=258.05"
+    }
+  },
+  "art": {
+    "name": "Arboretum Illuminatum (Trees of Knowledge)",
+    "artist": "Wayne Chabre",
+    "catalog_year": 1994,
+    "components": 3,
+    "campus_map_id": "7-48",
+    "group_enu_m": [
+      -555.051,
+      -319.729
+    ],
+    "group_coordinates_lonlat": [
+      -123.07772460229063,
+      44.042616834448566
+    ],
+    "catalog_url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/arboretum-illuminatum",
+    "artist_url": "https://www.waynechabre.com/public-art",
+    "status": "Site record. Individual support locations and reusable art geometry remain to be established."
+  },
+  "lawn": [
+    [
+      -591.4,
+      -332.05
+    ],
+    [
+      -527.3,
+      -332.27
+    ],
+    [
+      -524.22,
+      -333.03
+    ],
+    [
+      -522.65,
+      -336.65
+    ],
+    [
+      -522.9,
+      -349.7
+    ],
+    [
+      -522.8,
+      -362.7
+    ],
+    [
+      -523.88,
+      -373.9
+    ],
+    [
+      -527.34,
+      -380.56
+    ],
+    [
+      -534.3,
+      -387.4
+    ],
+    [
+      -535.6,
+      -395.4
+    ],
+    [
+      -539.1,
+      -406.8
+    ],
+    [
+      -544.4,
+      -408.2
+    ],
+    [
+      -588.2,
+      -408.1
+    ],
+    [
+      -592.6,
+      -406.86
+    ],
+    [
+      -596.4,
+      -403.7
+    ],
+    [
+      -599.0,
+      -398.8
+    ],
+    [
+      -600.7,
+      -388.7
+    ],
+    [
+      -601.1,
+      -378.9
+    ],
+    [
+      -600.9,
+      -368.1
+    ],
+    [
+      -601.8,
+      -355.8
+    ],
+    [
+      -601.63,
+      -343.65
+    ],
+    [
+      -599.97,
+      -337.9
+    ],
+    [
+      -596.3,
+      -334.28
+    ]
+  ],
+  "terrace": [
+    [
+      -595.1,
+      -328.35
+    ],
+    [
+      -588.9,
+      -321.4
+    ],
+    [
+      -583.2,
+      -320.57
+    ],
+    [
+      -576.45,
+      -319.89
+    ],
+    [
+      -568.6,
+      -317.23
+    ],
+    [
+      -550.45,
+      -317.6
+    ],
+    [
+      -540.45,
+      -318.55
+    ],
+    [
+      -534.2,
+      -321.44
+    ],
+    [
+      -529.75,
+      -321.8
+    ],
+    [
+      -525.95,
+      -321.55
+    ],
+    [
+      -524.74,
+      -325.53
+    ],
+    [
+      -525.43,
+      -328.76
+    ],
+    [
+      -537.05,
+      -331.07
+    ],
+    [
+      -555.24,
+      -331.97
+    ],
+    [
+      -574.9,
+      -331.88
+    ],
+    [
+      -594.0,
+      -331.48
+    ]
+  ],
+  "walks": [
+    {
+      "line": [
+        [
+          -537.05,
+          -330.36
+        ],
+        [
+          -551.6,
+          -330.38
+        ],
+        [
+          -565.84,
+          -330.43
+        ],
+        [
+          -580.6,
+          -330.41
+        ],
+        [
+          -594.66,
+          -330.13
+        ],
+        [
+          -601.78,
+          -330.95
+        ],
+        [
+          -604.01,
+          -334.92
+        ]
+      ],
+      "width": 3.56
+    },
+    {
+      "line": [
+        [
+          -604.01,
+          -334.92
+        ],
+        [
+          -603.91,
+          -345.55
+        ],
+        [
+          -604.19,
+          -359.5
+        ],
+        [
+          -603.98,
+          -374.1
+        ],
+        [
+          -605.16,
+          -382.76
+        ],
+        [
+          -613.42,
+          -386.5
+        ],
+        [
+          -619.8,
+          -386.55
+        ]
+      ],
+      "width": 2.83
+    },
+    {
+      "line": [
+        [
+          -613.42,
+          -386.5
+        ],
+        [
+          -616.47,
+          -393.9
+        ],
+        [
+          -620.13,
+          -402.22
+        ],
+        [
+          -619.56,
+          -413.73
+        ],
+        [
+          -616.43,
+          -424.79
+        ],
+        [
+          -612.19,
+          -431.98
+        ],
+        [
+          -604.5,
+          -433.03
+        ],
+        [
+          -590.5,
+          -433.3
+        ],
+        [
+          -575.22,
+          -433.46
+        ],
+        [
+          -559.84,
+          -433.66
+        ],
+        [
+          -544.6,
+          -433.45
+        ],
+        [
+          -536.18,
+          -433.25
+        ]
+      ],
+      "width": 2.32
+    },
+    {
+      "line": [
+        [
+          -594.57,
+          -407.73
+        ],
+        [
+          -588.74,
+          -410.69
+        ],
+        [
+          -574.21,
+          -410.72
+        ],
+        [
+          -557.41,
+          -410.8
+        ],
+        [
+          -541.36,
+          -410.82
+        ],
+        [
+          -534.1,
+          -411.04
+        ],
+        [
+          -532.1,
+          -414.1
+        ],
+        [
+          -529.55,
+          -418.03
+        ],
+        [
+          -529.42,
+          -428.56
+        ]
+      ],
+      "width": 2.16
+    },
+    {
+      "line": [
+        [
+          -604.5,
+          -433.03
+        ],
+        [
+          -598.48,
+          -425.11
+        ],
+        [
+          -595.22,
+          -421.4
+        ],
+        [
+          -593.65,
+          -416
+        ],
+        [
+          -594.57,
+          -407.73
+        ]
+      ],
+      "width": 1.96
+    }
+  ],
+  "parking": [
+    [
+      -587.45,
+      -419.32
+    ],
+    [
+      -583.1,
+      -413.65
+    ],
+    [
+      -536.45,
+      -413.5
+    ],
+    [
+      -533.2,
+      -416.6
+    ],
+    [
+      -530.12,
+      -414.9
+    ],
+    [
+      -530.3,
+      -409.8
+    ],
+    [
+      -526.95,
+      -409.8
+    ],
+    [
+      -526.8,
+      -432.57
+    ],
+    [
+      -530.45,
+      -432.64
+    ],
+    [
+      -531.21,
+      -428.35
+    ],
+    [
+      -534.42,
+      -426.73
+    ],
+    [
+      -537.6,
+      -428.67
+    ],
+    [
+      -538.8,
+      -432.14
+    ],
+    [
+      -585.95,
+      -431.89
+    ],
+    [
+      -585.94,
+      -426.91
+    ],
+    [
+      -587.65,
+      -425.54
+    ]
+  ],
+  "beds": [
+    [
+      [
+        -579.47,
+        -325.77
+      ],
+      [
+        -576,
+        -325.13
+      ],
+      [
+        -571.86,
+        -325.36
+      ],
+      [
+        -566.02,
+        -325.19
+      ],
+      [
+        -565.0,
+        -326.45
+      ],
+      [
+        -565.08,
+        -327.91
+      ],
+      [
+        -569.4,
+        -328.15
+      ],
+      [
+        -577,
+        -328.1
+      ],
+      [
+        -579.5,
+        -327.52
+      ]
+    ],
+    [
+      [
+        -562.84,
+        -325.64
+      ],
+      [
+        -558.47,
+        -324.98
+      ],
+      [
+        -554.45,
+        -325.38
+      ],
+      [
+        -551.27,
+        -325.25
+      ],
+      [
+        -550.55,
+        -326.45
+      ],
+      [
+        -551.02,
+        -328.1
+      ],
+      [
+        -558.4,
+        -328.04
+      ],
+      [
+        -562.15,
+        -328.06
+      ],
+      [
+        -563,
+        -327.06
+      ]
+    ],
+    [
+      [
+        -548.91,
+        -325.91
+      ],
+      [
+        -546.6,
+        -325.22
+      ],
+      [
+        -541.47,
+        -325.35
+      ],
+      [
+        -537.34,
+        -325.26
+      ],
+      [
+        -533.57,
+        -326.18
+      ],
+      [
+        -533.22,
+        -327.71
+      ],
+      [
+        -536.13,
+        -328.29
+      ],
+      [
+        -544.45,
+        -328.11
+      ],
+      [
+        -548.23,
+        -327.57
+      ]
+    ],
+    [
+      [
+        -577.98,
+        -319.74
+      ],
+      [
+        -575.67,
+        -317.39
+      ],
+      [
+        -568.71,
+        -317.18
+      ],
+      [
+        -563.2,
+        -317.81
+      ],
+      [
+        -561.34,
+        -319.2
+      ],
+      [
+        -562.8,
+        -321.28
+      ],
+      [
+        -568.04,
+        -320.95
+      ],
+      [
+        -572.4,
+        -320.33
+      ],
+      [
+        -576.6,
+        -321.0
+      ]
+    ],
+    [
+      [
+        -560.11,
+        -319.23
+      ],
+      [
+        -557.64,
+        -317.72
+      ],
+      [
+        -551.18,
+        -318.35
+      ],
+      [
+        -545.54,
+        -318.2
+      ],
+      [
+        -540.74,
+        -319.78
+      ],
+      [
+        -541.48,
+        -321.02
+      ],
+      [
+        -545.4,
+        -321.09
+      ],
+      [
+        -550.64,
+        -320.32
+      ],
+      [
+        -555.45,
+        -321.41
+      ],
+      [
+        -558.73,
+        -320.69
+      ]
+    ],
+    [
+      [
+        -539.24,
+        -319.74
+      ],
+      [
+        -536.54,
+        -319.12
+      ],
+      [
+        -533.98,
+        -319.42
+      ],
+      [
+        -531.85,
+        -320.28
+      ],
+      [
+        -528.98,
+        -319.93
+      ],
+      [
+        -528.5,
+        -322.22
+      ],
+      [
+        -530.39,
+        -323.81
+      ],
+      [
+        -535.2,
+        -324.16
+      ],
+      [
+        -537.52,
+        -323.73
+      ]
+    ],
+    [
+      [
+        -592.21,
+        -326.59
+      ],
+      [
+        -590.98,
+        -323.89
+      ],
+      [
+        -588.08,
+        -322.8
+      ],
+      [
+        -584.93,
+        -323.25
+      ],
+      [
+        -582.8,
+        -324.35
+      ],
+      [
+        -583.42,
+        -326.75
+      ],
+      [
+        -586.1,
+        -328.05
+      ],
+      [
+        -589.4,
+        -328.14
+      ]
+    ],
+    [
+      [
+        -538.76,
+        -413.32
+      ],
+      [
+        -535.62,
+        -412.35
+      ],
+      [
+        -532.98,
+        -412.43
+      ],
+      [
+        -531.25,
+        -414.91
+      ],
+      [
+        -532.2,
+        -416.66
+      ],
+      [
+        -533.6,
+        -418.24
+      ],
+      [
+        -535.67,
+        -418.5
+      ]
+    ],
+    [
+      [
+        -592.2,
+        -422.26
+      ],
+      [
+        -588.8,
+        -423.47
+      ],
+      [
+        -586.65,
+        -426.72
+      ],
+      [
+        -587.07,
+        -430.98
+      ],
+      [
+        -590.98,
+        -431.59
+      ],
+      [
+        -595.43,
+        -431.57
+      ],
+      [
+        -594.32,
+        -427.42
+      ]
+    ],
+    [
+      [
+        -540.15,
+        -431.92
+      ],
+      [
+        -540.16,
+        -429.0
+      ],
+      [
+        -538.91,
+        -427.3
+      ],
+      [
+        -537.52,
+        -427.09
+      ],
+      [
+        -534.79,
+        -426.96
+      ],
+      [
+        -532.41,
+        -428.88
+      ],
+      [
+        -532.46,
+        -431.77
+      ]
+    ],
+    [
+      [
+        -585.11,
+        -413.13
+      ],
+      [
+        -582.33,
+        -413.08
+      ],
+      [
+        -582.21,
+        -419.22
+      ],
+      [
+        -585.07,
+        -419.33
+      ]
+    ]
+  ],
+  "trees": [
+    {
+      "id": 3626,
+      "species": "Yulan Magnolia",
+      "position_enu_m": [
+        -591.798,
+        -326.561
+      ],
+      "height_m": 8,
+      "crown_radius_m": 2.0,
+      "form": "rounded"
+    },
+    {
+      "id": 971,
+      "species": "Norway Maple",
+      "position_enu_m": [
+        -599.726,
+        -371.635
+      ],
+      "height_m": 17,
+      "crown_radius_m": 3.5,
+      "form": "rounded"
+    },
+    {
+      "id": 973,
+      "species": "Norway Maple",
+      "position_enu_m": [
+        -597.915,
+        -384.328
+      ],
+      "height_m": 16,
+      "crown_radius_m": 6.0,
+      "form": "rounded"
+    },
+    {
+      "id": 975,
+      "species": "Norway Maple",
+      "position_enu_m": [
+        -598.305,
+        -393.256
+      ],
+      "height_m": 14,
+      "crown_radius_m": 6.0,
+      "form": "rounded"
+    },
+    {
+      "id": 1000,
+      "species": "Ponderosa Pine",
+      "position_enu_m": [
+        -524.021,
+        -346.39
+      ],
+      "height_m": 38,
+      "crown_radius_m": 4.57,
+      "form": "conical"
+    },
+    {
+      "id": 1007,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -540.264,
+        -388.345
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 3.05,
+      "form": "conical"
+    },
+    {
+      "id": 1005,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -536.58,
+        -387.945
+      ],
+      "height_m": 24.38,
+      "crown_radius_m": 6.0,
+      "form": "conical"
+    },
+    {
+      "id": 1006,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -534.162,
+        -389.696
+      ],
+      "height_m": 22.86,
+      "crown_radius_m": 4.57,
+      "form": "conical"
+    },
+    {
+      "id": 1004,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -533.996,
+        -400.857
+      ],
+      "height_m": 10.67,
+      "crown_radius_m": 2.29,
+      "form": "conical"
+    },
+    {
+      "id": 1003,
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -533.683,
+        -406.314
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 3.05,
+      "form": "conical"
+    },
+    {
+      "id": 1609,
+      "species": "Shogetsu Oriental Cherry",
+      "position_enu_m": [
+        -525.373,
+        -323.94
+      ],
+      "height_m": 12,
+      "crown_radius_m": 2.0,
+      "form": "rounded"
+    },
+    {
+      "id": 990,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -583.433,
+        -418.534
+      ],
+      "height_m": 15,
+      "crown_radius_m": 3.5,
+      "form": "rounded"
+    },
+    {
+      "id": 992,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -583.383,
+        -413.235
+      ],
+      "height_m": 15,
+      "crown_radius_m": 4.0,
+      "form": "rounded"
+    },
+    {
+      "id": 991,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -583.351,
+        -415.827
+      ],
+      "height_m": 16,
+      "crown_radius_m": 4.0,
+      "form": "rounded"
+    },
+    {
+      "id": 993,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -575.225,
+        -413.181
+      ],
+      "height_m": 13,
+      "crown_radius_m": 3.5,
+      "form": "rounded"
+    },
+    {
+      "id": 995,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -566.626,
+        -413.157
+      ],
+      "height_m": 18,
+      "crown_radius_m": 4.0,
+      "form": "rounded"
+    },
+    {
+      "id": 996,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -562.214,
+        -413.104
+      ],
+      "height_m": 19,
+      "crown_radius_m": 5.0,
+      "form": "rounded"
+    },
+    {
+      "id": 997,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -557.352,
+        -413.107
+      ],
+      "height_m": 18,
+      "crown_radius_m": 4.0,
+      "form": "rounded"
+    },
+    {
+      "id": 967,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -548.132,
+        -413.035
+      ],
+      "height_m": 17,
+      "crown_radius_m": 4.0,
+      "form": "rounded"
+    },
+    {
+      "id": 994,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -570.672,
+        -413.177
+      ],
+      "height_m": 18,
+      "crown_radius_m": 4.0,
+      "form": "rounded"
+    },
+    {
+      "id": 998,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -552.672,
+        -413.063
+      ],
+      "height_m": 18,
+      "crown_radius_m": 4.0,
+      "form": "rounded"
+    },
+    {
+      "id": 999,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -543.647,
+        -413.028
+      ],
+      "height_m": 10,
+      "crown_radius_m": 4.0,
+      "form": "rounded"
+    },
+    {
+      "id": 1001,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -539.427,
+        -412.911
+      ],
+      "height_m": 12,
+      "crown_radius_m": 4.5,
+      "form": "rounded"
+    },
+    {
+      "id": 1002,
+      "species": "Shademaster Thornless Honey Locust",
+      "position_enu_m": [
+        -534.998,
+        -412.95
+      ],
+      "height_m": 13,
+      "crown_radius_m": 4.5,
+      "form": "rounded"
+    },
+    {
+      "id": 3455,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -597.5,
+        -420.617
+      ],
+      "height_m": 6,
+      "crown_radius_m": 2.0,
+      "form": "rounded"
+    },
+    {
+      "id": 3456,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -597.387,
+        -417.132
+      ],
+      "height_m": 6,
+      "crown_radius_m": 2.0,
+      "form": "rounded"
+    },
+    {
+      "id": 3457,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -597.708,
+        -413.659
+      ],
+      "height_m": 6,
+      "crown_radius_m": 2.0,
+      "form": "rounded"
+    },
+    {
+      "id": 3458,
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -597.588,
+        -410.391
+      ],
+      "height_m": 6,
+      "crown_radius_m": 2.0,
+      "form": "rounded"
+    },
+    {
+      "id": 4645,
+      "species": "Katsura Tree",
+      "position_enu_m": [
+        -539.237,
+        -430.092
+      ],
+      "height_m": 12,
+      "crown_radius_m": 2.0,
+      "form": "rounded"
+    }
+  ],
+  "clear_context_trees": [
+    {
+      "index": 176,
+      "position_enu_m": [
+        -606.511,
+        -433.898
+      ]
+    },
+    {
+      "index": 244,
+      "position_enu_m": [
+        -556.822,
+        -388.81
+      ]
+    },
+    {
+      "index": 276,
+      "position_enu_m": [
+        -561.337,
+        -359.05
+      ]
+    }
+  ],
+  "benches": [
+    [
+      -572.84,
+      -321.87
+    ],
+    [
+      -553.9,
+      -322.31
+    ],
+    [
+      -538.85,
+      -322.6
+    ]
+  ],
+  "lamps": [
+    [
+      -589.04,
+      -326.8
+    ],
+    [
+      -555.65,
+      -324.46
+    ],
+    [
+      -528.85,
+      -326.61
+    ],
+    [
+      -613.25,
+      -383.6
+    ]
+  ],
+  "parking_board": [
+    -592.95,
+    -421.43
+  ],
+  "stalls": [
+    {
+      "north": -414.0,
+      "south": -419.37,
+      "eastings": [
+        -584.5,
+        -581.28,
+        -576.83,
+        -574.15,
+        -571.46,
+        -568.6,
+        -566.05,
+        -563.22,
+        -560.46,
+        -557.72,
+        -554.8,
+        -552.15,
+        -549.44,
+        -546.57,
+        -543.7,
+        -540.89,
+        -537.99
+      ]
+    },
+    {
+      "north": -426.4,
+      "south": -431.81,
+      "eastings": [
+        -584.46,
+        -581.8,
+        -579.08,
+        -576.42,
+        -573.74,
+        -571.1,
+        -568.5,
+        -565.92,
+        -562.48,
+        -559.73,
+        -557.02,
+        -554.02,
+        -551.12,
+        -548.45,
+        -545.7,
+        -542.98,
+        -540.18
+      ]
+    }
+  ],
+  "access_aisles": [
+    [
+      -579.61,
+      -419.28,
+      -576.83,
+      -414.12
+    ],
+    [
+      -564.75,
+      -431.67,
+      -562.39,
+      -426.52
+    ]
+  ],
+  "access_centers": [
+    [
+      -580.75,
+      -418.48
+    ],
+    [
+      -575.29,
+      -418.47
+    ],
+    [
+      -566.02,
+      -427.42
+    ],
+    [
+      -561.37,
+      -427.42
+    ]
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [
+        -537.05,
+        -330.36
+      ],
+      "points_enu_m": [
+        [
+          -551.6,
+          -330.38
+        ],
+        [
+          -565.84,
+          -330.43
+        ],
+        [
+          -580.6,
+          -330.41
+        ],
+        [
+          -594.66,
+          -330.13
+        ],
+        [
+          -601.78,
+          -330.95
+        ],
+        [
+          -604.01,
+          -334.92
+        ],
+        [
+          -603.91,
+          -345.55
+        ],
+        [
+          -604.19,
+          -359.5
+        ],
+        [
+          -603.98,
+          -374.1
+        ],
+        [
+          -605.16,
+          -382.76
+        ],
+        [
+          -613.42,
+          -386.5
+        ],
+        [
+          -619.8,
+          -386.55
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -551.6,
+        -330.38
+      ],
+      "points_enu_m": [
+        [
+          -549.61,
+          -329.54
+        ],
+        [
+          -549.68,
+          -324.03
+        ],
+        [
+          -560.02,
+          -323.54
+        ],
+        [
+          -572.28,
+          -323.23
+        ],
+        [
+          -583.14,
+          -323.61
+        ],
+        [
+          -581.13,
+          -326.16
+        ],
+        [
+          -581.03,
+          -329.31
+        ]
+      ],
+      "end_enu_m": [
+        -580.6,
+        -330.41
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -613.42,
+        -386.5
+      ],
+      "points_enu_m": [
+        [
+          -616.47,
+          -393.9
+        ],
+        [
+          -620.13,
+          -402.22
+        ],
+        [
+          -619.56,
+          -413.73
+        ],
+        [
+          -616.43,
+          -424.79
+        ],
+        [
+          -612.19,
+          -431.98
+        ],
+        [
+          -604.5,
+          -433.03
+        ],
+        [
+          -590.5,
+          -433.3
+        ],
+        [
+          -575.22,
+          -433.46
+        ],
+        [
+          -559.84,
+          -433.66
+        ],
+        [
+          -544.6,
+          -433.45
+        ],
+        [
+          -536.18,
+          -433.25
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -604.5,
+        -433.03
+      ],
+      "points_enu_m": [
+        [
+          -598.48,
+          -425.11
+        ],
+        [
+          -595.22,
+          -421.4
+        ],
+        [
+          -593.65,
+          -416
+        ],
+        [
+          -594.57,
+          -407.73
+        ],
+        [
+          -588.74,
+          -410.69
+        ],
+        [
+          -574.21,
+          -410.72
+        ],
+        [
+          -557.41,
+          -410.8
+        ],
+        [
+          -541.36,
+          -410.82
+        ],
+        [
+          -534.1,
+          -411.04
+        ]
+      ]
+    }
+  ],
+  "bounds": [
+    [
+      -610,
+      -340,
+      -521,
+      -313
+    ],
+    [
+      -623,
+      -406,
+      -587,
+      -332
+    ],
+    [
+      -615,
+      -435,
+      -526.2,
+      -401
+    ]
+  ],
+  "pilot_tree_clip": {
+    "source_legacy_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "source_refined_sha256": "9a129558d22a314f8dbddee5ed9f914c5e905665a3c1209a3732612cc5e296ef",
+    "tree_indices": [
+      89,
+      171,
+      266
+    ],
+    "legacy": {
+      "vegetation_1": {
+        "vertices": 23832,
+        "removed_indices": 360,
+        "ranges": [
+          [
+            6906,
+            6996
+          ],
+          [
+            13518,
+            13608
+          ],
+          [
+            21156,
+            21198
+          ]
+        ]
+      },
+      "vegetation_4": {
+        "vertices": 62208,
+        "removed_indices": 2592,
+        "ranges": [
+          [
+            18144,
+            19008
+          ],
+          [
+            36288,
+            37152
+          ]
+        ]
+      },
+      "vegetation_3": {
+        "vertices": 84132,
+        "removed_indices": 288,
+        "ranges": [
+          [
+            70740,
+            70902
+          ]
+        ]
+      }
+    },
+    "refined": {
+      "pilot-trees-wood": {
+        "vertices": 23506,
+        "removed_indices": 1224,
+        "ranges": [
+          [
+            6926,
+            7028
+          ],
+          [
+            13424,
+            13526
+          ],
+          [
+            20904,
+            20936
+          ]
+        ]
+      },
+      "pilot-trees-foliage": {
+        "vertices": 34088,
+        "removed_indices": 2034,
+        "ranges": [
+          [
+            10348,
+            10474
+          ],
+          [
+            19597,
+            19723
+          ],
+          [
+            30222,
+            30343
+          ]
+        ]
+      }
+    }
+  },
+  "curbs": [
+    {
+      "line": [
+        [
+          -585.02,
+          -419.31
+        ],
+        [
+          -582.19,
+          -419.29
+        ],
+        [
+          -582.3,
+          -413.06
+        ]
+      ],
+      "paint": "plain"
+    },
+    {
+      "line": [
+        [
+          -536.2,
+          -418.1
+        ],
+        [
+          -535.82,
+          -419.42
+        ],
+        [
+          -534.83,
+          -419.25
+        ],
+        [
+          -533.54,
+          -418.59
+        ],
+        [
+          -532.47,
+          -417.68
+        ],
+        [
+          -531.92,
+          -416.28
+        ],
+        [
+          -531.9,
+          -412.25
+        ]
+      ],
+      "paint": "yellow-tip"
+    }
+  ]
+}

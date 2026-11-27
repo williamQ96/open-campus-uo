@@ -269,32 +269,52 @@
     ],
     [
       [
-        -320,
+        -320.0,
         -596.58
       ],
       [
-        -319.87,
+        -319.52,
         -592.54
       ],
       [
-        -320.95,
-        -589.02
+        -319.5,
+        -588.98
       ],
       [
-        -322.23,
-        -584.03
+        -320.02,
+        -584.73
       ],
       [
-        -325.31,
-        -583.41
+        -322.99,
+        -584.7
       ],
       [
-        -326.21,
-        -589.29
+        -322.99,
+        -585.14
       ],
       [
-        -325.76,
-        -595.62
+        -321.12,
+        -586.22
+      ],
+      [
+        -321.29,
+        -591.31
+      ],
+      [
+        -321.85,
+        -591.6
+      ],
+      [
+        -322.02,
+        -595.61
+      ],
+      [
+        -322.42,
+        -595.91
+      ],
+      [
+        -322.72,
+        -598.56
       ],
       [
         -323.42,
@@ -1027,7 +1047,7 @@
       "agate-fifteenth-eighteenth-review": "aad49c0f2973a695a2ab55105f5f004cb6e33509b1b6069f8e086fe1d35252d1",
       "public-building-exterior-review": "3225fe95d21b0078a31cac339b996f75376b3aa30ef34a0dd993a0667d985ff9",
       "hayward-exterior-review": "7940e7aa05c1ae316c373d57cd022cdc2ad553ee51c1b097772760858e5a6593",
-      "pioneer-cemetery-landscape-review": "baef9a8711cdf7a39eb6824018b1bae02408726a37cfb2088d82352d581918b5",
+      "pioneer-cemetery-landscape-review": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
       "campus-frontage-review": "86e915ab85f7df842cfe5d950c83e69cdac57ecb8f77a18c59caeafba5635802",
       "howe-field-gates-review": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901"
     }
@@ -1330,6 +1350,12 @@
     "square_track_current": "https://goducks.com/documents/download/2026/3/26/Oregon_Team_Invitational_-_Meet_Information_0326.pdf",
     "university_street_axis": "https://cpfm.uoregon.edu/sites/default/files/university_street_axis_06_12_07.pdf",
     "southgate_history": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/campus-landscape",
-    "sanders_aux_entry": "https://goducks.com/sports/2011/6/21/210828087"
+    "sanders_aux_entry": "https://goducks.com/sports/2011/6/21/210828087",
+    "west_approach": {
+      "basis": "The 2021 and 2025 county aerials and July 2024 street view locate the stepped cemetery return. The sidewalk follows its street face and joins the surveyed University Street approach.",
+      "street_date": "2024-07",
+      "street_url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8b0dWBYfCf41sRRjaVvaNw&heading=266.07",
+      "registration": "data/metadata/pioneer-cemetery-landscape-review.json"
+    }
   }
 }
