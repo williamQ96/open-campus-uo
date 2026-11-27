@@ -6,6 +6,13 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Frohnmayer 东侧车道、Pioneer Cemetery 西缘植被与 HEDCO 庭院 L2
+
+- 配准 Frohnmayer 东侧车道、两条步道及 Lot 20 至 East 18th 的连接。新增 46 条导航边，新铺面成功加载时替换 30 条推断旧边。抽检的端到端路线长 218.729 米。[车道复核](docs/frohnmayer-east-drive-2026-11-27.md)。
+- 在 Pioneer Cemetery 西缘配准 18 株成年乔木、4 株藤槭和 6 组低植。16 处树干加入碰撞，草地补覆 181.98 平方米旧路肩。Conger Lane 旁 4444 和 4446 号树的树干点位仍待实地确认。[西缘植被复核](docs/pioneer-west-tree-belt-2026-11-27.md)。
+- 补建 HEDCO 露天庭院草坪、铺面、两座抬高花池、南侧植床和西缘矮墙。加入三张长椅、三盏灯、一株登记海棠和九处设施碰撞。新增地表沿用现有场景高程，西侧门槛与庭院精确高程仍待测量。[庭院复核](docs/hedco-courtyard-landscape-2026-11-27.md)。
+- 部署前，桌面与手机生产预览均匹配 610 个外部模型 ID，其中 608 个有独立几何，2 个由共享几何支持。两端均加载 457 个出入口和 394 项受检资源。构建、格式、200 项单元测试、9 项浏览器测试、517 项资产归档核对、查看器哈希、73 个服务文件比对及重复导出均通过。本次从 `main` 部署到 GitHub Pages。Education Annex 保留在研究工作树。[Pages 工作流](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
 ## 2026-11-27 - 发布 Pioneer Cemetery 南部墓区、PLC 东庭院与东北校园导览 L2
 
 - 在 Cherry Avenue 和 Rankin Lane 之间加入 12 组共 103.09 米外露边石和 36 处无名碑形。七处较高碑形加入碰撞。增加 11 条导航边，将 Cherry Avenue 东段及 Risdon Lane 南段接入既有砂石路网。[墓区复核](docs/pioneer-cemetery-inner-grid-2026-11-27.md#cherry-avenue-to-rankin-lane)。

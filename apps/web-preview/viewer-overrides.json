@@ -24,8 +24,8 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "f04aa739b142a574c59c552ba8a4c6b95f9dd8a127fc6b6345092ecf313fdd17",
-      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. Pinned East 18th and Rankin pedestrian surfaces. Cherry–Risdon connections and northeast wayfinding."
+      "local_sha256": "977d2bb3602b08238fc5af8d4161301a996e196d31a9f6693ef2e62b10234f4b",
+      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. Pinned East 18th and Rankin pedestrian surfaces. Cherry–Risdon connections and northeast wayfinding. Register the Frohnmayer service drive and its route coverage, the western Pioneer tree belt and HEDCO courtyard landscaping."
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -44,8 +44,8 @@
     },
     "src/routing.js": {
       "upstream_sha256": "3ee2a6fd385aeda8e9ade1cd0ee10950d1889c6fc31c626b59636adab9431308",
-      "local_sha256": "62a8f5d19b0b4d5376be55fd7a1ffc2ebb3dbb19f8bd011ae85e0cf68ccabe96",
-      "reason": "Source-pinned exterior collision supplements for UO runtime"
+      "local_sha256": "19d71208f951967937de3ff28f7aa8fb35dbf9a7e8c111bbad6caf4506ab9e54",
+      "reason": "Source-pinned exterior collision supplements for UO runtime Scope retired inferred road edges to the registered route-surface package."
     },
     "src/entrances.js": {
       "upstream_sha256": "71bf6fc3bf0d8685d778e571f5aace5d341234f02f02f1d97acedb8769a2b9f5",
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "6619b5fbad2fb91952973d65f7f54ec8f20de19720e3135a88a8b312a164902a",
+    "public/scene/presentation.json": "04813f4120fac7e53e76ab1e63f29277ca7997f174e13ba546538af81155def3",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -515,7 +515,7 @@
     "public/scene/southwest-campus-green-review/site.glb": "ff19c8fdf43935176aa00cf7c912a204a8055ca156ebc91651ce5342aaca9e86",
     "public/scene/southwest-campus-green-review/site.json": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
     "src/paved-route-access.js": "98c5cf05a9ace81997f2a06217cd729e373175453fcc9353303e91ec1d0ba0ce",
-    "data/campus-route-surfaces.json": "af27c4e0dea8971fb3c1f4cc83fbcb5aa52182c91e50ada651ff63afdbeae894",
+    "data/campus-route-surfaces.json": "1377ab6b9a1893f8eadf17881ec2649e95936e6ccb05d18255114d4a01aaa14e",
     "public/scene/kincaid-education-landscape-review/site.glb": "229086a9a42a4742451657a79a9650a92375243933387fd879268faaa0494af9",
     "public/scene/kincaid-education-landscape-review/site.json": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a",
     "public/scene/kendall-plaza-landscape-review/site.glb": "fb034e7ba495bca4c31e49d32fed3af06e0fe7d3db4d6b8286b54753186d96c4",
@@ -536,6 +536,12 @@
     "public/scene/rankin-frontage-review/site.glb": "0d8d8b6bd5bb6bebd4b736661c93cdb6409fe3721028ecb590a2c3f20ddd3f7c",
     "public/scene/rankin-frontage-review/site.json": "f619405be55add4e829086ab7c01296e298e51c6645d326e3824204b77fca840",
     "public/scene/northeast-campus-wayfinding-review/site.json": "c1f1183c3ab969ff0d7662034d9ae98ab2147e3a509ec99ed1de8fd146ccd105",
-    "public/scene/northeast-campus-wayfinding-review/site.glb": "911a1dce8fec5c94e2e45337c78300af983259f53a9a104a72946d63b89c47d8"
+    "public/scene/northeast-campus-wayfinding-review/site.glb": "911a1dce8fec5c94e2e45337c78300af983259f53a9a104a72946d63b89c47d8",
+    "public/scene/frohnmayer-east-drive-review/site.glb": "113fbdab3b14305560848a4e9cb465c43c2a4b282ee66e3b8905df17f8607032",
+    "public/scene/frohnmayer-east-drive-review/site.json": "731348b6591c9bf724755d03d85dff4a95d8f481035b6556a40d3f6f05dc9b24",
+    "public/scene/pioneer-cemetery-west-trees-review/site.glb": "a82d81881a0967fe160c75391df72a6a83d4e22cfd61734b611763617ab3813d",
+    "public/scene/pioneer-cemetery-west-trees-review/site.json": "c02b1685b5f761c08b6e48205d0595ff9484bd4a5baf7c1694cfee5259f20285",
+    "public/scene/hedco-courtyard-landscape-review/site.glb": "47d1487da9b36de4c7aaf25e9a2a7073e82be2f82c0443bf8c2b06ac2ceaf217",
+    "public/scene/hedco-courtyard-landscape-review/site.json": "a4959d290a0ef2e1ef1fba728ee3914cf4e1c8d74b9242d86b8d4272ab8d6c7d"
   }
 }

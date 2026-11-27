@@ -1108,6 +1108,12 @@ async function loadCampusScene(base, manifest, settings) {
       ids: ["context-b0010"],
       groundNode: "hedco-courtyard",
     },
+    "hedco-courtyard-landscape": {
+      descriptor: config?.hedco_courtyard_landscape_site,
+      directory: "hedco-courtyard-landscape-review",
+      groundNode: "hedco-landscape-courtyard-paving",
+      ids: [],
+    },
     athletic: {
       descriptor: config?.athletic_site_review,
       directory: "athletic-exterior-review",
@@ -1897,6 +1903,19 @@ async function loadCampusScene(base, manifest, settings) {
       ids: [],
       prerequisiteIds: ["roof-c1ff8b83"],
     },
+    "frohnmayer-east-drive": {
+      descriptor: config?.frohnmayer_east_drive_site,
+      directory: "frohnmayer-east-drive-review",
+      groundNode: "frohnmayer-east-drive-paving",
+      walkableGroundNode: "frohnmayer-east-drive-walks",
+      navigationUrl: settings.navigation_url,
+      navigationPredecessors: [
+        config?.pioneer_cemetery_landscape_site,
+        config?.southwest_campus_green_site,
+        config?.east_18th_west_approach_site,
+      ].filter(Boolean),
+      ids: [],
+    },
     "southwest-campus-green": {
       descriptor: config?.southwest_campus_green_site,
       directory: "southwest-campus-green-review",
@@ -1908,6 +1927,12 @@ async function loadCampusScene(base, manifest, settings) {
       ),
       ids: [],
       prerequisiteIds: ["roof-6684e091", "roof-74ecc113"],
+    },
+    "pioneer-cemetery-west-trees": {
+      descriptor: config?.pioneer_cemetery_west_trees_site,
+      directory: "pioneer-cemetery-west-trees-review",
+      groundNode: "pioneer-west-verge",
+      ids: [],
     },
     "kincaid-education-landscape": {
       descriptor: config?.kincaid_education_landscape_site,
@@ -4182,6 +4207,7 @@ async function loadCampusScene(base, manifest, settings) {
     "knight-north-plaza",
     "emu",
     "hedco",
+    "hedco-courtyard-landscape",
     "music",
     "athletic",
     "museum",
@@ -4258,6 +4284,8 @@ async function loadCampusScene(base, manifest, settings) {
     "pioneer-cemetery-inner-grid",
     "east-18th-west-approach",
     "southwest-campus-green",
+    "frohnmayer-east-drive",
+    "pioneer-cemetery-west-trees",
     "kincaid-education-landscape",
     "kendall-plaza-landscape",
     "clinical-dropoff-landscape",
@@ -4800,16 +4828,27 @@ try {
       heightCache.set(key, height);
       return height;
     };
+    const activeRouteSurfaces = routeSurfaces.filter(({ sha256 }) =>
+      registeredRouteAssets.has(sha256),
+    );
+    const retiredRoadSegments = new Set(
+      activeRouteSurfaces.flatMap(({ retired_road_segments_enu_m = [] }) =>
+        retired_road_segments_enu_m.flatMap(([a, b]) => [
+          `${a}:${b}`,
+          `${b}:${a}`,
+        ]),
+      ),
+    );
     const pavedRouteAccess = createPavedRouteAccess([
-      ...routeSurfaces
-        .filter(({ sha256 }) => registeredRouteAssets.has(sha256))
-        .flatMap(({ polygons_enu_m }) => polygons_enu_m),
+      ...activeRouteSurfaces.flatMap(({ polygons_enu_m }) => polygons_enu_m),
       ...(presentation?.refinedPavingCorridors?.quadRouteCoverage ?? []),
     ]);
     const router = createRouter(
       pathGraph,
       (a, b) => pavedRouteAccess(a, b) && clearSegment(a, b),
-      (a, b) => !segmentHitsBoxes(a, b, extraCollisionBoxes, 0.5),
+      (a, b, kind) =>
+        (kind !== "road" || !retiredRoadSegments.has(`${a}:${b}`)) &&
+        !segmentHitsBoxes(a, b, extraCollisionBoxes, 0.5),
     );
     outdoorRouter = router;
     const siteApproachIds = new Set(

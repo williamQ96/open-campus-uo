@@ -40,6 +40,33 @@ test("routing follows connected paths around an obstacle and rejects disconnecte
     [5, 10],
   );
 });
+test("an edge filter can retire a road while preserving walking paths", () => {
+  const nodes = [
+    [0, 0],
+    [0, 30],
+    [50, 30],
+    [50, 0],
+  ];
+  const edges = [
+    [0, 3, 50, "road"],
+    [0, 1, 30, "path"],
+    [1, 2, 50, "path"],
+    [2, 3, 30, "path"],
+  ];
+  const graph = { version: 1, nodes_enu_m: nodes, edges };
+  const exactEndpoint = (a, b) => a[0] === b[0] && a[1] === b[1];
+  const walk = createRouter(
+    graph,
+    exactEndpoint,
+    (_a, _b, kind) => kind !== "road",
+  );
+  assert.deepEqual(walk.route(nodes[0], nodes[3]).points, nodes);
+  assert.equal(
+    createRouter(graph, exactEndpoint).route(nodes[0], nodes[3]).distance,
+    50,
+  );
+});
+
 test("paved route access catches a short gap at a path join", () => {
   const access = createPavedRouteAccess([
     [

@@ -1,0 +1,416 @@
+{
+  "name": "HEDCO Education outdoor courtyard furnishings and paving",
+  "pins": {
+    "hedco_descriptor_sha256": "0f5c5912f9ea81bfa362a75fd50da06aff755de5d313320a93f5153a7866792f",
+    "hedco_model_sha256": "c332c90ac78ab5880399f067039b6301be3ef986e3d4cb018083b9890ae3c66e",
+    "hedco_site_input_sha256": "85833bb45642e08eceae969f214f57913f74f19fcc4f347224a7ef2ab2e5ec41"
+  },
+  "reference": {
+    "courtyard_study": {
+      "url": "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/a054136d-556e-4939-a611-daed2b31686a/content#page=108",
+      "printed_page": 100,
+      "file": "education-thesis-p108.png",
+      "sha256": "6b3a72c1a5f07bb1dcb477a4a37527a9b204574caec7a2e9e17893010fce5ee1"
+    },
+    "campus_plan": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/2025-05/table-of-contents_2025.pdf#page=2",
+      "pdf_page": 2,
+      "file": "courtyard-campus-plan.pdf",
+      "sha256": "5921587a7b6dcf394dff23ae5d6291622ae79e3315841e7013819657ac9eb9ac"
+    },
+    "orthophotos": [
+      {
+        "tile": "hedco-courtyard",
+        "file": "hedco-courtyard-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -687,
+          -472,
+          -655,
+          -413
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493642.14928888186%2C4876456.282153052%2C493674.14928888186%2C4876515.282153052&bboxSR=3740&imageSR=3740&size=800%2C1475&layers=show%3A29&format=png32",
+        "sha256": "f9dbacaffa94bde6abd21fc5164c81486e2b9fec1176764271a00d38a446ca74"
+      },
+      {
+        "tile": "hedco-courtyard",
+        "file": "hedco-courtyard-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -687,
+          -472,
+          -655,
+          -413
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493642.14928888186%2C4876456.282153052%2C493674.14928888186%2C4876515.282153052&bboxSR=3740&imageSR=3740&size=800%2C1475&layers=show%3A26&format=png32",
+        "sha256": "e44b7d553ccb4cf340d208def593be0c4c75043c870e93e9aa1cbd8b837299e1"
+      },
+      {
+        "tile": "hedco-courtyard",
+        "file": "hedco-courtyard-2023.png",
+        "year": 2023,
+        "bounds_enu_m": [
+          -687,
+          -472,
+          -655,
+          -413
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493642.14928888186%2C4876456.282153052%2C493674.14928888186%2C4876515.282153052&bboxSR=3740&imageSR=3740&size=800%2C1475&layers=show%3A2&format=png32",
+        "sha256": "ed9b46f2f3e6982d544aae54a11294758e84ca517da531abc5eeb39b6e67a47d"
+      },
+      {
+        "tile": "hedco-courtyard",
+        "file": "hedco-courtyard-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -687,
+          -472,
+          -655,
+          -413
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493642.14928888186%2C4876456.282153052%2C493674.14928888186%2C4876515.282153052&bboxSR=3740&imageSR=3740&size=800%2C1475&layers=show%3A57&format=png32",
+        "sha256": "1713af50f274bf4aeedc2cf56fd2574edf501032ad7fc839aaf9e0f12fb13d13"
+      },
+      {
+        "tile": "hedco-west-seam",
+        "file": "hedco-west-seam-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -693,
+          -472,
+          -673,
+          -427
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493636.14928888186%2C4876456.282153052%2C493656.14928888186%2C4876501.282153052&bboxSR=3740&imageSR=3740&size=480%2C1080&layers=show%3A29&format=png32",
+        "sha256": "bd291145daafcdb6c1c73c82ef52db355f62f3ce5c341c4c3b940bf59d5ed385"
+      },
+      {
+        "tile": "hedco-west-seam",
+        "file": "hedco-west-seam-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -693,
+          -472,
+          -673,
+          -427
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493636.14928888186%2C4876456.282153052%2C493656.14928888186%2C4876501.282153052&bboxSR=3740&imageSR=3740&size=480%2C1080&layers=show%3A26&format=png32",
+        "sha256": "f2e1f704988754938d8cadad3a86f734adbf0ed90c4d89b20889402dabe22d6b"
+      },
+      {
+        "tile": "hedco-west-seam",
+        "file": "hedco-west-seam-2023.png",
+        "year": 2023,
+        "bounds_enu_m": [
+          -693,
+          -472,
+          -673,
+          -427
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493636.14928888186%2C4876456.282153052%2C493656.14928888186%2C4876501.282153052&bboxSR=3740&imageSR=3740&size=480%2C1080&layers=show%3A2&format=png32",
+        "sha256": "5d54365fb785718a0b8cd48a89de467bb921abe8fc768025843ec24cf04d617d"
+      },
+      {
+        "tile": "hedco-west-seam",
+        "file": "hedco-west-seam-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -693,
+          -472,
+          -673,
+          -427
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493636.14928888186%2C4876456.282153052%2C493656.14928888186%2C4876501.282153052&bboxSR=3740&imageSR=3740&size=480%2C1080&layers=show%3A57&format=png32",
+        "sha256": "95f88c42019f419ebba6305997dcf1ef59f24107f0e93b7ebdfd2aedea8180bb"
+      }
+    ],
+    "trees": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=Removed+%3D+%27No%27+AND+FutureTree+%3D+%27No%27&geometry=493643.14928888186%2C4876464.282153052%2C493672.14928888186%2C4876513.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=TreeNumber%2CCommonName%2CHeight%2CSpread%2CCaliper%2CRemoved%2CFutureTree&returnGeometry=true",
+      "sha256": "97af6c4f4d4d03c1a6318651e6c204e995045e5c900e5b44777c49fa192cde75",
+      "trees": [
+        {
+          "e": -669.331,
+          "n": -455.006,
+          "TreeNumber": 4597,
+          "CommonName": "Prairie Fire Crab",
+          "Height": 8,
+          "Spread": 5,
+          "Caliper": 2,
+          "Removed": "No",
+          "FutureTree": "No"
+        }
+      ]
+    },
+    "noaa": {
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1309.copc.laz",
+      "clip_file": "hedco-noaa-8866.npz",
+      "sha256": "8d21e279656061e5cf1217f60727bfc1090db8bd27abaca0b1fc56591fca0961",
+      "lawn_median_z_m": 7.767,
+      "west_parking_median_z_m": 4.397,
+      "source_dates": "Historical NOAA point cloud used by the HEDCO exterior exporter."
+    },
+    "registration": "The lawn and fixtures are fitted to four orthophotos, the 2009 campus plan photograph and a 2014 field study. This overlay meets the current modeled courtyard datum. Historical lidar shows the courtyard above the west parking court. Exact west threshold and reflector heights await direct measurement."
+  },
+  "lawn_enu_m": [
+    [
+      -677.34,
+      -421.84
+    ],
+    [
+      -663.36,
+      -421.84
+    ],
+    [
+      -663.36,
+      -426.05
+    ],
+    [
+      -664.23,
+      -426.95
+    ],
+    [
+      -664.27,
+      -427.65
+    ],
+    [
+      -663.38,
+      -428.48
+    ],
+    [
+      -663.35,
+      -439.87
+    ],
+    [
+      -664.26,
+      -440.69
+    ],
+    [
+      -664.28,
+      -441.29
+    ],
+    [
+      -663.36,
+      -442.27
+    ],
+    [
+      -663.36,
+      -447.2
+    ],
+    [
+      -673.64,
+      -447.2
+    ],
+    [
+      -674.33,
+      -446.49
+    ],
+    [
+      -675.14,
+      -446.49
+    ],
+    [
+      -675.91,
+      -447.2
+    ],
+    [
+      -677.34,
+      -447.2
+    ]
+  ],
+  "east_planters": [
+    [
+      -661.89,
+      -438.1,
+      -660.74,
+      -420.3
+    ],
+    [
+      -661.91,
+      -447.16,
+      -660.74,
+      -440.03
+    ]
+  ],
+  "low_south_garden_enu_m": [
+    [
+      -677.57,
+      -448.95
+    ],
+    [
+      -660.32,
+      -448.95
+    ],
+    [
+      -660.32,
+      -460.0
+    ],
+    [
+      -674.36,
+      -460.0
+    ],
+    [
+      -674.36,
+      -461.73
+    ],
+    [
+      -677.57,
+      -461.73
+    ]
+  ],
+  "west_parapet": {
+    "line_enu_m": [
+      [
+        -684.52,
+        -462.7
+      ],
+      [
+        -684.52,
+        -430.09
+      ]
+    ],
+    "width_m": 0.24,
+    "above_walk_m": 0.81
+  },
+  "benches": [
+    {
+      "center": [
+        -677.99,
+        -444.73
+      ],
+      "orientation_deg": 90
+    },
+    {
+      "center": [
+        -672.13,
+        -418.46
+      ],
+      "orientation_deg": 0
+    },
+    {
+      "center": [
+        -667.27,
+        -418.46
+      ],
+      "orientation_deg": 0
+    }
+  ],
+  "lamps": [
+    [
+      -663.9,
+      -427.2
+    ],
+    [
+      -663.93,
+      -440.98
+    ],
+    [
+      -674.73,
+      -446.97
+    ]
+  ],
+  "south_plant_groups": [
+    [
+      -677.03,
+      -450.14,
+      0.66
+    ],
+    [
+      -675.78,
+      -450.02,
+      0.6
+    ],
+    [
+      -675.45,
+      -452.35,
+      0.66
+    ],
+    [
+      -676.67,
+      -453.73,
+      0.49
+    ],
+    [
+      -676.11,
+      -457.01,
+      0.55
+    ],
+    [
+      -675.75,
+      -459.8,
+      0.74
+    ],
+    [
+      -673.95,
+      -459.02,
+      0.62
+    ],
+    [
+      -665.5,
+      -451.62,
+      0.65
+    ],
+    [
+      -664.18,
+      -452.63,
+      0.91
+    ],
+    [
+      -664.85,
+      -454.55,
+      0.81
+    ],
+    [
+      -665.81,
+      -456.53,
+      0.69
+    ],
+    [
+      -667.22,
+      -458.44,
+      0.64
+    ],
+    [
+      -662.5,
+      -457.58,
+      0.59
+    ]
+  ],
+  "reference_walks_enu_m": [
+    [
+      [
+        -679.4,
+        -418.36
+      ],
+      [
+        -679.4,
+        -443.61
+      ],
+      [
+        -679.39,
+        -448.48
+      ],
+      [
+        -679.39,
+        -459.84
+      ]
+    ],
+    [
+      [
+        -678.5,
+        -419.71
+      ],
+      [
+        -662.67,
+        -419.71
+      ],
+      [
+        -662.66,
+        -448.17
+      ],
+      [
+        -678.38,
+        -448.17
+      ]
+    ]
+  ]
+}

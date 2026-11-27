@@ -18,6 +18,7 @@ knight_north = import_module("build-knight-north-plaza")
 plc_east = import_module("build-plc-east-court")
 dropoff = import_module("build-clinical-dropoff-landscape")
 east_18th_west = import_module("build-east-18th-west-approach")
+frohnmayer_drive = import_module("build-frohnmayer-east-drive")
 rankin_frontage = import_module("build-rankin-frontage")
 wayfinding = import_module("build-northeast-campus-wayfinding")
 root = green.site.root
@@ -78,6 +79,18 @@ def east_18th_west_coverage(spec, metadata):
     surfaces, _, _ = east_18th_west.site_footprints(spec, manifest, metadata)
     _, _, _, access, _ = surfaces
     return access
+
+
+def frohnmayer_drive_coverage(spec, metadata):
+    manifest, _, graph = green.east.pinned_site(scene, spec)
+    drive, walks, _, _, _, _, lot = frohnmayer_drive.footprints(spec, manifest, metadata)
+    drive_path = frohnmayer_drive.route_line(spec["routes"][-1]).buffer(0.76)
+    return {
+        **encode_coverage(frohnmayer_drive.PACKAGE, walks.union(drive.union(lot).intersection(drive_path))),
+        "retired_road_segments_enu_m": frohnmayer_drive.retired_road_segments(
+            spec, manifest, graph
+        ),
+    }
 
 
 def rankin_frontage_coverage(spec, metadata):
@@ -162,6 +175,9 @@ def main():
             east_18th_west_coverage(
                 green.site.read(metadata / "east-18th-west-approach.json"), metadata
             ),
+        ),
+        frohnmayer_drive_coverage(
+            green.site.read(metadata / "frohnmayer-east-drive.json"), metadata
         ),
         encode_coverage(
             rankin_frontage.PACKAGE,

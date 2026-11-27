@@ -6,6 +6,13 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Frohnmayer east drive, Pioneer Cemetery west belt and HEDCO courtyard
+
+- Register the Frohnmayer service drive, two walks and the Lot 20 to East 18th connection. Add 46 navigation edges and retire 30 inferred road edges while the replacement surfaces are loaded. The sampled end-to-end route is 218.729 m. [Frohnmayer review](docs/frohnmayer-east-drive-2026-11-27.md).
+- Model 18 mature trees, four vine maples and six low plant groups along Pioneer Cemetery. Add 16 trunk collision bounds and 181.98 m² of verge cover. The Conger Lane stem positions for trees 4444 and 4446 still need field confirmation. [Western tree belt review](docs/pioneer-west-tree-belt-2026-11-27.md).
+- Refine the HEDCO courtyard lawn, paving, two raised planters, south garden and west parapet. Add three benches, three lamps, one registered crabapple and nine fixture collision bounds. The overlay follows the existing scene grade. The west threshold and precise courtyard levels still need measurements. [Courtyard review](docs/hedco-courtyard-landscape-2026-11-27.md).
+- Before deployment, desktop and phone production previews each matched 610 exterior IDs to loaded geometry with 608 individual models, two IDs backed by shared geometry, 457 entrances and 394 tracked resources. The build, formatting, 200 unit tests, nine targeted browser tests, 517 asset archive records, viewer hashes, 73 served-file comparisons and repeat exports pass. This release targets GitHub Pages from `main`. Education Annex remains in the research worktree. [Pages workflow](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
 ## 2026-11-27 - Release Pioneer Cemetery south plots, PLC courtyard and northeast wayfinding
 
 - Add 12 exposed curb traces totaling 103.09 m and 36 anonymous markers between Cherry Avenue and Rankin Lane. Seven taller markers register collision. Connect Cherry east and Risdon south to the existing gravel network with eleven navigation edges. [Cemetery review](docs/pioneer-cemetery-inner-grid-2026-11-27.md#cherry-avenue-to-rankin-lane).

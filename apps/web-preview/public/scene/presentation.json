@@ -2279,5 +2279,17 @@
   "northeast_campus_wayfinding_site": {
     "url": "northeast-campus-wayfinding-review/site.json",
     "sha256": "c1f1183c3ab969ff0d7662034d9ae98ab2147e3a509ec99ed1de8fd146ccd105"
+  },
+  "frohnmayer_east_drive_site": {
+    "url": "frohnmayer-east-drive-review/site.json",
+    "sha256": "731348b6591c9bf724755d03d85dff4a95d8f481035b6556a40d3f6f05dc9b24"
+  },
+  "pioneer_cemetery_west_trees_site": {
+    "url": "pioneer-cemetery-west-trees-review/site.json",
+    "sha256": "c02b1685b5f761c08b6e48205d0595ff9484bd4a5baf7c1694cfee5259f20285"
+  },
+  "hedco_courtyard_landscape_site": {
+    "url": "hedco-courtyard-landscape-review/site.json",
+    "sha256": "a4959d290a0ef2e1ef1fba728ee3914cf4e1c8d74b9242d86b8d4272ab8d6c7d"
   }
 }

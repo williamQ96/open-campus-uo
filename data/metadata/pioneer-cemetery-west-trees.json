@@ -1,0 +1,712 @@
+{
+  "name": "Pioneer Cemetery western tree belt and Frohnmayer verge",
+  "pins": {
+    "frohnmayer": "731348b6591c9bf724755d03d85dff4a95d8f481035b6556a40d3f6f05dc9b24",
+    "cemetery": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
+    "southwest_green": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53"
+  },
+  "sources": {
+    "campus_inventory": {
+      "name": "campus-trees-original.json",
+      "sha256": "5f8f9e0f1bcd1fd0ae32e23a79bd9ff281dc9412d5e5696dc97bdefd6c3e3608",
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=Removed+%3D+%27No%27+AND+FutureTree+%3D+%27No%27&geometry=493763.14928888186%2C4876323.282153052%2C493821.14928888186%2C4876618.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=OBJECTID%2CTreeNumber%2CTreeID%2CCommonName%2CHeight%2CSpread%2CCaliper%2CRemoved%2CFutureTree&returnGeometry=true"
+    },
+    "historical_atlas": {
+      "name": "campus-tree-atlas.pdf",
+      "sha256": "c676d63337bca2b4907fa4c68e092e1f505a7e538cb92e2fcb27764f58a80714",
+      "url": "https://cpfm.uoregon.edu/sites/default/files/treeatlas_webversion_07_31_2012reduced.pdf",
+      "pdf_pages": [
+        116,
+        129
+      ],
+      "printed_pages": [
+        107,
+        120
+      ]
+    },
+    "noaa_lidar": {
+      "source": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1309.copc.laz",
+      "file": "noaa-copc-8866-west.npz",
+      "sha256": "3fa8be5d805997b4bfc1228d564275db801c4dfeb4c129bf98e9c9dfa0b4a39c",
+      "projected_crs": 6339,
+      "vertical_epsg": 5703,
+      "bounds_enu_m": [
+        -554,
+        -602,
+        -506,
+        -376
+      ],
+      "tile_file_creation_date": "2017-10-31",
+      "points": 131620
+    },
+    "aerial_dates_and_checksums": [
+      {
+        "tile": "southwest",
+        "file": "southwest-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -565,
+          -622,
+          -506,
+          -510
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876306.282153052%2C493823.14928888186%2C4876418.282153052&bboxSR=3740&imageSR=3740&size=826%2C1568&layers=show%3A29&format=png32",
+        "sha256": "13b321f49bf02b063c5f22ecd9d7967cc2044874d5ca1c2ee089206d3bf21135"
+      },
+      {
+        "tile": "southwest",
+        "file": "southwest-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -565,
+          -622,
+          -506,
+          -510
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876306.282153052%2C493823.14928888186%2C4876418.282153052&bboxSR=3740&imageSR=3740&size=826%2C1568&layers=show%3A26&format=png32",
+        "sha256": "621a9bf910fb28000c5d1284d090b80354b736dd4e63cfb67ae407c9ff4ed27d"
+      },
+      {
+        "tile": "southwest",
+        "file": "southwest-2023.png",
+        "year": 2023,
+        "bounds_enu_m": [
+          -565,
+          -622,
+          -506,
+          -510
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876306.282153052%2C493823.14928888186%2C4876418.282153052&bboxSR=3740&imageSR=3740&size=826%2C1568&layers=show%3A2&format=png32",
+        "sha256": "13f6b7b881b3643659be888ad9e78c82529b3843f9cae9bc149eadca9e9da19d"
+      },
+      {
+        "tile": "southwest",
+        "file": "southwest-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -565,
+          -622,
+          -506,
+          -510
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876306.282153052%2C493823.14928888186%2C4876418.282153052&bboxSR=3740&imageSR=3740&size=826%2C1568&layers=show%3A57&format=png32",
+        "sha256": "e7502a14bab35958e0ffdfe1a65454142dc2331b68c20f87e80e7fbeac7e991f"
+      },
+      {
+        "tile": "west-middle",
+        "file": "west-middle-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -565,
+          -525,
+          -506,
+          -408
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876403.282153052%2C493823.14928888186%2C4876520.282153052&bboxSR=3740&imageSR=3740&size=826%2C1638&layers=show%3A29&format=png32",
+        "sha256": "91041c39810bc1e012b1d6bfa1363cbd4e31f0994051b409172536b18b7eb932"
+      },
+      {
+        "tile": "west-middle",
+        "file": "west-middle-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -565,
+          -525,
+          -506,
+          -408
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876403.282153052%2C493823.14928888186%2C4876520.282153052&bboxSR=3740&imageSR=3740&size=826%2C1638&layers=show%3A26&format=png32",
+        "sha256": "6892fff36bf351dd2cd96042240670e0bb2341b2d10f66318bae34bfa27027b0"
+      },
+      {
+        "tile": "west-middle",
+        "file": "west-middle-2023.png",
+        "year": 2023,
+        "bounds_enu_m": [
+          -565,
+          -525,
+          -506,
+          -408
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876403.282153052%2C493823.14928888186%2C4876520.282153052&bboxSR=3740&imageSR=3740&size=826%2C1638&layers=show%3A2&format=png32",
+        "sha256": "74374405fd7d0402ebacbfb2598b4fc51caef3d68478e879aa29e834417a8417"
+      },
+      {
+        "tile": "west-middle",
+        "file": "west-middle-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -565,
+          -525,
+          -506,
+          -408
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876403.282153052%2C493823.14928888186%2C4876520.282153052&bboxSR=3740&imageSR=3740&size=826%2C1638&layers=show%3A57&format=png32",
+        "sha256": "41a22770de5becf85b9c68c15eba0226317337491df652d3456d3ad543ab0bd8"
+      },
+      {
+        "tile": "west-north",
+        "file": "west-north-2017.png",
+        "year": 2017,
+        "bounds_enu_m": [
+          -565,
+          -422,
+          -506,
+          -309
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876506.282153052%2C493823.14928888186%2C4876619.282153052&bboxSR=3740&imageSR=3740&size=826%2C1582&layers=show%3A29&format=png32",
+        "sha256": "c6abe8d3fdb82ecbbf6ca84731948f2a8762807592775ddd14d8bbc876565254"
+      },
+      {
+        "tile": "west-north",
+        "file": "west-north-2021.png",
+        "year": 2021,
+        "bounds_enu_m": [
+          -565,
+          -422,
+          -506,
+          -309
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876506.282153052%2C493823.14928888186%2C4876619.282153052&bboxSR=3740&imageSR=3740&size=826%2C1582&layers=show%3A26&format=png32",
+        "sha256": "9bbb8f633452f1becf054258584b880f76e3a2bbd678fd610b946b36032880b5"
+      },
+      {
+        "tile": "west-north",
+        "file": "west-north-2023.png",
+        "year": 2023,
+        "bounds_enu_m": [
+          -565,
+          -422,
+          -506,
+          -309
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876506.282153052%2C493823.14928888186%2C4876619.282153052&bboxSR=3740&imageSR=3740&size=826%2C1582&layers=show%3A2&format=png32",
+        "sha256": "9b660187e65f40875b3fcf0d863823de9d565cf252ea6dd12824afeb4312aed7"
+      },
+      {
+        "tile": "west-north",
+        "file": "west-north-2025.png",
+        "year": 2025,
+        "bounds_enu_m": [
+          -565,
+          -422,
+          -506,
+          -309
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493764.14928888186%2C4876506.282153052%2C493823.14928888186%2C4876619.282153052&bboxSR=3740&imageSR=3740&size=826%2C1582&layers=show%3A57&format=png32",
+        "sha256": "39ff130663b3fdf1948f8a3c4534eb752fe1d194ef569e55fb734b4d20487327"
+      }
+    ],
+    "unresolved_trunks": [
+      {
+        "inventory_id": 4444,
+        "reason": "GIS point falls on the current modeled Conger lane. Atlas and imagery place a fir in the area but the trunk offset needs ground control."
+      },
+      {
+        "inventory_id": 4446,
+        "reason": "Local first returns were near ground in 2017. Current crown at the GIS position is uncertain."
+      }
+    ],
+    "conger_followup": {
+      "intent": "Cross-check Conger Lane trees against historical map registration, 2017–2025 county ortho crops, the current modeled road, and height slices.",
+      "historical_atlas_control_count": 9,
+      "atlas_screen_sha256": "b0d6817bf476dbb9150f75e02036863d2f3945080cd2ff850451bcb29c202462",
+      "aerial_crop_source_receipts_sha256": "ac539ce8480e2ad65fef3f98d99a5f2e0bb30e5b8718ff100f928229136d687e",
+      "records": [
+        {
+          "inventory_id": 4444,
+          "current_gis_enu_m": [
+            -520.17,
+            -430.838
+          ],
+          "historical_symbol_residual_m": 8.639,
+          "local_noaa_radius_m": 0.8,
+          "local_noaa_returns": 15,
+          "noaa_returns_above_4m": 13,
+          "noaa_returns_between_1m_and_4m": 0,
+          "conclusion": "Canopy above the GIS point. Neither lidar nor dated overhead images isolate the trunk near the covered gravel strip."
+        },
+        {
+          "inventory_id": 4446,
+          "current_gis_enu_m": [
+            -522.039,
+            -411.412
+          ],
+          "historical_symbol_residual_m": 7.519,
+          "local_noaa_radius_m": 0.8,
+          "local_noaa_returns": 17,
+          "noaa_returns_above_1m": 0,
+          "conclusion": "Near-ground returns and no matching unambiguous contemporary crown at the registered position."
+        }
+      ],
+      "road_observation": "Around scene northing -419 m the exposed gravel lies east of the current centerline in both 2017 and 2025 imagery. Under tree cover, the visible portions cannot establish a complete corrected road alignment or the location of either stem."
+    }
+  },
+  "additional_verge_blend_m": 2.53,
+  "trees": [
+    {
+      "inventory_id": 4471,
+      "species": "Douglas-Fir",
+      "form": "fir",
+      "position_enu_m": [
+        -525.734,
+        -387.276
+      ],
+      "gis_height_ft": 95,
+      "gis_spread_ft": 50,
+      "gis_caliper_in": 36,
+      "noaa_local_first_return_count": 177,
+      "noaa_local_p95_height_m": 27.94,
+      "height_m": 28.55,
+      "crown_radius_m": 7.62,
+      "trunk_radius_m": 0.457,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4443,
+      "species": "Douglas-Fir",
+      "form": "fir",
+      "position_enu_m": [
+        -525.695,
+        -445.602
+      ],
+      "gis_height_ft": 70,
+      "gis_spread_ft": 40,
+      "gis_caliper_in": 30,
+      "noaa_local_first_return_count": 184,
+      "noaa_local_p95_height_m": 30.49,
+      "height_m": 25.0,
+      "crown_radius_m": 6.1,
+      "trunk_radius_m": 0.381,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4440,
+      "species": "Douglas-Fir",
+      "form": "fir",
+      "position_enu_m": [
+        -524.405,
+        -452.153
+      ],
+      "gis_height_ft": 60,
+      "gis_spread_ft": 12,
+      "gis_caliper_in": 27,
+      "noaa_local_first_return_count": 27,
+      "noaa_local_p95_height_m": 22.55,
+      "height_m": 19.99,
+      "crown_radius_m": 1.83,
+      "trunk_radius_m": 0.343,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4432,
+      "species": "Oak (species unresolved)",
+      "form": "broadleaf",
+      "position_enu_m": [
+        -520.655,
+        -472.475
+      ],
+      "gis_height_ft": 50,
+      "gis_spread_ft": 23,
+      "gis_caliper_in": 20,
+      "noaa_local_first_return_count": 73,
+      "noaa_local_p95_height_m": 14.12,
+      "height_m": 14.79,
+      "crown_radius_m": 3.51,
+      "trunk_radius_m": 0.254,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4422,
+      "species": "Douglas-Fir",
+      "form": "fir",
+      "position_enu_m": [
+        -527.726,
+        -490.78
+      ],
+      "gis_height_ft": 65,
+      "gis_spread_ft": 22,
+      "gis_caliper_in": 30,
+      "noaa_local_first_return_count": 85,
+      "noaa_local_p95_height_m": 31.82,
+      "height_m": 24.62,
+      "crown_radius_m": 3.35,
+      "trunk_radius_m": 0.381,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4421,
+      "species": "Douglas-Fir",
+      "form": "fir",
+      "position_enu_m": [
+        -527.305,
+        -494.115
+      ],
+      "gis_height_ft": 75,
+      "gis_spread_ft": 33,
+      "gis_caliper_in": 35,
+      "noaa_local_first_return_count": 182,
+      "noaa_local_p95_height_m": 32.87,
+      "height_m": 26.86,
+      "crown_radius_m": 5.03,
+      "trunk_radius_m": 0.445,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4420,
+      "species": "Big Leaf Maple",
+      "form": "broadleaf",
+      "position_enu_m": [
+        -522.435,
+        -495.576
+      ],
+      "gis_height_ft": 50,
+      "gis_spread_ft": 37,
+      "gis_caliper_in": 31,
+      "noaa_local_first_return_count": 312,
+      "noaa_local_p95_height_m": 29.94,
+      "height_m": 21.12,
+      "crown_radius_m": 5.64,
+      "trunk_radius_m": 0.394,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4419,
+      "species": "California Incense Cedar",
+      "form": "incense-cedar",
+      "position_enu_m": [
+        -525.727,
+        -498.567
+      ],
+      "gis_height_ft": 70,
+      "gis_spread_ft": 26,
+      "gis_caliper_in": 37,
+      "noaa_local_first_return_count": 167,
+      "noaa_local_p95_height_m": 29.46,
+      "height_m": 24.59,
+      "crown_radius_m": 3.96,
+      "trunk_radius_m": 0.47,
+      "solid_trunk": false
+    },
+    {
+      "inventory_id": 4418,
+      "species": "California Incense Cedar",
+      "form": "incense-cedar",
+      "position_enu_m": [
+        -525.42,
+        -501.346
+      ],
+      "gis_height_ft": 65,
+      "gis_spread_ft": 38,
+      "gis_caliper_in": 24,
+      "noaa_local_first_return_count": 307,
+      "noaa_local_p95_height_m": 28.09,
+      "height_m": 23.12,
+      "crown_radius_m": 5.79,
+      "trunk_radius_m": 0.305,
+      "solid_trunk": false
+    },
+    {
+      "inventory_id": 4417,
+      "species": "Douglas-Fir",
+      "form": "fir",
+      "position_enu_m": [
+        -525.23,
+        -505.228
+      ],
+      "gis_height_ft": 70,
+      "gis_spread_ft": 16,
+      "gis_caliper_in": 43,
+      "noaa_local_first_return_count": 47,
+      "noaa_local_p95_height_m": 29.05,
+      "height_m": 24.42,
+      "crown_radius_m": 2.44,
+      "trunk_radius_m": 0.546,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4415,
+      "species": "Ponderosa Pine",
+      "form": "pine",
+      "position_enu_m": [
+        -523.588,
+        -517.295
+      ],
+      "gis_height_ft": 70,
+      "gis_spread_ft": 11,
+      "gis_caliper_in": 35,
+      "noaa_local_first_return_count": 33,
+      "noaa_local_p95_height_m": 19.05,
+      "height_m": 20.42,
+      "crown_radius_m": 1.68,
+      "trunk_radius_m": 0.445,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4414,
+      "species": "Douglas-Fir",
+      "form": "fir",
+      "position_enu_m": [
+        -527.644,
+        -520.473
+      ],
+      "gis_height_ft": 70,
+      "gis_spread_ft": 18,
+      "gis_caliper_in": 36,
+      "noaa_local_first_return_count": 73,
+      "noaa_local_p95_height_m": 33.19,
+      "height_m": 26.08,
+      "crown_radius_m": 2.74,
+      "trunk_radius_m": 0.457,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4412,
+      "species": "California Incense Cedar",
+      "form": "incense-cedar",
+      "position_enu_m": [
+        -526.54,
+        -523.167
+      ],
+      "gis_height_ft": 65,
+      "gis_spread_ft": 24,
+      "gis_caliper_in": 24,
+      "noaa_local_first_return_count": 140,
+      "noaa_local_p95_height_m": 33.98,
+      "height_m": 25.48,
+      "crown_radius_m": 3.66,
+      "trunk_radius_m": 0.305,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4413,
+      "species": "California Incense Cedar",
+      "form": "incense-cedar",
+      "position_enu_m": [
+        -526.237,
+        -527.822
+      ],
+      "gis_height_ft": 70,
+      "gis_spread_ft": 28,
+      "gis_caliper_in": 41,
+      "noaa_local_first_return_count": 190,
+      "noaa_local_p95_height_m": 34.86,
+      "height_m": 26.75,
+      "crown_radius_m": 4.27,
+      "trunk_radius_m": 0.521,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4411,
+      "species": "California Incense Cedar",
+      "form": "incense-cedar",
+      "position_enu_m": [
+        -527.399,
+        -533.505
+      ],
+      "gis_height_ft": 70,
+      "gis_spread_ft": 30,
+      "gis_caliper_in": 38,
+      "noaa_local_first_return_count": 210,
+      "noaa_local_p95_height_m": 29.96,
+      "height_m": 24.79,
+      "crown_radius_m": 4.57,
+      "trunk_radius_m": 0.483,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4771,
+      "species": "Western Red Cedar",
+      "form": "red-cedar",
+      "position_enu_m": [
+        -527.814,
+        -537.623
+      ],
+      "gis_height_ft": 55,
+      "gis_spread_ft": 25,
+      "gis_caliper_in": 27,
+      "noaa_local_first_return_count": 148,
+      "noaa_local_p95_height_m": 29.83,
+      "height_m": 21.99,
+      "crown_radius_m": 3.81,
+      "trunk_radius_m": 0.343,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4410,
+      "species": "Western Red Cedar",
+      "form": "red-cedar",
+      "position_enu_m": [
+        -524.946,
+        -544.592
+      ],
+      "gis_height_ft": 40,
+      "gis_spread_ft": 34,
+      "gis_caliper_in": 10,
+      "noaa_local_first_return_count": 246,
+      "noaa_local_p95_height_m": 29.33,
+      "height_m": 12.19,
+      "crown_radius_m": 5.18,
+      "trunk_radius_m": 0.127,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 1073,
+      "species": "White Oak",
+      "form": "broadleaf",
+      "position_enu_m": [
+        -544.405,
+        -594.703
+      ],
+      "gis_height_ft": 60,
+      "gis_spread_ft": 25,
+      "gis_caliper_in": 27,
+      "noaa_local_first_return_count": 129,
+      "noaa_local_p95_height_m": 16.92,
+      "height_m": 18.29,
+      "crown_radius_m": 3.81,
+      "trunk_radius_m": 0.343,
+      "solid_trunk": true
+    },
+    {
+      "inventory_id": 4621,
+      "species": "Vine Maple",
+      "form": "understory",
+      "position_enu_m": [
+        -544.992,
+        -498.361
+      ],
+      "gis_height_ft": 5,
+      "gis_spread_ft": 5,
+      "gis_caliper_in": 1,
+      "noaa_local_first_return_count": 28,
+      "noaa_local_p95_height_m": 3.45,
+      "height_m": 1.52,
+      "crown_radius_m": 0.76,
+      "trunk_radius_m": 0.013,
+      "solid_trunk": false
+    },
+    {
+      "inventory_id": 4627,
+      "species": "Vine Maple",
+      "form": "understory",
+      "position_enu_m": [
+        -543.407,
+        -508.226
+      ],
+      "gis_height_ft": 5,
+      "gis_spread_ft": 5,
+      "gis_caliper_in": 1,
+      "noaa_local_first_return_count": 50,
+      "noaa_local_p95_height_m": 2.01,
+      "height_m": 1.52,
+      "crown_radius_m": 0.76,
+      "trunk_radius_m": 0.013,
+      "solid_trunk": false
+    },
+    {
+      "inventory_id": 4628,
+      "species": "Vine Maple",
+      "form": "understory",
+      "position_enu_m": [
+        -543.115,
+        -511.356
+      ],
+      "gis_height_ft": 5,
+      "gis_spread_ft": 5,
+      "gis_caliper_in": 1,
+      "noaa_local_first_return_count": 51,
+      "noaa_local_p95_height_m": 1.98,
+      "height_m": 1.52,
+      "crown_radius_m": 0.76,
+      "trunk_radius_m": 0.013,
+      "solid_trunk": false
+    },
+    {
+      "inventory_id": 1071,
+      "species": "Vine Maple",
+      "form": "understory",
+      "position_enu_m": [
+        -538.008,
+        -596.079
+      ],
+      "gis_height_ft": 10,
+      "gis_spread_ft": 4,
+      "gis_caliper_in": 2,
+      "noaa_local_first_return_count": 41,
+      "noaa_local_p95_height_m": 16.52,
+      "height_m": 3.05,
+      "crown_radius_m": 0.61,
+      "trunk_radius_m": 0.025,
+      "solid_trunk": false
+    }
+  ],
+  "low_plant_groups": [
+    {
+      "position_enu_m": [
+        -526.28,
+        -551.74
+      ],
+      "spread_m": [
+        1.2,
+        0.92
+      ],
+      "height_m": 0.67
+    },
+    {
+      "position_enu_m": [
+        -524.1,
+        -555.49
+      ],
+      "spread_m": [
+        0.95,
+        1.08
+      ],
+      "height_m": 0.64
+    },
+    {
+      "position_enu_m": [
+        -526.02,
+        -559.96
+      ],
+      "spread_m": [
+        1.62,
+        1.13
+      ],
+      "height_m": 0.88
+    },
+    {
+      "position_enu_m": [
+        -525.01,
+        -575.25
+      ],
+      "spread_m": [
+        1.24,
+        1.18
+      ],
+      "height_m": 0.61
+    },
+    {
+      "position_enu_m": [
+        -526.85,
+        -584.82
+      ],
+      "spread_m": [
+        1.13,
+        1.44
+      ],
+      "height_m": 0.81
+    },
+    {
+      "position_enu_m": [
+        -529.57,
+        -592.88
+      ],
+      "spread_m": [
+        0.97,
+        1.06
+      ],
+      "height_m": 0.62
+    }
+  ]
+}

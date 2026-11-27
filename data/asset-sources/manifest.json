@@ -3316,6 +3316,42 @@
       "sha256": "911a1dce8fec5c94e2e45337c78300af983259f53a9a104a72946d63b89c47d8",
       "license": "CC-BY-4.0",
       "origin": "Original northeast wayfinding geometry for the Agate–Franklin gateway and Onyx map station. Placement and form are in docs/northeast-campus-wayfinding-2026-11-27.md. The cabinet map graphic is independently generated from this project’s scene metadata."
+    },
+    "apps/web-preview/public/scene/frohnmayer-east-drive-review/site.glb": {
+      "bytes": 597436,
+      "sha256": "113fbdab3b14305560848a4e9cb465c43c2a4b282ee66e3b8905df17f8607032",
+      "license": "CC-BY-4.0",
+      "origin": "Original Frohnmayer Music east service drive and Pioneer Cemetery southwest walk geometry registered from Lane County aerials and dated ground evidence. See docs/frohnmayer-east-drive-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/frohnmayer-east-drive-review/site.json": {
+      "bytes": 1784,
+      "sha256": "731348b6591c9bf724755d03d85dff4a95d8f481035b6556a40d3f6f05dc9b24",
+      "license": "CC-BY-4.0",
+      "origin": "Original Frohnmayer Music east service drive and Pioneer Cemetery southwest walk geometry registered from Lane County aerials and dated ground evidence. See docs/frohnmayer-east-drive-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/pioneer-cemetery-west-trees-review/site.glb": {
+      "bytes": 545824,
+      "sha256": "a82d81881a0967fe160c75391df72a6a83d4e22cfd61734b611763617ab3813d",
+      "license": "CC-BY-4.0",
+      "origin": "Original western Pioneer Cemetery tree and ground geometry modeled from the UO campus tree inventory, Lane County orthophotos and NOAA lidar. See docs/pioneer-west-tree-belt-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/pioneer-cemetery-west-trees-review/site.json": {
+      "bytes": 1401,
+      "sha256": "c02b1685b5f761c08b6e48205d0595ff9484bd4a5baf7c1694cfee5259f20285",
+      "license": "CC-BY-4.0",
+      "origin": "Original western Pioneer Cemetery tree and ground geometry modeled from the UO campus tree inventory, Lane County orthophotos and NOAA lidar. See docs/pioneer-west-tree-belt-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/hedco-courtyard-landscape-review/site.glb": {
+      "bytes": 629460,
+      "sha256": "47d1487da9b36de4c7aaf25e9a2a7073e82be2f82c0443bf8c2b06ac2ceaf217",
+      "license": "CC-BY-4.0",
+      "origin": "Original HEDCO courtyard surfaces, planters, planting and furnishings registered from Lane County orthophotos and UO documentation. See docs/hedco-courtyard-landscape-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/hedco-courtyard-landscape-review/site.json": {
+      "bytes": 970,
+      "sha256": "a4959d290a0ef2e1ef1fba728ee3914cf4e1c8d74b9242d86b8d4272ab8d6c7d",
+      "license": "CC-BY-4.0",
+      "origin": "Original HEDCO courtyard surfaces, planters, planting and furnishings registered from Lane County orthophotos and UO documentation. See docs/hedco-courtyard-landscape-2026-11-27.md."
     }
   },
   "additional_sources": [

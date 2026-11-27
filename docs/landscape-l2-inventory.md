@@ -16,12 +16,15 @@
 | Pioneer Cemetery 的 Conger Lane、Shelley Lane 与图书馆接驳 | 已纳入 L2 发布 | 配准图书馆侧 197.42 平方米铺面、Conger 路线、短草径、两处低植、七组外露边石及 14 处无名碑形。四条分支新增 50 条导航边。[西北周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#conger-lane-shelley-lane-and-the-library-approach) |
 | Pioneer Cemetery 北部、Dorris 北侧与 Walton–Cherry 间墓区 | 纳入本次 L2 发布 | 多期航片配准 15 组外露边石、40 处无名碑形、三段共 60.94 米草径和两处低植。九处较高碑形加入碰撞，Walton–Cherry 一段边石避开已建模树干。树冠下的延续、碑形细节和植物种类仍待现场证据。[墓区复核](pioneer-cemetery-inner-grid-2026-11-27.md) |
 | Pioneer Cemetery 的 Cherry Avenue 与 Rankin Lane 之间 | 纳入本次 L2 发布 | 四期航片核对 12 组共 103.09 米外露边石、36 处无名碑形及与现有步道、树干的间距。七处较高碑形加入碰撞。新增 11 条导航边，连通 Cherry Avenue 东段、Risdon Lane 南段与 Rankin Lane。碑形尺寸与埋没边石的走向仍待现场核对。[墓区复核](pioneer-cemetery-inner-grid-2026-11-27.md#cherry-avenue-to-rankin-lane) |
+| Pioneer Cemetery 西缘、Frohnmayer Music 东侧车道与 East 18th 接合 | 纳入本次 L2 发布 | 四期航片与 2024 年街景配准 1,533.84 平方米沥青、131.62 平方米步道、两处停车植岛、入口植床和无障碍标线。恢复 676.35 平方米草带。两条人行道与共享车道合计新增 46 条导航边，替换 30 条错位旧边。遮挡处边缘、路缘高度及植物分组为估计。[场地复核](frohnmayer-east-drive-2026-11-27.md) |
+| Pioneer Cemetery 西缘乔木带与林下植被 | 纳入本次 L2 发布 | 配准 18 株成年乔木、4 株藤槭及 6 组低植。16 处树干加入碰撞，补覆 181.98 平方米旧路肩。Conger Lane 边两株待核树木仍需地面证据。[场地复核](pioneer-west-tree-belt-2026-11-27.md) |
 | Pioneer Cemetery 其余墓区 | 待细化 | 核对树冠遮挡的小巷、边石、历史玫瑰和边界乔木。 |
 | Southwest Campus Green、Knight Library 南侧平台与 Lot 20 | 已纳入 L2 发布 | 配准开敞草坪、南侧平台、11 处种植区、29 株登记树和 40 条导航边，补建停车路缘、无障碍标线、长椅、路灯和场地牌。《Trees of Knowledge》约 1.22 米高，已记录作品群位置。单件底座与可再发布几何待核对。[场地复核](southwest-campus-green-review-2026-11-27.md) |
 | 墓园与 Southwest Campus Green 的铺面导航接入 | 已纳入 L2 发布 | 五条曾走草地的端点连线已校正，同一组路线控制在建模铺面边缘 0.13 米配准容差内。已核对五组偏移落点的双向路线及北段 Risdon Lane 对照路线。[路线复核](southwest-campus-green-review-2026-11-27.md#paved-route-access) |
 | Kincaid Green 与 Lokey Education 庭院 | 已纳入 L2 发布 | 补建马蹄形步道、砖铺庭院、七处种植区、52 株登记树、四张长凳和三根灯杆，恢复五株历史道格拉斯杉和 31.40 米南侧有顶廊道。八条分支增加 45 条导航边。南亭与两段楼梯已建模，上门槛和细部为估算。[场地复核](kincaid-education-landscape-review-2026-11-27.md) |
 | Kendall Plaza 与 Education 南侧步道 | 已纳入 L2 发布 | 根据航片和激光点云补建三道混凝土阶台、花池、砖铺广场、两侧绕行步道和 25 株登记树。新增 30 条导航边，校正 Southwest Campus Green 途经阶台的旧连线。[场地复核](kendall-plaza-landscape-review-2026-11-27.md) |
 | Kendall Plaza 南草坪与砾石场地 | 已纳入 L2 发布 | 补建 279.98 平方米步道、51.98 平方米带收边砾石面、579.48 平方米草坪、三处植床、七株登记树和两盏代表性球罩灯。新增 21 条导航边，四条抽检路线通过铺面校验。[场地复核](kendall-plaza-landscape-review-2026-11-27.md#south-lawn-paths-and-gravel-setting) |
+| HEDCO 露天庭院铺面、植床与设施 | 纳入本次 L2 发布 | 以四期航片和校方资料配准 350.62 平方米草坪、623.67 平方米铺面、两座花池、南侧植床、西缘矮墙、三张长椅、三盏灯和一株登记乔木。西侧门槛与庭院精确高程仍待核对。[场地复核](hedco-courtyard-landscape-2026-11-27.md) |
 | HEDCO 南落客区、Lot 19 与 Clinical Services 北侧步道 | 纳入本次 L2 发布 | 四期航片配准 1,858.69 平方米沥青、295.29 平方米步道、四个路缘种植岛、两个条纹过街口、停车导流标线和五枚方向箭头。26 条导航边连接 Kendall 南步道与停车区对侧。标线及路缘坡度为估算。[场地复核](clinical-dropoff-landscape-2026-11-27.md) |
 | Kendall Plaza 的《Unity and Harmony》 | 已配准南草坪作品位置 | 三期航片与校方照片配准两座石盆、中央有孔构件和砾石场地。下层广场标出两张石凳候选位置，单件身份、Clinical Services 点位和雕塑几何待核对。[作品复核](kendall-plaza-landscape-review-2026-11-27.md#unity-and-harmony) |
 | Knight Library 北广场与 Bailey 喷泉 | 已纳入 L2 发布 | 根据历史测绘、三期航片及 2026 年施工照片重建 875.78 平方米混凝土铺面、喷泉、四张石凳、三处植床与 14 条导航边。四株樱花的移除有记录，补植点位、新灯剖面及喷泉运行状态待核对。[场地复核](knight-north-plaza-review-2026-11-27.md) |
