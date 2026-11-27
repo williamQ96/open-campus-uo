@@ -6,6 +6,12 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Memorial Quadrangle paths, Bailey oaks, plaques and PLC east courtyard
+
+- Refit the south crossing, the east walk and the X north of the ring. Join the straight walks to the Knight Library apron and constrain pin connections to the surveyed paving. Register the eight Bailey oaks and 26.45 m² of root openings. Crown and trunk details use estimates. [Paving review](docs/paving-corridors-l2-2026-11-26.md#memorial-quadrangle-south-walks-and-knight-library-apron) · [Bailey oak review](docs/memorial-quad-bailey-oaks-2026-11-27.md).
+- Rebuild the PLC east courtyard with 497.51 m² of paving, four stair treads, three planting beds, two registered trees and a representative Vigil pedestal. Connect 14 route edges to the Quad and two entrances. Add the paired Gilbert inlays and the Kincaid Field pavement marker in Memorial Quad. The full sculpture and field measurements for the plaques remain pending. [Court review](docs/plc-east-court-review-2026-11-27.md) · [Plaque review](docs/memorial-quad-plaques-2026-11-27.md).
+- Desktop and phone production previews match all 610 exterior IDs to geometry, including 608 individual meshes and two IDs backed by shared geometry. Each loads 378 resources and 457 entrances. All 54 sampled responses match the build. The build, formatting, 199 unit tests, 501 archived assets, viewer hashes, semantic activity, campus expansion, landcover and byte-for-byte route coverage rebuild pass. The release targets GitHub Pages. Education Annex and its approach remain in the research worktree. [Pages workflow](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
 ## 2026-11-27 - Release Knight Library forecourt and Kendall Plaza south lawn
 
 - Publish the north forecourt, Bailey fountain, cast-stone seats and three planted terraces at Knight Library. Reconnect both existing stair approaches with 14 navigation edges around the basin. The current fountain operation, replacement cherry positions and new stair fixtures await field evidence. [Forecourt review](docs/knight-north-plaza-review-2026-11-27.md).

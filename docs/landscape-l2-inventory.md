@@ -22,6 +22,11 @@
 | Kendall Plaza 南草坪与砾石场地 | 已纳入 L2 发布 | 补建 279.98 平方米步道、51.98 平方米带收边砾石面、579.48 平方米草坪、三处植床、七株登记树和两盏代表性球罩灯。新增 21 条导航边，四条抽检路线通过铺面校验。[场地复核](kendall-plaza-landscape-review-2026-11-27.md#south-lawn-paths-and-gravel-setting) |
 | Kendall Plaza 的《Unity and Harmony》 | 已配准南草坪作品位置 | 三期航片与校方照片配准两座石盆、中央有孔构件和砾石场地。下层广场标出两张石凳候选位置，单件身份、Clinical Services 点位和雕塑几何待核对。[作品复核](kendall-plaza-landscape-review-2026-11-27.md#unity-and-harmony) |
 | Knight Library 北广场与 Bailey 喷泉 | 已纳入 L2 发布 | 根据历史测绘、三期航片及 2026 年施工照片重建 875.78 平方米混凝土铺面、喷泉、四张石凳、三处植床与 14 条导航边。四株樱花的移除有记录，补植点位、新灯剖面及喷泉运行状态待核对。[场地复核](knight-north-plaza-review-2026-11-27.md) |
+| Memorial Quadrangle 南端步道与 Knight Library 接合 | 已纳入 L2 发布 | 三期航片和校方平面图配准南侧交叉步道、两侧直行道和北广场接合铺面。南端保留中央草坪。导航落点使用建模铺面边界，树冠挡住的末端分段和宽度为估算。[铺面复核](paving-corridors-l2-2026-11-26.md#memorial-quadrangle-south-walks-and-knight-library-apron) |
+| PLC 东庭院铺面、台阶与植床 | 已纳入 L2 发布 | 四期航片与 NOAA 地面点配准 497.51 平方米铺装、四级台阶、三处植床、两株登记树和约略的《Vigil》底座。14 条导航边接入 Memorial Quad 和两处既有门口。[场地复核](plc-east-court-review-2026-11-27.md) |
+| PLC 东庭院《Vigil》 | 已核对校方档案 | 校方 2025 年测绘确认《Vigil》为东庭院现存雕塑，接替 2008 年失窃的《The Falconer》。航片已配准底座和周边植床，底座剖面与雕塑本体仍待近期近照。[档案复核](plc-east-court-review-2026-11-27.md) |
+| Memorial Quad 的 Gilbert 与 Kincaid Field 铭牌 | 已纳入 L2 发布 | 按校方景观图和 Gilbert 铭牌档案照片补建北端两块嵌地铭牌及东侧 Kincaid Field 铭牌。各点位和尺寸采用近似配准，Kincaid Field 的排版为示意。[铭牌复核](memorial-quad-plaques-2026-11-27.md) |
+| Bailey 纪念橡树、树池与东侧步道 | 已纳入 L2 发布 | 校方 616 至 623 号八株树按现存树位建模。增设 26.45 平方米根区，沿树列外侧配准步道并恢复圆环北方交叉斜道。树干和树冠细部为估算。[树木与步道复核](memorial-quad-bailey-oaks-2026-11-27.md) |
 | 校园主道路、人行道及广场 | 已有代表性 L2，待逐处复核 | 139 条走廊已有注册铺装。按公共空间逐段核对路缘、过街线、台阶、扶手、道路标识和真实接合。 |
 | Gerlinger Field Green 草坪、步道和东侧边界 | 已纳入 L2 发布 | 恢复开敞草坪、六段铺装、南侧停车地坪、Annex 外梯、矮墙、标识、常春藤和十株登记树。楼梯、停车标线和植物尺寸采用估算。 |
 | Women’s Memorial Quad | 已纳入 L2 发布 | 配准重铺后的曲线步道、约 33 米台地墙、两段外梯和六张石凳。台阶与石凳尺寸为估计。 |

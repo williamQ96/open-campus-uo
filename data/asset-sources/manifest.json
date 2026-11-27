@@ -2478,16 +2478,16 @@
       "origin": "Original terrain fitting and vertex-color ground model informed by open DOGAMI 2023 and 2014 lidar, USGS NHD and USDA NAIP. Source rasters and imagery remain separate."
     },
     "apps/web-preview/public/scene/paving-corridors-l2/surfaces.glb": {
-      "bytes": 3402636,
-      "sha256": "26f3433e2abc1a8cd0cbf1125711a2ed17d9ebdd0132697a76cc2455bb90aff6",
+      "bytes": 3946332,
+      "sha256": "44f65846576c9b29f3e645fe8bcf0a81611646d401bda7cc5fe4492758bb4e7a",
       "license": "CC-BY-4.0",
-      "origin": "Original modeled Memorial Quad paths and lawn and rebuilt road and path buffers on Census centerlines. Open imagery and published city measurement facts inform approximate widths and materials. No reference photos or city polygon files embedded."
+      "origin": "Original modeled Memorial Quad paths and lawn and rebuilt road and path buffers on Census centerlines. Open imagery and published city measurement facts inform approximate widths and materials. No reference photos or city polygon files embedded. The Bailey tree rows use live UO tree records and four Lane County aerials."
     },
     "apps/web-preview/public/scene/paving-corridors-l2/surfaces.json": {
-      "bytes": 66532,
-      "sha256": "37c5d4ecd31e18e4c28e5326512f48dd07e2c1eb54bda191ba0ad716446bad68",
+      "bytes": 85154,
+      "sha256": "fd138b96a36bad1982d8a6bddcb09eb89f44aae00503347a31ff1e5dbdc16d22",
       "license": "CC-BY-4.0",
-      "origin": "Original Memorial Quad paving and lawn, rebuilt road and path buffers on Census centerlines, and revised activity centerlines based on the rendered paving and lawn. No reference imagery or city polygon files embedded."
+      "origin": "Original Memorial Quad paving and lawn, rebuilt road and path buffers on Census centerlines, and revised activity centerlines based on the rendered paving and lawn. No reference imagery or city polygon files embedded. The Bailey tree rows use live UO tree records and four Lane County aerials."
     },
     "apps/web-preview/public/animals/campus-squirrel-l2.glb": {
       "bytes": 140664,
@@ -3232,6 +3232,30 @@
       "bytes": 2011,
       "license": "CC-BY-4.0",
       "origin": "Original Knight Library north forecourt, Bailey fountain, planting walls and seating geometry, informed by the 2026 construction photograph, historic campus surveys and county aerials. See docs/knight-north-plaza-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/plc-east-court-review/site.json": {
+      "sha256": "e2093c93d144c3f16580b9552e6703ab80567ff176871c366a3253287f00bacb",
+      "bytes": 1361,
+      "license": "CC-BY-4.0",
+      "origin": "Original PLC east courtyard terrain, paving, stairs, planters and pedestal geometry informed by Lane County imagery, NOAA point returns and UO records. See docs/plc-east-court-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/plc-east-court-review/site.glb": {
+      "sha256": "61dd8e75a7dc9d8ca4f27a5c96b86e311b679c2cd0045a7dc79170e2e1c684fc",
+      "bytes": 376980,
+      "license": "CC-BY-4.0",
+      "origin": "Original PLC east courtyard terrain, paving, stairs, planters and pedestal geometry informed by Lane County imagery, NOAA point returns and UO records. See docs/plc-east-court-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/memorial-quad-plaques-review/site.json": {
+      "sha256": "cfb83ddc4140d0693e6e364e501046b6bfc968526fe9f7e41e0054f5f4c92c51",
+      "bytes": 556,
+      "license": "CC-BY-4.0",
+      "origin": "Original modeling of Memorial Quad sidewalk plaque forms and abbreviated relief lettering from the UO landscape survey and National Register record. See docs/memorial-quad-plaques-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/memorial-quad-plaques-review/site.glb": {
+      "sha256": "5b1c98e5e0e8ea19a1491c2b68066b6171448ec4492004fa8d897d3490830a2f",
+      "bytes": 437540,
+      "license": "CC-BY-4.0",
+      "origin": "Original modeling of Memorial Quad sidewalk plaque forms and abbreviated relief lettering from the UO landscape survey and National Register record. See docs/memorial-quad-plaques-2026-11-27.md."
     }
   },
   "additional_sources": [

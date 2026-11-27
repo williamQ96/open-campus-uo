@@ -1,0 +1,313 @@
+{
+  "name": "Prince Lucien Campbell Hall east courtyard",
+  "extent": [
+    -602,
+    -144,
+    -564,
+    -125
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "sites": {
+      "plc-lokey-tykeson-review": "c0884ac85424815bd3209e2e3964ddc040ee49e6e3bac526bf360afd5cff2485"
+    },
+    "quad": "fd138b96a36bad1982d8a6bddcb09eb89f44aae00503347a31ff1e5dbdc16d22"
+  },
+  "sources": {
+    "orthophotos": [
+      {
+        "year": 2017,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493719.14928888186%2C4876773.282153052%2C493776.14928888186%2C4876812.282153052&bboxSR=3740&imageSR=3740&size=855%2C585&layers=show%3A29&format=png32",
+        "sha256": "ba15fa37de03c348fae5f3dd45382155eaa5121e180c8bc36679da39372c3343",
+        "bounds_enu_m": [
+          -610,
+          -155,
+          -553,
+          -116
+        ],
+        "pixels_per_m": 15
+      },
+      {
+        "year": 2021,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493719.14928888186%2C4876773.282153052%2C493776.14928888186%2C4876812.282153052&bboxSR=3740&imageSR=3740&size=855%2C585&layers=show%3A26&format=png32",
+        "sha256": "606c49bf77d0e12d5822cd5fee395ffc03ca1880008d8d8ec87b29ad2dccfc19",
+        "bounds_enu_m": [
+          -610,
+          -155,
+          -553,
+          -116
+        ],
+        "pixels_per_m": 15
+      },
+      {
+        "year": 2023,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493719.14928888186%2C4876773.282153052%2C493776.14928888186%2C4876812.282153052&bboxSR=3740&imageSR=3740&size=855%2C585&layers=show%3A2&format=png32",
+        "sha256": "606eef2f96ef6021eeb8b0ed0a7fc6c603091034582c2c317bc7a6b045313212",
+        "bounds_enu_m": [
+          -610,
+          -155,
+          -553,
+          -116
+        ],
+        "pixels_per_m": 15
+      },
+      {
+        "year": 2025,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493719.14928888186%2C4876773.282153052%2C493776.14928888186%2C4876812.282153052&bboxSR=3740&imageSR=3740&size=855%2C585&layers=show%3A57&format=png32",
+        "sha256": "8d258b8235e4ff77ae7f6564ace837861747691658ee6de2c78760fde071e199",
+        "bounds_enu_m": [
+          -610,
+          -155,
+          -553,
+          -116
+        ],
+        "pixels_per_m": 15
+      }
+    ],
+    "tree_inventory": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=1%3D1&geometry=493719.14928888186%2C4876773.282153052%2C493776.14928888186%2C4876812.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=%2A&returnGeometry=true",
+      "sha256": "013fd07d7ee0b7ac8eb0e50cc61b1c3d0ac53022bd1797c4908a344cb5cdc606",
+      "count": 8
+    },
+    "ground_returns": {
+      "source": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1309.copc.laz",
+      "datum_epsg": 5703,
+      "bounds_enu_m": [
+        -604,
+        -145,
+        -563,
+        -125
+      ],
+      "total_ground_returns": 1192,
+      "sha256": "57e53a8fe4f78d6738450de6ba745ba3ab09087df19b81b890c08eec4bdb25c7"
+    },
+    "campus_survey": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/2025-01/plccampbell_2025.pdf",
+      "sha256": "56212191a5daefe7d90f5f12e34cd8d4fdc47ab54fb47a87cf47229c77a0f639",
+      "pages": [
+        1,
+        4
+      ]
+    },
+    "artist_catalog": "https://jamesleehansen.com/artwork/g26-01-falconer/"
+  },
+  "upper_enu_m": [
+    [
+      -601.12,
+      -143.05
+    ],
+    [
+      -584.14,
+      -143.05
+    ],
+    [
+      -583.85,
+      -142.19
+    ],
+    [
+      -571.77,
+      -142.19
+    ],
+    [
+      -570.68,
+      -138.4
+    ],
+    [
+      -570.68,
+      -125.48
+    ],
+    [
+      -601.12,
+      -125.48
+    ]
+  ],
+  "outer_walk_enu_m": [
+    [
+      -569.38,
+      -134.62
+    ],
+    [
+      -564.2,
+      -134.22
+    ],
+    [
+      -564.05,
+      -128.03
+    ],
+    [
+      -567.88,
+      -126.04
+    ],
+    [
+      -569.38,
+      -126.04
+    ]
+  ],
+  "pavers_enu_m": [
+    -584.4,
+    -138.11,
+    -580.14,
+    -132.29
+  ],
+  "beds": [
+    {
+      "id": "snowbell-bed",
+      "bounds_enu_m": [
+        -593.32,
+        -138.65,
+        -589.27,
+        -132.4
+      ]
+    },
+    {
+      "id": "vigil-bed",
+      "bounds_enu_m": [
+        -580.14,
+        -138.3,
+        -575.74,
+        -132.19
+      ]
+    },
+    {
+      "id": "south-border",
+      "bounds_enu_m": [
+        -586.25,
+        -142.12,
+        -576.0,
+        -140.72
+      ]
+    }
+  ],
+  "pedestal": {
+    "artwork": "Vigil",
+    "artist": "James Lee Hansen",
+    "catalog_id": "G30",
+    "center_enu_m": [
+      -578.21,
+      -135.06
+    ],
+    "radius_m": 0.58,
+    "height_m": 0.23
+  },
+  "trees": [
+    {
+      "id": 607,
+      "species": "Japanese Snowbell",
+      "position_enu_m": [
+        -590.817,
+        -136.66
+      ],
+      "height_m": 7.62,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "id": 605,
+      "species": "Kousa Dogwood",
+      "position_enu_m": [
+        -583.733,
+        -141.795
+      ],
+      "height_m": 3.658,
+      "crown_radius_m": 1.372,
+      "form": "rounded"
+    }
+  ],
+  "stair": {
+    "bounds_enu_m": [
+      -570.68,
+      -132.53,
+      -569.38,
+      -126.19
+    ],
+    "treads": 4
+  },
+  "upper_z_m": 4.86,
+  "routes": [
+    {
+      "anchor_enu_m": [
+        -570.9,
+        -131.4
+      ],
+      "points_enu_m": [
+        [
+          -572.2,
+          -131.4
+        ],
+        [
+          -574.05,
+          -130.45
+        ],
+        [
+          -573.9,
+          -128.79
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -572.2,
+        -131.4
+      ],
+      "points_enu_m": [
+        [
+          -575.4,
+          -129.3
+        ],
+        [
+          -580.6,
+          -129.0
+        ],
+        [
+          -586.25,
+          -129.2
+        ],
+        [
+          -591.1,
+          -129.4
+        ],
+        [
+          -599.63,
+          -128.67
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -572.2,
+        -131.4
+      ],
+      "points_enu_m": [
+        [
+          -572.15,
+          -136.85
+        ],
+        [
+          -574.92,
+          -139.28
+        ],
+        [
+          -581.6,
+          -139.43
+        ],
+        [
+          -586.81,
+          -138.1
+        ],
+        [
+          -586.49,
+          -134.4
+        ]
+      ],
+      "end_enu_m": [
+        -586.25,
+        -129.2
+      ]
+    }
+  ]
+}

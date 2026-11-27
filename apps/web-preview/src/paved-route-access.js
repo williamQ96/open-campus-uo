@@ -45,7 +45,8 @@ export function createPavedRouteAccess(polygons) {
     // Free pins off the surveyed paving retain approximate access. A point
     // already on it uses the registered network to leave the paved area.
     if (!paved(...point)) return true;
-    const steps = Math.ceil(distance(point, node) / 0.2);
+    // Sample closely enough to catch short cuts across pavement corners.
+    const steps = Math.ceil(distance(point, node) / 0.05);
     for (let i = 1; i <= steps; i++) {
       const t = i / steps;
       if (

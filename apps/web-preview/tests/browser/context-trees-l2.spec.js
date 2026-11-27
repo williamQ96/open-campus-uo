@@ -127,7 +127,7 @@ test("a damaged Southwest Campus Green bundle restores both sites' tree layers",
     route.fulfill({ body: "damaged Southwest Campus Green mesh" }),
   );
   expect(await readScene(page)).toMatchObject({
-    buildings: DEFAULT_SELECTABLE_BUILDINGS,
+    buildings: DEFAULT_SELECTABLE_BUILDINGS - 1,
     contextTrees:
       DEFAULT_BACKGROUND_TREES +
       SOUTHWEST_CONTEXT_TREE_REMOVALS +
@@ -147,7 +147,7 @@ test("a damaged Kincaid bundle restores its trees and leaves the Southwest paths
     route.fulfill({ body: "damaged Kincaid mesh" }),
   );
   expect(await readScene(page)).toMatchObject({
-    buildings: DEFAULT_SELECTABLE_BUILDINGS,
+    buildings: DEFAULT_SELECTABLE_BUILDINGS - 1,
     contextTrees:
       DEFAULT_BACKGROUND_TREES +
       KINCAID_CONTEXT_TREE_REMOVALS +
@@ -172,7 +172,7 @@ test("a damaged Kendall bundle restores its background trees and retains the cou
     route.fulfill({ body: "damaged Kendall mesh" }),
   );
   expect(await readScene(page)).toMatchObject({
-    buildings: DEFAULT_SELECTABLE_BUILDINGS,
+    buildings: DEFAULT_SELECTABLE_BUILDINGS - 1,
     contextTrees: DEFAULT_BACKGROUND_TREES + KENDALL_CONTEXT_TREE_REMOVALS,
     pilotTrees: DEFAULT_PILOT_TREES,
   });

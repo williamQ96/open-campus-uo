@@ -2,7 +2,7 @@
   "quad": {
     "window_enu_m": [
       -571,
-      -171,
+      -177.8,
       -528,
       -9
     ],
@@ -16,12 +16,12 @@
         -10
       ],
       [
-        -529,
-        -168
+        -528.4,
+        -174.85
       ],
       [
         -570,
-        -168
+        -174.85
       ]
     ],
     "walks": [
@@ -154,28 +154,36 @@
             -83.2
           ],
           [
-            -533.0,
-            -105.0
+            -529.38,
+            -89.3
           ],
           [
-            -531.5,
-            -124.4
+            -529.02,
+            -96.5
           ],
           [
-            -531.5,
-            -141.0
+            -528.9,
+            -116.0
           ],
           [
-            -535.0,
-            -156.0
+            -528.65,
+            -131.4
           ],
           [
-            -544.2,
-            -166.0
+            -529.24,
+            -142.1
           ],
           [
-            -548.5,
-            -171.9
+            -529.14,
+            -154.9
+          ],
+          [
+            -529.19,
+            -172.1
+          ],
+          [
+            -529.74,
+            -177.0
           ]
         ]
       },
@@ -200,32 +208,36 @@
             -75.8
           ],
           [
-            -568.7,
-            -90.0
+            -568.0,
+            -86.2
           ],
           [
-            -564.0,
+            -566.35,
+            -92.1
+          ],
+          [
+            -566.45,
             -108.0
           ],
           [
-            -566.0,
-            -129.0
+            -566.1,
+            -128.9
           ],
           [
-            -565.1,
-            -142.0
+            -566.25,
+            -140.75
           ],
           [
-            -562.4,
-            -156.2
+            -565.4,
+            -159.5
           ],
           [
-            -553.5,
-            -166.0
+            -565.8,
+            -172.0
           ],
           [
-            -552.2,
-            -171.9
+            -565.8,
+            -177.0
           ]
         ]
       },
@@ -258,49 +270,208 @@
         ]
       },
       {
-        "id": "knight-terrace-connector",
-        "width_m": 4.8,
+        "id": "south-northwest-southeast-diagonal",
+        "width_m": 2.7,
         "center_enu_m": [
           [
-            -553.5,
-            -166.0
+            -566.25,
+            -140.75
           ],
           [
-            -552.1,
-            -168.4
+            -557.0,
+            -149.3
+          ],
+          [
+            -548.6,
+            -158.1
+          ],
+          [
+            -542.6,
+            -164.5
+          ],
+          [
+            -534.6,
+            -172.1
+          ],
+          [
+            -529.19,
+            -172.1
+          ]
+        ]
+      },
+      {
+        "id": "south-northeast-southwest-diagonal",
+        "width_m": 2.7,
+        "center_enu_m": [
+          [
+            -529.24,
+            -142.1
+          ],
+          [
+            -534.7,
+            -145.3
+          ],
+          [
+            -539.8,
+            -149.2
+          ],
+          [
+            -548.6,
+            -158.1
+          ],
+          [
+            -554.7,
+            -164.3
+          ],
+          [
+            -563.7,
+            -172.0
+          ],
+          [
+            -565.8,
+            -172.0
+          ]
+        ]
+      },
+      {
+        "id": "knight-north-apron",
+        "width_m": 3.15,
+        "center_enu_m": [
+          [
+            -570.75,
+            -177.0
+          ],
+          [
+            -565.8,
+            -177.0
           ],
           [
             -552.0,
-            -171.9
+            -177.0
+          ],
+          [
+            -532.7,
+            -177.0
+          ],
+          [
+            -527.8,
+            -177.0
+          ]
+        ]
+      },
+      {
+        "id": "ring-northwest-southeast-diagonal",
+        "width_m": 2.8,
+        "center_enu_m": [
+          [
+            -566.35,
+            -92.1
+          ],
+          [
+            -560.1,
+            -96.7
+          ],
+          [
+            -547.25,
+            -109.52
+          ],
+          [
+            -539.9,
+            -117.8
+          ],
+          [
+            -536.8,
+            -123.7
+          ]
+        ]
+      },
+      {
+        "id": "ring-northeast-southwest-diagonal",
+        "width_m": 2.8,
+        "center_enu_m": [
+          [
+            -529.38,
+            -89.3
+          ],
+          [
+            -535.0,
+            -95.2
+          ],
+          [
+            -547.25,
+            -109.52
+          ],
+          [
+            -554.45,
+            -117.35
+          ],
+          [
+            -558.15,
+            -123.35
           ]
         ]
       }
     ],
     "ring": {
       "center_enu_m": [
-        -548.8,
-        -133.0
+        -547.15,
+        -134.18
       ],
       "radii_m": [
-        16.6,
-        14.8
+        15.8,
+        15.1
       ],
       "width_m": 3.3
     },
     "tree_pits": [
       87,
       124,
-      143,
-      271,
-      286,
-      294
+      143
     ],
     "route_anchors": [
       7333,
       7347,
       7359
     ],
-    "source": "2024 OSIP aerial and UO Memorial Quadrangle Landscape Resource Survey. Dates and mapped curves constrain this fitted model."
+    "source": "2024 OSIP aerial and UO Memorial Quadrangle Landscape Resource Survey. The southern diagonals and their side connections are fitted using 2017, 2021 and 2025 Lane County imagery. Tree crowns obscure the terminal portions.",
+    "south_orthophotos": [
+      {
+        "year": 2017,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493749.14928888186%2C4876747.282153052%2C493811.14928888186%2C4876822.282153052&bboxSR=3740&imageSR=3740&size=744%2C900&layers=show%3A29&format=png32",
+        "sha256": "9c18552f41409435c087acf6e94887bd5eb34a9b43002967fa1a5a92634b6037",
+        "bounds_enu_m": [
+          -580,
+          -181,
+          -518,
+          -106
+        ],
+        "pixel_per_m": 12
+      },
+      {
+        "year": 2021,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493749.14928888186%2C4876747.282153052%2C493811.14928888186%2C4876822.282153052&bboxSR=3740&imageSR=3740&size=744%2C900&layers=show%3A26&format=png32",
+        "sha256": "4624853c10c0f4b8db273dcacdd01d161dab5c8c785b8efb2409c4e7e82ef474",
+        "bounds_enu_m": [
+          -580,
+          -181,
+          -518,
+          -106
+        ],
+        "pixel_per_m": 12
+      },
+      {
+        "year": 2025,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493749.14928888186%2C4876747.282153052%2C493811.14928888186%2C4876822.282153052&bboxSR=3740&imageSR=3740&size=744%2C900&layers=show%3A57&format=png32",
+        "sha256": "0af677d1dcd504680ce5e76472653d62c774dd9ef7eb2e9752ecc339ffcaa478",
+        "bounds_enu_m": [
+          -580,
+          -181,
+          -518,
+          -106
+        ],
+        "pixel_per_m": 12
+      }
+    ]
   },
   "pavement_materials_srgb": {
     "AC": [

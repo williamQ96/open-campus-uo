@@ -686,6 +686,7 @@ export async function loadPresentation(
     contextBuildingRecords: contextRoofRefinements?.changedRecords,
     registeredPilotTrees,
     refinedPilotTrees: pilotTrees?.visible ?? 0,
+    pilotTreeSha: pilotTrees?.sha256,
     refinedContextTrees,
     refinedUnderstory,
     foundationGrade,
@@ -718,15 +719,7 @@ export function createPresentation(
   );
   ramp.minFilter = ramp.magFilter = THREE.NearestFilter;
   ramp.needsUpdate = true;
-  root.traverse((object) => {
-    if (!object.isMesh) return;
-    for (
-      let parent = object.parent;
-      parent && !object.userData.asset_kind;
-      parent = parent.parent
-    )
-      if (parent.userData.asset_kind)
-        object.userData = { ...parent.userData, ...object.userData };
+  function styleMesh(object) {
     object.castShadow = object.userData.asset_kind !== "landscape-surface";
     object.receiveShadow = true;
     const original = Array.isArray(object.material)
@@ -763,6 +756,17 @@ export function createPresentation(
         material.polygonOffsetUnits = foundation ? -0.25 : -4;
       }
     }
+  }
+  root.traverse((object) => {
+    if (!object.isMesh) return;
+    for (
+      let parent = object.parent;
+      parent && !object.userData.asset_kind;
+      parent = parent.parent
+    )
+      if (parent.userData.asset_kind)
+        object.userData = { ...parent.userData, ...object.userData };
+    styleMesh(object);
     const id = object.userData.asset_id;
     if (object.userData.asset_kind === "context-building-batch") {
       if (!Array.isArray(object.userData.asset_ids))
@@ -795,6 +799,12 @@ export function createPresentation(
     collisionMeshes,
     collisionSupplements,
     hasFoundation,
+    addLandscapeMeshes(meshes) {
+      for (const mesh of meshes) {
+        styleMesh(mesh);
+        root.add(mesh);
+      }
+    },
     bakeStaticHaze() {
       for (const entry of materials)
         contextFog?.bakeMesh(entry.object, [entry.original, entry.toon].flat());

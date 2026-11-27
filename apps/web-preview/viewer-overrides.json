@@ -19,12 +19,12 @@
     },
     "src/presentation.js": {
       "upstream_sha256": "d33c5d8f940ae532978e56db6f273154eb51fdd425109fc6bf65849d86eb450f",
-      "local_sha256": "975a839da693ed766430574768876c73169d8a49e4ea1d8b0e3a7efa2686df2e",
+      "local_sha256": "81bfe84b147c0888836590bc58abd77695da8ca6fa15144d047cc2b0e1075956",
       "reason": "Source-pinned UO model replacements and delayed merging of fallback details."
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "5e02d007bf3fc82d7eb2cc0103330d51753a381ba4b49cd28acad48efbc81980",
+      "local_sha256": "f006f3698af68264a16e627580f7d453728af2d7574f2fda75d45a9582527865",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green."
     },
     "src/building-card.js": {
@@ -226,7 +226,7 @@
     "scripts/export-friendly-round-shafts.mjs": "0096a2d5755ce92ad01b0d9114debe99948581830afedb2d611d23e447bad19a",
     "scripts/export-annex-exterior.mjs": "13ccbc58dad2803ca6e75358d082a999a384bb7bfc1dd1f3c22651bcd5f049b4",
     "scripts/export-chapman-exterior.mjs": "4f69378cb24a4d71e2562723048f2466da5a781b74ce026f4b3fcf8fce9abf4e",
-    "src/building-site-review.js": "66bfd37312d4f650b7cb18308b19e5b23834b61443442149e503663842a71c42",
+    "src/building-site-review.js": "f52d63c539cb21f061b4a7539f648960052417aa6f55a37767cd35dc10abd1cb",
     "public/scene/athletic-exterior-review/site.glb": "96d66bbde7a44bbcb2e0aa7551cb20ffee9ef8ef56612bc021acdf5d9356db2c",
     "public/scene/athletic-exterior-review/site.json": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680",
     "src/context-roof-refinements.js": "a5c7b14decedd27d43aa9af199a6a0f29277cd8dae7aec3aa05a9093b0c4c57b",
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "b9f1eb059ebdc11fef47d6c41cdb358f9fb5ff43c63adee7a74ba68e2e0a5e14",
+    "public/scene/presentation.json": "15ab680a034e2540bc820fe5ac5df30d7c86a013dfa7f13d0b8fc00d66b9fa00",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -380,7 +380,7 @@
     "public/scene/pilot-hardscape-review/site.json": "f025768022b594acd808ec6ad21dcc57b0dbb380ebfe0d8a4f56abcd135bf109",
     "public/scene/southeast-fairmount-exterior-review/site.json": "74ab0c93638515b8a29cc7e89f26ac9acce17e293dd3a511833583843a3ba83a",
     "public/scene/southeast-fairmount-exterior-review/site.glb": "bead8a9df848d2dbccaab5083e89229c5e2297691887d6041eb60624e5267b8a",
-    "src/pilot-trees-l2.js": "87aa88bdea9d7e1c74b33d88b45affa6fe1c494317b8ecef588d67842269d952",
+    "src/pilot-trees-l2.js": "7febd96e47e00a1a9de44697ac733575c074f9c8383dffcbedcd0a90912a6f7a",
     "public/scene/pilot-trees-l2/trees.json": "875b5473c3972a975a53c102b680d641e7aee7ef2bc29ae8a135447603e59ac7",
     "public/scene/pilot-trees-l2/trees.glb": "9a129558d22a314f8dbddee5ed9f914c5e905665a3c1209a3732612cc5e296ef",
     "src/context-trees-l2.js": "e0e1c32eff197d2a5d9940a6c728160a53c7c6dddd6902936025228794bb8e81",
@@ -391,9 +391,9 @@
     "public/scene/understory-l2/plants.glb": "8ddf5c1d85ee5ab56ad616e27c88e722cf5f5dc9fc86c476f26603fdba24cbde",
     "src/foundation-l2.js": "7769e805698a4ed00b28ed22ac95d626472b51ad502f940b050a8e48a2e2046c",
     "public/scene/landcover-l2/ground.glb": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
-    "src/paving-corridors-l2.js": "3053ae99e3b70ace211ba726ae613b2d0f0f144204999fa496e79cd7ed5d6d6f",
-    "public/scene/paving-corridors-l2/surfaces.glb": "26f3433e2abc1a8cd0cbf1125711a2ed17d9ebdd0132697a76cc2455bb90aff6",
-    "public/scene/paving-corridors-l2/surfaces.json": "37c5d4ecd31e18e4c28e5326512f48dd07e2c1eb54bda191ba0ad716446bad68",
+    "src/paving-corridors-l2.js": "3f91f8e9d860d9581a467fbc38fb805eaeba985e2fcc18adf41698a07edf2a78",
+    "public/scene/paving-corridors-l2/surfaces.glb": "44f65846576c9b29f3e645fe8bcf0a81611646d401bda7cc5fe4492758bb4e7a",
+    "public/scene/paving-corridors-l2/surfaces.json": "fd138b96a36bad1982d8a6bddcb09eb89f44aae00503347a31ff1e5dbdc16d22",
     "src/student-walk.js": "af33f46fedd68f501ff9d1fb6d3864f569e55c29f66d09990ddd1f5f1af8e780",
     "src/squirrel-model.js": "da44f59d854810b2c54728260cd84c2ad3a3ac0f281d158a37db96346b9f23b7",
     "public/animals/campus-squirrel-l2.glb": "bfabbac23524ca2f29f4f5e8d090f9765d7c18e43d8c1686e1688d416d3461b4",
@@ -514,13 +514,18 @@
     "public/scene/east-fifteenth-hayward-review/site.glb": "7520ce5aac319ffbbf18774a611e1d28e554da346c41f74dfb4f966431dc4969",
     "public/scene/southwest-campus-green-review/site.glb": "ff19c8fdf43935176aa00cf7c912a204a8055ca156ebc91651ce5342aaca9e86",
     "public/scene/southwest-campus-green-review/site.json": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
-    "src/paved-route-access.js": "5cff813410dbff66dc8aacc179b23b8595e3f41023452bd02a015f2d88893714",
-    "data/campus-route-surfaces.json": "2429f928f3768345c2fd8c2593cfed7b2a9909d482d8b8fee43bb87bdb497715",
+    "src/paved-route-access.js": "98c5cf05a9ace81997f2a06217cd729e373175453fcc9353303e91ec1d0ba0ce",
+    "data/campus-route-surfaces.json": "98438042965732112366ba9bddaa9b401635f8fa4505c25f3d10c540c1cc5ecb",
     "public/scene/kincaid-education-landscape-review/site.glb": "229086a9a42a4742451657a79a9650a92375243933387fd879268faaa0494af9",
     "public/scene/kincaid-education-landscape-review/site.json": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a",
     "public/scene/kendall-plaza-landscape-review/site.glb": "fb034e7ba495bca4c31e49d32fed3af06e0fe7d3db4d6b8286b54753186d96c4",
     "public/scene/kendall-plaza-landscape-review/site.json": "0db8143bc949e48742657a5f790360ae16b514629bbda973bb33396a122bab5c",
     "public/scene/knight-north-plaza-review/site.glb": "b311ef5901cb7e1a5340e0f901389949cefc58228fb469e5f68ef4859238148d",
-    "public/scene/knight-north-plaza-review/site.json": "2c6bd50754d3c8e0fcc9025989d3e32e159143a703293b945468ddde70c2362b"
+    "public/scene/knight-north-plaza-review/site.json": "2c6bd50754d3c8e0fcc9025989d3e32e159143a703293b945468ddde70c2362b",
+    "public/scene/plc-east-court-review/site.json": "e2093c93d144c3f16580b9552e6703ab80567ff176871c366a3253287f00bacb",
+    "public/scene/plc-east-court-review/site.glb": "61dd8e75a7dc9d8ca4f27a5c96b86e311b679c2cd0045a7dc79170e2e1c684fc",
+    "public/scene/memorial-quad-plaques-review/site.json": "cfb83ddc4140d0693e6e364e501046b6bfc968526fe9f7e41e0054f5f4c92c51",
+    "public/scene/memorial-quad-plaques-review/site.glb": "5b1c98e5e0e8ea19a1491c2b68066b6171448ec4492004fa8d897d3490830a2f",
+    "src/pilot-vegetation-clips.js": "0410a069e1af028999799113bf31592def9973e6152fa2c3ed5dc8e8b9ee91db"
   }
 }

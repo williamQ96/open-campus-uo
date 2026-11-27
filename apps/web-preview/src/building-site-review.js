@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
+import { replaceQuadRoutes } from "./paving-corridors-l2.js";
 import { BufferAttribute } from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import {
@@ -7,6 +8,10 @@ import {
 } from "./context-roof-refinements.js";
 import { isFootprintRing, readPinnedScene } from "./pinned-scene.js";
 import { sampleSurface } from "./pilot-hardscape.js";
+import {
+  removePilotTrees,
+  removeVegetationRanges,
+} from "./pilot-vegetation-clips.js";
 
 function validBuilding(building) {
   const supports = building?.support_collision_enu_m ?? [];
@@ -74,77 +79,6 @@ function stageContextTreeRemoval(root, trees) {
   if (index.count - updated.length !== trees.length * 240)
     throw new Error("Exterior review context tree triangles changed.");
   return { geometry, index: new BufferAttribute(updated, 1) };
-}
-
-function removeVegetationRanges(root, targets, expectedName) {
-  const replacements = Object.entries(targets).map(
-    ([name, { vertices, removed_indices, ranges }]) => {
-      const mesh = root.getObjectByName(name);
-      const geometry = mesh?.geometry;
-      const index = geometry?.index;
-      if (
-        !expectedName.test(name) ||
-        !mesh?.isMesh ||
-        geometry.getAttribute("position")?.count !== vertices ||
-        geometry.groups.length ||
-        !index ||
-        !Array.isArray(ranges) ||
-        !ranges.length
-      )
-        throw new Error("Exterior review pilot vegetation mesh changed.");
-      const remove = new Uint8Array(vertices);
-      let cursor = 0;
-      for (const [start, end] of ranges) {
-        if (
-          !Number.isInteger(start) ||
-          !Number.isInteger(end) ||
-          start < cursor ||
-          end <= start ||
-          end > vertices
-        )
-          throw new Error("Invalid exterior review pilot vegetation range.");
-        remove.fill(1, start, end);
-        cursor = end;
-      }
-      const source = index.array;
-      for (let i = 0; i < source.length; i += 3) {
-        const a = remove[source[i]];
-        if (a !== remove[source[i + 1]] || a !== remove[source[i + 2]])
-          throw new Error(
-            "Exterior review pilot vegetation triangles are mixed.",
-          );
-      }
-      const retained = source.filter((vertex) => !remove[vertex]);
-      if (
-        !retained.length ||
-        source.length - retained.length !== removed_indices
-      )
-        throw new Error("Exterior review pilot vegetation count changed.");
-      return [geometry, new BufferAttribute(retained, 1)];
-    },
-  );
-  for (const [geometry, retained] of replacements) geometry.setIndex(retained);
-}
-
-function removePilotTrees(root, recipe, sourceSha, refined) {
-  const { tree_indices: trees } = recipe;
-  const expectedSha = refined
-    ? recipe.source_refined_sha256
-    : recipe.source_legacy_sha256;
-  if (
-    sourceSha !== expectedSha ||
-    !Array.isArray(trees) ||
-    !trees.length ||
-    new Set(trees).size !== trees.length ||
-    trees.some((i) => !Number.isInteger(i) || i < 0 || i >= 300)
-  )
-    throw new Error("Exterior review pilot tree source changed.");
-  removeVegetationRanges(
-    root,
-    refined ? recipe.refined : recipe.legacy,
-    refined ? /^pilot-trees-(wood|foliage)$/ : /^vegetation_[1-4]$/,
-  );
-  return trees.length;
 }
 
 function checkedBatchRange(mesh, item, position, index, sourceCount) {
@@ -449,6 +383,7 @@ export async function loadBuildingSiteReview(
   const walkableGround = site.walkable_ground;
   const corridor = site.corridor_patch;
   const prerequisiteSiteSha = site.prerequisite_site_sha256;
+  const quadSha = site.source_quad_sha256;
   if (
     site.source_presentation_sha256 !== config.asset_sha256 ||
     site.source_base_model_sha256 !== manifest.model.sha256 ||
@@ -456,6 +391,9 @@ export async function loadBuildingSiteReview(
     (prerequisiteSiteSha !== undefined &&
       (typeof prerequisiteSiteSha !== "string" ||
         !/^[a-f0-9]{64}$/.test(prerequisiteSiteSha))) ||
+    (quadSha !== undefined &&
+      (!walkableGroundNode ||
+        quadSha !== config.paving_corridors_l2?.sha256)) ||
     site.ground_node !== groundNode ||
     Boolean(walkableGroundNode) !== (walkableGround !== undefined) ||
     (walkableGroundNode &&
@@ -598,6 +536,14 @@ export async function loadBuildingSiteReview(
               predecessor.walkable_ground,
             );
           }
+          if (quadSha) {
+            const bytes = await readPinnedScene(
+              base + config.paving_corridors_l2.url,
+              quadSha,
+            );
+            const paving = JSON.parse(new TextDecoder().decode(bytes));
+            baseGraph = replaceQuadRoutes(baseGraph, paving.quad_routes);
+          }
           appendWalkablePath(baseGraph, walkableGround);
         }
         return corridor && patchedNavigation(original, corridor);
@@ -629,6 +575,7 @@ export async function loadBuildingSiteReview(
     addedIds,
     newBuildingIds,
     assetSha: site.sha256,
+    requiresQuadRoutes: Boolean(quadSha),
     descriptorSha: descriptor.sha256,
     routeApproachIds: routeToApproaches ? ids : newBuildingIds,
     ground,

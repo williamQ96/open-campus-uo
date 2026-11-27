@@ -6,6 +6,12 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Memorial Quadrangle 步道、Bailey 橡树、铭牌及 PLC 东庭院
+
+- 校正南端交叉步道、东侧步道和圆环北侧交叉斜道，两侧直行道接入 Knight Library 北广场。导航落点沿已配准铺面接入。按校方登记补建八株 Bailey 橡树和共 26.45 平方米的根区。树冠和树干细节为估算。[步道复核](docs/paving-corridors-l2-2026-11-26.md#memorial-quadrangle-south-walks-and-knight-library-apron) · [橡树复核](docs/memorial-quad-bailey-oaks-2026-11-27.md)。
+- 补建 PLC 东庭院 497.51 平方米铺装、四级台阶、三处植床、两株登记树和估放的《Vigil》底座。14 条导航边接入纪念广场和两个既有入口。纪念广场增设两块 Gilbert 嵌地铭牌和 Kincaid Field 标记。雕塑本体及铭牌现场尺寸待核对。[庭院复核](docs/plc-east-court-review-2026-11-27.md) · [铭牌复核](docs/memorial-quad-plaques-2026-11-27.md)。
+- 桌面和手机生产预览逐项匹配 610 个外观 ID 与实际网格。608 个独立网格和两个采用共享几何的 ID 均加载，各端共加载 378 项资源和 457 处入口。抽查 54 项响应，与构建字节一致。构建、格式检查、199 项单测、501 项资产归档、查看器哈希、活动语义、校园扩展、地表分类和路线覆盖重建均通过。本次发布面向 GitHub Pages。Education Annex 及其入口留在研究工作树。[Pages 工作流](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
 ## 2026-11-27 - 发布 Knight Library 北广场与 Kendall Plaza 南草坪
 
 - 发布 Knight Library 北广场、Bailey 喷泉、铸石凳和三处种植台地。新增 14 条导航边绕开水池并接通既有两侧楼梯。喷泉运行状态、樱花补植点位和楼梯新灯仍待现场核对。[广场复核](docs/knight-north-plaza-review-2026-11-27.md)。

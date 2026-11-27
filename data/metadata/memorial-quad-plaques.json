@@ -1,0 +1,264 @@
+{
+  "name": "Memorial Quadrangle sidewalk plaques",
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "sites": {
+      "memorial-quad-review": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
+      "east-thirteenth-west-gateway-review": "c20ff4c0ffe1c1cc8eed21223cd634a0139ad3147ef3239c16a17735344f0220"
+    },
+    "paving_quad": "fd138b96a36bad1982d8a6bddcb09eb89f44aae00503347a31ff1e5dbdc16d22"
+  },
+  "sources": {
+    "landscape_survey": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/memorial_quad_.pdf",
+      "sha256": "303bb1c779416ac6db0a20aadf6382ca24563cd04f95fc2334c4010c23ee8105",
+      "pages": [
+        2,
+        3
+      ]
+    },
+    "historic_core_diagnosis": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/acadcenter_diagnosis_11_21_13.pdf",
+      "sha256": "db3af99313732b91aceda70f1ff6800b236b1ed13e3ef94cf5262bff719a1527",
+      "pages": [
+        19
+      ]
+    },
+    "national_register": "https://npgallery.nps.gov/GetAsset/4fd6205f-6b0b-46bc-af4d-e4df6c8d9378",
+    "building_archive": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/kincaid-field",
+    "library_guide": "https://researchguides.uoregon.edu/historic-knight/landscape",
+    "archive_history": "https://www.gotracktownusa.com/uo-archives/2025/10/30/construction-of-kincaid-field",
+    "orthophotos": [
+      {
+        "year": 2017,
+        "region": "north",
+        "bounds_enu_m": [
+          -582,
+          -27,
+          -517,
+          5
+        ],
+        "pixels_per_m": 16,
+        "sha256": "6b3a426e8ca4f4b3991bbd7927c9732aaa8bbb447b3359c9cdbcd746d9de8123",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493747.14928888186%2C4876901.282153052%2C493812.14928888186%2C4876933.282153052&bboxSR=3740&imageSR=3740&size=1040%2C512&layers=show%3A29&format=png32"
+      },
+      {
+        "year": 2021,
+        "region": "north",
+        "bounds_enu_m": [
+          -582,
+          -27,
+          -517,
+          5
+        ],
+        "pixels_per_m": 16,
+        "sha256": "b3bd73324f3e2e85d080a3d6e211f9db268c0d1a9ae33b7bf00c6110e2c4b835",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493747.14928888186%2C4876901.282153052%2C493812.14928888186%2C4876933.282153052&bboxSR=3740&imageSR=3740&size=1040%2C512&layers=show%3A26&format=png32"
+      },
+      {
+        "year": 2023,
+        "region": "north",
+        "bounds_enu_m": [
+          -582,
+          -27,
+          -517,
+          5
+        ],
+        "pixels_per_m": 16,
+        "sha256": "fbffcf436c7da4a3f4a934850aa78d13c43e36b341dcf685ff741fef143318fe",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493747.14928888186%2C4876901.282153052%2C493812.14928888186%2C4876933.282153052&bboxSR=3740&imageSR=3740&size=1040%2C512&layers=show%3A2&format=png32"
+      },
+      {
+        "year": 2025,
+        "region": "north",
+        "bounds_enu_m": [
+          -582,
+          -27,
+          -517,
+          5
+        ],
+        "pixels_per_m": 16,
+        "sha256": "919571d4211ee7b5424c557ade4f59f8394a812c56b80dd63879e62de0509e8c",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493747.14928888186%2C4876901.282153052%2C493812.14928888186%2C4876933.282153052&bboxSR=3740&imageSR=3740&size=1040%2C512&layers=show%3A57&format=png32"
+      },
+      {
+        "year": 2017,
+        "region": "museum",
+        "bounds_enu_m": [
+          -540,
+          -119,
+          -505,
+          -69
+        ],
+        "pixels_per_m": 16,
+        "sha256": "b608b299c14fa184bdb8c02e31ec0f038d14f81524016bd6a2037f2ad7f66d04",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493789.14928888186%2C4876809.282153052%2C493824.14928888186%2C4876859.282153052&bboxSR=3740&imageSR=3740&size=560%2C800&layers=show%3A29&format=png32"
+      },
+      {
+        "year": 2021,
+        "region": "museum",
+        "bounds_enu_m": [
+          -540,
+          -119,
+          -505,
+          -69
+        ],
+        "pixels_per_m": 16,
+        "sha256": "5f21ea8fbf9ce25c0b32515f1e9e17c3995a004904f115f3701c3ee1a8bce4bb",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493789.14928888186%2C4876809.282153052%2C493824.14928888186%2C4876859.282153052&bboxSR=3740&imageSR=3740&size=560%2C800&layers=show%3A26&format=png32"
+      },
+      {
+        "year": 2023,
+        "region": "museum",
+        "bounds_enu_m": [
+          -540,
+          -119,
+          -505,
+          -69
+        ],
+        "pixels_per_m": 16,
+        "sha256": "0e17b67c7d4e7ce6c9dcae5eed73d07ebcd9bc506e30b44d1ee25dfcc2c7c267",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493789.14928888186%2C4876809.282153052%2C493824.14928888186%2C4876859.282153052&bboxSR=3740&imageSR=3740&size=560%2C800&layers=show%3A2&format=png32"
+      },
+      {
+        "year": 2025,
+        "region": "museum",
+        "bounds_enu_m": [
+          -540,
+          -119,
+          -505,
+          -69
+        ],
+        "pixels_per_m": 16,
+        "sha256": "c340e9448ac10896cb5ad553d61bc3d0f0e4c82962f8d7007b9236e11e712a9d",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493789.14928888186%2C4876809.282153052%2C493824.14928888186%2C4876859.282153052&bboxSR=3740&imageSR=3740&size=560%2C800&layers=show%3A57&format=png32"
+      }
+    ]
+  },
+  "map_controls": {
+    "east_m": [
+      [
+        169.4,
+        -567.0
+      ],
+      [
+        206,
+        -548.2
+      ],
+      [
+        244.9,
+        -530.1
+      ]
+    ],
+    "north_m": [
+      [
+        249.5,
+        -24.4
+      ],
+      [
+        307.8,
+        -49.2
+      ],
+      [
+        361.8,
+        -75.8
+      ],
+      [
+        382.9,
+        -86.2
+      ],
+      [
+        485.5,
+        -133.0
+      ],
+      [
+        542.6,
+        -158.1
+      ]
+    ]
+  },
+  "registration_notes": "Survey symbols are approximate. North plates use the matching settled entrance band at the reconstructed East 13th gateway. The survey plot for Kincaid Field is inside the east Quad walk. The 1921 dedication and the Class of 1924 gift appear in UO records. The latter identifies the small plaque and does not establish its position or dimensions.",
+  "plaques": [
+    {
+      "id": "gilbert-west",
+      "position_enu_m": [
+        -558.138,
+        -9.42
+      ],
+      "survey_map_pixel": [
+        186.9,
+        222.3
+      ],
+      "mapped_enu_m": [
+        -558.138,
+        -11.408
+      ],
+      "size_enu_m": [
+        0.62,
+        0.39
+      ],
+      "support_lift_m": 0.106,
+      "caption_lines": [
+        "THE WALKS",
+        "CHAPLAIN WILLIAM S. GILBERT",
+        "AS A MEMORIAL",
+        "IN TIME OF WAR"
+      ]
+    },
+    {
+      "id": "gilbert-east",
+      "position_enu_m": [
+        -531.857,
+        -9.42
+      ],
+      "survey_map_pixel": [
+        240.7,
+        222.3
+      ],
+      "mapped_enu_m": [
+        -531.857,
+        -11.408
+      ],
+      "size_enu_m": [
+        0.62,
+        0.39
+      ],
+      "support_lift_m": 0.106,
+      "caption_lines": [
+        "THE WALKS",
+        "CHAPLAIN WILLIAM S. GILBERT",
+        "AS A MEMORIAL",
+        "IN TIME OF WAR"
+      ]
+    },
+    {
+      "id": "kincaid-field",
+      "position_enu_m": [
+        -531.027,
+        -69.546
+      ],
+      "survey_map_pixel": [
+        242.4,
+        348.7
+      ],
+      "mapped_enu_m": [
+        -531.027,
+        -69.546
+      ],
+      "size_enu_m": [
+        0.45,
+        0.28
+      ],
+      "support_lift_m": 0.07,
+      "caption_lines": [
+        "KINCAID FIELD",
+        "CLASS OF 1924"
+      ]
+    }
+  ]
+}

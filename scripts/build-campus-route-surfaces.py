@@ -15,6 +15,7 @@ green = import_module("build-southwest-campus-green")
 education = import_module("build-kincaid-education-landscape")
 kendall = import_module("build-kendall-plaza-landscape")
 knight_north = import_module("build-knight-north-plaza")
+plc_east = import_module("build-plc-east-court")
 root = green.site.root
 scene = green.site.scene
 
@@ -85,6 +86,10 @@ def main():
     args = parser.parse_args()
     metadata = root / "data/metadata"
     rows = [
+        encode_coverage(
+            plc_east.PACKAGE,
+            plc_east.paving_footprint(green.site.read(metadata / "plc-east-court.json")),
+        ),
         encode_coverage(
             knight_north.PACKAGE,
             knight_north.paving_footprint(

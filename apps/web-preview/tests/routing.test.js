@@ -40,6 +40,28 @@ test("routing follows connected paths around an obstacle and rejects disconnecte
     [5, 10],
   );
 });
+test("paved route access catches a short gap at a path join", () => {
+  const access = createPavedRouteAccess([
+    [
+      [
+        [-1, -1],
+        [0.31, -1],
+        [0.31, 1],
+        [-1, 1],
+      ],
+    ],
+    [
+      [
+        [0.38, -1],
+        [2, -1],
+        [2, 1],
+        [0.38, 1],
+      ],
+    ],
+  ]);
+  assert.equal(access([0, 0], [1, 0]), false);
+});
+
 test("paved route access follows a bend and preserves approximate access from a lawn", () => {
   const access = createPavedRouteAccess([
     [

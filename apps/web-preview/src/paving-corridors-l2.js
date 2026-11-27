@@ -3,12 +3,14 @@ import { BufferAttribute } from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { readPinnedScene } from "./pinned-scene.js";
+import { removePilotTrees } from "./pilot-vegetation-clips.js";
 
 const directory = "paving-corridors-l2";
 const roadNames = ["corridors-road", "corridors-path"];
 const quadNames = ["landscape-paving", "landscape-lawn"];
+const oakNames = ["bailey-oak-wood", "bailey-oak-crowns", "bailey-oak-soil"];
 
-function replaceQuadRoutes(graph, patch) {
+export function replaceQuadRoutes(graph, patch) {
   // Active site packages may compact the node array. Resolve the shared
   // source chain by its exact projected coordinates before changing edges.
   const positions = new Map(
@@ -181,7 +183,49 @@ export async function installPavingCorridors(
         cut,
       );
     });
+    const oaks = data.quad_oaks;
+    const oakMeshes = oaks
+      ? oakNames.map((name) => scene.getObjectByName(name))
+      : [];
+    const oakBoxes = oaks?.collision_boxes_enu_m ?? [];
+    if (
+      oaks &&
+      (!Array.isArray(oaks.ids) ||
+        oaks.ids.length !== 8 ||
+        new Set(oaks.ids).size !== 8 ||
+        !oaks.ids.every(Number.isInteger) ||
+        !oaks.pilot_tree_clip ||
+        oakMeshes.some(
+          (mesh) => !mesh?.isMesh || !mesh.geometry.getAttribute("color"),
+        ) ||
+        !Array.isArray(oakBoxes) ||
+        oakBoxes.length !== oaks.ids.length ||
+        oakBoxes.some(
+          (box) =>
+            !Array.isArray(box) ||
+            box.length !== 4 ||
+            !box.every(
+              (value) => Number.isFinite(value) && Math.abs(value) <= 2000,
+            ) ||
+            box[2] <= box[0] ||
+            box[3] <= box[1] ||
+            box[2] - box[0] > 2 ||
+            box[3] - box[1] > 2,
+        ))
+    )
+      throw new Error("Invalid Bailey memorial oak geometry.");
     exteriorReview.fitGrade(scene);
+    if (oaks) {
+      const clipped = removePilotTrees(
+        art.root,
+        oaks.pilot_tree_clip,
+        art.pilotTreeSha ?? config.asset_sha256,
+        Boolean(art.pilotTreeSha),
+      );
+      art.siteTreeRemovals += clipped;
+      if (art.pilotTreeSha) art.refinedPilotTrees -= clipped;
+      art.addLandscapeMeshes(oakMeshes);
+    }
     for (const { mesh, merged } of quad) mesh.geometry = merged;
     for (const node of oldRoads) node.removeFromParent();
     for (const node of newRoads) root.add(node);
@@ -192,6 +236,9 @@ export async function installPavingCorridors(
       },
       navigation,
       quadActivity: data.quad_activity,
+      quadRouteCoverage: data.quad_route_coverage ?? [],
+      oakBoxes,
+      baileyOakCount: oaks?.ids.length ?? 0,
     };
   } catch (error) {
     console.warn(

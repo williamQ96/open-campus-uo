@@ -1170,6 +1170,13 @@ async function loadCampusScene(base, manifest, settings) {
       groundNode: "memorial-quad-approaches",
       replacedDetails: ["chapman-west-detail.json", "condon-east-detail.json"],
     },
+    "memorial-quad-plaques": {
+      descriptor: config?.memorial_quad_plaques_site,
+      directory: "memorial-quad-plaques-review",
+      groundNode: "memorial-quad-plaques",
+      ids: [],
+      prerequisiteIds: ["roof-f5cea51d", "roof-7ffcf31b"],
+    },
     fenton: {
       descriptor: config?.fenton_site_review,
       directory: "fenton-site-review",
@@ -1359,6 +1366,15 @@ async function loadCampusScene(base, manifest, settings) {
       sourceBatchIds: ["roof-5bbb5fd1"],
       absorbedIds: ["roof-30574cc0", "roof-4f014745", "roof-9346417e"],
       replacedDetails: ["plc-tower-detail.json", "tykeson-north-detail.json"],
+    },
+    "plc-east-court": {
+      descriptor: config?.plc_east_court_site,
+      directory: "plc-east-court-review",
+      groundNode: "plc-east-court-paving",
+      walkableGroundNode: "plc-east-court-paving",
+      navigationUrl: settings.navigation_url,
+      ids: [],
+      prerequisiteIds: ["roof-8f611273"],
     },
     "northeast-science": {
       descriptor: config?.northeast_science_site,
@@ -4135,6 +4151,7 @@ async function loadCampusScene(base, manifest, settings) {
     "lillis-complex",
     "friendly-collier-mckenzie",
     "plc-lokey-tykeson",
+    "plc-east-court",
     "northeast-science",
     "knight-campus",
     "northsite-millrace",
@@ -4187,6 +4204,7 @@ async function loadCampusScene(base, manifest, settings) {
     "howe-field-gates",
     "dads-gates-landscape",
     "east-thirteenth-west-gateway",
+    "memorial-quad-plaques",
     "east-thirteenth-central",
     "east-thirteenth-east",
     "agate-thirteenth-fifteenth",
@@ -4480,6 +4498,7 @@ try {
     .concat(
       presentation?.furnishingBoxes ?? [],
       presentation?.hardscape?.boxes ?? [],
+      presentation?.refinedPavingCorridors?.oakBoxes ?? [],
     );
   const extraCollisionBoxes = attachCollisionBoxes(
     buildings,
@@ -4663,8 +4682,16 @@ try {
       (await loadJson(sceneAssetUrl(base, viewerSettings.navigation_url)));
     let pathGraph = graph;
     const registeredRouteAssets = new Set();
-    for (const { appendNavigation, assetSha } of buildingReviews) {
-      if (!appendNavigation) continue;
+    for (const {
+      appendNavigation,
+      assetSha,
+      requiresQuadRoutes,
+    } of buildingReviews) {
+      if (
+        !appendNavigation ||
+        (requiresQuadRoutes && !presentation?.refinedPavingCorridors)
+      )
+        continue;
       try {
         pathGraph = appendNavigation(pathGraph);
         registeredRouteAssets.add(assetSha);
@@ -4711,11 +4738,12 @@ try {
       heightCache.set(key, height);
       return height;
     };
-    const pavedRouteAccess = createPavedRouteAccess(
-      routeSurfaces
+    const pavedRouteAccess = createPavedRouteAccess([
+      ...routeSurfaces
         .filter(({ sha256 }) => registeredRouteAssets.has(sha256))
         .flatMap(({ polygons_enu_m }) => polygons_enu_m),
-    );
+      ...(presentation?.refinedPavingCorridors?.quadRouteCoverage ?? []),
+    ]);
     const router = createRouter(
       pathGraph,
       (a, b) => pavedRouteAccess(a, b) && clearSegment(a, b),
@@ -5108,6 +5136,8 @@ try {
             refinedContextRoofs: contextRoofs?.size ?? 0,
             registeredPilotTrees: presentation.registeredPilotTrees,
             refinedPilotTrees: presentation.refinedPilotTrees,
+            baileyOakCount:
+              presentation.refinedPavingCorridors?.baileyOakCount ?? 0,
             refinedContextTrees: presentation.refinedContextTrees,
             refinedUnderstory: presentation.refinedUnderstory,
             pilotFurnishings: presentation.furnishingBoxes.length,

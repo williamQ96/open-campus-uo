@@ -19,6 +19,7 @@ from shapely.ops import nearest_points, substring
 import trimesh
 
 source = import_module("build-pilot-tree-clearance")
+bailey = import_module("build-memorial-quad-bailey-oaks")
 ROOT = source.ROOT
 SCENE = source.SCENE
 SPEC = ROOT / "data/metadata/paving-corridors-l2.json"
@@ -62,7 +63,11 @@ def mesh(geometry, field, drape, lift, palette=None):
 
 def quad_shapes(spec, buildings):
     local = spec["quad"]
-    window = box(*local["window_enu_m"])
+    oaks = read(bailey.SPEC)
+    window = box(*local["window_enu_m"]).union(
+        box(*oaks["east_walk_extent_enu_m"])
+    )
+    tree_roots = bailey.roots(oaks)
     ring = local["ring"]
     disk = scale(Point(*ring["center_enu_m"]).buffer(1, quad_segs=20), *ring["radii_m"])
     half = ring["width_m"] / 2
@@ -84,13 +89,14 @@ def quad_shapes(spec, buildings):
         union_all([outer.difference(inner), *lines])
         .intersection(window)
         .difference(buildings)
-        .difference(pits)
+        .difference(pits.union(tree_roots))
     )
     lawn = (
         Polygon(local["lawn_boundary_enu_m"])
         .intersection(window)
         .difference(concrete)
         .difference(buildings)
+        .difference(tree_roots)
     )
     return window, concrete, lawn
 
@@ -134,7 +140,7 @@ def quad_routes(spec, window, paving):
         for anchor in (south, junction, north)
     ]
     assert all(line.length < 10 for line in ties), [line.length for line in ties]
-    noded = union_all([center_paths, *ties])
+    noded = union_all([center_paths, *(line for line in ties if line.length > 0.001)])
     edges = set()
     for segment in get_parts(noded.segmentize(5.0)):
         points = [
@@ -187,6 +193,17 @@ def quad_routes(spec, window, paving):
     }
 
 
+def route_coverage(paving):
+    coverage = paving.buffer(0.13, quad_segs=2).simplify(0.015)
+    return [
+        [
+            [[round(e, 3), round(n, 3)] for e, n in ring.coords[:-1]]
+            for ring in [part.exterior, *part.interiors]
+        ]
+        for part in get_parts(coverage.normalize())
+    ]
+
+
 def quad_activity(spec, window, paving, lawn, field, drape):
     activity = read(SCENE / "activity.json")
     (prior,) = [p for p in activity["paths"] if p["id"] == "sidewalk-0-0"]
@@ -217,8 +234,14 @@ def quad_activity(spec, window, paving, lawn, field, drape):
 
     routes = [patch(prior, line)]
     stems = read(ROOT / "data/metadata/pilot-trees-l2.json")["trees"]
+    removed = set(read(bailey.SPEC)["retired_pilot_indices"])
     tree_clearance = union_all(
-        [Point(x, -z).buffer(0.75) for x, _, z in (row["origin_gltf_m"] for row in stems)]
+        [
+            Point(x, -z).buffer(0.75)
+            for row in stems
+            if row["index"] not in removed
+            for x, _, z in [row["origin_gltf_m"]]
+        ]
     )
     green = lawn.buffer(-0.38).difference(tree_clearance)
     offsets = [0, *(sign * step for step in range(1, 15) for sign in [-1, 1])]
@@ -233,9 +256,14 @@ def quad_activity(spec, window, paving, lawn, field, drape):
         direction = (-(by - ay) / norm, (bx - ax) / norm)
         candidates = (
             rotate(
-                translate(old, direction[0] * offset, direction[1] * offset),
+                translate(
+                    old,
+                    direction[0] * offset + direction[1] * shift,
+                    direction[1] * offset - direction[0] * shift,
+                ),
                 angle,
             )
+            for shift in (0, -4, 4, -8, 8, -12, 12)
             for angle in (0, -25, 25, -50, 50, 90)
             for offset in offsets
         )
@@ -416,6 +444,23 @@ def main():
         )
         cuts.append(cut)
 
+    oaks = read(bailey.SPEC)
+    clip = oaks["pilot_tree_clip"]
+    assert clip["source_legacy_sha256"] == config["asset_sha256"]
+    assert clip["source_refined_sha256"] == digest(SCENE / "pilot-trees-l2/trees.glb")
+    wood, crowns = bailey.branches_and_leaves(oaks, field)
+    root_soil = bailey.roots(oaks)
+    assert window.covers(root_soil) and not root_soil.intersects(walk.buffer(-0.01))
+    soil = mesh(root_soil, field, drape, 0.074, (124, 102, 78))
+    geometries.update(zip(bailey.NAMES, (wood, crowns, soil), strict=True))
+    tree_boxes = bailey.collision_boxes(oaks)
+    clearance = min(
+        LineString([route_patch["nodes"][a], route_patch["nodes"][b]]).distance(box(*bounds))
+        for bounds in tree_boxes
+        for a, b, *_ in route_patch["edges"]
+    )
+    assert clearance > 0.53, clearance
+
     rows = read(args.candidate)
     current = {item["id"] for item in manifest["corridors"]["features"]}
     missing = sorted(current.difference(item["id"] for item in rows))
@@ -433,6 +478,16 @@ def main():
 
     def annotate(doc):
         for node in doc["nodes"]:
+            if node.get("name") in bailey.NAMES:
+                name = node["name"]
+                node["extras"] = {
+                    "asset_id": name,
+                    "asset_kind": (
+                        "landscape-surface"
+                        if name == bailey.NAMES[2]
+                        else "landscape-vegetation"
+                    ),
+                }
             if node.get("name") in ("corridors-road", "corridors-path"):
                 name = node["name"]
                 node["extras"] = {
@@ -459,10 +514,16 @@ def main():
         "quad_cuts": cuts,
         "quad_routes": route_patch,
         "quad_activity": activity_patch,
+        "quad_route_coverage": route_coverage(walk),
+        "quad_oaks": {
+            "pilot_tree_clip": clip,
+            "ids": [tree["id"] for tree in oaks["trees"]],
+            "collision_boxes_enu_m": tree_boxes,
+        },
     }
     descriptor_path = args.stage / "surfaces.json"
-    descriptor_path.write_text(
-        json.dumps(payload, separators=(",", ":")) + "\n", encoding="utf8"
+    descriptor_path.write_bytes(
+        (json.dumps(payload, separators=(",", ":")) + "\n").encode()
     )
     report = {
         "glb_sha256": digest(asset),
@@ -476,6 +537,9 @@ def main():
         "road_and_path_material_areas_m2": areas,
         "quad_route_nodes": len(route_patch["nodes"]),
         "quad_route_edges": len(route_patch["edges"]),
+        "oak_ids": payload["quad_oaks"]["ids"],
+        "oak_soil_m2": round(root_soil.area, 3),
+        "minimum_oak_route_gap_m": round(clearance, 3),
         "quad_retired_route_edges": len(route_patch["retired_edges"]),
         "quad_activity_points": {
             route["id"]: len(route["points"]) for route in payload["quad_activity"]["routes"]

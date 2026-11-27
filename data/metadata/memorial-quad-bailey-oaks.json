@@ -1,0 +1,303 @@
+{
+  "name": "Memorial Quadrangle Bailey oak rows",
+  "sources": {
+    "tree_inventory": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=1%3D1&geometry=493753.14928888186%2C4876751.282153052%2C493805.14928888186%2C4876848.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=%2A&returnGeometry=true",
+      "sha256": "4a5e49e35e26fabab14b65bc950ade229fa46a3983a9f829f7e4ae6563b651f4"
+    },
+    "orthophotos": [
+      {
+        "year": 2017,
+        "sha256": "bae6606566a41d2d22b8b078d28dc3fbe5a3266f2555ceea1a493374819111d5",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493753.14928888186%2C4876751.282153052%2C493805.14928888186%2C4876839.282153052&bboxSR=3740&imageSR=3740&size=520%2C880&layers=show%3A29&format=png32",
+        "bounds_enu_m": [
+          -576,
+          -177,
+          -524,
+          -89
+        ],
+        "pixels_per_m": 10
+      },
+      {
+        "year": 2021,
+        "sha256": "0a7a9bf270d1c37f3cc6b06efa19b27b522fb08d6117a6fac53690c3530b50b1",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493753.14928888186%2C4876751.282153052%2C493805.14928888186%2C4876839.282153052&bboxSR=3740&imageSR=3740&size=520%2C880&layers=show%3A26&format=png32",
+        "bounds_enu_m": [
+          -576,
+          -177,
+          -524,
+          -89
+        ],
+        "pixels_per_m": 10
+      },
+      {
+        "year": 2023,
+        "sha256": "9cc504929316f92e948806a47b82baee770f06808e579ea11876329566e45158",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493753.14928888186%2C4876751.282153052%2C493805.14928888186%2C4876839.282153052&bboxSR=3740&imageSR=3740&size=520%2C880&layers=show%3A2&format=png32",
+        "bounds_enu_m": [
+          -576,
+          -177,
+          -524,
+          -89
+        ],
+        "pixels_per_m": 10
+      },
+      {
+        "year": 2025,
+        "sha256": "e06b919c11f732ce6809a090d7ab63357fe0e6c995279a3527582be6a840c4d3",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493753.14928888186%2C4876751.282153052%2C493805.14928888186%2C4876839.282153052&bboxSR=3740&imageSR=3740&size=520%2C880&layers=show%3A57&format=png32",
+        "bounds_enu_m": [
+          -576,
+          -177,
+          -524,
+          -89
+        ],
+        "pixels_per_m": 10
+      }
+    ],
+    "landscape_survey": "https://cpfm.uoregon.edu/sites/default/files/memorial_quad_.pdf#page=2"
+  },
+  "trees": [
+    {
+      "id": 616,
+      "position_enu_m": [
+        -562.132,
+        -99.868
+      ],
+      "species": "Pyramidal English Oak",
+      "standing_height_m": 21.336,
+      "reported_spread_m": 15.24,
+      "trunk_radius_m": 0.47,
+      "crown_form": "upright"
+    },
+    {
+      "id": 617,
+      "position_enu_m": [
+        -562.38,
+        -118.231
+      ],
+      "species": "Pyramidal English Oak",
+      "standing_height_m": 24.384,
+      "reported_spread_m": 18.288,
+      "trunk_radius_m": 0.47,
+      "crown_form": "upright"
+    },
+    {
+      "id": 618,
+      "position_enu_m": [
+        -562.456,
+        -148.903
+      ],
+      "species": "Pyramidal English Oak",
+      "standing_height_m": 24.384,
+      "reported_spread_m": 18.288,
+      "trunk_radius_m": 0.47,
+      "crown_form": "upright"
+    },
+    {
+      "id": 619,
+      "position_enu_m": [
+        -562.152,
+        -167.154
+      ],
+      "species": "Pyramidal English Oak",
+      "standing_height_m": 24.384,
+      "reported_spread_m": 18.288,
+      "trunk_radius_m": 0.47,
+      "crown_form": "upright"
+    },
+    {
+      "id": 620,
+      "position_enu_m": [
+        -532.822,
+        -166.872
+      ],
+      "species": "Pyramidal English Oak",
+      "standing_height_m": 24.384,
+      "reported_spread_m": 18.288,
+      "trunk_radius_m": 0.47,
+      "crown_form": "upright"
+    },
+    {
+      "id": 621,
+      "position_enu_m": [
+        -533.155,
+        -149.123
+      ],
+      "species": "Pyramidal English Oak",
+      "standing_height_m": 24.384,
+      "reported_spread_m": 18.288,
+      "trunk_radius_m": 0.47,
+      "crown_form": "upright"
+    },
+    {
+      "id": 622,
+      "position_enu_m": [
+        -532.79,
+        -118.426
+      ],
+      "species": "Pyramidal English Oak",
+      "standing_height_m": 24.384,
+      "reported_spread_m": 18.288,
+      "trunk_radius_m": 0.47,
+      "crown_form": "upright"
+    },
+    {
+      "id": 623,
+      "position_enu_m": [
+        -532.698,
+        -99.552
+      ],
+      "species": "English Oak",
+      "standing_height_m": 18.288,
+      "reported_spread_m": 12.192,
+      "trunk_radius_m": 0.38,
+      "crown_form": "rounded"
+    }
+  ],
+  "retired_pilot_indices": [
+    35,
+    197,
+    271,
+    286,
+    294
+  ],
+  "east_walk_extent_enu_m": [
+    -528,
+    -176.8,
+    -526.4,
+    -86.26
+  ],
+  "registration_note": "Seven live records identify Pyramidal English oak. The northeast row entry identifies English oak. Old model stems inside the surveyed mask did not match the 2021 and 2023 bare-canopy roots. Crown profiles and trunk diameters use representative estimates.",
+  "pilot_tree_clip": {
+    "source_legacy_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "source_refined_sha256": "9a129558d22a314f8dbddee5ed9f914c5e905665a3c1209a3732612cc5e296ef",
+    "tree_indices": [
+      35,
+      197,
+      271,
+      286,
+      294
+    ],
+    "legacy": {
+      "vegetation_1": {
+        "vertices": 23832,
+        "removed_indices": 648,
+        "ranges": [
+          [
+            2766,
+            2856
+          ],
+          [
+            15570,
+            15660
+          ],
+          [
+            21558,
+            21648
+          ],
+          [
+            22764,
+            22806
+          ],
+          [
+            23292,
+            23382
+          ]
+        ]
+      },
+      "vegetation_2": {
+        "vertices": 66528,
+        "removed_indices": 2592,
+        "ranges": [
+          [
+            9504,
+            10368
+          ],
+          [
+            65664,
+            66528
+          ]
+        ]
+      },
+      "vegetation_4": {
+        "vertices": 62208,
+        "removed_indices": 1296,
+        "ranges": [
+          [
+            41472,
+            42336
+          ]
+        ]
+      },
+      "vegetation_3": {
+        "vertices": 84132,
+        "removed_indices": 1584,
+        "ranges": [
+          [
+            72630,
+            73494
+          ],
+          [
+            77436,
+            77598
+          ]
+        ]
+      }
+    },
+    "refined": {
+      "pilot-trees-wood": {
+        "vertices": 23506,
+        "removed_indices": 2280,
+        "ranges": [
+          [
+            2704,
+            2806
+          ],
+          [
+            15350,
+            15452
+          ],
+          [
+            21344,
+            21446
+          ],
+          [
+            22562,
+            22594
+          ],
+          [
+            22996,
+            23098
+          ]
+        ]
+      },
+      "pilot-trees-foliage": {
+        "vertices": 34088,
+        "removed_indices": 3354,
+        "ranges": [
+          [
+            3992,
+            4118
+          ],
+          [
+            22465,
+            22591
+          ],
+          [
+            30847,
+            30973
+          ],
+          [
+            32596,
+            32717
+          ],
+          [
+            33458,
+            33584
+          ]
+        ]
+      }
+    }
+  }
+}

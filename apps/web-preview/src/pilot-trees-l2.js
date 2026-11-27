@@ -83,7 +83,7 @@ export async function installPilotTrees(
     );
     legacy.visible = false;
     root.add(scene);
-    return { visible: data.tree_count - omitted, omitted };
+    return { visible: data.tree_count - omitted, omitted, sha256: data.sha256 };
   } catch (error) {
     console.warn(
       "Pilot canopy unavailable; retaining the preceding tree meshes.",
