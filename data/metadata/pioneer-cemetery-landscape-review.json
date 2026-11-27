@@ -609,6 +609,199 @@
       ]
     }
   ],
+  "charles_lawson_roses": {
+    "newsletter": {
+      "url": "https://eugenepioneercemetery.org/wp-content/uploads/2026/04/EPC-newsletter-Sp-Apr.-2026_eNewsletter-1.pdf",
+      "page_pdf": 2,
+      "sha256": "69f434f3cf8a723f8c31dcbe43dc0031317b0cc022dbe53f4ae8be71f2f95fe6"
+    },
+    "plat": {
+      "url": "https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669",
+      "year": 1930,
+      "page_pdf": 36,
+      "sha256": "8380c416283d68666744277ac9a22fc49ca15ab7404ae4fa57d56fc53e34ad1a",
+      "raster_size_px": [
+        2443,
+        3163
+      ],
+      "tie_road_axes": [
+        "Conger Lane",
+        "Kelley Drive",
+        "Risdon Lane"
+      ],
+      "tie_cross_roads": [
+        "Shelley Lane",
+        "Dorris Avenue",
+        "Walton Avenue",
+        "Cherry Avenue",
+        "Rankin Lane"
+      ],
+      "raster_north_rows_px": [
+        491,
+        1313,
+        2147,
+        2674,
+        3110
+      ],
+      "north_rows_enu_m": [
+        -293.5,
+        -387.72,
+        -483.17,
+        -542.4,
+        -589.7
+      ],
+      "raster_east_columns_px": [
+        [
+          390,
+          1198,
+          2010
+        ],
+        [
+          391,
+          1199,
+          2013
+        ],
+        [
+          393,
+          1202,
+          2016
+        ],
+        [
+          395,
+          1204,
+          2019
+        ],
+        [
+          397,
+          1206,
+          2020
+        ]
+      ],
+      "east_columns_enu_m": [
+        [
+          -517.6,
+          -421.2,
+          -326.25
+        ],
+        [
+          -519.2,
+          -419.65,
+          -330.64
+        ],
+        [
+          -515,
+          -423.04,
+          -328.8
+        ],
+        [
+          -515.15,
+          -422.8,
+          -328.91
+        ],
+        [
+          -510,
+          -422.7,
+          -333.19
+        ]
+      ]
+    },
+    "placements": [
+      {
+        "block": 267,
+        "position_enu_m": [
+          -510.71,
+          -430.41
+        ],
+        "block_bounds_enu_m": [
+          -514.09,
+          -433.38,
+          -507.34,
+          -427.43
+        ],
+        "plat_bounds_px": [
+          420,
+          1660,
+          475,
+          1712
+        ],
+        "radius_m": 0.76,
+        "height_m": 0.95,
+        "placement_basis": "Representative point within the registered historic block."
+      },
+      {
+        "block": 331,
+        "position_enu_m": [
+          -409.12,
+          -464.4
+        ],
+        "block_bounds_enu_m": [
+          -410.81,
+          -469.09,
+          -407.1,
+          -462.91
+        ],
+        "plat_bounds_px": [
+          1302,
+          1970,
+          1336,
+          2024
+        ],
+        "radius_m": 0.65,
+        "height_m": 0.93,
+        "placement_basis": "Representative spot in the northern half of the block near the 2017 shrub mass."
+      },
+      {
+        "block": 467,
+        "position_enu_m": [
+          -335.52,
+          -531.72
+        ],
+        "block_bounds_enu_m": [
+          -338.71,
+          -536.67,
+          -332.32,
+          -526.78
+        ],
+        "plat_bounds_px": [
+          1933,
+          2535,
+          1989,
+          2623
+        ],
+        "radius_m": 0.83,
+        "height_m": 0.98,
+        "placement_basis": "Representative point within the registered historic block."
+      },
+      {
+        "block": 507,
+        "position_enu_m": [
+          -390.09,
+          -564.15
+        ],
+        "block_bounds_enu_m": [
+          -392.93,
+          -568.98,
+          -387.28,
+          -559.32
+        ],
+        "plat_bounds_px": [
+          1468,
+          2830,
+          1521,
+          2919
+        ],
+        "radius_m": 0.88,
+        "height_m": 1.04,
+        "placement_basis": "Representative point within the registered historic block."
+      }
+    ],
+    "unlocated_blocks": [
+      {
+        "block": 597,
+        "reason": "The 1930 scan crops the southern fringe. No independently located numbered plot or plant image is available for this block."
+      }
+    ]
+  },
   "procedural_context_trees_to_remove": [
     {
       "index": 0,
@@ -2134,6 +2327,39 @@
       "height_m": 0.33,
       "aerial_max_match_distance_m": 0.874,
       "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -437.15,
+        -471.76
+      ],
+      "width_m": 0.41,
+      "depth_m": 0.28,
+      "height_m": 0.46,
+      "silhouette": "upright",
+      "basis": "Recurring upright form in the 2017, 2021 and 2025 aerials south of the GAR monument."
+    },
+    {
+      "position_enu_m": [
+        -437.11,
+        -474.0
+      ],
+      "width_m": 0.52,
+      "depth_m": 0.31,
+      "height_m": 0.59,
+      "silhouette": "upright",
+      "basis": "Recurring upright form in the 2017, 2021 and 2025 aerials south of the GAR monument."
+    },
+    {
+      "position_enu_m": [
+        -437.03,
+        -475.43
+      ],
+      "width_m": 0.45,
+      "depth_m": 0.3,
+      "height_m": 0.49,
+      "silhouette": "upright",
+      "basis": "Recurring upright form in the 2017 and 2025 aerials south of the GAR monument."
     }
   ],
   "marker_reference": "Matched small pale features in all three Lane County aerials with a manual visual screen. Localized silhouettes and heights are estimates. No burial names assigned.",
@@ -2469,6 +2695,28 @@
     },
     {
       "points_enu_m": [[-381.15, -536.25], [-383.55, -536.25], [-383.53, -532.10]],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -437.92,
+          -477.08
+        ],
+        [
+          -437.95,
+          -471.1
+        ],
+        [
+          -434.45,
+          -471.08
+        ],
+        [
+          -434.44,
+          -473.0
+        ]
+      ],
       "material": "concrete",
       "closed": false
     }

@@ -1858,6 +1858,14 @@ async function loadCampusScene(base, manifest, settings) {
       navigationUrl: settings.navigation_url,
       ids: [],
     },
+    "dads-gates-landscape": {
+      descriptor: config?.dads_gates_landscape_site,
+      directory: "dads-gates-landscape-review",
+      groundNode: "dads-gates-approach",
+      walkableGroundNode: "dads-gates-approach",
+      navigationUrl: settings.navigation_url,
+      ids: [],
+    },
     "neighborhood-exterior-closeout": {
       descriptor: config?.neighborhood_exterior_closeout_site,
       directory: "neighborhood-exterior-closeout-review",
@@ -4028,6 +4036,7 @@ async function loadCampusScene(base, manifest, settings) {
     "harris-potter-exterior",
     "pioneer-cemetery-landscape",
     "howe-field-gates",
+    "dads-gates-landscape",
     "neighborhood-exterior-closeout",
     "franklin-riverfront-closeout",
     "hamilton-dunes",

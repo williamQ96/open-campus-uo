@@ -2161,7 +2161,7 @@
   },
   "pioneer_cemetery_landscape_site": {
     "url": "pioneer-cemetery-landscape-review/site.json",
-    "sha256": "8561d9e7ed6d74cfa5df0696338de2f470c9ae39679ca70c58e8f4d943b389aa"
+    "sha256": "7c77a9cfb033f848e28a6e85a56204ec0ffc361cc1cf2c05130b5b1ae4f92052"
   },
   "gerlinger_field_green_site": {
     "url": "gerlinger-field-green-review/site.json",
@@ -2174,5 +2174,9 @@
   "howe_field_gates_site": {
     "url": "howe-field-gates-review/site.json",
     "sha256": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901"
+  },
+  "dads_gates_landscape_site": {
+    "url": "dads-gates-landscape-review/site.json",
+    "sha256": "ecfd2928ff013175b89900ad731cd141ffbdf7ccbe19dd71f45ac002191926a9"
   }
 }

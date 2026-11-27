@@ -1,0 +1,49 @@
+{
+  "lillis_descriptor_sha256": "d3f48e289718256277134eb6f0786eb71c4e2a23e0b1c1e1b7f1b6c890064279",
+  "arbor": {
+    "position_enu_m": [-520.23, 157.57],
+    "angle_degrees": -17,
+    "width_m": 2.08,
+    "depth_m": 0.35,
+    "spring_height_m": 1.77,
+    "arch_rise_m": 0.78,
+    "crest_height_m": 3.11
+  },
+  "service_drive_enu_m": [
+    [-548.32,176.13],[-541.68,176.13],[-541.30,168.7],[-540.73,163.9],
+    [-541.00,159.4],[-541.66,154.8],[-541.61,146.3],[-541.02,143.02],
+    [-548.53,143.02],[-549.12,150.88],[-550.25,158.43],[-549.17,168.15]
+  ],
+  "paths": [
+    {"width_m": 3.12, "centerline_enu_m": [[-545.05,145.4],[-545.05,143.61],[-545.75,137.5],[-545.86,129.1],[-545.83,120.0],[-545.97,110.8],[-546.01,101.05],[-546.94,93.8],[-548.03,89.15],[-548.21,85.38]]},
+    {"width_m": 2.2, "centerline_enu_m": [[-532.91,183.4],[-532.96,177.1],[-533.01,169.7],[-533.06,162.48],[-533.4,152.9],[-534.16,148.0],[-535.03,143.61]]},
+    {"width_m": 2.33, "centerline_enu_m": [[-533.4,152.9],[-531.49,153.54],[-529.94,156.9],[-528.12,161.15],[-526.22,166.8],[-524.77,172.4],[-523.56,178.42]]},
+    {"width_m": 2.31, "centerline_enu_m": [[-552.55,143.61],[-545.05,143.61],[-535.03,143.61],[-527.45,143.62],[-520.92,143.78],[-513.91,144.06]]},
+    {"width_m": 2.49, "centerline_enu_m": [[-546.94,93.8],[-550.45,95.98],[-554.61,100.78],[-557.95,107.46],[-561.24,112.53],[-568.28,117.46]]},
+    {"width_m": 2.54, "centerline_enu_m": [[-546.94,93.8],[-541.43,97.0],[-535.71,101.2],[-530.05,103.11],[-524.46,104.74],[-519.11,108.69],[-513.18,111.16]]}
+  ],
+  "beds_enu_m": [
+    [[-524.3,154.45],[-516.68,154.59],[-517.18,161.82],[-521.67,162.83],[-524.56,160.86]],
+    [[-532.16,159.96],[-529.98,164.21],[-528.21,170.16],[-527.88,174.35],[-532.05,175.27]],
+    [[-539.89,155.47],[-536.54,154.74],[-535.24,156.3],[-535.08,160.1],[-537.05,161.18],[-539.97,160.46]]
+  ],
+  "class_trees": [
+    {"tree_id":82,"position_enu_m":[-524.54,150.81],"height_m":27.4,"crown_radius_m":6.1,"form":"columnar"},
+    {"tree_id":79,"position_enu_m":[-504.73,149.73],"height_m":13.7,"crown_radius_m":3.75,"form":"columnar"}
+  ],
+  "context_tree_index":205,
+  "routes": [
+    {"anchor_enu_m":[-545.02,176.06],"points_enu_m":[[-545.07,167.71],[-545.00,158.01],[-545.04,150.01],[-545.05,143.61],[-545.75,137.5],[-545.86,129.1],[-545.83,120.0],[-545.97,110.8],[-546.01,101.05],[-546.94,93.8],[-548.03,89.15],[-548.21,85.38]]},
+    {"anchor_enu_m":[-532.91,183.4],"points_enu_m":[[-532.96,177.1],[-533.01,169.7],[-533.06,162.48],[-533.4,152.9],[-534.16,148.0],[-535.03,143.61]],"end_enu_m":[-545.05,143.61]},
+    {"anchor_enu_m":[-533.4,152.9],"points_enu_m":[[-531.49,153.54],[-529.94,156.9],[-528.12,161.15],[-526.22,166.8],[-524.77,172.4],[-523.56,178.42]]},
+    {"anchor_enu_m":[-546.94,93.8],"points_enu_m":[[-550.45,95.98],[-554.61,100.78],[-557.95,107.46],[-561.24,112.53],[-568.28,117.46]]},
+    {"anchor_enu_m":[-546.94,93.8],"points_enu_m":[[-541.43,97.0],[-535.71,101.2],[-530.05,103.11],[-524.46,104.74],[-519.11,108.69],[-513.18,111.16]]}
+  ],
+  "sources": [
+    {"url":"https://cpfm.uoregon.edu/sites/default/files/2025-01/robinsontheatre_2025.pdf","page_pdf":4,"sha256":"39e5cd0e57f16c7a1b21a68d8fb754b89a994847156aa2dddc7fea5bd7499019","use":"Registered landscape map for approximate location of the arbor, two class trees and the theater approach."},
+    {"url":"https://news.uoregon.edu/content/essay-abnormal-history-normal-gate","asset_url":"https://news.uoregon.edu/sites/default/files/field/image/NormalGate_Full.jpg","sha256":"3c83257e1ea549860d486f881addaf721e9840ef1b2c73476c38b86a28725083","use":"Relocation and 2012 repair, black iron arches and scrolls, green central support and arched wire letters."},
+    {"url":"https://cpfm.uoregon.edu/sites/default/files/2024-08/womens-tour-082024final_0.pdf","sha256":"0f4078d6c6171266258b0eb70fbe3ff15257d3d7dda61977a6efbb1942476140","use":"Current institutional tour stop 10."},
+    {"url":"https://cpfm.uoregon.edu/trees","data_sha256":"119d36ab6557c4633d44edb0f6e7df5496c69a7cdfa2ab3031ad7efb742e8be5","use":"Placement and height references for Giant Sequoia 82 and Japanese Cedar 79."},
+    {"url":"https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer","bounds_enu_m":[-646,-31,-461,204],"sha256_2017":"043936b9aa8a02a4ba12240abfbe8a5c9c1f1c639b1baf6fceb0e1c2f0f994c0","sha256_2021":"0fd29870a47f6be6afd1aae912058aaa0143ff504b599f22bd1a87237242f118","sha256_2025":"813863e8e4dc14792ceb35e95a7a0d8f96e998c8b0a4e2e1da02a3a6ba89f33a","use":"Current shaded drive, paved diagonals, plantings and connection to Lillis. Thin individual iron pieces cannot be resolved."}
+  ]
+}

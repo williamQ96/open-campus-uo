@@ -24,7 +24,7 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "4c597aa9fe58f25a4783d90d575912163aa5e10879afacee6dd9f734f40ce0d6",
+      "local_sha256": "2681c87a7294c161a1375eb4724c1bf5ec30ca839b31c7e9762b08d0d2b7ca24",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife."
     },
     "src/building-card.js": {
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "bbeb8e37d25049125d9599aae066de63cdfebbc535f0afc928f13f3c788b83fb",
+    "public/scene/presentation.json": "f82027bda831b27c917e607db4574d28fdc3f518f0c33c07cc7beddc2a65f695",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -480,13 +480,15 @@
     "public/scene/franklin-riverfront-closeout-review/site.json": "f50900642b5e0693be4dcf0061491114e80fe8e25b9ea086552712066e3b7528",
     "public/scene/neighborhood-exterior-closeout-review/site.glb": "de892b9fc3f0166af69c22f652f95ad73f26b502ad371e79ea4675c6131a8687",
     "public/scene/neighborhood-exterior-closeout-review/site.json": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2",
-    "public/scene/pioneer-cemetery-landscape-review/site.glb": "4af05a89106ae543ed93297865edbae4e6ee559ba7f8d1243af2f4d2cc329b51",
-    "public/scene/pioneer-cemetery-landscape-review/site.json": "8561d9e7ed6d74cfa5df0696338de2f470c9ae39679ca70c58e8f4d943b389aa",
+    "public/scene/pioneer-cemetery-landscape-review/site.glb": "4c0fc14b590b9ccc22c0249e937942b1c3af583b26190c31ce96b8c4e6b496d4",
+    "public/scene/pioneer-cemetery-landscape-review/site.json": "7c77a9cfb033f848e28a6e85a56204ec0ffc361cc1cf2c05130b5b1ae4f92052",
     "public/scene/gerlinger-field-green-review/site.glb": "4d940cd30c55aa98bde831bb218c83c49cc254c93bb14e375941de3207e9c884",
     "public/scene/gerlinger-field-green-review/site.json": "a5862622431e886b5824c1204465bee48e10cca68126db51c1a3da1706b41efb",
     "public/scene/central-campus-greens-review/site.glb": "984f4a8f8354cb960afc82d9ab9360433ea5fbef61030f341f7c9feac1801bd7",
     "public/scene/central-campus-greens-review/site.json": "f01d3046cc693a896bac8838475a529b4a875a56398ee470a4cfd31ef66dcb69",
     "public/scene/howe-field-gates-review/site.glb": "02020fb07c30687d98cffbe1d67d1265eba787c834e0c258f9e0a3a43df9c56f",
-    "public/scene/howe-field-gates-review/site.json": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901"
+    "public/scene/howe-field-gates-review/site.json": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901",
+    "public/scene/dads-gates-landscape-review/site.glb": "947988e530152764f18227a33c06a31fb1384a0ae6f2b0ff9b684572d2f1b42c",
+    "public/scene/dads-gates-landscape-review/site.json": "ecfd2928ff013175b89900ad731cd141ffbdf7ccbe19dd71f45ac002191926a9"
   }
 }

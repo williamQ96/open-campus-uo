@@ -2994,14 +2994,14 @@
       "origin": "Original neighborhood exterior geometry and documented 2025 Patterson ground, see docs/neighborhood-exterior-closeout-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.glb": {
-      "bytes": 3082204,
-      "sha256": "4af05a89106ae543ed93297865edbae4e6ee559ba7f8d1243af2f4d2cc329b51",
+      "bytes": 3432180,
+      "sha256": "4c0fc14b590b9ccc22c0249e937942b1c3af583b26190c31ce96b8c4e6b496d4",
       "license": "CC-BY-4.0",
       "origin": "Original Pioneer Cemetery landscape, paths, memorials and site fittings. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.json": {
       "bytes": 2414,
-      "sha256": "8561d9e7ed6d74cfa5df0696338de2f470c9ae39679ca70c58e8f4d943b389aa",
+      "sha256": "7c77a9cfb033f848e28a6e85a56204ec0ffc361cc1cf2c05130b5b1ae4f92052",
       "license": "CC-BY-4.0",
       "origin": "Original Pioneer Cemetery landscape, paths, memorials and site fittings. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
@@ -3040,6 +3040,18 @@
       "sha256": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901",
       "license": "CC-BY-4.0",
       "origin": "Original Howe Field Gates, Soldiers Memorial ticket wall, plaza and planting geometry. See docs/howe-field-gates-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/dads-gates-landscape-review/site.glb": {
+      "bytes": 4225728,
+      "sha256": "947988e530152764f18227a33c06a31fb1384a0ae6f2b0ff9b684572d2f1b42c",
+      "license": "CC-BY-4.0",
+      "origin": "Original Dads Gates and Normal Gate ironwork, paving, curbs and planting geometry. See docs/dads-gates-landscape-review-2026-11-27.md and docs/normal-gate-axis-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/dads-gates-landscape-review/site.json": {
+      "bytes": 3344,
+      "sha256": "ecfd2928ff013175b89900ad731cd141ffbdf7ccbe19dd71f45ac002191926a9",
+      "license": "CC-BY-4.0",
+      "origin": "Original Dads Gates and Normal Gate ironwork, paving, curbs and planting geometry. See docs/dads-gates-landscape-review-2026-11-27.md and docs/normal-gate-axis-landscape-review-2026-11-27.md."
     }
   },
   "additional_sources": [

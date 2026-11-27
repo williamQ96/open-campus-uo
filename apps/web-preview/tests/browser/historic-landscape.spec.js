@@ -29,6 +29,25 @@ async function landscapeState(page) {
       ].map(([x, north]) => blocked(x, north)),
       howePlanter: blocked(-251.78, -501.58),
       howePlaza: [paved(-278, -494), blocked(-278, -494)],
+      dadsGateOpenings: [
+        [-544.94, 221.84],
+        [-555.91, 221.84],
+        [-534.71, 221.84],
+      ].map(([x, north]) => [paved(x, north), blocked(x, north)]),
+      dadsGateIronwork: [
+        [-551.2, 221.84],
+        [-538.1, 221.84],
+        [-548.08, 220.04],
+        [-541.9, 220.04],
+      ].map(([x, north]) => blocked(x, north)),
+      normalGateSupport: blocked(-520.23, 157.57),
+      southernAxis: [
+        [-545.66, 148.284],
+        [-531.49, 153.54],
+        [-528.12, 161.15],
+        [-546.01, 101.05],
+        [-548.03, 89.15],
+      ].map(([x, north]) => [paved(x, north), blocked(x, north)]),
       heritageWalks: [
         [-452.5, 108.8],
         [-479.4, 129],
@@ -70,6 +89,10 @@ test("historic landscape solids leave Cherry Avenue and Hello Walk open", async 
     howeOpenings: [false, false],
     howePlanter: true,
     howePlaza: [true, false],
+    dadsGateOpenings: Array(3).fill([true, false]),
+    dadsGateIronwork: Array(4).fill(true),
+    normalGateSupport: true,
+    southernAxis: Array(5).fill([true, false]),
     heritageWalks: Array(5).fill([true, false]),
     universitySign: true,
     helloWalk: Array(5).fill([true, false]),
@@ -87,7 +110,7 @@ test("failed historic site bundles restore the preceding ground and access", asy
   page,
 }) => {
   await page.route(
-    /\/(?:pioneer-cemetery-landscape-review|fenton-site-review|howe-field-gates-review)\/site\.glb$/,
+    /\/(?:pioneer-cemetery-landscape-review|fenton-site-review|howe-field-gates-review|dads-gates-landscape-review)\/site\.glb$/,
     (route) => route.fulfill({ body: "invalid site mesh" }),
   );
   expect(await landscapeState(page)).toMatchObject({
@@ -100,6 +123,10 @@ test("failed historic site bundles restore the preceding ground and access", asy
     howeOpenings: [false, false],
     howePlanter: false,
     howePlaza: [false, false],
+    dadsGateOpenings: Array(3).fill([false, false]),
+    dadsGateIronwork: Array(4).fill(false),
+    normalGateSupport: false,
+    southernAxis: Array(5).fill([false, false]),
     heritageWalks: Array(5).fill([false, false]),
     universitySign: false,
     helloWalk: Array(5).fill([false, false]),

@@ -6,6 +6,23 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Dads’ Gates、Normal Gate 与 Pioneer Cemetery 景观细节
+
+- 发布 Dads’ Gates 六扇敞开铁门、绿地、路缘、树木及从 East 11th Avenue 延伸至 Lillis 北侧的步道。按校方现状图和修复照片补建迁址后的 Normal Gate 铁拱及绿柱。三期改扩建后航片校正北段车道走向，全段共 65 条导航边。铁件细节、铁拱落位及植被尺寸为估计。[Dads’ Gates 复核](docs/dads-gates-landscape-review-2026-11-27.md) · [Normal Gate 与轴线南段复核](docs/normal-gate-axis-landscape-review-2026-11-27.md)。
+- 一并发布四处 Charles Lawson 玫瑰、GAR 纪念碑南侧一组边石和三处航片可辨墓碑。公开墓园图裁掉南缘，597 区块仍待定位。[墓园复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md#charles-lawson-roses-and-the-plot-south-of-the-gar-monument)。
+- 两次独立导出一致。桌面与手机生产预览均逐项加载台账中 610 个外观 ID 对应的网格，至 Lillis 的导航路线为 174.87 米。生产构建、格式、197 项单测、8 项浏览器测试、467 项归档校验及 410 项查看器哈希通过。本次通过 main 上的 GitHub Pages 工作流发布。[部署历史](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
+## 2026-11-27 - Dads’ Gates 铁艺与校园北入口（本地）
+
+- 补建六扇敞开的锻铁门扇、弧形栏杆、两座灯柱、青铜圆章和两侧门楣。补齐弧形车道、剧院入口步道、四处种植带和四株登记树，撤下穿入西侧步道的一株程序背景树。外翼跨度、铁件细节、圆章和植被尺寸按资料估计。[Dads’ Gates 复核](docs/dads-gates-landscape-review-2026-11-27.md)。
+- 补建 807.11 平方米沥青、304.96 平方米混凝土及 32 条导航边，两次导出一致。六组配对视图、铺面与门洞检查以及桌面和手机生产预览均通过，两端同时加载 610 个外部模型。构建、格式、197 项单测、467 项归档与 410 项查看器哈希通过。改动在本地，Pages 仍为 `bcb962f`。
+
+## 2026-11-27 - Pioneer Cemetery 的 Charles Lawson 玫瑰与南侧墓区边石（本地）
+
+- 将旧墓园编号图配准到现有路网，在 267、331、467 和 507 区块内估放春季开花的 Charles Lawson 玫瑰。公开底图裁掉南缘，第 597 区块待定位。[墓园复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md#charles-lawson-roses-and-the-plot-south-of-the-gar-monument)。
+- 按多期航片补建 GAR 纪念碑南侧一组开放边石和三处无名墓碑。墓园场景共登记 16 组边石和 26 处航片可辨石件。植物落位和构件尺寸采用估计。
+- 两次导出一致，既有细节三角面及另五个墓园网格均与发布包一致。桌面和手机生产预览均加载新增四处玫瑰及台账中 610 个模型，墓园路线为 113.62 米。格式、197 项单测、生产构建、465 项归档与 408 项查看器哈希通过。变更在本地，Pages 仍为 `bcb962f`。
+
 ## 2026-11-27 - 发布 Heritage 庭院、Howe Field 纪念门与历史场地细节
 
 - Hello Walk 延伸至翻修后的 University Hall 和 Villard Hall 庭院，新增四组路支及 30 条导航边。补建铺装、八处种植床、四株示意幼树、座椅、灯具、University Hall 楼名牌和 Villard 南侧台阶与坡道。移除两株穿入新铺装的程序背景树。高程、尺寸和植物物种采用估计。[Heritage 庭院复核](docs/heritage-courtyard-landscape-review-2026-11-27.md)。

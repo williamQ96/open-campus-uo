@@ -35,6 +35,7 @@ MARBLE = (162, 168, 160)
 SOIL = (119, 103, 82)
 GLYPHS = {
     **frontage.GLYPHS,
+    "0": frontage.GLYPHS["O"],
     "A": (((0, 0), (0.50, 1), (1, 0)), ((0.23, 0.46), (0.77, 0.46))),
     "B": (
         ((0, 0), (0, 1), (0.77, 1), (0.98, 0.83), (0.71, 0.55), (0, 0.55)),
@@ -99,6 +100,19 @@ GLYPHS = {
         ((0.62, 0.25), (1, -0.04)),
     ),
     "2": (((0, 0.78), (0.20, 1), (0.79, 1), (1, 0.75), (0.86, 0.50), (0, 0), (1, 0)),),
+    "4": (((0.73, 0), (0.73, 1), (0, 0.29), (1, 0.29)),),
+    "5": (
+        (
+            (1, 1),
+            (0.1, 1),
+            (0.03, 0.53),
+            (0.73, 0.53),
+            (0.96, 0.38),
+            (0.90, 0.15),
+            (0.69, 0),
+            (0.06, 0.05),
+        ),
+    ),
     "7": (((0, 1), (1, 1), (0.32, 0)),),
     "8": (
         (
@@ -672,6 +686,36 @@ def rose(parts, field, row, index):
             )
 
 
+def charles_lawson_rose(parts, field, row):
+    e, n = row["position_enu_m"]
+    radius = row["radius_m"]
+    height = row["height_m"]
+    base = ground_height(field, e, n)
+    rng = np.random.default_rng(row["block"])
+    foliage = [(70, 98, 58), (82, 113, 64), (101, 122, 72)]
+    for cane in range(11):
+        angle = cane * 2.39996
+        outward = radius * rng.uniform(0.32, 0.78)
+        de, dn = np.cos(angle) * outward, np.sin(angle) * outward
+        shoulder = base + height * rng.uniform(0.53, 0.79)
+        tip = (e + de, n + dn, shoulder)
+        fork = (e + de * 0.58, n + dn * 0.58, shoulder - height * 0.14)
+        cylinder_between(
+            parts, (e, n, base - 0.035), fork, 0.013, (106, 105, 68), sides=5
+        )
+        cylinder_between(parts, fork, tip, 0.009, (93, 106, 56), sides=5)
+        orb(parts, fork, (0.19, 0.16, 0.14), foliage[(cane + 1) % 3])
+        orb(parts, tip, (0.20, 0.17, 0.13), foliage[cane % 3])
+        if cane % 3 != 0:
+            for flower in range(3):
+                phase = angle + flower * 2.1
+                x = tip[0] + 0.058 * np.cos(phase)
+                y = tip[1] + 0.058 * np.sin(phase)
+                z = shoulder + 0.118 + 0.008 * flower
+                orb(parts, (x, y, z), (0.038, 0.036, 0.023), (173, 92, 134), 0)
+                orb(parts, (x, y, z + 0.013), (0.025, 0.022, 0.018), (207, 136, 172), 0)
+
+
 def marker(parts, field, row, index):
     e, n = row["position_enu_m"]
     width, depth, height = (row[key] for key in ("width_m", "depth_m", "height_m"))
@@ -859,6 +903,13 @@ def main():
     for i, row in enumerate(spec["marker_estimates"]):
         marker(details, field, row, i)
         assert site.distance(Point(row["position_enu_m"])) > 0.6
+    lawson_roses = spec["charles_lawson_roses"]["placements"]
+    for row in lawson_roses:
+        center = Point(row["position_enu_m"])
+        spread = center.buffer(row["radius_m"] + 0.15)
+        assert box(*row["block_bounds_enu_m"]).covers(spread)
+        assert not spread.intersects(site)
+        charles_lawson_rose(details, field, row)
     for i, row in enumerate(spec["canopy_estimates"]):
         canopy(trees, field, row, i)
         assert site.distance(Point(row["position_enu_m"])) >= 1.1
@@ -925,6 +976,7 @@ def main():
         "stair_treads": stair["treads"],
         "nominal_rise_m": round(rise, 4),
         "registered_rose_clusters": len(spec["heritage_rose_positions"]),
+        "charles_lawson_rose_clusters": len(lawson_roses),
         "registered_canopy_estimates": len(spec["canopy_estimates"]),
         "aerial_marker_estimates": len(spec["marker_estimates"]),
         "inner_alleys": len(spec["inner_alleys"]),

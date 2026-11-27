@@ -1,0 +1,14 @@
+# Normal Gate and the southern Dads’ Gates Axis
+
+The 2025 Robinson Theatre site map places the historic Normal Gate in the planting southwest of Miller Theatre, northeast of the Giant Sequoia. OregonNews documents the 1885 arbor, its seven-foot relocation to the west during the theatre project and the green support added during the 2012 repair. The 2013 photograph guides the open iron arches, scrolls, curved letter band and green center support. The modeled span is 2.08 m and the crest is about 3.11 m high. Position, orientation, lettering and dimensions are approximate. [UO site map, PDF p. 4](https://cpfm.uoregon.edu/sites/default/files/2025-01/robinsontheatre_2025.pdf) · [UO restoration account](https://news.uoregon.edu/content/essay-abnormal-history-normal-gate) · [UO campus tour, stop 10](https://cpfm.uoregon.edu/sites/default/files/2024-08/womens-tour-082024final_0.pdf).
+
+The 2017, 2021 and 2025 orthophotos show a straight service-drive approach to University Hall Walk south of Miller. The current model follows that alignment and joins the paired paths, the curved walk beside the arbor, University Hall Walk and the approach to the north Lillis apron. The southern extension covers 246.70 m² of asphalt and 585.18 m² of walks. It adds three planting areas and models Giant Sequoia 82 and Japanese Cedar 79 from the tree inventory. The viewer suppresses one procedural tree inside the paved drive. Planting bounds, heights and crown shapes remain estimates. [Lane County orthophotos](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer) · [UO tree inventory](https://cpfm.uoregon.edu/trees).
+
+The corrected north approach contributes 29 route edges and the southern branch contributes 36. Five paired production views cover the arbor, paths and junctions. Both production browser profiles loaded geometry for all 610 exterior IDs and returned a 174.87 m route from East 11th Avenue to the north Lillis apron and a 108.47 m route to the bend near the arbor. Five paving probes were passable and the arbor support registered collision. The two independent exports matched byte for byte.
+
+The 13th Avenue Phase A milestone in fall 2025 was completion of construction documents. The project page lists implementation funding as pending. The current street surfaces at Kincaid and the post, planter and crossing layout visible in the 2025 county imagery remain follow-up work. [UO 13th Avenue project](https://cpfm.uoregon.edu/13th-avenue) · [UO project phase and funding](https://cpfm.uoregon.edu/13th-avenue-axis-conceptual-design).
+
+- [Editable site registration](../data/metadata/normal-gate-axis.json)
+- [Normal Gate and south axis builder](../scripts/build-normal-gate-axis.py)
+- [Combined exporter](../scripts/build-dads-gates-landscape.py)
+- [Pages deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)

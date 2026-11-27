@@ -6,6 +6,23 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Dads’ Gates, Normal Gate and Pioneer Cemetery details
+
+- Publish the six open Dads’ Gates leaves and the grass, retaining edges, trees and approaches from East 11th Avenue through the southern axis to Lillis. Model the relocated Normal Gate arbor and green support from the UO site map and restoration photo. The north alignment is corrected against three post-renovation aerials, giving 65 route edges across the combined site. Ironwork details, arbor placement and planting dimensions are approximate. [Dads’ Gates review](docs/dads-gates-landscape-review-2026-11-27.md) · [Normal Gate and south axis review](docs/normal-gate-axis-landscape-review-2026-11-27.md).
+- Include four representative Charles Lawson rose locations, one curb group and three aerially matched markers south of the GAR monument. The published plat reproduction crops the remaining rose block 597. [Cemetery review](docs/pioneer-cemetery-landscape-review-2026-11-26.md#charles-lawson-roses-and-the-plot-south-of-the-gar-monument).
+- Independent exports matched. Desktop and phone production previews matched geometry for all 610 committed exterior IDs, and the southern route to Lillis measured 174.87 m. The build, formatting, 197 unit tests, eight browser cases, 467 archived asset checks and 410 viewer hash checks passed. This release uses the GitHub Pages workflow on main. [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
+## 2026-11-27 - Dads’ Gates ironwork and North Campus approach (local)
+
+- Model the six open wrought-iron leaves, curved fence wings, paired lantern pylons, bronze medallion forms and two pedestrian headers. Add the curved pullout, the theater approach, four planted areas and four registered trees. Suppress an approximate tree in the west walk. Outer fence span, iron ornament, medallion faces and plant dimensions are estimates. [Dads’ Gates review](docs/dads-gates-landscape-review-2026-11-27.md).
+- The export includes 807.11 m² of asphalt, 304.96 m² of concrete and 32 navigation edges. Independent exports match. Six paired views, foliage and paving probes, and desktop and phone production previews cover all three openings with 610 exterior models simultaneously loaded. The build, formatting, 197 unit tests, 467 archived assets and 410 viewer pins passed. The package is local on top of Pages commit `bcb962f`.
+
+## 2026-11-27 - Pioneer Cemetery Charles Lawson roses and south plot trace (local)
+
+- Tie the historic numbered plat to the modern path grid and add representative spring-flowering Charles Lawson shrubs within blocks 267, 331, 467 and 507. Record block 597 for follow-up because the published plat reproduction trims the southern fringe. [Cemetery review](docs/pioneer-cemetery-landscape-review-2026-11-26.md#charles-lawson-roses-and-the-plot-south-of-the-gar-monument).
+- Trace one open curb group south of the GAR monument and add three unnamed stone forms from repeat aerial features. The cemetery now has 16 curb groups and 26 matched stone forms. The model uses estimated planting positions and dimensions.
+- Both independent exports match. Prior detail triangles and the five other cemetery meshes match the published package. Desktop and phone loaded the four new plant locations and all 610 inventory IDs and returned the 113.62 m cemetery route. Formatting, 197 unit tests, production build, 465 archived assets and 408 viewer hashes passed. Changes are local on top of Pages commit `bcb962f`.
+
 ## 2026-11-27 - Release the Heritage courtyard, Howe Field gate and historic site details
 
 - Extend Hello Walk to the completed University Hall and Villard Hall courtyard with four path branches and 30 new navigation edges. Add hardscape, eight beds, four representative young trees, seating, lamps, the University Hall sign and the Villard south stair and ramp. Remove two approximate background-tree placements intersecting the new paving. The modeled grades, dimensions and plant species are estimates. [Heritage courtyard review](docs/heritage-courtyard-landscape-review-2026-11-27.md).
