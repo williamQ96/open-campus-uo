@@ -536,9 +536,10 @@ export async function loadPresentation(
   const absorbedIds = [];
   for (const review of buildingReviews) {
     try {
-      const baseRoot = review.retiredCorridor
-        ? (await sourceScene)?.scene
-        : undefined;
+      const baseRoot =
+        review.retiredCorridor || review.requiresBaseTerrain
+          ? (await sourceScene)?.scene
+          : undefined;
       siteTreeRemovals += review.install(
         gltf.scene,
         baseRoot,
@@ -724,7 +725,9 @@ export function createPresentation(
   ramp.minFilter = ramp.magFilter = THREE.NearestFilter;
   ramp.needsUpdate = true;
   function styleMesh(object) {
-    object.castShadow = object.userData.asset_kind !== "landscape-surface";
+    const courtGlass = object.userData.asset_id === "price-courtyard-glass";
+    object.castShadow =
+      !courtGlass && object.userData.asset_kind !== "landscape-surface";
     object.receiveShadow = true;
     const original = Array.isArray(object.material)
       ? object.material.map((material) => material.clone())
@@ -736,6 +739,11 @@ export function createPresentation(
         side: source.side,
         map: source.map,
         vertexColors: source.vertexColors,
+        ...(courtGlass && {
+          transparent: source.transparent,
+          opacity: source.opacity,
+          depthWrite: source.depthWrite,
+        }),
       });
     const toon = Array.isArray(original)
       ? original.map(toToon)

@@ -1,0 +1,1178 @@
+{
+  "pins": {
+    "cascade-courtyard-north-review": "d3d8d77906010cede240e6d36a217196e6995dbf66604818b7d9cadb9a70f7ee",
+    "east-thirteenth-east-review": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570",
+    "northeast-science-review": "a11a830eed3b0fec81a6c87e64f14f7f1076368b8e62ba602f2b2c32d2701dd7",
+    "cascade-volcanology-review": "6a6e9da1803d1f85f9edfbd2a56322a70c64425ba699ffcc5d3214067b4fe90b"
+  },
+  "sources": {
+    "map": {
+      "file": "uo-accessibility.pdf",
+      "url": "https://mapapps.uoregon.edu/campusMaps/accessibility.pdf",
+      "sha256": "60216e1b57081fbcfed67697fda212a5ea51e8053cbb9d423d2217ddac15ee4b",
+      "control_rms_m": 0.151
+    },
+    "museum": {
+      "file": "campus-scavenger.pdf",
+      "url": "https://mnch.uoregon.edu/sites/default/files/2025-02/Campus%20Scavenger%20Hunt%20ENTIRE%20DOC%201.pdf",
+      "sha256": "69ad0527aab2689d82b715c41cc9b4e4759a8a24de25e3502f208343cc3b9def",
+      "pdf_pages": [
+        9,
+        10
+      ]
+    },
+    "campus_plan": {
+      "file": "onyx-principle-12.pdf",
+      "url": "https://cpfm.uoregon.edu/sites/default/files/principle_12_design_area_special_conditions_4th_edition_1.pdf",
+      "sha256": "b30ea96918f3fb29d5174762066cb4aab849eb9dd77fe5d2b74b05347553d89d",
+      "pdf_page": 26
+    },
+    "concept": {
+      "file": "onyx-library-concept-2013.pdf",
+      "url": "https://pages.uoregon.edu/ftepfer/projects/ScienceLibrary/NewSciLib_%20Final%20draft%20of%20Conc/NewSciLibConceptualDesignFinal.pdf",
+      "sha256": "a404fa3ef07c44ec49b5cea65df8f8d9eff10eec17ace1a0ccf009be3b6a46ad",
+      "pdf_page": 19
+    },
+    "architect": "https://www.opsisarch.com/project/university-of-oregon-allan-price-science-commons-and-research-library/",
+    "imagery_from": "cascade-courtyard-north.json",
+    "lidar": {
+      "source": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1310.copc.laz",
+      "file": "onyx-green-noaa.npz",
+      "sha256": "598d79c95c6c1d3b951ba6fff42969fcb8c0ee6248d6179c714a15e960b5160b",
+      "projected_crs": 6339,
+      "vertical_epsg": 5703,
+      "bounds_enu_m": [
+        -241,
+        7,
+        -153,
+        130
+      ],
+      "tile_file_creation_date": "2017-10-31",
+      "points": 122135,
+      "ground_control_windows": [
+        {
+          "path": "plaza to Willamette north edge",
+          "points": [
+            {
+              "enu_m": [
+                -207.4,
+                70.34
+              ],
+              "scene_surface_z_m": 1.256,
+              "low_returns": 24,
+              "quantiles_z_m": [
+                1.233,
+                1.258,
+                1.279
+              ]
+            },
+            {
+              "enu_m": [
+                -203.15,
+                70.64
+              ],
+              "scene_surface_z_m": 1.255,
+              "low_returns": 23,
+              "quantiles_z_m": [
+                1.236,
+                1.253,
+                1.283
+              ]
+            },
+            {
+              "enu_m": [
+                -200.27,
+                69.7
+              ],
+              "scene_surface_z_m": 1.272,
+              "low_returns": 19,
+              "quantiles_z_m": [
+                1.263,
+                1.273,
+                1.296
+              ]
+            },
+            {
+              "enu_m": [
+                -197.02,
+                68.74
+              ],
+              "scene_surface_z_m": 1.273,
+              "low_returns": 23,
+              "quantiles_z_m": [
+                1.243,
+                1.263,
+                1.283
+              ]
+            },
+            {
+              "enu_m": [
+                -193.25,
+                67.22
+              ],
+              "scene_surface_z_m": 1.28,
+              "low_returns": 17,
+              "quantiles_z_m": [
+                1.243,
+                1.263,
+                1.273
+              ]
+            },
+            {
+              "enu_m": [
+                -190.0,
+                66.14
+              ],
+              "scene_surface_z_m": 1.297,
+              "low_returns": 10,
+              "quantiles_z_m": [
+                1.283,
+                1.298,
+                1.303
+              ]
+            },
+            {
+              "enu_m": [
+                -187.0,
+                65.55
+              ],
+              "scene_surface_z_m": 1.304,
+              "low_returns": 3,
+              "quantiles_z_m": [
+                1.293,
+                1.293,
+                1.293
+              ]
+            },
+            {
+              "enu_m": [
+                -184.0,
+                65.36
+              ],
+              "scene_surface_z_m": 1.326,
+              "low_returns": 3,
+              "quantiles_z_m": [
+                1.296,
+                1.303,
+                1.352
+              ]
+            },
+            {
+              "enu_m": [
+                -180.11,
+                65.16
+              ],
+              "scene_surface_z_m": 1.33,
+              "low_returns": 4,
+              "quantiles_z_m": [
+                1.313,
+                1.328,
+                1.36
+              ]
+            },
+            {
+              "enu_m": [
+                -176.8,
+                65.07
+              ],
+              "scene_surface_z_m": 1.347,
+              "low_returns": 4,
+              "quantiles_z_m": [
+                1.338,
+                1.348,
+                1.359
+              ]
+            },
+            {
+              "enu_m": [
+                -172.85,
+                64.9
+              ],
+              "scene_surface_z_m": 1.359,
+              "low_returns": 3,
+              "quantiles_z_m": [
+                1.329,
+                1.343,
+                1.364
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Onyx walk to East 13th",
+          "points": [
+            {
+              "enu_m": [
+                -203.15,
+                70.64
+              ],
+              "scene_surface_z_m": 1.255,
+              "low_returns": 23,
+              "quantiles_z_m": [
+                1.236,
+                1.253,
+                1.283
+              ]
+            },
+            {
+              "enu_m": [
+                -203.15,
+                67.04
+              ],
+              "scene_surface_z_m": 1.294,
+              "low_returns": 21,
+              "quantiles_z_m": [
+                1.253,
+                1.293,
+                1.313
+              ]
+            },
+            {
+              "enu_m": [
+                -202.68,
+                62.72
+              ],
+              "scene_surface_z_m": 1.284,
+              "low_returns": 23,
+              "quantiles_z_m": [
+                1.253,
+                1.273,
+                1.313
+              ]
+            },
+            {
+              "enu_m": [
+                -206.78,
+                61.6
+              ],
+              "scene_surface_z_m": 1.42,
+              "low_returns": 20,
+              "quantiles_z_m": [
+                1.372,
+                1.398,
+                1.425
+              ]
+            },
+            {
+              "enu_m": [
+                -210.55,
+                60.06
+              ],
+              "scene_surface_z_m": 1.646,
+              "low_returns": 24,
+              "quantiles_z_m": [
+                1.617,
+                1.663,
+                1.693
+              ]
+            },
+            {
+              "enu_m": [
+                -213.92,
+                57.84
+              ],
+              "scene_surface_z_m": 1.939,
+              "low_returns": 12,
+              "quantiles_z_m": [
+                1.846,
+                1.868,
+                1.9
+              ]
+            },
+            {
+              "enu_m": [
+                -216.38,
+                55.46
+              ],
+              "scene_surface_z_m": 2.138,
+              "low_returns": 20,
+              "quantiles_z_m": [
+                2.083,
+                2.118,
+                2.143
+              ]
+            },
+            {
+              "enu_m": [
+                -218.86,
+                51.79
+              ],
+              "scene_surface_z_m": 2.43,
+              "low_returns": 15,
+              "quantiles_z_m": [
+                2.384,
+                2.433,
+                2.443
+              ]
+            },
+            {
+              "enu_m": [
+                -220.23,
+                47.67
+              ],
+              "scene_surface_z_m": 2.687,
+              "low_returns": 14,
+              "quantiles_z_m": [
+                2.623,
+                2.688,
+                2.745
+              ]
+            },
+            {
+              "enu_m": [
+                -221.15,
+                42.81
+              ],
+              "scene_surface_z_m": 3.044,
+              "low_returns": 7,
+              "quantiles_z_m": [
+                2.998,
+                3.043,
+                3.075
+              ]
+            },
+            {
+              "enu_m": [
+                -221.48,
+                38.47
+              ],
+              "scene_surface_z_m": 3.274,
+              "low_returns": 16,
+              "quantiles_z_m": [
+                3.243,
+                3.263,
+                3.283
+              ]
+            },
+            {
+              "enu_m": [
+                -221.43,
+                34.71
+              ],
+              "scene_surface_z_m": 3.486,
+              "low_returns": 10,
+              "quantiles_z_m": [
+                3.414,
+                3.478,
+                3.533
+              ]
+            },
+            {
+              "enu_m": [
+                -221.02,
+                30.91
+              ],
+              "scene_surface_z_m": 3.694,
+              "low_returns": 10,
+              "quantiles_z_m": [
+                3.667,
+                3.693,
+                3.74
+              ]
+            },
+            {
+              "enu_m": [
+                -220.57,
+                27.25
+              ],
+              "scene_surface_z_m": 3.776,
+              "low_returns": 2,
+              "quantiles_z_m": [
+                3.755,
+                3.783,
+                3.811
+              ]
+            },
+            {
+              "enu_m": [
+                -219.46,
+                22.28
+              ],
+              "scene_surface_z_m": 3.865,
+              "low_returns": 9,
+              "quantiles_z_m": [
+                3.827,
+                3.863,
+                3.873
+              ]
+            },
+            {
+              "enu_m": [
+                -218.14,
+                16.85
+              ],
+              "scene_surface_z_m": 3.976,
+              "low_returns": 24,
+              "quantiles_z_m": [
+                3.948,
+                3.973,
+                3.989
+              ]
+            },
+            {
+              "enu_m": [
+                -216.79,
+                12.68
+              ],
+              "scene_surface_z_m": 4.096,
+              "low_returns": 22,
+              "quantiles_z_m": [
+                4.065,
+                4.093,
+                4.12
+              ]
+            },
+            {
+              "enu_m": [
+                -214.6,
+                9.14
+              ],
+              "scene_surface_z_m": 4.203,
+              "low_returns": 9,
+              "quantiles_z_m": [
+                4.205,
+                4.223,
+                4.241
+              ]
+            },
+            {
+              "enu_m": [
+                -212.89,
+                8.72
+              ],
+              "scene_surface_z_m": 4.178,
+              "low_returns": 8,
+              "quantiles_z_m": [
+                4.154,
+                4.178,
+                4.193
+              ]
+            }
+          ]
+        },
+        {
+          "path": "west plaza spine by the planting islands",
+          "points": [
+            {
+              "enu_m": [
+                -203.15,
+                70.64
+              ],
+              "scene_surface_z_m": 1.255,
+              "low_returns": 23,
+              "quantiles_z_m": [
+                1.236,
+                1.253,
+                1.283
+              ]
+            },
+            {
+              "enu_m": [
+                -204.25,
+                74.15
+              ],
+              "scene_surface_z_m": 1.254,
+              "low_returns": 19,
+              "quantiles_z_m": [
+                1.22,
+                1.233,
+                1.253
+              ]
+            },
+            {
+              "enu_m": [
+                -205.45,
+                78.15
+              ],
+              "scene_surface_z_m": 1.263,
+              "low_returns": 19,
+              "quantiles_z_m": [
+                1.183,
+                1.203,
+                1.223
+              ]
+            },
+            {
+              "enu_m": [
+                -206.35,
+                82.4
+              ],
+              "scene_surface_z_m": 1.271,
+              "low_returns": 19,
+              "quantiles_z_m": [
+                1.19,
+                1.213,
+                1.223
+              ]
+            },
+            {
+              "enu_m": [
+                -207.2,
+                87.05
+              ],
+              "scene_surface_z_m": 1.281,
+              "low_returns": 20,
+              "quantiles_z_m": [
+                1.213,
+                1.223,
+                1.233
+              ]
+            },
+            {
+              "enu_m": [
+                -207.47,
+                91.36
+              ],
+              "scene_surface_z_m": 1.276,
+              "low_returns": 20,
+              "quantiles_z_m": [
+                1.183,
+                1.203,
+                1.225
+              ]
+            },
+            {
+              "enu_m": [
+                -207.4,
+                95.2
+              ],
+              "scene_surface_z_m": 1.261,
+              "low_returns": 18,
+              "quantiles_z_m": [
+                1.184,
+                1.213,
+                1.228
+              ]
+            },
+            {
+              "enu_m": [
+                -206.73,
+                99.3
+              ],
+              "scene_surface_z_m": 1.251,
+              "low_returns": 19,
+              "quantiles_z_m": [
+                1.183,
+                1.193,
+                1.213
+              ]
+            },
+            {
+              "enu_m": [
+                -205.37,
+                103.6
+              ],
+              "scene_surface_z_m": 1.241,
+              "low_returns": 20,
+              "quantiles_z_m": [
+                1.192,
+                1.203,
+                1.223
+              ]
+            },
+            {
+              "enu_m": [
+                -203.93,
+                107.73
+              ],
+              "scene_surface_z_m": 1.23,
+              "low_returns": 20,
+              "quantiles_z_m": [
+                1.203,
+                1.223,
+                1.255
+              ]
+            },
+            {
+              "enu_m": [
+                -202.99,
+                112.24
+              ],
+              "scene_surface_z_m": 1.215,
+              "low_returns": 22,
+              "quantiles_z_m": [
+                1.205,
+                1.213,
+                1.243
+              ]
+            }
+          ]
+        },
+        {
+          "path": "Price Science Commons south approach",
+          "points": [
+            {
+              "enu_m": [
+                -180.11,
+                65.16
+              ],
+              "scene_surface_z_m": 1.33,
+              "low_returns": 4,
+              "quantiles_z_m": [
+                1.313,
+                1.328,
+                1.36
+              ]
+            },
+            {
+              "enu_m": [
+                -180.03,
+                68.5
+              ],
+              "scene_surface_z_m": 1.254,
+              "low_returns": 20,
+              "quantiles_z_m": [
+                1.223,
+                1.248,
+                1.273
+              ]
+            },
+            {
+              "enu_m": [
+                -179.91,
+                70.6
+              ],
+              "scene_surface_z_m": 1.277,
+              "low_returns": 22,
+              "quantiles_z_m": [
+                1.253,
+                1.273,
+                1.293
+              ]
+            },
+            {
+              "enu_m": [
+                -179.86,
+                73.35
+              ],
+              "scene_surface_z_m": 1.325,
+              "low_returns": 22,
+              "quantiles_z_m": [
+                1.313,
+                1.333,
+                1.352
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "extent_enu_m": [
+    -228,
+    5,
+    -169,
+    115
+  ],
+  "paths": [
+    {
+      "name": "plaza to Willamette north edge",
+      "width_m": 3.0,
+      "stations": [
+        [
+          -207.4,
+          70.34,
+          1.256
+        ],
+        [
+          -203.15,
+          70.64,
+          1.255
+        ],
+        [
+          -200.27,
+          69.7,
+          1.272
+        ],
+        [
+          -197.02,
+          68.74,
+          1.273
+        ],
+        [
+          -193.25,
+          67.22,
+          1.28
+        ],
+        [
+          -190.0,
+          66.14,
+          1.297
+        ],
+        [
+          -187.0,
+          65.55,
+          1.304
+        ],
+        [
+          -184.0,
+          65.36,
+          1.326
+        ],
+        [
+          -180.11,
+          65.16,
+          1.33
+        ],
+        [
+          -176.8,
+          65.07,
+          1.347
+        ],
+        [
+          -172.85,
+          64.9,
+          1.359
+        ]
+      ]
+    },
+    {
+      "name": "Onyx walk to East 13th",
+      "width_m": 3.25,
+      "closes_on_existing_node": true,
+      "stations": [
+        [
+          -203.15,
+          70.64,
+          1.255
+        ],
+        [
+          -203.15,
+          67.04,
+          1.294
+        ],
+        [
+          -202.68,
+          62.72,
+          1.284
+        ],
+        [
+          -206.78,
+          61.6,
+          1.42
+        ],
+        [
+          -210.55,
+          60.06,
+          1.646
+        ],
+        [
+          -213.92,
+          57.84,
+          1.939
+        ],
+        [
+          -216.38,
+          55.46,
+          2.138
+        ],
+        [
+          -218.86,
+          51.79,
+          2.43
+        ],
+        [
+          -220.23,
+          47.67,
+          2.687
+        ],
+        [
+          -221.15,
+          42.81,
+          3.044
+        ],
+        [
+          -221.48,
+          38.47,
+          3.274
+        ],
+        [
+          -221.43,
+          34.71,
+          3.486
+        ],
+        [
+          -221.02,
+          30.91,
+          3.694
+        ],
+        [
+          -220.57,
+          27.25,
+          3.776
+        ],
+        [
+          -219.46,
+          22.28,
+          3.865
+        ],
+        [
+          -218.14,
+          16.85,
+          3.976
+        ],
+        [
+          -216.79,
+          12.68,
+          4.096
+        ],
+        [
+          -214.6,
+          9.14,
+          4.203
+        ],
+        [
+          -212.89,
+          8.72,
+          4.178
+        ]
+      ]
+    },
+    {
+      "name": "west plaza spine by the planting islands",
+      "width_m": 3.12,
+      "stations": [
+        [
+          -203.15,
+          70.64,
+          1.255
+        ],
+        [
+          -204.25,
+          74.15,
+          1.254
+        ],
+        [
+          -205.45,
+          78.15,
+          1.263
+        ],
+        [
+          -206.35,
+          82.4,
+          1.271
+        ],
+        [
+          -207.2,
+          87.05,
+          1.281
+        ],
+        [
+          -207.47,
+          91.36,
+          1.276
+        ],
+        [
+          -207.4,
+          95.2,
+          1.261
+        ],
+        [
+          -206.73,
+          99.3,
+          1.251
+        ],
+        [
+          -205.37,
+          103.6,
+          1.241
+        ],
+        [
+          -203.93,
+          107.73,
+          1.23
+        ],
+        [
+          -202.99,
+          112.24,
+          1.215
+        ]
+      ]
+    },
+    {
+      "name": "Price Science Commons south approach",
+      "width_m": 2.65,
+      "stations": [
+        [
+          -180.11,
+          65.16,
+          1.33
+        ],
+        [
+          -180.03,
+          68.5,
+          1.254
+        ],
+        [
+          -179.91,
+          70.6,
+          1.277
+        ],
+        [
+          -179.86,
+          73.35,
+          1.325
+        ]
+      ]
+    }
+  ],
+  "plaza_polygons_enu_m": [
+    [
+      [
+        -207.03,
+        69.85
+      ],
+      [
+        -204.2,
+        67.12
+      ],
+      [
+        -200.15,
+        67.95
+      ],
+      [
+        -195.2,
+        68.75
+      ],
+      [
+        -190.0,
+        70.5
+      ],
+      [
+        -188.6,
+        72.54
+      ],
+      [
+        -189.0,
+        73.55
+      ],
+      [
+        -195.9,
+        73.62
+      ],
+      [
+        -198.9,
+        74.9
+      ],
+      [
+        -203.2,
+        75.15
+      ],
+      [
+        -205.95,
+        73.02
+      ]
+    ],
+    [
+      [
+        -206.13,
+        75.05
+      ],
+      [
+        -204.0,
+        75
+      ],
+      [
+        -199.35,
+        75.68
+      ],
+      [
+        -197.2,
+        77.18
+      ],
+      [
+        -197.14,
+        103.3
+      ],
+      [
+        -196.6,
+        108.8
+      ],
+      [
+        -195.2,
+        110.8
+      ],
+      [
+        -195.48,
+        113.5
+      ],
+      [
+        -201.2,
+        113.62
+      ],
+      [
+        -206.35,
+        109.24
+      ],
+      [
+        -209.0,
+        102.0
+      ],
+      [
+        -209.48,
+        94.82
+      ],
+      [
+        -209.2,
+        87.17
+      ],
+      [
+        -208.05,
+        80.37
+      ]
+    ]
+  ],
+  "reserved_enu_m": [
+    [
+      [
+        -196.9,
+        77.9
+      ],
+      [
+        -189.01,
+        77.9
+      ],
+      [
+        -189.01,
+        74.4
+      ],
+      [
+        -172.2,
+        74.4
+      ],
+      [
+        -172.2,
+        106.4
+      ],
+      [
+        -187.25,
+        107.1
+      ],
+      [
+        -196.9,
+        105.4
+      ]
+    ]
+  ],
+  "islands": [
+    {
+      "outline_enu_m": [
+        [
+          -200.58,
+          75.49
+        ],
+        [
+          -201.46,
+          76.34
+        ],
+        [
+          -202.05,
+          78.86
+        ],
+        [
+          -203.42,
+          83.51
+        ],
+        [
+          -204.56,
+          87.78
+        ],
+        [
+          -204.26,
+          89.69
+        ],
+        [
+          -202.72,
+          91.26
+        ],
+        [
+          -201.07,
+          91.96
+        ],
+        [
+          -199.59,
+          91.48
+        ],
+        [
+          -198.96,
+          89.84
+        ],
+        [
+          -198.7,
+          86.05
+        ],
+        [
+          -199.05,
+          82.83
+        ],
+        [
+          -199.59,
+          79.6
+        ],
+        [
+          -200.02,
+          76.27
+        ]
+      ],
+      "top_z_m": 1.49
+    },
+    {
+      "outline_enu_m": [
+        [
+          -204.42,
+          92.38
+        ],
+        [
+          -204.85,
+          94.06
+        ],
+        [
+          -204.37,
+          97.12
+        ],
+        [
+          -203.47,
+          101.07
+        ],
+        [
+          -202.24,
+          105.28
+        ],
+        [
+          -201.28,
+          107.46
+        ],
+        [
+          -200.15,
+          107.51
+        ],
+        [
+          -199.5,
+          105.79
+        ],
+        [
+          -199.03,
+          102.73
+        ],
+        [
+          -198.68,
+          99.63
+        ],
+        [
+          -198.95,
+          96.91
+        ],
+        [
+          -200.51,
+          94.45
+        ],
+        [
+          -202.38,
+          92.94
+        ]
+      ],
+      "top_z_m": 1.45
+    }
+  ],
+  "lidar_source_date": "NOAA Lane County collection 2013–2015 (InPort 57407). The 2017 date on the .laz tile is file creation."
+}

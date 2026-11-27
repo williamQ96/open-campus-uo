@@ -1,0 +1,920 @@
+{
+  "pins": {
+    "cascade-courtyard-access-review": "398613d780a1b7e2d3eafeb22948524946db8eae7827c1298580fa996ed8c3e0",
+    "cascade-volcanology-review": "6a6e9da1803d1f85f9edfbd2a56322a70c64425ba699ffcc5d3214067b4fe90b",
+    "lawrence-science-review": "d30fdbf3d7e56f890de4519661b8365a4f4a2e7f8cf4d75ca6c151bfff4e49f5"
+  },
+  "sources": {
+    "uo_accessibility_registration": {
+      "url": "https://mapapps.uoregon.edu/campusMaps/accessibility.pdf",
+      "sha256": "60216e1b57081fbcfed67697fda212a5ea51e8053cbb9d423d2217ddac15ee4b",
+      "year": 2026,
+      "fit_affine_enu": [
+        [
+          2.366578627,
+          -0.0016499456,
+          -973.443884499
+        ],
+        [
+          -0.010744753,
+          -2.3578394918,
+          614.9737442126
+        ]
+      ],
+      "rms_m": 0.151,
+      "max_m": 0.365,
+      "controls": [
+        {
+          "name": "Pacific northwest",
+          "pdf_xy_pt": [
+            286.589,
+            196.299
+          ],
+          "scene_enu_m": [
+            -295.48,
+            148.99
+          ],
+          "residual_m": 0.082
+        },
+        {
+          "name": "Pacific northeast",
+          "pdf_xy_pt": [
+            301.953,
+            196.292
+          ],
+          "scene_enu_m": [
+            -259.23,
+            148.99
+          ],
+          "residual_m": 0.103
+        },
+        {
+          "name": "Pacific east step north",
+          "pdf_xy_pt": [
+            301.959,
+            204.858
+          ],
+          "scene_enu_m": [
+            -259.23,
+            128.79
+          ],
+          "residual_m": 0.101
+        },
+        {
+          "name": "Pacific east step south",
+          "pdf_xy_pt": [
+            300.967,
+            204.852
+          ],
+          "scene_enu_m": [
+            -261.63,
+            128.79
+          ],
+          "residual_m": 0.125
+        },
+        {
+          "name": "Pacific southeast",
+          "pdf_xy_pt": [
+            300.949,
+            235.29
+          ],
+          "scene_enu_m": [
+            -261.63,
+            57.0
+          ],
+          "residual_m": 0.04
+        },
+        {
+          "name": "Pacific south return",
+          "pdf_xy_pt": [
+            293.13,
+            235.299
+          ],
+          "scene_enu_m": [
+            -280.08,
+            57.0
+          ],
+          "residual_m": 0.046
+        },
+        {
+          "name": "Columbia northeast recess",
+          "pdf_xy_pt": [
+            303.778,
+            238.8
+          ],
+          "scene_enu_m": [
+            -255.04,
+            48.72
+          ],
+          "residual_m": 0.132
+        },
+        {
+          "name": "Columbia southeast",
+          "pdf_xy_pt": [
+            303.769,
+            252.598
+          ],
+          "scene_enu_m": [
+            -255.04,
+            16.18
+          ],
+          "residual_m": 0.091
+        },
+        {
+          "name": "Cascade southwest",
+          "pdf_xy_pt": [
+            305.216,
+            227.969
+          ],
+          "scene_enu_m": [
+            -251.35,
+            74.2
+          ],
+          "residual_m": 0.154
+        },
+        {
+          "name": "Cascade west notch",
+          "pdf_xy_pt": [
+            306.421,
+            221.949
+          ],
+          "scene_enu_m": [
+            -248.45,
+            88.05
+          ],
+          "residual_m": 0.365
+        }
+      ],
+      "paths_near_court": [
+        {
+          "width_pt": 1.121,
+          "points": [
+            [
+              -228.77,
+              70.848
+            ],
+            [
+              -228.771,
+              69.921
+            ],
+            [
+              -228.772,
+              67.955
+            ],
+            [
+              -220.078,
+              52.603
+            ],
+            [
+              -218.858,
+              51.791
+            ]
+          ],
+          "bbox_pt": [
+            314.822509765625,
+            229.3385009765625,
+            319.0165100097656,
+            237.40150451660156
+          ],
+          "dashes": "[] 0"
+        },
+        {
+          "width_pt": 1.121,
+          "points": [
+            [
+              -224.883,
+              85.311
+            ],
+            [
+              -228.615,
+              85.279
+            ],
+            [
+              -228.617,
+              83.47
+            ],
+            [
+              -238.104,
+              83.412
+            ],
+            [
+              -238.108,
+              78.588
+            ],
+            [
+              -238.111,
+              73.617
+            ]
+          ],
+          "bbox_pt": [
+            310.8746032714844,
+            223.19680786132812,
+            316.4606018066406,
+            228.1818084716797
+          ],
+          "dashes": "[] 0"
+        },
+        {
+          "width_pt": 1.121,
+          "points": [
+            [
+              -231.943,
+              73.504
+            ],
+            [
+              -232.057,
+              52.979
+            ]
+          ],
+          "bbox_pt": [
+            313.4389953613281,
+            228.21810913085938,
+            313.4809875488281,
+            236.92311096191406
+          ],
+          "dashes": "[] 0"
+        },
+        {
+          "width_pt": 1.121,
+          "points": [
+            [
+              -270.837,
+              124.964
+            ],
+            [
+              -255.975,
+              124.882
+            ],
+            [
+              -256.059,
+              89.253
+            ],
+            [
+              -258.149,
+              84.651
+            ],
+            [
+              -258.018,
+              73.229
+            ],
+            [
+              -259.166,
+              69.073
+            ],
+            [
+              -259.054,
+              52.994
+            ]
+          ],
+          "bbox_pt": [
+            297.03118896484375,
+            206.4678955078125,
+            303.3111877441406,
+            236.96890258789062
+          ],
+          "dashes": "[] 0"
+        },
+        {
+          "width_pt": 1.121,
+          "points": [
+            [
+              -231.943,
+              73.504
+            ],
+            [
+              -238.113,
+              73.619
+            ]
+          ],
+          "bbox_pt": [
+            310.8739929199219,
+            228.1811065673828,
+            313.4809875488281,
+            228.21810913085938
+          ],
+          "dashes": "[] 0"
+        }
+      ]
+    },
+    "campus_diagnosis": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/nediagnosis_sept_17_2012rdcd2.pdf",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "sha256": "5d46b9373793d53216463fa7ab6d2d91f3150a1e8c2ee19d6650552b96572228"
+    },
+    "photo": {
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/catalog/3b89276e18452b0a1d8c0ad5c9034409",
+      "date": "2008-02-08",
+      "sha256": "53785363c1900d4952927bb785e9102ec05db54458165de8abd5632783ce364b",
+      "use": "Review only. Approaching from the courtyard, photograph shows a descending rail towards the arch and a lower passage."
+    },
+    "museum": {
+      "url": "https://mnch.uoregon.edu/sites/default/files/2025-02/Campus%20Scavenger%20Hunt%20ENTIRE%20DOC%201.pdf",
+      "pdf_page": 8,
+      "sha256": "69ad0527aab2689d82b715c41cc9b4e4759a8a24de25e3502f208343cc3b9def"
+    },
+    "lidar": {
+      "source": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1310.copc.laz",
+      "file": "cascade-north-noaa.npz",
+      "sha256": "06ba76bba693d1c2a6b6557714832356e2b8c56325b1ba4dbe642564c67838b4",
+      "projected_crs": 6339,
+      "vertical_epsg": 5703,
+      "bounds_enu_m": [
+        -304,
+        33,
+        -185,
+        132
+      ],
+      "tile_file_creation_date": "2017-10-31",
+      "points": 142559
+    },
+    "mapping_note": "The canopy and deck mask some paving. Lidar constrains exposed grade only. The north portal profile and three intermediate treads are estimates from the photo, the source mesh and adjacent grades. Upper bridge returns are not ground controls.",
+    "orthophotos": [
+      {
+        "file": "aerial-2017.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A29&format=png32",
+        "sha256": "e56fe4bb51533fefc0120eae19660f59d5611e97f94391a352ed9b895cdc2dd2",
+        "bounds_enu_m": [
+          -310,
+          -3,
+          -156,
+          120
+        ]
+      },
+      {
+        "file": "aerial-2021.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A26&format=png32",
+        "sha256": "36390d3901d19ace5ea8969a8816fef6685efbdbd9ec4e121612e910def21e2d",
+        "bounds_enu_m": [
+          -310,
+          -3,
+          -156,
+          120
+        ]
+      },
+      {
+        "file": "aerial-2023.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A2&format=png32",
+        "sha256": "4412d30319df55a8e1da788900d32fbff4542e363bdbd98163fc5a426ad43887",
+        "bounds_enu_m": [
+          -310,
+          -3,
+          -156,
+          120
+        ]
+      },
+      {
+        "file": "aerial-2025.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A57&format=png32",
+        "sha256": "e61ee555525c3d656098d7e0593ee9d4ed57a348731e99f815bab16279ff9b2d",
+        "bounds_enu_m": [
+          -310,
+          -3,
+          -156,
+          120
+        ]
+      }
+    ]
+  },
+  "paths": [
+    {
+      "anchor_enu_m": [
+        -246.82,
+        36
+      ],
+      "points_enu_m": [
+        [
+          -246.82,
+          37.55
+        ],
+        [
+          -248.62,
+          38.14
+        ],
+        [
+          -248.8,
+          43.5
+        ],
+        [
+          -249.12,
+          49
+        ],
+        [
+          -249.28,
+          52.95
+        ],
+        [
+          -252,
+          52.95
+        ],
+        [
+          -256,
+          52.97
+        ],
+        [
+          -259.05,
+          52.99
+        ],
+        [
+          -259.1,
+          56
+        ],
+        [
+          -259.13,
+          59
+        ],
+        [
+          -259.15,
+          63
+        ],
+        [
+          -259.16,
+          67
+        ],
+        [
+          -259.17,
+          69.07
+        ],
+        [
+          -258.8,
+          70.5
+        ],
+        [
+          -258.02,
+          73.23
+        ],
+        [
+          -258.04,
+          78.8
+        ],
+        [
+          -258.15,
+          84.65
+        ],
+        [
+          -257.15,
+          87
+        ],
+        [
+          -256.06,
+          89.253
+        ],
+        [
+          -256.02,
+          93.8
+        ],
+        [
+          -256.02,
+          98.4
+        ],
+        [
+          -256.012,
+          103
+        ],
+        [
+          -256.006,
+          108
+        ],
+        [
+          -255.996,
+          113
+        ],
+        [
+          -255.986,
+          118
+        ],
+        [
+          -255.976,
+          123
+        ],
+        [
+          -255.975,
+          124.882
+        ],
+        [
+          -258.35,
+          124.9
+        ],
+        [
+          -260.1,
+          124.91
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -250.11,
+        69.18
+      ],
+      "points_enu_m": [
+        [
+          -251.6,
+          70.03
+        ],
+        [
+          -252.52,
+          70.51
+        ],
+        [
+          -253.65,
+          71.15
+        ],
+        [
+          -254.7,
+          72.04
+        ],
+        [
+          -255.65,
+          73.14
+        ],
+        [
+          -257.14,
+          73.67
+        ]
+      ],
+      "end_enu_m": [
+        -258.02,
+        73.23
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -244.7,
+        69.8
+      ],
+      "points_enu_m": [
+        [
+          -243.5,
+          70.47
+        ],
+        [
+          -242.52,
+          71.37
+        ],
+        [
+          -240.99,
+          72.68
+        ],
+        [
+          -239.55,
+          73.32
+        ],
+        [
+          -238.11,
+          73.62
+        ],
+        [
+          -237.76,
+          74.45
+        ],
+        [
+          -237.76,
+          76.62
+        ],
+        [
+          -238.47,
+          76.71
+        ]
+      ]
+    }
+  ],
+  "surfaces": [
+    {
+      "paving_axis_enu_m": [
+        [
+          -246.82,
+          36
+        ],
+        [
+          -246.82,
+          37.55
+        ],
+        [
+          -248.62,
+          38.14
+        ],
+        [
+          -248.8,
+          43.5
+        ],
+        [
+          -249.12,
+          49
+        ],
+        [
+          -249.28,
+          52.95
+        ],
+        [
+          -252,
+          52.95
+        ],
+        [
+          -256,
+          52.97
+        ],
+        [
+          -259.05,
+          52.99
+        ],
+        [
+          -259.1,
+          56
+        ],
+        [
+          -259.13,
+          59
+        ],
+        [
+          -259.15,
+          63
+        ],
+        [
+          -259.16,
+          67
+        ],
+        [
+          -259.17,
+          69.07
+        ],
+        [
+          -258.8,
+          70.5
+        ],
+        [
+          -258.02,
+          73.23
+        ],
+        [
+          -258.04,
+          78.8
+        ],
+        [
+          -258.15,
+          84.65
+        ],
+        [
+          -257.15,
+          87
+        ],
+        [
+          -256.06,
+          89.253
+        ],
+        [
+          -256.02,
+          93.8
+        ],
+        [
+          -256.02,
+          98.4
+        ],
+        [
+          -256.012,
+          103
+        ],
+        [
+          -256.006,
+          108
+        ],
+        [
+          -255.996,
+          113
+        ],
+        [
+          -255.986,
+          118
+        ],
+        [
+          -255.976,
+          123
+        ],
+        [
+          -255.975,
+          124.882
+        ],
+        [
+          -258.35,
+          124.9
+        ],
+        [
+          -260.1,
+          124.91
+        ]
+      ],
+      "z_m": [
+        4.448,
+        4.427,
+        4.365,
+        4.249,
+        4.043,
+        3.84,
+        3.79,
+        3.59,
+        3.45,
+        3.4,
+        3.196,
+        3.025,
+        2.846,
+        2.741,
+        2.7,
+        2.613,
+        2.592,
+        2.41,
+        2.362,
+        2.296,
+        2.215,
+        2.09,
+        1.94,
+        1.825,
+        1.669,
+        1.68,
+        1.72,
+        1.73,
+        1.75,
+        1.76
+      ],
+      "width_m": 2.4,
+      "end_cap": "round"
+    },
+    {
+      "paving_axis_enu_m": [
+        [
+          -250.11,
+          69.18
+        ],
+        [
+          -251.6,
+          70.03
+        ],
+        [
+          -252.52,
+          70.51
+        ],
+        [
+          -253.65,
+          71.15
+        ],
+        [
+          -254.7,
+          72.04
+        ],
+        [
+          -255.65,
+          73.14
+        ],
+        [
+          -257.14,
+          73.67
+        ],
+        [
+          -258.02,
+          73.23
+        ]
+      ],
+      "z_m": [
+        2.5625,
+        2.555,
+        2.556,
+        2.55,
+        2.587,
+        2.607,
+        2.615,
+        2.613
+      ],
+      "width_m": 2.38,
+      "end_cap": "round"
+    },
+    {
+      "paving_axis_enu_m": [
+        [
+          -246.4,
+          49.8
+        ],
+        [
+          -246.34,
+          50.6
+        ],
+        [
+          -246.45,
+          53.0
+        ],
+        [
+          -246.96,
+          53.86
+        ]
+      ],
+      "z_m": [
+        4.102,
+        4.085,
+        4.0,
+        3.967
+      ],
+      "width_m": 2.75,
+      "end_cap": "round"
+    },
+    {
+      "paving_axis_enu_m": [
+        [
+          -255.975,
+          124.882
+        ],
+        [
+          -258.35,
+          124.9
+        ],
+        [
+          -260.1,
+          124.91
+        ]
+      ],
+      "z_m": [
+        1.73,
+        1.75,
+        1.76
+      ],
+      "width_m": 2.68,
+      "end_cap": "round"
+    },
+    {
+      "paving_axis_enu_m": [
+        [
+          -244.7,
+          69.8
+        ],
+        [
+          -243.5,
+          70.47
+        ],
+        [
+          -242.52,
+          71.37
+        ]
+      ],
+      "z_m": [
+        2.566,
+        2.576,
+        2.584
+      ],
+      "width_m": 2.12,
+      "end_cap": "round"
+    },
+    {
+      "paving_axis_enu_m": [
+        [
+          -240.99,
+          72.68
+        ],
+        [
+          -239.55,
+          73.32
+        ],
+        [
+          -238.11,
+          73.62
+        ],
+        [
+          -237.76,
+          74.45
+        ],
+        [
+          -237.76,
+          76.62
+        ],
+        [
+          -238.47,
+          76.71
+        ]
+      ],
+      "z_m": [
+        2.112,
+        2.107,
+        2.085,
+        2.062,
+        2.003,
+        1.986
+      ],
+      "width_m": 2.12,
+      "end_cap": "round"
+    }
+  ],
+  "stairs": {
+    "centerline_enu_m": [
+      [
+        -242.52,
+        71.37
+      ],
+      [
+        -240.99,
+        72.68
+      ]
+    ],
+    "width_m": 2.12,
+    "rise_from_z_m": 2.584,
+    "rise_to_z_m": 2.112,
+    "treads": 3
+  },
+  "lidar_source_date": "NOAA Lane County collection 2013–2015 (InPort 57407). The 2017 date on the .laz tile is file creation."
+}

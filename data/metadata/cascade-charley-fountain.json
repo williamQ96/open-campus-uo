@@ -1,0 +1,578 @@
+{
+  "sources": {
+    "description": "Survey-aligned interpretation of the dry installation. Artist Alice Wingwall; university exhibit dates it to 1991.",
+    "four_aerials": [
+      {
+        "file": "aerial-2017.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A29&format=png32",
+        "sha256": "e56fe4bb51533fefc0120eae19660f59d5611e97f94391a352ed9b895cdc2dd2",
+        "bounds_enu_m": [
+          -310,
+          -3,
+          -156,
+          120
+        ]
+      },
+      {
+        "file": "aerial-2021.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A26&format=png32",
+        "sha256": "36390d3901d19ace5ea8969a8816fef6685efbdbd9ec4e121612e910def21e2d",
+        "bounds_enu_m": [
+          -310,
+          -3,
+          -156,
+          120
+        ]
+      },
+      {
+        "file": "aerial-2023.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A2&format=png32",
+        "sha256": "4412d30319df55a8e1da788900d32fbff4542e363bdbd98163fc5a426ad43887",
+        "bounds_enu_m": [
+          -310,
+          -3,
+          -156,
+          120
+        ]
+      },
+      {
+        "file": "aerial-2025.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A57&format=png32",
+        "sha256": "e61ee555525c3d656098d7e0593ee9d4ed57a348731e99f815bab16279ff9b2d",
+        "bounds_enu_m": [
+          -310,
+          -3,
+          -156,
+          120
+        ]
+      }
+    ],
+    "lidar": {
+      "source": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1310.copc.laz",
+      "file": "cascade-north-noaa.npz",
+      "sha256": "06ba76bba693d1c2a6b6557714832356e2b8c56325b1ba4dbe642564c67838b4",
+      "projected_crs": 6339,
+      "vertical_epsg": 5703,
+      "bounds_enu_m": [
+        -304,
+        33,
+        -185,
+        132
+      ],
+      "tile_file_creation_date": "2017-10-31",
+      "points": 142559
+    },
+    "lidar_windows": {
+      "foreground_court": {
+        "window_enu_z_m": [
+          -248.45,
+          65.43,
+          -243.35,
+          66.6,
+          2.2,
+          3.05
+        ],
+        "point_count": 67,
+        "z_quantiles_m": [
+          2.473,
+          2.509,
+          2.543,
+          2.663,
+          2.763
+        ]
+      },
+      "lower_pool_interior": {
+        "window_enu_z_m": [
+          -248.18,
+          62.02,
+          -243.45,
+          64.27,
+          2.5,
+          2.78
+        ],
+        "point_count": 37,
+        "z_quantiles_m": [
+          2.583,
+          2.629,
+          2.683,
+          2.743,
+          2.763
+        ]
+      },
+      "north_coping": {
+        "window_enu_z_m": [
+          -247.94,
+          64.31,
+          -243.38,
+          64.76,
+          2.7,
+          3.08
+        ],
+        "point_count": 14,
+        "z_quantiles_m": [
+          2.723,
+          2.723,
+          2.858,
+          2.897,
+          2.903
+        ]
+      },
+      "west_coping": {
+        "window_enu_z_m": [
+          -248.63,
+          62.25,
+          -248.31,
+          64.26,
+          2.55,
+          3.05
+        ],
+        "point_count": 7,
+        "z_quantiles_m": [
+          2.583,
+          2.589,
+          2.613,
+          2.627,
+          2.633
+        ]
+      },
+      "east_coping": {
+        "window_enu_z_m": [
+          -243.39,
+          62.16,
+          -242.91,
+          64.68,
+          2.68,
+          3.12
+        ],
+        "point_count": 6,
+        "z_quantiles_m": [
+          2.813,
+          2.818,
+          2.848,
+          2.858,
+          2.863
+        ]
+      },
+      "low_wall_west": {
+        "window_enu_z_m": [
+          -248.54,
+          59.58,
+          -246.15,
+          61.86,
+          3.4,
+          4.95
+        ],
+        "point_count": 37,
+        "z_quantiles_m": [
+          3.403,
+          3.715,
+          4.653,
+          4.803,
+          4.833
+        ]
+      },
+      "mid_wall_and_rear": {
+        "window_enu_z_m": [
+          -246.15,
+          59.58,
+          -243.39,
+          61.65,
+          3.4,
+          6.05
+        ],
+        "point_count": 42,
+        "z_quantiles_m": [
+          3.643,
+          3.753,
+          4.333,
+          5.408,
+          5.723
+        ]
+      },
+      "east_concrete_high_ground": {
+        "window_enu_z_m": [
+          -243.36,
+          59.58,
+          -239.39,
+          61.48,
+          4.1,
+          7.5
+        ],
+        "point_count": 47,
+        "z_quantiles_m": [
+          4.703,
+          5.441,
+          6.153,
+          7.353,
+          7.483
+        ]
+      }
+    },
+    "construction": "https://publicartarchive.org/art/Cascade-Charley/cc0e093c",
+    "artist": "https://placesjournal.org/article/cascade-charley/",
+    "exhibit": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/cascade-charley",
+    "photo_2014": {
+      "url": "https://commons.wikimedia.org/wiki/File:Cascade_Charley,_University_of_Oregon_(2014).JPG",
+      "sha256": "ec707128ebeb1e77417851d8c6cc5928744aa341a702b1218c9ecab181f72fa3",
+      "credit": "Another Believer",
+      "photo_license": "CC BY-SA 3.0",
+      "use": "Dimensions, arrangement and directional reference only."
+    },
+    "photo_2026": {
+      "url": "https://blogs.uoregon.edu/geologyofcampus/2026/02/26/cascade-charley-oregon-geology/",
+      "sha256": "1d267272febff6d919a036ca4c0c4ad840fea133c4d29638cf60fb2be77bd445",
+      "use": "Dry condition, approximate 1.80 m figure scale, square blue tile and central repair. Lining and artwork mesh are original approximations."
+    },
+    "photo_coping_scale": {
+      "sha256": "3cf132732f4ba33219d38b91dfe5dd1955cd9331ae6ee41353c9e5bd70f055c9",
+      "waterline_m": 0.2
+    }
+  },
+  "basin": {
+    "bounds_enu_m": [
+      -248.54,
+      61.51,
+      -242.96,
+      64.82
+    ],
+    "opening_enu_m": [
+      -248.27,
+      61.74,
+      -243.23,
+      64.56
+    ],
+    "floor_z_m": 2.643,
+    "rim_z_m": 2.882
+  },
+  "rear_panels": [
+    [
+      [
+        -248.48,
+        61.02,
+        -247.58,
+        61.59
+      ],
+      4.28
+    ],
+    [
+      [
+        -247.58,
+        60.98,
+        -246.72,
+        61.67
+      ],
+      4.58
+    ],
+    [
+      [
+        -246.72,
+        60.95,
+        -245.79,
+        61.69
+      ],
+      4.87
+    ],
+    [
+      [
+        -245.79,
+        61.03,
+        -244.79,
+        61.59
+      ],
+      5.12
+    ],
+    [
+      [
+        -244.79,
+        61.02,
+        -243.72,
+        61.61
+      ],
+      5.43
+    ],
+    [
+      [
+        -243.72,
+        60.93,
+        -242.96,
+        61.63
+      ],
+      5.8
+    ],
+    [
+      [
+        -242.96,
+        60.73,
+        -241.84,
+        61.65
+      ],
+      6.08
+    ],
+    [
+      [
+        -241.84,
+        60.46,
+        -240.68,
+        61.55
+      ],
+      6.44
+    ],
+    [
+      [
+        -240.68,
+        60.11,
+        -239.38,
+        61.41
+      ],
+      6.82
+    ]
+  ],
+  "cascade_body": [
+    [
+      [
+        -248.51,
+        61.68,
+        -248.24,
+        62.14
+      ],
+      2.635,
+      3.74
+    ],
+    [
+      [
+        -247.81,
+        61.48,
+        -247.16,
+        62.1
+      ],
+      2.635,
+      4.07
+    ],
+    [
+      [
+        -246.53,
+        61.42,
+        -244.86,
+        62.1
+      ],
+      2.637,
+      4.14
+    ],
+    [
+      [
+        -245.94,
+        61.55,
+        -245.53,
+        62.05
+      ],
+      4.14,
+      5.41
+    ],
+    [
+      [
+        -244.8,
+        61.57,
+        -244.15,
+        62.04
+      ],
+      2.637,
+      4.28
+    ],
+    [
+      [
+        -243.4,
+        61.52,
+        -243.04,
+        62.14
+      ],
+      2.632,
+      5.2
+    ]
+  ],
+  "dark_cap": [
+    [
+      [
+        -246.26,
+        61.46,
+        -245.18,
+        62.12
+      ],
+      5.41,
+      5.64
+    ]
+  ],
+  "chute": {
+    "outline_enu_m": [
+      [
+        -246.18,
+        61.96
+      ],
+      [
+        -245.43,
+        61.96
+      ],
+      [
+        -245.33,
+        62.39
+      ],
+      [
+        -246.29,
+        62.39
+      ]
+    ],
+    "bottom_z_m": 3.59,
+    "lip_z_m": 3.77,
+    "channel_enu_m": [
+      [
+        -246.06,
+        62.02
+      ],
+      [
+        -245.56,
+        62.02
+      ],
+      [
+        -245.45,
+        62.45
+      ],
+      [
+        -246.18,
+        62.45
+      ]
+    ]
+  },
+  "rock_apron_enu_m": [
+    [
+      -248.44,
+      64.66
+    ],
+    [
+      -247.78,
+      64.77
+    ],
+    [
+      -247.28,
+      64.73
+    ],
+    [
+      -246.49,
+      64.72
+    ],
+    [
+      -245.8,
+      64.63
+    ],
+    [
+      -245.38,
+      64.78
+    ],
+    [
+      -244.52,
+      64.78
+    ],
+    [
+      -244.36,
+      65.05
+    ],
+    [
+      -245.22,
+      65.22
+    ],
+    [
+      -246.63,
+      65.18
+    ],
+    [
+      -247.58,
+      65.19
+    ],
+    [
+      -248.5,
+      65.11
+    ]
+  ],
+  "stones": [
+    [
+      -243.96,
+      63.13,
+      2.647,
+      [
+        0.47,
+        0.29,
+        0.19
+      ]
+    ],
+    [
+      -245.94,
+      62.69,
+      2.647,
+      [
+        0.36,
+        0.22,
+        0.12
+      ]
+    ],
+    [
+      -248.03,
+      65.02,
+      2.573,
+      [
+        0.4,
+        0.25,
+        0.25
+      ]
+    ],
+    [
+      -247.31,
+      64.92,
+      2.573,
+      [
+        0.36,
+        0.23,
+        0.19
+      ]
+    ],
+    [
+      -246.61,
+      65.05,
+      2.573,
+      [
+        0.39,
+        0.21,
+        0.12
+      ]
+    ],
+    [
+      -245.91,
+      64.84,
+      2.573,
+      [
+        0.34,
+        0.23,
+        0.2
+      ]
+    ],
+    [
+      -245.34,
+      65.04,
+      2.573,
+      [
+        0.38,
+        0.18,
+        0.21
+      ]
+    ],
+    [
+      -244.78,
+      64.94,
+      2.573,
+      [
+        0.25,
+        0.2,
+        0.16
+      ]
+    ]
+  ],
+  "rock_apron_z_m": 2.573,
+  "lidar_source_date": "NOAA Lane County collection 2013–2015 (InPort 57407). The 2017 date on the .laz tile is file creation."
+}

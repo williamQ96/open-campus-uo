@@ -1,0 +1,242 @@
+{
+  "stage": "local research screen",
+  "works": [
+    {
+      "name": "Cascade Charley",
+      "artist": "Alice Wingwall",
+      "year": 1991
+    },
+    {
+      "name": "Science Walk",
+      "artist": "Scott Wylie",
+      "year": 1991
+    }
+  ],
+  "crop_registration": {
+    "upper_left_enu_m": [
+      -261,
+      79
+    ],
+    "pixels_per_m": 15,
+    "source_projection": "NAD83(HARN) / UTM zone 10N (EPSG:3740), scene offset"
+  },
+  "basin_candidate": {
+    "screen_center_enu_m": [
+      -245.933,
+      62.966
+    ],
+    "max_center_deviation_m": 0.315,
+    "picks": [
+      {
+        "year": 2017,
+        "center_crop_px": [
+          230,
+          241
+        ],
+        "visibility": "shadowed basin and exposed concrete border",
+        "center_enu_m": [
+          -245.667,
+          62.933
+        ]
+      },
+      {
+        "year": 2021,
+        "center_crop_px": [
+          227,
+          240
+        ],
+        "visibility": "bright lip and dark pool, rim partly obscured",
+        "center_enu_m": [
+          -245.867,
+          63.0
+        ]
+      },
+      {
+        "year": 2023,
+        "center_crop_px": [
+          222,
+          238
+        ],
+        "visibility": "blue inset and identifiable rectangular rim",
+        "center_enu_m": [
+          -246.2,
+          63.133
+        ]
+      },
+      {
+        "year": 2025,
+        "center_crop_px": [
+          225,
+          243
+        ],
+        "visibility": "blue inset behind branches and shadow",
+        "center_enu_m": [
+          -246.0,
+          62.8
+        ]
+      }
+    ],
+    "visible_2023_rectangle_sw_ne_enu_m": [
+      [
+        -248.6,
+        62.0
+      ],
+      [
+        -243.467,
+        64.8
+      ]
+    ],
+    "status": "approximate visual picks from orthophotos, review only"
+  },
+  "circulation_candidates": [
+    {
+      "feature": "northwest stair landing candidate",
+      "crop_px": [
+        286,
+        109
+      ],
+      "enu_m": [
+        -241.933,
+        71.733
+      ]
+    },
+    {
+      "feature": "turnaround sidewalk tie reference",
+      "enu_m": [
+        -240.01,
+        11.2
+      ]
+    }
+  ],
+  "field_observations": {
+    "year": 2026,
+    "waterline_mark_m": 0.2,
+    "person_scale_m": 1.8,
+    "water_present": false,
+    "gps_use": "reported coordinate is outside the campus site and is unsuitable for placement",
+    "architecture": "Concrete stepped wall, tiled pool, natural rock and brick inlay; upper walk and metal rail visible",
+    "operating_state": "seasonal status unconfirmed"
+  },
+  "current_scene": {
+    "source_host": "cascade-volcanology-review",
+    "ids": [
+      "roof-f42d2ea3",
+      "roof-399a0551"
+    ],
+    "source_navigation_bbox_enu_m": [
+      -253,
+      56,
+      -242,
+      75
+    ],
+    "source_navigation_nodes_within_bbox": [],
+    "closest_registered_east_thirteenth_walk_distance_m": 52.15
+  },
+  "sources": [
+    {
+      "file": "aerial-2017.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A29&format=png32",
+      "sha256": "e56fe4bb51533fefc0120eae19660f59d5611e97f94391a352ed9b895cdc2dd2",
+      "bounds_enu_m": [
+        -310,
+        -3,
+        -156,
+        120
+      ]
+    },
+    {
+      "file": "aerial-2021.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A26&format=png32",
+      "sha256": "36390d3901d19ace5ea8969a8816fef6685efbdbd9ec4e121612e910def21e2d",
+      "bounds_enu_m": [
+        -310,
+        -3,
+        -156,
+        120
+      ]
+    },
+    {
+      "file": "aerial-2023.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A2&format=png32",
+      "sha256": "4412d30319df55a8e1da788900d32fbff4542e363bdbd98163fc5a426ad43887",
+      "bounds_enu_m": [
+        -310,
+        -3,
+        -156,
+        120
+      ]
+    },
+    {
+      "file": "aerial-2025.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494019.14928888186%2C4876925.282153052%2C494173.14928888186%2C4877048.282153052&bboxSR=3740&imageSR=3740&size=2310%2C1845&layers=show%3A57&format=png32",
+      "sha256": "e61ee555525c3d656098d7e0593ee9d4ed57a348731e99f815bab16279ff9b2d",
+      "bounds_enu_m": [
+        -310,
+        -3,
+        -156,
+        120
+      ]
+    },
+    {
+      "file": "volcanology-survey.pdf",
+      "url": "https://cpfm.uoregon.edu/sites/default/files/volcanlogy_05_31_07.pdf",
+      "sha256": "1ad540e9c88eb11b3fc984b3ad853f3d2034ae3291dc2fadd797853e304ee277"
+    },
+    {
+      "file": "northeast-campus-study.pdf",
+      "url": "https://cpfm.uoregon.edu/sites/default/files/nediagnosis_sept_17_2012rdcd2.pdf",
+      "sha256": "5d46b9373793d53216463fa7ab6d2d91f3150a1e8c2ee19d6650552b96572228"
+    },
+    {
+      "file": "official-art-tour.pdf",
+      "url": "https://cpfm.uoregon.edu/sites/default/files/art_tour_april_2021.pdf",
+      "sha256": "7daadd7264c870a9d45eb0ddb6309c4044d31612b82e4ed5cdee74e5635517a3"
+    },
+    {
+      "file": "cascade-charley-exhibit.html",
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/cascade-charley",
+      "sha256": "83ca4886889115227efd671f8607d2aec58e92368ef7042c015d7c6dd8fe177d"
+    },
+    {
+      "file": "science-walk-exhibit.html",
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/science-walk",
+      "sha256": "a03ea0751963bdd7726a7ed3a26e6cce060ec7c6bd0e52d27367df0b9c86455b"
+    },
+    {
+      "file": "geology-index.html",
+      "url": "https://blogs.uoregon.edu/geologyofcampus/",
+      "sha256": "ddafe8a7f412c93a58815b2fb21459d0aa598bb8f5c87c272eac7e7f9ef0b0ba"
+    },
+    {
+      "file": "field.html",
+      "url": "https://blogs.uoregon.edu/geologyofcampus/2026/02/26/cascade-charley-oregon-geology/",
+      "sha256": "b0d5e17f07a11f4f4ad0224d6689c1c64fb3daa97644136feeb917746956e840"
+    },
+    {
+      "file": "field-1.png",
+      "url": "https://blogs.uoregon.edu/geologyofcampus/files/2026/02/Screenshot-2026-02-18-155252-224x300.png",
+      "sha256": "84ad2b659cc5593983d2e8056e52c9a6f9eb51e49c22056c93d7f062019bccb3"
+    },
+    {
+      "file": "field-2.jpeg",
+      "url": "https://blogs.uoregon.edu/geologyofcampus/files/2026/02/IMG_1897-1-e1772065083139-225x300.jpeg",
+      "sha256": "3cf132732f4ba33219d38b91dfe5dd1955cd9331ae6ee41353c9e5bd70f055c9"
+    },
+    {
+      "file": "field-3.jpg",
+      "url": "https://blogs.uoregon.edu/geologyofcampus/files/2026/03/sandstone-picture-300x232.jpg",
+      "sha256": "83749e2fa1a63c26a37332c1884e828e9b1852bf63d0ca5fdb499ef6d67af212"
+    },
+    {
+      "file": "exhibit-fountain.jpg",
+      "url": "https://iiif.oregondigital.org/iiif/f0%2Fdf%2F67%2Fsm%2F84%2Fm-jp2.jp2/262,188,512,384/1000,750/0/default.jpg",
+      "sha256": "c2ab7ad71332dea4f575399a15581bc2343e4d2dc6f34b328373003859038dca"
+    },
+    {
+      "file": "field-overview-full.png",
+      "url": "https://blogs.uoregon.edu/geologyofcampus/files/2026/02/Screenshot-2026-02-18-155252.png",
+      "sha256": "1d267272febff6d919a036ca4c0c4ad840fea133c4d29638cf60fb2be77bd445"
+    }
+  ],
+  "permissions": "Review references only. Retain original files privately. Confirm suitable reuse before reproducing identifying art or inlays."
+}

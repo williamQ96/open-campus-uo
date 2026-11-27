@@ -1,0 +1,379 @@
+{
+  "sources": {
+    "museum": {
+      "file": "campus-scavenger.pdf",
+      "url": "https://mnch.uoregon.edu/sites/default/files/2025-02/Campus%20Scavenger%20Hunt%20ENTIRE%20DOC%201.pdf",
+      "sha256": "69ad0527aab2689d82b715c41cc9b4e4759a8a24de25e3502f208343cc3b9def",
+      "pdf_page": 9
+    },
+    "art": {
+      "file": "architectural-record-1991-11.pdf",
+      "url": "https://www.usmodernist.org/AR/AR-1991-11.pdf",
+      "sha256": "a340e5b93c1410b2ae50db6d11a4a4c21abfc3fa6fb2a096344cbc2fcf2bc9de",
+      "pdf_page": 51
+    },
+    "site_plan": {
+      "file": "volcanology-survey.pdf",
+      "url": "https://cpfm.uoregon.edu/sites/default/files/volcanlogy_05_31_07.pdf",
+      "sha256": "1ad540e9c88eb11b3fc984b3ad853f3d2034ae3291dc2fadd797853e304ee277",
+      "pdf_page": 4
+    },
+    "access_map": {
+      "file": "uo-accessibility.pdf",
+      "url": "https://mapapps.uoregon.edu/campusMaps/accessibility.pdf",
+      "sha256": "60216e1b57081fbcfed67697fda212a5ea51e8053cbb9d423d2217ddac15ee4b",
+      "rms_m": 0.151
+    },
+    "dawn_redwood": {
+      "file": "science-walk-east-campus-trees.json",
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&geometry=494089%2C4876979%2C494124%2C4877004&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID%2CTreeID%2CCommonName%2CHeight%2CSpread%2CCaliper%2CRemoved&spatialRel=esriSpatialRelIntersects&where=1%3D1",
+      "sha256": "9b12e68d43abb5e0b74b5419de90536090809414d3617f069d579cabaa770466"
+    },
+    "lidar": {
+      "file": "cascade-north-noaa.npz",
+      "url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1310.copc.laz",
+      "sha256": "06ba76bba693d1c2a6b6557714832356e2b8c56325b1ba4dbe642564c67838b4",
+      "window_radius_m": 0.83,
+      "ground_window_z_m": [
+        1.0,
+        2.9
+      ],
+      "upper_window_z_m": [
+        5.9,
+        8.0
+      ],
+      "stations": [
+        {
+          "center_enu_m": [
+            -238.11,
+            73.62
+          ],
+          "ground_candidates": 0,
+          "ground_quantiles_z_m": [],
+          "upper_candidates": 23,
+          "upper_median_z_m": 6.483
+        },
+        {
+          "center_enu_m": [
+            -235.5,
+            73.57
+          ],
+          "ground_candidates": 0,
+          "ground_quantiles_z_m": [],
+          "upper_candidates": 22,
+          "upper_median_z_m": 6.523
+        },
+        {
+          "center_enu_m": [
+            -233.4,
+            73.53
+          ],
+          "ground_candidates": 0,
+          "ground_quantiles_z_m": [],
+          "upper_candidates": 22,
+          "upper_median_z_m": 6.498
+        },
+        {
+          "center_enu_m": [
+            -231.94,
+            73.5
+          ],
+          "ground_candidates": 4,
+          "ground_quantiles_z_m": [
+            1.831,
+            1.873,
+            1.894
+          ],
+          "upper_candidates": 24,
+          "upper_median_z_m": 6.513
+        },
+        {
+          "center_enu_m": [
+            -230.3,
+            72.75
+          ],
+          "ground_candidates": 17,
+          "ground_quantiles_z_m": [
+            1.749,
+            1.763,
+            1.813
+          ],
+          "upper_candidates": 5,
+          "upper_median_z_m": 7.903
+        },
+        {
+          "center_enu_m": [
+            -228,
+            72.38
+          ],
+          "ground_candidates": 14,
+          "ground_quantiles_z_m": [
+            1.666,
+            1.708,
+            1.74
+          ],
+          "upper_candidates": 0,
+          "upper_median_z_m": null
+        },
+        {
+          "center_enu_m": [
+            -225,
+            72.2
+          ],
+          "ground_candidates": 16,
+          "ground_quantiles_z_m": [
+            1.543,
+            1.578,
+            1.618
+          ],
+          "upper_candidates": 0,
+          "upper_median_z_m": null
+        },
+        {
+          "center_enu_m": [
+            -222.5,
+            71.85
+          ],
+          "ground_candidates": 9,
+          "ground_quantiles_z_m": [
+            1.457,
+            1.483,
+            1.529
+          ],
+          "upper_candidates": 0,
+          "upper_median_z_m": null
+        },
+        {
+          "center_enu_m": [
+            -220,
+            71.72
+          ],
+          "ground_candidates": 8,
+          "ground_quantiles_z_m": [
+            1.373,
+            1.388,
+            1.442
+          ],
+          "upper_candidates": 0,
+          "upper_median_z_m": null
+        },
+        {
+          "center_enu_m": [
+            -217.3,
+            71.43
+          ],
+          "ground_candidates": 12,
+          "ground_quantiles_z_m": [
+            1.283,
+            1.343,
+            1.381
+          ],
+          "upper_candidates": 4,
+          "upper_median_z_m": 7.443
+        },
+        {
+          "center_enu_m": [
+            -215.1,
+            70
+          ],
+          "ground_candidates": 17,
+          "ground_quantiles_z_m": [
+            1.213,
+            1.253,
+            1.313
+          ],
+          "upper_candidates": 4,
+          "upper_median_z_m": 7.048
+        },
+        {
+          "center_enu_m": [
+            -212.5,
+            69.7
+          ],
+          "ground_candidates": 24,
+          "ground_quantiles_z_m": [
+            1.196,
+            1.223,
+            1.26
+          ],
+          "upper_candidates": 0,
+          "upper_median_z_m": null
+        },
+        {
+          "center_enu_m": [
+            -209.4,
+            69.15
+          ],
+          "ground_candidates": 22,
+          "ground_quantiles_z_m": [
+            1.233,
+            1.263,
+            1.293
+          ],
+          "upper_candidates": 0,
+          "upper_median_z_m": null
+        },
+        {
+          "center_enu_m": [
+            -207.4,
+            70.34
+          ],
+          "ground_candidates": 26,
+          "ground_quantiles_z_m": [
+            1.228,
+            1.263,
+            1.283
+          ],
+          "upper_candidates": 0,
+          "upper_median_z_m": null
+        }
+      ]
+    },
+    "planning": "https://cpfm.uoregon.edu/sites/default/files/campus_plan_2022__1.pdf",
+    "aerials_from": "cascade-courtyard-north.json",
+    "profile_notes": "Use the museum's ground-level east turn and the access map alignment at the portal, then follow the south edge of the complex toward Onyx Green. Section under the raised deck uses interpolation between arch and exposed edge. East pavement either narrows locally or broadens into a plaza, with shoulders fitted to the source terrain. No claim about actual access or ADA compliance."
+  },
+  "width_m": 2.56,
+  "shoulder_width_m": 2.35,
+  "points_enu_m": [
+    [
+      -238.11,
+      73.62
+    ],
+    [
+      -235.5,
+      73.57
+    ],
+    [
+      -233.4,
+      73.53
+    ],
+    [
+      -231.94,
+      73.5
+    ],
+    [
+      -230.3,
+      72.75
+    ],
+    [
+      -228,
+      72.38
+    ],
+    [
+      -225,
+      72.2
+    ],
+    [
+      -222.5,
+      71.85
+    ],
+    [
+      -220,
+      71.72
+    ],
+    [
+      -217.3,
+      71.43
+    ],
+    [
+      -215.1,
+      70
+    ],
+    [
+      -212.5,
+      69.7
+    ],
+    [
+      -209.4,
+      69.15
+    ],
+    [
+      -207.4,
+      70.34
+    ]
+  ],
+  "elevations_z_m": [
+    2.085,
+    2.011,
+    1.943,
+    1.872,
+    1.78,
+    1.718,
+    1.592,
+    1.495,
+    1.407,
+    1.354,
+    1.29,
+    1.252,
+    1.27,
+    1.256
+  ],
+  "tree": {
+    "object_id": 29616,
+    "tree_id": "2448",
+    "species": "Metasequoia glyptostroboides",
+    "enu_m": [
+      -222.42,
+      67.77
+    ],
+    "inventory_spread_ft": 50,
+    "inventory_caliper_in": 20,
+    "base_z_m": 2.07,
+    "height_m": 22.2,
+    "crown_radius_m": 7.62,
+    "trunk_radius_m": 0.255,
+    "ground_mound_radius_m": 4.8
+  },
+  "plaza_outline_enu_m": [
+    [
+      -212.0,
+      68.6
+    ],
+    [
+      -210.08,
+      67.72
+    ],
+    [
+      -208.0,
+      67.7
+    ],
+    [
+      -206.65,
+      68.12
+    ],
+    [
+      -204.6,
+      68.6
+    ],
+    [
+      -203.6,
+      69.56
+    ],
+    [
+      -203.6,
+      72.5
+    ],
+    [
+      -204.8,
+      73.22
+    ],
+    [
+      -206.0,
+      73.12
+    ],
+    [
+      -207.72,
+      72.4
+    ],
+    [
+      -209.82,
+      71.54
+    ],
+    [
+      -211.6,
+      70.89
+    ]
+  ],
+  "lidar_source_date": "NOAA Lane County collection 2013–2015 (InPort 57407). The 2017 date on the .laz tile is file creation."
+}

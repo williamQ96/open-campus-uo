@@ -6,6 +6,46 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Cascade, Science Walk, Onyx Green and the Price courtyard at exterior L2
+
+- Publish the connected Volcanology, Pacific Hall and Cascade courtyard walks and stairs, the dry Cascade Charley basin, the lower Science Walk and inventory Dawn redwood, both Onyx Green planting islands, and the Price Science Commons lower garden and public overlook. The four pinned scene packages add 130 pedestrian links. The walkway grades below the arch and the courtyard furnishings and planting include estimates. [Cascade access](docs/cascade-courtyard-access-2026-11-27.md) · [Science Walk east](docs/science-walk-east-2026-11-27.md) · [Onyx Green](docs/onyx-green-walks-2026-11-27.md) · [Price courtyard](docs/price-courtyard-2026-11-27.md).
+- The release-candidate desktop and phone each match all 611 exterior IDs by geometry, including the earlier 610, with 609 individual objects, two IDs in shared geometry, 458 entrances and 408 successful tracked resource responses. All 87 sampled files match the build. The 201 unit tests, format check, production build, 531 archive checks and viewer pins pass. This commit is the GitHub Pages deployment input.
+
+## 2026-11-27 - Model the Price Science Commons sunken courtyard and overlook
+
+- Use the July 2023 DOGAMI surface and the contemporary design records to fit the 144.09 m² garden, 72.64 m² public terrace, 63.45 m² of planted beds and 37.61 m of glass guard. Add four overlook links from Onyx Green. The lower garden is visible from the upper route. Seating, planting and the representative pavilion face use estimates. The NOAA legacy tile’s 2017 header is a file creation date. Its Lane County collection dates to 2013–2015, which corrects the date used in the earlier Cascade and Onyx entries. [Site review](docs/price-courtyard-2026-11-27.md) · [Earlier NOAA collection](https://www.fisheries.noaa.gov/inport/item/57407).
+- Both preview profiles match 611 exterior IDs, 408 successful responses and 87 file hashes. Six route paths are on registered paving and all 1,432 standing and collision probes pass. The 15.531 m overlook route is 4.072 m above the measured center floor sample at its endpoint. Five focused browser cases, 201 unit tests, the build, 531 archived-file checks and repeat exports pass. The update is local in the research worktree.
+
+## 2026-11-27 - Close the Onyx Green walking loop and model the two planting islands
+
+- Connect the Cascade apron to the East 13th sidewalk, the west plaza spine, the library’s south approach and the Willamette north passage. Register 706.18 m² of pavement, 309.90 m² of terrain transitions, 41 navigation links and 121.14 m² of planting islands with 75 representative clusters. Grade under screened edges and species are estimates. [Site review](docs/onyx-green-walks-2026-11-27.md).
+- Both production profiles match 611 exterior IDs, 406 successful tracked responses and 85 served-file hashes. Five routes stay on the registered paving within 0.13 m and all 1,346 dense samples pass. The East 13th and west-spine routes measure 73.413 m and 42.442 m. Seven focused browser cases, 201 unit tests, production build, 529 archive checks, viewer hashes and repeated exports pass. The Onyx Green work is local in the research worktree.
+
+## 2026-11-27 - Connect lower Science Walk to the west edge of Onyx Green
+
+- Follow the museum’s lower east turn and separate the bridge deck from the low lidar returns. Add a 31.77 m alignment with 100.12 m² of pavement, 205.22 m² of grade transitions and 13 navigation links, plus the inventoried Dawn redwood 2448. Grade under the deck and the crown form use estimates. [Site review](docs/science-walk-east-2026-11-27.md).
+- Desktop and mobile production previews match 611 exterior IDs, 404 successful tracked resources and 83 file hashes. The courtyard-to-apron route is 43.777 m, the lowest sampled under-deck separation is 3.897 m and all 1,977 dense samples pass. Eight focused browser cases, 200 unit tests, build, 527 archive checks, viewer hashes and repeated exports pass. The change is local in the research worktree.
+
+## 2026-11-27 - Model the dry Cascade Charley fountain
+
+- Fit the 18.47 m² lower pool against four county orthophotos and the 2017 lidar. The 0.239 m floor-to-coping difference and the 2026 dry-state photographs inform the stepped concrete, recessed outlet, blue tile and eight representative rocks. The upper water path, exact decorative inlays and listening markers remain open. [Fountain review](docs/cascade-charley-fountain-2026-11-27.md).
+- Both production previews match the same 611 exterior IDs, 404 tracked responses and 83 file hashes. The seven route samples retain their paths, stay within the registered paving tolerance and clear the new courtyard collision by at least 0.680 m. All 1,467 dense samples pass. Eight focused browser cases, 200 unit tests, build, 527 archive checks, viewer pins and deterministic exports pass. The fountain and courtyard updates remain local to the research worktree.
+
+## 2026-11-27 - Register the Pacific Hall east walkway and Cascade north access
+
+- Register the 2026 campus access map against ten building corners with 0.151 m RMS. Fit the walk behind Columbia and along Pacific Hall and its junction to the Cascade courtyard. Model three treads and the photographed side rail to the Cascade arch. The new package covers 322.12 m² of paving, 101.80 m² of verge transitions and 44 navigation edges. Covered approach heights and rail dimensions use estimates. [Site review](docs/cascade-courtyard-north-2026-11-27.md).
+- Desktop and phone production previews each match 611 exterior IDs, 404 tracked responses and 83 file hashes. The seven north and southwest samples stay within the 0.13 m paving tolerance and leave at least 0.680 m of fixture clearance. All 1,467 dense probes pass and the arch retains 2.932 m of minimum sampled headroom. Eight focused browser tests, 200 unit tests, production build, 527 archive checks, viewer pins and repeat exports pass. The package remains local in the research worktree.
+
+## 2026-11-27 - Register the Volcanology west walk and Cascade courtyard southwest stair
+
+- Use the museum guide, four orthophoto dates and 51,123 points from the 2017 lidar tile to fit 229.70 m² of walk and court. Build a seven-tread flight with two handrails, 44.66 m² of verges and seven shrub groups. Add 28 navigation edges from East 13th and reserve collision for the documented fountain footprint. Riser height, rail sections and screened path edges use estimates. [Site review](docs/cascade-courtyard-access-2026-11-27.md).
+- Both production previews match 611 exterior IDs, 402 successful responses and 81 served-file hashes. Three routes stay on the registered paving within 0.13 m and clear the reserved basin or rails by at least 0.595 m. All 920 sampled positions return the new standing surface and a clear centerline. The six focused browser cases, 200 unit tests, build, 525 archived assets, viewer hashes and repeated exports pass. The change is local to the research worktree. Pages serves the Oregon Hall and Science Green release at `feb3fdf`.
+
+## 2026-11-27 - Verify the Oregon Hall and Science Green release and screen Cascade Charley
+
+- GitHub Pages published `feb3fdf`. Fresh desktop and phone sessions each match the same 611 exterior IDs, including the earlier set of 610. Each profile found 609 individual models, two IDs backed by shared geometry, 458 entrances and 400 successful tracked responses. All 79 sampled online files match the build. Both Science Green routes and all three Oregon Hall routes pass the 0.13 m paving tolerance. The eight release browser cases, 200 unit tests, viewer pins and 523 archive checks passed. [Release commit](https://github.com/williamQ96/open-campus-uo/commit/feb3fdf90a53092c6e875dd8831f87a4742d8ce3) · [Pages workflow](https://github.com/williamQ96/open-campus-uo/actions/runs/46074118812).
+- The next local survey uses the Volcanology plan, four county orthophotos and the 2026 field views to register the Cascade Charley basin and a stair landing candidate. The four picks give a center near east −245.93 m and north 62.97 m; the current source graph has no node in the scanned courtyard. Stair, paving and art geometry remain pending. [Cascade Charley evidence](docs/cascade-charley-science-walk-screen-2026-11-27.md).
+
 ## 2026-11-27 - Publish Oregon Hall southeast grounds and Science Green east approach
 
 - Register Oregon Hall's campus map station, two pedestrian lamps, stop sign, three benches, receptacle and thirteen shrub groups. Add 105.96 m² of foundation planting, 26.56 m² of map apron and 35.61 m² of seating paving connected by nine navigation edges. The map display is a project schematic. Fixture dimensions and partly obscured bed edges use estimates. [Oregon Hall review](docs/oregon-hall-southeast-landscape-2026-11-27.md).

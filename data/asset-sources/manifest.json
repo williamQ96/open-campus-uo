@@ -3388,6 +3388,54 @@
       "sha256": "6808f404cb3e9a3c492f321a289c8e8211f69e2e1430515d79190fe0f3a2e111",
       "license": "CC-BY-4.0",
       "origin": "Original geometry for the 1912 Mays sundial, Science Green east walk and northern forecourt. See docs/science-green-sundial-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/cascade-courtyard-access-review/site.json": {
+      "bytes": 1372,
+      "sha256": "398613d780a1b7e2d3eafeb22948524946db8eae7827c1298580fa996ed8c3e0",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for the Volcanology west walk, Cascade courtyard access and dry Cascade Charley fountain. See docs/cascade-courtyard-access-2026-11-27.md and docs/cascade-charley-fountain-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/cascade-courtyard-access-review/site.glb": {
+      "bytes": 675172,
+      "sha256": "b13caa4eef8dce5bccbb42e4d3d9caf445c50ca726c6856412f13a2437cbddc7",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for the Volcanology west walk, Cascade courtyard access and dry Cascade Charley fountain. See docs/cascade-courtyard-access-2026-11-27.md and docs/cascade-charley-fountain-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/cascade-courtyard-north-review/site.json": {
+      "bytes": 2543,
+      "sha256": "d3d8d77906010cede240e6d36a217196e6995dbf66604818b7d9cadb9a70f7ee",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for the Pacific Hall east walkway, Cascade courtyard north access, lower Science Walk and the registered dawn redwood. See docs/cascade-courtyard-north-2026-11-27.md and docs/science-walk-east-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/cascade-courtyard-north-review/site.glb": {
+      "bytes": 795204,
+      "sha256": "74b2732d395e46ebed6a56cfe2e9a12c2ff157988938acf37e27d6cafc30441d",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for the Pacific Hall east walkway, Cascade courtyard north access, lower Science Walk and the registered dawn redwood. See docs/cascade-courtyard-north-2026-11-27.md and docs/science-walk-east-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/onyx-green-walks-review/site.json": {
+      "bytes": 2435,
+      "sha256": "8cc845b888efb6cd6b6845b1371e81d54422d5b26537ebd8b86462b787916f3a",
+      "license": "CC-BY-4.0",
+      "origin": "Original grounds geometry for the Onyx Green surface walks and planting islands. See docs/onyx-green-walks-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/onyx-green-walks-review/site.glb": {
+      "bytes": 1239492,
+      "sha256": "bf5e521afd78d270698ee6598c7ed26b2d60d257b76a7845462fffdad29399ed",
+      "license": "CC-BY-4.0",
+      "origin": "Original grounds geometry for the Onyx Green surface walks and planting islands. See docs/onyx-green-walks-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/price-courtyard-review/site.json": {
+      "license": "CC-BY-4.0",
+      "bytes": 1003,
+      "sha256": "594c82e9471cdacbbd9d7b87379f21f820502397619e7dbcf8ce4b85f479f68b",
+      "origin": "Original landscape geometry for the Price Science Commons west courtyard and overlook. See docs/price-courtyard-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/price-courtyard-review/site.glb": {
+      "license": "CC-BY-4.0",
+      "bytes": 1159392,
+      "sha256": "380ca35ec30f7a2b3130b35ee67a02c68fbb1e587738ddb3dcf69367c5e53cd7",
+      "origin": "Original landscape geometry for the Price Science Commons west courtyard and overlook. See docs/price-courtyard-2026-11-27.md."
     }
   },
   "additional_sources": [

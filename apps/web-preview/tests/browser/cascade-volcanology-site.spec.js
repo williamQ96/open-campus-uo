@@ -18,11 +18,14 @@ test("the local site opens the courtyard while retaining bridge supports and bot
   const data = await page.evaluate(() => {
     const path = [
       [-249.8, 69.25],
-      [-244.2, 70],
-      [-240.62, 72.2],
-      [-237.75, 74.45],
-      [-237.75, 76.62],
-      [-238.47, 76.78],
+      [-244.7, 69.8],
+      [-242.52, 71.37],
+      [-240.99, 72.68],
+      [-239.55, 73.32],
+      [-238.11, 73.62],
+      [-237.76, 74.45],
+      [-237.76, 76.62],
+      [-238.47, 76.71],
     ];
     const blocked = (east, north) => __campus.collisionCheck(east, -north);
     return {
@@ -108,47 +111,50 @@ test("the modeled south door visits and returns to the default scene", async ({
 test("a failed Cascade asset keeps its old collision and the adopted Ford/Arena package", async ({
   page,
 }) => {
+  const readGates = () =>
+    page.evaluate(
+      ([cascadeId, volcanologyId]) => {
+        const entrances = __campus.entranceInfo();
+        return {
+          priorBuilding: __campus.collisionCheck(-235.2, -63.4),
+          cascadeGates: entrances
+            .filter(
+              ({ id, gate }) => gate && [cascadeId, volcanologyId].includes(id),
+            )
+            .map(({ gate }) => gate)
+            .sort(),
+          otherGates: entrances
+            .filter(
+              ({ id, gate }) =>
+                gate && ![cascadeId, volcanologyId].includes(id),
+            )
+            .map(({ id, gate }) => [id, gate])
+            .sort(),
+        };
+      },
+      [cascade, volcanology],
+    );
+  await ready(page, review);
+  const baseline = await readGates();
+  expect(baseline.cascadeGates).toEqual([
+    "cascade-courtyard",
+    "volcanology-south",
+  ]);
+  expect(baseline.otherGates).toEqual(
+    expect.arrayContaining([
+      ["context-b0066", "plaza"],
+      ["context-b0074", "east"],
+      ["context-b0074", "north"],
+      ["context-b0074", "west"],
+    ]),
+  );
   await page.route("**/cascade-volcanology-review/site.glb", (route) =>
     route.fulfill({ body: "corrupted-site" }),
   );
   await ready(page, review);
-  const data = await page.evaluate(() => ({
-    priorBuilding: __campus.collisionCheck(-235.2, -63.4),
-    gates: __campus
-      .entranceInfo()
-      .filter(({ gate }) => gate)
-      .map(({ gate }) => gate),
-  }));
-  expect(data.priorBuilding).toBe(true);
-  expect(data.gates.sort()).toEqual([
-    "beall-west",
-    "chapman-north",
-    "chapman-west",
-    "condon-east",
-    "east",
-    "emu-east",
-    "emu-fishbowl",
-    "emu-hearth",
-    "emu-historic",
-    "emu-west",
-    "esslinger-west",
-    "gerlinger-annex-north",
-    "gerlinger-hall-east",
-    "gerlinger-hall-north",
-    "hedco-clinic",
-    "hedco-main",
-    "hendricks-quad-west",
-    "hendricks-university-east",
-    "mcarthur-west",
-    "memorial-east",
-    "memorial-west",
-    "museum-west",
-    "music-south",
-    "north",
-    "plaza",
-    "recreation-east",
-    "susan-quad-east",
-    "susan-west-porch",
-    "west",
-  ]);
+  expect(await readGates()).toEqual({
+    priorBuilding: true,
+    cascadeGates: [],
+    otherGates: baseline.otherGates,
+  });
 });

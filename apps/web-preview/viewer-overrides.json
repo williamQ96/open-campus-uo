@@ -19,13 +19,13 @@
     },
     "src/presentation.js": {
       "upstream_sha256": "d33c5d8f940ae532978e56db6f273154eb51fdd425109fc6bf65849d86eb450f",
-      "local_sha256": "da6832992531ac0909665fc2f9ce9ac558d85c4b10d2679f0186e938efccb54e",
-      "reason": "Source-pinned UO model replacements and delayed merging of fallback details."
+      "local_sha256": "cfb3276edaa45fb4800125c15f6bc8518c1334976f2b0c963ca38129c9cd2ba2",
+      "reason": "Source-pinned UO model replacements and delayed merging of fallback details. Provide the Price courtyard assembly with the pinned base terrain."
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "e3b6873edafb853077f82612e2e550911750bcfc20787737c87c0db95c85d67c",
-      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. Pinned East 18th and Rankin pedestrian surfaces. Cherry–Risdon connections and northeast wayfinding. Register the Frohnmayer service drive and its route coverage, the western Pioneer tree belt and HEDCO courtyard landscaping. Register the Education Annex as a selectable exterior and connect its west approach. Register Oregon Hall's southeast grounds, the Mays sundial and the Science Green east approach."
+      "local_sha256": "7f61f09ebfb68fccde6305e4540df8f94a8bfef737d75ba5f2cdc54b702c1a58",
+      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. Pinned East 18th and Rankin pedestrian surfaces. Cherry–Risdon connections and northeast wayfinding. Register the Frohnmayer service drive and its route coverage, the western Pioneer tree belt and HEDCO courtyard landscaping. Register the Education Annex as a selectable exterior and connect its west approach. Register Oregon Hall's southeast grounds, the Mays sundial and the Science Green east approach. Register the Cascade courtyard stair, Pacific Hall walk, Onyx Green routes and Price Science Commons overlook."
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -226,7 +226,7 @@
     "scripts/export-friendly-round-shafts.mjs": "0096a2d5755ce92ad01b0d9114debe99948581830afedb2d611d23e447bad19a",
     "scripts/export-annex-exterior.mjs": "13ccbc58dad2803ca6e75358d082a999a384bb7bfc1dd1f3c22651bcd5f049b4",
     "scripts/export-chapman-exterior.mjs": "4f69378cb24a4d71e2562723048f2466da5a781b74ce026f4b3fcf8fce9abf4e",
-    "src/building-site-review.js": "0e75a3ef4b71091bee081f98af2e4a1f2f9ba07ae81e2aeaa9dd223467cee35d",
+    "src/building-site-review.js": "08759dd702a52b78462f84d510532b67e8234d1e0ab2998444b19d69f5356c70",
     "public/scene/athletic-exterior-review/site.glb": "96d66bbde7a44bbcb2e0aa7551cb20ffee9ef8ef56612bc021acdf5d9356db2c",
     "public/scene/athletic-exterior-review/site.json": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680",
     "src/context-roof-refinements.js": "a5c7b14decedd27d43aa9af199a6a0f29277cd8dae7aec3aa05a9093b0c4c57b",
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "ff4f2cc139ad179a5f6f70ccd65102ea3846f739f913571ed157b3ebe781d895",
+    "public/scene/presentation.json": "ce808d6c2752682a33c025f4aee108a33b9631edc0985ee1336ff9a6592dafe6",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -515,7 +515,7 @@
     "public/scene/southwest-campus-green-review/site.glb": "ff19c8fdf43935176aa00cf7c912a204a8055ca156ebc91651ce5342aaca9e86",
     "public/scene/southwest-campus-green-review/site.json": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
     "src/paved-route-access.js": "98c5cf05a9ace81997f2a06217cd729e373175453fcc9353303e91ec1d0ba0ce",
-    "data/campus-route-surfaces.json": "1b0ad69c76d97f479597ef7765e1a285eb73e99ab6a436416f10677846fc76d7",
+    "data/campus-route-surfaces.json": "289a47e2a1f577b45d7532263322f1e0e69bfcd5df1a17998426b87c7df8ac30",
     "public/scene/kincaid-education-landscape-review/site.glb": "229086a9a42a4742451657a79a9650a92375243933387fd879268faaa0494af9",
     "public/scene/kincaid-education-landscape-review/site.json": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a",
     "public/scene/kendall-plaza-landscape-review/site.glb": "fb034e7ba495bca4c31e49d32fed3af06e0fe7d3db4d6b8286b54753186d96c4",
@@ -548,6 +548,15 @@
     "public/scene/oregon-hall-southeast-landscape-review/site.json": "baadca1479efe3952c7b9202496b8e0aba787748cda880d5439727dc1a051c00",
     "public/scene/oregon-hall-southeast-landscape-review/site.glb": "92394bb141fd80985ccc33930ba23a9da36fff1d8a4d854a16e647c0e2e0d047",
     "public/scene/science-green-sundial-review/site.json": "56327ee199aaef21511cf61de777d3f160434081066bd2e65270309cc9d03c54",
-    "public/scene/science-green-sundial-review/site.glb": "6808f404cb3e9a3c492f321a289c8e8211f69e2e1430515d79190fe0f3a2e111"
+    "public/scene/science-green-sundial-review/site.glb": "6808f404cb3e9a3c492f321a289c8e8211f69e2e1430515d79190fe0f3a2e111",
+    "public/scene/cascade-courtyard-access-review/site.json": "398613d780a1b7e2d3eafeb22948524946db8eae7827c1298580fa996ed8c3e0",
+    "public/scene/cascade-courtyard-access-review/site.glb": "b13caa4eef8dce5bccbb42e4d3d9caf445c50ca726c6856412f13a2437cbddc7",
+    "public/scene/cascade-courtyard-north-review/site.json": "d3d8d77906010cede240e6d36a217196e6995dbf66604818b7d9cadb9a70f7ee",
+    "public/scene/cascade-courtyard-north-review/site.glb": "74b2732d395e46ebed6a56cfe2e9a12c2ff157988938acf37e27d6cafc30441d",
+    "public/scene/onyx-green-walks-review/site.json": "8cc845b888efb6cd6b6845b1371e81d54422d5b26537ebd8b86462b787916f3a",
+    "public/scene/onyx-green-walks-review/site.glb": "bf5e521afd78d270698ee6598c7ed26b2d60d257b76a7845462fffdad29399ed",
+    "public/scene/price-courtyard-review/site.json": "594c82e9471cdacbbd9d7b87379f21f820502397619e7dbcf8ce4b85f479f68b",
+    "public/scene/price-courtyard-review/site.glb": "380ca35ec30f7a2b3130b35ee67a02c68fbb1e587738ddb3dcf69367c5e53cd7",
+    "src/price-courtyard-terrain.js": "7f3d8eab210360f84393894ef33a2869a617da48f2879cdb2a9aca945286a7ea"
   }
 }

@@ -1,0 +1,19 @@
+# Volcanology west walk and Cascade courtyard access
+
+The Museum of Natural and Cultural History’s campus guide describes the walking route past Pacific Hall and the southwest descent into Cascade Charley’s courtyard. The Volcanology resource survey places the fountain west of the bunker and shows the East 13th turnaround. In the county’s 2017–2025 orthophotos, the west-side walk runs north between Columbia Hall and Volcanology, with tread outlines visible at the courtyard in the 2021 and 2023 images. Branches obscure some edges. [Museum guide, PDF p. 8](https://mnch.uoregon.edu/sites/default/files/2025-02/Campus%20Scavenger%20Hunt%20ENTIRE%20DOC%201.pdf#page=8) · [Volcanology site plan](https://cpfm.uoregon.edu/sites/default/files/2025-01/volcanology_2025.pdf#page=4) · [Four-date basin registration](cascade-charley-science-walk-screen-2026-11-27.md).
+
+The historical NOAA tile contributed 51,123 points within the surrounding survey window. The usable surface returns near the upper stair landing and the lower court bracket about 1.2 m of relief. The overlay fits that grade change and meets the existing East 13th sidewalk. It models seven intermediate treads, eight equal risers, two metal handrails and concrete edges. There are 229.70 m² of walk and courtyard paving. Two verge strips cover 44.66 m² and use seven representative shrub groups. The obscured path edges, landing grades and rail profiles use estimates. [NOAA tile](https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1310.copc.laz) · [Editable layout, evidence and source pins](../data/metadata/cascade-courtyard-access.json).
+
+Twenty-eight navigation edges link the north East 13th sidewalk with the courtyard and a path around the reserved fountain footprint. Collision covers both rail edges and the reserved area. The host Cascade and Volcanology models and existing north court access remain active. The northeast flight’s profile, the fountain artwork, listening markers and decorative stone and tile inlays remain open. [Runtime descriptor](../apps/web-preview/public/scene/cascade-courtyard-access-review/site.json) · [Browser verification](../apps/web-preview/tests/browser/cascade-courtyard-access.spec.js).
+
+## Verification
+
+In production previews, desktop and phone each match the same 611 exterior IDs, 402 successful tracked resources and 81 served-file hashes. The three sampled routes measure 64.029 m, 67.693 m and 6.405 m. All three stay inside the 0.13 m paving tolerance. The closest measured gap to either rail or the fountain reservation is 0.595 m. All 920 dense standing and collision probes return the new surface as the runtime walking height and a clear centerline. The seven step tops and both landings support eight rises of approximately 0.149 m. The mesh, descriptor and compiled coverage reproduce byte for byte.
+
+A November 1991 circulation diagram also shows Science Walk crossing the science complex and curving through multiple courtyards. That drawing supports the larger connection and records the early arrangement. The ground-level northeast flight and its exact landing heights still require a closer control. The update is local to the research worktree. [Historical circulation diagram, PDF p. 51](https://www.usmodernist.org/AR/AR-1991-11.pdf#page=51).
+
+The later north overlay adds the mapped loop behind Columbia and along Pacific and refines the northeast stair to the Cascade arch. [North access review](cascade-courtyard-north-2026-11-27.md).
+
+The dry fountain follow-up replaces the basin reservation with a modeled lower pool, rear walls and rock apron. [Fountain review](cascade-charley-fountain-2026-11-27.md).
+
+The NOAA tile header lists a 2017 file creation date. NOAA catalogs the underlying Lane County collection as 2013–2015. [NOAA acquisition record](https://www.fisheries.noaa.gov/inport/item/57407).

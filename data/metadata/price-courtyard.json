@@ -1,0 +1,405 @@
+{
+  "pins": {
+    "onyx-green-walks-review": "8cc845b888efb6cd6b6845b1371e81d54422d5b26537ebd8b86462b787916f3a"
+  },
+  "sources": {
+    "contemporary_lidar": {
+      "file": "price-court-dogami-2023.tif",
+      "url": "https://gis.dogami.oregon.gov/arcgis/rest/services/lidar/DIGITAL_TERRAIN_MODEL_MOSAIC/ImageServer/exportImage?f=image&bbox=494120.14928888186%2C4876998.282153052%2C494159.14928888186%2C4877039.282153052&bboxSR=3740&imageSR=3740&size=156%2C164&format=tiff&pixelType=F32&interpolation=RSP_NearestNeighbor&mosaicRule=%7B%22mosaicMethod%22%3A+%22esriMosaicLockRaster%22%2C+%22lockRasterIds%22%3A+%5B179%5D%7D",
+      "sha256": "a272a6fa2ad746e1f3c34e3c9ead0518953d16e25f8a89935b897fb9fe1cb440",
+      "project": "https://pubs.oregon.gov/dogami/ldq/reports/OLC_WillametteValley_2023_NIR_Lidar_Report.pdf",
+      "acquired": [
+        "2023-07-21",
+        "2023-07-22"
+      ],
+      "native_cell_m": 0.9144,
+      "export_cell_m": 0.25,
+      "vertical_units": "international feet, NAVD88",
+      "checks": {
+        "south_terrace": {
+          "bounds": [
+            -197,
+            73,
+            -188.5,
+            76.5
+          ],
+          "z_quantiles_m": [
+            1.223,
+            1.347,
+            1.354,
+            1.374,
+            1.435
+          ]
+        },
+        "north_terrace": {
+          "bounds": [
+            -197,
+            103,
+            -189,
+            105
+          ],
+          "z_quantiles_m": [
+            1.292,
+            1.33,
+            1.342,
+            1.352,
+            1.386
+          ]
+        },
+        "west_plaza": {
+          "bounds": [
+            -199.0,
+            82,
+            -198.05,
+            98
+          ],
+          "z_quantiles_m": [
+            1.026,
+            1.327,
+            1.366,
+            1.403,
+            1.445
+          ]
+        },
+        "central_courtyard": {
+          "bounds": [
+            -194.55,
+            83,
+            -191.15,
+            91.3
+          ],
+          "z_quantiles_m": [
+            -2.849,
+            -2.814,
+            -2.742,
+            -2.632,
+            -2.472
+          ]
+        },
+        "northern_courtyard": {
+          "bounds": [
+            -194,
+            96.8,
+            -191,
+            100
+          ],
+          "z_quantiles_m": [
+            -2.605,
+            -2.525,
+            -2.422,
+            -2.261,
+            -1.79
+          ]
+        },
+        "courtyard_at_east_wall": {
+          "bounds": [
+            -191.1,
+            86,
+            -189.9,
+            93
+          ],
+          "z_quantiles_m": [
+            -2.771,
+            -2.744,
+            -2.711,
+            -2.632,
+            -2.407
+          ]
+        }
+      }
+    },
+    "earlier_lidar": "https://www.fisheries.noaa.gov/inport/item/57407",
+    "aerials_from": "cascade-courtyard-north.json",
+    "library_plan": {
+      "file": "price-upper-floor-map.jpg",
+      "url": "https://library.uoregon.edu/imported-files/node2715/cafe-and-social-commons-map.jpg",
+      "sha256": "04652c50f98dce046549afd3477a72f0d280c155cc993c9e5726ff627a9fb771"
+    },
+    "architect_exterior": {
+      "file": "onyx-opsis-exterior.jpg",
+      "url": "https://www.opsisarch.com/wp-content/uploads//2020/05/University-Oregon-Price-Science-Library-Exterior-Opsis-Architecture.jpg",
+      "sha256": "628026ec8e5399ec500b61be17560bfa0a7da7a7877540d5a1552253be3bf6e3"
+    },
+    "architect_court": {
+      "file": "price-opsis-detail-0.jpg",
+      "url": "https://www.opsisarch.com/wp-content/uploads//2020/05/University-Oregon-Price-Science-Library-Interior-Landscape-Opsis-Architecture.jpg",
+      "sha256": "3e1baf7151d30683b8fcdee4f808a6a4c87a8a33612fa7ee506ac58d07b805a8"
+    },
+    "date_note": "The older NOAA tile header gives 2017-10-31, and NOAA identifies the source survey as 2013-2015. It predates the completed pavilion."
+  },
+  "cut_enu_m": [
+    -200,
+    75,
+    -185,
+    105
+  ],
+  "court": [
+    [
+      -196.65,
+      79.03
+    ],
+    [
+      -190.02,
+      79.03
+    ],
+    [
+      -190.02,
+      101.56
+    ],
+    [
+      -196.65,
+      101.56
+    ],
+    [
+      -196.65,
+      97.85
+    ],
+    [
+      -195.77,
+      97.85
+    ],
+    [
+      -195.77,
+      91.84
+    ],
+    [
+      -196.65,
+      91.84
+    ]
+  ],
+  "rail_enu_m": [
+    [
+      -190.06,
+      101.55
+    ],
+    [
+      -196.7,
+      101.55
+    ],
+    [
+      -196.7,
+      97.83
+    ],
+    [
+      -195.81,
+      97.83
+    ],
+    [
+      -195.81,
+      91.86
+    ],
+    [
+      -196.7,
+      91.86
+    ],
+    [
+      -196.7,
+      79.0
+    ],
+    [
+      -190.06,
+      79.0
+    ]
+  ],
+  "floor_profile_north_z_m": [
+    [
+      79.03,
+      -2.57
+    ],
+    [
+      83.35,
+      -2.76
+    ],
+    [
+      90.2,
+      -2.73
+    ],
+    [
+      96.0,
+      -2.63
+    ],
+    [
+      101.56,
+      -2.43
+    ]
+  ],
+  "plaza_height_z_m": 1.337,
+  "rail_height_m": 1.045,
+  "beds": [
+    [
+      [
+        -196.5,
+        79.22
+      ],
+      [
+        -190.23,
+        79.22
+      ],
+      [
+        -190.23,
+        81.2
+      ],
+      [
+        -191.48,
+        82.4
+      ],
+      [
+        -194.01,
+        82.81
+      ],
+      [
+        -195.73,
+        83.86
+      ],
+      [
+        -196.49,
+        83.53
+      ]
+    ],
+    [
+      [
+        -196.47,
+        84.0
+      ],
+      [
+        -195.89,
+        83.94
+      ],
+      [
+        -194.49,
+        84.6
+      ],
+      [
+        -193.96,
+        85.23
+      ],
+      [
+        -194.01,
+        87.22
+      ],
+      [
+        -194.36,
+        89.26
+      ],
+      [
+        -195.31,
+        91.46
+      ],
+      [
+        -196.47,
+        91.5
+      ]
+    ],
+    [
+      [
+        -195.65,
+        92.2
+      ],
+      [
+        -194.72,
+        92.1
+      ],
+      [
+        -194.28,
+        93.0
+      ],
+      [
+        -194.73,
+        94.76
+      ],
+      [
+        -193.84,
+        96.24
+      ],
+      [
+        -194.59,
+        97.18
+      ],
+      [
+        -195.64,
+        97.02
+      ]
+    ],
+    [
+      [
+        -196.49,
+        98.12
+      ],
+      [
+        -195.17,
+        97.93
+      ],
+      [
+        -192.65,
+        98.57
+      ],
+      [
+        -190.26,
+        98.43
+      ],
+      [
+        -190.26,
+        101.42
+      ],
+      [
+        -196.48,
+        101.42
+      ]
+    ]
+  ],
+  "overlook_path": {
+    "anchor_enu_m": [
+      -197.02,
+      68.74
+    ],
+    "points_enu_m": [
+      [
+        -195.97,
+        71.16
+      ],
+      [
+        -194.94,
+        73.47
+      ],
+      [
+        -194.05,
+        75.52
+      ],
+      [
+        -193.95,
+        77.15
+      ]
+    ]
+  },
+  "plant_trees_enu_m": [
+    [
+      -195.42,
+      81.08
+    ],
+    [
+      -195.59,
+      87.15
+    ],
+    [
+      -195.2,
+      94.39
+    ],
+    [
+      -193.65,
+      100.14
+    ]
+  ],
+  "courtyard_face": {
+    "bounds_enu_m": [
+      -190.13,
+      79.03,
+      -189.95,
+      101.56
+    ],
+    "vertical_m": [
+      -2.8,
+      5.38
+    ],
+    "notes": "Representative glazed wall on pavilion side of the court. Extent and mullion size approximated from aerial, floor map and architect photos. This model does not define the complete pavilion."
+  }
+}

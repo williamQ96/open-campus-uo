@@ -64,6 +64,8 @@
 | East 15th 与 Powell Plaza | 已纳入 L2 发布 | 接通 University Street、Straub、SRC 与 Agate。Onyx 以西配准街道和双线过街，以东补建铺砖步道、错列花坛、座椅和 Powell Plaza 三根主旗杆与门栏。尺寸、高程和细部采用估算。 [场地复核](east-fifteenth-hayward-review-2026-11-27.md) |
 | Oregon Hall 东南侧植床、Agate 路灯与停车让行标志、校园图站 | 纳入本次 L2 发布 | 补建 105.96 平方米墙脚植床、26.56 平方米图站接驳铺面、13 组代表性灌木、校方图站、绿灯杆及带 ALL WAY 附牌的停车让行标志。图站及东侧补建三张长椅、一个垃圾桶、第二盏路灯和两处共 35.61 平方米的座椅区铺面。八处设施有碰撞，九条导航边接入 East 13th。局部尺寸与植物种类仍待现场核对。[场地复核](oregon-hall-southeast-landscape-2026-11-27.md) |
 | Science Green 东侧步道、Mays 日晷与北侧植床 | 纳入本次 L2 发布 | 补建 409.89 平方米铺面、33.55 平方米植床、Mays 日晷、七组代表性灌木和三株校方登记树，替换一株落在步道上的推断树。25 条导航边连接 East 13th；西侧步道、现存铭牌文字与细部尺寸待核对。[场地复核](science-green-sundial-2026-11-27.md) |
+| Cascade Charley 喷泉庭院与 Science Walk 西端 | 已纳入本次 L2 发布 | 南接 East 13th，北接 Pacific Hall 东侧与 Columbia Hall 背面，含两处台阶。干池为 18.47 平方米。砖拱东侧下层步道沿 31.77 米配准线到 Onyx Green 西端，新增 100.12 平方米铺面、13 条导航边和水杉 2448。长椅、聆听标记及石砖镶嵌细部继续核对。[南侧复核](cascade-courtyard-access-2026-11-27.md) · [北侧复核](cascade-courtyard-north-2026-11-27.md) · [干池复核](cascade-charley-fountain-2026-11-27.md) · [东段复核](science-walk-east-2026-11-27.md) |
+| Onyx Green 与 Price Science Commons 外部步道 | 已纳入本次 L2 发布 | 从 Cascade 接面接回 East 13th，并接通西侧广场轴线、Willamette 北侧和图书馆南侧。新增 706.18 平方米铺面、41 条导航边和两处种植岛。图书馆西侧新增 144.09 平方米下沉庭院、37.61 米玻璃栏杆、72.64 平方米露台和四条观景连边。红杉旁长椅及聆听标记继续核对。[场地复核](onyx-green-walks-2026-11-27.md) · [下沉庭院复核](price-courtyard-2026-11-27.md) |
 | 校方艺术目录中的户外作品 | 待逐项配准 | 先核对作品仍在原位的证据和场景里的尺寸及基座。目录含纪念性雕塑、场地装置和立面装饰。 |
 | Agate–Franklin 校门标识与 Onyx Bridge 北侧导览图站 | 纳入本次 L2 发布 | 校门牌、植床、Franklin 过街及连接人行道已配准，增加 17 条导航边。Onyx 图站补建地图柜、石质植箱、红色路缘、两根路桩、相连的入口沥青铺面、两处植床及五株校方登记树。地图为项目自绘示意图，部分尺寸采用估算。[场地复核](northeast-campus-wayfinding-2026-11-27.md) |
 | 校园标识、导览图站、交通与停车标识 | 待逐项配准 | 2024 标识计划提供样式，按当前街景和场地照片确认各位置。 |

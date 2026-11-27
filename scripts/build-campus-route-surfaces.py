@@ -24,6 +24,10 @@ rankin_frontage = import_module("build-rankin-frontage")
 wayfinding = import_module("build-northeast-campus-wayfinding")
 oregon = import_module("build-oregon-hall-southeast-landscape")
 science_green = import_module("build-science-green-sundial")
+cascade_access = import_module("build-cascade-courtyard-access")
+cascade_north = import_module("build-cascade-courtyard-north")
+onyx_green = import_module("build-onyx-green-walks")
+price_courtyard = import_module("build-price-courtyard")
 root = green.site.root
 scene = green.site.scene
 
@@ -99,7 +103,10 @@ def frohnmayer_drive_coverage(spec, metadata):
     drive, walks, _, _, _, _, lot = frohnmayer_drive.footprints(spec, manifest, metadata)
     drive_path = frohnmayer_drive.route_line(spec["routes"][-1]).buffer(0.76)
     return {
-        **encode_coverage(frohnmayer_drive.PACKAGE, walks.union(drive.union(lot).intersection(drive_path))),
+        **encode_coverage(
+            frohnmayer_drive.PACKAGE,
+            walks.union(drive.union(lot).intersection(drive_path)),
+        ),
         "retired_road_segments_enu_m": frohnmayer_drive.retired_road_segments(
             spec, manifest, graph
         ),
@@ -202,6 +209,30 @@ def main():
             rankin_frontage.PACKAGE,
             rankin_frontage_coverage(
                 green.site.read(metadata / "rankin-frontage.json"), metadata
+            ),
+        ),
+        encode_coverage(
+            cascade_access.PACKAGE,
+            cascade_access.route_coverage(
+                green.site.read(metadata / "cascade-courtyard-access.json")
+            ),
+        ),
+        encode_coverage(
+            cascade_north.PACKAGE,
+            cascade_north.route_coverage(
+                green.site.read(metadata / "cascade-courtyard-north.json")
+            ),
+        ),
+        encode_coverage(
+            onyx_green.PACKAGE,
+            onyx_green.route_coverage(
+                green.site.read(metadata / "onyx-green-walks.json")
+            ),
+        ),
+        encode_coverage(
+            price_courtyard.PACKAGE,
+            price_courtyard.route_coverage(
+                green.site.read(metadata / "price-courtyard.json")
             ),
         ),
         encode_coverage(

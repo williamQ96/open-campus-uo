@@ -2303,5 +2303,21 @@
   "science_green_sundial_site": {
     "url": "science-green-sundial-review/site.json",
     "sha256": "56327ee199aaef21511cf61de777d3f160434081066bd2e65270309cc9d03c54"
+  },
+  "cascade_courtyard_access_site": {
+    "url": "cascade-courtyard-access-review/site.json",
+    "sha256": "398613d780a1b7e2d3eafeb22948524946db8eae7827c1298580fa996ed8c3e0"
+  },
+  "cascade_courtyard_north_site": {
+    "url": "cascade-courtyard-north-review/site.json",
+    "sha256": "d3d8d77906010cede240e6d36a217196e6995dbf66604818b7d9cadb9a70f7ee"
+  },
+  "onyx_green_walks_site": {
+    "url": "onyx-green-walks-review/site.json",
+    "sha256": "8cc845b888efb6cd6b6845b1371e81d54422d5b26537ebd8b86462b787916f3a"
+  },
+  "price_courtyard_site": {
+    "url": "price-courtyard-review/site.json",
+    "sha256": "594c82e9471cdacbbd9d7b87379f21f820502397619e7dbcf8ce4b85f479f68b"
   }
 }

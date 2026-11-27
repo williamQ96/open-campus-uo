@@ -8,6 +8,7 @@ import {
 } from "./context-roof-refinements.js";
 import { isFootprintRing, readPinnedScene } from "./pinned-scene.js";
 import { sampleSurface } from "./pilot-hardscape.js";
+import { stagePriceCourtyardCut } from "./price-courtyard-terrain.js";
 import {
   removePilotTrees,
   removeVegetationRanges,
@@ -343,6 +344,7 @@ export async function loadBuildingSiteReview(
     registeredAddresses = {},
     sourceBatchIds = [],
     prerequisiteIds = [],
+    priceCourtyardCut,
     corridorId,
     navigationUrl,
     navigationPredecessors = [],
@@ -395,6 +397,13 @@ export async function loadBuildingSiteReview(
     (quadSha !== undefined &&
       (!walkableGroundNode ||
         quadSha !== config.paving_corridors_l2?.sha256)) ||
+    Boolean(priceCourtyardCut) !== Boolean(site.terrain_cut_enu_m) ||
+    (priceCourtyardCut &&
+      (!Array.isArray(site.terrain_cut_enu_m) ||
+        site.terrain_cut_enu_m.length !== priceCourtyardCut.length ||
+        site.terrain_cut_enu_m.some(
+          (value, i) => value !== priceCourtyardCut[i],
+        ))) ||
     site.ground_node !== groundNode ||
     Boolean(walkableGroundNode) !== (walkableGround !== undefined) ||
     (walkableGroundNode &&
@@ -579,6 +588,7 @@ export async function loadBuildingSiteReview(
     newBuildingIds,
     assetSha: site.sha256,
     requiresQuadRoutes: Boolean(quadSha),
+    requiresBaseTerrain: Boolean(priceCourtyardCut),
     descriptorSha: descriptor.sha256,
     routeApproachIds: routeToApproaches ? ids : newBuildingIds,
     ground,
@@ -720,6 +730,9 @@ export async function loadBuildingSiteReview(
       );
       const road = corridor && stageCorridor(baseRoot, corridor);
       const treeRemoval = stageContextTreeRemoval(root, trees);
+      const terrainCuts = priceCourtyardCut
+        ? stagePriceCourtyardCut(root, baseRoot, priceCourtyardCut)
+        : [];
       if (treeRemoval) treeRemoval.geometry.setIndex(treeRemoval.index);
       for (const { mesh, ids, index, triangles, omitted } of stagedBatches) {
         if (ids.length) {
@@ -737,6 +750,7 @@ export async function loadBuildingSiteReview(
         road.mesh.add(roadRemainder);
       }
       for (const mesh of prior) mesh.removeFromParent();
+      for (const { geometry, index } of terrainCuts) geometry.setIndex(index);
       root.add(scene);
       return trees.length;
     },
