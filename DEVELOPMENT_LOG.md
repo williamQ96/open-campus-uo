@@ -6,6 +6,24 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release the Heritage courtyard, Howe Field gate and historic site details
+
+- Extend Hello Walk to the completed University Hall and Villard Hall courtyard with four path branches and 30 new navigation edges. Add hardscape, eight beds, four representative young trees, seating, lamps, the University Hall sign and the Villard south stair and ramp. Remove two approximate background-tree placements intersecting the new paving. The modeled grades, dimensions and plant species are estimates. [Heritage courtyard review](docs/heritage-courtyard-landscape-review-2026-11-27.md).
+- Include the previously verified Howe Field memorial entrance, Fenton commemorative bubbler and fountain, southern segment of Hello Walk, and Pioneer Cemetery Smith Vault and adjacent plot curbs. The release scope follows the [landscape inventory](docs/landscape-l2-inventory.md).
+- Both courtyard exports match byte for byte. Five fixed-camera comparisons and the desktop and phone production previews check the new path branches, sign, stair and rails. Each preview loads actual geometry for the same 610 exterior IDs in the inventory. Separately, formatting, 197 unit tests, production build, 465 archived asset checks and 408 viewer pins passed. The publication target is the GitHub Pages workflow on main. [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
+## 2026-11-27 - Howe Field memorial entrance and Class of 1920 bubbler (local)
+
+- Restored the three concrete wall portions, two fixed iron leaves, grilled ticket opening, shelf and bronze tablet at Howe Field. Added 731.96 m² of paving, 161.00 m² of asphalt, six planting pockets and the oval filtration planter. Wall thicknesses, plaques, planting and dimensions are estimates. [Howe Field landscape review](docs/howe-field-gates-landscape-review-2026-11-27.md).
+- Modeled Fenton’s 1920 gift as a fluted pedestal with four curved arms, bowls and steel nozzles. The site plan and photographs guide the position, proportions and finish. The existing Fenton exterior and Hello Walk geometry match their earlier export. [Fenton bubbler review](docs/fenton-exterior-review-2026-11-24.md#class-of-1920-drinking-bubbler).
+- Both independent exports match. Five paired views and nine browser checks cover the gate openings, pavement, filtration planter, bubbler, Fenton entrance behavior and damaged-bundle recovery. The plaza adds five graph edges. Desktop and phone production previews load all 610 modeled IDs and return the same 49.36 m University Street-to-plaza route. Formatting, build, 197 unit tests, 465 archived assets and 408 viewer hashes passed. The update is local on top of Pages commit `63263a9`.
+
+## 2026-11-27 - Smith Vault, Class of 1913 Fountain and Hello Walk (local)
+
+- Modeled the Cemetery Association’s Smith Vault with its hipped plaster cap and a plaque. Registered two visible plot curb groups near Cherry Avenue. The vault height and plaque face are estimates. The existing cemetery paving, stairs, canopy, support and kiosk geometry match the published assets. [Cemetery review](docs/pioneer-cemetery-landscape-review-2026-11-26.md#smith-vault-and-adjacent-plot-edges).
+- Rebuilt the stepped fountain basin and four-footed bowl north of Fenton Hall. Added 242.80 m² of Hello Walk paving and 17 route edges from E 13th Avenue to the bend south of University Hall. The tree-screened links and fountain elevations are estimates. The original Fenton building geometry matches the published asset. [Fenton landscape review](docs/fenton-exterior-review-2026-11-24.md#class-of-1913-fountain-and-hello-walk).
+- Both sets of independent exports matched. Three paired views, 10 browser cases, 197 unit tests, formatting, production build, 463 archive checks and 406 viewer hashes passed. Desktop and phone each loaded the 610 exterior IDs and their geometry, and returned the same 105.19 m Hello Walk route. This work remains local. Pages remains at `63263a9`.
+
 ## 2026-11-27 - Release expanded outdoor L2 landscapes
 
 - Release the Pioneer Cemetery inner grounds and Memorial Square kiosk, Gerlinger Field Green, Women’s Memorial Quad, Gerlinger Entrance Green and Straub Hall Green as the default outdoor scene. The release retains the 610 active building and facility exterior IDs, 457 entrances and 139 corridor records. [Landscape coverage](docs/landscape-l2-inventory.md).

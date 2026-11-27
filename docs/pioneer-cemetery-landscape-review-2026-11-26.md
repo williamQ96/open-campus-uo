@@ -21,6 +21,12 @@ The second package builds reproducibly and keeps the published 113.61 m route fr
 
 The association’s fall 2026 newsletter photographs the interpretive kiosk installed in 2016 and the green sign beside it. The 2017 and 2021 aerials expose the kiosk roof, and the 2025 image shows canopy over the area. The model uses the observed timber posts, planked notice board, corrugated roof and green sign. Roof dimensions and sign placement are estimates. The paper inserts use representative graphics. Both fixtures have local collision, and the nearby walk remains open. [Association newsletter, PDF p. 3](https://eugenepioneercemetery.org/wp-content/uploads/2026/11/EPC-e-Newsletter-FALL-2026_High-res.pdf) · [Cemetery self-guided map](https://eugenepioneercemetery.org/self-guided-tour/).
 
+## Smith Vault and adjacent plot edges
+
+Tour stop 24 and the November 2026 restoration newsletter identify the vault just north of Cherry Avenue. The 2017, 2021 and 2025 county images show the same east–west hip. The scene uses a 2.80 × 1.38 m footprint, a shallow hipped plaster cap and a plaque on the east end. The height of 1.25 m and the plaque placement and lettering are estimates. Two additional concrete curb traces follow visible sections across the three images, bringing the modeled curb count to 15 groups. [Association tour](https://eugenepioneercemetery.org/self-guided-tour/) · [Association newsletter, PDF p. 3](https://eugenepioneercemetery.org/wp-content/uploads/2026/11/EPC-e-Newsletter-FALL-2026_High-res.pdf) · [Lane County orthophotos](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer).
+
+Two exports matched byte for byte. The foreground plot edge and roof profile were checked in paired views. Desktop and phone production previews detected the vault footprint and verified clear ground to its east and on Cherry Avenue. The paving, stair, canopy, shelter and kiosk meshes retain their published vertices, faces and colors. The vault update is local.
+
 - [Editable model input](../data/metadata/pioneer-cemetery-landscape-review.json)
 - [Exporter](../scripts/build-pioneer-cemetery-landscape-review.py)
 - [Runtime descriptor](../apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.json)

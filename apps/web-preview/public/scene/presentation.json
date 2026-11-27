@@ -1718,7 +1718,7 @@
   },
   "fenton_site_review": {
     "url": "fenton-site-review/site.json",
-    "sha256": "129ab481cc704b63ba1867a3c5451741bc61f47d08c548d81626d34dd767c96f"
+    "sha256": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb"
   },
   "heritage_core_site": {
     "url": "heritage-core-review/site.json",
@@ -2161,7 +2161,7 @@
   },
   "pioneer_cemetery_landscape_site": {
     "url": "pioneer-cemetery-landscape-review/site.json",
-    "sha256": "d853422752e6d994205add2851d987d5ff5edcdabecaa479fe52a1222b9e892e"
+    "sha256": "8561d9e7ed6d74cfa5df0696338de2f470c9ae39679ca70c58e8f4d943b389aa"
   },
   "gerlinger_field_green_site": {
     "url": "gerlinger-field-green-review/site.json",
@@ -2170,5 +2170,9 @@
   "central_campus_greens_site": {
     "url": "central-campus-greens-review/site.json",
     "sha256": "f01d3046cc693a896bac8838475a529b4a875a56398ee470a4cfd31ef66dcb69"
+  },
+  "howe_field_gates_site": {
+    "url": "howe-field-gates-review/site.json",
+    "sha256": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901"
   }
 }

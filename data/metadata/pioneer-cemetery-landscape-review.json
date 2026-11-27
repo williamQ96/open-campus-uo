@@ -2461,6 +2461,16 @@
       ],
       "material": "concrete",
       "closed": true
+    },
+    {
+      "points_enu_m": [[-392.05, -536.48], [-386.30, -536.53], [-386.22, -529.55]],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [[-381.15, -536.25], [-383.55, -536.25], [-383.53, -532.10]],
+      "material": "concrete",
+      "closed": false
     }
   ],
   "support_structures": {
@@ -2532,6 +2542,18 @@
         "sha256": "98273f83dce02013e75940e56466a90dec9e2a93b1cd285990ec71609b56dca4"
       }
     ]
+  },
+  "smith_vault": {
+    "bounds_enu_m": [-392.45, -535.20, -389.65, -533.82],
+    "wall_height_m": 0.97,
+    "roof_rise_m": 0.28,
+    "evidence": "EPCA tour stop 24 identifies the only above-ground vault just north of Cherry Avenue. The pale oblong hip and two exposed plot edges recur in the registered 2017, 2021 and 2025 county frames. The restoration photograph shows blue-gray plaster and a small plaque on the short face. The height, plaque facing and letter scale are estimates.",
+    "source": {
+      "url": "https://eugenepioneercemetery.org/wp-content/uploads/2026/11/EPC-e-Newsletter-FALL-2026_High-res.pdf",
+      "path": "epca-fall-2026.pdf",
+      "sha256": "8ad169fdce057a4d11a3970e209d42b836e0789c415196cde91c82c376047dd7",
+      "page_pdf": 3
+    }
   },
   "memorial_square_kiosk": {
     "position_enu_m": [

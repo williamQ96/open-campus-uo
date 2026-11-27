@@ -31,6 +31,68 @@
     "wall_bounds": [-459.85, 26.73, -456.99, 36.13],
     "roof_z_m": 16.05
   },
+  "north_landscape": {
+    "fountain_bounds_enu_m": [-448.02, 76.98, -445.02, 81.40],
+    "fountain_shoulder_m": [0.34, 0.46],
+    "drinking_bubbler": {
+      "position_enu_m": [-426.15, 26.4],
+      "pad_width_m": 0.94,
+      "reach_m": 0.49,
+      "evidence": "The 2025 Fenton survey locates the Class of 1920 gift to the east of the hall. The 2008 site preservation plan and 2013 photo show the fluted pedestal, four arms and four bowls. The pad is placed along the east edge of the modeled walk using the approximate survey location. The plan position, height and width are estimates.",
+      "sources": [
+        {
+          "url": "https://cpfm.uoregon.edu/sites/default/files/2.0sitespecplansfull.pdf",
+          "sha256": "4fddfc8bbec174bc9ce13b315f0005bf5bf7954e262d127fe9d2b3106597a9be",
+          "page_pdf": 75
+        },
+        {
+          "url": "https://www.flickr.com/photos/discoveroregon/10499330663/",
+          "photographer": "Rick Obst",
+          "date": "2013-10-19",
+          "license": "CC-BY-4.0",
+          "sha256_consulted_size": "612c5b11d74dc19da691ea7d1330aa82c30ff98269ca7dead684c19af2ca6c29"
+        }
+      ]
+    },
+    "hello_walk_anchor_enu_m": [-425.336, 1.841],
+    "hello_walk_centerline_enu_m": [
+      [-428.55, 7.2], [-428.35, 17.25], [-428.75, 31.0], [-429.3, 39.0],
+      [-432.36, 47.15], [-437.39, 53.0], [-439.76, 57.0], [-441.91, 61.0],
+      [-443.86, 65.0], [-446.22, 70.0], [-448.72, 75.0], [-451.52, 80.0],
+      [-454.13, 85.0], [-456.65, 90.3], [-459.26, 94.4], [-461.7, 96.45],
+      [-463.6, 97.2]
+    ],
+    "hello_walk_width_m": 2.42,
+    "evidence": "The University of Oregon library identifies the fountain as the Class of 1913 gift. The 2025 Fenton Hall survey identifies Hello Walk and records the missing spout. County orthophotos establish the stepped stone outline, exposed path sections and the junction south of University Hall. The centerline between exposed sections is estimated beneath trees. The 2007 survey photograph establishes the recessed basin and circular bowl on four feet. The heights and dry basin finish are estimates.",
+    "sources": [
+      {
+        "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/class-of-1913-fountain"
+      },
+      {
+        "url": "https://cpfm.uoregon.edu/sites/default/files/2025-01/fentonhall_2025.pdf",
+        "sha256": "93c599c26e0af6a34ac91d9f08945b1b1c5351672c1cbf9a1d1dfae0592ee3ae",
+        "pages_pdf": [4, 6]
+      },
+      {
+        "url": "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/58d8e085-01f4-4416-b48b-e8c98d7285a1/content",
+        "sha256": "85e6a5fc47a5afca63b13e1d8d542f31c90c9402f3967f555933a83c7f7698c6",
+        "page_pdf": 3
+      },
+      {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer",
+        "sha256_2017": "8b93d57b5954281986f48176537a5bfebfbde67359ae951939b8edb9d4e3978b",
+        "sha256_2021": "0f263ddc3c0c3ff87d6fe3a29349fb70ea160d101f0f0bb7539a2ed9887d1174",
+        "sha256_2025": "1777f89d0056b4ecdbd0acaef548d2b037fb7c286b566252185d01fd44a2c63d"
+      },
+      {
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer",
+        "bounds_enu_m": [-490, -3, -410, 153],
+        "sha256_2017": "ecd11dc15639655d826019ad6148317d1c8011a73e3eb1583e2b7542f813d97b",
+        "sha256_2021": "1eeddd243464dfdd7399f1c787b202a7326e11d38ef6f074e795600822050175",
+        "sha256_2025": "0306d14878494ad276ec074a4b254b99f62be87ffd6ce8f5fcb9dff7ee5ccb4b"
+      }
+    ]
+  },
   "entrances": [
     {
       "gate": "fenton-east",

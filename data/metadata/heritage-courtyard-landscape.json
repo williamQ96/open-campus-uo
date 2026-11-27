@@ -1,0 +1,98 @@
+{
+  "neighbor_descriptor_sha256": "e0f08268d3162a48998d1e2d72a727d164daeabb1fee40116a29ab9cc290fd1e",
+  "route_paths": [
+    {
+      "anchor_enu_m": [-463.6, 97.2],
+      "points_enu_m": [
+        [-459.2, 103.8], [-452.5, 108.8], [-444.7, 110.22], [-437.6, 112.3],
+        [-430.7, 116.2], [-428.3, 122.7], [-428.5, 129.5], [-430.9, 135.3],
+        [-437.4, 142.45], [-446.9, 150.4], [-448.3, 156.9], [-448.3, 162.2]
+      ],
+      "width_m": 2.72
+    },
+    {
+      "anchor_enu_m": [-463.6, 97.2],
+      "points_enu_m": [
+        [-469.1, 104.2], [-475.9, 111.7], [-479.5, 119.35], [-479.4, 129.0],
+        [-476.7, 136.75], [-472.6, 140.15], [-470.7, 148.2], [-465.5, 155.2],
+        [-456.3, 155.4]
+      ],
+      "end_enu_m": [-448.3, 156.9],
+      "width_m": 2.55
+    },
+    {
+      "anchor_enu_m": [-448.3, 162.2],
+      "points_enu_m": [
+        [-440.2, 162.9], [-433.9, 167.0], [-430.8, 174.0], [-431.5, 179.0],
+        [-432.5, 184.93]
+      ],
+      "width_m": 2.71
+    },
+    {
+      "anchor_enu_m": [-465.5, 155.2],
+      "points_enu_m": [[-463.05, 159.2], [-461.5, 162.4], [-461.5, 165.94]],
+      "width_m": 2.16
+    }
+  ],
+  "patio_enu_m": [
+    [-468.7, 149.55], [-452.05, 148.9], [-446.18, 152.15], [-446.18, 161.55],
+    [-449.91, 163.90], [-460.95, 163.63], [-467.81, 160.37]
+  ],
+  "parking_enu_m": [
+    [-492.0, 137.9], [-472.5, 137.65], [-453.4, 137.94], [-453.7, 148.5],
+    [-468.2, 150.25], [-473.4, 142.44], [-492.0, 142.1]
+  ],
+  "bed_bounds_enu_m": [
+    [-467.35, 157.10, -462.32, 161.67],
+    [-460.65, 158.16, -455.00, 162.32],
+    [-460.73, 150.27, -455.48, 153.16],
+    [-451.73, 140.67, -448.90, 149.2],
+    [-469.6, 134.2, -455.62, 136.55],
+    [-452.24, 133.83, -442.55, 135.95],
+    [-435.0, 116.9, -431.40, 119.04],
+    [-444.96, 164.89, -439.7, 166.83]
+  ],
+  "new_tree_positions_enu_m": [[-465.46,159.25],[-457.65,160.58],[-458.29,151.85],[-450.45,144.0]],
+  "context_trees": [
+    {"index": 108, "position_enu_m": [-438.818, 111.711]},
+    {"index": 222, "position_enu_m": [-460.532, 155.668]}
+  ],
+  "south_entry": {
+    "position_enu_m": [-448.29, 168.08],
+    "first_tread_north_m": 164.40,
+    "width_m": 3.48,
+    "landing_depth_m": 2.12,
+    "rise_m": 0.73,
+    "treads": 5,
+    "ramp_bounds_enu_m": [-460.35, 165.12, -450.02, 166.86]
+  },
+  "university_sign_enu_m": [-432.93,117.92],
+  "benches_enu_m": [[-464.7,152.4],[-452.88,160.28],[-441.15,160.4]],
+  "lamps_enu_m": [[-452.46,162.58],[-432.0,118.41]],
+  "sources": [
+    {
+      "url": "https://www.oregon.gov/biz/aboutus/artscommission/Documents/RFQ_UO_Heritage_2024.pdf",
+      "pages_pdf": [7, 17, 18],
+      "sha256": "b4ef41f0800ba0307a141c239d5819617009b61b7f0da2bffde5fab93862bbf3",
+      "use": "Site geometry and relative arrangement of the approaches, beds, courtyard, parking and circulation. Registered against the campus building envelopes. Plan and rendering dimensions are approximate."
+    },
+    {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/2026-08/img_3020.JPEG",
+      "sha256": "e64e32f671d713f4dc09ac98797cb0fcb9a2c5c9d7195265ac363e2495128867",
+      "use": "Villard south elevation, entrance stair, side ramp, courtyard paving, young trees and furnishings."
+    },
+    {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/2026-08/img_3015.JPEG",
+      "sha256": "549c5fc5050849a546719795c4f5a694649159e8bd6449f115d17da01c21f35e",
+      "use": "Landscape near the University Hall east approach, green sign and planting form."
+    },
+    {
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer",
+      "bounds_enu_m": [-519, 94, -395, 225],
+      "sha256_2017": "7dd669127440956922d3e4c6cb600a2a40606963bbfac7adc9e2855d7062837e",
+      "sha256_2021": "b4a6e0d9e5531cc9d65928146b1a98bc6947577ad73b5eb566379d4575b953f9",
+      "sha256_2025": "5fa324b08501c33eddc3cd87be8d4f997425ba3f8b68c015e2f30f7ae1b448af",
+      "use": "Registration of the old hall envelopes and retained paved edges. The 2025 view shows construction."
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 """Build the registered Fenton Hall exterior, entrances and collision envelope."""
 
 import argparse
+from importlib import import_module
 from importlib.util import module_from_spec, spec_from_file_location
 import json
 from pathlib import Path
@@ -21,6 +22,9 @@ SCENE = tools.SCENE
 SPEC = geometry.ROOT / "data/metadata/fenton-site-review.json"
 DIRECTORY = "fenton-site-review"
 GROUND = "fenton-approaches"
+HELLO_WALK = "fenton-hello-walk"
+COURTYARD_SPEC = geometry.ROOT / "data/metadata/heritage-courtyard-landscape.json"
+courtyard = import_module("build-heritage-courtyard-landscape")
 BRICK = (161, 119, 89)
 STACK_BRICK = (170, 140, 107)
 BRICK_SHADE = (130, 92, 68)
@@ -373,7 +377,152 @@ def approaches(parts, spec, field):
     return entries, blockers, heights
 
 
-def build(spec, manifest, field, graph):
+def drinking_bubbler(parts, field, spec):
+    e, n = spec["position_enu_m"]
+    half = spec["pad_width_m"] / 2
+    pad = box(e - half, n - half, e + half, n + half)
+    grade = max(geometry.sample_ground(field, x, y) for x, y in pad.exterior.coords)
+    base = grade + 0.08
+    bronze = (125, 109, 79)
+    rim = (151, 132, 94)
+    flat(parts, pad, grade - 0.14, base, CONCRETE)
+
+    def lathe(x, y, profile, color):
+        mesh = trimesh.creation.revolve(profile, sections=24)
+        mesh.apply_transform(
+            trimesh.transformations.rotation_matrix(-np.pi / 2, [1, 0, 0])
+        )
+        mesh.apply_translation([x, base, -y])
+        mesh.visual.vertex_colors = [*color, 255]
+        parts.append(mesh)
+
+    lathe(
+        e,
+        n,
+        [
+            [0, 0],
+            [0.20, 0],
+            [0.20, 0.13],
+            [0.177, 0.15],
+            [0.18, 0.185],
+            [0.137, 0.225],
+            [0.096, 0.33],
+            [0.079, 0.52],
+            [0.099, 0.62],
+            [0.141, 0.64],
+            [0.147, 0.79],
+            [0.126, 0.83],
+            [0, 0.83],
+        ],
+        bronze,
+    )
+    for angle in np.arange(12) * np.pi / 6:
+        x, y = np.cos(angle), np.sin(angle)
+        tools.beam(
+            parts,
+            (e + 0.112 * x, n + 0.112 * y, base + 0.269),
+            (e + 0.076 * x, n + 0.076 * y, base + 0.57),
+            0.018,
+            (148, 127, 88),
+        )
+    t = np.linspace(0, 1, 11)
+    collar, throat, elbow, bowl = np.array(
+        [[0.12, 0.72], [0.265, 0.698], [0.35, 0.734], [0.349, 0.91]]
+    )
+    curve = (
+        (1 - t)[:, None] ** 3 * collar
+        + (3 * (1 - t) ** 2 * t)[:, None] * throat
+        + (3 * (1 - t) * t**2)[:, None] * elbow
+        + t[:, None] ** 3 * bowl
+    )
+    arm_profile = Point(0, 0).buffer(0.045, quad_segs=3)
+    for x, y in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+        points = [
+            [e + x * dist, base + height, -n - y * dist] for dist, height in curve
+        ]
+        arm = trimesh.creation.sweep_polygon(arm_profile, points, cap=False)
+        arm.visual.vertex_colors = [*bronze, 255]
+        parts.append(arm)
+        cx, cy = e + 0.349 * x, n + 0.349 * y
+        lathe(
+            cx,
+            cy,
+            [
+                [0, 0.898],
+                [0.053, 0.898],
+                [0.062, 0.92],
+                [0.096, 0.942],
+                [0.136, 0.985],
+                [0.141, 1.003],
+                [0.116, 0.999],
+                [0.085, 0.963],
+                [0, 0.953],
+            ],
+            rim,
+        )
+        lathe(
+            cx,
+            cy,
+            [[0, 0.954], [0.026, 0.954], [0.024, 0.981], [0.014, 0.995], [0, 0.999]],
+            (151, 158, 151),
+        )
+    reach = spec["reach_m"]
+    return box(e - reach, n - reach, e + reach, n + reach)
+
+
+def north_landscape(parts, field, spec, occupied, graph):
+    west, south, east, north = spec["fountain_bounds_enu_m"]
+    shoulder, step = spec["fountain_shoulder_m"]
+    outer = box(west, south + step, east, north - step).union(
+        box(west + shoulder, south, east - shoulder, north)
+    )
+    inner = outer.buffer(-0.19, join_style="mitre")
+    center = outer.centroid
+    e, n = center.coords[0]
+    grade = max(
+        geometry.sample_ground(field, x, y) for x, y in [*outer.exterior.coords, (e, n)]
+    )
+    flat(parts, outer.difference(inner), grade - 0.35, grade + 0.22, STONE, COPING)
+    # The adjacent campus lawn overlay sits 0.04 m above the heightfield.
+    flat(parts, inner, grade - 0.12, grade + 0.075, (92, 89, 69))
+    for x, y in ((e - 0.26, n), (e + 0.26, n), (e, n - 0.26), (e, n + 0.26)):
+        tools.beam(parts, (x, y, grade + 0.075), (e, n, grade + 0.39), 0.112, STONE)
+    bowl, lip = center.buffer(0.39, quad_segs=12), center.buffer(0.285, quad_segs=12)
+    flat(parts, bowl, grade + 0.37, grade + 0.44, STONE)
+    flat(parts, bowl.difference(lip), grade + 0.43, grade + 0.48, COPING)
+    flat(parts, lip, grade + 0.44, grade + 0.449, (125, 120, 90))
+    flat(parts, center.buffer(0.047), grade + 0.445, grade + 0.455, (70, 68, 57))
+    bubbler = drinking_bubbler(parts, field, spec["drinking_bubbler"])
+    points = spec["hello_walk_centerline_enu_m"]
+    anchor = spec["hello_walk_anchor_enu_m"]
+    centerline = LineString(points)
+    walk = centerline.buffer(spec["hello_walk_width_m"] / 2, cap_style="flat")
+    fixtures = outer.union(bubbler)
+    assert walk.distance(fixtures) > 0.40
+    assert not occupied.intersects(walk.union(fixtures))
+    nodes = graph["nodes_enu_m"]
+    assert anchor in nodes
+    route = LineString([anchor, *points])
+    assert route.distance(occupied) >= 0.50
+    assert all(
+        0.05 < np.linalg.norm(np.subtract(a, b)) < 20
+        for a, b in zip(route.coords, list(route.coords)[1:])
+    )
+    assert all(
+        LineString([nodes[a], nodes[b]]).distance(fixtures) > 0.50
+        for a, b, *_ in graph["edges"]
+    )
+    west, south, east, north = walk.bounds
+    middle = (south + north) / 2
+    access = {
+        "bounds_enu_m": [[west, south, east, middle], [west, middle, east, north]],
+        "anchor_enu_m": anchor,
+        "points_enu_m": points,
+    }
+    return walk, outer, bubbler, access, route.length
+
+
+def build(spec, court_spec, manifest, field, graph):
     plan = union_all(
         [
             box(*spec[key]["wall_bounds"])
@@ -401,16 +550,28 @@ def build(spec, manifest, field, graph):
     mesh = trimesh.util.concatenate(parts)
     mesh.update_faces(mesh.nondegenerate_faces(height=0.00005))
     occupied = union_all([plan, *blockers])
+    walk, fountain, bubbler, access, route_length = north_landscape(
+        approach_parts, field, spec["north_landscape"], occupied, graph
+    )
     approach_parts.append(tools.approaches(entries, field, occupied))
-    ground = trimesh.util.concatenate(approach_parts)
+    path_parts = [
+        tools.approaches(
+            [{"outline": list(walk.exterior.coords), "rgb": CONCRETE}], field, occupied
+        )
+    ]
+    south_edge_count = len(access["points_enu_m"])
+    access, furniture, court_audit = courtyard.landscape(
+        court_spec, SCENE, field, access, path_parts, approach_parts
+    )
 
     prior = next(b for b in manifest["buildings"] if b["id"] == spec["id"])
     previous = Polygon(prior["footprint_enu_m"])
     for b in manifest["buildings"]:
         if b["id"] != spec["id"]:
+            neighbor = Polygon(b["footprint_enu_m"]).buffer(0)
             assert (
-                occupied.intersection(Polygon(b["footprint_enu_m"]).buffer(0)).area
-                < 0.02
+                occupied.intersection(neighbor).area < 0.02
+                and walk.intersection(neighbor).area < 0.02
             ), b["id"]
     conflicts = []
     for index, (a, b, *_) in enumerate(graph["edges"]):
@@ -433,53 +594,77 @@ def build(spec, manifest, field, graph):
     return (
         record,
         mesh,
-        ground,
-        {"route_edges": len(graph["edges"]), "new_conflicts": conflicts},
+        trimesh.util.concatenate(approach_parts),
+        trimesh.util.concatenate(path_parts),
+        access,
+        [fountain.bounds, bubbler.bounds, *furniture],
+        {
+            "route_edges": len(graph["edges"]),
+            "new_conflicts": conflicts,
+            "fountain_bounds_enu_m": fountain.bounds,
+            "bubbler_bounds_enu_m": bubbler.bounds,
+            "hello_walk_area_m2": round(walk.area, 2),
+            "hello_walk_route_m": round(route_length, 2),
+            "hello_walk_added_edges": south_edge_count,
+            "heritage_courtyard": court_audit,
+        },
     )
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--audit", type=Path, required=True)
+    parser.add_argument("--stage", type=Path)
     args = parser.parse_args()
     spec = json.loads(SPEC.read_bytes())
+    court_spec = json.loads(COURTYARD_SPEC.read_bytes())
     manifest = json.loads((SCENE / "manifest.json").read_bytes())
     field_path = SCENE / manifest["heightfield_url"]
     config_path = SCENE / "presentation.json"
     config = json.loads(config_path.read_bytes())
     graph = json.loads((SCENE / "navigation.json").read_bytes())
-    record, mesh, ground, audit = build(
-        spec, manifest, json.loads(field_path.read_bytes()), graph
+    record, mesh, ground, path, access, fixtures, audit = build(
+        spec, court_spec, manifest, json.loads(field_path.read_bytes()), graph
     )
     assert record["id"] in config["replaces_building_ids"]
-    destination = SCENE / DIRECTORY
-    destination.mkdir(exist_ok=True)
+    destination = args.stage or SCENE / DIRECTORY
+    destination.mkdir(parents=True, exist_ok=True)
     model = destination / "site.glb"
     memorial.gerlinger.export(
-        model, {record["id"]: mesh}, ground, GROUND, "fenton-paving"
+        model,
+        {record["id"]: mesh},
+        ground,
+        GROUND,
+        "fenton-paving",
+        walkable={HELLO_WALK: path},
     )
     site = {
         "source_presentation_sha256": config["asset_sha256"],
         "source_base_model_sha256": manifest["model"]["sha256"],
         "source_heightfield_sha256": tools.digest(field_path),
+        "source_navigation_sha256": tools.digest(SCENE / "navigation.json"),
         "url": f"{DIRECTORY}/site.glb",
         "sha256": tools.digest(model),
         "ground_node": GROUND,
         "buildings": [record],
+        "closed_site_boxes_enu_m": fixtures,
+        "walkable_ground": access,
+        "context_trees": court_spec["context_trees"],
     }
     site_path = destination / "site.json"
     site_path.write_text(
         json.dumps(site, separators=(",", ":")) + "\n", encoding="utf-8", newline="\n"
     )
-    config["fenton_site_review"] = {
-        "url": f"{DIRECTORY}/site.json",
-        "sha256": tools.digest(site_path),
-    }
-    config_path.write_text(
-        json.dumps(config, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
+    if args.stage is None:
+        config["fenton_site_review"] = {
+            "url": f"{DIRECTORY}/site.json",
+            "sha256": tools.digest(site_path),
+        }
+        config_path.write_text(
+            json.dumps(config, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
     audit.update(
         footprint_m2=record["area_m2"],
         model_sha256=site["sha256"],

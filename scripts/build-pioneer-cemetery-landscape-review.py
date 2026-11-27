@@ -491,6 +491,56 @@ def square_kiosk(parts, ground, field, info, ways):
     return [list(kiosk.bounds), list(banner.bounds)]
 
 
+def smith_vault(parts, field, info, ways):
+    west, south, east, north = info["bounds_enu_m"]
+    footprint = box(west, south, east, north)
+    center_e, center_n = footprint.centroid.coords[0]
+    grade = ground_height(field, center_e, center_n)
+    assert ways.distance(footprint) > 2
+    eave = grade + info["wall_height_m"]
+    ridge = eave + info["roof_rise_m"]
+    plaster = (168, 190, 192)
+    solid(parts, footprint, grade - 0.23, eave, plaster)
+    hip = (north - south) / 2
+    west_tip, east_tip = (west + hip, center_n), (east - hip, center_n)
+    planes = (
+        ([(west, south), (east, south), east_tip, west_tip], lambda x, y: y - south),
+        ([(east, south), (east, north), east_tip], lambda x, y: east - x),
+        ([(east, north), (west, north), west_tip, east_tip], lambda x, y: north - y),
+        ([(west, north), (west, south), west_tip], lambda x, y: x - west),
+    )
+    for (corners, run), color in zip(
+        planes, ((173, 195, 199), (160, 184, 190), (167, 189, 191), (158, 181, 185))
+    ):
+        landscape.top_surface(
+            parts,
+            Polygon(corners),
+            lambda x, y: eave + (ridge - eave) * run(x, y) / hip,
+            color,
+            cell=0.95,
+        )
+    plaque_bottom = grade + 0.43
+    flat_box(
+        parts,
+        east + 0.009,
+        center_n,
+        0.039,
+        0.46,
+        plaque_bottom,
+        plaque_bottom + 0.39,
+        (184, 176, 153),
+    )
+    text_strokes(
+        parts,
+        "SMITH",
+        lambda x, y: (east + 0.029, center_n + x, plaque_bottom + 0.245 + y),
+        0.050,
+        0.061,
+        (83, 81, 71),
+    )
+    return footprint.bounds
+
+
 def identification_sign(parts, paving, field, info):
     e, n = info["position_enu_m"]
     w, d, h = (info[k] for k in ("width_m", "depth_m", "height_m"))
@@ -803,6 +853,7 @@ def main():
     walls(details, field, spec["southern_walls"])
     bed = identification_sign(details, ground, field, spec["southeast_sign"])
     memorial(details, field, spec["gar_monument"])
+    vault_box = smith_vault(details, field, spec["smith_vault"], site)
     for i, row in enumerate(spec["heritage_rose_positions"]):
         rose(details, field, row, i)
     for i, row in enumerate(spec["marker_estimates"]):
@@ -860,6 +911,7 @@ def main():
             *landmarks,
             *support_boxes,
             *kiosk_boxes,
+            vault_box,
         ],
     }
     descriptor = args.stage / "site.json"
@@ -881,6 +933,9 @@ def main():
         "grave_plot_curb_area_m2": round(curb_area, 2),
         "support_structures": 2,
         "memorial_square_kiosk_and_sign": 2,
+        "smith_vault_bounds_enu_m": vault_box,
+        "smith_vault_height_m": spec["smith_vault"]["wall_height_m"]
+        + spec["smith_vault"]["roof_rise_m"],
         "support_apron_area_m2": round(apron_area, 2),
         "removed_procedural_tree_indices": [
             x["index"] for x in payload["context_trees"]

@@ -6,6 +6,24 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Heritage 庭院、Howe Field 纪念门与历史场地细节
+
+- Hello Walk 延伸至翻修后的 University Hall 和 Villard Hall 庭院，新增四组路支及 30 条导航边。补建铺装、八处种植床、四株示意幼树、座椅、灯具、University Hall 楼名牌和 Villard 南侧台阶与坡道。移除两株穿入新铺装的程序背景树。高程、尺寸和植物物种采用估计。[Heritage 庭院复核](docs/heritage-courtyard-landscape-review-2026-11-27.md)。
+- 一并发布此前核对的 Howe Field 纪念门、Fenton 两处纪念水设施、Hello Walk 南段和 Pioneer Cemetery 的 Smith Vault 及邻近墓区边石。[景观发布范围](docs/landscape-l2-inventory.md)。
+- 庭院两次导出逐字节一致。五组固定镜头对比及桌面、手机生产预览核对了步道、标识、阶梯和扶手，两端均加载台账中 610 个外部模型对应的网格。格式、197 项单测、生产构建、465 项归档与 408 项查看器哈希检查通过。发布使用 main 的 GitHub Pages 工作流。[部署历史](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
+## 2026-11-27 - Howe Field 纪念门入口和 1920 届饮水台（本地）
+
+- 恢复 Howe Field 三段混凝土墙、两扇固定铁门、带铁格的售票窗口、台面及纪念牌。补建 731.96 平方米铺装、161.00 平方米沥青、六处种植小片和椭圆雨水花坛。墙厚、铭牌、植被和尺寸为估计。[Howe Field 景观复核](docs/howe-field-gates-landscape-review-2026-11-27.md)。
+- 按校方场地图和照片恢复 Fenton Hall 东侧的 1920 届饮水台，带凸棱立柱、四支弯臂、四个圆碗与喷嘴。位置、比例和材质采用估算。Fenton 外观与 Hello Walk 网格与上次导出一致。[Fenton 饮水台复核](docs/fenton-exterior-review-2026-11-24.md#class-of-1920-drinking-bubbler)。
+- 两套资产重复导出一致。五组配对视图和九项浏览器检查覆盖门洞净空、铺装、花坛、饮水台、Fenton 进出门和损坏包回退。桌面与手机生产预览均加载 610 个模型 ID 对应的网格，五条新增导航边接通 University Street 至广场，测试路线均为 49.36 米。格式、构建、197 项单测、465 项归档与 408 项查看器哈希通过。变更在本地，Pages 仍为 `63263a9`。
+
+## 2026-11-27 - Smith Vault、1913 届纪念喷泉和 Hello Walk（本地）
+
+- 补建 Smith Vault 的浅四坡抹灰顶和端面铭牌，配准 Cherry Avenue 附近两组可辨墓区边石。墓室高度和铭牌朝向为估计。既有墓园铺装、台阶、树冠、附属设施及导览亭网格与发布版一致。[墓园复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md#smith-vault-and-adjacent-plot-edges)。
+- 在 Fenton Hall 北侧恢复阶形喷泉池和四脚圆碗。Hello Walk 从 E 13th Avenue 接至 University Hall 南侧弯道，增加 242.80 平方米铺装和 17 条路线边。树冠遮挡处的连接及喷泉标高为估计。Fenton 建筑外观网格与发布版一致。[Fenton 景观复核](docs/fenton-exterior-review-2026-11-24.md#class-of-1913-fountain-and-hello-walk)。
+- 两处独立重复导出均一致。三组配对视图、10 项浏览器用例、197 项单测、格式检查、生产构建、463 项归档核对和 406 项查看器哈希检查均通过。桌面和手机均实际加载 610 个外观 ID 对应的网格，并得到相同的 105.19 米 Hello Walk 路线。改动在本地，Pages 仍为 `63263a9`。
+
 ## 2026-11-27 - 发布室外 L2 景观增补
 
 - 将 Pioneer Cemetery 内部景观与 Memorial Square 导览亭、Gerlinger Field Green、Women’s Memorial Quad、Gerlinger Entrance Green 及 Straub Hall Green 纳入默认室外场景。保留 610 个在用建筑与设施外观 ID、457 个入口和 139 条走廊记录。[景观台账](docs/landscape-l2-inventory.md)。

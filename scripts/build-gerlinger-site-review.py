@@ -96,8 +96,9 @@ def tower_roof(parts, base):
                     parts,
                     face,
                     23.08,
-                    lambda e, n: low
-                    + (elevation - low) * ((e, n)[axis] - start) / (end - start),
+                    lambda e, n: (
+                        low + (elevation - low) * ((e, n)[axis] - start) / (end - start)
+                    ),
                     CONCRETE,
                     COPPER,
                 )
@@ -160,9 +161,9 @@ def hall_roof(parts, plan, spec, bottom):
                     parts,
                     box(begin, low, end, high),
                     23.84,
-                    lambda x, y: 25.64
-                    + 0.56 * (1 - abs(x - e) / half)
-                    + 0.10 * abs(y - front_n),
+                    lambda x, y: (
+                        25.64 + 0.56 * (1 - abs(x - e) / half) + 0.10 * abs(y - front_n)
+                    ),
                     TRIM,
                     SHINGLE,
                 )
@@ -437,10 +438,17 @@ def export(
     ground_node=GROUND,
     ground_layer="gerlinger-paving",
     vegetation=None,
+    walkable=None,
 ):
     scene = trimesh.Scene()
     vegetation = vegetation or {}
-    for name, mesh in (*buildings.items(), (ground_node, terrain), *vegetation.items()):
+    walkable = walkable or {}
+    for name, mesh in (
+        *buildings.items(),
+        (ground_node, terrain),
+        *vegetation.items(),
+        *walkable.items(),
+    ):
         colors = mesh.visual.vertex_colors.copy()
         srgb = colors[:, :3].astype(float) / 255
         linear = np.where(
@@ -451,9 +459,9 @@ def export(
         scene.add_geometry(mesh, node_name=name, geom_name=name)
 
     def identify(tree):
-        tree["asset"][
-            "copyright"
-        ] = "Open Campus contributors. Original geometry CC BY 4.0."
+        tree["asset"]["copyright"] = (
+            "Open Campus contributors. Original geometry CC BY 4.0."
+        )
         tree["materials"] = [
             {"pbrMetallicRoughness": {"metallicFactor": 0.025, "roughnessFactor": 0.86}}
         ]
@@ -471,6 +479,8 @@ def export(
                     "asset_kind": "landscape-detail",
                     "detail_kind": "vegetation",
                 }
+            elif name in walkable:
+                node["extras"] = {"asset_kind": "landscape-surface", "asset_id": name}
         for mesh in tree["meshes"]:
             mesh["primitives"][0]["material"] = 0
 
@@ -480,7 +490,12 @@ def export(
         )
     )
     reload = trimesh.load(output, force="scene", process=False)
-    assert set(reload.graph.nodes_geometry) == {*buildings, ground_node, *vegetation}
+    assert set(reload.graph.nodes_geometry) == {
+        *buildings,
+        ground_node,
+        *vegetation,
+        *walkable,
+    }
     assert np.allclose(scene.bounds, reload.bounds, atol=0.00005)
 
 

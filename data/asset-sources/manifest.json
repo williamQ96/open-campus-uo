@@ -1644,16 +1644,16 @@
       "origin": "Original source-pinned runtime descriptor for Chapman and Condon, including registered footprints and stair approach collision."
     },
     "apps/web-preview/public/scene/fenton-site-review/site.glb": {
-      "bytes": 3167764,
-      "sha256": "9fc92408b7e3080f3f3d6e19290565cfb9c3b130879cbe4a8a17fe45b02bd33f",
+      "bytes": 4370860,
+      "sha256": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
       "license": "CC-BY-4.0",
-      "origin": "Original Fenton Hall exterior and approaches, with hipped metal roof, east entrance, tower and western stacks."
+      "origin": "Original Fenton architecture, Hello Walk and Heritage Project courtyard geometry. See docs/fenton-exterior-review-2026-11-24.md and docs/heritage-courtyard-landscape-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/fenton-site-review/site.json": {
-      "bytes": 1720,
-      "sha256": "129ab481cc704b63ba1867a3c5451741bc61f47d08c548d81626d34dd767c96f",
+      "bytes": 3807,
+      "sha256": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
       "license": "CC-BY-4.0",
-      "origin": "Original source-pinned Fenton Hall site descriptor, including the campus footprint, steps, planter collision and two entrances."
+      "origin": "Original Fenton architecture, Hello Walk and Heritage Project courtyard geometry. See docs/fenton-exterior-review-2026-11-24.md and docs/heritage-courtyard-landscape-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/heritage-core-review/site.glb": {
       "bytes": 4385120,
@@ -2994,14 +2994,14 @@
       "origin": "Original neighborhood exterior geometry and documented 2025 Patterson ground, see docs/neighborhood-exterior-closeout-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.glb": {
-      "bytes": 3052108,
-      "sha256": "10746896de1c01ebb68fe04ab73e79e996b711727cd95b5a6f44e4313f8c22f4",
+      "bytes": 3082204,
+      "sha256": "4af05a89106ae543ed93297865edbae4e6ee559ba7f8d1243af2f4d2cc329b51",
       "license": "CC-BY-4.0",
       "origin": "Original Pioneer Cemetery landscape, paths, memorials and site fittings. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.json": {
-      "bytes": 2381,
-      "sha256": "d853422752e6d994205add2851d987d5ff5edcdabecaa479fe52a1222b9e892e",
+      "bytes": 2414,
+      "sha256": "8561d9e7ed6d74cfa5df0696338de2f470c9ae39679ca70c58e8f4d943b389aa",
       "license": "CC-BY-4.0",
       "origin": "Original Pioneer Cemetery landscape, paths, memorials and site fittings. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
@@ -3028,6 +3028,18 @@
       "sha256": "f01d3046cc693a896bac8838475a529b4a875a56398ee470a4cfd31ef66dcb69",
       "license": "CC-BY-4.0",
       "origin": "Original central campus landscape geometry. See docs/central-campus-greens-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/howe-field-gates-review/site.glb": {
+      "bytes": 581608,
+      "sha256": "02020fb07c30687d98cffbe1d67d1265eba787c834e0c258f9e0a3a43df9c56f",
+      "license": "CC-BY-4.0",
+      "origin": "Original Howe Field Gates, Soldiers Memorial ticket wall, plaza and planting geometry. See docs/howe-field-gates-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/howe-field-gates-review/site.json": {
+      "bytes": 1726,
+      "sha256": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901",
+      "license": "CC-BY-4.0",
+      "origin": "Original Howe Field Gates, Soldiers Memorial ticket wall, plaza and planting geometry. See docs/howe-field-gates-landscape-review-2026-11-27.md."
     }
   },
   "additional_sources": [

@@ -1,0 +1,81 @@
+{
+  "wall_height_m": 2.38,
+  "wall_thickness_m": 0.43,
+  "wall_segments_enu_m": [
+    [[-287.75, -469.12], [-287.94, -475.82]],
+    [[-292.12, -482.23], [-293.08, -488.26]]
+  ],
+  "ticket_booth_enu_m": [[-289.11, -477.10], [-290.91, -479.98]],
+  "ticket_booth_width_m": 0.98,
+  "side_gate_length_m": 1.14,
+  "side_gate_height_m": 2.08,
+  "parking_apron_enu_m": [
+    [-299.85, -468.9], [-288.3, -468.55], [-288.68, -475.70], [-289.69, -477.02],
+    [-291.36, -479.95], [-292.57, -482.3], [-293.54, -488.2], [-294.7, -490.8],
+    [-299.4, -490.5]
+  ],
+  "access_aisle_hatches_enu_m": [
+    [[-299.45, -471.16], [-296.44, -469.78]],
+    [[-299.42, -472.18], [-295.41, -470.33]],
+    [[-299.39, -473.20], [-294.4, -470.89]],
+    [[-299.35, -474.23], [-293.42, -471.48]],
+    [[-299.31, -475.23], [-292.82, -472.25]]
+  ],
+  "pavement_enu_m": [
+    [-299.2, -489.65], [-293.0, -488.45], [-286.4, -489.0],
+    [-279.4, -489.2], [-271.3, -487.2], [-261.7, -486.4], [-250.8, -487.65],
+    [-251.5, -504.65], [-260.4, -502.7], [-268.9, -501.25], [-279.5, -499.1],
+    [-291.65, -500.15], [-299.05, -502.1]
+  ],
+  "diagonal_walks": [
+    {"centerline": [[-296.42, -483.4], [-292.0, -481.2], [-286.7, -483.1], [-279.2, -489.2]], "width": 2.45},
+    {"centerline": [[-292.2, -475.35], [-288.75, -476.4], [-283.7, -477.2], [-278.5, -481.2], [-272.3, -488.1]], "width": 2.55}
+  ],
+  "bed_centers_enu_m": [[-285.9, -472.9], [-284.8, -473.36], [-285.85, -480.48], [-285.8, -481.80], [-289.95, -485.9], [-289.8, -487.2]],
+  "filtration_planter": {
+    "center_enu_m": [-251.78, -501.58],
+    "radii_m": [3.53, 1.75],
+    "rotation_degrees": -49
+  },
+  "route": {
+    "anchor_enu_m": [-306.635, -489.654],
+    "points_enu_m": [[-298.1, -494.1], [-288.2, -494.1], [-278.0, -494.0], [-267.6, -493.8], [-257.5, -493.7]]
+  },
+  "sources": [
+    {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/howefieldandgates_2014.pdf",
+      "use": "Historic wall, booth, window and gate dimensions. The restoration retained smaller iron leaves on either side of the booth."
+    },
+    {
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/howe-field-gates-soldiers-memorial",
+      "use": "Names, plaque location and material."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Howe_Field_Memorial_Gates,_Jane_Sander_sStadium.jpg",
+      "photographer": "Grand'mere Eugene",
+      "date": "2018-05-18",
+      "license": "CC-BY-SA-4.0",
+      "sha256": "f41aaa2347309e7ef17c13a313f83483113019534ad823a0be99426321e5c65e",
+      "use": "As-built inner elevation, open positions of the iron leaves, ticket window and planting."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JOWfO6cWDDwVD2oYsGRJog&heading=101.74",
+      "date": "2024-07",
+      "use": "West elevation and three-part arrangement. Width and exact ironwork details are estimates."
+    },
+    {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/sap2019_stormwater.pdf",
+      "pages_pdf": [13, 14],
+      "sha256": "c2619d0c20b43a24b332ee46244165c0705a0f78f8e2044e6c3ecca98bffc49b",
+      "use": "Concrete rim, vegetation and position of Filtration Planter 1 at the entrance canopy."
+    },
+    {
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer",
+      "bounds_enu_m": [-317, -585, -220, -457],
+      "sha256_2017": "d9093223e5a7e22a2164c6f37857663b6820c2f33be2405fb40fe6c3ea09762a",
+      "sha256_2021": "eb28e770be5ca2bd2499a678151152558b2edc633e1431e2135b985ec403855f",
+      "sha256_2025": "1b2ab3c0c1e562770d8de6a2748436114267e05d48a2cf853f907046323edc4f",
+      "use": "Wall alignments, landscape boundaries, diagonals and planter outline."
+    }
+  ]
+}
