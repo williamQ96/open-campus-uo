@@ -9,7 +9,17 @@ This package reconstructs the main outdoor circulation and several visible landm
 
 Two independent exports matched byte for byte. Five before-and-after views verify the four landscape meshes. The 113.61 m model route crosses the stair and reaches Memorial Square. Desktop and phone production previews check all 11 increasing standing heights, both rail and centerline behavior, the sign and monument obstacle footprints, and four paved sampling points. A changed GLB restores the previous landscaping, terrain behavior and all 15 original tree ranges. Both devices retain the same 610 selectable exteriors, 457 entrances and 139 corridor records. The build, formatting, 197 unit tests, eight related browser cases, 459 archive checks and 402 viewer hash checks passed. The package ships with the default GitHub Pages scene. [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
 
-Internal alleys, screened grave rows, individual plot curbs, the information kiosk and the cemetery maintenance roofs still need separate registration. Campus-wide landscape coverage is tracked by site and feature. [Landscape inventory](landscape-l2-inventory.md).
+## November 27 inner plots and support structures
+
+Four open grass alleys and 13 surviving curb groups now follow visible alignments checked against the 2021 and 2025 imagery. Patches with partial evidence retain open ends. Widths are the estimated visible strips, and their modern surfaces are mown grass. The historic nomination records 8-foot platted alleys and illustrates the curb profiles. [Lane County orthophotos](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer) · [National Register nomination, PDF pp. 6–7 and 30](https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669).
+
+The hip-roof masonry maintenance building, neighboring post-and-gable shelter and about 112 m² of approach surface follow the two recurring aerial roof outlines and the historic façade images. Elevations and openings are approximate. The shelter's supports are solid and its covered bay is open in the preview. One procedural tree that passed through its roof is suppressed. Both structures are part of the landscape bundle. [National Register nomination, PDF pp. 9 and 37](https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669).
+
+The second package builds reproducibly and keeps the published 113.61 m route from University Street to Memorial Square. The additions are included in the November 27 release. Screened grave rows and further curb segments are still pending. [Landscape inventory](landscape-l2-inventory.md).
+
+## Memorial Square kiosk and sign
+
+The association’s fall 2026 newsletter photographs the interpretive kiosk installed in 2016 and the green sign beside it. The 2017 and 2021 aerials expose the kiosk roof, and the 2025 image shows canopy over the area. The model uses the observed timber posts, planked notice board, corrugated roof and green sign. Roof dimensions and sign placement are estimates. The paper inserts use representative graphics. Both fixtures have local collision, and the nearby walk remains open. [Association newsletter, PDF p. 3](https://eugenepioneercemetery.org/wp-content/uploads/2026/11/EPC-e-Newsletter-FALL-2026_High-res.pdf) · [Cemetery self-guided map](https://eugenepioneercemetery.org/self-guided-tour/).
 
 - [Editable model input](../data/metadata/pioneer-cemetery-landscape-review.json)
 - [Exporter](../scripts/build-pioneer-cemetery-landscape-review.py)

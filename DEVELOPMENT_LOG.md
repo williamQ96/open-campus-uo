@@ -6,6 +6,23 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release expanded outdoor L2 landscapes
+
+- Release the Pioneer Cemetery inner grounds and Memorial Square kiosk, Gerlinger Field Green, Women’s Memorial Quad, Gerlinger Entrance Green and Straub Hall Green as the default outdoor scene. The release retains the 610 active building and facility exterior IDs, 457 entrances and 139 corridor records. [Landscape coverage](docs/landscape-l2-inventory.md).
+- Before pushing, formatting, 197 unit tests, the production build and 463 archived asset checks passed. Publication uses the GitHub Pages workflow on main. [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
+## 2026-11-27 - Central campus greens and Memorial Square kiosk (local verification)
+
+- Registered 26 paths, the Gerlinger horseshoe, the University Street crossing, terrace wall and stairs, seven benches, bicycle rack and art platform. Added 30 trees at registry anchors and removed 54 conflicting procedural trees and four shrubs. Stair and furnishing dimensions are estimated. The Straub sculpture site uses its surveyed platform and an interpretive plate. [Central campus greens review](docs/central-campus-greens-review-2026-11-27.md).
+- Added the photographed timber kiosk and adjacent green sign at Pioneer Cemetery. The board layout and dimensions are estimated. Collision checks confirm both board footprints and the open approach. [Memorial Square kiosk](docs/pioneer-cemetery-landscape-review-2026-11-26.md#memorial-square-kiosk-and-sign).
+- The two exports match. The new paths add 63 edges and reduce the tested Quad-to-Straub route from 310.76 m to 248.58 m. The production desktop and phone checks each load geometry for all 610 model IDs and retain 457 entrances and 139 corridor records. The build, 197 unit tests, 15 related browser cases, 463 archive checks and 406 viewer pin checks passed. The new geometry is local on top of Pages commit `bb23e9b`. [Landscape coverage](docs/landscape-l2-inventory.md).
+
+## 2026-11-27 - Gerlinger Field Green and Pioneer Cemetery inner grounds (local)
+
+- Rebuilt the open Gerlinger lawn, six walks, the Annex apron and concrete stair, about 39 m of low walls, parking sign and three planting areas. Registered ten edge trees and removed 42 procedural pilot trees and 12 shrubs that conflicted with the open field and paths. The stair has 15 estimated treads. [Gerlinger Field Green review](docs/gerlinger-field-green-review-2026-11-26.md).
+- Registered four visible grass alleys, 13 plot curb groups, a maintenance building and an open-sided roof shelter within Pioneer Cemetery. Removed one procedural tree intersecting the shelter. The existing route to Memorial Square remains 113.61 m. [Pioneer Cemetery review](docs/pioneer-cemetery-landscape-review-2026-11-26.md#november-27-inner-plots-and-support-structures).
+- Both packages reproduce byte for byte. Six paired views and 19 related browser cases passed, including retained planting and corrupt-package fallbacks. The local desktop and phone previews each rendered actual geometry for all 610 active IDs and kept 457 entrances. The build, 197 unit tests, 461 archive checks and 404 viewer hash checks passed. Changes remain local on top of the Pages release `bb23e9b`. [Landscape coverage](docs/landscape-l2-inventory.md).
+
 ## 2026-11-26 - Publish the first Pioneer Cemetery landscape package
 
 - Registered eight gravel ways, the eleven-step University Street entry, East 18th retaining walls, the cemetery sign, the GAR monument, 23 representative stone markers, six heritage rose clusters and 121 estimated tree crowns. Fifteen conflicting procedural trees are suppressed in the default scene. [Site and source review](docs/pioneer-cemetery-landscape-review-2026-11-26.md).

@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_PILOT_TREES } from "./exterior-counts.js";
 
 const baseline = "/?exterior-review=tree-model-baseline";
 
@@ -25,7 +26,10 @@ test("the rebuilt pilot trees use the same count, registered stems and entrances
   const before = await sceneState(page, baseline);
   expect(before.refined).toBe(0);
   expect(before.registered).toBe(11);
-  expect(await sceneState(page)).toEqual({ ...before, refined: 273 });
+  expect(await sceneState(page)).toEqual({
+    ...before,
+    refined: DEFAULT_PILOT_TREES,
+  });
 });
 
 test("damaged replacement geometry keeps the preceding pilot batches", async ({

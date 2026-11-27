@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 import {
   DEFAULT_BACKGROUND_TREES,
+  DEFAULT_PILOT_TREES,
   DEFAULT_VISIBLE_SOURCE_TREES,
 } from "./exterior-counts.js";
 
@@ -32,7 +33,7 @@ test("the rebuilt background layer retains the active site tree decisions", asyn
     sourceTrees: 600,
     trees: DEFAULT_VISIBLE_SOURCE_TREES,
     contextTrees: 0,
-    pilotTrees: 273,
+    pilotTrees: DEFAULT_PILOT_TREES,
   });
   expect(await readScene(page)).toEqual({
     ...prior,

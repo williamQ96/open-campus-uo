@@ -2994,16 +2994,40 @@
       "origin": "Original neighborhood exterior geometry and documented 2025 Patterson ground, see docs/neighborhood-exterior-closeout-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.glb": {
-      "bytes": 2623220,
-      "sha256": "7e054366cc5b3115d321160ac1c223d28fc9778ac707d9128dc87ebf9d5a2137",
+      "bytes": 3052108,
+      "sha256": "10746896de1c01ebb68fe04ab73e79e996b711727cd95b5a6f44e4313f8c22f4",
       "license": "CC-BY-4.0",
-      "origin": "Original landscape scene geometry from documented Pioneer Cemetery paths, masonry, canopy and landmark studies. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
+      "origin": "Original Pioneer Cemetery landscape, paths, memorials and site fittings. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.json": {
-      "bytes": 1867,
-      "sha256": "4ea92fe0c821fd613fe60e70a436aa3bdd757ac109e3d9be7f72309cbad3be89",
+      "bytes": 2381,
+      "sha256": "d853422752e6d994205add2851d987d5ff5edcdabecaa479fe52a1222b9e892e",
       "license": "CC-BY-4.0",
-      "origin": "Original landscape scene geometry from documented Pioneer Cemetery paths, masonry, canopy and landmark studies. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
+      "origin": "Original Pioneer Cemetery landscape, paths, memorials and site fittings. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/gerlinger-field-green-review/site.glb": {
+      "bytes": 968248,
+      "sha256": "4d940cd30c55aa98bde831bb218c83c49cc254c93bb14e375941de3207e9c884",
+      "license": "CC-BY-4.0",
+      "origin": "Original Gerlinger Field Green landscape and site-detail geometry. See docs/gerlinger-field-green-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/gerlinger-field-green-review/site.json": {
+      "bytes": 5112,
+      "sha256": "a5862622431e886b5824c1204465bee48e10cca68126db51c1a3da1706b41efb",
+      "license": "CC-BY-4.0",
+      "origin": "Original Gerlinger Field Green landscape and site-detail geometry. See docs/gerlinger-field-green-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/central-campus-greens-review/site.glb": {
+      "bytes": 2911884,
+      "sha256": "984f4a8f8354cb960afc82d9ab9360433ea5fbef61030f341f7c9feac1801bd7",
+      "license": "CC-BY-4.0",
+      "origin": "Original central campus landscape geometry. See docs/central-campus-greens-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/central-campus-greens-review/site.json": {
+      "bytes": 7070,
+      "sha256": "f01d3046cc693a896bac8838475a529b4a875a56398ee470a4cfd31ef66dcb69",
+      "license": "CC-BY-4.0",
+      "origin": "Original central campus landscape geometry. See docs/central-campus-greens-review-2026-11-27.md."
     }
   },
   "additional_sources": [

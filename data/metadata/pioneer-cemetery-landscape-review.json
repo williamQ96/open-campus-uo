@@ -660,6 +660,13 @@
       ]
     },
     {
+      "index": 69,
+      "position_enu_m": [
+        -435.531,
+        -408.348
+      ]
+    },
+    {
       "index": 82,
       "position_enu_m": [
         -514.408,
@@ -2129,5 +2136,425 @@
       "silhouette": "low"
     }
   ],
-  "marker_reference": "Matched small pale features in all three Lane County aerials with a manual visual screen. Localized silhouettes and heights are estimates. No burial names assigned."
+  "marker_reference": "Matched small pale features in all three Lane County aerials with a manual visual screen. Localized silhouettes and heights are estimates. No burial names assigned.",
+  "inner_alleys": [
+    {
+      "centerline_enu_m": [
+        [
+          -461.3,
+          -545.5
+        ],
+        [
+          -461.1,
+          -558.2
+        ]
+      ],
+      "width_m": 1.58,
+      "basis": "Open north-south strip between two visible 1908-section curb rows."
+    },
+    {
+      "centerline_enu_m": [
+        [
+          -452.9,
+          -545.5
+        ],
+        [
+          -452.8,
+          -557.6
+        ]
+      ],
+      "width_m": 1.4,
+      "basis": "Open north-south strip between recurring 1908-section curbs."
+    },
+    {
+      "centerline_enu_m": [
+        [
+          -371.1,
+          -415.7
+        ],
+        [
+          -359.6,
+          -415.4
+        ],
+        [
+          -345.5,
+          -415.6
+        ]
+      ],
+      "width_m": 1.6,
+      "basis": "Open cross-strip visible south of the older northern plot row."
+    },
+    {
+      "centerline_enu_m": [
+        [
+          -397.7,
+          -426.2
+        ],
+        [
+          -384.1,
+          -426.1
+        ],
+        [
+          -368.7,
+          -426.0
+        ]
+      ],
+      "width_m": 1.33,
+      "basis": "Mown cross-strip between repeated headstone bands and along the south sides of surviving concrete."
+    }
+  ],
+  "grave_plot_edges": [
+    {
+      "points_enu_m": [
+        [
+          -468.9,
+          -556.7
+        ],
+        [
+          -468.6,
+          -546.5
+        ],
+        [
+          -462.6,
+          -546.5
+        ],
+        [
+          -462.3,
+          -557.1
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -459.5,
+          -547.8
+        ],
+        [
+          -453.8,
+          -547.8
+        ],
+        [
+          -453.65,
+          -556.8
+        ],
+        [
+          -459.4,
+          -556.8
+        ]
+      ],
+      "material": "concrete",
+      "closed": true
+    },
+    {
+      "points_enu_m": [
+        [
+          -449.6,
+          -547.8
+        ],
+        [
+          -444.9,
+          -548.1
+        ],
+        [
+          -444.8,
+          -556.9
+        ],
+        [
+          -449.6,
+          -556.9
+        ]
+      ],
+      "material": "concrete",
+      "closed": true
+    },
+    {
+      "points_enu_m": [
+        [
+          -443.1,
+          -547.7
+        ],
+        [
+          -437.3,
+          -547.8
+        ],
+        [
+          -437.0,
+          -556.9
+        ]
+      ],
+      "material": "stone",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -431.8,
+          -548.0
+        ],
+        [
+          -431.75,
+          -556.9
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -459.4,
+          -535.9
+        ],
+        [
+          -459.5,
+          -526.2
+        ],
+        [
+          -453.9,
+          -526.0
+        ],
+        [
+          -453.8,
+          -535.8
+        ]
+      ],
+      "material": "concrete",
+      "closed": true
+    },
+    {
+      "points_enu_m": [
+        [
+          -448.4,
+          -575.7
+        ],
+        [
+          -448.5,
+          -567.2
+        ],
+        [
+          -444.9,
+          -567.3
+        ]
+      ],
+      "material": "stone",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -449.5,
+          -586.7
+        ],
+        [
+          -449.5,
+          -579.1
+        ],
+        [
+          -444.8,
+          -579.1
+        ],
+        [
+          -444.8,
+          -587.0
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -398.5,
+          -449.4
+        ],
+        [
+          -398.65,
+          -444.45
+        ],
+        [
+          -385.8,
+          -444.4
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -387.2,
+          -477.0
+        ],
+        [
+          -391.8,
+          -477.1
+        ],
+        [
+          -391.8,
+          -473.3
+        ],
+        [
+          -387.2,
+          -473.2
+        ]
+      ],
+      "material": "concrete",
+      "closed": true
+    },
+    {
+      "points_enu_m": [
+        [
+          -372.6,
+          -413.1
+        ],
+        [
+          -372.5,
+          -405.7
+        ],
+        [
+          -367.8,
+          -405.7
+        ]
+      ],
+      "material": "stone",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -368.4,
+          -439.9
+        ],
+        [
+          -360.3,
+          -439.8
+        ],
+        [
+          -360.3,
+          -432.4
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -360.0,
+          -423.9
+        ],
+        [
+          -359.9,
+          -420.5
+        ],
+        [
+          -355.0,
+          -420.5
+        ],
+        [
+          -354.95,
+          -423.9
+        ]
+      ],
+      "material": "concrete",
+      "closed": true
+    }
+  ],
+  "support_structures": {
+    "maintenance_roof_bounds_enu_m": [
+      -440.6,
+      -407.0,
+      -431.35,
+      -400.75
+    ],
+    "shelter_roof_bounds_enu_m": [
+      -437.4,
+      -412.0,
+      -427.15,
+      -407.15
+    ],
+    "apron_enu_m": [
+      [
+        -439.5,
+        -400.8
+      ],
+      [
+        -431.0,
+        -400.9
+      ],
+      [
+        -430.7,
+        -405.7
+      ],
+      [
+        -426.5,
+        -405.2
+      ],
+      [
+        -420.3,
+        -400.4
+      ],
+      [
+        -417.1,
+        -390.2
+      ],
+      [
+        -423.4,
+        -390.0
+      ],
+      [
+        -430.3,
+        -397.0
+      ]
+    ],
+    "basis": "Two roof outlines recur in the 2021 and 2025 county orthophotos. The hip and stand-alone post-and-gable types use the photographed annexes on p. 37 of the historic nomination; elevations and opening details are estimates."
+  },
+  "interior_landscape_sources": {
+    "basis": "Grave plot edges follow only recurring, visually exposed portions of the aerial traces. Historic photographs guide curb profiles. Internal access follows short open strips and uses the observed mown appearance. The nominal 8-foot plat width is a historic reserve, so the modeled clear strips follow the narrower visible width.",
+    "sources": [
+      {
+        "file": "lane-2021.png",
+        "sha256": "8efeb1b05ee3d09a57f9600ae4ded89377b816069afae8e974900593207f8d66"
+      },
+      {
+        "file": "lane-2025.png",
+        "sha256": "2a505962ffe72adbf83bed4ee6ba248d4cc85037e8c98e6609cd06a13cf55fe4"
+      },
+      {
+        "file": "national-register.pdf",
+        "sha256": "8380c416283d68666744277ac9a22fc49ca15ab7404ae4fa57d56fc53e34ad1a"
+      },
+      {
+        "file": "association-tour.jpg",
+        "sha256": "98273f83dce02013e75940e56466a90dec9e2a93b1cd285990ec71609b56dca4"
+      }
+    ]
+  },
+  "memorial_square_kiosk": {
+    "position_enu_m": [
+      -409.55,
+      -399.12
+    ],
+    "bearing_degrees": 149,
+    "roof_width_m": 3.2,
+    "roof_depth_m": 2.02,
+    "eave_m": 2.37,
+    "ridge_m": 2.66,
+    "board_width_m": 2.12,
+    "sign_position_enu_m": [
+      -415.55,
+      -402.2
+    ],
+    "sign_bearing_degrees": 66,
+    "evidence": "The 2017 and 2021 county aerials expose the covered board. The 2025 view is shaded by trees. The association caption and photo establish the 2016 kiosk, board, wood frame, roof and adjacent green sign. Board and sign dimensions are estimates.",
+    "source": {
+      "url": "https://eugenepioneercemetery.org/wp-content/uploads/2026/11/EPC-e-Newsletter-FALL-2026_High-res.pdf",
+      "path": "epca-fall-2026.pdf",
+      "sha256": "8ad169fdce057a4d11a3970e209d42b836e0789c415196cde91c82c376047dd7",
+      "page_pdf": 3
+    }
+  }
 }

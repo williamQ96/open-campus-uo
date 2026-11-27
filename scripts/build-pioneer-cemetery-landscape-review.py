@@ -35,6 +35,7 @@ MARBLE = (162, 168, 160)
 SOIL = (119, 103, 82)
 GLYPHS = {
     **frontage.GLYPHS,
+    "A": (((0, 0), (0.50, 1), (1, 0)), ((0.23, 0.46), (0.77, 0.46))),
     "B": (
         ((0, 0), (0, 1), (0.77, 1), (0.98, 0.83), (0.71, 0.55), (0, 0.55)),
         ((0.71, 0.55), (1, 0.34), (0.86, 0), (0, 0)),
@@ -49,6 +50,18 @@ GLYPHS = {
             (0.25, 0),
             (0.75, 0),
             (1, 0.17),
+        ),
+    ),
+    "D": (
+        (
+            (0, 0),
+            (0, 1),
+            (0.55, 1),
+            (0.91, 0.80),
+            (0.98, 0.52),
+            (0.89, 0.19),
+            (0.55, 0),
+            (0, 0),
         ),
     ),
     "F": (((0, 0), (0, 1), (1, 1)), ((0, 0.53), (0.82, 0.53))),
@@ -69,6 +82,22 @@ GLYPHS = {
     "L": (((0, 1), (0, 0), (1, 0)),),
     "M": (((0, 0), (0, 1), (0.5, 0.43), (1, 1), (1, 0)),),
     "P": (((0, 0), (0, 1), (0.78, 1), (1, 0.80), (0.78, 0.56), (0, 0.56)),),
+    "Q": (
+        (
+            (0.32, 0),
+            (0.09, 0.19),
+            (0.01, 0.48),
+            (0.09, 0.81),
+            (0.32, 1),
+            (0.69, 1),
+            (0.91, 0.81),
+            (0.99, 0.48),
+            (0.91, 0.19),
+            (0.69, 0),
+            (0.32, 0),
+        ),
+        ((0.62, 0.25), (1, -0.04)),
+    ),
     "2": (((0, 0.78), (0.20, 1), (0.79, 1), (1, 0.75), (0.86, 0.50), (0, 0), (1, 0)),),
     "7": (((0, 1), (1, 1), (0.32, 0)),),
     "8": (
@@ -134,6 +163,111 @@ def named_paths(parts, field, spec):
     drape(parts, field, paving, GRAVEL, 0.082, 2.0)
     drape(parts, field, shoulders, SHOULDER, 0.058, 2.0)
     return paving
+
+
+def internal_landscape(paving, details, field, spec, main_paths):
+    curbs = []
+    for row in spec["grave_plot_edges"]:
+        points = row["points_enu_m"]
+        line = LineString([*points, points[0]] if row["closed"] else points)
+        material = CONCRETE if row["material"] == "concrete" else STONE
+        curb = line.buffer(0.105, cap_style="flat", join_style="mitre")
+        assert not curb.intersects(main_paths)
+        curbs.append(curb)
+        for a, b in zip(line.coords, list(line.coords)[1:]):
+            span = LineString([a, b])
+            count = max(1, int(np.ceil(span.length / 1.4)))
+            for i in range(count):
+                part = LineString(
+                    [
+                        span.interpolate(i / count, normalized=True),
+                        span.interpolate((i + 1) / count, normalized=True),
+                    ]
+                )
+                mesh = landscape.cap(
+                    part.buffer(0.105, cap_style="flat"), -0.05, 0.14, material
+                )
+                mesh.vertices[:, 1] += [
+                    ground_height(field, e, -z) for e, _, z in mesh.vertices
+                ]
+                details.append(mesh)
+    alleys = []
+    for row in spec["inner_alleys"]:
+        center = LineString(row["centerline_enu_m"])
+        strip = center.buffer(row["width_m"] / 2, cap_style="flat")
+        alley = strip.difference(unary_union([main_paths, *curbs]).buffer(0.1))
+        assert alley.area / strip.area >= 0.85
+        drape(paving, field, alley, (147, 159, 112), 0.086, 1.15)
+        alleys.append(alley)
+    return unary_union(alleys), sum(edge.area for edge in curbs)
+
+
+def support_structures(paved, details, field, spec, paths):
+    info = spec["support_structures"]
+    maintenance = box(*info["maintenance_roof_bounds_enu_m"])
+    shelter = box(*info["shelter_roof_bounds_enu_m"])
+    apron = Polygon(info["apron_enu_m"]).difference(
+        unary_union([maintenance, shelter, paths]).buffer(0.06)
+    )
+    drape(paved, field, apron, (136, 130, 112), 0.074, 1.35)
+    wx, sy, ex, ny = maintenance.bounds
+    e, n = maintenance.centroid.coords[0]
+    base = ground_height(field, e, n)
+    eave = base + 2.66
+    wall = maintenance.buffer(-0.44, join_style="mitre")
+    solid(details, wall, base - 0.48, eave - 0.04, (149, 145, 125))
+    solid(details, maintenance, eave - 0.11, eave, (110, 112, 107))
+    a, b = (wx + 2.5, n), (ex - 2.5, n)
+    roof_regions = (
+        (Polygon([(wx, sy), (ex, sy), b, a]), lambda x, y: (y - sy) / (n - sy)),
+        (Polygon([(ex, sy), (ex, ny), b]), lambda x, y: (ex - x) / (ex - b[0])),
+        (Polygon([(ex, ny), (wx, ny), a, b]), lambda x, y: (ny - y) / (ny - n)),
+        (Polygon([(wx, ny), (wx, sy), a]), lambda x, y: (x - wx) / (a[0] - wx)),
+    )
+    for i, (face, rise) in enumerate(roof_regions):
+        shade = (124 + i * 2, 126 + i * 2, 118 + i * 2)
+        landscape.top_surface(
+            details, face, lambda x, y, r=rise: eave + 1.22 * r(x, y), shade, cell=1.4
+        )
+    for x in (e - 2.68, e - 1.07):
+        flat_box(
+            details, x, ny - 0.445, 0.84, 0.06, base + 0.13, base + 2.13, (78, 83, 76)
+        )
+    for x in (e + 1.26, e + 2.52):
+        flat_box(
+            details, x, ny - 0.439, 0.46, 0.068, base + 1.08, base + 1.86, (91, 101, 97)
+        )
+    wx, sy, ex, ny = shelter.bounds
+    e, n = shelter.centroid.coords[0]
+    base = ground_height(field, e, n)
+    eave = base + 3.2
+    posts = [
+        box(x - 0.07, y - 0.07, x + 0.07, y + 0.07)
+        for x in (wx + 0.38, e, ex - 0.38)
+        for y in (sy + 0.31, ny - 0.31)
+    ]
+    for post in posts:
+        solid(details, post, base - 0.27, eave, (101, 88, 69))
+    for a, b in ((sy, n), (n, ny)):
+
+        def top(x, y):
+            return eave + 1.06 * (1 - abs(y - n) / (n - sy))
+
+        landscape.top_surface(
+            details, box(wx, a, ex, b), top, (112, 119, 111), cell=1.15
+        )
+        for x in np.linspace(wx + 0.3, ex - 0.28, 16):
+            beam(
+                details,
+                (x, a, top(x, a) + 0.013),
+                (x, b, top(x, b) + 0.013),
+                0.019,
+                (100, 109, 102),
+            )
+    beam(details, (wx, n, eave + 1.06), (ex, n, eave + 1.06), 0.044, (137, 144, 130))
+    for y in (sy + 0.31, ny - 0.31):
+        beam(details, (wx, y, eave - 0.14), (ex, y, eave - 0.14), 0.082, (102, 89, 72))
+    return [list(shape.bounds) for shape in [wall, *posts]], apron.area
 
 
 def stairs(paved, parts, field, spec):
@@ -221,6 +355,140 @@ def text_strokes(parts, title, point, glyph_width, height, color):
             points = [point(at + x * glyph_width, y * height) for x, y in stroke]
             for a, b in zip(points, points[1:]):
                 beam(parts, a, b, height * 0.065, color)
+
+
+def square_kiosk(parts, ground, field, info, ways):
+    def frame(enu, bearing):
+        center = np.array(enu)
+        angle = np.deg2rad(bearing)
+        axis = np.array([np.sin(angle), np.cos(angle)])
+        normal = np.array([-axis[1], axis[0]])
+
+        def xy(e, n):
+            return center + e * axis + n * normal
+
+        def plan(west, south, east, north):
+            return Polygon(
+                [xy(west, south), xy(east, south), xy(east, north), xy(west, north)]
+            )
+
+        return xy, plan, normal
+
+    center = info["position_enu_m"]
+    xy, plan, normal = frame(center, info["bearing_degrees"])
+    base = ground_height(field, *center)
+    width, depth = info["roof_width_m"] / 2, info["roof_depth_m"] / 2
+    panel = info["board_width_m"] / 2
+    wood = (147, 99, 54)
+    endgrain = (101, 67, 42)
+    roof = (138, 136, 118)
+    for side in (-1, 1):
+        e = side * panel
+        solid(
+            parts,
+            plan(e - 0.075, -0.07, e + 0.075, 0.07),
+            base - 0.12,
+            base + info["eave_m"],
+            wood,
+        )
+        for point in (e - side * 0.32, e + side * 0.23):
+            beam(
+                parts,
+                (*xy(e, 0), base + 2.03),
+                (*xy(point, -0.01), base + 2.35),
+                0.085,
+                endgrain,
+            )
+    solid(parts, plan(-panel, -0.065, panel, 0.047), base + 0.86, base + 1.96, endgrain)
+    for i in range(6):
+        z = base + 0.885 + i * 0.174
+        solid(parts, plan(-panel, 0.04, panel, 0.077), z, z + 0.162, wood)
+    solid(
+        parts,
+        plan(-width, -depth, width, depth),
+        base + info["eave_m"] - 0.049,
+        base + info["eave_m"],
+        wood,
+    )
+    ridge = info["ridge_m"] - info["eave_m"]
+
+    def roof_height(e, n):
+        offset = float((np.asarray([e, n]) - center) @ normal)
+        return base + info["eave_m"] + ridge * (1 - abs(offset) / depth)
+
+    for south, north in ((-depth, 0), (0, depth)):
+        surface = plan(-width, south, width, north)
+        landscape.top_surface(parts, surface, roof_height, roof, cell=0.58)
+        for e in np.linspace(-width + 0.07, width - 0.07, 15):
+            a, b = xy(e, south), xy(e, north)
+            beam(
+                parts,
+                (*a, roof_height(*a) + 0.008),
+                (*b, roof_height(*b) + 0.008),
+                0.015,
+                (112, 113, 101),
+            )
+    for i, (e, z, w, h) in enumerate(
+        [
+            (-0.76, 1.66, 0.22, 0.22),
+            (-0.78, 1.13, 0.24, 0.45),
+            (-0.46, 1.41, 0.25, 0.36),
+            (-0.19, 1.24, 0.17, 0.35),
+            (0.30, 1.20, 0.23, 0.23),
+            (0.61, 1.20, 0.23, 0.23),
+        ]
+    ):
+        solid(
+            parts,
+            plan(e, 0.079, e + w, 0.096),
+            base + z,
+            base + z + h,
+            (204 - 5 * (i % 3), 196 - 5 * (i % 3), 163 - 5 * (i % 3)),
+        )
+        for line in range(3):
+            a = xy(e + 0.04, 0.097)
+            b = xy(e + w - 0.04, 0.097)
+            z0 = base + z + h * (0.34 + 0.17 * line)
+            beam(parts, (*a, z0), (*b, z0), 0.005, (129, 130, 101))
+    kiosk = plan(-panel - 0.08, -0.115, panel + 0.08, 0.122)
+    assert kiosk.distance(ways) > 0.75
+    drape(ground, field, plan(-1.44, -0.8, 1.44, 1.42), (151, 150, 106), 0.065, 0.79)
+
+    sign = info["sign_position_enu_m"]
+    xy, plan, _ = frame(sign, info["sign_bearing_degrees"])
+    base = ground_height(field, *sign)
+    for e in (-0.62, 0.62):
+        solid(
+            parts,
+            plan(e - 0.045, -0.043, e + 0.045, 0.043),
+            base - 0.10,
+            base + 1.67,
+            wood,
+        )
+    solid(parts, plan(-0.69, -0.051, 0.69, 0.068), base + 0.70, base + 1.62, wood)
+    solid(
+        parts,
+        plan(-0.639, 0.066, 0.639, 0.077),
+        base + 0.75,
+        base + 1.575,
+        (49, 88, 63),
+    )
+    for name, z in (
+        ("EUGENE PIONEER", 1.414),
+        ("CEMETERY", 1.278),
+        ("MEMORIAL SQUARE", 1.001),
+    ):
+        text_strokes(
+            parts,
+            name,
+            lambda e, h: (*xy(e, 0.084), base + z + h),
+            0.049,
+            0.075,
+            (219, 214, 188),
+        )
+    banner = plan(-0.70, -0.082, 0.70, 0.081)
+    assert banner.distance(ways) > 0.75
+    return [list(kiosk.bounds), list(banner.bounds)]
 
 
 def identification_sign(parts, paving, field, info):
@@ -462,7 +730,7 @@ def canopy(parts, field, tree, index):
     parts.append(mesh)
 
 
-def export(path, *items):
+def export(path, *items, surface_layer=GROUND):
     model = trimesh.Scene()
     for name, parts, kind in items:
         mesh = landscape.ordered_mesh(trimesh.util.concatenate(parts))
@@ -474,8 +742,8 @@ def export(path, *items):
         colors[:, :3] = (linear * 255).round().astype(np.uint8)
         mesh.visual.vertex_colors = colors
         mesh.metadata.update(asset_id=name, asset_kind=kind)
-        if name == GROUND:
-            mesh.metadata["surface_layer"] = GROUND
+        if name == surface_layer:
+            mesh.metadata["surface_layer"] = surface_layer
         model.add_geometry(mesh, node_name=name, geom_name=name)
 
     def style(tree):
@@ -524,8 +792,13 @@ def main():
             np.diff([route["anchor_enu_m"], *route["points_enu_m"]], axis=0), axis=1
         )
     )
-    ground, details, treads, trees = [], [], [], []
+    ground, details, treads, trees, support, kiosk = [], [], [], [], [], []
     site = named_paths(ground, field, spec)
+    alleys, curb_area = internal_landscape(ground, details, field, spec, site)
+    support_boxes, apron_area = support_structures(ground, support, field, spec, site)
+    kiosk_boxes = square_kiosk(
+        kiosk, ground, field, spec["memorial_square_kiosk"], site
+    )
     rise = stairs(treads, details, field, spec["east_stair"])
     walls(details, field, spec["southern_walls"])
     bed = identification_sign(details, ground, field, spec["southeast_sign"])
@@ -549,6 +822,8 @@ def main():
         (STAIR, treads, "landscape-surface"),
         (DETAILS, details, "landscape-detail"),
         (CANOPY, trees, "landscape-vegetation"),
+        ("pioneer-cemetery-support", support, "landscape-detail"),
+        ("pioneer-cemetery-kiosk", kiosk, "landscape-detail"),
     )
     stair = spec["east_stair"]
     rail_boxes = []
@@ -580,7 +855,12 @@ def main():
         "buildings": [],
         "walkable_ground": route,
         "context_trees": spec["procedural_context_trees_to_remove"],
-        "closed_site_boxes_enu_m": [*rail_boxes, *landmarks],
+        "closed_site_boxes_enu_m": [
+            *rail_boxes,
+            *landmarks,
+            *support_boxes,
+            *kiosk_boxes,
+        ],
     }
     descriptor = args.stage / "site.json"
     fairmount.write_json(descriptor, payload, compact=True)
@@ -595,6 +875,13 @@ def main():
         "registered_rose_clusters": len(spec["heritage_rose_positions"]),
         "registered_canopy_estimates": len(spec["canopy_estimates"]),
         "aerial_marker_estimates": len(spec["marker_estimates"]),
+        "inner_alleys": len(spec["inner_alleys"]),
+        "inner_alley_area_m2": round(alleys.area, 2),
+        "grave_plot_edges": len(spec["grave_plot_edges"]),
+        "grave_plot_curb_area_m2": round(curb_area, 2),
+        "support_structures": 2,
+        "memorial_square_kiosk_and_sign": 2,
+        "support_apron_area_m2": round(apron_area, 2),
         "removed_procedural_tree_indices": [
             x["index"] for x in payload["context_trees"]
         ],

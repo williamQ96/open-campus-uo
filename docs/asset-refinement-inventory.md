@@ -1,6 +1,6 @@
 # Open Campus: UO 资产精细化清单
 
-更新于 2026-11-26。清单记录本地模型与后续工作，发布状态另记。
+更新于 2026-11-27。清单记录本地模型与后续工作，发布状态另记。
 
 ## 等级和适用范围
 
@@ -26,11 +26,11 @@
 
 项目现有一套通用教室，所有建筑暂时使用该模板。CSV 的 `INT-SHARED` 为共用模板 L1，每个 `INT:建筑ID` 为待建的专属内部，等级留空。[通用教室](../assets/interiors/README.md)。
 
-两个程序化乔木源层各含 300 株。本地默认预览显示试点区 273 株及背景源树 253 株。Pioneer Cemetery 另有 121 个按高程及航片估算的树冠。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
+两个程序化乔木源层各含 300 株。本地默认预览显示试点区 177 株及背景源树 252 株。Pioneer Cemetery 另有 121 个按高程及航片估算的树冠。Gerlinger Field Green 有十株登记乔木，Women’s Memorial Quad、Gerlinger Entrance Green 与 Straub Hall Green 另有 30 株按树籍配准。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md) · [Gerlinger Field Green 植被](gerlinger-field-green-review-2026-11-26.md) · [校园中部绿地复核](central-campus-greens-review-2026-11-27.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
 
 ## 室外 L2 目标核对
 
-景观已按地点与构件建立单独的覆盖核对。首批 Pioneer Cemetery 的八条主路、东入口台阶、石牌、纪念碑和部分墓碑及植被已经在本地验证。其他景观继续按道路、雕塑、标识、花坛、植物及构筑物逐处核对。[室外景观台账](landscape-l2-inventory.md) · [Pioneer Cemetery 复核](pioneer-cemetery-landscape-review-2026-11-26.md)。
+景观按地点与构件逐项核对。Pioneer Cemetery 的主路、东入口台阶、石牌、纪念碑和首批墓碑及植被已发布。墓园内部小巷、Gerlinger Field Green 和三处校园中部绿地的步道、种植及场地设施在本地预览。[室外景观台账](landscape-l2-inventory.md) · [Pioneer Cemetery 复核](pioneer-cemetery-landscape-review-2026-11-26.md) · [Gerlinger Field Green 复核](gerlinger-field-green-review-2026-11-26.md) · [校园中部绿地复核](central-campus-greens-review-2026-11-27.md)。
 
 室外目标追踪 679 条记录，包括 664 条建筑外部及独立室外设施和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 663 条计划室内记录另列。当前有 610 项 L2 外观、15 组 L2 室外资产，独立在用 L1 为 0 项，另保留 54 条合并或停用后的历史映射。历史映射涉及 Garden、Franklin、Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church、The Studies at 19th、1544 Alder 的旧局部、Walnut Path 步桥旧网格、967 Patterson 旧建筑、Arena 前广场、Walnut 停车区、铁路跨线桥、储冷罐地块、Knight Library 西侧草坪、Grace Lutheran Church 旧分段、Hamilton Hall 五段已拆网格、Franklin 沿线两处停车区旧网格及 Patterson 原 YMCA 已拆网格，原 ID 和等级记录保存在 CSV。默认场景有 610 个可选建筑及独立设施。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
 

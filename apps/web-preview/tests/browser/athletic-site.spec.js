@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { DEFAULT_VISIBLE_SOURCE_TREES } from "./exterior-counts.js";
 
 const review = "/";
 const court = "context-b0020";
@@ -37,7 +38,7 @@ test("the three sports buildings use separated footprints, an open east arcade a
     court: true,
     stair: true,
     besideStair: false,
-    treeCount: 570,
+    treeCount: DEFAULT_VISIBLE_SOURCE_TREES,
     eastOfCourt: false,
     esslinger: true,
     betweenWings: false,

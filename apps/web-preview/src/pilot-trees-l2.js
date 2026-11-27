@@ -11,9 +11,10 @@ export async function installPilotTrees(
   config,
   registered,
   removed,
+  clips,
 ) {
   const descriptor = config.pilot_trees_l2;
-  if (!descriptor) return 0;
+  if (!descriptor) return null;
   try {
     if (
       config.verify_source_sha256 !== true ||
@@ -76,14 +77,18 @@ export async function installPilotTrees(
       )
     )
       throw Error("Missing pilot canopy geometry.");
+    const omitted = clips.reduce(
+      (total, clip) => total + clip(scene, data.sha256, true),
+      0,
+    );
     legacy.visible = false;
     root.add(scene);
-    return data.tree_count;
+    return { visible: data.tree_count - omitted, omitted };
   } catch (error) {
     console.warn(
       "Pilot canopy unavailable; retaining the preceding tree meshes.",
       error,
     );
-    return 0;
+    return null;
   }
 }

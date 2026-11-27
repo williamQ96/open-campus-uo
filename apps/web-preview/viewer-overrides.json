@@ -19,12 +19,12 @@
     },
     "src/presentation.js": {
       "upstream_sha256": "d33c5d8f940ae532978e56db6f273154eb51fdd425109fc6bf65849d86eb450f",
-      "local_sha256": "94595dc63ad7dd0a0eb278b57f482db10bb7ffc1be0f4347cc5fb94ed664b6fd",
+      "local_sha256": "348dade8c265575516c7fd010123bacded90a1f529bc81d7cd001a715f1669f5",
       "reason": "Source-pinned UO model replacements and delayed merging of fallback details."
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "62811f58070171481de5745aab379ad7a577604736884d956541e70fd12f7b3d",
+      "local_sha256": "3e2ea1a11ecb991692d0e845a54a1ab2341d3855d5b158396fd3cd83f0944981",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife."
     },
     "src/building-card.js": {
@@ -226,7 +226,7 @@
     "scripts/export-friendly-round-shafts.mjs": "0096a2d5755ce92ad01b0d9114debe99948581830afedb2d611d23e447bad19a",
     "scripts/export-annex-exterior.mjs": "13ccbc58dad2803ca6e75358d082a999a384bb7bfc1dd1f3c22651bcd5f049b4",
     "scripts/export-chapman-exterior.mjs": "4f69378cb24a4d71e2562723048f2466da5a781b74ce026f4b3fcf8fce9abf4e",
-    "src/building-site-review.js": "b083fcc54e3ee1834b3ba27904320f6f3683ce8b52b0526107d45ba0c87c6cc4",
+    "src/building-site-review.js": "5ca9b8e306d052674f5300c8f36d897910e03c33ddb2deb163e7fa1ed786f6c2",
     "public/scene/athletic-exterior-review/site.glb": "96d66bbde7a44bbcb2e0aa7551cb20ffee9ef8ef56612bc021acdf5d9356db2c",
     "public/scene/athletic-exterior-review/site.json": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680",
     "src/context-roof-refinements.js": "a5c7b14decedd27d43aa9af199a6a0f29277cd8dae7aec3aa05a9093b0c4c57b",
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "ff13af89ef1f29882d796fe0967195c90ac4a7a2bb8941b1fb89656ab5974917",
+    "public/scene/presentation.json": "b09ef2d29d0ac0b3e3921ee8f2b391d3264fdd6e9cc4aa56097a4bf8218509ca",
     "public/scene/fenton-site-review/site.glb": "9fc92408b7e3080f3f3d6e19290565cfb9c3b130879cbe4a8a17fe45b02bd33f",
     "public/scene/fenton-site-review/site.json": "129ab481cc704b63ba1867a3c5451741bc61f47d08c548d81626d34dd767c96f",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -380,7 +380,7 @@
     "public/scene/pilot-hardscape-review/site.json": "f025768022b594acd808ec6ad21dcc57b0dbb380ebfe0d8a4f56abcd135bf109",
     "public/scene/southeast-fairmount-exterior-review/site.json": "74ab0c93638515b8a29cc7e89f26ac9acce17e293dd3a511833583843a3ba83a",
     "public/scene/southeast-fairmount-exterior-review/site.glb": "bead8a9df848d2dbccaab5083e89229c5e2297691887d6041eb60624e5267b8a",
-    "src/pilot-trees-l2.js": "4f6562bceae7e7a27408b8e9f6a91227bafcbf1f4b9d9ece77445d80403097ff",
+    "src/pilot-trees-l2.js": "87aa88bdea9d7e1c74b33d88b45affa6fe1c494317b8ecef588d67842269d952",
     "public/scene/pilot-trees-l2/trees.json": "875b5473c3972a975a53c102b680d641e7aee7ef2bc29ae8a135447603e59ac7",
     "public/scene/pilot-trees-l2/trees.glb": "9a129558d22a314f8dbddee5ed9f914c5e905665a3c1209a3732612cc5e296ef",
     "src/context-trees-l2.js": "e0e1c32eff197d2a5d9940a6c728160a53c7c6dddd6902936025228794bb8e81",
@@ -480,7 +480,11 @@
     "public/scene/franklin-riverfront-closeout-review/site.json": "f50900642b5e0693be4dcf0061491114e80fe8e25b9ea086552712066e3b7528",
     "public/scene/neighborhood-exterior-closeout-review/site.glb": "de892b9fc3f0166af69c22f652f95ad73f26b502ad371e79ea4675c6131a8687",
     "public/scene/neighborhood-exterior-closeout-review/site.json": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2",
-    "public/scene/pioneer-cemetery-landscape-review/site.glb": "7e054366cc5b3115d321160ac1c223d28fc9778ac707d9128dc87ebf9d5a2137",
-    "public/scene/pioneer-cemetery-landscape-review/site.json": "4ea92fe0c821fd613fe60e70a436aa3bdd757ac109e3d9be7f72309cbad3be89"
+    "public/scene/pioneer-cemetery-landscape-review/site.glb": "10746896de1c01ebb68fe04ab73e79e996b711727cd95b5a6f44e4313f8c22f4",
+    "public/scene/pioneer-cemetery-landscape-review/site.json": "d853422752e6d994205add2851d987d5ff5edcdabecaa479fe52a1222b9e892e",
+    "public/scene/gerlinger-field-green-review/site.glb": "4d940cd30c55aa98bde831bb218c83c49cc254c93bb14e375941de3207e9c884",
+    "public/scene/gerlinger-field-green-review/site.json": "a5862622431e886b5824c1204465bee48e10cca68126db51c1a3da1706b41efb",
+    "public/scene/central-campus-greens-review/site.glb": "984f4a8f8354cb960afc82d9ab9360433ea5fbef61030f341f7c9feac1801bd7",
+    "public/scene/central-campus-greens-review/site.json": "f01d3046cc693a896bac8838475a529b4a875a56398ee470a4cfd31ef66dcb69"
   }
 }

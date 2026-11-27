@@ -76,6 +76,77 @@ function stageContextTreeRemoval(root, trees) {
   return { geometry, index: new BufferAttribute(updated, 1) };
 }
 
+function removeVegetationRanges(root, targets, expectedName) {
+  const replacements = Object.entries(targets).map(
+    ([name, { vertices, removed_indices, ranges }]) => {
+      const mesh = root.getObjectByName(name);
+      const geometry = mesh?.geometry;
+      const index = geometry?.index;
+      if (
+        !expectedName.test(name) ||
+        !mesh?.isMesh ||
+        geometry.getAttribute("position")?.count !== vertices ||
+        geometry.groups.length ||
+        !index ||
+        !Array.isArray(ranges) ||
+        !ranges.length
+      )
+        throw new Error("Exterior review pilot vegetation mesh changed.");
+      const remove = new Uint8Array(vertices);
+      let cursor = 0;
+      for (const [start, end] of ranges) {
+        if (
+          !Number.isInteger(start) ||
+          !Number.isInteger(end) ||
+          start < cursor ||
+          end <= start ||
+          end > vertices
+        )
+          throw new Error("Invalid exterior review pilot vegetation range.");
+        remove.fill(1, start, end);
+        cursor = end;
+      }
+      const source = index.array;
+      for (let i = 0; i < source.length; i += 3) {
+        const a = remove[source[i]];
+        if (a !== remove[source[i + 1]] || a !== remove[source[i + 2]])
+          throw new Error(
+            "Exterior review pilot vegetation triangles are mixed.",
+          );
+      }
+      const retained = source.filter((vertex) => !remove[vertex]);
+      if (
+        !retained.length ||
+        source.length - retained.length !== removed_indices
+      )
+        throw new Error("Exterior review pilot vegetation count changed.");
+      return [geometry, new BufferAttribute(retained, 1)];
+    },
+  );
+  for (const [geometry, retained] of replacements) geometry.setIndex(retained);
+}
+
+function removePilotTrees(root, recipe, sourceSha, refined) {
+  const { tree_indices: trees } = recipe;
+  const expectedSha = refined
+    ? recipe.source_refined_sha256
+    : recipe.source_legacy_sha256;
+  if (
+    sourceSha !== expectedSha ||
+    !Array.isArray(trees) ||
+    !trees.length ||
+    new Set(trees).size !== trees.length ||
+    trees.some((i) => !Number.isInteger(i) || i < 0 || i >= 300)
+  )
+    throw new Error("Exterior review pilot tree source changed.");
+  removeVegetationRanges(
+    root,
+    refined ? recipe.refined : recipe.legacy,
+    refined ? /^pilot-trees-(wood|foliage)$/ : /^vegetation_[1-4]$/,
+  );
+  return trees.length;
+}
+
 function checkedBatchRange(mesh, item, position, index, sourceCount) {
   const range = retainedContextRange(
     mesh.geometry,
@@ -175,21 +246,30 @@ function patchedNavigation(graph, { removed_edges, paths }) {
   )
     throw new Error("Exterior review road edges changed.");
   const edges = graph.edges.filter((_, i) => !omit.has(i));
-  for (const { anchor, points } of paths) {
-    if (!Number.isInteger(anchor) || !graph.nodes_enu_m[anchor])
+  for (const { anchor, points, end } of paths) {
+    if (
+      !Number.isInteger(anchor) ||
+      !nodes[anchor] ||
+      (end !== undefined && (!Number.isInteger(end) || !nodes[end]))
+    )
       throw new Error("Exterior review path anchor changed.");
     let previous = anchor;
-    for (const point of points) {
+    function connect(next) {
+      const point = nodes[next];
       const length = Math.hypot(
         point[0] - nodes[previous][0],
         point[1] - nodes[previous][1],
       );
       if (!Number.isFinite(length) || length < 0.05 || length > 20)
         throw new Error("Invalid exterior review path segment.");
-      edges.push([previous, nodes.length, length, "path"]);
-      previous = nodes.length;
-      nodes.push(point);
+      edges.push([previous, next, length, "path"]);
+      previous = next;
     }
+    for (const point of points) {
+      nodes.push(point);
+      connect(nodes.length - 1);
+    }
+    if (end !== undefined) connect(end);
   }
   const used = new Set(edges.flatMap(([a, b]) => [a, b]));
   const remap = new Map();
@@ -216,9 +296,11 @@ function validWalkableGround(ground) {
     point.length === 2 &&
     point.every((value) => Number.isFinite(value) && Math.abs(value) < 1000);
   const bounds = ground?.bounds_enu_m;
+  const paths = ground?.paths ?? [ground];
   return (
     Array.isArray(bounds) &&
-    bounds.length === 1 &&
+    bounds.length > 0 &&
+    bounds.length <= 8 &&
     bounds.every(
       (box) =>
         Array.isArray(box) &&
@@ -231,25 +313,38 @@ function validWalkableGround(ground) {
         box[2] - box[0] < 90 &&
         box[3] - box[1] < 90,
     ) &&
-    validPoint(ground.anchor_enu_m) &&
-    Array.isArray(ground.points_enu_m) &&
-    ground.points_enu_m.length > 0 &&
-    ground.points_enu_m.length <= 96 &&
-    ground.points_enu_m.every(validPoint)
+    Array.isArray(paths) &&
+    paths.length > 0 &&
+    paths.length <= 8 &&
+    paths.every(
+      (path) =>
+        validPoint(path?.anchor_enu_m) &&
+        Array.isArray(path.points_enu_m) &&
+        path.points_enu_m.length > 0 &&
+        path.points_enu_m.length <= 96 &&
+        path.points_enu_m.every(validPoint) &&
+        (path.end_enu_m === undefined || validPoint(path.end_enu_m)),
+    )
   );
 }
 
-function appendWalkablePath(
-  graph,
-  { anchor_enu_m: [east, north], points_enu_m },
-) {
-  const anchor = graph.nodes_enu_m.findIndex(
-    ([e, n]) => Math.hypot(e - east, n - north) < 0.025,
-  );
-  return patchedNavigation(graph, {
-    removed_edges: [],
-    paths: [{ anchor, points: points_enu_m }],
-  });
+function appendWalkablePath(graph, ground) {
+  return (ground.paths ?? [ground]).reduce((current, path) => {
+    const locate = ([east, north]) =>
+      current.nodes_enu_m.findIndex(
+        ([e, n]) => Math.hypot(e - east, n - north) < 0.025,
+      );
+    return patchedNavigation(current, {
+      removed_edges: [],
+      paths: [
+        {
+          anchor: locate(path.anchor_enu_m),
+          points: path.points_enu_m,
+          end: path.end_enu_m && locate(path.end_enu_m),
+        },
+      ],
+    });
+  }, graph);
 }
 
 function stageCorridor(root, patch) {
@@ -348,6 +443,8 @@ export async function loadBuildingSiteReview(
     site.context_trees ?? (site.context_tree ? [site.context_tree] : []);
   const batches = site.batch_removals ?? [];
   const closedSiteBoxes = site.closed_site_boxes_enu_m ?? [];
+  const pilotTreeClip = site.pilot_tree_clip;
+  const pilotUnderstory = site.pilot_understory_clip;
   const walkableGround = site.walkable_ground;
   const corridor = site.corridor_patch;
   if (
@@ -508,6 +605,14 @@ export async function loadBuildingSiteReview(
     routeApproachIds: routeToApproaches ? ids : newBuildingIds,
     ground,
     closedSiteBoxes,
+    clipPilotTrees:
+      pilotTreeClip &&
+      ((root, sourceSha, refined) =>
+        removePilotTrees(root, pilotTreeClip, sourceSha, refined)),
+    clipPilotUnderstory:
+      pilotUnderstory &&
+      ((root) =>
+        removeVegetationRanges(root, pilotUnderstory, /^understory_1$/)),
     walkableHeight:
       surface && sampleSurface(surface, walkableGround.bounds_enu_m),
     appendNavigation:

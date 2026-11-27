@@ -628,19 +628,41 @@ export async function loadPresentation(
       }
     : pilotHardscape;
 
-  const refinedPilotTrees =
+  const pilotTreeClips = installedReviews
+    .map(({ clipPilotTrees }) => clipPilotTrees)
+    .filter(Boolean);
+  const pilotTrees =
     skipPilotClearance || skipPilotTrees
-      ? 0
+      ? null
       : await installPilotTrees(
           gltf.scene,
           base,
           config,
           registeredPilotTrees,
           (clearance?.suppressed_trees ?? 0) - omittedPilotTreeClearance,
+          pilotTreeClips,
         );
+  siteTreeRemovals += pilotTrees?.omitted ?? 0;
+  if (!pilotTrees) {
+    for (const clip of pilotTreeClips) {
+      try {
+        siteTreeRemovals += clip(gltf.scene, config.asset_sha256, false);
+      } catch (error) {
+        console.warn("Exterior review pilot tree clip unavailable.", error);
+      }
+    }
+  }
   const refinedContextTrees = skipContextTrees
     ? 0
     : await installContextTrees(gltf.scene, base, config);
+  for (const { clipPilotUnderstory } of installedReviews) {
+    if (!clipPilotUnderstory) continue;
+    try {
+      clipPilotUnderstory(gltf.scene);
+    } catch (error) {
+      console.warn("Exterior review understory clip unavailable.", error);
+    }
+  }
   const refinedUnderstory = skipUnderstory
     ? null
     : await installUnderstory(gltf.scene, base, config);
@@ -659,7 +681,7 @@ export async function loadPresentation(
     contextRoofHeights: contextRoofRefinements?.heights,
     contextBuildingRecords: contextRoofRefinements?.changedRecords,
     registeredPilotTrees,
-    refinedPilotTrees,
+    refinedPilotTrees: pilotTrees?.visible ?? 0,
     refinedContextTrees,
     refinedUnderstory,
     foundationGrade,

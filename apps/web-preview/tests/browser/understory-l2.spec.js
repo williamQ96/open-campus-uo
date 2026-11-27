@@ -34,7 +34,7 @@ test("the rebuilt planting follows the existing masks and leaves the new beds cl
   expect(previous.understory).toBeNull();
   expect(await readScene(page)).toEqual({
     ...previous,
-    understory: { shrubs: 75, fronds: 5, retainedFernClusters: 3 },
+    understory: { shrubs: 59, fronds: 5, retainedFernClusters: 3 },
   });
   const centers = plants
     .filter((plant) => plant.site)
@@ -64,7 +64,7 @@ test("a rejected source removal restores its paired shrubs in the new batch", as
     route.fulfill({ body: "{}" }),
   );
   expect(await readScene(page)).toMatchObject({
-    understory: { shrubs: 78, fronds: 5, retainedFernClusters: 3 },
+    understory: { shrubs: 62, fronds: 5, retainedFernClusters: 3 },
     pilotTrees: 0,
   });
 });

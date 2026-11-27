@@ -6,6 +6,23 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布室外 L2 景观增补
+
+- 将 Pioneer Cemetery 内部景观与 Memorial Square 导览亭、Gerlinger Field Green、Women’s Memorial Quad、Gerlinger Entrance Green 及 Straub Hall Green 纳入默认室外场景。保留 610 个在用建筑与设施外观 ID、457 个入口和 139 条走廊记录。[景观台账](docs/landscape-l2-inventory.md)。
+- 推送前通过格式检查、197 项单测、生产构建和 463 项资产归档检查。发布使用 main 分支的 GitHub Pages 工作流。[部署记录](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
+## 2026-11-27 - 校园中部绿地与 Memorial Square 导览亭（本地验证）
+
+- 配准 26 段步道、Gerlinger 马蹄形车道、University Street 人行横道、台地墙与楼梯、七张石凳、自行车架及艺术平台。按树籍配置 30 株乔木，移除 54 株冲突的程序树与四株灌木。台阶与小品尺寸为估计。Straub 艺术点位采用平台和说明牌。[校园中部绿地复核](docs/central-campus-greens-review-2026-11-27.md)。
+- 按照片和航片补建 Pioneer Cemetery 木结构导览亭及相邻绿牌。公告栏布局和尺寸为估计，两处碰撞范围之外的通道保持开放。[Memorial Square 导览亭](docs/pioneer-cemetery-landscape-review-2026-11-26.md#memorial-square-kiosk-and-sign)。
+- 两次导出一致。场地增加 63 条路线边，Women’s Memorial Quad 至 Straub 的测试路线从 310.76 米缩短到 248.58 米。本地生产预览在桌面和手机均加载 610 个模型 ID 对应的网格，保留 457 个入口和 139 条走廊记录。生产构建、197 项单测、15 项相关浏览器用例、463 项归档检查和 406 项查看器哈希检查均通过。新景观保留在本地，线上仍为 `bb23e9b`。[景观台账](docs/landscape-l2-inventory.md)。
+
+## 2026-11-27 - Gerlinger Field Green 与 Pioneer Cemetery 内部景观（本地）
+
+- 恢复 Gerlinger 开敞草坪、六段步道、Annex 停车地坪和混凝土外梯、约 39 米矮墙、停车标识及三处种植带。配准十株边缘乔木，移除与草坪及步道冲突的 42 株程序树和 12 株灌木。外梯踏步估计为 15 级。[Gerlinger Field Green 复核](docs/gerlinger-field-green-review-2026-11-26.md)。
+- 配准墓园内可辨的四段草地小巷、13 组墓区边石、维护屋和开放式棚架，撤下一株穿过棚架屋面的程序树。至 Memorial Square 的既有路线仍为 113.61 米。[Pioneer Cemetery 复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md#november-27-inner-plots-and-support-structures)。
+- 两份资产均可逐字节复现。六组对照视角及 19 项相关浏览器用例通过，包含植被回退与损坏资源回退。桌面和手机的本地生产预览各核对到 610 个在用模型的实际网格及 457 个入口。生产构建、197 项单测、461 项归档检查和 404 项查看器哈希检查均通过。改动保留在本地，线上为 `bb23e9b`。[景观台账](docs/landscape-l2-inventory.md)。
+
 ## 2026-11-26 - 发布 Pioneer Cemetery 首批景观
 
 - 配准八条砂石道、University Street 东入口 11 级台阶、东 18 街挡墙、墓园石牌、GAR 纪念碑、23 处代表性墓碑、六处遗产玫瑰和 121 个估算树冠。默认场景抑制 15 株位置冲突的程序背景树。[场地及资料复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md)。

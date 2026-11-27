@@ -2161,6 +2161,14 @@
   },
   "pioneer_cemetery_landscape_site": {
     "url": "pioneer-cemetery-landscape-review/site.json",
-    "sha256": "4ea92fe0c821fd613fe60e70a436aa3bdd757ac109e3d9be7f72309cbad3be89"
+    "sha256": "d853422752e6d994205add2851d987d5ff5edcdabecaa479fe52a1222b9e892e"
+  },
+  "gerlinger_field_green_site": {
+    "url": "gerlinger-field-green-review/site.json",
+    "sha256": "a5862622431e886b5824c1204465bee48e10cca68126db51c1a3da1706b41efb"
+  },
+  "central_campus_greens_site": {
+    "url": "central-campus-greens-review/site.json",
+    "sha256": "f01d3046cc693a896bac8838475a529b4a875a56398ee470a4cfd31ef66dcb69"
   }
 }
