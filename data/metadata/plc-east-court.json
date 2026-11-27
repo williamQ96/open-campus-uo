@@ -94,7 +94,30 @@
         4
       ]
     },
-    "artist_catalog": "https://jamesleehansen.com/artwork/g26-01-falconer/"
+    "artist_catalog": "https://jamesleehansen.com/artwork/g26-01-falconer/",
+    "december_2023_ground_views": {
+      "page": "https://sworegonarchitect.blogspot.com/2023/12/eugenearchitecturealphabet-p.html",
+      "photos": [
+        {
+          "view": "court approach",
+          "date": "2023-12-09",
+          "author": "Randy Nishimura",
+          "file": "PXL_20231209_233312512.jpg",
+          "sha256": "92abbe70e68027865cecd8dc5d29852ef703b692990996b4abeba2ccd047fa97",
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEga3l381SbS9xs0goUDSkyOaN7MV8fk20RY6q3yjBslIHBpP-Tba8JiklilnIshrO_6TtAXxKEZ6jgsip2j3lk0pU2CF8rSdhgUgcOKZj_4lU_qSiJFk1uNS7dZML27dvCcRuhBEpZkUt1Bmb-fyH8ML2hq19YKXUQZjkpJlKwcy5RqZZQUi06-RRYvnEL_/s1960/PXL_20231209_233312512.jpg"
+        },
+        {
+          "view": "Vigil close view",
+          "date": "2023-12-09",
+          "author": "Randy Nishimura",
+          "file": "vigil-nishimura-2023-12-09.jpg",
+          "sha256": "8846be2e4145bb0424af5f029c168ac551b178053d673a87a4a4be5adf3b5c30",
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoXhajet96aJ_uCA-tJ-3EVmyx0_xu7_1dqip8QKcLFHC4EtgLNuQEGoRr_f_eDDfX1F3t64ALaRx9CHvjbm6u92KrfrVISjmbKxZcNfZd3zjf8rsYaiOgEPr2s66fP_iaJLbuHm0CDZroKICTtLK-V08pDqIM40d3tVL-F9Rws4PvfRY5Ea2wuSb-e-ec/s1734/PXL_20231209_233339964.jpg"
+        }
+      ],
+      "work_identification": "The photograph is captioned as The Falconer. The work matches the dated image of Vigil in the Maryhill Museum catalogue.",
+      "artwork_comparison": "https://www.maryhillmuseum.org/wp-content/uploads/2014/03/JamesLeeHansen_Booklet_F.pdf#page=14"
+    }
   },
   "upper_enu_m": [
     [
@@ -191,8 +214,17 @@
       -578.21,
       -135.06
     ],
-    "radius_m": 0.58,
-    "height_m": 0.23
+    "height_m": 0.81,
+    "bottom_size_m": [
+      0.68,
+      0.66
+    ],
+    "top_size_m": [
+      0.54,
+      0.52
+    ],
+    "corner_cut_m": 0.035,
+    "note": "Fitted to the visible portion of the dark support in the 2023 view. Lower perimeter and mounting detail are obscured by planting."
   },
   "trees": [
     {
@@ -225,7 +257,61 @@
       -569.38,
       -126.19
     ],
-    "treads": 4
+    "treads": 4,
+    "handrails": {
+      "lines_enu_m": [
+        [
+          [
+            -570.96,
+            -132.48
+          ],
+          [
+            -570.68,
+            -132.48
+          ],
+          [
+            -569.38,
+            -132.48
+          ],
+          [
+            -569.13,
+            -132.48
+          ]
+        ],
+        [
+          [
+            -570.96,
+            -126.28
+          ],
+          [
+            -570.68,
+            -126.28
+          ],
+          [
+            -569.38,
+            -126.28
+          ],
+          [
+            -569.13,
+            -126.28
+          ]
+        ]
+      ],
+      "height_m": 0.94
+    },
+    "south_guard": {
+      "line_enu_m": [
+        [
+          -570.79,
+          -138.28
+        ],
+        [
+          -570.79,
+          -132.56
+        ]
+      ],
+      "height_above_wall_m": 0.88
+    }
   },
   "upper_z_m": 4.86,
   "routes": [
@@ -309,5 +395,49 @@
         -129.2
       ]
     }
+  ],
+  "vigil_rose_groups": [
+    [
+      -577.15,
+      -135.36,
+      0.5,
+      1.19
+    ],
+    [
+      -577.0,
+      -136.68,
+      0.53,
+      0.86
+    ],
+    [
+      -578.4,
+      -137.5,
+      0.51,
+      0.83
+    ],
+    [
+      -579.37,
+      -136.57,
+      0.54,
+      0.93
+    ],
+    [
+      -579.29,
+      -134.23,
+      0.52,
+      0.88
+    ],
+    [
+      -578.16,
+      -133.15,
+      0.5,
+      0.95
+    ],
+    [
+      -576.67,
+      -133.74,
+      0.55,
+      1.04
+    ]
   ]
 }

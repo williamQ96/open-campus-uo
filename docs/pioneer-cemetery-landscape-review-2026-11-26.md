@@ -63,7 +63,7 @@ The four added branches register 50 navigation edges and 48 waypoints. The autho
 
 The local routing refinement checks connections from pins on the modeled paths, east stair and Rankin Lane sidewalk. The library-to-Cherry sample is now 172.26 m and the library-to-west Rankin sample is 255.35 m. The north Risdon control remains 244.03 m. All three are within the 0.13 m survey tolerance across desktop and phone. The west Rankin Lane sidewalk sample also stays within tolerance, compared with 5.04 m outside it before. [Southwest Campus Green route review](southwest-campus-green-review-2026-11-27.md#paved-route-access).
 
-The later inner grid package adds 15 exposed curb traces, 40 anonymous marker forms, three grass strips and two shrubs in three cemetery areas. [Interior plot review](pioneer-cemetery-inner-grid-2026-11-27.md).
+The later inner grid package adds 15 exposed curb traces, 40 anonymous marker forms, three grass strips and two shrubs in three cemetery areas. A southern follow-up registers twelve more exposed curb groups and 36 anonymous marker forms between Cherry Avenue and Rankin Lane. [Interior plot review](pioneer-cemetery-inner-grid-2026-11-27.md).
 
 - [Editable model input](../data/metadata/pioneer-cemetery-landscape-review.json)
 - [Exporter](../scripts/build-pioneer-cemetery-landscape-review.py)

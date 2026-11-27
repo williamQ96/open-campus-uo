@@ -1,0 +1,1144 @@
+{
+  "description": "Agate and Franklin campus identification monument, its entrance green and marked approach; Onyx Bridge north map station with its entrance paving and plantings.",
+  "extents": [
+    [
+      24,
+      77,
+      67,
+      135.8
+    ],
+    [
+      -207.3,
+      147.0,
+      -178.3,
+      173.3
+    ]
+  ],
+  "walkable_bounds": [
+    [
+      24,
+      77,
+      67,
+      135.8
+    ],
+    [
+      -207.3,
+      147.0,
+      -178.3,
+      173.3
+    ]
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "sites": {
+      "public-building-exterior-review": "3225fe95d21b0078a31cac339b996f75376b3aa30ef34a0dd993a0667d985ff9",
+      "east-thirteenth-east-review": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570"
+    }
+  },
+  "sources": {
+    "official": {
+      "outdoor_sign_plan": {
+        "url": "https://cpfm.uoregon.edu/sites/default/files/2024-10/uo-sign-plan-2024.pdf#page=5",
+        "sha256": "274202a0dc57250c64892fd80e04f714be4d27359ee0687f813814396b4b83dc"
+      },
+      "landscape_inventory": {
+        "url": "https://cpfm.uoregon.edu/sites/default/files/nediagnosis_sept_17_2012rdcd2.pdf#page=19",
+        "sha256": "5d46b9373793d53216463fa7ab6d2d91f3150a1e8c2ee19d6650552b96572228"
+      },
+      "gateway_photo": {
+        "url": "https://cpfm.uoregon.edu/exterior-features#signage",
+        "image_url": "https://cpfm.uoregon.edu/sites/default/files/styles/landscape_medium/public/2026-08/img_3128_0.JPEG?h=591b8e65&itok=vPtGO_NW",
+        "sha256": "794541eab6c6d30caca7d4762a5c64d9e95a1e5b16c447a68673c6f6f95f74e8"
+      }
+    },
+    "orthophotos": [
+      {
+        "zone": "north-detail",
+        "year": 2017,
+        "bounds_enu_m": [
+          -211,
+          142,
+          -170,
+          179
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494118.14928888186%2C4877070.282153052%2C494159.14928888186%2C4877107.282153052&bboxSR=3740&imageSR=3740&size=1066%2C962&layers=show%3A29&format=png32",
+        "path": "north-detail-2017.png",
+        "sha256": "679857ebb9886f6dbd62177ca5063778c31318d6aaaa2ba028e37e985c480ff0"
+      },
+      {
+        "zone": "north-detail",
+        "year": 2021,
+        "bounds_enu_m": [
+          -211,
+          142,
+          -170,
+          179
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494118.14928888186%2C4877070.282153052%2C494159.14928888186%2C4877107.282153052&bboxSR=3740&imageSR=3740&size=1066%2C962&layers=show%3A26&format=png32",
+        "path": "north-detail-2021.png",
+        "sha256": "0a9b0f95cef05b1808922886722327e26bece31ae0bbc9e0ec92d5fa86fdbce7"
+      },
+      {
+        "zone": "north-detail",
+        "year": 2023,
+        "bounds_enu_m": [
+          -211,
+          142,
+          -170,
+          179
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494118.14928888186%2C4877070.282153052%2C494159.14928888186%2C4877107.282153052&bboxSR=3740&imageSR=3740&size=1066%2C962&layers=show%3A2&format=png32",
+        "path": "north-detail-2023.png",
+        "sha256": "5ea141e75853a42d41706dc42d22ffa21b9b1a53e15f46374665049d426e6b11"
+      },
+      {
+        "zone": "north-detail",
+        "year": 2025,
+        "bounds_enu_m": [
+          -211,
+          142,
+          -170,
+          179
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494118.14928888186%2C4877070.282153052%2C494159.14928888186%2C4877107.282153052&bboxSR=3740&imageSR=3740&size=1066%2C962&layers=show%3A57&format=png32",
+        "path": "north-detail-2025.png",
+        "sha256": "a763f10cbeb16c34d3a970f49a1ffae9a51c4cc46165fee847b59d42b060cf34"
+      },
+      {
+        "zone": "gateway-detail",
+        "year": 2017,
+        "bounds_enu_m": [
+          24,
+          78,
+          72,
+          115
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494353.14928888186%2C4877006.282153052%2C494401.14928888186%2C4877043.282153052&bboxSR=3740&imageSR=3740&size=1248%2C962&layers=show%3A29&format=png32",
+        "path": "gateway-detail-2017.png",
+        "sha256": "fe042ce55e54d642f80925e0bc8c0dc598fee4cfd3586a19d4551c29072ce89f"
+      },
+      {
+        "zone": "gateway-detail",
+        "year": 2021,
+        "bounds_enu_m": [
+          24,
+          78,
+          72,
+          115
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494353.14928888186%2C4877006.282153052%2C494401.14928888186%2C4877043.282153052&bboxSR=3740&imageSR=3740&size=1248%2C962&layers=show%3A26&format=png32",
+        "path": "gateway-detail-2021.png",
+        "sha256": "a7fb050286cf7ece4e096663405a21074aa8145ce05516d6c615974a4293d696"
+      },
+      {
+        "zone": "gateway-detail",
+        "year": 2023,
+        "bounds_enu_m": [
+          24,
+          78,
+          72,
+          115
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494353.14928888186%2C4877006.282153052%2C494401.14928888186%2C4877043.282153052&bboxSR=3740&imageSR=3740&size=1248%2C962&layers=show%3A2&format=png32",
+        "path": "gateway-detail-2023.png",
+        "sha256": "3f919ca7e6293eeabbda133424c561f47d75ae59a74c0339a0b55fc3e185a4ff"
+      },
+      {
+        "zone": "gateway-detail",
+        "year": 2025,
+        "bounds_enu_m": [
+          24,
+          78,
+          72,
+          115
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494353.14928888186%2C4877006.282153052%2C494401.14928888186%2C4877043.282153052&bboxSR=3740&imageSR=3740&size=1248%2C962&layers=show%3A57&format=png32",
+        "path": "gateway-detail-2025.png",
+        "sha256": "00dcbc1a8a8ff5f200c03254a15648cc95d3f286b9511798b514c4ce80c1d6d5"
+      }
+    ],
+    "street_views": {
+      "campus-heart": [
+        {
+          "date": "2019-07",
+          "id": "GrX55H5C6p6OoBF8cSB9hQ",
+          "camera_enu": [
+            -264.3635052657919,
+            0.18766905553638935
+          ],
+          "bearing": 38.97,
+          "distance": 16.5,
+          "file": "campus-heart-2019-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GrX55H5C6p6OoBF8cSB9hQ&heading=38.97",
+          "sha256": "0d4a88986312aa0923f259c4e5fb9074c1263cacc8d7e736754e2cace730e074"
+        }
+      ],
+      "agate-monument": [
+        {
+          "date": "2024-07",
+          "id": "rStjE1lTazSxgqvljj38pw",
+          "camera_enu": [
+            35.5457556466572,
+            115.96552679874003
+          ],
+          "bearing": 179.82,
+          "distance": 17.4,
+          "file": "agate-monument-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=rStjE1lTazSxgqvljj38pw&heading=179.82",
+          "sha256": "20df909d58017e435c9208f2d9d96dd5f02e4d1cddbc1f8cc3c9e57c55279184"
+        },
+        {
+          "date": "2022-08",
+          "id": "37-DLm6CcA9SuWO6dURFeQ",
+          "camera_enu": [
+            36.69522977876477,
+            116.15445036068559
+          ],
+          "bearing": 183.57,
+          "distance": 17.6,
+          "file": "agate-monument-2022-08.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=37-DLm6CcA9SuWO6dURFeQ&heading=183.57",
+          "sha256": "44eb08fbb1c974ffecf04635e8e5e0d9b0fd666f71aadf33ec464c3a1d5ae353"
+        }
+      ],
+      "east-thirteenth-kiosk": [
+        {
+          "date": "2024-06",
+          "id": "doKs6m-RI_48Huy84ybOAg",
+          "camera_enu": [
+            -1.393791232840158,
+            -2.10519683547318
+          ],
+          "bearing": 227.42,
+          "distance": 3.5,
+          "file": "east-thirteenth-kiosk-2024-06.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=doKs6m-RI_48Huy84ybOAg&heading=227.42",
+          "sha256": "7264e4f1cf6532089f2ec9bee23ce4b98936490e8514974ab097f955dfd97976"
+        },
+        {
+          "date": "2020-11",
+          "id": "IBs6AaVp4zK4cRwwiC0TUw",
+          "camera_enu": [
+            -3.1683724440517835,
+            -1.7543305372819304
+          ],
+          "bearing": 196.85,
+          "distance": 2.9,
+          "file": "east-thirteenth-kiosk-2020-11.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=IBs6AaVp4zK4cRwwiC0TUw&heading=196.85",
+          "sha256": "bb95438cb51d3721c54dfed3267f58c7adcd9b6993a7a8c276494aa9934fc85c"
+        }
+      ],
+      "agate-monument-east": [
+        {
+          "date": "2024-07",
+          "id": "gr9iuLx6ccFYByGgTg6X5w",
+          "camera_enu": [
+            64.53744641598314,
+            106.5062712021172
+          ],
+          "bearing": 254.31,
+          "distance": 29.2,
+          "file": "agate-monument-east-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=gr9iuLx6ccFYByGgTg6X5w&heading=254.31",
+          "sha256": "501390ad7d0a86f2a4aa358b30d841c77f3f575bf82e74438cea2eae57d0c2a8"
+        },
+        {
+          "date": "2022-08",
+          "id": "w1l7AtADUPYogGBUcD8tog",
+          "camera_enu": [
+            63.99683929188177,
+            107.57681166846305
+          ],
+          "bearing": 251.98,
+          "distance": 29.0,
+          "file": "agate-monument-east-2022-08.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=w1l7AtADUPYogGBUcD8tog&heading=251.98",
+          "sha256": "590fdbab0df9d00d52a0ac46a8971690bfee67a5025329b0e3e3e723f4e4e8ba"
+        }
+      ],
+      "onyx-north": [
+        {
+          "date": "2024-06",
+          "id": "pBjyKwL7OgQt-yhSi5SHow",
+          "camera_enu": [
+            -185.1659216430271,
+            168.85727692581713
+          ],
+          "bearing": 202.53,
+          "distance": 13.9,
+          "file": "onyx-north-2024-06.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pBjyKwL7OgQt-yhSi5SHow&heading=202.53",
+          "sha256": "8184c9f0d33fcf071f9c338a0a6d3c64d8f4765288cf7f54e0f20dc0b390930f"
+        },
+        {
+          "date": "2019-07",
+          "id": "hU4UzfMBIU4lNRqpd5M-Ug",
+          "camera_enu": [
+            -188.03374420339242,
+            168.25792728643864
+          ],
+          "bearing": 191.38,
+          "distance": 12.5,
+          "file": "onyx-north-2019-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=hU4UzfMBIU4lNRqpd5M-Ug&heading=191.38",
+          "sha256": "3253f79ec7f3b769ebb0bfad2b65e5284978b69c8eda0c71c93f74c9de02fb70"
+        }
+      ],
+      "oregon-south": [
+        {
+          "date": "2024-06",
+          "id": "E49Lw15bT54_HqjYM59y5Q",
+          "camera_enu": [
+            48.56402324751252,
+            -1.7209417466074228
+          ],
+          "bearing": 16.19,
+          "distance": 19.5,
+          "file": "oregon-south-2024-06.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=E49Lw15bT54_HqjYM59y5Q&heading=16.19",
+          "sha256": "c1c8c0c792e8a1563f1c9e8a08737fe4b41baabd5a06941ac127145849197493"
+        },
+        {
+          "date": "2020-11",
+          "id": "pSI9Vs1CoI5zzy4A2hx9Bg",
+          "camera_enu": [
+            47.95402323984308,
+            2.3090638779103756
+          ],
+          "bearing": 22.37,
+          "distance": 15.9,
+          "file": "oregon-south-2020-11.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pSI9Vs1CoI5zzy4A2hx9Bg&heading=22.37",
+          "sha256": "dd8e9c178ecb8153c040598f6935a67431880e18f1e3f69f9463e7a2abb9dcee"
+        }
+      ],
+      "oregon-east": [
+        {
+          "date": "2024-07",
+          "id": "pGAjGJZRyDKa-pxn2DaswA",
+          "camera_enu": [
+            83.17804539727513,
+            18.2586142513901
+          ],
+          "bearing": 253.63,
+          "distance": 15.8,
+          "file": "oregon-east-2024-07.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pGAjGJZRyDKa-pxn2DaswA&heading=253.63",
+          "sha256": "bc94ed7370e836c7f3c9bded42602c5c51033d56efd415e0ff933a2562cbff7d"
+        },
+        {
+          "date": "2020-11",
+          "id": "mk3BzOgIpT6_9h8xWShlIQ",
+          "camera_enu": [
+            82.8139136802638,
+            17.01424992736429
+          ],
+          "bearing": 257.76,
+          "distance": 15.2,
+          "file": "oregon-east-2020-11.jpg",
+          "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mk3BzOgIpT6_9h8xWShlIQ&heading=257.76",
+          "sha256": "74e8675bcc5b6040b48d06b724f57ad51a735ca393009a46bed28434d7daf061"
+        }
+      ]
+    },
+    "placement_notes": "The gateway monument and hedge border align across all four aerial dates. The 2024 and 2019 Onyx image bearings intersect near east -196.70 and north 155.60. Orthophotos show the adjoining planting island and the two entrance bollards. The historical Oregon Hall station, Campus Heart kiosk, and 13th Avenue information node had inconclusive current ground evidence in this sample.",
+    "tree_inventory": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&objectIds=29902%2C29908%2C29912%2C29913%2C29914&outSR=3740&returnGeometry=true&outFields=OBJECTID%2CTreeID%2CCommonName%2CHeight%2CSpread%2CCaliper%2CRemoved",
+      "file": "onyx-campus-tree-inventory.json",
+      "sha256": "4880f7797158d5ead0d29ffe91974adcae40082dbc12a0112e06fa54a62c83a8"
+    }
+  },
+  "gateway": {
+    "post_centers_enu_m": [
+      [
+        35.15,
+        95.27
+      ],
+      [
+        37.38,
+        102.17
+      ]
+    ],
+    "bed_outline_enu_m": [
+      [
+        33.02,
+        94.75
+      ],
+      [
+        34.26,
+        93.96
+      ],
+      [
+        36.51,
+        93.77
+      ],
+      [
+        38.59,
+        95.28
+      ],
+      [
+        40.29,
+        98.76
+      ],
+      [
+        41.08,
+        101.63
+      ],
+      [
+        40.33,
+        103.45
+      ],
+      [
+        38.62,
+        104.26
+      ],
+      [
+        36.72,
+        103.95
+      ],
+      [
+        35.24,
+        102.27
+      ],
+      [
+        33.63,
+        98.48
+      ]
+    ],
+    "hedge_centerlines_enu_m": [
+      [
+        [
+          33.66,
+          95.0
+        ],
+        [
+          33.62,
+          96.96
+        ],
+        [
+          34.41,
+          99.53
+        ],
+        [
+          35.48,
+          102.17
+        ],
+        [
+          37.34,
+          103.46
+        ],
+        [
+          39.11,
+          103.45
+        ]
+      ],
+      [
+        [
+          37.11,
+          94.53
+        ],
+        [
+          38.44,
+          95.79
+        ],
+        [
+          39.48,
+          98.15
+        ],
+        [
+          40.25,
+          100.92
+        ],
+        [
+          40.08,
+          102.32
+        ]
+      ]
+    ],
+    "base_enu_m": [
+      [
+        34.55,
+        94.5
+      ],
+      [
+        35.44,
+        94.3
+      ],
+      [
+        38.37,
+        102.66
+      ],
+      [
+        37.11,
+        103.03
+      ]
+    ],
+    "walks": [
+      {
+        "centerline_enu_m": [
+          [
+            25,
+            94.04
+          ],
+          [
+            29.6,
+            92.86
+          ],
+          [
+            34.9,
+            92.19
+          ],
+          [
+            39.0,
+            92.54
+          ],
+          [
+            42.0,
+            94.0
+          ],
+          [
+            45.52,
+            96.57
+          ],
+          [
+            50.29,
+            97.81
+          ],
+          [
+            54.73,
+            98.44
+          ],
+          [
+            59.13,
+            97.63
+          ],
+          [
+            62.31,
+            97.22
+          ]
+        ],
+        "width_m": 3.18
+      },
+      {
+        "centerline_enu_m": [
+          [
+            40.2,
+            92.73
+          ],
+          [
+            39.5,
+            88.96
+          ],
+          [
+            37.95,
+            86.16
+          ],
+          [
+            35.32,
+            82.29
+          ],
+          [
+            31.49,
+            79.07
+          ],
+          [
+            28.48,
+            77.84
+          ]
+        ],
+        "width_m": 2.75
+      }
+    ],
+    "apron_enu_m": [
+      [
+        59.47,
+        96.27
+      ],
+      [
+        63.63,
+        95.81
+      ],
+      [
+        65.29,
+        97.64
+      ],
+      [
+        64.11,
+        99.26
+      ],
+      [
+        60.25,
+        100.61
+      ],
+      [
+        59.48,
+        99.03
+      ]
+    ],
+    "crossing_edges_enu_m": [
+      [
+        [
+          60.34,
+          99.8
+        ],
+        [
+          61.18,
+          134.58
+        ]
+      ],
+      [
+        [
+          63.74,
+          98.43
+        ],
+        [
+          64.46,
+          135.39
+        ]
+      ]
+    ],
+    "crossing_width_m": 0.21,
+    "crossing_coverage_enu_m": [
+      [
+        60.62,
+        98.47
+      ],
+      [
+        63.57,
+        97.99
+      ],
+      [
+        64.27,
+        134.37
+      ],
+      [
+        61.38,
+        134.0
+      ]
+    ]
+  },
+  "onyx": {
+    "center_enu_m": [
+      -196.7,
+      155.6
+    ],
+    "front_bearing_degrees": 39,
+    "planter_enu_m": [
+      [
+        -198.73,
+        156.5
+      ],
+      [
+        -198.27,
+        157.18
+      ],
+      [
+        -196.4,
+        157.12
+      ],
+      [
+        -194.9,
+        156.72
+      ],
+      [
+        -194.68,
+        155.44
+      ],
+      [
+        -195.61,
+        154.6
+      ],
+      [
+        -197.66,
+        154.38
+      ],
+      [
+        -198.79,
+        154.93
+      ]
+    ],
+    "entry_enu_m": [
+      [
+        -195.28,
+        158.16
+      ],
+      [
+        -190.17,
+        157.54
+      ],
+      [
+        -188.88,
+        156.01
+      ],
+      [
+        -188.71,
+        155.0
+      ],
+      [
+        -189.47,
+        152.51
+      ],
+      [
+        -190.72,
+        150.05
+      ],
+      [
+        -191.05,
+        147.6
+      ],
+      [
+        -193.1,
+        147.56
+      ],
+      [
+        -193.05,
+        149.56
+      ],
+      [
+        -194.46,
+        152.53
+      ],
+      [
+        -194.67,
+        155.62
+      ]
+    ],
+    "curb_paths_enu_m": [
+      [
+        [
+          -202.75,
+          159.1
+        ],
+        [
+          -200.24,
+          158.86
+        ],
+        [
+          -197.81,
+          158.34
+        ],
+        [
+          -195.47,
+          158.03
+        ]
+      ],
+      [
+        [
+          -188.88,
+          156.01
+        ],
+        [
+          -187.61,
+          155.67
+        ]
+      ]
+    ],
+    "bollards_enu_m": [
+      [
+        -192.92,
+        155.26
+      ],
+      [
+        -190.28,
+        154.45
+      ]
+    ],
+    "drive_enu_m": [
+      [
+        -207.2,
+        159.62
+      ],
+      [
+        -203.5,
+        159.12
+      ],
+      [
+        -200.24,
+        158.86
+      ],
+      [
+        -197.81,
+        158.34
+      ],
+      [
+        -195.47,
+        158.03
+      ],
+      [
+        -194.8,
+        157.99
+      ],
+      [
+        -190.17,
+        157.54
+      ],
+      [
+        -188.88,
+        156.01
+      ],
+      [
+        -187.61,
+        155.67
+      ],
+      [
+        -184.2,
+        155.75
+      ],
+      [
+        -181.35,
+        156.37
+      ],
+      [
+        -179.4,
+        158.02
+      ],
+      [
+        -179.73,
+        161.83
+      ],
+      [
+        -182.52,
+        162.31
+      ],
+      [
+        -183.32,
+        163.01
+      ],
+      [
+        -183.54,
+        164.67
+      ],
+      [
+        -183.17,
+        166.18
+      ],
+      [
+        -181.8,
+        167.92
+      ],
+      [
+        -181.48,
+        169.88
+      ],
+      [
+        -197.25,
+        172.95
+      ],
+      [
+        -197.1,
+        170.28
+      ],
+      [
+        -197.48,
+        168.65
+      ],
+      [
+        -198.45,
+        167.32
+      ],
+      [
+        -200.2,
+        166.76
+      ],
+      [
+        -203.55,
+        166.86
+      ],
+      [
+        -207.2,
+        167.12
+      ]
+    ],
+    "low_plant_points": [
+      [
+        -201.42,
+        157.74,
+        0.85
+      ],
+      [
+        -200.15,
+        157.19,
+        0.75
+      ],
+      [
+        -199.49,
+        156.25,
+        0.65
+      ],
+      [
+        -199.36,
+        154.97,
+        0.57
+      ],
+      [
+        -195.77,
+        153.83,
+        0.52
+      ],
+      [
+        -194.91,
+        153.74,
+        0.46
+      ],
+      [
+        -187.62,
+        154.74,
+        0.42
+      ],
+      [
+        -186.89,
+        154.69,
+        0.56
+      ]
+    ],
+    "planting_beds_enu_m": [
+      [
+        [
+          -206.9,
+          154.0
+        ],
+        [
+          -205.8,
+          157.58
+        ],
+        [
+          -202.6,
+          158.75
+        ],
+        [
+          -200.24,
+          158.79
+        ],
+        [
+          -197.81,
+          158.25
+        ],
+        [
+          -194.71,
+          157.91
+        ],
+        [
+          -194.77,
+          155.28
+        ],
+        [
+          -194.74,
+          154.02
+        ],
+        [
+          -195.68,
+          152.22
+        ],
+        [
+          -199.26,
+          153.26
+        ],
+        [
+          -203.1,
+          151.95
+        ]
+      ],
+      [
+        [
+          -188.56,
+          155.1
+        ],
+        [
+          -187.61,
+          155.57
+        ],
+        [
+          -184.2,
+          155.65
+        ],
+        [
+          -181.26,
+          156.25
+        ],
+        [
+          -180.47,
+          155.39
+        ],
+        [
+          -179.17,
+          153.29
+        ],
+        [
+          -179.54,
+          151.4
+        ],
+        [
+          -182.12,
+          150.83
+        ],
+        [
+          -186.99,
+          151.21
+        ],
+        [
+          -188.78,
+          152.17
+        ]
+      ]
+    ],
+    "trees": [
+      {
+        "inventory_id": "2151",
+        "object_id": 29902,
+        "species": "Common Horse Chestnut",
+        "position_enu_m": [
+          -204.758,
+          155.183
+        ],
+        "height_m": 12.192,
+        "crown_radius_m": 6.096,
+        "trunk_radius_m": 0.457,
+        "form": "rounded"
+      },
+      {
+        "inventory_id": "2152",
+        "object_id": 29908,
+        "species": "Maidenhair Tree",
+        "position_enu_m": [
+          -196.157,
+          152.568
+        ],
+        "height_m": 10.668,
+        "crown_radius_m": 1.829,
+        "trunk_radius_m": 0.076,
+        "form": "rounded"
+      },
+      {
+        "inventory_id": "2494",
+        "object_id": 29912,
+        "species": "Black Tupelo",
+        "position_enu_m": [
+          -184.837,
+          154.059
+        ],
+        "height_m": 3.048,
+        "crown_radius_m": 0.61,
+        "trunk_radius_m": 0.025,
+        "form": "rounded"
+      },
+      {
+        "inventory_id": "2497",
+        "object_id": 29913,
+        "species": "Black Tupelo",
+        "position_enu_m": [
+          -186.434,
+          151.991
+        ],
+        "height_m": 2.438,
+        "crown_radius_m": 0.914,
+        "trunk_radius_m": 0.025,
+        "form": "rounded"
+      },
+      {
+        "inventory_id": "2498",
+        "object_id": 29914,
+        "species": "Black Tupelo",
+        "position_enu_m": [
+          -182.167,
+          152.01
+        ],
+        "height_m": 3.658,
+        "crown_radius_m": 0.762,
+        "trunk_radius_m": 0.025,
+        "form": "rounded"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "anchor_enu_m": [
+        62.901,
+        108.877
+      ],
+      "points_enu_m": [
+        [
+          62.45,
+          104.59
+        ],
+        [
+          62.05,
+          100.22
+        ],
+        [
+          62.31,
+          97.22
+        ],
+        [
+          59.13,
+          97.63
+        ],
+        [
+          54.73,
+          98.44
+        ],
+        [
+          50.29,
+          97.81
+        ],
+        [
+          45.52,
+          96.57
+        ],
+        [
+          42.0,
+          94.0
+        ],
+        [
+          39.0,
+          92.54
+        ],
+        [
+          34.9,
+          92.19
+        ],
+        [
+          29.6,
+          92.86
+        ],
+        [
+          25,
+          94.04
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        39.0,
+        92.54
+      ],
+      "points_enu_m": [
+        [
+          39.5,
+          88.96
+        ],
+        [
+          37.95,
+          86.16
+        ],
+        [
+          35.32,
+          82.29
+        ],
+        [
+          31.49,
+          79.07
+        ],
+        [
+          28.48,
+          77.84
+        ]
+      ]
+    }
+  ]
+}

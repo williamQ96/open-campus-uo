@@ -6,6 +6,12 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Pioneer Cemetery 南部墓区、PLC 东庭院与东北校园导览 L2
+
+- 在 Cherry Avenue 和 Rankin Lane 之间加入 12 组共 103.09 米外露边石和 36 处无名碑形。七处较高碑形加入碰撞。增加 11 条导航边，将 Cherry Avenue 东段及 Risdon Lane 南段接入既有砂石路网。[墓区复核](docs/pioneer-cemetery-inner-grid-2026-11-27.md#cherry-avenue-to-rankin-lane)。
+- 更新 PLC 东庭院《Vigil》收分底座、两侧楼梯扶手、5.72 米护栏和七组代表性冬季玫瑰。补建 Agate–Franklin 校门牌、步道和过街线，以及 Onyx Bridge 北侧导览图站、入口铺面、植箱和五株登记树。导览场地增加 17 条导航边。部分小型设施和植物尺寸采用估算。[PLC 场地复核](docs/plc-east-court-review-2026-11-27.md#plinth-railing-and-rose-bed-refit) · [导览场地复核](docs/northeast-campus-wayfinding-2026-11-27.md)。
+- 部署前，桌面和手机生产预览各匹配全部 610 个外部模型 ID，其中 608 个有独立几何，2 个由共享几何支持。两端均加载 457 个出入口和 388 项受检资源，无页面错误或场景回退。抽检的 65 个文件通过 SHA-256 比对。三个场地导出均逐字节复现，重新生成的步行覆盖与研究工作树中此次发布的场地一致。构建、格式、199 项单元测试、5 项浏览器测试、511 项资产归档核对和查看器哈希检查均通过。本次从 `main` 部署到 GitHub Pages。Education Annex 保留在研究工作树。[Pages 工作流](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
 ## 2026-11-27 - 发布 East 18th Avenue、Rankin 沿线与 Southgate 室外 L2
 
 - 重建 East 18th Avenue 西段 203.5 米道路及两侧人行道，补建 Kincaid 两处过街线、Clinical Services 南侧停车区、两处植床和 62 条步行导航边。Rankin 沿线接入 University Street，步行高度与可见铺面贴合。[西段复核](docs/east-18th-west-approach-2026-11-27.md) · [Rankin 沿线复核](docs/rankin-frontage-2026-11-27.md)。

@@ -30,7 +30,9 @@ def strip(row):
 
 def tree_bases(base, metadata, source_sha):
     records = metadata / "context-trees-l2.json"
-    assert sha256(records.read_text(encoding="utf-8").encode()).hexdigest() == source_sha
+    assert (
+        sha256(records.read_text(encoding="utf-8").encode()).hexdigest() == source_sha
+    )
     dropped = {item["index"] for item in base["procedural_context_trees_to_remove"]}
     context = cemetery.read(records)["trees"]
     footprints = [
@@ -57,7 +59,8 @@ def low_shrub(parts, field, row):
         z = cemetery.ground_height(field, x, y)
         color = ((96, 119, 73), (117, 133, 83), (102, 125, 77))[i % 3]
         cemetery.orb(
-            parts, (x, y, z + height * scale * 0.57),
+            parts,
+            (x, y, z + height * scale * 0.57),
             (sx * 0.28, sn * 0.28, height * scale * 0.43),
             color,
         )
@@ -83,6 +86,8 @@ def main():
     assert parent["source_presentation_sha256"] == pins["presentation"]
     assert manifest["model"]["sha256"] == pins["campus"]
     field = cemetery.read(field_path)
+    navigation = scene / "navigation.json"
+    assert cemetery.pin(navigation) == pins["navigation"]
 
     detail, ground, plants = [], [], []
     parcel = Polygon(base["parcel"]["outline_enu_m"])
@@ -90,7 +95,11 @@ def main():
     stems = tree_bases(base, metadata, spec["source_context_tree_metadata_sha256"])
     prior_sections = (base, base["perimeter_refinement"], base["northwest_refinement"])
     old_edges = unary_union(
-        [footprint(row) for section in prior_sections for row in section["grave_plot_edges"]]
+        [
+            footprint(row)
+            for section in prior_sections
+            for row in section["grave_plot_edges"]
+        ]
     )
     old_markers = [
         Point(row["position_enu_m"])
@@ -134,7 +143,9 @@ def main():
         bounds = box(e - width, n - depth, e + width, n + depth)
         assert parcel.covers(bounds) and main_paths.distance(bounds) > 0.6, row["id"]
         assert all(center.distance(o) > 0.82 for o in centers), row["id"]
-        assert all_edges.distance(bounds) > 0.002 and trails.distance(bounds) > 0.21, row["id"]
+        assert (
+            all_edges.distance(bounds) > 0.002 and trails.distance(bounds) > 0.21
+        ), row["id"]
         assert stems.distance(bounds) > 0.07, row["id"]
         cemetery.marker(detail, field, row, len(old_markers) + i)
         centers.append(center)
@@ -145,6 +156,25 @@ def main():
         assert main_paths.distance(center) > 2.0 and trails.distance(center) > 0.7
         assert stems.distance(center) > 1.2
         low_shrub(plants, field, row)
+
+    links = spec["gravel_way_links"]
+    original = cemetery.read(navigation)["nodes_enu_m"]
+    parent_nodes = [
+        p
+        for branch in parent["walkable_ground"]["paths"]
+        for p in branch["points_enu_m"]
+    ]
+    obstacles_union = unary_union([box(*bounds) for bounds in obstacles])
+    route_lengths = cemetery.branch_lengths(
+        [*original, *parent_nodes],
+        links["paths"],
+        main_paths,
+        obstacles_union,
+    )
+    for route in links["paths"]:
+        end = [route["end_enu_m"]] if "end_enu_m" in route else []
+        line = LineString([route["anchor_enu_m"], *route["points_enu_m"], *end])
+        assert main_paths.buffer(0.13).covers(line), line.wkt
 
     args.stage.mkdir(parents=True, exist_ok=True)
     asset, descriptor = (args.stage / file for file in ("site.glb", "site.json"))
@@ -162,24 +192,35 @@ def main():
             "source_presentation_sha256": pins["presentation"],
             "source_base_model_sha256": pins["campus"],
             "source_heightfield_sha256": pins["heightfield"],
+            "source_navigation_sha256": pins["navigation"],
             "prerequisite_site_sha256": spec["cemetery_descriptor_sha256"],
             "url": f"{PACKAGE}/site.glb",
             "ground_node": GROUND,
             "sha256": asset_sha,
             "buildings": [],
             "closed_site_boxes_enu_m": obstacles,
+            "walkable_ground": links,
         },
         compact=True,
     )
     report = {
         "curb_traces": len(curbs),
-        "curb_length_m": round(sum(LineString(x["points_enu_m"]).length for x in spec["curbs"]), 2),
+        "curb_length_m": round(
+            sum(LineString(x["points_enu_m"]).length for x in spec["curbs"]), 2
+        ),
         "markers": len(spec["markers"]),
         "tracks": len(tracks),
-        "track_length_m": round(sum(LineString(x["centerline_enu_m"]).length for x in spec["tracks"]), 2),
+        "track_length_m": round(
+            sum(LineString(x["centerline_enu_m"]).length for x in spec["tracks"]), 2
+        ),
         "track_area_m2": round(sum(track.area for track in tracks), 2),
         "shrubs": len(spec["low_shrubs"]),
         "collisions": len(obstacles),
+        "gravel_link_edges": sum(
+            len(route["points_enu_m"]) + ("end_enu_m" in route)
+            for route in links["paths"]
+        ),
+        "gravel_link_lengths_m": route_lengths,
         "faces": faces,
         "asset_sha256": asset_sha,
         "descriptor_sha256": cemetery.pin(descriptor),

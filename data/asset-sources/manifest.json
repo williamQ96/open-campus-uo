@@ -3234,16 +3234,16 @@
       "origin": "Original Knight Library north forecourt, Bailey fountain, planting walls and seating geometry, informed by the 2026 construction photograph, historic campus surveys and county aerials. See docs/knight-north-plaza-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/plc-east-court-review/site.json": {
-      "sha256": "e2093c93d144c3f16580b9552e6703ab80567ff176871c366a3253287f00bacb",
-      "bytes": 1361,
+      "sha256": "1e9c64a43a399a62eec3275471e217cfb16ac3f1426672240710ba6957a73de1",
+      "bytes": 1490,
       "license": "CC-BY-4.0",
-      "origin": "Original PLC east courtyard terrain, paving, stairs, planters and pedestal geometry informed by Lane County imagery, NOAA point returns and UO records. See docs/plc-east-court-review-2026-11-27.md."
+      "origin": "Original PLC east courtyard terrain, paving, stairs, planters and pedestal geometry informed by Lane County imagery, NOAA point returns and UO records. See docs/plc-east-court-review-2026-11-27.md. Original plinth, rail and rose geometry fitted with the December 2023 approach and detail views documented in the site review."
     },
     "apps/web-preview/public/scene/plc-east-court-review/site.glb": {
-      "sha256": "61dd8e75a7dc9d8ca4f27a5c96b86e311b679c2cd0045a7dc79170e2e1c684fc",
-      "bytes": 376980,
+      "sha256": "0bca8f2af1c7135b158e6a48368a4f1df9ef93d2203876126f6a2d8a4eeb24f3",
+      "bytes": 640936,
       "license": "CC-BY-4.0",
-      "origin": "Original PLC east courtyard terrain, paving, stairs, planters and pedestal geometry informed by Lane County imagery, NOAA point returns and UO records. See docs/plc-east-court-review-2026-11-27.md."
+      "origin": "Original PLC east courtyard terrain, paving, stairs, planters and pedestal geometry informed by Lane County imagery, NOAA point returns and UO records. See docs/plc-east-court-review-2026-11-27.md. Original plinth, rail and rose geometry fitted with the December 2023 approach and detail views documented in the site review."
     },
     "apps/web-preview/public/scene/memorial-quad-plaques-review/site.json": {
       "sha256": "cfb83ddc4140d0693e6e364e501046b6bfc968526fe9f7e41e0054f5f4c92c51",
@@ -3258,16 +3258,16 @@
       "origin": "Original modeling of Memorial Quad sidewalk plaque forms and abbreviated relief lettering from the UO landscape survey and National Register record. See docs/memorial-quad-plaques-2026-11-27.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-inner-grid-review/site.json": {
-      "bytes": 1079,
-      "sha256": "5e2823f4fbefbe161d89aef13f57c5a8ee64112e532ba54b641466fa7483feac",
+      "bytes": 1968,
+      "sha256": "8dc36fac8c82cf80332d532c44c79d0f5a6e0884cc19e21c89e8b586dff93408",
       "license": "CC-BY-4.0",
-      "origin": "Original Pioneer Cemetery interior curb traces, markers, grass strips and low shrubs informed by Lane County imagery and the historic plat. See docs/pioneer-cemetery-inner-grid-2026-11-27.md."
+      "origin": "Original Pioneer Cemetery interior curb traces, markers, grass strips and low shrubs informed by Lane County imagery and the historic plat. See docs/pioneer-cemetery-inner-grid-2026-11-27.md. The south interior follow-up registers exposed features between Cherry Avenue and Rankin Lane."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-inner-grid-review/site.glb": {
-      "bytes": 259448,
-      "sha256": "374074b1103013c2735f7803539be7bf095b447623ced90a1140cbb595ca4821",
+      "bytes": 400304,
+      "sha256": "833518e89b97cb7b814e7866ad1f189efad6fe9ec97d5a95d0ea22664f09e2cb",
       "license": "CC-BY-4.0",
-      "origin": "Original Pioneer Cemetery interior curb traces, markers, grass strips and low shrubs informed by Lane County imagery and the historic plat. See docs/pioneer-cemetery-inner-grid-2026-11-27.md."
+      "origin": "Original Pioneer Cemetery interior curb traces, markers, grass strips and low shrubs informed by Lane County imagery and the historic plat. See docs/pioneer-cemetery-inner-grid-2026-11-27.md. The south interior follow-up registers exposed features between Cherry Avenue and Rankin Lane."
     },
     "apps/web-preview/public/scene/clinical-dropoff-landscape-review/site.json": {
       "bytes": 1600,
@@ -3304,6 +3304,18 @@
       "sha256": "0d8d8b6bd5bb6bebd4b736661c93cdb6409fe3721028ecb590a2c3f20ddd3f7c",
       "license": "CC-BY-4.0",
       "origin": "Original East 18th Avenue Rankin frontage and University Street crossing geometry registered from four Lane County orthophotos. The terrain sampler uses the existing cemetery sidewalk registration. See docs/rankin-frontage-2026-11-27.md. Junction paint, ramps and original fixtures are documented in docs/southgate-junction-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/northeast-campus-wayfinding-review/site.json": {
+      "bytes": 1533,
+      "sha256": "c1f1183c3ab969ff0d7662034d9ae98ab2147e3a509ec99ed1de8fd146ccd105",
+      "license": "CC-BY-4.0",
+      "origin": "Original northeast wayfinding geometry for the Agate–Franklin gateway and Onyx map station. Placement and form are in docs/northeast-campus-wayfinding-2026-11-27.md. The cabinet map graphic is independently generated from this project’s scene metadata."
+    },
+    "apps/web-preview/public/scene/northeast-campus-wayfinding-review/site.glb": {
+      "bytes": 907308,
+      "sha256": "911a1dce8fec5c94e2e45337c78300af983259f53a9a104a72946d63b89c47d8",
+      "license": "CC-BY-4.0",
+      "origin": "Original northeast wayfinding geometry for the Agate–Franklin gateway and Onyx map station. Placement and form are in docs/northeast-campus-wayfinding-2026-11-27.md. The cabinet map graphic is independently generated from this project’s scene metadata."
     }
   },
   "additional_sources": [

@@ -19,6 +19,7 @@ plc_east = import_module("build-plc-east-court")
 dropoff = import_module("build-clinical-dropoff-landscape")
 east_18th_west = import_module("build-east-18th-west-approach")
 rankin_frontage = import_module("build-rankin-frontage")
+wayfinding = import_module("build-northeast-campus-wayfinding")
 root = green.site.root
 scene = green.site.scene
 
@@ -65,7 +66,9 @@ def kendall_coverage(spec):
 
 def dropoff_coverage(spec):
     manifest, _, _ = green.east.pinned_site(scene, spec)
-    buildings, _ = green.east.build_blockers(scene, spec, manifest, box(*spec["extent"]))
+    buildings, _ = green.east.build_blockers(
+        scene, spec, manifest, box(*spec["extent"])
+    )
     _, sidewalks, crossings, _ = dropoff.footprints(spec, buildings)
     return sidewalks.union(crossings)
 
@@ -81,6 +84,13 @@ def rankin_frontage_coverage(spec, metadata):
     manifest, _, _ = green.east.pinned_site(scene, spec)
     _, _, _, _, access, _, _ = rankin_frontage.footprints(spec, manifest, metadata)
     return access
+
+
+def northeast_wayfinding_coverage(spec):
+    manifest, _, _ = green.east.pinned_site(scene, spec)
+    blockers = wayfinding.wayfinding_blockers(scene, spec, manifest)
+    paths, crossing, _ = wayfinding.footprints(spec, blockers)
+    return paths.union(crossing)
 
 
 def encode_coverage(package, footprint):
@@ -111,7 +121,9 @@ def main():
     rows = [
         encode_coverage(
             plc_east.PACKAGE,
-            plc_east.paving_footprint(green.site.read(metadata / "plc-east-court.json")),
+            plc_east.paving_footprint(
+                green.site.read(metadata / "plc-east-court.json")
+            ),
         ),
         encode_coverage(
             knight_north.PACKAGE,
@@ -141,7 +153,9 @@ def main():
         ),
         encode_coverage(
             dropoff.PACKAGE,
-            dropoff_coverage(green.site.read(metadata / "clinical-dropoff-landscape.json")),
+            dropoff_coverage(
+                green.site.read(metadata / "clinical-dropoff-landscape.json")
+            ),
         ),
         encode_coverage(
             east_18th_west.PACKAGE,
@@ -153,6 +167,12 @@ def main():
             rankin_frontage.PACKAGE,
             rankin_frontage_coverage(
                 green.site.read(metadata / "rankin-frontage.json"), metadata
+            ),
+        ),
+        encode_coverage(
+            wayfinding.PACKAGE,
+            northeast_wayfinding_coverage(
+                green.site.read(metadata / "northeast-campus-wayfinding.json")
             ),
         ),
     ]

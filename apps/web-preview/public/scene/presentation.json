@@ -2254,7 +2254,7 @@
   },
   "plc_east_court_site": {
     "url": "plc-east-court-review/site.json",
-    "sha256": "e2093c93d144c3f16580b9552e6703ab80567ff176871c366a3253287f00bacb"
+    "sha256": "1e9c64a43a399a62eec3275471e217cfb16ac3f1426672240710ba6957a73de1"
   },
   "memorial_quad_plaques_site": {
     "url": "memorial-quad-plaques-review/site.json",
@@ -2266,7 +2266,7 @@
   },
   "pioneer_cemetery_inner_grid_site": {
     "url": "pioneer-cemetery-inner-grid-review/site.json",
-    "sha256": "5e2823f4fbefbe161d89aef13f57c5a8ee64112e532ba54b641466fa7483feac"
+    "sha256": "8dc36fac8c82cf80332d532c44c79d0f5a6e0884cc19e21c89e8b586dff93408"
   },
   "east_18th_west_approach_site": {
     "url": "east-eighteenth-west-approach-review/site.json",
@@ -2275,5 +2275,9 @@
   "rankin_frontage_site": {
     "url": "rankin-frontage-review/site.json",
     "sha256": "f619405be55add4e829086ab7c01296e298e51c6645d326e3824204b77fca840"
+  },
+  "northeast_campus_wayfinding_site": {
+    "url": "northeast-campus-wayfinding-review/site.json",
+    "sha256": "c1f1183c3ab969ff0d7662034d9ae98ab2147e3a509ec99ed1de8fd146ccd105"
   }
 }

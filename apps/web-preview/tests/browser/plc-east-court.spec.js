@@ -13,6 +13,11 @@ async function readCourt(page) {
       tread:
         campus.terrainCheck(-569.9, 131.4)["plc-east-court-paving"] ?? null,
       bed: campus.collisionCheck(-578.21, 135.06),
+      rails: [
+        [-569.74, 132.48],
+        [-569.74, 126.28],
+        [-569.74, 129.5],
+      ].map(([x, z]) => campus.collisionCheck(x, z)),
       eastGate: campus
         .entranceInfo()
         .some(
@@ -30,6 +35,7 @@ test("the PLC court falls back without replacing its host building or Quad", asy
     quad: true,
     tread: expect.any(Number),
     bed: true,
+    rails: [true, true, false],
     eastGate: true,
   });
   await page.route("**/plc-east-court-review/site.glb", (route) =>
@@ -40,6 +46,7 @@ test("the PLC court falls back without replacing its host building or Quad", asy
     quad: true,
     tread: null,
     bed: false,
+    rails: [false, false, false],
     eastGate: true,
   });
 });
@@ -55,6 +62,7 @@ test("the raised court stays available when the Quad bundle fails", async ({
     quad: false,
     tread: expect.any(Number),
     bed: true,
+    rails: [true, true, false],
     eastGate: true,
   });
 });

@@ -15,6 +15,7 @@
 | Pioneer Cemetery 的 University Street 与 Rankin Lane 周界 | 已纳入 L2 发布 | 配准 1,839.82 平方米草坡、四处低矮种植、16 组外露边石、22 处无名碑形和 13.05 米矮墙。按矮墙修正 Southgate 西侧人行道及两处路径点。[周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#university-street-and-rankin-lane-perimeter) |
 | Pioneer Cemetery 的 Conger Lane、Shelley Lane 与图书馆接驳 | 已纳入 L2 发布 | 配准图书馆侧 197.42 平方米铺面、Conger 路线、短草径、两处低植、七组外露边石及 14 处无名碑形。四条分支新增 50 条导航边。[西北周界复核](pioneer-cemetery-landscape-review-2026-11-26.md#conger-lane-shelley-lane-and-the-library-approach) |
 | Pioneer Cemetery 北部、Dorris 北侧与 Walton–Cherry 间墓区 | 纳入本次 L2 发布 | 多期航片配准 15 组外露边石、40 处无名碑形、三段共 60.94 米草径和两处低植。九处较高碑形加入碰撞，Walton–Cherry 一段边石避开已建模树干。树冠下的延续、碑形细节和植物种类仍待现场证据。[墓区复核](pioneer-cemetery-inner-grid-2026-11-27.md) |
+| Pioneer Cemetery 的 Cherry Avenue 与 Rankin Lane 之间 | 纳入本次 L2 发布 | 四期航片核对 12 组共 103.09 米外露边石、36 处无名碑形及与现有步道、树干的间距。七处较高碑形加入碰撞。新增 11 条导航边，连通 Cherry Avenue 东段、Risdon Lane 南段与 Rankin Lane。碑形尺寸与埋没边石的走向仍待现场核对。[墓区复核](pioneer-cemetery-inner-grid-2026-11-27.md#cherry-avenue-to-rankin-lane) |
 | Pioneer Cemetery 其余墓区 | 待细化 | 核对树冠遮挡的小巷、边石、历史玫瑰和边界乔木。 |
 | Southwest Campus Green、Knight Library 南侧平台与 Lot 20 | 已纳入 L2 发布 | 配准开敞草坪、南侧平台、11 处种植区、29 株登记树和 40 条导航边，补建停车路缘、无障碍标线、长椅、路灯和场地牌。《Trees of Knowledge》约 1.22 米高，已记录作品群位置。单件底座与可再发布几何待核对。[场地复核](southwest-campus-green-review-2026-11-27.md) |
 | 墓园与 Southwest Campus Green 的铺面导航接入 | 已纳入 L2 发布 | 五条曾走草地的端点连线已校正，同一组路线控制在建模铺面边缘 0.13 米配准容差内。已核对五组偏移落点的双向路线及北段 Risdon Lane 对照路线。[路线复核](southwest-campus-green-review-2026-11-27.md#paved-route-access) |
@@ -26,7 +27,8 @@
 | Knight Library 北广场与 Bailey 喷泉 | 已纳入 L2 发布 | 根据历史测绘、三期航片及 2026 年施工照片重建 875.78 平方米混凝土铺面、喷泉、四张石凳、三处植床与 14 条导航边。四株樱花的移除有记录，补植点位、新灯剖面及喷泉运行状态待核对。[场地复核](knight-north-plaza-review-2026-11-27.md) |
 | Memorial Quadrangle 南端步道与 Knight Library 接合 | 已纳入 L2 发布 | 三期航片和校方平面图配准南侧交叉步道、两侧直行道和北广场接合铺面。南端保留中央草坪。导航落点使用建模铺面边界，树冠挡住的末端分段和宽度为估算。[铺面复核](paving-corridors-l2-2026-11-26.md#memorial-quadrangle-south-walks-and-knight-library-apron) |
 | PLC 东庭院铺面、台阶与植床 | 已纳入 L2 发布 | 四期航片与 NOAA 地面点配准 497.51 平方米铺装、四级台阶、三处植床、两株登记树和约略的《Vigil》底座。14 条导航边接入 Memorial Quad 和两处既有门口。[场地复核](plc-east-court-review-2026-11-27.md) |
-| PLC 东庭院《Vigil》 | 已核对校方档案 | 校方 2025 年测绘确认《Vigil》为东庭院现存雕塑，接替 2008 年失窃的《The Falconer》。航片已配准底座和周边植床，底座剖面与雕塑本体仍待近期近照。[档案复核](plc-east-court-review-2026-11-27.md) |
+| PLC 东庭院《Vigil》底座、玫瑰花坛与楼梯栏杆 | 纳入本次 L2 发布 | 按 2023 年现场全景与近照更新深色收分底座、两侧扶手、南侧 5.72 米护栏和七组代表性冬季玫瑰。底座尺寸、植物分组和扶手细节为影像估算。[场地复核](plc-east-court-review-2026-11-27.md#plinth-railing-and-rose-bed-refit) |
+| PLC 东庭院《Vigil》 | 已核对校方档案 | 校方 2025 年测绘确认《Vigil》为东庭院现存雕塑，接替 2008 年失窃的《The Falconer》。艺术家目录编号 G30，博物馆记录为 1985 年青铜件，高 2.426 米。2023 年近照与馆藏图片交叉确认现场作品形态，作品本体待可再发布的几何来源。[档案复核](plc-east-court-review-2026-11-27.md#vigil-catalog-evidence) |
 | Memorial Quad 的 Gilbert 与 Kincaid Field 铭牌 | 已纳入 L2 发布 | 按校方景观图和 Gilbert 铭牌档案照片补建北端两块嵌地铭牌及东侧 Kincaid Field 铭牌。各点位和尺寸采用近似配准，Kincaid Field 的排版为示意。[铭牌复核](memorial-quad-plaques-2026-11-27.md) |
 | Bailey 纪念橡树、树池与东侧步道 | 已纳入 L2 发布 | 校方 616 至 623 号八株树按现存树位建模。增设 26.45 平方米根区，沿树列外侧配准步道并恢复圆环北方交叉斜道。树干和树冠细部为估算。[树木与步道复核](memorial-quad-bailey-oaks-2026-11-27.md) |
 | Memorial Quad 与 Knight 北广场行人路灯 | 纳入本次 L2 发布 | 校方 2007 年景观图和至少两期航片交叉定位六处，以校方橡果灯标准建模。替换四个推估点，西侧横道灯位向北调整 1.20 米以留出通行空间。树冠遮挡的灯位和现存历史原件待核对。[灯位复核](memorial-quad-lamps-2026-11-27.md) |
@@ -57,6 +59,7 @@
 | Turf Field 1、Student Recreation Center 东入口与 East 15th 接驳 | 已纳入 L2 发布 | 补建 Field 1 人工草坪、两座球门、标线、北缘围栏及种植带。延伸 Field 2 西侧步道并接 SRC 东入口。分隔带靠体育场一端的台阶待近景核对。 [场地复核](hayward-midblock-review-2026-11-27.md#turf-field-1-and-the-student-recreation-center-approach) |
 | East 15th 与 Powell Plaza | 已纳入 L2 发布 | 接通 University Street、Straub、SRC 与 Agate。Onyx 以西配准街道和双线过街，以东补建铺砖步道、错列花坛、座椅和 Powell Plaza 三根主旗杆与门栏。尺寸、高程和细部采用估算。 [场地复核](east-fifteenth-hayward-review-2026-11-27.md) |
 | 校方艺术目录中的户外作品 | 待逐项配准 | 先核对作品仍在原位的证据和场景里的尺寸及基座。目录含纪念性雕塑、场地装置和立面装饰。 |
+| Agate–Franklin 校门标识与 Onyx Bridge 北侧导览图站 | 纳入本次 L2 发布 | 校门牌、植床、Franklin 过街及连接人行道已配准，增加 17 条导航边。Onyx 图站补建地图柜、石质植箱、红色路缘、两根路桩、相连的入口沥青铺面、两处植床及五株校方登记树。地图为项目自绘示意图，部分尺寸采用估算。[场地复核](northeast-campus-wayfinding-2026-11-27.md) |
 | 校园标识、导览图站、交通与停车标识 | 待逐项配准 | 2024 标识计划提供样式，按当前街景和场地照片确认各位置。 |
 | 校园花坛、乔木和林下植被 | 已有代表性 L2，待逐处复核 | 现有植被层和登记树记录作为基线。优先核对已知空地、边界、花坛与通道之间的关系。 |
 | 建筑外围台阶、矮墙、栏杆、坡道及其他小品 | 已有代表性 L2，待逐处复核 | 用设计图、同期照片与高程数据按地点核对。 |

@@ -50,7 +50,210 @@
     "historic_plat": "https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669#page=36",
     "register_description": "https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669#page=7",
     "screen": "Trace exposed edges on the 2025 and 2023 imagery, compare 2021 and 2017 where visible, and dissolve unsupported segments.",
-    "rejected_candidates": "The north-west edge duplicates an existing curb. Two stone candidates duplicate existing markers, five crowd a curb and three northern points remain screened by canopy in the comparison dates. One additional pale point falls inside a tree-base clearance when modeled."
+    "rejected_candidates": "The north-west edge duplicates an existing curb. Two stone candidates duplicate existing markers, five crowd a curb and three northern points remain screened by canopy in the comparison dates. One additional pale point falls inside a tree-base clearance when modeled.",
+    "cherry_rankin_followup": {
+      "orthophotos": [
+        {
+          "tile": "east-cherry-rankin",
+          "file": "east-cherry-rankin-2017.png",
+          "year": 2017,
+          "bounds_enu_m": [
+            -398,
+            -589,
+            -320,
+            -519
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493931.14928888186%2C4876339.282153052%2C494009.14928888186%2C4876409.282153052&bboxSR=3740&imageSR=3740&size=1092%2C980&layers=show%3A29&format=png32",
+          "sha256": "91a3cc07858ebc597d98a6f65d573236a543da572d7b9833194ad646bb1b78e1"
+        },
+        {
+          "tile": "east-cherry-rankin",
+          "file": "east-cherry-rankin-2021.png",
+          "year": 2021,
+          "bounds_enu_m": [
+            -398,
+            -589,
+            -320,
+            -519
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493931.14928888186%2C4876339.282153052%2C494009.14928888186%2C4876409.282153052&bboxSR=3740&imageSR=3740&size=1092%2C980&layers=show%3A26&format=png32",
+          "sha256": "4258ae8b742c6160181f8f11dd465afa59660114363f2d4288d20ebed44d8b3c"
+        },
+        {
+          "tile": "east-cherry-rankin",
+          "file": "east-cherry-rankin-2023.png",
+          "year": 2023,
+          "bounds_enu_m": [
+            -398,
+            -589,
+            -320,
+            -519
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493931.14928888186%2C4876339.282153052%2C494009.14928888186%2C4876409.282153052&bboxSR=3740&imageSR=3740&size=1092%2C980&layers=show%3A2&format=png32",
+          "sha256": "a67db206305913c819bc93a8c677b541538da962a5299dff4422c3fb15f1b069"
+        },
+        {
+          "tile": "east-cherry-rankin",
+          "file": "east-cherry-rankin-2025.png",
+          "year": 2025,
+          "bounds_enu_m": [
+            -398,
+            -589,
+            -320,
+            -519
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493931.14928888186%2C4876339.282153052%2C494009.14928888186%2C4876409.282153052&bboxSR=3740&imageSR=3740&size=1092%2C980&layers=show%3A57&format=png32",
+          "sha256": "76a6d91c95587485d4fe44395375c5adfeee8a679839b55f5769d716d250700f"
+        },
+        {
+          "tile": "west-cherry-rankin",
+          "file": "west-cherry-rankin-2017.png",
+          "year": 2017,
+          "bounds_enu_m": [
+            -525,
+            -589,
+            -428,
+            -526
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493804.14928888186%2C4876339.282153052%2C493901.14928888186%2C4876402.282153052&bboxSR=3740&imageSR=3740&size=1261%2C819&layers=show%3A29&format=png32",
+          "sha256": "2536a6b822147520d2e35a1808494bdd647fa913d0622b645d722caa6a1398b7"
+        },
+        {
+          "tile": "west-cherry-rankin",
+          "file": "west-cherry-rankin-2021.png",
+          "year": 2021,
+          "bounds_enu_m": [
+            -525,
+            -589,
+            -428,
+            -526
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493804.14928888186%2C4876339.282153052%2C493901.14928888186%2C4876402.282153052&bboxSR=3740&imageSR=3740&size=1261%2C819&layers=show%3A26&format=png32",
+          "sha256": "41a5c8a00baadbd282223bb37a1b56e1f81fe3e118cecf71916bee6601d61d71"
+        },
+        {
+          "tile": "west-cherry-rankin",
+          "file": "west-cherry-rankin-2023.png",
+          "year": 2023,
+          "bounds_enu_m": [
+            -525,
+            -589,
+            -428,
+            -526
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493804.14928888186%2C4876339.282153052%2C493901.14928888186%2C4876402.282153052&bboxSR=3740&imageSR=3740&size=1261%2C819&layers=show%3A2&format=png32",
+          "sha256": "9498b96d52f1ab3c2e46674be2b7498e5f760c097ff661c7df5a1c6168b01c0e"
+        },
+        {
+          "tile": "west-cherry-rankin",
+          "file": "west-cherry-rankin-2025.png",
+          "year": 2025,
+          "bounds_enu_m": [
+            -525,
+            -589,
+            -428,
+            -526
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493804.14928888186%2C4876339.282153052%2C493901.14928888186%2C4876402.282153052&bboxSR=3740&imageSR=3740&size=1261%2C819&layers=show%3A57&format=png32",
+          "sha256": "9be7c0de737321b9540455079d8c3d6608a11c14e8b859f44a20054ef93a93de"
+        },
+        {
+          "tile": "middle-cherry-rankin",
+          "file": "middle-cherry-rankin-2017.png",
+          "year": 2017,
+          "bounds_enu_m": [
+            -455,
+            -580,
+            -385,
+            -509
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493874.14928888186%2C4876348.282153052%2C493944.14928888186%2C4876419.282153052&bboxSR=3740&imageSR=3740&size=980%2C994&layers=show%3A29&format=png32",
+          "sha256": "c2c5378bcfbf5394352bc6377745546fddb7a5701c2654de624fd4e44d77aec4"
+        },
+        {
+          "tile": "middle-cherry-rankin",
+          "file": "middle-cherry-rankin-2021.png",
+          "year": 2021,
+          "bounds_enu_m": [
+            -455,
+            -580,
+            -385,
+            -509
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493874.14928888186%2C4876348.282153052%2C493944.14928888186%2C4876419.282153052&bboxSR=3740&imageSR=3740&size=980%2C994&layers=show%3A26&format=png32",
+          "sha256": "cf7c3feda5a97e38558c76607ce93f779087af8bc51ebefe9cf024ad23a86793"
+        },
+        {
+          "tile": "middle-cherry-rankin",
+          "file": "middle-cherry-rankin-2023.png",
+          "year": 2023,
+          "bounds_enu_m": [
+            -455,
+            -580,
+            -385,
+            -509
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493874.14928888186%2C4876348.282153052%2C493944.14928888186%2C4876419.282153052&bboxSR=3740&imageSR=3740&size=980%2C994&layers=show%3A2&format=png32",
+          "sha256": "672ba00541b0e2c29fe22ab21c341a30859ae1e28ed7185c34bb2aff09cf9d50"
+        },
+        {
+          "tile": "middle-cherry-rankin",
+          "file": "middle-cherry-rankin-2025.png",
+          "year": 2025,
+          "bounds_enu_m": [
+            -455,
+            -580,
+            -385,
+            -509
+          ],
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493874.14928888186%2C4876348.282153052%2C493944.14928888186%2C4876419.282153052&bboxSR=3740&imageSR=3740&size=980%2C994&layers=show%3A57&format=png32",
+          "sha256": "52fbfb6932125feab508ba69e1190cb807ca44b70c36d8b43609952c8124f2da"
+        }
+      ],
+      "basis": "The 2021, 2023 and 2025 aerials register exposed lines and stone returns south of Cherry Avenue; 2017 shows alternate canopy and light. Use visible segments and anonymous forms.",
+      "candidate_rejections": [
+        [
+          "cherry-rankin-marker-06",
+          "road clearance"
+        ],
+        [
+          "cherry-rankin-marker-10",
+          "no stable discrete aerial return"
+        ],
+        [
+          "cherry-rankin-marker-13",
+          "edge clearance"
+        ],
+        [
+          "cherry-rankin-marker-15",
+          "edge clearance"
+        ],
+        [
+          "cherry-rankin-marker-16",
+          "edge clearance"
+        ],
+        [
+          "cherry-rankin-marker-18",
+          "edge clearance"
+        ],
+        [
+          "cherry-rankin-marker-39",
+          "edge clearance"
+        ],
+        [
+          "cherry-rankin-marker-41",
+          "edge clearance"
+        ],
+        [
+          "cherry-rankin-marker-45",
+          "no stable discrete aerial return"
+        ],
+        [
+          "cherry-rankin-west-04",
+          "no persistent edge in alternate photos"
+        ]
+      ]
+    }
   },
   "areas": [
     {
@@ -76,6 +279,33 @@
         -344
       ],
       "pixels_per_m": 12
+    },
+    {
+      "id": "cherry-rankin-east",
+      "extent_enu_m": [
+        -398,
+        -589,
+        -320,
+        -519
+      ]
+    },
+    {
+      "id": "cherry-rankin-west",
+      "extent_enu_m": [
+        -525,
+        -589,
+        -428,
+        -526
+      ]
+    },
+    {
+      "id": "cherry-rankin-middle",
+      "extent_enu_m": [
+        -455,
+        -580,
+        -385,
+        -509
+      ]
     }
   ],
   "curbs": [
@@ -718,6 +948,286 @@
           213
         ]
       ]
+    },
+    {
+      "id": "cherry-rankin-west-01",
+      "area": "cherry-rankin-west",
+      "points_enu_m": [
+        [
+          -486.65,
+          -554.27
+        ],
+        [
+          -486.66,
+          -548.23
+        ],
+        [
+          -482.85,
+          -548.15
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-west-02",
+      "area": "cherry-rankin-west",
+      "points_enu_m": [
+        [
+          -469.06,
+          -562.3
+        ],
+        [
+          -469.06,
+          -559.27
+        ],
+        [
+          -463.21,
+          -559.35
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-west-03",
+      "area": "cherry-rankin-west",
+      "points_enu_m": [
+        [
+          -507.12,
+          -564.08
+        ],
+        [
+          -507.12,
+          -568.74
+        ],
+        [
+          -512.32,
+          -568.78
+        ]
+      ],
+      "aerial_years": [
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-middle-01",
+      "area": "cherry-rankin-middle",
+      "points_enu_m": [
+        [
+          -438.57,
+          -564.37
+        ],
+        [
+          -434.99,
+          -564.37
+        ],
+        [
+          -435.01,
+          -568.92
+        ],
+        [
+          -438.43,
+          -568.94
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-middle-02",
+      "area": "cherry-rankin-middle",
+      "points_enu_m": [
+        [
+          -414.44,
+          -548.44
+        ],
+        [
+          -414.46,
+          -554.48
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-middle-03",
+      "area": "cherry-rankin-middle",
+      "points_enu_m": [
+        [
+          -408.21,
+          -576.72
+        ],
+        [
+          -408.21,
+          -571.95
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-east-01",
+      "area": "cherry-rankin-east",
+      "points_enu_m": [
+        [
+          -359.08,
+          -587.23
+        ],
+        [
+          -351.93,
+          -587.12
+        ],
+        [
+          -351.91,
+          -584.3
+        ],
+        [
+          -358.99,
+          -584.35
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-east-02",
+      "area": "cherry-rankin-east",
+      "points_enu_m": [
+        [
+          -384.93,
+          -583.51
+        ],
+        [
+          -381.72,
+          -583.51
+        ],
+        [
+          -381.6,
+          -587.06
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-east-03",
+      "area": "cherry-rankin-east",
+      "points_enu_m": [
+        [
+          -375.02,
+          -584.09
+        ],
+        [
+          -369.75,
+          -584.13
+        ],
+        [
+          -369.67,
+          -586.91
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-east-04",
+      "area": "cherry-rankin-east",
+      "points_enu_m": [
+        [
+          -393.01,
+          -584.56
+        ],
+        [
+          -390.8,
+          -584.63
+        ],
+        [
+          -390.84,
+          -585.71
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-east-05",
+      "area": "cherry-rankin-east",
+      "points_enu_m": [
+        [
+          -360.07,
+          -554.18
+        ],
+        [
+          -360.07,
+          -547.44
+        ],
+        [
+          -365.59,
+          -547.45
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023
+      ],
+      "material": "weathered low curb"
+    },
+    {
+      "id": "cherry-rankin-east-06",
+      "area": "cherry-rankin-east",
+      "points_enu_m": [
+        [
+          -333.49,
+          -563.9
+        ],
+        [
+          -333.49,
+          -568.62
+        ]
+      ],
+      "aerial_years": [
+        2021,
+        2023,
+        2025
+      ],
+      "material": "weathered low curb"
     }
   ],
   "markers": [
@@ -1532,6 +2042,438 @@
         2023,
         2025
       ]
+    },
+    {
+      "id": "cherry-rankin-marker-01",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -483.63,
+        -549.05
+      ],
+      "height_m": 0.87,
+      "width_m": 0.58,
+      "depth_m": 0.49,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-02",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -493.0,
+        -561.35
+      ],
+      "height_m": 0.93,
+      "width_m": 0.61,
+      "depth_m": 0.51,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-03",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -504.15,
+        -566.31
+      ],
+      "height_m": 0.67,
+      "width_m": 0.5,
+      "depth_m": 0.43,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-04",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -512.91,
+        -562.67
+      ],
+      "height_m": 0.48,
+      "width_m": 0.42,
+      "depth_m": 0.37,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-05",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -512.68,
+        -581.43
+      ],
+      "height_m": 0.73,
+      "width_m": 0.52,
+      "depth_m": 0.45,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-07",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -504.26,
+        -584.4
+      ],
+      "height_m": 0.58,
+      "width_m": 0.46,
+      "depth_m": 0.4,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-08",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -492.7,
+        -583.5
+      ],
+      "height_m": 0.78,
+      "width_m": 0.54,
+      "depth_m": 0.46,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-09",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -495.23,
+        -580.62
+      ],
+      "height_m": 0.58,
+      "width_m": 0.46,
+      "depth_m": 0.4,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-11",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -476.55,
+        -561.88
+      ],
+      "height_m": 0.84,
+      "width_m": 0.57,
+      "depth_m": 0.48,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-12",
+      "area": "cherry-rankin-west",
+      "position_enu_m": [
+        -465.31,
+        -551.46
+      ],
+      "height_m": 0.99,
+      "width_m": 0.64,
+      "depth_m": 0.53,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-14",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -429.24,
+        -552.3
+      ],
+      "height_m": 0.99,
+      "width_m": 0.64,
+      "depth_m": 0.53,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-17",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -416.96,
+        -550.66
+      ],
+      "height_m": 0.61,
+      "width_m": 0.47,
+      "depth_m": 0.41,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-19",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -417.45,
+        -566.26
+      ],
+      "height_m": 0.83,
+      "width_m": 0.57,
+      "depth_m": 0.48,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-20",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -410.92,
+        -547.65
+      ],
+      "height_m": 0.51,
+      "width_m": 0.43,
+      "depth_m": 0.38,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-21",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -438.45,
+        -551.49
+      ],
+      "height_m": 0.9,
+      "width_m": 0.6,
+      "depth_m": 0.5,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-22",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -431.83,
+        -563.82
+      ],
+      "height_m": 0.84,
+      "width_m": 0.57,
+      "depth_m": 0.48,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-23",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -432.16,
+        -565.45
+      ],
+      "height_m": 0.7,
+      "width_m": 0.51,
+      "depth_m": 0.44,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-24",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -432.3,
+        -567.2
+      ],
+      "height_m": 0.57,
+      "width_m": 0.46,
+      "depth_m": 0.4,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-25",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -437.95,
+        -575.75
+      ],
+      "height_m": 0.84,
+      "width_m": 0.57,
+      "depth_m": 0.48,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-26",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -430.8,
+        -576.12
+      ],
+      "height_m": 0.98,
+      "width_m": 0.63,
+      "depth_m": 0.52,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-27",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -437.96,
+        -573.92
+      ],
+      "height_m": 0.74,
+      "width_m": 0.53,
+      "depth_m": 0.45,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-28",
+      "area": "cherry-rankin-middle",
+      "position_enu_m": [
+        -416.98,
+        -568.42
+      ],
+      "height_m": 0.54,
+      "width_m": 0.44,
+      "depth_m": 0.39,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-29",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -366.53,
+        -552.52
+      ],
+      "height_m": 0.44,
+      "width_m": 0.4,
+      "depth_m": 0.36,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-30",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -366.54,
+        -553.63
+      ],
+      "height_m": 0.47,
+      "width_m": 0.41,
+      "depth_m": 0.37,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-31",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -357.53,
+        -553.36
+      ],
+      "height_m": 0.61,
+      "width_m": 0.47,
+      "depth_m": 0.41,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-32",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -339.85,
+        -563.36
+      ],
+      "height_m": 0.91,
+      "width_m": 0.6,
+      "depth_m": 0.5,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-33",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -353.88,
+        -577.8
+      ],
+      "height_m": 0.56,
+      "width_m": 0.45,
+      "depth_m": 0.39,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-34",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -356.94,
+        -577.99
+      ],
+      "height_m": 0.64,
+      "width_m": 0.49,
+      "depth_m": 0.42,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-35",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -363.43,
+        -577.27
+      ],
+      "height_m": 0.71,
+      "width_m": 0.52,
+      "depth_m": 0.44,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-36",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -349.01,
+        -576.89
+      ],
+      "height_m": 0.97,
+      "width_m": 0.63,
+      "depth_m": 0.52,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-37",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -365.75,
+        -584.76
+      ],
+      "height_m": 0.89,
+      "width_m": 0.59,
+      "depth_m": 0.5,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-38",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -365.77,
+        -586.51
+      ],
+      "height_m": 0.68,
+      "width_m": 0.5,
+      "depth_m": 0.43,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-40",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -384.32,
+        -586.31
+      ],
+      "height_m": 0.71,
+      "width_m": 0.52,
+      "depth_m": 0.44,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-42",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -357.68,
+        -585.56
+      ],
+      "height_m": 0.54,
+      "width_m": 0.44,
+      "depth_m": 0.39,
+      "silhouette": "low"
+    },
+    {
+      "id": "cherry-rankin-marker-43",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -354.15,
+        -585.98
+      ],
+      "height_m": 0.61,
+      "width_m": 0.47,
+      "depth_m": 0.41,
+      "silhouette": "upright"
+    },
+    {
+      "id": "cherry-rankin-marker-44",
+      "area": "cherry-rankin-east",
+      "position_enu_m": [
+        -345,
+        -582.55
+      ],
+      "height_m": 0.89,
+      "width_m": 0.59,
+      "depth_m": 0.5,
+      "silhouette": "upright"
     }
   ],
   "tracks": [
@@ -1664,5 +2606,89 @@
     }
   ],
   "notes": "The short tracks follow exposed mown or worn grass surfaces. Heights, stone profiles and shrub species are representative. Marker identities are anonymous.",
-  "source_context_tree_metadata_sha256": "56b6fbb9e08c65f20e2a78d5ffca0f9a79d92ecabd49c888dda2f548286551e6"
+  "source_context_tree_metadata_sha256": "56b6fbb9e08c65f20e2a78d5ffca0f9a79d92ecabd49c888dda2f548286551e6",
+  "gravel_way_links": {
+    "bounds_enu_m": [
+      [
+        -424.8,
+        -544.2,
+        -375,
+        -540.72
+      ],
+      [
+        -375,
+        -544.2,
+        -327.2,
+        -540.72
+      ],
+      [
+        -335,
+        -589.5,
+        -327.0,
+        -540.72
+      ]
+    ],
+    "paths": [
+      {
+        "anchor_enu_m": [
+          -422.8,
+          -542.4
+        ],
+        "points_enu_m": [
+          [
+            -407,
+            -542.45
+          ],
+          [
+            -391.2,
+            -542.5
+          ],
+          [
+            -376.9,
+            -542.48
+          ],
+          [
+            -363.2,
+            -542.45
+          ],
+          [
+            -345.5,
+            -542.42
+          ],
+          [
+            -328.91,
+            -542.4
+          ]
+        ]
+      },
+      {
+        "anchor_enu_m": [
+          -328.91,
+          -542.4
+        ],
+        "points_enu_m": [
+          [
+            -329.27,
+            -552.85
+          ],
+          [
+            -329.7,
+            -565.3
+          ],
+          [
+            -331.28,
+            -575.8
+          ],
+          [
+            -332.54,
+            -584.25
+          ]
+        ],
+        "end_enu_m": [
+          -333.19,
+          -588.55
+        ]
+      }
+    ]
+  }
 }

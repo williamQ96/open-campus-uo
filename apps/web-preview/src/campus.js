@@ -1881,6 +1881,11 @@ async function loadCampusScene(base, manifest, settings) {
       descriptor: config?.pioneer_cemetery_inner_grid_site,
       directory: "pioneer-cemetery-inner-grid-review",
       groundNode: "pioneer-inner-grid-grass",
+      walkableGroundNode: "pioneer-inner-grid-grass",
+      navigationUrl: settings.navigation_url,
+      navigationPredecessors: [config?.pioneer_cemetery_landscape_site].filter(
+        Boolean,
+      ),
       ids: [],
     },
     "east-18th-west-approach": {
@@ -2042,6 +2047,14 @@ async function loadCampusScene(base, manifest, settings) {
         config?.hayward_square_track_site,
         config?.university_south_axis_site,
       ].filter(Boolean),
+      ids: [],
+    },
+    "northeast-campus-wayfinding": {
+      descriptor: config?.northeast_campus_wayfinding_site,
+      directory: "northeast-campus-wayfinding-review",
+      groundNode: "northeast-wayfinding-paving",
+      walkableGroundNode: "northeast-wayfinding-paving",
+      navigationUrl: settings.navigation_url,
       ids: [],
     },
     "hayward-midblock": {
@@ -4260,6 +4273,7 @@ async function loadCampusScene(base, manifest, settings) {
     "hayward-square-track",
     "university-south-axis",
     "rankin-frontage",
+    "northeast-campus-wayfinding",
     "hayward-midblock",
     "east-fifteenth-hayward",
     "neighborhood-exterior-closeout",

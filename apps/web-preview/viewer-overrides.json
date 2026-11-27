@@ -24,8 +24,8 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "bf2f21f134fb0eaa2c83f5ba26ed47bc2137916a19a5b50f1fd742785f704c3d",
-      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. Pinned East 18th and Rankin pedestrian surfaces."
+      "local_sha256": "f04aa739b142a574c59c552ba8a4c6b95f9dd8a127fc6b6345092ecf313fdd17",
+      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. Pinned East 18th and Rankin pedestrian surfaces. Cherry–Risdon connections and northeast wayfinding."
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "53a498cee3fbfce8d16ae495949827d251b4d064984d740267d6300bfd9df23d",
+    "public/scene/presentation.json": "6619b5fbad2fb91952973d65f7f54ec8f20de19720e3135a88a8b312a164902a",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -515,25 +515,27 @@
     "public/scene/southwest-campus-green-review/site.glb": "ff19c8fdf43935176aa00cf7c912a204a8055ca156ebc91651ce5342aaca9e86",
     "public/scene/southwest-campus-green-review/site.json": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
     "src/paved-route-access.js": "98c5cf05a9ace81997f2a06217cd729e373175453fcc9353303e91ec1d0ba0ce",
-    "data/campus-route-surfaces.json": "461b185475ceb2d7f85b2fb39abcf4baeebc6edf6c1d33215feea4033dcb684f",
+    "data/campus-route-surfaces.json": "af27c4e0dea8971fb3c1f4cc83fbcb5aa52182c91e50ada651ff63afdbeae894",
     "public/scene/kincaid-education-landscape-review/site.glb": "229086a9a42a4742451657a79a9650a92375243933387fd879268faaa0494af9",
     "public/scene/kincaid-education-landscape-review/site.json": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a",
     "public/scene/kendall-plaza-landscape-review/site.glb": "fb034e7ba495bca4c31e49d32fed3af06e0fe7d3db4d6b8286b54753186d96c4",
     "public/scene/kendall-plaza-landscape-review/site.json": "0db8143bc949e48742657a5f790360ae16b514629bbda973bb33396a122bab5c",
     "public/scene/knight-north-plaza-review/site.glb": "b311ef5901cb7e1a5340e0f901389949cefc58228fb469e5f68ef4859238148d",
     "public/scene/knight-north-plaza-review/site.json": "2c6bd50754d3c8e0fcc9025989d3e32e159143a703293b945468ddde70c2362b",
-    "public/scene/plc-east-court-review/site.json": "e2093c93d144c3f16580b9552e6703ab80567ff176871c366a3253287f00bacb",
-    "public/scene/plc-east-court-review/site.glb": "61dd8e75a7dc9d8ca4f27a5c96b86e311b679c2cd0045a7dc79170e2e1c684fc",
+    "public/scene/plc-east-court-review/site.json": "1e9c64a43a399a62eec3275471e217cfb16ac3f1426672240710ba6957a73de1",
+    "public/scene/plc-east-court-review/site.glb": "0bca8f2af1c7135b158e6a48368a4f1df9ef93d2203876126f6a2d8a4eeb24f3",
     "public/scene/memorial-quad-plaques-review/site.json": "cfb83ddc4140d0693e6e364e501046b6bfc968526fe9f7e41e0054f5f4c92c51",
     "public/scene/memorial-quad-plaques-review/site.glb": "5b1c98e5e0e8ea19a1491c2b68066b6171448ec4492004fa8d897d3490830a2f",
     "src/pilot-vegetation-clips.js": "0410a069e1af028999799113bf31592def9973e6152fa2c3ed5dc8e8b9ee91db",
-    "public/scene/pioneer-cemetery-inner-grid-review/site.json": "5e2823f4fbefbe161d89aef13f57c5a8ee64112e532ba54b641466fa7483feac",
-    "public/scene/pioneer-cemetery-inner-grid-review/site.glb": "374074b1103013c2735f7803539be7bf095b447623ced90a1140cbb595ca4821",
+    "public/scene/pioneer-cemetery-inner-grid-review/site.json": "8dc36fac8c82cf80332d532c44c79d0f5a6e0884cc19e21c89e8b586dff93408",
+    "public/scene/pioneer-cemetery-inner-grid-review/site.glb": "833518e89b97cb7b814e7866ad1f189efad6fe9ec97d5a95d0ea22664f09e2cb",
     "public/scene/clinical-dropoff-landscape-review/site.json": "8b9cceb7b1347d647dde7b71473565f9d6636d02ec9ff6fa1465818bd96ba212",
     "public/scene/clinical-dropoff-landscape-review/site.glb": "e506cf6bcee9a2e6012ae009be239d761a24f25bed86822cd6a4d54033505839",
     "public/scene/east-eighteenth-west-approach-review/site.glb": "ba2a95a945d958e4a9a9d63e102eda3be77538fa0dce065548fffde0b8a01242",
     "public/scene/east-eighteenth-west-approach-review/site.json": "508df2bac25c96682a38589f90885a01e9b986a776e6d7478160ea1e9ba57cad",
     "public/scene/rankin-frontage-review/site.glb": "0d8d8b6bd5bb6bebd4b736661c93cdb6409fe3721028ecb590a2c3f20ddd3f7c",
-    "public/scene/rankin-frontage-review/site.json": "f619405be55add4e829086ab7c01296e298e51c6645d326e3824204b77fca840"
+    "public/scene/rankin-frontage-review/site.json": "f619405be55add4e829086ab7c01296e298e51c6645d326e3824204b77fca840",
+    "public/scene/northeast-campus-wayfinding-review/site.json": "c1f1183c3ab969ff0d7662034d9ae98ab2147e3a509ec99ed1de8fd146ccd105",
+    "public/scene/northeast-campus-wayfinding-review/site.glb": "911a1dce8fec5c94e2e45337c78300af983259f53a9a104a72946d63b89c47d8"
   }
 }
