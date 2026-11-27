@@ -484,32 +484,32 @@
     ],
     [
       [
-        -405.0,
-        -599.0
+        -329.12,
+        -599.08
       ],
       [
-        -363.0,
-        -599.03
+        -325.85,
+        -599.1
       ]
     ],
     [
       [
-        -363.0,
-        -599.03
+        -325.85,
+        -599.1
       ],
       [
-        -324.7,
-        -599.15
+        -325.64,
+        -598.57
       ]
     ],
     [
       [
-        -324.7,
-        -599.15
+        -325.64,
+        -598.57
       ],
       [
-        -320.75,
-        -596.75
+        -322.9,
+        -598.59
       ]
     ]
   ],
@@ -598,10 +598,10 @@
     {
       "name": "Wellborn",
       "position_enu_m": [
-        -433.6,
-        -594.8
+        -436.55,
+        -596.12
       ],
-      "radius_m": 0.96,
+      "radius_m": 1.11,
       "flower_color": [
         223,
         217,
@@ -793,14 +793,116 @@
         "radius_m": 0.88,
         "height_m": 1.04,
         "placement_basis": "Representative point within the registered historic block."
-      }
-    ],
-    "unlocated_blocks": [
+      },
       {
         "block": 597,
-        "reason": "The 1930 scan crops the southern fringe. No independently located numbered plot or plant image is available for this block."
+        "position_enu_m": [
+          -400.06,
+          -595.55
+        ],
+        "block_bounds_enu_m": [
+          -403.38,
+          -597.55,
+          -398.9,
+          -592.24
+        ],
+        "radius_m": 0.65,
+        "height_m": 0.91,
+        "placement_basis": "Estimated point east of the recurring unnamed stone within the inferred Rankin row block. Plant identity follows the newsletter and individual root is unverified."
       }
-    ]
+    ],
+    "unlocated_blocks": [],
+    "rankin_row_registration": {
+      "association_map": {
+        "url": "https://eugenepioneercemetery.org/wp-content/uploads/2023/05/Processed_MAP_for_Self-Guided-Tour_11-1-2016.jpg",
+        "sha256": "98273f83dce02013e75940e56466a90dec9e2a93b1cd285990ec71609b56dca4"
+      },
+      "visible_block_centers_px": [
+        [
+          571,
+          124.0
+        ],
+        [
+          574,
+          175.6
+        ],
+        [
+          577,
+          227.3
+        ],
+        [
+          580,
+          279.2
+        ],
+        [
+          583,
+          330.5
+        ],
+        [
+          586,
+          382.0
+        ],
+        [
+          588,
+          416.2
+        ],
+        [
+          604,
+          690.6
+        ],
+        [
+          606,
+          725.1
+        ],
+        [
+          609,
+          776.7
+        ],
+        [
+          612,
+          828.0
+        ]
+      ],
+      "fit_stride_px": 17.1656,
+      "fit_max_residual_px": 0.3831,
+      "registration_controls_px_e": [
+        [
+          114.0,
+          -524.1
+        ],
+        [
+          138.0,
+          -514.2
+        ],
+        [
+          488.0,
+          -422.7
+        ],
+        [
+          833.0,
+          -332.7
+        ],
+        [
+          866.0,
+          -319.6
+        ]
+      ],
+      "estimated_block": 597,
+      "tour_estimated_center_e": -401.14,
+      "tour_estimated_e_edges": [
+        -403.38,
+        -398.9
+      ],
+      "cropped_1930_slot_center_px": 1410,
+      "cropped_1930_estimated_center_e": -400.27,
+      "plot_position_basis": "Inferred numbered slot between visible east and west runs. The 1930 outline agrees locally. Rankin Lane and the 18th Avenue edge constrain northing. Root, exact plot boundaries and named markers remain unverified.",
+      "block_bounds_enu_m": [
+        -403.38,
+        -597.55,
+        -398.9,
+        -592.24
+      ]
+    }
   },
   "procedural_context_trees_to_remove": [
     {
@@ -2005,6 +2107,33 @@
       "height_m": 10.24,
       "crown_radius_m": 2.71,
       "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -370.95,
+        -596.16
+      ],
+      "height_m": 11.6,
+      "crown_radius_m": 4.35,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -365.65,
+        -596.74
+      ],
+      "height_m": 7.9,
+      "crown_radius_m": 2.9,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -357.26,
+        -596.48
+      ],
+      "height_m": 9.45,
+      "crown_radius_m": 3.28,
+      "form": "rounded"
     }
   ],
   "tree_source_notes": {
@@ -2360,6 +2489,116 @@
       "height_m": 0.49,
       "silhouette": "upright",
       "basis": "Recurring upright form in the 2017 and 2025 aerials south of the GAR monument."
+    },
+    {
+      "position_enu_m": [
+        -479.72,
+        -596.65
+      ],
+      "width_m": 0.67,
+      "depth_m": 0.43,
+      "height_m": 0.79,
+      "silhouette": "upright",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -401.6,
+        -594.86
+      ],
+      "width_m": 0.53,
+      "depth_m": 0.33,
+      "height_m": 0.42,
+      "silhouette": "low",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -393.13,
+        -594.96
+      ],
+      "width_m": 0.52,
+      "depth_m": 0.35,
+      "height_m": 0.61,
+      "silhouette": "upright",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -393.13,
+        -596.31
+      ],
+      "width_m": 0.47,
+      "depth_m": 0.32,
+      "height_m": 0.53,
+      "silhouette": "upright",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -390.44,
+        -596.61
+      ],
+      "width_m": 0.72,
+      "depth_m": 0.43,
+      "height_m": 0.84,
+      "silhouette": "upright",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -388.48,
+        -596.75
+      ],
+      "width_m": 0.51,
+      "depth_m": 0.37,
+      "height_m": 0.65,
+      "silhouette": "upright",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -378.84,
+        -597.32
+      ],
+      "width_m": 0.57,
+      "depth_m": 0.4,
+      "height_m": 0.72,
+      "silhouette": "upright",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -337.65,
+        -596.21
+      ],
+      "width_m": 0.76,
+      "depth_m": 0.45,
+      "height_m": 0.45,
+      "silhouette": "low",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -337.61,
+        -597.18
+      ],
+      "width_m": 0.76,
+      "depth_m": 0.45,
+      "height_m": 0.45,
+      "silhouette": "low",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
+    },
+    {
+      "position_enu_m": [
+        -333.41,
+        -595.94
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.39,
+      "height_m": 0.67,
+      "silhouette": "upright",
+      "placement_basis": "Repeated Rankin row stone form screened against 2017, 2021 and 2025 aerials and dated street views."
     }
   ],
   "marker_reference": "Matched small pale features in all three Lane County aerials with a manual visual screen. Localized silhouettes and heights are estimates. No burial names assigned.",
@@ -2689,12 +2928,38 @@
       "closed": true
     },
     {
-      "points_enu_m": [[-392.05, -536.48], [-386.30, -536.53], [-386.22, -529.55]],
+      "points_enu_m": [
+        [
+          -392.05,
+          -536.48
+        ],
+        [
+          -386.3,
+          -536.53
+        ],
+        [
+          -386.22,
+          -529.55
+        ]
+      ],
       "material": "concrete",
       "closed": false
     },
     {
-      "points_enu_m": [[-381.15, -536.25], [-383.55, -536.25], [-383.53, -532.10]],
+      "points_enu_m": [
+        [
+          -381.15,
+          -536.25
+        ],
+        [
+          -383.55,
+          -536.25
+        ],
+        [
+          -383.53,
+          -532.1
+        ]
+      ],
       "material": "concrete",
       "closed": false
     },
@@ -2715,6 +2980,114 @@
         [
           -434.44,
           -473.0
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -482,
+          -593.94
+        ],
+        [
+          -477.13,
+          -593.97
+        ],
+        [
+          -477.16,
+          -597.6
+        ]
+      ],
+      "material": "stone",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -397.66,
+          -598.4
+        ],
+        [
+          -397.57,
+          -594.02
+        ],
+        [
+          -394.38,
+          -594.03
+        ],
+        [
+          -394.32,
+          -598.01
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -393.76,
+          -594.42
+        ],
+        [
+          -390.25,
+          -594.34
+        ]
+      ],
+      "material": "stone",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -384.04,
+          -593.91
+        ],
+        [
+          -381.15,
+          -593.93
+        ],
+        [
+          -381.03,
+          -598.49
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -341.53,
+          -594.24
+        ],
+        [
+          -339.02,
+          -594.3
+        ],
+        [
+          -339.08,
+          -598.16
+        ]
+      ],
+      "material": "concrete",
+      "closed": false
+    },
+    {
+      "points_enu_m": [
+        [
+          -335.28,
+          -598.46
+        ],
+        [
+          -335.34,
+          -594.33
+        ],
+        [
+          -332.15,
+          -594.45
         ]
       ],
       "material": "concrete",
@@ -2792,7 +3165,12 @@
     ]
   },
   "smith_vault": {
-    "bounds_enu_m": [-392.45, -535.20, -389.65, -533.82],
+    "bounds_enu_m": [
+      -392.45,
+      -535.2,
+      -389.65,
+      -533.82
+    ],
     "wall_height_m": 0.97,
     "roof_rise_m": 0.28,
     "evidence": "EPCA tour stop 24 identifies the only above-ground vault just north of Cherry Avenue. The pale oblong hip and two exposed plot edges recur in the registered 2017, 2021 and 2025 county frames. The restoration photograph shows blue-gray plaster and a small plaque on the short face. The height, plaque facing and letter scale are estimates.",
@@ -2826,5 +3204,317 @@
       "sha256": "8ad169fdce057a4d11a3970e209d42b836e0789c415196cde91c82c376047dd7",
       "page_pdf": 3
     }
+  },
+  "rankin_fringe": {
+    "sidewalk": {
+      "width_m": 1.68,
+      "centerline_enu_m": [
+        [
+          -512.5,
+          -600.25
+        ],
+        [
+          -484,
+          -600.35
+        ],
+        [
+          -453,
+          -600.45
+        ],
+        [
+          -423,
+          -600.58
+        ],
+        [
+          -399,
+          -600.57
+        ],
+        [
+          -373,
+          -600.69
+        ],
+        [
+          -343.1,
+          -600.79
+        ],
+        [
+          -328.6,
+          -600.87
+        ],
+        [
+          -322.95,
+          -600.42
+        ],
+        [
+          -320.82,
+          -598.83
+        ]
+      ]
+    },
+    "paths": [
+      {
+        "anchor_enu_m": [
+          -419.65,
+          -387.72
+        ],
+        "points_enu_m": [
+          [
+            -420.29,
+            -401
+          ],
+          [
+            -420.58,
+            -409.9
+          ],
+          [
+            -421.54,
+            -425.6
+          ],
+          [
+            -422.5,
+            -441.3
+          ],
+          [
+            -422.77,
+            -458
+          ],
+          [
+            -423.04,
+            -474.7
+          ],
+          [
+            -423.018,
+            -491.67
+          ],
+          [
+            -422.95,
+            -508.65
+          ],
+          [
+            -422.875,
+            -525.52
+          ],
+          [
+            -422.8,
+            -542.4
+          ],
+          [
+            -422.75,
+            -557.25
+          ],
+          [
+            -422.7,
+            -572.1
+          ],
+          [
+            -422.7,
+            -589.7
+          ]
+        ]
+      },
+      {
+        "anchor_enu_m": [
+          -422.7,
+          -589.7
+        ],
+        "points_enu_m": [
+          [
+            -439.15,
+            -589.58
+          ],
+          [
+            -455.6,
+            -589.46
+          ],
+          [
+            -469.3,
+            -589.38
+          ],
+          [
+            -480.3,
+            -589.31
+          ],
+          [
+            -493.6,
+            -589.03
+          ],
+          [
+            -506.9,
+            -588.75
+          ],
+          [
+            -514.14,
+            -585.9
+          ]
+        ]
+      },
+      {
+        "anchor_enu_m": [
+          -422.7,
+          -589.7
+        ],
+        "points_enu_m": [
+          [
+            -405.9,
+            -589.78
+          ],
+          [
+            -389.1,
+            -589.86
+          ],
+          [
+            -375.4,
+            -590.035
+          ],
+          [
+            -361.7,
+            -590.21
+          ],
+          [
+            -350,
+            -590.106
+          ],
+          [
+            -338,
+            -590
+          ],
+          [
+            -333.19,
+            -588.55
+          ]
+        ]
+      }
+    ],
+    "wall_basis": "Preserve elevated west masonry through the existing west span. The central and eastern street views show a low grass verge. Model the photographed short stepped return at the southeast sign.",
+    "aerials": {
+      "bounds_enu_m": [
+        -530,
+        -615,
+        -313,
+        -574
+      ],
+      "records": {
+        "rankin-2017": {
+          "path": "rankin-2017.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493799.14928888186%2C4876313.282153052%2C494016.14928888186%2C4876354.282153052&bboxSR=3740&imageSR=3740&size=2604%2C492&layers=show%3A29&format=png32",
+          "sha256": "f1664fe474e6f055049c08661dd1996f5f47a05275a13fcb061e7d6efd336009"
+        },
+        "rankin-2021": {
+          "path": "rankin-2021.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493799.14928888186%2C4876313.282153052%2C494016.14928888186%2C4876354.282153052&bboxSR=3740&imageSR=3740&size=2604%2C492&layers=show%3A26&format=png32",
+          "sha256": "7a3022347797bf46e444582dcf668ed2b6d15a2a91b353ca86a671286e9cd0cc"
+        },
+        "rankin-2025": {
+          "path": "rankin-2025.png",
+          "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493799.14928888186%2C4876313.282153052%2C494016.14928888186%2C4876354.282153052&bboxSR=3740&imageSR=3740&size=2604%2C492&layers=show%3A57&format=png32",
+          "sha256": "3d9011989902f40fd00d9a4f1d50e2294cc415f5757a517467809c1208d76986"
+        }
+      }
+    },
+    "street_views": {
+      "row-394": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BAG62brxkuCUqxiyLuYSdA&heading=329.8",
+        "camera_enu_m": [
+          -389.494,
+          -611.33
+        ],
+        "sha256": "d450ac9f9d40faa0e7497becba6ee702777652d0bd865d906a4afa385edbe825"
+      },
+      "row-437": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0PWNb4zoVSIZZmFWToI9EQ&heading=21.23",
+        "camera_enu_m": [
+          -441.445,
+          -606.441
+        ],
+        "sha256": "f42941e7f607b514710b593c62f8e85024c245b3c3b5bb2e719c6fb18ec8fb06"
+      },
+      "row-399": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JGg19rRquzf3kNNjlDJI2A&heading=0.52",
+        "camera_enu_m": [
+          -399.149,
+          -611.432
+        ],
+        "sha256": "6444c1f9a1b1066499684b80958768acc42e1be9e3694cede6233f57dfa18e48"
+      },
+      "row-404": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JGg19rRquzf3kNNjlDJI2A&heading=0.52",
+        "camera_enu_m": [
+          -399.149,
+          -611.432
+        ],
+        "sha256": "6444c1f9a1b1066499684b80958768acc42e1be9e3694cede6233f57dfa18e48"
+      },
+      "row-459": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=WljxpMO5OMtOxa1oX7MQDw&heading=14.59",
+        "camera_enu_m": [
+          -461.983,
+          -606.464
+        ],
+        "sha256": "93b38f3a696026184a1db23598a3e5defac39b62c6dba7142f5a8fa793bd888f"
+      },
+      "row-481": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=NQjYxXJbGHW3-lhcXrwBtw&heading=355.53",
+        "camera_enu_m": [
+          -479.749,
+          -611.003
+        ],
+        "sha256": "a8f74b637773ed15872197be58c9bbc2a9df3da11ea0757cb888f19ac4201d58"
+      },
+      "row-493": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=h-IgiwEdZbXKYceTWoxk4Q&heading=334.26",
+        "camera_enu_m": [
+          -487.431,
+          -606.552
+        ],
+        "sha256": "02f64bb90a3c11c99943389476586272ab1bb3987cd11aa44835a784a406f716"
+      },
+      "row-386": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BAG62brxkuCUqxiyLuYSdA&heading=12.08",
+        "camera_enu_m": [
+          -389.494,
+          -611.33
+        ],
+        "sha256": "23e1a8111365835f76d3eff2e5eb4175feee3722ea7852c19936a3d9c89a438c"
+      },
+      "row-363": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=i3s50yYS1nkwoi6c2y9Vtw&heading=341.44",
+        "camera_enu_m": [
+          -359.336,
+          -605.915
+        ],
+        "sha256": "435fd9a389ebbae3b2986a363ace63375cb8dfb892906de9a510f681c30ad3be"
+      },
+      "row-341": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uPV_dEn2QqCMbpUeJdF-hw&heading=347.05",
+        "camera_enu_m": [
+          -338.943,
+          -603.945
+        ],
+        "sha256": "30e7795a10bd294f6fa92a782e3bb0b848508e673a5e449e7ce33a003625df31"
+      },
+      "row-326": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Eor8xwUFsxP5XDZItqOyDg&heading=16.77",
+        "camera_enu_m": [
+          -328.69,
+          -603.929
+        ],
+        "sha256": "da8274a74cd0a0c72bdfad40b28351497bde9c509e6478f887bc99cbf3b8e7b7"
+      }
+    },
+    "wellborn_sources": [
+      "https://eugenepioneercemetery.org/map/wellborn-heritage-rose/",
+      "https://eugenepioneercemetery.org/wp-content/uploads/2023/05/wellbornHeritageRose2.jpeg"
+    ]
   }
 }

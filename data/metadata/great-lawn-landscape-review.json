@@ -1,0 +1,73 @@
+{
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "hamilton_descriptor": "d955d2fdbd7613d76ab7b9e0bea314fc4dd887f22ba728488d588b8a1fb13962",
+    "hamilton_glb": "29924a13e90c5b9875a9c5a152ec271f83d718196b3abaf1e536dc836a83f542"
+  },
+  "sources": [
+    {
+      "url": "https://news.uoregon.edu/sites/default/files/2026-08/great-lawn-with-oak.JPG",
+      "sha256": "589de2749c64552d6a8980cd059259946fc41cd455640f07d1f1fbdb02575f9c",
+      "use": "Installed wall, gray aggregate court, planting and path relationship looking toward Duck Dunes and the arena."
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/50c934d4e4b0b58a9c48b108/a3c7cb58-90b2-4d0e-b70b-a796e8cb7fe2/1_sm.jpg?format=1500w",
+      "sha256": "fc52d311e762ad68604fa4a75a77b69c9c736033d08a9dd79d8ff9ab285f3897",
+      "use": "Reverse view of the wall, opening, taper, stake and Unthank frontage."
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/50c934d4e4b0b58a9c48b108/c8f630b3-9840-43c2-aeba-6bab218f8097/2_sm.jpg?format=1500w",
+      "sha256": "fe739993ae1dbc852fb5376140139fc03d4c268e48a507e9545d2d08d0205806",
+      "use": "Black oak identification and wall thickness check."
+    },
+    {
+      "url": "https://gcr.uoregon.edu/sites/default/files/2025-10/uo-cc-nov-dec-2025-final.pdf",
+      "sha256": "a58c1c9308883dc96dac8b67aaed0f4650df9cf1a58bf3b0e40012077c5f516a",
+      "use": "Page 6 masterplan for relationships among the ring, gardens and great lawn."
+    }
+  ],
+  "registration": "Independently estimated southwest garden pocket between the outer Agate path and the western lawn ring. Fit the tree, two taper ends and path clearance to the registered Hamilton plan. The reciprocal photos establish feature identity and side of lawn. Offset, radii, heights and individual plants are photo-based estimates.",
+  "seat": {
+    "position_enu_m": [112.4, -117.1],
+    "radius_m": 3.14,
+    "axis_ratio": 0.89,
+    "start_end_deg": [-86, 148],
+    "width_m": 0.49,
+    "seat_height_m": 0.49,
+    "pad_radii_m": [4.23, 3.7],
+    "tree": {
+      "position_enu_m": [112.52, -117.14],
+      "species": "Quercus kelloggii",
+      "height_m": 2.78,
+      "crown_radius_m": 1.04,
+      "pit_radius_m": 0.95
+    }
+  },
+  "lamp_enu_m": [110.26, -112.46],
+  "beds": [
+    [[108.15,-121.82],[111.18,-121.24],[114.46,-120.43],[116.17,-119.86],[116.49,-122.84],[114.20,-126.19],[111.69,-125.98],[109.97,-123.91]],
+    [[106.44,-112.52],[109.80,-110.81],[113.36,-109.78],[115.72,-111.06],[116.47,-113.93],[114.01,-114.32],[111.28,-113.89],[108.35,-114.76]]
+  ],
+  "entry_paths": [
+    [[94.15,-110.92],[97.1,-109.75],[102.63,-109.64]],
+    [[105.8,-119.15],[107.76,-119.15],[109.98,-118.52]]
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [89.529, -111.113],
+      "points_enu_m": [[94.36,-110.96],[97.1,-109.75],[102.63,-109.64],[109.09,-105.39],[113.47,-101.13],[117.74,-95.96],[121.2,-89.63],[124.20,-84.56],[126.05,-82.82]]
+    },
+    {
+      "anchor_enu_m": [102.63,-109.64],
+      "points_enu_m": [[103.8,-112.8],[105.8,-119.15],[107.76,-119.15],[109.98,-118.52]]
+    },
+    {
+      "anchor_enu_m": [105.8,-119.15],
+      "points_enu_m": [[107.5,-122.8],[113.2,-134.1],[123.4,-139.1],[137.2,-139.9],[128.7,-133.0],[123.1,-126.90],[119.2,-119.13],[117.1,-110.94],[117.73,-103.15],[120.36,-95.82],[124.1,-89.83]],
+      "end_enu_m": [126.05,-82.82]
+    }
+  ]
+}

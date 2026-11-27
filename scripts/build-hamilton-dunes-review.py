@@ -331,16 +331,8 @@ def fittings(parts, height, path):
         parts.append(globe)
 
 
-def land(spec, field):
-    sand = box(*spec["sand_enu_m"])
-    level = spec["sand_grade_m"]
-    lawn = Polygon(spec["lawn_enu_m"]).intersection(box(0, -133.6, 500, 500))
-    park = Polygon(spec["landscape_enu_m"])
-    building = Polygon(spec["support_enu_m"])
-    route = spec["visit_route"]
-    lane = LineString(route["points_enu_m"])
-    a, b, c, d = spec["sand_enu_m"]
-    walk_region = box(a - 8.7, b - 11.75, c + 17.75, -5.0)
+def park_paving(spec, lawn, lane, sand, building):
+    a = spec["sand_enu_m"][0]
     paths = [
         LineString(row["centerline_enu_m"]).buffer(row["width_m"] / 2, quad_segs=6)
         for row in (*spec["planned_paths"], *spec["joining_paths"])
@@ -355,7 +347,20 @@ def land(spec, field):
             lawn.buffer(2.85, quad_segs=9).difference(lawn),
         ]
     )
-    paving = unary_union(paths).difference(sand.union(building))
+    return unary_union(paths).difference(sand.union(building))
+
+
+def land(spec, field):
+    sand = box(*spec["sand_enu_m"])
+    level = spec["sand_grade_m"]
+    lawn = Polygon(spec["lawn_enu_m"]).intersection(box(0, -133.6, 500, 500))
+    park = Polygon(spec["landscape_enu_m"])
+    building = Polygon(spec["support_enu_m"])
+    route = spec["visit_route"]
+    lane = LineString(route["points_enu_m"])
+    a, b, c, d = spec["sand_enu_m"]
+    walk_region = box(a - 8.7, b - 11.75, c + 17.75, -5.0)
+    paving = park_paving(spec, lawn, lane, sand, building)
     lawn = lawn.difference(paving)
     colors = ([], [], [])
     walk, base, detail = colors

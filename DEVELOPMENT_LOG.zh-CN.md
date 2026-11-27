@@ -6,6 +6,24 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Rankin Lane、Great Lawn 与 Agate Street 景观 L2
+
+- 沿 Rankin Lane 扩展 Pioneer Cemetery 景观，新增 322.94 平方米人行道、六组墓区边石、十处无名墓碑、三株阔叶树和 27 条导航边。第五株 Charles Lawson 玫瑰在 597 区块内估放。五组配对视图核对沿街景观，两次独立导出逐字节一致。[Rankin Lane 复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md#rankin-lane-southern-fringe-and-block-597)。
+- 发布 Great Lawn 黑橡树庭院与西侧步道，以及 Agate Street 从 East 13th 至 East 15th 的铺面、错位过街、标识和安全岛。三处合计增加 119 条导航边。植株、部分小品尺寸及高程采用照片估算。[Great Lawn 复核](docs/hamilton-great-lawn-duck-dunes-2026-11-26.md#great-lawn-black-oak-court-and-western-routes) · [Agate Street 复核](docs/agate-thirteenth-fifteenth-review-2026-11-27.md)。
+- 桌面和手机生产预览分别核对全部 610 个室外 L2 ID 的三角网格，并加载 354 项场景与应用资源。两者均得到 304.87 米的墓园至 Rankin Lane 路线及 25.21 米的 Agate Street 过街路线。构建、格式检查、197 项单测、七项相关浏览器测试、477 项归档检查及查看器哈希通过。本次发布由 main 上的 Pages 工作流部署。[部署历史](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
+## 2026-11-27 - Agate Street 从 East 13th 至 East 15th（本地）
+
+- 配准 3,255.50 平方米道路、1,975.80 平方米人行道、两段错位过街、安全岛和 Powell Plaza 接点。补建四段链栏、四组标识、自行车道线、十段过街边线和八株登记树。路缘、标识及低矮种植采用估算。[Agate Street 复核](docs/agate-thirteenth-fifteenth-review-2026-11-27.md)。
+- 七组路径新增 67 条导航边，接通两侧人行道、错位过街和已有 Great Lawn 入口。桌面与手机生产预览均逐项加载 610 个外部模型的网格，得到相同的 25.21 米过街路线和 38.03 米西侧至树庭路线。
+- Agate 两次导出一致，East 13th 对照复导逐字节复现。六组配对视图、构建、格式、197 项单测、七项相关浏览器测试、477 项归档检查和 420 项查看器哈希通过。Agate 和 Great Lawn 留在本地，Pages 为 `0502056`。
+
+## 2026-11-27 - Great Lawn 黑橡树庭院与西侧步道（本地）
+
+- 按校方和建筑师照片补建黑橡树及双支撑木桩、两端降低的开口弧形座墙、碎石地坪和球形灯。新增两处覆盖木屑的种植带，布置草丛和低矮灌木。西南角位置、高程与植被尺寸采用照片估算。[现场与模型复核](docs/hamilton-great-lawn-duck-dunes-2026-11-26.md#great-lawn-black-oak-court-and-western-routes)。
+- 将 Agate Street 接到庭院开口、南侧步道和西环道，共新增 25 条导航边。利用原 Hamilton 铺面并补齐 6.56 平方米接缝段。原 Hamilton GLB 和描述文件复导后逐字节一致。
+- Great Lawn 两次独立导出一致。四组生产预览对照核对座墙、开口与进场步道。桌面和手机均逐项加载 610 个外部网格并得到 21.75 米的树庭路线。四处铺面通行检查与四处座墙、灯柱及树干碰撞检查通过。生产构建、格式、197 项单测、七项相关浏览器测试、475 项归档检查及 418 项查看器哈希通过。改动留在本地，Pages 为 `0502056`。
+
 ## 2026-11-27 - 发布 East 13th Avenue 景观 L2
 
 - 发布 Kincaid 至 Columbia 三段景观，涵盖西入口、Lillis 广场、Heart of Campus 纪念砖、EMU 回转圆场与自行车棚、Agate 路口过街线及 Duck Dunes 步道。三段合计新增 180 条行人导航边。[西入口复核](docs/east-thirteenth-west-gateway-review-2026-11-27.md) · [中段复核](docs/east-thirteenth-central-review-2026-11-27.md) · [东段复核](docs/east-thirteenth-east-review-2026-11-27.md)。

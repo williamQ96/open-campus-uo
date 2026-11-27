@@ -2161,7 +2161,7 @@
   },
   "pioneer_cemetery_landscape_site": {
     "url": "pioneer-cemetery-landscape-review/site.json",
-    "sha256": "7c77a9cfb033f848e28a6e85a56204ec0ffc361cc1cf2c05130b5b1ae4f92052"
+    "sha256": "baef9a8711cdf7a39eb6824018b1bae02408726a37cfb2088d82352d581918b5"
   },
   "gerlinger_field_green_site": {
     "url": "gerlinger-field-green-review/site.json",
@@ -2190,5 +2190,13 @@
   "east_thirteenth_east_site": {
     "url": "east-thirteenth-east-review/site.json",
     "sha256": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570"
+  },
+  "great_lawn_landscape_site": {
+    "url": "great-lawn-landscape-review/site.json",
+    "sha256": "a08da4a016d294b1d1627d3c75724a18a7f4c52955efec5456dd91c1e6ff7181"
+  },
+  "agate_thirteenth_fifteenth_site": {
+    "url": "agate-thirteenth-fifteenth-review/site.json",
+    "sha256": "063dda28669c3150b4a614d87f7af021d7f43d233a52be5e56c53716ea602418"
   }
 }

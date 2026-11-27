@@ -6,6 +6,24 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Rankin Lane, Great Lawn and Agate Street landscape L2
+
+- Extend the Pioneer Cemetery scene along Rankin Lane. Add 322.94 m² of sidewalk, six plot curb groups, ten anonymous stone forms, three broadleaf trees and 27 navigation edges. The fifth Charles Lawson rose uses an estimated position inside block 597. Five paired views cover the new frontage, and two independent exports match byte for byte. [Rankin Lane review](docs/pioneer-cemetery-landscape-review-2026-11-26.md#rankin-lane-southern-fringe-and-block-597).
+- Include the Great Lawn black oak court and west paths and the Agate Street paving, staggered crossing, signs and refuge from East 13th to East 15th. The three sites together add 119 navigation edges. Plant sizes, small fixtures and some elevations use photo-based estimates. [Great Lawn review](docs/hamilton-great-lawn-duck-dunes-2026-11-26.md#great-lawn-black-oak-court-and-western-routes) · [Agate Street review](docs/agate-thirteenth-fifteenth-review-2026-11-27.md).
+- Desktop and phone production previews each matched triangle geometry to all 610 L2 exterior IDs and loaded 354 scene and app resources. Both found the 304.87 m cemetery route to Rankin Lane and the same 25.21 m crossing at Agate Street. The build, formatting, 197 unit tests, seven related browser tests, 477 archive checks and viewer pins passed. The release targets the Pages workflow on main. [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
+## 2026-11-27 - Agate Street from East 13th to East 15th (local)
+
+- Register 3,255.50 m² of road, 1,975.80 m² of sidewalks, two offset midblock crossing segments, the median refuge and the Powell Plaza approach. Model four chain runs, four sign assemblies, bike-lane paint, 10 crossing line segments and eight inventory trees. Curb and sign dimensions and low planting use estimates. [Agate Street review](docs/agate-thirteenth-fifteenth-review-2026-11-27.md).
+- Add seven path branches with 67 navigation edges. They connect the two sidewalks, the offset refuge and the existing Great Lawn approach. Both desktop and phone production sessions loaded all 610 exterior IDs with mesh geometry and returned the same 25.21 m midpoint crossing and 38.03 m west-side route to the oak court.
+- Two Agate exports and the previous East 13th control match byte for byte. Six paired views, the production build, formatting, 197 unit tests, seven related browser cases, 477 archive checks and 420 viewer pins passed. The package is local alongside Great Lawn on top of Pages revision `0502056`.
+
+## 2026-11-27 - Great Lawn black oak court and west paths (local)
+
+- Reconstruct the photographed black oak, its paired stakes, the open concrete seat with tapered ends, the gravel court and the globe lamp. Add two mulched beds with grass tufts and low shrubs. The southwest placement, elevations and planting dimensions use photo-based estimates. [Great Lawn review](docs/hamilton-great-lawn-duck-dunes-2026-11-26.md#great-lawn-black-oak-court-and-western-routes).
+- Connect Agate Street to the court opening, south promenade and western ring using 25 graph edges. The attached paths use the preceding Hamilton paving and add 6.56 m² at their joins. The original Hamilton GLB and descriptor reproduce byte for byte.
+- Two Great Lawn exports match. Four paired production views show the seat, opening and approach. Desktop and phone both load all 610 exterior IDs with mesh geometry and find the same 21.75 m oak court route. Four paved samples are passable and four wall, lamp and trunk samples are solid. Build, formatting, 197 unit tests, seven related browser cases, 475 archive checks and 418 viewer pins passed. The overlay is local on top of Pages revision `0502056`.
+
 ## 2026-11-27 - Release East 13th Avenue landscape L2
 
 - Publish the three East 13th Avenue segments from Kincaid to Columbia, with the west gateway, Lillis apron, Heart of Campus paving, EMU turnaround and bicycle shelters, Agate crossing markings and the Duck Dunes approaches. Together the three packages add 180 pedestrian graph edges. [West gateway](docs/east-thirteenth-west-gateway-review-2026-11-27.md) · [Central corridor](docs/east-thirteenth-central-review-2026-11-27.md) · [East corridor](docs/east-thirteenth-east-review-2026-11-27.md).

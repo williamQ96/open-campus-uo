@@ -8,4 +8,6 @@ The model includes the zebra crossings at the EMU, Willamette and the south acce
 
 The Columbia approach uses the pinned Ford/Arena grade patch and L2 foundation, matching the visible runtime terrain. Both independent exports are byte-identical. Six paired views cover the turnaround, bicycle shelters, Willamette, Agate, Duck Dunes and Columbia. Production desktop and phone viewports each loaded triangle geometry for all 610 active exterior IDs. Both returned the same 918.72 m Kincaid–Columbia route and 13.39 m through the Duck Dunes east gate. Nine pavement samples stayed above ground and clear, and seven planter, shelter and bollard samples registered as solid. [GitHub Pages deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
 
+The south leg of the Agate junction continues into the Agate Street L2 model. [Agate Street review](agate-thirteenth-fifteenth-review-2026-11-27.md).
+
 Rebuild with `python scripts/build-east-thirteenth-east.py --stage <output> --audit <report>` in the release worktree. The source crops, final camera pairs and route receipts are retained in the research directory `exterior-l2/east-13th-emu-agate-20261127/`. [Exporter](../scripts/build-east-thirteenth-east.py) · [Runtime descriptor](../apps/web-preview/public/scene/east-thirteenth-east-review/site.json).

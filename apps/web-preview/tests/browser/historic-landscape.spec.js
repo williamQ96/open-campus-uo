@@ -115,6 +115,63 @@ async function landscapeState(page) {
         [-165.45, -6.65],
         [-60.98, -6.1],
       ].map(([x, north]) => blocked(x, north)),
+      greatLawnWalks: [
+        [95.27, -110.63],
+        [108.6, -118.92],
+        [109.98, -118.52],
+        [112.4, -115.4],
+      ].map(([x, north]) => {
+        const terrain = campus.terrainCheck(x, -north);
+        return [
+          terrain["great-lawn-oak-court"] > terrain.sampled + 0.12,
+          blocked(x, north),
+        ];
+      }),
+      greatLawnSolids: [
+        [115.54, -117.1],
+        [112.4, -114.31],
+        [112.52, -117.14],
+        [110.26, -112.46],
+      ].map(([x, north]) => blocked(x, north)),
+      agateWalks: [
+        [89.72, -21.29],
+        [98.86, -39.2],
+        [76.67, -79.4],
+        [84.37, -102.96],
+        [89.529, -111.113],
+        [95.28, -111.06],
+        [88.86, -234.63],
+        [77.3, -247.9],
+      ].map(([x, north]) => {
+        const terrain = campus.terrainCheck(x, -north);
+        return [
+          terrain["agate-thirteenth-fifteenth-paving"] > terrain.sampled + 0.07,
+          blocked(x, north),
+        ];
+      }),
+      agateSolids: [
+        [89.55, -36.8],
+        [86.72, -97.2],
+        [89.764, -134.366],
+        [79.65, -229.25],
+      ].map(([x, north]) => blocked(x, north)),
+      rankinWalks: [
+        [-435, -600.52],
+        [-400, -600.57],
+        [-346, -600.75],
+        [-424, -589.7],
+      ].map(([x, north]) => {
+        const terrain = campus.terrainCheck(x, -north);
+        return [
+          terrain["pioneer-cemetery-paving"] > terrain.sampled + 0.04,
+          blocked(x, north),
+        ];
+      }),
+      rankinWalls: [
+        [-459, -598.9],
+        [-400, -599.02],
+        [-327.1, -599.09],
+      ].map(([x, north]) => blocked(x, north)),
       heritageWalks: [
         [-452.5, 108.8],
         [-479.4, 129],
@@ -167,6 +224,12 @@ test("historic landscape solids leave Cherry Avenue and Hello Walk open", async 
     centralCorridorSolids: Array(6).fill(true),
     eastCorridorWalks: Array(7).fill([true, false]),
     eastCorridorSolids: Array(4).fill(true),
+    greatLawnWalks: Array(4).fill([true, false]),
+    greatLawnSolids: Array(4).fill(true),
+    agateWalks: Array(8).fill([true, false]),
+    agateSolids: Array(4).fill(true),
+    rankinWalks: Array(4).fill([true, false]),
+    rankinWalls: [true, false, true],
     heritageWalks: Array(5).fill([true, false]),
     universitySign: true,
     helloWalk: Array(5).fill([true, false]),
@@ -184,7 +247,7 @@ test("failed historic site bundles restore the preceding ground and access", asy
   page,
 }) => {
   await page.route(
-    /\/(?:pioneer-cemetery-landscape-review|fenton-site-review|howe-field-gates-review|dads-gates-landscape-review|east-thirteenth-west-gateway-review|east-thirteenth-central-review|east-thirteenth-east-review)\/site\.glb$/,
+    /\/(?:pioneer-cemetery-landscape-review|fenton-site-review|howe-field-gates-review|dads-gates-landscape-review|east-thirteenth-west-gateway-review|east-thirteenth-central-review|east-thirteenth-east-review|great-lawn-landscape-review|agate-thirteenth-fifteenth-review)\/site\.glb$/,
     (route) => route.fulfill({ body: "invalid site mesh" }),
   );
   expect(await landscapeState(page)).toMatchObject({
@@ -208,6 +271,12 @@ test("failed historic site bundles restore the preceding ground and access", asy
     centralCorridorSolids: Array(6).fill(false),
     eastCorridorWalks: Array(7).fill([false, false]),
     eastCorridorSolids: Array(4).fill(false),
+    greatLawnWalks: Array(4).fill([false, false]),
+    greatLawnSolids: Array(4).fill(false),
+    agateWalks: Array(8).fill([false, false]),
+    agateSolids: Array(4).fill(false),
+    rankinWalks: Array(4).fill([false, false]),
+    rankinWalls: Array(3).fill(false),
     heritageWalks: Array(5).fill([false, false]),
     universitySign: false,
     helloWalk: Array(5).fill([false, false]),

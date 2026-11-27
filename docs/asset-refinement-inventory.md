@@ -34,7 +34,7 @@
 
 本批室外 L2 发布补建 Dads’ Gates 的铁门、灯柱、铺装和四株登记树，以及 Normal Gate 的铁拱、三处种植带、两株登记树和延伸至 Lillis 北侧的步道。校正后的南北两段共 65 条导航边。[Dads’ Gates 复核](dads-gates-landscape-review-2026-11-27.md) · [Normal Gate 与轴线南段复核](normal-gate-axis-landscape-review-2026-11-27.md)。
 
-本批发布同时补建 Pioneer Cemetery 的四处 Charles Lawson 玫瑰、GAR 南侧一组边石和三处墓碑。玫瑰模型按区块估放，区块 597 的位置待核。[玫瑰与墓区复核](pioneer-cemetery-landscape-review-2026-11-26.md#charles-lawson-roses-and-the-plot-south-of-the-gar-monument)。
+早期发布补建了 Pioneer Cemetery 的四处 Charles Lawson 玫瑰、GAR 南侧一组边石和三处墓碑。随后配准 Rankin Lane 南缘，新增人行道、27 条导航边、六组边石、十处无名墓碑和三株乔木。根据协会导览图估放 597 区块的第五株玫瑰。[玫瑰与墓区复核](pioneer-cemetery-landscape-review-2026-11-26.md#rankin-lane-southern-fringe-and-block-597)。
 
 East 13th Avenue 西入口 L2 新增 Kincaid 砖柱、铁栏、路桩、过街标线、两侧步道及 Lillis 广场花坛、登记树和《Thinker Duck》基座。铺装与 40 条新增导航边纳入 ENV-05。[西入口复核](east-thirteenth-west-gateway-review-2026-11-27.md)。
 
@@ -42,13 +42,15 @@ East 13th Avenue 中段 L2 新增 Lillis 至 University Street 的铺面、自�
 
 East 13th Avenue 东段 L2 补建 EMU 回转圆场和车棚、科学楼群前过街线、Agate 与 Columbia 路口，以及通往 Duck Dunes 的步道接点。道路与 97 条新增导航边纳入 ENV-05。[东段复核](east-thirteenth-east-review-2026-11-27.md)。
 
+Agate Street 从 East 13th 至 East 15th 的 L2 包含道路、两侧人行道、中央安全岛、两段错位过街、链栏、标识和八株登记树，新增 67 条导航边。[Agate Street 复核](agate-thirteenth-fifteenth-review-2026-11-27.md)。
+
 室外目标追踪 679 条记录，包括 664 条建筑外部及独立室外设施和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 663 条计划室内记录另列。当前有 610 项 L2 外观、15 组 L2 室外资产，独立在用 L1 为 0 项，另保留 54 条合并或停用后的历史映射。历史映射涉及 Garden、Franklin、Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church、The Studies at 19th、1544 Alder 的旧局部、Walnut Path 步桥旧网格、967 Patterson 旧建筑、Arena 前广场、Walnut 停车区、铁路跨线桥、储冷罐地块、Knight Library 西侧草坪、Grace Lutheran Church 旧分段、Hamilton Hall 五段已拆网格、Franklin 沿线两处停车区旧网格及 Patterson 原 YMCA 已拆网格，原 ID 和等级记录保存在 CSV。默认场景有 610 个可选建筑及独立设施。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
 
 Alpha Omega House、Fire Station 13、Birch 和 Fairmount 一带三栋住宅及 634–640 East 16th Alley 完成 L2。Patterson 旧 YMCA 归入历史映射，现状开敞地和铺装纳入 ENV-05。桌面和手机均已逐项核对 610 个默认可选建筑及独立设施的 ID。[最后一组外观复核](neighborhood-exterior-closeout-2026-11-26.md)。
 
 959 Franklin、Hayward Inn 的 Franklin 屋翼及 Best Western New Oregon 的两处建筑外部完成 L2。两处露天停车区旧屋面转入历史映射，铺装纳入 ENV-05。[外部核对](franklin-riverfront-closeout-2026-11-26.md)。
 
-Hamilton Hall 旧址现为 Great Lawn 和 Duck Dunes。三片沙排球场及草坪步道记入 ENV-05，1680 East 13th Avenue 配套用房成为独立 L2 外观。五段旧建筑归入历史映射。[现场与模型核对](hamilton-great-lawn-duck-dunes-2026-11-26.md)。
+Hamilton Hall 旧址现为 Great Lawn 和 Duck Dunes。三片沙排球场及草坪步道记入 ENV-05，1680 East 13th Avenue 配套用房成为独立 L2 外观。五段旧建筑归入历史映射。L2 进一步补建 Great Lawn 西侧的黑橡树、弧形座墙、碎石地坪、球形灯、种植带与 25 条导航边。[现场与模型核对](hamilton-great-lawn-duck-dunes-2026-11-26.md)。
 
 Alder 和东 12 至 14 街再完成十四栋外观。Patterson 保留抬高中庭和南露台，The Ellis 与 Chapter at Eugene 独立建模，751 East 14th 的三栋小屋保留物理间距。[十四栋外观复核](east-thirteenth-blocks-review-2026-11-26.md)。
 

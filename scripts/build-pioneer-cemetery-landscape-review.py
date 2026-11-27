@@ -180,6 +180,38 @@ def named_paths(parts, field, spec):
     return paving
 
 
+def rankin_frontage(parts, field, spec):
+    frontage = spec["rankin_fringe"]["sidewalk"]
+    line = LineString(frontage["centerline_enu_m"])
+    footprint = line.buffer(frontage["width_m"] / 2, cap_style="flat")
+    walls = [
+        LineString(row).buffer(0.20, cap_style="flat")
+        for row in spec["southern_walls"]
+    ]
+    footprint = footprint.difference(unary_union(walls))
+    drape(parts, field, footprint, (150, 147, 134), 0.097, 1.12)
+    return footprint.area, [
+        unary_union(walls[:2]).bounds,
+        unary_union(walls[2:]).bounds,
+    ]
+
+
+def rankin_routes(first, paths, paving, obstacles):
+    available = set(map(tuple, first["points_enu_m"]))
+    lengths = []
+    for path in paths:
+        assert tuple(path["anchor_enu_m"]) in available
+        points = [path["anchor_enu_m"], *path["points_enu_m"]]
+        spans = np.linalg.norm(np.diff(points, axis=0), axis=1)
+        assert all(0.05 < span < 20 for span in spans)
+        line = LineString(points)
+        assert line.distance(obstacles) > 0.56
+        assert line.difference(paving.buffer(0.13)).length < 0.40
+        lengths.append(round(line.length, 2))
+        available.update(map(tuple, path["points_enu_m"]))
+    return lengths
+
+
 def internal_landscape(paving, details, field, spec, main_paths):
     curbs = []
     for row in spec["grave_plot_edges"]:
@@ -889,6 +921,7 @@ def main():
     )
     ground, details, treads, trees, support, kiosk = [], [], [], [], [], []
     site = named_paths(ground, field, spec)
+    frontage_area, wall_boxes = rankin_frontage(ground, field, spec)
     alleys, curb_area = internal_landscape(ground, details, field, spec, site)
     support_boxes, apron_area = support_structures(ground, support, field, spec, site)
     kiosk_boxes = square_kiosk(
@@ -899,6 +932,11 @@ def main():
     bed = identification_sign(details, ground, field, spec["southeast_sign"])
     memorial(details, field, spec["gar_monument"])
     vault_box = smith_vault(details, field, spec["smith_vault"], site)
+    rankin_paths = spec["rankin_fringe"]["paths"]
+    rankin_lengths = rankin_routes(
+        route, rankin_paths, site,
+        unary_union([box(*b) for b in [*support_boxes, *kiosk_boxes, vault_box, *wall_boxes]]),
+    )
     for i, row in enumerate(spec["heritage_rose_positions"]):
         rose(details, field, row, i)
     for i, row in enumerate(spec["marker_estimates"]):
@@ -956,7 +994,13 @@ def main():
         "url": f"{PACKAGE}/site.glb",
         "sha256": pin(asset),
         "buildings": [],
-        "walkable_ground": route,
+        "walkable_ground": {
+            "bounds_enu_m": route["bounds_enu_m"],
+            "paths": [
+                {key: route[key] for key in ("anchor_enu_m", "points_enu_m")},
+                *rankin_paths,
+            ],
+        },
         "context_trees": spec["procedural_context_trees_to_remove"],
         "closed_site_boxes_enu_m": [
             *rail_boxes,
@@ -964,6 +1008,7 @@ def main():
             *support_boxes,
             *kiosk_boxes,
             vault_box,
+            *wall_boxes,
         ],
     }
     descriptor = args.stage / "site.json"
@@ -980,6 +1025,9 @@ def main():
         "charles_lawson_rose_clusters": len(lawson_roses),
         "registered_canopy_estimates": len(spec["canopy_estimates"]),
         "aerial_marker_estimates": len(spec["marker_estimates"]),
+        "rankin_frontage_area_m2": round(frontage_area, 2),
+        "rankin_new_route_edges": sum(len(path["points_enu_m"]) for path in rankin_paths),
+        "rankin_route_lengths_m": rankin_lengths,
         "inner_alleys": len(spec["inner_alleys"]),
         "inner_alley_area_m2": round(alleys.area, 2),
         "grave_plot_edges": len(spec["grave_plot_edges"]),

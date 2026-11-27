@@ -2994,16 +2994,16 @@
       "origin": "Original neighborhood exterior geometry and documented 2025 Patterson ground, see docs/neighborhood-exterior-closeout-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.glb": {
-      "bytes": 3432180,
-      "sha256": "4c0fc14b590b9ccc22c0249e937942b1c3af583b26190c31ce96b8c4e6b496d4",
+      "bytes": 3561984,
+      "sha256": "a3a49c73d25b2d20985e2d15a1bc6b58f1307b9a03063257cb7b951e535d158a",
       "license": "CC-BY-4.0",
-      "origin": "Original Pioneer Cemetery landscape, paths, memorials and site fittings. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
+      "origin": "Original landscape scene geometry from documented Pioneer Cemetery paths, masonry, canopy, landmarks and the Rankin Lane southern fringe. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
     "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.json": {
-      "bytes": 2414,
-      "sha256": "7c77a9cfb033f848e28a6e85a56204ec0ffc361cc1cf2c05130b5b1ae4f92052",
+      "bytes": 3190,
+      "sha256": "baef9a8711cdf7a39eb6824018b1bae02408726a37cfb2088d82352d581918b5",
       "license": "CC-BY-4.0",
-      "origin": "Original Pioneer Cemetery landscape, paths, memorials and site fittings. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
+      "origin": "Original landscape scene geometry from documented Pioneer Cemetery paths, masonry, canopy, landmarks and the Rankin Lane southern fringe. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     },
     "apps/web-preview/public/scene/gerlinger-field-green-review/site.glb": {
       "bytes": 968248,
@@ -3088,6 +3088,30 @@
       "sha256": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570",
       "license": "CC-BY-4.0",
       "origin": "Original East 13th Avenue east corridor, EMU turnaround and Agate crossings. See docs/east-thirteenth-east-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/great-lawn-landscape-review/site.glb": {
+      "bytes": 630268,
+      "sha256": "2be27896f72a9fabdcbab703f2bce58d437543f22c979b4680375769b9a580a8",
+      "license": "CC-BY-4.0",
+      "origin": "Original Great Lawn black oak court, seating and west-side connections. See docs/hamilton-great-lawn-duck-dunes-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/great-lawn-landscape-review/site.json": {
+      "bytes": 1682,
+      "sha256": "a08da4a016d294b1d1627d3c75724a18a7f4c52955efec5456dd91c1e6ff7181",
+      "license": "CC-BY-4.0",
+      "origin": "Original Great Lawn black oak court, seating and west-side connections. See docs/hamilton-great-lawn-duck-dunes-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/agate-thirteenth-fifteenth-review/site.glb": {
+      "bytes": 1813080,
+      "sha256": "c25b52919f29ed5170b2f3819bb3a50c78b055fb4f2fe3fe137099d83f54f64e",
+      "license": "CC-BY-4.0",
+      "origin": "Original Agate Street L2 pavement, refuge, furnishings and trees from East 13th to East 15th. See docs/agate-thirteenth-fifteenth-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/agate-thirteenth-fifteenth-review/site.json": {
+      "bytes": 2639,
+      "sha256": "063dda28669c3150b4a614d87f7af021d7f43d233a52be5e56c53716ea602418",
+      "license": "CC-BY-4.0",
+      "origin": "Original Agate Street L2 pavement, refuge, furnishings and trees from East 13th to East 15th. See docs/agate-thirteenth-fifteenth-review-2026-11-27.md."
     }
   },
   "additional_sources": [

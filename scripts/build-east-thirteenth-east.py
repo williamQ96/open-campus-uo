@@ -201,7 +201,7 @@ def pinned_site(scene, spec):
     return manifest, field, site.read(nav_path)
 
 
-def build_blockers(scene, spec, manifest):
+def build_blockers(scene, spec, manifest, extent):
     neighbors = [
         site.read(scene / directory / "site.json")
         for directory in spec["pins"]["sites"]
@@ -210,7 +210,6 @@ def build_blockers(scene, spec, manifest):
         row["id"] for payload in neighbors for row in payload.get("buildings", [])
     }
     retired = {key for payload in neighbors for key in payload.get("absorbed_ids", [])}
-    extent = box(-257, -28, 243, 22)
     records = [
         *(row for row in manifest["buildings"] if row["id"] not in replaced | retired),
         *(row for payload in neighbors for row in payload.get("buildings", [])),
@@ -244,7 +243,9 @@ def main():
     args = parser.parse_args()
     spec = site.read(site.root / "data/metadata/east-thirteenth-east.json")
     manifest, field, graph = pinned_site(site.scene, spec)
-    buildings, old_boxes = build_blockers(site.scene, spec, manifest)
+    buildings, old_boxes = build_blockers(
+        site.scene, spec, manifest, box(-257, -28, 243, 22)
+    )
     ground, paint, details, plants = [], [], [], []
     road, walk, turning = surfaces(ground, paint, field, spec, buildings)
     paved = road.union(walk)
