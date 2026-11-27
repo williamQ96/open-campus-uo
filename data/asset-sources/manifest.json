@@ -2992,6 +2992,18 @@
       "sha256": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2",
       "license": "CC-BY-4.0",
       "origin": "Original neighborhood exterior geometry and documented 2025 Patterson ground, see docs/neighborhood-exterior-closeout-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.glb": {
+      "bytes": 2623220,
+      "sha256": "7e054366cc5b3115d321160ac1c223d28fc9778ac707d9128dc87ebf9d5a2137",
+      "license": "CC-BY-4.0",
+      "origin": "Original landscape scene geometry from documented Pioneer Cemetery paths, masonry, canopy and landmark studies. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
+    },
+    "apps/web-preview/public/scene/pioneer-cemetery-landscape-review/site.json": {
+      "bytes": 1867,
+      "sha256": "4ea92fe0c821fd613fe60e70a436aa3bdd757ac109e3d9be7f72309cbad3be89",
+      "license": "CC-BY-4.0",
+      "origin": "Original landscape scene geometry from documented Pioneer Cemetery paths, masonry, canopy and landmark studies. See docs/pioneer-cemetery-landscape-review-2026-11-26.md."
     }
   },
   "additional_sources": [

@@ -1817,6 +1817,14 @@ async function loadCampusScene(base, manifest, settings) {
         "roof-ec27d788": ["Eugene Steam Plant", "701 Annie Mims Ln"],
       },
     },
+    "pioneer-cemetery-landscape": {
+      descriptor: config?.pioneer_cemetery_landscape_site,
+      directory: "pioneer-cemetery-landscape-review",
+      groundNode: "pioneer-cemetery-paving",
+      walkableGroundNode: "pioneer-cemetery-east-stairs",
+      navigationUrl: settings.navigation_url,
+      ids: [],
+    },
     "neighborhood-exterior-closeout": {
       descriptor: config?.neighborhood_exterior_closeout_site,
       directory: "neighborhood-exterior-closeout-review",
@@ -3983,6 +3991,7 @@ async function loadCampusScene(base, manifest, settings) {
     "south-campus-frontages",
     "potter-university-exterior",
     "harris-potter-exterior",
+    "pioneer-cemetery-landscape",
     "neighborhood-exterior-closeout",
     "franklin-riverfront-closeout",
     "hamilton-dunes",

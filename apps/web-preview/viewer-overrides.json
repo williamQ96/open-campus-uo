@@ -24,7 +24,7 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "e9283616d18343a2f3c4314e6c46174247a915c297ea8a6b8aae91b2cdccee88",
+      "local_sha256": "62811f58070171481de5745aab379ad7a577604736884d956541e70fd12f7b3d",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife."
     },
     "src/building-card.js": {
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "8ce846ee48717a41173eeb05e3e97ea243ea948667cd1dba81417febb2f46014",
+    "public/scene/presentation.json": "ff13af89ef1f29882d796fe0967195c90ac4a7a2bb8941b1fb89656ab5974917",
     "public/scene/fenton-site-review/site.glb": "9fc92408b7e3080f3f3d6e19290565cfb9c3b130879cbe4a8a17fe45b02bd33f",
     "public/scene/fenton-site-review/site.json": "129ab481cc704b63ba1867a3c5451741bc61f47d08c548d81626d34dd767c96f",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -479,6 +479,8 @@
     "public/scene/franklin-riverfront-closeout-review/site.glb": "f9e0985903f12fb873000c58d5ad07ac5ee7247a96cc1ffd592861b645404262",
     "public/scene/franklin-riverfront-closeout-review/site.json": "f50900642b5e0693be4dcf0061491114e80fe8e25b9ea086552712066e3b7528",
     "public/scene/neighborhood-exterior-closeout-review/site.glb": "de892b9fc3f0166af69c22f652f95ad73f26b502ad371e79ea4675c6131a8687",
-    "public/scene/neighborhood-exterior-closeout-review/site.json": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2"
+    "public/scene/neighborhood-exterior-closeout-review/site.json": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2",
+    "public/scene/pioneer-cemetery-landscape-review/site.glb": "7e054366cc5b3115d321160ac1c223d28fc9778ac707d9128dc87ebf9d5a2137",
+    "public/scene/pioneer-cemetery-landscape-review/site.json": "4ea92fe0c821fd613fe60e70a436aa3bdd757ac109e3d9be7f72309cbad3be89"
   }
 }

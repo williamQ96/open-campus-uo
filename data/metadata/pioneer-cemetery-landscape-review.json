@@ -1,0 +1,2133 @@
+{
+  "parcel": {
+    "reference": "1703320000600",
+    "outline_enu_m": [
+      [
+        -317.9892,
+        -286.2019
+      ],
+      [
+        -319.6198,
+        -597.8706
+      ],
+      [
+        -524.1354,
+        -597.4055
+      ],
+      [
+        -522.505,
+        -285.7274
+      ],
+      [
+        -317.9892,
+        -286.2019
+      ]
+    ],
+    "area_m2": 63742.88
+  },
+  "pinned_sources": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "campus": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803"
+  },
+  "references": {
+    "county_parcel": {
+      "path": "county-parcels.json",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/PlanMaps/AddressParcel/MapServer/1/query?f=json&geometry=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=MAPTAXLOT",
+      "sha256": "d3b248a01e834eb87b590e3c758935e18e416bd617c1953b0c812790927f0398",
+      "size": 27980
+    },
+    "aerials": [
+      {
+        "path": "lane-2025.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&bboxSR=3740&imageSR=3740&size=2312%2C2688&layers=show%3A57&format=png32",
+        "sha256": "2a505962ffe72adbf83bed4ee6ba248d4cc85037e8c98e6609cd06a13cf55fe4",
+        "size": 11466248
+      },
+      {
+        "path": "lane-2021.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&bboxSR=3740&imageSR=3740&size=2312%2C2688&layers=show%3A26&format=png32",
+        "sha256": "8efeb1b05ee3d09a57f9600ae4ded89377b816069afae8e974900593207f8d66",
+        "size": 10915217
+      },
+      {
+        "path": "lane-2017.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493756.14928888186%2C4876306.282153052%2C494045.14928888186%2C4876642.282153052&bboxSR=3740&imageSR=3740&size=2312%2C2688&layers=show%3A29&format=png32",
+        "sha256": "1cd0d194f62aa32d7b1a10823ddc440cd42db48fb8f4effd0f3bb2694e9eb950",
+        "size": 11323656
+      }
+    ],
+    "association_map": "https://eugenepioneercemetery.org/self-guided-tour/",
+    "national_register": "https://npgallery.nps.gov/GetAsset/8377666e-d980-4494-bce2-3993f6f19669",
+    "east_stair": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-xUdMd56U5OekBMXryjUOQ&heading=277.27",
+    "south_wall": "https://www.google.com/maps/@?api=1&map_action=pano&pano=yEXEKTt2bXYbHA3OT5WhUw&heading=350.78",
+    "southeast_corner": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JFwqqdSv-J6UHwYbTn2gjA&heading=313.8",
+    "sign": "https://commons.wikimedia.org/wiki/File:Eugene_Pioneer_Cemetery_sign_2007.jpg",
+    "GAR": "https://eugenepioneercemetery.org/gar-plot/",
+    "roses": "https://eugenepioneercemetery.org/heritage-roses/"
+  },
+  "roads": [
+    {
+      "name": "Dorris Avenue",
+      "width_m": 5.25,
+      "centerline_enu_m": [
+        [
+          -521.3,
+          -388.55
+        ],
+        [
+          -480,
+          -388.2
+        ],
+        [
+          -456,
+          -388.6
+        ],
+        [
+          -438.5,
+          -388.09
+        ],
+        [
+          -419.65,
+          -387.72
+        ],
+        [
+          -396.25,
+          -387.65
+        ],
+        [
+          -365.1,
+          -387.55
+        ],
+        [
+          -335.25,
+          -387.69
+        ],
+        [
+          -326.82,
+          -387.79
+        ]
+      ]
+    },
+    {
+      "name": "Kelley Drive",
+      "width_m": 4.2,
+      "centerline_enu_m": [
+        [
+          -421.2,
+          -293.5
+        ],
+        [
+          -421.8,
+          -330.6
+        ],
+        [
+          -420.55,
+          -366
+        ],
+        [
+          -419.65,
+          -387.72
+        ],
+        [
+          -420.58,
+          -409.9
+        ],
+        [
+          -422.5,
+          -441.3
+        ],
+        [
+          -423.04,
+          -474.7
+        ],
+        [
+          -422.95,
+          -508.65
+        ],
+        [
+          -422.8,
+          -542.4
+        ],
+        [
+          -422.7,
+          -572.1
+        ],
+        [
+          -422.7,
+          -589.7
+        ]
+      ]
+    },
+    {
+      "name": "Conger Lane",
+      "width_m": 3.45,
+      "centerline_enu_m": [
+        [
+          -517.6,
+          -292.5
+        ],
+        [
+          -517.7,
+          -340
+        ],
+        [
+          -519.0,
+          -370.3
+        ],
+        [
+          -519.2,
+          -388.55
+        ],
+        [
+          -519.5,
+          -423.8
+        ],
+        [
+          -515.26,
+          -466.8
+        ],
+        [
+          -514.7,
+          -493.97
+        ],
+        [
+          -515.15,
+          -541.1
+        ],
+        [
+          -515.16,
+          -567
+        ],
+        [
+          -514.14,
+          -585.9
+        ],
+        [
+          -506.9,
+          -588.75
+        ]
+      ]
+    },
+    {
+      "name": "Risdon Lane",
+      "width_m": 3.35,
+      "centerline_enu_m": [
+        [
+          -326.25,
+          -294.9
+        ],
+        [
+          -327.9,
+          -340.9
+        ],
+        [
+          -329.5,
+          -369.0
+        ],
+        [
+          -330.64,
+          -387.75
+        ],
+        [
+          -328.5,
+          -412
+        ],
+        [
+          -327.6,
+          -446
+        ],
+        [
+          -328.75,
+          -476.5
+        ],
+        [
+          -328.95,
+          -512
+        ],
+        [
+          -328.91,
+          -542.4
+        ],
+        [
+          -329.7,
+          -565.3
+        ],
+        [
+          -333.19,
+          -588.55
+        ]
+      ]
+    },
+    {
+      "name": "Shelley Lane",
+      "width_m": 3.35,
+      "centerline_enu_m": [
+        [
+          -517.6,
+          -292.5
+        ],
+        [
+          -471.85,
+          -293.21
+        ],
+        [
+          -421.2,
+          -293.5
+        ],
+        [
+          -369.2,
+          -294
+        ],
+        [
+          -326.25,
+          -294.9
+        ]
+      ]
+    },
+    {
+      "name": "Walton Avenue",
+      "width_m": 3.6,
+      "centerline_enu_m": [
+        [
+          -515.0,
+          -483.5
+        ],
+        [
+          -484.5,
+          -484.15
+        ],
+        [
+          -453.0,
+          -483.82
+        ],
+        [
+          -423.04,
+          -483.17
+        ],
+        [
+          -395.4,
+          -483.0
+        ],
+        [
+          -362.0,
+          -483.2
+        ],
+        [
+          -328.8,
+          -483.48
+        ]
+      ]
+    },
+    {
+      "name": "Cherry Avenue",
+      "width_m": 3.4,
+      "centerline_enu_m": [
+        [
+          -515.15,
+          -541.1
+        ],
+        [
+          -492.0,
+          -542.0
+        ],
+        [
+          -464.5,
+          -542.4
+        ],
+        [
+          -422.8,
+          -542.4
+        ],
+        [
+          -391.2,
+          -542.5
+        ],
+        [
+          -363.2,
+          -542.45
+        ],
+        [
+          -328.91,
+          -542.4
+        ]
+      ]
+    },
+    {
+      "name": "Rankin Lane",
+      "width_m": 3.25,
+      "centerline_enu_m": [
+        [
+          -506.9,
+          -588.75
+        ],
+        [
+          -480.3,
+          -589.31
+        ],
+        [
+          -455.6,
+          -589.46
+        ],
+        [
+          -422.7,
+          -589.7
+        ],
+        [
+          -389.1,
+          -589.86
+        ],
+        [
+          -361.7,
+          -590.21
+        ],
+        [
+          -338.0,
+          -590.0
+        ],
+        [
+          -333.19,
+          -588.55
+        ]
+      ]
+    }
+  ],
+  "east_stair": {
+    "north_m": -387.79,
+    "bottom_east_m": -319.59,
+    "top_east_m": -326.82,
+    "width_m": 2.02,
+    "treads": 11,
+    "rail_height_m": 0.83
+  },
+  "walkable_ground": {
+    "bounds_enu_m": [
+      [
+        -327.6,
+        -388.98,
+        -318.77,
+        -386.6
+      ]
+    ],
+    "anchor_enu_m": [
+      -306.063,
+      -388.887
+    ],
+    "points_enu_m": [
+      [
+        -316.65,
+        -388.1
+      ],
+      [
+        -319.6,
+        -387.79
+      ],
+      [
+        -323.19,
+        -387.79
+      ],
+      [
+        -326.82,
+        -387.79
+      ],
+      [
+        -335.25,
+        -387.69
+      ],
+      [
+        -350.0,
+        -387.62
+      ],
+      [
+        -365.1,
+        -387.55
+      ],
+      [
+        -380.5,
+        -387.6
+      ],
+      [
+        -396.25,
+        -387.65
+      ],
+      [
+        -411.8,
+        -387.7
+      ],
+      [
+        -419.65,
+        -387.72
+      ]
+    ]
+  },
+  "southern_walls": [
+    [
+      [
+        -500.7,
+        -598.8
+      ],
+      [
+        -453.0,
+        -598.9
+      ]
+    ],
+    [
+      [
+        -453.0,
+        -598.9
+      ],
+      [
+        -410.3,
+        -598.98
+      ]
+    ],
+    [
+      [
+        -405.0,
+        -599.0
+      ],
+      [
+        -363.0,
+        -599.03
+      ]
+    ],
+    [
+      [
+        -363.0,
+        -599.03
+      ],
+      [
+        -324.7,
+        -599.15
+      ]
+    ],
+    [
+      [
+        -324.7,
+        -599.15
+      ],
+      [
+        -320.75,
+        -596.75
+      ]
+    ]
+  ],
+  "southeast_sign": {
+    "position_enu_m": [
+      -325.3,
+      -593.9
+    ],
+    "width_m": 1.74,
+    "height_m": 1.04,
+    "depth_m": 0.5
+  },
+  "gar_monument": {
+    "position_enu_m": [
+      -432.4,
+      -466.1
+    ],
+    "height_m": 7.62
+  },
+  "heritage_rose_positions": [
+    {
+      "name": "Garrett",
+      "position_enu_m": [
+        -334.9,
+        -309.1
+      ],
+      "radius_m": 0.8,
+      "flower_color": [
+        203,
+        154,
+        158
+      ]
+    },
+    {
+      "name": "Moon",
+      "position_enu_m": [
+        -343.5,
+        -420.1
+      ],
+      "radius_m": 0.72,
+      "flower_color": [
+        224,
+        219,
+        192
+      ]
+    },
+    {
+      "name": "Carter",
+      "position_enu_m": [
+        -366.1,
+        -446.6
+      ],
+      "radius_m": 0.92,
+      "flower_color": [
+        164,
+        92,
+        117
+      ]
+    },
+    {
+      "name": "A. J. Niles",
+      "position_enu_m": [
+        -399.4,
+        -516.3
+      ],
+      "radius_m": 0.66,
+      "flower_color": [
+        180,
+        106,
+        143
+      ]
+    },
+    {
+      "name": "Baby Warnock",
+      "position_enu_m": [
+        -431.7,
+        -551.4
+      ],
+      "radius_m": 0.83,
+      "flower_color": [
+        182,
+        116,
+        131
+      ]
+    },
+    {
+      "name": "Wellborn",
+      "position_enu_m": [
+        -433.6,
+        -594.8
+      ],
+      "radius_m": 0.96,
+      "flower_color": [
+        223,
+        217,
+        199
+      ]
+    }
+  ],
+  "procedural_context_trees_to_remove": [
+    {
+      "index": 0,
+      "position_enu_m": [
+        -515.791,
+        -498.424
+      ]
+    },
+    {
+      "index": 14,
+      "position_enu_m": [
+        -331.645,
+        -585.825
+      ]
+    },
+    {
+      "index": 33,
+      "position_enu_m": [
+        -327.505,
+        -530.275
+      ]
+    },
+    {
+      "index": 52,
+      "position_enu_m": [
+        -510.693,
+        -400.161
+      ]
+    },
+    {
+      "index": 55,
+      "position_enu_m": [
+        -324.69,
+        -567.421
+      ]
+    },
+    {
+      "index": 67,
+      "position_enu_m": [
+        -392.41,
+        -350.845
+      ]
+    },
+    {
+      "index": 68,
+      "position_enu_m": [
+        -455.829,
+        -382.352
+      ]
+    },
+    {
+      "index": 82,
+      "position_enu_m": [
+        -514.408,
+        -520.348
+      ]
+    },
+    {
+      "index": 87,
+      "position_enu_m": [
+        -425.892,
+        -537.039
+      ]
+    },
+    {
+      "index": 91,
+      "position_enu_m": [
+        -488.548,
+        -523.958
+      ]
+    },
+    {
+      "index": 204,
+      "position_enu_m": [
+        -474.178,
+        -589.346
+      ]
+    },
+    {
+      "index": 229,
+      "position_enu_m": [
+        -389.146,
+        -387.331
+      ]
+    },
+    {
+      "index": 231,
+      "position_enu_m": [
+        -336.899,
+        -510.518
+      ]
+    },
+    {
+      "index": 238,
+      "position_enu_m": [
+        -410.462,
+        -554.291
+      ]
+    },
+    {
+      "index": 253,
+      "position_enu_m": [
+        -349.272,
+        -481.396
+      ]
+    }
+  ],
+  "canopy_estimates": [
+    {
+      "position_enu_m": [
+        -348.5,
+        -297.5
+      ],
+      "height_m": 49.78,
+      "crown_radius_m": 5.16,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -333.5,
+        -325.5
+      ],
+      "height_m": 46.26,
+      "crown_radius_m": 5.27,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -396.5,
+        -298.5
+      ],
+      "height_m": 45.34,
+      "crown_radius_m": 5.45,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -357.5,
+        -319.5
+      ],
+      "height_m": 44.79,
+      "crown_radius_m": 4.02,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -360.5,
+        -382.5
+      ],
+      "height_m": 44.76,
+      "crown_radius_m": 5.12,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -473.5,
+        -382.5
+      ],
+      "height_m": 44.5,
+      "crown_radius_m": 5.37,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -417.5,
+        -334.5
+      ],
+      "height_m": 43.42,
+      "crown_radius_m": 4.93,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -489.5,
+        -296.5
+      ],
+      "height_m": 43.34,
+      "crown_radius_m": 5.08,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -499.5,
+        -547.5
+      ],
+      "height_m": 43.29,
+      "crown_radius_m": 5.19,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -363.5,
+        -310.5
+      ],
+      "height_m": 43.25,
+      "crown_radius_m": 3.93,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -369.5,
+        -298.5
+      ],
+      "height_m": 43.04,
+      "crown_radius_m": 5.23,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -378.5,
+        -297.5
+      ],
+      "height_m": 43.02,
+      "crown_radius_m": 5.41,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -377.5,
+        -369.5
+      ],
+      "height_m": 42.89,
+      "crown_radius_m": 4.25,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -491.5,
+        -382.5
+      ],
+      "height_m": 42.82,
+      "crown_radius_m": 4.43,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -333.5,
+        -334.5
+      ],
+      "height_m": 42.47,
+      "crown_radius_m": 4.69,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -463.5,
+        -392.5
+      ],
+      "height_m": 42.03,
+      "crown_radius_m": 5.41,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -332.5,
+        -413.5
+      ],
+      "height_m": 41.76,
+      "crown_radius_m": 1.64,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -378.5,
+        -324.5
+      ],
+      "height_m": 41.44,
+      "crown_radius_m": 5.27,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -417.5,
+        -325.5
+      ],
+      "height_m": 41.3,
+      "crown_radius_m": 5.37,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -437.5,
+        -514.5
+      ],
+      "height_m": 41.2,
+      "crown_radius_m": 5.08,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -464.5,
+        -330.5
+      ],
+      "height_m": 40.99,
+      "crown_radius_m": 5.37,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -477.5,
+        -296.5
+      ],
+      "height_m": 40.93,
+      "crown_radius_m": 4.85,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -466.5,
+        -479.5
+      ],
+      "height_m": 40.93,
+      "crown_radius_m": 3.97,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -397.5,
+        -333.5
+      ],
+      "height_m": 40.85,
+      "crown_radius_m": 5.45,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -428.5,
+        -334.5
+      ],
+      "height_m": 40.66,
+      "crown_radius_m": 4.07,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -439.5,
+        -496.5
+      ],
+      "height_m": 40.32,
+      "crown_radius_m": 3.46,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -330.5,
+        -309.5
+      ],
+      "height_m": 40.24,
+      "crown_radius_m": 5.52,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -513.5,
+        -312.5
+      ],
+      "height_m": 40.21,
+      "crown_radius_m": 3.93,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -444.5,
+        -520.5
+      ],
+      "height_m": 40.19,
+      "crown_radius_m": 4.48,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -455.5,
+        -382.5
+      ],
+      "height_m": 40.16,
+      "crown_radius_m": 5.41,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -417.5,
+        -343.5
+      ],
+      "height_m": 39.98,
+      "crown_radius_m": 5.45,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -428.5,
+        -423.5
+      ],
+      "height_m": 39.72,
+      "crown_radius_m": 5.04,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -513.5,
+        -401.5
+      ],
+      "height_m": 39.41,
+      "crown_radius_m": 5.34,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -486.5,
+        -526.5
+      ],
+      "height_m": 39.36,
+      "crown_radius_m": 5.27,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -468.5,
+        -449.5
+      ],
+      "height_m": 39.23,
+      "crown_radius_m": 4.34,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -428.5,
+        -449.5
+      ],
+      "height_m": 38.81,
+      "crown_radius_m": 5.08,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -512.5,
+        -301.5
+      ],
+      "height_m": 38.66,
+      "crown_radius_m": 4.89,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -429.5,
+        -478.5
+      ],
+      "height_m": 38.59,
+      "crown_radius_m": 5.27,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -480.5,
+        -326.5
+      ],
+      "height_m": 38.17,
+      "crown_radius_m": 4.6,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -338.5,
+        -297.5
+      ],
+      "height_m": 38.12,
+      "crown_radius_m": 4.85,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -381.5,
+        -308.5
+      ],
+      "height_m": 37.6,
+      "crown_radius_m": 5.04,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -465.5,
+        -297.5
+      ],
+      "height_m": 37.5,
+      "crown_radius_m": 4.21,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -390.5,
+        -347.5
+      ],
+      "height_m": 37.29,
+      "crown_radius_m": 4.6,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -454.5,
+        -298.5
+      ],
+      "height_m": 37.24,
+      "crown_radius_m": 4.89,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -416.5,
+        -316.5
+      ],
+      "height_m": 37.14,
+      "crown_radius_m": 5.23,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -467.5,
+        -505.5
+      ],
+      "height_m": 36.99,
+      "crown_radius_m": 3.57,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -408.5,
+        -477.5
+      ],
+      "height_m": 36.95,
+      "crown_radius_m": 4.89,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -459.5,
+        -440.5
+      ],
+      "height_m": 36.89,
+      "crown_radius_m": 5.0,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -436.5,
+        -367.5
+      ],
+      "height_m": 36.88,
+      "crown_radius_m": 5.16,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -455.5,
+        -434.5
+      ],
+      "height_m": 36.85,
+      "crown_radius_m": 4.85,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -468.5,
+        -367.5
+      ],
+      "height_m": 36.53,
+      "crown_radius_m": 3.78,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -428.5,
+        -431.5
+      ],
+      "height_m": 36.27,
+      "crown_radius_m": 4.52,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -396.5,
+        -393.5
+      ],
+      "height_m": 36.15,
+      "crown_radius_m": 4.77,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -417.5,
+        -307.5
+      ],
+      "height_m": 36.09,
+      "crown_radius_m": 5.45,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -453.5,
+        -440.5
+      ],
+      "height_m": 35.9,
+      "crown_radius_m": 5.16,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -378.5,
+        -383.5
+      ],
+      "height_m": 35.78,
+      "crown_radius_m": 4.48,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -402.5,
+        -383.5
+      ],
+      "height_m": 35.62,
+      "crown_radius_m": 4.64,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -514.5,
+        -410.5
+      ],
+      "height_m": 35.55,
+      "crown_radius_m": 5.3,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -399.5,
+        -580.5
+      ],
+      "height_m": 34.31,
+      "crown_radius_m": 3.46,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -427.5,
+        -367.5
+      ],
+      "height_m": 33.98,
+      "crown_radius_m": 4.93,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -490.5,
+        -324.5
+      ],
+      "height_m": 33.79,
+      "crown_radius_m": 5.19,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -429.5,
+        -315.5
+      ],
+      "height_m": 33.5,
+      "crown_radius_m": 5.45,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -404.5,
+        -320.5
+      ],
+      "height_m": 33.5,
+      "crown_radius_m": 4.07,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -398.5,
+        -568.5
+      ],
+      "height_m": 33.41,
+      "crown_radius_m": 4.43,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -427.5,
+        -360.5
+      ],
+      "height_m": 33.21,
+      "crown_radius_m": 4.81,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -446.5,
+        -368.5
+      ],
+      "height_m": 33.2,
+      "crown_radius_m": 4.21,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -407.5,
+        -411.5
+      ],
+      "height_m": 33.15,
+      "crown_radius_m": 2.4,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -397.5,
+        -563.5
+      ],
+      "height_m": 32.93,
+      "crown_radius_m": 5.0,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -473.5,
+        -516.5
+      ],
+      "height_m": 32.79,
+      "crown_radius_m": 3.04,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -417.5,
+        -431.5
+      ],
+      "height_m": 32.5,
+      "crown_radius_m": 4.21,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -352.5,
+        -394.5
+      ],
+      "height_m": 32.47,
+      "crown_radius_m": 3.78,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -472.5,
+        -583.5
+      ],
+      "height_m": 32.35,
+      "crown_radius_m": 3.4,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -346.5,
+        -535.5
+      ],
+      "height_m": 32.22,
+      "crown_radius_m": 4.96,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -428.5,
+        -439.5
+      ],
+      "height_m": 32.07,
+      "crown_radius_m": 4.81,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -389.5,
+        -307.5
+      ],
+      "height_m": 31.97,
+      "crown_radius_m": 5.19,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -383.5,
+        -335.5
+      ],
+      "height_m": 31.43,
+      "crown_radius_m": 4.34,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -509.5,
+        -477.5
+      ],
+      "height_m": 31.15,
+      "crown_radius_m": 4.77,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -464.5,
+        -402.5
+      ],
+      "height_m": 29.29,
+      "crown_radius_m": 4.21,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -513.5,
+        -360.5
+      ],
+      "height_m": 28.5,
+      "crown_radius_m": 4.12,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -494.5,
+        -348.5
+      ],
+      "height_m": 28.24,
+      "crown_radius_m": 3.51,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -454.5,
+        -410.5
+      ],
+      "height_m": 27.95,
+      "crown_radius_m": 3.46,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -371.5,
+        -572.5
+      ],
+      "height_m": 27.61,
+      "crown_radius_m": 5.16,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -490.5,
+        -397.5
+      ],
+      "height_m": 27.21,
+      "crown_radius_m": 2.63,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -346.5,
+        -453.5
+      ],
+      "height_m": 27.19,
+      "crown_radius_m": 3.62,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -482.5,
+        -506.5
+      ],
+      "height_m": 27.13,
+      "crown_radius_m": 3.57,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -389.5,
+        -546.5
+      ],
+      "height_m": 27.12,
+      "crown_radius_m": 3.51,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -364.5,
+        -487.5
+      ],
+      "height_m": 27.04,
+      "crown_radius_m": 3.51,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -418.5,
+        -574.5
+      ],
+      "height_m": 26.49,
+      "crown_radius_m": 2.71,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -356.5,
+        -536.5
+      ],
+      "height_m": 26.48,
+      "crown_radius_m": 4.25,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -403.5,
+        -419.5
+      ],
+      "height_m": 24.96,
+      "crown_radius_m": 3.16,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -513.5,
+        -321.5
+      ],
+      "height_m": 24.61,
+      "crown_radius_m": 3.78,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -418.5,
+        -517.5
+      ],
+      "height_m": 23.41,
+      "crown_radius_m": 4.3,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -418.5,
+        -535.5
+      ],
+      "height_m": 23.13,
+      "crown_radius_m": 4.25,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -444.5,
+        -459.5
+      ],
+      "height_m": 22.44,
+      "crown_radius_m": 4.34,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -450.5,
+        -318.5
+      ],
+      "height_m": 22.32,
+      "crown_radius_m": 3.22,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -482.5,
+        -409.5
+      ],
+      "height_m": 21.63,
+      "crown_radius_m": 2.48,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -464.5,
+        -312.5
+      ],
+      "height_m": 20.74,
+      "crown_radius_m": 4.3,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -429.5,
+        -535.5
+      ],
+      "height_m": 20.66,
+      "crown_radius_m": 4.02,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -390.5,
+        -471.5
+      ],
+      "height_m": 19.82,
+      "crown_radius_m": 2.48,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -431.5,
+        -547.5
+      ],
+      "height_m": 19.42,
+      "crown_radius_m": 3.04,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -480.5,
+        -443.5
+      ],
+      "height_m": 18.84,
+      "crown_radius_m": 4.3,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -357.5,
+        -351.5
+      ],
+      "height_m": 18.81,
+      "crown_radius_m": 3.28,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -373.5,
+        -514.5
+      ],
+      "height_m": 18.29,
+      "crown_radius_m": 2.56,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -504.5,
+        -454.5
+      ],
+      "height_m": 17.67,
+      "crown_radius_m": 4.12,
+      "form": "columnar"
+    },
+    {
+      "position_enu_m": [
+        -475.5,
+        -498.5
+      ],
+      "height_m": 16.96,
+      "crown_radius_m": 2.32,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -344.5,
+        -363.5
+      ],
+      "height_m": 15.41,
+      "crown_radius_m": 3.46,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -356.5,
+        -443.5
+      ],
+      "height_m": 14.28,
+      "crown_radius_m": 3.62,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -372.5,
+        -522.5
+      ],
+      "height_m": 13.83,
+      "crown_radius_m": 3.22,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -414.5,
+        -508.5
+      ],
+      "height_m": 13.07,
+      "crown_radius_m": 5.27,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -405.5,
+        -505.5
+      ],
+      "height_m": 12.3,
+      "crown_radius_m": 3.46,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -406.5,
+        -498.5
+      ],
+      "height_m": 12.11,
+      "crown_radius_m": 2.06,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -325.5,
+        -580.5
+      ],
+      "height_m": 11.86,
+      "crown_radius_m": 4.34,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -352.5,
+        -594.5
+      ],
+      "height_m": 11.78,
+      "crown_radius_m": 5.16,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -411.5,
+        -556.5
+      ],
+      "height_m": 11.62,
+      "crown_radius_m": 3.83,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -378.5,
+        -454.5
+      ],
+      "height_m": 11.52,
+      "crown_radius_m": 4.3,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -323.5,
+        -370.5
+      ],
+      "height_m": 11.29,
+      "crown_radius_m": 2.91,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -398.5,
+        -496.5
+      ],
+      "height_m": 11.24,
+      "crown_radius_m": 2.84,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -325.5,
+        -564.5
+      ],
+      "height_m": 10.98,
+      "crown_radius_m": 4.21,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -348.5,
+        -556.5
+      ],
+      "height_m": 10.92,
+      "crown_radius_m": 2.91,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -334.5,
+        -510.5
+      ],
+      "height_m": 10.31,
+      "crown_radius_m": 2.24,
+      "form": "rounded"
+    },
+    {
+      "position_enu_m": [
+        -334.5,
+        -575.5
+      ],
+      "height_m": 10.24,
+      "crown_radius_m": 2.71,
+      "form": "rounded"
+    }
+  ],
+  "tree_source_notes": {
+    "basis": "Local 2017 height maxima screened against DOGAMI canopy and leaf-off 2025 aerial visible vegetation. Points approximate crown apexes; species inferred only by broad shape.",
+    "source": [
+      {
+        "name": "campus-2017-usace-surface.npz",
+        "sha256": "255b4503e8f7ee562ebb4b9aa5f3b2a385387908f96d961e2ccc9e6ba7f917f8"
+      },
+      {
+        "name": "campus-dogami-lane-county-surface.npz",
+        "sha256": "9cc708f85a4fa7a3344361dcfe69694bea5cc477874a96268052428596de0b18"
+      }
+    ],
+    "adjacent_uo_tree_records": [
+      {
+        "name": "Ponderosa Pine",
+        "position_enu_m": [
+          -523.588,
+          -517.295
+        ],
+        "id": "4415"
+      },
+      {
+        "name": "Big Leaf Maple",
+        "position_enu_m": [
+          -522.435,
+          -495.576
+        ],
+        "id": "4420"
+      },
+      {
+        "name": null,
+        "position_enu_m": [
+          -520.655,
+          -472.475
+        ],
+        "id": "4432"
+      },
+      {
+        "name": null,
+        "position_enu_m": [
+          -523.799,
+          -568.81
+        ],
+        "id": "7554"
+      },
+      {
+        "name": null,
+        "position_enu_m": [
+          -522.622,
+          -574.218
+        ],
+        "id": "7553"
+      }
+    ],
+    "earlier_pilot_indices_retained": [
+      65,
+      95,
+      103,
+      121,
+      128,
+      150,
+      207,
+      227,
+      269,
+      296
+    ]
+  },
+  "marker_estimates": [
+    {
+      "position_enu_m": [
+        -354.39,
+        -455.12
+      ],
+      "width_m": 0.88,
+      "depth_m": 0.5,
+      "height_m": 0.76,
+      "aerial_max_match_distance_m": 0.908,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -495.39,
+        -564.63
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.38,
+      "height_m": 0.42,
+      "aerial_max_match_distance_m": 0.895,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -484.71,
+        -595.15
+      ],
+      "width_m": 0.75,
+      "depth_m": 0.38,
+      "height_m": 0.46,
+      "aerial_max_match_distance_m": 0.869,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -457.4,
+        -561.85
+      ],
+      "width_m": 1.25,
+      "depth_m": 0.67,
+      "height_m": 1.18,
+      "aerial_max_match_distance_m": 0.847,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -451.06,
+        -561.19
+      ],
+      "width_m": 0.75,
+      "depth_m": 0.25,
+      "height_m": 0.39,
+      "aerial_max_match_distance_m": 0.831,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -380.18,
+        -409.46
+      ],
+      "width_m": 0.88,
+      "depth_m": 0.25,
+      "height_m": 0.56,
+      "aerial_max_match_distance_m": 0.729,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -457.27,
+        -554.17
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.62,
+      "height_m": 0.93,
+      "aerial_max_match_distance_m": 0.764,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -357.01,
+        -452.97
+      ],
+      "width_m": 0.75,
+      "depth_m": 0.5,
+      "height_m": 0.28,
+      "aerial_max_match_distance_m": 0.861,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -354.51,
+        -413.02
+      ],
+      "width_m": 1.0,
+      "depth_m": 0.5,
+      "height_m": 0.96,
+      "aerial_max_match_distance_m": 0.896,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -375.23,
+        -586.12
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.38,
+      "height_m": 0.6,
+      "aerial_max_match_distance_m": 0.856,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -382.84,
+        -535.13
+      ],
+      "width_m": 0.75,
+      "depth_m": 0.5,
+      "height_m": 0.28,
+      "aerial_max_match_distance_m": 0.556,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -384.12,
+        -594.45
+      ],
+      "width_m": 0.88,
+      "depth_m": 0.62,
+      "height_m": 1.03,
+      "aerial_max_match_distance_m": 0.814,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -389.92,
+        -529.07
+      ],
+      "width_m": 0.88,
+      "depth_m": 0.62,
+      "height_m": 0.48,
+      "aerial_max_match_distance_m": 0.845,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -389.23,
+        -430.56
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.38,
+      "height_m": 0.34,
+      "aerial_max_match_distance_m": 0.652,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -354.69,
+        -577.28
+      ],
+      "width_m": 0.75,
+      "depth_m": 0.5,
+      "height_m": 0.38,
+      "aerial_max_match_distance_m": 0.826,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -495.16,
+        -576.78
+      ],
+      "width_m": 0.75,
+      "depth_m": 0.38,
+      "height_m": 0.77,
+      "aerial_max_match_distance_m": 0.894,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -348.66,
+        -583.04
+      ],
+      "width_m": 0.75,
+      "depth_m": 0.38,
+      "height_m": 0.68,
+      "aerial_max_match_distance_m": 0.85,
+      "silhouette": "upright"
+    },
+    {
+      "position_enu_m": [
+        -399.05,
+        -551.16
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.5,
+      "height_m": 0.43,
+      "aerial_max_match_distance_m": 0.847,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -392.25,
+        -446.38
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.38,
+      "height_m": 0.28,
+      "aerial_max_match_distance_m": 0.849,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -392.25,
+        -448.88
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.38,
+      "height_m": 0.41,
+      "aerial_max_match_distance_m": 0.773,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -392.21,
+        -516.34
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.5,
+      "height_m": 0.48,
+      "aerial_max_match_distance_m": 0.823,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -366.4,
+        -554.86
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.5,
+      "height_m": 0.35,
+      "aerial_max_match_distance_m": 0.883,
+      "silhouette": "low"
+    },
+    {
+      "position_enu_m": [
+        -389.38,
+        -449.75
+      ],
+      "width_m": 0.62,
+      "depth_m": 0.38,
+      "height_m": 0.33,
+      "aerial_max_match_distance_m": 0.874,
+      "silhouette": "low"
+    }
+  ],
+  "marker_reference": "Matched small pale features in all three Lane County aerials with a manual visual screen. Localized silhouettes and heights are estimates. No burial names assigned."
+}

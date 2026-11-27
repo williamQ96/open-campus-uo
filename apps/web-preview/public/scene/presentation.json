@@ -2158,5 +2158,9 @@
   "neighborhood_exterior_closeout_site": {
     "url": "neighborhood-exterior-closeout-review/site.json",
     "sha256": "94178f8f8ec4fc2a11ac099c107d7ebbd9ee9bbbd48f3efedea00b89247b6fd2"
+  },
+  "pioneer_cemetery_landscape_site": {
+    "url": "pioneer-cemetery-landscape-review/site.json",
+    "sha256": "4ea92fe0c821fd613fe60e70a436aa3bdd757ac109e3d9be7f72309cbad3be89"
   }
 }

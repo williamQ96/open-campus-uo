@@ -1,4 +1,8 @@
 import { expect, test } from "@playwright/test";
+import {
+  DEFAULT_BACKGROUND_TREES,
+  DEFAULT_VISIBLE_SOURCE_TREES,
+} from "./exterior-counts.js";
 
 const baseline = "/?exterior-review=context-tree-model-baseline";
 
@@ -26,11 +30,14 @@ test("the rebuilt background layer retains the active site tree decisions", asyn
   const prior = await readScene(page, baseline);
   expect(prior).toMatchObject({
     sourceTrees: 600,
-    trees: 542,
+    trees: DEFAULT_VISIBLE_SOURCE_TREES,
     contextTrees: 0,
     pilotTrees: 273,
   });
-  expect(await readScene(page)).toEqual({ ...prior, contextTrees: 269 });
+  expect(await readScene(page)).toEqual({
+    ...prior,
+    contextTrees: DEFAULT_BACKGROUND_TREES,
+  });
 });
 
 test("the Alder baseline also restores its original background tree", async ({
@@ -40,10 +47,13 @@ test("the Alder baseline also restores its original background tree", async ({
     page,
     "/?exterior-review=alder-thirteenth-exterior-baseline",
   );
-  expect(restored).toMatchObject({ trees: 543, contextTrees: 270 });
+  expect(restored).toMatchObject({
+    trees: DEFAULT_VISIBLE_SOURCE_TREES + 1,
+    contextTrees: DEFAULT_BACKGROUND_TREES + 1,
+  });
   expect(await readScene(page)).toMatchObject({
-    trees: 542,
-    contextTrees: 269,
+    trees: DEFAULT_VISIBLE_SOURCE_TREES,
+    contextTrees: DEFAULT_BACKGROUND_TREES,
   });
 });
 

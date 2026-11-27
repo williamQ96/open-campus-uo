@@ -6,6 +6,12 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-26 - Publish the first Pioneer Cemetery landscape package
+
+- Registered eight gravel ways, the eleven-step University Street entry, East 18th retaining walls, the cemetery sign, the GAR monument, 23 representative stone markers, six heritage rose clusters and 121 estimated tree crowns. Fifteen conflicting procedural trees are suppressed in the default scene. [Site and source review](docs/pioneer-cemetery-landscape-review-2026-11-26.md).
+- Both exports are byte-identical. Five paired views, a 113.61 m route and the desktop and phone standing-height and collision checks passed. Failed asset verification restores the previous site and tree ranges. The production build, 197 unit tests, eight related browser cases and 459 archive checks passed. Both device inventories contain the same 610 selectable exteriors.
+- Release through the GitHub Pages workflow on main. The site audit records the remaining cemetery details and other landscapes by feature. [Deployment history](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml) · [Landscape coverage](docs/landscape-l2-inventory.md).
+
 ## 2026-11-26 - Publish the completed outdoor L2 scene
 
 - Package the completed outdoor scene for the default GitHub Pages explorer. The release includes 610 active L2 building and freestanding-facility exteriors, 15 L2 outdoor asset groups, and 54 historical mappings. [Exterior inventory](docs/asset-refinement-inventory.md).

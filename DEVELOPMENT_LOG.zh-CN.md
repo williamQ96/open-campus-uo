@@ -6,6 +6,12 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-26 - 发布 Pioneer Cemetery 首批景观
+
+- 配准八条砂石道、University Street 东入口 11 级台阶、东 18 街挡墙、墓园石牌、GAR 纪念碑、23 处代表性墓碑、六处遗产玫瑰和 121 个估算树冠。默认场景抑制 15 株位置冲突的程序背景树。[场地及资料复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md)。
+- 两次导出一致。五组前后视角、113.61 米路线及桌面和手机的站立高度与碰撞核对通过。资产校验失败时恢复旧场景及原树网格。生产构建、197 项单测、八项相关浏览器用例及 459 项资产检查通过。桌面和手机均核对到同一组 610 个可选外观。
+- 通过 main 分支的 GitHub Pages 工作流发布。墓园剩余构件和其他景观按地点逐项核对。[部署记录](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml) · [景观覆盖台账](docs/landscape-l2-inventory.md)。
+
 ## 2026-11-26 - 发布已完成的室外 L2 场景
 
 - 为默认 GitHub Pages 场景打包已完成的室外内容，包含 610 项在用 L2 建筑及独立室外设施、15 组 L2 室外资产和 54 条历史映射。[室外资产台账](docs/asset-refinement-inventory.md)。

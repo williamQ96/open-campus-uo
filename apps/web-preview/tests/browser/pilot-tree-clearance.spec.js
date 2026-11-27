@@ -1,5 +1,10 @@
 import { expect, test } from "@playwright/test";
-import { exteriorCounts } from "./exterior-counts.js";
+import {
+  DEFAULT_VISIBLE_SOURCE_TREES,
+  exteriorCounts,
+} from "./exterior-counts.js";
+
+const WITH_PRIOR_PILOT_PLANTING = DEFAULT_VISIBLE_SOURCE_TREES + 25;
 
 async function ready(page, url = "/") {
   await page.goto(url);
@@ -24,9 +29,9 @@ test("default planting clears the two sites and keeps all building approaches", 
   const before = await page.evaluate(read);
   await ready(page);
   const after = await page.evaluate(read);
-  expect(before.visible).toBe(567);
+  expect(before.visible).toBe(WITH_PRIOR_PILOT_PLANTING);
   expect(before.fitted).toBe(0);
-  expect(after.visible).toBe(542);
+  expect(after.visible).toBe(DEFAULT_VISIBLE_SOURCE_TREES);
   expect(after.fitted).toBe(11);
   expect(after.source).toBe(600);
   const [buildings, , roofs] = exteriorCounts();
@@ -59,7 +64,7 @@ test("invalid tree clearance bytes keep previous planting and confirmed site ent
     trees: __campus.getState().presentation.trees,
     fitted: __campus.getState().presentation.registeredPilotTrees,
   }));
-  expect(result).toEqual({ trees: 567, fitted: 11 });
+  expect(result).toEqual({ trees: WITH_PRIOR_PILOT_PLANTING, fitted: 11 });
   expect(await page.evaluate(entranceKeys)).toEqual(gates);
 });
 
@@ -78,6 +83,6 @@ test("invalid registration bytes keep clearance and the base tree positions", as
   const { trees, registeredPilotTrees } = await page.evaluate(
     () => __campus.getState().presentation,
   );
-  expect(trees).toBe(542);
+  expect(trees).toBe(DEFAULT_VISIBLE_SOURCE_TREES);
   expect(registeredPilotTrees).toBe(0);
 });
