@@ -59,7 +59,7 @@ test("a damaged base cemetery also rolls back its inner plot details", async ({
     route.fulfill({ body: "invalid base cemetery geometry" }),
   );
   expect(await readPlots(page)).toEqual({
-    buildings: DEFAULT_SELECTABLE_BUILDINGS,
+    buildings: DEFAULT_SELECTABLE_BUILDINGS - 1,
     grass: null,
     marker: false,
     southMarkers: [false, false, false],

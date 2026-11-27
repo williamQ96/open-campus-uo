@@ -2291,5 +2291,9 @@
   "hedco_courtyard_landscape_site": {
     "url": "hedco-courtyard-landscape-review/site.json",
     "sha256": "a4959d290a0ef2e1ef1fba728ee3914cf4e1c8d74b9242d86b8d4272ab8d6c7d"
+  },
+  "education_annex_site": {
+    "url": "education-annex-review/site.json",
+    "sha256": "7842e6f6dc6781d692522de6b332e55c4881832f272d10144972a43d396dd0ec"
   }
 }

@@ -6,6 +6,11 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Education Annex 与西侧入口景观 L2
+
+- 将校方 B0048 登记为可选的 L2 外部模型，保留原有 610 个外部模型 ID。补建西门廊、7.39 米坡道、四级外梯、楼名牌与植床。8 条导航边将入口接入 Kendall Plaza 绕行步道。坡道高差和门槛标高采用影像估算。[Annex 复核](docs/education-annex-landscape-review-2026-11-27.md)。
+- Annex 包或其接驳场地加载失败时，仍可使用原有 610 模型场景。生产构建、格式检查、200 项单元测试、519 项资产归档核对、查看器哈希以及模型与步行覆盖的重复导出均通过。桌面与手机生产预览均匹配全部 611 个外部模型 ID，加载 458 个出入口和 396 项受检资源。抽检的 75 个文件与构建文件哈希一致。本次从 `main` 部署到 GitHub Pages。[Pages 工作流](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
 ## 2026-11-27 - 发布 Frohnmayer 东侧车道、Pioneer Cemetery 西缘植被与 HEDCO 庭院 L2
 
 - 配准 Frohnmayer 东侧车道、两条步道及 Lot 20 至 East 18th 的连接。新增 46 条导航边，新铺面成功加载时替换 30 条推断旧边。抽检的端到端路线长 218.729 米。[车道复核](docs/frohnmayer-east-drive-2026-11-27.md)。

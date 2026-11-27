@@ -6,6 +6,11 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Education Annex and its west approach
+
+- Add University of Oregon building B0048 as a selectable L2 exterior, preserving the previous 610 exterior IDs. Its west porch, 7.39 m ramp, four-tread stair, name sign and planting beds model the outdoor approach. Eight route edges connect the entrance to the Kendall Plaza bypass. The ramp and door thresholds use image-based estimates. [Annex review](docs/education-annex-landscape-review-2026-11-27.md).
+- A damaged Annex bundle or unavailable approach dependency leaves the previous 610-model scene available. The production build, formatting, 200 unit tests, 519 asset archive records, viewer hashes and repeated asset and route coverage exports pass. Desktop and phone production previews each matched all 611 exterior IDs to loaded geometry, with 458 entrances and 396 successful tracked responses. All 75 sampled files match the build by SHA-256. This release targets GitHub Pages from `main`. [Pages workflow](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
 ## 2026-11-27 - Release Frohnmayer east drive, Pioneer Cemetery west belt and HEDCO courtyard
 
 - Register the Frohnmayer service drive, two walks and the Lot 20 to East 18th connection. Add 46 navigation edges and retire 30 inferred road edges while the replacement surfaces are loaded. The sampled end-to-end route is 218.729 m. [Frohnmayer review](docs/frohnmayer-east-drive-2026-11-27.md).

@@ -14,6 +14,7 @@ cemetery = import_module("build-pioneer-cemetery-landscape-review")
 green = import_module("build-southwest-campus-green")
 education = import_module("build-kincaid-education-landscape")
 kendall = import_module("build-kendall-plaza-landscape")
+annex = import_module("build-education-annex-landscape")
 knight_north = import_module("build-knight-north-plaza")
 plc_east = import_module("build-plc-east-court")
 dropoff = import_module("build-clinical-dropoff-landscape")
@@ -63,6 +64,16 @@ def kendall_coverage(spec):
     brick, concrete, _, _ = kendall.footprints(spec, buildings)
     south_paths, gravel_access, _, _, _ = kendall.south_lawn_footprints(spec, buildings)
     return unary_union([brick, concrete, south_paths, gravel_access])
+
+
+def annex_coverage(spec):
+    return unary_union(
+        [
+            annex.approach_walk(spec),
+            box(*spec["porch_enu_m"]),
+            *annex.ramp_footprints(spec),
+        ]
+    ).difference(box(*spec["body_enu_m"]))
 
 
 def dropoff_coverage(spec):
@@ -162,6 +173,12 @@ def main():
             kendall.PACKAGE,
             kendall_coverage(
                 green.site.read(metadata / "kendall-plaza-landscape.json")
+            ),
+        ),
+        encode_coverage(
+            annex.PACKAGE,
+            annex_coverage(
+                green.site.read(metadata / "education-annex-landscape.json")
             ),
         ),
         encode_coverage(

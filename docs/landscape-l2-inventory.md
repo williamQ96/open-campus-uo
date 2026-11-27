@@ -27,6 +27,7 @@
 | HEDCO 露天庭院铺面、植床与设施 | 纳入本次 L2 发布 | 以四期航片和校方资料配准 350.62 平方米草坪、623.67 平方米铺面、两座花池、南侧植床、西缘矮墙、三张长椅、三盏灯和一株登记乔木。西侧门槛与庭院精确高程仍待核对。[场地复核](hedco-courtyard-landscape-2026-11-27.md) |
 | HEDCO 南落客区、Lot 19 与 Clinical Services 北侧步道 | 纳入本次 L2 发布 | 四期航片配准 1,858.69 平方米沥青、295.29 平方米步道、四个路缘种植岛、两个条纹过街口、停车导流标线和五枚方向箭头。26 条导航边连接 Kendall 南步道与停车区对侧。标线及路缘坡度为估算。[场地复核](clinical-dropoff-landscape-2026-11-27.md) |
 | Kendall Plaza 的《Unity and Harmony》 | 已配准南草坪作品位置 | 三期航片与校方照片配准两座石盆、中央有孔构件和砾石场地。下层广场标出两张石凳候选位置，单件身份、Clinical Services 点位和雕塑几何待核对。[作品复核](kendall-plaza-landscape-review-2026-11-27.md#unity-and-harmony) |
+| Education Annex 西门廊、坡道与标识 | 纳入本次 L2 发布 | 按校方 B0048 轮廓补建红木瓦屋体、凸出门廊、坡道、四级外梯和绿底楼名牌。两处植床位于步道外。八条边接入 Kendall Plaza 东侧步道，三条抽检路线通过铺面校验。坡道尺寸和门槛高程按影像估算。[场地复核](education-annex-landscape-review-2026-11-27.md) |
 | Knight Library 北广场与 Bailey 喷泉 | 已纳入 L2 发布 | 根据历史测绘、三期航片及 2026 年施工照片重建 875.78 平方米混凝土铺面、喷泉、四张石凳、三处植床与 14 条导航边。四株樱花的移除有记录，补植点位、新灯剖面及喷泉运行状态待核对。[场地复核](knight-north-plaza-review-2026-11-27.md) |
 | Memorial Quadrangle 南端步道与 Knight Library 接合 | 已纳入 L2 发布 | 三期航片和校方平面图配准南侧交叉步道、两侧直行道和北广场接合铺面。南端保留中央草坪。导航落点使用建模铺面边界，树冠挡住的末端分段和宽度为估算。[铺面复核](paving-corridors-l2-2026-11-26.md#memorial-quadrangle-south-walks-and-knight-library-apron) |
 | PLC 东庭院铺面、台阶与植床 | 已纳入 L2 发布 | 四期航片与 NOAA 地面点配准 497.51 平方米铺装、四级台阶、三处植床、两株登记树和约略的《Vigil》底座。14 条导航边接入 Memorial Quad 和两处既有门口。[场地复核](plc-east-court-review-2026-11-27.md) |

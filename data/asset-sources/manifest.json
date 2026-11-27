@@ -3352,6 +3352,18 @@
       "sha256": "a4959d290a0ef2e1ef1fba728ee3914cf4e1c8d74b9242d86b8d4272ab8d6c7d",
       "license": "CC-BY-4.0",
       "origin": "Original HEDCO courtyard surfaces, planters, planting and furnishings registered from Lane County orthophotos and UO documentation. See docs/hedco-courtyard-landscape-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/education-annex-review/site.json": {
+      "sha256": "7842e6f6dc6781d692522de6b332e55c4881832f272d10144972a43d396dd0ec",
+      "bytes": 1717,
+      "license": "CC-BY-4.0",
+      "origin": "Original Education Annex exterior and approach geometry informed by University of Oregon footprint and photographs and NOAA elevations. See docs/education-annex-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/education-annex-review/site.glb": {
+      "sha256": "8db7fbd77c5c379373601fdf602d76604758dfe0731e46c19782353a247ef21f",
+      "bytes": 265180,
+      "license": "CC-BY-4.0",
+      "origin": "Original Education Annex exterior and approach geometry informed by University of Oregon footprint and photographs and NOAA elevations. See docs/education-annex-landscape-review-2026-11-27.md."
     }
   },
   "additional_sources": [

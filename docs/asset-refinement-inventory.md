@@ -16,7 +16,7 @@
 
 | 范围 | 明细行 | 当前状态 |
 | --- | ---: | --- |
-| 建筑外部及独立室外设施 | 664 | 610 项 L2、0 项独立 L1、54 项停用或并入模型的 L1 历史记录 |
+| 建筑外部及独立室外设施 | 665 | 611 项 L2、0 项独立 L1、54 项停用或并入模型的 L1 历史记录 |
 | 各建筑独立内部 | 663 | 均标为未创建，等级留空，当前进入时使用共用教室 |
 | 室外植被、景观、道具及角色动物 | 15 | 15 组 L2 |
 | 共用室内 | 1 | 现有 L1 共用教室 |
@@ -64,7 +64,7 @@ Field 1 重建约 5,515 平方米人工草坪、两座球门及北缘围栏，�
 
 East 15th 从 University Street 至 Agate 本地补建 Straub 侧人行道、Onyx 双线过街和 Hayward 北侧铺砖步行道。Powell Plaza 复原三根主旗杆、曲线低台、信息牌和深色门栏。标线、旗帜、树冠和座椅采用现场照片支持的代表性几何。[East 15th 和 Powell Plaza 复核](east-fifteenth-hayward-review-2026-11-27.md)。
 
-室外目标追踪 679 条记录，包括 664 条建筑外部及独立室外设施和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 663 条计划室内记录另列。当前有 610 项 L2 外观、15 组 L2 室外资产，独立在用 L1 为 0 项，另保留 54 条合并或停用后的历史映射。历史映射涉及 Garden、Franklin、Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church、The Studies at 19th、1544 Alder 的旧局部、Walnut Path 步桥旧网格、967 Patterson 旧建筑、Arena 前广场、Walnut 停车区、铁路跨线桥、储冷罐地块、Knight Library 西侧草坪、Grace Lutheran Church 旧分段、Hamilton Hall 五段已拆网格、Franklin 沿线两处停车区旧网格及 Patterson 原 YMCA 已拆网格，原 ID 和等级记录保存在 CSV。默认场景有 610 个可选建筑及独立设施。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
+室外目标追踪 680 条记录，包括 665 条建筑外部及独立室外设施和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 663 条计划室内记录另列。当前有 611 项 L2 外观、15 组 L2 室外资产，独立在用 L1 为 0 项，另保留 54 条合并或停用后的历史映射。历史映射涉及 Garden、Franklin、Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church、The Studies at 19th、1544 Alder 的旧局部、Walnut Path 步桥旧网格、967 Patterson 旧建筑、Arena 前广场、Walnut 停车区、铁路跨线桥、储冷罐地块、Knight Library 西侧草坪、Grace Lutheran Church 旧分段、Hamilton Hall 五段已拆网格、Franklin 沿线两处停车区旧网格及 Patterson 原 YMCA 已拆网格，原 ID 和等级记录保存在 CSV。当前默认场景有 611 个可选建筑及独立设施。Education Annex 以校方 B0048 身份新增一项。[Education Annex 复核](education-annex-landscape-review-2026-11-27.md)。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
 
 Alpha Omega House、Fire Station 13、Birch 和 Fairmount 一带三栋住宅及 634–640 East 16th Alley 完成 L2。Patterson 旧 YMCA 归入历史映射，现状开敞地和铺装纳入 ENV-05。桌面和手机均已逐项核对 610 个默认可选建筑及独立设施的 ID。[最后一组外观复核](neighborhood-exterior-closeout-2026-11-26.md)。
 

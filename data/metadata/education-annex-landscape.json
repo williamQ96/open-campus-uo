@@ -1,0 +1,324 @@
+{
+  "official_code": "B0048",
+  "name": "Education Annex",
+  "street_address": "922 East 16th Avenue",
+  "extent": [
+    -613,
+    -428,
+    -595,
+    -403
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "sites": {
+      "knight-library-review": "65983f043cf10a13f2fe5169aba754e8b28a70022c46dcfa66c5d879b1070598",
+      "pioneer-cemetery-landscape-review": "28d050e1b3eabcf7d4fdcc868cf939a330d5907927f0c31d315f194c9074722d",
+      "plc-lokey-tykeson-review": "c0884ac85424815bd3209e2e3964ddc040ee49e6e3bac526bf360afd5cff2485",
+      "riverfront-plant-infrastructure-review": "27b060a8ada406f13e8c71065d01a82d6304c14ee38c2faea54e643348eb18cf",
+      "campus-frontage-review": "86e915ab85f7df842cfe5d950c83e69cdac57ecb8f77a18c59caeafba5635802",
+      "hedco-exterior-review": "0f5c5912f9ea81bfa362a75fd50da06aff755de5d313320a93f5153a7866792f",
+      "southwest-campus-green-review": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
+      "kincaid-education-landscape-review": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a",
+      "kendall-plaza-landscape-review": "0db8143bc949e48742657a5f790360ae16b514629bbda973bb33396a122bab5c"
+    }
+  },
+  "sources": {
+    "campus_map": "https://map.uoregon.edu/",
+    "campus_map_response_sha256": "7112477228e8e3ac125548b3abd94180cd8f972c797db78373754cba7384b761",
+    "UO_survey": "https://cpfm.uoregon.edu/sites/default/files/2025-01/educationannex_2025.pdf",
+    "UO_survey_sha256": "b65e1982bfe95ad84f3bc5a0da6a1fa86b071b6d275ddd5f5ded34058e85b4f0",
+    "map_photo": "https://map.uoregon.edu/resources/aws/popup-images/education-annex.jpg",
+    "map_photo_sha256": "034ba73e8f7b9baad61dad989c8545f289a4294ee390fd9514a3b54d890a524b",
+    "NOAA": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1309.copc.laz",
+    "cloud_sha256": "8d21e279656061e5cf1217f60727bfc1090db8bd27abaca0b1fc56591fca0961",
+    "orthophotos": [
+      {
+        "tile": "kendall-plaza",
+        "year": 2017,
+        "file": "kendall-plaza-2017.png",
+        "bounds_enu_m": [
+          -700,
+          -459,
+          -588,
+          -366
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493629.14928888186%2C4876469.282153052%2C493741.14928888186%2C4876562.282153052&bboxSR=3740&imageSR=3740&size=896%2C744&layers=show%3A29&format=png32",
+        "sha256": "d494e025254b1e2bd3054a9028cae13969fa26a6b3413a91648461d03182f92c"
+      },
+      {
+        "tile": "kendall-plaza",
+        "year": 2021,
+        "file": "kendall-plaza-2021.png",
+        "bounds_enu_m": [
+          -700,
+          -459,
+          -588,
+          -366
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493629.14928888186%2C4876469.282153052%2C493741.14928888186%2C4876562.282153052&bboxSR=3740&imageSR=3740&size=896%2C744&layers=show%3A26&format=png32",
+        "sha256": "1be866686cca264004856766059d9508a31a2243e7fdddfaa605caf47cc2f3f1"
+      },
+      {
+        "tile": "kendall-plaza",
+        "year": 2025,
+        "file": "kendall-plaza-2025.png",
+        "bounds_enu_m": [
+          -700,
+          -459,
+          -588,
+          -366
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493629.14928888186%2C4876469.282153052%2C493741.14928888186%2C4876562.282153052&bboxSR=3740&imageSR=3740&size=896%2C744&layers=show%3A57&format=png32",
+        "sha256": "42f21de51039f5537801898482689cbcdf4aa6d808652664830b2967ee6937c9"
+      }
+    ],
+    "campus_building_inventory": "https://cpfm.uoregon.edu/sites/default/files/2025-09/02_buildings_by_number_fy2025-1.pdf"
+  },
+  "registered_map_footprint_enu_m": [
+    [
+      -597.4925,
+      -407.1317
+    ],
+    [
+      -604.1319,
+      -407.1384
+    ],
+    [
+      -604.9977,
+      -407.1394
+    ],
+    [
+      -605.2712,
+      -407.1396
+    ],
+    [
+      -605.8635,
+      -407.1401
+    ],
+    [
+      -605.869,
+      -413.1156
+    ],
+    [
+      -606.6567,
+      -413.1149
+    ],
+    [
+      -606.9195,
+      -413.1146
+    ],
+    [
+      -607.087,
+      -413.1145
+    ],
+    [
+      -608.3055,
+      -413.1134
+    ],
+    [
+      -608.3088,
+      -416.7706
+    ],
+    [
+      -607.0232,
+      -416.7718
+    ],
+    [
+      -606.8902,
+      -416.7719
+    ],
+    [
+      -605.8721,
+      -416.7728
+    ],
+    [
+      -605.8729,
+      -417.6979
+    ],
+    [
+      -605.8776,
+      -423.0385
+    ],
+    [
+      -604.5568,
+      -423.0399
+    ],
+    [
+      -597.5064,
+      -423.0461
+    ]
+  ],
+  "body_enu_m": [
+    -605.87,
+    -423.04,
+    -597.51,
+    -407.14
+  ],
+  "foundation_z_m": 9.32,
+  "siding_z_m": 10.4,
+  "eave_z_m": 13.89,
+  "ridge_z_m": 16.95,
+  "roof_enu_m": [
+    -606.24,
+    -423.4,
+    -597.1,
+    -406.81
+  ],
+  "ridge_e_m": -601.68,
+  "porch_enu_m": [
+    -608.35,
+    -416.85,
+    -605.87,
+    -413.07
+  ],
+  "porch_z_m": 10.66,
+  "ramp_enu_m": [
+    -608.89,
+    -424.24,
+    -607.54,
+    -416.85
+  ],
+  "ramp_base_z_m": 10.29,
+  "steps_enu_m": [
+    -607.87,
+    -413.07,
+    -606.19,
+    -411.79
+  ],
+  "steps_low_z_m": 10.01,
+  "stair_treads": 4,
+  "approach_walk_enu_m": [
+    [
+      -611.32,
+      -420.1
+    ],
+    [
+      -610.48,
+      -422.35
+    ],
+    [
+      -609.97,
+      -424.89
+    ],
+    [
+      -608.215,
+      -424.89
+    ],
+    [
+      -608.215,
+      -423.75
+    ],
+    [
+      -608.215,
+      -419.9
+    ],
+    [
+      -608.215,
+      -417.74
+    ],
+    [
+      -607.26,
+      -417.46
+    ],
+    [
+      -607.87,
+      -414.95
+    ]
+  ],
+  "sign_enu_m": [
+    -609.66,
+    -425.73
+  ],
+  "plant_beds_enu_m": [
+    [
+      [
+        -610.4,
+        -426.14
+      ],
+      [
+        -608.94,
+        -427.1
+      ],
+      [
+        -606.1,
+        -426.01
+      ],
+      [
+        -606.45,
+        -424.27
+      ],
+      [
+        -607.7,
+        -424.52
+      ],
+      [
+        -608.6,
+        -425.35
+      ]
+    ],
+    [
+      [
+        -609.21,
+        -410.71
+      ],
+      [
+        -608.0,
+        -408.62
+      ],
+      [
+        -606.18,
+        -407.64
+      ],
+      [
+        -606.21,
+        -411.12
+      ],
+      [
+        -607.89,
+        -411.41
+      ]
+    ]
+  ],
+  "tree_record_ids": [
+    979,
+    982,
+    983
+  ],
+  "registration": {
+    "map_plan_area_m2": 142.07,
+    "modeled_union_overlap": 0.99822,
+    "first_returns_on_roof_within_0_4m": 789,
+    "median_abs_residual_m": 0.105,
+    "nearest_existing_footprints": [
+      [
+        26.6,
+        "context-b0010",
+        "scene",
+        0.0
+      ],
+      [
+        31.03,
+        "roof-5bbb5fd1",
+        "plc-lokey-tykeson-review",
+        0.0
+      ],
+      [
+        32.77,
+        "context-b0010",
+        "hedco-exterior-review",
+        0.0
+      ],
+      [
+        34.62,
+        "roof-5bbb5fd1",
+        "scene",
+        0.0
+      ]
+    ]
+  }
+}

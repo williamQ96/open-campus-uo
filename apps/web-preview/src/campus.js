@@ -1976,6 +1976,24 @@ async function loadCampusScene(base, manifest, settings) {
       ids: [],
       prerequisiteIds: ["roof-c1ff8b83"],
     },
+    "education-annex-landscape": {
+      descriptor: config?.education_annex_site,
+      directory: "education-annex-review",
+      groundNode: "education-annex-approach",
+      walkableGroundNode: "education-annex-approach",
+      navigationUrl: settings.navigation_url,
+      navigationPredecessors: [
+        config?.pioneer_cemetery_landscape_site,
+        config?.southwest_campus_green_site,
+        config?.kincaid_education_landscape_site,
+        config?.kendall_plaza_landscape_site,
+      ].filter(Boolean),
+      ids: ["uo-education-annex"],
+      newBuildingIds: ["uo-education-annex"],
+      registeredAddresses: {
+        "uo-education-annex": ["Education Annex", "922 East 16th Avenue"],
+      },
+    },
     "howe-field-gates": {
       descriptor: config?.howe_field_gates_site,
       directory: "howe-field-gates-review",
@@ -4289,6 +4307,7 @@ async function loadCampusScene(base, manifest, settings) {
     "kincaid-education-landscape",
     "kendall-plaza-landscape",
     "clinical-dropoff-landscape",
+    "education-annex-landscape",
     "howe-field-gates",
     "dads-gates-landscape",
     "east-thirteenth-west-gateway",
