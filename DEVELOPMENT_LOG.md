@@ -6,6 +6,10 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Align southwest fallback tests with the 610-model release
+
+- The Southwest Campus Green, Kincaid and Kendall failure scenarios each keep 610 selectable exteriors in the release. Correct the three assertions that expected the research-only Annex to disappear. All 19 other focused browser cases passed on the published scene build, and the three corrected cases passed on rerun. This change updates test expectations.
+
 ## 2026-11-27 - Release Memorial Quadrangle paths, Bailey oaks, plaques and PLC east courtyard
 
 - Refit the south crossing, the east walk and the X north of the ring. Join the straight walks to the Knight Library apron and constrain pin connections to the surveyed paving. Register the eight Bailey oaks and 26.45 m² of root openings. Crown and trunk details use estimates. [Paving review](docs/paving-corridors-l2-2026-11-26.md#memorial-quadrangle-south-walks-and-knight-library-apron) · [Bailey oak review](docs/memorial-quad-bailey-oaks-2026-11-27.md).

@@ -6,6 +6,10 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 校正 610 模型发布版的西南景观回退测试
+
+- 发布版中，Southwest Campus Green、Kincaid 或 Kendall 景观资源加载失败时均保留 610 个可选外观。修正三条沿用研究版 Annex 数量的断言。其余 19 项针对性浏览器测试通过，修正后的三项已重跑通过。本次更新测试断言。
+
 ## 2026-11-27 - 发布 Memorial Quadrangle 步道、Bailey 橡树、铭牌及 PLC 东庭院
 
 - 校正南端交叉步道、东侧步道和圆环北侧交叉斜道，两侧直行道接入 Knight Library 北广场。导航落点沿已配准铺面接入。按校方登记补建八株 Bailey 橡树和共 26.45 平方米的根区。树冠和树干细节为估算。[步道复核](docs/paving-corridors-l2-2026-11-26.md#memorial-quadrangle-south-walks-and-knight-library-apron) · [橡树复核](docs/memorial-quad-bailey-oaks-2026-11-27.md)。
