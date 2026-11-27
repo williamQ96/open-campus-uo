@@ -3052,6 +3052,42 @@
       "sha256": "ecfd2928ff013175b89900ad731cd141ffbdf7ccbe19dd71f45ac002191926a9",
       "license": "CC-BY-4.0",
       "origin": "Original Dads Gates and Normal Gate ironwork, paving, curbs and planting geometry. See docs/dads-gates-landscape-review-2026-11-27.md and docs/normal-gate-axis-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-thirteenth-west-gateway-review/site.glb": {
+      "bytes": 1054196,
+      "sha256": "4d37bc40a341f842d1b0b59fdc8b19c090df7d7f2bb8130dfa6bc9143cfc60f3",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 13th Avenue west gateway, crosswalks and Lillis Plaza paving and planters. See docs/east-thirteenth-west-gateway-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-thirteenth-west-gateway-review/site.json": {
+      "bytes": 2242,
+      "sha256": "c20ff4c0ffe1c1cc8eed21223cd634a0139ad3147ef3239c16a17735344f0220",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 13th Avenue west gateway, crosswalks and Lillis Plaza paving and planters. See docs/east-thirteenth-west-gateway-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-thirteenth-central-review/site.glb": {
+      "bytes": 1953780,
+      "sha256": "dff76f142a8db3a7669631c8e6265e8fd26ee9b14735b7f3b2caed878b0ac72f",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 13th Avenue corridor paving, bike shelters, Heart of Campus and site vegetation. See docs/east-thirteenth-central-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-thirteenth-central-review/site.json": {
+      "bytes": 2904,
+      "sha256": "e2e6452c686a8114032f01632273dc221761535fa7e8bdcf82fa37c422b3f134",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 13th Avenue corridor paving, bike shelters, Heart of Campus and site vegetation. See docs/east-thirteenth-central-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-thirteenth-east-review/site.glb": {
+      "bytes": 2532040,
+      "sha256": "7ad8b87742903b2bb4b50127709c5b76456e831e0e7af66cb158d33d6f2213b8",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 13th Avenue east corridor, EMU turnaround and Agate crossings. See docs/east-thirteenth-east-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/east-thirteenth-east-review/site.json": {
+      "bytes": 3140,
+      "sha256": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570",
+      "license": "CC-BY-4.0",
+      "origin": "Original East 13th Avenue east corridor, EMU turnaround and Agate crossings. See docs/east-thirteenth-east-review-2026-11-27.md."
     }
   },
   "additional_sources": [

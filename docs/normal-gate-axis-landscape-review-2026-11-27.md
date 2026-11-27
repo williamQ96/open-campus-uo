@@ -6,7 +6,7 @@ The 2017, 2021 and 2025 orthophotos show a straight service-drive approach to Un
 
 The corrected north approach contributes 29 route edges and the southern branch contributes 36. Five paired production views cover the arbor, paths and junctions. Both production browser profiles loaded geometry for all 610 exterior IDs and returned a 174.87 m route from East 11th Avenue to the north Lillis apron and a 108.47 m route to the bend near the arbor. Five paving probes were passable and the arbor support registered collision. The two independent exports matched byte for byte.
 
-The 13th Avenue Phase A milestone in fall 2025 was completion of construction documents. The project page lists implementation funding as pending. The current street surfaces at Kincaid and the post, planter and crossing layout visible in the 2025 county imagery remain follow-up work. [UO 13th Avenue project](https://cpfm.uoregon.edu/13th-avenue) · [UO project phase and funding](https://cpfm.uoregon.edu/13th-avenue-axis-conceptual-design).
+The 13th Avenue Phase A milestone in fall 2025 was completion of construction documents. The project page lists implementation funding as pending. The next site review uses the 2025 county imagery to model the Kincaid street surface, bollards, planters and crossings. [West gateway review](east-thirteenth-west-gateway-review-2026-11-27.md). [UO 13th Avenue project](https://cpfm.uoregon.edu/13th-avenue) · [UO project phase and funding](https://cpfm.uoregon.edu/13th-avenue-axis-conceptual-design).
 
 - [Editable site registration](../data/metadata/normal-gate-axis.json)
 - [Normal Gate and south axis builder](../scripts/build-normal-gate-axis.py)

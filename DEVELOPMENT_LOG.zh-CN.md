@@ -6,6 +6,24 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 East 13th Avenue 景观 L2
+
+- 发布 Kincaid 至 Columbia 三段景观，涵盖西入口、Lillis 广场、Heart of Campus 纪念砖、EMU 回转圆场与自行车棚、Agate 路口过街线及 Duck Dunes 步道。三段合计新增 180 条行人导航边。[西入口复核](docs/east-thirteenth-west-gateway-review-2026-11-27.md) · [中段复核](docs/east-thirteenth-central-review-2026-11-27.md) · [东段复核](docs/east-thirteenth-east-review-2026-11-27.md)。
+- 使用有日期的航片和照片配准东段路缘、坡道、十一处花坛和八株树。东段沿用 Ford/Arena 地形校正，Columbia 路口铺面高于地形。路缘细节、车棚尺寸和部分 2026 年新建绿带采用估算。
+- 东段两次独立导出逐字节一致。桌面和手机生产预览分别逐项加载全部 610 个外部模型的三角网格，各检查 350 项场景与应用资源。两者均得出 918.72 米的 Kincaid 至 Columbia 路线和 13.39 米的 Duck Dunes 东门路线。生产构建、格式检查、197 项单测、473 项归档检查和 416 项查看器哈希检查通过。GitHub Pages 从 main 构建本次发布。[部署历史](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
+## 2026-11-27 - East 13th Avenue 中段从 Lillis 至 University Street（本地）
+
+- 按三期 Lane County 航片配准中段，补建沥青、两侧步道、Fenton 和 Allen 通道旁过街线、路缘开口及自行车标线。恢复 Heart of Campus 纪念砖铺地、两座自行车棚、路口北侧拱棚和六根路桩。棚体形状、路缘高程及车架数量为估计。[中段复核](docs/east-thirteenth-central-review-2026-11-27.md)。
+- 补建七处花坛和六株登记树，撤下 Lawrence 入口铺面内的一株程序树。六组路径增加 43 条导航边，北侧分支止于 Friendly 施工区西边，通过路线走南侧。临时围挡和施工拖车待准确配准。[Friendly Hall 施工公告](https://news.uoregon.edu/content/get-update-construction-activity-around-university-0)。
+- 两次独立导出一致。六组配对视图覆盖 Lillis 接缝、车棚、Fenton 过街线、南侧人行道与广场。桌面及手机生产预览均逐项加载 610 个外观网格，并返回相同的 246.63 米南侧路线。构建、格式、197 项单测、9 项浏览器测试、471 项归档及 414 项查看器哈希通过。13th Avenue 西段和中段 改动留在本地，Pages 为 `854a927`。
+
+## 2026-11-27 - East 13th Avenue 西入口与 Lillis 广场（本地）
+
+- 按三期县航片和 2024 年夏季街景配准 Kincaid 路缘、沥青、两处条纹过街线和西侧一处平行过街线。补建两座砖柱、两段铁栏、八根路桩、导览牌和停车标识。六组路径新增 40 条导航边并保留中央通行空间。[西入口与广场复核](docs/east-thirteenth-west-gateway-review-2026-11-27.md)。
+- 补建三处花坛和五株登记树，并按现场照片建模《Thinker Duck》的圆形基座、浅色底板和双铭牌。铺装细节、入口构件尺寸和树冠为估计，雕塑本体待可再发布的几何来源。[安装记录](https://news.uoregon.edu/year-review-2024)。
+- 两次独立导出一致。五组生产预览对照覆盖过街线、标识与广场。桌面和手机视口均逐项加载 610 个外部模型，并得到相同的三条入口至广场路线。生产构建、格式检查、197 项单测、5 项浏览器测试、469 项归档和 412 项查看器哈希通过。变更在本地，Pages 为 `854a927`。
+
 ## 2026-11-27 - 发布 Dads’ Gates、Normal Gate 与 Pioneer Cemetery 景观细节
 
 - 发布 Dads’ Gates 六扇敞开铁门、绿地、路缘、树木及从 East 11th Avenue 延伸至 Lillis 北侧的步道。按校方现状图和修复照片补建迁址后的 Normal Gate 铁拱及绿柱。三期改扩建后航片校正北段车道走向，全段共 65 条导航边。铁件细节、铁拱落位及植被尺寸为估计。[Dads’ Gates 复核](docs/dads-gates-landscape-review-2026-11-27.md) · [Normal Gate 与轴线南段复核](docs/normal-gate-axis-landscape-review-2026-11-27.md)。

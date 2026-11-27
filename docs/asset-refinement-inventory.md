@@ -26,7 +26,7 @@
 
 项目现有一套通用教室，所有建筑暂时使用该模板。CSV 的 `INT-SHARED` 为共用模板 L1，每个 `INT:建筑ID` 为待建的专属内部，等级留空。[通用教室](../assets/interiors/README.md)。
 
-两个程序化乔木源层各含 300 株。本地默认预览显示试点区 177 株及背景源树 248 株。Pioneer Cemetery 另有 121 个按高程及航片估算的树冠。Gerlinger Field Green 有十株登记乔木，Women’s Memorial Quad、Gerlinger Entrance Green 与 Straub Hall Green 另有 30 株按树籍配准。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md) · [Gerlinger Field Green 植被](gerlinger-field-green-review-2026-11-26.md) · [校园中部绿地复核](central-campus-greens-review-2026-11-27.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
+两个程序化乔木源层各含 300 株。本地默认预览显示试点区 176 株及背景源树 248 株。Pioneer Cemetery 另有 121 个按高程及航片估算的树冠。Gerlinger Field Green 有十株登记乔木，Women’s Memorial Quad、Gerlinger Entrance Green 与 Straub Hall Green 另有 30 株按树籍配准。Knight Campus、Kalapuya Ilihi 和 Oregon Hall 保留 11 株按台账建模的场地树，Moss Street 另有配准水栎。[植被核对](outdoor-tree-registration-2026-11-24.md) · [Gerlinger Field Green 植被](gerlinger-field-green-review-2026-11-26.md) · [校园中部绿地复核](central-campus-greens-review-2026-11-27.md)。种植现状、尺寸及入口标高仍待实地核对。资料优先使用已获许可的照片与公开资料，记录来源、日期、使用权和待验证尺寸。
 
 ## 室外 L2 目标核对
 
@@ -35,6 +35,12 @@
 本批室外 L2 发布补建 Dads’ Gates 的铁门、灯柱、铺装和四株登记树，以及 Normal Gate 的铁拱、三处种植带、两株登记树和延伸至 Lillis 北侧的步道。校正后的南北两段共 65 条导航边。[Dads’ Gates 复核](dads-gates-landscape-review-2026-11-27.md) · [Normal Gate 与轴线南段复核](normal-gate-axis-landscape-review-2026-11-27.md)。
 
 本批发布同时补建 Pioneer Cemetery 的四处 Charles Lawson 玫瑰、GAR 南侧一组边石和三处墓碑。玫瑰模型按区块估放，区块 597 的位置待核。[玫瑰与墓区复核](pioneer-cemetery-landscape-review-2026-11-26.md#charles-lawson-roses-and-the-plot-south-of-the-gar-monument)。
+
+East 13th Avenue 西入口 L2 新增 Kincaid 砖柱、铁栏、路桩、过街标线、两侧步道及 Lillis 广场花坛、登记树和《Thinker Duck》基座。铺装与 40 条新增导航边纳入 ENV-05。[西入口复核](east-thirteenth-west-gateway-review-2026-11-27.md)。
+
+East 13th Avenue 中段 L2 新增 Lillis 至 University Street 的铺面、自行车棚和车架、花坛、乔木与 Heart of Campus 纪念砖广场。六组路径增加 43 条导航边。Friendly 前的南侧路径接通全段。[中段复核](east-thirteenth-central-review-2026-11-27.md)。
+
+East 13th Avenue 东段 L2 补建 EMU 回转圆场和车棚、科学楼群前过街线、Agate 与 Columbia 路口，以及通往 Duck Dunes 的步道接点。道路与 97 条新增导航边纳入 ENV-05。[东段复核](east-thirteenth-east-review-2026-11-27.md)。
 
 室外目标追踪 679 条记录，包括 664 条建筑外部及独立室外设施和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 663 条计划室内记录另列。当前有 610 项 L2 外观、15 组 L2 室外资产，独立在用 L1 为 0 项，另保留 54 条合并或停用后的历史映射。历史映射涉及 Garden、Franklin、Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church、The Studies at 19th、1544 Alder 的旧局部、Walnut Path 步桥旧网格、967 Patterson 旧建筑、Arena 前广场、Walnut 停车区、铁路跨线桥、储冷罐地块、Knight Library 西侧草坪、Grace Lutheran Church 旧分段、Hamilton Hall 五段已拆网格、Franklin 沿线两处停车区旧网格及 Patterson 原 YMCA 已拆网格，原 ID 和等级记录保存在 CSV。默认场景有 610 个可选建筑及独立设施。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
 

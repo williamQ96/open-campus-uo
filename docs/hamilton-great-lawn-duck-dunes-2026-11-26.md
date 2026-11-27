@@ -15,6 +15,8 @@ The sand plane is 1.25 m above the project's ENU reference zero based on a fit t
 
 Two clean exports match byte for byte. All 160 sampled rays hit the single level sand surface. Six paired camera positions and the runtime index audit isolate 2,920 removed triangles while preserving the 17 peer members and their source vertices. A 7,710-edge route graph check preserves existing clearance. In production the 163-point route from Knight Library reaches the west approach. The 31 samples along the final paved segment clear collision and have continuous walking heights. Desktop and phone confirm the three net collisions, fence and opening clearances, old collisions removed, and the restored surfaces. An invalid last anchor or corrupt bundle restores all five prior ranges and their entrance records. The public checkpoint is `c3dc42c`.
 
+The [East 13th Avenue east corridor](east-thirteenth-east-review-2026-11-27.md) registers the two sidewalks and adds local model connections to the paved approaches outside the west fence and at the east gate.
+
 - [Editable dimensions and anchors](../data/metadata/hamilton-dunes-review.json)
 - [Deterministic exporter](../scripts/build-hamilton-dunes-review.py)
 - [Viewer descriptor](../apps/web-preview/public/scene/hamilton-dunes-review/site.json)

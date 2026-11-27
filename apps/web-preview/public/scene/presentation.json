@@ -2178,5 +2178,17 @@
   "dads_gates_landscape_site": {
     "url": "dads-gates-landscape-review/site.json",
     "sha256": "ecfd2928ff013175b89900ad731cd141ffbdf7ccbe19dd71f45ac002191926a9"
+  },
+  "east_thirteenth_west_gateway_site": {
+    "url": "east-thirteenth-west-gateway-review/site.json",
+    "sha256": "c20ff4c0ffe1c1cc8eed21223cd634a0139ad3147ef3239c16a17735344f0220"
+  },
+  "east_thirteenth_central_site": {
+    "url": "east-thirteenth-central-review/site.json",
+    "sha256": "e2e6452c686a8114032f01632273dc221761535fa7e8bdcf82fa37c422b3f134"
+  },
+  "east_thirteenth_east_site": {
+    "url": "east-thirteenth-east-review/site.json",
+    "sha256": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570"
   }
 }

@@ -1,0 +1,528 @@
+{
+  "road": [
+    [
+      [-511.2, -2.78],
+      [-505.8, -4.03],
+      [-485, -4.28],
+      [-456.2, -4.52],
+      [-428, -4.72],
+      [-403, -4.94],
+      [-374, -5.2],
+      [-347, -5.45],
+      [-333.9, -5.4],
+      [-333.8, 5.16],
+      [-345, 5.12],
+      [-375, 5.28],
+      [-402.5, 5.29],
+      [-427.8, 5.54],
+      [-453.1, 5.62],
+      [-480.3, 5.72],
+      [-501.5, 5.76],
+      [-511.2, 6.55]
+    ],
+    [
+      [-296.1, -5.53],
+      [-284, -5.53],
+      [-270, -6.05],
+      [-252.8, -6.1],
+      [-252.8, 4.91],
+      [-274.3, 5.03],
+      [-286.1, 5.12],
+      [-296.1, 5.04]
+    ],
+    [
+      [-314.62, -39.3],
+      [-301.11, -39.3],
+      [-301.11, -10.54],
+      [-314.58, -10.54]
+    ]
+  ],
+  "walk": [
+    [
+      [-511.2, 6.55],
+      [-501.5, 5.76],
+      [-479.8, 5.72],
+      [-455, 5.63],
+      [-429, 5.54],
+      [-404, 5.3],
+      [-375, 5.28],
+      [-346, 5.12],
+      [-333.8, 5.16],
+      [-333.8, 10.15],
+      [-350.4, 10.17],
+      [-373, 10.1],
+      [-404.3, 10.34],
+      [-421.8, 10.42],
+      [-430, 10.62],
+      [-453.6, 11.25],
+      [-480.6, 10.99],
+      [-502, 10.91],
+      [-511.2, 11.52]
+    ],
+    [
+      [-503.25, 10.8],
+      [-499.9, 10.8],
+      [-499.9, 16.34],
+      [-486.5, 16.34],
+      [-484.72, 17.4],
+      [-481.51, 17.4],
+      [-481.51, 22.22],
+      [-503.25, 22.22]
+    ],
+    [
+      [-486, 10.89],
+      [-481.51, 10.89],
+      [-481.51, 20.02],
+      [-486, 20.02]
+    ],
+    [
+      [-511.2, -9.65],
+      [-493.24, -9.61],
+      [-471, -9.79],
+      [-445, -9.97],
+      [-418, -10.02],
+      [-393, -9.96],
+      [-372, -10.02],
+      [-340, -10.28],
+      [-333.8, -10.27],
+      [-333.9, -5.4],
+      [-347, -5.45],
+      [-374, -5.2],
+      [-403, -4.94],
+      [-428, -4.72],
+      [-456.2, -4.52],
+      [-485, -4.28],
+      [-505.8, -4.03],
+      [-511.2, -2.78]
+    ],
+    [
+      [-333.9, -10.27],
+      [-318, -10.28],
+      [-316.25, -12.8],
+      [-316.25, -39.3],
+      [-314.62, -39.3],
+      [-314.58, -10.54],
+      [-301.11, -10.54],
+      [-301.11, -39.3],
+      [-296.2, -39.3],
+      [-296.12, -20.55],
+      [-290.65, -14.42],
+      [-285, -10.54],
+      [-274.6, -9.45],
+      [-263.7, -8.95],
+      [-252.8, -9.5],
+      [-252.8, -6.1],
+      [-270, -6.05],
+      [-284, -5.53],
+      [-296.1, -5.53],
+      [-296.1, 5.04],
+      [-286.1, 5.12],
+      [-274.3, 5.03],
+      [-252.8, 4.91],
+      [-252.8, 10.07],
+      [-280.1, 10.29],
+      [-296.3, 10.38],
+      [-300.45, 11.55],
+      [-300.45, 23.2],
+      [-318.3, 23.2],
+      [-318.3, 10.16],
+      [-333.8, 10.15]
+    ]
+  ],
+  "heart": {
+    "bounds": [-333.9, -10.23, -296.08, 5.16],
+    "brick_field": [-310.55, -3.1, -302.1, 3.16],
+    "cross_band_n": [-10.1, -5.31, 4.63],
+    "long_band_e": [-317.45, -312.43, -300.79, -295.93],
+    "brick_divisions": [12, 9]
+  },
+  "crossing_lines": [
+    [
+      [-430.58, -4.13],
+      [-430.59, 5.54]
+    ],
+    [
+      [-426.1, -4.15],
+      [-426.02, 5.51]
+    ],
+    [
+      [-376.92, -5.07],
+      [-376.96, 3.96]
+    ],
+    [
+      [-370.39, -5.08],
+      [-370.34, 3.96]
+    ]
+  ],
+  "curb_lines": [
+    [
+      [-511.2, 6.55],
+      [-501.5, 5.76],
+      [-479.8, 5.72],
+      [-455, 5.63],
+      [-429, 5.54],
+      [-404, 5.3],
+      [-375, 5.28],
+      [-346, 5.12],
+      [-333.8, 5.16]
+    ],
+    [
+      [-511.2, -2.78],
+      [-505.8, -4.03],
+      [-485, -4.28],
+      [-456.2, -4.52],
+      [-428, -4.72],
+      [-403, -4.94],
+      [-374, -5.2],
+      [-347, -5.45],
+      [-333.9, -5.4]
+    ],
+    [
+      [-292, -5.73],
+      [-282, -5.83],
+      [-270, -6.05],
+      [-252.8, -6.1]
+    ]
+  ],
+  "curb_gaps": [
+    [-431.5, -5.33, -425.3, 6.28],
+    [-378, -5.97, -369.5, 6.07]
+  ],
+  "parking_corners": [
+    [-502.8, 5.67, -497.65, 3.35],
+    [-475.5, 5.62, -468.3, 3.39],
+    [-457.7, 5.55, -452, 3.22],
+    [-435.6, -4.6, -440.55, -2.21]
+  ],
+  "bike_markings": [
+    {
+      "center": [-503.21, -0.65],
+      "heading": 0
+    },
+    {
+      "center": [-421.01, 2.97],
+      "heading": 180
+    },
+    {
+      "center": [-386.34, -1.64],
+      "heading": 0
+    }
+  ],
+  "arrows": [
+    {
+      "center": [-289.55, 0.55],
+      "heading": 180
+    },
+    {
+      "center": [-308.6, -16.32],
+      "heading": -90
+    }
+  ],
+  "eastern_channel": [
+    [-290.82, -1.18],
+    [-282.95, -1.2],
+    [-281.25, -1.52],
+    [-279.75, -2.45],
+    [-278.1, -3.2],
+    [-275.92, -3.58],
+    [-253.12, -3.65]
+  ],
+  "beds": [
+    {
+      "bounds": [-513.05, 3.37, -507.45, 5.33],
+      "material": "low brick"
+    },
+    {
+      "bounds": [-327.72, 2.71, -321.56, 5.14],
+      "material": "low brick"
+    },
+    {
+      "bounds": [-327.39, -5.39, -321.53, -3.08],
+      "material": "low brick"
+    },
+    {
+      "bounds": [-291.26, 2.45, -282.64, 4.86],
+      "material": "low brick"
+    },
+    {
+      "bounds": [-291.24, -5.61, -283.35, -3.27],
+      "material": "low brick"
+    },
+    {
+      "bounds": [-314.55, -19.5, -311.62, -15.45],
+      "material": "concrete"
+    },
+    {
+      "bounds": [-303.6, -19.12, -300.99, -15.42],
+      "material": "concrete"
+    }
+  ],
+  "shelter_pads": [
+    {
+      "bounds": [-499.93, 17.72, -492.62, 21.06],
+      "height": 2.32,
+      "rise": 0.26,
+      "racks": 8
+    },
+    {
+      "bounds": [-492.45, 17.72, -486.02, 21.05],
+      "height": 2.32,
+      "rise": 0.26,
+      "racks": 7
+    },
+    {
+      "bounds": [-317.08, 10.04, -310.02, 16.44],
+      "height": 2.65,
+      "rise": 0.62,
+      "racks": 0
+    }
+  ],
+  "rack_rows": [
+    {
+      "start": [-368.2, -4.61],
+      "end": [-343.25, -4.79],
+      "count": 14
+    },
+    {
+      "start": [-451.5, 5.05],
+      "end": [-443.48, 5.06],
+      "count": 6
+    },
+    {
+      "start": [-503.63, -3.6],
+      "end": [-497.8, -3.86],
+      "count": 5
+    }
+  ],
+  "bollards": [
+    [-312.48, 4.58],
+    [-300.72, 4.55],
+    [-317.41, -10.12],
+    [-312.48, -10.15],
+    [-300.77, -10.13],
+    [-295.93, -10.1]
+  ],
+  "trees": [
+    {
+      "tree_id": 3913,
+      "species": "Green Ash",
+      "position_enu_m": [-509.614, 4.555],
+      "height_m": 3.66,
+      "crown_radius_m": 0.98,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 512,
+      "species": "London Planetree",
+      "position_enu_m": [-442.324, -5.84],
+      "height_m": 18.29,
+      "crown_radius_m": 7.4,
+      "pit_radius_m": 0.81,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 488,
+      "species": "London Planetree",
+      "position_enu_m": [-415.629, -6.202],
+      "height_m": 18.29,
+      "crown_radius_m": 8.7,
+      "pit_radius_m": 0.84,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 4049,
+      "species": "Big Leaf Maple",
+      "position_enu_m": [-324.646, 3.666],
+      "height_m": 2.27,
+      "crown_radius_m": 0.9,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 4050,
+      "species": "Big Leaf Maple",
+      "position_enu_m": [-324.577, -4.55],
+      "height_m": 2.3,
+      "crown_radius_m": 0.88,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 1252,
+      "species": "Northern Red Oak",
+      "position_enu_m": [-266.574, -6.67],
+      "height_m": 10.97,
+      "crown_radius_m": 4.27,
+      "pit_radius_m": 0.65,
+      "form": "rounded"
+    }
+  ],
+  "south_branch_enu_m": [
+    [-506.755, 2.531],
+    [-506.85, -7.84],
+    [-494.1, -7.95],
+    [-480.45, -7.9],
+    [-465.15, -7.83],
+    [-452.3, -8.3],
+    [-438.35, -8.48],
+    [-428.31, -8.49],
+    [-415.6, -8.6],
+    [-402.65, -8.21],
+    [-388.53, -8.11],
+    [-374, -7.94],
+    [-359.62, -8.02],
+    [-345.21, -8.12],
+    [-331.2, -8.1],
+    [-317.2, -8.08],
+    [-303.82, -8.04],
+    [-291.85, -8.15],
+    [-275.12, -7.78],
+    [-260.24, -7.84]
+  ],
+  "north_branch_enu_m": [
+    [-506.755, 2.531],
+    [-507.1, 7.49],
+    [-494.31, 8.16],
+    [-480, 8.09],
+    [-466, 8.78],
+    [-451.25, 8.62],
+    [-438.03, 8.69],
+    [-428.3, 8.41],
+    [-414.65, 8.2],
+    [-404.98, 8.12],
+    [-392.56, 8],
+    [-387.15, 7.89]
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [-428.31, -8.49],
+      "points_enu_m": [
+        [-428.32, -4.15],
+        [-428.32, 0.88],
+        [-428.32, 5.58]
+      ],
+      "end_enu_m": [-428.3, 8.41]
+    },
+    {
+      "anchor_enu_m": [-303.82, -8.04],
+      "points_enu_m": [
+        [-306.42, -10.7],
+        [-306.51, -14.7],
+        [-306.47, -23.2],
+        [-306.44, -31.44]
+      ]
+    },
+    {
+      "anchor_enu_m": [-305.47, 0.825],
+      "points_enu_m": [
+        [-305.4, 5.45],
+        [-304.88, 11.14],
+        [-304.92, 20.4]
+      ]
+    },
+    {
+      "anchor_enu_m": [-260.24, -7.84],
+      "points_enu_m": [
+        [-258.2, -4.3]
+      ],
+      "end_enu_m": [-260.678, 0.784]
+    }
+  ],
+  "sources": [
+    {
+      "year": 2017,
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493804.14928888186%2C4876881.282153052%2C494079.14928888186%2C4876965.282153052&bboxSR=3740&imageSR=3740&size=2750%2C840&layers=show%3A29&format=png32",
+      "sha256": "e21786ea2d0f39fc41864beeb6f6cccc7fd0cbcaec8fa270d3790abe1f26dffa"
+    },
+    {
+      "year": 2021,
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493804.14928888186%2C4876881.282153052%2C494079.14928888186%2C4876965.282153052&bboxSR=3740&imageSR=3740&size=2750%2C840&layers=show%3A26&format=png32",
+      "sha256": "536add1edc1eb039bf5e83a7a52e84fbc4c7b72bb3c7489ed1a9f297c7083ffb"
+    },
+    {
+      "year": 2025,
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493804.14928888186%2C4876881.282153052%2C494079.14928888186%2C4876965.282153052&bboxSR=3740&imageSR=3740&size=2750%2C840&layers=show%3A57&format=png32",
+      "sha256": "6946e1dc1bfc843b498eead136098c1be4dd7ed328ea084841fc91e25195c9e8"
+    },
+    {
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/heart-of-campus",
+      "use": "University Street intersection and inscribed donor pavers project history."
+    },
+    {
+      "url": "https://blogs.uoregon.edu/cpfmnotifications/2018/07/16/bike-rack-placement-718-824/",
+      "use": "Completed placement of two relocated shelters between Anstett, Lillis and Fenton, cross-checked in aerials."
+    },
+    {
+      "url": "https://news.uoregon.edu/content/get-update-construction-activity-around-university-0",
+      "use": "Friendly frontage sidewalk fenced through fall term 2027 as reported August 2026."
+    },
+    {
+      "url": "https://blogs.uoregon.edu/cpfmnotifications/2025/06/12/6-30-25-12-31-27-friendly-hall-renovation-project-and-access-advisory/",
+      "use": "August 2025 construction revision sends ADA crossing to the west of Johnson Hall. Add south through-route and keep new north branch west of Friendly."
+    },
+    {
+      "url": "https://cpfm.uoregon.edu/13th-avenue-axis-conceptual-design",
+      "use": "West of University Street prioritizes walking and wheels. Future design renderings are project context."
+    },
+    {
+      "url": "https://cpfm.uoregon.edu/trees",
+      "data_sha256": "119d36ab6557c4633d44edb0f6e7df5496c69a7cdfa2ab3031ad7efb742e8be5",
+      "use": "Live tree inventory checked against dated aerials and existing runtime stems."
+    }
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "sites": {
+      "east-thirteenth-west-gateway-review": "c20ff4c0ffe1c1cc8eed21223cd634a0139ad3147ef3239c16a17735344f0220",
+      "fenton-site-review": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
+      "lillis-complex-review": "d3f48e289718256277134eb6f0786eb71c4e2a23e0b1c1e1b7f1b6c890064279",
+      "friendly-collier-mckenzie-review": "f5c7bc5b818058584c646022c7103dea2d9a0a9320bc061edc46f11e37800f4c",
+      "lawrence-science-review": "d30fdbf3d7e56f890de4519661b8365a4f4a2e7f8cf4d75ca6c151bfff4e49f5",
+      "plc-lokey-tykeson-review": "c0884ac85424815bd3209e2e3964ddc040ee49e6e3bac526bf360afd5cff2485",
+      "emu-green-review": "a0425a77fc88fb9310561c0da8a8901bace5b33aa92fb4fae3fd3806af5e8bc9",
+      "pilot-hardscape-review": "f025768022b594acd808ec6ad21dcc57b0dbb380ebfe0d8a4f56abcd135bf109"
+    }
+  },
+  "aerial_bounds_enu_m": [-525, -47, -250, 37],
+  "pilot_tree_clip": {
+    "source_legacy_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "source_refined_sha256": "9a129558d22a314f8dbddee5ed9f914c5e905665a3c1209a3732612cc5e296ef",
+    "tree_indices": [
+      282
+    ],
+    "legacy": {
+      "vegetation_1": {
+        "vertices": 23832,
+        "removed_indices": 144,
+        "ranges": [
+          [22500, 22590]
+        ]
+      },
+      "vegetation_3": {
+        "vertices": 84132,
+        "removed_indices": 1296,
+        "ranges": [
+          [75384, 76248]
+        ]
+      }
+    },
+    "refined": {
+      "pilot-trees-wood": {
+        "vertices": 23506,
+        "removed_indices": 528,
+        "ranges": [
+          [22294, 22396]
+        ]
+      },
+      "pilot-trees-foliage": {
+        "vertices": 34088,
+        "removed_indices": 660,
+        "ranges": [
+          [32102, 32228]
+        ]
+      }
+    }
+  },
+  "retired_pilot_tree_enu_m": [-305.815, 13.103]
+}

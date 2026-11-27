@@ -24,7 +24,7 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "2681c87a7294c161a1375eb4724c1bf5ec30ca839b31c7e9762b08d0d2b7ca24",
+      "local_sha256": "0593fa5afaee66c0805e6fd54daf09474b6556535f2b0bfc7cc69fe2f9f1e67f",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife."
     },
     "src/building-card.js": {
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "f82027bda831b27c917e607db4574d28fdc3f518f0c33c07cc7beddc2a65f695",
+    "public/scene/presentation.json": "40ace13289e8efe44784233e2a0eee89eea057b1de72911f3709903714449050",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -489,6 +489,12 @@
     "public/scene/howe-field-gates-review/site.glb": "02020fb07c30687d98cffbe1d67d1265eba787c834e0c258f9e0a3a43df9c56f",
     "public/scene/howe-field-gates-review/site.json": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901",
     "public/scene/dads-gates-landscape-review/site.glb": "947988e530152764f18227a33c06a31fb1384a0ae6f2b0ff9b684572d2f1b42c",
-    "public/scene/dads-gates-landscape-review/site.json": "ecfd2928ff013175b89900ad731cd141ffbdf7ccbe19dd71f45ac002191926a9"
+    "public/scene/dads-gates-landscape-review/site.json": "ecfd2928ff013175b89900ad731cd141ffbdf7ccbe19dd71f45ac002191926a9",
+    "public/scene/east-thirteenth-west-gateway-review/site.glb": "4d37bc40a341f842d1b0b59fdc8b19c090df7d7f2bb8130dfa6bc9143cfc60f3",
+    "public/scene/east-thirteenth-west-gateway-review/site.json": "c20ff4c0ffe1c1cc8eed21223cd634a0139ad3147ef3239c16a17735344f0220",
+    "public/scene/east-thirteenth-central-review/site.glb": "dff76f142a8db3a7669631c8e6265e8fd26ee9b14735b7f3b2caed878b0ac72f",
+    "public/scene/east-thirteenth-central-review/site.json": "e2e6452c686a8114032f01632273dc221761535fa7e8bdcf82fa37c422b3f134",
+    "public/scene/east-thirteenth-east-review/site.glb": "7ad8b87742903b2bb4b50127709c5b76456e831e0e7af66cb158d33d6f2213b8",
+    "public/scene/east-thirteenth-east-review/site.json": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570"
   }
 }

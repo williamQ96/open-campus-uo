@@ -4,6 +4,7 @@ import {
   DEFAULT_ENTRANCES,
   DEFAULT_PILOT_TREES,
   DEFAULT_SELECTABLE_BUILDINGS,
+  EAST_THIRTEENTH_PILOT_TREE_REMOVALS,
 } from "./exterior-counts.js";
 
 async function fieldState(page) {
@@ -64,7 +65,10 @@ test("a damaged field bundle restores the preceding geometry and pilot trees", a
   expect(state).toMatchObject({
     buildings: DEFAULT_SELECTABLE_BUILDINGS,
     entrances: DEFAULT_ENTRANCES,
-    pilotTrees: 273 - CENTRAL_CAMPUS_PILOT_TREE_REMOVALS,
+    pilotTrees:
+      273 -
+      CENTRAL_CAMPUS_PILOT_TREE_REMOVALS -
+      EAST_THIRTEENTH_PILOT_TREE_REMOVALS,
     paved: Array(5).fill(false),
     wall: false,
     sidewalk: false,
