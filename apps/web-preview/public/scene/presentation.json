@@ -2295,5 +2295,13 @@
   "education_annex_site": {
     "url": "education-annex-review/site.json",
     "sha256": "7842e6f6dc6781d692522de6b332e55c4881832f272d10144972a43d396dd0ec"
+  },
+  "oregon_hall_southeast_landscape_site": {
+    "url": "oregon-hall-southeast-landscape-review/site.json",
+    "sha256": "baadca1479efe3952c7b9202496b8e0aba787748cda880d5439727dc1a051c00"
+  },
+  "science_green_sundial_site": {
+    "url": "science-green-sundial-review/site.json",
+    "sha256": "56327ee199aaef21511cf61de777d3f160434081066bd2e65270309cc9d03c54"
   }
 }

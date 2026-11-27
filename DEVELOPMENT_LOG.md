@@ -6,6 +6,12 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Publish Oregon Hall southeast grounds and Science Green east approach
+
+- Register Oregon Hall's campus map station, two pedestrian lamps, stop sign, three benches, receptacle and thirteen shrub groups. Add 105.96 m² of foundation planting, 26.56 m² of map apron and 35.61 m² of seating paving connected by nine navigation edges. The map display is a project schematic. Fixture dimensions and partly obscured bed edges use estimates. [Oregon Hall review](docs/oregon-hall-southeast-landscape-2026-11-27.md).
+- Register the 1912 Mays memorial sundial, 409.89 m² of Science Green paving, a 33.55 m² north bed, seven shrub groups and three trees from the campus inventory. Replace the inferred tree on the east walk. Twenty-five new navigation edges connect to the East 13th north sidewalk. Precise dial lettering and current plaque condition remain unresolved. [Science Green review](docs/science-green-sundial-2026-11-27.md).
+- The desktop and phone research production previews match all 611 exterior IDs. They verify Oregon Hall seating routes of 7.738 m and 8.660 m and Science Green routes of 98.905 m and 89.204 m on the registered paving. The isolated Pages build, format check, 200 unit tests, 523 archived assets, viewer hashes and repeat exports pass. This changeset uses the existing main-branch GitHub Pages workflow.
+
 ## 2026-11-27 - Release Education Annex and its west approach
 
 - Add University of Oregon building B0048 as a selectable L2 exterior, preserving the previous 610 exterior IDs. Its west porch, 7.39 m ramp, four-tread stair, name sign and planting beds model the outdoor approach. Eight route edges connect the entrance to the Kendall Plaza bypass. The ramp and door thresholds use image-based estimates. [Annex review](docs/education-annex-landscape-review-2026-11-27.md).

@@ -1,0 +1,794 @@
+{
+  "description": "Oregon Hall southeast foundation garden, confirmed campus map station, and Agate northwest corner stop sign and lamp.",
+  "pins": {
+    "oregon-jaqua-review": "b3bb7c92d108d07583498712ff4d0c1d5ca61f0f4203f93d5391ad14917dc279",
+    "east-thirteenth-east-review": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570",
+    "agate-thirteenth-fifteenth-review": "063dda28669c3150b4a614d87f7af021d7f43d233a52be5e56c53716ea602418"
+  },
+  "reference": {
+    "prior_screen": "data/metadata/oregon-hall-landscape-screen-2026-11-27.json",
+    "sign_standard": "https://cpfm.uoregon.edu/sites/default/files/2024-10/uo-sign-plan-2024.pdf#page=5",
+    "historic_station_enu_m": [
+      42.03,
+      16.43
+    ],
+    "limits": "Photo intersections constrain position. Pole heights, panel depth and facing, original schematic display, shrub groups and veiled bed edges are representative."
+  },
+  "foundation_bed_outline_enu_m": [
+    [
+      46.28,
+      16.57
+    ],
+    [
+      48.78,
+      15.42
+    ],
+    [
+      51.58,
+      14.8
+    ],
+    [
+      56.32,
+      15.06
+    ],
+    [
+      60.55,
+      15.71
+    ],
+    [
+      64.17,
+      16.79
+    ],
+    [
+      66.31,
+      17.58
+    ],
+    [
+      66.12,
+      21.25
+    ],
+    [
+      47.85,
+      21.25
+    ],
+    [
+      47.43,
+      19.79
+    ]
+  ],
+  "shrubs": [
+    [
+      48.49,
+      17.25,
+      0.87,
+      0.67
+    ],
+    [
+      48.46,
+      19.38,
+      1.15,
+      0.93
+    ],
+    [
+      49.68,
+      17.32,
+      1.12,
+      0.68
+    ],
+    [
+      51.47,
+      17.03,
+      1.03,
+      0.63
+    ],
+    [
+      52.92,
+      18.66,
+      1.18,
+      0.95
+    ],
+    [
+      54.42,
+      17.28,
+      1.03,
+      0.54
+    ],
+    [
+      55.88,
+      18.13,
+      0.91,
+      0.83
+    ],
+    [
+      57.23,
+      17.94,
+      1.01,
+      0.64
+    ],
+    [
+      58.7,
+      18.14,
+      0.99,
+      0.75
+    ],
+    [
+      60.46,
+      18.87,
+      0.98,
+      0.69
+    ],
+    [
+      62.26,
+      19.01,
+      1.15,
+      0.92
+    ],
+    [
+      63.76,
+      18.51,
+      0.78,
+      0.67
+    ],
+    [
+      65.04,
+      19.21,
+      0.76,
+      0.61
+    ]
+  ],
+  "stop_sign": {
+    "enu_m": [
+      79.332,
+      14.366
+    ],
+    "rms_cross_bearing_m": 0.019,
+    "max_cross_bearing_m": 0.025,
+    "photo_controls": [
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pGAjGJZRyDKa-pxn2DaswA&heading=253.63",
+        "date": "2024-07",
+        "image_sha256": "bc94ed7370e836c7f3c9bded42602c5c51033d56efd415e0ff933a2562cbff7d",
+        "camera_enu_m": [
+          83.17804539727513,
+          18.2586142513901
+        ],
+        "yaw_deg": 253.63,
+        "image_x_px": 179,
+        "bearing_deg": 224.39
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mk3BzOgIpT6_9h8xWShlIQ&heading=257.76",
+        "date": "2020-11",
+        "image_sha256": "74e8675bcc5b6040b48d06b724f57ad51a735ca393009a46bed28434d7daf061",
+        "camera_enu_m": [
+          82.8139136802638,
+          17.01424992736429
+        ],
+        "yaw_deg": 257.76,
+        "image_x_px": 239,
+        "bearing_deg": 233.003
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-cSIiuDIOxrUFTcnkSj_oA&heading=220.87",
+        "date": "2024-07",
+        "image_sha256": "c768c5336eff3d956fd23c371c4e930b1c7940b7e2880be3b4189b71f12bbdd5",
+        "camera_enu_m": [
+          82.45819750550436,
+          31.384284302592278
+        ],
+        "yaw_deg": 220.87,
+        "image_x_px": 162,
+        "bearing_deg": 190.425
+      }
+    ],
+    "front_bearing_degrees": 24.0,
+    "plate_center_z_m": 2.56,
+    "plate_width_m": 0.76
+  },
+  "lamp": {
+    "enu_m": [
+      78.214,
+      19.023
+    ],
+    "rms_cross_bearing_m": 0.015,
+    "max_cross_bearing_m": 0.018,
+    "photo_controls": [
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pGAjGJZRyDKa-pxn2DaswA&heading=253.63",
+        "date": "2024-07",
+        "image_sha256": "bc94ed7370e836c7f3c9bded42602c5c51033d56efd415e0ff933a2562cbff7d",
+        "camera_enu_m": [
+          83.17804539727513,
+          18.2586142513901
+        ],
+        "yaw_deg": 253.63,
+        "image_x_px": 802,
+        "bearing_deg": 278.542
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mk3BzOgIpT6_9h8xWShlIQ&heading=257.76",
+        "date": "2020-11",
+        "image_sha256": "74e8675bcc5b6040b48d06b724f57ad51a735ca393009a46bed28434d7daf061",
+        "camera_enu_m": [
+          82.8139136802638,
+          17.01424992736429
+        ],
+        "yaw_deg": 257.76,
+        "image_x_px": 962,
+        "bearing_deg": 293.795
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-cSIiuDIOxrUFTcnkSj_oA&heading=220.87",
+        "date": "2024-07",
+        "image_sha256": "c768c5336eff3d956fd23c371c4e930b1c7940b7e2880be3b4189b71f12bbdd5",
+        "camera_enu_m": [
+          82.45819750550436,
+          31.384284302592278
+        ],
+        "yaw_deg": 220.87,
+        "image_x_px": 275,
+        "bearing_deg": 198.971
+      }
+    ],
+    "pole_top_z_m": 3.37
+  },
+  "map_station": {
+    "enu_m": [
+      46.236,
+      19.721
+    ],
+    "rms_cross_bearing_m": 0.026,
+    "max_cross_bearing_m": 0.036,
+    "photo_controls": [
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pGAjGJZRyDKa-pxn2DaswA&heading=253.63",
+        "date": "2024-07",
+        "image_sha256": "bc94ed7370e836c7f3c9bded42602c5c51033d56efd415e0ff933a2562cbff7d",
+        "camera_enu_m": [
+          83.17804539727513,
+          18.2586142513901
+        ],
+        "yaw_deg": 253.63,
+        "image_x_px": 724,
+        "bearing_deg": 272.213
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mk3BzOgIpT6_9h8xWShlIQ&heading=257.76",
+        "date": "2020-11",
+        "image_sha256": "74e8675bcc5b6040b48d06b724f57ad51a735ca393009a46bed28434d7daf061",
+        "camera_enu_m": [
+          82.8139136802638,
+          17.01424992736429
+        ],
+        "yaw_deg": 257.76,
+        "image_x_px": 700,
+        "bearing_deg": 274.288
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=sroyo8lMzttQ2yOx2d6cuw&heading=29.21",
+        "date": "2024-06",
+        "image_sha256": "05bb03dd3bdecc2b5bca5ddf695965e5cc79dc7aa07c77e06fccac9332ee0b25",
+        "camera_enu_m": [
+          38.407684090489056,
+          -1.7371127428486943
+        ],
+        "yaw_deg": 29.21,
+        "image_x_px": 421,
+        "bearing_deg": 20.011
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=R3ThjNz2OynK8ihmRsFKQA&heading=32.88",
+        "date": "2020-11",
+        "image_sha256": "e8157b5f188c73d4e9073d3d2ab983570bb076c391e5e2c50a60c5caa4992b93",
+        "camera_enu_m": [
+          36.30051091709174,
+          -2.1928681172430515
+        ],
+        "yaw_deg": 32.88,
+        "image_x_px": 429,
+        "bearing_deg": 24.417
+      }
+    ],
+    "front_bearing_degrees": 139.0,
+    "post_spacing_m": 1.3716
+  },
+  "sidewalk_check_enu_m": [
+    [
+      40.8,
+      10.93
+    ],
+    [
+      56.85,
+      10.78
+    ],
+    [
+      72,
+      10.52
+    ],
+    [
+      77.27,
+      10.33
+    ],
+    [
+      81.04,
+      9.84
+    ]
+  ],
+  "map_approach_apron_enu_m": [
+    [
+      41.25,
+      15.86
+    ],
+    [
+      43.6,
+      15.83
+    ],
+    [
+      45.69,
+      16.29
+    ],
+    [
+      47.27,
+      17.42
+    ],
+    [
+      47.15,
+      19.62
+    ],
+    [
+      46,
+      20.62
+    ],
+    [
+      42.4,
+      20.83
+    ],
+    [
+      41.15,
+      20.52
+    ]
+  ],
+  "map_approach_check_enu_m": [
+    [
+      40.78,
+      11.9
+    ],
+    [
+      41.0,
+      15.6
+    ],
+    [
+      43.61,
+      17.26
+    ],
+    [
+      46.53,
+      18.01
+    ]
+  ],
+  "map_route_anchor_enu_m": [
+    40.8,
+    10.93
+  ],
+  "furnishings": {
+    "source_notes": "Photo-fit seed positions. Pick sensitivity propagates a two-pixel horizontal uncertainty per photo. Seat orientation, cabinet finish, bin dimensions and screened pavement edges are representative.",
+    "benches": [
+      {
+        "enu_m": [
+          44.974,
+          24.595
+        ],
+        "rms_cross_bearing_m": 0.027,
+        "max_pixel_pick_offset_m": 0.237,
+        "photo_controls": [
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=sroyo8lMzttQ2yOx2d6cuw&heading=29.21",
+            "image_sha256": "05bb03dd3bdecc2b5bca5ddf695965e5cc79dc7aa07c77e06fccac9332ee0b25",
+            "camera_enu_m": [
+              38.407684090489056,
+              -1.7371127428486943
+            ],
+            "yaw_deg": 29.21,
+            "image_x_px": 354.5,
+            "bearing_deg": 14.033
+          },
+          {
+            "date": "2020-11",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=R3ThjNz2OynK8ihmRsFKQA&heading=32.88",
+            "image_sha256": "e8157b5f188c73d4e9073d3d2ab983570bb076c391e5e2c50a60c5caa4992b93",
+            "camera_enu_m": [
+              36.30051091709174,
+              -2.1928681172430515
+            ],
+            "yaw_deg": 32.88,
+            "image_x_px": 358,
+            "bearing_deg": 18.01
+          },
+          {
+            "date": "2020-11",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BK5fp4MdsjLg5s-s4IKr1Q&heading=47.18",
+            "image_sha256": "9d922e644d92fac9df8c0dd2642adbca11c8dbf1e3c97c457f491a31ea896486",
+            "camera_enu_m": [
+              16.750170224928297,
+              -2.0030986284837127
+            ],
+            "yaw_deg": 47.18,
+            "image_x_px": 514,
+            "bearing_deg": 46.662
+          },
+          {
+            "date": "2020-11",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pSI9Vs1CoI5zzy4A2hx9Bg&heading=351.13",
+            "image_sha256": "59329aa2223a034642abc736f4781a2fe11eb21135b88dc77067434a6899a563",
+            "camera_enu_m": [
+              47.95402323984308,
+              2.3090638779103756
+            ],
+            "yaw_deg": 351.13,
+            "image_x_px": 532,
+            "bearing_deg": 352.307
+          }
+        ],
+        "label": "west map seat"
+      },
+      {
+        "enu_m": [
+          46.452,
+          22.786
+        ],
+        "rms_cross_bearing_m": 0.099,
+        "max_pixel_pick_offset_m": 0.451,
+        "photo_controls": [
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=sroyo8lMzttQ2yOx2d6cuw&heading=29.21",
+            "image_sha256": "05bb03dd3bdecc2b5bca5ddf695965e5cc79dc7aa07c77e06fccac9332ee0b25",
+            "camera_enu_m": [
+              38.407684090489056,
+              -1.7371127428486943
+            ],
+            "yaw_deg": 29.21,
+            "image_x_px": 402,
+            "bearing_deg": 18.277
+          },
+          {
+            "date": "2020-11",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=R3ThjNz2OynK8ihmRsFKQA&heading=32.88",
+            "image_sha256": "e8157b5f188c73d4e9073d3d2ab983570bb076c391e5e2c50a60c5caa4992b93",
+            "camera_enu_m": [
+              36.30051091709174,
+              -2.1928681172430515
+            ],
+            "yaw_deg": 32.88,
+            "image_x_px": 404.7,
+            "bearing_deg": 22.192
+          },
+          {
+            "date": "2020-11",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BK5fp4MdsjLg5s-s4IKr1Q&heading=47.18",
+            "image_sha256": "9d922e644d92fac9df8c0dd2642adbca11c8dbf1e3c97c457f491a31ea896486",
+            "camera_enu_m": [
+              16.750170224928297,
+              -2.0030986284837127
+            ],
+            "yaw_deg": 47.18,
+            "image_x_px": 552.5,
+            "bearing_deg": 50.285
+          },
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=hvXbxZpzoyTiX-qNHLXuVQ&heading=31.99",
+            "image_sha256": "eef694ef6683d1e3c3b291ccd9ddb1dffbb34877456bab42312d1502ed3e4ea7",
+            "camera_enu_m": [
+              28.608113201451488,
+              -1.8001522794365883
+            ],
+            "yaw_deg": 31.99,
+            "image_x_px": 558,
+            "bearing_deg": 35.612
+          },
+          {
+            "date": "2020-11",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=8Jw7EljkOHPo2NemQ8hcyA&heading=34.72",
+            "image_sha256": "dadb557940397e9e4c8d50470bb852d61444eb302a5153b7024c4d8742c9b33d",
+            "camera_enu_m": [
+              26.618400181178004,
+              -2.1511766277253628
+            ],
+            "yaw_deg": 34.72,
+            "image_x_px": 560,
+            "bearing_deg": 38.529
+          }
+        ],
+        "label": "east map seat"
+      },
+      {
+        "enu_m": [
+          64.043,
+          14.074
+        ],
+        "rms_cross_bearing_m": 0.194,
+        "max_pixel_pick_offset_m": 0.088,
+        "photo_controls": [
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=TZRFz7hWr2Y1a5StNYQkEA&heading=317.35",
+            "image_sha256": "dc3278f07ded51cc45babec54b88bf2b36591b4ebf082cff496f3315092934ae",
+            "camera_enu_m": [
+              71.48733852547593,
+              -1.6545206224545836
+            ],
+            "yaw_deg": 317.35,
+            "image_x_px": 719,
+            "bearing_deg": 335.509
+          },
+          {
+            "date": "2020-11",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=eDu0oTD9kmpv8O_ITPfG3w&heading=322.35",
+            "image_sha256": "4b8201433df19a673b38d5d13a83a7780308fdc6f9a55daab9da831d17303533",
+            "camera_enu_m": [
+              68.30169504549121,
+              -1.6276017650961876
+            ],
+            "yaw_deg": 322.35,
+            "image_x_px": 759,
+            "bearing_deg": 343.842
+          },
+          {
+            "date": "2024-06",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=E49Lw15bT54_HqjYM59y5Q&heading=16.19",
+            "image_sha256": "c1c8c0c792e8a1563f1c9e8a08737fe4b41baabd5a06941ac127145849197493",
+            "camera_enu_m": [
+              48.56402324751252,
+              -1.7209417466074228
+            ],
+            "yaw_deg": 16.19,
+            "image_x_px": 849,
+            "bearing_deg": 44.635
+          },
+          {
+            "date": "2020-11",
+            "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pSI9Vs1CoI5zzy4A2hx9Bg&heading=22.37",
+            "image_sha256": "dd8e9c178ecb8153c040598f6935a67431880e18f1e3f69f9463e7a2abb9dcee",
+            "camera_enu_m": [
+              47.95402323984308,
+              2.3090638779103756
+            ],
+            "yaw_deg": 22.37,
+            "image_x_px": 890,
+            "bearing_deg": 53.716
+          }
+        ],
+        "label": "East 13th seat"
+      }
+    ],
+    "map_lamp": {
+      "enu_m": [
+        43.847,
+        25.332
+      ],
+      "rms_cross_bearing_m": 0.023,
+      "max_pixel_pick_offset_m": 0.236,
+      "photo_controls": [
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=sroyo8lMzttQ2yOx2d6cuw&heading=29.21",
+          "image_sha256": "05bb03dd3bdecc2b5bca5ddf695965e5cc79dc7aa07c77e06fccac9332ee0b25",
+          "camera_enu_m": [
+            38.407684090489056,
+            -1.7371127428486943
+          ],
+          "yaw_deg": 29.21,
+          "image_x_px": 323,
+          "bearing_deg": 11.307
+        },
+        {
+          "date": "2020-11",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=R3ThjNz2OynK8ihmRsFKQA&heading=32.88",
+          "image_sha256": "e8157b5f188c73d4e9073d3d2ab983570bb076c391e5e2c50a60c5caa4992b93",
+          "camera_enu_m": [
+            36.30051091709174,
+            -2.1928681172430515
+          ],
+          "yaw_deg": 32.88,
+          "image_x_px": 326.8,
+          "bearing_deg": 15.301
+        },
+        {
+          "date": "2020-11",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BK5fp4MdsjLg5s-s4IKr1Q&heading=47.18",
+          "image_sha256": "9d922e644d92fac9df8c0dd2642adbca11c8dbf1e3c97c457f491a31ea896486",
+          "camera_enu_m": [
+            16.750170224928297,
+            -2.0030986284837127
+          ],
+          "yaw_deg": 47.18,
+          "image_x_px": 494,
+          "bearing_deg": 44.779
+        },
+        {
+          "date": "2020-11",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pSI9Vs1CoI5zzy4A2hx9Bg&heading=351.13",
+          "image_sha256": "59329aa2223a034642abc736f4781a2fe11eb21135b88dc77067434a6899a563",
+          "camera_enu_m": [
+            47.95402323984308,
+            2.3090638779103756
+          ],
+          "yaw_deg": 351.13,
+          "image_x_px": 507,
+          "bearing_deg": 349.953
+        }
+      ],
+      "pole_top_z_m": 3.37
+    },
+    "bin": {
+      "enu_m": [
+        65.907,
+        13.871
+      ],
+      "rms_cross_bearing_m": 0.202,
+      "max_pixel_pick_offset_m": 0.079,
+      "photo_controls": [
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=TZRFz7hWr2Y1a5StNYQkEA&heading=317.35",
+          "image_sha256": "dc3278f07ded51cc45babec54b88bf2b36591b4ebf082cff496f3315092934ae",
+          "camera_enu_m": [
+            71.48733852547593,
+            -1.6545206224545836
+          ],
+          "yaw_deg": 317.35,
+          "image_x_px": 777,
+          "bearing_deg": 340.295
+        },
+        {
+          "date": "2024-06",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=E49Lw15bT54_HqjYM59y5Q&heading=16.19",
+          "image_sha256": "c1c8c0c792e8a1563f1c9e8a08737fe4b41baabd5a06941ac127145849197493",
+          "camera_enu_m": [
+            48.56402324751252,
+            -1.7209417466074228
+          ],
+          "yaw_deg": 16.19,
+          "image_x_px": 899,
+          "bearing_deg": 48.151
+        },
+        {
+          "date": "2020-11",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pSI9Vs1CoI5zzy4A2hx9Bg&heading=22.37",
+          "image_sha256": "dd8e9c178ecb8153c040598f6935a67431880e18f1e3f69f9463e7a2abb9dcee",
+          "camera_enu_m": [
+            47.95402323984308,
+            2.3090638779103756
+          ],
+          "yaw_deg": 22.37,
+          "image_x_px": 935,
+          "bearing_deg": 56.707
+        },
+        {
+          "date": "2024-07",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pGAjGJZRyDKa-pxn2DaswA&heading=253.63",
+          "image_sha256": "bc94ed7370e836c7f3c9bded42602c5c51033d56efd415e0ff933a2562cbff7d",
+          "camera_enu_m": [
+            83.17804539727513,
+            18.2586142513901
+          ],
+          "yaw_deg": 253.63,
+          "image_x_px": 530,
+          "bearing_deg": 254.619
+        },
+        {
+          "date": "2020-11",
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mk3BzOgIpT6_9h8xWShlIQ&heading=257.76",
+          "image_sha256": "74e8675bcc5b6040b48d06b724f57ad51a735ca393009a46bed28434d7daf061",
+          "camera_enu_m": [
+            82.8139136802638,
+            17.01424992736429
+          ],
+          "yaw_deg": 257.76,
+          "image_x_px": 545,
+          "bearing_deg": 260.161
+        }
+      ]
+    },
+    "map_seating_pad_enu_m": [
+      [
+        41.3,
+        19.85
+      ],
+      [
+        44.32,
+        19.88
+      ],
+      [
+        45.24,
+        21.08
+      ],
+      [
+        46.98,
+        21.2
+      ],
+      [
+        47.58,
+        22.5
+      ],
+      [
+        47.55,
+        23.48
+      ],
+      [
+        45.8,
+        24.95
+      ],
+      [
+        43.35,
+        24.95
+      ],
+      [
+        42.25,
+        23.3
+      ],
+      [
+        41.34,
+        23.15
+      ]
+    ],
+    "street_seating_pad_enu_m": [
+      [
+        61.85,
+        11.9
+      ],
+      [
+        67.24,
+        11.85
+      ],
+      [
+        67.15,
+        14.58
+      ],
+      [
+        61.9,
+        14.63
+      ]
+    ],
+    "seat_routes": [
+      {
+        "anchor_enu_m": [
+          41,
+          15.6
+        ],
+        "points_enu_m": [
+          [
+            41.15,
+            19.65
+          ],
+          [
+            42.72,
+            22.19
+          ],
+          [
+            44.58,
+            22.46
+          ]
+        ]
+      },
+      {
+        "anchor_enu_m": [
+          56.85,
+          10.78
+        ],
+        "points_enu_m": [
+          [
+            63.5,
+            11.15
+          ],
+          [
+            63.5,
+            13.15
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "description": "Mays memorial sundial and the east Science Green approach to the Science Walk forecourt.",
+  "pins": {
+    "east-thirteenth-east-review": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570",
+    "northeast-science-review": "a11a830eed3b0fec81a6c87e64f14f7f1076368b8e62ba602f2b2c32d2701dd7"
+  },
+  "sources": {
+    "exhibit": {
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/feature/sundial",
+      "sha256": "46ebaa7d924d35a627dac170070c7ef5a55634bafc874f74f1bf7bd1d03456c8"
+    },
+    "historic_photo": {
+      "url": "https://expo.uoregon.edu/spotlight/history-uo-architecture/catalog/c9c134cd7abb67c6e556f60d39d95c31",
+      "sha256": "57bb15e953903403615793260a9e0c7d8e2c929f5a8adec15e749938ead29e87",
+      "use": "Review only."
+    },
+    "historical_description": "https://oregonnews.uoregon.edu/lccn/2004260238/1912-03-27/ed-1/seq-1.pdf",
+    "historical_newspaper": {
+      "url": "https://oregonnews.uoregon.edu/lccn/sn83045782/1912-06-16/ed-1/seq-25.pdf",
+      "sha256": "3b17d566165ea9972374dfc7e8fd2948d602e2b042d0acb1b2c722b34ec57a11"
+    },
+    "field_report": {
+      "url": "https://blogs.uoregon.edu/geologyofcampus/2026/02/26/dont-take-this-sundial-for-granite/",
+      "sha256": "e408bbee68ae3c11efe14acec9cf4de0eb47888740c095896754215804d06ecf",
+      "overview_sha256": "d2bb4cb5c9f446ea45555085962a8b3f466fb1cc6af31c93c27b9ea933e7009a",
+      "south_face_sha256": "38965db406d5280fb6ca07c2b6a901091eefaff900b6eeb4258d710bc58d8ab0",
+      "gps_lon_lat": [
+        -123.07161,
+        44.04617
+      ],
+      "gps_scene_enu_m": [
+        -64.8,
+        74.5
+      ]
+    },
+    "campus_plan": "https://cpfm.uoregon.edu/sites/default/files/2023-12/principle-12-design-area-special-conditions_2022_23_.pdf",
+    "aerials": [
+      {
+        "year": 2017,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494246.14928888186%2C4876984.282153052%2C494283.14928888186%2C4877020.282153052&bboxSR=3740&imageSR=3740&size=1110%2C1080&layers=show%3A29&format=png32",
+        "sha256": "9d3f050d7b400d66a26ef56282162096d684c2a9ce3d9ae5ff209afd19605f36",
+        "file": "sundial-2017.png",
+        "bounds_enu_m": [
+          -83,
+          56,
+          -46,
+          92
+        ]
+      },
+      {
+        "year": 2021,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494246.14928888186%2C4876984.282153052%2C494283.14928888186%2C4877020.282153052&bboxSR=3740&imageSR=3740&size=1110%2C1080&layers=show%3A26&format=png32",
+        "sha256": "50377975b181268971ffa3094eef2a25aa9f1410eb5412291a6f3613ce63d10b",
+        "file": "sundial-2021.png",
+        "bounds_enu_m": [
+          -83,
+          56,
+          -46,
+          92
+        ]
+      },
+      {
+        "year": 2023,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494246.14928888186%2C4876984.282153052%2C494283.14928888186%2C4877020.282153052&bboxSR=3740&imageSR=3740&size=1110%2C1080&layers=show%3A2&format=png32",
+        "sha256": "d6fb728ee2013c1175c9f47b49b9919963294b13451b94b09aee537079a42872",
+        "file": "sundial-2023.png",
+        "bounds_enu_m": [
+          -83,
+          56,
+          -46,
+          92
+        ]
+      },
+      {
+        "year": 2025,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494246.14928888186%2C4876984.282153052%2C494283.14928888186%2C4877020.282153052&bboxSR=3740&imageSR=3740&size=1110%2C1080&layers=show%3A57&format=png32",
+        "sha256": "f8716447b7dd1cd0b1e7837848793d05e2d2264047d50cc8e6d9aab847c6efe8",
+        "file": "sundial-2025.png",
+        "bounds_enu_m": [
+          -83,
+          56,
+          -46,
+          92
+        ]
+      }
+    ],
+    "approach_aerials": [
+      {
+        "year": 2017,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494229.14928888186%2C4876926.282153052%2C494303.14928888186%2C4877020.282153052&bboxSR=3740&imageSR=3740&size=1480%2C1880&layers=show%3A29&format=png32",
+        "file": "green-circulation-2017.png",
+        "sha256": "22d7e366969967533f22da8f1d1df9c7a24c91cbc701dc91256295192b73112d",
+        "bounds_enu_m": [
+          -100,
+          -2,
+          -26,
+          92
+        ]
+      },
+      {
+        "year": 2021,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494229.14928888186%2C4876926.282153052%2C494303.14928888186%2C4877020.282153052&bboxSR=3740&imageSR=3740&size=1480%2C1880&layers=show%3A26&format=png32",
+        "file": "green-circulation-2021.png",
+        "sha256": "1590e17b735d95362182661897c9cfe935fa756371407c817a590fd93ec3d899",
+        "bounds_enu_m": [
+          -100,
+          -2,
+          -26,
+          92
+        ]
+      },
+      {
+        "year": 2025,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494229.14928888186%2C4876926.282153052%2C494303.14928888186%2C4877020.282153052&bboxSR=3740&imageSR=3740&size=1480%2C1880&layers=show%3A57&format=png32",
+        "file": "green-circulation-2025.png",
+        "sha256": "9eef9dd25cdbfcd1ea403abf1e364fce291014062b59c6b48751990025358796",
+        "bounds_enu_m": [
+          -100,
+          -2,
+          -26,
+          92
+        ]
+      }
+    ],
+    "nearby_lidar": {
+      "source": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/geoid18/8866/44123A1310.copc.laz",
+      "file": "science-green-noaa.npz",
+      "sha256": "2e3f29daa270730756748d0ef194f36ae98423d153bb56106e86d8d530a53e68",
+      "projected_crs": 6339,
+      "vertical_epsg": 5703,
+      "bounds_enu_m": [
+        -82,
+        58,
+        -47,
+        91
+      ],
+      "tile_file_creation_date": "2017-10-31",
+      "points": 8780
+    },
+    "aerial_stone_centers": [
+      {
+        "year": 2017,
+        "center_enu_m": [
+          -59.9,
+          75.48
+        ]
+      },
+      {
+        "year": 2021,
+        "center_enu_m": [
+          -59.94,
+          75.52
+        ]
+      },
+      {
+        "year": 2023,
+        "center_enu_m": [
+          -60.22,
+          75.95
+        ]
+      },
+      {
+        "year": 2025,
+        "center_enu_m": [
+          -60.06,
+          75.65
+        ]
+      }
+    ],
+    "lidar_note": "Elevated returns northeast of the mapped stone support the object height. They do not independently give a surveyed stone center.",
+    "geometry_note": "Original approximate model. Rough pedestal and plate dimensions follow field observations. Dial markings approximate a horizontal dial. No archival photo pixels are embedded.",
+    "campus_trees": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0",
+      "sha256": "22e5ffedfae0488c7eb10da094dc2cd5fd0d1ab0750e6a7b46fdb51f7d37e197",
+      "screen_enu_m": [
+        -58,
+        57,
+        -43,
+        76
+      ]
+    }
+  },
+  "sundial": {
+    "position_enu_m": [
+      -59.97,
+      75.65
+    ],
+    "width_depth_height_m": [
+      0.75,
+      0.72,
+      1.03
+    ],
+    "dial_diameter_m": 0.55,
+    "latitude_degrees": 44.04617
+  },
+  "forecourt_enu_m": [
+    [
+      -72.1,
+      71.86
+    ],
+    [
+      -65.33,
+      71.89
+    ],
+    [
+      -57.61,
+      71.96
+    ],
+    [
+      -52.81,
+      72.11
+    ],
+    [
+      -49.02,
+      71.78
+    ],
+    [
+      -43.18,
+      72.69
+    ],
+    [
+      -39.56,
+      73.89
+    ],
+    [
+      -39.94,
+      77.24
+    ],
+    [
+      -46.05,
+      77.29
+    ],
+    [
+      -55.5,
+      77.41
+    ],
+    [
+      -65.5,
+      77.36
+    ],
+    [
+      -71.68,
+      77.3
+    ]
+  ],
+  "north_bed_enu_m": [
+    [
+      -70.78,
+      71.62
+    ],
+    [
+      -67.28,
+      71.61
+    ],
+    [
+      -61.6,
+      71.76
+    ],
+    [
+      -56.11,
+      71.68
+    ],
+    [
+      -53.32,
+      71.58
+    ],
+    [
+      -53.32,
+      69.81
+    ],
+    [
+      -56.8,
+      69.57
+    ],
+    [
+      -61.16,
+      69.55
+    ],
+    [
+      -66.17,
+      69.71
+    ],
+    [
+      -69.76,
+      70.09
+    ]
+  ],
+  "north_shrubs": [
+    [
+      -69.62,
+      70.78,
+      0.61
+    ],
+    [
+      -67.45,
+      70.71,
+      0.56
+    ],
+    [
+      -64.58,
+      70.7,
+      0.71
+    ],
+    [
+      -61.52,
+      70.59,
+      0.67
+    ],
+    [
+      -58.99,
+      70.62,
+      0.53
+    ],
+    [
+      -56.3,
+      70.68,
+      0.58
+    ],
+    [
+      -54.22,
+      70.67,
+      0.47
+    ]
+  ],
+  "approach_width_m": 3.1,
+  "approach": {
+    "anchor_enu_m": [
+      -77.35,
+      9.94
+    ],
+    "points_enu_m": [
+      [
+        -76.44,
+        11.56
+      ],
+      [
+        -75.72,
+        13.7
+      ],
+      [
+        -74.74,
+        15.8
+      ],
+      [
+        -72.56,
+        19.34
+      ],
+      [
+        -69.23,
+        22.2
+      ],
+      [
+        -66.1,
+        23.04
+      ],
+      [
+        -61.2,
+        23.27
+      ],
+      [
+        -57.42,
+        24.32
+      ],
+      [
+        -55.0,
+        26.02
+      ],
+      [
+        -53.17,
+        29.16
+      ],
+      [
+        -51.55,
+        33.19
+      ],
+      [
+        -50.22,
+        38.05
+      ],
+      [
+        -49.58,
+        43.24
+      ],
+      [
+        -49.42,
+        48.43
+      ],
+      [
+        -49.69,
+        53.15
+      ],
+      [
+        -50.36,
+        57.4
+      ],
+      [
+        -50.75,
+        61.66
+      ],
+      [
+        -50.55,
+        65.71
+      ],
+      [
+        -49.87,
+        69.46
+      ],
+      [
+        -49.34,
+        73.65
+      ],
+      [
+        -52.51,
+        74.0
+      ],
+      [
+        -55.88,
+        74.03
+      ],
+      [
+        -59.97,
+        74.03
+      ],
+      [
+        -65.15,
+        74.03
+      ],
+      [
+        -69.67,
+        74.19
+      ]
+    ]
+  },
+  "context_retirement": {
+    "index": 150,
+    "position_enu_m": [
+      -50.404,
+      67.166
+    ]
+  },
+  "trees": [
+    {
+      "id": 4385,
+      "species": "Paperbark Maple",
+      "position_enu_m": [
+        -54.978,
+        67.671
+      ],
+      "inventory_height_ft": 8,
+      "inventory_spread_ft": 5,
+      "height_m": 2.8,
+      "crown_radius_m": 0.762,
+      "form": "rounded"
+    },
+    {
+      "id": 4450,
+      "species": "Crimson Spire White Oak",
+      "position_enu_m": [
+        -48.729,
+        62.618
+      ],
+      "inventory_height_ft": null,
+      "inventory_spread_ft": 17,
+      "height_m": 7.3,
+      "crown_radius_m": 2.5908,
+      "form": "columnar"
+    },
+    {
+      "id": 4451,
+      "species": "Crimson Spire White Oak",
+      "position_enu_m": [
+        -47.778,
+        59.437
+      ],
+      "inventory_height_ft": null,
+      "inventory_spread_ft": 19,
+      "height_m": 7.2,
+      "crown_radius_m": 2.8956,
+      "form": "columnar"
+    }
+  ]
+}

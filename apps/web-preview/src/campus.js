@@ -2034,6 +2034,17 @@ async function loadCampusScene(base, manifest, settings) {
       navigationUrl: settings.navigation_url,
       ids: [],
     },
+    "science-green-sundial": {
+      descriptor: config?.science_green_sundial_site,
+      directory: "science-green-sundial-review",
+      groundNode: "science-green-paving",
+      walkableGroundNode: "science-green-paving",
+      navigationUrl: settings.navigation_url,
+      navigationPredecessors: [config?.east_thirteenth_east_site].filter(
+        Boolean,
+      ),
+      ids: [],
+    },
     "agate-thirteenth-fifteenth": {
       descriptor: config?.agate_thirteenth_fifteenth_site,
       directory: "agate-thirteenth-fifteenth-review",
@@ -2183,6 +2194,17 @@ async function loadCampusScene(base, manifest, settings) {
           "1655 Franklin Boulevard",
         ],
       },
+    },
+    "oregon-hall-southeast-landscape": {
+      descriptor: config?.oregon_hall_southeast_landscape_site,
+      directory: "oregon-hall-southeast-landscape-review",
+      groundNode: "oregon-southeast-grounds",
+      walkableGroundNode: "oregon-map-apron",
+      navigationUrl: settings.navigation_url,
+      navigationPredecessors: [config?.east_thirteenth_east_site].filter(
+        Boolean,
+      ),
+      ids: [],
     },
     "hamilton-dunes": {
       descriptor: config?.hamilton_dunes_site,
@@ -4314,6 +4336,8 @@ async function loadCampusScene(base, manifest, settings) {
     "memorial-quad-plaques",
     "east-thirteenth-central",
     "east-thirteenth-east",
+    "science-green-sundial",
+    "oregon-hall-southeast-landscape",
     "agate-thirteenth-fifteenth",
     "agate-fifteenth-eighteenth",
     "hayward-practice-fields",

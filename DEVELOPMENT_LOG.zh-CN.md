@@ -6,6 +6,12 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Oregon Hall 东南景观与 Science Green 东侧步道
+
+- 配准 Oregon Hall 校园图站、两盏行人路灯、停车让行标志、三张长椅、一个垃圾桶及十三组灌木。新增 105.96 平方米墙脚植床、26.56 平方米图站铺面及 35.61 平方米座椅铺面，通过九条导航边接驳。图站采用项目自绘示意图，设施尺寸与部分遮挡的植床边缘使用估算。[Oregon Hall 复核](docs/oregon-hall-southeast-landscape-2026-11-27.md)。
+- 配准 1912 年 Mays 纪念日晷、409.89 平方米 Science Green 铺面、33.55 平方米北侧植床、七组灌木和三株校方登记树，替换落在东侧步道上的推断树。25 条导航边接入 East 13th 北侧人行道。晷面准确文字和现存铭牌状况待核对。[Science Green 复核](docs/science-green-sundial-2026-11-27.md)。
+- 研究工作树的桌面与手机生产预览匹配全部 611 个外部模型 ID。Oregon Hall 两条座椅路线分别长 7.738 米和 8.660 米，Science Green 两条路线分别长 98.905 米和 89.204 米，均落在配准铺面内。独立 Pages 工作树的构建、格式检查、200 项单元测试、523 项归档资产、查看器哈希和重复导出通过。本次改动使用 main 分支现有的 GitHub Pages 工作流。
+
 ## 2026-11-27 - 发布 Education Annex 与西侧入口景观 L2
 
 - 将校方 B0048 登记为可选的 L2 外部模型，保留原有 610 个外部模型 ID。补建西门廊、7.39 米坡道、四级外梯、楼名牌与植床。8 条导航边将入口接入 Kendall Plaza 绕行步道。坡道高差和门槛标高采用影像估算。[Annex 复核](docs/education-annex-landscape-review-2026-11-27.md)。

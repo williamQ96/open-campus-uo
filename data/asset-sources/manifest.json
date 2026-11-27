@@ -3364,6 +3364,30 @@
       "bytes": 265180,
       "license": "CC-BY-4.0",
       "origin": "Original Education Annex exterior and approach geometry informed by University of Oregon footprint and photographs and NOAA elevations. See docs/education-annex-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/oregon-hall-southeast-landscape-review/site.json": {
+      "bytes": 1467,
+      "sha256": "baadca1479efe3952c7b9202496b8e0aba787748cda880d5439727dc1a051c00",
+      "license": "CC-BY-4.0",
+      "origin": "Original Oregon Hall southeast planting, map station, seating, paving and Agate fixtures registered from county orthophotos and dated public photographs. See docs/oregon-hall-southeast-landscape-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/oregon-hall-southeast-landscape-review/site.glb": {
+      "bytes": 449692,
+      "sha256": "92394bb141fd80985ccc33930ba23a9da36fff1d8a4d854a16e647c0e2e0d047",
+      "license": "CC-BY-4.0",
+      "origin": "Original Oregon Hall southeast planting, map station, seating, paving and Agate fixtures registered from county orthophotos and dated public photographs. See docs/oregon-hall-southeast-landscape-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/science-green-sundial-review/site.json": {
+      "bytes": 1450,
+      "sha256": "56327ee199aaef21511cf61de777d3f160434081066bd2e65270309cc9d03c54",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for the 1912 Mays sundial, Science Green east walk and northern forecourt. See docs/science-green-sundial-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/science-green-sundial-review/site.glb": {
+      "bytes": 327516,
+      "sha256": "6808f404cb3e9a3c492f321a289c8e8211f69e2e1430515d79190fe0f3a2e111",
+      "license": "CC-BY-4.0",
+      "origin": "Original geometry for the 1912 Mays sundial, Science Green east walk and northern forecourt. See docs/science-green-sundial-2026-11-27.md."
     }
   },
   "additional_sources": [

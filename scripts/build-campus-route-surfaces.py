@@ -22,6 +22,8 @@ east_18th_west = import_module("build-east-18th-west-approach")
 frohnmayer_drive = import_module("build-frohnmayer-east-drive")
 rankin_frontage = import_module("build-rankin-frontage")
 wayfinding = import_module("build-northeast-campus-wayfinding")
+oregon = import_module("build-oregon-hall-southeast-landscape")
+science_green = import_module("build-science-green-sundial")
 root = green.site.root
 scene = green.site.scene
 
@@ -200,6 +202,19 @@ def main():
             rankin_frontage.PACKAGE,
             rankin_frontage_coverage(
                 green.site.read(metadata / "rankin-frontage.json"), metadata
+            ),
+        ),
+        encode_coverage(
+            science_green.PACKAGE,
+            science_green.outdoor_footprint(
+                green.site.read(metadata / "science-green-sundial.json")
+            )[0],
+        ),
+        encode_coverage(
+            oregon.PACKAGE,
+            oregon.route_coverage(
+                green.site.read(metadata / "oregon-hall-southeast-landscape.json"),
+                metadata,
             ),
         ),
         encode_coverage(

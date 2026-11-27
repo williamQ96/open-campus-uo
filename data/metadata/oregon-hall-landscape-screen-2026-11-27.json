@@ -1,0 +1,246 @@
+{
+  "historic_source": {
+    "url": "https://cpfm.uoregon.edu/sites/default/files/nediagnosis_sept_17_2012rdcd2.pdf#page=19",
+    "pdf_sha256": "5d46b9373793d53216463fa7ab6d2d91f3150a1e8c2ee19d6650552b96572228",
+    "registered_map_png_sha256": "46faa0fdc2d18dba835eb443b416dc0c1c82300a8182d2eec3f7998cedda3cf6",
+    "screen_dimensions_px": [
+      906,
+      700
+    ]
+  },
+  "architecture_reference": {
+    "url": "https://cpfm.uoregon.edu/sites/default/files/2025-01/oregonhall_2025_0.pdf#page=4",
+    "model_registration": "data/metadata/oregon-jaqua-site-review.json"
+  },
+  "controls": [
+    {
+      "pixel_xy": [
+        665,
+        453
+      ],
+      "scene_enu_m": [
+        2.64,
+        73.28
+      ],
+      "label": "northwest Oregon Hall roof corner",
+      "residual_m": 0.09
+    },
+    {
+      "pixel_xy": [
+        728,
+        453
+      ],
+      "scene_enu_m": [
+        38.15,
+        73.28
+      ],
+      "label": "northeast corner of west wing",
+      "residual_m": 0.352
+    },
+    {
+      "pixel_xy": [
+        665,
+        519
+      ],
+      "scene_enu_m": [
+        2.28,
+        34.32
+      ],
+      "label": "southwest west wing corner",
+      "residual_m": 0.134
+    },
+    {
+      "pixel_xy": [
+        779,
+        481
+      ],
+      "scene_enu_m": [
+        66.12,
+        57.6
+      ],
+      "label": "northeast east wing corner",
+      "residual_m": 0.357
+    },
+    {
+      "pixel_xy": [
+        779,
+        542
+      ],
+      "scene_enu_m": [
+        66.12,
+        21.25
+      ],
+      "label": "southeast east wing corner",
+      "residual_m": 0.143
+    },
+    {
+      "pixel_xy": [
+        746,
+        542
+      ],
+      "scene_enu_m": [
+        47.85,
+        21.25
+      ],
+      "label": "southwest east wing corner",
+      "residual_m": 0.193
+    }
+  ],
+  "pixel_to_east_north_coefficients": [
+    [
+      0.5597216430578457,
+      0.0056793844329502425
+    ],
+    [
+      -0.0037995851948117165,
+      -0.5893030561223577
+    ],
+    [
+      -367.83084121430585,
+      336.3704438182201
+    ]
+  ],
+  "control_rms_residual_m": 0.236,
+  "historical_station": {
+    "identifier": "J",
+    "pixel_xy": [
+      736,
+      550
+    ],
+    "estimated_enu_m": [
+      42.03,
+      16.43
+    ],
+    "continuity": "Current views do not resolve the panel or foundations. The historical label center and limited visibility support a search area, not a current location."
+  },
+  "ground_images": [
+    {
+      "date": "2024-06",
+      "id": "E49Lw15bT54_HqjYM59y5Q",
+      "camera_enu": [
+        48.56402324751252,
+        -1.7209417466074228
+      ],
+      "bearing": 16.19,
+      "distance": 19.5,
+      "file": "oregon-south-2024-06.jpg",
+      "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=E49Lw15bT54_HqjYM59y5Q&heading=16.19",
+      "image_sha256": "c1c8c0c792e8a1563f1c9e8a08737fe4b41baabd5a06941ac127145849197493",
+      "historic_marker_bearing_deg": 340.22,
+      "historic_marker_horizontal_pixel": 78.0
+    },
+    {
+      "date": "2020-11",
+      "id": "pSI9Vs1CoI5zzy4A2hx9Bg",
+      "camera_enu": [
+        47.95402323984308,
+        2.3090638779103756
+      ],
+      "bearing": 22.37,
+      "distance": 15.9,
+      "file": "oregon-south-2020-11.jpg",
+      "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pSI9Vs1CoI5zzy4A2hx9Bg&heading=22.37",
+      "image_sha256": "dd8e9c178ecb8153c040598f6935a67431880e18f1e3f69f9463e7a2abb9dcee",
+      "historic_marker_bearing_deg": 337.26,
+      "historic_marker_horizontal_pixel": -91.1
+    },
+    {
+      "date": "2024-07",
+      "id": "pGAjGJZRyDKa-pxn2DaswA",
+      "camera_enu": [
+        83.17804539727513,
+        18.2586142513901
+      ],
+      "bearing": 253.63,
+      "distance": 15.8,
+      "file": "oregon-east-2024-07.jpg",
+      "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pGAjGJZRyDKa-pxn2DaswA&heading=253.63",
+      "image_sha256": "bc94ed7370e836c7f3c9bded42602c5c51033d56efd415e0ff933a2562cbff7d",
+      "historic_marker_bearing_deg": 267.46,
+      "historic_marker_horizontal_pixel": 669.2
+    },
+    {
+      "date": "2020-11",
+      "id": "mk3BzOgIpT6_9h8xWShlIQ",
+      "camera_enu": [
+        82.8139136802638,
+        17.01424992736429
+      ],
+      "bearing": 257.76,
+      "distance": 15.2,
+      "file": "oregon-east-2020-11.jpg",
+      "link": "https://www.google.com/maps/@?api=1&map_action=pano&pano=mk3BzOgIpT6_9h8xWShlIQ&heading=257.76",
+      "image_sha256": "74e8675bcc5b6040b48d06b724f57ad51a735ca393009a46bed28434d7daf061",
+      "historic_marker_bearing_deg": 269.18,
+      "historic_marker_horizontal_pixel": 642.4
+    }
+  ],
+  "aerials": [
+    {
+      "zone": "oregon",
+      "year": 2017,
+      "bounds_enu_m": [
+        18,
+        4,
+        85,
+        60
+      ],
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494347.14928888186%2C4876932.282153052%2C494414.14928888186%2C4876988.282153052&bboxSR=3740&imageSR=3740&size=871%2C728&layers=show%3A29&format=png32",
+      "path": "oregon-2017.png",
+      "sha256": "bcc29b731f89282f86c8e5f7a02e7b866500b8ea377997f31224a6f5528b7596"
+    },
+    {
+      "zone": "oregon",
+      "year": 2021,
+      "bounds_enu_m": [
+        18,
+        4,
+        85,
+        60
+      ],
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494347.14928888186%2C4876932.282153052%2C494414.14928888186%2C4876988.282153052&bboxSR=3740&imageSR=3740&size=871%2C728&layers=show%3A26&format=png32",
+      "path": "oregon-2021.png",
+      "sha256": "509bc366f5638617fcc27b28c402bb01e4f0277dba90e3e05e6413879acb2a62"
+    },
+    {
+      "zone": "oregon",
+      "year": 2023,
+      "bounds_enu_m": [
+        18,
+        4,
+        85,
+        60
+      ],
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494347.14928888186%2C4876932.282153052%2C494414.14928888186%2C4876988.282153052&bboxSR=3740&imageSR=3740&size=871%2C728&layers=show%3A2&format=png32",
+      "path": "oregon-2023.png",
+      "sha256": "8906b4d39e9e811db8b7e58d963be95986b941d751ba74e34be8111cc257e69e"
+    },
+    {
+      "zone": "oregon",
+      "year": 2025,
+      "bounds_enu_m": [
+        18,
+        4,
+        85,
+        60
+      ],
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494347.14928888186%2C4876932.282153052%2C494414.14928888186%2C4876988.282153052&bboxSR=3740&imageSR=3740&size=871%2C728&layers=show%3A57&format=png32",
+      "path": "oregon-2025.png",
+      "sha256": "3a818b5f1ad44d3bc53e32d2b457200b00332a6cb94f8d57dd85dee5c4aa1e4e"
+    }
+  ],
+  "confirmed_features": [
+    {
+      "id": "south-foundation-planting",
+      "support": "Both south views confirm the planting strip, deciduous growth, bushes and ground cover beside the brick east wing. County imagery delineates the main walk edge."
+    },
+    {
+      "id": "agate-stop-and-lamp",
+      "support": "Both east views show an octagonal STOP sign with ALL WAY plate and a separate green lamp. Register the supports independently of the historical map marker."
+    },
+    {
+      "id": "south-walk-furnishings",
+      "support": "The 2020 south photo shows a bench and receptacle near the east end, with a compact sign in the curb lawn. A compact curb-lawn sign is visible from the 2024 south view."
+    }
+  ]
+}

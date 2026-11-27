@@ -62,6 +62,8 @@
 | Hayward 南侧穿行通道与 Jane Sanders 东侧旗杆步道 | 已纳入 L2 发布 | 补齐 Howe Field 广场至 Agate 的东西向通道。重建北侧窄道和台阶、Field 2 草坪、标线和围栏，复原通向 East 18th 的旗杆带。台阶高差、旗帜和种植为估算。 [场地复核](hayward-midblock-review-2026-11-27.md) |
 | Turf Field 1、Student Recreation Center 东入口与 East 15th 接驳 | 已纳入 L2 发布 | 补建 Field 1 人工草坪、两座球门、标线、北缘围栏及种植带。延伸 Field 2 西侧步道并接 SRC 东入口。分隔带靠体育场一端的台阶待近景核对。 [场地复核](hayward-midblock-review-2026-11-27.md#turf-field-1-and-the-student-recreation-center-approach) |
 | East 15th 与 Powell Plaza | 已纳入 L2 发布 | 接通 University Street、Straub、SRC 与 Agate。Onyx 以西配准街道和双线过街，以东补建铺砖步道、错列花坛、座椅和 Powell Plaza 三根主旗杆与门栏。尺寸、高程和细部采用估算。 [场地复核](east-fifteenth-hayward-review-2026-11-27.md) |
+| Oregon Hall 东南侧植床、Agate 路灯与停车让行标志、校园图站 | 纳入本次 L2 发布 | 补建 105.96 平方米墙脚植床、26.56 平方米图站接驳铺面、13 组代表性灌木、校方图站、绿灯杆及带 ALL WAY 附牌的停车让行标志。图站及东侧补建三张长椅、一个垃圾桶、第二盏路灯和两处共 35.61 平方米的座椅区铺面。八处设施有碰撞，九条导航边接入 East 13th。局部尺寸与植物种类仍待现场核对。[场地复核](oregon-hall-southeast-landscape-2026-11-27.md) |
+| Science Green 东侧步道、Mays 日晷与北侧植床 | 纳入本次 L2 发布 | 补建 409.89 平方米铺面、33.55 平方米植床、Mays 日晷、七组代表性灌木和三株校方登记树，替换一株落在步道上的推断树。25 条导航边连接 East 13th；西侧步道、现存铭牌文字与细部尺寸待核对。[场地复核](science-green-sundial-2026-11-27.md) |
 | 校方艺术目录中的户外作品 | 待逐项配准 | 先核对作品仍在原位的证据和场景里的尺寸及基座。目录含纪念性雕塑、场地装置和立面装饰。 |
 | Agate–Franklin 校门标识与 Onyx Bridge 北侧导览图站 | 纳入本次 L2 发布 | 校门牌、植床、Franklin 过街及连接人行道已配准，增加 17 条导航边。Onyx 图站补建地图柜、石质植箱、红色路缘、两根路桩、相连的入口沥青铺面、两处植床及五株校方登记树。地图为项目自绘示意图，部分尺寸采用估算。[场地复核](northeast-campus-wayfinding-2026-11-27.md) |
 | 校园标识、导览图站、交通与停车标识 | 待逐项配准 | 2024 标识计划提供样式，按当前街景和场地照片确认各位置。 |
