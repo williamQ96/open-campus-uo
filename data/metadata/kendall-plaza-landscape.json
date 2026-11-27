@@ -2,7 +2,7 @@
   "name": "Kendall Plaza and Education south promenade",
   "extent": [
     -695,
-    -440,
+    -487.3,
     -601,
     -373
   ],
@@ -18,6 +18,12 @@
       -439.9,
       -601,
       -373
+    ],
+    [
+      -642,
+      -487.3,
+      -606.0,
+      -431.0
     ]
   ],
   "pins": {
@@ -942,6 +948,46 @@
         [
           -629.45,
           -439.0
+        ],
+        [
+          -630.35,
+          -441.2
+        ],
+        [
+          -630.73,
+          -447.4
+        ],
+        [
+          -630.78,
+          -455.0
+        ],
+        [
+          -630.77,
+          -462.25
+        ],
+        [
+          -630.78,
+          -468.1
+        ],
+        [
+          -630.7,
+          -475.9
+        ],
+        [
+          -631.08,
+          -479.25
+        ],
+        [
+          -632.21,
+          -481.2
+        ],
+        [
+          -634.55,
+          -482.55
+        ],
+        [
+          -638.8,
+          -484.72
         ]
       ]
     },
@@ -995,6 +1041,66 @@
       "end_enu_m": [
         -613.42,
         -386.5
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -630.78,
+        -468.1
+      ],
+      "points_enu_m": [
+        [
+          -629.42,
+          -468.52
+        ],
+        [
+          -627.67,
+          -468.78
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -612.19,
+        -431.98
+      ],
+      "points_enu_m": [
+        [
+          -612.95,
+          -435.3
+        ],
+        [
+          -613.48,
+          -440.6
+        ],
+        [
+          -614.02,
+          -445.65
+        ],
+        [
+          -614.18,
+          -451.2
+        ],
+        [
+          -614.25,
+          -458.5
+        ],
+        [
+          -614.2,
+          -467.0
+        ],
+        [
+          -614.34,
+          -475.5
+        ],
+        [
+          -614.52,
+          -481.3
+        ],
+        [
+          -614.75,
+          -486.0
+        ]
       ]
     }
   ],
@@ -1099,6 +1205,13 @@
         -606.992,
         -408.495
       ]
+    },
+    {
+      "index": 190,
+      "position_enu_m": [
+        -614.321,
+        -450.724
+      ]
     }
   ],
   "art": {
@@ -1107,7 +1220,7 @@
     "date": 2009,
     "medium": "Carved natural granite",
     "location_source": "https://education.uoregon.edu/art-college-education-complex",
-    "field_note": "https://blogs.uoregon.edu/geologyofcampus/",
+    "field_note": "https://blogs.uoregon.edu/geologyofcampus/2026/02/26/granite-for-granted-the-geology-of-the-hedco-bench/",
     "reported_bench_coordinate_lonlat": [
       -123.07858,
       44.0419
@@ -1116,6 +1229,593 @@
       -623.659,
       -399.282
     ],
-    "status": "A February 2026 campus field note identifies a granite seat in Kendall Plaza. The point is approximate. Geometry and the full group require individual current locations and reusable sources."
+    "status": "The south lawn group has a registered ground location and visible components. Two of the four documented seats have lower-court placement candidates. Exact individual bench identities, Clinical Services placement and reusable artwork geometry require further evidence.",
+    "field_note_estimated_seat_size_m": [
+      1.28,
+      1.1,
+      0.58
+    ],
+    "portfolio": {
+      "url": "https://www.mnagase.com/portfolio/unity/",
+      "four_benches_nominal_length_range_m": [
+        1.22,
+        1.83
+      ],
+      "nominal_bench_width_range_m": [
+        0.61,
+        0.91
+      ],
+      "nominal_bench_height_m": 0.46,
+      "freestanding_group_nominal_length_width_m": [
+        9.75,
+        4.88
+      ],
+      "freestanding_group_nominal_height_range_m": [
+        0.61,
+        1.83
+      ]
+    },
+    "installation_views": [
+      {
+        "url": "https://education.uoregon.edu/sites/default/files/unity_and_harmony_780x438.png",
+        "sha256": "3b8936c1c0406749205710c9e33a9d09f1d35357c580345be37886d349ace2a8",
+        "observation": "The college photograph looks north past the freestanding group toward the court and the Annex. Two lower-court granite seats and two foreground basins are apparent."
+      },
+      {
+        "url": "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/b05b5a2e-2ff0-4910-ac61-f883b211c5c5/content#page=7",
+        "sha256": "6dc027dbc440230374773eddfa51093badb04f3c9a5d2874552e4e379d9ceb50",
+        "observation": "The 2009 installation photograph looks through the central opening toward Clinical Services and shows one of the bowls."
+      }
+    ],
+    "south_lawn_orthophotos": [
+      {
+        "year": 2017,
+        "bounds_enu_m": [
+          -642,
+          -503,
+          -605,
+          -417
+        ],
+        "sha256": "99c963065461f3e1778d23eb12cbf2c2561db2b642457a084b356980b00ddd9c",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493687.14928888186%2C4876425.282153052%2C493724.14928888186%2C4876511.282153052&bboxSR=3740&imageSR=3740&size=296%2C688&layers=show%3A29&format=png32"
+      },
+      {
+        "year": 2021,
+        "bounds_enu_m": [
+          -642,
+          -503,
+          -605,
+          -417
+        ],
+        "sha256": "d7ab958505c97b6356f02d668077274d3bb419d6e823b7b706a567b1e4b89456",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493687.14928888186%2C4876425.282153052%2C493724.14928888186%2C4876511.282153052&bboxSR=3740&imageSR=3740&size=296%2C688&layers=show%3A26&format=png32"
+      },
+      {
+        "year": 2025,
+        "bounds_enu_m": [
+          -642,
+          -503,
+          -605,
+          -417
+        ],
+        "sha256": "322f1ff33652994cf9b0d39e32adde0a8d004c64aa7fd873feab40d3e89f5858",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493687.14928888186%2C4876425.282153052%2C493724.14928888186%2C4876511.282153052&bboxSR=3740&imageSR=3740&size=296%2C688&layers=show%3A57&format=png32"
+      }
+    ],
+    "aerial_registration": {
+      "reference_year": 2025,
+      "lower_court_bench_candidates": [
+        {
+          "side": "north",
+          "center_enu_m": [
+            -625.9,
+            -403.75
+          ]
+        },
+        {
+          "side": "south",
+          "center_enu_m": [
+            -625.9,
+            -419.1
+          ]
+        }
+      ],
+      "south_lawn_visible_forms": [
+        {
+          "feature": "north bowl",
+          "center_enu_m": [
+            -622.6,
+            -466.65
+          ]
+        },
+        {
+          "feature": "central opening",
+          "center_enu_m": [
+            -624.2,
+            -469.1
+          ]
+        },
+        {
+          "feature": "south bowl",
+          "center_enu_m": [
+            -625.55,
+            -472.0
+          ]
+        }
+      ],
+      "approximate_gravel_envelope_enu_m": [
+        -628.8,
+        -474.2,
+        -621.1,
+        -464.5
+      ],
+      "notes": "The same traces recur in 2017 and 2021. The current screen uses the 2025 tile without shifting older imagery into place. Aerial positions are estimates. The field report point is about five metres from the northern pavement candidate."
+    }
+  },
+  "south_lawn": {
+    "walks": [
+      {
+        "line": [
+          [
+            -629.45,
+            -439.0
+          ],
+          [
+            -630.35,
+            -441.2
+          ],
+          [
+            -630.73,
+            -447.4
+          ],
+          [
+            -630.78,
+            -455.0
+          ],
+          [
+            -630.77,
+            -462.25
+          ],
+          [
+            -630.78,
+            -468.1
+          ],
+          [
+            -630.7,
+            -475.9
+          ],
+          [
+            -631.08,
+            -479.25
+          ],
+          [
+            -632.21,
+            -481.2
+          ],
+          [
+            -634.55,
+            -482.55
+          ],
+          [
+            -638.8,
+            -484.72
+          ]
+        ],
+        "width_m": 2.28
+      },
+      {
+        "line": [
+          [
+            -612.19,
+            -431.98
+          ],
+          [
+            -612.95,
+            -435.3
+          ],
+          [
+            -613.48,
+            -440.6
+          ],
+          [
+            -614.02,
+            -445.65
+          ],
+          [
+            -614.18,
+            -451.2
+          ],
+          [
+            -614.25,
+            -458.5
+          ],
+          [
+            -614.2,
+            -467.0
+          ],
+          [
+            -614.34,
+            -475.5
+          ],
+          [
+            -614.52,
+            -481.3
+          ],
+          [
+            -614.75,
+            -486.0
+          ]
+        ],
+        "width_m": 3.11
+      }
+    ],
+    "gravel_outline_enu_m": [
+      [
+        -629.82,
+        -467.65
+      ],
+      [
+        -628.35,
+        -467.03
+      ],
+      [
+        -627.03,
+        -466.91
+      ],
+      [
+        -625.95,
+        -466.03
+      ],
+      [
+        -624.59,
+        -464.84
+      ],
+      [
+        -623.16,
+        -464.73
+      ],
+      [
+        -621.77,
+        -465.29
+      ],
+      [
+        -621.23,
+        -466.79
+      ],
+      [
+        -621.45,
+        -468.27
+      ],
+      [
+        -622.0,
+        -470.41
+      ],
+      [
+        -623.06,
+        -472.54
+      ],
+      [
+        -624.15,
+        -473.76
+      ],
+      [
+        -625.86,
+        -473.81
+      ],
+      [
+        -627.23,
+        -473.08
+      ],
+      [
+        -628.22,
+        -471.43
+      ],
+      [
+        -628.84,
+        -470.19
+      ],
+      [
+        -629.84,
+        -469.55
+      ]
+    ],
+    "gravel_access_centerline_enu_m": [
+      [
+        -630.78,
+        -468.1
+      ],
+      [
+        -629.42,
+        -468.52
+      ],
+      [
+        -627.67,
+        -468.78
+      ]
+    ],
+    "gravel_access_width_m": 1.52,
+    "beds": [
+      [
+        [
+          -619.3,
+          -437.8
+        ],
+        [
+          -614.35,
+          -434.65
+        ],
+        [
+          -615.1,
+          -439.52
+        ],
+        [
+          -615.69,
+          -448.63
+        ],
+        [
+          -615.9,
+          -460.5
+        ],
+        [
+          -616.25,
+          -473.1
+        ],
+        [
+          -618.7,
+          -477.0
+        ],
+        [
+          -621.1,
+          -474.34
+        ],
+        [
+          -620.18,
+          -466.3
+        ],
+        [
+          -619.44,
+          -461.0
+        ],
+        [
+          -619.65,
+          -452.0
+        ]
+      ],
+      [
+        [
+          -629.25,
+          -464.32
+        ],
+        [
+          -626.73,
+          -463.04
+        ],
+        [
+          -624.6,
+          -462.5
+        ],
+        [
+          -622.59,
+          -461.72
+        ],
+        [
+          -621.26,
+          -462.11
+        ],
+        [
+          -620.99,
+          -464.75
+        ],
+        [
+          -621.87,
+          -466.4
+        ],
+        [
+          -626.9,
+          -467.63
+        ],
+        [
+          -629.36,
+          -467.38
+        ]
+      ],
+      [
+        [
+          -629.41,
+          -470.2
+        ],
+        [
+          -626.92,
+          -471.75
+        ],
+        [
+          -624.07,
+          -472.8
+        ],
+        [
+          -621.0,
+          -471.2
+        ],
+        [
+          -620.22,
+          -475.8
+        ],
+        [
+          -618.4,
+          -478.4
+        ],
+        [
+          -621.15,
+          -482.3
+        ],
+        [
+          -624.03,
+          -483.0
+        ],
+        [
+          -627.4,
+          -480.2
+        ],
+        [
+          -629.15,
+          -476.2
+        ]
+      ]
+    ],
+    "lawns": [
+      [
+        [
+          -630.68,
+          -439.46
+        ],
+        [
+          -620.15,
+          -439.55
+        ],
+        [
+          -619.76,
+          -454.8
+        ],
+        [
+          -619.87,
+          -460.16
+        ],
+        [
+          -622.26,
+          -462.12
+        ],
+        [
+          -627.37,
+          -463.24
+        ],
+        [
+          -630.78,
+          -464.73
+        ]
+      ],
+      [
+        [
+          -641.1,
+          -439.56
+        ],
+        [
+          -631.78,
+          -439.5
+        ],
+        [
+          -631.81,
+          -474.7
+        ],
+        [
+          -632.4,
+          -479.4
+        ],
+        [
+          -635.14,
+          -481.2
+        ],
+        [
+          -638.2,
+          -480.34
+        ],
+        [
+          -640.8,
+          -476.14
+        ]
+      ]
+    ],
+    "lamps": [
+      [
+        -629.15,
+        -450.87
+      ],
+      [
+        -629.14,
+        -465.88
+      ]
+    ],
+    "trees": [
+      {
+        "id": 1009,
+        "species": "Schwedler Norway Maple",
+        "position_enu_m": [
+          -609.106,
+          -445.104
+        ],
+        "height_m": 10.668,
+        "crown_radius_m": 3.048,
+        "form": "rounded"
+      },
+      {
+        "id": 1010,
+        "species": "Schwedler Norway Maple",
+        "position_enu_m": [
+          -608.727,
+          -458.173
+        ],
+        "height_m": 13.716,
+        "crown_radius_m": 6.096,
+        "form": "rounded"
+      },
+      {
+        "id": 1011,
+        "species": "Schwedler Norway Maple",
+        "position_enu_m": [
+          -609.008,
+          -470.106
+        ],
+        "height_m": 13.716,
+        "crown_radius_m": 6.096,
+        "form": "rounded"
+      },
+      {
+        "id": 4566,
+        "species": "Japanese Pagoda Tree",
+        "position_enu_m": [
+          -637.759,
+          -478.046
+        ],
+        "height_m": 2.438,
+        "crown_radius_m": 0.61,
+        "form": "rounded"
+      },
+      {
+        "id": 4567,
+        "species": "Japanese Pagoda Tree",
+        "position_enu_m": [
+          -628.057,
+          -485.793
+        ],
+        "height_m": 2.438,
+        "crown_radius_m": 0.61,
+        "form": "rounded"
+      },
+      {
+        "id": 4570,
+        "species": "Katsura Tree",
+        "position_enu_m": [
+          -635.804,
+          -454.959
+        ],
+        "height_m": 2.438,
+        "crown_radius_m": 0.61,
+        "form": "rounded"
+      },
+      {
+        "id": 4571,
+        "species": "Katsura Tree",
+        "position_enu_m": [
+          -635.474,
+          -470.926
+        ],
+        "height_m": 2.438,
+        "crown_radius_m": 0.61,
+        "form": "rounded"
+      }
+    ],
+    "tree_source": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=Removed+%3D+%27No%27+AND+FutureTree+%3D+%27No%27&geometry=493687.14928888186%2C4876439.282153052%2C493724.14928888186%2C4876489.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=TreeNumber%2CCommonName%2CHeight%2CSpread&returnGeometry=True",
+      "sha256": "9d322ebc8667477f390f02d5c2acd93fcc8cc0eef90d65441467c02654174df0"
+    }
   }
 }

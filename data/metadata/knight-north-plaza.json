@@ -1,0 +1,189 @@
+{
+  "name": "Knight Library north forecourt and Bailey fountain",
+  "extent": [-582, -202, -510, -174],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "sites": {
+      "knight-library-review": "65983f043cf10a13f2fe5169aba754e8b28a70022c46dcfa66c5d879b1070598"
+    }
+  },
+  "sources": {
+    "orthophotos": [
+      {
+        "year": 2017,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493731.14928888186%2C4876717.282153052%2C493828.14928888186%2C4876780.282153052&bboxSR=3740&imageSR=3740&size=776%2C504&layers=show%3A29&format=png32",
+        "sha256": "9df77644b086e0ab3b5b42b02503297b6de3c5482c1c4360e239791e70204bba",
+        "bounds_enu_m": [-598, -211, -501, -148]
+      },
+      {
+        "year": 2021,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493731.14928888186%2C4876717.282153052%2C493828.14928888186%2C4876780.282153052&bboxSR=3740&imageSR=3740&size=776%2C504&layers=show%3A26&format=png32",
+        "sha256": "1c2452897f343eb19ebe6ab3cfcbdc9e9915cf001004659833bf11dd88b56800",
+        "bounds_enu_m": [-598, -211, -501, -148]
+      },
+      {
+        "year": 2025,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493731.14928888186%2C4876717.282153052%2C493828.14928888186%2C4876780.282153052&bboxSR=3740&imageSR=3740&size=776%2C504&layers=show%3A57&format=png32",
+        "sha256": "d569ebd1f1e625e5044538229dce3e478788809ab0a3b44719a52e8ee1e95902",
+        "bounds_enu_m": [-598, -211, -501, -148]
+      }
+    ],
+    "historic_assessment": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/knight_library_prelim_hp_assessment.pdf",
+      "pages": [45, 46, 62, 68],
+      "sha256": "8c2518cdb00570357d9947f4b19683992b0ba6b0f3a624190331f3880cd9c8de"
+    },
+    "landscape_survey": {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/memorial_quad_.pdf",
+      "sha256": "303bb1c779416ac6db0a20aadf6382ca24563cd04f95fc2334c4010c23ee8105"
+    },
+    "august_2026": {
+      "url": "https://news.uoregon.edu/content/get-update-construction-activity-around-university-0",
+      "image_url": "https://news.uoregon.edu/sites/default/files/2026-08/knight-library-construction.JPG",
+      "sha256": "66ff54fb08e806877f35610d2034fa20434a054a0c3b6f49d3d520a44758ae7e"
+    },
+    "october_05_interview": "https://embed-rech-01.dialog.cm/oregondailyemerald/docs/10-5-26_-_the_daily_emerald_-_emerald_media_group",
+    "tree_register": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=1%3D1&geometry=493731.14928888186%2C4876717.282153052%2C493828.14928888186%2C4876780.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=TreeNumber%2CCommonName%2CHeight%2CSpread%2CRemoved%2CFutureTree&returnGeometry=True",
+      "sha256": "a3c33336852eeb0a58ab629d35c8b09edfd51bb75c934e09a7a9298b68cc1b2f"
+    }
+  },
+  "planting_history": {
+    "legacy_cherries": [
+      {
+        "historic_id": 1575,
+        "position_enu_m": [-524.843, -187.377],
+        "cultivar": "Shogetsu Oriental Cherry"
+      },
+      {
+        "historic_id": 1576,
+        "position_enu_m": [-533.927, -187.352],
+        "cultivar": "Shogetsu Oriental Cherry"
+      },
+      {
+        "historic_id": 1577,
+        "position_enu_m": [-541.778, -187.393],
+        "cultivar": "Shogetsu Oriental Cherry"
+      },
+      {
+        "historic_id": 1578,
+        "position_enu_m": [-551.917, -187.527],
+        "cultivar": "Shogetsu Oriental Cherry"
+      },
+      {
+        "historic_id": 1579,
+        "position_enu_m": [-562.117, -187.544],
+        "cultivar": "Shogetsu Oriental Cherry"
+      },
+      {
+        "historic_id": 1580,
+        "position_enu_m": [-570.679, -187.507],
+        "cultivar": "Shogetsu Oriental Cherry"
+      }
+    ],
+    "removed_count_reported": 4,
+    "last_edit_utc": "2026-08-17T16:56:28+00:00",
+    "condition": "Historic Prunus serrulata records. The October interview confirms four removals and planned saplings without individual IDs or verified planting dates."
+  },
+  "paving_bounds": [
+    [-579.3, -180.56, -516.6, -174.85],
+    [-571.96, -190.97, -565.62, -178.92],
+    [-581.27, -189.92, -565.62, -185.61],
+    [-528.23, -190.97, -523.25, -178.95],
+    [-528.23, -189.1, -512.3, -183.91],
+    [-570.3, -192.13, -523.88, -183.78]
+  ],
+  "planters": [
+    [-566.14, -184.02, -554.61, -180.94],
+    [-543.65, -184.02, -530.14, -180.94],
+    [-567.82, -201.76, -526.57, -192.16]
+  ],
+  "fountain": {
+    "basin": [-554.2, -181.63, -543.86, -179.76],
+    "back_wall_north_m": -180.96,
+    "plaque_center_east_m": -549.03,
+    "relief_panel_centers_east_m": [-550.7, -549.03, -547.36]
+  },
+  "seats": [
+    [-556.7, -180.9, -554.72, -180.34],
+    [-543.4, -180.9, -541.42, -180.34],
+    [-562.17, -184.42, -558.31, -183.86],
+    [-539.43, -184.42, -535.58, -183.86]
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [-570.75, -177.0],
+      "points_enu_m": [
+        [-569.04, -180.54],
+        [-569.04, -185.54],
+        [-569.13, -188.18],
+        [-573.38, -188.04],
+        [-578.5, -187.76]
+      ]
+    },
+    {
+      "anchor_enu_m": [-526.4, -177.0],
+      "points_enu_m": [
+        [-525.65, -180.63],
+        [-525.46, -184.77],
+        [-525.22, -187.04],
+        [-520.8, -187.04],
+        [-515.56, -187.58]
+      ]
+    },
+    {
+      "anchor_enu_m": [-569.13, -188.18],
+      "points_enu_m": [
+        [-557.34, -188.21],
+        [-547.66, -188.21],
+        [-536.87, -188.25]
+      ],
+      "end_enu_m": [-525.22, -187.04]
+    }
+  ],
+  "pilot_tree_clip": {
+    "source_legacy_sha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "source_refined_sha256": "9a129558d22a314f8dbddee5ed9f914c5e905665a3c1209a3732612cc5e296ef",
+    "tree_indices": [
+      161
+    ],
+    "legacy": {
+      "vegetation_1": {
+        "vertices": 23832,
+        "removed_indices": 144,
+        "ranges": [
+          [12762, 12852]
+        ]
+      },
+      "vegetation_2": {
+        "vertices": 66528,
+        "removed_indices": 1296,
+        "ranges": [
+          [39744, 40608]
+        ]
+      }
+    },
+    "refined": {
+      "pilot-trees-wood": {
+        "vertices": 23506,
+        "removed_indices": 528,
+        "ranges": [
+          [12614, 12716]
+        ]
+      },
+      "pilot-trees-foliage": {
+        "vertices": 34088,
+        "removed_indices": 660,
+        "ranges": [
+          [18352, 18478]
+        ]
+      }
+    }
+  },
+  "retired_pilot_tree_enu_m": [-525.753, -183.095]
+}

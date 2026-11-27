@@ -28,7 +28,7 @@ test("the library review registers the building outline and both north portals",
   const original = await page.evaluate(read, knight);
   expect(original.gates).toHaveLength(1);
   expect(original.solid).toEqual([false, false, true, false]);
-  await ready(page);
+  await ready(page, "/?exterior-review=knight-north-plaza-baseline");
   const revised = await page.evaluate(read, knight);
   expect(revised.buildings).toBe(original.buildings);
   expect(revised.roofs).toBe(original.roofs);

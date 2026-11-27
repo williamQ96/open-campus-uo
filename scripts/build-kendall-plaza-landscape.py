@@ -1,11 +1,12 @@
 # SPDX-License-Identifier: Apache-2.0
-"""Build the lower Kendall Plaza and its three east terrace levels."""
+"""Build Kendall Plaza, the east terrace and the south lawn approaches."""
 
 import argparse
 from importlib import import_module
 from pathlib import Path
 
-from shapely.geometry import Point, box
+import numpy as np
+from shapely.geometry import LineString, Point, Polygon, box
 from shapely.ops import unary_union
 
 education = import_module("build-kincaid-education-landscape")
@@ -42,6 +43,54 @@ def footprints(spec, buildings):
         lawn.difference(reserved),
         beds,
     )
+
+
+def south_lawn_footprints(spec, buildings):
+    lawn = spec["south_lawn"]
+    west = lawn["walks"][0]
+    seam = Point(west["line"][0]).buffer(west["width_m"] / 2)
+    walks = unary_union(
+        [
+            seam,
+            *(
+                LineString(row["line"]).buffer(row["width_m"] / 2, cap_style="flat")
+                for row in lawn["walks"]
+            ),
+        ]
+    ).difference(buildings)
+    access = (
+        LineString(lawn["gravel_access_centerline_enu_m"])
+        .buffer(lawn["gravel_access_width_m"] / 2, cap_style="square")
+        .difference(buildings)
+    )
+    gravel = (
+        Polygon(lawn["gravel_outline_enu_m"])
+        .union(access)
+        .difference(walks.union(buildings))
+    )
+    occupied = walks.union(gravel).union(buildings)
+    beds = []
+    for outline in lawn["beds"]:
+        bed = Polygon(outline).difference(occupied)
+        assert bed.is_valid and bed.area > 1
+        beds.append(bed)
+        occupied = occupied.union(bed)
+    grass = unary_union([Polygon(ring) for ring in lawn["lawns"]]).difference(occupied)
+    return walks, access, gravel, beds, grass
+
+
+def south_gravel(parts, field, gravel, walks, access):
+    site.drape(parts, field, gravel, (127, 125, 115), 0.151, 0.28)
+    mesh = parts[-1]
+    x, _, z = mesh.vertices.T
+    # Small changes in the original vertex colors break up the dry gravel.
+    noise = np.sin(x * 16.3 + z * 13.7) * 43758.5453
+    variation = 13 * (noise - np.floor(noise) - 0.5)
+    colors = np.array([127, 125, 115]) + variation[:, None]
+    mesh.visual.vertex_colors[:, :3] = np.rint(colors).astype(np.uint8)
+    lip = gravel.boundary.buffer(0.055).intersection(gravel)
+    lip = lip.difference(walks.union(access).buffer(0.10))
+    site.drape(parts, field, lip, (153, 148, 135), 0.165, 0.37)
 
 
 def terrace(ground, detail, plants, field, spec):
@@ -119,6 +168,26 @@ def main():
     furniture = education.furnishings(detail, field, spec)
     shrubs = green.plantings(plants, field, spec["trees"], beds)
 
+    south = spec["south_lawn"]
+    south_paths, access, gravel, south_beds, south_grass = south_lawn_footprints(
+        spec, buildings
+    )
+    previous_beds = unary_union(beds)
+    south_beds = [bed.difference(previous_beds) for bed in south_beds]
+    new_paving = south_paths.difference(brick.union(concrete).union(shared))
+    site.drape(ground, field, new_paving, education.CONCRETE, 0.151, 0.80)
+    south_gravel(ground, field, gravel, south_paths, access)
+    site.drape(
+        ground, field, south_grass.difference(lawn), (149, 160, 106), 0.068, 1.46
+    )
+    site.drape(ground, field, unary_union(south_beds), green.SOIL, 0.112, 0.94)
+    furniture.extend(
+        education.furnishings(detail, field, {"lamps": south["lamps"], "benches": []})
+    )
+    shrubs += green.plantings(
+        plants, field, south["trees"], south_beds, spacing=(1.10, 0.94)
+    )
+
     anchors = []
     for pack in (green.PACKAGE, education.PACKAGE):
         donor = site.read(site.scene / pack / "site.json")
@@ -127,7 +196,10 @@ def main():
             for path in donor["walkable_ground"]["paths"]
             for point in path["points_enu_m"]
         )
-    trunks = [Point(row["position_enu_m"]).buffer(0.22) for row in spec["trees"]]
+    trunks = [
+        Point(row["position_enu_m"]).buffer(max(0.22, row["crown_radius_m"] * 0.071))
+        for row in [*spec["trees"], *south["trees"]]
+    ]
     obstacles = unary_union(
         [
             buildings,
@@ -138,13 +210,20 @@ def main():
             *trunks,
         ]
     )
-    covered = brick.union(concrete).union(shared)
+    covered = unary_union([brick, concrete, shared, south_paths, access])
     edges, lengths = green.west.check_routes(
         {"nodes_enu_m": [*graph["nodes_enu_m"], *anchors]},
         spec["routes"],
         covered,
         obstacles,
     )
+    south_walk_routes = [
+        LineString(south["walks"][0]["line"]),
+        LineString(south["gravel_access_centerline_enu_m"]),
+        LineString(south["walks"][1]["line"]),
+    ]
+    for line in south_walk_routes:
+        assert line.difference(covered.buffer(0.13)).length < 0.001, line.wkt
     stair_area = unary_union(
         [
             box(
@@ -191,15 +270,23 @@ def main():
         "brick_m2": round(brick.area, 2),
         "concrete_m2": round(concrete.difference(shared).area, 2),
         "lawn_m2": round(lawn.area, 2),
-        "planting_beds": len(beds) + 1,
-        "trees": len(spec["trees"]),
+        "planting_beds": len(beds) + len(south_beds) + 1,
+        "trees": len(spec["trees"]) + len(south["trees"]),
         "terrace_levels_m": [row[2] for row in spec["terrace"]["tiers"]],
         "bench_count": len(spec["benches"]),
-        "lamp_count": len(spec["lamps"]),
+        "lamp_count": len(spec["lamps"]) + len(south["lamps"]),
         "low_plants": shrubs + 6,
         "route_edges": edges,
         "route_lengths_m": lengths,
         "faces": face_counts,
+        "south_lawn": {
+            "paving_m2": round(new_paving.area, 2),
+            "gravel_m2": round(gravel.area, 2),
+            "grass_m2": round(south_grass.difference(lawn).area, 2),
+            "beds_m2": round(sum(bed.area for bed in south_beds), 2),
+            "route_edges": sum(len(line.coords) - 1 for line in south_walk_routes),
+            "route_lengths_m": [round(line.length, 2) for line in south_walk_routes],
+        },
         "asset_sha256": site.pin(asset),
         "descriptor_sha256": site.pin(descriptor),
     }

@@ -186,7 +186,7 @@ def parking_curbs(detail, field, spec):
     return round(length, 2)
 
 
-def plantings(detail, field, trees, beds):
+def plantings(detail, field, trees, beds, *, spacing=(0.86, 0.68)):
     greens = [
         (111, 125, 72),
         (137, 137, 79),
@@ -198,8 +198,8 @@ def plantings(detail, field, trees, beds):
     for index, bed in enumerate(beds):
         x0, n0, x1, n1 = bed.bounds
         inner = bed.buffer(-0.24)
-        for i, e in enumerate(np.arange(x0 + 0.4, x1, 0.86)):
-            for j, n in enumerate(np.arange(n0 + 0.42, n1, 0.68)):
+        for i, e in enumerate(np.arange(x0 + 0.4, x1, spacing[0])):
+            for j, n in enumerate(np.arange(n0 + 0.42, n1, spacing[1])):
                 x = e + 0.14 * np.sin(index + j * 1.73 + i)
                 north = n + 0.11 * np.cos(index + i * 1.19 + j)
                 if not inner.covers(Point(x, north)):

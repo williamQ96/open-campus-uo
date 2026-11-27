@@ -6,6 +6,12 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release Knight Library forecourt and Kendall Plaza south lawn
+
+- Publish the north forecourt, Bailey fountain, cast-stone seats and three planted terraces at Knight Library. Reconnect both existing stair approaches with 14 navigation edges around the basin. The current fountain operation, replacement cherry positions and new stair fixtures await field evidence. [Forecourt review](docs/knight-north-plaza-review-2026-11-27.md).
+- Publish Kendall Plaza's south lawn, paths, edged gravel setting, three planting beds, seven registered trees, two lamps and 21 navigation edges. The artwork location has been surveyed and individual sculpture geometry awaits further evidence. [South lawn review](docs/kendall-plaza-landscape-review-2026-11-27.md#south-lawn-paths-and-gravel-setting).
+- Both site exports and the route coverage reproduce byte for byte. The production build, formatting check, 198 unit tests, 497 archive checks, viewer hashes and semantic activity check pass. The desktop and phone production previews each match all 610 active exterior IDs to loaded geometry, with 457 entrances and 374 successful resource responses. All 48 sampled responses match the build. The release targets GitHub Pages. Education Annex and its west approach stay in the research worktree with the proposed additional exterior. [Pages workflow](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml).
+
 ## 2026-11-27 - Release southwest campus paths, courtyards and terraces
 
 - Publish the cemetery and Southwest Campus Green endpoint routing corrections with the Kincaid Green and Lokey courtyard site, the Education South pavilion and stairs, and the Kendall Plaza terrace, planters, trees and walkways. [Landscape inventory](docs/landscape-l2-inventory.md).

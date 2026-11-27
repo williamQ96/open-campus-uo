@@ -6,6 +6,12 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Knight Library 北广场与 Kendall Plaza 南草坪
+
+- 发布 Knight Library 北广场、Bailey 喷泉、铸石凳和三处种植台地。新增 14 条导航边绕开水池并接通既有两侧楼梯。喷泉运行状态、樱花补植点位和楼梯新灯仍待现场核对。[广场复核](docs/knight-north-plaza-review-2026-11-27.md)。
+- 发布 Kendall Plaza 南草坪、步道、带收边砾石场地、三处植床、七株登记树、两盏灯和 21 条导航边。作品位置已配准，单件雕塑几何仍待补充证据。[南草坪复核](docs/kendall-plaza-landscape-review-2026-11-27.md#south-lawn-paths-and-gravel-setting)。
+- 两个场地及路线覆盖文件重复导出字节一致。生产构建、格式检查、198 项单测、497 项资产归档、查看器哈希及活动语义检查均通过。桌面和手机生产预览逐项匹配 610 个在用外观 ID 与实际网格，各加载 457 处入口和 374 项资源。48 项抽查响应与生产构建字节一致。本次发布面向 GitHub Pages。Education Annex 与西侧入口场地随新增外观留在研究工作树。[Pages 工作流](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
 ## 2026-11-27 - 发布校园西南侧步道、庭院与阶台
 
 - 发布墓园和 Southwest Campus Green 的铺面导航接入修正、Kincaid Green 与 Lokey 庭院、Education South 南亭与台阶，以及 Kendall Plaza 的阶台、花池、乔木和步道。[景观台账](docs/landscape-l2-inventory.md)。

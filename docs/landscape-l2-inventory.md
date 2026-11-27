@@ -18,8 +18,10 @@
 | Southwest Campus Green、Knight Library 南侧平台与 Lot 20 | 已纳入 L2 发布 | 配准开敞草坪、南侧平台、11 处种植区、29 株登记树和 40 条导航边，补建停车路缘、无障碍标线、长椅、路灯和场地牌。《Trees of Knowledge》约 1.22 米高，已记录作品群位置。单件底座与可再发布几何待核对。[场地复核](southwest-campus-green-review-2026-11-27.md) |
 | 墓园与 Southwest Campus Green 的铺面导航接入 | 已纳入 L2 发布 | 五条曾走草地的端点连线已校正，同一组路线控制在建模铺面边缘 0.13 米配准容差内。已核对五组偏移落点的双向路线及北段 Risdon Lane 对照路线。[路线复核](southwest-campus-green-review-2026-11-27.md#paved-route-access) |
 | Kincaid Green 与 Lokey Education 庭院 | 已纳入 L2 发布 | 补建马蹄形步道、砖铺庭院、七处种植区、52 株登记树、四张长凳和三根灯杆，恢复五株历史道格拉斯杉和 31.40 米南侧有顶廊道。八条分支增加 45 条导航边。南亭与两段楼梯已建模，上门槛和细部为估算。[场地复核](kincaid-education-landscape-review-2026-11-27.md) |
-| Kendall Plaza 与 Education 南侧步道 | 已纳入 L2 发布 | 根据航片和激光点云补建三道混凝土阶台、花池、砖铺广场、两侧绕行步道和 25 株登记树。新增 30 条导航边，校正 Southwest Campus Green 途经阶台的旧连线。《Unity and Harmony》已有一处约略坐标，单件位置和几何待核对。[场地复核](kendall-plaza-landscape-review-2026-11-27.md) |
-| Knight Library 北广场 2026 年整修 | 待核对完工现状 | 校方公告记录了广场混凝土、步道、台阶、喷泉与种植的整修。完工位置和剖面待近期影像核对。[施工公告](https://blogs.uoregon.edu/cpfmnotifications/2026/05/26/) |
+| Kendall Plaza 与 Education 南侧步道 | 已纳入 L2 发布 | 根据航片和激光点云补建三道混凝土阶台、花池、砖铺广场、两侧绕行步道和 25 株登记树。新增 30 条导航边，校正 Southwest Campus Green 途经阶台的旧连线。[场地复核](kendall-plaza-landscape-review-2026-11-27.md) |
+| Kendall Plaza 南草坪与砾石场地 | 已纳入 L2 发布 | 补建 279.98 平方米步道、51.98 平方米带收边砾石面、579.48 平方米草坪、三处植床、七株登记树和两盏代表性球罩灯。新增 21 条导航边，四条抽检路线通过铺面校验。[场地复核](kendall-plaza-landscape-review-2026-11-27.md#south-lawn-paths-and-gravel-setting) |
+| Kendall Plaza 的《Unity and Harmony》 | 已配准南草坪作品位置 | 三期航片与校方照片配准两座石盆、中央有孔构件和砾石场地。下层广场标出两张石凳候选位置，单件身份、Clinical Services 点位和雕塑几何待核对。[作品复核](kendall-plaza-landscape-review-2026-11-27.md#unity-and-harmony) |
+| Knight Library 北广场与 Bailey 喷泉 | 已纳入 L2 发布 | 根据历史测绘、三期航片及 2026 年施工照片重建 875.78 平方米混凝土铺面、喷泉、四张石凳、三处植床与 14 条导航边。四株樱花的移除有记录，补植点位、新灯剖面及喷泉运行状态待核对。[场地复核](knight-north-plaza-review-2026-11-27.md) |
 | 校园主道路、人行道及广场 | 已有代表性 L2，待逐处复核 | 139 条走廊已有注册铺装。按公共空间逐段核对路缘、过街线、台阶、扶手、道路标识和真实接合。 |
 | Gerlinger Field Green 草坪、步道和东侧边界 | 已纳入 L2 发布 | 恢复开敞草坪、六段铺装、南侧停车地坪、Annex 外梯、矮墙、标识、常春藤和十株登记树。楼梯、停车标线和植物尺寸采用估算。 |
 | Women’s Memorial Quad | 已纳入 L2 发布 | 配准重铺后的曲线步道、约 33 米台地墙、两段外梯和六张石凳。台阶与石凳尺寸为估计。 |

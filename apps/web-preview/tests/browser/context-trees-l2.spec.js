@@ -164,3 +164,25 @@ test("a damaged Kincaid bundle restores its trees and leaves the Southwest paths
   }));
   expect(surfaces).toEqual({ southwest: true, kincaid: false });
 });
+
+test("a damaged Kendall bundle restores its background trees and retains the courtyard", async ({
+  page,
+}) => {
+  await page.route("**/kendall-plaza-landscape-review/site.glb", (route) =>
+    route.fulfill({ body: "damaged Kendall mesh" }),
+  );
+  expect(await readScene(page)).toMatchObject({
+    buildings: DEFAULT_SELECTABLE_BUILDINGS,
+    contextTrees: DEFAULT_BACKGROUND_TREES + KENDALL_CONTEXT_TREE_REMOVALS,
+    pilotTrees: DEFAULT_PILOT_TREES,
+  });
+  const surfaces = await page.evaluate(() => ({
+    westWalk: Number.isFinite(
+      window.__campus.terrainCheck(-630.8, 455)["kendall-plaza-paving"],
+    ),
+    courtyard: Number.isFinite(
+      window.__campus.terrainCheck(-654.67, 348.7)["kincaid-education-paving"],
+    ),
+  }));
+  expect(surfaces).toEqual({ westWalk: false, courtyard: true });
+});

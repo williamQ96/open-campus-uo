@@ -3210,16 +3210,28 @@
       "origin": "Original Kincaid Green, Lokey Education courtyard and south pavilion geometry informed by county aerials and University of Oregon surveys. See docs/kincaid-education-landscape-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/kendall-plaza-landscape-review/site.json": {
-      "sha256": "8172b410bf4f7e1e9fee7faf2b2a33fb7b4a7165ded30d0e65e0663c84813af4",
-      "bytes": 2026,
+      "sha256": "0db8143bc949e48742657a5f790360ae16b514629bbda973bb33396a122bab5c",
+      "bytes": 2661,
       "license": "CC-BY-4.0",
-      "origin": "Original Kendall Plaza terrace and south Education promenade geometry informed by county aerials, NOAA point returns and University of Oregon records. See docs/kendall-plaza-landscape-review-2026-11-27.md."
+      "origin": "Original Kendall Plaza terrace, south lawn, gravel artwork setting and Education promenade geometry informed by county aerials, NOAA point returns and University of Oregon records. See docs/kendall-plaza-landscape-review-2026-11-27.md."
     },
     "apps/web-preview/public/scene/kendall-plaza-landscape-review/site.glb": {
-      "sha256": "79cab3ae6b479c81e33a25bb812377ee6b2ed90932d90c1b5c0a88a9f3d388cc",
-      "bytes": 3250128,
+      "sha256": "fb034e7ba495bca4c31e49d32fed3af06e0fe7d3db4d6b8286b54753186d96c4",
+      "bytes": 4023196,
       "license": "CC-BY-4.0",
-      "origin": "Original Kendall Plaza terrace and south Education promenade geometry informed by county aerials, NOAA point returns and University of Oregon records. See docs/kendall-plaza-landscape-review-2026-11-27.md."
+      "origin": "Original Kendall Plaza terrace, south lawn, gravel artwork setting and Education promenade geometry informed by county aerials, NOAA point returns and University of Oregon records. See docs/kendall-plaza-landscape-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/knight-north-plaza-review/site.glb": {
+      "sha256": "b311ef5901cb7e1a5340e0f901389949cefc58228fb469e5f68ef4859238148d",
+      "bytes": 468816,
+      "license": "CC-BY-4.0",
+      "origin": "Original Knight Library north forecourt, Bailey fountain, planting walls and seating geometry, informed by the 2026 construction photograph, historic campus surveys and county aerials. See docs/knight-north-plaza-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/knight-north-plaza-review/site.json": {
+      "sha256": "2c6bd50754d3c8e0fcc9025989d3e32e159143a703293b945468ddde70c2362b",
+      "bytes": 2011,
+      "license": "CC-BY-4.0",
+      "origin": "Original Knight Library north forecourt, Bailey fountain, planting walls and seating geometry, informed by the 2026 construction photograph, historic campus surveys and county aerials. See docs/knight-north-plaza-review-2026-11-27.md."
     }
   },
   "additional_sources": [

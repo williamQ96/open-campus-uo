@@ -1093,6 +1093,15 @@ async function loadCampusScene(base, manifest, settings) {
         "knight-library-window-reveals.json",
       ],
     },
+    "knight-north-plaza": {
+      descriptor: config?.knight_north_plaza_site,
+      directory: "knight-north-plaza-review",
+      groundNode: "knight-north-plaza-paving",
+      walkableGroundNode: "knight-north-plaza-paving",
+      navigationUrl: settings.navigation_url,
+      ids: [],
+      prerequisiteIds: ["roof-6684e091"],
+    },
     hedco: {
       descriptor: config?.hedco_site_review,
       directory: "hedco-exterior-review",
@@ -4097,6 +4106,7 @@ async function loadCampusScene(base, manifest, settings) {
   };
   const enabledReviews = new Set([
     "knight",
+    "knight-north-plaza",
     "emu",
     "hedco",
     "music",

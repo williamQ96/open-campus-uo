@@ -448,10 +448,14 @@ export async function loadBuildingSiteReview(
   const pilotUnderstory = site.pilot_understory_clip;
   const walkableGround = site.walkable_ground;
   const corridor = site.corridor_patch;
+  const prerequisiteSiteSha = site.prerequisite_site_sha256;
   if (
     site.source_presentation_sha256 !== config.asset_sha256 ||
     site.source_base_model_sha256 !== manifest.model.sha256 ||
     site.url !== `${directory}/site.glb` ||
+    (prerequisiteSiteSha !== undefined &&
+      (typeof prerequisiteSiteSha !== "string" ||
+        !/^[a-f0-9]{64}$/.test(prerequisiteSiteSha))) ||
     site.ground_node !== groundNode ||
     Boolean(walkableGroundNode) !== (walkableGround !== undefined) ||
     (walkableGroundNode &&
@@ -713,6 +717,13 @@ export async function loadBuildingSiteReview(
       return records;
     },
     install(root, baseRoot, installedReviews = []) {
+      if (
+        prerequisiteSiteSha &&
+        !installedReviews.some(
+          ({ descriptorSha }) => descriptorSha === prerequisiteSiteSha,
+        )
+      )
+        throw new Error("Exterior review prerequisite site was not installed.");
       if (
         navigationPredecessors.some(
           ({ sha256 }) =>

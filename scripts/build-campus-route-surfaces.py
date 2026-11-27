@@ -14,6 +14,7 @@ cemetery = import_module("build-pioneer-cemetery-landscape-review")
 green = import_module("build-southwest-campus-green")
 education = import_module("build-kincaid-education-landscape")
 kendall = import_module("build-kendall-plaza-landscape")
+knight_north = import_module("build-knight-north-plaza")
 root = green.site.root
 scene = green.site.scene
 
@@ -54,7 +55,8 @@ def kendall_coverage(spec):
     manifest, _, _ = green.east.pinned_site(scene, spec)
     buildings, _ = kendall.blockers(spec, manifest)
     brick, concrete, _, _ = kendall.footprints(spec, buildings)
-    return brick.union(concrete)
+    south_paths, gravel_access, _, _, _ = kendall.south_lawn_footprints(spec, buildings)
+    return unary_union([brick, concrete, south_paths, gravel_access])
 
 
 def encode_coverage(package, footprint):
@@ -83,6 +85,12 @@ def main():
     args = parser.parse_args()
     metadata = root / "data/metadata"
     rows = [
+        encode_coverage(
+            knight_north.PACKAGE,
+            knight_north.paving_footprint(
+                green.site.read(metadata / "knight-north-plaza.json")
+            ),
+        ),
         encode_coverage(
             cemetery.PACKAGE,
             cemetery_coverage(green.site.read(metadata / f"{cemetery.PACKAGE}.json")),
