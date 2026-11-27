@@ -24,7 +24,7 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "d418398c82d1f220bf487f7ab33b260a94ffaf2fc9d19687d920eaf585cdd515",
+      "local_sha256": "62f83ec4e929c6565cb2312f589e8f7e125f267252105969af1050aa22eeb58b",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife."
     },
     "src/building-card.js": {
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "74f9502b802b231747f06a01c7274ced014ceeb82c8339e6782338a1439376cf",
+    "public/scene/presentation.json": "190a3178e65031324db70a52122b453f4a2eea55f34d4bfe63dc67aed6c0cb92",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -499,6 +499,14 @@
     "public/scene/great-lawn-landscape-review/site.glb": "2be27896f72a9fabdcbab703f2bce58d437543f22c979b4680375769b9a580a8",
     "public/scene/great-lawn-landscape-review/site.json": "a08da4a016d294b1d1627d3c75724a18a7f4c52955efec5456dd91c1e6ff7181",
     "public/scene/agate-thirteenth-fifteenth-review/site.glb": "c25b52919f29ed5170b2f3819bb3a50c78b055fb4f2fe3fe137099d83f54f64e",
-    "public/scene/agate-thirteenth-fifteenth-review/site.json": "063dda28669c3150b4a614d87f7af021d7f43d233a52be5e56c53716ea602418"
+    "public/scene/agate-thirteenth-fifteenth-review/site.json": "063dda28669c3150b4a614d87f7af021d7f43d233a52be5e56c53716ea602418",
+    "public/scene/agate-fifteenth-eighteenth-review/site.json": "aad49c0f2973a695a2ab55105f5f004cb6e33509b1b6069f8e086fe1d35252d1",
+    "public/scene/agate-fifteenth-eighteenth-review/site.glb": "cfe9fae0d940b871346530086bcdc9fd75c7936c3416c996af1c9830eef45ddb",
+    "public/scene/hayward-practice-fields-review/site.json": "45e6a05c8fb10277b5ed8bbeeba7d85bcb17d50a7a9a70846c90c961d58b9ab4",
+    "public/scene/hayward-practice-fields-review/site.glb": "b3819561d5f758d5869e8a3111263d0adf66ded6a579b1e186af35c57af930cf",
+    "public/scene/hayward-square-track-review/site.json": "0f7567136cea8304828db9b117e54b89428490c55162ac774cd3d74dc288016d",
+    "public/scene/hayward-square-track-review/site.glb": "fba7e5351d13de4bd4240585db28e0955c0725937cfa5b812134d27a374b0a2c",
+    "public/scene/university-south-axis-review/site.json": "c7bfe3981a4ac0fd500f11385d08051a5436767b5233aee77c16bbe82b9a1d90",
+    "public/scene/university-south-axis-review/site.glb": "819725ea65ab1d28cb84d5892a0b6048a9bb3a8a95a65e30a73b6086875c68d3"
   }
 }

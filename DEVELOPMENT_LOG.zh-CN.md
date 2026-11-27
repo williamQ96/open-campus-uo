@@ -6,6 +6,30 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 发布 Agate Street 南段、Hayward 室外场地和 University Street
+
+- 发布 East 15th 至 East 18th 的四个 L2 场地包。Agate Street 补建两侧步道并接入 Hayward 和 Knight Law。Turf Field 4 与投掷区新增标线、围栏和公共步道。Hayward 方形跑道、Turf Field 3 与六片网球场经 East 18th 步道接到 Southgate 砖铺过街。[Agate Street 南段复核](docs/agate-fifteenth-eighteenth-review-2026-11-27.md) · [练习场复核](docs/hayward-practice-fields-review-2026-11-27.md) · [方形跑道与 Southgate 复核](docs/hayward-square-track-review-2026-11-27.md)。
+- 重建 University Street 两侧步道、两处双线过街、八处设施和 24 株登记树，增加 76 条导航边。西侧接 Dorris 台阶及 Rankin Lane，东侧接 Jane Sanders 与 Howe Field。调整西侧路灯旁的导航点，以满足浏览器 0.5 米的避障余量。停车标线、树冠与小型设施尺寸采用估算。[University Street 南段复核](docs/university-south-axis-review-2026-11-27.md)。
+- 四包合计增加 217 条导航边。University Street 两次独立导出逐字节一致。桌面与手机生产预览各核对 610 个模型 ID 及其网格，并加载 362 个应用与场景资源。两侧步道抽检路线分别为 340.81 米和 341.01 米。构建、格式检查、197 项单元测试、12 项浏览器测试、485 个归档资产及查看器哈希均通过。发布通过 main 的 GitHub Pages 工作流执行。[部署记录](https://github.com/williamQ96/open-campus-uo/actions/workflows/pages.yml)。
+
+## 2026-11-27 - Hayward 方形跑道、Turf Field 3 与 Southgate（本地）
+
+- 重建四道环道、两处编号八道直道、Turf Field 3 和六片室外网球场。补建两组球门、六张球网、风挡、阶梯看台和照明，清除场内八株推断树。高程、器材尺寸和部分标线采用估算。[方形跑道与 Southgate 复核](docs/hayward-square-track-review-2026-11-27.md)。
+- 将 East 18th 北侧步道经 Jane Sanders Stadium 接至 University Street，补建 Southgate 砖铺过街、两根灯柱和向北的步道支线。新增 36 条导航边。桌面和手机各加载全部 610 个外部模型网格及 360 项资源，并得到相同的 409.09 米路线。
+- 两次导出逐字节一致，Turf Field 4 对照复导一致。七组前后对照、1,386 处网格高程探针、十一处铺面与五处碰撞探针、197 项单测、十项相关浏览器测试、生产构建、格式检查和 483 项归档通过。改动留在本地，Pages 为 `e193eda`。
+
+## 2026-11-27 - Turf Field 4 与 Hayward Field 练习场（本地）
+
+- 补建 5,126.94 平方米人工草坪及足球和多用途标线、球门、相邻投掷草地、投掷圈和围网。沿街增补钢栏、关闭的双扇门、24 根外围网柱、低矮种植和 69 根代表性旗杆。清除场内和围栏带九株推断树。旗面、网高、器材尺寸及高程采用估算。[练习场复核](docs/hayward-practice-fields-review-2026-11-27.md)。
+- East 18th 公共步道沿旗杆带向西延伸，新增 19 条导航边。桌面与手机均加载 610 个外部模型网格及 358 项资源。从 Agate 东侧出发的路线为 247.95 米，距关闭的双扇门至少 2.59 米。七处铺面、五处碰撞和 888 处场地网格探针通过。
+- 两次独立导出逐字节一致，Agate 前一段复导一致。七组配对视图核对球场、围网、双扇门和步道。构建、格式检查、197 项单测、14 项相关浏览器测试、481 项归档和查看器哈希通过。练习场与 Agate 南段改动留在本地，Pages 为 `e193eda`。
+
+## 2026-11-27 - Agate Street 从 East 15th 至 East 18th（本地）
+
+- 重建道路、两侧步道、Knight Law 和 Hayward Field 临街入口、East 17th 两处过街线和 East 18th 北侧过街线。增补 12 处路侧设施、37 根代表性旗杆和 60 株校方登记树。路缘高程、旗帜用色和种植尺寸采用估算。[Agate Street 南段复核](docs/agate-fifteenth-eighteenth-review-2026-11-27.md)。
+- 新增 86 条导航边。桌面和手机生产预览均逐项加载全部 610 个外部模型的三角网格，并核对 83 个路点。三条过街路线分别为 27.25 米、27.77 米和 25.95 米。八处铺面通行探针及四处设施碰撞探针均通过。
+- 两次独立导出逐字节一致。七组配对视图核对 East 15th 接点、场馆和法学院临街面、旗杆步道及两处南侧路口。生产构建、格式检查、197 项单测、七项浏览器测试、479 项归档检查和查看器哈希通过。改动留在本地，Pages 为 `e193eda`。
+
 ## 2026-11-27 - 发布 Rankin Lane、Great Lawn 与 Agate Street 景观 L2
 
 - 沿 Rankin Lane 扩展 Pioneer Cemetery 景观，新增 322.94 平方米人行道、六组墓区边石、十处无名墓碑、三株阔叶树和 27 条导航边。第五株 Charles Lawson 玫瑰在 597 区块内估放。五组配对视图核对沿街景观，两次独立导出逐字节一致。[Rankin Lane 复核](docs/pioneer-cemetery-landscape-review-2026-11-26.md#rankin-lane-southern-fringe-and-block-597)。

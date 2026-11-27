@@ -44,6 +44,14 @@ East 13th Avenue 东段 L2 补建 EMU 回转圆场和车棚、科学楼群前过
 
 Agate Street 从 East 13th 至 East 15th 的 L2 包含道路、两侧人行道、中央安全岛、两段错位过街、链栏、标识和八株登记树，新增 67 条导航边。[Agate Street 复核](agate-thirteenth-fifteenth-review-2026-11-27.md)。
 
+Agate Street 南段沿 Hayward Field 和 Knight Law 延伸至 East 18th，补建两侧人行道、三处条纹过街、旗杆带、60 株登记树、12 处路侧设施和 86 条导航边。旗帜、树冠和路缘高程使用估算。[Agate Street 南段复核](agate-fifteenth-eighteenth-review-2026-11-27.md)。
+
+Hayward Field 南侧补建 Turf Field 4、室外投掷区和 East 18th 北侧旗杆步道。场地保留实地开敞视线，南门按街景建模为关闭状态，行人路线沿门外人行道续向西侧。[练习场复核](hayward-practice-fields-review-2026-11-27.md)。
+
+Hayward 西侧补建方形跑道、Turf Field 3 与六片室外网球场。East 18th 北侧步道经 Jane Sanders 场馆南面接入 University Street，补建 Southgate 砖铺过街和两根灯柱。[方形跑道与 Southgate 复核](hayward-square-track-review-2026-11-27.md)。
+
+University Street 从 East 15th 到 Southgate 补建两侧人行道、停车标线、两处双线过街、八处路侧设施、24 株登记树和 76 条导航边。路线连接 Dorris 台阶、Rankin Lane 和 Howe Field 入口。停车布局、树冠及路缘标高采用估算。[University Street 南段复核](university-south-axis-review-2026-11-27.md)。
+
 室外目标追踪 679 条记录，包括 664 条建筑外部及独立室外设施和 15 个植被、景观、天空、道具及户外活动资产组。共用教室和 663 条计划室内记录另列。当前有 610 项 L2 外观、15 组 L2 室外资产，独立在用 L1 为 0 项，另保留 54 条合并或停用后的历史映射。历史映射涉及 Garden、Franklin、Millrace、Villard、1261 Alder 旧住宅、旧 Sacred Heart 医院地块、EMU、Frohnmayer、Hendricks、Lawrence、Earl、Moss Street、Walton、Lillis、PLC、Lokey Education、东北科学楼群、Knight Campus、Hayward Field、Central Lutheran Church、The Studies at 19th、1544 Alder 的旧局部、Walnut Path 步桥旧网格、967 Patterson 旧建筑、Arena 前广场、Walnut 停车区、铁路跨线桥、储冷罐地块、Knight Library 西侧草坪、Grace Lutheran Church 旧分段、Hamilton Hall 五段已拆网格、Franklin 沿线两处停车区旧网格及 Patterson 原 YMCA 已拆网格，原 ID 和等级记录保存在 CSV。默认场景有 610 个可选建筑及独立设施。评级按项目样例逐项核对形体、主要可见细节、比例与材质、可编辑来源和验证结果。[上游等级说明](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/docs/zh-CN/asset-refinement-inventory.md#等级及适用范围)。
 
 Alpha Omega House、Fire Station 13、Birch 和 Fairmount 一带三栋住宅及 634–640 East 16th Alley 完成 L2。Patterson 旧 YMCA 归入历史映射，现状开敞地和铺装纳入 ENV-05。桌面和手机均已逐项核对 610 个默认可选建筑及独立设施的 ID。[最后一组外观复核](neighborhood-exterior-closeout-2026-11-26.md)。

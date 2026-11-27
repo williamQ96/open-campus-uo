@@ -3,6 +3,8 @@ import {
   DEFAULT_BACKGROUND_TREES,
   DEFAULT_PILOT_TREES,
   DEFAULT_VISIBLE_SOURCE_TREES,
+  HAYWARD_PRACTICE_CONTEXT_TREE_REMOVALS,
+  HAYWARD_SQUARE_CONTEXT_TREE_REMOVALS,
 } from "./exterior-counts.js";
 
 const baseline = "/?exterior-review=context-tree-model-baseline";
@@ -66,4 +68,33 @@ test("invalid replacement bytes retain the existing site tree decisions", async 
     route.fulfill({ body: "damaged background mesh" }),
   );
   expect(await readScene(page)).toEqual(prior);
+});
+
+test("a damaged Hayward practice bundle restores the prior context trees", async ({
+  page,
+}) => {
+  await page.route("**/hayward-practice-fields-review/site.glb", (route) =>
+    route.fulfill({ body: "damaged practice field mesh" }),
+  );
+  expect(await readScene(page)).toMatchObject({
+    trees:
+      DEFAULT_VISIBLE_SOURCE_TREES + HAYWARD_PRACTICE_CONTEXT_TREE_REMOVALS,
+    contextTrees:
+      DEFAULT_BACKGROUND_TREES + HAYWARD_PRACTICE_CONTEXT_TREE_REMOVALS,
+    pilotTrees: DEFAULT_PILOT_TREES,
+  });
+});
+
+test("a damaged square track bundle restores its context trees", async ({
+  page,
+}) => {
+  await page.route("**/hayward-square-track-review/site.glb", (route) =>
+    route.fulfill({ body: "damaged square track mesh" }),
+  );
+  expect(await readScene(page)).toMatchObject({
+    trees: DEFAULT_VISIBLE_SOURCE_TREES + HAYWARD_SQUARE_CONTEXT_TREE_REMOVALS,
+    contextTrees:
+      DEFAULT_BACKGROUND_TREES + HAYWARD_SQUARE_CONTEXT_TREE_REMOVALS,
+    pilotTrees: DEFAULT_PILOT_TREES,
+  });
 });

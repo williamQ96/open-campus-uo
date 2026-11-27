@@ -29,6 +29,10 @@
 | East 13th Avenue 东段、Agate 与 Columbia 路口 | L2 | 配准 EMU 回转圆场、人字顶车棚、Willamette 等三处条纹过街线、Agate 与 Columbia 路口标线及两侧人行道。补建十一处花坛、八株登记树和 97 条导航边，接到 Duck Dunes 北侧入口。 |
 | Great Lawn 西侧黑橡树庭院与步道 | 已纳入 L2 发布 | 校方与建筑师照片核对弧形混凝土座墙、黑橡树、碎石地坪、球形灯和两处种植带。西环道、南步道与 Agate Street 接合，新增 25 条导航边。点位和尺寸为照片估算。 |
 | Agate Street 从 East 13th 至 East 15th | 已纳入 L2 发布 | 配准道路、两侧人行道、错位过街与中央安全岛。补建链栏、四组标识、八株校园登记树及 67 条导航边，接通 Great Lawn 和 Powell Plaza。路缘、标识和种植采用估算。 |
+| Agate Street 从 East 15th 至 East 18th | 纳入本次 L2 发布 | 配准 Hayward Field 和 Knight Law 沿街步道、三处条纹过街、非机动车道和停车标线。补建 12 处路侧设施、旗杆带、60 株登记树和 86 条导航边。旗帜、树冠和高程采用估算。 [南段复核](agate-fifteenth-eighteenth-review-2026-11-27.md) |
+| Hayward Field 的 Turf Field 4、室外投掷区和 East 18th 旗杆步道 | 纳入本次 L2 发布 | 补建 5,126.94 平方米人工草地、两套球场标线、投掷圈、围栏、双扇门、拦球网和旗杆。疏除九株与实地冲突的推断树，人行道增加 19 条导航边。 [练习场复核](hayward-practice-fields-review-2026-11-27.md) |
+| Hayward 方形跑道、Turf Field 3、室外网球场和 Southgate | 纳入本次 L2 发布 | 重建环道、两处八道直道、人工草地与六片球场。沿 East 18th 北侧经 Jane Sanders 接到 University Street，补建南入口两根灯柱与砖铺过街。场地标线、网高和构件尺寸采用估算。 [场地复核](hayward-square-track-review-2026-11-27.md) |
+| University Street 从 East 15th 至 Southgate | 纳入本次 L2 发布 | 重建两侧人行道、停车标线、两处双线过街、八处路侧设施及 24 株登记树。连通 Dorris 台阶、Rankin Lane 和 Howe Field 入口，增加 76 条导航边。 [街道复核](university-south-axis-review-2026-11-27.md) |
 | 校方艺术目录中的户外作品 | 待逐项配准 | 先核对作品仍在原位的证据和场景里的尺寸及基座。目录含纪念性雕塑、场地装置和立面装饰。 |
 | 校园标识、导览图站、交通与停车标识 | 待逐项配准 | 2024 标识计划提供样式，按当前街景和场地照片确认各位置。 |
 | 校园花坛、乔木和林下植被 | 已有代表性 L2，待逐处复核 | 现有植被层和登记树记录作为基线。优先核对已知空地、边界、花坛与通道之间的关系。 |

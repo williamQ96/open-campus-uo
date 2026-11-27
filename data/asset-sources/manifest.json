@@ -3112,6 +3112,54 @@
       "sha256": "063dda28669c3150b4a614d87f7af021d7f43d233a52be5e56c53716ea602418",
       "license": "CC-BY-4.0",
       "origin": "Original Agate Street L2 pavement, refuge, furnishings and trees from East 13th to East 15th. See docs/agate-thirteenth-fifteenth-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/agate-fifteenth-eighteenth-review/site.json": {
+      "bytes": 2835,
+      "sha256": "aad49c0f2973a695a2ab55105f5f004cb6e33509b1b6069f8e086fe1d35252d1",
+      "license": "CC-BY-4.0",
+      "origin": "Original Agate Street corridor, crossing, flagpole and planting geometry. See docs/agate-fifteenth-eighteenth-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/agate-fifteenth-eighteenth-review/site.glb": {
+      "bytes": 2763880,
+      "sha256": "cfe9fae0d940b871346530086bcdc9fd75c7936c3416c996af1c9830eef45ddb",
+      "license": "CC-BY-4.0",
+      "origin": "Original Agate Street corridor, crossing, flagpole and planting geometry. See docs/agate-fifteenth-eighteenth-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/hayward-practice-fields-review/site.json": {
+      "bytes": 2083,
+      "sha256": "45e6a05c8fb10277b5ed8bbeeba7d85bcb17d50a7a9a70846c90c961d58b9ab4",
+      "license": "CC-BY-4.0",
+      "origin": "Original Turf Field 4, outdoor throwing area, enclosure and East 18th flag walk geometry. See docs/hayward-practice-fields-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/hayward-practice-fields-review/site.glb": {
+      "bytes": 5033776,
+      "sha256": "b3819561d5f758d5869e8a3111263d0adf66ded6a579b1e186af35c57af930cf",
+      "license": "CC-BY-4.0",
+      "origin": "Original Turf Field 4, outdoor throwing area, enclosure and East 18th flag walk geometry. See docs/hayward-practice-fields-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/hayward-square-track-review/site.json": {
+      "bytes": 2497,
+      "sha256": "0f7567136cea8304828db9b117e54b89428490c55162ac774cd3d74dc288016d",
+      "license": "CC-BY-4.0",
+      "origin": "Original Hayward square track, Turf Field 3, tennis courts, East 18th sidewalk and Southgate geometry. See docs/hayward-square-track-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/hayward-square-track-review/site.glb": {
+      "bytes": 5712124,
+      "sha256": "fba7e5351d13de4bd4240585db28e0955c0725937cfa5b812134d27a374b0a2c",
+      "license": "CC-BY-4.0",
+      "origin": "Original Hayward square track, Turf Field 3, tennis courts, East 18th sidewalk and Southgate geometry. See docs/hayward-square-track-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/university-south-axis-review/site.json": {
+      "bytes": 2829,
+      "sha256": "c7bfe3981a4ac0fd500f11385d08051a5436767b5233aee77c16bbe82b9a1d90",
+      "license": "CC-BY-4.0",
+      "origin": "Original University Street paving, cemetery and stadium connectors, street fixtures and registered trees. See docs/university-south-axis-review-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/university-south-axis-review/site.glb": {
+      "bytes": 2038740,
+      "sha256": "819725ea65ab1d28cb84d5892a0b6048a9bb3a8a95a65e30a73b6086875c68d3",
+      "license": "CC-BY-4.0",
+      "origin": "Original University Street paving, cemetery and stadium connectors, street fixtures and registered trees. See docs/university-south-axis-review-2026-11-27.md."
     }
   },
   "additional_sources": [

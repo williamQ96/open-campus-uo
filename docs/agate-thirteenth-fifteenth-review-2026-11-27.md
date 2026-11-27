@@ -6,6 +6,8 @@ The export has 3,255.50 m² of road, 1,975.80 m² of sidewalks and 876.55 m² of
 
 Seven added path branches contain 67 edges. The west sidewalk curves behind the existing planter at East 13th. The midblock link crosses both lanes through the refuge and connects to the Great Lawn path on the east side. The north and south crossings at East 15th tie to the sidewalks, with a short extension into Powell Plaza.
 
+The local south extension continues along both sidewalks to Hayward Field, East 17th and East 18th. [Agate Street south review](agate-fifteenth-eighteenth-review-2026-11-27.md).
+
 Two exports match byte for byte. A control export reproduces the previous East 13th asset and descriptor. Six paired camera views check the north seam, boulevard, directional signs, refuge and plaza approach. Separate desktop and phone sessions loaded actual mesh geometry for all 610 exterior IDs and 354 scene resources each. Both report 25.21 m across the offset crossing, 38.03 m from the west sidewalk to the Great Lawn oak court, and 21.63 m across the north branch of East 15th. The fitted route stays inside both marked corridors and passes through the median opening. Eight clear paving samples, four solid probes and the corrupt-bundle recovery case passed.
 
 This refinement is included in the outdoor L2 release with Great Lawn and Rankin Lane. The research directory `exterior-l2/agate-thirteenth-fifteenth-20261127/` retains the dated photographs, source receipts, paired renders and browser verification. [Editable registration](../data/metadata/agate-thirteenth-fifteenth.json) · [Deterministic exporter](../scripts/build-agate-thirteenth-fifteenth.py) · [Runtime descriptor](../apps/web-preview/public/scene/agate-thirteenth-fifteenth-review/site.json).

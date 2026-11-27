@@ -1,0 +1,1692 @@
+{
+  "bounds": [
+    -328,
+    -598,
+    -287,
+    -237
+  ],
+  "paving_road": [
+    [
+      -584.75,
+      -320.05,
+      -303.58
+    ],
+    [
+      -582.6,
+      -320.02,
+      -299.58
+    ],
+    [
+      -577.1,
+      -319.51,
+      -297.18
+    ],
+    [
+      -555,
+      -319.72,
+      -296.98
+    ],
+    [
+      -528,
+      -319.03,
+      -296.81
+    ],
+    [
+      -502,
+      -318.95,
+      -297.22
+    ],
+    [
+      -485,
+      -318.91,
+      -298.8
+    ],
+    [
+      -460,
+      -319.13,
+      -298.96
+    ],
+    [
+      -426,
+      -318.62,
+      -299.16
+    ],
+    [
+      -402,
+      -318.68,
+      -298.86
+    ],
+    [
+      -389.7,
+      -318.73,
+      -298.82
+    ],
+    [
+      -380,
+      -318.7,
+      -298.59
+    ],
+    [
+      -350,
+      -318.48,
+      -298.47
+    ],
+    [
+      -321,
+      -318.71,
+      -298.83
+    ],
+    [
+      -288,
+      -318.66,
+      -298.8
+    ],
+    [
+      -262,
+      -318.49,
+      -298.83
+    ],
+    [
+      -255.3,
+      -317.77,
+      -298.42
+    ],
+    [
+      -250,
+      -316.63,
+      -298.46
+    ],
+    [
+      -245,
+      -316.36,
+      -297.79
+    ],
+    [
+      -239,
+      -314.8,
+      -299.58
+    ]
+  ],
+  "west_walk": [
+    [
+      -584.8,
+      -323.12,
+      -320.07
+    ],
+    [
+      -577,
+      -322.18,
+      -319.6
+    ],
+    [
+      -558,
+      -322.02,
+      -319.72
+    ],
+    [
+      -536,
+      -321.71,
+      -318.98
+    ],
+    [
+      -515,
+      -321.49,
+      -319.02
+    ],
+    [
+      -491,
+      -321.4,
+      -318.96
+    ],
+    [
+      -471,
+      -321.79,
+      -319.05
+    ],
+    [
+      -448,
+      -321.34,
+      -318.51
+    ],
+    [
+      -420,
+      -321.26,
+      -318.47
+    ],
+    [
+      -395,
+      -321.23,
+      -318.58
+    ],
+    [
+      -389.2,
+      -321.18,
+      -318.39
+    ],
+    [
+      -386.6,
+      -321.38,
+      -318.42
+    ],
+    [
+      -369,
+      -321.01,
+      -318.58
+    ],
+    [
+      -344,
+      -321.14,
+      -318.48
+    ],
+    [
+      -320,
+      -321.25,
+      -318.57
+    ],
+    [
+      -292,
+      -320.75,
+      -318.56
+    ],
+    [
+      -275,
+      -320.49,
+      -318.5
+    ],
+    [
+      -259,
+      -320.53,
+      -318.35
+    ],
+    [
+      -253,
+      -320.38,
+      -317.67
+    ],
+    [
+      -250.4,
+      -320.29,
+      -316.22
+    ],
+    [
+      -246.14,
+      -320.24,
+      -316.73
+    ]
+  ],
+  "east_walk": [
+    [
+      -584.8,
+      -300.36,
+      -294.71
+    ],
+    [
+      -578,
+      -297.86,
+      -294.43
+    ],
+    [
+      -563,
+      -297.35,
+      -294.11
+    ],
+    [
+      -544,
+      -296.91,
+      -294.06
+    ],
+    [
+      -525,
+      -296.81,
+      -293.51
+    ],
+    [
+      -512,
+      -296.97,
+      -293.41
+    ],
+    [
+      -500,
+      -296.97,
+      -293.35
+    ],
+    [
+      -487,
+      -298.83,
+      -293.48
+    ],
+    [
+      -472,
+      -298.95,
+      -293.92
+    ],
+    [
+      -459,
+      -299.08,
+      -295.31
+    ],
+    [
+      -438,
+      -299.21,
+      -296.3
+    ],
+    [
+      -417,
+      -299.14,
+      -295.8
+    ],
+    [
+      -397,
+      -299.04,
+      -295.18
+    ],
+    [
+      -373,
+      -298.57,
+      -294.3
+    ],
+    [
+      -350,
+      -298.54,
+      -294.31
+    ],
+    [
+      -329,
+      -298.82,
+      -294.16
+    ],
+    [
+      -307,
+      -298.83,
+      -294.44
+    ],
+    [
+      -280,
+      -298.88,
+      -294.21
+    ],
+    [
+      -259,
+      -298.82,
+      -294.05
+    ],
+    [
+      -251,
+      -298.65,
+      -294.68
+    ],
+    [
+      -246,
+      -298.2,
+      -294.94
+    ]
+  ],
+  "approach_paving": [
+    [
+      [
+        -299,
+        -498.8
+      ],
+      [
+        -293,
+        -498.6
+      ],
+      [
+        -290.8,
+        -494.56
+      ],
+      [
+        -293.4,
+        -490.58
+      ],
+      [
+        -299.2,
+        -490.2
+      ]
+    ],
+    [
+      [
+        -298.8,
+        -475.3
+      ],
+      [
+        -295,
+        -473.6
+      ],
+      [
+        -294,
+        -470.4
+      ],
+      [
+        -296.6,
+        -465.3
+      ],
+      [
+        -299,
+        -470.1
+      ]
+    ],
+    [
+      [
+        -297.5,
+        -451.0
+      ],
+      [
+        -294.0,
+        -450.92
+      ],
+      [
+        -294.0,
+        -434.22
+      ],
+      [
+        -297.55,
+        -435.01
+      ]
+    ],
+    [
+      [
+        -298.3,
+        -387.4
+      ],
+      [
+        -293.8,
+        -388.3
+      ],
+      [
+        -290.45,
+        -382.34
+      ],
+      [
+        -293.21,
+        -377.53
+      ],
+      [
+        -298.2,
+        -379.1
+      ]
+    ],
+    [
+      [
+        -298.9,
+        -298.92
+      ],
+      [
+        -292.5,
+        -302.6
+      ],
+      [
+        -289,
+        -297.4
+      ],
+      [
+        -293,
+        -292.16
+      ],
+      [
+        -298.6,
+        -293.32
+      ]
+    ],
+    [
+      [
+        -320.2,
+        -390.9
+      ],
+      [
+        -318.36,
+        -390.68
+      ],
+      [
+        -318.36,
+        -385.19
+      ],
+      [
+        -321.95,
+        -385.4
+      ],
+      [
+        -321.9,
+        -387.0
+      ]
+    ],
+    [
+      [
+        -297.42,
+        -251.21
+      ],
+      [
+        -298.43,
+        -250.89
+      ],
+      [
+        -300.57,
+        -251.77
+      ],
+      [
+        -300.46,
+        -254.06
+      ],
+      [
+        -298.79,
+        -254.72
+      ],
+      [
+        -297.53,
+        -254.15
+      ]
+    ]
+  ],
+  "crosswalk_lines": [
+    [
+      [
+        -316.52,
+        -249.53
+      ],
+      [
+        -298.43,
+        -251.37
+      ]
+    ],
+    [
+      [
+        -316.38,
+        -252.39
+      ],
+      [
+        -298.98,
+        -254.25
+      ]
+    ],
+    [
+      [
+        -316.29,
+        -233.79
+      ],
+      [
+        -303.14,
+        -234.44
+      ]
+    ],
+    [
+      [
+        -316.07,
+        -236.95
+      ],
+      [
+        -303.29,
+        -237.44
+      ]
+    ]
+  ],
+  "west_parking_groups": [
+    [
+      -575.4,
+      -568.1,
+      2.7
+    ],
+    [
+      -558,
+      -540,
+      2.58
+    ],
+    [
+      -529,
+      -515.3,
+      2.71
+    ],
+    [
+      -506,
+      -454,
+      2.57
+    ],
+    [
+      -452,
+      -394.5,
+      2.6
+    ],
+    [
+      -384,
+      -336,
+      2.58
+    ],
+    [
+      -333.7,
+      -254.9,
+      2.58
+    ]
+  ],
+  "east_parking_groups": [
+    [
+      -582.2,
+      -568.8,
+      2.62
+    ],
+    [
+      -558.7,
+      -523.4,
+      2.58
+    ],
+    [
+      -515.3,
+      -502.5,
+      2.62
+    ],
+    [
+      -406.2,
+      -388.3,
+      2.69
+    ],
+    [
+      -375,
+      -335.9,
+      2.66
+    ],
+    [
+      -332.6,
+      -256.6,
+      2.71
+    ]
+  ],
+  "paint_zones": [
+    [
+      -318.45,
+      -259.24,
+      -313.64,
+      -256.62
+    ],
+    [
+      -304.1,
+      -386.15,
+      -299.17,
+      -383.9
+    ],
+    [
+      -304.7,
+      -479.62,
+      -299.04,
+      -476.07
+    ]
+  ],
+  "centerline": [
+    [
+      -308.04,
+      -583.9
+    ],
+    [
+      -307.41,
+      -560.15
+    ],
+    [
+      -306.99,
+      -520
+    ],
+    [
+      -306.42,
+      -474
+    ],
+    [
+      -306.07,
+      -415
+    ],
+    [
+      -306.01,
+      -352
+    ],
+    [
+      -305.99,
+      -295
+    ],
+    [
+      -306.0,
+      -256
+    ]
+  ],
+  "lights": [
+    {
+      "kind": "parking",
+      "position": [
+        -320.42,
+        -554.28
+      ],
+      "heading": 90
+    },
+    {
+      "kind": "lamp",
+      "position": [
+        -319.92,
+        -506.5
+      ],
+      "heading": 90
+    },
+    {
+      "kind": "lamp",
+      "position": [
+        -320.08,
+        -468.4
+      ],
+      "heading": 90
+    },
+    {
+      "kind": "parking",
+      "position": [
+        -319.43,
+        -404.8
+      ],
+      "heading": 90
+    },
+    {
+      "kind": "parking",
+      "position": [
+        -297.43,
+        -351.12
+      ],
+      "heading": 270
+    },
+    {
+      "kind": "parking",
+      "position": [
+        -297.5,
+        -289.28
+      ],
+      "heading": 270
+    },
+    {
+      "kind": "lamp",
+      "position": [
+        -319.76,
+        -249.3
+      ],
+      "heading": 90
+    },
+    {
+      "kind": "stop",
+      "position": [
+        -318.15,
+        -246.31
+      ],
+      "heading": 180
+    }
+  ],
+  "fences": [
+    {
+      "line": [
+        [
+          -293.92,
+          -566.2
+        ],
+        [
+          -293.85,
+          -553.38
+        ],
+        [
+          -293.69,
+          -535.16
+        ],
+        [
+          -293.53,
+          -518.49
+        ],
+        [
+          -293.51,
+          -506.76
+        ]
+      ],
+      "height": 1.72
+    }
+  ],
+  "tree_inventory": [
+    {
+      "tree_id": 3566,
+      "species": "Espresso Kentucky Coffeetree",
+      "position_enu_m": [
+        -299.413,
+        -251.65
+      ],
+      "height_m": 3.05,
+      "crown_radius_m": 0.76,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2478,
+      "species": "Black Locust",
+      "position_enu_m": [
+        -291.262,
+        -257.181
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 7.62,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2479,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -292.228,
+        -261.144
+      ],
+      "height_m": 14.33,
+      "crown_radius_m": 5.49,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2480,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -292.335,
+        -270.121
+      ],
+      "height_m": 16.46,
+      "crown_radius_m": 5.94,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2481,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -292.526,
+        -282.867
+      ],
+      "height_m": 13.11,
+      "crown_radius_m": 5.49,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2483,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -292.536,
+        -295.157
+      ],
+      "height_m": 12.8,
+      "crown_radius_m": 5.94,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2484,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -291.823,
+        -307.085
+      ],
+      "height_m": 15.85,
+      "crown_radius_m": 5.79,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2485,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -292.012,
+        -317.206
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 6.55,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2486,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -291.839,
+        -327.146
+      ],
+      "height_m": 10.36,
+      "crown_radius_m": 5.49,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2488,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -291.847,
+        -337.267
+      ],
+      "height_m": 18.29,
+      "crown_radius_m": 3.81,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2489,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -293.149,
+        -352.266
+      ],
+      "height_m": 18.29,
+      "crown_radius_m": 5.49,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2577,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -293.279,
+        -367.681
+      ],
+      "height_m": 7.32,
+      "crown_radius_m": 5.49,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2578,
+      "species": "Pyramidal English Oak",
+      "position_enu_m": [
+        -293.308,
+        -378.719
+      ],
+      "height_m": 12.8,
+      "crown_radius_m": 5.49,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2588,
+      "species": "October Glory Red Maple",
+      "position_enu_m": [
+        -315.659,
+        -510.467
+      ],
+      "height_m": 4.27,
+      "crown_radius_m": 1.07,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2587,
+      "species": "October Glory Red Maple",
+      "position_enu_m": [
+        -317.57,
+        -510.487
+      ],
+      "height_m": 4.27,
+      "crown_radius_m": 1.07,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2589,
+      "species": "October Glory Red Maple",
+      "position_enu_m": [
+        -316.548,
+        -511.668
+      ],
+      "height_m": 3.66,
+      "crown_radius_m": 1.07,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2590,
+      "species": "Northern Red Oak",
+      "position_enu_m": [
+        -301.0,
+        -519.978
+      ],
+      "height_m": 5.79,
+      "crown_radius_m": 1.37,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2591,
+      "species": "Bloodgood London Planetre",
+      "position_enu_m": [
+        -316.408,
+        -532.87
+      ],
+      "height_m": 5.18,
+      "crown_radius_m": 0.91,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2596,
+      "species": "Tulip Tree",
+      "position_enu_m": [
+        -317.477,
+        -562.311
+      ],
+      "height_m": 3.66,
+      "crown_radius_m": 0.91,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2597,
+      "species": "Tulip Tree",
+      "position_enu_m": [
+        -315.771,
+        -562.334
+      ],
+      "height_m": 3.66,
+      "crown_radius_m": 0.91,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2598,
+      "species": "European Beech",
+      "position_enu_m": [
+        -300.741,
+        -562.951
+      ],
+      "height_m": 2.13,
+      "crown_radius_m": 0.46,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2599,
+      "species": "Bonfire Sugar Maple",
+      "position_enu_m": [
+        -316.609,
+        -576.63
+      ],
+      "height_m": 4.88,
+      "crown_radius_m": 1.07,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2600,
+      "species": "Bonfire Sugar Maple",
+      "position_enu_m": [
+        -301.4,
+        -577.64
+      ],
+      "height_m": 5.18,
+      "crown_radius_m": 0.76,
+      "form": "rounded"
+    },
+    {
+      "tree_id": 2601,
+      "species": "Bonfire Sugar Maple",
+      "position_enu_m": [
+        -298.699,
+        -577.772
+      ],
+      "height_m": 5.18,
+      "crown_radius_m": 0.76,
+      "form": "rounded"
+    }
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [
+        -308.414,
+        -596.722
+      ],
+      "points_enu_m": [
+        [
+          -319.15,
+          -596.57
+        ],
+        [
+          -321.42,
+          -593.46
+        ],
+        [
+          -321.95,
+          -586.48
+        ],
+        [
+          -321.23,
+          -575
+        ],
+        [
+          -320.9,
+          -559.2
+        ],
+        [
+          -321.29,
+          -554.36
+        ],
+        [
+          -320.25,
+          -544.0
+        ],
+        [
+          -320.35,
+          -528.82
+        ],
+        [
+          -320.1,
+          -514.7
+        ],
+        [
+          -320.95,
+          -506.5
+        ],
+        [
+          -319.89,
+          -498.35
+        ],
+        [
+          -320.04,
+          -482.53
+        ],
+        [
+          -321.04,
+          -468.4
+        ],
+        [
+          -320.52,
+          -467.12
+        ],
+        [
+          -319.89,
+          -451.7
+        ],
+        [
+          -319.65,
+          -436.31
+        ],
+        [
+          -319.63,
+          -421
+        ],
+        [
+          -320.29,
+          -406
+        ],
+        [
+          -320.32,
+          -404.8
+        ],
+        [
+          -319.52,
+          -393.1
+        ],
+        [
+          -318.93,
+          -388.44
+        ],
+        [
+          -318.93,
+          -386.67
+        ],
+        [
+          -319.52,
+          -378
+        ],
+        [
+          -319.6,
+          -363
+        ],
+        [
+          -319.59,
+          -348.4
+        ],
+        [
+          -319.61,
+          -333.6
+        ],
+        [
+          -319.68,
+          -319.55
+        ],
+        [
+          -319.56,
+          -304.42
+        ],
+        [
+          -319.29,
+          -289.31
+        ],
+        [
+          -319.09,
+          -274.9
+        ],
+        [
+          -319.08,
+          -261.25
+        ],
+        [
+          -318.75,
+          -253.1
+        ],
+        [
+          -316.18,
+          -251.74
+        ],
+        [
+          -311.32,
+          -251.61
+        ],
+        [
+          -306.09,
+          -252.06
+        ]
+      ],
+      "end_enu_m": [
+        -306.011,
+        -252.634
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -308.414,
+        -596.722
+      ],
+      "points_enu_m": [
+        [
+          -302.6,
+          -596.4
+        ],
+        [
+          -298.69,
+          -595.15
+        ],
+        [
+          -296.98,
+          -583.39
+        ],
+        [
+          -296.18,
+          -573.72
+        ],
+        [
+          -295.94,
+          -558.42
+        ],
+        [
+          -295.49,
+          -543.66
+        ],
+        [
+          -295.43,
+          -528.38
+        ],
+        [
+          -295.29,
+          -513.32
+        ],
+        [
+          -295.25,
+          -500.8
+        ],
+        [
+          -296.07,
+          -494.16
+        ],
+        [
+          -296.41,
+          -481.41
+        ],
+        [
+          -296.43,
+          -467.29
+        ],
+        [
+          -297.29,
+          -452.43
+        ],
+        [
+          -297.69,
+          -438.17
+        ],
+        [
+          -297.38,
+          -423.19
+        ],
+        [
+          -297.35,
+          -407.56
+        ],
+        [
+          -296.99,
+          -392.46
+        ],
+        [
+          -296.73,
+          -378.28
+        ],
+        [
+          -296.76,
+          -363.81
+        ],
+        [
+          -296.72,
+          -348.61
+        ],
+        [
+          -296.74,
+          -334.43
+        ],
+        [
+          -296.8,
+          -318.99
+        ],
+        [
+          -296.77,
+          -304.12
+        ],
+        [
+          -296.82,
+          -289.2
+        ],
+        [
+          -296.78,
+          -274.72
+        ],
+        [
+          -296.57,
+          -261.73
+        ],
+        [
+          -297.08,
+          -254.4
+        ],
+        [
+          -298.41,
+          -251.93
+        ],
+        [
+          -299.07,
+          -253.15
+        ],
+        [
+          -302.6,
+          -252.85
+        ]
+      ],
+      "end_enu_m": [
+        -306.011,
+        -252.634
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -306.063,
+        -388.887
+      ],
+      "points_enu_m": [
+        [
+          -310.52,
+          -388.51
+        ],
+        [
+          -314.9,
+          -388.11
+        ],
+        [
+          -318.93,
+          -387.79
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -306.635,
+        -489.654
+      ],
+      "points_enu_m": [
+        [
+          -301.72,
+          -492.72
+        ],
+        [
+          -296.07,
+          -494.16
+        ]
+      ]
+    },
+    {
+      "anchor_enu_m": [
+        -308.414,
+        -596.722
+      ],
+      "points_enu_m": [
+        [
+          -319.15,
+          -596.57
+        ],
+        [
+          -320.82,
+          -598.83
+        ],
+        [
+          -322.95,
+          -600.42
+        ],
+        [
+          -328.6,
+          -600.87
+        ]
+      ]
+    }
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "sites": {
+      "hayward-square-track-review": "0f7567136cea8304828db9b117e54b89428490c55162ac774cd3d74dc288016d",
+      "hayward-practice-fields-review": "45e6a05c8fb10277b5ed8bbeeba7d85bcb17d50a7a9a70846c90c961d58b9ab4",
+      "pioneer-cemetery-landscape-review": "baef9a8711cdf7a39eb6824018b1bae02408726a37cfb2088d82352d581918b5",
+      "howe-field-gates-review": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901",
+      "gerlinger-field-green-review": "a5862622431e886b5824c1204465bee48e10cca68126db51c1a3da1706b41efb",
+      "athletic-exterior-review": "4f629bfdae8049a21ccd81a18900f56c186e9cd58fe7a69a01d99485f2dc3680",
+      "public-building-exterior-review": "3225fe95d21b0078a31cac339b996f75376b3aa30ef34a0dd993a0667d985ff9",
+      "central-campus-greens-review": "f01d3046cc693a896bac8838475a529b4a875a56398ee470a4cfd31ef66dcb69"
+    }
+  },
+  "evidence": {
+    "county_aerials": [
+      {
+        "area": "south",
+        "year": 2017,
+        "bounds_enu_m": [
+          -336,
+          -605,
+          -260,
+          -498
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876323.282153052%2C494069.14928888186%2C4876430.282153052&bboxSR=3740&imageSR=3740&size=760%2C1070&layers=show%3A29&format=png32",
+        "sha256": "434c8c5eb01b4e7e776ac1365c3ec4696a5512b70256b2c2a4355d5f85ac8cb6"
+      },
+      {
+        "area": "middle",
+        "year": 2017,
+        "bounds_enu_m": [
+          -331,
+          -512,
+          -259,
+          -403
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493998.14928888186%2C4876416.282153052%2C494070.14928888186%2C4876525.282153052&bboxSR=3740&imageSR=3740&size=720%2C1090&layers=show%3A29&format=png32",
+        "sha256": "e6f0514323daf8f750d9ab29189a66437cceae1f727df455330bf57984bc39a2"
+      },
+      {
+        "area": "stair",
+        "year": 2017,
+        "bounds_enu_m": [
+          -336,
+          -415,
+          -264,
+          -310
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876513.282153052%2C494065.14928888186%2C4876618.282153052&bboxSR=3740&imageSR=3740&size=720%2C1050&layers=show%3A29&format=png32",
+        "sha256": "04baef571cd8e64430a7d654a260d948f0b577cffced5de6e5e5b790b99ff4a7"
+      },
+      {
+        "area": "north",
+        "year": 2017,
+        "bounds_enu_m": [
+          -336,
+          -323,
+          -259,
+          -223
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876605.282153052%2C494070.14928888186%2C4876705.282153052&bboxSR=3740&imageSR=3740&size=770%2C1000&layers=show%3A29&format=png32",
+        "sha256": "b8010feded5f254e3f4418306a2f222083080e7da66877f4c864f2c7965ec369"
+      },
+      {
+        "area": "south",
+        "year": 2021,
+        "bounds_enu_m": [
+          -336,
+          -605,
+          -260,
+          -498
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876323.282153052%2C494069.14928888186%2C4876430.282153052&bboxSR=3740&imageSR=3740&size=760%2C1070&layers=show%3A26&format=png32",
+        "sha256": "7081fe7104cf945992667a4739400e9e5c9e2b5537d9236a9032966b3265ea84"
+      },
+      {
+        "area": "middle",
+        "year": 2021,
+        "bounds_enu_m": [
+          -331,
+          -512,
+          -259,
+          -403
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493998.14928888186%2C4876416.282153052%2C494070.14928888186%2C4876525.282153052&bboxSR=3740&imageSR=3740&size=720%2C1090&layers=show%3A26&format=png32",
+        "sha256": "7997b88afeaae672578ecfc6b407ca106e9df782d0a64a3676589ddc337109f8"
+      },
+      {
+        "area": "stair",
+        "year": 2021,
+        "bounds_enu_m": [
+          -336,
+          -415,
+          -264,
+          -310
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876513.282153052%2C494065.14928888186%2C4876618.282153052&bboxSR=3740&imageSR=3740&size=720%2C1050&layers=show%3A26&format=png32",
+        "sha256": "5e5b3b4957a4ecf4c0c2597b673fc41625d391c02759cb6aea328b86dae2d6fb"
+      },
+      {
+        "area": "north",
+        "year": 2021,
+        "bounds_enu_m": [
+          -336,
+          -323,
+          -259,
+          -223
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876605.282153052%2C494070.14928888186%2C4876705.282153052&bboxSR=3740&imageSR=3740&size=770%2C1000&layers=show%3A26&format=png32",
+        "sha256": "f750a5422d7cba38d1595da152046d5b2a2ffe4f3ed138767c80e901f6905b33"
+      },
+      {
+        "area": "south",
+        "year": 2025,
+        "bounds_enu_m": [
+          -336,
+          -605,
+          -260,
+          -498
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876323.282153052%2C494069.14928888186%2C4876430.282153052&bboxSR=3740&imageSR=3740&size=760%2C1070&layers=show%3A57&format=png32",
+        "sha256": "80f50befe5718cd0bd7ec8753c34ec158350f5bf1bf42cc23d0ed75cec2aa69e"
+      },
+      {
+        "area": "middle",
+        "year": 2025,
+        "bounds_enu_m": [
+          -331,
+          -512,
+          -259,
+          -403
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493998.14928888186%2C4876416.282153052%2C494070.14928888186%2C4876525.282153052&bboxSR=3740&imageSR=3740&size=720%2C1090&layers=show%3A57&format=png32",
+        "sha256": "7065f486219cff51921a4e7e1210a65629cc173c42626a8073238483fc65cc20"
+      },
+      {
+        "area": "stair",
+        "year": 2025,
+        "bounds_enu_m": [
+          -336,
+          -415,
+          -264,
+          -310
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876513.282153052%2C494065.14928888186%2C4876618.282153052&bboxSR=3740&imageSR=3740&size=720%2C1050&layers=show%3A57&format=png32",
+        "sha256": "54da8372447a7c3687e4f436ba50f88e142d4af7ae6bc1afa47fcb9ae0a6ccb9"
+      },
+      {
+        "area": "north",
+        "year": 2025,
+        "bounds_enu_m": [
+          -336,
+          -323,
+          -259,
+          -223
+        ],
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493993.14928888186%2C4876605.282153052%2C494070.14928888186%2C4876705.282153052&bboxSR=3740&imageSR=3740&size=770%2C1000&layers=show%3A57&format=png32",
+        "sha256": "cccb5f1715d9a42e76fd1ea608f2b130515e8854cf457139024810e6f6adda7c"
+      }
+    ],
+    "street_views": {
+      "corner-west": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=kRQ2ui1IoESRYOZu97b4cA&heading=291.49",
+        "camera_enu_m": [
+          -312.018,
+          -587.143
+        ],
+        "sha256": "2ae7aa08aae2ec1a25c0e4c1373afbacfd86e8f48316a0a410f8254c9ab8f02d"
+      },
+      "south-walk-north": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=YphQV-_9yDu1idhBgs52aQ&heading=354.95",
+        "camera_enu_m": [
+          -311.633,
+          -543.462
+        ],
+        "sha256": "24d1ad5c4e5dd8eba57aa6ab7d27609678921ec185fa99e0de71919eb178416f"
+      },
+      "south-piers": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JFwqqdSv-J6UHwYbTn2gjA&heading=353.59",
+        "camera_enu_m": [
+          -307.172,
+          -604.261
+        ],
+        "sha256": "a781e884ec42120bb26684f453c78500663804957021a58c3de102582db1e378"
+      },
+      "stadium-west": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=q2-9OdcCRnb5gNLOp92R4g&heading=63.13",
+        "camera_enu_m": [
+          -311.429,
+          -523.31
+        ],
+        "sha256": "f94a75c12eb233ff58a29770032bd0f89a49ba04435894e50c2dca46d39a2171"
+      },
+      "south-west-edge": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=UkDXM8Tq4K5Z0eI3pVAvtQ&heading=259.15",
+        "camera_enu_m": [
+          -311.752,
+          -553.61
+        ],
+        "sha256": "f31fd8d59c87426d30e855da05a16731433ab37cf90a39402fe641c75ac80d67"
+      },
+      "howe-approach": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=UqdjDUARz5yx7_Tyz6cR1w&heading=77.54",
+        "camera_enu_m": [
+          -311.268,
+          -492.815
+        ],
+        "sha256": "78159934b594bb6fc070b4a83b06435740d7f7946cc32bc9d578ccddc2133202"
+      },
+      "barn-east": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vglZBBIX8YGxeKQ-2esdlg&heading=84.48",
+        "camera_enu_m": [
+          -311.868,
+          -563.533
+        ],
+        "sha256": "b4e2fe43c48f65cc6b912d9857b79a6d617e2d720b23eddedf4220c93876d585"
+      },
+      "mid-west-edge": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=JOWfO6cWDDwVD2oYsGRJog&heading=245.53",
+        "camera_enu_m": [
+          -311.296,
+          -472.404
+        ],
+        "sha256": "9bb444daa1a34efb2c8fb4c8a50dfc53b00ced7a298b78d6b8d8ae34451c357b"
+      },
+      "mc-arthur": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=P7Zt1oVVtdHnPZYT6egMBQ&heading=79.83",
+        "camera_enu_m": [
+          -311.24,
+          -451.912
+        ],
+        "sha256": "7ba4515cfef23c91a4cb45460f385ecbc5615e325494b1a50f219ac469b98bdf"
+      },
+      "stair-west": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-xUdMd56U5OekBMXryjUOQ&heading=281.76",
+        "camera_enu_m": [
+          -310.862,
+          -389.91
+        ],
+        "sha256": "4facbca4cd64bfbb310c1c58bfe204968c9aed7d13c5e2e4bb2de5ac19d63e31"
+      },
+      "northbound-stair": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=YVZmTZnbCZ0KhOrrRc33Hg&heading=8.11",
+        "camera_enu_m": [
+          -310.778,
+          -400.529
+        ],
+        "sha256": "8f6a5c93a4ece9c9fe6861f029301456a5efc891421b4571706863b5abd2820a"
+      },
+      "cemetery-north-edge": {
+        "date": "2021-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=1NfNLS2J6UKk9hTkD2vw0w&heading=282.34",
+        "camera_enu_m": [
+          -309.833,
+          -348.349
+        ],
+        "sha256": "ec51f58ef2d9d3fd2f8f18a9e4f6b0c4effaed3733805f2ab50e98d72e9abb13"
+      },
+      "cemetery-wall": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PhcYuzu07v6xsubSwIyNQA&heading=216.61",
+        "camera_enu_m": [
+          -311.143,
+          -431.463
+        ],
+        "sha256": "efa87c40fcfb13630d094ae1b3c5bdf563228965ae8ebda6dcc30226d22e2547"
+      },
+      "esslinger": {
+        "date": "2021-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=K0WEIwXIUq1r9_tZxnVedg&heading=52.5",
+        "camera_enu_m": [
+          -309.502,
+          -306.895
+        ],
+        "sha256": "657563fb0069632e6764b85c6b0f889f3c1a4c644525f4006769817bda985964"
+      },
+      "court-approach": {
+        "date": "2021-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=1NfNLS2J6UKk9hTkD2vw0w&heading=82.89",
+        "camera_enu_m": [
+          -309.833,
+          -348.349
+        ],
+        "sha256": "796dbca73273d0aa6c1b0b85ca3f5b2b3e6d6ce071a59d7cebbef1225747e925"
+      },
+      "fifteenth-north": {
+        "date": "2026-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIABIhCrburB29k7h286eNfSbDrz&heading=22.61",
+        "camera_enu_m": [
+          -313.159,
+          -246.188
+        ],
+        "sha256": "342647aa3b04eaf008dceabaa39a04e2b94d2b0f50439fc66619d0b018c4cd80"
+      },
+      "field-green-corner": {
+        "date": "2026-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIABIhAwe59LBf0I4-G9Z0Vn_JAd&heading=333.92",
+        "camera_enu_m": [
+          -312.393,
+          -256.327
+        ],
+        "sha256": "b37d3850dc00104331a6bb8663cbf93b157fa70d8ea0f389ab36268eae899e38"
+      },
+      "fifteenth-west": {
+        "date": "2026-06",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIABIhCrburB29k7h286eNfSbDrz&heading=309.69",
+        "camera_enu_m": [
+          -313.159,
+          -246.188
+        ],
+        "sha256": "685e07274817dde9f22998cb255e1018a735389e9178a676613771fb74a4a08b"
+      }
+    },
+    "tree_inventory": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&where=Removed+%3D+%27No%27+AND+FutureTree+%3D+%27No%27&geometry=494003.14928888186%2C4876335.282153052%2C494039.14928888186%2C4876682.282153052&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&outFields=TreeNumber%2CCommonName%2CHeight%2CSpread%2CRemoved%2CFutureTree&returnGeometry=true",
+      "sha256": "478dac165774bea2522614eab4047d534d075dda131ce964f8d2c19fe1186817"
+    },
+    "campus_axis_survey": "https://cpfm.uoregon.edu/sites/default/files/university_street_axis_06_12_07.pdf",
+    "campus_pathways": "https://cpfm.uoregon.edu/sites/default/files/designated_open_spaces_and_pathways_map.pdf",
+    "cemetery_map": "https://eugenepioneercemetery.org/self-guided-tour/",
+    "jane_sanders": "https://goducks.com/sports/2011/6/21/210828087",
+    "limits": [
+      "Parking spacing, plant shape and small fixture dimensions are representative. The June 2026 crossing uses ordinary paired lines.",
+      "No marked crossing is inferred at the cemetery stair or the stadium apron. Connections there use the existing road graph."
+    ]
+  }
+}

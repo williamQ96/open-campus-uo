@@ -1,0 +1,1215 @@
+{
+  "extent": [
+    -152,
+    -605,
+    91,
+    -463
+  ],
+  "turf_outline": [
+    [
+      -29.82,
+      -544.29
+    ],
+    [
+      70.17,
+      -544.64
+    ],
+    [
+      70.12,
+      -589.38
+    ],
+    [
+      68.53,
+      -593.11
+    ],
+    [
+      65.63,
+      -596.07
+    ],
+    [
+      -29.91,
+      -595.61
+    ]
+  ],
+  "soccer_bounds": [
+    -25.42,
+    -593.98,
+    66.21,
+    -546.74
+  ],
+  "midline_e": 20.31,
+  "multigame_bounds": [
+    -15.76,
+    -589.31,
+    58.55,
+    -552.85
+  ],
+  "grass_throws": [
+    [
+      -20.7,
+      -539.22
+    ],
+    [
+      71.29,
+      -540.19
+    ],
+    [
+      70.13,
+      -522.84
+    ],
+    [
+      67.02,
+      -507.95
+    ],
+    [
+      61.06,
+      -489.37
+    ],
+    [
+      42.24,
+      -499.32
+    ],
+    [
+      16.07,
+      -513.12
+    ],
+    [
+      -11.96,
+      -528.55
+    ],
+    [
+      -20.3,
+      -531.2
+    ]
+  ],
+  "throws_concrete": [
+    [
+      -20.01,
+      -537.87
+    ],
+    [
+      -21.06,
+      -535.82
+    ],
+    [
+      -20.79,
+      -533.29
+    ],
+    [
+      -19.25,
+      -531.05
+    ],
+    [
+      -13.21,
+      -527.5
+    ],
+    [
+      -7.46,
+      -524.67
+    ],
+    [
+      -5.0,
+      -529.41
+    ],
+    [
+      -4.8,
+      -538.47
+    ],
+    [
+      -17.15,
+      -539.04
+    ]
+  ],
+  "throws_sector": [
+    [
+      -13.1,
+      -534.84
+    ],
+    [
+      8.05,
+      -522.15
+    ],
+    [
+      10.05,
+      -525.32
+    ],
+    [
+      11.15,
+      -528.75
+    ],
+    [
+      11.83,
+      -532.45
+    ],
+    [
+      11.96,
+      -536.58
+    ],
+    [
+      -5.78,
+      -535.51
+    ]
+  ],
+  "circle": [
+    -12.61,
+    -535.25
+  ],
+  "south_walk": [
+    [
+      -148.5,
+      -600.96,
+      -598.48
+    ],
+    [
+      -119,
+      -600.87,
+      -598.38
+    ],
+    [
+      -87,
+      -600.75,
+      -598.39
+    ],
+    [
+      -61,
+      -600.82,
+      -598.38
+    ],
+    [
+      -39.28,
+      -600.95,
+      -598.18
+    ],
+    [
+      -34,
+      -600.97,
+      -598.1
+    ],
+    [
+      -27,
+      -601.1,
+      -599.01
+    ],
+    [
+      -6,
+      -601.13,
+      -599.1
+    ],
+    [
+      24,
+      -601.2,
+      -599.13
+    ],
+    [
+      43,
+      -601.4,
+      -599.49
+    ]
+  ],
+  "paths": [
+    [
+      [
+        64.9,
+        -472.9
+      ],
+      [
+        72.67,
+        -471.9
+      ],
+      [
+        72.87,
+        -475.45
+      ],
+      [
+        68.76,
+        -479.03
+      ],
+      [
+        65.41,
+        -483.13
+      ],
+      [
+        63.05,
+        -480.1
+      ],
+      [
+        59.63,
+        -476.66
+      ]
+    ],
+    [
+      [
+        -60.18,
+        -481.8
+      ],
+      [
+        -43.84,
+        -488.5
+      ],
+      [
+        -31.07,
+        -492.05
+      ],
+      [
+        -13.87,
+        -495.08
+      ],
+      [
+        5.18,
+        -494.48
+      ],
+      [
+        20.83,
+        -492.02
+      ],
+      [
+        34.88,
+        -486.53
+      ],
+      [
+        46.31,
+        -480.15
+      ],
+      [
+        57.17,
+        -472.84
+      ],
+      [
+        61.24,
+        -476.85
+      ],
+      [
+        48.92,
+        -485.22
+      ],
+      [
+        36.2,
+        -491.27
+      ],
+      [
+        22.33,
+        -496.25
+      ],
+      [
+        6.42,
+        -499.08
+      ],
+      [
+        -14.07,
+        -500.46
+      ],
+      [
+        -33.41,
+        -497.16
+      ],
+      [
+        -48.25,
+        -492.99
+      ],
+      [
+        -63.33,
+        -485.11
+      ]
+    ],
+    [
+      [
+        -16.92,
+        -528.05
+      ],
+      [
+        -3.65,
+        -519.38
+      ],
+      [
+        20.82,
+        -506.18
+      ],
+      [
+        41.27,
+        -495.48
+      ],
+      [
+        63.37,
+        -483.7
+      ],
+      [
+        65.26,
+        -486.97
+      ],
+      [
+        44.19,
+        -498.54
+      ],
+      [
+        22.52,
+        -510.04
+      ],
+      [
+        -1.79,
+        -523.01
+      ],
+      [
+        -16.1,
+        -531.2
+      ]
+    ],
+    [
+      [
+        -17.6,
+        -543.82
+      ],
+      [
+        72.17,
+        -544.01
+      ],
+      [
+        72.12,
+        -541.33
+      ],
+      [
+        -17.66,
+        -541.04
+      ]
+    ],
+    [
+      [
+        -35.48,
+        -600.97
+      ],
+      [
+        -32.79,
+        -600.99
+      ],
+      [
+        -28.34,
+        -598.74
+      ],
+      [
+        -28.33,
+        -542.93
+      ],
+      [
+        -32.51,
+        -542.71
+      ],
+      [
+        -35.2,
+        -553.47
+      ]
+    ]
+  ],
+  "asphalt": [
+    [
+      [
+        -21.96,
+        -506.53
+      ],
+      [
+        -17.63,
+        -501.1
+      ],
+      [
+        -5.18,
+        -500.76
+      ],
+      [
+        7.2,
+        -502.35
+      ],
+      [
+        16.48,
+        -499.96
+      ],
+      [
+        22.14,
+        -499.53
+      ],
+      [
+        24.56,
+        -502.17
+      ],
+      [
+        19.53,
+        -507.85
+      ],
+      [
+        13.01,
+        -510.16
+      ],
+      [
+        -13.78,
+        -512.0
+      ],
+      [
+        -21.82,
+        -510.14
+      ]
+    ]
+  ],
+  "fences": [
+    {
+      "line": [
+        [
+          -26.14,
+          -596.55
+        ],
+        [
+          20.72,
+          -596.78
+        ],
+        [
+          65.6,
+          -596.77
+        ]
+      ],
+      "height": 1.77
+    },
+    {
+      "line": [
+        [
+          65.6,
+          -596.77
+        ],
+        [
+          68.18,
+          -595.72
+        ],
+        [
+          70.08,
+          -593.73
+        ],
+        [
+          71.29,
+          -590.77
+        ]
+      ],
+      "height": 1.77
+    },
+    {
+      "line": [
+        [
+          71.29,
+          -590.77
+        ],
+        [
+          71.62,
+          -571.4
+        ],
+        [
+          71.66,
+          -545.1
+        ]
+      ],
+      "height": 1.77
+    },
+    {
+      "line": [
+        [
+          -17.72,
+          -541.33
+        ],
+        [
+          26.9,
+          -541.41
+        ],
+        [
+          71.65,
+          -541.61
+        ]
+      ],
+      "height": 1.91
+    },
+    {
+      "line": [
+        [
+          71.65,
+          -541.61
+        ],
+        [
+          71.86,
+          -519.96
+        ],
+        [
+          71.65,
+          -487.12
+        ]
+      ],
+      "height": 1.83
+    },
+    {
+      "line": [
+        [
+          -144.2,
+          -596.97
+        ],
+        [
+          -96.91,
+          -596.92
+        ],
+        [
+          -40.57,
+          -596.9
+        ]
+      ],
+      "height": 1.76
+    }
+  ],
+  "gate": {
+    "line": [
+      [
+        -40.57,
+        -597.11
+      ],
+      [
+        -26.14,
+        -596.55
+      ]
+    ],
+    "height": 1.68
+  },
+  "net_runs": [
+    {
+      "points": [
+        [
+          70.96,
+          -589.13
+        ],
+        [
+          71.26,
+          -574.94
+        ],
+        [
+          71.2,
+          -559.88
+        ],
+        [
+          71.3,
+          -544.75
+        ],
+        [
+          71.71,
+          -529.6
+        ],
+        [
+          71.78,
+          -514.68
+        ],
+        [
+          71.63,
+          -499.54
+        ],
+        [
+          71.59,
+          -484.53
+        ]
+      ],
+      "height": 8.6
+    },
+    {
+      "points": [
+        [
+          -25.86,
+          -541.41
+        ],
+        [
+          -10.79,
+          -541.54
+        ],
+        [
+          4.2,
+          -541.55
+        ],
+        [
+          19.3,
+          -541.59
+        ],
+        [
+          34.3,
+          -541.61
+        ],
+        [
+          49.31,
+          -541.64
+        ],
+        [
+          64.2,
+          -541.68
+        ],
+        [
+          71.36,
+          -541.66
+        ]
+      ],
+      "height": 8.1
+    },
+    {
+      "points": [
+        [
+          -25.4,
+          -596.18
+        ],
+        [
+          -10.23,
+          -596.22
+        ],
+        [
+          4.89,
+          -596.29
+        ],
+        [
+          20.13,
+          -596.35
+        ],
+        [
+          35.05,
+          -596.49
+        ],
+        [
+          50.15,
+          -596.49
+        ],
+        [
+          65.59,
+          -596.47
+        ],
+        [
+          70.83,
+          -590.15
+        ]
+      ],
+      "height": 8.65
+    }
+  ],
+  "flag_rows": [
+    {
+      "from": [
+        42.77,
+        -598.03
+      ],
+      "to": [
+        -26.19,
+        -597.87
+      ],
+      "spacing": 2.52
+    },
+    {
+      "from": [
+        -40.59,
+        -598.21
+      ],
+      "to": [
+        -144.0,
+        -598.15
+      ],
+      "spacing": 2.58
+    }
+  ],
+  "bed_lines": [
+    {
+      "points": [
+        [
+          62.47,
+          -489.94
+        ],
+        [
+          41.75,
+          -500.89
+        ],
+        [
+          18.13,
+          -513.06
+        ],
+        [
+          5.9,
+          -519.83
+        ]
+      ],
+      "width": 1.25
+    },
+    {
+      "points": [
+        [
+          70.92,
+          -589.22
+        ],
+        [
+          71.23,
+          -566.88
+        ],
+        [
+          71.31,
+          -544.31
+        ],
+        [
+          71.12,
+          -523.61
+        ],
+        [
+          70.86,
+          -489.73
+        ]
+      ],
+      "width": 0.96
+    },
+    {
+      "points": [
+        [
+          -24.3,
+          -597.44
+        ],
+        [
+          27,
+          -597.5
+        ],
+        [
+          64.6,
+          -597.49
+        ]
+      ],
+      "width": 0.82
+    }
+  ],
+  "routes": [
+    {
+      "anchor_enu_m": [
+        88.461,
+        -596.903
+      ],
+      "points_enu_m": [
+        [
+          86.85,
+          -598.08
+        ],
+        [
+          77.81,
+          -598.14
+        ],
+        [
+          74.52,
+          -598.41
+        ],
+        [
+          67.26,
+          -600.36
+        ],
+        [
+          55.57,
+          -600.53
+        ],
+        [
+          43.08,
+          -600.54
+        ],
+        [
+          28.61,
+          -600.18
+        ],
+        [
+          12.51,
+          -600.15
+        ],
+        [
+          -3.88,
+          -600.15
+        ],
+        [
+          -20.33,
+          -600.12
+        ],
+        [
+          -32.03,
+          -599.69
+        ],
+        [
+          -48.02,
+          -599.71
+        ],
+        [
+          -63.22,
+          -599.65
+        ],
+        [
+          -79.1,
+          -599.57
+        ],
+        [
+          -94.4,
+          -599.58
+        ],
+        [
+          -110.06,
+          -599.59
+        ],
+        [
+          -126,
+          -599.61
+        ],
+        [
+          -142.08,
+          -599.65
+        ],
+        [
+          -147.4,
+          -599.66
+        ]
+      ]
+    }
+  ],
+  "procedural_placement_cleared": [
+    {
+      "index": 25,
+      "position_enu_m": [
+        51.894,
+        -505.456
+      ]
+    },
+    {
+      "index": 28,
+      "position_enu_m": [
+        10.744,
+        -552.799
+      ]
+    },
+    {
+      "index": 73,
+      "position_enu_m": [
+        -16.007,
+        -586.949
+      ]
+    },
+    {
+      "index": 99,
+      "position_enu_m": [
+        39.968,
+        -589.962
+      ]
+    },
+    {
+      "index": 105,
+      "position_enu_m": [
+        72.098,
+        -494.404
+      ]
+    },
+    {
+      "index": 161,
+      "position_enu_m": [
+        63.561,
+        -575.71
+      ]
+    },
+    {
+      "index": 168,
+      "position_enu_m": [
+        1.289,
+        -569.768
+      ]
+    },
+    {
+      "index": 233,
+      "position_enu_m": [
+        71.393,
+        -564.749
+      ]
+    },
+    {
+      "index": 247,
+      "position_enu_m": [
+        52.909,
+        -582.687
+      ]
+    }
+  ],
+  "pins": {
+    "presentation": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "model": "d126d021e75458a1bbda4b368dedc4744ff017b7d500126eff7abc811100892f",
+    "heightfield": "24630b1b112705400ff1c7063739af77c52194a6f53cad0fefff340c833ed78f",
+    "foundation": "0fe58d252bc692bc962d5e70336b6ba27b54089f1aeb95af0e6809d9338d30ee",
+    "ford_arena": "f42f09b4096435fb800cfa64085babd4bd98d4af4c8a6f379c760c013477d056",
+    "navigation": "bdaf21f03f7d658f772a253e326668e2052da6fd408f71f01c4668bcbe7e7803",
+    "sites": {
+      "agate-fifteenth-eighteenth-review": "aad49c0f2973a695a2ab55105f5f004cb6e33509b1b6069f8e086fe1d35252d1",
+      "hayward-exterior-review": "7940e7aa05c1ae316c373d57cd022cdc2ad553ee51c1b097772760858e5a6593",
+      "howe-field-gates-review": "03c7f188bf144984d03d90d4d4acef8d52b597ec17d274cb3b5c7615d9e63901"
+    }
+  },
+  "evidence": {
+    "county_aerials": [
+      {
+        "year": 2017,
+        "area": "complex",
+        "bounds_enu_m": [
+          -292,
+          -638,
+          83,
+          -441
+        ],
+        "sha256": "1bf71af75b1436cdb34e5267f2ffb2aef7ec6dd4cbbe4ec3d52fef973e90dfe5",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494037.14928888186%2C4876290.282153052%2C494412.14928888186%2C4876487.282153052&bboxSR=3740&imageSR=3740&size=1875%2C985&layers=show%3A29&format=png32"
+      },
+      {
+        "year": 2017,
+        "area": "turf",
+        "bounds_enu_m": [
+          -34,
+          -611,
+          78,
+          -482
+        ],
+        "sha256": "dea78bed92581b81a43c8653201a3053a412a89624df054dc48c7eece3255cc8",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494295.14928888186%2C4876317.282153052%2C494407.14928888186%2C4876446.282153052&bboxSR=3740&imageSR=3740&size=1120%2C1290&layers=show%3A29&format=png32"
+      },
+      {
+        "year": 2017,
+        "area": "warmup",
+        "bounds_enu_m": [
+          -158,
+          -610,
+          -27,
+          -449
+        ],
+        "sha256": "cdebd5a2d4e195b291fb6219e186e321e759abcb18904f158eee61c5339f62d6",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494171.14928888186%2C4876318.282153052%2C494302.14928888186%2C4876479.282153052&bboxSR=3740&imageSR=3740&size=1179%2C1449&layers=show%3A29&format=png32"
+      },
+      {
+        "year": 2017,
+        "area": "west",
+        "bounds_enu_m": [
+          -251,
+          -638,
+          -128,
+          -452
+        ],
+        "sha256": "3b82d597bc4089a7238e67b34d218c80cf0d56438665ac88e4f23fb586d81f15",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494078.14928888186%2C4876290.282153052%2C494201.14928888186%2C4876476.282153052&bboxSR=3740&imageSR=3740&size=861%2C1302&layers=show%3A29&format=png32"
+      },
+      {
+        "year": 2021,
+        "area": "complex",
+        "bounds_enu_m": [
+          -292,
+          -638,
+          83,
+          -441
+        ],
+        "sha256": "571e45f8a4c1ca17fdc3c158c95e39ee981cc00eb53c94f59287322db7eacfa5",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494037.14928888186%2C4876290.282153052%2C494412.14928888186%2C4876487.282153052&bboxSR=3740&imageSR=3740&size=1875%2C985&layers=show%3A26&format=png32"
+      },
+      {
+        "year": 2021,
+        "area": "turf",
+        "bounds_enu_m": [
+          -34,
+          -611,
+          78,
+          -482
+        ],
+        "sha256": "b44de30dc81456c558ae358597b0ca55b0c52416de602a93c02e17053f5f3e82",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494295.14928888186%2C4876317.282153052%2C494407.14928888186%2C4876446.282153052&bboxSR=3740&imageSR=3740&size=1120%2C1290&layers=show%3A26&format=png32"
+      },
+      {
+        "year": 2021,
+        "area": "warmup",
+        "bounds_enu_m": [
+          -158,
+          -610,
+          -27,
+          -449
+        ],
+        "sha256": "948b033c39b652c34434afde03506f030a587047e2978095ba597b47814ce454",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494171.14928888186%2C4876318.282153052%2C494302.14928888186%2C4876479.282153052&bboxSR=3740&imageSR=3740&size=1179%2C1449&layers=show%3A26&format=png32"
+      },
+      {
+        "year": 2021,
+        "area": "west",
+        "bounds_enu_m": [
+          -251,
+          -638,
+          -128,
+          -452
+        ],
+        "sha256": "d90fd6e15a59aadfbe077ae5e0204a4ff41aa4de5f41f4d12a942d958840295d",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494078.14928888186%2C4876290.282153052%2C494201.14928888186%2C4876476.282153052&bboxSR=3740&imageSR=3740&size=861%2C1302&layers=show%3A26&format=png32"
+      },
+      {
+        "year": 2025,
+        "area": "complex",
+        "bounds_enu_m": [
+          -292,
+          -638,
+          83,
+          -441
+        ],
+        "sha256": "33a645e5b53947e643665fb573fb13c125da716e455f04eadba0e2ad9d21e9a5",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494037.14928888186%2C4876290.282153052%2C494412.14928888186%2C4876487.282153052&bboxSR=3740&imageSR=3740&size=1875%2C985&layers=show%3A57&format=png32"
+      },
+      {
+        "year": 2025,
+        "area": "turf",
+        "bounds_enu_m": [
+          -34,
+          -611,
+          78,
+          -482
+        ],
+        "sha256": "854d9dd29b9da4fb8e7ea90593ab53d23336ee8f2c01f438130eb42acad8d6f9",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494295.14928888186%2C4876317.282153052%2C494407.14928888186%2C4876446.282153052&bboxSR=3740&imageSR=3740&size=1120%2C1290&layers=show%3A57&format=png32"
+      },
+      {
+        "year": 2025,
+        "area": "warmup",
+        "bounds_enu_m": [
+          -158,
+          -610,
+          -27,
+          -449
+        ],
+        "sha256": "179133f8bdebc13d29d366186cb3fb74868a68e9e341e21c00744d8ae9299d54",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494171.14928888186%2C4876318.282153052%2C494302.14928888186%2C4876479.282153052&bboxSR=3740&imageSR=3740&size=1179%2C1449&layers=show%3A57&format=png32"
+      },
+      {
+        "year": 2025,
+        "area": "west",
+        "bounds_enu_m": [
+          -251,
+          -638,
+          -128,
+          -452
+        ],
+        "sha256": "260d2a2d91a54774537724d228c49d0a318be1de089ce7405717e600f41899e7",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494078.14928888186%2C4876290.282153052%2C494201.14928888186%2C4876476.282153052&bboxSR=3740&imageSR=3740&size=861%2C1302&layers=show%3A57&format=png32"
+      }
+    ],
+    "street_views": {
+      "eighteenth-central-fence": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BjL7ZPp6Mr171K7OFKuRzQ&heading=13.11",
+        "camera_enu_m": [
+          2.602,
+          -610.591
+        ],
+        "sha256": "21dadd4b26c65f3e9ff2c4b578d900179cfa8861ffda88a2035643ad85ec0aea"
+      },
+      "eighteenth-corner": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=SXk2JLCllGAJHM7lKmwXJQ&heading=310.19",
+        "camera_enu_m": [
+          84.71,
+          -608.424
+        ],
+        "sha256": "e7e9f41980fbaf7c2df4967cc9349569a6cee2f9688da9641de9323a2d9d88c2"
+      },
+      "eighteenth-turf-gate": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=EG1D8KZtcxAcJPP5V0I5nQ&heading=22.82",
+        "camera_enu_m": [
+          -37.321,
+          -611.023
+        ],
+        "sha256": "558a230b9f7e729e8aac3a066df0f8924e35be74fba63ecc9b2a43afceaa7872"
+      },
+      "eighteenth-square-track": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=sw3K3IOZzJt-8DEpp1CCWg&heading=9.92",
+        "camera_enu_m": [
+          -68.934,
+          -607.059
+        ],
+        "sha256": "894a3b2b160b5aa1b63c183b2ff60a273e4295789ca73bde5031509a0613cace"
+      },
+      "eighteenth-east-fence": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=YW2cQvgdGe_CzYwoZSm-RA&heading=19.83",
+        "camera_enu_m": [
+          51.539,
+          -612.144
+        ],
+        "sha256": "2321a9c6fc70f682af1b2699bcb2b4defe240a5a07dd0fd68100ead1ad0f80da"
+      },
+      "eighteenth-tennis-edge": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=qOqKkK04R1Pi6BDfQ82TBg&heading=10.25",
+        "camera_enu_m": [
+          -118.999,
+          -607.051
+        ],
+        "sha256": "a0d60b4d0eee3970236f5d0cfc74f377bf8ad5f0858c7157582fbf9833944597"
+      },
+      "eighteenth-mid-fence": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=UZH17VmUeckLyW4YZ7ODrw&heading=24.32",
+        "camera_enu_m": [
+          23.544,
+          -611.287
+        ],
+        "sha256": "0e30fb863d46b1fce808e9a3ff2d6b843357bca9c7b9e3fb87f24f2d7274ed52"
+      },
+      "eighteenth-west-join": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KObdGG58z78B78FMm3pOVg&heading=359.01",
+        "camera_enu_m": [
+          -148.843,
+          -607.087
+        ],
+        "sha256": "83f945802996cb34437b9a71b89946524af1169d956aa6f84fd513805dc0c912"
+      },
+      "agate-fence-south": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=XiEkHpJB-yqKVuN_liuTAQ&heading=275.04",
+        "camera_enu_m": [
+          90.033,
+          -572.59
+        ],
+        "sha256": "776816fd866982d03c8ad05ca2275e2563ae7b8f61f980be0726a6df8badcc1d"
+      },
+      "agate-fence-north": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=nAS43sxKs0FcnZP-tEWD7w&heading=255.71",
+        "camera_enu_m": [
+          86.307,
+          -505.1
+        ],
+        "sha256": "e3eb3068a4fc6f193e0cd12014f0459e22e4d362724536e4f7bd51cf46ea2e8f"
+      },
+      "agate-throwing-verge": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=U2ROfYiTcm0KwdqQ3p4uyg&heading=278.23",
+        "camera_enu_m": [
+          88.801,
+          -494.297
+        ],
+        "sha256": "a535074ada0e59c2a0cdc09a04e73e9bf3646110aae902236ba7ef4c1a47c2d7"
+      },
+      "agate-fence-mid": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=xFNmp2F3tMiJg-ALFH8cfw&heading=270.02",
+        "camera_enu_m": [
+          89.799,
+          -542.006
+        ],
+        "sha256": "4b9d2c369c31e94660b7759b9998aca5310052cc97071dbfa2e2cfa4b2ce11ef"
+      },
+      "agate-gate-approach": {
+        "date": "2024-07",
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=IDkxGZHwxHWoISCCE9RgsQ&heading=262.61",
+        "camera_enu_m": [
+          84.924,
+          -466.933
+        ],
+        "sha256": "cc6f4f0705f2226b5578eace177dbd446d0cf43e30095f459d78a987f9149d98"
+      }
+    },
+    "campus_turf_fields": "https://rec.uoregon.edu/fields",
+    "campus_2025_map": "https://cpfm.uoregon.edu/sites/default/files/2026-02/facilities_fact_sheet_2025.pdf",
+    "hayward_project": "https://hayward.uoregon.edu/about",
+    "flags": "https://hayward.uoregon.edu/hayward-field-flags",
+    "venue_map": "https://storage.googleapis.com/anet_user_files/meet/tf/555201/2024_PeaceHealth_Youth_Meet_Participant_Manual.pdf",
+    "outdoor_practice": "https://www.usatf.org/events/2024/2024-usatf-u20-championships/athlete-information",
+    "limits": [
+      "The modeled gate is closed in the July 2024 source. The sidewalk passes outside it.",
+      "Pole tops, visible mesh aperture, curb elevations, and flag fabrics are representative.",
+      "The field grade is derived from the existing bare-earth fit. Markings and goal sizes are traced or interpolated from the registered aerials.",
+      "The western square track and tennis surfaces are adjacent terrain and documented separately."
+    ]
+  }
+}
