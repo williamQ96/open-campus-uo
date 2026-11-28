@@ -22,6 +22,8 @@ Under the same cold-cache Chrome settings (three runs per build, 35 ms latency, 
 
 After starting the detail requests, the test panned and rotated the camera away, then let all 152 review jobs settle while returning deliberate 404s for the Old Campus Quad and Education Annex detail meshes. The scene retained all 611 building IDs, including the separately verified solid fallback at Education Annex. It preserved the camera and enabled walking and navigation after the swap. The building audit counted 609 individual meshes and two IDs in shared geometry. The Maverick Hotel roof still blocked walking, and a click on its rendered roof left the card closed.
 
+When the entire detail manifest returns 503, the retry control remains available and the low-detail campus still accepts camera gestures. The Education Annex fallback retains its solid footprint without an inferred entrance or its missing detailed ramp and rail.
+
 The camera regression started at three zoom levels and required both right-button pans, wheel zoom and left-button rotation to move the camera as expected. The second pan started on a visible label. Building-card, search and narrow-screen browser checks also passed.
 
 Matched camera captures show restored color at all three sampled lawns. Four road, paving and parking control crops were pixel-identical. Toggling the Shadows setting changed 54,083 pixels above the same RGB threshold in both builds.

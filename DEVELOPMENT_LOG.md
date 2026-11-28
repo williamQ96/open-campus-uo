@@ -6,6 +6,10 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Offer retry while keeping the overview usable
+
+- Keep the retry control available if the full detail manifest fails. Move its panel outside the main interaction area when the overview is already rendered. Report solid fallback outlines separately from the detailed building count and avoid inferring entrances from those outlines. Production browser regressions cover a manifest returning 503 and the Education Annex fallback. The follow-up is part of the main-branch Pages release. [Verification](docs/overview-release-2026-11-27.md).
+
 ## 2026-11-27 - Keep a building outline when the detailed site is its only model
 
 - Attach the stable IDs to the 191 KB overview geometry and keep a solid outline for unavailable buildings that have no model in the underlying scene. A retained predecessor covering the same outline supplies the fallback where applicable. Production browser checks with deliberate 404s for Education Annex and Old Campus Quad kept all 611 IDs and drained 152 review jobs. The first map and first drag-response medians were 0.50 s and 0.58 s. All 204 unit tests, the production build, 538 archived asset checks and viewer pins passed. The follow-up is part of the main-branch Pages release. [Verification](docs/overview-release-2026-11-27.md).

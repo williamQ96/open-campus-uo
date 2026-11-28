@@ -24,7 +24,7 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "e4233727c8a4ee225021744a9d308640abeeef987711c4038adc63f22e9312c8",
+      "local_sha256": "fe03fe04b41a7e4e5a38aa3d473b64d0cc0824d353d8b72852616645fcc3970c",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. East 18th pedestrian links to the Frohnmayer east drive. Inventory-based planting and ground cover along the western cemetery verge. Registered furnishings and grounds for the HEDCO courtyard. Register the source-pinned Oregon Hall southeast grounds and fixtures. Register the Mays memorial and the Science Green east walking approach. Connect the Cascade courtyard stair to the Volcanology west walk. Register the Pacific Hall walk and Cascade arch approach. Register Onyx Green grade, paths and planting islands. Register the Price Science Commons courtyard and overlook. Connect Onyx Green through the Onyx Bridge ground-level passage. Register the Science Green west walk and south glass enclosure. Register the Old Campus Quad paths and Class of 1893 marker. First-frame overview with a view-prioritized draining refinement queue. Viewport input and background building scope."
     },
     "src/building-card.js": {
@@ -34,7 +34,7 @@
     },
     "src/style.css": {
       "upstream_sha256": "7ef8336da7df7d502eb32edc85fcb7f82f8ea4044c714f8f1770f2639834c709",
-      "local_sha256": "5eb25e087fd72ff9cf1b6be157408a77149cbdcad2a6232ea0d497ce3107ceba",
+      "local_sha256": "b489632fbc2f99ff5b5169887a99bb5b5a1af14e023272219d8f71457e0cf585",
       "reason": "Optional sourced building cards, anchored fixed-person card and campus startup progress. Show nonblocking detail progress after the lightweight overview frame."
     },
     "src/world.js": {

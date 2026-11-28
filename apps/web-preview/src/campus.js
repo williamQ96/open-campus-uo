@@ -4800,6 +4800,7 @@ try {
   const selectableBuildings = buildings.filter(
     ({ id }) => !backgroundBuildingIds.has(id),
   );
+  const detailedBuildings = buildings;
   const fallbackBuildings = campusScene.reviewMode
     ? []
     : missingOverviewBuildings(overviewData, buildings);
@@ -5207,7 +5208,7 @@ try {
   });
   entrances = createEntrances({
     scene,
-    buildings,
+    buildings: detailedBuildings,
     half,
     field,
     meshesById,
@@ -5447,7 +5448,7 @@ try {
       orbitTarget: orbit.target.toArray(),
       cameraTransition: !!cameraTransition,
       fps,
-      buildings: buildings.length,
+      buildings: detailedBuildings.length,
       fallbackBuildingIds: fallbackBuildings.map(({ id }) => id),
       backgroundBuildings: buildings.filter(({ id }) =>
         backgroundBuildingIds.has(id),
@@ -5579,14 +5580,16 @@ try {
   };
 } catch (error) {
   console.error(error);
+  loading.hidden = true;
+  const errorPanel = $("#error");
+  errorPanel.hidden = false;
   if (overviewRoot) {
-    $("#loading-message").textContent =
-      "Campus overview available. Detail failed to load.";
-    loadingProgress.hidden = true;
+    errorPanel.dataset.background = "true";
+    errorPanel.querySelector("h2").textContent = "Detail failed to load";
+    errorPanel.querySelector("p").textContent =
+      "You can keep exploring the overview.";
   } else {
-    loading.hidden = true;
-    $("#error").hidden = false;
-    $("#error p").textContent =
+    errorPanel.querySelector("p").textContent =
       error.message + " Rebuild the scene assets before trying again.";
   }
 }

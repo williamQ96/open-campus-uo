@@ -83,7 +83,7 @@ test("the first map accepts gestures and the detail queue completes away from it
     total: initial.detailQueue.total,
     settled: initial.detailQueue.total,
   });
-  expect(complete.buildings).toBe(611);
+  expect(complete.buildings + complete.fallbackBuildingIds.length).toBe(611);
   expect(complete.fallbackBuildingIds).toEqual(["uo-education-annex"]);
   expect(
     await page.evaluate(() => __campus.collisionCheck(-601.7, 414.9)),

@@ -705,7 +705,8 @@ dialog::backdrop {
   border-radius: 99px;
   background: var(--green);
 }
-.loading[data-background="true"] {
+.loading[data-background="true"],
+.error[data-background="true"] {
   inset: auto auto 102px 50%;
   transform: translateX(-50%);
   min-width: 196px;
@@ -713,6 +714,8 @@ dialog::backdrop {
   padding: 10px 14px;
   border: 1px solid var(--line);
   border-radius: 4px;
+}
+.loading[data-background="true"] {
   pointer-events: none;
 }
 .loading[data-background="true"] img {
@@ -746,6 +749,13 @@ dialog::backdrop {
 }
 .error h2 {
   font-size: 23px;
+}
+.error[data-background="true"] h2 {
+  margin: 0;
+  font-size: 15px;
+}
+.error[data-background="true"] p {
+  margin: 4px 0 8px;
 }
 @media (max-width: 1000px) {
   .campus-wordmark {
