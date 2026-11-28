@@ -24,9 +24,12 @@ rankin_frontage = import_module("build-rankin-frontage")
 wayfinding = import_module("build-northeast-campus-wayfinding")
 oregon = import_module("build-oregon-hall-southeast-landscape")
 science_green = import_module("build-science-green-sundial")
+science_green_west = import_module("build-science-green-west")
+old_quad = import_module("build-old-campus-quad-landscape")
 cascade_access = import_module("build-cascade-courtyard-access")
 cascade_north = import_module("build-cascade-courtyard-north")
 onyx_green = import_module("build-onyx-green-walks")
+onyx_bridge = import_module("build-onyx-bridge-underpass")
 price_courtyard = import_module("build-price-courtyard")
 root = green.site.root
 scene = green.site.scene
@@ -100,7 +103,9 @@ def east_18th_west_coverage(spec, metadata):
 
 def frohnmayer_drive_coverage(spec, metadata):
     manifest, _, graph = green.east.pinned_site(scene, spec)
-    drive, walks, _, _, _, _, lot = frohnmayer_drive.footprints(spec, manifest, metadata)
+    drive, walks, _, _, _, _, lot = frohnmayer_drive.footprints(
+        spec, manifest, metadata
+    )
     drive_path = frohnmayer_drive.route_line(spec["routes"][-1]).buffer(0.76)
     return {
         **encode_coverage(
@@ -230,6 +235,12 @@ def main():
             ),
         ),
         encode_coverage(
+            onyx_bridge.PACKAGE,
+            onyx_bridge.route_coverage(
+                green.site.read(metadata / "onyx-bridge-underpass.json")
+            ),
+        ),
+        encode_coverage(
             price_courtyard.PACKAGE,
             price_courtyard.route_coverage(
                 green.site.read(metadata / "price-courtyard.json")
@@ -240,6 +251,18 @@ def main():
             science_green.outdoor_footprint(
                 green.site.read(metadata / "science-green-sundial.json")
             )[0],
+        ),
+        encode_coverage(
+            science_green_west.PACKAGE,
+            science_green_west.route_coverage(
+                green.site.read(metadata / "science-green-west.json")
+            ),
+        ),
+        encode_coverage(
+            old_quad.PACKAGE,
+            old_quad.route_coverage(
+                green.site.read(metadata / "old-campus-quad-landscape.json")
+            ),
         ),
         encode_coverage(
             oregon.PACKAGE,

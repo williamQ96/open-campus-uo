@@ -19,13 +19,13 @@
     },
     "src/presentation.js": {
       "upstream_sha256": "d33c5d8f940ae532978e56db6f273154eb51fdd425109fc6bf65849d86eb450f",
-      "local_sha256": "cfb3276edaa45fb4800125c15f6bc8518c1334976f2b0c963ca38129c9cd2ba2",
-      "reason": "Source-pinned UO model replacements and delayed merging of fallback details. Provide the Price courtyard assembly with the pinned base terrain."
+      "local_sha256": "46d55f71da0ffc410e32de1f3cda18bdfcc8bac95e7ce9be4315c4bd0ad9124a",
+      "reason": "Source-pinned UO model replacements and delayed merging of fallback details. Provide the Price courtyard assembly with the pinned base terrain. Preserve the documented clear stair enclosure glazing in both styles."
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "7f61f09ebfb68fccde6305e4540df8f94a8bfef737d75ba5f2cdc54b702c1a58",
-      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. Pinned East 18th and Rankin pedestrian surfaces. Cherry–Risdon connections and northeast wayfinding. Register the Frohnmayer service drive and its route coverage, the western Pioneer tree belt and HEDCO courtyard landscaping. Register the Education Annex as a selectable exterior and connect its west approach. Register Oregon Hall's southeast grounds, the Mays sundial and the Science Green east approach. Register the Cascade courtyard stair, Pacific Hall walk, Onyx Green routes and Price Science Commons overlook."
+      "local_sha256": "da1f73cb7312e4baf535215e6b53ac2f654d9cf3cccd27c182fff6dd9c3b0846",
+      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. East 18th pedestrian links to the Frohnmayer east drive. Inventory-based planting and ground cover along the western cemetery verge. Registered furnishings and grounds for the HEDCO courtyard. Register the source-pinned Oregon Hall southeast grounds and fixtures. Register the Mays memorial and the Science Green east walking approach. Connect the Cascade courtyard stair to the Volcanology west walk. Register the Pacific Hall walk and Cascade arch approach. Register Onyx Green grade, paths and planting islands. Register the Price Science Commons courtyard and overlook. Connect Onyx Green through the Onyx Bridge ground-level passage. Register the Science Green west walk and south glass enclosure. Register the Old Campus Quad paths and Class of 1893 marker."
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -247,7 +247,7 @@
     "public/scene/womens-quad-review/site.json": "86472cf50d65dad4c7b95dd5fa7c876f82017ec1db762083e2b9672f280b2152",
     "public/scene/memorial-quad-review/site.glb": "8fb1bb29efab97dd91d5ed3e9051608cb01049a0ea56585b86f6ab6d33670b53",
     "public/scene/memorial-quad-review/site.json": "a844029f35c5c2d4baf5ab0d15f9980d63d452697da6d58c4a2dc0261e8f5861",
-    "public/scene/presentation.json": "ce808d6c2752682a33c025f4aee108a33b9631edc0985ee1336ff9a6592dafe6",
+    "public/scene/presentation.json": "789cbe7417919efce4a285fc8b3cf8e74976a516021e1ac63639ecc86418496a",
     "public/scene/fenton-site-review/site.glb": "60464b582614cd6954a185b0b535de09a1d4944d4721c821d5a412671cd0243b",
     "public/scene/fenton-site-review/site.json": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
     "public/scene/heritage-core-review/site.glb": "88ad478f9ae292a32f106a8c432322fc34d4237b25e8e2238a5dc71d44b97e08",
@@ -515,7 +515,7 @@
     "public/scene/southwest-campus-green-review/site.glb": "ff19c8fdf43935176aa00cf7c912a204a8055ca156ebc91651ce5342aaca9e86",
     "public/scene/southwest-campus-green-review/site.json": "1f6bc8289440b2ce251d825193982c6e575d4ff72f81d903898c8931c3dcfb53",
     "src/paved-route-access.js": "98c5cf05a9ace81997f2a06217cd729e373175453fcc9353303e91ec1d0ba0ce",
-    "data/campus-route-surfaces.json": "289a47e2a1f577b45d7532263322f1e0e69bfcd5df1a17998426b87c7df8ac30",
+    "data/campus-route-surfaces.json": "0e1e5ccbbb6e576e63196f707a624cef1ebf45ddc6776550c58f8df762c962f0",
     "public/scene/kincaid-education-landscape-review/site.glb": "229086a9a42a4742451657a79a9650a92375243933387fd879268faaa0494af9",
     "public/scene/kincaid-education-landscape-review/site.json": "b33db62b8d7f1e8807155c832fae9bbac4912a900b87b747ce4d08aef084fb0a",
     "public/scene/kendall-plaza-landscape-review/site.glb": "fb034e7ba495bca4c31e49d32fed3af06e0fe7d3db4d6b8286b54753186d96c4",
@@ -557,6 +557,12 @@
     "public/scene/onyx-green-walks-review/site.glb": "bf5e521afd78d270698ee6598c7ed26b2d60d257b76a7845462fffdad29399ed",
     "public/scene/price-courtyard-review/site.json": "594c82e9471cdacbbd9d7b87379f21f820502397619e7dbcf8ce4b85f479f68b",
     "public/scene/price-courtyard-review/site.glb": "380ca35ec30f7a2b3130b35ee67a02c68fbb1e587738ddb3dcf69367c5e53cd7",
-    "src/price-courtyard-terrain.js": "7f3d8eab210360f84393894ef33a2869a617da48f2879cdb2a9aca945286a7ea"
+    "src/price-courtyard-terrain.js": "7f3d8eab210360f84393894ef33a2869a617da48f2879cdb2a9aca945286a7ea",
+    "public/scene/onyx-bridge-underpass-review/site.glb": "5c2b409d269ddbb058e05a0035548b640156b7676367b3b10f8d59d83d02b211",
+    "public/scene/onyx-bridge-underpass-review/site.json": "4a86794ebe63d615869823780ab59fed8a71a81dc30167354d5e29b39120cdfb",
+    "public/scene/science-green-west-review/site.glb": "63fbbe2f1b2e1b7af8f68c3c92775ad20b5132c440ab25ac474db7b37bfe07d3",
+    "public/scene/science-green-west-review/site.json": "58b1da407285b523010a6ece39b73e62585d0a097a7b366ad68a520ce1591533",
+    "public/scene/old-campus-quad-landscape-review/site.glb": "85b123a595139aa4c29c86bbdd09f5acb876929a5fcfd5d2fc429a9a19b4c223",
+    "public/scene/old-campus-quad-landscape-review/site.json": "1b2f8ae408869f1a0c922ecd73f432f6a973fe0fb8ab4f6ae45a7c134c03934e"
   }
 }

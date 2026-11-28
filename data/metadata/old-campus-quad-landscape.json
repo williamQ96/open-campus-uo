@@ -1,0 +1,693 @@
+{
+  "pins": {
+    "fenton-site-review": "4d960166a0f928fc1dd025f1eb4d613fc6534bd6ae5041574b14aec17c26f7eb",
+    "heritage-core-review": "6115a399b3088f1e38edc4d71a8f64c95286d04e1b52d51a3d30a884e64e988d",
+    "lawrence-science-review": "d30fdbf3d7e56f890de4519661b8365a4f4a2e7f8cf4d75ca6c151bfff4e49f5",
+    "allen-site-review": "7b649674dbd9d74699f202feaf669253a7690878136589d5b316c8c9650935ba"
+  },
+  "sources": [
+    {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/old_campus_quadrangle_06_12_07.pdf",
+      "file": "old-quad-survey.pdf",
+      "sha256": "85e6a5fc47a5afca63b13e1d8d542f31c90c9402f3967f555933a83c7f7698c6",
+      "pages": [
+        2,
+        4,
+        7
+      ]
+    },
+    {
+      "url": "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/f44cd7de-4ca5-48b1-981f-6cee0f225b7d/content",
+      "file": "friendly-2022.pdf",
+      "sha256": "54afa161429c7cb7e0f9562ac1d6dc6a34e823768f7498b9525c29ae46af0cf7",
+      "pages": [
+        46
+      ]
+    },
+    {
+      "url": "https://cpfm.uoregon.edu/sites/default/files/acadcenter_diagnosis_11_21_13.pdf",
+      "file": "core-2013.pdf",
+      "sha256": "db3af99313732b91aceda70f1ff6800b236b1ed13e3ef94cf5262bff719a1527",
+      "pages": [
+        19
+      ]
+    },
+    {
+      "url": "https://archenvironment.uoregon.edu/historic-benches-find-new-life-aaa",
+      "file": "lawrence-benches-2015.html",
+      "sha256": "dcd7b60990323aff081832a47d5719d94a82ec60114807493b7ec7b11b822b7d",
+      "pages": []
+    },
+    {
+      "file": "quad-2017.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493856.14928888%2C4876956.28215305%2C493982.14928888%2C4877143.28215305&bboxSR=3740&imageSR=3740&size=1575%2C2338&layers=show%3A29&format=png32",
+      "sha256": "8c8569c541866217096b9917e4d16ce184fae8abb53dac2dfe43ea6695072326",
+      "bounds_enu_m": [
+        -473,
+        28,
+        -347,
+        215
+      ]
+    },
+    {
+      "file": "quad-2021.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493856.14928888%2C4876956.28215305%2C493982.14928888%2C4877143.28215305&bboxSR=3740&imageSR=3740&size=1575%2C2338&layers=show%3A26&format=png32",
+      "sha256": "9297ff7e28192724bbff3ca616db06b02dcd67e1cf3bfdae63a2243df7cc8b8f",
+      "bounds_enu_m": [
+        -473,
+        28,
+        -347,
+        215
+      ]
+    },
+    {
+      "file": "quad-2023.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493856.14928888%2C4876956.28215305%2C493982.14928888%2C4877143.28215305&bboxSR=3740&imageSR=3740&size=1575%2C2338&layers=show%3A2&format=png32",
+      "sha256": "7c70f4091d838d5df8108eea9b94e93f01de28246d90ae1918e4080e6b49cf92",
+      "bounds_enu_m": [
+        -473,
+        28,
+        -347,
+        215
+      ]
+    },
+    {
+      "file": "quad-2025.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493856.14928888%2C4876956.28215305%2C493982.14928888%2C4877143.28215305&bboxSR=3740&imageSR=3740&size=1575%2C2338&layers=show%3A57&format=png32",
+      "sha256": "86639b3cbb9943b288d772cf6864920309135ecf1690cbaceff99bfc914db171",
+      "bounds_enu_m": [
+        -473,
+        28,
+        -347,
+        215
+      ]
+    },
+    {
+      "file": "quad-dem-2023.tif",
+      "url": "https://gis.dogami.oregon.gov/arcgis/rest/services/lidar/DIGITAL_TERRAIN_MODEL_MOSAIC/ImageServer/exportImage?f=image&bbox=493856.14928888%2C4876956.28215305%2C493982.14928888%2C4877143.28215305&bboxSR=3740&imageSR=3740&size=504%2C748&format=tiff&pixelType=F32&interpolation=RSP_NearestNeighbor&mosaicRule=%7B%22mosaicMethod%22%3A+%22esriMosaicLockRaster%22%2C+%22lockRasterIds%22%3A+%5B179%5D%7D",
+      "sha256": "dad81dc7b2cd7947f2513c0fc494b975a97950039117e6d63c80746957718e8e",
+      "bounds_enu_m": [
+        -473,
+        28,
+        -347,
+        215
+      ]
+    },
+    {
+      "file": "villard-2022.pdf",
+      "url": "https://cpfm.uoregon.edu/sites/default/files/villard_historicassessment_2022_0.pdf",
+      "sha256": "71c4e7afbf5380187c1701a13eef5b58e834c2132629c83319bf3ddc6308c550",
+      "pages": [
+        7,
+        15,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "file": "villard-north-2017.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493863.14928888%2C4877101.28215305%2C493964.14928888%2C4877181.28215305&bboxSR=3740&imageSR=3740&size=2020%2C1600&layers=show%3A29&format=png32",
+      "sha256": "67bafaa3c81aa05a13ae0f993b81d02b99f48af5d129b37f3a93547c43964bf9",
+      "bounds_enu_m": [
+        -466,
+        173,
+        -365,
+        253
+      ]
+    },
+    {
+      "file": "villard-north-2021.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493863.14928888%2C4877101.28215305%2C493964.14928888%2C4877181.28215305&bboxSR=3740&imageSR=3740&size=2020%2C1600&layers=show%3A26&format=png32",
+      "sha256": "f7156f2bcacd464c9b2b64056d91a0cf72b90da9348bc692618ed8655dc7d8a8",
+      "bounds_enu_m": [
+        -466,
+        173,
+        -365,
+        253
+      ]
+    },
+    {
+      "file": "villard-north-2023.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493863.14928888%2C4877101.28215305%2C493964.14928888%2C4877181.28215305&bboxSR=3740&imageSR=3740&size=2020%2C1600&layers=show%3A2&format=png32",
+      "sha256": "36f317d9f55d79b58339d7b0bee481dc58897eea6227e9f11f124dd9301df283",
+      "bounds_enu_m": [
+        -466,
+        173,
+        -365,
+        253
+      ]
+    },
+    {
+      "file": "villard-north-2025.png",
+      "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=493863.14928888%2C4877101.28215305%2C493964.14928888%2C4877181.28215305&bboxSR=3740&imageSR=3740&size=2020%2C1600&layers=show%3A57&format=png32",
+      "sha256": "1e77801c7c331044849bfc16dd671255e36b1fdfcdf755c02860a79f845412c6",
+      "bounds_enu_m": [
+        -466,
+        173,
+        -365,
+        253
+      ]
+    },
+    {
+      "file": "villard-north-trees.json",
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&geometry=493863.14928888%2C4877101.28215305%2C493964.14928888%2C4877181.28215305&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=%2A&spatialRel=esriSpatialRelIntersects&where=1%3D1",
+      "sha256": "346d9a2f4567a03f77abdd9ec7e5a1cad23092b526e79a7f99ba50e0fb0f20b7",
+      "bounds_enu_m": [
+        -466,
+        173,
+        -365,
+        253
+      ]
+    },
+    {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&geometry=493856.14928888%2C4876998.28215305%2C493979.14928888%2C4877170.28215305&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=%2A&spatialRel=esriSpatialRelIntersects&where=1%3D1",
+      "file": "quad-campus-tree-inventory.json",
+      "sha256": "5baaee90129a3d5d25f2d6c5f255f426eb0a5e388ffc0a16be4d8e640c194c12",
+      "bounds": [
+        -473,
+        70,
+        -350,
+        242
+      ]
+    }
+  ],
+  "class_stone": {
+    "position_enu_m": [
+      -425.92,
+      218.12
+    ],
+    "width_depth_height_m": [
+      0.56,
+      0.42,
+      1.02
+    ],
+    "face_azimuth_degrees": 153,
+    "inscription": [
+      "CLASS",
+      "OF",
+      "1893"
+    ],
+    "photo_pdf_page": 37,
+    "map_controls": [
+      {
+        "feature": "Villard northeast corner",
+        "pdf_survey_2_pixel": [
+          205,
+          525
+        ],
+        "position_enu_m": [
+          -437.98,
+          202.4
+        ]
+      },
+      {
+        "feature": "Villard southeast corner",
+        "pdf_survey_2_pixel": [
+          205,
+          675
+        ],
+        "position_enu_m": [
+          -437.89,
+          167.44
+        ]
+      },
+      {
+        "feature": "class stone symbol",
+        "pdf_survey_2_pixel": [
+          254.5,
+          458
+        ]
+      }
+    ],
+    "method": "Locally scaled from the north and south ends of Villard east facade and the 100 ft map bar. The symbol falls east and north of the hall. Tree cover screens this lawn. Its positions in the 2007 and 2022 plans agree, with the same underlying drawing. Position uncertainty is approximately 2 m. Dimensions, letter depth and bearing are estimates from the Villard photograph."
+  },
+  "paths": [
+    {
+      "width_m": 2.04,
+      "anchor_enu_m": [
+        -428.3,
+        122.7
+      ],
+      "points_enu_m": [
+        [
+          -421.35,
+          124.21
+        ],
+        [
+          -413.8,
+          124.43
+        ],
+        [
+          -406.1,
+          124.43
+        ],
+        [
+          -399.4,
+          124.41
+        ],
+        [
+          -391.0,
+          124.38
+        ],
+        [
+          -383.7,
+          124.39
+        ],
+        [
+          -376.55,
+          124.58
+        ],
+        [
+          -371.23,
+          124.29
+        ],
+        [
+          -367.52,
+          121.6
+        ]
+      ]
+    },
+    {
+      "width_m": 2.15,
+      "anchor_enu_m": [
+        -421.35,
+        124.21
+      ],
+      "points_enu_m": [
+        [
+          -416.42,
+          127.21
+        ],
+        [
+          -409.3,
+          130.2
+        ],
+        [
+          -402.25,
+          133.35
+        ],
+        [
+          -396.12,
+          136.0
+        ],
+        [
+          -389.82,
+          139.04
+        ],
+        [
+          -383.65,
+          142.37
+        ],
+        [
+          -378.65,
+          146.9
+        ],
+        [
+          -375.7,
+          151.84
+        ],
+        [
+          -373.92,
+          156.0
+        ],
+        [
+          -370.45,
+          158.67
+        ],
+        [
+          -365.75,
+          159.15
+        ]
+      ]
+    },
+    {
+      "width_m": 1.96,
+      "anchor_enu_m": [
+        -430.8,
+        174.0
+      ],
+      "points_enu_m": [
+        [
+          -425.8,
+          177.32
+        ],
+        [
+          -418.01,
+          177.46
+        ],
+        [
+          -411.54,
+          176.64
+        ],
+        [
+          -407.2,
+          173.27
+        ],
+        [
+          -403.22,
+          168.27
+        ],
+        [
+          -399.3,
+          162.76
+        ],
+        [
+          -395.97,
+          156.57
+        ],
+        [
+          -392.14,
+          151.35
+        ],
+        [
+          -388.34,
+          146.4
+        ]
+      ],
+      "end_enu_m": [
+        -383.65,
+        142.37
+      ]
+    },
+    {
+      "width_m": 2.1,
+      "anchor_enu_m": [
+        -383.65,
+        142.37
+      ],
+      "points_enu_m": [
+        [
+          -379.96,
+          139.05
+        ],
+        [
+          -375.9,
+          136.56
+        ],
+        [
+          -372.77,
+          134.74
+        ],
+        [
+          -369.94,
+          134.95
+        ]
+      ]
+    },
+    {
+      "width_m": 1.8,
+      "anchor_enu_m": [
+        -376.55,
+        124.58
+      ],
+      "points_enu_m": [
+        [
+          -376.86,
+          128.85
+        ],
+        [
+          -375.55,
+          132.4
+        ]
+      ],
+      "end_enu_m": [
+        -372.77,
+        134.74
+      ]
+    }
+  ],
+  "retired_context": [
+    {
+      "index": 29,
+      "position_enu_m": [
+        -407.97,
+        124.22
+      ]
+    },
+    {
+      "index": 24,
+      "position_enu_m": [
+        -372.036,
+        125.859
+      ]
+    }
+  ],
+  "notes": "The 2021 leaf-off imagery shows the east-west path and the central X. The 2025 image has construction beside Villard. The center junctions and eastern termini remain legible. The west joins follow the retained Fenton/Hello Walk layout. Screened alignment and widths are inferred between visible segments.",
+  "dem_samples_enu_m": [
+    [
+      -428.3,
+      122.7,
+      5.016
+    ],
+    [
+      -421.35,
+      124.21,
+      4.938
+    ],
+    [
+      -413.8,
+      124.43,
+      4.794
+    ],
+    [
+      -406.1,
+      124.43,
+      4.662
+    ],
+    [
+      -399.4,
+      124.41,
+      4.547
+    ],
+    [
+      -391.0,
+      124.38,
+      4.354
+    ],
+    [
+      -383.7,
+      124.39,
+      4.221
+    ],
+    [
+      -376.55,
+      124.58,
+      4.107
+    ],
+    [
+      -371.23,
+      124.29,
+      3.942
+    ],
+    [
+      -367.52,
+      121.6,
+      3.977
+    ],
+    [
+      -416.42,
+      127.21,
+      4.8
+    ],
+    [
+      -409.3,
+      130.2,
+      4.732
+    ],
+    [
+      -402.25,
+      133.35,
+      4.698
+    ],
+    [
+      -396.12,
+      136.0,
+      4.688
+    ],
+    [
+      -389.82,
+      139.04,
+      4.657
+    ],
+    [
+      -383.65,
+      142.37,
+      4.57
+    ],
+    [
+      -378.65,
+      146.9,
+      4.443
+    ],
+    [
+      -375.7,
+      151.84,
+      4.302
+    ],
+    [
+      -373.92,
+      156.0,
+      4.236
+    ],
+    [
+      -370.45,
+      158.67,
+      4.212
+    ],
+    [
+      -365.75,
+      159.15,
+      3.486
+    ],
+    [
+      -430.8,
+      174.0,
+      5.092
+    ],
+    [
+      -425.8,
+      177.32,
+      5.109
+    ],
+    [
+      -418.01,
+      177.46,
+      5.083
+    ],
+    [
+      -411.54,
+      176.64,
+      5.059
+    ],
+    [
+      -407.2,
+      173.27,
+      5.088
+    ],
+    [
+      -403.22,
+      168.27,
+      5.075
+    ],
+    [
+      -399.3,
+      162.76,
+      5.036
+    ],
+    [
+      -395.97,
+      156.57,
+      5.006
+    ],
+    [
+      -392.14,
+      151.35,
+      4.895
+    ],
+    [
+      -388.34,
+      146.4,
+      4.772
+    ],
+    [
+      -379.96,
+      139.05,
+      4.47
+    ],
+    [
+      -375.9,
+      136.56,
+      4.285
+    ],
+    [
+      -372.77,
+      134.74,
+      4.08
+    ],
+    [
+      -369.94,
+      134.95,
+      4.014
+    ],
+    [
+      -376.86,
+      128.85,
+      4.341
+    ],
+    [
+      -375.55,
+      132.4,
+      4.257
+    ]
+  ],
+  "grade_note": "2023 ground mosaic minus a fitted 0.33 m offset. Blend exact Fenton path height at the west ties and clamp rises to the active terrain profile to avoid abrupt sides. The 2023 raster contains some tree and construction influence.",
+  "trees": [
+    {
+      "id": "39",
+      "species": "Douglas-Fir",
+      "position_enu_m": [
+        -375.066,
+        128.418
+      ],
+      "height_m": 18.288,
+      "crown_radius_m": 3.048,
+      "form": "tapered"
+    },
+    {
+      "id": "6230",
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -372.851,
+        127.558
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.61,
+      "form": "rounded"
+    },
+    {
+      "id": "6231",
+      "species": "Vine Maple",
+      "position_enu_m": [
+        -374.27,
+        126.325
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.61,
+      "form": "rounded"
+    },
+    {
+      "id": "27",
+      "species": "Scotch Elm",
+      "position_enu_m": [
+        -434.538,
+        209.632
+      ],
+      "height_m": 9.144,
+      "crown_radius_m": 4.267,
+      "form": "rounded"
+    },
+    {
+      "id": "2",
+      "species": "Oregon White Oak",
+      "position_enu_m": [
+        -423.804,
+        231.177
+      ],
+      "height_m": 15.24,
+      "crown_radius_m": 7.62,
+      "form": "rounded"
+    },
+    {
+      "id": "4",
+      "species": "California Incense Cedar",
+      "position_enu_m": [
+        -407.796,
+        215.381
+      ],
+      "height_m": 30.48,
+      "crown_radius_m": 3.048,
+      "form": "tapered"
+    }
+  ]
+}

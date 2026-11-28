@@ -2319,5 +2319,17 @@
   "price_courtyard_site": {
     "url": "price-courtyard-review/site.json",
     "sha256": "594c82e9471cdacbbd9d7b87379f21f820502397619e7dbcf8ce4b85f479f68b"
+  },
+  "onyx_bridge_underpass_site": {
+    "url": "onyx-bridge-underpass-review/site.json",
+    "sha256": "4a86794ebe63d615869823780ab59fed8a71a81dc30167354d5e29b39120cdfb"
+  },
+  "science_green_west_site": {
+    "url": "science-green-west-review/site.json",
+    "sha256": "58b1da407285b523010a6ece39b73e62585d0a097a7b366ad68a520ce1591533"
+  },
+  "old_campus_quad_landscape_site": {
+    "url": "old-campus-quad-landscape-review/site.json",
+    "sha256": "1b2f8ae408869f1a0c922ecd73f432f6a973fe0fb8ab4f6ae45a7c134c03934e"
   }
 }

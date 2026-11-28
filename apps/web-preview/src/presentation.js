@@ -725,9 +725,11 @@ export function createPresentation(
   ramp.minFilter = ramp.magFilter = THREE.NearestFilter;
   ramp.needsUpdate = true;
   function styleMesh(object) {
-    const courtGlass = object.userData.asset_id === "price-courtyard-glass";
+    const landscapeGlass =
+      object.userData.asset_id === "price-courtyard-glass" ||
+      object.userData.asset_id === "science-green-stair-glass";
     object.castShadow =
-      !courtGlass && object.userData.asset_kind !== "landscape-surface";
+      !landscapeGlass && object.userData.asset_kind !== "landscape-surface";
     object.receiveShadow = true;
     const original = Array.isArray(object.material)
       ? object.material.map((material) => material.clone())
@@ -739,7 +741,7 @@ export function createPresentation(
         side: source.side,
         map: source.map,
         vertexColors: source.vertexColors,
-        ...(courtGlass && {
+        ...(landscapeGlass && {
           transparent: source.transparent,
           opacity: source.opacity,
           depthWrite: source.depthWrite,

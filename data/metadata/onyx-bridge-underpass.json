@@ -1,0 +1,841 @@
+{
+  "pins": {
+    "onyx-green-walks-review": "8cc845b888efb6cd6b6845b1371e81d54422d5b26537ebd8b86462b787916f3a",
+    "northeast-science-review": "a11a830eed3b0fec81a6c87e64f14f7f1076368b8e62ba602f2b2c32d2701dd7",
+    "northeast-campus-wayfinding-review": "c1f1183c3ab969ff0d7662034d9ae98ab2147e3a509ec99ed1de8fd146ccd105"
+  },
+  "source": {
+    "reference_files": [
+      {
+        "year": 2017,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494104.14928888186%2C4877030.282153052%2C494159.14928888186%2C4877109.282153052&bboxSR=3740&imageSR=3740&size=1100%2C1580&layers=show%3A29&format=png32",
+        "file": "onyx-bridge-aerial-2017.png",
+        "sha256": "5bf7607e6a5befc609963645c2c423c6af2b88fabbd2d4823abeb9a34218e3ed"
+      },
+      {
+        "year": 2021,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494104.14928888186%2C4877030.282153052%2C494159.14928888186%2C4877109.282153052&bboxSR=3740&imageSR=3740&size=1100%2C1580&layers=show%3A26&format=png32",
+        "file": "onyx-bridge-aerial-2021.png",
+        "sha256": "17ba5c0bfad4d1c75f24cb8f99122ad5aebe851e8b7bb184a1641746866b9500"
+      },
+      {
+        "year": 2023,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494104.14928888186%2C4877030.282153052%2C494159.14928888186%2C4877109.282153052&bboxSR=3740&imageSR=3740&size=1100%2C1580&layers=show%3A2&format=png32",
+        "file": "onyx-bridge-aerial-2023.png",
+        "sha256": "45474409ed3c0c05c90e8c184496dd133c18209c439aeba6eb228438bbe401a7"
+      },
+      {
+        "year": 2025,
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494104.14928888186%2C4877030.282153052%2C494159.14928888186%2C4877109.282153052&bboxSR=3740&imageSR=3740&size=1100%2C1580&layers=show%3A57&format=png32",
+        "file": "onyx-bridge-aerial-2025.png",
+        "sha256": "6f7f8c6ce33f50161e02b9430f3536580aa15d65a50e8ad54b27300a4bf465ca"
+      },
+      {
+        "year": 2023,
+        "url": "https://gis.dogami.oregon.gov/arcgis/rest/services/lidar/DIGITAL_TERRAIN_MODEL_MOSAIC/ImageServer/exportImage?f=image&bbox=494104.14928888186%2C4877030.282153052%2C494159.14928888186%2C4877109.282153052&bboxSR=3740&imageSR=3740&size=220%2C316&format=tiff&pixelType=F32&interpolation=RSP_NearestNeighbor&mosaicRule=%7B%22mosaicMethod%22%3A+%22esriMosaicLockRaster%22%2C+%22lockRasterIds%22%3A+%5B179%5D%7D",
+        "file": "onyx-bridge-dem-2023.tif",
+        "sha256": "cdca5ad1be763d0313a75622fbbbcca5644ca51004eeb6b66f544ce6d4170d47"
+      },
+      {
+        "year": 2025,
+        "url": "https://cpfm.uoregon.edu/sites/default/files/2025-01/onyxbridge_2025.pdf",
+        "file": "onyx-bridge-survey-2025.pdf",
+        "sha256": "0e31b8cc749df6ab79455499ffbf5d2dc0733733e15296ccd5bf2c24604cee0a"
+      }
+    ],
+    "access_map": {
+      "url": "https://mapapps.uoregon.edu/campusMaps/accessibility.pdf",
+      "sha256": "60216e1b57081fbcfed67697fda212a5ea51e8053cbb9d423d2217ddac15ee4b",
+      "points_affine_rms_m": 0.151
+    },
+    "campus_plan": "https://cpfm.uoregon.edu/sites/default/files/principle_12_design_area_special_conditions_4th_edition_1.pdf",
+    "modern_dem": {
+      "project": "https://pubs.oregon.gov/dogami/ldq/reports/OLC_WillametteValley_2023_NIR_Lidar_Report.pdf",
+      "acquired": "2023-07-21 to 2023-07-22",
+      "bounds_enu_m": [
+        -225,
+        102,
+        -170,
+        181
+      ],
+      "native_cell_m": 0.9144,
+      "export_cell_m": 0.25,
+      "samples": [
+        {
+          "position_enu_m": [
+            -202.99,
+            112.24
+          ],
+          "fitted_z_m": 1.215,
+          "dem_q10_q50_q90_z_m": [
+            1.26,
+            1.278,
+            1.283
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -203.0,
+            115.45
+          ],
+          "fitted_z_m": 1.25,
+          "dem_q10_q50_q90_z_m": [
+            1.26,
+            1.268,
+            1.274
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -202.99,
+            117.05
+          ],
+          "fitted_z_m": 1.236,
+          "dem_q10_q50_q90_z_m": [
+            1.226,
+            1.27,
+            1.274
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -202.99,
+            120.5
+          ],
+          "fitted_z_m": 1.205,
+          "dem_q10_q50_q90_z_m": [
+            1.357,
+            1.357,
+            1.37
+          ],
+          "bridge_occluded": true
+        },
+        {
+          "position_enu_m": [
+            -202.98,
+            124.0
+          ],
+          "fitted_z_m": 1.174,
+          "dem_q10_q50_q90_z_m": [
+            1.358,
+            1.358,
+            1.366
+          ],
+          "bridge_occluded": true
+        },
+        {
+          "position_enu_m": [
+            -202.98,
+            128.0
+          ],
+          "fitted_z_m": 1.14,
+          "dem_q10_q50_q90_z_m": [
+            1.359,
+            1.36,
+            1.364
+          ],
+          "bridge_occluded": true
+        },
+        {
+          "position_enu_m": [
+            -202.98,
+            131.5
+          ],
+          "fitted_z_m": 1.108,
+          "dem_q10_q50_q90_z_m": [
+            1.285,
+            1.308,
+            1.309
+          ],
+          "bridge_occluded": true
+        },
+        {
+          "position_enu_m": [
+            -202.98,
+            134.6
+          ],
+          "fitted_z_m": 1.103,
+          "dem_q10_q50_q90_z_m": [
+            1.187,
+            1.211,
+            1.303
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -202.98,
+            137.66
+          ],
+          "fitted_z_m": 1.084,
+          "dem_q10_q50_q90_z_m": [
+            1.067,
+            1.084,
+            1.097
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -200.0,
+            137.64
+          ],
+          "fitted_z_m": 1.08,
+          "dem_q10_q50_q90_z_m": [
+            1.069,
+            1.07,
+            1.234
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -197.65,
+            137.83
+          ],
+          "fitted_z_m": 1.13,
+          "dem_q10_q50_q90_z_m": [
+            1.048,
+            1.144,
+            1.177
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -197.35,
+            141.41
+          ],
+          "fitted_z_m": 1.06,
+          "dem_q10_q50_q90_z_m": [
+            1.005,
+            1.009,
+            1.047
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -197.26,
+            145.05
+          ],
+          "fitted_z_m": 0.959,
+          "dem_q10_q50_q90_z_m": [
+            0.93,
+            0.941,
+            0.954
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -197.26,
+            149.18
+          ],
+          "fitted_z_m": 0.88,
+          "dem_q10_q50_q90_z_m": [
+            0.8,
+            0.8,
+            0.835
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -194.38,
+            149.35
+          ],
+          "fitted_z_m": 0.899,
+          "dem_q10_q50_q90_z_m": [
+            0.844,
+            0.848,
+            0.901
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -191.78,
+            149.45
+          ],
+          "fitted_z_m": 0.947,
+          "dem_q10_q50_q90_z_m": [
+            0.888,
+            0.916,
+            0.958
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -191.94,
+            152.03
+          ],
+          "fitted_z_m": 0.73,
+          "dem_q10_q50_q90_z_m": [
+            0.714,
+            0.788,
+            0.793
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -191.72,
+            154.12
+          ],
+          "fitted_z_m": 0.57,
+          "dem_q10_q50_q90_z_m": [
+            0.559,
+            0.563,
+            0.645
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -191.6,
+            156.24
+          ],
+          "fitted_z_m": 0.461,
+          "dem_q10_q50_q90_z_m": [
+            0.454,
+            0.474,
+            0.5
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -202.98,
+            137.66
+          ],
+          "fitted_z_m": 1.084,
+          "dem_q10_q50_q90_z_m": [
+            1.067,
+            1.084,
+            1.097
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -206.3,
+            137.78
+          ],
+          "fitted_z_m": 1.075,
+          "dem_q10_q50_q90_z_m": [
+            1.089,
+            1.134,
+            1.14
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -210.63,
+            138.18
+          ],
+          "fitted_z_m": 1.095,
+          "dem_q10_q50_q90_z_m": [
+            1.114,
+            1.114,
+            1.118
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -210.78,
+            141.62
+          ],
+          "fitted_z_m": 1.082,
+          "dem_q10_q50_q90_z_m": [
+            1.051,
+            1.056,
+            1.079
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -210.81,
+            145.53
+          ],
+          "fitted_z_m": 0.972,
+          "dem_q10_q50_q90_z_m": [
+            0.963,
+            0.994,
+            1.053
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -210.57,
+            149.45
+          ],
+          "fitted_z_m": 0.882,
+          "dem_q10_q50_q90_z_m": [
+            0.869,
+            0.878,
+            0.905
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -206.72,
+            149.36
+          ],
+          "fitted_z_m": 0.892,
+          "dem_q10_q50_q90_z_m": [
+            0.899,
+            0.899,
+            0.911
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -202.75,
+            149.23
+          ],
+          "fitted_z_m": 0.874,
+          "dem_q10_q50_q90_z_m": [
+            0.841,
+            0.842,
+            0.917
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -199.73,
+            149.21
+          ],
+          "fitted_z_m": 0.863,
+          "dem_q10_q50_q90_z_m": [
+            0.828,
+            0.855,
+            0.869
+          ],
+          "bridge_occluded": false
+        },
+        {
+          "position_enu_m": [
+            -197.26,
+            149.18
+          ],
+          "fitted_z_m": 0.88,
+          "dem_q10_q50_q90_z_m": [
+            0.8,
+            0.8,
+            0.835
+          ],
+          "bridge_occluded": false
+        }
+      ],
+      "covered_grade_note": "The DEM plateau beneath the roof is unresolved. Fitted grades interpolate between the exposed ramp ends and the retained modeled piers and underside.",
+      "final_east_turn_controls": [
+        {
+          "position_enu_m": [
+            -200,
+            138.14
+          ],
+          "fitted_z_m": 1.08,
+          "dem_q10_q50_q90_z_m": [
+            1.058,
+            1.066,
+            1.07
+          ],
+          "window_half_size_m": 0.5
+        },
+        {
+          "position_enu_m": [
+            -197.65,
+            138.24
+          ],
+          "fitted_z_m": 1.13,
+          "dem_q10_q50_q90_z_m": [
+            1.048,
+            1.096,
+            1.144
+          ],
+          "window_half_size_m": 0.5
+        }
+      ]
+    },
+    "tree": {
+      "raw_file": "onyx-bridge-campus-tree-evidence.json",
+      "sha256": "aace7eca328d1f20b7ef280b603992d8d5bbbf48a7e5334b76ba4c3d0365d0ab",
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&geometry=494111%2C4877058%2C494143%2C4877081&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID%2CTreeID%2CCommonName%2CHeight%2CSpread%2CCaliper%2CRemoved&spatialRel=esriSpatialRelIntersects&where=1%3D1"
+    },
+    "tree_inventory": {
+      "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&geometry=494111%2C4877058%2C494143%2C4877081&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID%2CTreeID%2CCommonName%2CHeight%2CSpread%2CCaliper%2CRemoved&spatialRel=esriSpatialRelIntersects&where=1%3D1",
+      "file": "onyx-bridge-campus-tree-evidence.json",
+      "sha256": "aace7eca328d1f20b7ef280b603992d8d5bbbf48a7e5334b76ba4c3d0365d0ab"
+    }
+  },
+  "paths": [
+    {
+      "stations": [
+        [
+          -202.99,
+          112.24,
+          1.215
+        ],
+        [
+          -203.0,
+          115.45,
+          1.25
+        ],
+        [
+          -202.99,
+          117.05,
+          1.236
+        ],
+        [
+          -202.99,
+          120.5,
+          1.205
+        ],
+        [
+          -202.98,
+          124.0,
+          1.174
+        ],
+        [
+          -202.98,
+          128.0,
+          1.14
+        ],
+        [
+          -202.98,
+          131.5,
+          1.108
+        ],
+        [
+          -202.98,
+          134.6,
+          1.103
+        ],
+        [
+          -202.98,
+          137.66,
+          1.084
+        ],
+        [
+          -200.0,
+          138.14,
+          1.075
+        ],
+        [
+          -197.65,
+          138.24,
+          1.12
+        ],
+        [
+          -197.35,
+          141.41,
+          1.06
+        ],
+        [
+          -197.26,
+          145.05,
+          0.959
+        ],
+        [
+          -197.26,
+          149.18,
+          0.88
+        ],
+        [
+          -194.38,
+          149.35,
+          0.899
+        ],
+        [
+          -191.78,
+          149.45,
+          0.947
+        ],
+        [
+          -191.94,
+          152.03,
+          0.73
+        ],
+        [
+          -191.72,
+          154.12,
+          0.57
+        ],
+        [
+          -191.6,
+          156.24,
+          0.461
+        ]
+      ],
+      "width_m": 2.7
+    },
+    {
+      "stations": [
+        [
+          -202.98,
+          137.66,
+          1.084
+        ],
+        [
+          -206.3,
+          137.78,
+          1.075
+        ],
+        [
+          -210.63,
+          138.18,
+          1.095
+        ],
+        [
+          -210.78,
+          141.62,
+          1.082
+        ],
+        [
+          -210.81,
+          145.53,
+          0.972
+        ],
+        [
+          -210.57,
+          149.45,
+          0.882
+        ],
+        [
+          -206.72,
+          149.36,
+          0.892
+        ],
+        [
+          -202.75,
+          149.23,
+          0.874
+        ],
+        [
+          -199.73,
+          149.21,
+          0.863
+        ],
+        [
+          -197.26,
+          149.18,
+          0.88
+        ]
+      ],
+      "closes_on_existing_node": true,
+      "width_m": 2.36
+    }
+  ],
+  "pavements": [
+    [
+      [
+        -206.28,
+        112.0
+      ],
+      [
+        -200.38,
+        112.0
+      ],
+      [
+        -200.64,
+        117.22
+      ],
+      [
+        -205.88,
+        117.22
+      ]
+    ],
+    [
+      [
+        -205.7,
+        137.12
+      ],
+      [
+        -202.1,
+        136.1
+      ],
+      [
+        -200.75,
+        137.35
+      ],
+      [
+        -196.45,
+        138.45
+      ],
+      [
+        -197.0,
+        140.26
+      ],
+      [
+        -201.6,
+        139.75
+      ],
+      [
+        -205.7,
+        139.38
+      ]
+    ],
+    [
+      [
+        -198.09,
+        147.65
+      ],
+      [
+        -195.54,
+        147.75
+      ],
+      [
+        -193.6,
+        148.52
+      ],
+      [
+        -190.5,
+        148.55
+      ],
+      [
+        -190.72,
+        150.47
+      ],
+      [
+        -194.36,
+        150.9
+      ],
+      [
+        -197.99,
+        150.5
+      ]
+    ]
+  ],
+  "beds": [
+    {
+      "outline_enu_m": [
+        [
+          -208.72,
+          140.36
+        ],
+        [
+          -208.9,
+          141.08
+        ],
+        [
+          -208.93,
+          146.93
+        ],
+        [
+          -208.45,
+          148.02
+        ],
+        [
+          -201.48,
+          147.97
+        ],
+        [
+          -200.85,
+          147.41
+        ],
+        [
+          -200.79,
+          141.03
+        ],
+        [
+          -201.42,
+          140.27
+        ]
+      ],
+      "top_z_m": 1.16,
+      "vegetation": "low cover"
+    },
+    {
+      "outline_enu_m": [
+        [
+          -213.02,
+          133.28
+        ],
+        [
+          -205.64,
+          133.32
+        ],
+        [
+          -205.16,
+          134.2
+        ],
+        [
+          -205.18,
+          136.8
+        ],
+        [
+          -206,
+          137.08
+        ],
+        [
+          -212.92,
+          137.06
+        ]
+      ],
+      "top_z_m": 1.29,
+      "vegetation": "recessed verge"
+    },
+    {
+      "outline_enu_m": [
+        [
+          -200.63,
+          133.33
+        ],
+        [
+          -195.71,
+          133.38
+        ],
+        [
+          -195.65,
+          136.97
+        ],
+        [
+          -196.4,
+          137.17
+        ],
+        [
+          -200.48,
+          137.11
+        ]
+      ],
+      "top_z_m": 1.3,
+      "vegetation": "recessed verge"
+    }
+  ],
+  "trees": [
+    {
+      "id": "2896",
+      "species": "Fernleaf Full-Moon Maple",
+      "position_enu_m": [
+        -210.015,
+        135.196
+      ],
+      "height_m": 2.134,
+      "crown_radius_m": 0.457,
+      "trunk_radius_m": 0.021
+    },
+    {
+      "id": "4087",
+      "species": "Fragrant Snowbell",
+      "position_enu_m": [
+        -197.905,
+        135.738
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.914,
+      "trunk_radius_m": 0.03
+    }
+  ]
+}

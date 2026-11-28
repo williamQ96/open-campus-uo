@@ -3436,6 +3436,42 @@
       "bytes": 1159392,
       "sha256": "380ca35ec30f7a2b3130b35ee67a02c68fbb1e587738ddb3dcf69367c5e53cd7",
       "origin": "Original landscape geometry for the Price Science Commons west courtyard and overlook. See docs/price-courtyard-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/onyx-bridge-underpass-review/site.glb": {
+      "license": "CC-BY-4.0",
+      "sha256": "5c2b409d269ddbb058e05a0035548b640156b7676367b3b10f8d59d83d02b211",
+      "bytes": 782856,
+      "origin": "Onyx Bridge ground passage and north garden approach. See docs/onyx-bridge-underpass-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/onyx-bridge-underpass-review/site.json": {
+      "license": "CC-BY-4.0",
+      "sha256": "4a86794ebe63d615869823780ab59fed8a71a81dc30167354d5e29b39120cdfb",
+      "bytes": 1439,
+      "origin": "Onyx Bridge ground passage and north garden approach. See docs/onyx-bridge-underpass-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/science-green-west-review/site.glb": {
+      "bytes": 1264020,
+      "license": "CC-BY-4.0",
+      "sha256": "63fbbe2f1b2e1b7af8f68c3c92775ad20b5132c440ab25ac474db7b37bfe07d3",
+      "origin": "Original Science Green west paving, campus inventory trees and above-grade exit enclosure. See docs/science-green-west-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/science-green-west-review/site.json": {
+      "bytes": 2049,
+      "license": "CC-BY-4.0",
+      "sha256": "58b1da407285b523010a6ece39b73e62585d0a097a7b366ad68a520ce1591533",
+      "origin": "Original Science Green west paving, campus inventory trees and above-grade exit enclosure. See docs/science-green-west-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/old-campus-quad-landscape-review/site.glb": {
+      "sha256": "85b123a595139aa4c29c86bbdd09f5acb876929a5fcfd5d2fc429a9a19b4c223",
+      "bytes": 700384,
+      "license": "CC-BY-4.0",
+      "origin": "Original pavement and class memorial geometry. See docs/old-campus-quad-landscape-2026-11-27.md."
+    },
+    "apps/web-preview/public/scene/old-campus-quad-landscape-review/site.json": {
+      "sha256": "1b2f8ae408869f1a0c922ecd73f432f6a973fe0fb8ab4f6ae45a7c134c03934e",
+      "bytes": 2201,
+      "license": "CC-BY-4.0",
+      "origin": "Original pavement and class memorial geometry. See docs/old-campus-quad-landscape-2026-11-27.md."
     }
   },
   "additional_sources": [

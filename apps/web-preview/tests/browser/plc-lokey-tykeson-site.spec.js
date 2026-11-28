@@ -41,7 +41,11 @@ test("the reconstructed exteriors retain identities and open approaches", async 
 }) => {
   const before = await readSite(page, previous);
   const after = await readSite(page, "/");
-  expect(after.count).toBe(before.count - 3);
+  // Education Annex needs the Lokey court package in the research scene.
+  const annexAvailable = (site) =>
+    site.names.some(({ id }) => id === "uo-education-annex");
+  const addedAnnex = Number(annexAvailable(after) && !annexAvailable(before));
+  expect(after.count).toBe(before.count - retired.length + addedAnnex);
   expect(after.batch).toBe(before.batch - 4);
   expect(after.roads).toBe(before.roads);
   const gates = after.gates.filter(({ id }) => replaced.includes(id));

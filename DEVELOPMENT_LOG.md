@@ -6,6 +6,25 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Release the Onyx Bridge passage, Science Green west and Old Campus Quad
+
+- This release collects the three verified L2 landscape packages below. It preserves the 611 exterior model IDs and adds 94 pedestrian links across the three sites. Release-worktree formatting, 201 unit tests, the production build, 537 archived asset checks and the viewer pins pass. The main-branch push triggers the GitHub Pages workflow.
+
+## 2026-11-27 - Register Old Campus Quad paths and the Class of 1893 stone
+
+- Model the memorial stone and carved lettering from the 2022 Villard close view. Match the 2007 survey location with about two metres of site uncertainty. Reconstruct 441.27 m² of cross-paths and three north-lawn and three east-side inventory trees. The five path branches add 37 links. The existing Hello Walk coverage prevents an off-pavement shortcut at the northwest tie. [Site review](docs/old-campus-quad-landscape-2026-11-27.md).
+- Both local production profiles load 611 exterior IDs and 414 successful resources, with 93 file hashes and 1,670 samples per profile across four paved routes. Five focused browser cases, 201 unit tests, 537 archive checks, viewer hashes, build and repeat exports pass.
+
+## 2026-11-27 - Complete the Science Green oval walk and model the glass stair enclosure
+
+- Register the west and north arcs, three planting areas, 11 inventory trees and the above-grade glass exit enclosure. Replace the overshooting apron with the modeled oval enclosing 968.74 m². The 214.22 m² of new paving and 30 walking links connect East 13th, the Huestis-side branch and the sundial. The enclosure height, detailed planting and the central island fixture face use estimates. [Site review](docs/science-green-west-2026-11-27.md).
+- Each production preview matches 611 exterior IDs, 412 successful responses, 91 served-file hashes and 1,839 successful samples on four routes. The 72.898 m route from East 13th to the north forecourt stays on registered paving. Five focused browser cases, 201 unit tests, the build, 535 archive checks, viewer pins and repeat exports pass.
+
+## 2026-11-27 - Connect Onyx Bridge below the deck to the north map station
+
+- Use four county orthophoto dates, the campus accessibility map and the 2023 terrain surface to fit 203.28 m² of paving and the restored north garden loop. Add 27 walking links, three beds and both campus-inventory trees. Grade under the bridge and curb and planting details use estimates. [Site review](docs/onyx-bridge-underpass-2026-11-27.md).
+- The local desktop and phone each match 611 exterior IDs, 410 responses and 89 file hashes. All 1,133 samples per profile on three routes pass. The 54.025 m passage route and north garden have 0.857 m minimum sampled clearance to modeled obstacles. The minimum modeled headroom at five opening probes is 3.804 m. Three browser cases, 201 unit tests, production build, 533 archive checks, viewer hashes and repeat exports pass.
+
 ## 2026-11-27 - Release Cascade, Science Walk, Onyx Green and the Price courtyard at exterior L2
 
 - Publish the connected Volcanology, Pacific Hall and Cascade courtyard walks and stairs, the dry Cascade Charley basin, the lower Science Walk and inventory Dawn redwood, both Onyx Green planting islands, and the Price Science Commons lower garden and public overlook. The four pinned scene packages add 130 pedestrian links. The walkway grades below the arch and the courtyard furnishings and planting include estimates. [Cascade access](docs/cascade-courtyard-access-2026-11-27.md) · [Science Walk east](docs/science-walk-east-2026-11-27.md) · [Onyx Green](docs/onyx-green-walks-2026-11-27.md) · [Price courtyard](docs/price-courtyard-2026-11-27.md).

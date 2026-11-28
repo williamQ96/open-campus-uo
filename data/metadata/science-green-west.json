@@ -1,0 +1,887 @@
+{
+  "pins": {
+    "northeast-science-review": "a11a830eed3b0fec81a6c87e64f14f7f1076368b8e62ba602f2b2c32d2701dd7",
+    "east-thirteenth-east-review": "eaa80ed63ab42119cbe1113323dd304def0ea5111d54a55364d3e4696eb43570",
+    "science-green-sundial-review": "56327ee199aaef21511cf61de777d3f160434081066bd2e65270309cc9d03c54"
+  },
+  "sources": {
+    "geographic": [
+      {
+        "file": "science-west-2017.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494209.14928888%2C4876928.28215305%2C494290.14928888%2C4877012.28215305&bboxSR=3740&imageSR=3740&size=1620%2C1680&layers=show%3A29&format=png32",
+        "sha256": "9f298eb5966efd1767c0b81f44ad7d9e39adc8d3f29d5a220f307bfb206db521",
+        "bounds_enu_m": [
+          -120,
+          0,
+          -39,
+          84
+        ]
+      },
+      {
+        "file": "science-west-2021.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494209.14928888%2C4876928.28215305%2C494290.14928888%2C4877012.28215305&bboxSR=3740&imageSR=3740&size=1620%2C1680&layers=show%3A26&format=png32",
+        "sha256": "0f7bdf3597254756e0b8e87769e13b16bf30e876d96dfb32c8583e57ffd40914",
+        "bounds_enu_m": [
+          -120,
+          0,
+          -39,
+          84
+        ]
+      },
+      {
+        "file": "science-west-2023.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494209.14928888%2C4876928.28215305%2C494290.14928888%2C4877012.28215305&bboxSR=3740&imageSR=3740&size=1620%2C1680&layers=show%3A2&format=png32",
+        "sha256": "5065228c7d3e2ee7866ceb077190c8745e6d88c99247e3c9632217dc3dd3305f",
+        "bounds_enu_m": [
+          -120,
+          0,
+          -39,
+          84
+        ]
+      },
+      {
+        "file": "science-west-2025.png",
+        "url": "https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/export?f=image&bbox=494209.14928888%2C4876928.28215305%2C494290.14928888%2C4877012.28215305&bboxSR=3740&imageSR=3740&size=1620%2C1680&layers=show%3A57&format=png32",
+        "sha256": "c5690ada7e2be71066ea841d3a2b5a00fba62810aa3c12daf098d0383a4f4d8b",
+        "bounds_enu_m": [
+          -120,
+          0,
+          -39,
+          84
+        ]
+      },
+      {
+        "file": "science-west-dem-2023.tif",
+        "url": "https://gis.dogami.oregon.gov/arcgis/rest/services/lidar/DIGITAL_TERRAIN_MODEL_MOSAIC/ImageServer/exportImage?f=image&bbox=494209.14928888%2C4876928.28215305%2C494290.14928888%2C4877012.28215305&bboxSR=3740&imageSR=3740&size=324%2C336&format=tiff&pixelType=F32&interpolation=RSP_NearestNeighbor&mosaicRule=%7B%22mosaicMethod%22%3A+%22esriMosaicLockRaster%22%2C+%22lockRasterIds%22%3A+%5B179%5D%7D",
+        "sha256": "735ea8e3abc59a3d58ed29a3856e474b1994f038ab33a91fc05bb9c228f215c5",
+        "bounds_enu_m": [
+          -120,
+          0,
+          -39,
+          84
+        ]
+      },
+      {
+        "file": "science-west-trees.json",
+        "url": "https://fass-ig-web1.uoregon.edu/arcgis/rest/services/DistributedEdit/CampusTrees/FeatureServer/0/query?f=json&geometry=494209.14928888%2C4876928.28215305%2C494290.14928888%2C4877012.28215305&geometryType=esriGeometryEnvelope&inSR=3740&outSR=3740&returnGeometry=true&outFields=OBJECTID%2CTreeID%2CCommonName%2CHeight%2CSpread%2CCaliper%2CRemoved&spatialRel=esriSpatialRelIntersects&where=1%3D1",
+        "sha256": "7cd4c0f59c1d3e4b184ebd5fc5bf1b2f57a66ba4bff1a0731ca80d81660a0f4e",
+        "bounds_enu_m": [
+          -120,
+          0,
+          -39,
+          84
+        ]
+      }
+    ],
+    "dem_project": "https://pubs.oregon.gov/dogami/ldq/reports/OLC_WillametteValley_2023_NIR_Lidar_Report.pdf",
+    "dem_notes": "July 2023. Source 0.9144 m native. Export 0.25 m. Five-cell windows. Feet converted to NAVD88 metres and shifted to scene origin. Grade controls use medians away from nearby walls and retain the existing pinned lower elevations at three joins.",
+    "campus_plan": "https://cpfm.uoregon.edu/sites/default/files/principle_12_design_area_special_conditions_2022.pdf",
+    "huestis_survey": "https://cpfm.uoregon.edu/sites/default/files/2025-01/huestishall_2025.pdf",
+    "huestis_renovation": "https://tvaarchitects.com/project/huestis-hall/",
+    "exit_enclosure": "https://rowellbrokaw.com/blog/2013/8/20/uo-exit-stair-photos",
+    "architectural_photographs": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/50c934d4e4b0b58a9c48b108/1377036553441-OK1JXKG5GJGU1KWHGDZV/RB_UOSTAIR_Finals-3.jpg?format=1000w",
+        "sha256": "4e787f21dd94a8ed1aad58fc635a8ffde9b51ea497bd364eb2b9f0a81b0b35c8",
+        "file": "RB_UOSTAIR_Finals-3.jpg"
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/50c934d4e4b0b58a9c48b108/1377036552036-CJT31SUMS9WY93MH51RS/RB_UOSTAIR_Finals-2.jpg?format=1000w",
+        "sha256": "46fadf560c8e964cf4cc7368a27be46255a7bdbef1c1f72777eebb9fec8aabf7",
+        "file": "RB_UOSTAIR_Finals-2.jpg"
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/50c934d4e4b0b58a9c48b108/1377036554490-8HZEUCTILL4D0ZIFX3O4/RB_UOSTAIR_Finals-5.jpg?format=1000w",
+        "sha256": "d39f6a61b64d40299984945c3643e19269ee4f6f5c0db663b371c84157a955ee",
+        "file": "RB_UOSTAIR_Finals-5.jpg"
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/50c934d4e4b0b58a9c48b108/1377036554663-4G7YY69IXRMITDYP49H7/RB_UOSTAIR_Finals-6.jpg?format=1000w",
+        "sha256": "f4c23730d5dedafb31f0211c65a8d3c7072b2d18081a2b39c451bd68a6386e49",
+        "file": "RB_UOSTAIR_Finals-6.jpg"
+      }
+    ],
+    "tree_note": "Campus IDs are the inventory positions. 5523 overlaps the visible roof and is excluded pending field confirmation. The inferred mature tree at the open west lawn is not supported by the four orthophotos.",
+    "campus_planning_record": "https://scholarsbank.uoregon.edu/server/api/core/bitstreams/df0c3148-0f2a-4d54-8864-8e699ed4074b/content"
+  },
+  "paths": [
+    {
+      "width_m": 2.38,
+      "stations": [
+        [
+          -69.23,
+          22.2,
+          1.165
+        ],
+        [
+          -71.6,
+          24.2,
+          1.37
+        ],
+        [
+          -73.65,
+          26.8,
+          1.5
+        ],
+        [
+          -75.24,
+          29.23,
+          1.55
+        ],
+        [
+          -76.95,
+          32.45,
+          1.566
+        ],
+        [
+          -78.61,
+          36.65,
+          1.56
+        ],
+        [
+          -79.68,
+          41.3,
+          1.575
+        ],
+        [
+          -80.36,
+          46.1,
+          1.599
+        ],
+        [
+          -80.56,
+          50.65,
+          1.574
+        ],
+        [
+          -80.37,
+          54.86,
+          1.566
+        ],
+        [
+          -79.53,
+          58.95,
+          1.579
+        ],
+        [
+          -78.01,
+          61.86,
+          1.576
+        ],
+        [
+          -75.78,
+          64.32,
+          1.566
+        ],
+        [
+          -73.45,
+          65.62,
+          1.551
+        ],
+        [
+          -70.2,
+          66.49,
+          1.501
+        ],
+        [
+          -67.07,
+          66.79,
+          1.445
+        ],
+        [
+          -63.83,
+          66.63,
+          1.415
+        ],
+        [
+          -60.73,
+          65.97,
+          1.376
+        ],
+        [
+          -57.59,
+          64.73,
+          1.349
+        ],
+        [
+          -54.75,
+          62.79,
+          1.334
+        ],
+        [
+          -52.83,
+          60.93,
+          1.248
+        ],
+        [
+          -50.75,
+          61.66,
+          0.946
+        ]
+      ],
+      "dem_q10_q50_q90_z_m": [
+        [
+          1.472,
+          1.479,
+          1.49
+        ],
+        [
+          1.365,
+          1.494,
+          1.512
+        ],
+        [
+          1.492,
+          1.512,
+          1.552
+        ],
+        [
+          1.556,
+          1.652,
+          1.693
+        ],
+        [
+          1.582,
+          1.682,
+          1.9
+        ],
+        [
+          1.481,
+          1.538,
+          1.57
+        ],
+        [
+          1.567,
+          1.579,
+          1.583
+        ],
+        [
+          1.588,
+          1.6,
+          1.604
+        ],
+        [
+          1.533,
+          1.564,
+          1.579
+        ],
+        [
+          1.534,
+          1.562,
+          1.598
+        ],
+        [
+          1.566,
+          1.645,
+          1.677
+        ],
+        [
+          1.571,
+          1.573,
+          1.607
+        ],
+        [
+          1.59,
+          1.642,
+          1.741
+        ],
+        [
+          1.498,
+          1.501,
+          1.564
+        ],
+        [
+          1.443,
+          1.448,
+          1.458
+        ],
+        [
+          1.436,
+          1.443,
+          1.534
+        ],
+        [
+          1.388,
+          1.407,
+          1.42
+        ],
+        [
+          1.328,
+          1.354,
+          1.363
+        ],
+        [
+          1.325,
+          1.344,
+          1.382
+        ],
+        [
+          1.343,
+          1.381,
+          1.418
+        ],
+        [
+          1.348,
+          1.356,
+          1.359
+        ],
+        [
+          1.341,
+          1.352,
+          1.364
+        ]
+      ]
+    },
+    {
+      "width_m": 2.76,
+      "stations": [
+        [
+          -73.45,
+          65.62,
+          1.551
+        ],
+        [
+          -72.36,
+          67.36,
+          1.518
+        ],
+        [
+          -72.26,
+          69.64,
+          1.503
+        ],
+        [
+          -72.46,
+          72.11,
+          1.453
+        ],
+        [
+          -72.06,
+          73.76,
+          1.297
+        ],
+        [
+          -69.67,
+          74.19,
+          1.096
+        ]
+      ],
+      "dem_q10_q50_q90_z_m": [
+        [
+          1.498,
+          1.501,
+          1.564
+        ],
+        [
+          1.511,
+          1.512,
+          1.53
+        ],
+        [
+          1.48,
+          1.503,
+          1.504
+        ],
+        [
+          1.409,
+          1.428,
+          1.453
+        ],
+        [
+          1.375,
+          1.391,
+          1.409
+        ],
+        [
+          1.342,
+          1.357,
+          1.369
+        ]
+      ]
+    },
+    {
+      "width_m": 1.98,
+      "stations": [
+        [
+          -73.65,
+          26.8,
+          1.5
+        ],
+        [
+          -76.65,
+          27.11,
+          1.516
+        ],
+        [
+          -79.4,
+          27.1,
+          1.52
+        ],
+        [
+          -81.34,
+          26.7,
+          1.5
+        ],
+        [
+          -82.79,
+          25.46,
+          1.455
+        ]
+      ],
+      "dem_q10_q50_q90_z_m": [
+        [
+          1.492,
+          1.512,
+          1.552
+        ],
+        [
+          1.505,
+          1.648,
+          1.735
+        ],
+        [
+          1.688,
+          1.749,
+          1.763
+        ],
+        [
+          1.523,
+          1.605,
+          1.638
+        ],
+        [
+          1.444,
+          1.444,
+          1.465
+        ]
+      ]
+    }
+  ],
+  "paving_additions": [
+    [
+      [
+        -74.39,
+        65.41
+      ],
+      [
+        -73.29,
+        69.35
+      ],
+      [
+        -73.37,
+        73.9
+      ],
+      [
+        -73.12,
+        77.3
+      ],
+      [
+        -70.83,
+        77.35
+      ],
+      [
+        -71.0,
+        71.65
+      ],
+      [
+        -71.1,
+        68.32
+      ],
+      [
+        -70.9,
+        66.95
+      ]
+    ],
+    [
+      [
+        -71.5,
+        23.3
+      ],
+      [
+        -69.3,
+        21.82
+      ],
+      [
+        -67.29,
+        21.66
+      ],
+      [
+        -65.35,
+        22.21
+      ],
+      [
+        -66.32,
+        24.67
+      ],
+      [
+        -69.45,
+        24.73
+      ],
+      [
+        -73.22,
+        27.02
+      ]
+    ],
+    [
+      [
+        -83.48,
+        24.06
+      ],
+      [
+        -82.6,
+        23.92
+      ],
+      [
+        -80.16,
+        25.29
+      ],
+      [
+        -77.5,
+        25.92
+      ],
+      [
+        -76.52,
+        26.32
+      ],
+      [
+        -77.02,
+        27.95
+      ],
+      [
+        -80.81,
+        27.95
+      ],
+      [
+        -82.6,
+        27.23
+      ],
+      [
+        -83.48,
+        26.2
+      ]
+    ]
+  ],
+  "beds": [
+    {
+      "outline": [
+        [
+          -82.98,
+          15.9
+        ],
+        [
+          -79.9,
+          16.85
+        ],
+        [
+          -76.22,
+          17.72
+        ],
+        [
+          -76.06,
+          22.48
+        ],
+        [
+          -76.18,
+          25.0
+        ],
+        [
+          -78.52,
+          25.76
+        ],
+        [
+          -81.18,
+          25.51
+        ],
+        [
+          -82.99,
+          24.33
+        ]
+      ],
+      "curb": true,
+      "density": 0.86
+    },
+    {
+      "outline": [
+        [
+          -71.39,
+          67.8
+        ],
+        [
+          -69.5,
+          67.91
+        ],
+        [
+          -65.7,
+          67.65
+        ],
+        [
+          -62,
+          67.13
+        ],
+        [
+          -58.9,
+          66.32
+        ],
+        [
+          -55.69,
+          64.59
+        ],
+        [
+          -54.46,
+          64.37
+        ],
+        [
+          -53.8,
+          65.42
+        ],
+        [
+          -54.95,
+          68.14
+        ],
+        [
+          -57.11,
+          70.65
+        ],
+        [
+          -64.81,
+          71.75
+        ],
+        [
+          -70.78,
+          71.73
+        ],
+        [
+          -71.45,
+          70.65
+        ]
+      ],
+      "curb": false,
+      "density": 1.85
+    }
+  ],
+  "enclosure": {
+    "base_extent_enu_m": [
+      -79.94,
+      18.05,
+      -76.51,
+      23.93
+    ],
+    "roof_overhang_m": 0.16,
+    "base_z_m": 1.46,
+    "roof_height_m": 2.56,
+    "glass_alpha": 52
+  },
+  "context_retirement": {
+    "index": 243,
+    "position_enu_m": [
+      -73.84,
+      38.04
+    ]
+  },
+  "trees": [
+    {
+      "id": "4377",
+      "species": "Coral Bark Japanese Maple",
+      "position_enu_m": [
+        -81.98,
+        48.617
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.61,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "4378",
+      "species": "Japanese Hornbeam",
+      "position_enu_m": [
+        -77.281,
+        66.41
+      ],
+      "height_m": 3.048,
+      "crown_radius_m": 0.914,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "4379",
+      "species": "Japanese Hornbeam",
+      "position_enu_m": [
+        -81.129,
+        39.335
+      ],
+      "height_m": 3.048,
+      "crown_radius_m": 0.914,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "4380",
+      "species": "Japanese Hornbeam",
+      "position_enu_m": [
+        -80.0,
+        61.409
+      ],
+      "height_m": 3.048,
+      "crown_radius_m": 0.914,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "4382",
+      "species": "Capital Callery Pear",
+      "position_enu_m": [
+        -81.973,
+        56.351
+      ],
+      "height_m": 3.048,
+      "crown_radius_m": 0.914,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "4383",
+      "species": "Capital Callery Pear",
+      "position_enu_m": [
+        -81.739,
+        64.697
+      ],
+      "height_m": 3.048,
+      "crown_radius_m": 0.914,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "4384",
+      "species": "Paperbark Maple",
+      "position_enu_m": [
+        -59.103,
+        68.191
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.762,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "4448",
+      "species": "Paperbark Maple",
+      "position_enu_m": [
+        -64.623,
+        69.31
+      ],
+      "height_m": 1.829,
+      "crown_radius_m": 0.457,
+      "caliper_inches": null,
+      "estimated_height": true
+    },
+    {
+      "id": "4381",
+      "species": "Capital Callery Pear",
+      "position_enu_m": [
+        -82.464,
+        32.12
+      ],
+      "height_m": 3.048,
+      "crown_radius_m": 0.914,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "5518",
+      "species": "Coral Bark Japanese Maple",
+      "position_enu_m": [
+        -81.197,
+        15.859
+      ],
+      "height_m": 2.438,
+      "crown_radius_m": 0.914,
+      "caliper_inches": 2,
+      "estimated_height": false
+    },
+    {
+      "id": "6255",
+      "species": "Capital Callery Pear",
+      "position_enu_m": [
+        -82.268,
+        43.575
+      ],
+      "height_m": 7.62,
+      "crown_radius_m": 1.524,
+      "caliper_inches": 5,
+      "estimated_height": false
+    }
+  ],
+  "lawn": {
+    "interior_control_enu_m": [
+      -66,
+      46
+    ],
+    "median_fit_origin_enu_z_m": [
+      -66,
+      46,
+      1.5
+    ],
+    "approximate_grade_east_north": [
+      -0.006,
+      -0.0015
+    ],
+    "central_bed_enu_m": [
+      [
+        -67.03,
+        34.77
+      ],
+      [
+        -65.83,
+        36.46
+      ],
+      [
+        -63.13,
+        37.35
+      ],
+      [
+        -59.78,
+        37.82
+      ],
+      [
+        -57.18,
+        37.470000000000006
+      ],
+      [
+        -56.96,
+        34.53
+      ],
+      [
+        -57.78,
+        33.01
+      ],
+      [
+        -60.47,
+        32.4
+      ],
+      [
+        -64.53,
+        32.65
+      ],
+      [
+        -66.18,
+        33.35
+      ]
+    ],
+    "central_feature": {
+      "axis_enu_m": [
+        [
+          -65.71,
+          35.68
+        ],
+        [
+          -58.23,
+          37.03
+        ]
+      ],
+      "depth_m": 0.95,
+      "top_z_m": 2.7,
+      "notes": "Stable rectangular visible surface above the planted island. The July 2023 terrain raster records a broad elevated return near 2.707 m. Function and face details are unconfirmed."
+    }
+  }
+}

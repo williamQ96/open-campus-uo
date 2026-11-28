@@ -2,6 +2,8 @@ import { expect, test } from "@playwright/test";
 import {
   DEFAULT_BACKGROUND_TREES,
   DEFAULT_SELECTABLE_BUILDINGS,
+  SCIENCE_GREEN_CONTEXT_TREE_REMOVALS,
+  SCIENCE_GREEN_WEST_CONTEXT_TREE_REMOVALS,
 } from "./exterior-counts.js";
 
 async function readScienceGreen(page) {
@@ -58,7 +60,10 @@ test("the Mays dial and Science Green approach load and fall back together", asy
   expect(await readScienceGreen(page)).toEqual({
     count: DEFAULT_SELECTABLE_BUILDINGS,
     dial: false,
-    contextTrees: DEFAULT_BACKGROUND_TREES + 1,
+    contextTrees:
+      DEFAULT_BACKGROUND_TREES +
+      SCIENCE_GREEN_CONTEXT_TREE_REMOVALS +
+      SCIENCE_GREEN_WEST_CONTEXT_TREE_REMOVALS,
     currentTrees: Array(3).fill(false),
     oldTreePath: true,
     paving: Array(4).fill(false),
