@@ -43,3 +43,9 @@ The three campus arrows mark remaining gray patches around Collier House, Old Ca
 Ten lawn and planted-ground polygons extend the existing color correction. The outlines follow the two aerials at the path forks, around the Memorial Quad walks and along the Collier parking edge. Color still interpolates across the existing 5 m foundation grid, so small residual patches and blended edges remain near paths and trees.
 
 At the registered 1,107 × 595 camera pose, 8,950 pixels changed. Eight 7 × 7 control crops over paved surfaces and the parking verge matched exactly. The shadow-toggle masks matched at a threshold of nine RGB levels, covering 52,793 pixels. At eight levels, one boundary pixel crossed the threshold from eight to nine.
+
+## Additional verified lawn edges
+
+The annotated 1,107 × 595 view was checked with browser shadows off. Five more boundaries follow planted ground visible in both aerials. They cover the strip beside the Collier House parking bays, three pieces of Old Campus Quad lawn by the Allen and Friendly walks and Fenton Hall, and the Memorial Quad lawn by the museum frontage. The correction uses the existing 5 m foundation vertex grid. Surface boundaries between grid vertices still blend across their edges. [Lane County 2023 aerial](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/2) · [Lane County 2025 aerial](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/57)
+
+The matched production Chrome builds changed 3,955 pixels with shadows enabled and 3,956 with shadows disabled. Eight sampled paved and verge regions matched exactly, including the circled University District parking lot. The shadow toggle produced identical masks at both tested RGB thresholds, with 54,084 pixels above eight levels and 52,793 above nine levels.

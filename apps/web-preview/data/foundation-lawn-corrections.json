@@ -573,6 +573,78 @@
         [-520.9, -103.1],
         [-526.2, -99.6]
       ]
+    },
+    {
+      "name": "Old Campus Quad grass and planting north of the Friendly Hall fork",
+      "ring": [
+        [-432, 31],
+        [-425, 32],
+        [-415, 33.5],
+        [-407, 35.5],
+        [-400, 38],
+        [-400, 44],
+        [-415, 44],
+        [-431, 42]
+      ]
+    },
+    {
+      "name": "Old Campus Quad grass west of the Allen north-south walk",
+      "ring": [
+        [-381, 36],
+        [-373, 36],
+        [-373, 46],
+        [-375, 49],
+        [-379, 46],
+        [-385, 40]
+      ]
+    },
+    {
+      "name": "Old Campus Quad west lawn between Fenton Hall and the diagonal walk",
+      "ring": [
+        [-469, 62],
+        [-466, 69],
+        [-466, 81],
+        [-466, 87],
+        [-463, 89],
+        [-459, 84],
+        [-455, 75],
+        [-451, 67],
+        [-448, 60],
+        [-450, 56],
+        [-457, 57],
+        [-463, 59]
+      ]
+    },
+    {
+      "name": "Memorial Quad lawn north of the museum frontage and south of the paired walks",
+      "ring": [
+        [-523, -98],
+        [-515, -99],
+        [-501, -99],
+        [-491, -98],
+        [-482, -97],
+        [-482, -103],
+        [-487, -105.5],
+        [-508, -105.2],
+        [-521, -105.3]
+      ]
+    },
+    {
+      "name": "Collier House planted strip between the house and the stepped parking bays",
+      "ring": [
+        [-363.6, -50],
+        [-356, -49],
+        [-351.5, -51.4],
+        [-352, -55],
+        [-353, -58],
+        [-354, -64],
+        [-355, -68],
+        [-356, -72],
+        [-360.5, -74],
+        [-362, -69],
+        [-362.5, -64],
+        [-363.2, -56]
+      ]
     }
   ]
 }

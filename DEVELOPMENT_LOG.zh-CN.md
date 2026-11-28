@@ -6,6 +6,10 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-28 - 补齐截图标出的三处校园草地边缘
+
+- 根据 Lane County 的 2023 和 2025 年航片，在 Collier House、Old Campus Quad 和 Memorial Quad 增补五个确认有植被的区域，覆盖 Fenton Hall 旁草地、Friendly Hall 步道分叉北面的植被带和美术馆前草地等。生产版 Chrome 在同一视角有 3,955 个像素变化。八处铺装、道路、停车场和植被带样本逐像素一致，54,084 像素的实时阴影掩膜也一致。生产构建、204 项单元测试和查看器哈希校验通过。推送到 main 后由工作流部署 GitHub Pages。[对照和来源](docs/overview-release-2026-11-27.md#additional-verified-lawn-edges)。
+
 ## 2026-11-27 - 修正三处校园草地余留的灰斑
 
 - 依据两期 Lane County 航片，在 Collier House、Old Campus Quad 和 Memorial Quad 周边补齐 L2 基础地面的颜色修正。新增十个边界，覆盖步道和路缘旁已确认的植被地面。最右侧箭头指向现有的 University District 铺装停车场。Chrome 同视角有 8,950 个像素发生变化。道路、步道、停车场及植被带的八处样本逐像素一致，高于九级色差阈值的 52,793 个实时阴影像素也一致。生产构建、204 项单元测试、格式检查和查看器哈希校验通过。推送到 main 后由工作流部署 GitHub Pages。[地面对照和来源](docs/overview-release-2026-11-27.md#remaining-ground-color-patches-from-the-annotated-screenshot)。

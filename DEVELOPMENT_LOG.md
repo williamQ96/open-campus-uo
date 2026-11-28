@@ -6,6 +6,10 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-28 - Extend the lawn color repair at the three marked campus sites
+
+- Used the 2023 and 2025 Lane County aerials to trace five more planted areas at Collier House, Old Campus Quad and Memorial Quad. The changes recolor the existing L2 foundation, including the lawn beside Fenton Hall, the planting north of the Friendly Hall path fork and the grass beside the museum frontage. The production Chrome comparison changed 3,955 pixels at the same camera pose. Eight pavement, road, parking and verge samples matched pixel for pixel, and the 54,084-pixel live-shadow mask matched. The production build, all 204 unit tests and viewer hashes passed. The main-branch push triggers the GitHub Pages deployment. [Comparison and sources](docs/overview-release-2026-11-27.md#additional-verified-lawn-edges).
+
 ## 2026-11-27 - Correct the remaining ground-color patches at three campus lawns
 
 - Use the two Lane County aerials to extend the L2 foundation color correction around Collier House, Old Campus Quad and Memorial Quad. Ten polygons cover confirmed planted ground along the existing paths and verges. The rightmost arrow points to the existing paved University District lot. The matched Chrome view changed 8,950 pixels. Eight road, paving, parking and verge samples matched exactly, as did the 52,793-pixel shadow mask above nine levels. The production build, 204 unit tests, formatting and viewer hashes passed. The main-branch push triggers GitHub Pages. [Ground comparison and sources](docs/overview-release-2026-11-27.md#remaining-ground-color-patches-from-the-annotated-screenshot).
