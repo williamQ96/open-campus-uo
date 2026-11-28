@@ -6,6 +6,10 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 修正三处校园草地余留的灰斑
+
+- 依据两期 Lane County 航片，在 Collier House、Old Campus Quad 和 Memorial Quad 周边补齐 L2 基础地面的颜色修正。新增十个边界，覆盖步道和路缘旁已确认的植被地面。最右侧箭头指向现有的 University District 铺装停车场。Chrome 同视角有 8,950 个像素发生变化。道路、步道、停车场及植被带的八处样本逐像素一致，高于九级色差阈值的 52,793 个实时阴影像素也一致。生产构建、204 项单元测试、格式检查和查看器哈希校验通过。推送到 main 后由工作流部署 GitHub Pages。[地面对照和来源](docs/overview-release-2026-11-27.md#remaining-ground-color-patches-from-the-annotated-screenshot)。
+
 ## 2026-11-27 - 恢复 University District 停车场的铺装
 
 - Lane County 2023 和 2025 年航片都显示，总览截图标出的校园西侧停车场内部为连续铺装。移除推测草坪覆盖层的 181 个三角面，露出既有 L2 沥青。浏览器同视角对照中，7,533 个变化像素集中在场内。既有沥青、植被带、道路及铺装的五处对照区域逐像素一致，两版的 54,083 像素实时阴影掩膜也一致。204 项单元测试、格式检查、生产构建和查看器哈希检查均通过。推送到 main 后由工作流部署 GitHub Pages。[地面对照和来源](docs/overview-release-2026-11-27.md#university-district-parking-follow-up)。

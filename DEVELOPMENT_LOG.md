@@ -6,6 +6,10 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Correct the remaining ground-color patches at three campus lawns
+
+- Use the two Lane County aerials to extend the L2 foundation color correction around Collier House, Old Campus Quad and Memorial Quad. Ten polygons cover confirmed planted ground along the existing paths and verges. The rightmost arrow points to the existing paved University District lot. The matched Chrome view changed 8,950 pixels. Eight road, paving, parking and verge samples matched exactly, as did the 52,793-pixel shadow mask above nine levels. The production build, 204 unit tests, formatting and viewer hashes passed. The main-branch push triggers GitHub Pages. [Ground comparison and sources](docs/overview-release-2026-11-27.md#remaining-ground-color-patches-from-the-annotated-screenshot).
+
 ## 2026-11-27 - Restore the paved surface in the University District parking lot
 
 - The 2023 and 2025 Lane County aerials show a continuous paved interior at the west-side parking lot marked in the Overview screenshot. Remove 181 triangles from an inferred lawn overlay to expose the existing L2 asphalt. The matched browser renders changed 7,533 pixels inside the lot. Five parking, verge, road and paving samples were identical, and the 54,083-pixel live-shadow mask matched. All 204 unit tests, formatting, the production build and viewer pins passed. The main-branch push triggers the GitHub Pages deployment. [Ground comparison and sources](docs/overview-release-2026-11-27.md#university-district-parking-follow-up).

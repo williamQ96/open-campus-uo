@@ -35,3 +35,11 @@ The screenshot's rightmost arrow lands on existing asphalt west of campus. The a
 The correction removes 181 complete overlay triangles within the verified paved interior, using east bounds of −744 to −645 m and north bounds of −109 to −60 m in the scene coordinate system. It requires the matching expanded scene and an available L2 foundation. The parking lot continues to use the existing foundation, terrain heights and walking data.
 
 In a matched 1,107 × 595 Chrome render, the lawn at the center of the rectangle gave way to the L2 foundation mesh. All 7,533 changed pixels were within the lot. Five samples of the existing asphalt, planted verge, road and paving were pixel-identical. Toggling live shadows yielded the same 54,083-pixel mask in both builds.
+
+## Remaining ground-color patches from the annotated screenshot
+
+The three campus arrows mark remaining gray patches around Collier House, Old Campus Quad and the east side of Memorial Quad. With the Shadows setting off, the patches still show on the L2 foundation. The fourth arrow lands on paved parking, which is visible in both aerials. [Lane County 2023 aerial](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/2) · [Lane County 2025 aerial](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/57)
+
+Ten lawn and planted-ground polygons extend the existing color correction. The outlines follow the two aerials at the path forks, around the Memorial Quad walks and along the Collier parking edge. Color still interpolates across the existing 5 m foundation grid, so small residual patches and blended edges remain near paths and trees.
+
+At the registered 1,107 × 595 camera pose, 8,950 pixels changed. Eight 7 × 7 control crops over paved surfaces and the parking verge matched exactly. The shadow-toggle masks matched at a threshold of nine RGB levels, covering 52,793 pixels. At eight levels, one boundary pixel crossed the threshold from eight to nine.
