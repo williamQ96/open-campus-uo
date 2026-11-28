@@ -10,7 +10,8 @@ Reusable methods, algorithms, contracts and validation practices belong in the u
 
 - Add a small lower-left camera readout for local east, north, height, heading and pitch. Overview includes the orbit target and range. The readout appears on the first lightweight frame and tracks the actual camera through the transition and walking views.
 - Add 105 stable IDs to the reversible background scope. The scene keeps the 143 background models and their collisions. Their labels, cards, directory entries and interactive entrances are disabled, and future building refinements skip them. The 1864 Moss Street roof sits outside the east outline and is pending review. [Building IDs and camera readout](docs/building-scope-2026-11-28.md).
-- The production build, formatting, 204 unit tests and 513 viewer hashes passed. The local production browser loaded 611 building records, including the 143 backgrounds, with every detail job settled and zero fallback IDs. This change targets GitHub Pages from `main`.
+- The production build, formatting, 204 unit tests and 513 viewer hashes passed. The three focused Overview browser cases passed, including the camera input case on a separate rerun after a test timeout. Six production browser gesture cycles responded. The reported near-stall remains unreproduced.
+- GitHub Pages deployed `590c118`. Cold-cache desktop and phone checks matched all 611 exterior IDs to geometry and completed all 152 detail jobs with zero fallback IDs. Clicking the solid Fire Station 13 roof opened no building card. [Pages deployment](https://github.com/williamQ96/open-campus-uo/actions/runs/46137268094).
 
 ## 2026-11-28 - Extend the lawn color repair at the three marked campus sites
 
