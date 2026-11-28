@@ -24,7 +24,7 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "c10de62b4c2b5f6537fca99206aa6d5854531767254304a4b06fdfce796fa162",
+      "local_sha256": "e4233727c8a4ee225021744a9d308640abeeef987711c4038adc63f22e9312c8",
       "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. East 18th pedestrian links to the Frohnmayer east drive. Inventory-based planting and ground cover along the western cemetery verge. Registered furnishings and grounds for the HEDCO courtyard. Register the source-pinned Oregon Hall southeast grounds and fixtures. Register the Mays memorial and the Science Green east walking approach. Connect the Cascade courtyard stair to the Volcanology west walk. Register the Pacific Hall walk and Cascade arch approach. Register Onyx Green grade, paths and planting islands. Register the Price Science Commons courtyard and overlook. Connect Onyx Green through the Onyx Bridge ground-level passage. Register the Science Green west walk and south glass enclosure. Register the Old Campus Quad paths and Class of 1893 marker. First-frame overview with a view-prioritized draining refinement queue. Viewport input and background building scope."
     },
     "src/building-card.js": {
@@ -569,10 +569,10 @@
     "public/scene/science-green-west-review/site.json": "58b1da407285b523010a6ece39b73e62585d0a097a7b366ad68a520ce1591533",
     "public/scene/old-campus-quad-landscape-review/site.glb": "85b123a595139aa4c29c86bbdd09f5acb876929a5fcfd5d2fc429a9a19b4c223",
     "public/scene/old-campus-quad-landscape-review/site.json": "1b2f8ae408869f1a0c922ecd73f432f6a973fe0fb8ab4f6ae45a7c134c03934e",
-    "src/campus-overview.js": "771d6c3a654f2ffd31657e20a8ae37d64afa657910622a4f9f6f09f126d3c5d4",
+    "src/campus-overview.js": "1cca50c4345b735a15e96b74d13528412d06913afd991c6d722623fe046ec528",
     "src/foundation-lawn-corrections.js": "d7f40285d0873782319498e8223aec9210d0aae180eb374ac5beb47be84b0d87",
     "data/building-scope.json": "d953dc958de494fbeefad65497e54e4ba1aacb56842664ad04fd596325d198a3",
     "data/foundation-lawn-corrections.json": "d655640a4e0c1564a972acb8532d1fb5857bcfbc730eff20df82bfb94aae80de",
-    "public/scene/campus-overview.json": "3b297209d537a95b8f07f6692c0eb0b3cd911edb9e0056531d32528a44454ff6"
+    "public/scene/campus-overview.json": "7093b7c3f2fffa3fcba5cbe6453ee17c8b443ff0db82fe6679f1ecfba08fcad4"
   }
 }

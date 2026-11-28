@@ -3474,8 +3474,8 @@
       "origin": "Original pavement and class memorial geometry. See docs/old-campus-quad-landscape-2026-11-27.md."
     },
     "apps/web-preview/public/scene/campus-overview.json": {
-      "bytes": 180517,
-      "sha256": "3b297209d537a95b8f07f6692c0eb0b3cd911edb9e0056531d32528a44454ff6",
+      "bytes": 190578,
+      "sha256": "7093b7c3f2fffa3fcba5cbe6453ee17c8b443ff0db82fe6679f1ecfba08fcad4",
       "license": "CC-BY-4.0",
       "origin": "Lightweight geometry generated from the registered scene with scripts/build-campus-overview.py."
     }

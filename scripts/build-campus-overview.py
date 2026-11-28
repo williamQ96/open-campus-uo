@@ -52,6 +52,7 @@ def main():
         if len(set(map(tuple, ring))) < 3:
             continue
         footprints.append([
+            id,
             round(record["base_z_m"], 1),
             round(record["roof_z_m"], 1),
             ring,
@@ -64,7 +65,7 @@ def main():
         for i in range(0, field["nx"], step)
     ]
     output = {
-        "version": 1,
+        "version": 2,
         "camera": config["overview"],
         "terrain": [
             field["min_east_m"], field["min_north_m"], field["spacing_m"] * step,

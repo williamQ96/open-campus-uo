@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import * as THREE from "three";
+import { insidePolygon } from "./world.js";
 
 function mesh(positions, color) {
   const geometry = new THREE.BufferGeometry();
@@ -14,8 +15,28 @@ function mesh(positions, color) {
   );
 }
 
+function appendBuilding(ring, base, top, height, roofs, walls) {
+  const outline = ring.map(([e, n]) => new THREE.Vector2(e, n));
+  const roof = ([e, n]) => [e, top, -n];
+  const foot = ([e, n]) => [e, Math.min(base, height(e, n)), -n];
+  for (const triangle of THREE.ShapeUtils.triangulateShape(outline, []))
+    for (const i of triangle) roofs.push(...roof(ring[i]));
+  for (let i = 0; i < ring.length; i++) {
+    const a = ring[i],
+      b = ring[(i + 1) % ring.length];
+    walls.push(
+      ...roof(a),
+      ...foot(a),
+      ...roof(b),
+      ...roof(b),
+      ...foot(a),
+      ...foot(b),
+    );
+  }
+}
+
 export function createCampusOverview(data) {
-  if (data?.version !== 1) throw new Error("Unsupported campus overview.");
+  if (data?.version !== 2) throw new Error("Unsupported campus overview.");
   const [east, north, spacing, width, rows, heights] = data.terrain;
   const land = [],
     roads = [],
@@ -72,25 +93,8 @@ export function createCampusOverview(data) {
       }
     }
   }
-  for (const [base, top, ring] of data.buildings) {
-    const outline = ring.map(([e, n]) => new THREE.Vector2(e, n));
-    const roof = ([e, n]) => [e, top, -n];
-    const foot = ([e, n]) => [e, Math.min(base, height(e, n)), -n];
-    for (const triangle of THREE.ShapeUtils.triangulateShape(outline, []))
-      for (const i of triangle) roofs.push(...roof(ring[i]));
-    for (let i = 0; i < ring.length; i++) {
-      const a = ring[i],
-        b = ring[(i + 1) % ring.length];
-      walls.push(
-        ...roof(a),
-        ...foot(a),
-        ...roof(b),
-        ...roof(b),
-        ...foot(a),
-        ...foot(b),
-      );
-    }
-  }
+  for (const [, base, top, ring] of data.buildings)
+    appendBuilding(ring, base, top, height, roofs, walls);
   const root = new THREE.Group();
   root.name = "First-frame campus geometry";
   root.add(
@@ -100,6 +104,51 @@ export function createCampusOverview(data) {
     mesh(roofs, 0xd4c5ac),
   );
   return root;
+}
+
+export function missingOverviewBuildings(data, records) {
+  if (!data) return [];
+  const retainedIds = new Set(records.map(({ id }) => id));
+  return data.buildings.flatMap(([id, base, top, ring]) => {
+    if (retainedIds.has(id)) return [];
+    // A failed identity replacement can leave its predecessor in the scene.
+    // Sample inside the outline to avoid drawing a second mesh over that model.
+    const east = ring.reduce((sum, [e]) => sum + e, 0) / ring.length;
+    const north = ring.reduce((sum, [, n]) => sum + n, 0) / ring.length;
+    const overlaps = records.some(({ footprint_enu_m: previous }) =>
+      ring.every(([e, n]) =>
+        insidePolygon((e + east) / 2, (n + north) / 2, previous),
+      ),
+    );
+    if (overlaps) return [];
+    return [
+      {
+        id,
+        base_z_m: base,
+        roof_z_m: top,
+        height_m: top - base,
+        footprint_enu_m: ring,
+      },
+    ];
+  });
+}
+
+export function createOverviewFallback(record, height) {
+  const faces = [];
+  appendBuilding(
+    record.footprint_enu_m,
+    record.base_z_m,
+    record.roof_z_m,
+    height,
+    faces,
+    faces,
+  );
+  const building = mesh(faces, 0xc5bca9);
+  building.name = record.id;
+  building.userData = { asset_kind: "building", asset_id: record.id };
+  building.castShadow = true;
+  building.receiveShadow = true;
+  return building;
 }
 
 export function createReviewPriority(camera, locations) {

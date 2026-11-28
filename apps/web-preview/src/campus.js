@@ -33,8 +33,10 @@ import { createMinimap } from "./minimap.js";
 import { createBuildingSearch } from "./search.js";
 import {
   createCampusOverview,
+  createOverviewFallback,
   createReviewPriority,
   loadQueued,
+  missingOverviewBuildings,
 } from "./campus-overview.js";
 import {
   loadPresentation,
@@ -957,7 +959,7 @@ for (const button of walkViews) button.disabled = true;
 
 async function showInitialOverview(base) {
   try {
-    overviewData = await loadJson(base + "campus-overview.json");
+    overviewData = await loadJson(base + "campus-overview.json?v=2");
     overviewRoot = createCampusOverview(overviewData);
   } catch (error) {
     console.warn("Lightweight overview unavailable.", error);
@@ -4639,7 +4641,13 @@ async function loadCampusScene(base, manifest, settings) {
         art,
         exteriorReview,
       );
-    return { heightfield: field, art, root: gltf.scene, exteriorReview };
+    return {
+      heightfield: field,
+      art,
+      root: gltf.scene,
+      exteriorReview,
+      reviewMode,
+    };
   }
   if (config?.ford_arena_site && reviewMode !== "ford-arena-baseline") {
     try {
@@ -4792,6 +4800,10 @@ try {
   const selectableBuildings = buildings.filter(
     ({ id }) => !backgroundBuildingIds.has(id),
   );
+  const fallbackBuildings = campusScene.reviewMode
+    ? []
+    : missingOverviewBuildings(overviewData, buildings);
+  buildings = buildings.concat(fallbackBuildings);
   for (const record of selectableBuildings)
     buildingRecords.set(record.id, record);
   presentation = campusScene.art;
@@ -4915,6 +4927,13 @@ try {
   scene.background.set(0x9ac7e6);
   scene.fog.color.set(0xc7dfec);
   applySurfaceGrain(terrainMesh.material, 0.08);
+  for (const record of fallbackBuildings) {
+    const fallback = createOverviewFallback(record, (e, n) =>
+      sampleGround(field, e, -n),
+    );
+    model.add(fallback);
+    collisionMeshes.push(fallback);
+  }
   scene.add(model);
   if (presentation?.contextFog) {
     // Opt in only after profiling the target device: cached fields add memory.
@@ -5429,6 +5448,7 @@ try {
       cameraTransition: !!cameraTransition,
       fps,
       buildings: buildings.length,
+      fallbackBuildingIds: fallbackBuildings.map(({ id }) => id),
       backgroundBuildings: buildings.filter(({ id }) =>
         backgroundBuildingIds.has(id),
       ).length,

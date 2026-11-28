@@ -6,6 +6,10 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Keep a building outline when the detailed site is its only model
+
+- Attach the stable IDs to the 191 KB overview geometry and keep a solid outline for unavailable buildings that have no model in the underlying scene. A retained predecessor covering the same outline supplies the fallback where applicable. Production browser checks with deliberate 404s for Education Annex and Old Campus Quad kept all 611 IDs and drained 152 review jobs. The first map and first drag-response medians were 0.50 s and 0.58 s. All 204 unit tests, the production build, 538 archived asset checks and viewer pins passed. The follow-up is part of the main-branch Pages release. [Verification](docs/overview-release-2026-11-27.md).
+
 ## 2026-11-27 - Make Overview interactive before loading detail
 
 - Draw the 180 KB terrain, roads and building footprints first, continue loading detailed sites in camera priority, and switch scenes with the same camera. Hide directory actions for 38 verified background building IDs while retaining their modeled exteriors and collisions. Restore color to the confirmed lawns around Collier House, Old Campus Quad and Memorial Quad. Route right-button pan and wheel events through the viewport, including over labels. [Release notes and browser checks](docs/overview-release-2026-11-27.md).

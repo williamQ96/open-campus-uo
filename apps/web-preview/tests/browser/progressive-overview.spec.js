@@ -34,6 +34,10 @@ test("the first map accepts gestures and the detail queue completes away from it
   await page.route("**/old-campus-quad-landscape-review/site.glb", (route) =>
     route.fulfill({ status: 404 }),
   );
+  // This building has no mesh in the original full-scene model.
+  await page.route("**/education-annex-review/site.glb", (route) =>
+    route.fulfill({ status: 404 }),
+  );
   await page.goto("/", { waitUntil: "commit" });
   await expect(page.locator("#app")).toHaveAttribute("data-stage", "overview");
   await expect(page.locator("[data-view=first]")).toBeDisabled();
@@ -80,6 +84,10 @@ test("the first map accepts gestures and the detail queue completes away from it
     settled: initial.detailQueue.total,
   });
   expect(complete.buildings).toBe(611);
+  expect(complete.fallbackBuildingIds).toEqual(["uo-education-annex"]);
+  expect(
+    await page.evaluate(() => __campus.collisionCheck(-601.7, 414.9)),
+  ).toBe(true);
   expect(measure(moved.orbitTarget, complete.orbitTarget)).toBeLessThan(3);
   expect(measure(moved.camera, complete.camera)).toBeLessThan(4);
   await expect(page.locator("[data-view=first]")).toBeEnabled();

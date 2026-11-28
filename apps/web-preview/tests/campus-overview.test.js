@@ -2,7 +2,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { BufferGeometry, Float32BufferAttribute } from "three";
-import { loadQueued } from "../src/campus-overview.js";
+import {
+  createOverviewFallback,
+  loadQueued,
+  missingOverviewBuildings,
+} from "../src/campus-overview.js";
 import { restoreFoundationLawns } from "../src/foundation-lawn-corrections.js";
 
 test("view priority affects queued jobs while started and offscreen work drains", async () => {
@@ -49,4 +53,34 @@ test("confirmed lawn correction preserves geometry and paved control vertices", 
     [...geometry.getAttribute("color").array].slice(3),
     before.slice(3),
   );
+});
+
+test("an absent new building keeps a solid footprint without duplicating a retained predecessor", () => {
+  const ring = [
+    [0, 0],
+    [2, 0],
+    [2, 2],
+    [0, 2],
+  ];
+  const isolated = ring.map(([e, n]) => [e + 10, n]);
+  const remaining = [{ id: "previous", footprint_enu_m: ring }];
+  const fallback = missingOverviewBuildings(
+    {
+      buildings: [
+        ["replacement", 0, 5, ring],
+        ["annex", 0, 5, isolated],
+      ],
+    },
+    remaining,
+  );
+  assert.deepEqual(
+    fallback.map(({ id }) => id),
+    ["annex"],
+  );
+  const mesh = createOverviewFallback(fallback[0], () => 0);
+  assert.equal(mesh.userData.asset_id, "annex");
+  assert.equal(mesh.geometry.getAttribute("position").count, 30);
+  assert.equal(mesh.castShadow, true);
+  mesh.geometry.dispose();
+  mesh.material.dispose();
 });
