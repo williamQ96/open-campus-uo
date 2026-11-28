@@ -6,6 +6,11 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Make Overview interactive before loading detail
+
+- Draw the 180 KB terrain, roads and building footprints first, continue loading detailed sites in camera priority, and switch scenes with the same camera. Hide directory actions for 38 verified background building IDs while retaining their modeled exteriors and collisions. Restore color to the confirmed lawns around Collier House, Old Campus Quad and Memorial Quad. Route right-button pan and wheel events through the viewport, including over labels. [Release notes and browser checks](docs/overview-release-2026-11-27.md).
+- Local production checks record cold-cache medians of 0.49 s to the first map and 0.59 s to the first drag response, previously 130.50 s and 133.96 s. All 152 jobs settled in the camera-away and missing-mesh test. The browser geometry audit found all 611 IDs. Three overview zoom levels, five building-card cases and two search cases passed. Formatting, 203 unit tests, the production build, 538 archived asset checks and viewer hashes passed. This change is the input to the main-branch GitHub Pages workflow.
+
 ## 2026-11-27 - Release the Onyx Bridge passage, Science Green west and Old Campus Quad
 
 - This release collects the three verified L2 landscape packages below. It preserves the 611 exterior model IDs and adds 94 pedestrian links across the three sites. Release-worktree formatting, 201 unit tests, the production build, 537 archived asset checks and the viewer pins pass. The main-branch push triggers the GitHub Pages workflow.

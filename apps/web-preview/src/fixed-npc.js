@@ -31,6 +31,9 @@ export function createFixedNpc({
   label.className = "fixed-person-label";
   label.textContent = config.name;
   label.setAttribute("aria-label", `View ${config.name} profile`);
+  label.addEventListener("pointerdown", (event) => {
+    if (event.button === 0) event.stopPropagation();
+  });
   viewport.append(label);
   const bubble = document.createElement("div");
   bubble.className = "fixed-person-bubble";

@@ -71,10 +71,9 @@ test("seven campus neighbors are searchable and preserve exterior approaches", a
 
   const search = page.getByRole("combobox", { name: "Search buildings" });
   await search.fill(names["roof-4286ad30"]);
-  await search.press("Enter");
-  await expect
-    .poll(() => page.evaluate(() => __campus.getState().selectedBuilding))
-    .toBe("roof-4286ad30");
+  await expect(
+    page.getByRole("option").filter({ hasText: "Coho Townhouses (South)" }),
+  ).toHaveCount(0);
 });
 
 test("Hayward's raised gallery entrance returns to the approach at street grade", async ({

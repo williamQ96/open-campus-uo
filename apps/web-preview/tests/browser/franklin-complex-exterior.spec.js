@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
-import { exteriorCounts } from "./exterior-counts.js";
+import { exteriorCounts, isBackgroundBuilding } from "./exterior-counts.js";
 
 const directory = "franklin-complex-exterior-review";
 const baseline = "/?exterior-review=franklin-complex-exterior-baseline";
@@ -57,6 +57,12 @@ test("Womack Hall and four connected stores retain two building IDs and five app
   const search = page.getByRole("combobox", { name: "Search buildings" });
   for (const [id, name] of Object.entries(names)) {
     await search.fill(name);
+    if (isBackgroundBuilding(id)) {
+      await expect(
+        page.getByRole("option").filter({ hasText: name }),
+      ).toHaveCount(0);
+      continue;
+    }
     await search.press("Enter");
     await expect
       .poll(() => page.evaluate(() => __campus.getState().selectedBuilding))

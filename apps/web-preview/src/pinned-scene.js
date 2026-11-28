@@ -1,5 +1,23 @@
 // SPDX-License-Identifier: Apache-2.0
-export async function readPinnedScene(url, expected) {
+const pinnedDescriptors = new Map();
+
+export function readPinnedScene(url, expected) {
+  if (!url.endsWith(".json")) return verifiedBytes(url, expected);
+  const key = JSON.stringify([url, expected]);
+  if (!pinnedDescriptors.has(key)) {
+    // Review dependencies share the same pinned terrain and graph files.
+    pinnedDescriptors.set(
+      key,
+      verifiedBytes(url, expected).catch((error) => {
+        pinnedDescriptors.delete(key);
+        throw error;
+      }),
+    );
+  }
+  return pinnedDescriptors.get(key);
+}
+
+async function verifiedBytes(url, expected) {
   const response = await fetch(url);
   if (!response.ok) throw new Error("Could not load the exterior scene asset.");
   const data = await response.arrayBuffer();

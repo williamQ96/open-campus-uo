@@ -39,7 +39,9 @@ export function createBuildingLabels(
         button.title = building.name;
         button.dataset.buildingId = building.id;
         button.setAttribute("aria-label", `Inspect ${building.name}`);
-        button.addEventListener("pointerdown", (e) => e.stopPropagation());
+        button.addEventListener("pointerdown", (e) => {
+          if (e.button === 0) e.stopPropagation();
+        });
         button.addEventListener("click", () => onSelect(building.id));
         button.addEventListener("pointerenter", (event) => {
           if (event.pointerType === "mouse") onHover(building.id);

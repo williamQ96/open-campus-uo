@@ -1,0 +1,64 @@
+{
+  "backgroundOnly": {
+    "chapter-eugene": "Chapter at Eugene / 754 / 760 East 13th Avenue",
+    "east15-670": "670 East 15th Avenue",
+    "east16-alley-647-west": "647 East 16th Alley / West Annex",
+    "roof-04f04915": "The Maverick Hotel",
+    "roof-0bef5f7f": "2090 Hilyard Street",
+    "roof-0c745864": "E 15th Apartments · Street Building",
+    "roof-0fd33e45": "240 Sunset Drive",
+    "roof-26e345d9": "670 / 680 / 690 East 18th Avenue",
+    "roof-27957cde": "2159 East 17th Avenue",
+    "roof-28502c01": "1460 East 20th Avenue",
+    "roof-2c3fb507": "The Arcade / 1836 Alder Street",
+    "roof-424f6339": "1895 Columbia Street",
+    "roof-4286ad30": "Coho Townhouses (South)",
+    "roof-44344453": "1680 Alder Street",
+    "roof-45158580": "1969 Villard St",
+    "roof-4a7d9b5a": "University District North Building",
+    "roof-4c79682d": "PeaceHealth University District Clinic",
+    "roof-5e02b3d2": "1675 Franklin Blvd",
+    "roof-699d6c1e": "366 Sunset Drive",
+    "roof-6a85a0c3": "631 East 15th Avenue",
+    "roof-9026cd6b": "738 East 16th Avenue",
+    "roof-a8a115d2": "1505 Orchard St",
+    "roof-ac86161b": "850 East 14th Avenue",
+    "roof-b2800bfe": "2293 Birch Lane",
+    "roof-b59639cc": "Womack Hall",
+    "roof-b62a90ef": "2415 Fairmount Boulevard",
+    "roof-c041bc83": "Patterson Social / 1331 Patterson Street",
+    "roof-c3968ae7": "648 East 17th Avenue",
+    "roof-c630f067": "1907 Garden Avenue",
+    "roof-c9808624": "763 East 11th Avenue",
+    "roof-ccf05c70": "959 Franklin",
+    "roof-d830368a": "1414 Alder Street / 790 E 14th Ave",
+    "roof-e45bcd54": "Morse Center · 1075 Alder St",
+    "roof-f1651047": "1010 E 20th Ave",
+    "roof-f6ebca49": "1805 Garden Avenue",
+    "roof-ff23cc0f": "1940 Kincaid Street",
+    "university-1976": "1976 University Street",
+    "villard-1746": "1746 Villard Street"
+  },
+  "pending": {
+    "roof-5ed4d412": {
+      "name": "Flock13",
+      "reason": "Red line crosses the visible label and building edge."
+    },
+    "roof-6096c458": {
+      "name": "1365 Villard Street",
+      "reason": "Red line follows the label and nearby canopy."
+    },
+    "roof-7c1c7fb1": {
+      "name": "University Business Operations Center",
+      "reason": "UO Business Affairs lists this building as an active UO facility."
+    },
+    "roof-b8f94f8e": {
+      "name": "Rainier Building",
+      "reason": "UO facilities inventory identifies B0090 as owned."
+    },
+    "roof-ee63827c": {
+      "name": "Alder Building",
+      "reason": "UO facilities inventory identifies building 200 as owned."
+    }
+  }
+}

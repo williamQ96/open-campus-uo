@@ -3,6 +3,7 @@ import { Matrix4, Vector3 } from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { readPinnedScene } from "./pinned-scene.js";
 import { sampleGround } from "./world.js";
+import { restoreFoundationLawns } from "./foundation-lawn-corrections.js";
 
 export async function loadFoundationL2(base, manifest, config, exteriorReview) {
   const recipe = config.landcover_l2;
@@ -59,6 +60,9 @@ export async function loadFoundationL2(base, manifest, config, exteriorReview) {
     return delta;
   });
   ground.userData.context_haze_weight = 0.48;
+  ground.userData.correctedLawnVertices = restoreFoundationLawns(
+    ground.geometry,
+  );
   return { scene, grade: { ...field, heights_m: deltas } };
 }
 

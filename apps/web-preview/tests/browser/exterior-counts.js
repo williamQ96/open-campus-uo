@@ -1,4 +1,8 @@
 export const DEFAULT_BATCHED_BUILDINGS = 2;
+import scope from "../../data/building-scope.json" with { type: "json" };
+
+export const isBackgroundBuilding = (id) =>
+  Object.hasOwn(scope.backgroundOnly, id);
 export const DEFAULT_SELECTABLE_BUILDINGS = 611;
 export const DEFAULT_ENTRANCES = 458;
 export const HAYWARD_PRACTICE_CONTEXT_TREE_REMOVALS = 9;

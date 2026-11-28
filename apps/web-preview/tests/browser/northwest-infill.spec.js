@@ -59,12 +59,9 @@ test("four northwest exteriors preserve selection and their open bays", async ({
   ]);
   const search = page.getByRole("combobox", { name: "Search buildings" });
   await search.fill("790 E 14th Ave");
-  await search.press("Enter");
-  await expect
-    .poll(() =>
-      page.evaluate(() => window.__campus.getState().selectedBuilding),
-    )
-    .toBe("roof-d830368a");
+  await expect(
+    page.getByRole("option").filter({ hasText: "1414 Alder Street" }),
+  ).toHaveCount(0);
 });
 
 test("a rejected northwest site keeps the original building batch", async ({

@@ -32,6 +32,11 @@ import {
 import { createMinimap } from "./minimap.js";
 import { createBuildingSearch } from "./search.js";
 import {
+  createCampusOverview,
+  createReviewPriority,
+  loadQueued,
+} from "./campus-overview.js";
+import {
   loadPresentation,
   setEmissive,
   sceneAssetUrl,
@@ -50,6 +55,7 @@ import { createFixedNpc } from "./fixed-npc.js";
 import { danCarrereAppearance, styleDanCarrere } from "./dan-carrere-style.js";
 import { createRouter, distance } from "./routing.js";
 import routeSurfaces from "../data/campus-route-surfaces.json";
+import buildingScope from "../data/building-scope.json";
 import { createPavedRouteAccess } from "./paved-route-access.js";
 import { createNavigation } from "./navigation.js";
 import { createEugeneSky } from "./eugene-sky.js";
@@ -137,6 +143,10 @@ let buildings = [],
   focusCameraTarget = null,
   cameraTransition = null,
   selectedMapTarget = null;
+let campusReady = false,
+  overviewData,
+  overviewRoot;
+const detailQueue = { total: 0, settled: 0 };
 const player = new THREE.Vector3(),
   vertical = { velocity: 0, grounded: true };
 const scene = new THREE.Scene();
@@ -191,7 +201,7 @@ Object.assign(sun.shadow.camera, {
 sun.shadow.bias = -0.0002;
 sun.shadow.normalBias = 0.3;
 scene.add(sun);
-const orbit = new OrbitControls(camera, renderer.domElement);
+const orbit = new OrbitControls(camera, viewport);
 orbit.enableDamping = true;
 orbit.dampingFactor = 0.07;
 orbit.minDistance = 12;
@@ -216,6 +226,9 @@ scene.add(contactShadow);
 const meshesById = new Map(),
   collisionMeshes = [];
 const buildingRecords = new Map();
+const backgroundBuildingIds = new Set(
+  Object.keys(buildingScope.backgroundOnly),
+);
 const buildingHighlight = createBuildingHighlight(
   scene,
   meshesById,
@@ -260,6 +273,7 @@ addEventListener("resize", resize);
 resize();
 
 function setView(next) {
+  if (!campusReady && next !== "aerial") return;
   walkMotion.reset();
   motion = { ...motion, bobX: 0, bobY: 0, roll: 0, walking: false };
   if (!views.includes(next)) return;
@@ -279,7 +293,7 @@ function setView(next) {
       button.setAttribute("aria-pressed", String(button.dataset.view === view)),
     );
   if (view === "aerial") {
-    const overview = presentation?.config.overview;
+    const overview = presentation?.config.overview ?? overviewData?.camera;
     orbit.target.fromArray(
       overview?.target || [0, field ? sampleGround(field, 0, 0) + 5 : 0, 0],
     );
@@ -366,6 +380,10 @@ function resetPlayer() {
   followDistance = 7.5;
 }
 $("#reset").addEventListener("click", () => {
+  if (!campusReady) {
+    setView("aerial");
+    return;
+  }
   analytics.event("return-to-start");
   resetPlayer();
   setView(view);
@@ -514,8 +532,9 @@ renderer.domElement.addEventListener("pointermove", (event) => {
   drag.x = event.clientX;
   drag.y = event.clientY;
 });
-renderer.domElement.addEventListener("pointerup", (event) => {
+viewport.addEventListener("pointerup", (event) => {
   if (
+    event.button === 0 &&
     drag &&
     Math.hypot(event.clientX - drag.startX, event.clientY - drag.startY) < 5
   )
@@ -538,30 +557,6 @@ renderer.domElement.addEventListener("pointercancel", () => {
 viewport.addEventListener(
   "wheel",
   (event) => {
-    // Scene labels sit above the canvas. Keep their click behavior while
-    // forwarding overview wheel input to the same OrbitControls handler.
-    if (
-      view === "aerial" &&
-      event.target instanceof Element &&
-      event.target.closest(".building-label, .fixed-person-label")
-    ) {
-      event.preventDefault();
-      renderer.domElement.dispatchEvent(
-        new WheelEvent("wheel", {
-          deltaX: event.deltaX,
-          deltaY: event.deltaY,
-          deltaMode: event.deltaMode,
-          clientX: event.clientX,
-          clientY: event.clientY,
-          ctrlKey: event.ctrlKey,
-          shiftKey: event.shiftKey,
-          altKey: event.altKey,
-          metaKey: event.metaKey,
-          cancelable: true,
-        }),
-      );
-      return;
-    }
     if (view !== "third" || modalOpen() || event.ctrlKey || event.metaKey)
       return;
     event.preventDefault();
@@ -580,6 +575,9 @@ viewport.addEventListener(
   },
   { passive: false },
 );
+viewport.addEventListener("pointercancel", () => {
+  drag = null;
+});
 renderer.domElement.addEventListener("pointerleave", () => {
   hoverPointer = null;
   hoverPending = false;
@@ -618,7 +616,7 @@ function clearSelection() {
   labels.setSuppressed(null);
 }
 function selectBuilding(id, { fromSearch = false } = {}) {
-  const record = buildings.find((building) => building.id === id);
+  const record = buildingRecords.get(id);
   if (!record) {
     clearSelection();
     return;
@@ -659,7 +657,7 @@ function syncBuildingCard() {
   $("#selection").hidden = !record || shown;
 }
 function focusBuilding(id, { animate = true } = {}) {
-  const record = buildings.find((building) => building.id === id);
+  const record = buildingRecords.get(id);
   if (!record?.name) return;
   analytics.event("building-search-selected");
   keys.clear();
@@ -727,6 +725,7 @@ function focusBuilding(id, { animate = true } = {}) {
   viewport.focus({ preventScroll: true });
 }
 function selectAt(event) {
+  if (!campusReady) return;
   if (navigation?.picking) {
     const rect = renderer.domElement.getBoundingClientRect();
     raycaster.setFromCamera(
@@ -951,6 +950,57 @@ async function loadJson(url) {
 
 const loading = $("#loading");
 const loadingProgress = $("#loading-progress");
+const walkViews = [
+  ...document.querySelectorAll("[data-view=first], [data-view=third]"),
+];
+for (const button of walkViews) button.disabled = true;
+
+async function showInitialOverview(base) {
+  try {
+    overviewData = await loadJson(base + "campus-overview.json");
+    overviewRoot = createCampusOverview(overviewData);
+  } catch (error) {
+    console.warn("Lightweight overview unavailable.", error);
+    return;
+  }
+  const preview = new THREE.Scene();
+  preview.background = new THREE.Color(0xc7dfec);
+  const sunlight = new THREE.DirectionalLight(0xffedd2, 1.5);
+  sunlight.position.set(-200, 700, 350);
+  preview.add(
+    overviewRoot,
+    new THREE.HemisphereLight(0xffffff, 0x929b94, 1.9),
+    sunlight,
+  );
+  setView("aerial");
+  const depth = createOverviewDepth(camera, overviewRoot);
+  let firstFrame = true;
+  await new Promise((resolve) => {
+    renderer.setAnimationLoop(() => {
+      orbit.update();
+      depth.update("aerial");
+      renderer.render(preview, camera);
+      if (!firstFrame) return;
+      firstFrame = false;
+      $("#app").dataset.stage = "overview";
+      loading.dataset.background = "true";
+      $("#loading-message").textContent = "Loading campus detail…";
+      window.__campusPreview = {
+        getState: () => ({
+          camera: camera.position.toArray(),
+          orbitTarget: orbit.target.toArray(),
+          cameraDirection: camera
+            .getWorldDirection(new THREE.Vector3())
+            .toArray(),
+          view,
+          detailQueue: { ...detailQueue },
+        }),
+      };
+      // Let the overview paint before starting the detailed resource queue.
+      requestAnimationFrame(resolve);
+    });
+  });
+}
 
 async function loadCampusScene(base, manifest, settings) {
   const name = settings.presentation_url;
@@ -4498,50 +4548,51 @@ async function loadCampusScene(base, manifest, settings) {
   for (const key of enabledReviews) {
     if (reviewMode === `${key}-baseline`) enabledReviews.delete(key);
   }
-  let completedReviews = 0;
+  const reviewKeys = [...enabledReviews];
+  detailQueue.total = reviewKeys.length;
+  const priority = createReviewPriority(camera, overviewData?.reviewBounds);
   const [cascadeReview, loadedReviews] = await Promise.all([
     cascadeLoad,
-    Promise.all(
-      [...enabledReviews]
-        .map(async (key) => {
-          const options = reviewOptions[key];
-          const candidates = [options];
-          if (key === "heritage" && reviewMode !== "miller-baseline") {
-            candidates.unshift({
-              descriptor: config?.heritage_miller_site,
-              directory: "heritage-miller-review",
-              ids: [...options.ids, "roof-944fcd46"],
-              groundNode: "heritage-miller-approaches",
-              replacedDetails: [
-                ...options.replacedDetails,
-                "miller-west-detail.json",
-              ],
-            });
+    loadQueued(
+      reviewKeys.map((key) => async () => {
+        const options = reviewOptions[key];
+        const candidates = [options];
+        if (key === "heritage" && reviewMode !== "miller-baseline") {
+          candidates.unshift({
+            descriptor: config?.heritage_miller_site,
+            directory: "heritage-miller-review",
+            ids: [...options.ids, "roof-944fcd46"],
+            groundNode: "heritage-miller-approaches",
+            replacedDetails: [
+              ...options.replacedDetails,
+              "miller-west-detail.json",
+            ],
+          });
+        }
+        for (const candidate of candidates) {
+          if (!candidate.descriptor) continue;
+          try {
+            return await loadBuildingSiteReview(
+              base,
+              manifest,
+              config,
+              candidate,
+            );
+          } catch (error) {
+            console.warn(
+              `Exterior review ${candidate.directory} unavailable; using the prior site.`,
+              error,
+            );
           }
-          for (const candidate of candidates) {
-            if (!candidate.descriptor) continue;
-            try {
-              return await loadBuildingSiteReview(
-                base,
-                manifest,
-                config,
-                candidate,
-              );
-            } catch (error) {
-              console.warn(
-                `Exterior review ${candidate.directory} unavailable; using the prior site.`,
-                error,
-              );
-            }
-          }
-          return null;
-        })
-        .map((review) =>
-          review.finally(() => {
-            loadingProgress.value =
-              16 + (46 * ++completedReviews) / enabledReviews.size;
-          }),
-        ),
+        }
+        return null;
+      }),
+      (index) => priority(reviewOptions[reviewKeys[index]].descriptor?.url),
+      () => {
+        detailQueue.settled++;
+        loadingProgress.value =
+          16 + (46 * detailQueue.settled) / detailQueue.total;
+      },
     ),
   ]);
   const buildingReviews = loadedReviews.filter(Boolean);
@@ -4611,9 +4662,16 @@ async function loadCampusScene(base, manifest, settings) {
 try {
   const base = import.meta.env.BASE_URL + "scene/";
   loadingProgress.value = 6;
-  profile = await loadJson(import.meta.env.BASE_URL + "viewer-profile.json");
-  manifest = await loadJson(base + "manifest.json");
-  viewerSettings = await loadJson(base + "viewer-settings.json");
+  await showInitialOverview(base);
+  [profile, manifest, viewerSettings] = await Promise.all([
+    loadJson(import.meta.env.BASE_URL + "viewer-profile.json"),
+    loadJson(base + "manifest.json"),
+    loadJson(base + "viewer-settings.json"),
+  ]);
+  if (overviewRoot) {
+    applyProfile(profile, manifest, { spacing_m: overviewData.terrain[2] });
+    $("#loading-message").textContent = "Loading campus detail…";
+  }
   if (manifest.schema_version !== 1)
     throw new Error("Unsupported scene manifest version.");
   if (profile.building_identity_url) {
@@ -4634,6 +4692,8 @@ try {
   if (field.heights_m.length !== field.nx * field.ny)
     throw new Error("The terrain heightfield is incomplete.");
   applyProfile(profile, manifest, field);
+  if (overviewRoot)
+    $("#loading-message").textContent = "Loading campus detail…";
   if (profile.building_info_url) {
     try {
       const info = await loadJson(
@@ -4729,7 +4789,11 @@ try {
         };
       })
     : siteRecords;
-  for (const record of buildings) buildingRecords.set(record.id, record);
+  const selectableBuildings = buildings.filter(
+    ({ id }) => !backgroundBuildingIds.has(id),
+  );
+  for (const record of selectableBuildings)
+    buildingRecords.set(record.id, record);
   presentation = campusScene.art;
   outdoorObstacleBoxes = buildingReviews
     .flatMap((review) => review.closedSiteBoxes)
@@ -5038,7 +5102,6 @@ try {
         orbit.update();
       },
     });
-    $("#directions-open").hidden = false;
     if (viewerSettings.activity_url) {
       const activity = await loadJson(
         sceneAssetUrl(base, viewerSettings.activity_url),
@@ -5129,6 +5192,7 @@ try {
     half,
     field,
     meshesById,
+    canEnter: (id) => buildingRecords.has(id),
     surfaceHeight: presentation?.hardscape?.height,
     overrides: {
       ...viewerSettings.entrances,
@@ -5141,10 +5205,14 @@ try {
     },
     onEnter: enterBuilding,
   });
-  labels.populate(buildings);
-  buildingSearch.populate(buildings);
+  labels.populate(selectableBuildings);
+  buildingSearch.populate(selectableBuildings);
   resetPlayer();
-  setView("aerial");
+  campusReady = true;
+  $("#directions-open").hidden = !navigation;
+  for (const button of walkViews) button.disabled = false;
+  if (overviewRoot) character.root.visible = true;
+  else setView("aerial");
   if (new URL(location.href).searchParams.get("return") === "1") {
     const saved = readReturn();
     if (
@@ -5217,6 +5285,17 @@ try {
   const frozenStaticNodes = freezeStaticTransforms(model);
   let betaLastUpdate = 0;
   renderer.setAnimationLoop((now) => {
+    if (overviewRoot) {
+      overviewRoot.removeFromParent();
+      overviewRoot.traverse((object) => {
+        if (!object.isMesh) return;
+        object.geometry.dispose();
+        object.material.dispose();
+      });
+      overviewRoot = null;
+      delete window.__campusPreview;
+      $("#app").dataset.stage = "detail";
+    }
     const frameSeconds = Math.max(0, (now - lastTime) / 1000 || 0);
     const dt = Math.min(frameSeconds, 0.08);
     const movementDt = movementFrameSeconds(frameSeconds, !document.hidden);
@@ -5315,7 +5394,8 @@ try {
   window.__campus = {
     getState: () => ({
       ready: true,
-      entranceCount: entrances.entries.length,
+      detailQueue: { ...detailQueue },
+      entranceCount: entrances.catalog.length,
       nearbyEntrance: entrances.nearby,
       hoveredBuilding: buildingHighlight.hovered,
       touchSpeed:
@@ -5349,6 +5429,9 @@ try {
       cameraTransition: !!cameraTransition,
       fps,
       buildings: buildings.length,
+      backgroundBuildings: buildings.filter(({ id }) =>
+        backgroundBuildingIds.has(id),
+      ).length,
       namedBuildings: labels.count,
       roadSegments: activeCorridors.length,
       roadSurfaces: model.children.filter(
@@ -5409,7 +5492,7 @@ try {
     },
     collisionCheck: (x, z) =>
       isBlocked(x, z, buildings, half) || isOutdoorObstacle(x, z),
-    entranceInfo: () => entrances.entries.map((e) => ({ ...e })),
+    entranceInfo: () => entrances.catalog.map((e) => ({ ...e })),
     lifeColliders: () => life?.colliders() || [],
     npcInfo: (id) => life?.inspect(id) || zombies?.inspect(id),
     npcScreenPosition: (id) => {
@@ -5439,6 +5522,7 @@ try {
       buildings
         .filter((building) => building.name)
         .map(({ id, name, name_match }) => ({ id, name, name_match })),
+    selectableBuildingIds: () => [...buildingRecords.keys()],
     terrainCheck: (x, z) => {
       const ray = new THREE.Raycaster(
         new THREE.Vector3(x, 300, z),
@@ -5475,8 +5559,14 @@ try {
   };
 } catch (error) {
   console.error(error);
-  loading.hidden = true;
-  $("#error").hidden = false;
-  $("#error p").textContent =
-    error.message + " Rebuild the scene assets before trying again.";
+  if (overviewRoot) {
+    $("#loading-message").textContent =
+      "Campus overview available. Detail failed to load.";
+    loadingProgress.hidden = true;
+  } else {
+    loading.hidden = true;
+    $("#error").hidden = false;
+    $("#error p").textContent =
+      error.message + " Rebuild the scene assets before trying again.";
+  }
 }

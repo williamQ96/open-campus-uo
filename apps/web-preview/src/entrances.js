@@ -177,8 +177,10 @@ export function createEntrances({
   overrides,
   surfaceHeight,
   onEnter,
+  canEnter = () => true,
 }) {
-  const entries = inferEntrances(buildings, half, overrides);
+  const catalog = inferEntrances(buildings, half, overrides);
+  const entries = catalog.filter(({ id }) => canEnter(id));
   const genericEntries = entries.filter((entry) => !entry.gate);
   const parts = createEntrancePortalParts();
   const marker = (name) => {
@@ -204,8 +206,9 @@ export function createEntrances({
   const matrix = new THREE.Matrix4(),
     quaternion = new THREE.Quaternion(),
     ray = new THREE.Raycaster();
-  let genericIndex = 0;
-  for (const [index, entry] of entries.entries()) {
+  let genericIndex = 0,
+    activeIndex = 0;
+  for (const entry of catalog) {
     let [x, z] = entry.position;
     const [nx, nz] = entry.outward;
     let y = sampleGround(field, x, z);
@@ -234,6 +237,7 @@ export function createEntrances({
     entry.position = [x + nx * 0.14, z + nz * 0.14];
     y = Math.max(y, surfaceHeight?.(...entry.position) ?? y);
     entry.ground = y;
+    if (!canEnter(entry.id)) continue;
     quaternion.setFromAxisAngle(new THREE.Vector3(0, 1, 0), Math.atan2(nx, nz));
     matrix.compose(
       new THREE.Vector3(
@@ -244,7 +248,7 @@ export function createEntrances({
       quaternion,
       new THREE.Vector3(1, 1, 1),
     );
-    doorHits.setMatrixAt(index, matrix);
+    doorHits.setMatrixAt(activeIndex++, matrix);
     if (!entry.gate) {
       frame.setMatrixAt(genericIndex, matrix);
       door.setMatrixAt(genericIndex++, matrix);
@@ -264,6 +268,7 @@ export function createEntrances({
   button.addEventListener("click", () => nearby && onEnter(nearby));
   return {
     entries,
+    catalog,
     update(player, view, paused) {
       let nearest = null,
         best = 5;

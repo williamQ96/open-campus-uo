@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
-import { exteriorCounts } from "./exterior-counts.js";
+import { exteriorCounts, isBackgroundBuilding } from "./exterior-counts.js";
 
 const baseline = "/?exterior-review=southeast-fairmount-exterior-baseline";
 const descriptorPath = "/scene/southeast-fairmount-exterior-review/site.json";
@@ -65,6 +65,12 @@ test("six hillside exteriors are searchable and only three approaches are placed
   const search = page.getByRole("combobox", { name: "Search buildings" });
   for (const [id, name] of buildings) {
     await search.fill(name);
+    if (isBackgroundBuilding(id)) {
+      await expect(
+        page.getByRole("option").filter({ hasText: name }),
+      ).toHaveCount(0);
+      continue;
+    }
     await search.press("Enter");
     await page.waitForFunction(
       (id) => window.__campus.getState().selectedBuilding === id,
