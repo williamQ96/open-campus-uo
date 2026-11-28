@@ -1,5 +1,10 @@
 {
   "version": 1,
+  "universityDistrictParking": {
+    "sourceSha256": "29f22c38eb5737fba2c8b3ab9618e049443c052e169e175f19428e66174ae896",
+    "boundsEnuM": [-744, -109, -645, -60],
+    "expectedTriangles": 181
+  },
   "lawns": [
     {
       "name": "Old Campus Quad south lawn west of the fork",

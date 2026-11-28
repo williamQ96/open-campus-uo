@@ -1,5 +1,43 @@
 // SPDX-License-Identifier: Apache-2.0
+import { Vector3 } from "three";
 import spec from "../data/foundation-lawn-corrections.json" with { type: "json" };
+
+export function uncoverUniversityDistrictParking(root, sourceSha256) {
+  const correction = spec.universityDistrictParking;
+  if (sourceSha256 !== correction.sourceSha256) return;
+
+  const lawn = root.getObjectByName("campus-lawn-extension");
+  const geometry = lawn?.geometry;
+  const position = geometry?.getAttribute("position");
+  const index = geometry?.getIndex();
+  if (!lawn?.isMesh || !position || !index || geometry.groups.length)
+    throw new Error("University District parking lawn source changed.");
+
+  lawn.updateWorldMatrix(true, false);
+  const [west, south, east, north] = correction.boundsEnuM;
+  const inside = new Uint8Array(position.count);
+  const point = new Vector3();
+  for (let i = 0; i < position.count; i++) {
+    point.fromBufferAttribute(position, i).applyMatrix4(lawn.matrixWorld);
+    inside[i] =
+      point.x >= west &&
+      point.x <= east &&
+      -point.z >= south &&
+      -point.z <= north;
+  }
+
+  // Remove only complete triangles within the verified paved interior.
+  const retained = [];
+  for (let i = 0; i < index.count; i += 3) {
+    const a = index.getX(i),
+      b = index.getX(i + 1),
+      c = index.getX(i + 2);
+    if (!(inside[a] && inside[b] && inside[c])) retained.push(a, b, c);
+  }
+  if (index.count - retained.length !== correction.expectedTriangles * 3)
+    throw new Error("University District parking lawn triangles changed.");
+  geometry.setIndex(retained);
+}
 
 function lawnWeight(e, n, ring) {
   let inside = false,

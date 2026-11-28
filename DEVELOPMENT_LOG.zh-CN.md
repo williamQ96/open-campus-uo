@@ -6,6 +6,10 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-27 - 恢复 University District 停车场的铺装
+
+- Lane County 2023 和 2025 年航片都显示，总览截图标出的校园西侧停车场内部为连续铺装。移除推测草坪覆盖层的 181 个三角面，露出既有 L2 沥青。浏览器同视角对照中，7,533 个变化像素集中在场内。既有沥青、植被带、道路及铺装的五处对照区域逐像素一致，两版的 54,083 像素实时阴影掩膜也一致。204 项单元测试、格式检查、生产构建和查看器哈希检查均通过。推送到 main 后由工作流部署 GitHub Pages。[地面对照和来源](docs/overview-release-2026-11-27.md#university-district-parking-follow-up)。
+
 ## 2026-11-27 - 保留重试按钮和总览操作
 
 - 精细场景清单加载失败时继续提供重试。总览已绘制时，把重试面板移出主要交互区域。浏览器分别报告精细建筑数量和可碰撞的回退轮廓，回退轮廓不生成推测入口。生产版浏览器覆盖清单返回 503 和 Education Annex 回退。本次补丁随 main 分支的 Pages 工作流发布。[验证记录](docs/overview-release-2026-11-27.md)。

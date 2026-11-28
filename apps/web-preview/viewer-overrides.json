@@ -19,7 +19,7 @@
     },
     "src/presentation.js": {
       "upstream_sha256": "d33c5d8f940ae532978e56db6f273154eb51fdd425109fc6bf65849d86eb450f",
-      "local_sha256": "46d55f71da0ffc410e32de1f3cda18bdfcc8bac95e7ce9be4315c4bd0ad9124a",
+      "local_sha256": "7779947c034ecf7cadf66c6c19e8d597f07613f1214a51302aa7ef6a27caadb1",
       "reason": "Source-pinned UO model replacements and delayed merging of fallback details. Provide the Price courtyard assembly with the pinned base terrain. Preserve the documented clear stair enclosure glazing in both styles."
     },
     "src/campus.js": {
@@ -570,9 +570,9 @@
     "public/scene/old-campus-quad-landscape-review/site.glb": "85b123a595139aa4c29c86bbdd09f5acb876929a5fcfd5d2fc429a9a19b4c223",
     "public/scene/old-campus-quad-landscape-review/site.json": "1b2f8ae408869f1a0c922ecd73f432f6a973fe0fb8ab4f6ae45a7c134c03934e",
     "src/campus-overview.js": "1cca50c4345b735a15e96b74d13528412d06913afd991c6d722623fe046ec528",
-    "src/foundation-lawn-corrections.js": "d7f40285d0873782319498e8223aec9210d0aae180eb374ac5beb47be84b0d87",
+    "src/foundation-lawn-corrections.js": "9e82b06d9b796d2daa621deb282d4d4130cf68f25ae31624f067947267a0f5b1",
     "data/building-scope.json": "d953dc958de494fbeefad65497e54e4ba1aacb56842664ad04fd596325d198a3",
-    "data/foundation-lawn-corrections.json": "d655640a4e0c1564a972acb8532d1fb5857bcfbc730eff20df82bfb94aae80de",
+    "data/foundation-lawn-corrections.json": "67c7d334a414a6ef0b154abf37d176cd619f59c11f10594ce2f7b1790682f10e",
     "public/scene/campus-overview.json": "7093b7c3f2fffa3fcba5cbe6453ee17c8b443ff0db82fe6679f1ecfba08fcad4"
   }
 }

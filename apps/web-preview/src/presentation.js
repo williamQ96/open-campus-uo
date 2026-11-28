@@ -41,6 +41,7 @@ import { installPilotTrees } from "./pilot-trees-l2.js";
 import { installContextTrees } from "./context-trees-l2.js";
 import { installUnderstory } from "./understory-l2.js";
 import { loadFoundationL2 } from "./foundation-l2.js";
+import { uncoverUniversityDistrictParking } from "./foundation-lawn-corrections.js";
 
 export function sceneAssetUrl(base, name) {
   if (
@@ -512,6 +513,16 @@ export async function loadPresentation(
         : await new GLTFLoader().loadAsync(url);
     }
     gltf.scene.add(land.scene);
+    if (foundationGrade) {
+      try {
+        uncoverUniversityDistrictParking(gltf.scene, config.asset_sha256);
+      } catch (error) {
+        console.warn(
+          "University District parking correction unavailable.",
+          error,
+        );
+      }
+    }
   }
   let siteTreeRemovals = 0;
   if (exteriorReview) {

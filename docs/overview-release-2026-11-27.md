@@ -27,3 +27,11 @@ When the entire detail manifest returns 503, the retry control remains available
 The camera regression started at three zoom levels and required both right-button pans, wheel zoom and left-button rotation to move the camera as expected. The second pan started on a visible label. Building-card, search and narrow-screen browser checks also passed.
 
 Matched camera captures show restored color at all three sampled lawns. Four road, paving and parking control crops were pixel-identical. Toggling the Shadows setting changed 54,083 pixels above the same RGB threshold in both builds.
+
+## University District parking follow-up
+
+The screenshot's rightmost arrow lands on existing asphalt west of campus. The adjacent green rectangle was an inferred lawn overlay. Both dated aerials show parking stalls across its footprint and a narrow planted verge along the south edge. [Lane County 2023 aerial](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/2) · [Lane County 2025 aerial](https://lcmaps.lanecounty.org/arcgis/rest/services/AirPhotos/AirPhotos/MapServer/57)
+
+The correction removes 181 complete overlay triangles within the verified paved interior, using east bounds of −744 to −645 m and north bounds of −109 to −60 m in the scene coordinate system. It requires the matching expanded scene and an available L2 foundation. The parking lot continues to use the existing foundation, terrain heights and walking data.
+
+In a matched 1,107 × 595 Chrome render, the lawn at the center of the rectangle gave way to the L2 foundation mesh. All 7,533 changed pixels were within the lot. Five samples of the existing asphalt, planted verge, road and paving were pixel-identical. Toggling live shadows yielded the same 54,083-pixel mask in both builds.

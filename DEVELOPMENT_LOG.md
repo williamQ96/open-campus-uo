@@ -6,6 +6,10 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-27 - Restore the paved surface in the University District parking lot
+
+- The 2023 and 2025 Lane County aerials show a continuous paved interior at the west-side parking lot marked in the Overview screenshot. Remove 181 triangles from an inferred lawn overlay to expose the existing L2 asphalt. The matched browser renders changed 7,533 pixels inside the lot. Five parking, verge, road and paving samples were identical, and the 54,083-pixel live-shadow mask matched. All 204 unit tests, formatting, the production build and viewer pins passed. The main-branch push triggers the GitHub Pages deployment. [Ground comparison and sources](docs/overview-release-2026-11-27.md#university-district-parking-follow-up).
+
 ## 2026-11-27 - Offer retry while keeping the overview usable
 
 - Keep the retry control available if the full detail manifest fails. Move its panel outside the main interaction area when the overview is already rendered. Report solid fallback outlines separately from the detailed building count and avoid inferring entrances from those outlines. Production browser regressions cover a manifest returning 503 and the Education Annex fallback. The follow-up is part of the main-branch Pages release. [Verification](docs/overview-release-2026-11-27.md).
