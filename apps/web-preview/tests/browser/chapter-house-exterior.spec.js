@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
-import { exteriorCounts } from "./exterior-counts.js";
+import { exteriorCounts, isBackgroundBuilding } from "./exterior-counts.js";
 
 const HOUSE_IDS = ["roof-c85e8e54", "state-1841241"];
 const names = ["Delta Delta Delta House", "Chi Omega House"];
@@ -46,6 +46,12 @@ test("split chapter houses have independent names, entrances and collision", asy
   const search = page.getByRole("combobox", { name: "Search buildings" });
   for (const [i, name] of names.entries()) {
     await search.fill(name);
+    if (isBackgroundBuilding(HOUSE_IDS[i])) {
+      await expect(page.getByRole("option", { name, exact: true })).toHaveCount(
+        0,
+      );
+      continue;
+    }
     await search.press("Enter");
     await expect
       .poll(() => page.evaluate(() => __campus.getState().selectedBuilding))

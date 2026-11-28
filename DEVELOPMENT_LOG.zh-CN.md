@@ -6,6 +6,12 @@
 
 上游仅记录可复用的方法、算法、接口和验证实践，见[方法论日志](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.zh-CN.md)，本地文件位于相邻上游仓库。下游开发日志、校园专属更新记录不复制进上游。发布与部署状态见下方最新记录。
 
+## 2026-11-28 - 显示镜头读数并应用三张补充圈选图
+
+- 左下角增加小字，显示镜头的本地东、北、高度坐标、朝向和俯仰角。Overview 同时显示旋转中心和距离。轻量首帧即显示读数，切换至精细场景或步行视角后持续跟随镜头。
+- 将 105 个稳定 ID 加入可逆的背景名单。143 个背景模型及碰撞保留，停用它们的标签、卡片、建筑目录和入口交互，并停止后续建筑细化。1864 Moss Street 的屋顶在东侧圈选线外，列为待确认。[建筑 ID 和镜头读数](docs/building-scope-2026-11-28.md)。
+- 生产构建、格式检查、204 项单元测试及 513 项查看器哈希校验通过。本地生产版浏览器加载 611 个建筑记录，其中 143 个为背景。精细任务全部结算，回退建筑为零。本次改动以 `main` 为 GitHub Pages 部署目标。
+
 ## 2026-11-28 - 补齐截图标出的三处校园草地边缘
 
 - 根据 Lane County 的 2023 和 2025 年航片，在 Collier House、Old Campus Quad 和 Memorial Quad 增补五个确认有植被的区域，覆盖 Fenton Hall 旁草地、Friendly Hall 步道分叉北面的植被带和美术馆前草地等。生产版 Chrome 在同一视角有 3,955 个像素变化。八处铺装、道路、停车场和植被带样本逐像素一致，54,084 像素的实时阴影掩膜也一致。生产构建、204 项单元测试和查看器哈希校验通过。推送到 main 后由工作流部署 GitHub Pages。[对照和来源](docs/overview-release-2026-11-27.md#additional-verified-lawn-edges)。

@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
-import { exteriorCounts } from "./exterior-counts.js";
+import { exteriorCounts, isBackgroundBuilding } from "./exterior-counts.js";
 
 const baseline = "/?exterior-review=fairmount-kincaid-exterior-baseline";
 const descriptorPath = "/scene/fairmount-kincaid-exterior-review/site.json";
@@ -77,6 +77,12 @@ test("eight exterior identities replace their batch candidates and keep six sour
   const search = page.getByRole("combobox", { name: "Search buildings" });
   for (const [id, name] of buildings) {
     await search.fill(name);
+    if (isBackgroundBuilding(id)) {
+      await expect(page.getByRole("option", { name, exact: true })).toHaveCount(
+        0,
+      );
+      continue;
+    }
     await search.press("Enter");
     await expect
       .poll(() =>
@@ -86,30 +92,24 @@ test("eight exterior identities replace their batch candidates and keep six sour
   }
 });
 
-test("outdoor navigation reaches the Pi Beta Phi front approach", async ({
+test("the background building is excluded from named outdoor destinations", async ({
   page,
 }) => {
   await inspect(page);
   await page.locator("#directions-open").click();
-  for (const [end, name] of [
-    ["A", "968 Alder Apartments"],
-    ["B", "Pi Beta Phi Chapter House"],
-  ]) {
-    await page
-      .getByRole("button", { name: "Search " + end, exact: true })
-      .click();
-    const search = page.getByRole("combobox");
-    await search.fill(name);
-    await search.press("ArrowDown");
-    await search.press("Enter");
-  }
-  await page.locator("#route-start").click();
-  const points = await page.evaluate(
-    () => window.__campus.getState().navigation.points,
-  );
-  expect(points.length).toBeGreaterThan(2);
-  expect(points.at(-1)[0]).toBeCloseTo(-646.33847, 2);
-  expect(points.at(-1)[1]).toBeCloseTo(-269.7702, 2);
+  await page.getByRole("button", { name: "Search B", exact: true }).click();
+  const search = page.getByRole("combobox");
+  await search.fill("Pi Beta Phi Chapter House");
+  await expect(
+    page.getByRole("option", {
+      name: "Pi Beta Phi Chapter House",
+      exact: true,
+    }),
+  ).toHaveCount(0);
+  await search.press("Enter");
+  expect(
+    await page.evaluate(() => window.__campus.getState().navigation.b),
+  ).toBeNull();
 });
 
 test("one invalid anchor rolls back all eight replacements", async ({

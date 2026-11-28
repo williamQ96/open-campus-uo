@@ -8,6 +8,47 @@ const state = (page) =>
     () => window.__campus?.getState() ?? window.__campusPreview?.getState(),
   );
 
+async function expectCameraReadout(page) {
+  await expect(async () => {
+    await checkCameraReadout(page);
+  }).toPass({ timeout: 8000 });
+}
+
+async function checkCameraReadout(page) {
+  const result = await page.evaluate(() => {
+    const { camera, cameraDirection, orbitTarget, view } = (
+      window.__campus ?? window.__campusPreview
+    ).getState();
+    const coordinates = ([e, h, south]) =>
+      `E ${e.toFixed(1)} N ${(-south).toFixed(1)} H ${h.toFixed(1)} m`;
+    const [east, up, south] = cameraDirection;
+    return {
+      pose: document.querySelector("#camera-pose").textContent,
+      position: coordinates(camera),
+      heading: (Math.atan2(east, -south) * 180) / Math.PI,
+      pitch: (Math.atan2(up, Math.hypot(east, south)) * 180) / Math.PI,
+      orbit: document.querySelector("#camera-orbit").textContent,
+      target: coordinates(orbitTarget),
+      view,
+      range: Math.hypot(...camera.map((value, i) => value - orbitTarget[i])),
+    };
+  });
+  expect(result.pose).toContain(`CAM ${result.position}`);
+  const heading = Number(result.pose.match(/HDG ([\d.]+)°/)[1]);
+  expect(Math.abs(((heading - result.heading + 540) % 360) - 180)).toBeLessThan(
+    0.051,
+  );
+  const pitch = Number(result.pose.match(/PITCH (-?[\d.]+)°/)[1]);
+  expect(Math.abs(pitch - result.pitch)).toBeLessThan(0.051);
+  if (result.view === "aerial") {
+    expect(result.orbit).toBe(
+      `TARGET ${result.target} · RANGE ${result.range.toFixed(1)} m`,
+    );
+  } else {
+    expect(result.orbit).toBe("");
+  }
+}
+
 async function drag(page, x, y, dx, dy, button = "right") {
   await page.mouse.move(x, y);
   await page.mouse.down({ button });
@@ -40,6 +81,8 @@ test("the first map accepts gestures and the detail queue completes away from it
   );
   await page.goto("/", { waitUntil: "commit" });
   await expect(page.locator("#app")).toHaveAttribute("data-stage", "overview");
+  await expect(page.locator("#camera-readout")).toBeVisible();
+  await expectCameraReadout(page);
   await expect(page.locator("[data-view=first]")).toBeDisabled();
   await expect(page.locator("#directions-open")).toBeHidden();
   await expect.poll(() => requests.length).toBeGreaterThan(0);
@@ -73,6 +116,7 @@ test("the first map accepts gestures and the detail queue completes away from it
     { timeout: 20000 },
   );
   const moved = await state(page);
+  await expectCameraReadout(page);
   unblock();
   await expect(page.locator("#app")).toHaveAttribute("data-stage", "detail", {
     timeout: 85_000,
@@ -90,8 +134,16 @@ test("the first map accepts gestures and the detail queue completes away from it
   ).toBe(true);
   expect(measure(moved.orbitTarget, complete.orbitTarget)).toBeLessThan(3);
   expect(measure(moved.camera, complete.camera)).toBeLessThan(4);
+  await expectCameraReadout(page);
   await expect(page.locator("[data-view=first]")).toBeEnabled();
   await expect(page.locator("#directions-open")).toBeVisible();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(page.locator("#camera-readout")).toBeInViewport();
+  for (const view of ["first", "third"]) {
+    await page.locator(`button[data-view=${view}]`).click();
+    await expect(page.locator("#camera-orbit")).toBeEmpty();
+    await expectCameraReadout(page);
+  }
 });
 
 test("an excluded building keeps its physical model while the directory is filtered", async ({
@@ -107,13 +159,31 @@ test("an excluded building keeps its physical model while the directory is filte
   const names = await page.evaluate(() =>
     window.__campus.selectableBuildingIds(),
   );
-  for (const id of ids) {
-    expect(names).not.toContain(id);
-    await expect(page.locator(`[data-building-id="${id}"]`)).toHaveCount(0);
+  const excluded = new Set(ids);
+  expect(names.filter((id) => excluded.has(id))).toEqual([]);
+  const labels = await page
+    .locator(".building-label")
+    .evaluateAll((nodes) => nodes.map((node) => node.dataset.buildingId));
+  expect(labels.filter((id) => excluded.has(id))).toEqual([]);
+  expect(await page.evaluate(() => __campus.collisionCheck(-890, -454))).toBe(
+    true,
+  );
+  expect(names).toEqual(
+    expect.arrayContaining(["context-oc-hayward", "roof-b8fa3497"]),
+  );
+  for (const name of [
+    "The Maverick Hotel",
+    "Rainier Building",
+    "The Rive Eugene",
+  ]) {
+    const search = page.locator("#building-search-input");
+    await search.fill(name);
+    await expect(page.getByRole("option", { name, exact: true })).toHaveCount(
+      0,
+    );
+    await search.press("Enter");
+    expect((await state(page)).selectedBuilding).toBeNull();
   }
-  expect(names).toContain("roof-b8f94f8e");
-  await page.locator("#building-search-input").fill("The Maverick Hotel");
-  await expect(page.getByRole("option", { name: /Maverick/ })).toHaveCount(0);
 });
 
 test("Overview pans across labels and keeps wheel zoom and left rotation responsive", async ({
@@ -194,5 +264,6 @@ test("Overview pans across labels and keeps wheel zoom and left rotation respons
         measure(panned.cameraDirection, (await state(page)).cameraDirection),
       )
       .toBeGreaterThan(0.04);
+    await expectCameraReadout(page);
   }
 });

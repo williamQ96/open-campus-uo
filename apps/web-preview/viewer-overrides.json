@@ -24,8 +24,8 @@
     },
     "src/campus.js": {
       "upstream_sha256": "4bf2ff010dda83db26ce0907c5b3281edc08ee8bbb68d6848341646304532242",
-      "local_sha256": "fe03fe04b41a7e4e5a38aa3d473b64d0cc0824d353d8b72852616645fcc3970c",
-      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. East 18th pedestrian links to the Frohnmayer east drive. Inventory-based planting and ground cover along the western cemetery verge. Registered furnishings and grounds for the HEDCO courtyard. Register the source-pinned Oregon Hall southeast grounds and fixtures. Register the Mays memorial and the Science Green east walking approach. Connect the Cascade courtyard stair to the Volcanology west walk. Register the Pacific Hall walk and Cascade arch approach. Register Onyx Green grade, paths and planting islands. Register the Price Science Commons courtyard and overlook. Connect Onyx Green through the Onyx Bridge ground-level passage. Register the Science Green west walk and south glass enclosure. Register the Old Campus Quad paths and Class of 1893 marker. First-frame overview with a view-prioritized draining refinement queue. Viewport input and background building scope."
+      "local_sha256": "ca1fe3f2dbe6b3041ada9b310ff917a76d2f88f9e4253cd361ab03d3387ca4c2",
+      "reason": "Sourced building identities, independent UO site replacements, verified context geometry, campus startup progress, and the Eugene sky profile. Paving-aligned campus activity and pinned wildlife. Paved endpoint access at the cemetery and Southwest Campus Green. East 18th pedestrian links to the Frohnmayer east drive. Inventory-based planting and ground cover along the western cemetery verge. Registered furnishings and grounds for the HEDCO courtyard. Register the source-pinned Oregon Hall southeast grounds and fixtures. Register the Mays memorial and the Science Green east walking approach. Connect the Cascade courtyard stair to the Volcanology west walk. Register the Pacific Hall walk and Cascade arch approach. Register Onyx Green grade, paths and planting islands. Register the Price Science Commons courtyard and overlook. Connect Onyx Green through the Onyx Bridge ground-level passage. Register the Science Green west walk and south glass enclosure. Register the Old Campus Quad paths and Class of 1893 marker. First-frame overview with a view-prioritized draining refinement queue. Viewport input and background building scope. Display the live camera pose in the campus HUD."
     },
     "src/building-card.js": {
       "upstream_sha256": "d02bbfa215841405730fa2cc2dc35764b44840c03772e20e0395ebc9d4134104",
@@ -34,8 +34,8 @@
     },
     "src/style.css": {
       "upstream_sha256": "7ef8336da7df7d502eb32edc85fcb7f82f8ea4044c714f8f1770f2639834c709",
-      "local_sha256": "b489632fbc2f99ff5b5169887a99bb5b5a1af14e023272219d8f71457e0cf585",
-      "reason": "Optional sourced building cards, anchored fixed-person card and campus startup progress. Show nonblocking detail progress after the lightweight overview frame."
+      "local_sha256": "77a50a1b5653fdc63b9225e8bf043eca541a1ecdf66dbf0858e985d10ca41e6f",
+      "reason": "Optional sourced building cards, anchored fixed-person card and campus startup progress. Show nonblocking detail progress after the lightweight overview frame. Display the live camera pose in the campus HUD."
     },
     "src/world.js": {
       "upstream_sha256": "ca35ab32d55da7f5a95b7004db80e743736e2ebeb05be943ed13eb6ee0dddc79",
@@ -74,8 +74,8 @@
     },
     "index.html": {
       "upstream_sha256": "6b08b0e49ce2c3cbcc7a48cc5e50718b5265c1ae3cfd9bac334745103dfecf9c",
-      "local_sha256": "ba8314005bdafcb743cfdefda624aeb3928bdfe7df3ebf2913e374a46e91bf2d",
-      "reason": "Campus startup progress with the profile loading label."
+      "local_sha256": "1e81fc9784391f1e9f9d309d5e3c2faffd70404f4ec419f547ad39e18dafde1f",
+      "reason": "Campus startup progress with the profile loading label. Display the live camera pose in the campus HUD."
     },
     "src/life.js": {
       "upstream_sha256": "8806111f8d99de78e67fb3fafe001892c66c57766715626b820ad2f2ae20e5cf",
@@ -571,7 +571,7 @@
     "public/scene/old-campus-quad-landscape-review/site.json": "1b2f8ae408869f1a0c922ecd73f432f6a973fe0fb8ab4f6ae45a7c134c03934e",
     "src/campus-overview.js": "1cca50c4345b735a15e96b74d13528412d06913afd991c6d722623fe046ec528",
     "src/foundation-lawn-corrections.js": "9e82b06d9b796d2daa621deb282d4d4130cf68f25ae31624f067947267a0f5b1",
-    "data/building-scope.json": "d953dc958de494fbeefad65497e54e4ba1aacb56842664ad04fd596325d198a3",
+    "data/building-scope.json": "62fcf14da31f42f24979b5f7330aebdf2da9cbf74fe1ba3d2b1d41fed3e9ab39",
     "data/foundation-lawn-corrections.json": "8571e7982f86973415a3c0fc023a57d8da647a3c0f9b2d0282fef1b60bf7507a",
     "public/scene/campus-overview.json": "7093b7c3f2fffa3fcba5cbe6453ee17c8b443ff0db82fe6679f1ecfba08fcad4"
   }

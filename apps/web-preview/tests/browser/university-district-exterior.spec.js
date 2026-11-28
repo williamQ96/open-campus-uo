@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { exteriorCounts } from "./exterior-counts.js";
+import { exteriorCounts, isBackgroundBuilding } from "./exterior-counts.js";
 
 const targets = {
   "roof-62a81026": {
@@ -82,6 +82,12 @@ test("the paired Bushnell exteriors and garage approaches integrate with the pho
   const search = page.getByRole("combobox", { name: "Search buildings" });
   for (const [id, { name }] of Object.entries(targets)) {
     await search.fill(name);
+    if (isBackgroundBuilding(id)) {
+      await expect(page.getByRole("option", { name, exact: true })).toHaveCount(
+        0,
+      );
+      continue;
+    }
     await search.press("Enter");
     await expect
       .poll(() =>

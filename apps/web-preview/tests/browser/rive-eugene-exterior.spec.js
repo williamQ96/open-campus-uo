@@ -72,38 +72,24 @@ test("The Rive replaces the old Broadway footprint and its recessed lobby stays 
   });
   const search = page.getByRole("combobox", { name: "Search buildings" });
   await search.fill(name);
-  await search.press("Enter");
-  await expect
-    .poll(() =>
-      page.evaluate(() => window.__campus.getState().selectedBuilding),
-    )
-    .toBe(id);
+  await expect(page.getByRole("option", { name, exact: true })).toHaveCount(0);
 });
 
-test("public outdoor routing reaches the Hilyard approach", async ({
+test("the background building is excluded from named outdoor destinations", async ({
   page,
 }) => {
   await inspect(page);
   await page.locator("#directions-open").click();
-  for (const [endpoint, label] of [
-    ["A", "968 Alder Apartments"],
-    ["B", name],
-  ]) {
-    await page
-      .getByRole("button", { name: "Search " + endpoint, exact: true })
-      .click();
-    const input = page.getByRole("combobox");
-    await input.fill(label);
-    await input.press("ArrowDown");
-    await input.press("Enter");
-  }
-  await page.locator("#route-start").click();
-  const route = await page.evaluate(
-    () => window.__campus.getState().navigation.points,
-  );
-  expect(route.length).toBeGreaterThan(2);
-  expect(route.at(-1)[0]).toBeCloseTo(-896.5, 2);
-  expect(route.at(-1)[1]).toBeCloseTo(469.16, 2);
+  await page.getByRole("button", { name: "Search B", exact: true }).click();
+  const search = page.getByRole("combobox");
+  await search.fill(name);
+  await expect(
+    page.getByRole("option", { name: name, exact: true }),
+  ).toHaveCount(0);
+  await search.press("Enter");
+  expect(
+    await page.evaluate(() => window.__campus.getState().navigation.b),
+  ).toBeNull();
 });
 
 test("a damaged source anchor retains the earlier building and other Broadway reviews", async ({

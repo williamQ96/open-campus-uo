@@ -445,6 +445,21 @@ input:focus-visible,
   gap: 9px;
   pointer-events: none;
 }
+.camera-readout {
+  position: absolute;
+  left: 30px;
+  bottom: 104px;
+  max-width: calc(100% - 60px);
+  padding: 3px 5px;
+  border-radius: 2px;
+  background: #f5f5efe0;
+  color: var(--ink);
+  font: 9px/1.4 var(--mono);
+  pointer-events: none;
+}
+.camera-readout span + span:not(:empty) {
+  margin-left: 0.7em;
+}
 .status-dot {
   display: inline-block;
   width: 5px;
@@ -779,7 +794,8 @@ dialog::backdrop {
     width: 147px;
     height: 147px;
   }
-  .position-readout {
+  .position-readout,
+  .camera-readout {
     left: 22px;
   }
   .controls-bar {
@@ -1031,6 +1047,17 @@ dialog::backdrop {
   .control-hint,
   .position-readout {
     display: none;
+  }
+  .camera-readout {
+    bottom: calc(66px + env(safe-area-inset-bottom, 0px));
+    left: 12px;
+    max-width: calc(100% - 78px);
+  }
+  .camera-readout span {
+    display: block;
+  }
+  .camera-readout span + span:not(:empty) {
+    margin-left: 0;
   }
   .reset-button {
     margin-left: auto;

@@ -49,10 +49,9 @@ test("five address-registered residences retain their IDs and Royal Terrace stay
 
   const search = page.getByRole("combobox", { name: "Search buildings" });
   await search.fill("Coho Townhouses (North)");
-  await search.press("Enter");
-  await expect
-    .poll(() => page.evaluate(() => __campus.getState().selectedBuilding))
-    .toBe("roof-4855fc7e");
+  await expect(
+    page.getByRole("option", { name: "Coho Townhouses (North)", exact: true }),
+  ).toHaveCount(0);
 });
 
 test("invalid residential mesh restores all five earlier roof treatments", async ({

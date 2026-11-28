@@ -151,6 +151,11 @@ let campusReady = false,
 const detailQueue = { total: 0, settled: 0 };
 const player = new THREE.Vector3(),
   vertical = { velocity: 0, grounded: true };
+const cameraReadout = $("#camera-readout");
+const cameraPose = $("#camera-pose");
+const cameraOrbit = $("#camera-orbit");
+const compassNeedle = $(".compass i");
+const cameraDirection = new THREE.Vector3();
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xe3e5e4);
 scene.fog = new THREE.Fog(0xe3e5e4, 3500, 7500);
@@ -209,6 +214,29 @@ orbit.dampingFactor = 0.07;
 orbit.minDistance = 12;
 orbit.maxDistance = 6000;
 orbit.maxPolarAngle = Math.PI * 0.48;
+
+function cameraCoordinates({ x, y, z }) {
+  return `E ${x.toFixed(1)} N ${(-z).toFixed(1)} H ${y.toFixed(1)} m`;
+}
+
+function updateCameraReadout() {
+  camera.getWorldDirection(cameraDirection);
+  const { x, y, z } = cameraDirection;
+  const bearing = Math.atan2(x, -z);
+  const heading =
+    ((Math.round(THREE.MathUtils.radToDeg(bearing) * 10) + 3600) % 3600) / 10;
+  const tilt = THREE.MathUtils.radToDeg(Math.atan2(y, Math.hypot(x, z)));
+  const pose = `CAM ${cameraCoordinates(camera.position)} · HDG ${heading.toFixed(1)}° · PITCH ${tilt.toFixed(1)}°`;
+  const target =
+    view === "aerial"
+      ? `TARGET ${cameraCoordinates(orbit.target)} · RANGE ${camera.position.distanceTo(orbit.target).toFixed(1)} m`
+      : "";
+  if (cameraPose.textContent !== pose) cameraPose.textContent = pose;
+  if (cameraOrbit.textContent !== target) cameraOrbit.textContent = target;
+  if (cameraReadout.hidden) cameraReadout.hidden = false;
+  compassNeedle.style.transform = `rotate(${bearing}rad)`;
+}
+
 let character = createCharacter();
 character.root.traverse((object) => {
   if (object.isMesh) object.castShadow = false;
@@ -982,6 +1010,7 @@ async function showInitialOverview(base) {
       orbit.update();
       depth.update("aerial");
       renderer.render(preview, camera);
+      updateCameraReadout();
       if (!firstFrame) return;
       firstFrame = false;
       $("#app").dataset.stage = "overview";
@@ -5342,6 +5371,7 @@ try {
         `ZOMBIE SCHOOL!!! · ${zombies.state().chasing} chasing`;
     }
     renderer.render(scene, camera);
+    updateCameraReadout();
     if (!loading.hidden) {
       loadingProgress.value = 100;
       loading.hidden = true;
@@ -5391,10 +5421,6 @@ try {
       navigation?.points,
       fixedNpc?.root.position,
     );
-    const heading = new THREE.Vector3();
-    camera.getWorldDirection(heading);
-    $(".compass i").style.transform =
-      "rotate(" + Math.atan2(heading.x, -heading.z) + "rad)";
     const positionText =
       "E " +
       player.x.toFixed(1) +

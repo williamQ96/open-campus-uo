@@ -6,6 +6,12 @@ This log belongs only to **Open Campus: UO**. Update it alongside each project c
 
 Reusable methods, algorithms, contracts and validation practices belong in the upstream [methodology log](https://github.com/williamQ96/open-geospatial-to-3d-reconstruction-pipeline/blob/main/METHODOLOGY_LOG.md). Do not copy this campus development log or campus-specific release notes into upstream. The methodology log is maintained in the separate upstream repository.
 
+## 2026-11-28 - Display the camera pose and apply the three additional building outlines
+
+- Add a small lower-left camera readout for local east, north, height, heading and pitch. Overview includes the orbit target and range. The readout appears on the first lightweight frame and tracks the actual camera through the transition and walking views.
+- Add 105 stable IDs to the reversible background scope. The scene keeps the 143 background models and their collisions. Their labels, cards, directory entries and interactive entrances are disabled, and future building refinements skip them. The 1864 Moss Street roof sits outside the east outline and is pending review. [Building IDs and camera readout](docs/building-scope-2026-11-28.md).
+- The production build, formatting, 204 unit tests and 513 viewer hashes passed. The local production browser loaded 611 building records, including the 143 backgrounds, with every detail job settled and zero fallback IDs. This change targets GitHub Pages from `main`.
+
 ## 2026-11-28 - Extend the lawn color repair at the three marked campus sites
 
 - Used the 2023 and 2025 Lane County aerials to trace five more planted areas at Collier House, Old Campus Quad and Memorial Quad. The changes recolor the existing L2 foundation, including the lawn beside Fenton Hall, the planting north of the Friendly Hall path fork and the grass beside the museum frontage. The production Chrome comparison changed 3,955 pixels at the same camera pose. Eight pavement, road, parking and verge samples matched pixel for pixel, and the 54,084-pixel live-shadow mask matched. The production build, all 204 unit tests and viewer hashes passed. The main-branch push triggers the GitHub Pages deployment. [Comparison and sources](docs/overview-release-2026-11-27.md#additional-verified-lawn-edges).

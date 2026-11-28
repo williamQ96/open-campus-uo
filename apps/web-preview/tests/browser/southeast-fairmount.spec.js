@@ -79,30 +79,21 @@ test("six hillside exteriors are searchable and only three approaches are placed
   }
 });
 
-test("the network route reaches the modeled west approach on Rose Lane", async ({
+test("the background building is excluded from named outdoor destinations", async ({
   page,
 }) => {
-  const { gates } = await inspect(page);
-  const rose = gates.find(({ gate }) => gate === "rose-cottage-west");
+  await inspect(page);
   await page.locator("#directions-open").click();
-  for (const [end, name] of [
-    ["A", "968 Alder Apartments"],
-    ["B", "2281 Rose Lane"],
-  ]) {
-    await page
-      .getByRole("button", { name: "Search " + end, exact: true })
-      .click();
-    const search = page.getByRole("combobox");
-    await search.fill(name);
-    await search.press("ArrowDown");
-    await search.press("Enter");
-  }
-  await page.locator("#route-start").click();
-  const points = await page.evaluate(
-    () => window.__campus.getState().navigation.points,
-  );
-  expect(points.length).toBeGreaterThan(2);
-  expect(points.at(-1)).toEqual([rose.approach[0], -rose.approach[1]]);
+  await page.getByRole("button", { name: "Search B", exact: true }).click();
+  const search = page.getByRole("combobox");
+  await search.fill("2281 Rose Lane");
+  await expect(
+    page.getByRole("option", { name: "2281 Rose Lane", exact: true }),
+  ).toHaveCount(0);
+  await search.press("Enter");
+  expect(
+    await page.evaluate(() => window.__campus.getState().navigation.b),
+  ).toBeNull();
 });
 
 test("an invalid last source anchor restores the six source shapes together", async ({

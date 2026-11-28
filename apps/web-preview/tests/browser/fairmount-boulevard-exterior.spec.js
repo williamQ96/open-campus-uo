@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
-import { exteriorCounts } from "./exterior-counts.js";
+import { exteriorCounts, isBackgroundBuilding } from "./exterior-counts.js";
 
 const homes = {
   "roof-41959677": "1610 Fairmount Blvd",
@@ -58,6 +58,12 @@ test("seven Fairmount houses keep their IDs and the 1780 garage bay opens", asyn
   const search = page.getByRole("combobox", { name: "Search buildings" });
   for (const [id, name] of Object.entries(homes)) {
     await search.fill(name);
+    if (isBackgroundBuilding(id)) {
+      await expect(page.getByRole("option", { name, exact: true })).toHaveCount(
+        0,
+      );
+      continue;
+    }
     await search.press("Enter");
     await expect
       .poll(() => page.evaluate(() => __campus.getState().selectedBuilding))

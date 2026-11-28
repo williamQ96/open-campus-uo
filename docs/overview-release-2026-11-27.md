@@ -4,6 +4,8 @@ The browser first draws a 191 KB overview with terrain, roads and footprints for
 
 ## Building directory
 
+The [November 28 scope update](building-scope-2026-11-28.md) records the three additional outlines and the resulting 143 background IDs.
+
 Use [building-scope.json](../apps/web-preview/data/building-scope.json) as the single editable scope list. The 38 IDs under `backgroundOnly` keep their exterior meshes and physical collisions. They are skipped by labels, search, picking, cards and entrances. Exclude these IDs when selecting future L2 exterior or interior refinement work. Remove an ID from that object to restore its prior eligibility. Historical modeled assets stay in the inventory for provenance.
 
 The `pending` object records boundary and classification conflicts. The first pass preserves Flock13 and 1365 Villard pending an unambiguous outline. Rainier Building, Alder Building and the University Business Operations Center have explicit UO records and remain selectable. The modeled Womack Hall and Morse Center match Bushnell's directory. The North Building at 677 E 12th Avenue matches the independent University District office listing. [UO facilities inventory](https://cpfm.uoregon.edu/sites/default/files/2026-02/facilities_fact_sheet_2025.pdf) · [UO Business Affairs directory](https://ba.uoregon.edu/staff-directory-and-map) · [Bushnell campus map](https://my.bushnell.edu/m/d/m/c0cc99ee-f9d3-4bdf-8f64-39779bdaa513/CampusMap/Index) · [University District building identification](university-district-clinic-review-2026-11-26.md)
